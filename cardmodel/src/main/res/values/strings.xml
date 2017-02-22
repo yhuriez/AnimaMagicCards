@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Card Model</string>
+
+    <!--Spellbook Name-->
+    <string name="spellbook_title_blood">Sang</string>
+    <string name="spellbook_title_chaos">Chaos</string>
+    <string name="spellbook_title_creation">Création</string>
+    <string name="spellbook_title_darkness">Obscurité</string>
+    <string name="spellbook_title_death">Mort</string>
+    <string name="spellbook_title_destruction">Destruction</string>
+    <string name="spellbook_title_dream">Songes</string>
+    <string name="spellbook_title_earth">Terre</string>
+    <string name="spellbook_title_emptyness">Vide</string>
+    <string name="spellbook_title_essence">Essence</string>
+    <string name="spellbook_title_fire">Feu</string>
+    <string name="spellbook_title_free_access">Libre accès</string>
+    <string name="spellbook_title_illusion">Illusion</string>
+    <string name="spellbook_title_knowledge">Connaissance</string>
+    <string name="spellbook_title_light">Lumière</string>
+    <string name="spellbook_title_limit">Seuil</string>
+    <string name="spellbook_title_literae">Literae</string>
+    <string name="spellbook_title_music">Musique</string>
+    <string name="spellbook_title_necromancer">Nécromancie</string>
+    <string name="spellbook_title_nobility">Noblesse</string>
+    <string name="spellbook_title_peace">Paix</string>
+    <string name="spellbook_title_sin">Péché</string>
+    <string name="spellbook_title_time">Temps</string>
+    <string name="spellbook_title_war">Guerre</string>
+    <string name="spellbook_title_water">Eau</string>
+    <string name="spellbook_title_wind">Air</string>
+
+    <!--Spell Formats-->
+    <string name="spell_book_and_level_format"><b>%1$s Niv. %2$d</b></string>
+    <string name="spell_action_type_format"><b>Action : %1$s</b></string>
+    <string name="spell_type_format"><b>Type : %1$s</b></string>
+    <string name="spell_effect_format"><b>Effet : %1$s</b></string>
+
+    <!--Grade-->
+    <string name="initial_grade_title">Initial</string>
+    <string name="intermediate_grade_title">Intermédiaire</string>
+    <string name="advanced_grade_title">Avancé</string>
+    <string name="arcane_grade_title">Arcane</string>
+
+    <string name="spell_grade_int_zeon_format">Int : %1$d / %2$d Zéon</string>
+    <string name="spell_grade_retention_format">Maintien : %1$d</string>
+
+</resources>

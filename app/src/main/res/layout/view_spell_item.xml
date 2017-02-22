@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="fr.enlight.anima.animamagiccards.utils.SpellGradeLevel"/>
+
+        <variable
+            name="model"
+            type="fr.enlight.anima.animamagiccards.viewmodels.SpellViewModel" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:stackHeaderHeight="150dp">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/header_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.07" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/scroll_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.23" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/center_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <ImageView
+            android:id="@+id/spell_card_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@{model.getBackground(context)}"
+            tools:src="@drawable/card_background_book_free_access"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/spell_title"
+            style="@style/TextAppearance.AppCompat.Inverse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/spacing_xbig"
+            android:paddingRight="@dimen/spacing_xbig"
+            android:text="@{model.spell.name}"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/header_guideline"
+            tools:text="Sphère de destruction" />
+
+        <TextView
+            android:id="@+id/spell_book_subtitle"
+            style="@style/TextAppearance.AppCompat.Inverse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/spacing_xbig"
+            android:paddingRight="@dimen/spacing_xbig"
+            android:textStyle="bold"
+            android:text="@{model.getSubtitle(context)}"
+            android:textSize="9sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spell_title"
+            tools:text="Magie de Destruction Niv. 12" />
+
+        <TextView
+            android:id="@+id/spell_action_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_big"
+            android:layout_marginStart="@dimen/spacing_big"
+            android:textSize="11sp"
+            android:text="@{@string/spell_action_type_format(model.spell.actionType)}"
+            app:layout_constraintLeft_toLeftOf="@id/spell_card_background"
+            app:layout_constraintTop_toTopOf="@id/scroll_guideline"
+            tools:text="Action : Active" />
+
+        <TextView
+            android:id="@+id/spell_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:text="@{@string/spell_type_format(model.spell.type)}"
+            app:layout_constraintLeft_toLeftOf="@id/center_guideline"
+            app:layout_constraintTop_toTopOf="@id/scroll_guideline"
+            tools:text="Type : Attaque" />
+
+        <include
+            android:id="@+id/spell_advanced_grade"
+            layout="@layout/view_spell_grade_item"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/spacing_big"
+            android:layout_marginLeft="@dimen/spell_grade_border_spacing"
+            android:layout_marginStart="@dimen/spell_grade_border_spacing"
+            app:layout_constraintBottom_toBottomOf="@id/spell_card_background"
+            app:layout_constraintLeft_toLeftOf="@id/spell_card_background"
+            app:layout_constraintRight_toRightOf="@id/center_guideline"
+            app:layout_constraintDimensionRatio="H, 169:92"
+            app:model="@{model.getSpellGradeModel(context, SpellGradeLevel.ADVANCED_LEVEL)}" />
+
+        <include
+            android:id="@+id/spell_arcane_grade"
+            layout="@layout/view_spell_grade_item"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/spacing_big"
+            android:layout_marginRight="@dimen/spell_grade_border_spacing"
+            android:layout_marginEnd="@dimen/spell_grade_border_spacing"
+            app:layout_constraintBottom_toBottomOf="@id/spell_card_background"
+            app:layout_constraintRight_toRightOf="@id/spell_card_background"
+            app:layout_constraintLeft_toLeftOf="@id/center_guideline"
+            app:layout_constraintDimensionRatio="H, 169:92"
+            app:model="@{model.getSpellGradeModel(context, SpellGradeLevel.ARCANE_LEVEL)}" />
+
+        <include
+            android:id="@+id/spell_initial_grade"
+            layout="@layout/view_spell_grade_item"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/spell_grade_border_spacing"
+            android:layout_marginStart="@dimen/spell_grade_border_spacing"
+            app:layout_constraintBottom_toTopOf="@id/spell_advanced_grade"
+            app:layout_constraintLeft_toLeftOf="@id/spell_card_background"
+            app:layout_constraintRight_toRightOf="@id/center_guideline"
+            app:layout_constraintDimensionRatio="H, 169:92"
+            app:model="@{model.getSpellGradeModel(context, SpellGradeLevel.INITIAL_LEVEL)}" />
+
+        <include
+            android:id="@+id/spell_intermediate_grade"
+            layout="@layout/view_spell_grade_item"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginRight="@dimen/spell_grade_border_spacing"
+            android:layout_marginEnd="@dimen/spell_grade_border_spacing"
+            app:layout_constraintBottom_toTopOf="@id/spell_advanced_grade"
+            app:layout_constraintRight_toRightOf="@id/spell_card_background"
+            app:layout_constraintLeft_toLeftOf="@id/center_guideline"
+            app:layout_constraintDimensionRatio="H, 169:92"
+            app:model="@{model.getSpellGradeModel(context, SpellGradeLevel.INTERMEDIATE_LEVEL)}" />
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/spell_action_type"
+            app:layout_constraintLeft_toLeftOf="@id/spell_card_background"
+            app:layout_constraintRight_toRightOf="@id/spell_card_background"
+            app:layout_constraintBottom_toTopOf="@id/spell_initial_grade"
+            android:layout_marginLeft="@dimen/spacing_big"
+            android:layout_marginStart="@dimen/spacing_big"
+            android:layout_marginRight="@dimen/spacing_big"
+            android:layout_marginEnd="@dimen/spacing_big" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:text="@{@string/spell_effect_format(model.spell.effect)}"
+                tools:text="Effet : Projette plusieurs décharges d'énergies magiques. L'attaque se fait sur le Mode Energie et les dégâts sont de 30 points.\n\nChaque sphère peut attaquer des cibles différentes mais dans ce cas, chacune doit être désignée au lancement du sort, avant de lancer les dés.\n\nProjette plusieurs décharges d'énergies magiques. L'attaque se fait sur le Mode Energie et les dégâts sont de 30 points.\n\nChaque sphère peut attaquer des cibles différentes mais dans ce cas, chacune doit être désignée au lancement du sort, avant de lancer les dés."/>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

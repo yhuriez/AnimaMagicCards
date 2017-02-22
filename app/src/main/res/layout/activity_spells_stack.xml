@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="fr.enlight.anima.animamagiccards.viewmodels.ListBindableViewModel" />
+        <variable
+            name="listener"
+            type="com.loopeer.cardstack.CardStackView.ItemExpendListener"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.loopeer.cardstack.CardStackView
+            android:id="@+id/card_stack_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/spacing_big"
+            app:viewModels="@{model.viewModels}"
+            app:expandListener="@{listener}"/>
+
+    </LinearLayout>
+
+</layout>
