@@ -3,6 +3,8 @@ package fr.enlight.anima.animamagiccards.viewmodels;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.support.v4.content.res.ResourcesCompat;
+import android.text.SpannableString;
+import android.text.TextUtils;
 
 import com.android.databinding.library.baseAdapters.BR;
 
@@ -43,6 +45,21 @@ public class SpellViewModel implements BindableViewModel{
 
     public Drawable getBackground(Context context){
         return ResourcesCompat.getDrawable(context.getResources(), spellbookType.cardBackgroundRes, null);
+    }
+
+    public CharSequence getActionType(Context context){
+        CharSequence actionTypeSpannable = new SpannableString(context.getText(R.string.spell_action_type_format));
+        return TextUtils.concat(actionTypeSpannable, spell.actionType);
+    }
+
+    public CharSequence getType(Context context){
+        CharSequence actionTypeSpannable = new SpannableString(context.getText(R.string.spell_type_format));
+        return TextUtils.concat(actionTypeSpannable, spell.type);
+    }
+
+    public CharSequence getEffect(Context context){
+        CharSequence actionTypeSpannable = new SpannableString(context.getText(R.string.spell_effect_format));
+        return TextUtils.concat(actionTypeSpannable, spell.effect);
     }
 
     public SpellGradeViewModel getSpellGradeModel(Context context, SpellGradeLevel level){

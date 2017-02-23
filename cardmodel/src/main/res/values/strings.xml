@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">Card Model</string>
+    <string name="app_real_name">Anima Magic Books</string>
+    <string name="app_name">Anima Magic Books</string>
 
     <!--Spellbook Name-->
     <string name="spellbook_title_blood">Sang</string>
@@ -30,10 +31,10 @@
     <string name="spellbook_title_wind">Air</string>
 
     <!--Spell Formats-->
-    <string name="spell_book_and_level_format"><b>%1$s Niv. %2$d</b></string>
-    <string name="spell_action_type_format"><b>Action : %1$s</b></string>
-    <string name="spell_type_format"><b>Type : %1$s</b></string>
-    <string name="spell_effect_format"><b>Effet : %1$s</b></string>
+    <string name="spell_book_and_level_format">%1$s Niv. %2$d</string>
+    <string name="spell_action_type_format"><b>Action :</b></string>
+    <string name="spell_type_format"><b>Type :</b></string>
+    <string name="spell_effect_format"><b>Effet :</b></string>
 
     <!--Grade-->
     <string name="initial_grade_title">Initial</string>
