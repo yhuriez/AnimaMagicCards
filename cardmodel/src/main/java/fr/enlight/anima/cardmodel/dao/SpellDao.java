@@ -21,8 +21,8 @@ import static android.content.ContentValues.TAG;
 
 public class SpellDao {
 
-    public static final String SPELLBOOK_FILE_PREFIX = "spellbook_";
-    public static final String SPELLBOOK_INDEX_FILE = "spellbooks_index.json";
+    public static final String SPELLBOOK_FILE_PREFIX = "spellbooks/spellbook_";
+    public static final String SPELLBOOK_INDEX_FILE = "spellbooks/spellbooks_index.json";
 
     /**
      * @return the index of all existing spellbooks

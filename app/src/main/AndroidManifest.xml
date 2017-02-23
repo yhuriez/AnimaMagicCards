@@ -8,18 +8,15 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_real_name"
-        tools:replace="android:label"
-        android:theme="@style/AppTheme">
-        <activity android:name=".SpellbooksActivity">
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <activity android:name=".SpellActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".SpellStackActivity" />
-
     </application>
 
 </manifest>

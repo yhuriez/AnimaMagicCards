@@ -1,13 +1,15 @@
 package fr.enlight.anima.animamagiccards;
 
-import android.app.LoaderManager;
-import android.content.Context;
-import android.content.Intent;
-import android.content.Loader;
+
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.LoaderManager;
+import android.support.v4.content.Loader;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import com.loopeer.cardstack.CardStackView;
 
@@ -22,45 +24,55 @@ import fr.enlight.anima.animamagiccards.viewmodels.ListBindableViewModel;
 /**
  *
  */
-public class SpellStackActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<List<BindableViewModel>>, CardStackView.ItemExpendListener {
+public class SpellStackFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<BindableViewModel>>, CardStackView.ItemExpendListener {
 
     private static final String SPELLBOOK_ID = "SPELLBOOK_ID";
     private static final String SPELLBOOK_TYPE = "SPELLBOOK_TYPE";
 
+    private ActivitySpellsStackBinding binding;
+
     private ListBindableViewModel spellViewModels;
     private SpellbookType spellbookType;
 
-    public static Intent navigate(Context context, int spellbookId, SpellbookType type){
-        Intent intent = new Intent(context, SpellStackActivity.class);
-        intent.putExtra(SPELLBOOK_ID, spellbookId);
-        intent.putExtra(SPELLBOOK_TYPE, type.name());
-        return intent;
+    public static SpellStackFragment newInstance(int spellbookId, SpellbookType type) {
+        SpellStackFragment fragment = new SpellStackFragment();
+        Bundle bundle = new Bundle();
+        bundle.putInt(SPELLBOOK_ID, spellbookId);
+        bundle.putString(SPELLBOOK_TYPE, type.name());
+        fragment.setArguments(bundle);
+        return fragment;
+    }
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
+        binding = DataBindingUtil.inflate(inflater, R.layout.activity_spells_stack, container, false);
+        return binding.getRoot();
     }
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        ActivitySpellsStackBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_spells_stack);
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
 
-        String bookType = getIntent().getExtras().getString(SPELLBOOK_TYPE);
-        if(bookType != null){
+        String bookType = getArguments().getString(SPELLBOOK_TYPE);
+        if (bookType != null) {
             spellbookType = SpellbookType.valueOf(bookType);
         }
 
         spellViewModels = new ListBindableViewModel();
         binding.setModel(spellViewModels);
         binding.setListener(this);
-        if(spellbookType != null){
+        if (spellbookType != null) {
             binding.setSpellbookType(spellbookType);
         }
 
-        getLoaderManager().initLoader(1, getIntent().getExtras(), this);
+        getLoaderManager().initLoader(1, getArguments(), this);
     }
 
     @Override
     public Loader<List<BindableViewModel>> onCreateLoader(int id, Bundle args) {
-        if(args.containsKey(SPELLBOOK_ID)){
-            return new SpellsLoader(this, args.getInt(SPELLBOOK_ID), spellbookType);
+        if (args.containsKey(SPELLBOOK_ID)) {
+            return new SpellsLoader(getActivity(), args.getInt(SPELLBOOK_ID), spellbookType);
         }
         return null;
     }
