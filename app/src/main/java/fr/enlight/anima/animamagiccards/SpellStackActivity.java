@@ -28,6 +28,7 @@ public class SpellStackActivity extends AppCompatActivity implements LoaderManag
     private static final String SPELLBOOK_TYPE = "SPELLBOOK_TYPE";
 
     private ListBindableViewModel spellViewModels;
+    private SpellbookType spellbookType;
 
     public static Intent navigate(Context context, int spellbookId, SpellbookType type){
         Intent intent = new Intent(context, SpellStackActivity.class);
@@ -41,9 +42,17 @@ public class SpellStackActivity extends AppCompatActivity implements LoaderManag
         super.onCreate(savedInstanceState);
         ActivitySpellsStackBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_spells_stack);
 
+        String bookType = getIntent().getExtras().getString(SPELLBOOK_TYPE);
+        if(bookType != null){
+            spellbookType = SpellbookType.valueOf(bookType);
+        }
+
         spellViewModels = new ListBindableViewModel();
         binding.setModel(spellViewModels);
         binding.setListener(this);
+        if(spellbookType != null){
+            binding.setSpellbookType(spellbookType);
+        }
 
         getLoaderManager().initLoader(1, getIntent().getExtras(), this);
     }
@@ -51,8 +60,7 @@ public class SpellStackActivity extends AppCompatActivity implements LoaderManag
     @Override
     public Loader<List<BindableViewModel>> onCreateLoader(int id, Bundle args) {
         if(args.containsKey(SPELLBOOK_ID)){
-            String bookType = args.getString(SPELLBOOK_TYPE);
-            return new SpellsLoader(this, args.getInt(SPELLBOOK_ID), SpellbookType.valueOf(bookType));
+            return new SpellsLoader(this, args.getInt(SPELLBOOK_ID), spellbookType);
         }
         return null;
     }

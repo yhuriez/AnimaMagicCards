@@ -41,11 +41,11 @@ public class SpellbookViewModel implements BindableViewModel {
     }
 
     public String getTitle(Context context){
-        return context.getString(mType.getTitleRes());
+        return context.getString(mType.titleRes);
     }
 
     public Drawable getSpellbookIcon(Context context){
-        return ResourcesCompat.getDrawable(context.getResources(), mType.getIconRes(), null);
+        return ResourcesCompat.getDrawable(context.getResources(), mType.iconRes, null);
     }
 
     public void onSpellbookClicked(){

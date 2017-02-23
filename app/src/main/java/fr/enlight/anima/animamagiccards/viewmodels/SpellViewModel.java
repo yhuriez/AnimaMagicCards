@@ -37,12 +37,12 @@ public class SpellViewModel implements BindableViewModel{
     }
 
     public CharSequence getSubtitle(Context context){
-        String bookTitle = context.getString(spellbookType.getTitleRes());
+        String bookTitle = context.getString(spellbookType.titleRes);
         return context.getString(R.string.spell_book_and_level_format, bookTitle, spell.level);
     }
 
     public Drawable getBackground(Context context){
-        return ResourcesCompat.getDrawable(context.getResources(), spellbookType.getBackgroundRes(), null);
+        return ResourcesCompat.getDrawable(context.getResources(), spellbookType.cardBackgroundRes, null);
     }
 
     public SpellGradeViewModel getSpellGradeModel(Context context, SpellGradeLevel level){

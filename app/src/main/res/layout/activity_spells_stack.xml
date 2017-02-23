@@ -10,17 +10,22 @@
         <variable
             name="listener"
             type="com.loopeer.cardstack.CardStackView.ItemExpendListener"/>
+        <variable
+            name="spellbookType"
+            type="fr.enlight.anima.animamagiccards.utils.SpellbookType"/>
     </data>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:backgroundRes="@{spellbookType.stackBackgroundRes}">
 
         <com.loopeer.cardstack.CardStackView
             android:id="@+id/card_stack_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@android:color/transparent"
             android:layout_marginTop="@dimen/spacing_big"
             app:viewModels="@{model.viewModels}"
             app:expandListener="@{listener}"/>
