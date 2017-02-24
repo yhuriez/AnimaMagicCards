@@ -26,6 +26,7 @@ public class SpellActivity extends AppCompatActivity implements SpellbooksFragme
     private void goToSpellStackFragment(int spellbookId, SpellbookType type){
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.fragment_placeholder, SpellStackFragment.newInstance(spellbookId, type))
+                .addToBackStack(null)
                 .commit();
     }
 

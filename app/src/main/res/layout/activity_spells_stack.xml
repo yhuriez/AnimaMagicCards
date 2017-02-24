@@ -6,30 +6,39 @@
 
         <variable
             name="model"
-            type="fr.enlight.anima.animamagiccards.viewmodels.ListBindableViewModel" />
-        <variable
-            name="listener"
-            type="com.loopeer.cardstack.CardStackView.ItemExpendListener"/>
-        <variable
-            name="spellbookType"
-            type="fr.enlight.anima.animamagiccards.utils.SpellbookType"/>
+            type="fr.enlight.anima.animamagiccards.viewmodels.SpellStackViewModel" />
     </data>
 
-    <LinearLayout
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:backgroundRes="@{spellbookType.stackBackgroundRes}">
+        android:background="@android:color/transparent">
+
+        <include
+            android:id="@+id/loading_overlay"
+            layout="@layout/view_spellbook_loading"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:model="@{model.spellbookModel}"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="visible"/>
 
         <com.loopeer.cardstack.CardStackView
             android:id="@+id/card_stack_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             android:background="@android:color/transparent"
             android:layout_marginTop="@dimen/spacing_big"
             app:viewModels="@{model.viewModels}"
-            app:expandListener="@{listener}"/>
+            app:expandListener="@{model.expandListener}"/>
 
-    </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
 
 </layout>
