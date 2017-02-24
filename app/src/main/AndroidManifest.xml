@@ -10,7 +10,7 @@
         android:label="@string/app_real_name"
         android:theme="@style/AppTheme"
         tools:replace="android:label">
-        <activity android:name=".SpellActivity">
+        <activity android:name=".ui.spellbooks.SpellActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

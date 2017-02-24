@@ -1,4 +1,4 @@
-package fr.enlight.anima.animamagiccards.utils.bindingrecyclerview;
+package fr.enlight.anima.animamagiccards.views.bindingrecyclerview;
 
 import android.support.annotation.LayoutRes;
 

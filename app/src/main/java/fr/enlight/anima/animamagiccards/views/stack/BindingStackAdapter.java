@@ -1,4 +1,4 @@
-package fr.enlight.anima.animamagiccards.utils.stack;
+package fr.enlight.anima.animamagiccards.views.stack;
 
 import android.content.Context;
 import android.databinding.BindingAdapter;
@@ -11,7 +11,7 @@ import com.loopeer.cardstack.StackAdapter;
 
 import java.util.List;
 
-import fr.enlight.anima.animamagiccards.utils.bindingrecyclerview.BindableViewModel;
+import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 
 
 public class BindingStackAdapter extends StackAdapter<BindableViewModel> {

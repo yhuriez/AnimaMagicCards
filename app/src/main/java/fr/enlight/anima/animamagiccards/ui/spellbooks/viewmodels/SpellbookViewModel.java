@@ -1,4 +1,4 @@
-package fr.enlight.anima.animamagiccards.viewmodels;
+package fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -7,8 +7,8 @@ import android.support.v4.content.res.ResourcesCompat;
 import com.android.databinding.library.baseAdapters.BR;
 
 import fr.enlight.anima.animamagiccards.R;
-import fr.enlight.anima.animamagiccards.utils.SpellbookType;
-import fr.enlight.anima.animamagiccards.utils.bindingrecyclerview.BindableViewModel;
+import fr.enlight.anima.animamagiccards.ui.spellbooks.utils.SpellbookType;
+import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.cardmodel.model.Spellbook;
 
 /**

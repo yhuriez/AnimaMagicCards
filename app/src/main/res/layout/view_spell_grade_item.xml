@@ -7,7 +7,7 @@
 
         <variable
             name="model"
-            type="fr.enlight.anima.animamagiccards.viewmodels.SpellGradeViewModel" />
+            type="fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels.SpellGradeViewModel" />
     </data>
 
     <LinearLayout

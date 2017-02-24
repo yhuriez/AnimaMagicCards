@@ -1,4 +1,4 @@
-package fr.enlight.anima.animamagiccards.utils.bindingrecyclerview;
+package fr.enlight.anima.animamagiccards.views.bindingrecyclerview;
 
 import android.databinding.ViewDataBinding;
 import android.support.v7.widget.RecyclerView;

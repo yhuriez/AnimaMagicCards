@@ -1,4 +1,4 @@
-package fr.enlight.anima.animamagiccards;
+package fr.enlight.anima.animamagiccards.ui.spellbooks;
 
 import android.content.Context;
 import android.databinding.DataBindingUtil;
@@ -14,12 +14,13 @@ import android.view.ViewGroup;
 
 import java.util.List;
 
+import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.animamagiccards.databinding.ActivitySpellbooksIndexBinding;
 import fr.enlight.anima.animamagiccards.loaders.SpellbooksIndexLoader;
-import fr.enlight.anima.animamagiccards.utils.SpellbookType;
-import fr.enlight.anima.animamagiccards.utils.bindingrecyclerview.BindableViewModel;
-import fr.enlight.anima.animamagiccards.viewmodels.RecyclerViewModel;
-import fr.enlight.anima.animamagiccards.viewmodels.SpellbookViewModel;
+import fr.enlight.anima.animamagiccards.ui.spellbooks.utils.SpellbookType;
+import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
+import fr.enlight.anima.animamagiccards.views.viewmodels.RecyclerViewModel;
+import fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels.SpellbookViewModel;
 
 public class SpellbooksFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<BindableViewModel>>,
         SpellbookViewModel.Listener {

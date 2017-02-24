@@ -6,7 +6,7 @@
 
         <variable
             name="model"
-            type="fr.enlight.anima.animamagiccards.viewmodels.SpellStackViewModel" />
+            type="fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels.SpellStackViewModel" />
     </data>
 
     <android.support.constraint.ConstraintLayout

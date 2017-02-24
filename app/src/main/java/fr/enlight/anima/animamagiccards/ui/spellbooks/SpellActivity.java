@@ -1,9 +1,10 @@
-package fr.enlight.anima.animamagiccards;
+package fr.enlight.anima.animamagiccards.ui.spellbooks;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import fr.enlight.anima.animamagiccards.utils.SpellbookType;
+import fr.enlight.anima.animamagiccards.R;
+import fr.enlight.anima.animamagiccards.ui.spellbooks.utils.SpellbookType;
 
 public class SpellActivity extends AppCompatActivity implements SpellbooksFragment.Callbacks{
 

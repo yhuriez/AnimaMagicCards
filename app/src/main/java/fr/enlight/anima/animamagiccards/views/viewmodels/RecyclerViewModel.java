@@ -1,4 +1,4 @@
-package fr.enlight.anima.animamagiccards.viewmodels;
+package fr.enlight.anima.animamagiccards.views.viewmodels;
 
 import android.support.v7.widget.RecyclerView;
 

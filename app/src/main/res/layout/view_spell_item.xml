@@ -5,11 +5,11 @@
 
     <data>
 
-        <import type="fr.enlight.anima.animamagiccards.utils.SpellGradeLevel" />
+        <import type="fr.enlight.anima.animamagiccards.ui.spellbooks.utils.SpellGradeLevel" />
 
         <variable
             name="model"
-            type="fr.enlight.anima.animamagiccards.viewmodels.SpellViewModel" />
+            type="fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels.SpellViewModel" />
     </data>
 
     <android.support.constraint.ConstraintLayout
@@ -77,24 +77,6 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="@id/top_header_guideline"
             tools:text="Sphère de destruction" />
-
-        <!--<TextView-->
-            <!--android:id="@+id/spell_book_subtitle"-->
-            <!--style="@style/TextAppearance.AppCompat.Inverse"-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:ellipsize="end"-->
-            <!--android:gravity="center"-->
-            <!--android:maxLines="1"-->
-            <!--android:paddingLeft="@dimen/spacing_xbig"-->
-            <!--android:paddingRight="@dimen/spacing_xbig"-->
-            <!--android:text="@{model.getSubtitle(context)}"-->
-            <!--android:textSize="9sp"-->
-            <!--android:textStyle="bold"-->
-            <!--app:layout_constraintLeft_toLeftOf="parent"-->
-            <!--app:layout_constraintRight_toRightOf="parent"-->
-            <!--app:layout_constraintTop_toBottomOf="@id/spell_title"-->
-            <!--tools:text="Magie de Destruction Niv. 12" />-->
 
         <TextView
             android:id="@+id/spell_action_type"

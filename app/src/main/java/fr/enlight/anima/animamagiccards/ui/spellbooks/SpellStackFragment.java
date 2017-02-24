@@ -1,4 +1,4 @@
-package fr.enlight.anima.animamagiccards;
+package fr.enlight.anima.animamagiccards.ui.spellbooks;
 
 
 import android.databinding.DataBindingUtil;
@@ -7,22 +7,22 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.Loader;
-import android.support.v4.widget.ContentLoadingProgressBar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.tuyenmonkey.mkloader.MKLoader;
+
 import java.util.List;
 
+import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.animamagiccards.databinding.ActivitySpellsStackBinding;
 import fr.enlight.anima.animamagiccards.loaders.SpellsLoader;
-import fr.enlight.anima.animamagiccards.utils.SpellbookType;
-import fr.enlight.anima.animamagiccards.utils.bindingrecyclerview.BindableViewModel;
-import fr.enlight.anima.animamagiccards.viewmodels.SpellStackViewModel;
+import fr.enlight.anima.animamagiccards.ui.spellbooks.utils.SpellbookType;
+import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
+import fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels.SpellStackViewModel;
 
-/**
- *
- */
+
 public class SpellStackFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<BindableViewModel>> {
 
     private static final String SPELLBOOK_ID = "SPELLBOOK_ID";
@@ -34,7 +34,7 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     private SpellbookType spellbookType;
 
     private View mLoadingOverlay;
-    private ContentLoadingProgressBar mProgress;
+    private MKLoader mProgress;
 
     public static SpellStackFragment newInstance(int spellbookId, SpellbookType type) {
         SpellStackFragment fragment = new SpellStackFragment();
@@ -56,7 +56,7 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         mLoadingOverlay = view.findViewById(R.id.loading_overlay);
-        mProgress = (ContentLoadingProgressBar) view.findViewById(R.id.progress);
+        mProgress = (MKLoader) view.findViewById(R.id.progress);
     }
 
     @Override
@@ -76,7 +76,6 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
 
     @Override
     public Loader<List<BindableViewModel>> onCreateLoader(int id, Bundle args) {
-        mProgress.show();
         if (args.containsKey(SPELLBOOK_ID)) {
             return new SpellsLoader(getActivity(), args.getInt(SPELLBOOK_ID), spellbookType);
         }
@@ -87,7 +86,6 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     public void onLoadFinished(Loader<List<BindableViewModel>> loader, List<BindableViewModel> data) {
         spellViewModels.setViewModels(data);
 
-        mProgress.hide();
         mLoadingOverlay.setVisibility(View.GONE);
     }
 

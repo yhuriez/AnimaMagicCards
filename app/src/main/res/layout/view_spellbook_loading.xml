@@ -6,7 +6,7 @@
     <data>
         <variable
             name="model"
-            type="fr.enlight.anima.animamagiccards.viewmodels.SpellbookViewModel" />
+            type="fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels.SpellbookViewModel" />
     </data>
 
     <android.support.constraint.ConstraintLayout
@@ -26,7 +26,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <android.support.v4.widget.ContentLoadingProgressBar
+        <com.tuyenmonkey.mkloader.MKLoader
             android:id="@+id/progress"
             style="@style/Widget.AppCompat.ProgressBar"
             app:layout_constraintTop_toTopOf="@id/spell_card_background"
@@ -36,7 +36,9 @@
             app:layout_constraintVertical_bias="0.2"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_gravity="center" />
+            app:mk_type="TwinFishesSpinner"
+            android:layout_gravity="center"
+            android:visibility="invisible"/>
 
         <ImageView
             android:id="@+id/spellbook_icon"
@@ -46,32 +48,20 @@
             app:layout_constraintBottom_toBottomOf="@id/spell_card_background"
             app:layout_constraintLeft_toLeftOf="@id/spell_card_background"
             app:layout_constraintRight_toRightOf="@id/spell_card_background"
-            app:layout_constraintVertical_bias="0.7"
+            app:layout_constraintVertical_bias="0.6"
             android:layout_marginTop="@dimen/spacing_base"
             android:src="@{model.getSpellbookIcon(context)}"
             tools:src="@drawable/card_icon_book_light" />
 
         <TextView
-            android:id="@+id/spellbook_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_marginBottom="@dimen/spacing_base"
-            app:layout_constraintBottom_toTopOf="@id/spellbook_icon"
-            app:layout_constraintLeft_toLeftOf="@id/spell_card_background"
-            app:layout_constraintRight_toRightOf="@id/spell_card_background"
-            android:text="@{model.getTitle(context)}"
-            android:textSize="24sp"
-            tools:text="Lumière" />
-
-        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            app:layout_constraintBottom_toTopOf="@id/spellbook_title"
+            app:layout_constraintTop_toBottomOf="@id/progress"
             app:layout_constraintLeft_toLeftOf="@id/spell_card_background"
             app:layout_constraintRight_toRightOf="@id/spell_card_background"
             android:text="@string/Loading_Message"
+            android:layout_marginTop="@dimen/spacing_base"
             android:textSize="24sp" />
 
 

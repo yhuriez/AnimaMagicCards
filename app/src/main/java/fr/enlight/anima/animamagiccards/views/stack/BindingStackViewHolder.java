@@ -1,10 +1,10 @@
-package fr.enlight.anima.animamagiccards.utils.stack;
+package fr.enlight.anima.animamagiccards.views.stack;
 
 import android.databinding.ViewDataBinding;
 
 import com.loopeer.cardstack.CardStackView;
 
-import fr.enlight.anima.animamagiccards.utils.bindingrecyclerview.BindableViewModel;
+import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 
 
 public class BindingStackViewHolder extends CardStackView.ViewHolder {

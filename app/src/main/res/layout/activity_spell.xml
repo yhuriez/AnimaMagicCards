@@ -5,4 +5,4 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ic_background"
-    tools:context="fr.enlight.anima.animamagiccards.SpellActivity"/>
+    tools:context=".ui.spellbooks.SpellActivity"/>

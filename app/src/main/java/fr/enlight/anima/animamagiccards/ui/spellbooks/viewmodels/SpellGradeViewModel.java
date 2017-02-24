@@ -1,11 +1,11 @@
-package fr.enlight.anima.animamagiccards.viewmodels;
+package fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels;
 
 import android.content.Context;
 import android.support.annotation.ColorInt;
 import android.support.v4.content.res.ResourcesCompat;
 
 import fr.enlight.anima.animamagiccards.R;
-import fr.enlight.anima.animamagiccards.utils.SpellGradeLevel;
+import fr.enlight.anima.animamagiccards.ui.spellbooks.utils.SpellGradeLevel;
 import fr.enlight.anima.cardmodel.model.SpellGrade;
 
 /**

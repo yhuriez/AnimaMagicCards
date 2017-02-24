@@ -1,11 +1,11 @@
-package fr.enlight.anima.animamagiccards.viewmodels;
+package fr.enlight.anima.animamagiccards.views.viewmodels;
 
 import android.databinding.BaseObservable;
 import android.databinding.Bindable;
 
 import java.util.List;
 
-import fr.enlight.anima.animamagiccards.utils.bindingrecyclerview.BindableViewModel;
+import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 
 /**
  *
