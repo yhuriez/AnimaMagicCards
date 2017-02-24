@@ -19,11 +19,19 @@ import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.animamagiccards.databinding.ActivitySpellsStackBinding;
 import fr.enlight.anima.animamagiccards.loaders.SpellsLoader;
 import fr.enlight.anima.animamagiccards.ui.spellbooks.utils.SpellbookType;
-import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
+import fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels.DialogSpellEffectViewModel;
+import fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels.DialogSpellGradeViewModel;
 import fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels.SpellStackViewModel;
+import fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels.SpellViewModel;
+import fr.enlight.anima.animamagiccards.views.BindingDialogFragment;
+import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 
 
-public class SpellStackFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<BindableViewModel>> {
+public class SpellStackFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<BindableViewModel>>, SpellViewModel.Listener {
+
+    private static final String EFFECT_DIALOG = "EFFECT_DIALOG";
+    private static final String GRADE_DIALOG = "GRADE_DIALOG";
+
 
     private static final String SPELLBOOK_ID = "SPELLBOOK_ID";
     private static final String SPELLBOOK_TYPE = "SPELLBOOK_TYPE";
@@ -77,7 +85,7 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     @Override
     public Loader<List<BindableViewModel>> onCreateLoader(int id, Bundle args) {
         if (args.containsKey(SPELLBOOK_ID)) {
-            return new SpellsLoader(getActivity(), args.getInt(SPELLBOOK_ID), spellbookType);
+            return new SpellsLoader(getActivity(), args.getInt(SPELLBOOK_ID), spellbookType, this);
         }
         return null;
     }
@@ -94,4 +102,15 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     }
 
 
+    @Override
+    public void onEffectClicked(DialogSpellEffectViewModel dialogViewModel) {
+        BindingDialogFragment.newInstance(dialogViewModel)
+                .show(getFragmentManager(), EFFECT_DIALOG);
+    }
+
+    @Override
+    public void onGradeClicked(DialogSpellGradeViewModel dialogViewModel) {
+        BindingDialogFragment.newInstance(dialogViewModel)
+                .show(getFragmentManager(), GRADE_DIALOG);
+    }
 }

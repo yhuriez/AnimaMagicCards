@@ -1,19 +1,11 @@
 package fr.enlight.anima.animamagiccards.views.viewmodels;
 
 
-public class DialogViewModel {
+import java.io.Serializable;
 
-    private Listener listener;
+import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 
-    public void setListener(Listener listener) {
-        this.listener = listener;
-    }
+public interface DialogViewModel extends BindableViewModel, Serializable {
 
-    public void dismissClicked(){
-        listener.onDismiss();
-    }
-
-    public interface Listener{
-        void onDismiss();
-    }
+    void setListener(DismissDialogListener listener);
 }

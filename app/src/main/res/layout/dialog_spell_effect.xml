@@ -7,14 +7,15 @@
 
         <variable
             name="model"
-            type="fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels.SpellViewModel" />
+            type="fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels.DialogSpellEffectViewModel" />
     </data>
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingTop="@dimen/spacing_base"
-        android:paddingBottom="@dimen/spacing_base">
+        android:background="@android:color/transparent"
+        android:paddingBottom="@dimen/spacing_base"
+        android:paddingTop="@dimen/spacing_base">
 
         <android.support.constraint.Guideline
             android:id="@+id/top_guideline"
@@ -50,6 +51,16 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.85" />
+
+        <ImageButton
+            android:id="@+id/spell_close_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:onClick="@{() -> model.onDismissClicked()}"
+            android:src="@drawable/ic_action_navigation_close"
+            app:layout_constraintRight_toRightOf="@id/right_guideline"
+            app:layout_constraintTop_toTopOf="@id/top_guideline" />
 
         <ImageView
             android:id="@+id/spell_effect_background"

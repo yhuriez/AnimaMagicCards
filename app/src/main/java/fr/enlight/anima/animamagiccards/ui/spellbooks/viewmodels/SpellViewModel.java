@@ -18,10 +18,12 @@ import fr.enlight.anima.cardmodel.model.SpellGrade;
 /**
  *
  */
-public class SpellViewModel implements BindableViewModel{
+public class SpellViewModel implements BindableViewModel, SpellGradeViewModel.Listener {
 
     public final Spell spell;
     public final SpellbookType spellbookType;
+
+    private Listener mListener;
 
     public SpellViewModel(Spell spell, SpellbookType spellbookType) {
         this.spell = spell;
@@ -78,6 +80,35 @@ public class SpellViewModel implements BindableViewModel{
                 grade = spell.arcaneGrade;
                 break;
         }
-        return new SpellGradeViewModel(context, level, grade);
+
+        SpellGradeViewModel spellGradeViewModel = new SpellGradeViewModel(level, grade);
+        spellGradeViewModel.setListener(this);
+        return spellGradeViewModel;
+    }
+
+
+    public void setListener(Listener listener) {
+        this.mListener = listener;
+    }
+
+    public void expandEffect(){
+        if(mListener != null){
+            DialogSpellEffectViewModel dialogViewModel = new DialogSpellEffectViewModel(spell, spellbookType);
+            mListener.onEffectClicked(dialogViewModel);
+        }
+    }
+
+    @Override
+    public void onGradeClicked(SpellGradeLevel level, SpellGrade spellGrade) {
+        if(mListener != null){
+            DialogSpellGradeViewModel dialogViewModel = new DialogSpellGradeViewModel(level, spellGrade);
+            mListener.onGradeClicked(dialogViewModel);
+        }
+    }
+
+    public interface Listener{
+        void onEffectClicked(DialogSpellEffectViewModel dialogViewModel);
+
+        void onGradeClicked(DialogSpellGradeViewModel dialogViewModel);
     }
 }

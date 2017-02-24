@@ -19,12 +19,14 @@ public class SpellsLoader extends BaseLoader<List<BindableViewModel>> {
     private SpellBusinessService spellBusinessService;
     private final int bookId;
     private final SpellbookType bookType;
+    private final SpellViewModel.Listener listener;
 
-    public SpellsLoader(Context context, int bookId, SpellbookType spellbookType) {
+    public SpellsLoader(Context context, int bookId, SpellbookType spellbookType, SpellViewModel.Listener listener) {
         super(context);
         spellBusinessService = new SpellBusinessService(context);
         this.bookId = bookId;
         this.bookType = spellbookType;
+        this.listener = listener;
     }
 
     @Override
@@ -39,5 +41,18 @@ public class SpellsLoader extends BaseLoader<List<BindableViewModel>> {
         }
 
         return result;
+    }
+
+    @Override
+    public void deliverResult(List<BindableViewModel> data) {
+        if(data != null && !data.isEmpty()){
+            for (BindableViewModel bindableViewModel : data) {
+                if (bindableViewModel instanceof SpellViewModel){
+                    ((SpellViewModel) bindableViewModel).setListener(listener);
+                }
+            }
+        }
+
+        super.deliverResult(data);
     }
 }

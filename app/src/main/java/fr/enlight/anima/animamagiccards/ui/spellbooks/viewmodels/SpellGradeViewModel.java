@@ -4,6 +4,7 @@ import android.content.Context;
 import android.support.annotation.ColorInt;
 import android.support.v4.content.res.ResourcesCompat;
 
+import fr.enlight.anima.animamagiccards.MainApplication;
 import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.animamagiccards.ui.spellbooks.utils.SpellGradeLevel;
 import fr.enlight.anima.cardmodel.model.SpellGrade;
@@ -18,8 +19,10 @@ public class SpellGradeViewModel {
     private final SpellGradeLevel gradeLevel;
     private final SpellGrade spellGrade;
 
-    public SpellGradeViewModel(Context context, SpellGradeLevel gradeLevel, SpellGrade spellGrade) {
-        this.context = context;
+    private Listener mListener;
+
+    public SpellGradeViewModel(SpellGradeLevel gradeLevel, SpellGrade spellGrade) {
+        this.context = MainApplication.getMainContext();
         this.gradeLevel = gradeLevel;
         this.spellGrade = spellGrade;
     }
@@ -45,5 +48,19 @@ public class SpellGradeViewModel {
             return context.getString(R.string.spell_grade_retention_format, spellGrade.retention);
         }
         return null;
+    }
+
+    public void setListener(Listener listener) {
+        this.mListener = listener;
+    }
+
+    public void expandGrade(){
+        if(mListener != null){
+            mListener.onGradeClicked(gradeLevel, spellGrade);
+        }
+    }
+
+    public interface Listener{
+        void onGradeClicked(SpellGradeLevel level, SpellGrade spellGrade);
     }
 }

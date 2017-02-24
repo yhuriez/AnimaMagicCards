@@ -14,6 +14,7 @@
         android:layout_width="169dp"
         android:layout_height="92dp"
         android:background="@drawable/card_spell_grade_background"
+        android:onClick="@{() -> model.expandGrade()}"
         android:orientation="vertical">
 
         <TextView
