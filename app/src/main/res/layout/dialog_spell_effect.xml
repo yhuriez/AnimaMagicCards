@@ -64,13 +64,14 @@
             app:layout_constraintRight_toRightOf="@id/right_guideline"
             app:layout_constraintTop_toTopOf="@id/top_guideline">
 
-            <TextView
+            <fr.enlight.anima.animamagiccards.views.CustomTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
                 android:text="@{model.getEffect(context)}"
                 android:textColor="@android:color/black"
-                android:textSize="12sp"
+                android:textSize="15sp"
+                app:font="@string/regular_font"
                 tools:text="Effet : Projette plusieurs décharges d'énergies magiques. L'attaque se fait sur le Mode Energie et les dégâts sont de 30 points.\n\nChaque sphère peut attaquer des cibles différentes mais dans ce cas, chacune doit être désignée au lancement du sort, avant de lancer les dés.\n\nProjette plusieurs décharges d'énergies magiques. L'attaque se fait sur le Mode Energie et les dégâts sont de 30 points.\n\nChaque sphère peut attaquer des cibles différentes mais dans ce cas, chacune doit être désignée au lancement du sort, avant de lancer les dés." />
         </ScrollView>
 
@@ -79,10 +80,11 @@
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/Common_Close"
             android:onClick="@{() -> model.onDismissClicked()}"
+            android:text="@string/Common_Close"
+            app:customFont="@{@string/regular_font}"
             app:layout_constraintRight_toRightOf="@id/right_guideline"
-            app:layout_constraintTop_toBottomOf="@id/bottom_guideline"/>
+            app:layout_constraintTop_toBottomOf="@id/bottom_guideline" />
 
     </android.support.constraint.ConstraintLayout>
 </layout>
