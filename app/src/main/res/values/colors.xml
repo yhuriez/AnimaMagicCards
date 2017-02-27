@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-
     <color name="initial_grade_color">#044a7c</color>
     <color name="intermediate_grade_color">#1d7a38</color>
     <color name="advanced_grade_color">#9e4316</color>

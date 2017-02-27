@@ -72,7 +72,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="2dp"
-                android:text="@{model.intAndZeon}"
+                android:text="@{model.gradeValues}"
                 android:textColor="@android:color/black"
                 android:textSize="15sp"
                 android:textStyle="bold"
@@ -89,29 +89,13 @@
                 android:gravity="center_horizontal"
                 android:paddingLeft="@dimen/spacing_large"
                 android:paddingRight="@dimen/spacing_large"
-                android:text="@{model.effect}"
+                android:text="@{model.formattedEffect}"
                 android:textColor="@android:color/black"
                 android:textSize="15sp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/spell_grade_intelligence"
                 tools:text="affecte les animaux naturels (chevaux, lapins, loups, etc.)" />
-
-            <TextView
-                android:id="@+id/spell_grade_retention"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="@dimen/spacing_base"
-                android:text="@{model.retention}"
-                android:textColor="@android:color/black"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/spell_grade_effect"
-                app:setVisible="@{model.retention != null}"
-                tools:text="Maintien : Non" />
 
             <Button
                 android:id="@+id/spell_close_button"
@@ -120,7 +104,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/Common_Close"
                 android:onClick="@{() -> model.onDismissClicked()}"
-                app:layout_constraintTop_toBottomOf="@id/spell_grade_retention"
+                app:layout_constraintTop_toBottomOf="@id/spell_grade_effect"
                 app:layout_constraintBottom_toBottomOf="@id/bottom_guideline"
                 app:layout_constraintRight_toRightOf="parent"/>
 

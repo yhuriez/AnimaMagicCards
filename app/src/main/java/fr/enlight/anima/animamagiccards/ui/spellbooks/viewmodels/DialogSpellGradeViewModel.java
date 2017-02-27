@@ -6,6 +6,7 @@ import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.animamagiccards.ui.spellbooks.utils.SpellGradeLevel;
 import fr.enlight.anima.animamagiccards.views.viewmodels.DialogViewModel;
 import fr.enlight.anima.animamagiccards.views.viewmodels.DismissDialogListener;
+import fr.enlight.anima.cardmodel.model.Spell;
 import fr.enlight.anima.cardmodel.model.SpellGrade;
 
 
@@ -13,8 +14,8 @@ public class DialogSpellGradeViewModel extends SpellGradeViewModel implements Di
 
     private DismissDialogListener mListener;
 
-    public DialogSpellGradeViewModel(SpellGradeLevel gradeLevel, SpellGrade spellGrade) {
-        super(gradeLevel, spellGrade);
+    public DialogSpellGradeViewModel(SpellGradeLevel gradeLevel, SpellGrade spellGrade, Spell spell) {
+        super(gradeLevel, spellGrade, spell);
     }
 
     @Override
@@ -24,6 +25,15 @@ public class DialogSpellGradeViewModel extends SpellGradeViewModel implements Di
 
     public void onDismissClicked(){
         mListener.dismissDialog();
+    }
+
+    public String getFormattedEffect(){
+        String effect = getEffect();
+        String[] split = effect.split(" / ");
+        if(split.length > 1){
+            effect = effect.replace(" / ", "\n");
+        }
+        return effect;
     }
 
     @Override

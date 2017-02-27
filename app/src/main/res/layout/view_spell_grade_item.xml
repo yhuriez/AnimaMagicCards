@@ -22,10 +22,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/spacing_base"
-            android:textStyle="bold"
             android:textSize="12sp"
             android:textColor="@{model.gradeColor}"
             android:text="@{model.gradeTitle}"
+            app:customFont="@{@string/regular_bold_font}"
             tools:text="Initial"
             tools:textColor="@color/initial_grade_color" />
 
@@ -41,11 +41,13 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="2dp"
+            android:maxLines="2"
+            android:gravity="center"
             android:textColor="@android:color/black"
             android:textSize="10sp"
-            android:textStyle="bold"
-            android:text="@{model.intAndZeon}"
-            tools:text="Int : 5 / 30 Zéon" />
+            app:customFont="@{@string/regular_bold_font}"
+            android:text="@{model.gradeValues}"
+            tools:text="Int : 5 / 30 Zéon \nMaintien : 10 Quot." />
 
         <TextView
             android:layout_width="match_parent"
@@ -53,26 +55,15 @@
             android:layout_weight="1"
             android:ellipsize="end"
             android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/spacing_small"
             android:maxLines="2"
+            app:customFont="@{@string/regular_font}"
             android:paddingLeft="@dimen/spacing_large"
             android:paddingRight="@dimen/spacing_large"
             android:textColor="@android:color/black"
             android:textSize="10sp"
             android:text="@{model.effect}"
             tools:text="1 Sphère" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="@dimen/spacing_base"
-            android:layout_marginTop="2dp"
-            android:textColor="@android:color/black"
-            android:textSize="10sp"
-            android:textStyle="bold"
-            app:setVisible="@{model.retention != null}"
-            android:text="@{model.retention}"
-            tools:text="Maintien : Non" />
 
     </LinearLayout>
 </layout>

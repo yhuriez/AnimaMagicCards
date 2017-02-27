@@ -11,8 +11,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.tuyenmonkey.mkloader.MKLoader;
-
 import java.util.List;
 
 import fr.enlight.anima.animamagiccards.R;
@@ -42,7 +40,6 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     private SpellbookType spellbookType;
 
     private View mLoadingOverlay;
-    private MKLoader mProgress;
 
     public static SpellStackFragment newInstance(int spellbookId, SpellbookType type) {
         SpellStackFragment fragment = new SpellStackFragment();
@@ -64,7 +61,6 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         mLoadingOverlay = view.findViewById(R.id.loading_overlay);
-        mProgress = (MKLoader) view.findViewById(R.id.progress);
     }
 
     @Override

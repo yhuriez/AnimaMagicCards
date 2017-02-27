@@ -33,6 +33,5 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:25.1.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
     compile 'com.loopeer.library:cardstack:1.0.2'
-    compile 'com.tuyenmonkey:mkloader:1.0.0'
     testCompile 'junit:junit:4.12'
 }

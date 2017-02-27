@@ -81,7 +81,7 @@ public class SpellViewModel implements BindableViewModel, SpellGradeViewModel.Li
                 break;
         }
 
-        SpellGradeViewModel spellGradeViewModel = new SpellGradeViewModel(level, grade);
+        SpellGradeViewModel spellGradeViewModel = new SpellGradeViewModel(level, grade, spell);
         spellGradeViewModel.setListener(this);
         return spellGradeViewModel;
     }
@@ -101,7 +101,7 @@ public class SpellViewModel implements BindableViewModel, SpellGradeViewModel.Li
     @Override
     public void onGradeClicked(SpellGradeLevel level, SpellGrade spellGrade) {
         if(mListener != null){
-            DialogSpellGradeViewModel dialogViewModel = new DialogSpellGradeViewModel(level, spellGrade);
+            DialogSpellGradeViewModel dialogViewModel = new DialogSpellGradeViewModel(level, spellGrade, spell);
             mListener.onGradeClicked(dialogViewModel);
         }
     }
