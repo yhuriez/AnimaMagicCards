@@ -59,7 +59,7 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:src="@drawable/card_background_book_free_access" />
 
-        <fr.enlight.anima.animamagiccards.views.CustomTextView
+        <TextView
             android:id="@+id/spell_title"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -72,14 +72,14 @@
             android:text="@{model.spell.name}"
             android:textColor="@android:color/white"
             android:textSize="@dimen/textSize_spell_title"
-            app:font="@string/spell_title_font"
+            app:customFont="@{@string/spell_title_font}"
             app:layout_constraintBottom_toBottomOf="@id/bottom_header_guideline"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="@id/top_header_guideline"
             tools:text="Sphère de destruction" />
 
-        <fr.enlight.anima.animamagiccards.views.CustomTextView
+        <TextView
             android:id="@+id/spell_action_type"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -88,19 +88,19 @@
             android:text="@{model.getActionType(context)}"
             android:textColor="@android:color/black"
             android:textSize="12sp"
-            app:font="@string/regular_font"
+            app:customFont="@{@string/regular_font}"
             app:layout_constraintLeft_toLeftOf="@id/spell_card_background"
             app:layout_constraintTop_toTopOf="@id/scroll_guideline"
             tools:text="Action : Active" />
 
-        <fr.enlight.anima.animamagiccards.views.CustomTextView
+        <TextView
             android:id="@+id/spell_type"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{model.getType(context)}"
             android:textColor="@android:color/black"
             android:textSize="12sp"
-            app:font="@string/regular_font"
+            app:customFont="@{@string/regular_font}"
             app:layout_constraintLeft_toLeftOf="@id/center_guideline"
             app:layout_constraintTop_toTopOf="@id/scroll_guideline"
             tools:text="Type : Attaque" />
@@ -159,7 +159,7 @@
             app:layout_constraintRight_toRightOf="@id/spell_card_background"
             app:model="@{model.getSpellGradeModel(context, SpellGradeLevel.INTERMEDIATE_LEVEL)}" />
 
-        <fr.enlight.anima.animamagiccards.views.CustomTextView
+        <TextView
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginEnd="@dimen/spell_effect_margin"
@@ -172,7 +172,7 @@
             android:text="@{model.getEffect(context)}"
             android:textColor="@android:color/black"
             android:textSize="12sp"
-            app:font="@string/regular_font"
+            app:customFont="@{@string/regular_font}"
             app:layout_constraintBottom_toTopOf="@id/spell_initial_grade"
             app:layout_constraintLeft_toLeftOf="@id/spell_card_background"
             app:layout_constraintRight_toRightOf="@id/spell_card_background"

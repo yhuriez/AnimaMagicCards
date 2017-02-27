@@ -22,15 +22,12 @@ public class BindingAdapters {
     }
 
     @BindingAdapter("customFont")
-    public static void setFont(TextView view, String lastFont, String newFont){
-        if(lastFont == null && newFont == null){
+    public static void setFont(TextView view, String font){
+        if(font == null){
             return;
         }
 
-        if(lastFont == null || !lastFont.equals(newFont)) {
-            lastFont = newFont;
-            Typeface type = Typeface.createFromAsset(view.getContext().getAssets(), "fonts/" + lastFont + ".ttf");
-            view.setTypeface(type);
-        }
+        Typeface type = TypefaceUtils.getTypeFace(view.getContext(), font);
+        view.setTypeface(type);
     }
 }

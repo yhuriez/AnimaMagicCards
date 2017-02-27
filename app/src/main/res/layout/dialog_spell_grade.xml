@@ -37,7 +37,7 @@
                 android:orientation="horizontal"
                 app:layout_constraintGuide_percent="0.95" />
 
-            <fr.enlight.anima.animamagiccards.views.CustomTextView
+            <TextView
                 android:id="@+id/spell_grade_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
                 android:textColor="@{model.gradeColor}"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                app:font="@string/regular_bold_font"
+                app:customFont="@{@string/regular_bold_font}"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/top_guideline"
@@ -67,7 +67,7 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/spell_grade_title" />
 
-            <fr.enlight.anima.animamagiccards.views.CustomTextView
+            <TextView
                 android:id="@+id/spell_grade_intelligence"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -78,13 +78,13 @@
                 android:textColor="@android:color/black"
                 android:textSize="15sp"
                 android:textStyle="bold"
-                app:font="@string/regular_bold_font"
+                app:customFont="@{@string/regular_bold_font}"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/separator"
                 tools:text="Int : 5 / 30 Zéon" />
 
-            <fr.enlight.anima.animamagiccards.views.CustomTextView
+            <TextView
                 android:id="@+id/spell_grade_effect"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -95,7 +95,7 @@
                 android:text="@{model.formattedEffect}"
                 android:textColor="@android:color/black"
                 android:textSize="15sp"
-                app:font="@string/regular_font"
+                app:customFont="@{@string/regular_font}"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/spell_grade_intelligence"

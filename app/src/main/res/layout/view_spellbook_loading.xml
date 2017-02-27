@@ -39,14 +39,14 @@
             android:src="@{model.getSpellbookIcon(context)}"
             tools:src="@drawable/card_icon_book_light" />
 
-        <fr.enlight.anima.animamagiccards.views.CustomTextView
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             app:layout_constraintBottom_toTopOf="@id/spellbook_icon"
             app:layout_constraintLeft_toLeftOf="@id/spell_card_background"
             app:layout_constraintRight_toRightOf="@id/spell_card_background"
-            app:font="@string/technical_font"
+            app:customFont="@{@string/technical_font}"
             android:text="@string/Loading_Message"
             android:layout_marginBottom="@dimen/spacing_large"
             android:textSize="40sp" />
