@@ -11,7 +11,7 @@
     <dimen name="textSize_min">10sp</dimen>
 
     <dimen name="textSize_tecnhical">40sp</dimen>
-    <dimen name="textSize_title">32sp</dimen>
+    <dimen name="textSize_spell_title">32sp</dimen>
     <dimen name="textSize_grade_subtitle">15sp</dimen>
     <dimen name="textSize_regular">12sp</dimen>
 
