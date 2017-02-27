@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/spacing_base"
-            android:textSize="12sp"
+            android:textSize="@dimen/textSize_regular"
             android:textColor="@{model.gradeColor}"
             android:text="@{model.gradeTitle}"
             app:customFont="@{@string/regular_bold_font}"
@@ -44,7 +44,7 @@
             android:maxLines="2"
             android:gravity="center"
             android:textColor="@android:color/black"
-            android:textSize="10sp"
+            android:textSize="@dimen/textSize_min"
             app:customFont="@{@string/regular_bold_font}"
             android:text="@{model.gradeValues}"
             tools:text="Int : 5 / 30 Zéon \nMaintien : 10 Quot." />
@@ -61,7 +61,7 @@
             android:paddingLeft="@dimen/spacing_large"
             android:paddingRight="@dimen/spacing_large"
             android:textColor="@android:color/black"
-            android:textSize="10sp"
+            android:textSize="@dimen/textSize_regular"
             android:text="@{model.effect}"
             tools:text="1 Sphère" />
 

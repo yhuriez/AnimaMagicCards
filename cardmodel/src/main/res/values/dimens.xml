@@ -8,13 +8,6 @@
     <dimen name="spacing_big">32dp</dimen>
     <dimen name="spacing_xbig">40dp</dimen>
 
-    <dimen name="textSize_min">10sp</dimen>
-
-    <dimen name="textSize_tecnhical">40sp</dimen>
-    <dimen name="textSize_spell_title">32sp</dimen>
-    <dimen name="textSize_grade_subtitle">15sp</dimen>
-    <dimen name="textSize_regular">12sp</dimen>
-
     <dimen name="spell_header_spacing">28dp</dimen>
     <dimen name="spell_grade_border_spacing">12dp</dimen>
     <dimen name="spell_effect_margin">36dp</dimen>

@@ -1,6 +1,7 @@
 package fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels;
 
 import android.content.Context;
+import android.databinding.ObservableBoolean;
 import android.graphics.drawable.Drawable;
 import android.support.v4.content.res.ResourcesCompat;
 import android.text.SpannableString;
@@ -22,6 +23,8 @@ public class SpellViewModel implements BindableViewModel, SpellGradeViewModel.Li
 
     public final Spell spell;
     public final SpellbookType spellbookType;
+
+    public ObservableBoolean effectEllipsized = new ObservableBoolean(false);
 
     private Listener mListener;
 
@@ -61,10 +64,15 @@ public class SpellViewModel implements BindableViewModel, SpellGradeViewModel.Li
 
     public CharSequence getEffect(Context context){
         CharSequence actionTypeSpannable = new SpannableString(context.getText(R.string.spell_effect_format));
+
+        if(spell.effect.length() > 300){
+            effectEllipsized.set(true);
+        }
+
         return TextUtils.concat(actionTypeSpannable, spell.effect);
     }
 
-    public SpellGradeViewModel getSpellGradeModel(Context context, SpellGradeLevel level){
+    public SpellGradeViewModel getSpellGradeModel(SpellGradeLevel level){
         SpellGrade grade = null;
         switch (level){
             case INITIAL_LEVEL:
@@ -85,7 +93,6 @@ public class SpellViewModel implements BindableViewModel, SpellGradeViewModel.Li
         spellGradeViewModel.setListener(this);
         return spellGradeViewModel;
     }
-
 
     public void setListener(Listener listener) {
         this.mListener = listener;

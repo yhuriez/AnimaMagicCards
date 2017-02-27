@@ -5,6 +5,7 @@
 
     <data>
 
+        <import type="android.view.View"/>
         <import type="fr.enlight.anima.animamagiccards.ui.spellbooks.utils.SpellGradeLevel" />
 
         <variable
@@ -87,7 +88,7 @@
             android:layout_marginStart="@dimen/spell_effect_margin"
             android:text="@{model.getActionType(context)}"
             android:textColor="@android:color/black"
-            android:textSize="12sp"
+            android:textSize="@dimen/textSize_medium"
             app:customFont="@{@string/regular_font}"
             app:layout_constraintLeft_toLeftOf="@id/spell_card_background"
             app:layout_constraintTop_toTopOf="@id/scroll_guideline"
@@ -99,7 +100,7 @@
             android:layout_height="wrap_content"
             android:text="@{model.getType(context)}"
             android:textColor="@android:color/black"
-            android:textSize="12sp"
+            android:textSize="@dimen/textSize_medium"
             app:customFont="@{@string/regular_font}"
             app:layout_constraintLeft_toLeftOf="@id/center_guideline"
             app:layout_constraintTop_toTopOf="@id/scroll_guideline"
@@ -117,7 +118,7 @@
             app:layout_constraintDimensionRatio="H, 169:92"
             app:layout_constraintLeft_toLeftOf="@id/spell_card_background"
             app:layout_constraintRight_toRightOf="@id/center_guideline"
-            app:model="@{model.getSpellGradeModel(context, SpellGradeLevel.ADVANCED_LEVEL)}" />
+            app:model="@{model.getSpellGradeModel(SpellGradeLevel.ADVANCED_LEVEL)}" />
 
         <include
             android:id="@+id/spell_arcane_grade"
@@ -131,7 +132,7 @@
             app:layout_constraintDimensionRatio="H, 169:92"
             app:layout_constraintLeft_toLeftOf="@id/center_guideline"
             app:layout_constraintRight_toRightOf="@id/spell_card_background"
-            app:model="@{model.getSpellGradeModel(context, SpellGradeLevel.ARCANE_LEVEL)}" />
+            app:model="@{model.getSpellGradeModel(SpellGradeLevel.ARCANE_LEVEL)}" />
 
         <include
             android:id="@+id/spell_initial_grade"
@@ -144,7 +145,7 @@
             app:layout_constraintDimensionRatio="H, 169:92"
             app:layout_constraintLeft_toLeftOf="@id/spell_card_background"
             app:layout_constraintRight_toRightOf="@id/center_guideline"
-            app:model="@{model.getSpellGradeModel(context, SpellGradeLevel.INITIAL_LEVEL)}" />
+            app:model="@{model.getSpellGradeModel(SpellGradeLevel.INITIAL_LEVEL)}" />
 
         <include
             android:id="@+id/spell_intermediate_grade"
@@ -157,7 +158,21 @@
             app:layout_constraintDimensionRatio="H, 169:92"
             app:layout_constraintLeft_toLeftOf="@id/center_guideline"
             app:layout_constraintRight_toRightOf="@id/spell_card_background"
-            app:model="@{model.getSpellGradeModel(context, SpellGradeLevel.INTERMEDIATE_LEVEL)}" />
+            app:model="@{model.getSpellGradeModel(SpellGradeLevel.INTERMEDIATE_LEVEL)}" />
+
+        <Button
+            android:id="@+id/spell_see_more_button"
+            style="@style/FlatButton.NoPadding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/spell_initial_grade"
+            app:layout_constraintRight_toRightOf="@id/spell_card_background"
+            app:layout_constraintLeft_toLeftOf="@id/spell_card_background"
+            app:customFont="@{@string/regular_bold_font}"
+            android:paddingBottom="@dimen/spacing_small"
+            android:onClick="@{() -> model.expandEffect()}"
+            android:visibility="@{model.effectEllipsized ? View.VISIBLE : View.INVISIBLE}"
+            android:text="@string/Common_See_More"/>
 
         <TextView
             android:layout_width="0dp"
@@ -167,13 +182,13 @@
             android:layout_marginRight="@dimen/spell_effect_margin"
             android:layout_marginStart="@dimen/spell_effect_margin"
             android:ellipsize="end"
-            android:maxLines="10"
+            android:maxLines="8"
             android:onClick="@{() -> model.expandEffect()}"
             android:text="@{model.getEffect(context)}"
             android:textColor="@android:color/black"
-            android:textSize="12sp"
+            android:textSize="@dimen/textSize_medium"
             app:customFont="@{@string/regular_font}"
-            app:layout_constraintBottom_toTopOf="@id/spell_initial_grade"
+            app:layout_constraintBottom_toTopOf="@id/spell_see_more_button"
             app:layout_constraintLeft_toLeftOf="@id/spell_card_background"
             app:layout_constraintRight_toRightOf="@id/spell_card_background"
             app:layout_constraintTop_toBottomOf="@id/spell_action_type"

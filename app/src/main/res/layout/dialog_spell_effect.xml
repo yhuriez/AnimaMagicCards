@@ -82,7 +82,7 @@
             android:layout_height="wrap_content"
             android:onClick="@{() -> model.onDismissClicked()}"
             android:text="@string/Common_Close"
-            app:customFont="@{@string/regular_font}"
+            app:customFont="@{@string/regular_bold_font}"
             app:layout_constraintRight_toRightOf="@id/right_guideline"
             app:layout_constraintTop_toBottomOf="@id/bottom_guideline" />
 
