@@ -35,19 +35,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.88" />
-
-            <ImageButton
-                android:id="@+id/spell_close_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@android:color/transparent"
-                android:layout_marginRight="@dimen/spacing_base"
-                android:layout_marginLeft="@dimen/spacing_base"
-                android:onClick="@{() -> model.onDismissClicked()}"
-                android:src="@drawable/ic_action_navigation_close"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="@id/top_guideline" />
+                app:layout_constraintGuide_percent="0.95" />
 
             <TextView
                 android:id="@+id/spell_grade_title"
@@ -119,12 +107,22 @@
                 android:textColor="@android:color/black"
                 android:textSize="15sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/bottom_guideline"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/spell_grade_effect"
                 app:setVisible="@{model.retention != null}"
                 tools:text="Maintien : Non" />
+
+            <Button
+                android:id="@+id/spell_close_button"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Common_Close"
+                android:onClick="@{() -> model.onDismissClicked()}"
+                app:layout_constraintTop_toBottomOf="@id/spell_grade_retention"
+                app:layout_constraintBottom_toBottomOf="@id/bottom_guideline"
+                app:layout_constraintRight_toRightOf="parent"/>
 
         </android.support.constraint.ConstraintLayout>
     </LinearLayout>

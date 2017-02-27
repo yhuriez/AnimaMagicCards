@@ -8,4 +8,9 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="FlatButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/flat_button</item>
+        <item name="android:minWidth">0dp</item>
+    </style>
+
 </resources>

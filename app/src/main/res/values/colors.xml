@@ -10,5 +10,9 @@
     <color name="arcane_grade_color">#9c1313</color>
 
     <color name="separator">#FFD5CFA1</color>
+    <color name="gray">#ededed</color>
+    <color name="light_gray">#f5f5f5</color>
+    <color name="mid_gray">#c0c0c0</color>
+    <color name="dark_gray">#616161</color>
 
 </resources>

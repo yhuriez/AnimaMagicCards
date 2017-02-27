@@ -44,11 +44,13 @@ public class BindingDialogFragment extends DialogFragment implements DismissDial
         throw new UnsupportedOperationException("This dialog fragment should have a ViewModel to show");
     }
 
+    @SuppressWarnings("ConstantConditions")
     @Override
     public void onActivityCreated(final Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        //noinspection ConstantConditions
+        getDialog().getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+
         getDialog().getWindow().setLayout(
                 ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.MATCH_PARENT

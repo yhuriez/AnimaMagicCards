@@ -46,4 +46,6 @@
     <string name="spell_grade_retention_format">Maintien : %1$d</string>
     <string name="Loading_Message">Chargement</string>
 
+    <string name="Common_Close">Fermer</string>
+
 </resources>
