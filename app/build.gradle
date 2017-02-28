@@ -32,6 +32,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.1.0'
     compile 'com.android.support:recyclerview-v7:25.1.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
+    compile 'jp.wasabeef:recyclerview-animators:2.2.5'
     compile 'com.loopeer.library:cardstack:1.0.2'
     testCompile 'junit:junit:4.12'
 }

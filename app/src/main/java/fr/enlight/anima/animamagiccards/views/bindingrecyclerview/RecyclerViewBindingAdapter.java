@@ -12,6 +12,10 @@ public class RecyclerViewBindingAdapter {
 
     @BindingAdapter("viewModels")
     public static void setViewModels(RecyclerView recyclerView, List<? extends BindableViewModel> viewModels){
+        if(viewModels != null && viewModels.isEmpty()){
+            return;
+        }
+
         if(recyclerView.getAdapter() == null){
             BindingRecyclerAdapter bindingRecyclerAdapter = new BindingRecyclerAdapter();
             bindingRecyclerAdapter.setViewModels(viewModels);
