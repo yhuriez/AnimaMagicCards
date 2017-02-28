@@ -70,8 +70,7 @@
                 android:ellipsize="end"
                 android:text="@{model.getEffect(context)}"
                 android:textColor="@android:color/black"
-                android:textSize="15sp"
-                app:customFont="@{@string/regular_font}"
+                android:textSize="@dimen/textSize_medium"
                 tools:text="Effet : Projette plusieurs décharges d'énergies magiques. L'attaque se fait sur le Mode Energie et les dégâts sont de 30 points.\n\nChaque sphère peut attaquer des cibles différentes mais dans ce cas, chacune doit être désignée au lancement du sort, avant de lancer les dés.\n\nProjette plusieurs décharges d'énergies magiques. L'attaque se fait sur le Mode Energie et les dégâts sont de 30 points.\n\nChaque sphère peut attaquer des cibles différentes mais dans ce cas, chacune doit être désignée au lancement du sort, avant de lancer les dés." />
         </ScrollView>
 

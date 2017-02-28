@@ -5,6 +5,5 @@
     <string name="regular_font" translatable="false">garrison_sans</string>
     <string name="regular_bold_font" translatable="false">garrison_sans_bold</string>
     <string name="spell_title_font" translatable="false">anima_2</string>
-    <string name="spellbook_title_font" translatable="false">morpheus</string>
-    <string name="spell_grade_title_font" translatable="false">arial_narrow_bold</string>
+
 </resources>
