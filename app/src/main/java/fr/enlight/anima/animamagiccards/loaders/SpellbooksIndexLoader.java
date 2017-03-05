@@ -9,7 +9,7 @@ import fr.enlight.anima.animamagiccards.ui.spellbooks.utils.SpellbookType;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels.SpellbookViewModel;
 import fr.enlight.anima.cardmodel.business.SpellBusinessService;
-import fr.enlight.anima.cardmodel.model.Spellbook;
+import fr.enlight.anima.cardmodel.model.spells.Spellbook;
 
 /**
  *

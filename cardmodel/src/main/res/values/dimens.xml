@@ -8,7 +8,7 @@
     <dimen name="spacing_big">32dp</dimen>
     <dimen name="spacing_xbig">40dp</dimen>
 
-    <dimen name="spell_header_spacing">28dp</dimen>
+    <dimen name="header_spacing">28dp</dimen>
     <dimen name="spell_grade_border_spacing">12dp</dimen>
     <dimen name="spell_effect_margin">36dp</dimen>
 

@@ -1,4 +1,4 @@
-package fr.enlight.anima.cardmodel.model;
+package fr.enlight.anima.cardmodel.model.spells;
 
 import java.util.List;
 

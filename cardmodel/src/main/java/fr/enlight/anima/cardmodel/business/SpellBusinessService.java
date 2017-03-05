@@ -6,9 +6,9 @@ import java.util.List;
 
 import fr.enlight.anima.cardmodel.dao.SpellDao;
 import fr.enlight.anima.cardmodel.dao.SpellbookIndexResponse;
-import fr.enlight.anima.cardmodel.model.Spell;
-import fr.enlight.anima.cardmodel.model.Spellbook;
-import fr.enlight.anima.cardmodel.model.SpellbookResponse;
+import fr.enlight.anima.cardmodel.model.spells.Spell;
+import fr.enlight.anima.cardmodel.model.spells.Spellbook;
+import fr.enlight.anima.cardmodel.model.spells.SpellbookResponse;
 
 /**
  *

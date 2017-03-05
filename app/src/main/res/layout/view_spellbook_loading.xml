@@ -47,7 +47,7 @@
             app:layout_constraintLeft_toLeftOf="@id/spell_card_background"
             app:layout_constraintRight_toRightOf="@id/spell_card_background"
             app:customFont="@{@string/technical_font}"
-            android:text="@string/Loading_Message"
+            android:text="@string/Common_Loading_Message"
             android:layout_marginBottom="@dimen/spacing_large"
             android:textSize="40sp" />
 
