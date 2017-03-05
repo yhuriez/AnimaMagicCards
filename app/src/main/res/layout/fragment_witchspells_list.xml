@@ -3,45 +3,58 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
+
         <variable
             name="model"
-            type="fr.enlight.anima.animamagiccards.views.viewmodels.ListBindableViewModel"/>
+            type="fr.enlight.anima.animamagiccards.views.viewmodels.ListBindableViewModel" />
     </data>
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/witchspells_background"
         android:orientation="vertical"
-        android:paddingTop="@dimen/header_spacing"
-        android:background="@drawable/ic_witchspells_background">
+        android:paddingTop="@dimen/header_spacing">
 
         <android.support.constraint.Guideline
             android:id="@+id/right_guideline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.7"/>
+            app:layout_constraintGuide_percent="0.7" />
 
         <TextView
+            android:id="@+id/witchspells_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="@dimen/spacing_base"
+            android:layout_marginStart="@dimen/spacing_base"
+            android:background="@drawable/witchspells_title_scroll_background"
+            android:textColor="@android:color/black"
+            android:paddingBottom="@dimen/spacing_base"
+            android:paddingEnd="@dimen/spacing_base"
+            android:paddingLeft="@dimen/spacing_big"
+            android:paddingRight="@dimen/spacing_base"
+            android:paddingStart="@dimen/spacing_big"
+            android:paddingTop="@dimen/spacing_base"
+            android:text="@string/Witch_Creation_Title"
+            android:textSize="30sp"
+            app:customFont="@{@string/spell_title_font}"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="@id/right_guideline"
-            android:background="@color/background_gray"
-            android:textSize="45sp"
-            android:layout_margin="@dimen/spacing_large"
-            app:customFont="@{@string/spell_title_font}"
-            android:text="@string/Witch_Creation_Title"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <android.support.v7.widget.RecyclerView
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/spacing_base"
+            android:layout_marginLeft="@dimen/spacing_base"
+            android:layout_marginRight="@dimen/spacing_base"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="@id/right_guideline"
-            app:viewModels="@{model.viewModels}"/>
+            app:layout_constraintTop_toBottomOf="@id/witchspells_title"
+            app:viewModels="@{model.viewModels}" />
 
     </android.support.constraint.ConstraintLayout>
 </layout>

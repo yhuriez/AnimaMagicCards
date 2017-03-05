@@ -9,6 +9,7 @@ public class Witchspells {
 
     public int witchspellsId;
     public Date creationDate;
+    public String witchName;
 
     public List<WitchspellsPath> witchPaths;
 
