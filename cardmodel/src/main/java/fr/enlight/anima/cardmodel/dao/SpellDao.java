@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-import fr.enlight.anima.cardmodel.model.SpellbookResponse;
+import fr.enlight.anima.cardmodel.model.spells.SpellbookResponse;
 
 import static android.content.ContentValues.TAG;
 

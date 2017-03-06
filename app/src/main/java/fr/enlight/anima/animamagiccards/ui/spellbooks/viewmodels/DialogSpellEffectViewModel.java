@@ -4,7 +4,7 @@ import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.animamagiccards.ui.spellbooks.utils.SpellbookType;
 import fr.enlight.anima.animamagiccards.views.viewmodels.DialogViewModel;
 import fr.enlight.anima.animamagiccards.views.viewmodels.DismissDialogListener;
-import fr.enlight.anima.cardmodel.model.Spell;
+import fr.enlight.anima.cardmodel.model.spells.Spell;
 
 
 public class DialogSpellEffectViewModel extends SpellViewModel implements DialogViewModel {

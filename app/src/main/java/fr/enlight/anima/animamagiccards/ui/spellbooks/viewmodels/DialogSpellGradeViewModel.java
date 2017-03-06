@@ -6,8 +6,8 @@ import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.animamagiccards.ui.spellbooks.utils.SpellGradeLevel;
 import fr.enlight.anima.animamagiccards.views.viewmodels.DialogViewModel;
 import fr.enlight.anima.animamagiccards.views.viewmodels.DismissDialogListener;
-import fr.enlight.anima.cardmodel.model.Spell;
-import fr.enlight.anima.cardmodel.model.SpellGrade;
+import fr.enlight.anima.cardmodel.model.spells.Spell;
+import fr.enlight.anima.cardmodel.model.spells.SpellGrade;
 
 
 public class DialogSpellGradeViewModel extends SpellGradeViewModel implements DialogViewModel{

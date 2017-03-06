@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Common wordings-->
+    <string name="Common_Close">Fermer</string>
+    <string name="Common_See_More">Voir tout</string>
+    <string name="Common_Loading_Message">Chargement</string>
+
+    <!--Spell Formats-->
+    <string name="spell_book_and_level_format">%1$s Niv. %2$d</string>
+    <string name="spell_action_type_format"><b>Action : </b></string>
+    <string name="spell_type_format"><b>Type : </b></string>
+    <string name="spell_effect_format"><b>Effet : </b></string>
+
+    <!--Grade-->
+    <string name="initial_grade_title">Initial</string>
+    <string name="intermediate_grade_title">Intermédiaire</string>
+    <string name="advanced_grade_title">Avancé</string>
+    <string name="arcane_grade_title">Arcane</string>
+
+    <string name="spell_grade_int_zeon_format">Int : %1$d / %2$d Zéon</string>
+    <string name="spell_grade_retention_format">Maintien : %1$d</string>
+    <string name="spell_grade_retention_daily_format">Maintien : %1$d Quot.</string>
+
+    <!--Witchspells    -->
+    <string name="Witch_Creation_Title">Création d\'un sorcier</string>
+
+</resources>
