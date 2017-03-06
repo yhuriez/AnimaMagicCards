@@ -7,6 +7,7 @@ import android.graphics.Typeface;
 import android.support.annotation.DrawableRes;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -48,5 +49,18 @@ public class BindingAdapters {
             binding.setVariable(viewModel.getVariableId(), viewModel);
             linearLayout.addView(binding.getRoot());
         }
+    }
+
+    @BindingAdapter(value = {"layout_marginLeft", "layout_marginTop", "layout_marginRight", "layout_marginBottom"}, requireAll = false)
+    public static void setMargin(View view, float left, float top, float right, float bottom){
+        ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) view.getLayoutParams();
+
+        int leftMargin = (left <= 0 && marginLayoutParams.leftMargin > 0) ? marginLayoutParams.leftMargin : Math.round(left);
+        int topMargin = (top <= 0 && marginLayoutParams.topMargin > 0) ? marginLayoutParams.topMargin : Math.round(top);
+        int rightMargin = (right <= 0 && marginLayoutParams.rightMargin > 0) ? marginLayoutParams.rightMargin : Math.round(right);
+        int bottomMargin = (bottom <= 0 && marginLayoutParams.bottomMargin > 0) ? marginLayoutParams.bottomMargin : Math.round(bottom);
+
+        marginLayoutParams.setMargins(leftMargin, topMargin, rightMargin, bottomMargin);
+        view.setLayoutParams(marginLayoutParams);
     }
 }
