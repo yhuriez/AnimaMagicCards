@@ -10,6 +10,19 @@
     <color name="light_gray">#f5f5f5</color>
     <color name="mid_gray">#c0c0c0</color>
     <color name="dark_gray">#616161</color>
-    <color name="background_gray">#c0c0c0c0</color>
+
+    <color name="background_light_transparent_20">#33ffffff</color>
+    <color name="background_light_transparent_25">#40ffffff</color>
+    <color name="background_light_transparent_50">#80ffffff</color>
+    <color name="background_light_transparent_70">#b2ffffff</color>
+    <color name="background_light_transparent_80">#ccffffff</color>
+    <color name="background_light_transparent_90">#e5ffffff</color>
+    <color name="background_light_transparent_100">#ffffffff</color>
+    <color name="background_dark_transparent_05">#13000000</color>
+    <color name="background_dark_transparent_20">#33000000</color>
+    <color name="background_dark_transparent_50">#80000000</color>
+    <color name="background_dark_transparent_70">#b2000000</color>
+    <color name="background_dark_transparent_80">#cc000000</color>
+    <color name="background_dark_transparent_90">#e5000000</color>
 
 </resources>

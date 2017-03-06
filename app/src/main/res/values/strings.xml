@@ -32,9 +32,12 @@
 
     <string name="Witchspells_Free_Access_Title_Singular">+ %1$d Sort d\'accès libre</string>
     <string name="Witchspells_Free_Access_Title_Plural">+ %1$d Sorts d\'accès libre</string>
+
     <plurals name="Witchspells_Free_Access_Title">
         <item quantity="one">Witchspells_Free_Access_Title_Singular</item>
         <item quantity="other">Witchspells_Free_Access_Title_Plural</item>
     </plurals>
+
+    <string name="Witchspells_Name_Label">Nom du sorcier</string>
 
 </resources>

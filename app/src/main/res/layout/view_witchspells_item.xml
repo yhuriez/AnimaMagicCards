@@ -17,16 +17,12 @@
         <ImageView
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginLeft="@dimen/spacing_xlarge"
-            android:layout_marginRight="@dimen/spacing_xlarge"
             android:src="@drawable/witchspells_book_background"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintDimensionRatio="H,7:10"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginStart="@dimen/spacing_xlarge"
-            android:layout_marginEnd="@dimen/spacing_xlarge" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/witchspells_name"
