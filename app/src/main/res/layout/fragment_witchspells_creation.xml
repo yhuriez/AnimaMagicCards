@@ -6,7 +6,7 @@
 
         <variable
             name="model"
-            type="fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsCreationViewModel" />
+            type="fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.write.WitchspellsCreationViewModel" />
     </data>
 
     <android.support.constraint.ConstraintLayout
@@ -29,21 +29,48 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
-            android:layout_width="0dp"
+        <Button
+            android:id="@+id/witchspells_validation_button"
+            style="@style/FlatButton"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/spacing_base"
-            android:layout_marginRight="@dimen/spacing_base"
-            android:inputType="text"
-            android:hint="@string/Witchspells_Name_Label"
-            app:customFont="@{@string/spell_title_font}"
-            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@id/witchspells_validation_button"
             app:layout_constraintLeft_toLeftOf="@id/witchspells_background"
             app:layout_constraintRight_toRightOf="@id/witchspells_background"
-            app:layout_constraintTop_toTopOf="@id/witchspells_background" />
+            android:text="@string/Witchspells_Validate_Creation"/>
 
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/witchspells_validation_button"
+            app:layout_constraintLeft_toLeftOf="@id/witchspells_background"
+            app:layout_constraintRight_toRightOf="@id/witchspells_background"
+            app:layout_constraintTop_toTopOf="@id/witchspells_background">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
+                <EditText
+                    android:id="@+id/witchspells_name_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_base"
+                    android:layout_marginRight="@dimen/spacing_base"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:hint="@string/Witchspells_Name_Label"
+                    android:inputType="text"
+                    app:customFont="@{@string/spell_title_font}" />
 
+                <LinearLayout
+                    android:id="@+id/witchspells_container_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"/>
+
+            </LinearLayout>
+        </ScrollView>
     </android.support.constraint.ConstraintLayout>
 </layout>

@@ -1,4 +1,4 @@
-package fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels;
+package fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.read;
 
 
 import android.content.Context;
@@ -13,17 +13,17 @@ import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewMo
 import fr.enlight.anima.cardmodel.model.witchspells.WitchspellsPath;
 
 
-public class WitchspellsPathViewModel implements BindableViewModel{
+public class WitchspellsPathItemViewModel implements BindableViewModel {
 
     public static final int MAIN_PATH_TYPE = 0;
     public static final int SECONDARY_PATH_TYPE = 1;
     public static final int FREE_ACCESS_TYPE = 2;
 
-    private final SpellbookType mSpellbookType;
-    private final int mPathType;
-    private final WitchspellsPath mWitchspellsPath;
+    protected SpellbookType mSpellbookType;
+    protected int mPathType;
+    protected WitchspellsPath mWitchspellsPath;
 
-    public WitchspellsPathViewModel(SpellbookType mSpellbookType, int mPathType, WitchspellsPath mWitchspellsPath) {
+    public WitchspellsPathItemViewModel(SpellbookType mSpellbookType, int mPathType, WitchspellsPath mWitchspellsPath) {
         this.mSpellbookType = mSpellbookType;
         this.mPathType = mPathType;
         this.mWitchspellsPath = mWitchspellsPath;
@@ -37,9 +37,9 @@ public class WitchspellsPathViewModel implements BindableViewModel{
 
         switch (mPathType){
             case MAIN_PATH_TYPE:
-                return context.getString(R.string.Witchspells_Path_Title_And_Level_Format, bookTitle, mWitchspellsPath.pathLevel);
+                return context.getString(R.string.Witchspells_Path_Title_And_Level_Format, bookTitle, Integer.toString(mWitchspellsPath.pathLevel));
             case SECONDARY_PATH_TYPE:
-                return context.getString(R.string.Witchspells_Path_Title_And_Level_Format, bookTitle, mWitchspellsPath.pathLevel);
+                return context.getString(R.string.Witchspells_Path_Title_And_Level_Format, bookTitle, Integer.toString(mWitchspellsPath.pathLevel));
             case FREE_ACCESS_TYPE:
                 int freeAccessCount = mWitchspellsPath.freeAccessSpellsIds.size();
                 return context.getResources().getQuantityString(R.plurals.Witchspells_Free_Access_Title, freeAccessCount, freeAccessCount);
@@ -48,7 +48,10 @@ public class WitchspellsPathViewModel implements BindableViewModel{
     }
 
     public Drawable getBookDrawable(Context context){
-        return ResourcesCompat.getDrawable(context.getResources(), mSpellbookType.iconRes, null);
+        if(mSpellbookType != null){
+            return ResourcesCompat.getDrawable(context.getResources(), mSpellbookType.iconRes, null);
+        }
+        return null;
     }
 
     public boolean isMainPath(){

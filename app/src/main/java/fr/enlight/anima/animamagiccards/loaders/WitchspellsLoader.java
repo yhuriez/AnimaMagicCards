@@ -5,7 +5,7 @@ import android.content.Context;
 import java.util.ArrayList;
 import java.util.List;
 
-import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsViewModel;
+import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.read.WitchspellsViewModel;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.cardmodel.business.WitchspellsBusinessService;
 import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;

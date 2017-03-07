@@ -7,7 +7,7 @@
 
         <variable
             name="model"
-            type="fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsViewModel" />
+            type="fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.read.WitchspellsViewModel" />
     </data>
 
     <android.support.constraint.ConstraintLayout

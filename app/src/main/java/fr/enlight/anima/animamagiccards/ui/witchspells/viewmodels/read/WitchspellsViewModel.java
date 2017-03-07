@@ -1,4 +1,4 @@
-package fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels;
+package fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.read;
 
 
 import com.android.databinding.library.baseAdapters.BR;
@@ -48,17 +48,17 @@ public class WitchspellsViewModel extends ListBindableViewModel implements Binda
         for (WitchspellsPath witchPath : witchspells.witchPaths) {
             // Main Path
             SpellbookType spellbookType = SpellbookType.getTypeFromBookId(witchPath.pathBookId);
-            result.add(new WitchspellsPathViewModel(spellbookType, WitchspellsPathViewModel.MAIN_PATH_TYPE, witchPath));
+            result.add(new WitchspellsPathItemViewModel(spellbookType, WitchspellsPathItemViewModel.MAIN_PATH_TYPE, witchPath));
 
             // Secondary Path
             if(witchPath.secondaryPathBookId >= 0){
                 SpellbookType secondarySpellbookType = SpellbookType.getTypeFromBookId(witchPath.secondaryPathBookId);
-                result.add(new WitchspellsPathViewModel(secondarySpellbookType, WitchspellsPathViewModel.SECONDARY_PATH_TYPE, witchPath));
+                result.add(new WitchspellsPathItemViewModel(secondarySpellbookType, WitchspellsPathItemViewModel.SECONDARY_PATH_TYPE, witchPath));
             }
 
             // Free Access Spells
             if(witchPath.freeAccessSpellsIds != null && !witchPath.freeAccessSpellsIds.isEmpty()){
-                result.add(new WitchspellsPathViewModel(null, WitchspellsPathViewModel.FREE_ACCESS_TYPE, witchPath));
+                result.add(new WitchspellsPathItemViewModel(null, WitchspellsPathItemViewModel.FREE_ACCESS_TYPE, witchPath));
             }
         }
 
