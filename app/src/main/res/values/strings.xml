@@ -26,7 +26,7 @@
     <string name="spell_grade_retention_daily_format">Maintien : %1$d Quot.</string>
 
     <!--Witchspells    -->
-    <string name="Witch_Creation_Title">Création d\'un sorcier</string>
+    <string name="Witch_Creation_Title">Liste de sorts</string>
     <string name="Witchspells_Path_Title_And_Level_Format">%1$s Niv. %2$s</string>
     <string name="Witchspells_Secondary_Path_Title_And_Level_Format">Voie secondaire : %1$s Niv. %2$s</string>
 
@@ -45,4 +45,5 @@
     <string name="Witchspells_Add_Free_Access">Définir les sorts d\'accès libre</string>
 
     <string name="Witchspells_Validate_Creation">Valider</string>
+    <string name="Witchspells_Add_Label">Ajouter une liste de sorts</string>
 </resources>

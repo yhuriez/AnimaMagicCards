@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.read.WitchspellsViewModel;
+import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.write.WitchspellsAddViewModel;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.cardmodel.business.WitchspellsBusinessService;
 import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
@@ -32,6 +33,8 @@ public class WitchspellsLoader extends BaseLoader<List<BindableViewModel>> {
             WitchspellsViewModel viewModel = new WitchspellsViewModel(witchspells);
             result.add(viewModel);
         }
+
+        result.add(new WitchspellsAddViewModel());
 
         return result;
     }
