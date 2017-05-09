@@ -28,7 +28,7 @@
             android:id="@+id/witchspells_add_image"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:src="@drawable/witchspells_add_scroll"
+            android:src="@drawable/ic_add_white"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
