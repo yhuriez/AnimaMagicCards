@@ -7,7 +7,7 @@
 
         <variable
             name="model"
-            type="fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.read.WitchspellsPathItemViewModel" />
+            type="fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsPathItemViewModel" />
     </data>
 
     <LinearLayout

@@ -1,4 +1,4 @@
-package fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.read;
+package fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels;
 
 
 import com.android.databinding.library.baseAdapters.BR;
@@ -13,18 +13,18 @@ import fr.enlight.anima.animamagiccards.views.viewmodels.ListBindableViewModel;
 import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 import fr.enlight.anima.cardmodel.model.witchspells.WitchspellsPath;
 
-public class WitchspellsViewModel extends ListBindableViewModel implements BindableViewModel{
+public class WitchspellsBookViewModel extends ListBindableViewModel implements BindableViewModel{
 
     private final Witchspells witchspells;
 
 
-    public WitchspellsViewModel(Witchspells witchspells) {
+    public WitchspellsBookViewModel(Witchspells witchspells) {
         this.witchspells = witchspells;
     }
 
     @Override
     public int getLayoutRes() {
-        return R.layout.view_witchspells_item;
+        return R.layout.view_witchspells_book_item;
     }
 
     @Override

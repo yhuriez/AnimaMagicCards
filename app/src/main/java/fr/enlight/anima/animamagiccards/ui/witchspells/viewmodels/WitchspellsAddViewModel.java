@@ -1,4 +1,4 @@
-package fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.write;
+package fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels;
 
 
 import com.android.databinding.library.baseAdapters.BR;

@@ -1,10 +1,10 @@
-package fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.write;
+package fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels;
 
 
 import android.content.Context;
 
 import fr.enlight.anima.animamagiccards.R;
-import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.read.WitchspellsPathItemViewModel;
+import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsPathItemViewModel;
 
 
 
@@ -17,7 +17,7 @@ public class WitchspellsCreationPathItemViewModel extends WitchspellsPathItemVie
 
     @Override
     public int getLayoutRes() {
-        return R.layout.view_witchspells_creation_path_item;
+        return R.layout.view_witchspells_path_item_edit;
     }
 
     public boolean isPathItemVisible(){

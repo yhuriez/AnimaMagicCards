@@ -1,4 +1,4 @@
-package fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.read;
+package fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels;
 
 
 import android.content.Context;

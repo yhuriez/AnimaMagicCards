@@ -4,7 +4,7 @@
     <data>
         <variable
             name="model"
-            type="fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.write.WitchspellsCreationPathViewModel"/>
+            type="fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsPathGroupViewModel"/>
     </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
