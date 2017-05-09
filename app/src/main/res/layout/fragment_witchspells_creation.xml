@@ -14,6 +14,20 @@
         android:layout_height="match_parent"
         android:background="@android:color/transparent">
 
+        <android.support.constraint.Guideline
+            android:id="@+id/left_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.14"/>
+
+        <android.support.constraint.Guideline
+            android:id="@+id/right_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.88"/>
+
         <ImageView
             android:id="@+id/witchspells_background"
             android:layout_width="0dp"
@@ -37,7 +51,7 @@
             app:layout_constraintBottom_toBottomOf="@id/witchspells_background"
             app:layout_constraintLeft_toLeftOf="@id/witchspells_background"
             app:layout_constraintRight_toRightOf="@id/witchspells_background"
-            android:layout_marginBottom="@dimen/spacing_base"
+            android:layout_marginBottom="@dimen/spacing_xlarge"
             android:textColor="@android:color/white"
             android:textSize="18sp"
             android:text="@string/Witchspells_Validate_Creation"/>
@@ -45,8 +59,9 @@
         <ScrollView
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_constraintLeft_toLeftOf="@id/witchspells_background"
-            app:layout_constraintRight_toRightOf="@id/witchspells_background"
+            android:layout_marginTop="45dp"
+            app:layout_constraintLeft_toLeftOf="@id/left_guideline"
+            app:layout_constraintRight_toRightOf="@id/right_guideline"
             app:layout_constraintTop_toTopOf="@id/witchspells_background"
             app:layout_constraintBottom_toTopOf="@id/witchspells_validation_button">
 
@@ -59,7 +74,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:textSize="24sp"
+                    android:textSize="18sp"
                     android:textColor="@android:color/white"
                     android:text="@string/Witchspells_Name_Label"/>
 
@@ -67,8 +82,8 @@
                     android:id="@+id/witchspells_name_edittext"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/spacing_base"
-                    android:layout_marginRight="@dimen/spacing_base"
+                    android:layout_marginLeft="@dimen/spacing_big"
+                    android:layout_marginRight="@dimen/spacing_big"
                     android:textColor="@android:color/white"
                     android:gravity="center"
                     android:inputType="text"

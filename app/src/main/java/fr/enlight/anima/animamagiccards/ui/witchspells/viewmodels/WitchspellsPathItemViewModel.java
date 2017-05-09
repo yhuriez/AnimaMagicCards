@@ -19,43 +19,66 @@ public class WitchspellsPathItemViewModel implements BindableViewModel {
     public static final int SECONDARY_PATH_TYPE = 1;
     public static final int FREE_ACCESS_TYPE = 2;
 
-    protected SpellbookType mSpellbookType;
-    protected int mPathType;
-    protected WitchspellsPath mWitchspellsPath;
+    private final SpellbookType mSpellbookType;
+    private final int mPathType;
+    private final WitchspellsPath mWitchspellsPath;
 
-    public WitchspellsPathItemViewModel(SpellbookType mSpellbookType, int mPathType, WitchspellsPath mWitchspellsPath) {
-        this.mSpellbookType = mSpellbookType;
+    public WitchspellsPathItemViewModel(int mPathType) {
         this.mPathType = mPathType;
+        this.mSpellbookType = null;
+        this.mWitchspellsPath = null;
+    }
+
+    public WitchspellsPathItemViewModel(int mPathType, SpellbookType mSpellbookType, WitchspellsPath mWitchspellsPath) {
+        this.mPathType = mPathType;
+        this.mSpellbookType = mSpellbookType;
         this.mWitchspellsPath = mWitchspellsPath;
     }
 
-    public String getBookTitleAndLevel(Context context){
-        String bookTitle = null;
-        if(mSpellbookType != null){
-            bookTitle = context.getString(mSpellbookType.titleRes);
+    public String getLabel(Context context) {
+        if (mWitchspellsPath == null) {
+            switch (mPathType) {
+                case MAIN_PATH_TYPE:
+                    return context.getString(R.string.Witchspells_Add_Main_Path);
+                case SECONDARY_PATH_TYPE:
+                    return context.getString(R.string.Witchspells_Add_Secondary_Path);
+                case FREE_ACCESS_TYPE:
+                    return context.getString(R.string.Witchspells_Add_Free_Access);
+            }
+            throw new UnsupportedOperationException("Type cannot be different of the ones treated here");
         }
 
-        switch (mPathType){
-            case MAIN_PATH_TYPE:
-                return context.getString(R.string.Witchspells_Path_Title_And_Level_Format, bookTitle, Integer.toString(mWitchspellsPath.pathLevel));
-            case SECONDARY_PATH_TYPE:
-                return context.getString(R.string.Witchspells_Path_Title_And_Level_Format, bookTitle, Integer.toString(mWitchspellsPath.pathLevel));
-            case FREE_ACCESS_TYPE:
-                int freeAccessCount = mWitchspellsPath.freeAccessSpellsIds.size();
-                return context.getResources().getQuantityString(R.plurals.Witchspells_Free_Access_Title, freeAccessCount, freeAccessCount);
+        if (mSpellbookType != null) {
+            String bookTitle = context.getString(mSpellbookType.titleRes);
+
+            switch (mPathType) {
+                case MAIN_PATH_TYPE:
+                    return context.getString(R.string.Witchspells_Path_Title_And_Level_Format, bookTitle, Integer.toString(mWitchspellsPath.pathLevel));
+                case SECONDARY_PATH_TYPE:
+                    return context.getString(R.string.Witchspells_Path_Title_And_Level_Format, bookTitle, Integer.toString(mWitchspellsPath.pathLevel));
+                case FREE_ACCESS_TYPE:
+                    int freeAccessCount = mWitchspellsPath.freeAccessSpellsIds.size();
+                    return context.getResources().getQuantityString(R.plurals.Witchspells_Free_Access_Title, freeAccessCount, freeAccessCount);
+            }
+            throw new UnsupportedOperationException("Type cannot be different of the ones treated here");
         }
-        throw new UnsupportedOperationException("Type cannot be different of the ones treated here");
+
+        throw new UnsupportedOperationException("Cannot have a witchspells path without spellbook type");
     }
 
-    public Drawable getBookDrawable(Context context){
-        if(mSpellbookType != null){
+    public Drawable getBookDrawable(Context context) {
+        if (mSpellbookType != null) {
             return ResourcesCompat.getDrawable(context.getResources(), mSpellbookType.iconRes, null);
         }
         return null;
     }
 
-    public boolean isMainPath(){
+    public boolean isMainPath() {
         return mPathType == MAIN_PATH_TYPE;
+    }
+
+    public boolean isPathItemVisible(){
+        return isMainPath() && mWitchspellsPath == null;
     }
 
     @Override
