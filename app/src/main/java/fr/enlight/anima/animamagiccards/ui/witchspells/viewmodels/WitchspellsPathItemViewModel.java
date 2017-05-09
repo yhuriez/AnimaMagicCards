@@ -35,7 +35,19 @@ public class WitchspellsPathItemViewModel implements BindableViewModel {
         this.mWitchspellsPath = mWitchspellsPath;
     }
 
+    @Override
+    public int getLayoutRes() {
+        return R.layout.view_witchspells_path_item;
+    }
+
+    @Override
+    public int getVariableId() {
+        return BR.model;
+    }
+
     public String getLabel(Context context) {
+        String bookTitle = null;
+
         if (mWitchspellsPath == null) {
             switch (mPathType) {
                 case MAIN_PATH_TYPE:
@@ -49,21 +61,19 @@ public class WitchspellsPathItemViewModel implements BindableViewModel {
         }
 
         if (mSpellbookType != null) {
-            String bookTitle = context.getString(mSpellbookType.titleRes);
-
-            switch (mPathType) {
-                case MAIN_PATH_TYPE:
-                    return context.getString(R.string.Witchspells_Path_Title_And_Level_Format, bookTitle, Integer.toString(mWitchspellsPath.pathLevel));
-                case SECONDARY_PATH_TYPE:
-                    return context.getString(R.string.Witchspells_Path_Title_And_Level_Format, bookTitle, Integer.toString(mWitchspellsPath.pathLevel));
-                case FREE_ACCESS_TYPE:
-                    int freeAccessCount = mWitchspellsPath.freeAccessSpellsIds.size();
-                    return context.getResources().getQuantityString(R.plurals.Witchspells_Free_Access_Title, freeAccessCount, freeAccessCount);
-            }
-            throw new UnsupportedOperationException("Type cannot be different of the ones treated here");
+            bookTitle = context.getString(mSpellbookType.titleRes);
         }
 
-        throw new UnsupportedOperationException("Cannot have a witchspells path without spellbook type");
+        switch (mPathType) {
+            case MAIN_PATH_TYPE:
+                return context.getString(R.string.Witchspells_Path_Title_And_Level_Format, bookTitle, Integer.toString(mWitchspellsPath.pathLevel));
+            case SECONDARY_PATH_TYPE:
+                return context.getString(R.string.Witchspells_Path_Title_And_Level_Format, bookTitle, Integer.toString(mWitchspellsPath.pathLevel));
+            case FREE_ACCESS_TYPE:
+                int freeAccessCount = mWitchspellsPath.freeAccessSpellsIds.size();
+                return context.getResources().getQuantityString(R.plurals.Witchspells_Free_Access_Title, freeAccessCount, freeAccessCount);
+        }
+        throw new UnsupportedOperationException("Type cannot be different of the ones treated here");
     }
 
     public Drawable getBookDrawable(Context context) {
@@ -81,13 +91,4 @@ public class WitchspellsPathItemViewModel implements BindableViewModel {
         return isMainPath() && mWitchspellsPath == null;
     }
 
-    @Override
-    public int getLayoutRes() {
-        return R.layout.view_witchspells_path_item;
-    }
-
-    @Override
-    public int getVariableId() {
-        return BR.model;
-    }
 }

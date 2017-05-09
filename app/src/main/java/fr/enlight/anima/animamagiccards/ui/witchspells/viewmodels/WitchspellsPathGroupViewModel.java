@@ -32,7 +32,7 @@ public class WitchspellsPathGroupViewModel implements BindableViewModel{
     public WitchspellsPathItemViewModel getMainPathModel(){
         if(witchspellsPath.pathBookId >= 0) {
             SpellbookType spellbookType = SpellbookType.getTypeFromBookId(witchspellsPath.pathBookId);
-            return new WitchspellsPathItemViewModel(spellbookType, WitchspellsPathItemViewModel.MAIN_PATH_TYPE, witchspellsPath);
+            return new WitchspellsPathItemViewModel(WitchspellsPathItemViewModel.MAIN_PATH_TYPE, spellbookType, witchspellsPath);
         }
         return null;
     }
@@ -40,14 +40,14 @@ public class WitchspellsPathGroupViewModel implements BindableViewModel{
     public WitchspellsPathItemViewModel getSecondaryPathModel(){
         if(witchspellsPath.pathBookId >= 0 && witchspellsPath.secondaryPathBookId >= 0){
             SpellbookType secondarySpellbookType = SpellbookType.getTypeFromBookId(witchspellsPath.secondaryPathBookId);
-            return new WitchspellsPathItemViewModel(secondarySpellbookType, WitchspellsPathItemViewModel.SECONDARY_PATH_TYPE, witchspellsPath);
+            return new WitchspellsPathItemViewModel(WitchspellsPathItemViewModel.SECONDARY_PATH_TYPE, secondarySpellbookType, witchspellsPath);
         }
         return null;
     }
 
     public WitchspellsPathItemViewModel getFreeAccessModel(){
         if(witchspellsPath.pathBookId >= 0 && witchspellsPath.freeAccessSpellsIds != null && !witchspellsPath.freeAccessSpellsIds.isEmpty()){
-            return new WitchspellsPathItemViewModel(null, WitchspellsPathItemViewModel.FREE_ACCESS_TYPE, witchspellsPath);
+            return new WitchspellsPathItemViewModel(WitchspellsPathItemViewModel.FREE_ACCESS_TYPE, null, witchspellsPath);
         }
         return null;
     }

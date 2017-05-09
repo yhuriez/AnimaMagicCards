@@ -48,17 +48,17 @@ public class WitchspellsBookViewModel extends ListBindableViewModel implements B
         for (WitchspellsPath witchPath : witchspells.witchPaths) {
             // Main Path
             SpellbookType spellbookType = SpellbookType.getTypeFromBookId(witchPath.pathBookId);
-            result.add(new WitchspellsPathItemViewModel(spellbookType, WitchspellsPathItemViewModel.MAIN_PATH_TYPE, witchPath));
+            result.add(new WitchspellsPathItemViewModel(WitchspellsPathItemViewModel.MAIN_PATH_TYPE, spellbookType, witchPath));
 
             // Secondary Path
             if(witchPath.secondaryPathBookId >= 0){
                 SpellbookType secondarySpellbookType = SpellbookType.getTypeFromBookId(witchPath.secondaryPathBookId);
-                result.add(new WitchspellsPathItemViewModel(secondarySpellbookType, WitchspellsPathItemViewModel.SECONDARY_PATH_TYPE, witchPath));
+                result.add(new WitchspellsPathItemViewModel(WitchspellsPathItemViewModel.SECONDARY_PATH_TYPE, secondarySpellbookType, witchPath));
             }
 
             // Free Access Spells
             if(witchPath.freeAccessSpellsIds != null && !witchPath.freeAccessSpellsIds.isEmpty()){
-                result.add(new WitchspellsPathItemViewModel(null, WitchspellsPathItemViewModel.FREE_ACCESS_TYPE, witchPath));
+                result.add(new WitchspellsPathItemViewModel(WitchspellsPathItemViewModel.FREE_ACCESS_TYPE, null, witchPath));
             }
         }
 

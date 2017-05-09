@@ -25,7 +25,7 @@
             android:layout_marginLeft="@dimen/spacing_large"
             android:layout_marginStart="@dimen/spacing_large"
             android:layout_weight="1"
-            android:text="@{model.getBookTitleAndLevel(context)}"
+            android:text="@{model.getLabel(context)}"
             android:textColor="@android:color/black"
             android:textSize="@{model.mainPath ? @dimen/textSize_large : @dimen/textSize_medium}"
             android:textStyle="bold"
