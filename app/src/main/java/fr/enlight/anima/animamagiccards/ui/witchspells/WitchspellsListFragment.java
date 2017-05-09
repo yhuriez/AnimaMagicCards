@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.Loader;
+import android.support.v7.widget.LinearLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,13 +18,14 @@ import fr.enlight.anima.animamagiccards.databinding.FragmentWitchspellsListBindi
 import fr.enlight.anima.animamagiccards.loaders.WitchspellsLoader;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.animamagiccards.views.viewmodels.ListBindableViewModel;
+import fr.enlight.anima.animamagiccards.views.viewmodels.RecyclerViewModel;
 
 public class WitchspellsListFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<BindableViewModel>> {
 
     private static final int LOADER_ID = 10;
 
     private FragmentWitchspellsListBinding mBinding;
-    private ListBindableViewModel mWitchspellList;
+    private RecyclerViewModel mWitchspellList;
 
     @Nullable
     @Override
@@ -36,7 +38,10 @@ public class WitchspellsListFragment extends Fragment implements LoaderManager.L
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        mWitchspellList = new ListBindableViewModel();
+        mWitchspellList = new RecyclerViewModel();
+        mWitchspellList.setLayoutManager(new LinearLayoutManager(getActivity()));
+
+        mBinding.setModel(mWitchspellList);
 
         getLoaderManager().initLoader(LOADER_ID, null, this);
     }

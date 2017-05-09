@@ -6,7 +6,7 @@
 
         <variable
             name="model"
-            type="fr.enlight.anima.animamagiccards.views.viewmodels.ListBindableViewModel" />
+            type="fr.enlight.anima.animamagiccards.views.viewmodels.RecyclerViewModel" />
     </data>
 
     <android.support.constraint.ConstraintLayout
@@ -25,17 +25,15 @@
         <TextView
             android:id="@+id/witchspells_title"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_marginLeft="@dimen/spacing_base"
             android:layout_marginStart="@dimen/spacing_base"
             android:background="@drawable/witchspells_title_scroll_background"
             android:textColor="@android:color/black"
-            android:paddingBottom="@dimen/spacing_base"
             android:paddingEnd="@dimen/spacing_base"
             android:paddingLeft="@dimen/spacing_big"
             android:paddingRight="@dimen/spacing_base"
             android:paddingStart="@dimen/spacing_big"
-            android:paddingTop="@dimen/spacing_base"
             android:text="@string/Witch_Creation_Title"
             android:gravity="center_vertical"
             android:textSize="40sp"
@@ -47,14 +45,16 @@
         <android.support.v7.widget.RecyclerView
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginTop="@dimen/spacing_base"
             android:layout_marginLeft="@dimen/spacing_base"
-            android:layout_marginRight="@dimen/spacing_base"
+            android:layout_marginStart="@dimen/spacing_base"
+            android:layout_marginRight="@dimen/witchbook_margin"
+            android:layout_marginEnd="@dimen/witchbook_margin"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="@id/right_guideline"
             app:layout_constraintTop_toBottomOf="@id/witchspells_title"
-            app:viewModels="@{model.viewModels}" />
+            app:viewModels="@{model.viewModels}"
+            app:layoutManager="@{model.layoutManager}"/>
 
     </android.support.constraint.ConstraintLayout>
 </layout>
