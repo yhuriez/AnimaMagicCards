@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
+        <import type="android.view.View"/>
         <variable
             name="model"
             type="fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsPathGroupViewModel"/>
     </data>
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -17,19 +18,25 @@
             android:id="@+id/witchspells_main_path_layout"
             layout="@layout/view_witchspells_path_item"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:visibility="@{model.mainPathModel != null ? View.VISIBLE : View.GONE}"
+            app:model="@{model.mainPathModel}"/>
 
         <include
             android:id="@+id/witchspells_secondary_path_layout"
             layout="@layout/view_witchspells_path_item"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:visibility="@{model.secondaryPathModel != null ? View.VISIBLE : View.GONE}"
+            app:model="@{model.secondaryPathModel}"/>
 
         <include
             android:id="@+id/witchspells_free_access_layout"
             layout="@layout/view_witchspells_path_item"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:visibility="@{model.freeAccessModel != null ? View.VISIBLE : View.GONE}"
+            app:model="@{model.freeAccessModel}"/>
 
     </LinearLayout>
 </layout>

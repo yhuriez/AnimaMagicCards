@@ -6,7 +6,7 @@
 
         <variable
             name="model"
-            type="fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsCreationViewModel" />
+            type="fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsEditionViewModel" />
     </data>
 
     <android.support.constraint.ConstraintLayout
@@ -87,13 +87,15 @@
                     android:textColor="@android:color/white"
                     android:gravity="center"
                     android:inputType="text"
+                    android:text="@={model.witchName}"
                     app:customFont="@{@string/spell_title_font}" />
 
                 <LinearLayout
                     android:id="@+id/witchspells_container_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"/>
+                    android:orientation="vertical"
+                    app:viewModels="@{model.pathGroupViewModels}"/>
 
             </LinearLayout>
         </ScrollView>

@@ -1,5 +1,6 @@
 package fr.enlight.anima.animamagiccards.ui.witchspells;
 
+import android.content.Context;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -16,8 +17,8 @@ import java.util.List;
 import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.animamagiccards.databinding.FragmentWitchspellsListBinding;
 import fr.enlight.anima.animamagiccards.loaders.WitchspellsLoader;
+import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsAddViewModel;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
-import fr.enlight.anima.animamagiccards.views.viewmodels.ListBindableViewModel;
 import fr.enlight.anima.animamagiccards.views.viewmodels.RecyclerViewModel;
 
 public class WitchspellsListFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<BindableViewModel>> {
@@ -26,6 +27,8 @@ public class WitchspellsListFragment extends Fragment implements LoaderManager.L
 
     private FragmentWitchspellsListBinding mBinding;
     private RecyclerViewModel mWitchspellList;
+
+    private Listener mListener;
 
     @Nullable
     @Override
@@ -47,8 +50,20 @@ public class WitchspellsListFragment extends Fragment implements LoaderManager.L
     }
 
     @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        mListener = (Listener) context;
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        mListener = null;
+    }
+
+    @Override
     public Loader<List<BindableViewModel>> onCreateLoader(int id, Bundle args) {
-        return new WitchspellsLoader(getActivity());
+        return new WitchspellsLoader(getActivity(), mListener);
     }
 
     @Override
@@ -59,4 +74,7 @@ public class WitchspellsListFragment extends Fragment implements LoaderManager.L
     @Override
     public void onLoaderReset(Loader<List<BindableViewModel>> loader) {
     }
+
+
+    public interface Listener extends WitchspellsAddViewModel.Listener{}
 }

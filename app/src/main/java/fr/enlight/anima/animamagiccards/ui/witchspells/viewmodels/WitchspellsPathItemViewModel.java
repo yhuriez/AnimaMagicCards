@@ -7,6 +7,7 @@ import android.support.v4.content.res.ResourcesCompat;
 
 import com.android.databinding.library.baseAdapters.BR;
 
+import fr.enlight.anima.animamagiccards.MainApplication;
 import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.animamagiccards.ui.spellbooks.utils.SpellbookType;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
@@ -45,8 +46,9 @@ public class WitchspellsPathItemViewModel implements BindableViewModel {
         return BR.model;
     }
 
-    public String getLabel(Context context) {
+    public String getLabel() {
         String bookTitle = null;
+        Context context = MainApplication.getMainContext();
 
         if (mWitchspellsPath == null) {
             switch (mPathType) {
@@ -85,10 +87,6 @@ public class WitchspellsPathItemViewModel implements BindableViewModel {
 
     public boolean isMainPath() {
         return mPathType == MAIN_PATH_TYPE;
-    }
-
-    public boolean isPathItemVisible(){
-        return isMainPath() && mWitchspellsPath == null;
     }
 
 }

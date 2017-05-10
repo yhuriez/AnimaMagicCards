@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import fr.enlight.anima.animamagiccards.R;
 
-public class WitchspellsActivity extends AppCompatActivity {
+public class WitchspellsActivity extends AppCompatActivity implements WitchspellsListFragment.Listener{
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -16,7 +16,15 @@ public class WitchspellsActivity extends AppCompatActivity {
         if(savedInstanceState == null){
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.fragment_placeholder, new WitchspellsListFragment())
+                    .addToBackStack(null)
                     .commit();
         }
+    }
+
+    @Override
+    public void onAddWitchspells() {
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fragment_placeholder, WitchspellsEditionFragment.newCreationInstance())
+                .commit();
     }
 }

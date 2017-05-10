@@ -17,10 +17,12 @@ import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 public class WitchspellsLoader extends BaseLoader<List<BindableViewModel>> {
 
     private WitchspellsBusinessService witchspellsBusinessService;
+    private final WitchspellsAddViewModel.Listener mListener;
 
-    public WitchspellsLoader(Context context) {
+    public WitchspellsLoader(Context context, WitchspellsAddViewModel.Listener listener) {
         super(context);
         this.witchspellsBusinessService = new WitchspellsBusinessService(context);
+        this.mListener = listener;
     }
 
     @Override
@@ -34,7 +36,7 @@ public class WitchspellsLoader extends BaseLoader<List<BindableViewModel>> {
             result.add(viewModel);
         }
 
-        result.add(new WitchspellsAddViewModel());
+        result.add(new WitchspellsAddViewModel(mListener));
 
         return result;
     }
