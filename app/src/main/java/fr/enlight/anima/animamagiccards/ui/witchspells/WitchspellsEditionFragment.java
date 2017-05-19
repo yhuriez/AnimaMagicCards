@@ -12,9 +12,10 @@ import android.view.ViewGroup;
 import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.animamagiccards.databinding.FragmentWitchspellsCreationBinding;
 import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsEditionViewModel;
+import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsPathViewModel;
 import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 
-public class WitchspellsEditionFragment extends Fragment{
+public class WitchspellsEditionFragment extends Fragment implements WitchspellsEditionViewModel.Listener {
 
     private static final String WITCHSPELLS_PARAM = "WITCHSPELLS_PARAM";
 
@@ -45,8 +46,18 @@ public class WitchspellsEditionFragment extends Fragment{
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        mEditionViewModel = new WitchspellsEditionViewModel();
+        mEditionViewModel = new WitchspellsEditionViewModel(this);
 
         mBinding.setModel(mEditionViewModel);
+    }
+
+    @Override
+    public void onAddNewPath() {
+
+    }
+
+    @Override
+    public void onEditPath(WitchspellsPathViewModel pathViewModel) {
+
     }
 }

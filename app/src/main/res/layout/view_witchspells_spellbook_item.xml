@@ -7,13 +7,13 @@
 
         <variable
             name="model"
-            type="fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsPathViewModel" />
+            type="fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsSpellbookItemViewModel" />
     </data>
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:onClick="@{() -> model.onPathClicked()}"
+        android:onClick="@{() -> model.onSpellbookClicked()}"
         tools:background="@drawable/witchspells_book_background"
         tools:paddingTop="@dimen/spacing_big">
 
@@ -35,26 +35,8 @@
                 android:layout_height="@dimen/witchspells_icon_main_size"
                 android:layout_gravity="center"
                 android:layout_margin="@dimen/spacing_base"
-                android:src="@{model.mainPathIcon}"
+                android:src="@{model.spellbookIcon}"
                 tools:src="@drawable/card_icon_book_necromancer" />
-        </FrameLayout>
-
-        <FrameLayout
-            android:id="@+id/secondary_path_icon"
-            android:layout_width="@dimen/witchspells_icon_secondary_container_size"
-            android:layout_height="@dimen/witchspells_icon_secondary_container_size"
-            android:background="@drawable/spell_circle_small"
-            app:layout_constraintBottom_toBottomOf="@id/main_path_icon"
-            app:layout_constraintRight_toRightOf="@id/main_path_icon"
-            app:setVisible="@{!model.addPathModel &amp;&amp; model.secondaryPathIcon != null}">
-
-            <ImageView
-                android:layout_width="@dimen/witchspells_icon_secondary_size"
-                android:layout_height="@dimen/witchspells_icon_secondary_size"
-                android:layout_gravity="center"
-                android:layout_margin="@dimen/spacing_base"
-                android:src="@{model.secondaryPathIcon}"
-                tools:src="@drawable/card_icon_book_chaos" />
         </FrameLayout>
 
         <TextView
@@ -62,13 +44,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/spacing_base"
-            android:text="@{model.mainPathTitle}"
+            android:text="@{model.spellbookTitle}"
             android:textColor="@android:color/white"
             android:textSize="24sp"
             app:layout_constraintLeft_toRightOf="@id/main_path_icon"
             app:layout_constraintTop_toTopOf="parent"
-            app:setVisible="@{!model.addPathModel}"
-            tools:text="Necromancie niv 20" />
+            tools:text="Necromancie" />
 
         <View
             android:layout_width="0dp"
@@ -76,49 +57,42 @@
             android:background="@android:color/white"
             app:layout_constraintBottom_toBottomOf="@id/main_path_title"
             app:layout_constraintLeft_toLeftOf="@id/main_path_title"
-            app:layout_constraintRight_toRightOf="@id/main_path_title"
-            app:setVisible="@{!model.addPathModel}" />
+            app:layout_constraintRight_toRightOf="@id/main_path_title"/>
 
         <TextView
             android:id="@+id/major_path_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/spacing_base"
-            android:text="@{model.secondaryPathTitle}"
+            android:text="@{model.majorPath ? @string/Witchspells_Major_Path : @string/Witchspells_Minor_Path}"
             android:textColor="@android:color/white"
             android:textSize="18sp"
             android:textStyle="italic"
             app:layout_constraintLeft_toRightOf="@id/main_path_icon"
             app:layout_constraintTop_toBottomOf="@id/main_path_title"
-            app:setVisible="@{!model.addPathModel}"
-            tools:text="Voie secondaire : Chaos" />
+            tools:text="Voie majeure" />
 
         <TextView
             android:id="@+id/opposite_path_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/spacing_small"
-            android:text="@{@plurals/Witchspells_Free_Access_Count(model.freeAccessSpellsCount, model.freeAccessSpellsCount)}"
+            android:text="@{@string/Witchspells_Opposite_Path_Format(model.oppositePath)}"
             android:textColor="@android:color/white"
             android:textSize="18sp"
             android:textStyle="italic"
             app:layout_constraintLeft_toRightOf="@id/main_path_icon"
             app:layout_constraintTop_toBottomOf="@id/major_path_description"
-            app:setVisible="@{!model.addPathModel}"
-            tools:text="+ 4 sorts d'accès libre" />
+            tools:text="Voie opposée : toutes" />
 
-        <TextView
-            android:id="@+id/add_path_message"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Witchspells_Add_Main_Path"
-            android:textColor="@android:color/white"
-            android:textSize="24sp"
-            android:textStyle="italic"
-            app:layout_constraintBottom_toBottomOf="@id/main_path_icon"
-            app:layout_constraintLeft_toRightOf="@id/main_path_icon"
+        <Spinner
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/rounded_white_rectangle"
+            android:layout_marginRight="@dimen/spacing_base"
+            android:layout_marginEnd="@dimen/spacing_base"
             app:layout_constraintTop_toTopOf="@id/main_path_icon"
-            app:setVisible="@{model.addPathModel}" />
+            app:layout_constraintBottom_toBottomOf="@id/main_path_icon"
+            app:layout_constraintRight_toRightOf="parent"/>
 
     </android.support.constraint.ConstraintLayout>
 </layout>

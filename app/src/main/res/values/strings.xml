@@ -40,9 +40,16 @@
 
     <string name="Witchspells_Name_Label">Titulaire du grimoire</string>
 
-    <string name="Witchspells_Add_Main_Path">Ajouter une voie</string>
-    <string name="Witchspells_Add_Secondary_Path">Définir une voie secondaire</string>
-    <string name="Witchspells_Add_Free_Access">Définir les sorts d\'accès libre</string>
+    <string name="Witchspells_Add_Main_Path">Choisir ses voies</string>
+
+    <string name="Witchspells_Major_Path">Voie majeure</string>
+    <string name="Witchspells_Minor_Path">Voie mineure</string>
+    <string name="Witchspells_Opposite_Path_Format">Voie opposée : %1$s</string>
+
+    <plurals name="Witchspells_Free_Access_Count">
+        <item quantity="one">+ 1 sort d\'accès libre</item>
+        <item quantity="other">+ %d sorts d\'accès libre</item>
+    </plurals>
 
     <string name="Witchspells_Validate_Creation">Valider</string>
     <string name="Witchspells_Add_Label">Ajouter une liste de sorts</string>

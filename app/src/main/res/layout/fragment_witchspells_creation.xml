@@ -4,6 +4,7 @@
 
     <data>
 
+
         <variable
             name="model"
             type="fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsEditionViewModel" />
@@ -78,17 +79,25 @@
                     android:textColor="@android:color/white"
                     android:text="@string/Witchspells_Name_Label"/>
 
-                <EditText
-                    android:id="@+id/witchspells_name_edittext"
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/witchspells_name_textinput"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="@dimen/text_input_height"
                     android:layout_marginLeft="@dimen/spacing_big"
-                    android:layout_marginRight="@dimen/spacing_big"
-                    android:textColor="@android:color/white"
-                    android:gravity="center"
-                    android:inputType="text"
-                    android:text="@={model.witchName}"
-                    app:customFont="@{@string/spell_title_font}" />
+                    android:layout_marginRight="@dimen/spacing_big">
+
+                    <EditText
+                        android:id="@+id/witchspells_name_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:inputType="text"
+                        android:text="@={model.witchName}"
+                        android:textColor="@android:color/white"
+                        app:customFont="@{@string/spell_title_font}" />
+
+                </android.support.design.widget.TextInputLayout>
 
                 <LinearLayout
                     android:id="@+id/witchspells_container_layout"

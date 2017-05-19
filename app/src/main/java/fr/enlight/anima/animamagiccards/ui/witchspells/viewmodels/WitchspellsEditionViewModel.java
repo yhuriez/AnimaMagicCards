@@ -14,17 +14,17 @@ import fr.enlight.anima.cardmodel.model.witchspells.WitchspellsPath;
 
 public class WitchspellsEditionViewModel extends BaseObservable {
 
-    private Listener mListener;
+    private final Listener mListener;
 
-    @NonNull
     private Witchspells mWitchspells;
 
-    public WitchspellsEditionViewModel() {
-        this.mWitchspells = new Witchspells();
+    public WitchspellsEditionViewModel(Listener listener) {
+        this(null, listener);
     }
 
-    public WitchspellsEditionViewModel(@NonNull Witchspells mWitchspells) {
+    public WitchspellsEditionViewModel(Witchspells mWitchspells, Listener listener) {
         this.mWitchspells = mWitchspells;
+        mListener = listener;
     }
 
     public void setWitchName(String witchName){
@@ -40,20 +40,15 @@ public class WitchspellsEditionViewModel extends BaseObservable {
         List<BindableViewModel> result = new ArrayList<>();
 
         for (WitchspellsPath witchPath : mWitchspells.witchPaths) {
-            result.add(new WitchspellsPathGroupViewModel(witchPath));
+            result.add(new WitchspellsPathViewModel(witchPath, mListener));
         }
 
-        // Used to create a field allowing to add a new witch path
-        result.add(new WitchspellsPathGroupViewModel());
+        // Always add an empty witchPath to allow addition of a new path
+        result.add(new WitchspellsPathViewModel(null, mListener));
 
         return result;
     }
 
-    public void setListener(Listener listener) {
-        this.mListener = listener;
-    }
-
-    public interface Listener{
-
+    public interface Listener extends WitchspellsPathViewModel.Listener {
     }
 }
