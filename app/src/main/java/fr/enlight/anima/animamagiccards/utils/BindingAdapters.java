@@ -9,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.Spinner;
+import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 
 import java.util.List;
@@ -62,5 +64,10 @@ public class BindingAdapters {
 
         marginLayoutParams.setMargins(leftMargin, topMargin, rightMargin, bottomMargin);
         view.setLayoutParams(marginLayoutParams);
+    }
+
+    @BindingAdapter("adapter")
+    public static void setAdapter(Spinner spinner, SpinnerAdapter adapter){
+        spinner.setAdapter(adapter);
     }
 }
