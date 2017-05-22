@@ -57,7 +57,7 @@
             android:background="@android:color/white"
             app:layout_constraintBottom_toBottomOf="@id/main_path_title"
             app:layout_constraintLeft_toLeftOf="@id/main_path_title"
-            app:layout_constraintRight_toRightOf="@id/main_path_title"/>
+            app:layout_constraintRight_toRightOf="@id/main_path_title" />
 
         <TextView
             android:id="@+id/major_path_description"
@@ -84,15 +84,31 @@
             app:layout_constraintTop_toBottomOf="@id/major_path_description"
             tools:text="Voie opposée : toutes" />
 
+        <Button
+            style="@style/FlatButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/spacing_large"
+            android:layout_marginRight="@dimen/spacing_large"
+            android:src="@drawable/ic_add_circle_white"
+            app:layout_constraintBottom_toBottomOf="@id/main_path_icon"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/main_path_icon" />
+
         <Spinner
-            android:layout_width="60dp"
+            android:layout_width="50dp"
             android:layout_height="30dp"
             android:background="@drawable/rounded_white_rectangle"
-            android:layout_marginRight="@dimen/spacing_base"
-            android:layout_marginEnd="@dimen/spacing_base"
+            android:gravity="center"
+            android:selectedItemPosition="@={model.selectedLevel}"
+            app:adapter="@{model.levelSpinnerAdapter}"
+            app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="@id/main_path_icon"
             app:layout_constraintBottom_toBottomOf="@id/main_path_icon"
-            app:layout_constraintRight_toRightOf="parent"/>
+            android:layout_marginRight="@dimen/spacing_large"
+            android:layout_marginEnd="@dimen/spacing_large"/>
+
+
 
     </android.support.constraint.ConstraintLayout>
 </layout>
