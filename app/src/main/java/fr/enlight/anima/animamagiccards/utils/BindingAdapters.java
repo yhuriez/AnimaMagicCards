@@ -44,6 +44,9 @@ public class BindingAdapters {
 
     @BindingAdapter("viewModels")
     public static void setViewModels(LinearLayout linearLayout, List<BindableViewModel> viewModels){
+        if(viewModels == null){
+            return;
+        }
         linearLayout.removeAllViews();
         LayoutInflater inflater = LayoutInflater.from(linearLayout.getContext());
         for (BindableViewModel viewModel : viewModels) {

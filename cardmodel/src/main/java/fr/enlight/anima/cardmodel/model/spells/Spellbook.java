@@ -18,6 +18,8 @@ public class Spellbook implements Parcelable{
     public List<String> secondaryBookAccessibles;
     public List<String> primaryBookUnaccessibles;
 
+    public SpellbookType spellbookType;
+
 
     @Override
     public int describeContents() {
@@ -33,6 +35,7 @@ public class Spellbook implements Parcelable{
         dest.writeString(this.oppositeBook);
         dest.writeStringList(this.secondaryBookAccessibles);
         dest.writeStringList(this.primaryBookUnaccessibles);
+        dest.writeInt(this.spellbookType == null ? -1 : this.spellbookType.ordinal());
     }
 
     public Spellbook() {
@@ -46,6 +49,8 @@ public class Spellbook implements Parcelable{
         this.oppositeBook = in.readString();
         this.secondaryBookAccessibles = in.createStringArrayList();
         this.primaryBookUnaccessibles = in.createStringArrayList();
+        int tmpSpellbookType = in.readInt();
+        this.spellbookType = tmpSpellbookType == -1 ? null : SpellbookType.values()[tmpSpellbookType];
     }
 
     public static final Creator<Spellbook> CREATOR = new Creator<Spellbook>() {

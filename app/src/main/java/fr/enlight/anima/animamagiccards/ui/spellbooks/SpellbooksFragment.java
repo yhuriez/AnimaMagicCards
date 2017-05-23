@@ -1,29 +1,37 @@
 package fr.enlight.anima.animamagiccards.ui.spellbooks;
 
+import android.app.Fragment;
+import android.app.LoaderManager;
 import android.content.Context;
+import android.content.Loader;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.LoaderManager;
-import android.support.v4.content.Loader;
-import android.support.v7.widget.GridLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.azoft.carousellayoutmanager.CarouselLayoutManager;
+import com.azoft.carousellayoutmanager.CarouselZoomPostLayoutListener;
+import com.azoft.carousellayoutmanager.CenterScrollListener;
+
+import java.util.ArrayList;
 import java.util.List;
 
 import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.animamagiccards.databinding.ActivitySpellbooksIndexBinding;
-import fr.enlight.anima.animamagiccards.loaders.SpellbooksIndexLoader;
-import fr.enlight.anima.animamagiccards.ui.spellbooks.utils.SpellbookType;
+import fr.enlight.anima.animamagiccards.loaders.SpellbooksWitchspellsLoader;
+import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
+import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsAddViewModel;
+import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsBookViewModel;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.animamagiccards.views.viewmodels.RecyclerViewModel;
 import fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels.SpellbookViewModel;
+import fr.enlight.anima.cardmodel.model.spells.Spellbook;
+import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 
-public class SpellbooksFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<BindableViewModel>>,
-        SpellbookViewModel.Listener {
+public class SpellbooksFragment extends Fragment implements LoaderManager.LoaderCallbacks<SpellbooksWitchspellsLoader.LoaderResult>,
+        SpellbookViewModel.Listener, WitchspellsAddViewModel.Listener {
 
     private RecyclerViewModel recyclerViewModel;
     private ActivitySpellbooksIndexBinding binding;
@@ -42,7 +50,11 @@ public class SpellbooksFragment extends Fragment implements LoaderManager.Loader
         super.onActivityCreated(savedInstanceState);
 
         recyclerViewModel = new RecyclerViewModel();
-        recyclerViewModel.setLayoutManager(new GridLayoutManager(getActivity(), 2));
+        CarouselLayoutManager carouselLayoutManager = new CarouselLayoutManager(CarouselLayoutManager.HORIZONTAL, false);
+        carouselLayoutManager.setMaxVisibleItems(3);
+        carouselLayoutManager.setPostLayoutListener(new CarouselZoomPostLayoutListener());
+        recyclerViewModel.setLayoutManager(carouselLayoutManager);
+        recyclerViewModel.setOnScrollListener(new CenterScrollListener());
 
         binding.setModel(recyclerViewModel);
 
@@ -62,17 +74,31 @@ public class SpellbooksFragment extends Fragment implements LoaderManager.Loader
     }
 
     @Override
-    public Loader<List<BindableViewModel>> onCreateLoader(int i, Bundle bundle) {
-        return new SpellbooksIndexLoader(getActivity(), this);
+    public Loader<SpellbooksWitchspellsLoader.LoaderResult> onCreateLoader(int i, Bundle bundle) {
+        return new SpellbooksWitchspellsLoader(getActivity());
     }
 
     @Override
-    public void onLoadFinished(Loader<List<BindableViewModel>> loader, List<BindableViewModel> spellbookViewModels) {
-        recyclerViewModel.setViewModels(spellbookViewModels);
+    public void onLoadFinished(Loader<SpellbooksWitchspellsLoader.LoaderResult> loader, SpellbooksWitchspellsLoader.LoaderResult loaderResult) {
+        List<BindableViewModel> viewModels = new ArrayList<>();
+
+        for (Witchspells witchspells : loaderResult.witchspells) {
+            WitchspellsBookViewModel viewModel = new WitchspellsBookViewModel(witchspells);
+            viewModels.add(viewModel);
+        }
+        viewModels.add(new WitchspellsAddViewModel(this));
+
+        for (Spellbook spellbook : loaderResult.spellbooks) {
+            SpellbookViewModel viewModel = new SpellbookViewModel(spellbook);
+            viewModel.setListener(this);
+            viewModels.add(viewModel);
+        }
+
+        recyclerViewModel.setViewModels(viewModels);
     }
 
     @Override
-    public void onLoaderReset(Loader<List<BindableViewModel>> loader) {
+    public void onLoaderReset(Loader<SpellbooksWitchspellsLoader.LoaderResult> loader) {
         // Nothing to do
     }
 
@@ -81,8 +107,14 @@ public class SpellbooksFragment extends Fragment implements LoaderManager.Loader
         mCallbacks.onSpellbookClicked(spellbookId, type);
     }
 
+    @Override
+    public void onAddWitchspells() {
+        mCallbacks.onAddWitchspells();
+    }
 
     public interface Callbacks{
         void onSpellbookClicked(int spellbookId, SpellbookType type);
+
+        void onAddWitchspells();
     }
 }

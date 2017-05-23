@@ -20,14 +20,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.14"/>
+            app:layout_constraintGuide_percent="0.14" />
 
         <android.support.constraint.Guideline
             android:id="@+id/right_guideline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.88"/>
+            app:layout_constraintGuide_percent="0.88" />
 
         <ImageView
             android:id="@+id/witchspells_background"
@@ -49,22 +49,24 @@
             style="@style/FlatButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="@id/witchspells_background"
-            app:layout_constraintLeft_toLeftOf="@id/witchspells_background"
-            app:layout_constraintRight_toRightOf="@id/witchspells_background"
             android:layout_marginBottom="@dimen/spacing_xlarge"
+            android:text="@string/Witchspells_Validate_Creation"
             android:textColor="@android:color/white"
             android:textSize="18sp"
-            android:text="@string/Witchspells_Validate_Creation"/>
+            app:layout_constraintBottom_toBottomOf="@id/witchspells_background"
+            app:layout_constraintLeft_toLeftOf="@id/witchspells_background"
+            app:layout_constraintRight_toRightOf="@id/witchspells_background" />
+
+
 
         <ScrollView
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="45dp"
+            app:layout_constraintBottom_toTopOf="@id/witchspells_validation_button"
             app:layout_constraintLeft_toLeftOf="@id/left_guideline"
             app:layout_constraintRight_toRightOf="@id/right_guideline"
-            app:layout_constraintTop_toTopOf="@id/witchspells_background"
-            app:layout_constraintBottom_toTopOf="@id/witchspells_validation_button">
+            app:layout_constraintTop_toTopOf="@id/witchspells_background">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -75,9 +77,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:textSize="18sp"
+                    android:text="@string/Witchspells_Name_Label"
                     android:textColor="@android:color/white"
-                    android:text="@string/Witchspells_Name_Label"/>
+                    android:textSize="18sp" />
 
 
                 <android.support.design.widget.TextInputLayout
@@ -104,9 +106,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:viewModels="@{model.pathGroupViewModels}"/>
+                    app:viewModels="@{model.pathGroupViewModels}" />
 
             </LinearLayout>
         </ScrollView>
+
+        <include
+            android:id="@+id/witchspells_add_path_layout"
+            layout="@layout/view_witchspells_add_path_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:model="@{model.addPathViewModel}"
+            app:layout_constraintBottom_toBottomOf="@id/witchspells_background"
+            app:layout_constraintLeft_toLeftOf="@id/left_guideline"
+            app:layout_constraintRight_toRightOf="@id/right_guideline"
+            app:layout_constraintTop_toTopOf="@id/witchspells_background" />
+
     </android.support.constraint.ConstraintLayout>
 </layout>

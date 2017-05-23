@@ -8,10 +8,23 @@
             type="fr.enlight.anima.animamagiccards.views.viewmodels.RecyclerViewModel"/>
     </data>
 
-    <android.support.v7.widget.RecyclerView
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layoutManager="@{model.layoutManager}"
-        app:viewModels="@{model.viewModels}"/>
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="350dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:addOnScrollListener="@{model.onScrollListener}"
+            app:hasFixedSize="@{true}"
+            app:layoutManager="@{model.layoutManager}"
+            app:viewModels="@{model.viewModels}"/>
+    </android.support.constraint.ConstraintLayout>
+
+
 
 </layout>

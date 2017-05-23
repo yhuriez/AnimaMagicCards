@@ -6,7 +6,7 @@
     <data>
 
         <import type="android.view.View"/>
-        <import type="fr.enlight.anima.animamagiccards.ui.spellbooks.utils.SpellGradeLevel" />
+        <import type="fr.enlight.anima.animamagiccards.ui.spellbooks.bo.SpellGradeLevel" />
 
         <variable
             name="model"

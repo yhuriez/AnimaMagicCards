@@ -1,7 +1,7 @@
 package fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels;
 
 import fr.enlight.anima.animamagiccards.R;
-import fr.enlight.anima.animamagiccards.ui.spellbooks.utils.SpellbookType;
+import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
 import fr.enlight.anima.animamagiccards.views.viewmodels.DialogViewModel;
 import fr.enlight.anima.animamagiccards.views.viewmodels.DismissDialogListener;
 import fr.enlight.anima.cardmodel.model.spells.Spell;

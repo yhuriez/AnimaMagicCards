@@ -4,19 +4,21 @@ package fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.DrawableRes;
+import android.support.annotation.NonNull;
 import android.support.v4.content.res.ResourcesCompat;
 
 import com.android.databinding.library.baseAdapters.BR;
 
 import fr.enlight.anima.animamagiccards.MainApplication;
 import fr.enlight.anima.animamagiccards.R;
-import fr.enlight.anima.animamagiccards.ui.spellbooks.utils.SpellbookType;
+import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.cardmodel.model.witchspells.WitchspellsPath;
 
 
 public class WitchspellsPathViewModel implements BindableViewModel {
 
+    @NonNull
     private final WitchspellsPath mWitchspellsPath;
     private final Context mContext;
 
@@ -25,18 +27,12 @@ public class WitchspellsPathViewModel implements BindableViewModel {
 
     private Listener mListener;
 
-    public WitchspellsPathViewModel(WitchspellsPath mWitchspellsPath, Listener listener) {
+    public WitchspellsPathViewModel(@NonNull WitchspellsPath mWitchspellsPath, Listener listener) {
         this.mWitchspellsPath = mWitchspellsPath;
         this.mContext = MainApplication.getMainContext();
         this.mListener = listener;
-
-        if(mWitchspellsPath != null) {
-            mainPathType = SpellbookType.getTypeFromBookId(mWitchspellsPath.pathBookId);
-            secondaryPathType = SpellbookType.getTypeFromBookId(mWitchspellsPath.secondaryPathBookId);
-        } else {
-            mainPathType = null;
-            secondaryPathType = null;
-        }
+        mainPathType = SpellbookType.getTypeFromBookId(mWitchspellsPath.pathBookId);
+        secondaryPathType = SpellbookType.getTypeFromBookId(mWitchspellsPath.secondaryPathBookId);
     }
 
     @Override
@@ -50,28 +46,16 @@ public class WitchspellsPathViewModel implements BindableViewModel {
     }
 
     public Drawable getMainPathIcon(){
-        @DrawableRes int iconRes;
-        if(isAddPathModel()){
-            iconRes = R.drawable.ic_add_white;
-        } else {
-            iconRes = mainPathType.iconRes;
-        }
-
-        return ResourcesCompat.getDrawable(mContext.getResources(), iconRes, null);
+        return ResourcesCompat.getDrawable(mContext.getResources(), mainPathType.iconRes, null);
     }
 
     public String getMainPathTitle(){
-        if(isAddPathModel()){
-            return mContext.getString(R.string.Witchspells_Choose_Main_Path);
-        }
         return mContext.getString(mainPathType.titleRes);
     }
 
     public Drawable getSecondaryPathIcon(){
         @DrawableRes int iconRes;
-        if(isAddPathModel()){
-            iconRes = R.drawable.ic_add_white;
-        } else if(secondaryPathType == null){
+        if(secondaryPathType == null){
             iconRes = R.drawable.card_icon_book_free_access;
         } else {
             iconRes = mainPathType.iconRes;
@@ -81,30 +65,24 @@ public class WitchspellsPathViewModel implements BindableViewModel {
     }
 
     public String getSecondaryPathTitle(){
-        if(isAddPathModel() && secondaryPathType == null){
+        if(secondaryPathType == null){
             return null;
         }
         return mContext.getString(secondaryPathType.titleRes);
     }
 
     public int getFreeAccessSpellsCount(){
+        if(mWitchspellsPath.freeAccessSpellsIds == null){
+            return 0;
+        }
         return mWitchspellsPath.freeAccessSpellsIds.size();
     }
 
-    public boolean isAddPathModel(){
-        return mWitchspellsPath == null;
-    }
-
     public void onPathClicked(){
-        if(isAddPathModel()){
-            mListener.onAddNewPath();
-        } else {
-            mListener.onEditPath(this);
-        }
+
     }
 
     public interface Listener{
-        void onAddNewPath();
-        void onEditPath(WitchspellsPathViewModel pathViewModel);
+
     }
 }

@@ -6,7 +6,7 @@ import android.support.v4.content.res.ResourcesCompat;
 
 import fr.enlight.anima.animamagiccards.MainApplication;
 import fr.enlight.anima.animamagiccards.R;
-import fr.enlight.anima.animamagiccards.ui.spellbooks.utils.SpellGradeLevel;
+import fr.enlight.anima.animamagiccards.ui.spellbooks.bo.SpellGradeLevel;
 import fr.enlight.anima.cardmodel.model.spells.Spell;
 import fr.enlight.anima.cardmodel.model.spells.SpellGrade;
 

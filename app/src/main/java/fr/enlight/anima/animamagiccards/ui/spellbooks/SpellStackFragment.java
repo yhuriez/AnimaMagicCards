@@ -1,12 +1,12 @@
 package fr.enlight.anima.animamagiccards.ui.spellbooks;
 
 
+import android.app.Fragment;
+import android.app.LoaderManager;
+import android.content.Loader;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.LoaderManager;
-import android.support.v4.content.Loader;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,7 +16,7 @@ import java.util.List;
 import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.animamagiccards.databinding.ActivitySpellsStackBinding;
 import fr.enlight.anima.animamagiccards.loaders.SpellsLoader;
-import fr.enlight.anima.animamagiccards.ui.spellbooks.utils.SpellbookType;
+import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
 import fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels.DialogSpellEffectViewModel;
 import fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels.DialogSpellGradeViewModel;
 import fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels.SpellStackViewModel;

@@ -1,4 +1,4 @@
-package fr.enlight.anima.animamagiccards.ui.spellbooks.utils;
+package fr.enlight.anima.cardmodel.model.spells;
 
 import android.support.annotation.DrawableRes;
 import android.support.annotation.StringRes;
@@ -6,7 +6,7 @@ import android.support.annotation.StringRes;
 import java.util.Arrays;
 import java.util.List;
 
-import fr.enlight.anima.animamagiccards.R;
+import fr.enlight.anima.cardmodel.R;
 
 /**
  *

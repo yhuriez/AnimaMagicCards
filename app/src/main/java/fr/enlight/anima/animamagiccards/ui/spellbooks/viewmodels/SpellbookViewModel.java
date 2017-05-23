@@ -7,7 +7,7 @@ import android.support.v4.content.res.ResourcesCompat;
 import com.android.databinding.library.baseAdapters.BR;
 
 import fr.enlight.anima.animamagiccards.R;
-import fr.enlight.anima.animamagiccards.ui.spellbooks.utils.SpellbookType;
+import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.cardmodel.model.spells.Spellbook;
 
@@ -21,9 +21,14 @@ public class SpellbookViewModel implements BindableViewModel {
 
     private Listener mListener;
 
-    public SpellbookViewModel(Spellbook spellbook, SpellbookType type) {
+    public SpellbookViewModel(Spellbook spellbook) {
         this.mSpellbook = spellbook;
-        this.mType = type;
+        this.mType = mSpellbook.spellbookType;
+    }
+
+    public SpellbookViewModel(SpellbookType spellbookType) {
+        this.mSpellbook = null;
+        this.mType = spellbookType;
     }
 
     @Override

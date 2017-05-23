@@ -12,24 +12,24 @@
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/home_book_height"
         android:onClick="@{() -> model.onWitchspellsClicked(witchspellsBookImage)}">
 
         <ImageView
             android:id="@+id/witchspells_book_image"
             android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_height="@dimen/home_book_height"
             android:src="@drawable/witchspells_book_background"
+            app:layout_constraintDimensionRatio="7:10"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintDimensionRatio="H,7:10"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/witchspells_add_image"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_width="60dp"
             android:src="@drawable/ic_add_white"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -41,12 +41,13 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/witchspells_add_image"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/witchspells_book_image"
+            app:layout_constraintRight_toRightOf="@id/witchspells_book_image"
             app:customFont="@{@string/spell_title_font}"
+            android:maxLines="2"
             android:gravity="center"
             android:ellipsize="end"
-            android:textSize="32sp"
+            android:textSize="24sp"
             android:paddingTop="@dimen/spacing_large"
             android:paddingBottom="@dimen/spacing_large"
             android:paddingLeft="@dimen/spacing_large"

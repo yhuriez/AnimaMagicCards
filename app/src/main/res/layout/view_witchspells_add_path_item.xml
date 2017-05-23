@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsAddPathViewModel" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{() -> model.onPathClicked()}"
+        tools:background="@drawable/witchspells_book_background"
+        tools:layout_height="match_parent"
+        tools:paddingTop="@dimen/spacing_big">
+
+        <FrameLayout
+            android:id="@+id/add_path_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{() -> model.onPathClicked()}"
+            android:padding="@dimen/spacing_base"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/witchspells_icon_main_container_size"
+                android:layout_height="@dimen/witchspells_icon_main_container_size"
+                android:background="@drawable/spell_circle" />
+
+            <ImageView
+                android:layout_width="@dimen/witchspells_icon_main_size"
+                android:layout_height="@dimen/witchspells_icon_main_size"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/spacing_base"
+                android:src="@drawable/ic_add_black" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/main_path_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toRightOf="@id/add_path_icon"
+            app:layout_constraintTop_toTopOf="@id/add_path_icon"
+            app:layout_constraintBottom_toBottomOf="@id/add_path_icon"
+            android:text="@string/Witchspells_Choose_Main_Path" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

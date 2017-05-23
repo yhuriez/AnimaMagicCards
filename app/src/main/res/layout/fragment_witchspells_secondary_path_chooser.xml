@@ -23,7 +23,7 @@
             android:gravity="center"
             android:padding="@dimen/spacing_base"
             android:layout_marginTop="@dimen/spacing_large"
-            android:text="@string/Witchspells_Choose_Main_Path"
+            android:text="@string/Witchspells_Choose_Secondary_Path"
             android:textColor="@android:color/white"
             android:textSize="24sp" />
 

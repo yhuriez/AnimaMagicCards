@@ -10,15 +10,16 @@
         android:label="@string/app_real_name"
         android:theme="@style/AppTheme"
         tools:replace="android:label">
-        <activity android:name=".HomeActivity">
+
+        <activity android:name=".ui.spellbooks.SpellActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.spellbooks.SpellActivity"/>
-        <activity android:name=".ui.witchspells.WitchspellsActivity"/>
+
+        <activity android:name=".ui.witchspells.WitchspellsEditionActivity"/>
 
     </application>
 

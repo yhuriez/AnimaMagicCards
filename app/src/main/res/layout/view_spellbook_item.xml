@@ -11,10 +11,9 @@
     </data>
 
     <android.support.constraint.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/home_book_height"
         android:gravity="center"
-        android:paddingTop="@dimen/spacing_large"
         android:onClick="@{() -> model.onSpellbookClicked()}"
         android:orientation="vertical">
 
@@ -30,23 +29,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.25" />
+            app:layout_constraintGuide_percent="0.30" />
 
         <android.support.constraint.Guideline
             android:id="@+id/right_guideline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.75" />
+            app:layout_constraintGuide_percent="0.70" />
 
         <ImageView
             android:id="@+id/spell_card_background"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/spacing_large"
             android:layout_marginRight="@dimen/spacing_large"
             android:src="@drawable/card_verso"
-            app:layout_constraintDimensionRatio="H,161:225"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -74,7 +72,7 @@
             app:layout_constraintVertical_bias="0.8"
             android:text="@{model.getTitle(context)}"
             app:customFont="@{@string/spellbook_title_font}"
-            android:textSize="28sp"
+            android:textSize="32sp"
             tools:text="Lumière" />
 
     </android.support.constraint.ConstraintLayout>

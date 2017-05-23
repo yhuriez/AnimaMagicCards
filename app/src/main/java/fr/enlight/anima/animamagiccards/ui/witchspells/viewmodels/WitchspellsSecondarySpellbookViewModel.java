@@ -12,7 +12,7 @@ import com.android.databinding.library.baseAdapters.BR;
 
 import fr.enlight.anima.animamagiccards.MainApplication;
 import fr.enlight.anima.animamagiccards.R;
-import fr.enlight.anima.animamagiccards.ui.spellbooks.utils.SpellbookType;
+import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.cardmodel.model.spells.Spellbook;
 
@@ -24,6 +24,12 @@ public class WitchspellsSecondarySpellbookViewModel extends BaseObservable imple
     private final Listener mListener;
 
     private final Context mContext;
+
+    public WitchspellsSecondarySpellbookViewModel(Listener mListener) {
+        mSelectedSecondaryPaths = null;
+        this.mListener = mListener;
+        mContext = MainApplication.getMainContext();
+    }
 
     /**
      * Constructor made for secondary paths
@@ -49,10 +55,6 @@ public class WitchspellsSecondarySpellbookViewModel extends BaseObservable imple
         return mSelectedSecondaryPaths;
     }
 
-    public void onSecondaryPathItemClicked() {
-        mListener.onSecondarySpellbookSelected(this);
-    }
-
     @Bindable
     public Drawable getSecondaryPathIcon() {
         if (mSelectedSecondaryPaths == null) {
@@ -74,8 +76,11 @@ public class WitchspellsSecondarySpellbookViewModel extends BaseObservable imple
         return mSelectedSecondaryPaths.bookName;
     }
 
+    public void onItemClicked(){
+        mListener.onSelectedSecondaryPath(mSelectedSecondaryPaths);
+    }
 
     public interface Listener {
-        void onSecondarySpellbookSelected(WitchspellsSecondarySpellbookViewModel spellbookViewModel);
+        void onSelectedSecondaryPath(Spellbook spellbook);
     }
 }
