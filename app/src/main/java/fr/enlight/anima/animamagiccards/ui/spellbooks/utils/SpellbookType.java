@@ -3,6 +3,9 @@ package fr.enlight.anima.animamagiccards.ui.spellbooks.utils;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.StringRes;
 
+import java.util.Arrays;
+import java.util.List;
+
 import fr.enlight.anima.animamagiccards.R;
 
 /**
@@ -48,6 +51,24 @@ public enum SpellbookType {
         this.iconRes = iconRes;
         this.titleRes = titleRes;
     }
+
+    // /////////////
+    // Static access
+    // /////////////
+
+    public static final List<SpellbookType> MAIN_SPELLBOOKS = Arrays.asList(
+            LIGHT, DARKNESS,
+            CREATION, DESTRUCTION,
+            FIRE, WATER,
+            EARTH, WIND,
+            ESSENCE, ILLUSION,
+            NECROMANCER
+    );
+
+    public static final List<SpellbookType> SECONDARY_SPELLBOOKS = Arrays.asList(
+            CHAOS, WAR, LITERAE, DEATH, MUSIC, NOBILITY, PEACE, SIN, KNOWLEDGE, BLOOD, DREAM, TIME,
+            LIMIT, EMPTYNESS
+    );
 
     public static SpellbookType getTypeFromBookId(int bookId){
         for (SpellbookType spellbookType : values()) {

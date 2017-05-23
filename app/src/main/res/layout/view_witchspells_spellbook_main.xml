@@ -4,17 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
+        <import type="android.view.View"/>
         <variable
             name="model"
-            type="fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsSpellbookItemViewModel" />
+            type="fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsMainSpellbookViewModel" />
     </data>
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:onClick="@{() -> model.onSpellbookClicked()}"
         tools:background="@drawable/witchspells_book_background"
+        tools:layout_height="match_parent"
         tools:paddingTop="@dimen/spacing_big">
 
         <FrameLayout
@@ -48,7 +49,7 @@
             android:textColor="@android:color/white"
             android:textSize="24sp"
             app:layout_constraintLeft_toRightOf="@id/main_path_icon"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toTopOf="@id/main_path_icon"
             tools:text="Necromancie" />
 
         <View
@@ -84,31 +85,31 @@
             app:layout_constraintTop_toBottomOf="@id/major_path_description"
             tools:text="Voie opposée : toutes" />
 
-        <Button
-            style="@style/FlatButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/spacing_large"
-            android:layout_marginRight="@dimen/spacing_large"
-            android:src="@drawable/ic_add_circle_white"
-            app:layout_constraintBottom_toBottomOf="@id/main_path_icon"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="@id/main_path_icon" />
-
         <Spinner
+            android:id="@+id/path_level_spinner"
             android:layout_width="50dp"
             android:layout_height="30dp"
+            android:layout_marginEnd="@dimen/spacing_large"
+            android:layout_marginRight="@dimen/spacing_large"
             android:background="@drawable/rounded_white_rectangle"
             android:gravity="center"
             android:selectedItemPosition="@={model.selectedLevel}"
             app:adapter="@{model.levelSpinnerAdapter}"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="@id/main_path_icon"
             app:layout_constraintBottom_toBottomOf="@id/main_path_icon"
-            android:layout_marginRight="@dimen/spacing_large"
-            android:layout_marginEnd="@dimen/spacing_large"/>
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/main_path_icon" />
 
-
+        <include
+            android:id="@+id/secondary_path_layout"
+            layout="@layout/view_witchspells_spellbook_secondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginStart="45dp"
+            android:visibility="@{model.selectedLevel > 0 ? View.VISIBLE : View.GONE}"
+            app:layout_constraintLeft_toLeftOf="@id/main_path_icon"
+            app:layout_constraintTop_toBottomOf="@id/main_path_icon"
+            app:model="@{model.secondarySpellbookViewModel}" />
 
     </android.support.constraint.ConstraintLayout>
 </layout>

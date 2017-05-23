@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsSecondarySpellbookViewModel" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_height="match_parent"
+        tools:layout_width="match_parent"
+        android:onClick="@{() -> model.onSecondaryPathItemClicked()}"
+        tools:background="@drawable/witchspells_book_background"
+        tools:paddingTop="@dimen/spacing_big">
+
+        <FrameLayout
+            android:id="@+id/secondary_path_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/spacing_base"
+            android:paddingEnd="@dimen/spacing_base"
+            android:paddingLeft="@dimen/spacing_base"
+            android:paddingStart="@dimen/spacing_base"
+            app:layout_constraintRight_toRightOf="@id/main_path_icon"
+            app:layout_constraintTop_toBottomOf="@id/main_path_icon">
+
+            <ImageView
+                android:layout_width="@dimen/witchspells_icon_secondary_container_size"
+                android:layout_height="@dimen/witchspells_icon_secondary_container_size"
+                android:background="@drawable/spell_circle_small" />
+
+            <ImageView
+                android:layout_width="@dimen/witchspells_icon_secondary_size"
+                android:layout_height="@dimen/witchspells_icon_secondary_size"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/spacing_base"
+                android:src="@{model.secondaryPathIcon}"
+                tools:src="@drawable/card_icon_book_knowledge" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/secondary_path_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{model.secondaryPathTitle}"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@id/secondary_path_icon"
+            app:layout_constraintLeft_toRightOf="@id/secondary_path_icon"
+            app:layout_constraintTop_toTopOf="@id/secondary_path_icon"
+            tools:text="Connaissance" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

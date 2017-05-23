@@ -11,7 +11,7 @@
     <string name="spellbook_title_destruction">Destruction</string>
     <string name="spellbook_title_dream">Songes</string>
     <string name="spellbook_title_earth">Terre</string>
-    <string name="spellbook_title_emptyness">Vide</string>
+    <string name="spellbook_title_emptyness">Néant</string>
     <string name="spellbook_title_essence">Essence</string>
     <string name="spellbook_title_fire">Feu</string>
     <string name="spellbook_title_free_access">Libre accès</string>
@@ -24,7 +24,7 @@
     <string name="spellbook_title_necromancer">Nécromancie</string>
     <string name="spellbook_title_nobility">Noblesse</string>
     <string name="spellbook_title_peace">Paix</string>
-    <string name="spellbook_title_sin">Péché</string>
+    <string name="spellbook_title_sin">Pêché</string>
     <string name="spellbook_title_time">Temps</string>
     <string name="spellbook_title_war">Guerre</string>
     <string name="spellbook_title_water">Eau</string>

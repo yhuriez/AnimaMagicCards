@@ -1,6 +1,7 @@
 package fr.enlight.anima.cardmodel.business;
 
 import android.content.Context;
+import android.util.SparseArray;
 
 import java.util.List;
 
@@ -33,6 +34,8 @@ public class SpellBusinessService {
         SpellbookIndexResponse spellbookIndex = getSpellDao().getSpellbookIndex(context);
         return spellbookIndex.spellbooks;
     }
+
+
 
     public SpellDao getSpellDao() {
         if(mSpellDao == null){

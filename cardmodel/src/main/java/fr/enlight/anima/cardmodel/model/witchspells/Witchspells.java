@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import fr.enlight.anima.cardmodel.model.spells.Spellbook;
+
 public class Witchspells implements Parcelable {
 
     public int witchspellsId;
@@ -30,6 +32,15 @@ public class Witchspells implements Parcelable {
         creationDate = (Date) in.readSerializable();
         witchPaths = new ArrayList<>();
         in.readList(witchPaths, WitchspellsPath.class.getClassLoader());
+    }
+
+    public WitchspellsPath getPathForMainBook(int bookId){
+        for (WitchspellsPath witchPath : witchPaths) {
+            if(witchPath.pathBookId == bookId){
+                return witchPath;
+            }
+        }
+        return null;
     }
 
     @Override

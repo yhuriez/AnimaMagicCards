@@ -40,7 +40,8 @@
 
     <string name="Witchspells_Name_Label">Titulaire du grimoire</string>
 
-    <string name="Witchspells_Add_Main_Path">Choisir ses voies</string>
+    <string name="Witchspells_Choose_Main_Path">Choisir ses voies</string>
+    <string name="Witchspells_Choose_Secondary_Path">Choisir sa voie secondaire</string>
 
     <string name="Witchspells_Major_Path">Voie majeure</string>
     <string name="Witchspells_Minor_Path">Voie mineure</string>
@@ -53,4 +54,5 @@
 
     <string name="Witchspells_Validate_Creation">Valider</string>
     <string name="Witchspells_Add_Label">Ajouter une liste de sorts</string>
+
 </resources>

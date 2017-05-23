@@ -62,7 +62,7 @@ public class WitchspellsPathViewModel implements BindableViewModel {
 
     public String getMainPathTitle(){
         if(isAddPathModel()){
-            return mContext.getString(R.string.Witchspells_Add_Main_Path);
+            return mContext.getString(R.string.Witchspells_Choose_Main_Path);
         }
         return mContext.getString(mainPathType.titleRes);
     }
