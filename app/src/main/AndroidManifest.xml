@@ -20,6 +20,7 @@
         </activity>
 
         <activity android:name=".ui.witchspells.WitchspellsEditionActivity"/>
+        <activity android:name=".ui.witchspells.WitchspellsMainPathChooserActivity" />
 
     </application>
 

@@ -1,60 +1,55 @@
 package fr.enlight.anima.cardmodel.model.witchspells;
 
+import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.Ignore;
+import android.arch.persistence.room.PrimaryKey;
+import android.arch.persistence.room.Relation;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.util.Pair;
 
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
-import fr.enlight.anima.cardmodel.model.spells.Spellbook;
-
+@Entity(tableName = "witchspells")
 public class Witchspells implements Parcelable {
 
+    @PrimaryKey(autoGenerate = true)
     public int witchspellsId;
-    public String witchName;
-    public Date creationDate;
 
+    public String witchName;
+
+    public long creationDate;
+
+    @Ignore
     public List<WitchspellsPath> witchPaths;
 
 
-    public Witchspells() {
-        witchspellsId = -1;
-        witchName = null;
-        creationDate = new Date();
-        witchPaths = new ArrayList<>();
-    }
-
-    protected Witchspells(Parcel in) {
-        witchspellsId = in.readInt();
-        witchName = in.readString();
-        creationDate = (Date) in.readSerializable();
-        witchPaths = new ArrayList<>();
-        in.readList(witchPaths, WitchspellsPath.class.getClassLoader());
-    }
-
-    public WitchspellsPath getPathForMainBook(int bookId){
-        for (WitchspellsPath witchPath : witchPaths) {
-            if(witchPath.pathBookId == bookId){
-                return witchPath;
-            }
-        }
-        return null;
+    @Override
+    public int describeContents() {
+        return 0;
     }
 
     @Override
-    public void writeToParcel(Parcel parcel, int i) {
-        parcel.writeInt(witchspellsId);
-        parcel.writeString(witchName);
-        parcel.writeSerializable(creationDate);
-        parcel.writeList(witchPaths);
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeInt(this.witchspellsId);
+        dest.writeString(this.witchName);
+        dest.writeLong(this.creationDate);
+        dest.writeTypedList(this.witchPaths);
+    }
+
+    public Witchspells() {
+    }
+
+    protected Witchspells(Parcel in) {
+        this.witchspellsId = in.readInt();
+        this.witchName = in.readString();
+        this.creationDate = in.readLong();
+        this.witchPaths = in.createTypedArrayList(WitchspellsPath.CREATOR);
     }
 
     public static final Creator<Witchspells> CREATOR = new Creator<Witchspells>() {
         @Override
-        public Witchspells createFromParcel(Parcel in) {
-            return new Witchspells(in);
+        public Witchspells createFromParcel(Parcel source) {
+            return new Witchspells(source);
         }
 
         @Override
@@ -62,11 +57,4 @@ public class Witchspells implements Parcelable {
             return new Witchspells[size];
         }
     };
-
-    @Override
-    public int describeContents() {
-        return 0;
-    }
-
-
 }

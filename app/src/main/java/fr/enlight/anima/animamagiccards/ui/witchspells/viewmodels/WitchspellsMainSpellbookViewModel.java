@@ -21,6 +21,7 @@ import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.cardmodel.model.spells.Spellbook;
+import fr.enlight.anima.cardmodel.model.witchspells.WitchspellsPath;
 
 public class WitchspellsMainSpellbookViewModel extends BaseObservable implements BindableViewModel, WitchspellsSecondarySpellbookViewModel.Listener {
 
@@ -28,37 +29,45 @@ public class WitchspellsMainSpellbookViewModel extends BaseObservable implements
 
     private final List<String> mAvailableLevels = new ArrayList<>();
 
+    private final Context mContext;
+
     @NonNull
     private final Spellbook mSpellbook;
+    @NonNull
     private final SpellbookType mSpellbookType;
+    @NonNull
+    private WitchspellsPath mWitchspellsPath;
 
     private WitchspellsSecondarySpellbookViewModel mSecondarySpellbookViewModel;
 
+    @NonNull
     private final Listener mListener;
 
-    public ObservableBoolean secondaryPathEditVisible = new ObservableBoolean(false);
 
-    private final Context mContext;
-
-    private int mSelectedLevel;
-
-
-    public WitchspellsMainSpellbookViewModel(@NonNull Spellbook spellbook, @NonNull SpellbookType spellbookType, @NonNull Listener listener) {
-        this(spellbook, spellbookType, listener, null);
-    }
-
-    public WitchspellsMainSpellbookViewModel(@NonNull Spellbook spellbook, @NonNull SpellbookType spellbookType, @NonNull Listener listener, @Nullable Spellbook selectedSecondaryPaths) {
+    public WitchspellsMainSpellbookViewModel(@NonNull Spellbook spellbook, @Nullable WitchspellsPath witchspellsPath, @NonNull Listener listener) {
         mSpellbook = spellbook;
-        mSpellbookType = spellbookType;
+        mSpellbookType = spellbook.spellbookType;
         mListener = listener;
         mContext = MainApplication.getMainContext();
-        if(selectedSecondaryPaths == null){
-            mSecondarySpellbookViewModel = new WitchspellsSecondarySpellbookViewModel(this);
+
+        if(witchspellsPath == null){
+            mWitchspellsPath = new WitchspellsPath();
+            mWitchspellsPath.pathBookId = spellbook.bookId;
         } else {
-            mSecondarySpellbookViewModel = new WitchspellsSecondarySpellbookViewModel(selectedSecondaryPaths, this);
+            mWitchspellsPath = witchspellsPath;
+        }
+
+        if(mWitchspellsPath.secondaryPathBookId > 0){
+            SpellbookType secondaryBookType = SpellbookType.getTypeFromBookId(mWitchspellsPath.secondaryPathBookId);
+            if(secondaryBookType == null){
+                throw new IllegalStateException("If secondary id is registered in path, it should gives a SpellbookType");
+            }
+            mSecondarySpellbookViewModel = new WitchspellsSecondarySpellbookViewModel(secondaryBookType, this);
+
+        } else {
+            mSecondarySpellbookViewModel = new WitchspellsSecondarySpellbookViewModel(this);
         }
     }
-
 
     @Override
     public int getLayoutRes() {
@@ -97,12 +106,9 @@ public class WitchspellsMainSpellbookViewModel extends BaseObservable implements
         return new ArrayAdapter<>(mContext, android.R.layout.simple_dropdown_item_1line, mAvailableLevels);
     }
 
-    public void onSpellbookClicked() {
-        mListener.onSpellbookSelected(mSpellbook);
-    }
-
+    @Bindable
     public int getSelectedLevel() {
-        int selectedLevelIndex = mAvailableLevels.indexOf(Integer.toString(mSelectedLevel));
+        int selectedLevelIndex = mAvailableLevels.indexOf(Integer.toString(mWitchspellsPath.pathLevel));
         if (selectedLevelIndex < 0) {
             return 0;
         }
@@ -111,19 +117,17 @@ public class WitchspellsMainSpellbookViewModel extends BaseObservable implements
 
     public void setSelectedLevel(int selectedLevelIndex) {
         String selectedLevelStr = mAvailableLevels.get(selectedLevelIndex);
+        int selectedLevel;
         if (selectedLevelStr == null || selectedLevelStr.isEmpty()) {
-            mSelectedLevel = 0;
+            selectedLevel = 0;
         } else {
-            mSelectedLevel = Integer.parseInt(selectedLevelStr);
+            selectedLevel = Integer.parseInt(selectedLevelStr);
         }
 
-        if(mSelectedLevel > 0){
-            secondaryPathEditVisible.set(true);
-        } else {
-            secondaryPathEditVisible.set(false);
-        }
+        mWitchspellsPath.pathLevel = selectedLevel;
+        notifyPropertyChanged(BR.selectedLevel);
 
-        mListener.onSpellbookLevelSelected(mSpellbook, mSelectedLevel);
+        mListener.onWitchspellPathUpdated(mWitchspellsPath);
     }
 
     // region secondaryPaths
@@ -134,17 +138,14 @@ public class WitchspellsMainSpellbookViewModel extends BaseObservable implements
     }
 
     @Override
-    public void onSelectedSecondaryPath(Spellbook spellbook) {
+    public void onSelectedSecondaryPath(SpellbookType selectedSpellbookType) {
         mListener.onShowSecondarySpellbookForMainPath(mSpellbook);
     }
-
 
     // endregion
 
     public interface Listener {
-        void onSpellbookSelected(Spellbook spellbook);
-
-        void onSpellbookLevelSelected(Spellbook spellbook, int levelSelected);
+        void onWitchspellPathUpdated(@NonNull WitchspellsPath mWitchspellsPath);
 
         void onShowSecondarySpellbookForMainPath(Spellbook spellbook);
     }

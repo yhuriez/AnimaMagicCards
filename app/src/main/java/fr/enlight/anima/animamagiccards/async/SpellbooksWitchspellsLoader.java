@@ -1,4 +1,4 @@
-package fr.enlight.anima.animamagiccards.loaders;
+package fr.enlight.anima.animamagiccards.async;
 
 import android.content.Context;
 
@@ -14,19 +14,19 @@ import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
  */
 public class SpellbooksWitchspellsLoader extends BaseLoader<SpellbooksWitchspellsLoader.LoaderResult> {
 
-    private SpellBusinessService spellBusinessService;
-    private WitchspellsBusinessService witchspellsBusinessService;
-
     public SpellbooksWitchspellsLoader(Context context) {
         super(context);
-        spellBusinessService = new SpellBusinessService(context);
-        witchspellsBusinessService = new WitchspellsBusinessService(context);
     }
 
     @Override
     public LoaderResult loadInBackground() {
+        WitchspellsBusinessService witchspellsBusinessService = new WitchspellsBusinessService(getContext());
+
         List<Witchspells> allWitchspells = witchspellsBusinessService.getAllWitchspells();
+
+        SpellBusinessService spellBusinessService = new SpellBusinessService(getContext());
         List<Spellbook> spellbooksIndex = spellBusinessService.getSpellbooksIndex();
+
         return new LoaderResult(allWitchspells, spellbooksIndex);
     }
 

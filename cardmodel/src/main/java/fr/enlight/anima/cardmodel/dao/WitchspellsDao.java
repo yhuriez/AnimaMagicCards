@@ -1,5 +1,11 @@
 package fr.enlight.anima.cardmodel.dao;
 
+import android.arch.persistence.room.Dao;
+import android.arch.persistence.room.Delete;
+import android.arch.persistence.room.Insert;
+import android.arch.persistence.room.OnConflictStrategy;
+import android.arch.persistence.room.Query;
+import android.arch.persistence.room.Update;
 import android.content.Context;
 import android.content.SharedPreferences;
 
@@ -11,45 +17,18 @@ import java.util.Map;
 
 import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 
-public class WitchspellsDao {
+@Dao
+public interface WitchspellsDao {
 
-    private static final String WITCHSPELLS_SHARED_PREFS = "WITCHSPELLS_SHARED_PREFS";
+    @Query("SELECT * FROM witchspells ORDER BY creationDate DESC")
+    List<Witchspells> getWitchspells();
 
-    private static final String WITCHSPELLS_PARAM_PREFIX = "WITCHSPELLS_PARAM_";
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    long insertWitchspells(Witchspells witchspells);
 
-    private final SharedPreferences mSharedPreferences;
-    private Gson gson;
+    @Update
+    void updateWitchspells(Witchspells witchspells);
 
-    public WitchspellsDao(Context context) {
-        mSharedPreferences = context.getSharedPreferences(WITCHSPELLS_SHARED_PREFS, Context.MODE_PRIVATE);
-    }
-
-    public void addWitchspells(Witchspells witchspells){
-        String key = WITCHSPELLS_PARAM_PREFIX + witchspells.witchspellsId;
-        String jsonWitchspells = getGson().toJson(witchspells);
-        mSharedPreferences.edit().putString(key, jsonWitchspells).apply();
-    }
-
-    public List<Witchspells> getAllWitchspells(){
-        Map<String, ?> all = mSharedPreferences.getAll();
-        List<Witchspells> result = new ArrayList<>();
-        for (Object object : all.values()) {
-            String jsonWitchspells = (String) object;
-            Witchspells witchspells = getGson().fromJson(jsonWitchspells, Witchspells.class);
-            result.add(witchspells);
-        }
-        return result;
-    }
-
-    public void removeWitchspells(int witchspellsId){
-        String key = WITCHSPELLS_PARAM_PREFIX + witchspellsId;
-        mSharedPreferences.edit().remove(key).apply();
-    }
-
-    private Gson getGson(){
-        if(gson == null){
-            gson = new Gson();
-        }
-        return gson;
-    }
+    @Delete
+    void deleteWitchspells(Witchspells witchspells);
 }

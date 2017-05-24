@@ -45,6 +45,10 @@ public class WitchspellsPathViewModel implements BindableViewModel {
         return BR.model;
     }
 
+    public int getPathLevel(){
+        return mWitchspellsPath.pathLevel;
+    }
+
     public Drawable getMainPathIcon(){
         return ResourcesCompat.getDrawable(mContext.getResources(), mainPathType.iconRes, null);
     }
@@ -58,7 +62,7 @@ public class WitchspellsPathViewModel implements BindableViewModel {
         if(secondaryPathType == null){
             iconRes = R.drawable.card_icon_book_free_access;
         } else {
-            iconRes = mainPathType.iconRes;
+            iconRes = secondaryPathType.iconRes;
         }
 
         return ResourcesCompat.getDrawable(mContext.getResources(), iconRes, null);

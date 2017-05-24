@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-        <import type="android.view.View"/>
+
+        <import type="android.view.View" />
+
         <variable
             name="model"
             type="fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsMainSpellbookViewModel" />
@@ -13,7 +15,7 @@
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="@{() -> model.onSpellbookClicked()}"
+        android:paddingBottom="@dimen/spacing_large"
         tools:background="@drawable/witchspells_book_background"
         tools:layout_height="match_parent"
         tools:paddingTop="@dimen/spacing_big">
@@ -106,7 +108,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="45dp"
             android:layout_marginStart="45dp"
-            android:visibility="@{model.secondaryPathEditVisible ? View.VISIBLE : View.GONE}"
+            android:visibility="@{model.selectedLevel > 0 ? View.VISIBLE : View.GONE}"
             app:layout_constraintLeft_toLeftOf="@id/main_path_icon"
             app:layout_constraintTop_toBottomOf="@id/main_path_icon"
             app:model="@{model.secondarySpellbookViewModel}" />

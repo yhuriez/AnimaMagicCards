@@ -3,77 +3,65 @@ package fr.enlight.anima.cardmodel.business;
 
 import android.content.Context;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 import fr.enlight.anima.cardmodel.dao.WitchspellsDao;
-import fr.enlight.anima.cardmodel.model.spells.Spell;
+import fr.enlight.anima.cardmodel.dao.WitchspellsPathDao;
+import fr.enlight.anima.cardmodel.database.AppDatabase;
 import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 import fr.enlight.anima.cardmodel.model.witchspells.WitchspellsPath;
 
 public class WitchspellsBusinessService {
 
-    private SpellBusinessService mSpellBusinessService;
-    private WitchspellsDao mWitchspellsDao;
     private Context context;
+
+    private WitchspellsDao witchspellsDao;
+    private WitchspellsPathDao witchspellsPathDao;
 
     public WitchspellsBusinessService(Context context) {
         this.context = context;
     }
 
     public void saveWitchspells(Witchspells witchspells){
-        getWitchspellsDao().addWitchspells(witchspells);
-    }
+        int witchspellsId = witchspells.witchspellsId;
+        if(witchspellsId > 0){
+            getWitchspellsDao().updateWitchspells(witchspells);
+        } else {
+            witchspellsId = (int) getWitchspellsDao().insertWitchspells(witchspells);
+        }
 
-    public void deleteWitchspells(Witchspells witchspells){
-        getWitchspellsDao().removeWitchspells(witchspells.witchspellsId);
+        WitchspellsPathDao witchspellsPathDao = getWitchspellsPathDao();
+
+        witchspellsPathDao.deleteWitchspellsPaths(witchspellsId);
+
+        for (WitchspellsPath witchPath : witchspells.witchPaths) {
+            witchPath.parentPathId = witchspellsId;
+            witchspellsPathDao.insertWitchspellsPath(witchPath);
+        }
     }
 
     public List<Witchspells> getAllWitchspells(){
-        List<Witchspells> allWitchspells = getWitchspellsDao().getAllWitchspells();
-        Collections.sort(allWitchspells, new Comparator<Witchspells>() {
-            @Override
-            public int compare(Witchspells first, Witchspells second) {
-                return first.creationDate.compareTo(second.creationDate);
-            }
-        });
+        List<Witchspells> witchspellsList = getWitchspellsDao().getWitchspells();
 
-        return allWitchspells;
-    }
-
-    /**
-     * Build a list of spells using the Witchspells data. Witchspells object contains indications of
-     * which spellbooks are used by the witch and which secondary book or free access spells are choosen
-     * for each of them.
-     */
-    public List<Spell> buildSpellsFromWitchspells(Witchspells witchspells){
-        List<Spell> result = new ArrayList<>();
-
-        SpellBusinessService spellBusinessService = getSpellBusinessService();
-
-        for (WitchspellsPath witchPath : witchspells.witchPaths) {
-            List<Spell> spellsForBook = spellBusinessService.getSpellsForBook(witchPath.pathBookId);
-            for (int index = 0; index < witchPath.pathLevel / 2; index++) {
-                // TODO
-            }
+        WitchspellsPathDao witchspellsPathDao = getWitchspellsPathDao();
+        for (Witchspells witchspells : witchspellsList) {
+            witchspells.witchPaths = witchspellsPathDao.getWitchspellsPath(witchspells.witchspellsId);
         }
 
-        return result;
+        return witchspellsList;
     }
 
-    private WitchspellsDao getWitchspellsDao(){
-        if(mWitchspellsDao == null){
-            mWitchspellsDao = new WitchspellsDao(context);
+    public WitchspellsDao getWitchspellsDao(){
+        if(witchspellsDao == null){
+            witchspellsDao = AppDatabase.getInstance(context).getWitchspellsDao();
         }
-        return mWitchspellsDao;
+        return witchspellsDao;
     }
 
-    private SpellBusinessService getSpellBusinessService(){
-        if(mSpellBusinessService == null){
-            mSpellBusinessService = new SpellBusinessService(context);
+    public WitchspellsPathDao getWitchspellsPathDao(){
+        if(witchspellsPathDao == null){
+            witchspellsPathDao = AppDatabase.getInstance(context).getWitchspellsPathDao();
         }
-        return mSpellBusinessService;
+        return witchspellsPathDao;
     }
 }

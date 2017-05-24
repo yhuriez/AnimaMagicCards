@@ -11,6 +11,7 @@ import java.util.Map;
 
 import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
 import fr.enlight.anima.cardmodel.model.spells.Spellbook;
+import fr.enlight.anima.cardmodel.model.witchspells.WitchspellsPath;
 
 public class SpellbookUtils {
 

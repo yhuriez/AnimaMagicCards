@@ -15,7 +15,7 @@ import java.util.List;
 
 import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.animamagiccards.databinding.ActivitySpellsStackBinding;
-import fr.enlight.anima.animamagiccards.loaders.SpellsLoader;
+import fr.enlight.anima.animamagiccards.async.SpellsLoader;
 import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
 import fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels.DialogSpellEffectViewModel;
 import fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels.DialogSpellGradeViewModel;

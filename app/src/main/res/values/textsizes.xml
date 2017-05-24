@@ -7,4 +7,7 @@
     <dimen name="textSize_regular">12sp</dimen>
     <dimen name="textSize_medium">15sp</dimen>
     <dimen name="textSize_large">18sp</dimen>
+    <dimen name="textSize_xlarge">21sp</dimen>
+    <dimen name="textSize_big">28sp</dimen>
+    <dimen name="textSize_xbig">32sp</dimen>
 </resources>

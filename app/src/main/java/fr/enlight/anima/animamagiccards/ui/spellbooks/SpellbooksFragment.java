@@ -20,7 +20,7 @@ import java.util.List;
 
 import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.animamagiccards.databinding.ActivitySpellbooksIndexBinding;
-import fr.enlight.anima.animamagiccards.loaders.SpellbooksWitchspellsLoader;
+import fr.enlight.anima.animamagiccards.async.SpellbooksWitchspellsLoader;
 import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
 import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsAddViewModel;
 import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsBookViewModel;

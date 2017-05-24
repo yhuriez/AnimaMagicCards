@@ -1,4 +1,4 @@
-package fr.enlight.anima.animamagiccards.loaders;
+package fr.enlight.anima.animamagiccards.async;
 
 import android.content.Context;
 

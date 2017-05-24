@@ -19,23 +19,40 @@ import fr.enlight.anima.cardmodel.model.spells.Spellbook;
 public class WitchspellsSecondarySpellbookViewModel extends BaseObservable implements BindableViewModel {
 
     @Nullable
-    private Spellbook mSelectedSecondaryPaths;
+    private final Spellbook mSelectedSecondaryPaths;
+    @Nullable
+    private final SpellbookType mSelectedSecondaryPathsType;
 
     private final Listener mListener;
 
     private final Context mContext;
 
+    /**
+     * Constructor for empty
+     */
     public WitchspellsSecondarySpellbookViewModel(Listener mListener) {
         mSelectedSecondaryPaths = null;
+        mSelectedSecondaryPathsType = null;
         this.mListener = mListener;
         mContext = MainApplication.getMainContext();
     }
 
     /**
-     * Constructor made for secondary paths
+     * Constructor made for secondary paths (with Spellbook's type only)
+     */
+    public WitchspellsSecondarySpellbookViewModel(@NonNull SpellbookType secondaryPathType, @NonNull Listener listener) {
+        mSelectedSecondaryPaths = null;
+        mSelectedSecondaryPathsType = secondaryPathType;
+        mListener = listener;
+        mContext = MainApplication.getMainContext();
+    }
+
+    /**
+     * Constructor made for secondary paths (with Spellbook's fulle information)
      */
     public WitchspellsSecondarySpellbookViewModel(@NonNull Spellbook secondaryPathSpellbook, @NonNull Listener listener) {
         mSelectedSecondaryPaths = secondaryPathSpellbook;
+        mSelectedSecondaryPathsType = secondaryPathSpellbook.spellbookType;
         mListener = listener;
         mContext = MainApplication.getMainContext();
     }
@@ -50,37 +67,28 @@ public class WitchspellsSecondarySpellbookViewModel extends BaseObservable imple
         return BR.model;
     }
 
-    @Nullable
-    public Spellbook getSecondarySpellbook() {
-        return mSelectedSecondaryPaths;
-    }
-
     @Bindable
     public Drawable getSecondaryPathIcon() {
-        if (mSelectedSecondaryPaths == null) {
+        if (mSelectedSecondaryPathsType == null) {
             return ResourcesCompat.getDrawable(mContext.getResources(), R.drawable.ic_add_black, null);
         }
 
-        SpellbookType typeFromBookId = SpellbookType.getTypeFromBookId(mSelectedSecondaryPaths.bookId);
-        if (typeFromBookId == null) {
-            return null;
-        }
-        return ResourcesCompat.getDrawable(mContext.getResources(), typeFromBookId.iconRes, null);
+        return ResourcesCompat.getDrawable(mContext.getResources(), mSelectedSecondaryPathsType.iconRes, null);
     }
 
     @Bindable
     public String getSecondaryPathTitle() {
-        if (mSelectedSecondaryPaths == null) {
+        if (mSelectedSecondaryPathsType == null) {
             return mContext.getString(R.string.Witchspells_Choose_Secondary_Path);
         }
-        return mSelectedSecondaryPaths.bookName;
+        return mContext.getString(mSelectedSecondaryPathsType.titleRes);
     }
 
     public void onItemClicked(){
-        mListener.onSelectedSecondaryPath(mSelectedSecondaryPaths);
+        mListener.onSelectedSecondaryPath(mSelectedSecondaryPathsType);
     }
 
     public interface Listener {
-        void onSelectedSecondaryPath(Spellbook spellbook);
+        void onSelectedSecondaryPath(SpellbookType selectedSpellbookType);
     }
 }

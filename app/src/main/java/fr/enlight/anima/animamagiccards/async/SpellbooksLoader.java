@@ -1,13 +1,11 @@
-package fr.enlight.anima.animamagiccards.loaders;
+package fr.enlight.anima.animamagiccards.async;
 
 import android.content.Context;
 
 import java.util.List;
 
 import fr.enlight.anima.cardmodel.business.SpellBusinessService;
-import fr.enlight.anima.cardmodel.business.WitchspellsBusinessService;
 import fr.enlight.anima.cardmodel.model.spells.Spellbook;
-import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 
 /**
  *

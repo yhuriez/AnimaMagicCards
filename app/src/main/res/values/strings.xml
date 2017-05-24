@@ -5,6 +5,8 @@
     <string name="Common_Close">Fermer</string>
     <string name="Common_See_More">Voir tout</string>
     <string name="Common_Loading_Message">Chargement</string>
+    <string name="Common_Validate">Valider</string>
+    <string name="Common_Modify">Modifier</string>
 
     <!--Spellbooks-->
     <string name="Spellbooks_Title">Livres de sorts</string>
@@ -46,13 +48,16 @@
     <string name="Witchspells_Major_Path">Voie majeure</string>
     <string name="Witchspells_Minor_Path">Voie mineure</string>
     <string name="Witchspells_Opposite_Path_Format">Voie opposée : %1$s</string>
+    <string name="Witchspells_Secondary_Path_Format">Secondaire : %1$s</string>
 
     <plurals name="Witchspells_Free_Access_Count">
         <item quantity="one">+ 1 sort d\'accès libre</item>
         <item quantity="other">+ %d sorts d\'accès libre</item>
     </plurals>
 
-    <string name="Witchspells_Validate_Creation">Valider</string>
     <string name="Witchspells_Add_Label">Ajouter une liste de sorts</string>
+    <string name="Error_No_Witchspells_Name">Un nom est nécessaire pour pouvoir enregistrer le grimoire</string>
+    <string name="Witchspells_Save_Waiting_Message">Enregistrement du grimoire...</string>
+
 
 </resources>
