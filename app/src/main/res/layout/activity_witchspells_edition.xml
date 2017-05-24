@@ -90,9 +90,10 @@
                     <EditText
                         android:id="@+id/witchspells_name_edittext"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="@dimen/text_input_height"
                         android:gravity="center_horizontal"
                         android:inputType="text"
+                        android:textSize="@dimen/textSize_xlarge"
                         android:text="@={model.witchName}"
                         android:textColor="@android:color/white"
                         app:customFont="@{@string/spell_title_font}" />

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsPathReducedViewModel" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:background="@drawable/witchspells_book_background"
+        tools:paddingTop="@dimen/spacing_big">
+
+        <FrameLayout
+            android:id="@+id/main_path_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/spacing_base"
+            android:paddingEnd="@dimen/spacing_large"
+            android:paddingLeft="@dimen/spacing_base"
+            android:paddingRight="@dimen/spacing_large"
+            android:paddingStart="@dimen/spacing_base"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/witchspells_icon_main_container_size"
+                android:layout_height="@dimen/witchspells_icon_main_container_size"
+                android:background="@drawable/spell_circle" />
+
+            <ImageView
+                android:layout_width="@dimen/witchspells_icon_main_size"
+                android:layout_height="@dimen/witchspells_icon_main_size"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/spacing_base"
+                android:src="@{model.mainPathIcon}"
+                tools:src="@drawable/card_icon_book_necromancer" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/secondary_path_icon"
+            android:layout_width="@dimen/witchspells_icon_secondary_container_size"
+            android:layout_height="@dimen/witchspells_icon_secondary_container_size"
+            android:layout_marginEnd="@dimen/spacing_small"
+            android:layout_marginRight="@dimen/spacing_small"
+            android:background="@drawable/spell_circle_small"
+            app:layout_constraintBottom_toBottomOf="@id/main_path_icon"
+            app:layout_constraintRight_toRightOf="@id/main_path_icon"
+            app:setVisible="@{model.secondaryPathIcon != null}">
+
+            <ImageView
+                android:layout_width="@dimen/witchspells_icon_secondary_size"
+                android:layout_height="@dimen/witchspells_icon_secondary_size"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/spacing_base"
+                android:src="@{model.secondaryPathIcon}"
+                tools:src="@drawable/card_icon_book_chaos" />
+        </FrameLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</layout>
