@@ -16,7 +16,7 @@ import fr.enlight.anima.cardmodel.database.ListTypeConverters;
 @TypeConverters({ListTypeConverters.class})
 public class WitchspellsPath implements Parcelable {
 
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     public int pathId;
 
     public int parentPathId;

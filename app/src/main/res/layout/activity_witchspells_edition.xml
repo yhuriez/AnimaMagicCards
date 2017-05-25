@@ -93,7 +93,7 @@
                         android:layout_height="@dimen/text_input_height"
                         android:gravity="center_horizontal"
                         android:inputType="text"
-                        android:textSize="@dimen/textSize_xlarge"
+                        android:textSize="@dimen/textSize_xbig"
                         android:text="@={model.witchName}"
                         android:textColor="@android:color/white"
                         app:customFont="@{@string/spell_title_font}" />

@@ -111,7 +111,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/spacing_base"
             android:layout_marginStart="@dimen/spacing_base"
-            android:text="@{@string/Witchspells_Secondary_Path_Format(model.secondaryPathTitle)}"
+            android:text="@{model.secondaryPathTitle}"
             android:textColor="@android:color/white"
             android:textSize="@dimen/textSize_medium"
             android:textStyle="italic"

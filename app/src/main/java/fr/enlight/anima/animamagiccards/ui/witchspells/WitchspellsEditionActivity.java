@@ -109,6 +109,7 @@ public class WitchspellsEditionActivity extends AppCompatActivity implements Wit
         if(progressDialog != null){
             progressDialog.dismiss();
         }
+        setResult(RESULT_OK);
         finish();
     }
 }

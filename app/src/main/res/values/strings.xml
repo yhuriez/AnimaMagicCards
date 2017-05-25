@@ -60,6 +60,7 @@
     <string name="Witchspells_Add_Label">Ajouter une liste de sorts</string>
     <string name="Error_No_Witchspells_Name">Un nom est nécessaire pour pouvoir enregistrer le grimoire</string>
     <string name="Witchspells_Save_Waiting_Message">Enregistrement du grimoire...</string>
+    <string name="Witchspells_Free_Access_Value">Sorts de libre accès</string>
 
 
 </resources>

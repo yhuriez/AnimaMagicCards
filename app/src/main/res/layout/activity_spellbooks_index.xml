@@ -14,15 +14,25 @@
 
         <android.support.v7.widget.RecyclerView
             android:layout_width="0dp"
-            android:layout_height="350dp"
+            android:layout_height="300dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spellbook_title_switcher"
             app:addOnScrollListener="@{model.onScrollListener}"
             app:hasFixedSize="@{true}"
             app:layoutManager="@{model.layoutManager}"
             app:viewModels="@{model.viewModels}"/>
+
+        <TextSwitcher
+            android:id="@+id/spellbook_title_switcher"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
     </android.support.constraint.ConstraintLayout>
 
 

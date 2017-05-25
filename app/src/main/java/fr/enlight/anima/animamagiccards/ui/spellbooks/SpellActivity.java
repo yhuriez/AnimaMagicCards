@@ -1,5 +1,6 @@
 package fr.enlight.anima.animamagiccards.ui.spellbooks;
 
+import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +10,10 @@ import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
 import fr.enlight.anima.animamagiccards.ui.witchspells.WitchspellsEditionActivity;
 
 public class SpellActivity extends AppCompatActivity implements SpellbooksFragment.Callbacks{
+
+    private static final int WITCHSPELLS_REQUEST_CODE = 712;
+
+    private static final String SPELLBOOK_FRAGMENT_TAG = "SPELLBOOK_FRAGMENT_TAG";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +27,7 @@ public class SpellActivity extends AppCompatActivity implements SpellbooksFragme
 
     private void goToSpellbookFragment(){
         getFragmentManager().beginTransaction()
-                .replace(R.id.fragment_placeholder, new SpellbooksFragment())
+                .replace(R.id.fragment_placeholder, new SpellbooksFragment(), SPELLBOOK_FRAGMENT_TAG)
                 .commit();
     }
 
@@ -40,6 +45,17 @@ public class SpellActivity extends AppCompatActivity implements SpellbooksFragme
 
     @Override
     public void onAddWitchspells() {
-        startActivity(new Intent(this, WitchspellsEditionActivity.class));
+        startActivityForResult(new Intent(this, WitchspellsEditionActivity.class), WITCHSPELLS_REQUEST_CODE);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode == WITCHSPELLS_REQUEST_CODE && resultCode == RESULT_OK){
+            Fragment spellbookFragment = getFragmentManager().findFragmentByTag(SPELLBOOK_FRAGMENT_TAG);
+            if(spellbookFragment != null && spellbookFragment instanceof SpellbooksFragment){
+                ((SpellbooksFragment) spellbookFragment).resetSpellbooks();
+            }
+        }
     }
 }

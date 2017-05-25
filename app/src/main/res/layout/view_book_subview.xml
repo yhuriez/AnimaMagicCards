@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels.BookSubviewViewModel" />
+    </data>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:background="@android:color/black">
+
+        <TextView
+            android:id="@+id/spellbook_title_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textSize_big"
+            app:customFont="@{@string/spell_title_font}"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Livre de la Lumière" />
+
+        <View
+            android:id="@+id/spellbook_separator"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:background="@android:color/white"
+            app:layout_constraintLeft_toLeftOf="@id/spellbook_title_textview"
+            app:layout_constraintRight_toRightOf="@id/spellbook_title_textview"
+            app:layout_constraintTop_toBottomOf="@id/spellbook_title_textview" />
+
+        <TextView
+            android:id="@+id/spellbook_message_textview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="@dimen/spacing_base"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textSize_regular"
+            app:customFont="@{@string/spell_title_font}"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spellbook_separator"
+            tools:text="Cette voie permet aux sorciers de contrôler un des deux éléments supérieurs, la lumière pure. Elle contrôle les émotions positives de l’homme, comme l’amour, la tranquillité ou le plaisir. Elle offre également la maîtrise de la connaissance et de la détection. Ses pouvoirs offensifs et défensifs se révèlent très équilibrés." />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

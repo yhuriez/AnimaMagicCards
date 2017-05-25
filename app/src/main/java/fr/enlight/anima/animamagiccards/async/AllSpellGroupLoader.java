@@ -12,9 +12,9 @@ import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 /**
  *
  */
-public class SpellbooksWitchspellsLoader extends BaseLoader<SpellbooksWitchspellsLoader.LoaderResult> {
+public class AllSpellGroupLoader extends BaseLoader<AllSpellGroupLoader.LoaderResult> {
 
-    public SpellbooksWitchspellsLoader(Context context) {
+    public AllSpellGroupLoader(Context context) {
         super(context);
     }
 
