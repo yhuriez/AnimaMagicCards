@@ -1,5 +1,6 @@
 package fr.enlight.anima.animamagiccards.ui;
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.app.LoaderManager;
 import android.content.Context;
@@ -59,7 +60,7 @@ public class HomePageFragment extends Fragment implements
 
         homePageViewModel = new HomePageViewModel();
         CarouselLayoutManager carouselLayoutManager = new CarouselLayoutManager(CarouselLayoutManager.HORIZONTAL, false);
-        carouselLayoutManager.setMaxVisibleItems(3);
+        carouselLayoutManager.setMaxVisibleItems(1);
         carouselLayoutManager.setPostLayoutListener(new CarouselZoomPostLayoutListener());
         carouselLayoutManager.addOnItemSelectionListener(this);
         homePageViewModel.setLayoutManager(carouselLayoutManager);
@@ -79,6 +80,12 @@ public class HomePageFragment extends Fragment implements
     public void onAttach(Context context) {
         super.onAttach(context);
         mListener = (Callbacks) context;
+    }
+
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        mListener = (Callbacks) activity;
     }
 
     @Override
