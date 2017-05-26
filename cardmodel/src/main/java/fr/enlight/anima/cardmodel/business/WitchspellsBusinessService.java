@@ -51,6 +51,11 @@ public class WitchspellsBusinessService {
         return witchspellsList;
     }
 
+    public void deleteWitchspells(Witchspells witchspells) {
+        getWitchspellsPathDao().deleteWitchspellsPaths(witchspells.witchspellsId);
+        getWitchspellsDao().deleteWitchspells(witchspells);
+    }
+
     public WitchspellsDao getWitchspellsDao(){
         if(witchspellsDao == null){
             witchspellsDao = AppDatabase.getInstance(context).getWitchspellsDao();

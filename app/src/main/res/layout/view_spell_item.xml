@@ -51,8 +51,6 @@
             android:id="@+id/spell_card_background"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginLeft="@dimen/spacing_large"
-            android:layout_marginRight="@dimen/spacing_large"
             android:src="@{model.getBackground(context)}"
             app:layout_constraintDimensionRatio="H,161:225"
             app:layout_constraintLeft_toLeftOf="parent"

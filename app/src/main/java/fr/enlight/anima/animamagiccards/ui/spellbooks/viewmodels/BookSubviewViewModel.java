@@ -31,7 +31,7 @@ public class BookSubviewViewModel {
         spellbook = null;
         this.mListener = listener;
         Context mainContext = MainApplication.getMainContext();
-        mTitle = mainContext.getString(R.string.Witchspells_Name_Format, witchspells);
+        mTitle = mainContext.getString(R.string.Witchspells_Name_Format, witchspells.witchName);
         mDescription = null;
     }
 

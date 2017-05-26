@@ -7,9 +7,15 @@ import android.content.Loader;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.view.MenuItemCompat;
+import android.support.v7.widget.SearchView;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -25,7 +31,7 @@ import fr.enlight.anima.animamagiccards.views.BindingDialogFragment;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 
 
-public class SpellStackFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<BindableViewModel>>, SpellViewModel.Listener {
+public class SpellStackFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<BindableViewModel>>, SpellViewModel.Listener, SearchView.OnQueryTextListener {
 
     private static final String EFFECT_DIALOG = "EFFECT_DIALOG";
     private static final String GRADE_DIALOG = "GRADE_DIALOG";
@@ -67,6 +73,8 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
+        setHasOptionsMenu(true);
+
         String bookType = getArguments().getString(SPELLBOOK_TYPE);
         if (bookType != null) {
             spellbookType = SpellbookType.valueOf(bookType);
@@ -77,6 +85,46 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
 
         getLoaderManager().initLoader(1, getArguments(), this);
     }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        super.onCreateOptionsMenu(menu, inflater);
+        inflater.inflate(R.menu.spell_stack_menu, menu);
+
+        MenuItem searchItem = menu.findItem(R.id.action_search);
+        SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
+        searchView.setSubmitButtonEnabled(true);
+        searchView.setOnQueryTextListener(this);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(item.getItemId() == R.id.action_filter){
+            toggleFiltersPanel();
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    // //////////////
+    // region Filters
+    // //////////////
+
+    @Override
+    public boolean onQueryTextSubmit(String query) {
+        Toast.makeText(getActivity(), query, Toast.LENGTH_LONG).show();
+        return true;
+    }
+
+    @Override
+    public boolean onQueryTextChange(String newText) {
+        return false;
+    }
+
+    private void toggleFiltersPanel() {
+
+    }
+
+    // endregion
 
     @Override
     public Loader<List<BindableViewModel>> onCreateLoader(int id, Bundle args) {
@@ -109,4 +157,6 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
         BindingDialogFragment.newInstance(dialogViewModel)
                 .show(getFragmentManager(), GRADE_DIALOG);
     }
+
+
 }
