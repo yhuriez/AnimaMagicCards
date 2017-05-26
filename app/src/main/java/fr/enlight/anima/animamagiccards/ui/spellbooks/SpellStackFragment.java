@@ -17,41 +17,49 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import fr.enlight.anima.animamagiccards.R;
-import fr.enlight.anima.animamagiccards.databinding.ActivitySpellsStackBinding;
 import fr.enlight.anima.animamagiccards.async.SpellsLoader;
-import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
+import fr.enlight.anima.animamagiccards.databinding.ActivitySpellsStackBinding;
 import fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels.DialogSpellEffectViewModel;
 import fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels.DialogSpellGradeViewModel;
 import fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels.SpellStackViewModel;
 import fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels.SpellViewModel;
 import fr.enlight.anima.animamagiccards.views.BindingDialogFragment;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
+import fr.enlight.anima.cardmodel.model.spells.Spell;
+import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 
 
-public class SpellStackFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<BindableViewModel>>, SpellViewModel.Listener, SearchView.OnQueryTextListener {
+public class SpellStackFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<Spell>>, SpellViewModel.Listener, SearchView.OnQueryTextListener {
 
     private static final String EFFECT_DIALOG = "EFFECT_DIALOG";
     private static final String GRADE_DIALOG = "GRADE_DIALOG";
 
 
     private static final String SPELLBOOK_ID = "SPELLBOOK_ID";
-    private static final String SPELLBOOK_TYPE = "SPELLBOOK_TYPE";
+    private static final String WITCHSPELL_PARAM = "WITCHSPELL_PARAM";
 
     private ActivitySpellsStackBinding binding;
 
     private SpellStackViewModel spellViewModels;
-    private SpellbookType spellbookType;
 
     private View mLoadingOverlay;
 
-    public static SpellStackFragment newInstance(int spellbookId, SpellbookType type) {
+    public static SpellStackFragment newInstance(int spellbookId) {
         SpellStackFragment fragment = new SpellStackFragment();
         Bundle bundle = new Bundle();
         bundle.putInt(SPELLBOOK_ID, spellbookId);
-        bundle.putString(SPELLBOOK_TYPE, type.name());
+        fragment.setArguments(bundle);
+        return fragment;
+    }
+
+    public static SpellStackFragment newInstance(Witchspells witchspells) {
+        SpellStackFragment fragment = new SpellStackFragment();
+        Bundle bundle = new Bundle();
+        bundle.putParcelable(WITCHSPELL_PARAM, witchspells);
         fragment.setArguments(bundle);
         return fragment;
     }
@@ -75,12 +83,7 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
 
         setHasOptionsMenu(true);
 
-        String bookType = getArguments().getString(SPELLBOOK_TYPE);
-        if (bookType != null) {
-            spellbookType = SpellbookType.valueOf(bookType);
-        }
-
-        spellViewModels = new SpellStackViewModel(spellbookType);
+        spellViewModels = new SpellStackViewModel();
         binding.setModel(spellViewModels);
 
         getLoaderManager().initLoader(1, getArguments(), this);
@@ -127,22 +130,30 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     // endregion
 
     @Override
-    public Loader<List<BindableViewModel>> onCreateLoader(int id, Bundle args) {
+    public Loader<List<Spell>> onCreateLoader(int id, Bundle args) {
         if (args.containsKey(SPELLBOOK_ID)) {
-            return new SpellsLoader(getActivity(), args.getInt(SPELLBOOK_ID), spellbookType, this);
+            return new SpellsLoader(getActivity(), args.getInt(SPELLBOOK_ID));
+
+        } else if(args.containsKey(WITCHSPELL_PARAM)){
+            return new SpellsLoader(getActivity(), (Witchspells) args.getParcelable(WITCHSPELL_PARAM));
         }
-        return null;
+        throw new IllegalStateException("A param should be given to this fragment");
     }
 
     @Override
-    public void onLoadFinished(Loader<List<BindableViewModel>> loader, List<BindableViewModel> data) {
-        spellViewModels.setViewModels(data);
+    public void onLoadFinished(Loader<List<Spell>> loader, List<Spell> data) {
+        List<BindableViewModel> result = new ArrayList<>();
+        for (Spell spell : data) {
+            result.add(new SpellViewModel(spell, spell.spellbookType));
+        }
+
+        spellViewModels.setViewModels(result);
 
         mLoadingOverlay.setVisibility(View.GONE);
     }
 
     @Override
-    public void onLoaderReset(Loader<List<BindableViewModel>> loader) {
+    public void onLoaderReset(Loader<List<Spell>> loader) {
     }
 
 

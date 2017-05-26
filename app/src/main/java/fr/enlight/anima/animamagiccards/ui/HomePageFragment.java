@@ -32,15 +32,16 @@ import fr.enlight.anima.cardmodel.model.spells.Spellbook;
 import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
 import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 
-public class HomePageFragment extends Fragment implements LoaderManager.LoaderCallbacks<AllSpellGroupLoader.LoaderResult>,
-        SpellbookViewModel.Listener, WitchspellsAddViewModel.Listener, CarouselLayoutManager.OnCenterItemSelectionListener {
+public class HomePageFragment extends Fragment implements
+        LoaderManager.LoaderCallbacks<AllSpellGroupLoader.LoaderResult>,
+        CarouselLayoutManager.OnCenterItemSelectionListener {
 
     private static final int LOADER_ID = 1;
 
     private HomePageViewModel homePageViewModel;
     private FragmentHomePageBinding binding;
 
-    private Callbacks mCallbacks;
+    private Callbacks mListener;
 
     private final SparseArray<String> switchingTitlesIndex = new SparseArray<>();
     private final SparseArray<BookSubviewViewModel> switchingSubviewModelIndex = new SparseArray<>();
@@ -77,13 +78,13 @@ public class HomePageFragment extends Fragment implements LoaderManager.LoaderCa
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        mCallbacks = (Callbacks) context;
+        mListener = (Callbacks) context;
     }
 
     @Override
     public void onDetach() {
         super.onDetach();
-        mCallbacks = null;
+        mListener = null;
     }
 
     @Override
@@ -102,29 +103,29 @@ public class HomePageFragment extends Fragment implements LoaderManager.LoaderCa
 
         for (Witchspells witchspells : loaderResult.witchspells) {
             addWitchspellsToIndex(viewModels.size(), witchspells);
-            WitchspellsBookViewModel viewModel = new WitchspellsBookViewModel(witchspells);
+            WitchspellsBookViewModel viewModel = new WitchspellsBookViewModel(witchspells, mListener);
             viewModels.add(viewModel);
         }
         addNewWitchspellsToIndex(viewModels.size());
-        viewModels.add(new WitchspellsAddViewModel(this));
+        viewModels.add(new WitchspellsAddViewModel(mListener));
 
         // Separator
         viewModels.add(new EmptyItemViewModel());
 
         for (Spellbook spellbook : loaderResult.spellbooks) {
             // Separator
-            if(spellbook.spellbookType == SpellbookType.FREE_ACCESS){
+            if (spellbook.spellbookType == SpellbookType.FREE_ACCESS) {
                 viewModels.add(new EmptyItemViewModel());
             }
 
             addSpellbookToIndex(viewModels.size(), spellbook);
 
             SpellbookViewModel viewModel = new SpellbookViewModel(spellbook);
-            viewModel.setListener(this);
+            viewModel.setListener(mListener);
             viewModels.add(viewModel);
 
             // Separator
-            if(spellbook.spellbookType == SpellbookType.FREE_ACCESS){
+            if (spellbook.spellbookType == SpellbookType.FREE_ACCESS) {
                 viewModels.add(new EmptyItemViewModel());
             }
         }
@@ -141,56 +142,46 @@ public class HomePageFragment extends Fragment implements LoaderManager.LoaderCa
         switchingTitlesIndex.put(position, getString(R.string.Witchspells_Title));
     }
 
-    public void addSpellbookToIndex(int position, Spellbook spellbook){
+    public void addSpellbookToIndex(int position, Spellbook spellbook) {
         switchingSubviewModelIndex.put(position, new BookSubviewViewModel(spellbook));
 
-        if(SpellbookType.MAIN_SPELLBOOKS.contains(spellbook.spellbookType)){
+        if (SpellbookType.MAIN_SPELLBOOKS.contains(spellbook.spellbookType)) {
             switchingTitlesIndex.put(position, getString(R.string.Main_Path_Title));
 
-        } else if(SpellbookType.SECONDARY_SPELLBOOKS.contains(spellbook.spellbookType)){
+        } else if (SpellbookType.SECONDARY_SPELLBOOKS.contains(spellbook.spellbookType)) {
             switchingTitlesIndex.put(position, getString(R.string.Secondary_Path_Title));
 
-        } else if(SpellbookType.FREE_ACCESS == spellbook.spellbookType){
+        } else if (SpellbookType.FREE_ACCESS == spellbook.spellbookType) {
             switchingTitlesIndex.put(position, getString(R.string.Free_Access_Title));
         }
     }
 
-    public void addWitchspellsToIndex(int position, Witchspells witchspells){
-        switchingSubviewModelIndex.put(position, new BookSubviewViewModel(witchspells, mCallbacks));
+    public void addWitchspellsToIndex(int position, Witchspells witchspells) {
+        switchingSubviewModelIndex.put(position, new BookSubviewViewModel(witchspells, mListener));
         switchingTitlesIndex.put(position, getString(R.string.Witchspells_Title));
     }
 
     private void updateHomePageElements(int index) {
         BookSubviewViewModel bookModel = switchingSubviewModelIndex.get(index);
-        if(bookModel != null){
+        if (bookModel != null) {
             binding.setBookModel(bookModel);
         }
 
         String title = switchingTitlesIndex.get(index);
-        if(title != null){
+        if (title != null) {
             homePageViewModel.setCurrentTitle(title);
         }
     }
 
-
-    public void resetSpellbooks(){
+    public void resetSpellbooks() {
         getLoaderManager().restartLoader(LOADER_ID, null, this);
     }
 
-    @Override
-    public void onSpellbookClicked(int spellbookId, SpellbookType type) {
-        mCallbacks.onSpellbookClicked(spellbookId, type);
-    }
 
-    @Override
-    public void onAddWitchspells() {
-        mCallbacks.onAddWitchspells();
-    }
-
-
-    public interface Callbacks extends BookSubviewViewModel.Listener{
-        void onSpellbookClicked(int spellbookId, SpellbookType type);
-
-        void onAddWitchspells();
+    public interface Callbacks extends
+            BookSubviewViewModel.Listener,
+            WitchspellsBookViewModel.Listener,
+            WitchspellsAddViewModel.Listener,
+            SpellbookViewModel.Listener {
     }
 }

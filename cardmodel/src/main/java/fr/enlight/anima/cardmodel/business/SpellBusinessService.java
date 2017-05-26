@@ -1,9 +1,7 @@
 package fr.enlight.anima.cardmodel.business;
 
 import android.content.Context;
-import android.util.SparseArray;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import fr.enlight.anima.cardmodel.dao.SpellDao;

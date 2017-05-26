@@ -8,12 +8,6 @@ import fr.enlight.anima.animamagiccards.views.viewmodels.ListBindableViewModel;
 
 public class SpellStackViewModel extends ListBindableViewModel implements CardStackView.ItemExpendListener {
 
-    public final SpellbookViewModel spellbookModel;
-
-    public SpellStackViewModel(SpellbookType spellbookType) {
-        this.spellbookModel = new SpellbookViewModel(spellbookType);
-    }
-
     public CardStackView.ItemExpendListener getExpandListener(){
         return this;
     }

@@ -6,13 +6,10 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
 
 import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.animamagiccards.async.DeleteWitchspellsAsyncTask;
 import fr.enlight.anima.animamagiccards.ui.spellbooks.SpellStackFragment;
-import fr.enlight.anima.cardmodel.business.WitchspellsBusinessService;
-import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
 import fr.enlight.anima.animamagiccards.ui.witchspells.WitchspellsEditionActivity;
 import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 
@@ -22,42 +19,26 @@ public class HomePageActivity extends AppCompatActivity implements HomePageFragm
 
     private static final String HOME_PAGE_FRAGMENT_TAG = "HOME_PAGE_FRAGMENT_TAG";
 
-    private WitchspellsBusinessService mWitchspellsBusinessService;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
 
-        mWitchspellsBusinessService = new WitchspellsBusinessService(this);
 
         if (savedInstanceState == null) {
-            goToSpellbookFragment();
+            getFragmentManager().beginTransaction()
+                    .replace(R.id.fragment_placeholder, new HomePageFragment(), HOME_PAGE_FRAGMENT_TAG)
+                    .commit();
         }
     }
 
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        getMenuInflater().inflate(R.menu.spell_stack_menu, menu);
-//        return super.onCreateOptionsMenu(menu);
-//    }
-
-    private void goToSpellbookFragment() {
+    @Override
+    public void onSpellbookClicked(int spellbookId) {
         getFragmentManager().beginTransaction()
-                .replace(R.id.fragment_placeholder, new HomePageFragment(), HOME_PAGE_FRAGMENT_TAG)
-                .commit();
-    }
-
-    private void goToSpellStackFragment(int spellbookId, SpellbookType type) {
-        getFragmentManager().beginTransaction()
-                .replace(R.id.fragment_placeholder, SpellStackFragment.newInstance(spellbookId, type))
+                .replace(R.id.fragment_placeholder, SpellStackFragment.newInstance(spellbookId))
                 .addToBackStack(null)
                 .commit();
-    }
-
-    @Override
-    public void onSpellbookClicked(int spellbookId, SpellbookType type) {
-        goToSpellStackFragment(spellbookId, type);
     }
 
     @Override
@@ -81,8 +62,21 @@ public class HomePageActivity extends AppCompatActivity implements HomePageFragm
 
     @Override
     public void onViewWitchspells(Witchspells witchspells) {
-        // TODO
+        goToWitchspells(witchspells);
     }
+
+    @Override
+    public void onWitchspellsClicked(Witchspells witchspells) {
+        goToWitchspells(witchspells);
+    }
+
+    private void goToWitchspells(Witchspells witchspells){
+        getFragmentManager().beginTransaction()
+                .replace(R.id.fragment_placeholder, SpellStackFragment.newInstance(witchspells))
+                .addToBackStack(null)
+                .commit();
+    }
+
 
     @Override
     public void onDeleteWitchspells(final Witchspells witchspells) {
@@ -121,4 +115,5 @@ public class HomePageActivity extends AppCompatActivity implements HomePageFragm
     public void onDeleteFinished() {
         reloadHomePage();
     }
+
 }

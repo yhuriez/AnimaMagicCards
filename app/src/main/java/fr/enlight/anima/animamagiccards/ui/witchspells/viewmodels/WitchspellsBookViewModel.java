@@ -14,7 +14,6 @@ import fr.enlight.anima.animamagiccards.MainApplication;
 import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.animamagiccards.views.viewmodels.RecyclerViewModel;
-import fr.enlight.anima.cardmodel.model.spells.Spellbook;
 import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
 import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 import fr.enlight.anima.cardmodel.model.witchspells.WitchspellsPath;
@@ -22,10 +21,11 @@ import fr.enlight.anima.cardmodel.model.witchspells.WitchspellsPath;
 public class WitchspellsBookViewModel extends RecyclerViewModel implements BindableViewModel {
 
     private final Witchspells witchspells;
+    private final Listener mListener;
 
-
-    public WitchspellsBookViewModel(Witchspells witchspells) {
+    public WitchspellsBookViewModel(Witchspells witchspells, Listener listener) {
         this.witchspells = witchspells;
+        mListener = listener;
     }
 
     @Override
@@ -59,5 +59,13 @@ public class WitchspellsBookViewModel extends RecyclerViewModel implements Binda
     @Override
     public RecyclerView.LayoutManager getLayoutManager() {
         return new GridLayoutManager(MainApplication.getMainContext(), 2, LinearLayoutManager.HORIZONTAL, false);
+    }
+
+    public void onBookClicked(){
+        mListener.onWitchspellsClicked(witchspells);
+    }
+
+    public interface Listener {
+        void onWitchspellsClicked(Witchspells witchspells);
     }
 }
