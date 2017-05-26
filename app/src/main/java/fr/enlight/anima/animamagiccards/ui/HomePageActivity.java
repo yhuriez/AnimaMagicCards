@@ -1,4 +1,4 @@
-package fr.enlight.anima.animamagiccards.ui.spellbooks;
+package fr.enlight.anima.animamagiccards.ui;
 
 import android.app.Fragment;
 import android.content.Intent;
@@ -6,19 +6,21 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import fr.enlight.anima.animamagiccards.R;
+import fr.enlight.anima.animamagiccards.ui.spellbooks.SpellStackFragment;
 import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
 import fr.enlight.anima.animamagiccards.ui.witchspells.WitchspellsEditionActivity;
+import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 
-public class SpellActivity extends AppCompatActivity implements SpellbooksFragment.Callbacks{
+public class HomePageActivity extends AppCompatActivity implements HomePageFragment.Callbacks {
 
     private static final int WITCHSPELLS_REQUEST_CODE = 712;
 
-    private static final String SPELLBOOK_FRAGMENT_TAG = "SPELLBOOK_FRAGMENT_TAG";
+    private static final String HOME_PAGE_FRAGMENT_TAG = "HOME_PAGE_FRAGMENT_TAG";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_spell);
+        setContentView(R.layout.activity_home_page);
 
         if(savedInstanceState == null){
             goToSpellbookFragment();
@@ -27,7 +29,7 @@ public class SpellActivity extends AppCompatActivity implements SpellbooksFragme
 
     private void goToSpellbookFragment(){
         getFragmentManager().beginTransaction()
-                .replace(R.id.fragment_placeholder, new SpellbooksFragment(), SPELLBOOK_FRAGMENT_TAG)
+                .replace(R.id.fragment_placeholder, new HomePageFragment(), HOME_PAGE_FRAGMENT_TAG)
                 .commit();
     }
 
@@ -52,10 +54,25 @@ public class SpellActivity extends AppCompatActivity implements SpellbooksFragme
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == WITCHSPELLS_REQUEST_CODE && resultCode == RESULT_OK){
-            Fragment spellbookFragment = getFragmentManager().findFragmentByTag(SPELLBOOK_FRAGMENT_TAG);
-            if(spellbookFragment != null && spellbookFragment instanceof SpellbooksFragment){
-                ((SpellbooksFragment) spellbookFragment).resetSpellbooks();
+            Fragment spellbookFragment = getFragmentManager().findFragmentByTag(HOME_PAGE_FRAGMENT_TAG);
+            if(spellbookFragment != null && spellbookFragment instanceof HomePageFragment){
+                ((HomePageFragment) spellbookFragment).resetSpellbooks();
             }
         }
+    }
+
+    @Override
+    public void onModifyWitchspells(Witchspells witchspells) {
+        // TODO
+    }
+
+    @Override
+    public void onViewWitchspells(Witchspells witchspells) {
+        // TODO
+    }
+
+    @Override
+    public void onDeleteWitchspells(Witchspells witchspells) {
+        // TODO
     }
 }

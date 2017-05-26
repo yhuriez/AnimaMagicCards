@@ -8,10 +8,14 @@ import android.support.annotation.DrawableRes;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
+import android.widget.TextSwitcher;
 import android.widget.TextView;
+import android.widget.ViewSwitcher;
 
 import java.util.List;
 
@@ -72,5 +76,23 @@ public class BindingAdapters {
     @BindingAdapter("adapter")
     public static void setAdapter(Spinner spinner, SpinnerAdapter adapter){
         spinner.setAdapter(adapter);
+    }
+
+    @BindingAdapter("animate")
+    public static void setTextSwitcherAnimation(TextSwitcher textSwitcher, boolean baseAnimation){
+        if(baseAnimation){
+            Animation in = AnimationUtils.loadAnimation(textSwitcher.getContext(), android.R.anim.slide_in_left);
+            Animation out = AnimationUtils.loadAnimation(textSwitcher.getContext(), android.R.anim.slide_out_right);
+
+            // set the animation type of textSwitcher
+            textSwitcher.setInAnimation(in);
+            textSwitcher.setOutAnimation(out);
+        }
+    }
+
+    @BindingAdapter("factoryCompat")
+    public static void setTextSwitcherFactoryCompat(TextSwitcher textSwitcher, ViewSwitcher.ViewFactory factory){
+        textSwitcher.removeAllViews();
+        textSwitcher.setFactory(factory);
     }
 }

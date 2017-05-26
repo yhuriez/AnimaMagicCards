@@ -36,24 +36,5 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"/>
 
-        <TextView
-            android:id="@+id/witchspells_name"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/witchspells_add_image"
-            app:layout_constraintLeft_toLeftOf="@id/witchspells_book_image"
-            app:layout_constraintRight_toRightOf="@id/witchspells_book_image"
-            app:customFont="@{@string/spell_title_font}"
-            android:maxLines="2"
-            android:gravity="center"
-            android:ellipsize="end"
-            android:textSize="24sp"
-            android:paddingTop="@dimen/spacing_large"
-            android:paddingBottom="@dimen/spacing_large"
-            android:paddingLeft="@dimen/spacing_large"
-            android:paddingRight="@dimen/spacing_large"
-            android:textColor="@android:color/white"
-            android:text="@string/Witchspells_Add_Label"/>
-
     </android.support.constraint.ConstraintLayout>
 </layout>

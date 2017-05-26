@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="fr.enlight.anima.animamagiccards.ui.HomePageViewModel" />
+
+        <variable
+            name="bookModel"
+            type="fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels.BookSubviewViewModel" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextSwitcher
+            android:id="@+id/spellbook_title_switcher"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/home_page_title_height"
+            android:text="@{model.currentTitle}"
+            app:animate="@{true}"
+            app:factoryCompat="@{model.getSwitcherFactory(context)}"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_height="60dp" />
+
+        <include
+            android:id="@+id/subview_panel"
+            layout="@layout/view_book_subview"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="@dimen/spacing_base"
+            android:layout_marginLeft="@dimen/spacing_base"
+            android:layout_marginRight="@dimen/spacing_base"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:model="@{bookModel}" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:addOnScrollListener="@{model.onScrollListener}"
+            app:hasFixedSize="@{true}"
+            app:layoutManager="@{model.layoutManager}"
+            app:layout_constraintBottom_toTopOf="@id/subview_panel"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spellbook_title_switcher"
+            app:viewModels="@{model.viewModels}" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</layout>

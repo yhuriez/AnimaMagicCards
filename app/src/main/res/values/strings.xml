@@ -57,10 +57,17 @@
         <item quantity="other">+ %d sorts d\'accès libre</item>
     </plurals>
 
-    <string name="Witchspells_Add_Label">Ajouter une liste de sorts</string>
+    <string name="Witchspells_Add_Label">Ajouter un grimoire</string>
     <string name="Error_No_Witchspells_Name">Un nom est nécessaire pour pouvoir enregistrer le grimoire</string>
-    <string name="Witchspells_Save_Waiting_Message">Enregistrement du grimoire...</string>
-    <string name="Witchspells_Free_Access_Value">Sorts de libre accès</string>
+    <string name="Witchspells_Save_Waiting_Message">Enregistrement du grimoire…</string>
+
+    <string name="Main_Path_Title">Voies principales</string>
+    <string name="Secondary_Path_Title">Voies secondaires</string>
+    <string name="Free_Access_Title">Sorts d\'accès libre</string>
+    <string name="Witchspells_See_Spells">Voir les sorts</string>
+    <string name="Common_Delete">Supprimer</string>
+    <string name="Witchspells_Title">Grimoires</string>
+    <string name="Witchspells_Add_Description_Label">Un grimoire est le recueil de sorts d\'un sorcier, créé à partir de ses niveaux de voies.\n Cliquez sur le livre ci-dessus pour créer votre grimoire.</string>
 
 
 </resources>

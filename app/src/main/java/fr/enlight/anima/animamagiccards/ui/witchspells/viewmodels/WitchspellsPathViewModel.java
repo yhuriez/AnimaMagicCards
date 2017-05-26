@@ -70,7 +70,7 @@ public class WitchspellsPathViewModel implements BindableViewModel {
 
     public String getSecondaryPathTitle(){
         if(secondaryPathType == null){
-            return mContext.getString(R.string.Witchspells_Free_Access_Value);
+            return mContext.getString(R.string.Free_Access_Title);
         }
         String secondaryPath = mContext.getString(secondaryPathType.titleRes);
         return mContext.getString(R.string.Witchspells_Secondary_Path_Format, secondaryPath);

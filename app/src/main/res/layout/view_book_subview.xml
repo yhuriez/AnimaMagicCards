@@ -14,13 +14,15 @@
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:background="@android:color/black">
+        android:background="@drawable/rounded_dark_transparent_rectangle"
+        android:padding="@dimen/spacing_base">
 
         <TextView
-            android:id="@+id/spellbook_title_textview"
+            android:id="@+id/book_title_textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:text="@{model.title}"
             android:textColor="@android:color/white"
             android:textSize="@dimen/textSize_big"
             app:customFont="@{@string/spell_title_font}"
@@ -30,29 +32,74 @@
             tools:text="Livre de la Lumière" />
 
         <View
-            android:id="@+id/spellbook_separator"
+            android:id="@+id/book_separator"
             android:layout_width="0dp"
             android:layout_height="2dp"
             android:layout_marginTop="@dimen/spacing_small"
             android:background="@android:color/white"
-            app:layout_constraintLeft_toLeftOf="@id/spellbook_title_textview"
-            app:layout_constraintRight_toRightOf="@id/spellbook_title_textview"
-            app:layout_constraintTop_toBottomOf="@id/spellbook_title_textview" />
+            app:layout_constraintLeft_toLeftOf="@id/book_title_textview"
+            app:layout_constraintRight_toRightOf="@id/book_title_textview"
+            app:layout_constraintTop_toBottomOf="@id/book_title_textview" />
 
         <TextView
             android:id="@+id/spellbook_message_textview"
+            setVisible="@{model.description != null}"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_base"
             android:gravity="center"
             android:lineSpacingMultiplier="1.2"
-            android:padding="@dimen/spacing_base"
+            android:text="@{model.description}"
             android:textColor="@android:color/white"
             android:textSize="@dimen/textSize_regular"
-            app:customFont="@{@string/spell_title_font}"
+            app:customFont="@{@string/regular_font}"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/spellbook_separator"
+            app:layout_constraintTop_toBottomOf="@id/book_separator"
             tools:text="Cette voie permet aux sorciers de contrôler un des deux éléments supérieurs, la lumière pure. Elle contrôle les émotions positives de l’homme, comme l’amour, la tranquillité ou le plaisir. Elle offre également la maîtrise de la connaissance et de la détection. Ses pouvoirs offensifs et défensifs se révèlent très équilibrés." />
+
+        <Button
+            android:id="@+id/witchspells_view_button"
+            style="@style/FlatButton"
+            setVisible="@{model.witchspells != null}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_base"
+            android:onClick="@{() -> model.onSeeSpellsClicked()}"
+            android:text="@string/Witchspells_See_Spells"
+            android:textColor="@android:color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/book_title_textview" />
+
+        <Button
+            android:id="@+id/witchspells_modify_button"
+            style="@style/FlatButton"
+            setVisible="@{model.witchspells != null}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{() -> model.onModifyClicked()}"
+            android:text="@string/Common_Modify"
+            android:textColor="@android:color/white"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/witchspells_delete_button"
+            app:layout_constraintTop_toBottomOf="@id/witchspells_view_button" />
+
+        <Button
+            android:id="@+id/witchspells_delete_button"
+            style="@style/FlatButton"
+            setVisible="@{model.witchspells != null}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_base"
+            android:layout_marginStart="@dimen/spacing_base"
+            android:onClick="@{() -> model.onDeleteClicked()}"
+            android:text="@string/Common_Delete"
+            android:textColor="@android:color/white"
+            app:layout_constraintLeft_toRightOf="@+id/witchspells_modify_button"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/witchspells_view_button" />
 
     </android.support.constraint.ConstraintLayout>
 </layout>

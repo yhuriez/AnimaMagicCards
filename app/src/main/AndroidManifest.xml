@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme"
         tools:replace="android:label">
 
-        <activity android:name=".ui.spellbooks.SpellActivity">
+        <activity android:name=".ui.HomePageActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.witchspells.WitchspellsEditionActivity"/>
+        <activity android:name=".ui.witchspells.WitchspellsEditionActivity" />
         <activity android:name=".ui.witchspells.WitchspellsMainPathChooserActivity" />
 
     </application>
