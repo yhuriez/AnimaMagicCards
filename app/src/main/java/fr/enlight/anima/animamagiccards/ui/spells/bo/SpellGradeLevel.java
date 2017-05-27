@@ -1,4 +1,4 @@
-package fr.enlight.anima.animamagiccards.ui.spellbooks.bo;
+package fr.enlight.anima.animamagiccards.ui.spells.bo;
 
 
 import android.support.annotation.ColorRes;

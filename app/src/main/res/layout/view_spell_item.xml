@@ -6,11 +6,11 @@
     <data>
 
         <import type="android.view.View"/>
-        <import type="fr.enlight.anima.animamagiccards.ui.spellbooks.bo.SpellGradeLevel" />
+        <import type="fr.enlight.anima.animamagiccards.ui.spells.bo.SpellGradeLevel" />
 
         <variable
             name="model"
-            type="fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels.SpellViewModel" />
+            type="fr.enlight.anima.animamagiccards.ui.spells.viewmodels.SpellViewModel" />
     </data>
 
     <android.support.constraint.ConstraintLayout

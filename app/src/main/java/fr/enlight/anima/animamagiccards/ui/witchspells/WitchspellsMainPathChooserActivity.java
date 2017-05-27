@@ -25,7 +25,7 @@ import fr.enlight.anima.animamagiccards.databinding.ActivityWitchspellsPathChoos
 import fr.enlight.anima.animamagiccards.async.SpellbooksLoader;
 import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsMainPathChooserListener;
 import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsMainSpellbookViewModel;
-import fr.enlight.anima.animamagiccards.utils.SpellbookUtils;
+import fr.enlight.anima.cardmodel.utils.SpellUtils;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.animamagiccards.views.viewmodels.RecyclerViewModel;
 import fr.enlight.anima.cardmodel.model.spells.Spellbook;
@@ -136,7 +136,7 @@ public class WitchspellsMainPathChooserActivity extends AppCompatActivity implem
 
     @Override
     public void onShowSecondarySpellbookForMainPath(Spellbook mainSpellbook) {
-        ArrayList<Spellbook> spellbooks = SpellbookUtils.extractSecondarySpellbooks(this, mainSpellbook, mSpellbookMapping);
+        ArrayList<Spellbook> spellbooks = SpellUtils.extractSecondarySpellbooks(this, mainSpellbook, mSpellbookMapping);
 
         WitchspellsSecondaryPathChooserFragment.newInstance(spellbooks, mainSpellbook.bookId)
                 .show(getFragmentManager(), SECONDARY_DIALOG_FRAGMENT_TAG);

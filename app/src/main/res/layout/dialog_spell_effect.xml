@@ -7,7 +7,7 @@
 
         <variable
             name="model"
-            type="fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels.DialogSpellEffectViewModel" />
+            type="fr.enlight.anima.animamagiccards.ui.spells.viewmodels.DialogSpellEffectViewModel" />
     </data>
 
     <android.support.constraint.ConstraintLayout

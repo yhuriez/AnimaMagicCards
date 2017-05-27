@@ -1,4 +1,4 @@
-package fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels;
+package fr.enlight.anima.animamagiccards.ui.spells.viewmodels;
 
 import android.content.Context;
 import android.databinding.ObservableBoolean;
@@ -10,7 +10,7 @@ import android.text.TextUtils;
 import com.android.databinding.library.baseAdapters.BR;
 
 import fr.enlight.anima.animamagiccards.R;
-import fr.enlight.anima.animamagiccards.ui.spellbooks.bo.SpellGradeLevel;
+import fr.enlight.anima.animamagiccards.ui.spells.bo.SpellGradeLevel;
 import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.cardmodel.model.spells.Spell;

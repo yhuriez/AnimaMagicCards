@@ -29,6 +29,26 @@ public class BindingAdapters {
         view.setVisibility(visible ? View.VISIBLE : View.GONE);
     }
 
+    @BindingAdapter("setVisibleWithAlpha")
+    public static void setVisibleWithAlpha(View view, boolean visible) {
+        if(view.getVisibility() == View.VISIBLE && !visible
+                || view.getVisibility() == View.GONE && visible) {
+            view.animate().alpha(visible ? 1.0f : 0.0f)
+                    .setListener(new VisibilityAnimatorListener(view, visible))
+                    .start();
+        }
+    }
+
+    @BindingAdapter("setVisibleWithTranslation")
+    public static void setVisibleWithTranslate(View view, boolean visible) {
+        if(view.getVisibility() == View.VISIBLE && !visible
+                || view.getVisibility() == View.GONE && visible) {
+            view.animate().translationY(visible ? 100 : 0)
+                    .setListener(new TopToBottomAnimatorListener(view, visible))
+                    .start();
+        }
+    }
+
     @BindingAdapter("backgroundRes")
     public static void setBackgroundRes(View view, @DrawableRes int drawableRes){
         if(drawableRes > 0){

@@ -7,7 +7,7 @@
 
         <variable
             name="model"
-            type="fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels.BookSubviewViewModel" />
+            type="fr.enlight.anima.animamagiccards.ui.spells.viewmodels.BookSubviewViewModel" />
     </data>
 
 

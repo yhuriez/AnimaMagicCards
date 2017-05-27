@@ -1,4 +1,4 @@
-package fr.enlight.anima.animamagiccards.ui.spellbooks;
+package fr.enlight.anima.animamagiccards.ui.spells;
 
 
 import android.app.Fragment;
@@ -22,11 +22,12 @@ import java.util.List;
 
 import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.animamagiccards.async.SpellsLoader;
-import fr.enlight.anima.animamagiccards.databinding.ActivitySpellsStackBinding;
-import fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels.DialogSpellEffectViewModel;
-import fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels.DialogSpellGradeViewModel;
-import fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels.SpellStackViewModel;
-import fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels.SpellViewModel;
+import fr.enlight.anima.animamagiccards.databinding.FragmentSpellsStackBinding;
+import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.DialogSpellEffectViewModel;
+import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.DialogSpellGradeViewModel;
+import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.SpellFilterViewModel;
+import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.SpellStackViewModel;
+import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.SpellViewModel;
 import fr.enlight.anima.animamagiccards.views.BindingDialogFragment;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.cardmodel.model.spells.Spell;
@@ -38,13 +39,13 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     private static final String EFFECT_DIALOG = "EFFECT_DIALOG";
     private static final String GRADE_DIALOG = "GRADE_DIALOG";
 
-
     private static final String SPELLBOOK_ID = "SPELLBOOK_ID";
     private static final String WITCHSPELL_PARAM = "WITCHSPELL_PARAM";
 
-    private ActivitySpellsStackBinding binding;
+    private FragmentSpellsStackBinding binding;
 
     private SpellStackViewModel spellViewModels;
+    private SpellFilterViewModel filterViewModel;
 
     private View mLoadingOverlay;
 
@@ -67,7 +68,7 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        binding = DataBindingUtil.inflate(inflater, R.layout.activity_spells_stack, container, false);
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_spells_stack, container, false);
         return binding.getRoot();
     }
 
@@ -86,6 +87,11 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
         spellViewModels = new SpellStackViewModel();
         binding.setModel(spellViewModels);
 
+        if(savedInstanceState == null) {
+            filterViewModel = new SpellFilterViewModel();
+            binding.setFilterModel(filterViewModel);
+        }
+
         getLoaderManager().initLoader(1, getArguments(), this);
     }
 
@@ -98,15 +104,22 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
         SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
         searchView.setSubmitButtonEnabled(true);
         searchView.setOnQueryTextListener(this);
+
+        MenuItemCompat.setOnActionExpandListener(searchItem, new MenuItemCompat.OnActionExpandListener() {
+            @Override
+            public boolean onMenuItemActionExpand(MenuItem item) {
+                filterViewModel.filterPanelVisible.set(true);
+                return true;
+            }
+
+            @Override
+            public boolean onMenuItemActionCollapse(MenuItem item) {
+                filterViewModel.filterPanelVisible.set(false);
+                return true;
+            }
+        });
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if(item.getItemId() == R.id.action_filter){
-            toggleFiltersPanel();
-        }
-        return super.onOptionsItemSelected(item);
-    }
 
     // //////////////
     // region Filters
@@ -123,9 +136,6 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
         return false;
     }
 
-    private void toggleFiltersPanel() {
-
-    }
 
     // endregion
 

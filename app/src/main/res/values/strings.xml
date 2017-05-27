@@ -72,6 +72,24 @@
     <string name="Witchspells_Delete_Confirmation_Message">Etes-vous sûr de vouloir supprimer ce grimoire ?</string>
     <string name="Common_Search">Rechercher</string>
     <string name="Common_Filter">Filtrer</string>
+    <string name="Spell_Filter_Search_Description">Rechercher dans la description du sort</string>
+    <string name="Spell_Filter_Type">Type de sorts</string>
+    <string name="Spell_Filter_Type_Attack">Attaque</string>
+    <string name="Spell_Filter_Type_Defense">Défense</string>
+    <string name="Spell_Filter_Type_Effect">Effet</string>
+    <string name="Spell_Filter_Type_Animismic">Animique</string>
+    <string name="Spell_Filter_Type_Automatic">Automatique</string>
+    <string name="Spell_Filter_Type_Detection">Détection</string>
+    <string name="Spell_Filter_Intelligence_Max">Intelligence maximum</string>
+    <string name="Spell_Filter_Max_Int_Description">Les niveaux de sorts au dessus de ce maximum seront grisées</string>
+    <string name="Spell_Filter_Zeon_Title">Zéon</string>
+    <string name="Spell_Filter_Max_Zeon">Zéon maximum</string>
+    <string name="Spell_Filter_Max_Maintain">Maintien maximum</string>
+    <string name="Spell_Filter_Daily_Maintain">Quotidien ?</string>
+    <string name="Spell_Filter_Action_Type">Type d\'action</string>
+    <string name="Spell_Filter_Action_Type_Active">Active</string>
+    <string name="Spell_Filter_Action_Type_Passive">Passive</string>
+    <string name="Common_All">Tous</string>
 
 
 </resources>

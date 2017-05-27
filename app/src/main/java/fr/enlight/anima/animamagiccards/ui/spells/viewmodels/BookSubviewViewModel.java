@@ -1,4 +1,4 @@
-package fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels;
+package fr.enlight.anima.animamagiccards.ui.spells.viewmodels;
 
 
 import android.content.Context;

@@ -4,13 +4,9 @@ import android.content.Context;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
-import fr.enlight.anima.cardmodel.business.WitchspellsBusinessService;
 import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
-import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
-import fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels.SpellViewModel;
 import fr.enlight.anima.cardmodel.business.SpellBusinessService;
 import fr.enlight.anima.cardmodel.model.spells.Spell;
 import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;

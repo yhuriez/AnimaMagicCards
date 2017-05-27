@@ -1,4 +1,4 @@
-package fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels;
+package fr.enlight.anima.animamagiccards.ui.spells.viewmodels;
 
 import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.cardmodel.model.spells.SpellbookType;

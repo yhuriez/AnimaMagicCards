@@ -1,9 +1,8 @@
-package fr.enlight.anima.animamagiccards.ui.spellbooks.viewmodels;
+package fr.enlight.anima.animamagiccards.ui.spells.viewmodels;
 
 
 import com.loopeer.cardstack.CardStackView;
 
-import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
 import fr.enlight.anima.animamagiccards.views.viewmodels.ListBindableViewModel;
 
 public class SpellStackViewModel extends ListBindableViewModel implements CardStackView.ItemExpendListener {

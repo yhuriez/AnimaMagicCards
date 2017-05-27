@@ -9,7 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.animamagiccards.async.DeleteWitchspellsAsyncTask;
-import fr.enlight.anima.animamagiccards.ui.spellbooks.SpellStackFragment;
+import fr.enlight.anima.animamagiccards.ui.spells.SpellStackFragment;
 import fr.enlight.anima.animamagiccards.ui.witchspells.WitchspellsEditionActivity;
 import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 
