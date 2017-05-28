@@ -2,8 +2,10 @@ package fr.enlight.anima.animamagiccards.ui.spells.viewmodels;
 
 
 import android.arch.lifecycle.ViewModel;
+import android.content.Context;
 import android.databinding.ObservableBoolean;
 import android.text.TextUtils;
+import android.widget.Toast;
 
 import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.cardmodel.model.spells.SpellActionType;
@@ -20,6 +22,10 @@ public class SpellFilterViewModel extends ViewModel {
     private String retentionMax;
     private boolean dailyRetentionOnly;
     private int spellActionTypeSelectedId;
+
+    public void onViewClicked(Context context){
+        Toast.makeText(context, "Fuck it", Toast.LENGTH_SHORT).show();
+    }
 
     public boolean isSearchWitDesc() {
         return searchWitDesc;

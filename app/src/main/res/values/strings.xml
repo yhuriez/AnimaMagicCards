@@ -72,7 +72,7 @@
     <string name="Witchspells_Delete_Confirmation_Message">Etes-vous sûr de vouloir supprimer ce grimoire ?</string>
     <string name="Common_Search">Rechercher</string>
     <string name="Common_Filter">Filtrer</string>
-    <string name="Spell_Filter_Search_Description">Rechercher dans la description du sort</string>
+    <string name="Spell_Filter_Search_Description">Rechercher dans la description</string>
     <string name="Spell_Filter_Type">Type de sorts</string>
     <string name="Spell_Filter_Type_Attack">Attaque</string>
     <string name="Spell_Filter_Type_Defense">Défense</string>

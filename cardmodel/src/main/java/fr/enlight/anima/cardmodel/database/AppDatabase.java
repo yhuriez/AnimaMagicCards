@@ -11,7 +11,7 @@ import fr.enlight.anima.cardmodel.dao.WitchspellsPathDao;
 import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 import fr.enlight.anima.cardmodel.model.witchspells.WitchspellsPath;
 
-@Database(entities = {Witchspells.class, WitchspellsPath.class}, version = 1)
+@Database(entities = {Witchspells.class, WitchspellsPath.class}, version = 1, exportSchema = false)
 @TypeConverters({ListTypeConverters.class})
 public abstract class AppDatabase  extends RoomDatabase{
 

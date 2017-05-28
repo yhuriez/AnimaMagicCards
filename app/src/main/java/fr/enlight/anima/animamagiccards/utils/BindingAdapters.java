@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.view.animation.TranslateAnimation;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
@@ -31,34 +32,63 @@ public class BindingAdapters {
 
     @BindingAdapter("setVisibleWithAlpha")
     public static void setVisibleWithAlpha(View view, boolean visible) {
-        if(view.getVisibility() == View.VISIBLE && !visible
+        if (view.getVisibility() == View.VISIBLE && !visible
                 || view.getVisibility() == View.GONE && visible) {
-            view.animate().alpha(visible ? 1.0f : 0.0f)
-                    .setListener(new VisibilityAnimatorListener(view, visible))
-                    .start();
+            int measuredHeight = view.getMeasuredHeight();
+            if (measuredHeight == 0 && !visible) {
+                view.setVisibility(View.INVISIBLE);
+                view.addOnLayoutChangeListener(new View.OnLayoutChangeListener() {
+                    @Override
+                    public void onLayoutChange(View view, int i, int i1, int i2, int i3, int i4, int i5, int i6, int i7) {
+                        view.removeOnLayoutChangeListener(this);
+                        view.setVisibility(View.GONE);
+                    }
+                });
+            } else {
+                view.animate().alpha(visible ? 1.0f : 0.0f)
+                        .setListener(new VisibilityAnimatorListener(view, visible))
+                        .start();
+            }
         }
     }
 
     @BindingAdapter("setVisibleWithTranslation")
     public static void setVisibleWithTranslate(View view, boolean visible) {
-        if(view.getVisibility() == View.VISIBLE && !visible
+        if (view.getVisibility() == View.VISIBLE && !visible
                 || view.getVisibility() == View.GONE && visible) {
-            view.animate().translationY(visible ? 100 : 0)
-                    .setListener(new TopToBottomAnimatorListener(view, visible))
-                    .start();
+            int measuredHeight = view.getMeasuredHeight();
+            if (measuredHeight == 0 && !visible) {
+                view.setVisibility(View.INVISIBLE);
+                view.addOnLayoutChangeListener(new View.OnLayoutChangeListener() {
+                    @Override
+                    public void onLayoutChange(View view, int i, int i1, int i2, int i3, int i4, int i5, int i6, int i7) {
+                        view.removeOnLayoutChangeListener(this);
+                        view.setVisibility(View.GONE);
+                    }
+                });
+            } else {
+                int fromY = visible ? -measuredHeight : 0;
+                int toY = visible ? 0 : -measuredHeight;
+
+                TranslateAnimation anim = new TranslateAnimation(0, 0, fromY, toY);
+                anim.setDuration(500);
+                anim.setAnimationListener(new VisibilityAnimationListener(view, visible));
+                anim.setFillAfter(true);
+                view.startAnimation(anim);
+            }
         }
     }
 
     @BindingAdapter("backgroundRes")
-    public static void setBackgroundRes(View view, @DrawableRes int drawableRes){
-        if(drawableRes > 0){
+    public static void setBackgroundRes(View view, @DrawableRes int drawableRes) {
+        if (drawableRes > 0) {
             view.setBackgroundResource(drawableRes);
         }
     }
 
     @BindingAdapter("customFont")
-    public static void setFont(TextView view, String font){
-        if(font == null){
+    public static void setFont(TextView view, String font) {
+        if (font == null) {
             return;
         }
 
@@ -67,8 +97,8 @@ public class BindingAdapters {
     }
 
     @BindingAdapter("viewModels")
-    public static void setViewModels(LinearLayout linearLayout, List<BindableViewModel> viewModels){
-        if(viewModels == null){
+    public static void setViewModels(LinearLayout linearLayout, List<BindableViewModel> viewModels) {
+        if (viewModels == null) {
             return;
         }
         linearLayout.removeAllViews();
@@ -81,7 +111,7 @@ public class BindingAdapters {
     }
 
     @BindingAdapter(value = {"layout_marginLeft", "layout_marginTop", "layout_marginRight", "layout_marginBottom"}, requireAll = false)
-    public static void setMargin(View view, float left, float top, float right, float bottom){
+    public static void setMargin(View view, float left, float top, float right, float bottom) {
         ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) view.getLayoutParams();
 
         int leftMargin = (left <= 0 && marginLayoutParams.leftMargin > 0) ? marginLayoutParams.leftMargin : Math.round(left);
@@ -94,13 +124,13 @@ public class BindingAdapters {
     }
 
     @BindingAdapter("adapter")
-    public static void setAdapter(Spinner spinner, SpinnerAdapter adapter){
+    public static void setAdapter(Spinner spinner, SpinnerAdapter adapter) {
         spinner.setAdapter(adapter);
     }
 
     @BindingAdapter("animate")
-    public static void setTextSwitcherAnimation(TextSwitcher textSwitcher, boolean baseAnimation){
-        if(baseAnimation){
+    public static void setTextSwitcherAnimation(TextSwitcher textSwitcher, boolean baseAnimation) {
+        if (baseAnimation) {
             Animation in = AnimationUtils.loadAnimation(textSwitcher.getContext(), android.R.anim.slide_in_left);
             Animation out = AnimationUtils.loadAnimation(textSwitcher.getContext(), android.R.anim.slide_out_right);
 
@@ -111,7 +141,7 @@ public class BindingAdapters {
     }
 
     @BindingAdapter("factoryCompat")
-    public static void setTextSwitcherFactoryCompat(TextSwitcher textSwitcher, ViewSwitcher.ViewFactory factory){
+    public static void setTextSwitcherFactoryCompat(TextSwitcher textSwitcher, ViewSwitcher.ViewFactory factory) {
         textSwitcher.removeAllViews();
         textSwitcher.setFactory(factory);
     }

@@ -9,13 +9,13 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.widget.SearchView;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,7 +30,10 @@ import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.SpellStackViewModel
 import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.SpellViewModel;
 import fr.enlight.anima.animamagiccards.views.BindingDialogFragment;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
+import fr.enlight.anima.cardmodel.business.SpellFilterFactory;
 import fr.enlight.anima.cardmodel.model.spells.Spell;
+import fr.enlight.anima.cardmodel.model.spells.SpellActionType;
+import fr.enlight.anima.cardmodel.model.spells.SpellType;
 import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 
 
@@ -46,6 +49,8 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
 
     private SpellStackViewModel spellViewModels;
     private SpellFilterViewModel filterViewModel;
+
+    private final List<SpellFilterFactory.SpellFilter> filters = new ArrayList<>();
 
     private View mLoadingOverlay;
 
@@ -87,10 +92,8 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
         spellViewModels = new SpellStackViewModel();
         binding.setModel(spellViewModels);
 
-        if(savedInstanceState == null) {
-            filterViewModel = new SpellFilterViewModel();
-            binding.setFilterModel(filterViewModel);
-        }
+        filterViewModel = new SpellFilterViewModel();
+        binding.setFilterModel(filterViewModel);
 
         getLoaderManager().initLoader(1, getArguments(), this);
     }
@@ -98,7 +101,13 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
-        inflater.inflate(R.menu.spell_stack_menu, menu);
+        inflater.inflate(R.menu.search_menu, menu);
+
+        if(filterViewModel.filterPanelVisible.get()){
+            inflater.inflate(R.menu.validate_menu, menu);
+        } else {
+            inflater.inflate(R.menu.filter_menu, menu);
+        }
 
         MenuItem searchItem = menu.findItem(R.id.action_search);
         SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
@@ -109,17 +118,31 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
             @Override
             public boolean onMenuItemActionExpand(MenuItem item) {
                 filterViewModel.filterPanelVisible.set(true);
+                getActivity().invalidateOptionsMenu();
                 return true;
             }
 
             @Override
             public boolean onMenuItemActionCollapse(MenuItem item) {
                 filterViewModel.filterPanelVisible.set(false);
+                getActivity().invalidateOptionsMenu();
                 return true;
             }
         });
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(item.getItemId() == R.id.action_filter){
+            filterViewModel.filterPanelVisible.set(true);
+            getActivity().invalidateOptionsMenu();
+
+        } else if (item.getItemId() == R.id.action_validate){
+            filterViewModel.filterPanelVisible.set(false);
+            getActivity().invalidateOptionsMenu();
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
     // //////////////
     // region Filters
@@ -127,7 +150,7 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
 
     @Override
     public boolean onQueryTextSubmit(String query) {
-        Toast.makeText(getActivity(), query, Toast.LENGTH_LONG).show();
+        generateFilters(query);
         return true;
     }
 
@@ -136,6 +159,38 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
         return false;
     }
 
+
+    private void generateFilters(String textSearchQuery){
+        filters.clear();
+        SpellFilterFactory spellFilterFactory = new SpellFilterFactory();
+
+        if(!TextUtils.isEmpty(textSearchQuery) && !textSearchQuery.trim().isEmpty()){
+            filters.add(spellFilterFactory.createSearchSpellFilter(textSearchQuery, filterViewModel.isSearchWitDesc()));
+        }
+
+        SpellType spellType = filterViewModel.getSpellType();
+        if(spellType != null){
+            filters.add(spellFilterFactory.createTypeSpellFilter(spellType));
+        }
+
+        int intelligenceMaxValue = filterViewModel.getIntelligenceMaxValue();
+        if(intelligenceMaxValue > 0){
+            filters.add(spellFilterFactory.createIntelligenceSpellFilter(intelligenceMaxValue));
+        }
+
+        int zeonMaxValue = filterViewModel.getZeonMaxValue();
+        int retentionMaxValue = filterViewModel.getRetentionMaxValue();
+        if(zeonMaxValue > 0 || retentionMaxValue > 0){
+            filters.add(spellFilterFactory.createZeonSpellFilter(zeonMaxValue, retentionMaxValue, filterViewModel.isDailyRetentionOnly()));
+        }
+
+        SpellActionType spellActionType = filterViewModel.getSpellActionType();
+        if(spellActionType != null){
+            filters.add(spellFilterFactory.createActionTypeSpellFilter(spellActionType));
+        }
+
+        getLoaderManager().restartLoader(1, getArguments(), this);
+    }
 
     // endregion
 

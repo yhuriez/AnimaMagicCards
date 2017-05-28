@@ -3,13 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-        <import type="android.view.View"/>
+
+        <import type="android.view.View" />
+
         <variable
             name="model"
             type="fr.enlight.anima.animamagiccards.ui.spells.viewmodels.SpellStackViewModel" />
+
         <variable
             name="filterModel"
-            type="fr.enlight.anima.animamagiccards.ui.spells.viewmodels.SpellFilterViewModel"/>
+            type="fr.enlight.anima.animamagiccards.ui.spells.viewmodels.SpellFilterViewModel" />
     </data>
 
     <android.support.constraint.ConstraintLayout
@@ -17,15 +20,16 @@
         android:layout_height="match_parent"
         android:background="@android:color/transparent">
 
+
         <include
             android:id="@+id/loading_overlay"
             layout="@layout/view_spellbook_loading"
-            android:layout_marginTop="?actionBarSize"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:visibility="visible"
             android:layout_marginLeft="@dimen/spell_margins"
             android:layout_marginRight="@dimen/spell_margins"
+            android:layout_marginTop="?actionBarSize"
+            android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -35,9 +39,9 @@
             android:id="@+id/card_stack_view"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginTop="?actionBarSize"
             android:layout_marginLeft="@dimen/spell_margins"
             android:layout_marginRight="@dimen/spell_margins"
+            android:layout_marginTop="?actionBarSize"
             android:background="@android:color/transparent"
             app:expandListener="@{model.expandListener}"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -46,8 +50,16 @@
             app:layout_constraintTop_toTopOf="parent"
             app:viewModels="@{model.viewModels}" />
 
-        <include layout="@layout/view_spells_filters"
-            app:model="@{filterModel}"/>
+        <include
+            android:id="@+id/spell_filters_layout"
+            layout="@layout/view_spells_filters"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:model="@{filterModel}" />
 
     </android.support.constraint.ConstraintLayout>
 

@@ -19,287 +19,281 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/background_dark_transparent_70"
-            android:visibility="gone"
+            android:onClick="@{() -> model.onViewClicked(context)}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:visibility="visible"
-            app:setVisibleWithAlpha="@{model.filterPanelVisible}" />
+            app:setVisibleWithAlpha="@{model.filterPanelVisible}"
+            tools:visibility="visible" />
 
-        <ScrollView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="@dimen/spacing_xbig"
-            android:layout_marginEnd="@dimen/spacing_xbig"
+            android:layout_marginEnd="@dimen/spacing_xlarge"
             android:layout_marginLeft="@dimen/spacing_xbig"
-            android:layout_marginRight="@dimen/spacing_xbig"
+            android:layout_marginRight="@dimen/spacing_xlarge"
             android:layout_marginStart="@dimen/spacing_xbig"
             android:background="@drawable/half_rounded_gray_rectangle"
-            android:visibility="gone"
-            tools:visibility="visible"
+            android:onClick="@{() -> model.onViewClicked(context)}"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_base"
             app:setVisibleWithTranslation="@{model.filterPanelVisible}">
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <CheckBox
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="@dimen/spacing_base">
+                android:layout_marginTop="?actionBarSize"
+                android:checked="@={model.searchWitDesc}"
+                android:text="@string/Spell_Filter_Search_Description"
+                android:textSize="@dimen/textSize_medium"
+                android:textStyle="bold" />
 
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="?actionBarSize"
-                    android:checked="@={model.searchWitDesc}"
-                    android:text="@string/Spell_Filter_Search_Description"
-                    android:textSize="@dimen/textSize_medium"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Spell_Filter_Type"
-                    android:textSize="@dimen/textSize_medium"
-                    android:textStyle="bold" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:checkedButton="@={model.spellTypeSelectedId}">
-
-                    <com.google.android.flexbox.FlexboxLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/spacing_base"
-                        android:orientation="horizontal"
-                        app:flexWrap="wrap">
-
-                        <RadioButton
-                            android:id="@+id/spell_type_attack"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="@dimen/spacing_large"
-                            android:layout_marginRight="@dimen/spacing_large"
-                            android:text="@string/Spell_Filter_Type_Attack"
-                            app:layout_flexShrink="0" />
-
-                        <RadioButton
-                            android:id="@+id/spell_type_defense"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="@dimen/spacing_large"
-                            android:layout_marginRight="@dimen/spacing_large"
-                            android:text="@string/Spell_Filter_Type_Defense"
-                            app:layout_flexShrink="0" />
-
-                        <RadioButton
-                            android:id="@+id/spell_type_effect"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="@dimen/spacing_large"
-                            android:layout_marginRight="@dimen/spacing_large"
-                            android:text="@string/Spell_Filter_Type_Effect"
-                            app:layout_flexShrink="0" />
-
-                        <RadioButton
-                            android:id="@+id/spell_type_animismic"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="@dimen/spacing_large"
-                            android:layout_marginRight="@dimen/spacing_large"
-                            android:text="@string/Spell_Filter_Type_Animismic"
-                            app:layout_flexShrink="0" />
-
-                        <RadioButton
-                            android:id="@+id/spell_type_automatic"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="@dimen/spacing_large"
-                            android:layout_marginRight="@dimen/spacing_large"
-                            android:text="@string/Spell_Filter_Type_Automatic"
-                            app:layout_flexShrink="0" />
-
-                        <RadioButton
-                            android:id="@+id/spell_type_detection"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="@dimen/spacing_large"
-                            android:layout_marginRight="@dimen/spacing_large"
-                            android:text="@string/Spell_Filter_Type_Detection"
-                            app:layout_flexShrink="0" />
-
-                        <RadioButton
-                            android:id="@+id/spell_type_none"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="@dimen/spacing_large"
-                            android:layout_marginRight="@dimen/spacing_large"
-                            android:text="@string/Common_All"
-                            app:layout_flexShrink="0" />
-
-                    </com.google.android.flexbox.FlexboxLayout>
-                </RadioGroup>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/spacing_large">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/spacing_big"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/spacing_base">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="@dimen/spacing_large"
-                        android:layout_marginRight="@dimen/spacing_large"
-                        android:text="@string/Spell_Filter_Intelligence_Max"
+                        android:text="@string/Spell_Filter_Type"
                         android:textSize="@dimen/textSize_medium"
                         android:textStyle="bold" />
 
-                    <EditText
-                        android:layout_width="40dp"
-                        android:layout_height="25dp"
-                        android:background="@drawable/rounded_white_rectangle"
-                        android:gravity="center"
-                        android:inputType="numberDecimal"
-                        android:text="@={model.intelligenceMax}"
-                        android:textColor="@android:color/black"
-                        android:textSize="@dimen/textSize_medium"
-                        tools:text="20" />
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_base"
+                        android:orientation="horizontal">
 
-                </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/spacing_large"
+                            android:layout_marginRight="@dimen/spacing_large"
+                            android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/spacing_base"
-                    android:layout_marginStart="@dimen/spacing_base"
-                    android:layout_marginTop="@dimen/spacing_small"
-                    android:text="@string/Spell_Filter_Max_Int_Description"
-                    android:textSize="@dimen/textSize_regular"
-                    android:textStyle="italic" />
+                            <RadioButton
+                                android:id="@+id/spell_type_attack"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Spell_Filter_Type_Attack" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/spacing_big"
-                    android:text="@string/Spell_Filter_Zeon_Title"
-                    android:textSize="@dimen/textSize_medium"
-                    android:textStyle="bold" />
+                            <RadioButton
+                                android:id="@+id/spell_type_defense"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Spell_Filter_Type_Defense" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/spacing_base"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:paddingLeft="@dimen/spacing_base"
-                    android:paddingStart="@dimen/spacing_base"
-                    tools:ignore="RtlSymmetry">
+                            <RadioButton
+                                android:id="@+id/spell_type_effect"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Spell_Filter_Type_Effect" />
+
+                            <RadioButton
+                                android:id="@+id/spell_type_none"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Common_All" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/spell_type_animismic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Spell_Filter_Type_Animismic" />
+
+                            <RadioButton
+                                android:id="@+id/spell_type_automatic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Spell_Filter_Type_Automatic" />
+
+                            <RadioButton
+                                android:id="@+id/spell_type_detection"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Spell_Filter_Type_Detection" />
+
+                        </LinearLayout>
+
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_big"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/spacing_large"
+                            android:layout_marginRight="@dimen/spacing_large"
+                            android:text="@string/Spell_Filter_Intelligence_Max"
+                            android:textSize="@dimen/textSize_medium"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:layout_width="40dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/rounded_white_rectangle"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:text="@={model.intelligenceMax}"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/textSize_medium"
+                            tools:text="20" />
+
+                    </LinearLayout>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="@dimen/spacing_large"
-                        android:layout_marginRight="@dimen/spacing_large"
-                        android:text="@string/Spell_Filter_Max_Zeon" />
-
-                    <EditText
-                        android:layout_width="40dp"
-                        android:layout_height="25dp"
-                        android:background="@drawable/rounded_white_rectangle"
-                        android:gravity="center"
-                        android:inputType="numberDecimal"
-                        android:text="@={model.zeonMax}"
-                        android:textColor="@android:color/black"
-                        android:textSize="@dimen/textSize_medium"
-                        tools:text="20" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/spacing_base"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:paddingEnd="@dimen/spacing_base"
-                    android:paddingLeft="@dimen/spacing_base"
-                    android:paddingRight="@dimen/spacing_base"
-                    android:paddingStart="@dimen/spacing_base">
+                        android:layout_marginLeft="@dimen/spacing_base"
+                        android:layout_marginStart="@dimen/spacing_base"
+                        android:layout_marginTop="@dimen/spacing_small"
+                        android:text="@string/Spell_Filter_Max_Int_Description"
+                        android:textSize="@dimen/textSize_regular"
+                        android:textStyle="italic" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="@dimen/spacing_large"
-                        android:layout_marginRight="@dimen/spacing_large"
-                        android:gravity="center"
-                        android:text="@string/Spell_Filter_Max_Maintain" />
-
-                    <EditText
-                        android:layout_width="40dp"
-                        android:layout_height="25dp"
-                        android:background="@drawable/rounded_white_rectangle"
-                        android:gravity="center"
-                        android:inputType="numberDecimal"
-                        android:text="@={model.retentionMax}"
-                        android:textColor="@android:color/black"
+                        android:layout_marginTop="@dimen/spacing_big"
+                        android:text="@string/Spell_Filter_Zeon_Title"
                         android:textSize="@dimen/textSize_medium"
-                        tools:text="5" />
+                        android:textStyle="bold" />
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_base"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/spacing_base"
+                        android:paddingStart="@dimen/spacing_base"
+                        tools:ignore="RtlSymmetry">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/spacing_large"
+                            android:layout_marginRight="@dimen/spacing_large"
+                            android:text="@string/Spell_Filter_Max_Zeon" />
+
+                        <EditText
+                            android:layout_width="40dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/rounded_white_rectangle"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:text="@={model.zeonMax}"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/textSize_medium"
+                            tools:text="20" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_base"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingEnd="@dimen/spacing_base"
+                        android:paddingLeft="@dimen/spacing_base"
+                        android:paddingRight="@dimen/spacing_base"
+                        android:paddingStart="@dimen/spacing_base">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/spacing_large"
+                            android:layout_marginRight="@dimen/spacing_large"
+                            android:gravity="center"
+                            android:text="@string/Spell_Filter_Max_Maintain" />
+
+                        <EditText
+                            android:layout_width="40dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/rounded_white_rectangle"
+                            android:gravity="center"
+                            android:inputType="numberDecimal"
+                            android:text="@={model.retentionMax}"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/textSize_medium"
+                            tools:text="5" />
+
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_base"
+                        android:layout_marginStart="@dimen/spacing_base"
+                        android:layout_marginTop="@dimen/spacing_small"
+                        android:checked="@={model.dailyRetentionOnly}"
+                        android:text="@string/Spell_Filter_Daily_Maintain"
+                        android:textSize="@dimen/textSize_regular"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_big"
+                        android:text="@string/Spell_Filter_Action_Type"
+                        android:textSize="@dimen/textSize_medium"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_base"
+                        android:checkedButton="@={model.spellActionTypeSelectedId}"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/spell_action_type_active"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Spell_Filter_Action_Type_Active" />
+
+                        <RadioButton
+                            android:id="@+id/spell_action_type_passive"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/spacing_large"
+                            android:layout_marginStart="@dimen/spacing_large"
+                            android:text="@string/Spell_Filter_Action_Type_Passive" />
+
+                        <RadioButton
+                            android:id="@+id/spell_action_type_all"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/spacing_large"
+                            android:layout_marginStart="@dimen/spacing_large"
+                            android:text="@string/Common_All" />
+
+                    </RadioGroup>
                 </LinearLayout>
-
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/spacing_base"
-                    android:layout_marginStart="@dimen/spacing_base"
-                    android:layout_marginTop="@dimen/spacing_small"
-                    android:checked="@={model.dailyRetentionOnly}"
-                    android:text="@string/Spell_Filter_Daily_Maintain"
-                    android:textSize="@dimen/textSize_regular"
-                    android:textStyle="italic"
-                    app:layout_flexShrink="0" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/spacing_big"
-                    android:text="@string/Spell_Filter_Action_Type"
-                    android:textSize="@dimen/textSize_medium"
-                    android:textStyle="bold" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/spacing_base"
-                    android:checkedButton="@={model.spellActionTypeSelectedId}"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-                        android:id="@+id/spell_action_type_active"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/Spell_Filter_Action_Type_Active" />
-
-                    <RadioButton
-                        android:id="@+id/spell_action_type_passive"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/spacing_large"
-                        android:layout_marginStart="@dimen/spacing_large"
-                        android:text="@string/Spell_Filter_Action_Type_Passive" />
-
-                    <RadioButton
-                        android:id="@+id/spell_action_type_all"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/spacing_large"
-                        android:layout_marginStart="@dimen/spacing_large"
-                        android:text="@string/Common_All" />
-
-                </RadioGroup>
-            </LinearLayout>
-        </ScrollView>
+            </ScrollView>
+        </LinearLayout>
     </android.support.constraint.ConstraintLayout>
 </layout>
