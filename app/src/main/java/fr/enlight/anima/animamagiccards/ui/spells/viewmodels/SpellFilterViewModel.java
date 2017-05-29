@@ -2,10 +2,13 @@ package fr.enlight.anima.animamagiccards.ui.spells.viewmodels;
 
 
 import android.arch.lifecycle.ViewModel;
-import android.content.Context;
 import android.databinding.ObservableBoolean;
 import android.text.TextUtils;
-import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.cardmodel.model.spells.SpellActionType;
@@ -16,16 +19,13 @@ public class SpellFilterViewModel extends ViewModel {
     public final ObservableBoolean filterPanelVisible = new ObservableBoolean(false);
 
     private boolean searchWitDesc;
-    private int spellTypeSelectedId;
+    private final Map<SpellType, Boolean> selectedSpellTypes = new HashMap<>();
     private String intelligenceMax;
     private String zeonMax;
     private String retentionMax;
     private boolean dailyRetentionOnly;
     private int spellActionTypeSelectedId;
 
-    public void onViewClicked(Context context){
-        Toast.makeText(context, "Fuck it", Toast.LENGTH_SHORT).show();
-    }
 
     public boolean isSearchWitDesc() {
         return searchWitDesc;
@@ -35,20 +35,21 @@ public class SpellFilterViewModel extends ViewModel {
         this.searchWitDesc = searchWitDesc;
     }
 
-    public int getSpellTypeSelectedId() {
-        return spellTypeSelectedId;
-    }
-
-    public void setSpellTypeSelectedId(int spellTypeSelectedId) {
-        this.spellTypeSelectedId = spellTypeSelectedId;
-    }
-
     public String getIntelligenceMax() {
         return intelligenceMax;
     }
 
     public void setIntelligenceMax(String intelligenceMax) {
         this.intelligenceMax = intelligenceMax;
+    }
+
+    public boolean isSpellTypeChecked(SpellType spellType){
+        Boolean selectedSpellType = selectedSpellTypes.get(spellType);
+        return selectedSpellType != null && selectedSpellType;
+    }
+
+    public void onSpellTypeChecked(boolean checked, SpellType spellType){
+        selectedSpellTypes.put(spellType, checked);
     }
 
     public String getZeonMax() {
@@ -83,24 +84,8 @@ public class SpellFilterViewModel extends ViewModel {
         this.spellActionTypeSelectedId = spellActionTypeSelectedId;
     }
 
-
-    public SpellType getSpellType(){
-        switch (spellTypeSelectedId){
-            case R.id.spell_type_attack:
-                return SpellType.ATTACK;
-            case R.id.spell_type_defense:
-                return SpellType.DEFENSE;
-            case R.id.spell_type_effect:
-                return SpellType.EFFECT;
-            case R.id.spell_type_animismic:
-                return SpellType.ANIMISTIC;
-            case R.id.spell_type_automatic:
-                return SpellType.AUTOMATIC;
-            case R.id.spell_type_detection:
-                return SpellType.DETECTION;
-            default:
-                return null;
-        }
+    public List<SpellType> getSelectedSpellTypes(){
+        return new ArrayList<>(selectedSpellTypes.keySet());
     }
 
     public SpellActionType getSpellActionType(){

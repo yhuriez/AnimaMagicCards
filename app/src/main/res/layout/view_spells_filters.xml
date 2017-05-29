@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+        <import type="fr.enlight.anima.cardmodel.model.spells.SpellType"/>
 
         <variable
             name="model"
@@ -21,7 +22,6 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@color/background_dark_transparent_70"
-            android:onClick="@{() -> model.onViewClicked(context)}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -39,7 +39,6 @@
             android:layout_marginRight="@dimen/spacing_big"
             android:layout_marginStart="@dimen/spacing_big"
             android:background="@drawable/half_rounded_gray_rectangle"
-            android:onClick="@{() -> model.onViewClicked(context)}"
             android:orientation="vertical"
             android:padding="@dimen/spacing_base"
             app:layout_constraintBottom_toTopOf="parent"
@@ -91,18 +90,24 @@
                                 android:id="@+id/spell_type_attack"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:checked="@{model.isSpellTypeChecked(SpellType.ATTACK)}"
+                                android:onCheckedChanged="@{(cb, isChecked) -> model.onSpellTypeChecked(isChecked, SpellType.ATTACK)}"
                                 android:text="@string/Spell_Filter_Type_Attack" />
 
                             <CheckBox
                                 android:id="@+id/spell_type_defense"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:checked="@{model.isSpellTypeChecked(SpellType.DEFENSE)}"
+                                android:onCheckedChanged="@{(cb, isChecked) -> model.onSpellTypeChecked(isChecked, SpellType.DEFENSE)}"
                                 android:text="@string/Spell_Filter_Type_Defense" />
 
                             <CheckBox
                                 android:id="@+id/spell_type_effect"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:checked="@{model.isSpellTypeChecked(SpellType.EFFECT)}"
+                                android:onCheckedChanged="@{(cb, isChecked) -> model.onSpellTypeChecked(isChecked, SpellType.EFFECT)}"
                                 android:text="@string/Spell_Filter_Type_Effect" />
 
                         </LinearLayout>
@@ -116,18 +121,24 @@
                                 android:id="@+id/spell_type_animismic"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:checked="@{model.isSpellTypeChecked(SpellType.ANIMISTIC)}"
+                                android:onCheckedChanged="@{(cb, isChecked) -> model.onSpellTypeChecked(isChecked, SpellType.ANIMISTIC)}"
                                 android:text="@string/Spell_Filter_Type_Animismic" />
 
                             <CheckBox
                                 android:id="@+id/spell_type_automatic"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:checked="@{model.isSpellTypeChecked(SpellType.AUTOMATIC)}"
+                                android:onCheckedChanged="@{(cb, isChecked) -> model.onSpellTypeChecked(isChecked, SpellType.AUTOMATIC)}"
                                 android:text="@string/Spell_Filter_Type_Automatic" />
 
                             <CheckBox
                                 android:id="@+id/spell_type_detection"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:checked="@{model.isSpellTypeChecked(SpellType.DETECTION)}"
+                                android:onCheckedChanged="@{(cb, isChecked) -> model.onSpellTypeChecked(isChecked, SpellType.DETECTION)}"
                                 android:text="@string/Spell_Filter_Type_Detection" />
 
                         </LinearLayout>

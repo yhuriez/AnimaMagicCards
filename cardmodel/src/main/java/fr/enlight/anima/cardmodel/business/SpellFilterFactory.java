@@ -3,6 +3,8 @@ package fr.enlight.anima.cardmodel.business;
 
 import android.support.annotation.NonNull;
 
+import java.util.List;
+
 import fr.enlight.anima.cardmodel.model.spells.Spell;
 import fr.enlight.anima.cardmodel.model.spells.SpellActionType;
 import fr.enlight.anima.cardmodel.model.spells.SpellType;
@@ -15,8 +17,8 @@ public class SpellFilterFactory {
         return new SearchSpellFilter(searchText, withDescriptionSearch);
     }
 
-    public SpellFilter createTypeSpellFilter(SpellType spellType){
-        return new TypeSpellFilter(spellType.name);
+    public SpellFilter createTypeSpellFilter(List<SpellType> spellType){
+        return new TypeSpellFilter(spellType);
     }
 
     public SpellFilter createIntelligenceSpellFilter(int intelligence){
@@ -59,15 +61,20 @@ public class SpellFilterFactory {
 
     public class TypeSpellFilter implements SpellFilter{
 
-        private String spellType;
+        private List<SpellType> spellTypeList;
 
-        public TypeSpellFilter(String spellType) {
-            this.spellType = spellType;
+        public TypeSpellFilter(List<SpellType> spellType) {
+            this.spellTypeList = spellType;
         }
 
         @Override
         public boolean matchFilter(Spell spell) {
-            return containsIgnoreCase(spell.type, spellType);
+            for (SpellType type : spellTypeList) {
+                if(containsIgnoreCase(spell.type, type.name)){
+                    return true;
+                }
+            }
+            return false;
         }
     }
 

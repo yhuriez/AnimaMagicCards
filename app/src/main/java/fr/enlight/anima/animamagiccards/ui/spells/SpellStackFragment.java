@@ -137,7 +137,7 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_validate){
             searchMenuItem.collapseActionView();
-            reloadSpells(mSearchView.getQuery());
+            reloadSpellFilters(mSearchView.getQuery());
         }
         return super.onOptionsItemSelected(item);
     }
@@ -148,7 +148,7 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
 
     @Override
     public boolean onQueryTextSubmit(String query) {
-        reloadSpells(query);
+        reloadSpellFilters(query);
         return true;
     }
 
@@ -158,7 +158,7 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     }
 
 
-    private void reloadSpells(CharSequence textSearchQuery){
+    private void reloadSpellFilters(CharSequence textSearchQuery){
         filters.clear();
         SpellFilterFactory spellFilterFactory = new SpellFilterFactory();
 
@@ -166,7 +166,7 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
             filters.add(spellFilterFactory.createSearchSpellFilter(textSearchQuery.toString(), filterViewModel.isSearchWitDesc()));
         }
 
-        SpellType spellType = filterViewModel.getSpellType();
+        List<SpellType> spellType = filterViewModel.getSelectedSpellTypes();
         if(spellType != null){
             filters.add(spellFilterFactory.createTypeSpellFilter(spellType));
         }
@@ -194,11 +194,13 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
 
     @Override
     public Loader<List<Spell>> onCreateLoader(int id, Bundle args) {
+        mLoadingOverlay.setVisibility(View.VISIBLE);
+
         if (args.containsKey(SPELLBOOK_ID)) {
-            return new SpellsLoader(getActivity(), args.getInt(SPELLBOOK_ID));
+            return new SpellsLoader(getActivity(), args.getInt(SPELLBOOK_ID), filters);
 
         } else if(args.containsKey(WITCHSPELL_PARAM)){
-            return new SpellsLoader(getActivity(), (Witchspells) args.getParcelable(WITCHSPELL_PARAM));
+            return new SpellsLoader(getActivity(), (Witchspells) args.getParcelable(WITCHSPELL_PARAM), filters);
         }
         throw new IllegalStateException("A param should be given to this fragment");
     }
