@@ -22,7 +22,6 @@
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="?actionBarSize"
             android:gravity="center"
             android:paddingLeft="@dimen/spacing_base"
             android:paddingRight="@dimen/spacing_base">

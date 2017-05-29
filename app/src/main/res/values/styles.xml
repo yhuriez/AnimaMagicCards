@@ -2,19 +2,7 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat">
-        <item name="android:actionBarStyle">@style/TransparentActionBar</item>
-
-        <!-- Support library compatibility -->
-        <item name="actionBarStyle">@style/TransparentActionBar</item>
-    </style>
-
-    <style name="TransparentActionBar" parent="@style/Widget.AppCompat.ActionBar">
-        <item name="android:background">@android:color/transparent</item>
-        <item name="android:windowActionBarOverlay">true</item>
-
-        <!-- Support library compatibility -->
-        <item name="background">@android:color/transparent</item>
-        <item name="windowActionBarOverlay">true</item>
+        <item name="colorPrimary">@color/background_dark_transparent_90</item>
     </style>
 
     <style name="FlatButton" parent="Widget.AppCompat.Button.Borderless">

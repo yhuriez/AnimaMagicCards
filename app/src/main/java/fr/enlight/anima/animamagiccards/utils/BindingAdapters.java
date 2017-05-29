@@ -5,6 +5,9 @@ import android.databinding.DataBindingUtil;
 import android.databinding.ViewDataBinding;
 import android.graphics.Typeface;
 import android.support.annotation.DrawableRes;
+import android.support.constraint.ConstraintLayout;
+import android.support.constraint.ConstraintSet;
+import android.support.transition.TransitionManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,6 +23,7 @@ import android.widget.ViewSwitcher;
 
 import java.util.List;
 
+import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 
 
@@ -77,6 +81,19 @@ public class BindingAdapters {
                 view.startAnimation(anim);
             }
         }
+    }
+
+    @BindingAdapter(value = {"setVisibleAnimation", "withCLayout"})
+    public static void setVisibleAnimation(View view, boolean visible, ConstraintLayout constraintLayout) {
+        ConstraintSet endingSet = new ConstraintSet();
+        if(visible){
+            endingSet.clone(view.getContext(), R.layout.view_spells_filters_open);
+        } else {
+            endingSet.clone(view.getContext(), R.layout.view_spells_filters);
+        }
+
+        TransitionManager.beginDelayedTransition(constraintLayout);
+        endingSet.applyTo(constraintLayout);
     }
 
     @BindingAdapter("backgroundRes")

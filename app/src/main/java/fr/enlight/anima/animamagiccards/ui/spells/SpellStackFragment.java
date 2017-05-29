@@ -45,6 +45,8 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     private static final String SPELLBOOK_ID = "SPELLBOOK_ID";
     private static final String WITCHSPELL_PARAM = "WITCHSPELL_PARAM";
 
+    private static final String EMPTY_QUERY = "EMPTY_QUERY";
+
     private FragmentSpellsStackBinding binding;
 
     private SpellStackViewModel spellViewModels;
@@ -53,6 +55,8 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     private final List<SpellFilterFactory.SpellFilter> filters = new ArrayList<>();
 
     private View mLoadingOverlay;
+    private SearchView mSearchView;
+    private MenuItem searchMenuItem;
 
     public static SpellStackFragment newInstance(int spellbookId) {
         SpellStackFragment fragment = new SpellStackFragment();
@@ -105,16 +109,14 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
 
         if(filterViewModel.filterPanelVisible.get()){
             inflater.inflate(R.menu.validate_menu, menu);
-        } else {
-            inflater.inflate(R.menu.filter_menu, menu);
         }
 
-        MenuItem searchItem = menu.findItem(R.id.action_search);
-        SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
-        searchView.setSubmitButtonEnabled(true);
-        searchView.setOnQueryTextListener(this);
+        searchMenuItem = menu.findItem(R.id.action_search);
+        mSearchView = (SearchView) MenuItemCompat.getActionView(searchMenuItem);
+        mSearchView.setSubmitButtonEnabled(true);
+        mSearchView.setOnQueryTextListener(this);
 
-        MenuItemCompat.setOnActionExpandListener(searchItem, new MenuItemCompat.OnActionExpandListener() {
+        MenuItemCompat.setOnActionExpandListener(searchMenuItem, new MenuItemCompat.OnActionExpandListener() {
             @Override
             public boolean onMenuItemActionExpand(MenuItem item) {
                 filterViewModel.filterPanelVisible.set(true);
@@ -133,13 +135,9 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if(item.getItemId() == R.id.action_filter){
-            filterViewModel.filterPanelVisible.set(true);
-            getActivity().invalidateOptionsMenu();
-
-        } else if (item.getItemId() == R.id.action_validate){
-            filterViewModel.filterPanelVisible.set(false);
-            getActivity().invalidateOptionsMenu();
+        if (item.getItemId() == R.id.action_validate){
+            searchMenuItem.collapseActionView();
+            reloadSpells(mSearchView.getQuery());
         }
         return super.onOptionsItemSelected(item);
     }
@@ -150,7 +148,7 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
 
     @Override
     public boolean onQueryTextSubmit(String query) {
-        generateFilters(query);
+        reloadSpells(query);
         return true;
     }
 
@@ -160,12 +158,12 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     }
 
 
-    private void generateFilters(String textSearchQuery){
+    private void reloadSpells(CharSequence textSearchQuery){
         filters.clear();
         SpellFilterFactory spellFilterFactory = new SpellFilterFactory();
 
-        if(!TextUtils.isEmpty(textSearchQuery) && !textSearchQuery.trim().isEmpty()){
-            filters.add(spellFilterFactory.createSearchSpellFilter(textSearchQuery, filterViewModel.isSearchWitDesc()));
+        if(!TextUtils.isEmpty(textSearchQuery)){
+            filters.add(spellFilterFactory.createSearchSpellFilter(textSearchQuery.toString(), filterViewModel.isSearchWitDesc()));
         }
 
         SpellType spellType = filterViewModel.getSpellType();

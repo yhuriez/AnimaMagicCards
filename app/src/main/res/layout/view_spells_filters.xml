@@ -11,13 +11,15 @@
     </data>
 
     <android.support.constraint.ConstraintLayout
+        android:id="@+id/parent_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
         <View
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:id="@+id/layout_overlay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:background="@color/background_dark_transparent_70"
             android:onClick="@{() -> model.onViewClicked(context)}"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -28,23 +30,27 @@
             tools:visibility="visible" />
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:id="@+id/filters_layout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:layout_marginBottom="@dimen/spacing_xbig"
-            android:layout_marginEnd="@dimen/spacing_xlarge"
-            android:layout_marginLeft="@dimen/spacing_xbig"
-            android:layout_marginRight="@dimen/spacing_xlarge"
-            android:layout_marginStart="@dimen/spacing_xbig"
+            android:layout_marginEnd="@dimen/spacing_big"
+            android:layout_marginLeft="@dimen/spacing_big"
+            android:layout_marginRight="@dimen/spacing_big"
+            android:layout_marginStart="@dimen/spacing_big"
             android:background="@drawable/half_rounded_gray_rectangle"
             android:onClick="@{() -> model.onViewClicked(context)}"
             android:orientation="vertical"
             android:padding="@dimen/spacing_base"
-            app:setVisibleWithTranslation="@{model.filterPanelVisible}">
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:setVisibleAnimation="@{model.filterPanelVisible}"
+            app:withCLayout="@{parentLayout}">
 
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="?actionBarSize"
                 android:checked="@={model.searchWitDesc}"
                 android:text="@string/Spell_Filter_Search_Description"
                 android:textSize="@dimen/textSize_medium"
@@ -68,11 +74,11 @@
                         android:textSize="@dimen/textSize_medium"
                         android:textStyle="bold" />
 
-                    <RadioGroup
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/spacing_base"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/spacing_base">
 
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -81,29 +87,23 @@
                             android:layout_marginRight="@dimen/spacing_large"
                             android:orientation="vertical">
 
-                            <RadioButton
+                            <CheckBox
                                 android:id="@+id/spell_type_attack"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/Spell_Filter_Type_Attack" />
 
-                            <RadioButton
+                            <CheckBox
                                 android:id="@+id/spell_type_defense"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/Spell_Filter_Type_Defense" />
 
-                            <RadioButton
+                            <CheckBox
                                 android:id="@+id/spell_type_effect"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/Spell_Filter_Type_Effect" />
-
-                            <RadioButton
-                                android:id="@+id/spell_type_none"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/Common_All" />
 
                         </LinearLayout>
 
@@ -112,19 +112,19 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
 
-                            <RadioButton
+                            <CheckBox
                                 android:id="@+id/spell_type_animismic"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/Spell_Filter_Type_Animismic" />
 
-                            <RadioButton
+                            <CheckBox
                                 android:id="@+id/spell_type_automatic"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/Spell_Filter_Type_Automatic" />
 
-                            <RadioButton
+                            <CheckBox
                                 android:id="@+id/spell_type_detection"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -132,7 +132,7 @@
 
                         </LinearLayout>
 
-                    </RadioGroup>
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -270,10 +270,10 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/spell_action_type_active"
+                            android:id="@+id/spell_action_type_all"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/Spell_Filter_Action_Type_Active" />
+                            android:text="@string/Common_All" />
 
                         <RadioButton
                             android:id="@+id/spell_action_type_passive"
@@ -284,12 +284,12 @@
                             android:text="@string/Spell_Filter_Action_Type_Passive" />
 
                         <RadioButton
-                            android:id="@+id/spell_action_type_all"
+                            android:id="@+id/spell_action_type_active"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="@dimen/spacing_large"
                             android:layout_marginStart="@dimen/spacing_large"
-                            android:text="@string/Common_All" />
+                            android:text="@string/Spell_Filter_Action_Type_Active" />
 
                     </RadioGroup>
                 </LinearLayout>
