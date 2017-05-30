@@ -1,13 +1,19 @@
 package fr.enlight.anima.animamagiccards.ui.spells;
 
 
+
 import android.app.Fragment;
 import android.app.LoaderManager;
+import android.arch.lifecycle.ViewModelProviders;
 import android.content.Loader;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.annotation.Nullable;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.MenuItemCompat;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SearchView;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
@@ -34,6 +40,7 @@ import fr.enlight.anima.cardmodel.business.SpellFilterFactory;
 import fr.enlight.anima.cardmodel.model.spells.Spell;
 import fr.enlight.anima.cardmodel.model.spells.SpellActionType;
 import fr.enlight.anima.cardmodel.model.spells.SpellType;
+import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
 import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 
 
@@ -45,16 +52,14 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     private static final String SPELLBOOK_ID = "SPELLBOOK_ID";
     private static final String WITCHSPELL_PARAM = "WITCHSPELL_PARAM";
 
-    private static final String EMPTY_QUERY = "EMPTY_QUERY";
-
     private FragmentSpellsStackBinding binding;
 
     private SpellStackViewModel spellViewModels;
     private SpellFilterViewModel filterViewModel;
 
     private final List<SpellFilterFactory.SpellFilter> filters = new ArrayList<>();
+    private CharSequence lastSearch;
 
-    private View mLoadingOverlay;
     private SearchView mSearchView;
     private MenuItem searchMenuItem;
 
@@ -82,24 +87,36 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     }
 
     @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        mLoadingOverlay = view.findViewById(R.id.loading_overlay);
-    }
-
-    @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
+        // Toolbar
+        ActionBar actionBar = ((AppCompatActivity) getActivity()).getSupportActionBar();
+        if(actionBar != null){
+            actionBar.setDisplayHomeAsUpEnabled(false);
+            modifyTitle(actionBar, getArguments());
+        }
         setHasOptionsMenu(true);
 
         spellViewModels = new SpellStackViewModel();
         binding.setModel(spellViewModels);
 
-        filterViewModel = new SpellFilterViewModel();
+        filterViewModel = ViewModelProviders.of((FragmentActivity) getActivity()).get(SpellFilterViewModel.class);
         binding.setFilterModel(filterViewModel);
 
         getLoaderManager().initLoader(1, getArguments(), this);
+    }
+
+    private void modifyTitle(ActionBar actionBar, Bundle arguments) {
+        String title = null;
+        if(arguments.containsKey(WITCHSPELL_PARAM)) {
+            Witchspells witchspells = arguments.getParcelable(WITCHSPELL_PARAM);
+            title = getString(R.string.Witchspells_Name_Format, witchspells.witchName);
+        } else if (arguments.containsKey(SPELLBOOK_ID)){
+            SpellbookType spellbookType = SpellbookType.getTypeFromBookId(arguments.getInt(SPELLBOOK_ID));
+            title = getString(spellbookType.titleRes);
+        }
+        actionBar.setTitle(title);
     }
 
     @Override
@@ -113,6 +130,7 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
 
         searchMenuItem = menu.findItem(R.id.action_search);
         mSearchView = (SearchView) MenuItemCompat.getActionView(searchMenuItem);
+        mSearchView.setFocusable(false);
         mSearchView.setSubmitButtonEnabled(true);
         mSearchView.setOnQueryTextListener(this);
 
@@ -121,6 +139,9 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
             public boolean onMenuItemActionExpand(MenuItem item) {
                 filterViewModel.filterPanelVisible.set(true);
                 getActivity().invalidateOptionsMenu();
+                if(lastSearch != null){
+                    mSearchView.setQuery(lastSearch, false);
+                }
                 return true;
             }
 
@@ -136,8 +157,8 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_validate){
-            searchMenuItem.collapseActionView();
             reloadSpellFilters(mSearchView.getQuery());
+            searchMenuItem.collapseActionView();
         }
         return super.onOptionsItemSelected(item);
     }
@@ -160,15 +181,16 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
 
     private void reloadSpellFilters(CharSequence textSearchQuery){
         filters.clear();
+        lastSearch = textSearchQuery;
         SpellFilterFactory spellFilterFactory = new SpellFilterFactory();
 
         if(!TextUtils.isEmpty(textSearchQuery)){
             filters.add(spellFilterFactory.createSearchSpellFilter(textSearchQuery.toString(), filterViewModel.isSearchWitDesc()));
         }
 
-        List<SpellType> spellType = filterViewModel.getSelectedSpellTypes();
-        if(spellType != null){
-            filters.add(spellFilterFactory.createTypeSpellFilter(spellType));
+        List<SpellType> spellTypeList = filterViewModel.getSelectedSpellTypes();
+        if(spellTypeList != null && !spellTypeList.isEmpty()){
+            filters.add(spellFilterFactory.createTypeSpellFilter(spellTypeList));
         }
 
         int intelligenceMaxValue = filterViewModel.getIntelligenceMaxValue();
@@ -194,7 +216,7 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
 
     @Override
     public Loader<List<Spell>> onCreateLoader(int id, Bundle args) {
-        mLoadingOverlay.setVisibility(View.VISIBLE);
+        spellViewModels.stackVisible.set(false);
 
         if (args.containsKey(SPELLBOOK_ID)) {
             return new SpellsLoader(getActivity(), args.getInt(SPELLBOOK_ID), filters);
@@ -209,16 +231,18 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     public void onLoadFinished(Loader<List<Spell>> loader, List<Spell> data) {
         List<BindableViewModel> result = new ArrayList<>();
         for (Spell spell : data) {
-            result.add(new SpellViewModel(spell, spell.spellbookType));
+            SpellViewModel spellViewModel = new SpellViewModel(spell, spell.spellbookType);
+            spellViewModel.setListener(this);
+            result.add(spellViewModel);
         }
 
         spellViewModels.setViewModels(result);
-
-        mLoadingOverlay.setVisibility(View.GONE);
+        spellViewModels.stackVisible.set(true);
     }
 
     @Override
     public void onLoaderReset(Loader<List<Spell>> loader) {
+        spellViewModels.setViewModels(null);
     }
 
 

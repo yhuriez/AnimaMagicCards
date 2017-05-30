@@ -106,12 +106,16 @@ public class SpellFilterFactory {
 
         @Override
         public boolean matchFilter(Spell spell) {
-            boolean result = spell.initialGrade.zeon <= zeonMax
-                    && spell.initialGrade.retention <= retentionMax;
+            boolean result = spell.initialGrade.zeon <= zeonMax;
+
+            if(spell.withRetention && retentionMax > 0){
+                result &= spell.initialGrade.retention <= retentionMax;
+            }
 
             if(result && dailyMaintainOnly){
                 return spell.dailyRetention;
             }
+
             return result;
         }
     }

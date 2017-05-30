@@ -12,6 +12,8 @@
     <string name="Common_Filter">Filtrer</string>
     <string name="Common_All">Toutes</string>
 
+    <string name="HomePage_Title">Livres de sorts</string>
+
     <!--Spellbooks-->
     <string name="Spellbooks_Title">Livres de sorts</string>
 
@@ -94,5 +96,6 @@
     <string name="Spell_Filter_Action_Type_Active">Active</string>
     <string name="Spell_Filter_Action_Type_Passive">Passive</string>
 
+    <string name="Spell_Empty_List_Message">Aucun sort ne correspond à la recherche.</string>
 
 </resources>

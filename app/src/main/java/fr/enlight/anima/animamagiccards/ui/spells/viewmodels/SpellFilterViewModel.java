@@ -7,8 +7,10 @@ import android.text.TextUtils;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.cardmodel.model.spells.SpellActionType;
@@ -19,7 +21,7 @@ public class SpellFilterViewModel extends ViewModel {
     public final ObservableBoolean filterPanelVisible = new ObservableBoolean(false);
 
     private boolean searchWitDesc;
-    private final Map<SpellType, Boolean> selectedSpellTypes = new HashMap<>();
+    private final Set<SpellType> selectedSpellTypes = new HashSet<>();
     private String intelligenceMax;
     private String zeonMax;
     private String retentionMax;
@@ -44,12 +46,15 @@ public class SpellFilterViewModel extends ViewModel {
     }
 
     public boolean isSpellTypeChecked(SpellType spellType){
-        Boolean selectedSpellType = selectedSpellTypes.get(spellType);
-        return selectedSpellType != null && selectedSpellType;
+        return selectedSpellTypes.contains(spellType);
     }
 
     public void onSpellTypeChecked(boolean checked, SpellType spellType){
-        selectedSpellTypes.put(spellType, checked);
+        if(checked){
+            selectedSpellTypes.add(spellType);
+        } else {
+            selectedSpellTypes.remove(spellType);
+        }
     }
 
     public String getZeonMax() {
@@ -85,7 +90,7 @@ public class SpellFilterViewModel extends ViewModel {
     }
 
     public List<SpellType> getSelectedSpellTypes(){
-        return new ArrayList<>(selectedSpellTypes.keySet());
+        return new ArrayList<>(selectedSpellTypes);
     }
 
     public SpellActionType getSpellActionType(){

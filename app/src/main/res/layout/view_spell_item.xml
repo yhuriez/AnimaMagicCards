@@ -5,7 +5,8 @@
 
     <data>
 
-        <import type="android.view.View"/>
+        <import type="android.view.View" />
+
         <import type="fr.enlight.anima.animamagiccards.ui.spells.bo.SpellGradeLevel" />
 
         <variable
@@ -61,7 +62,7 @@
         <TextView
             android:id="@+id/spell_title"
             android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/spacing_xbig"
             android:layout_marginLeft="@dimen/spacing_xbig"
             android:layout_marginRight="@dimen/spacing_xbig"
@@ -72,11 +73,30 @@
             android:textColor="@android:color/white"
             android:textSize="@dimen/textSize_spell_title"
             app:customFont="@{@string/spell_title_font}"
-            app:layout_constraintBottom_toBottomOf="@id/bottom_header_guideline"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="@id/top_header_guideline"
             tools:text="Sphère de destruction" />
+
+        <TextView
+            android:id="@+id/spell_subtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingBottom="2dp"
+            android:paddingRight="@dimen/spacing_big"
+            android:paddingEnd="@dimen/spacing_big"
+            android:paddingStart="@dimen/spacing_big"
+            android:paddingLeft="@dimen/spacing_big"
+            android:text="@{model.getSubtitle(context)}"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textSize_regular"
+            app:customFont="@{@string/regular_font}"
+            app:layout_constraintBottom_toBottomOf="@id/bottom_header_guideline"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:text="Création Niv. 20" />
 
         <TextView
             android:id="@+id/spell_action_type"
@@ -161,13 +181,13 @@
             style="@style/FlatButton.NoPadding"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@id/spell_initial_grade"
-            app:layout_constraintRight_toRightOf="@id/spell_card_background"
-            app:layout_constraintLeft_toLeftOf="@id/spell_card_background"
-            android:paddingBottom="@dimen/spacing_small"
             android:onClick="@{() -> model.expandEffect()}"
+            android:paddingBottom="@dimen/spacing_small"
+            android:text="@string/Common_See_More"
             android:visibility="@{model.effectEllipsized ? View.VISIBLE : View.INVISIBLE}"
-            android:text="@string/Common_See_More"/>
+            app:layout_constraintBottom_toTopOf="@id/spell_initial_grade"
+            app:layout_constraintLeft_toLeftOf="@id/spell_card_background"
+            app:layout_constraintRight_toRightOf="@id/spell_card_background" />
 
         <TextView
             android:layout_width="0dp"

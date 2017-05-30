@@ -45,9 +45,9 @@ public class SpellGradeViewModel {
         if(spell.withRetention){
             result += "\n";
             if(spell.dailyRetention){
-                result += context.getString(R.string.spell_grade_retention_format, spellGrade.retention);
-            } else {
                 result += context.getString(R.string.spell_grade_retention_daily_format, spellGrade.retention);
+            } else {
+                result += context.getString(R.string.spell_grade_retention_format, spellGrade.retention);
             }
         }
 

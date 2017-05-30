@@ -6,29 +6,7 @@
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/spacing_big">
 
-        <ImageView
-            android:id="@+id/spell_card_background"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginLeft="@dimen/spacing_large"
-            android:layout_marginRight="@dimen/spacing_large"
-            android:src="@drawable/card_verso"
-            app:layout_constraintDimensionRatio="H,161:225"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="@dimen/spacing_large"
-            android:text="@string/Common_Loading_Message"
-            android:textSize="40sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="@id/spell_card_background"
-            app:layout_constraintRight_toRightOf="@id/spell_card_background" />
 
 
     </android.support.constraint.ConstraintLayout>
