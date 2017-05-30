@@ -10,22 +10,14 @@ import java.util.List;
 
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.animamagiccards.views.viewmodels.ListBindableViewModel;
+import fr.enlight.anima.animamagiccards.views.viewmodels.RecyclerViewModel;
 
-public class SpellStackViewModel extends ListBindableViewModel implements CardStackView.ItemExpendListener {
+public class SpellStackViewModel extends RecyclerViewModel {
 
     public final ObservableBoolean stackVisible = new ObservableBoolean(false);
 
     public boolean isMessageMode(){
         List<BindableViewModel> viewModels = getViewModels();
         return stackVisible.get() && viewModels != null && viewModels.isEmpty();
-    }
-
-    public CardStackView.ItemExpendListener getExpandListener(){
-        return this;
-    }
-
-    @Override
-    public void onItemExpend(boolean expend) {
-        // Nothing to do for now
     }
 }

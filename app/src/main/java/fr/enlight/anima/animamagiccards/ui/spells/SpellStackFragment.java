@@ -23,12 +23,17 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.azoft.carousellayoutmanager.CarouselLayoutManager;
+import com.azoft.carousellayoutmanager.CarouselZoomPostLayoutListener;
+import com.azoft.carousellayoutmanager.CenterScrollListener;
+
 import java.util.ArrayList;
 import java.util.List;
 
 import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.animamagiccards.async.SpellsLoader;
 import fr.enlight.anima.animamagiccards.databinding.FragmentSpellsStackBinding;
+import fr.enlight.anima.animamagiccards.ui.HomePageViewModel;
 import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.DialogSpellEffectViewModel;
 import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.DialogSpellGradeViewModel;
 import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.SpellFilterViewModel;
@@ -99,6 +104,12 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
         setHasOptionsMenu(true);
 
         spellViewModels = new SpellStackViewModel();
+        CarouselLayoutManager carouselLayoutManager = new CarouselLayoutManager(CarouselLayoutManager.VERTICAL, false);
+        carouselLayoutManager.setMaxVisibleItems(1);
+        carouselLayoutManager.setPostLayoutListener(new CarouselZoomPostLayoutListener());
+        spellViewModels.setLayoutManager(carouselLayoutManager);
+        spellViewModels.setOnScrollListener(new CenterScrollListener());
+
         binding.setModel(spellViewModels);
 
         filterViewModel = ViewModelProviders.of((FragmentActivity) getActivity()).get(SpellFilterViewModel.class);
