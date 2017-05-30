@@ -54,9 +54,9 @@ public class WitchspellsPath implements Parcelable {
         this.pathBookId = in.readInt();
         this.secondaryPathBookId = in.readInt();
         this.pathLevel = in.readInt();
-        this.freeAccessSpellsIds = new ArrayList<Integer>();
+        this.freeAccessSpellsIds = new ArrayList<>();
         in.readList(this.freeAccessSpellsIds, Integer.class.getClassLoader());
-        this.choosenSpellsIds = new ArrayList<Integer>();
+        this.choosenSpellsIds = new ArrayList<>();
         in.readList(this.choosenSpellsIds, Integer.class.getClassLoader());
     }
 

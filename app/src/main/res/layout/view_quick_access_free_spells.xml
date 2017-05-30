@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="fr.enlight.anima.animamagiccards.ui.spells.viewmodels.quickaccess.QuickAccessFreeSpellsViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/textSize_regular"
+            android:textStyle="italic"
+            tools:text="Niv. 1-10" />
+
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/circle_gray_background"
+            android:gravity="center"
+            android:textSize="@dimen/textSize_xlarge"
+            android:textStyle="bold"
+            tools:text="5/7" />
+
+    </LinearLayout>
+</layout>

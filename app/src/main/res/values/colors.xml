@@ -11,6 +11,8 @@
     <color name="mid_gray">#c0c0c0</color>
     <color name="dark_gray">#616161</color>
 
+    <color name="free_spells_color">#630400</color>
+
     <color name="background_light_transparent_20">#33ffffff</color>
     <color name="background_light_transparent_25">#40ffffff</color>
     <color name="background_light_transparent_50">#80ffffff</color>

@@ -21,6 +21,7 @@
 
         <activity android:name=".ui.witchspells.WitchspellsEditionActivity" />
         <activity android:name=".ui.witchspells.WitchspellsMainPathChooserActivity" />
+        <activity android:name=".ui.spells.SpellSelectionActivity" />
 
     </application>
 

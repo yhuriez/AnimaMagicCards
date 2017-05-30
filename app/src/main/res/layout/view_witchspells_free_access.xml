@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsFreeAccessViewModel" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="@{() -> model.onItemClicked()}"
+        android:paddingTop="@dimen/spacing_base"
+        tools:background="@drawable/witchspells_book_background"
+        tools:layout_height="match_parent"
+        tools:layout_width="match_parent"
+        tools:paddingTop="@dimen/spacing_big">
+
+        <FrameLayout
+            android:id="@+id/free_access_icon"
+            android:layout_width="@dimen/witchspells_icon_secondary_container_size"
+            android:layout_height="@dimen/witchspells_icon_secondary_container_size"
+            android:background="@drawable/spell_circle_small"
+            android:paddingEnd="@dimen/spacing_base"
+            android:paddingLeft="@dimen/spacing_base"
+            android:paddingRight="@dimen/spacing_base"
+            android:paddingStart="@dimen/spacing_base"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/witchspells_icon_secondary_size"
+                android:layout_height="@dimen/witchspells_icon_secondary_size"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/spacing_base"
+                android:src="@drawable/card_icon_book_free_access" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/free_access_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_base"
+            android:layout_marginStart="@dimen/spacing_base"
+            android:text="@{model.getFreeAccessMessage(context)}"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:maxLines="2"
+            android:layout_marginTop="@dimen/spacing_small"
+            app:layout_constraintLeft_toRightOf="@id/free_access_icon"
+            app:layout_constraintTop_toTopOf="@id/free_access_icon"
+            tools:text="Modifier ses sorts d'accès libre\n(5 sorts choisis sur 7)" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

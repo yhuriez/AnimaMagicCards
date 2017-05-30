@@ -8,7 +8,6 @@ import android.arch.lifecycle.ViewModelProviders;
 import android.content.Loader;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.MenuItemCompat;
@@ -42,6 +41,7 @@ import fr.enlight.anima.cardmodel.model.spells.SpellActionType;
 import fr.enlight.anima.cardmodel.model.spells.SpellType;
 import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
 import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
+import fr.enlight.anima.cardmodel.model.witchspells.WitchspellsPath;
 
 
 public class SpellStackFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<Spell>>, SpellViewModel.Listener, SearchView.OnQueryTextListener {
@@ -50,7 +50,8 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     private static final String GRADE_DIALOG = "GRADE_DIALOG";
 
     private static final String SPELLBOOK_ID = "SPELLBOOK_ID";
-    private static final String WITCHSPELL_PARAM = "WITCHSPELL_PARAM";
+    private static final String WITCHSPELLS_PARAM = "WITCHSPELLS_PARAM";
+    private static final String WITCHSPELLS_PATH_PARAM = "WITCHSPELLS_PATH_PARAM";
 
     private FragmentSpellsStackBinding binding;
 
@@ -74,7 +75,15 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     public static SpellStackFragment newInstance(Witchspells witchspells) {
         SpellStackFragment fragment = new SpellStackFragment();
         Bundle bundle = new Bundle();
-        bundle.putParcelable(WITCHSPELL_PARAM, witchspells);
+        bundle.putParcelable(WITCHSPELLS_PARAM, witchspells);
+        fragment.setArguments(bundle);
+        return fragment;
+    }
+
+    public static SpellStackFragment newInstanceForSelection(WitchspellsPath witchspellsPath) {
+        SpellStackFragment fragment = new SpellStackFragment();
+        Bundle bundle = new Bundle();
+        bundle.putParcelable(WITCHSPELLS_PATH_PARAM, witchspellsPath);
         fragment.setArguments(bundle);
         return fragment;
     }
@@ -109,8 +118,8 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
 
     private void modifyTitle(ActionBar actionBar, Bundle arguments) {
         String title = null;
-        if(arguments.containsKey(WITCHSPELL_PARAM)) {
-            Witchspells witchspells = arguments.getParcelable(WITCHSPELL_PARAM);
+        if(arguments.containsKey(WITCHSPELLS_PARAM)) {
+            Witchspells witchspells = arguments.getParcelable(WITCHSPELLS_PARAM);
             title = getString(R.string.Witchspells_Name_Format, witchspells.witchName);
         } else if (arguments.containsKey(SPELLBOOK_ID)){
             SpellbookType spellbookType = SpellbookType.getTypeFromBookId(arguments.getInt(SPELLBOOK_ID));
@@ -221,8 +230,8 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
         if (args.containsKey(SPELLBOOK_ID)) {
             return new SpellsLoader(getActivity(), args.getInt(SPELLBOOK_ID), filters);
 
-        } else if(args.containsKey(WITCHSPELL_PARAM)){
-            return new SpellsLoader(getActivity(), (Witchspells) args.getParcelable(WITCHSPELL_PARAM), filters);
+        } else if(args.containsKey(WITCHSPELLS_PARAM)){
+            return new SpellsLoader(getActivity(), (Witchspells) args.getParcelable(WITCHSPELLS_PARAM), filters);
         }
         throw new IllegalStateException("A param should be given to this fragment");
     }
