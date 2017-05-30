@@ -11,110 +11,105 @@
             type="fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsEditionViewModel" />
     </data>
 
-    <FrameLayout
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/witchspells_book_background">
 
-        <android.support.constraint.ConstraintLayout
+        <android.support.constraint.Guideline
+            android:id="@+id/left_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.12" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/right_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.92" />
+
+        <Button
+            android:id="@+id/witchspells_modify_button"
+            style="@style/FlatButton"
+            setVisible="@{!model.pathGroupViewModels.empty}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{() -> model.onModifyClicked()}"
+            android:text="@string/Common_Modify"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textSize_large"
+            android:layout_marginBottom="@dimen/spacing_big"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/witchspells_validation_button" />
+
+        <Button
+            android:id="@+id/witchspells_validation_button"
+            style="@style/FlatButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{() -> model.onValidateClicked()}"
+            android:text="@string/Common_Validate"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textSize_large"
+            android:layout_marginBottom="@dimen/spacing_big"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/witchspells_modify_button"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <EditText
+            android:id="@+id/witchspells_name_edittext"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="?actionBarSize"
-            android:paddingBottom="@dimen/spacing_xbig">
+            android:layout_height="@dimen/text_input_height"
+            android:layout_marginEnd="@dimen/spacing_big"
+            android:layout_marginLeft="@dimen/spacing_big"
+            android:layout_marginRight="@dimen/spacing_big"
+            android:layout_marginStart="@dimen/spacing_big"
+            android:layout_marginTop="60dp"
+            android:gravity="center_horizontal"
+            android:hint="@string/Witchspells_Name_Label"
+            android:inputType="text"
+            android:text="@={model.witchName}"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textSize_xbig"
+            app:customFont="@{@string/spell_title_font}"
+            app:layout_constraintLeft_toLeftOf="@id/left_guideline"
+            app:layout_constraintRight_toRightOf="@id/right_guideline"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <android.support.constraint.Guideline
-                android:id="@+id/left_guideline"
-                android:layout_width="wrap_content"
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/witchspells_validation_button"
+            app:layout_constraintLeft_toLeftOf="@id/left_guideline"
+            app:layout_constraintRight_toRightOf="@id/right_guideline"
+            app:layout_constraintTop_toBottomOf="@id/witchspells_name_edittext">
+
+            <LinearLayout
+                android:id="@+id/witchspells_container_layout"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_large"
                 android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.12" />
+                app:viewModels="@{model.pathGroupViewModels}" />
 
-            <android.support.constraint.Guideline
-                android:id="@+id/right_guideline"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.92" />
+        </ScrollView>
 
-            <Button
-                android:id="@+id/witchspells_modify_button"
-                style="@style/FlatButton"
-                setVisible="@{!model.pathGroupViewModels.empty}"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="@{() -> model.onModifyClicked()}"
-                android:text="@string/Common_Modify"
-                android:textColor="@android:color/white"
-                android:textSize="@dimen/textSize_large"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintHorizontal_chainStyle="spread"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toLeftOf="@+id/witchspells_validation_button" />
+        <include
+            android:id="@+id/witchspells_add_path_layout"
+            layout="@layout/view_witchspells_add_path_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="@{model.pathGroupViewModels.size() == 0 ? View.VISIBLE : View.GONE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/left_guideline"
+            app:layout_constraintRight_toRightOf="@id/right_guideline"
+            app:layout_constraintTop_toTopOf="parent"
+            app:model="@{model.addPathViewModel}" />
 
-            <Button
-                android:id="@+id/witchspells_validation_button"
-                style="@style/FlatButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="@{() -> model.onValidateClicked()}"
-                android:text="@string/Common_Validate"
-                android:textColor="@android:color/white"
-                android:textSize="@dimen/textSize_large"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toRightOf="@id/witchspells_modify_button"
-                app:layout_constraintRight_toRightOf="parent" />
+    </android.support.constraint.ConstraintLayout>
 
-            <ScrollView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                app:layout_constraintBottom_toTopOf="@id/witchspells_validation_button"
-                app:layout_constraintLeft_toLeftOf="@id/left_guideline"
-                app:layout_constraintRight_toRightOf="@id/right_guideline"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/witchspells_name_edittext"
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/text_input_height"
-                        android:layout_marginTop="@dimen/spacing_large"
-                        android:layout_marginLeft="@dimen/spacing_big"
-                        android:layout_marginRight="@dimen/spacing_big"
-                        android:gravity="center_horizontal"
-                        android:hint="@string/Witchspells_Name_Label"
-                        android:inputType="text"
-                        android:text="@={model.witchName}"
-                        android:textColor="@android:color/white"
-                        android:textSize="@dimen/textSize_xbig"
-                        app:customFont="@{@string/spell_title_font}" />
-
-                    <LinearLayout
-                        android:id="@+id/witchspells_container_layout"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/spacing_large"
-                        android:orientation="vertical"
-                        app:viewModels="@{model.pathGroupViewModels}" />
-
-                </LinearLayout>
-            </ScrollView>
-
-            <include
-                android:id="@+id/witchspells_add_path_layout"
-                layout="@layout/view_witchspells_add_path_item"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:visibility="@{model.pathGroupViewModels.size() == 0 ? View.VISIBLE : View.GONE}"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="@id/left_guideline"
-                app:layout_constraintRight_toRightOf="@id/right_guideline"
-                app:layout_constraintTop_toTopOf="parent"
-                app:model="@{model.addPathViewModel}" />
-
-        </android.support.constraint.ConstraintLayout>
-    </FrameLayout>
 </layout>

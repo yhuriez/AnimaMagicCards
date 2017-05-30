@@ -50,7 +50,11 @@ public class WitchspellsBookViewModel extends RecyclerViewModel implements Binda
             SpellbookType mainBookId = SpellbookType.getTypeFromBookId(witchPath.pathBookId);
             SpellbookType secondaryBookId = SpellbookType.getTypeFromBookId(witchPath.secondaryPathBookId);
 
-            result.add(new WitchspellsPathReducedViewModel(mainBookId, secondaryBookId));
+            if(witchspells.witchPaths.size() > 2){
+                result.add(new WitchspellsPathReducedViewModel(mainBookId, secondaryBookId));
+            } else {
+                result.add(new WitchspellsPathViewModel(witchPath, null));
+            }
         }
 
         return result;
@@ -58,7 +62,11 @@ public class WitchspellsBookViewModel extends RecyclerViewModel implements Binda
 
     @Override
     public RecyclerView.LayoutManager getLayoutManager() {
-        return new GridLayoutManager(MainApplication.getMainContext(), 2, LinearLayoutManager.HORIZONTAL, false);
+        if(witchspells.witchPaths.size() > 2){
+            return new GridLayoutManager(MainApplication.getMainContext(), 3, LinearLayoutManager.HORIZONTAL, false);
+        } else {
+            return new LinearLayoutManager(MainApplication.getMainContext());
+        }
     }
 
     public void onBookClicked(){
