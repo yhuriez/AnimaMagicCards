@@ -11,7 +11,8 @@
         android:theme="@style/AppTheme"
         tools:replace="android:label">
 
-        <activity android:name=".ui.HomePageActivity">
+        <activity android:name=".ui.HomePageActivity"
+            android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

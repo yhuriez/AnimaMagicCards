@@ -1,13 +1,13 @@
 package fr.enlight.anima.animamagiccards.ui.spells;
 
 
-
 import android.app.Fragment;
 import android.app.LoaderManager;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Loader;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.MenuItemCompat;
@@ -33,6 +33,7 @@ import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.DialogSpellGradeVie
 import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.SpellFilterViewModel;
 import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.SpellStackViewModel;
 import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.SpellViewModel;
+import fr.enlight.anima.animamagiccards.utils.DeviceUtils;
 import fr.enlight.anima.animamagiccards.views.BindingDialogFragment;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.cardmodel.business.SpellFilterFactory;
@@ -64,6 +65,10 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     private SearchView mSearchView;
     private MenuItem searchMenuItem;
 
+    private ViewGroup mFilterView;
+
+    private Handler handler = new Handler();
+
     public static SpellStackFragment newInstance(int spellbookId) {
         SpellStackFragment fragment = new SpellStackFragment();
         Bundle bundle = new Bundle();
@@ -93,6 +98,12 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_spells_stack, container, false);
         return binding.getRoot();
+    }
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        mFilterView = (ViewGroup) view.findViewById(R.id.filters_layout);
     }
 
     @Override
@@ -139,18 +150,27 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
 
         searchMenuItem = menu.findItem(R.id.action_search);
         mSearchView = (SearchView) MenuItemCompat.getActionView(searchMenuItem);
-        mSearchView.setFocusable(false);
         mSearchView.setSubmitButtonEnabled(true);
         mSearchView.setOnQueryTextListener(this);
+
 
         MenuItemCompat.setOnActionExpandListener(searchMenuItem, new MenuItemCompat.OnActionExpandListener() {
             @Override
             public boolean onMenuItemActionExpand(MenuItem item) {
                 filterViewModel.filterPanelVisible.set(true);
                 getActivity().invalidateOptionsMenu();
+
                 if(lastSearch != null){
                     mSearchView.setQuery(lastSearch, false);
                 }
+
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        DeviceUtils.hideSoftKeyboard(getActivity().getCurrentFocus());
+                    }
+                }, 10);
+
                 return true;
             }
 
