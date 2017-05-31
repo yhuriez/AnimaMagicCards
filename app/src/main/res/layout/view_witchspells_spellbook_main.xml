@@ -106,12 +106,24 @@
             layout="@layout/view_witchspells_spellbook_secondary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="45dp"
-            android:layout_marginStart="45dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
             android:visibility="@{model.selectedLevel > 0 ? View.VISIBLE : View.GONE}"
             app:layout_constraintLeft_toLeftOf="@id/main_path_icon"
             app:layout_constraintTop_toBottomOf="@id/main_path_icon"
             app:model="@{model.secondarySpellbookViewModel}" />
+
+        <include
+            android:id="@+id/free_access_layout"
+            layout="@layout/view_witchspells_free_access"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:visibility="@{model.selectedLevel > 0 ? View.VISIBLE : View.GONE}"
+            app:layout_constraintLeft_toLeftOf="@id/main_path_icon"
+            app:layout_constraintTop_toBottomOf="@id/secondary_path_layout"
+            app:model="@{model.freeAccessViewModel}" />
 
     </android.support.constraint.ConstraintLayout>
 </layout>

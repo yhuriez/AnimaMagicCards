@@ -53,6 +53,7 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     private static final String SPELLBOOK_ID = "SPELLBOOK_ID";
     private static final String WITCHSPELLS_PARAM = "WITCHSPELLS_PARAM";
     private static final String WITCHSPELLS_PATH_PARAM = "WITCHSPELLS_PATH_PARAM";
+    private static final String FREE_ACCESS_LIMIT_PARAM = "FREE_ACCESS_LIMIT_PARAM";
 
     private FragmentSpellsStackBinding binding;
 
@@ -85,10 +86,10 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
         return fragment;
     }
 
-    public static SpellStackFragment newInstanceForSelection(WitchspellsPath witchspellsPath) {
+    public static SpellStackFragment newInstanceForSelection(int freeAccessLimit) {
         SpellStackFragment fragment = new SpellStackFragment();
         Bundle bundle = new Bundle();
-        bundle.putParcelable(WITCHSPELLS_PATH_PARAM, witchspellsPath);
+        bundle.putInt(FREE_ACCESS_LIMIT_PARAM, freeAccessLimit);
         fragment.setArguments(bundle);
         return fragment;
     }
@@ -252,6 +253,9 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
 
         } else if(args.containsKey(WITCHSPELLS_PARAM)){
             return new SpellsLoader(getActivity(), (Witchspells) args.getParcelable(WITCHSPELLS_PARAM), filters);
+
+        } else if (args.containsKey(FREE_ACCESS_LIMIT_PARAM)){
+            return new SpellsLoader(getActivity(), SpellbookType.FREE_ACCESS.bookId, filters);
         }
         throw new IllegalStateException("A param should be given to this fragment");
     }

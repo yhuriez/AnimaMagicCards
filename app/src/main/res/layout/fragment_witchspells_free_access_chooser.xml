@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="fr.enlight.anima.animamagiccards.views.viewmodels.RecyclerViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/other_book_background"
+        android:gravity="center"
+        android:padding="@dimen/spacing_large"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/spacing_base"
+            android:text="@string/Witchspells_Free_Access_Choose"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:minHeight="250dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="@{model.layoutManager}"
+            app:viewModels="@{model.viewModels}" />
+
+    </LinearLayout>
+
+</layout>

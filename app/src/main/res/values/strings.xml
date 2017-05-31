@@ -101,7 +101,7 @@
     <string name="Spell_Filter_Action_Type_Passive">Passive</string>
 
     <string name="Spell_Empty_List_Message">Aucun sort ne correspond à la recherche.</string>
-
+    <string name="Witchspells_Free_Access_Slot">Sorts d\'accès libre 1-%1$d</string>
 
 
 </resources>

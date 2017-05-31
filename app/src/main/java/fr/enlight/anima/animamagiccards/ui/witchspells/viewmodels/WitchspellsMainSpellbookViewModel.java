@@ -3,7 +3,6 @@ package fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels;
 import android.content.Context;
 import android.databinding.BaseObservable;
 import android.databinding.Bindable;
-import android.databinding.ObservableBoolean;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -15,17 +14,20 @@ import com.android.databinding.library.baseAdapters.BR;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import fr.enlight.anima.animamagiccards.MainApplication;
 import fr.enlight.anima.animamagiccards.R;
+import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.freeaccess.WitchspellsFreeAccessViewModel;
+import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.freeaccess.WitchspellsGlobalFreeAccessViewModel;
 import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.cardmodel.model.spells.Spellbook;
 import fr.enlight.anima.cardmodel.model.witchspells.WitchspellsPath;
+import fr.enlight.anima.cardmodel.utils.SpellUtils;
 
-public class WitchspellsMainSpellbookViewModel extends BaseObservable implements BindableViewModel, WitchspellsSecondarySpellbookViewModel.Listener {
-
-    private static final String MAJOR_PATH_TYPE = "Majeure";
+public class WitchspellsMainSpellbookViewModel extends BaseObservable implements BindableViewModel,
+        WitchspellsSecondarySpellbookViewModel.Listener, WitchspellsGlobalFreeAccessViewModel.Listener{
 
     private final List<String> mAvailableLevels = new ArrayList<>();
 
@@ -36,9 +38,11 @@ public class WitchspellsMainSpellbookViewModel extends BaseObservable implements
     @NonNull
     private final SpellbookType mSpellbookType;
     @NonNull
-    private WitchspellsPath mWitchspellsPath;
+    private final WitchspellsPath mWitchspellsPath;
 
-    private WitchspellsSecondarySpellbookViewModel mSecondarySpellbookViewModel;
+    private final WitchspellsSecondarySpellbookViewModel mSecondarySpellbookViewModel;
+
+    private final WitchspellsGlobalFreeAccessViewModel freeAccessViewModel;
 
     @NonNull
     private final Listener mListener;
@@ -67,6 +71,14 @@ public class WitchspellsMainSpellbookViewModel extends BaseObservable implements
         } else {
             mSecondarySpellbookViewModel = new WitchspellsSecondarySpellbookViewModel(this);
         }
+
+        Map<Integer, Integer> freeAccessSpellsIds = mWitchspellsPath.freeAccessSpellsIds;
+        if(freeAccessSpellsIds == null || freeAccessSpellsIds.isEmpty()){
+            freeAccessViewModel = new WitchspellsGlobalFreeAccessViewModel(0, 0, this);
+        } else {
+            int selectedSpellsCount = SpellUtils.countSelectedFreeSpells(freeAccessSpellsIds);
+            freeAccessViewModel = new WitchspellsGlobalFreeAccessViewModel(freeAccessSpellsIds.size(), selectedSpellsCount, this);
+        }
     }
 
     @Override
@@ -80,7 +92,7 @@ public class WitchspellsMainSpellbookViewModel extends BaseObservable implements
     }
 
     public boolean isMajorPath() {
-        return mSpellbook.type.equals(MAJOR_PATH_TYPE);
+        return mSpellbook.isMajorPath();
     }
 
     public String getSpellbookTitle() {
@@ -132,9 +144,12 @@ public class WitchspellsMainSpellbookViewModel extends BaseObservable implements
 
     // region secondaryPaths
 
-    @Bindable
     public WitchspellsSecondarySpellbookViewModel getSecondarySpellbookViewModel(){
         return mSecondarySpellbookViewModel;
+    }
+
+    public WitchspellsGlobalFreeAccessViewModel getFreeAccessViewModel() {
+        return freeAccessViewModel;
     }
 
     @Override
@@ -142,11 +157,18 @@ public class WitchspellsMainSpellbookViewModel extends BaseObservable implements
         mListener.onShowSecondarySpellbookForMainPath(mSpellbook);
     }
 
+    @Override
+    public void onFreeAccessSelected() {
+        mListener.onShowFreeAccessSpells(mSpellbook);
+    }
+
     // endregion
 
     public interface Listener {
         void onWitchspellPathUpdated(@NonNull WitchspellsPath mWitchspellsPath);
 
-        void onShowSecondarySpellbookForMainPath(Spellbook spellbook);
+        void onShowSecondarySpellbookForMainPath(Spellbook mainSpellbook);
+
+        void onShowFreeAccessSpells(Spellbook mainSpellbook);
     }
 }

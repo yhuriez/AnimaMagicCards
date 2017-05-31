@@ -25,6 +25,7 @@ import fr.enlight.anima.animamagiccards.databinding.ActivityWitchspellsPathChoos
 import fr.enlight.anima.animamagiccards.async.SpellbooksLoader;
 import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsMainPathChooserListener;
 import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsMainSpellbookViewModel;
+import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.freeaccess.WitchspellsFreeAccessChooserFragment;
 import fr.enlight.anima.cardmodel.utils.SpellUtils;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.animamagiccards.views.viewmodels.RecyclerViewModel;
@@ -35,12 +36,15 @@ import fr.enlight.anima.cardmodel.model.witchspells.WitchspellsPath;
 public class WitchspellsMainPathChooserActivity extends AppCompatActivity implements
         WitchspellsMainSpellbookViewModel.Listener,
         WitchspellsSecondaryPathChooserFragment.Listener,
-        LoaderManager.LoaderCallbacks<List<Spellbook>>,WitchspellsMainPathChooserListener {
+        LoaderManager.LoaderCallbacks<List<Spellbook>>,
+        WitchspellsMainPathChooserListener,
+        WitchspellsFreeAccessChooserFragment.Listener {
 
     public static final String WITCHSPELLS_PATHS_RESULT = "WITCHSPELLS_PATHS_PARAM";
 
     private static final String WITCHSPELLS_PATHS_PARAM = "WITCHSPELLS_PATHS_PARAM";
     private static final String SECONDARY_DIALOG_FRAGMENT_TAG = "SECONDARY_DIALOG_FRAGMENT_TAG";
+    private static final String FREE_ACCESS_DIALOG_FRAGMENT_TAG = "FREE_ACCESS_DIALOG_FRAGMENT_TAG";
 
     private ActivityWitchspellsPathChooserBinding mBinding;
 
@@ -50,6 +54,7 @@ public class WitchspellsMainPathChooserActivity extends AppCompatActivity implem
     private SparseArray<Spellbook> mSpellbookMapping;
 
     @SuppressLint("UseSparseArrays")
+    // Key is the spellbook related id
     private final Map<Integer, WitchspellsPath> mWitchspellsPathMap = new HashMap<>();
 
 
@@ -143,6 +148,17 @@ public class WitchspellsMainPathChooserActivity extends AppCompatActivity implem
     }
 
     @Override
+    public void onShowFreeAccessSpells(Spellbook mainSpellbook) {
+        WitchspellsPath witchspellsPath = mWitchspellsPathMap.get(mainSpellbook.bookId);
+        if(witchspellsPath.freeAccessSpellsIds == null){
+            witchspellsPath.freeAccessSpellsIds = SpellUtils.generateDefaultFreeAccessMap(mainSpellbook, witchspellsPath);
+        }
+
+        WitchspellsFreeAccessChooserFragment.newInstance(witchspellsPath)
+                .show(getFragmentManager(), FREE_ACCESS_DIALOG_FRAGMENT_TAG);
+    }
+
+    @Override
     public void onSecondaryPathChosen(int mainPathId, SpellbookType secondaryBookSelectedType) {
         WitchspellsPath witchspellsPath = mWitchspellsPathMap.get(mainPathId);
         if(witchspellsPath == null){
@@ -160,6 +176,16 @@ public class WitchspellsMainPathChooserActivity extends AppCompatActivity implem
         intent.putParcelableArrayListExtra(WITCHSPELLS_PATHS_RESULT, witchspellsPaths);
         setResult(RESULT_OK, intent);
         finish();
+    }
+
+    @Override
+    public void onFreeAccessSpellsSelected(int mainPathId, Map<Integer, String> freeAccessSpellsIds) {
+        // TODO
+    }
+
+    @Override
+    public void onFreeAccessSpellsValidated(int mainPathId, Map<Integer, String> freeAccessSpellsIds) {
+        // TODO
     }
 
     // endregion

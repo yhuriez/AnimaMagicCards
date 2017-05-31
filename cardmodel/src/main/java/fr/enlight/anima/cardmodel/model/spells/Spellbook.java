@@ -10,6 +10,8 @@ import java.util.List;
  */
 public class Spellbook implements Parcelable{
 
+    private static final String MAJOR_PATH_TYPE = "Majeure";
+
     public int bookId;
     public String bookName;
     public String description;
@@ -20,6 +22,9 @@ public class Spellbook implements Parcelable{
 
     public SpellbookType spellbookType;
 
+    public boolean isMajorPath(){
+        return type.equalsIgnoreCase(MAJOR_PATH_TYPE);
+    }
 
     @Override
     public int describeContents() {
