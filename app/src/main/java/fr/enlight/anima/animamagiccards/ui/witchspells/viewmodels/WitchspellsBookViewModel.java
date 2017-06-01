@@ -1,7 +1,6 @@
 package fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels;
 
 
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
@@ -14,7 +13,6 @@ import fr.enlight.anima.animamagiccards.MainApplication;
 import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.animamagiccards.views.viewmodels.RecyclerViewModel;
-import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
 import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 import fr.enlight.anima.cardmodel.model.witchspells.WitchspellsPath;
 
@@ -47,14 +45,9 @@ public class WitchspellsBookViewModel extends RecyclerViewModel implements Binda
         List<BindableViewModel> result = new ArrayList<>();
 
         for (WitchspellsPath witchPath : witchspells.witchPaths) {
-            SpellbookType mainBookId = SpellbookType.getTypeFromBookId(witchPath.pathBookId);
-            SpellbookType secondaryBookId = SpellbookType.getTypeFromBookId(witchPath.secondaryPathBookId);
-
-            if(witchspells.witchPaths.size() > 2){
-                result.add(new WitchspellsPathReducedViewModel(mainBookId, secondaryBookId));
-            } else {
-                result.add(new WitchspellsPathViewModel(witchPath, null));
-            }
+//            if(witchspells.witchPaths.size() > 2){
+                result.add(new WitchspellsPathViewModel(witchPath, null, true));
+//            }
         }
 
         return result;
@@ -62,11 +55,11 @@ public class WitchspellsBookViewModel extends RecyclerViewModel implements Binda
 
     @Override
     public RecyclerView.LayoutManager getLayoutManager() {
-        if(witchspells.witchPaths.size() > 2){
-            return new GridLayoutManager(MainApplication.getMainContext(), 3, LinearLayoutManager.HORIZONTAL, false);
-        } else {
-            return new LinearLayoutManager(MainApplication.getMainContext());
-        }
+//        if(witchspells.witchPaths.size() > 2){
+//            return new GridLayoutManager(MainApplication.getMainContext(), 3, LinearLayoutManager.VERTICAL, false);
+//        } else {
+            return new LinearLayoutManager(MainApplication.getMainContext(), LinearLayoutManager.VERTICAL, false);
+//        }
     }
 
     public void onBookClicked(){

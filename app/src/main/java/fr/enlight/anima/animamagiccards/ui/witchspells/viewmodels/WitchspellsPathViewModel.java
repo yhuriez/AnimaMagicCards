@@ -27,6 +27,9 @@ public class WitchspellsPathViewModel implements BindableViewModel {
 
     private Listener mListener;
 
+    private boolean reducedVersion;
+
+
     public WitchspellsPathViewModel(@NonNull WitchspellsPath mWitchspellsPath, Listener listener) {
         this.mWitchspellsPath = mWitchspellsPath;
         this.mContext = MainApplication.getMainContext();
@@ -35,9 +38,18 @@ public class WitchspellsPathViewModel implements BindableViewModel {
         secondaryPathType = SpellbookType.getTypeFromBookId(mWitchspellsPath.secondaryPathBookId);
     }
 
+    public WitchspellsPathViewModel(@NonNull WitchspellsPath mWitchspellsPath, Listener listener, boolean reducedVersion) {
+        this(mWitchspellsPath, listener);
+        this.reducedVersion = reducedVersion;
+    }
+
     @Override
     public int getLayoutRes() {
-        return R.layout.view_witchspells_path_item;
+        if(reducedVersion){
+            return R.layout.view_witchspells_path_item_reduced;
+        } else {
+            return R.layout.view_witchspells_path_item;
+        }
     }
 
     @Override

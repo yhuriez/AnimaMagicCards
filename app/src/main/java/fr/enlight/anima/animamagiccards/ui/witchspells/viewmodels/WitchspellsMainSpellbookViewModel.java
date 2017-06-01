@@ -1,5 +1,6 @@
 package fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.databinding.BaseObservable;
 import android.databinding.Bindable;
@@ -13,6 +14,7 @@ import android.widget.SpinnerAdapter;
 import com.android.databinding.library.baseAdapters.BR;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -45,6 +47,7 @@ public class WitchspellsMainSpellbookViewModel extends BaseObservable implements
     private final Listener mListener;
 
 
+    @SuppressLint("UseSparseArrays")
     public WitchspellsMainSpellbookViewModel(@NonNull Spellbook spellbook, @Nullable WitchspellsPath witchspellsPath, @NonNull Listener listener) {
         mSpellbook = spellbook;
         mSpellbookType = spellbook.spellbookType;
@@ -54,6 +57,7 @@ public class WitchspellsMainSpellbookViewModel extends BaseObservable implements
         if(witchspellsPath == null){
             mWitchspellsPath = new WitchspellsPath();
             mWitchspellsPath.pathBookId = spellbook.bookId;
+            mWitchspellsPath.freeAccessSpellsIds = new HashMap<>();
         } else {
             mWitchspellsPath = witchspellsPath;
         }

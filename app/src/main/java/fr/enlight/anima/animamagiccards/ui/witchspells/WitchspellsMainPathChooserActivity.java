@@ -150,7 +150,7 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
     @Override
     public void onShowFreeAccessSpells(Spellbook mainSpellbook) {
         WitchspellsPath witchspellsPath = mWitchspellsPathMap.get(mainSpellbook.bookId);
-        if(witchspellsPath.freeAccessSpellsIds == null){
+        if(witchspellsPath.freeAccessSpellsIds == null || witchspellsPath.freeAccessSpellsIds.isEmpty()){
             witchspellsPath.freeAccessSpellsIds = SpellUtils.generateDefaultFreeAccessMap(mainSpellbook, witchspellsPath);
         }
 

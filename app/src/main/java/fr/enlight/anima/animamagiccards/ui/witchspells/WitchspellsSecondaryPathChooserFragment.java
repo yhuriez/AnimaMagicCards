@@ -1,5 +1,6 @@
 package fr.enlight.anima.animamagiccards.ui.witchspells;
 
+import android.app.Activity;
 import android.app.DialogFragment;
 import android.content.Context;
 import android.databinding.DataBindingUtil;
@@ -58,6 +59,12 @@ public class WitchspellsSecondaryPathChooserFragment extends DialogFragment impl
     public void onAttach(Context context) {
         super.onAttach(context);
         mListener = (Listener) context;
+    }
+
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        mListener = (Listener) activity;
     }
 
     @Override

@@ -7,13 +7,15 @@
 
         <variable
             name="model"
-            type="fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsPathReducedViewModel" />
+            type="fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsPathViewModel" />
     </data>
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="@{() -> model.onPathClicked()}"
         tools:background="@drawable/witchspells_book_background"
+        android:paddingBottom="@dimen/spacing_large"
         tools:paddingTop="@dimen/spacing_big">
 
         <FrameLayout
@@ -21,21 +23,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="@dimen/spacing_base"
-            android:paddingEnd="@dimen/spacing_large"
+            android:paddingEnd="@dimen/spacing_base"
             android:paddingLeft="@dimen/spacing_base"
-            android:paddingRight="@dimen/spacing_large"
+            android:paddingRight="@dimen/spacing_base"
             android:paddingStart="@dimen/spacing_base"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
-                android:layout_width="@dimen/witchspells_icon_main_container_size"
-                android:layout_height="@dimen/witchspells_icon_main_container_size"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:background="@drawable/spell_circle" />
 
             <ImageView
-                android:layout_width="@dimen/witchspells_icon_main_size"
-                android:layout_height="@dimen/witchspells_icon_main_size"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
                 android:layout_gravity="center"
                 android:layout_margin="@dimen/spacing_base"
                 android:src="@{model.mainPathIcon}"
@@ -43,9 +45,28 @@
         </FrameLayout>
 
         <FrameLayout
+            android:id="@+id/free_access_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="@dimen/spacing_small"
+            android:layout_marginRight="@dimen/spacing_small"
+            android:background="@drawable/spell_circle_small"
+            setVisible="@{model.freeAccessSpellsCount > 0}"
+            app:layout_constraintLeft_toLeftOf="@+id/secondary_path_icon"
+            app:layout_constraintTop_toBottomOf="@+id/secondary_path_description">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/spacing_base"
+                android:src="@drawable/card_icon_book_free_access" />
+        </FrameLayout>
+
+        <FrameLayout
             android:id="@+id/secondary_path_icon"
-            android:layout_width="@dimen/witchspells_icon_secondary_container_size"
-            android:layout_height="@dimen/witchspells_icon_secondary_container_size"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_marginEnd="@dimen/spacing_small"
             android:layout_marginRight="@dimen/spacing_small"
             android:background="@drawable/spell_circle_small"
@@ -54,13 +75,67 @@
             app:setVisible="@{model.secondaryPathIcon != null}">
 
             <ImageView
-                android:layout_width="@dimen/witchspells_icon_secondary_size"
-                android:layout_height="@dimen/witchspells_icon_secondary_size"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
                 android:layout_gravity="center"
                 android:layout_margin="@dimen/spacing_base"
                 android:src="@{model.secondaryPathIcon}"
                 tools:src="@drawable/card_icon_book_chaos" />
         </FrameLayout>
+
+        <TextView
+            android:id="@+id/main_path_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_base"
+            android:layout_marginStart="@dimen/spacing_base"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:text="@{@string/Witchspells_Path_Title_And_Level_Format(model.mainPathTitle, model.pathLevel)}"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textSize_medium"
+            app:layout_constraintLeft_toRightOf="@id/main_path_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Necromancie niv 20" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@id/main_path_title"
+            app:layout_constraintLeft_toLeftOf="@id/main_path_title"
+            app:layout_constraintRight_toRightOf="@id/main_path_title" />
+
+        <TextView
+            android:id="@+id/secondary_path_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_base"
+            android:layout_marginStart="@dimen/spacing_base"
+            android:text="@{model.secondaryPathTitle}"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textSize_regular"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@id/secondary_path_icon"
+            app:layout_constraintLeft_toRightOf="@id/main_path_icon"
+            app:layout_constraintTop_toTopOf="@id/secondary_path_icon"
+            tools:text="Voie secondaire : Chaos" />
+
+        <TextView
+            android:id="@+id/free_access_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_base"
+            android:layout_marginStart="@dimen/spacing_base"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:text="@{@plurals/Witchspells_Free_Access_Count(model.freeAccessSpellsCount, model.freeAccessSpellsCount)}"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textSize_regular"
+            android:textStyle="italic"
+            setVisible="@{model.freeAccessSpellsCount > 0}"
+            app:layout_constraintBottom_toBottomOf="@id/free_access_icon"
+            app:layout_constraintLeft_toRightOf="@id/main_path_icon"
+            app:layout_constraintTop_toTopOf="@id/free_access_icon"
+            tools:text="4 sorts d'accès libre" />
 
     </android.support.constraint.ConstraintLayout>
 </layout>

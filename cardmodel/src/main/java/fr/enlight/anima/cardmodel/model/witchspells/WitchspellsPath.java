@@ -7,9 +7,7 @@ import android.arch.persistence.room.TypeConverters;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import fr.enlight.anima.cardmodel.database.ListTypeConverters;
@@ -29,7 +27,6 @@ public class WitchspellsPath implements Parcelable {
     public int pathLevel;
 
     public Map<Integer, Integer> freeAccessSpellsIds;
-
 
     @Override
     public int describeContents() {
