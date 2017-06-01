@@ -2,7 +2,7 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat">
-        <item name="colorPrimary">@color/background_dark_transparent_90</item>
+        <item name="colorPrimary">@android:color/black</item>
     </style>
 
     <style name="FlatButton" parent="Widget.AppCompat.Button.Borderless">

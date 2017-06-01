@@ -5,7 +5,6 @@ import android.app.Fragment;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 
 import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.animamagiccards.async.DeleteWitchspellsAsyncTask;
@@ -13,7 +12,7 @@ import fr.enlight.anima.animamagiccards.ui.spells.SpellStackFragment;
 import fr.enlight.anima.animamagiccards.ui.witchspells.WitchspellsEditionActivity;
 import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 
-public class HomePageActivity extends AppCompatActivity implements HomePageFragment.Callbacks, DeleteWitchspellsAsyncTask.Listener {
+public class HomePageActivity extends AnimaBaseActivity implements HomePageFragment.Callbacks, DeleteWitchspellsAsyncTask.Listener {
 
     private static final int WITCHSPELLS_REQUEST_CODE = 712;
 
@@ -24,7 +23,6 @@ public class HomePageActivity extends AppCompatActivity implements HomePageFragm
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
-
 
         if (savedInstanceState == null) {
             getFragmentManager().beginTransaction()

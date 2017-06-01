@@ -18,11 +18,10 @@ import java.util.Map;
 
 import fr.enlight.anima.animamagiccards.MainApplication;
 import fr.enlight.anima.animamagiccards.R;
-import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.freeaccess.WitchspellsFreeAccessViewModel;
 import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.freeaccess.WitchspellsGlobalFreeAccessViewModel;
-import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.cardmodel.model.spells.Spellbook;
+import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
 import fr.enlight.anima.cardmodel.model.witchspells.WitchspellsPath;
 import fr.enlight.anima.cardmodel.utils.SpellUtils;
 
@@ -41,8 +40,6 @@ public class WitchspellsMainSpellbookViewModel extends BaseObservable implements
     private final WitchspellsPath mWitchspellsPath;
 
     private final WitchspellsSecondarySpellbookViewModel mSecondarySpellbookViewModel;
-
-    private final WitchspellsGlobalFreeAccessViewModel freeAccessViewModel;
 
     @NonNull
     private final Listener mListener;
@@ -70,14 +67,6 @@ public class WitchspellsMainSpellbookViewModel extends BaseObservable implements
 
         } else {
             mSecondarySpellbookViewModel = new WitchspellsSecondarySpellbookViewModel(this);
-        }
-
-        Map<Integer, Integer> freeAccessSpellsIds = mWitchspellsPath.freeAccessSpellsIds;
-        if(freeAccessSpellsIds == null || freeAccessSpellsIds.isEmpty()){
-            freeAccessViewModel = new WitchspellsGlobalFreeAccessViewModel(0, 0, this);
-        } else {
-            int selectedSpellsCount = SpellUtils.countSelectedFreeSpells(freeAccessSpellsIds);
-            freeAccessViewModel = new WitchspellsGlobalFreeAccessViewModel(freeAccessSpellsIds.size(), selectedSpellsCount, this);
         }
     }
 
@@ -115,7 +104,7 @@ public class WitchspellsMainSpellbookViewModel extends BaseObservable implements
             }
         }
 
-        return new ArrayAdapter<>(mContext, android.R.layout.simple_dropdown_item_1line, mAvailableLevels);
+        return new ArrayAdapter<>(mContext, R.layout.simple_spinner_layout, mAvailableLevels);
     }
 
     @Bindable
@@ -138,6 +127,7 @@ public class WitchspellsMainSpellbookViewModel extends BaseObservable implements
 
         mWitchspellsPath.pathLevel = selectedLevel;
         notifyPropertyChanged(BR.selectedLevel);
+        notifyPropertyChanged(BR.freeAccessViewModel);
 
         mListener.onWitchspellPathUpdated(mWitchspellsPath);
     }
@@ -148,8 +138,19 @@ public class WitchspellsMainSpellbookViewModel extends BaseObservable implements
         return mSecondarySpellbookViewModel;
     }
 
+    @Bindable
     public WitchspellsGlobalFreeAccessViewModel getFreeAccessViewModel() {
-        return freeAccessViewModel;
+        if(SpellUtils.isFreeAccessAvailable(mSpellbook, mWitchspellsPath)) {
+            Map<Integer, Integer> freeAccessSpellsIds = mWitchspellsPath.freeAccessSpellsIds;
+
+            if (freeAccessSpellsIds == null || freeAccessSpellsIds.isEmpty()) {
+                return new WitchspellsGlobalFreeAccessViewModel(0, 0, this);
+            } else {
+                int selectedSpellsCount = SpellUtils.countSelectedFreeSpells(freeAccessSpellsIds);
+                return new WitchspellsGlobalFreeAccessViewModel(freeAccessSpellsIds.size(), selectedSpellsCount, this);
+            }
+        }
+        return null;
     }
 
     @Override

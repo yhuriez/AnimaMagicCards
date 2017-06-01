@@ -83,6 +83,14 @@ public class SpellUtils {
         return result;
     }
 
+    public static boolean isFreeAccessAvailable(Spellbook spellbook, WitchspellsPath witchspellsPath) {
+        boolean hasSecondaryBook = witchspellsPath.secondaryPathBookId > 0;
+        boolean isMajorPath = spellbook.isMajorPath();
+
+        return !((hasSecondaryBook || witchspellsPath.pathLevel < 4) &&
+                (isMajorPath || witchspellsPath.pathLevel < 8));
+    }
+
     public static int getCeilingLevelForSpellPosition(int mSpellLevelPosition) {
         return ((mSpellLevelPosition / 10) + 1) * 10;
     }

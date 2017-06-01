@@ -1,5 +1,6 @@
 package fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.freeaccess;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.DialogFragment;
 import android.app.LoaderManager;
@@ -13,11 +14,12 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
+import android.view.Window;
 
 import com.android.databinding.library.baseAdapters.BR;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -43,10 +45,12 @@ public class WitchspellsFreeAccessChooserFragment extends DialogFragment impleme
     private FragmentWitchspellsFreeAccessChooserBinding mBinding;
     private Listener mListener;
 
-    private WitchspellsPath mWitchspellsPath;
+    private int mainPathId;
+    private Map<Integer, Integer> mFreeAccessMap;
     private Map<Integer, Spell> mLoadedSpell;
 
     private RecyclerViewModel mRecyclerViewModel;
+
 
 
     public static WitchspellsFreeAccessChooserFragment newInstance(WitchspellsPath witchspellsPath) {
@@ -72,17 +76,31 @@ public class WitchspellsFreeAccessChooserFragment extends DialogFragment impleme
     }
 
     @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        mListener = (Listener) activity;
+    }
+
+    @Override
     public void onDetach() {
         super.onDetach();
         mListener = null;
     }
 
+    @SuppressLint("UseSparseArrays")
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
+        Window window = getDialog().getWindow();
+        window.setBackgroundDrawableResource(android.R.color.transparent);
+
         Bundle arguments = getArguments();
-        mWitchspellsPath = arguments.getParcelable(WITCHSPELLS_PATH_PARAM);
+        WitchspellsPath witchspellsPath = arguments.getParcelable(WITCHSPELLS_PATH_PARAM);
+
+        mFreeAccessMap = new HashMap<>(witchspellsPath.freeAccessSpellsIds);
+        mainPathId = witchspellsPath.pathBookId;
+
 
         mRecyclerViewModel = new RecyclerViewModel();
         mRecyclerViewModel.setLayoutManager(new LinearLayoutManager(getActivity()));
@@ -94,7 +112,7 @@ public class WitchspellsFreeAccessChooserFragment extends DialogFragment impleme
 
     @Override
     public Loader<Map<Integer, Spell>> onCreateLoader(int id, Bundle args) {
-        return new FreeAccessSpellLoader(getActivity(), mWitchspellsPath);
+        return new FreeAccessSpellLoader(getActivity(), mFreeAccessMap);
     }
 
     @Override
@@ -110,13 +128,11 @@ public class WitchspellsFreeAccessChooserFragment extends DialogFragment impleme
     private void initViewModels() {
         List<BindableViewModel> result = new ArrayList<>();
 
-        Map<Integer, Integer> freeAccessSpellsIds = mWitchspellsPath.freeAccessSpellsIds;
-        for (Integer spellPosition : freeAccessSpellsIds.keySet()) {
-            int freeSpellId = freeAccessSpellsIds.get(spellPosition);
-            if(freeSpellId > 0){
+        for (Integer spellPosition : mLoadedSpell.keySet()) {
+            Spell spell = mLoadedSpell.get(spellPosition);
+            if(spell == null){
                 result.add(new WitchspellsSpellFreeAccessViewModel(spellPosition, this));
             } else {
-                Spell spell = mLoadedSpell.get(spellPosition);
                 result.add(new WitchspellsSpellFreeAccessViewModel(spellPosition, spell, this));
             }
         }
@@ -134,19 +150,24 @@ public class WitchspellsFreeAccessChooserFragment extends DialogFragment impleme
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == SPELL_STACK_REQUEST_CODE && resultCode == Activity.RESULT_OK){
-            Toast.makeText(getActivity(), "Spell Id : " + data.getIntExtra(SpellSelectionActivity.SELECTED_SPELL_RESULT, -1), Toast.LENGTH_SHORT).show();
+            int spellId = data.getIntExtra(SpellSelectionActivity.SELECTED_SPELL_RESULT, -1);
+            int spellPosition = data.getIntExtra(SpellSelectionActivity.FREE_ACCESS_POSITION_PARAM, -1);
+            if(spellPosition < 0){
+                throw new IllegalStateException("Spell position should not be null at this point");
+            }
+
+            mFreeAccessMap.put(spellPosition, spellId);
+            getLoaderManager().restartLoader(1, getArguments(), this);
         }
     }
 
     @Override
     public void onValidateClicked() {
-        // TODO
-
-
-//        mListener.onFreeAccessSpellsValidated();
+        mListener.onFreeAccessSpellsValidated(mainPathId, mFreeAccessMap);
+        dismissAllowingStateLoss();
     }
 
     public interface Listener {
-        void onFreeAccessSpellsValidated(int mainPathId, Map<Integer, String> freeAccessSpellsIds);
+        void onFreeAccessSpellsValidated(int mainPathId, Map<Integer, Integer> freeAccessSpellsIds);
     }
 }

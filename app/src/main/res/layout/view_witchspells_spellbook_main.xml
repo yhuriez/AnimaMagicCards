@@ -90,7 +90,7 @@
         <Spinner
             android:id="@+id/path_level_spinner"
             android:layout_width="50dp"
-            android:layout_height="30dp"
+            android:layout_height="35dp"
             android:layout_marginEnd="@dimen/spacing_large"
             android:layout_marginRight="@dimen/spacing_large"
             android:background="@drawable/rounded_white_rectangle"
@@ -120,10 +120,13 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:layout_marginStart="40dp"
-            android:visibility="@{model.selectedLevel > 0 ? View.VISIBLE : View.GONE}"
+            android:paddingRight="@dimen/spacing_large"
+            android:paddingEnd="@dimen/spacing_large"
+            android:visibility="@{model.freeAccessViewModel != null ? View.VISIBLE : View.GONE}"
             app:layout_constraintLeft_toLeftOf="@id/main_path_icon"
             app:layout_constraintTop_toBottomOf="@id/secondary_path_layout"
-            app:model="@{model.freeAccessViewModel}" />
+            app:model="@{model.freeAccessViewModel}"
+            tools:ignore="RtlSymmetry" />
 
     </android.support.constraint.ConstraintLayout>
 </layout>

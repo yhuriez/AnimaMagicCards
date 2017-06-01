@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.widget.Toast;
 
@@ -15,13 +14,14 @@ import java.util.ArrayList;
 import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.animamagiccards.async.SaveWitchspellsAsyncTask;
 import fr.enlight.anima.animamagiccards.databinding.ActivityWitchspellsEditionBinding;
+import fr.enlight.anima.animamagiccards.ui.AnimaBaseActivity;
 import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsEditionViewModel;
 import fr.enlight.anima.animamagiccards.utils.DeviceUtils;
 import fr.enlight.anima.animamagiccards.views.BindingDialogFragment;
 import fr.enlight.anima.animamagiccards.views.viewmodels.ProgressViewModel;
 import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 
-public class WitchspellsEditionActivity extends AppCompatActivity implements WitchspellsEditionViewModel.Listener, SaveWitchspellsAsyncTask.Listener {
+public class WitchspellsEditionActivity extends AnimaBaseActivity implements WitchspellsEditionViewModel.Listener, SaveWitchspellsAsyncTask.Listener {
 
     private static final int MAIN_PATH_CHOOSER_REQUEST_CODE = 456;
 

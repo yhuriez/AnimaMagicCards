@@ -44,10 +44,10 @@ public class WitchspellsSpellFreeAccessViewModel extends WitchspellsFreeAccessVi
 
     @Override
     public void onItemClicked() {
-        mListener.onSelectedFreeAccessAvailableSlot(mCeilingLevel);
+        mListener.onSelectedFreeAccessAvailableSlot(mSpellLevelPosition);
     }
 
     public interface Listener{
-        void onSelectedFreeAccessAvailableSlot(int levelAvailable);
+        void onSelectedFreeAccessAvailableSlot(int spellPosition);
     }
 }

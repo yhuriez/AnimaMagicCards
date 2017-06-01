@@ -5,6 +5,7 @@ import android.content.Context;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 
 import fr.enlight.anima.cardmodel.business.SpellFilterFactory;
 import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
@@ -57,6 +58,21 @@ public class SpellsLoader extends BaseLoader<List<Spell>> {
 
                 if (witchPath.secondaryPathBookId > 0) {
                     pathSpells.addAll(getBookFromIdWithType(witchPath.secondaryPathBookId, witchPath.pathLevel));
+                }
+
+                Map<Integer, Integer> freeAccessSpellsIds = witchPath.freeAccessSpellsIds;
+                if(freeAccessSpellsIds != null && !freeAccessSpellsIds.isEmpty()){
+                    List<Spell> freeAccessSpells = getBookFromIdWithType(SpellbookType.FREE_ACCESS.bookId, 100);
+                    for (Integer spellPosition : freeAccessSpellsIds.keySet()) {
+                        int spellId = freeAccessSpellsIds.get(spellPosition);
+                        for (Spell freeAccessSpell : freeAccessSpells) {
+                            if(freeAccessSpell.spellId == spellId){
+                                freeAccessSpell.level = spellPosition;
+                                pathSpells.add(freeAccessSpell);
+                                break;
+                            }
+                        }
+                    }
                 }
 
                 Collections.sort(pathSpells);

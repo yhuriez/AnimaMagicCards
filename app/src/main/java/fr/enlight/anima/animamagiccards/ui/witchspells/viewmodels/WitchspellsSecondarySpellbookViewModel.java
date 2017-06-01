@@ -48,7 +48,7 @@ public class WitchspellsSecondarySpellbookViewModel extends BaseObservable imple
     }
 
     /**
-     * Constructor made for secondary paths (with Spellbook's fulle information)
+     * Constructor made for secondary paths (with Spellbook's full information)
      */
     public WitchspellsSecondarySpellbookViewModel(@NonNull Spellbook secondaryPathSpellbook, @NonNull Listener listener) {
         mSelectedSecondaryPaths = secondaryPathSpellbook;
@@ -81,7 +81,11 @@ public class WitchspellsSecondarySpellbookViewModel extends BaseObservable imple
         if (mSelectedSecondaryPathsType == null) {
             return mContext.getString(R.string.Witchspells_Choose_Secondary_Path);
         }
-        return mContext.getString(mSelectedSecondaryPathsType.titleRes);
+        String pathName = mContext.getString(mSelectedSecondaryPathsType.titleRes);
+        if(mSelectedSecondaryPaths == null){
+            return mContext.getString(R.string.Witchspells_Secondary_Path_Format, pathName);
+        }
+        return pathName;
     }
 
     public void onItemClicked(){

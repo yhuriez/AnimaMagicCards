@@ -9,7 +9,6 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.util.SparseArray;
 
@@ -21,19 +20,20 @@ import java.util.List;
 import java.util.Map;
 
 import fr.enlight.anima.animamagiccards.R;
-import fr.enlight.anima.animamagiccards.databinding.ActivityWitchspellsPathChooserBinding;
 import fr.enlight.anima.animamagiccards.async.SpellbooksLoader;
+import fr.enlight.anima.animamagiccards.databinding.ActivityWitchspellsPathChooserBinding;
+import fr.enlight.anima.animamagiccards.ui.AnimaBaseActivity;
 import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsMainPathChooserListener;
 import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsMainSpellbookViewModel;
 import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.freeaccess.WitchspellsFreeAccessChooserFragment;
-import fr.enlight.anima.cardmodel.utils.SpellUtils;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.animamagiccards.views.viewmodels.RecyclerViewModel;
 import fr.enlight.anima.cardmodel.model.spells.Spellbook;
 import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
 import fr.enlight.anima.cardmodel.model.witchspells.WitchspellsPath;
+import fr.enlight.anima.cardmodel.utils.SpellUtils;
 
-public class WitchspellsMainPathChooserActivity extends AppCompatActivity implements
+public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implements
         WitchspellsMainSpellbookViewModel.Listener,
         WitchspellsSecondaryPathChooserFragment.Listener,
         LoaderManager.LoaderCallbacks<List<Spellbook>>,
@@ -179,8 +179,10 @@ public class WitchspellsMainPathChooserActivity extends AppCompatActivity implem
     }
 
     @Override
-    public void onFreeAccessSpellsValidated(int mainPathId, Map<Integer, String> freeAccessSpellsIds) {
-        // TODO
+    public void onFreeAccessSpellsValidated(int mainPathId, Map<Integer, Integer> freeAccessSpellsIds) {
+        WitchspellsPath witchspellsPath = mWitchspellsPathMap.get(mainPathId);
+        witchspellsPath.freeAccessSpellsIds = freeAccessSpellsIds;
+        refreshViewModels();
     }
 
     // endregion
