@@ -2,6 +2,7 @@
 <resources>
     <dimen name="textSize_technical">40sp</dimen>
     <dimen name="textSize_spell_title">32sp</dimen>
+    <dimen name="textSize_spell_reduced_title">24sp</dimen>
 
     <dimen name="textSize_min">10sp</dimen>
     <dimen name="textSize_regular">12sp</dimen>

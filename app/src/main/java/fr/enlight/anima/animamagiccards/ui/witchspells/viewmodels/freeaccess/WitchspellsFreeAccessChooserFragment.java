@@ -1,17 +1,19 @@
 package fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.freeaccess;
 
+import android.app.Activity;
 import android.app.DialogFragment;
 import android.app.LoaderManager;
 import android.content.Context;
+import android.content.Intent;
 import android.content.Loader;
 import android.databinding.DataBindingUtil;
-import android.databinding.ViewDataBinding;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.android.databinding.library.baseAdapters.BR;
 
@@ -21,22 +23,24 @@ import java.util.Map;
 
 import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.animamagiccards.async.FreeAccessSpellLoader;
+import fr.enlight.anima.animamagiccards.databinding.FragmentWitchspellsFreeAccessChooserBinding;
 import fr.enlight.anima.animamagiccards.ui.spells.SpellSelectionActivity;
+import fr.enlight.anima.animamagiccards.utils.ValidationListener;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.animamagiccards.views.viewmodels.RecyclerViewModel;
 import fr.enlight.anima.cardmodel.model.spells.Spell;
 import fr.enlight.anima.cardmodel.model.witchspells.WitchspellsPath;
-import fr.enlight.anima.cardmodel.utils.SpellUtils;
 
 public class WitchspellsFreeAccessChooserFragment extends DialogFragment implements
         WitchspellsSpellFreeAccessViewModel.Listener,
+        ValidationListener,
         LoaderManager.LoaderCallbacks<Map<Integer, Spell>>{
 
     private static final int SPELL_STACK_REQUEST_CODE = 285;
 
     private static final String WITCHSPELLS_PATH_PARAM = "WITCHSPELLS_PATH_PARAM";
 
-    private ViewDataBinding mBinding;
+    private FragmentWitchspellsFreeAccessChooserBinding mBinding;
     private Listener mListener;
 
     private WitchspellsPath mWitchspellsPath;
@@ -83,6 +87,8 @@ public class WitchspellsFreeAccessChooserFragment extends DialogFragment impleme
         mRecyclerViewModel = new RecyclerViewModel();
         mRecyclerViewModel.setLayoutManager(new LinearLayoutManager(getActivity()));
 
+        mBinding.setListener(this);
+
         getLoaderManager().initLoader(1, null, this);
     }
 
@@ -124,9 +130,23 @@ public class WitchspellsFreeAccessChooserFragment extends DialogFragment impleme
         startActivityForResult(SpellSelectionActivity.navigate(getActivity(), ceilingLevel), SPELL_STACK_REQUEST_CODE);
     }
 
-    public interface Listener {
-        void onFreeAccessSpellsSelected(int mainPathId, Map<Integer, String> freeAccessSpellsIds);
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode == SPELL_STACK_REQUEST_CODE && resultCode == Activity.RESULT_OK){
+            Toast.makeText(getActivity(), "Spell Id : " + data.getIntExtra(SpellSelectionActivity.SELECTED_SPELL_RESULT, -1), Toast.LENGTH_SHORT).show();
+        }
+    }
 
+    @Override
+    public void onValidateClicked() {
+        // TODO
+
+
+//        mListener.onFreeAccessSpellsValidated();
+    }
+
+    public interface Listener {
         void onFreeAccessSpellsValidated(int mainPathId, Map<Integer, String> freeAccessSpellsIds);
     }
 }

@@ -17,7 +17,7 @@
 
         <variable
             name="quickAccessModel"
-            type="fr.enlight.anima.animamagiccards.ui.spells.viewmodels.quickaccess.SpellQuickAccessViewModel" />
+            type="fr.enlight.anima.animamagiccards.views.viewmodels.RecyclerViewModel" />
     </data>
 
     <android.support.constraint.ConstraintLayout
@@ -29,10 +29,13 @@
             android:id="@+id/quick_access_recycler_view"
             android:layout_width="50dp"
             android:layout_height="0dp"
+            android:layout_marginTop="@dimen/spacing_base"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             android:layout_marginBottom="@dimen/spacing_xbig"
+            android:paddingTop="65dp"
+            android:background="@drawable/witchspells_title_scroll_background"
             app:setVisible="@{quickAccessModel != null}"
             app:layoutManager="@{quickAccessModel.layoutManager}"
             app:viewModels="@{quickAccessModel.viewModels}"/>
@@ -41,14 +44,15 @@
             android:id="@+id/spell_card_background"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_marginLeft="@{quickAccessModel == null ? @dimen/spell_margins : @dimen/spacing_small}"
-            app:layout_marginRight="@{quickAccessModel == null ? @dimen/spell_margins : @dimen/spacing_small}"
+            app:layout_marginLeft="@{quickAccessModel == null ? @dimen/spell_margins : @dimen/spacing_base}"
+            app:layout_marginRight="@{quickAccessModel == null ? @dimen/spell_margins : 0.0f}"
             android:src="@drawable/card_verso"
             app:layout_constraintDimensionRatio="H,161:225"
             app:layout_constraintLeft_toRightOf="@id/quick_access_recycler_view"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:setVisible="@{!model.stackVisible || model.messageMode}" />
+            app:setVisible="@{!model.stackVisible || model.messageMode}"
+            android:contentDescription="@string/Common_Loading_Message" />
 
         <TextView
             android:layout_width="250dp"
@@ -66,16 +70,17 @@
             tools:text="@string/Spell_Empty_List_Message"
             app:setVisible="@{!model.stackVisible || model.messageMode}" />
 
-        <com.loopeer.cardstack.CardStackView
+        <fr.enlight.anima.animamagiccards.views.CustomCardStackView
             android:id="@+id/card_stack_view"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_marginLeft="@{quickAccessModel == null ? @dimen/spell_margins : @dimen/spacing_small}"
-            app:layout_marginRight="@{quickAccessModel == null ? @dimen/spell_margins : @dimen/spacing_small}"
+            app:layout_marginLeft="@{quickAccessModel == null ? @dimen/spell_margins : @dimen/spacing_base}"
+            app:layout_marginRight="@{quickAccessModel == null ? @dimen/spell_margins : 0.0f}"
             android:background="@android:color/transparent"
             app:expandListener="@{model.expandListener}"
+            app:itemSelectionListener="@{model.selectionListener}"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/quick_access_recycler_view"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:viewModels="@{model.viewModels}" />

@@ -18,7 +18,7 @@
     <string name="Spellbooks_Title">Livres de sorts</string>
 
     <!--Spell Formats-->
-    <string name="spell_book_and_level_format">%1$s Niv. %2$d</string>
+    <string name="spell_book_and_level_format">%1$s Niv. %2$s</string>
     <string name="spell_action_type_format"><b>Action : </b></string>
     <string name="spell_type_format"><b>Type : </b></string>
     <string name="spell_effect_format"><b>Effet : </b></string>
@@ -78,6 +78,9 @@
     <string name="Witchspells_Delete_Confirmation_Title">Supprimer le grimoire ?</string>
     <string name="Witchspells_Delete_Confirmation_Message">Etes-vous sûr de vouloir supprimer ce grimoire ?</string>
 
+    <string name="Witchspells_Choose_Spell_Title">Choisir un sort 1-%1$d</string>
+    <string name="Witchspells_Choose_Spell_Confirm">Choisir ce sort ?</string>
+
     <string name="Witchspells_Free_Access_Title">Choisir ses sorts</string>
     <string name="Witchspells_Free_Access_Choose">Choisir ses sorts d\'accès libre</string>
     <string name="Witchspells_Free_Access_Modify">Modifier ses sorts d\'accès libre (%1$d sorts choisis sur %2$d)</string>
@@ -102,6 +105,7 @@
 
     <string name="Spell_Empty_List_Message">Aucun sort ne correspond à la recherche.</string>
     <string name="Witchspells_Free_Access_Slot">Sorts d\'accès libre 1-%1$d</string>
+    <string name="Common_Level">Niveau</string>
 
 
 </resources>

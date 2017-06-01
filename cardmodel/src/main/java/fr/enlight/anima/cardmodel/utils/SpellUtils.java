@@ -3,11 +3,9 @@ package fr.enlight.anima.cardmodel.utils;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.util.Pair;
 import android.util.SparseArray;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
@@ -66,15 +64,15 @@ public class SpellUtils {
 
         for (int index = 0; index < level10Round; index++) {
             if (!hasSecondaryBook) {
-                result.put(index + 4, -1);
+                result.put((index * 10) + 4, -1);
             }
             if (!spellbook.isMajorPath()) {
-                result.put(index + 8, -1);
+                result.put((index * 10) + 8, -1);
             }
         }
 
         int levelFloor = level10Round * 10;
-        int last10Levels = levelFloor % 10;
+        int last10Levels = witchPath.pathLevel % 10;
         if (last10Levels >= 4 && !hasSecondaryBook) {
             result.put(levelFloor + 4, -1);
         }

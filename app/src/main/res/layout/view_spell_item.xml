@@ -57,7 +57,8 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:src="@drawable/card_background_book_free_access" />
+            tools:src="@drawable/card_background_book_free_access"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/spell_title"
@@ -69,9 +70,30 @@
             android:layout_marginStart="@dimen/spacing_xbig"
             android:gravity="center"
             android:maxLines="1"
+            app:setVisible="@{!model.reduced}"
             android:text="@{model.spell.name}"
             android:textColor="@android:color/white"
             android:textSize="@dimen/textSize_spell_title"
+            app:customFont="@{@string/spell_title_font}"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/top_header_guideline"
+            tools:text="Sphère de destruction" />
+
+        <TextView
+            android:id="@+id/spell_reduced_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/spacing_xbig"
+            android:layout_marginLeft="@dimen/spacing_xbig"
+            android:layout_marginRight="@dimen/spacing_xbig"
+            android:layout_marginStart="@dimen/spacing_xbig"
+            android:gravity="center"
+            android:maxLines="1"
+            app:setVisible="@{model.reduced}"
+            android:text="@{model.spell.name}"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textSize_spell_reduced_title"
             app:customFont="@{@string/spell_title_font}"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"

@@ -2,18 +2,26 @@ package fr.enlight.anima.animamagiccards.ui.spells.viewmodels;
 
 
 import android.databinding.ObservableBoolean;
-import android.databinding.ObservableField;
 
 import com.loopeer.cardstack.CardStackView;
 
 import java.util.List;
 
+import fr.enlight.anima.animamagiccards.views.CustomCardStackView;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.animamagiccards.views.viewmodels.ListBindableViewModel;
 
-public class SpellStackViewModel extends ListBindableViewModel implements CardStackView.ItemExpendListener {
+public class SpellStackViewModel extends ListBindableViewModel {
 
     public final ObservableBoolean stackVisible = new ObservableBoolean(false);
+
+    private final CardStackView.ItemExpendListener expandListener;
+    private final CustomCardStackView.ItemSelectionListener selectionListener;
+
+    public SpellStackViewModel(CardStackView.ItemExpendListener listener, CustomCardStackView.ItemSelectionListener selectionListener) {
+        this.expandListener = listener;
+        this.selectionListener = selectionListener;
+    }
 
     public boolean isMessageMode(){
         List<BindableViewModel> viewModels = getViewModels();
@@ -21,11 +29,10 @@ public class SpellStackViewModel extends ListBindableViewModel implements CardSt
     }
 
     public CardStackView.ItemExpendListener getExpandListener(){
-        return this;
+        return expandListener;
     }
 
-    @Override
-    public void onItemExpend(boolean expend) {
-        // Nothing to do for now
+    public CustomCardStackView.ItemSelectionListener getSelectionListener(){
+        return selectionListener;
     }
 }

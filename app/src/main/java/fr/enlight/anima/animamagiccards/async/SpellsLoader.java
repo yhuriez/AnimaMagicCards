@@ -21,23 +21,26 @@ public class SpellsLoader extends BaseLoader<List<Spell>> {
     private SpellBusinessService spellBusinessService;
 
     private final List<SpellFilterFactory.SpellFilter> filters;
+    private final SpellFilterFactory.SpellFilter quickAccessFilter;
     private final Witchspells witchspells;
     private final int bookId;
 
-    public SpellsLoader(Context context, int bookId, List<SpellFilterFactory.SpellFilter> filters) {
+    public SpellsLoader(Context context, int bookId, List<SpellFilterFactory.SpellFilter> filters, SpellFilterFactory.SpellFilter quickAccessFilter) {
         super(context);
         spellBusinessService = new SpellBusinessService(context);
         this.bookId = bookId;
         this.witchspells = null;
         this.filters = filters;
+        this.quickAccessFilter = quickAccessFilter;
     }
 
-    public SpellsLoader(Context context, Witchspells witchspells, List<SpellFilterFactory.SpellFilter> filters) {
+    public SpellsLoader(Context context, Witchspells witchspells, List<SpellFilterFactory.SpellFilter> filters, SpellFilterFactory.SpellFilter quickAccessFilter) {
         super(context);
         spellBusinessService = new SpellBusinessService(context);
         this.witchspells = witchspells;
         this.bookId = -1;
         this.filters = filters;
+        this.quickAccessFilter = quickAccessFilter;
     }
 
     @Override
@@ -67,16 +70,27 @@ public class SpellsLoader extends BaseLoader<List<Spell>> {
     }
 
     private List<Spell> filteredSpells(List<Spell> spells) {
-        if (filters == null) {
+        if ((filters == null || filters.isEmpty()) && quickAccessFilter == null) {
             return spells;
         }
 
         List<Spell> result = new ArrayList<>();
         for (Spell spell : spells) {
-            if (isSpellFiltered(spell)) {
+            boolean matching = false;
+
+            if(quickAccessFilter != null && quickAccessFilter.matchFilter(spell)){
+                matching = true;
+            }
+
+            if(filters != null && matching && isSpellFiltered(spell)) {
+                matching = true;
+            }
+
+            if(matching){
                 result.add(spell);
             }
         }
+
         return result;
     }
 

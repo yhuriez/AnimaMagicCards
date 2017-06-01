@@ -179,11 +179,6 @@ public class WitchspellsMainPathChooserActivity extends AppCompatActivity implem
     }
 
     @Override
-    public void onFreeAccessSpellsSelected(int mainPathId, Map<Integer, String> freeAccessSpellsIds) {
-        // TODO
-    }
-
-    @Override
     public void onFreeAccessSpellsValidated(int mainPathId, Map<Integer, String> freeAccessSpellsIds) {
         // TODO
     }

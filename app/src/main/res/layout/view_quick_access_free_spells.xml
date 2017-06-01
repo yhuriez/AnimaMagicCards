@@ -10,27 +10,30 @@
     </data>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/circle_gray_background"
         android:gravity="center"
+        android:layout_marginBottom="@dimen/spacing_base"
+        android:onClick="@{() -> model.onItemClicked()}"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="@dimen/textSize_regular"
-            android:textStyle="italic"
-            tools:text="Niv. 1-10" />
+            android:text="@string/Common_Level"
+            android:textSize="@dimen/textSize_min"
+            android:textStyle="italic" />
 
         <TextView
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:background="@drawable/circle_gray_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="@dimen/textSize_xlarge"
+            android:text="@{model.levelText}"
+            android:textSize="12sp"
             android:textStyle="bold"
-            tools:text="5/7" />
+            tools:text="90-100" />
 
     </LinearLayout>
 </layout>

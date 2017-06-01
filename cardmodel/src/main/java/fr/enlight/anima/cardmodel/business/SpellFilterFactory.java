@@ -33,6 +33,10 @@ public class SpellFilterFactory {
         return new ActionTypeSpellFilter(spellActionType.name);
     }
 
+    public SpellFilter createLevelWindowFilter(int bottomLevel, int topLevel) {
+        return new LevelWindowSpellFilter(bottomLevel, topLevel);
+    }
+
     // ////////////////////////////
     // Filter interface and classes
     // ////////////////////////////
@@ -131,6 +135,22 @@ public class SpellFilterFactory {
         @Override
         public boolean matchFilter(Spell spell) {
             return containsIgnoreCase(spell.actionType, actionTypeSpell);
+        }
+    }
+
+    public class LevelWindowSpellFilter implements SpellFilter{
+
+        private int bottomLevel;
+        private int topLevel;
+
+        public LevelWindowSpellFilter(int bottomLevel, int topLevel) {
+            this.bottomLevel = bottomLevel;
+            this.topLevel = topLevel;
+        }
+
+        @Override
+        public boolean matchFilter(Spell spell) {
+            return spell.level >= bottomLevel && spell.level <= topLevel;
         }
     }
 }

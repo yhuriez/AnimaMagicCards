@@ -6,10 +6,8 @@ import android.databinding.ObservableBoolean;
 import android.text.TextUtils;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 
 import fr.enlight.anima.animamagiccards.R;
@@ -20,6 +18,7 @@ public class SpellFilterViewModel extends ViewModel {
 
     public final ObservableBoolean filterPanelVisible = new ObservableBoolean(false);
 
+    private CharSequence searchQuery;
     private boolean searchWitDesc;
     private final Set<SpellType> selectedSpellTypes = new HashSet<>();
     private String intelligenceMax;
@@ -28,6 +27,13 @@ public class SpellFilterViewModel extends ViewModel {
     private boolean dailyRetentionOnly;
     private int spellActionTypeSelectedId;
 
+    public CharSequence getSearchQuery() {
+        return searchQuery;
+    }
+
+    public void setSearchQuery(CharSequence searchQuery) {
+        this.searchQuery = searchQuery;
+    }
 
     public boolean isSearchWitDesc() {
         return searchWitDesc;

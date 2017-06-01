@@ -26,6 +26,8 @@ public class SpellViewModel implements BindableViewModel, SpellGradeViewModel.Li
 
     public ObservableBoolean effectEllipsized = new ObservableBoolean(false);
 
+    private boolean reduced;
+
     private Listener mListener;
 
     public SpellViewModel(Spell spell, SpellbookType spellbookType) {
@@ -43,9 +45,21 @@ public class SpellViewModel implements BindableViewModel, SpellGradeViewModel.Li
         return BR.model;
     }
 
+    public Spell getSpell() {
+        return spell;
+    }
+
     public CharSequence getSubtitle(Context context){
         String bookTitle = context.getString(spellbookType.titleRes);
-        return context.getString(R.string.spell_book_and_level_format, bookTitle, spell.level);
+
+        String spellLevel;
+        if(spell.bookId == SpellbookType.FREE_ACCESS.bookId){
+            spellLevel = Math.max(1, (spell.level - 10)) + "-" + spell.level;
+        } else {
+            spellLevel = String.valueOf(spell.level);
+        }
+
+        return context.getString(R.string.spell_book_and_level_format, bookTitle, spellLevel);
     }
 
     public Drawable getBackground(Context context){
@@ -54,12 +68,12 @@ public class SpellViewModel implements BindableViewModel, SpellGradeViewModel.Li
 
     public CharSequence getActionType(Context context){
         CharSequence actionTypeSpannable = new SpannableString(context.getText(R.string.spell_action_type_format));
-        return TextUtils.concat(actionTypeSpannable, spell.actionType);
+        return TextUtils.concat(actionTypeSpannable, " " + spell.actionType);
     }
 
     public CharSequence getType(Context context){
         CharSequence actionTypeSpannable = new SpannableString(context.getText(R.string.spell_type_format));
-        return TextUtils.concat(actionTypeSpannable, spell.type);
+        return TextUtils.concat(actionTypeSpannable, " " + spell.type);
     }
 
     public CharSequence getEffect(Context context){
@@ -69,7 +83,15 @@ public class SpellViewModel implements BindableViewModel, SpellGradeViewModel.Li
             effectEllipsized.set(true);
         }
 
-        return TextUtils.concat(actionTypeSpannable, spell.effect);
+        return TextUtils.concat(actionTypeSpannable, " " + spell.effect);
+    }
+
+    public boolean isReduced() {
+        return reduced;
+    }
+
+    public void setReduced(boolean reduced) {
+        this.reduced = reduced;
     }
 
     public SpellGradeViewModel getSpellGradeModel(SpellGradeLevel level){
