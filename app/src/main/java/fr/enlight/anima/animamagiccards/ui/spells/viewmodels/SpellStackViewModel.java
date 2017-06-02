@@ -14,13 +14,15 @@ import fr.enlight.anima.animamagiccards.views.viewmodels.ListBindableViewModel;
 public class SpellStackViewModel extends ListBindableViewModel {
 
     public final ObservableBoolean stackVisible = new ObservableBoolean(false);
+    public final boolean witchspellsMode;
 
     private final CardStackView.ItemExpendListener expandListener;
     private final CustomCardStackView.ItemSelectionListener selectionListener;
 
-    public SpellStackViewModel(CardStackView.ItemExpendListener listener, CustomCardStackView.ItemSelectionListener selectionListener) {
+    public SpellStackViewModel(CardStackView.ItemExpendListener listener, CustomCardStackView.ItemSelectionListener selectionListener, boolean witchspellsMode) {
         this.expandListener = listener;
         this.selectionListener = selectionListener;
+        this.witchspellsMode = witchspellsMode;
     }
 
     public boolean isMessageMode(){

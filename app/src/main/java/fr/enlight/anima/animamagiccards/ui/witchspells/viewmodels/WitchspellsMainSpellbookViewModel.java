@@ -9,6 +9,7 @@ import android.graphics.drawable.Drawable;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.content.res.ResourcesCompat;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.SpinnerAdapter;
 
@@ -103,6 +104,10 @@ public class WitchspellsMainSpellbookViewModel extends BaseObservable implements
 
     public String getOppositePath() {
         return mSpellbook.oppositeBook;
+    }
+
+    public void onMainPathClicked(View spinner){
+        spinner.performClick();
     }
 
     public SpinnerAdapter getLevelSpinnerAdapter() {

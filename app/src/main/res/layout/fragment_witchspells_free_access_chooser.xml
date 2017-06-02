@@ -28,7 +28,8 @@
             android:padding="@dimen/spacing_base"
             android:text="@string/Witchspells_Free_Access_Choose"
             android:textColor="@android:color/white"
-            android:textSize="24sp" />
+            android:textSize="32sp"
+            app:customFont="@{@string/spell_title_font}" />
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recycler_view"

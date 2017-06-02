@@ -128,7 +128,7 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
         }
         setHasOptionsMenu(true);
 
-        spellViewModels = new SpellStackViewModel(this, this);
+        spellViewModels = new SpellStackViewModel(this, this, getArguments().containsKey(WITCHSPELLS_PARAM));
         binding.setModel(spellViewModels);
 
         filterViewModel = ViewModelProviders.of((FragmentActivity) getActivity()).get(SpellFilterViewModel.class);

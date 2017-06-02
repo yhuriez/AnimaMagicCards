@@ -98,7 +98,7 @@ public class SpellsLoader extends BaseLoader<List<Spell>> {
                 matching = true;
             }
 
-            if(filters != null && isSpellFiltered(spell)) {
+            if(filters != null && !filters.isEmpty() && isSpellFiltered(spell)) {
                 matching = true;
             }
 

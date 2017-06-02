@@ -21,10 +21,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            app:customFont="@{@string/spell_title_font}"
             android:padding="@dimen/spacing_base"
             android:text="@string/Witchspells_Choose_Secondary_Path"
             android:textColor="@android:color/white"
-            android:textSize="24sp" />
+            android:textSize="32sp" />
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recycler_view"

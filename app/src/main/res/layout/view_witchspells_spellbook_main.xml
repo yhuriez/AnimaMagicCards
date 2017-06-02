@@ -24,6 +24,7 @@
             android:id="@+id/main_path_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="@{() -> model.onMainPathClicked(pathLevelSpinner)}"
             android:padding="@dimen/spacing_base"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -47,6 +48,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/spacing_base"
+            android:onClick="@{() -> model.onMainPathClicked(pathLevelSpinner)}"
             android:text="@{model.spellbookTitle}"
             android:textColor="@android:color/white"
             android:textSize="18sp"
@@ -67,6 +69,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/spacing_small"
+            android:onClick="@{() -> model.onMainPathClicked(pathLevelSpinner)}"
             android:text="@{model.majorPath ? @string/Witchspells_Major_Path : @string/Witchspells_Minor_Path}"
             android:textColor="@android:color/white"
             android:textSize="12sp"
@@ -79,6 +82,7 @@
             android:id="@+id/opposite_path_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="@{() -> model.onMainPathClicked(pathLevelSpinner)}"
             android:text="@{@string/Witchspells_Opposite_Path_Format(model.oppositePath)}"
             android:textColor="@android:color/white"
             android:textSize="12sp"
@@ -109,12 +113,12 @@
             android:layout_marginEnd="@dimen/spacing_large"
             android:layout_marginRight="@dimen/spacing_large"
             android:contentDescription="@string/Common_Delete"
-            android:paddingBottom="@dimen/spacing_small"
             android:onClick="@{() -> model.onDeleteSecondaryPath()}"
-            app:setVisible="@{model.secondaryPathDefined}"
+            android:paddingBottom="@dimen/spacing_small"
             android:src="@drawable/ic_delete_white"
             app:layout_constraintBottom_toBottomOf="@+id/secondary_path_layout"
-            app:layout_constraintRight_toRightOf="parent" />
+            app:layout_constraintRight_toRightOf="parent"
+            app:setVisible="@{model.secondaryPathDefined}" />
 
         <include
             android:id="@+id/secondary_path_layout"
@@ -137,12 +141,12 @@
             android:layout_marginEnd="@dimen/spacing_large"
             android:layout_marginRight="@dimen/spacing_large"
             android:contentDescription="@string/Common_Delete"
-            android:paddingBottom="@dimen/spacing_small"
             android:onClick="@{() -> model.onDeleteFreeAccess()}"
+            android:paddingBottom="@dimen/spacing_small"
             android:src="@drawable/ic_delete_white"
-            app:setVisible="@{model.freeAccessDefined}"
             app:layout_constraintBottom_toBottomOf="@+id/free_access_layout"
-            app:layout_constraintRight_toRightOf="parent" />
+            app:layout_constraintRight_toRightOf="parent"
+            app:setVisible="@{model.freeAccessDefined}" />
 
         <include
             android:id="@+id/free_access_layout"
