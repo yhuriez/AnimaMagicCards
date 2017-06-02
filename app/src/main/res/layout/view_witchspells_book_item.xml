@@ -53,12 +53,16 @@
             android:paddingLeft="@dimen/spacing_xlarge"
             android:paddingRight="@dimen/spacing_xlarge"
             android:paddingStart="@dimen/spacing_xlarge"
+            android:paddingBottom="60dp"
             app:layoutManager="@{model.layoutManager}"
             app:layout_constraintBottom_toBottomOf="@id/witchspells_background"
             app:layout_constraintLeft_toLeftOf="@id/witchspells_background"
             app:layout_constraintRight_toRightOf="@id/witchspells_background"
             app:layout_constraintTop_toBottomOf="@+id/witchspells_name"
-            app:viewModels="@{model.viewModels}" />
+            app:viewModels="@{model.viewModels}"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:focusable="false"/>
 
     </android.support.constraint.ConstraintLayout>
 </layout>

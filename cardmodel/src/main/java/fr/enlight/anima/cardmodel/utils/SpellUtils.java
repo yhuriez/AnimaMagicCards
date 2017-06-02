@@ -1,8 +1,8 @@
 package fr.enlight.anima.cardmodel.utils;
 
 
-import android.annotation.SuppressLint;
 import android.content.Context;
+import android.support.annotation.Nullable;
 import android.util.SparseArray;
 
 import java.util.ArrayList;
@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
+import fr.enlight.anima.cardmodel.model.spells.PathType;
 import fr.enlight.anima.cardmodel.model.spells.Spell;
 import fr.enlight.anima.cardmodel.model.spells.SpellGrade;
 import fr.enlight.anima.cardmodel.model.spells.Spellbook;
@@ -56,31 +57,44 @@ public class SpellUtils {
         return count;
     }
 
-    @SuppressLint("UseSparseArrays")
-    public static Map<Integer, Integer> generateDefaultFreeAccessMap(Spellbook spellbook, WitchspellsPath witchPath) {
+    public static Map<Integer, Integer> reevaluateFreeAccessMap(WitchspellsPath witchPath, @Nullable SpellbookType spellbookType) {
         Map<Integer, Integer> result = new TreeMap<>();
+
+        if(spellbookType == null){
+            spellbookType = SpellbookType.getTypeFromBookId(witchPath.pathBookId);
+        }
+
         int level10Round = witchPath.pathLevel / 10;
         boolean hasSecondaryBook = witchPath.secondaryPathBookId > 0;
 
         for (int index = 0; index < level10Round; index++) {
             if (!hasSecondaryBook) {
-                result.put((index * 10) + 4, -1);
+                int spellPosition = (index * 10) + 4;
+                result.put(spellPosition, getSpellId(witchPath, spellPosition));
             }
-            if (!spellbook.isMajorPath()) {
-                result.put((index * 10) + 8, -1);
+            if (spellbookType.pathType != PathType.MAJOR_PATH) {
+                int spellPosition = (index * 10) + 8;
+                result.put(spellPosition, getSpellId(witchPath, spellPosition));
             }
         }
 
         int levelFloor = level10Round * 10;
         int last10Levels = witchPath.pathLevel % 10;
         if (last10Levels >= 4 && !hasSecondaryBook) {
-            result.put(levelFloor + 4, -1);
+            int spellPosition = levelFloor + 4;
+            result.put(spellPosition, getSpellId(witchPath, spellPosition));
         }
-        if (last10Levels >= 8 && !spellbook.isMajorPath()) {
-            result.put(levelFloor + 8, -1);
+        if (last10Levels >= 8 && spellbookType.pathType != PathType.MAJOR_PATH) {
+            int spellPosition = levelFloor + 8;
+            result.put(spellPosition, getSpellId(witchPath, spellPosition));
         }
 
         return result;
+    }
+
+    public static int getSpellId(WitchspellsPath witchPath, int spellPosition){
+        Integer existingSpellId = witchPath.freeAccessSpellsIds.get(spellPosition);
+        return (existingSpellId == null) ? -1 : existingSpellId.intValue();
     }
 
     public static boolean isFreeAccessAvailable(Spellbook spellbook, WitchspellsPath witchspellsPath) {

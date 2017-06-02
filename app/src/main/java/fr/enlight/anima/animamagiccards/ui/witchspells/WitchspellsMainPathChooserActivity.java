@@ -1,8 +1,10 @@
 package fr.enlight.anima.animamagiccards.ui.witchspells;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
 import android.app.LoaderManager;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.Loader;
 import android.databinding.DataBindingUtil;
@@ -132,6 +134,7 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
         int pathBookId = witchspellsPath.pathBookId;
 
         if(witchspellsPath.pathLevel > 0) {
+            witchspellsPath.freeAccessSpellsIds = SpellUtils.reevaluateFreeAccessMap(witchspellsPath, null);
             mWitchspellsPathMap.put(pathBookId, witchspellsPath);
 
         } else if (mWitchspellsPathMap.containsKey(pathBookId)){
@@ -151,7 +154,7 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
     public void onShowFreeAccessSpells(Spellbook mainSpellbook) {
         WitchspellsPath witchspellsPath = mWitchspellsPathMap.get(mainSpellbook.bookId);
         if(witchspellsPath.freeAccessSpellsIds == null || witchspellsPath.freeAccessSpellsIds.isEmpty()){
-            witchspellsPath.freeAccessSpellsIds = SpellUtils.generateDefaultFreeAccessMap(mainSpellbook, witchspellsPath);
+            witchspellsPath.freeAccessSpellsIds = SpellUtils.reevaluateFreeAccessMap(witchspellsPath, mainSpellbook.spellbookType);
         }
 
         WitchspellsFreeAccessChooserFragment.newInstance(witchspellsPath)
@@ -159,13 +162,81 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
     }
 
     @Override
+    public void onDeleteSecondaryPath(final int mainPathId) {
+        new AlertDialog.Builder(this)
+                .setTitle(R.string.Witchspells_Delete_Secondary_Path_Title)
+                .setMessage(R.string.Witchspells_Delete_Secondary_Path_Message)
+                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        resetSecondaryPath(mainPathId);
+                        dialogInterface.dismiss();
+                    }
+                })
+                .setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.dismiss();
+                    }
+                }).show();
+    }
+
+    @Override
     public void onSecondaryPathChosen(int mainPathId, SpellbookType secondaryBookSelectedType) {
+        updateSecondaryPath(mainPathId, secondaryBookSelectedType.bookId);
+    }
+
+    private void resetSecondaryPath(int mainPathId) {
+        updateSecondaryPath(mainPathId, 0);
+    }
+
+    private void updateSecondaryPath(int mainPathId, int secondaryPathId){
         WitchspellsPath witchspellsPath = mWitchspellsPathMap.get(mainPathId);
         if(witchspellsPath == null){
             throw new IllegalStateException("Witchspells path should not be nut at this point");
         }
 
-        witchspellsPath.secondaryPathBookId = secondaryBookSelectedType.bookId;
+        witchspellsPath.secondaryPathBookId = secondaryPathId;
+
+        // Reevaluate free access spells every time the secondary path changes
+        witchspellsPath.freeAccessSpellsIds = SpellUtils.reevaluateFreeAccessMap(witchspellsPath, null);
+
+        refreshViewModels();
+    }
+
+    @Override
+    public void onDeleteFreeAccess(final int mainPathId) {
+        new AlertDialog.Builder(this)
+                .setTitle(R.string.Witchspells_Delete_Free_Access_Title)
+                .setMessage(R.string.Witchspells_Delete_Free_Access_Message)
+                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        resetFreeAccess(mainPathId);
+                        dialogInterface.dismiss();
+                    }
+                })
+                .setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.dismiss();
+                    }
+                }).show();
+    }
+
+    @Override
+    public void onFreeAccessSpellsValidated(int mainPathId, Map<Integer, Integer> freeAccessSpellsIds) {
+        updateFreeAccess(mainPathId, freeAccessSpellsIds);
+    }
+
+    @SuppressLint("UseSparseArrays")
+    private void resetFreeAccess(final int mainPathId) {
+        updateFreeAccess(mainPathId, new HashMap<Integer, Integer>());
+    }
+
+    private void updateFreeAccess(int mainPathId, Map<Integer, Integer> freeAccessSpellsIds){
+        WitchspellsPath witchspellsPath = mWitchspellsPathMap.get(mainPathId);
+        witchspellsPath.freeAccessSpellsIds = freeAccessSpellsIds;
         refreshViewModels();
     }
 
@@ -176,13 +247,6 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
         intent.putParcelableArrayListExtra(WITCHSPELLS_PATHS_RESULT, witchspellsPaths);
         setResult(RESULT_OK, intent);
         finish();
-    }
-
-    @Override
-    public void onFreeAccessSpellsValidated(int mainPathId, Map<Integer, Integer> freeAccessSpellsIds) {
-        WitchspellsPath witchspellsPath = mWitchspellsPathMap.get(mainPathId);
-        witchspellsPath.freeAccessSpellsIds = freeAccessSpellsIds;
-        refreshViewModels();
     }
 
     // endregion

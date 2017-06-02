@@ -16,7 +16,7 @@ import fr.enlight.anima.animamagiccards.views.viewmodels.RecyclerViewModel;
 import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 import fr.enlight.anima.cardmodel.model.witchspells.WitchspellsPath;
 
-public class WitchspellsBookViewModel extends RecyclerViewModel implements BindableViewModel {
+public class WitchspellsBookViewModel extends RecyclerViewModel implements BindableViewModel, WitchspellsPathViewModel.Listener {
 
     private final Witchspells witchspells;
     private final Listener mListener;
@@ -46,7 +46,7 @@ public class WitchspellsBookViewModel extends RecyclerViewModel implements Binda
 
         for (WitchspellsPath witchPath : witchspells.witchPaths) {
 //            if(witchspells.witchPaths.size() > 2){
-                result.add(new WitchspellsPathViewModel(witchPath, null, true));
+                result.add(new WitchspellsPathViewModel(witchPath, this, true));
 //            }
         }
 
@@ -63,6 +63,11 @@ public class WitchspellsBookViewModel extends RecyclerViewModel implements Binda
     }
 
     public void onBookClicked(){
+        mListener.onWitchspellsClicked(witchspells);
+    }
+
+    @Override
+    public void onPathSelected(WitchspellsPath witchspellsPath) {
         mListener.onWitchspellsClicked(witchspells);
     }
 

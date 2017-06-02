@@ -20,6 +20,7 @@ import fr.enlight.anima.animamagiccards.utils.DeviceUtils;
 import fr.enlight.anima.animamagiccards.views.BindingDialogFragment;
 import fr.enlight.anima.animamagiccards.views.viewmodels.ProgressViewModel;
 import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
+import fr.enlight.anima.cardmodel.model.witchspells.WitchspellsPath;
 
 public class WitchspellsEditionActivity extends AnimaBaseActivity implements WitchspellsEditionViewModel.Listener, SaveWitchspellsAsyncTask.Listener {
 
@@ -111,5 +112,10 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements Wit
         }
         setResult(RESULT_OK);
         finish();
+    }
+
+    @Override
+    public void onPathSelected(WitchspellsPath witchspellsPath) {
+        // Nothing to do for now
     }
 }

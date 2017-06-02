@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.databinding.BaseObservable;
 import android.databinding.Bindable;
+import android.databinding.ObservableBoolean;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -41,7 +42,10 @@ public class WitchspellsMainSpellbookViewModel extends BaseObservable implements
     @NonNull
     private final WitchspellsPath mWitchspellsPath;
 
-    private final WitchspellsSecondarySpellbookViewModel mSecondarySpellbookViewModel;
+    private WitchspellsSecondarySpellbookViewModel mSecondarySpellbookViewModel;
+
+    public final ObservableBoolean secondaryPathDefined = new ObservableBoolean(false);
+    public final ObservableBoolean freeAccessDefined = new ObservableBoolean(false);
 
     @NonNull
     private final Listener mListener;
@@ -68,6 +72,7 @@ public class WitchspellsMainSpellbookViewModel extends BaseObservable implements
                 throw new IllegalStateException("If secondary id is registered in path, it should gives a SpellbookType");
             }
             mSecondarySpellbookViewModel = new WitchspellsSecondarySpellbookViewModel(secondaryBookType, this);
+            secondaryPathDefined.set(true);
 
         } else {
             mSecondarySpellbookViewModel = new WitchspellsSecondarySpellbookViewModel(this);
@@ -138,28 +143,43 @@ public class WitchspellsMainSpellbookViewModel extends BaseObservable implements
 
     // region secondaryPaths
 
+    @Bindable
     public WitchspellsSecondarySpellbookViewModel getSecondarySpellbookViewModel(){
         return mSecondarySpellbookViewModel;
     }
+
+    public void onDeleteSecondaryPath(){
+        mListener.onDeleteSecondaryPath(mWitchspellsPath.pathBookId);
+    }
+
+    @Override
+    public void onSelectedSecondaryPath(SpellbookType selectedSpellbookType) {
+        mListener.onShowSecondarySpellbookForMainPath(mSpellbook);
+    }
+
+    // endregion
+
+    // region free access
 
     @Bindable
     public WitchspellsGlobalFreeAccessViewModel getFreeAccessViewModel() {
         if(SpellUtils.isFreeAccessAvailable(mSpellbook, mWitchspellsPath)) {
             Map<Integer, Integer> freeAccessSpellsIds = mWitchspellsPath.freeAccessSpellsIds;
 
-            if (freeAccessSpellsIds == null || freeAccessSpellsIds.isEmpty()) {
+            int selectedSpellsCount = SpellUtils.countSelectedFreeSpells(freeAccessSpellsIds);
+            if (freeAccessSpellsIds == null || freeAccessSpellsIds.isEmpty() || selectedSpellsCount == 0) {
+                freeAccessDefined.set(false);
                 return new WitchspellsGlobalFreeAccessViewModel(0, 0, this);
             } else {
-                int selectedSpellsCount = SpellUtils.countSelectedFreeSpells(freeAccessSpellsIds);
+                freeAccessDefined.set(true);
                 return new WitchspellsGlobalFreeAccessViewModel(freeAccessSpellsIds.size(), selectedSpellsCount, this);
             }
         }
         return null;
     }
 
-    @Override
-    public void onSelectedSecondaryPath(SpellbookType selectedSpellbookType) {
-        mListener.onShowSecondarySpellbookForMainPath(mSpellbook);
+    public void onDeleteFreeAccess(){
+        mListener.onDeleteFreeAccess(mWitchspellsPath.pathBookId);
     }
 
     @Override
@@ -175,5 +195,9 @@ public class WitchspellsMainSpellbookViewModel extends BaseObservable implements
         void onShowSecondarySpellbookForMainPath(Spellbook mainSpellbook);
 
         void onShowFreeAccessSpells(Spellbook mainSpellbook);
+
+        void onDeleteSecondaryPath(int mainPathId);
+
+        void onDeleteFreeAccess(int mainPathId);
     }
 }

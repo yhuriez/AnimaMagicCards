@@ -96,10 +96,12 @@ public class WitchspellsPathViewModel implements BindableViewModel {
     }
 
     public void onPathClicked(){
-
+        if(mListener != null){
+            mListener.onPathSelected(mWitchspellsPath);
+        }
     }
 
     public interface Listener{
-
+        void onPathSelected(WitchspellsPath witchspellsPath);
     }
 }

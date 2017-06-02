@@ -101,29 +101,61 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="@id/main_path_icon" />
 
+        <ImageButton
+            android:id="@+id/secondary_path_delete"
+            style="@style/FlatButton.NoPadding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/spacing_large"
+            android:layout_marginRight="@dimen/spacing_large"
+            android:contentDescription="@string/Common_Delete"
+            android:paddingBottom="@dimen/spacing_small"
+            android:onClick="@{() -> model.onDeleteSecondaryPath()}"
+            app:setVisible="@{model.secondaryPathDefined}"
+            android:src="@drawable/ic_delete_white"
+            app:layout_constraintBottom_toBottomOf="@+id/secondary_path_layout"
+            app:layout_constraintRight_toRightOf="parent" />
+
         <include
             android:id="@+id/secondary_path_layout"
             layout="@layout/view_witchspells_spellbook_secondary"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:layout_marginStart="40dp"
             android:visibility="@{model.selectedLevel > 0 ? View.VISIBLE : View.GONE}"
             app:layout_constraintLeft_toLeftOf="@id/main_path_icon"
+            app:layout_constraintRight_toLeftOf="@id/secondary_path_delete"
             app:layout_constraintTop_toBottomOf="@id/main_path_icon"
             app:model="@{model.secondarySpellbookViewModel}" />
+
+        <ImageButton
+            android:id="@+id/free_access_delete"
+            style="@style/FlatButton.NoPadding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/spacing_large"
+            android:layout_marginRight="@dimen/spacing_large"
+            android:contentDescription="@string/Common_Delete"
+            android:paddingBottom="@dimen/spacing_small"
+            android:onClick="@{() -> model.onDeleteFreeAccess()}"
+            android:src="@drawable/ic_delete_white"
+            app:setVisible="@{model.freeAccessDefined}"
+            app:layout_constraintBottom_toBottomOf="@+id/free_access_layout"
+            app:layout_constraintRight_toRightOf="parent" />
 
         <include
             android:id="@+id/free_access_layout"
             layout="@layout/view_witchspells_free_access"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:layout_marginStart="40dp"
-            android:paddingRight="@dimen/spacing_large"
             android:paddingEnd="@dimen/spacing_large"
+            android:paddingRight="@dimen/spacing_large"
             android:visibility="@{model.freeAccessViewModel != null ? View.VISIBLE : View.GONE}"
             app:layout_constraintLeft_toLeftOf="@id/main_path_icon"
+            app:layout_constraintRight_toLeftOf="@id/free_access_delete"
             app:layout_constraintTop_toBottomOf="@id/secondary_path_layout"
             app:model="@{model.freeAccessViewModel}"
             tools:ignore="RtlSymmetry" />
