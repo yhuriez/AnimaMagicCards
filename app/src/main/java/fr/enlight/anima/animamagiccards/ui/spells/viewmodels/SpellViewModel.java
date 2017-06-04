@@ -104,7 +104,7 @@ public class SpellViewModel implements BindableViewModel, SpellGradeViewModel.Li
             effectEllipsized.set(true);
         }
 
-        return TextUtils.concat(actionTypeSpannable, " " + spell.effect);
+        return TextUtils.concat(actionTypeSpannable, spell.effect);
     }
 
     public boolean isReduced() {

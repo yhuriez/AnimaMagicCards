@@ -1,4 +1,4 @@
-package fr.enlight.anima.animamagiccards.ui.witchspells;
+package fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.secondary;
 
 import android.app.Activity;
 import android.app.DialogFragment;
@@ -18,7 +18,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import fr.enlight.anima.animamagiccards.R;
-import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsSecondarySpellbookViewModel;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.animamagiccards.views.viewmodels.RecyclerViewModel;
 import fr.enlight.anima.cardmodel.model.spells.Spellbook;

@@ -13,7 +13,7 @@ public class QuickAccessFreeSpellsViewModel implements QuickAccessViewModel {
     private final int mBottomLevel;
     private final int mTopLevel;
 
-    public final ObservableBoolean mSelected = new ObservableBoolean(false);
+    public final ObservableBoolean selected = new ObservableBoolean(false);
 
     private final Listener mListener;
 
@@ -38,13 +38,13 @@ public class QuickAccessFreeSpellsViewModel implements QuickAccessViewModel {
     }
 
     public void onItemClicked(){
-        mSelected.set(true);
+        selected.set(true);
         mListener.onQuickAccessFreeSpell(this);
     }
 
     @Override
     public void setSelected(boolean value) {
-        mSelected.set(value);
+        selected.set(value);
     }
 
     @Override

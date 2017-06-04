@@ -12,7 +12,7 @@
     <LinearLayout
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:background="@drawable/circle_gray_background"
+        android:background="@{model.selected ? @drawable/circle_gray_background : null}"
         android:gravity="center"
         android:layout_marginBottom="@dimen/spacing_base"
         android:onClick="@{() -> model.onItemClicked()}"
@@ -22,6 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:textColor="@{model.selected ? @android:color/white : @android:color/black}"
             android:text="@string/Common_Level"
             android:textSize="@dimen/textSize_min"
             android:textStyle="italic" />
@@ -30,6 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:textColor="@{model.selected ? @android:color/white : @android:color/black}"
             android:text="@{model.levelText}"
             android:textSize="12sp"
             android:textStyle="bold"

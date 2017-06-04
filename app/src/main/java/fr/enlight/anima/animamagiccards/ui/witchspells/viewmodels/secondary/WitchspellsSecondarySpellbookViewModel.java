@@ -1,4 +1,4 @@
-package fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels;
+package fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.secondary;
 
 import android.content.Context;
 import android.databinding.BaseObservable;
