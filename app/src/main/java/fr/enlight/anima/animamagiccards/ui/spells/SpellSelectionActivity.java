@@ -35,6 +35,8 @@ public class SpellSelectionActivity extends AnimaBaseActivity implements SpellSt
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         if(savedInstanceState == null){
             Fragment fragment;
 

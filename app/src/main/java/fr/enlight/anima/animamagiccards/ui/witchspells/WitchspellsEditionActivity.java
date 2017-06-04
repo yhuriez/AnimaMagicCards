@@ -1,7 +1,9 @@
 package fr.enlight.anima.animamagiccards.ui.witchspells;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
@@ -51,10 +53,17 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements Wit
         super.onCreate(savedInstanceState);
         ActivityWitchspellsEditionBinding mBinding = DataBindingUtil.setContentView(this, R.layout.activity_witchspells_edition);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         mWitchspells = getIntent().getParcelableExtra(WITCHSPELLS_PARAM);
         if(mWitchspells == null){
             mWitchspells = new Witchspells();
             mWitchspells.witchPaths = new ArrayList<>();
+
+            getSupportActionBar().setTitle(R.string.Witchspells_Title_Create);
+
+        } else {
+            getSupportActionBar().setTitle(getString(R.string.Witchspells_Name_Format, mWitchspells.witchName));
         }
 
         viewModel = new WitchspellsEditionViewModel(mWitchspells, this);
@@ -76,6 +85,12 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements Wit
             mWitchspells.witchPaths = data.getParcelableArrayListExtra(WitchspellsMainPathChooserActivity.WITCHSPELLS_PATHS_RESULT);
             viewModel.refreshWitchPath();
         }
+    }
+
+    @Override
+    public void onPathSelected(WitchspellsPath witchspellsPath) {
+        Intent intent = WitchspellsMainPathChooserActivity.navigateForEdition(this, new ArrayList<>(mWitchspells.witchPaths));
+        startActivityForResult(intent, MAIN_PATH_CHOOSER_REQUEST_CODE);
     }
 
     @Override
@@ -115,7 +130,29 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements Wit
     }
 
     @Override
-    public void onPathSelected(WitchspellsPath witchspellsPath) {
-        // Nothing to do for now
+    public void onBackPressed() {
+        Bundle extras = getIntent().getExtras();
+        if(extras != null && extras.containsKey(WITCHSPELLS_PARAM)) {
+            // Case of Witchspells edition
+            super.onBackPressed();
+
+        } else {
+            // Case of Witchspells creation
+            new AlertDialog.Builder(this)
+                    .setTitle(R.string.Common_Leave)
+                    .setMessage(R.string.Witchspells_Cancel_Creation)
+                    .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            WitchspellsEditionActivity.super.onBackPressed();
+                        }
+                    })
+                    .setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            dialogInterface.dismiss();
+                        }
+                    }).show();
+        }
     }
 }

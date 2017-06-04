@@ -21,11 +21,18 @@
         </activity>
 
         <activity android:name=".ui.witchspells.WitchspellsEditionActivity"
-            android:windowSoftInputMode="adjustPan"/>
+            android:parentActivityName=".ui.HomePageActivity"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="UnusedAttribute" />
 
-        <activity android:name=".ui.witchspells.WitchspellsMainPathChooserActivity" />
+        <activity android:name=".ui.witchspells.WitchspellsMainPathChooserActivity"
+            android:label="@string/Witchspells_Choose_Main_Path"
+            android:parentActivityName=".ui.witchspells.WitchspellsEditionActivity"
+            tools:ignore="UnusedAttribute" />
 
-        <activity android:name=".ui.spells.SpellSelectionActivity" />
+        <activity android:name=".ui.spells.SpellSelectionActivity"
+            android:parentActivityName=".ui.witchspells.WitchspellsMainPathChooserActivity"
+            tools:ignore="UnusedAttribute" />
 
     </application>
 

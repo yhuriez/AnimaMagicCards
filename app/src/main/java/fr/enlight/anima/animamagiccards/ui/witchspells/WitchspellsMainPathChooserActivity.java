@@ -71,6 +71,8 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
         super.onCreate(savedInstanceState);
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_witchspells_path_chooser);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         ArrayList<WitchspellsPath> witchspellsPaths = getIntent().getParcelableArrayListExtra(WITCHSPELLS_PATHS_PARAM);
         if(witchspellsPaths == null) {
             throw new IllegalStateException("Witchspell should not be null at this point");
