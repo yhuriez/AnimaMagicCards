@@ -115,6 +115,7 @@ public class SpellsLoader extends BaseLoader<List<Spell>> {
             if(!filter.matchFilter(spell)){
                 return false;
             }
+            filter.updateSpellWithFIlter(spell);
         }
         return true;
     }

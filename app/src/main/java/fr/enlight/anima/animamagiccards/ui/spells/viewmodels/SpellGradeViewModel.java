@@ -1,8 +1,13 @@
 package fr.enlight.anima.animamagiccards.ui.spells.viewmodels;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.support.annotation.ColorInt;
 import android.support.v4.content.res.ResourcesCompat;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.TextUtils;
+import android.text.style.ForegroundColorSpan;
 
 import fr.enlight.anima.animamagiccards.MainApplication;
 import fr.enlight.anima.animamagiccards.R;
@@ -38,20 +43,44 @@ public class SpellGradeViewModel {
         return ResourcesCompat.getColor(context.getResources(), gradeLevel.gradeColorRes, null);
     }
 
-    public String getGradeValues(){
+    public CharSequence getGradeValues(){
+        SpannableString intelligenceString = new SpannableString(context.getString(R.string.spell_grade_int_format, spellGrade.requiredIntelligence));
+        SpannableString zeonString = new SpannableString(context.getString(R.string.spell_grade_zeon_format, spellGrade.zeon));
 
-        String result = context.getString(R.string.spell_grade_int_zeon_format, spellGrade.requiredIntelligence, spellGrade.zeon);
+        if(spellGrade.limitedIntelligence){
+            ForegroundColorSpan redSpan = new ForegroundColorSpan(Color.RED);
+            intelligenceString.setSpan(redSpan, 0, intelligenceString.length(), Spanned.SPAN_INCLUSIVE_EXCLUSIVE);
+        }
+
+        if(spellGrade.limitedZeon){
+            ForegroundColorSpan redSpan = new ForegroundColorSpan(Color.RED);
+            zeonString.setSpan(redSpan, 0, zeonString.length(), Spanned.SPAN_INCLUSIVE_EXCLUSIVE);
+        }
+
+        CharSequence result = TextUtils.concat(intelligenceString, " / ", zeonString);
 
         if(spell.withRetention){
-            result += "\n";
+            SpannableString retention;
             if(spell.dailyRetention){
-                result += context.getString(R.string.spell_grade_retention_daily_format, spellGrade.retention);
+                retention = new SpannableString(context.getString(R.string.spell_grade_retention_daily_format, spellGrade.retention));
+
             } else {
-                result += context.getString(R.string.spell_grade_retention_format, spellGrade.retention);
+                retention = new SpannableString(context.getString(R.string.spell_grade_retention_format, spellGrade.retention));
             }
+
+            if(spellGrade.limitedRetention){
+                ForegroundColorSpan redSpan = new ForegroundColorSpan(Color.RED);
+                retention.setSpan(redSpan, 0, retention.length(), Spanned.SPAN_INCLUSIVE_EXCLUSIVE);
+            }
+
+            result = TextUtils.concat(result, "\n", retention);
         }
 
         return result;
+    }
+
+    public boolean isLimitedGrade(){
+        return spellGrade.limitedIntelligence || spellGrade.limitedZeon || spellGrade.limitedRetention;
     }
 
     public String getEffect(){

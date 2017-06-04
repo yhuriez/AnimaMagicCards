@@ -22,6 +22,10 @@ public class Spell implements Comparable<Spell> {
     public boolean dailyRetention;
 
     public SpellbookType spellbookType;
+    public String searchWord;
+    public boolean searchInDescription;
+    public boolean highlightActionType;
+    public boolean highlightType;
 
     @Override
     public int compareTo(@NonNull Spell other) {

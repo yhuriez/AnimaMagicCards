@@ -7,7 +7,9 @@ import java.util.List;
 
 import fr.enlight.anima.cardmodel.model.spells.Spell;
 import fr.enlight.anima.cardmodel.model.spells.SpellActionType;
+import fr.enlight.anima.cardmodel.model.spells.SpellGrade;
 import fr.enlight.anima.cardmodel.model.spells.SpellType;
+import fr.enlight.anima.cardmodel.utils.SpellUtils;
 
 import static fr.enlight.anima.cardmodel.utils.StringUtils.containsIgnoreCase;
 
@@ -43,6 +45,8 @@ public class SpellFilterFactory {
 
     public interface SpellFilter{
         boolean matchFilter(Spell spell);
+
+        void updateSpellWithFIlter(Spell spell);
     }
 
     public class SearchSpellFilter implements SpellFilter{
@@ -60,6 +64,12 @@ public class SpellFilterFactory {
         @Override
         public boolean matchFilter(Spell spell) {
             return containsIgnoreCase(spell.name, textToSearch) || (searchInDescription && containsIgnoreCase(spell.effect, textToSearch));
+        }
+
+        @Override
+        public void updateSpellWithFIlter(Spell spell) {
+            spell.searchWord = textToSearch;
+            spell.searchInDescription = searchInDescription;
         }
     }
 
@@ -80,6 +90,11 @@ public class SpellFilterFactory {
             }
             return false;
         }
+
+        @Override
+        public void updateSpellWithFIlter(Spell spell) {
+            spell.highlightType = true;
+        }
     }
 
     public class IntelligenceSpellFilter implements SpellFilter{
@@ -93,6 +108,15 @@ public class SpellFilterFactory {
         @Override
         public boolean matchFilter(Spell spell) {
             return spell.initialGrade.requiredIntelligence <= intelligenceMax;
+        }
+
+        @Override
+        public void updateSpellWithFIlter(Spell spell) {
+            for (SpellGrade spellGrade : SpellUtils.extractGrades(spell)) {
+                if(spellGrade.requiredIntelligence > intelligenceMax){
+                    spellGrade.limitedIntelligence = true;
+                }
+            }
         }
     }
 
@@ -122,6 +146,18 @@ public class SpellFilterFactory {
 
             return result;
         }
+
+        @Override
+        public void updateSpellWithFIlter(Spell spell) {
+            for (SpellGrade spellGrade : SpellUtils.extractGrades(spell)) {
+                if(spellGrade.zeon > zeonMax){
+                    spellGrade.limitedZeon = true;
+                }
+                if(spell.withRetention && retentionMax > 0 && spellGrade.retention > retentionMax){
+                    spellGrade.limitedRetention = true;
+                }
+            }
+        }
     }
 
     public class ActionTypeSpellFilter implements SpellFilter{
@@ -135,6 +171,11 @@ public class SpellFilterFactory {
         @Override
         public boolean matchFilter(Spell spell) {
             return containsIgnoreCase(spell.actionType, actionTypeSpell);
+        }
+
+        @Override
+        public void updateSpellWithFIlter(Spell spell) {
+            spell.highlightActionType = true;
         }
     }
 
@@ -151,6 +192,11 @@ public class SpellFilterFactory {
         @Override
         public boolean matchFilter(Spell spell) {
             return spell.level >= bottomLevel && spell.level <= topLevel;
+        }
+
+        @Override
+        public void updateSpellWithFIlter(Spell spell) {
+            // Nothing to do here
         }
     }
 }

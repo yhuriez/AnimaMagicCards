@@ -9,4 +9,8 @@ public class SpellGrade {
     public int requiredIntelligence;
     public String effect;
     public int retention;
+
+    public boolean limitedIntelligence;
+    public boolean limitedZeon;
+    public boolean limitedRetention;
 }

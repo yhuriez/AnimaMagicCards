@@ -2,19 +2,22 @@ package fr.enlight.anima.animamagiccards.ui.spells.viewmodels;
 
 import android.content.Context;
 import android.databinding.ObservableBoolean;
+import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.support.v4.content.res.ResourcesCompat;
 import android.text.SpannableString;
+import android.text.Spanned;
 import android.text.TextUtils;
+import android.text.style.StyleSpan;
 
 import com.android.databinding.library.baseAdapters.BR;
 
 import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.animamagiccards.ui.spells.bo.SpellGradeLevel;
-import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.cardmodel.model.spells.Spell;
 import fr.enlight.anima.cardmodel.model.spells.SpellGrade;
+import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
 
 /**
  *
@@ -67,17 +70,35 @@ public class SpellViewModel implements BindableViewModel, SpellGradeViewModel.Li
     }
 
     public CharSequence getActionType(Context context){
-        CharSequence actionTypeSpannable = new SpannableString(context.getText(R.string.spell_action_type_format));
-        return TextUtils.concat(actionTypeSpannable, " " + spell.actionType);
+        CharSequence actionTypeSpannable = new SpannableString(context.getText(R.string.spell_action_type_format) + " ");
+        SpannableString actionValue = new SpannableString(spell.actionType);
+        if(spell.highlightActionType){
+            actionValue.setSpan(
+                    new StyleSpan(Typeface.BOLD),
+                    0,
+                    actionValue.length(),
+                    Spanned.SPAN_INCLUSIVE_EXCLUSIVE
+            );
+        }
+        return TextUtils.concat(actionTypeSpannable, " " + actionValue);
     }
 
     public CharSequence getType(Context context){
-        CharSequence actionTypeSpannable = new SpannableString(context.getText(R.string.spell_type_format));
-        return TextUtils.concat(actionTypeSpannable, " " + spell.type);
+        CharSequence actionTypeSpannable = new SpannableString(context.getText(R.string.spell_type_format) + " ");
+        SpannableString typeValue = new SpannableString(spell.type);
+        if(spell.highlightActionType){
+            typeValue.setSpan(
+                    new StyleSpan(Typeface.BOLD),
+                    0,
+                    typeValue.length(),
+                    Spanned.SPAN_INCLUSIVE_EXCLUSIVE
+            );
+        }
+        return TextUtils.concat(actionTypeSpannable, typeValue);
     }
 
     public CharSequence getEffect(Context context){
-        CharSequence actionTypeSpannable = new SpannableString(context.getText(R.string.spell_effect_format));
+        CharSequence actionTypeSpannable = new SpannableString(context.getText(R.string.spell_effect_format) + " ");
 
         if(spell.effect.length() > 300){
             effectEllipsized.set(true);
