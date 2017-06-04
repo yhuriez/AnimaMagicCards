@@ -3,6 +3,7 @@ package fr.enlight.anima.animamagiccards.ui.spells;
 
 import android.app.Activity;
 import android.app.Fragment;
+import android.app.FragmentManager;
 import android.app.LoaderManager;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Context;
@@ -123,7 +124,7 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
         // Toolbar
         ActionBar actionBar = ((AppCompatActivity) getActivity()).getSupportActionBar();
         if (actionBar != null) {
-            actionBar.setDisplayHomeAsUpEnabled(false);
+            actionBar.setDisplayHomeAsUpEnabled(true);
             modifyTitle(actionBar, getArguments());
         }
         setHasOptionsMenu(true);
@@ -248,17 +249,27 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.action_validate_filter) {
+        if (item.getItemId() == android.R.id.home) {
+            FragmentManager fm = getFragmentManager();
+            if (fm.getBackStackEntryCount() > 0) {
+                fm.popBackStack();
+            }
+            return true;
+
+        } else if (item.getItemId() == R.id.action_validate_filter) {
             filterViewModel.setSearchQuery(mSearchView.getQuery());
             reloadSpellFilters();
             searchMenuItem.collapseActionView();
+            return true;
 
         } else if (item.getItemId() == R.id.action_validate_spell) {
             if (mLastSelectedSpell == null) {
                 throw new IllegalStateException("Last selected spell should not be null at this point");
             }
             mListener.onSpellSelected(mLastSelectedSpell);
+            return true;
         }
+
         return super.onOptionsItemSelected(item);
     }
 
