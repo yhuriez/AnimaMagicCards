@@ -17,7 +17,7 @@
 
         <variable
             name="quickAccessModel"
-            type="fr.enlight.anima.animamagiccards.views.viewmodels.RecyclerViewModel" />
+            type="fr.enlight.anima.animamagiccards.ui.spells.viewmodels.quickaccess.SpellQuickAccessViewModel" />
     </data>
 
     <android.support.constraint.ConstraintLayout
@@ -38,7 +38,8 @@
             android:background="@drawable/witchspells_title_scroll_background"
             app:setVisible="@{quickAccessModel != null}"
             app:layoutManager="@{quickAccessModel.layoutManager}"
-            app:viewModels="@{quickAccessModel.viewModels}"/>
+            app:viewModels="@{quickAccessModel.viewModels}"
+            app:scrollTo="@{quickAccessModel.selectedPosition}"/>
 
         <ImageView
             android:id="@+id/spell_card_background"

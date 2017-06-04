@@ -123,10 +123,11 @@ public class SpellsLoader extends BaseLoader<List<Spell>> {
     private List<Spell> getBookFromIdWithType(int bookId, int levelMax) {
         List<Spell> result = new ArrayList<>();
         SpellbookType typeFromBookId = SpellbookType.getTypeFromBookId(bookId);
-        for (Spell spell : spellBusinessService.getSpellsForBook(bookId)) {
+        List<Spell> spellsForBook = spellBusinessService.getSpellsForBook(bookId);
+        for (Spell spell : spellsForBook) {
             spell.spellbookType = typeFromBookId;
             result.add(spell);
-            if (spell.level >= levelMax) {
+            if (spell.level > levelMax) {
                 break;
             }
         }

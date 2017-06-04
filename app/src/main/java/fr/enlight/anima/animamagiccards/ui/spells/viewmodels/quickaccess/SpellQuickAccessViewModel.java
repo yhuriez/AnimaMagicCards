@@ -13,19 +13,25 @@ public class SpellQuickAccessViewModel extends RecyclerViewModel implements Quic
     private final int mLevelLimit;
 
     private final List<QuickAccessViewModel> quickAccessViewModels = new ArrayList<>();
+    private final boolean mFirstSelected;
     private QuickAccessViewModel selectedViewModel;
+    private int mSelectedPosition;
 
     private final SpellFilterFactory mSpellFilterFactory;
 
     private Listener mListener;
 
-
-    public SpellQuickAccessViewModel(int levelLimit, Listener listener) {
+    public SpellQuickAccessViewModel(int levelLimit, Listener listener, boolean firstSelected) {
         mLevelLimit = levelLimit;
         mSpellFilterFactory = new SpellFilterFactory();
         mListener = listener;
+        mFirstSelected = firstSelected;
 
         initViewModels();
+    }
+
+    public SpellQuickAccessViewModel(int levelLimit, Listener listener) {
+        this(levelLimit, listener, false);
     }
 
     private void initViewModels() {
@@ -41,12 +47,15 @@ public class SpellQuickAccessViewModel extends RecyclerViewModel implements Quic
                 QuickAccessFreeSpellsViewModel viewModel = new QuickAccessFreeSpellsViewModel(bottomLevel, topLevel, this);
                 result.add(viewModel);
                 quickAccessViewModels.add(viewModel);
-
-                if(index == 0){
-                    viewModel.setSelected(true);
-                    selectedViewModel = viewModel;
-                }
             }
+
+            if(mFirstSelected){
+                mSelectedPosition = 0;
+            } else {
+                mSelectedPosition = quickAccessViewModels.size() - 1;
+            }
+            selectedViewModel = quickAccessViewModels.get(mSelectedPosition);
+            selectedViewModel.setSelected(true);
         }
 
         setViewModels(result);
@@ -64,6 +73,10 @@ public class SpellQuickAccessViewModel extends RecyclerViewModel implements Quic
 
         SpellFilterFactory.SpellFilter levelWindowFilter = viewModel.getFilter(mSpellFilterFactory);
         mListener.onQuickAccessSelected(levelWindowFilter);
+    }
+
+    public int getSelectedPosition(){
+        return mSelectedPosition;
     }
 
     public SpellFilterFactory.SpellFilter getCurrentQuickAccessFilter() {
