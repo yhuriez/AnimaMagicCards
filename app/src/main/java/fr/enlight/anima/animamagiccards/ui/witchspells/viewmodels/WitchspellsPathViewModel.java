@@ -82,10 +82,19 @@ public class WitchspellsPathViewModel implements BindableViewModel {
 
     public String getSecondaryPathTitle(){
         if(secondaryPathType == null){
-            return mContext.getString(R.string.Free_Access_Title);
+            int freeAccessSpellsCount = getFreeAccessSpellsCount();
+            if(freeAccessSpellsCount > 0){
+                return mContext.getResources().getQuantityString(R.plurals.Witchspells_Free_Access_Format, freeAccessSpellsCount, freeAccessSpellsCount);
+            } else {
+                return mContext.getString(R.string.Witchspells_No_Secondary_Spells);
+            }
         }
         String secondaryPath = mContext.getString(secondaryPathType.titleRes);
         return mContext.getString(R.string.Witchspells_Secondary_Path_Format, secondaryPath);
+    }
+
+    public boolean isSecondLineVisible(){
+        return getFreeAccessSpellsCount() > 0 && secondaryPathType != null;
     }
 
     public int getFreeAccessSpellsCount(){

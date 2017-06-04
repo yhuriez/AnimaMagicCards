@@ -6,6 +6,7 @@ import android.arch.persistence.room.PrimaryKey;
 import android.arch.persistence.room.TypeConverters;
 import android.os.Parcel;
 import android.os.Parcelable;
+import android.support.annotation.NonNull;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -15,7 +16,7 @@ import fr.enlight.anima.cardmodel.database.ListTypeConverters;
 
 @Entity(tableName = "witchpath")
 @TypeConverters({ListTypeConverters.class})
-public class WitchspellsPath implements Parcelable {
+public class WitchspellsPath implements Parcelable, Comparable<WitchspellsPath> {
 
     @PrimaryKey(autoGenerate = true)
     public int pathId;
@@ -77,4 +78,9 @@ public class WitchspellsPath implements Parcelable {
             return new WitchspellsPath[size];
         }
     };
+
+    @Override
+    public int compareTo(@NonNull WitchspellsPath witchspellsPath) {
+        return pathBookId - witchspellsPath.pathBookId;
+    }
 }

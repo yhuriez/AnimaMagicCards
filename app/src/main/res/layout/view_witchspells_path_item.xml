@@ -51,9 +51,9 @@
             android:layout_marginEnd="@dimen/spacing_small"
             android:layout_marginRight="@dimen/spacing_small"
             android:background="@drawable/spell_circle_small"
-            setVisible="@{model.freeAccessSpellsCount > 0}"
+            setVisible="@{model.secondLineVisible}"
             app:layout_constraintLeft_toLeftOf="@+id/secondary_path_icon"
-            app:layout_constraintTop_toBottomOf="@+id/secondary_path_description">
+            app:layout_constraintTop_toBottomOf="@+id/first_line_description">
 
             <ImageView
                 android:layout_width="@dimen/witchspells_icon_secondary_size"
@@ -106,7 +106,7 @@
             app:layout_constraintRight_toRightOf="@id/main_path_title" />
 
         <TextView
-            android:id="@+id/secondary_path_description"
+            android:id="@+id/first_line_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/spacing_base"
@@ -121,7 +121,7 @@
             tools:text="Voie secondaire : Chaos" />
 
         <TextView
-            android:id="@+id/free_access_description"
+            android:id="@+id/second_line_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/spacing_base"
@@ -131,7 +131,7 @@
             android:textColor="@android:color/white"
             android:textSize="@dimen/textSize_medium"
             android:textStyle="italic"
-            setVisible="@{model.freeAccessSpellsCount > 0}"
+            setVisible="@{model.secondLineVisible}"
             app:layout_constraintBottom_toBottomOf="@id/free_access_icon"
             app:layout_constraintLeft_toRightOf="@id/main_path_icon"
             app:layout_constraintTop_toTopOf="@id/free_access_icon"

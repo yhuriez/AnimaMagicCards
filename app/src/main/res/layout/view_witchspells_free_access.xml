@@ -41,7 +41,7 @@
         </FrameLayout>
 
         <TextView
-            android:id="@+id/free_access_description"
+            android:id="@+id/second_line_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/spacing_base"

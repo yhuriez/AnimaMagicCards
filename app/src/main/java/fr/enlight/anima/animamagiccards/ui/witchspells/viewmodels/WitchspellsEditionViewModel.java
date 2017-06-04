@@ -3,10 +3,10 @@ package fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels;
 
 import android.databinding.BaseObservable;
 import android.databinding.Bindable;
-import android.databinding.ObservableBoolean;
 import android.support.annotation.NonNull;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import fr.enlight.anima.animamagiccards.BR;
@@ -46,6 +46,8 @@ public class WitchspellsEditionViewModel extends BaseObservable {
     @Bindable
     public List<BindableViewModel> getPathGroupViewModels(){
         List<BindableViewModel> result = new ArrayList<>();
+
+        Collections.sort(mWitchspells.witchPaths);
 
         for (WitchspellsPath witchPath : mWitchspells.witchPaths) {
             result.add(new WitchspellsPathViewModel(witchPath, mListener));
