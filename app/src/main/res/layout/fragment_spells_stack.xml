@@ -34,7 +34,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             android:layout_marginBottom="@dimen/spacing_xbig"
-            android:paddingTop="65dp"
+            android:paddingTop="@dimen/spacing_base"
             android:background="@drawable/witchspells_title_scroll_background"
             app:setVisible="@{quickAccessModel != null}"
             app:layoutManager="@{quickAccessModel.layoutManager}"

@@ -96,7 +96,14 @@
 
     <string name="Witchspells_Free_Access_Title">Choisir ses sorts</string>
     <string name="Witchspells_Free_Access_Choose">Choisir ses sorts d\'accès libre</string>
-    <string name="Witchspells_Free_Access_Modify">Sorts d\'accès libre\n(%1$d sorts choisis sur %2$d)</string>
+
+    <string name="Witchspells_Free_Access_Modify_Single">Sorts d\'accès libre\n(1 sort choisi sur %2$d)</string>
+    <string name="Witchspells_Free_Access_Modify_Plurals">Sorts d\'accès libre\n(%1$d sorts choisis sur %2$d)</string>
+    <plurals name="Witchspells_Free_Access_Modify">
+        <item quantity="one">@string/Witchspells_Free_Access_Modify_Single</item>
+        <item quantity="other">@string/Witchspells_Free_Access_Modify_Plurals</item>
+    </plurals>
+
 
     <string name="Spell_Filter_Search_Description">Rechercher dans la description</string>
     <string name="Spell_Filter_Type">Types de sorts</string>

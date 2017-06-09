@@ -15,6 +15,7 @@
         android:layout_height="wrap_content"
         android:onClick="@{() -> model.onItemClicked()}"
         android:paddingTop="@dimen/spacing_base"
+        android:background="?android:attr/selectableItemBackground"
         tools:background="@drawable/witchspells_book_background"
         tools:layout_height="match_parent"
         tools:layout_width="match_parent"

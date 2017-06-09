@@ -23,7 +23,7 @@ public class WitchspellsGlobalFreeAccessViewModel extends WitchspellsFreeAccessV
         if(totalAvailableSpells == 0){
             return context.getString(R.string.Witchspells_Free_Access_Choose);
         }
-        return context.getString(R.string.Witchspells_Free_Access_Modify, selectedSpellsCount, totalAvailableSpells);
+        return context.getResources().getQuantityString(R.plurals.Witchspells_Free_Access_Modify, selectedSpellsCount, selectedSpellsCount, totalAvailableSpells);
     }
 
     @Override
