@@ -24,4 +24,6 @@
     <dimen name="home_page_title_height">50dp</dimen>
     <dimen name="spell_card_margin">@dimen/spacing_large</dimen>
     <dimen name="spell_margins">@dimen/spacing_large</dimen>
+
+    <dimen name="landscape_center_pane_width">350dp</dimen>
 </resources>

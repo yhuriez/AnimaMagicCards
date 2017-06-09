@@ -36,7 +36,7 @@ public class HomePageActivity extends AnimaBaseActivity implements HomePageFragm
     @Override
     public void onSpellbookClicked(Spellbook spellbook) {
         getFragmentManager().beginTransaction()
-                .replace(R.id.fragment_placeholder, SpellStackFragment.newInstance(spellbook))
+                .add(R.id.fragment_placeholder, SpellStackFragment.newInstance(spellbook))
                 .addToBackStack(null)
                 .commit();
     }
