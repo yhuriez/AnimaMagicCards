@@ -61,12 +61,12 @@ public class SpellsLoader extends BaseLoader<List<Spell>> {
                 }
 
                 Map<Integer, Integer> freeAccessSpellsIds = witchPath.freeAccessSpellsIds;
-                if(freeAccessSpellsIds != null && !freeAccessSpellsIds.isEmpty()){
+                if (freeAccessSpellsIds != null && !freeAccessSpellsIds.isEmpty()) {
                     List<Spell> freeAccessSpells = getBookFromIdWithType(SpellbookType.FREE_ACCESS.bookId, 100);
                     for (Integer spellPosition : freeAccessSpellsIds.keySet()) {
                         int spellId = freeAccessSpellsIds.get(spellPosition);
                         for (Spell freeAccessSpell : freeAccessSpells) {
-                            if(freeAccessSpell.spellId == spellId){
+                            if (freeAccessSpell.spellId == spellId) {
                                 freeAccessSpell.level = spellPosition;
                                 pathSpells.add(freeAccessSpell);
                                 break;
@@ -94,15 +94,18 @@ public class SpellsLoader extends BaseLoader<List<Spell>> {
         for (Spell spell : spells) {
             boolean matching = false;
 
-            if(quickAccessFilter != null && quickAccessFilter.matchFilter(spell)){
+            // Quick access filter
+            if (quickAccessFilter != null) {
+                if (quickAccessFilter.matchFilter(spell) && isSpellMatchingFiltered(spell)) {
+                    matching = true;
+                }
+
+                // Custom filters only
+            } else if (isSpellMatchingFiltered(spell)) {
                 matching = true;
             }
 
-            if(filters != null && !filters.isEmpty() && isSpellFiltered(spell)) {
-                matching = true;
-            }
-
-            if(matching){
+            if (matching) {
                 result.add(spell);
             }
         }
@@ -110,12 +113,14 @@ public class SpellsLoader extends BaseLoader<List<Spell>> {
         return result;
     }
 
-    private boolean isSpellFiltered(Spell spell){
-        for (SpellFilterFactory.SpellFilter filter : filters) {
-            if(!filter.matchFilter(spell)){
-                return false;
+    private boolean isSpellMatchingFiltered(Spell spell) {
+        if (filters != null && !filters.isEmpty()) {
+            for (SpellFilterFactory.SpellFilter filter : filters) {
+                if (!filter.matchFilter(spell)) {
+                    return false;
+                }
+                filter.updateSpellWithFIlter(spell);
             }
-            filter.updateSpellWithFIlter(spell);
         }
         return true;
     }

@@ -16,6 +16,7 @@ import android.text.TextUtils;
 import android.util.SparseArray;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.android.databinding.library.baseAdapters.BR;
@@ -30,7 +31,6 @@ import fr.enlight.anima.animamagiccards.async.SaveWitchspellsAsyncTask;
 import fr.enlight.anima.animamagiccards.async.SpellbooksLoader;
 import fr.enlight.anima.animamagiccards.databinding.ActivityWitchspellsPathChooserBinding;
 import fr.enlight.anima.animamagiccards.ui.AnimaBaseActivity;
-import fr.enlight.anima.animamagiccards.ui.HomePageActivity;
 import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsMainPathChooserListener;
 import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsMainSpellbookViewModel;
 import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.freeaccess.WitchspellsFreeAccessChooserFragment;
@@ -305,7 +305,8 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
 
 
     private void createEditNameDialog() {
-        DialogUtils.showEditTextDialog(this, R.string.Witchspells_Choose_Witch_Name, R.string.Witchspells_Witch_Name, mWitchspells.witchName, new DialogUtils.EditTextDialogListener() {
+        ViewGroup view = (ViewGroup) findViewById(R.id.parent_layout);
+        DialogUtils.showEditTextDialog(view, R.string.Witchspells_Choose_Witch_Name, R.string.Witchspells_Witch_Name, mWitchspells.witchName, new DialogUtils.EditTextDialogListener() {
             @Override
             public void onTextValidated(DialogInterface dialog, String textValue) {
                 if(TextUtils.isEmpty(textValue)){

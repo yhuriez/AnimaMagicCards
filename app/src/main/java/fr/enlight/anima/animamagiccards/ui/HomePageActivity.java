@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.ViewGroup;
 import android.widget.Toast;
 
 import fr.enlight.anima.animamagiccards.R;
@@ -42,7 +43,8 @@ public class HomePageActivity extends AnimaBaseActivity implements HomePageFragm
 
     @Override
     public void onAddWitchspells() {
-        DialogUtils.showEditTextDialog(this, R.string.Witchspells_Choose_Witch_Name, R.string.Witchspells_Witch_Name, null, new DialogUtils.EditTextDialogListener() {
+        ViewGroup view = (ViewGroup) findViewById(R.id.fragment_placeholder);
+        DialogUtils.showEditTextDialog(view, R.string.Witchspells_Choose_Witch_Name, R.string.Witchspells_Witch_Name, null, new DialogUtils.EditTextDialogListener() {
             @Override
             public void onTextValidated(DialogInterface dialog, String textValue) {
                 if(TextUtils.isEmpty(textValue)){

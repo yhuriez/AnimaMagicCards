@@ -141,8 +141,11 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
         if (getArguments().containsKey(FREE_ACCESS_LIMIT_PARAM)) {
             quickAccessViewModel = new SpellQuickAccessViewModel(getArguments().getInt(FREE_ACCESS_LIMIT_PARAM), this);
 
-        } else if (getArguments().getInt(SPELLBOOK_PARAM) == SpellbookType.FREE_ACCESS.bookId) {
-            quickAccessViewModel = new SpellQuickAccessViewModel(100, this);
+        } else if (getArguments().containsKey(SPELLBOOK_PARAM)) {
+            Spellbook spellbook = getArguments().getParcelable(SPELLBOOK_PARAM);
+            if(spellbook.bookId == SpellbookType.FREE_ACCESS.bookId){
+                quickAccessViewModel = new SpellQuickAccessViewModel(100, this, true);
+            }
         }
 
         if (quickAccessViewModel != null) {

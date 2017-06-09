@@ -13,9 +13,9 @@ import fr.enlight.anima.animamagiccards.R;
 
 public class DialogUtils {
 
-    public static void showEditTextDialog(Context context, @StringRes int title, @StringRes int hint, String initialValue, final EditTextDialogListener listener){
-
-        final ViewGroup viewGroup = (ViewGroup) LayoutInflater.from(context).inflate(R.layout.view_edit_text, null);
+    public static void showEditTextDialog(ViewGroup parentView, @StringRes int title, @StringRes int hint, String initialValue, final EditTextDialogListener listener){
+        Context context = parentView.getContext();
+        final ViewGroup viewGroup = (ViewGroup) LayoutInflater.from(context).inflate(R.layout.view_edit_text, parentView, false);
         final EditText editText = (EditText) viewGroup.findViewById(R.id.generic_edit_text);
         editText.setHint(hint);
         if(initialValue != null){
