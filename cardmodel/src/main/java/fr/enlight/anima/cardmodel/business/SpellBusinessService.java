@@ -40,8 +40,6 @@ public class SpellBusinessService {
         return spellbookIndex.spellbooks;
     }
 
-
-
     public SpellDao getSpellDao() {
         if(mSpellDao == null){
             mSpellDao = new SpellDao();

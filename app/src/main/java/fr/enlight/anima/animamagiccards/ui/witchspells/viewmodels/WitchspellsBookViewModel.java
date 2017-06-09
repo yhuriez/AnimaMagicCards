@@ -45,9 +45,7 @@ public class WitchspellsBookViewModel extends RecyclerViewModel implements Binda
         List<BindableViewModel> result = new ArrayList<>();
 
         for (WitchspellsPath witchPath : witchspells.witchPaths) {
-//            if(witchspells.witchPaths.size() > 2){
-                result.add(new WitchspellsPathViewModel(witchPath, this, true));
-//            }
+            result.add(new WitchspellsPathViewModel(witchPath, this, true));
         }
 
         return result;
@@ -55,11 +53,11 @@ public class WitchspellsBookViewModel extends RecyclerViewModel implements Binda
 
     @Override
     public RecyclerView.LayoutManager getLayoutManager() {
-//        if(witchspells.witchPaths.size() > 2){
-//            return new GridLayoutManager(MainApplication.getMainContext(), 3, LinearLayoutManager.VERTICAL, false);
-//        } else {
-            return new LinearLayoutManager(MainApplication.getMainContext(), LinearLayoutManager.VERTICAL, false);
-//        }
+        return new LinearLayoutManager(MainApplication.getMainContext(), LinearLayoutManager.VERTICAL, false);
+    }
+
+    public boolean isWithClickableFrame(){
+        return witchspells.witchPaths.size() < 3;
     }
 
     public void onBookClicked(){

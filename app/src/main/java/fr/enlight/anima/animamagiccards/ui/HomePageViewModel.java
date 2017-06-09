@@ -3,15 +3,13 @@ package fr.enlight.anima.animamagiccards.ui;
 
 import android.content.Context;
 import android.databinding.Bindable;
-import android.support.v4.content.res.ResourcesCompat;
-import android.view.Gravity;
-import android.widget.TextSwitcher;
+import android.databinding.DataBindingUtil;
+import android.view.LayoutInflater;
 import android.widget.TextView;
 import android.widget.ViewSwitcher;
 
 import fr.enlight.anima.animamagiccards.BR;
 import fr.enlight.anima.animamagiccards.R;
-import fr.enlight.anima.animamagiccards.utils.BindingAdapters;
 import fr.enlight.anima.animamagiccards.views.viewmodels.RecyclerViewModel;
 
 public class HomePageViewModel extends RecyclerViewModel {
@@ -26,12 +24,7 @@ public class HomePageViewModel extends RecyclerViewModel {
 
                 @Override
                 public TextView makeView() {
-                    TextView textView = new TextView(context);
-                    textView.setGravity(Gravity.CENTER);
-                    textView.setTextSize(context.getResources().getDimension(R.dimen.textSize_medium));
-                    textView.setTextColor(ResourcesCompat.getColor(context.getResources(), android.R.color.white, null));
-                    BindingAdapters.setFont(textView, context.getString(R.string.spell_title_font));
-                    return textView;
+                    return (TextView) DataBindingUtil.inflate(LayoutInflater.from(context), R.layout.view_text_book_title, null, false).getRoot();
                 }
             };
         }

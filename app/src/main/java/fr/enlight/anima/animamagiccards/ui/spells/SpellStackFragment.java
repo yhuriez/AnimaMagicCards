@@ -257,6 +257,8 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
             FragmentManager fm = getFragmentManager();
             if (fm.getBackStackEntryCount() > 0) {
                 fm.popBackStack();
+            } else {
+                getActivity().onBackPressed();
             }
             return true;
 

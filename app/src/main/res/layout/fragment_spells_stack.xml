@@ -81,6 +81,7 @@
             android:background="@android:color/transparent"
             app:expandListener="@{model.expandListener}"
             app:itemSelectionListener="@{model.selectionListener}"
+            app:setVisible="@{model.stackVisible}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toRightOf="@id/quick_access_recycler_view"
             app:layout_constraintRight_toRightOf="parent"
