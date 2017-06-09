@@ -12,7 +12,11 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
+import android.text.TextUtils;
 import android.util.SparseArray;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.android.databinding.library.baseAdapters.BR;
 
@@ -26,10 +30,12 @@ import fr.enlight.anima.animamagiccards.async.SaveWitchspellsAsyncTask;
 import fr.enlight.anima.animamagiccards.async.SpellbooksLoader;
 import fr.enlight.anima.animamagiccards.databinding.ActivityWitchspellsPathChooserBinding;
 import fr.enlight.anima.animamagiccards.ui.AnimaBaseActivity;
+import fr.enlight.anima.animamagiccards.ui.HomePageActivity;
 import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsMainPathChooserListener;
 import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsMainSpellbookViewModel;
 import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.freeaccess.WitchspellsFreeAccessChooserFragment;
 import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.secondary.WitchspellsSecondaryPathChooserFragment;
+import fr.enlight.anima.animamagiccards.utils.DialogUtils;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.animamagiccards.views.viewmodels.RecyclerViewModel;
 import fr.enlight.anima.cardmodel.business.WitchspellsBusinessService;
@@ -78,12 +84,14 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
         super.onCreate(savedInstanceState);
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_witchspells_path_chooser);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
         mWitchspells = getIntent().getParcelableExtra(WITCHSPELLS_PARAM);
+
         if(mWitchspells == null) {
             throw new IllegalStateException("Witchspell should not be null at this point");
         }
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        updateTitle();
 
         for (WitchspellsPath path : mWitchspells.witchPaths) {
             mWitchspellsPathMap.put(path.pathBookId, path);
@@ -93,6 +101,20 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
         mRecyclerViewModel.setLayoutManager(new LinearLayoutManager(this));
 
         mBinding.setListener(this);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.edit_name, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(item.getItemId() == R.id.action_edit){
+            createEditNameDialog();
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
@@ -280,4 +302,25 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
     }
 
     // endregion
+
+
+    private void createEditNameDialog() {
+        DialogUtils.showEditTextDialog(this, R.string.Witchspells_Choose_Witch_Name, R.string.Witchspells_Witch_Name, mWitchspells.witchName, new DialogUtils.EditTextDialogListener() {
+            @Override
+            public void onTextValidated(DialogInterface dialog, String textValue) {
+                if(TextUtils.isEmpty(textValue)){
+                    Toast.makeText(WitchspellsMainPathChooserActivity.this, R.string.Error_No_Witchspells_Name, Toast.LENGTH_SHORT).show();
+                } else {
+                    mWitchspells.witchName = textValue;
+                    updateTitle();
+                    updateWitchspells();
+                }
+            }
+        });
+    }
+
+    @SuppressWarnings("ConstantConditions")
+    private void updateTitle() {
+        getSupportActionBar().setTitle(getString(R.string.Witchspells_Name_Format, mWitchspells.witchName));
+    }
 }

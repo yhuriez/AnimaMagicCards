@@ -125,5 +125,7 @@
     <string name="Witchspells_Delete_Secondary_Path_Message">Supprimer la voie secondaire associée à cette voie ?</string>
     <string name="Common_Leave">Quitter</string>
     <string name="Witchspells_Cancel_Creation">En quittant cette page vous annulerez la création du grimoire. Etes-vous sûr de vouloir quitter ?</string>
+    <string name="Witchspells_Choose_Witch_Name">Choisir le nom du sorcier</string>
+    <string name="Witchspells_Witch_Name">Nom du sorcier</string>
 
 </resources>

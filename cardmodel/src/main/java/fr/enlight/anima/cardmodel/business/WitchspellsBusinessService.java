@@ -4,7 +4,6 @@ package fr.enlight.anima.cardmodel.business;
 import android.content.Context;
 import android.support.annotation.WorkerThread;
 
-import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,12 +28,13 @@ public class WitchspellsBusinessService {
     }
 
     @WorkerThread
-    public void saveWitchspells(Witchspells witchspells){
+    public Witchspells saveWitchspells(Witchspells witchspells){
         int witchspellsId = witchspells.witchspellsId;
         if(witchspellsId > 0){
             getWitchspellsDao().updateWitchspells(witchspells);
         } else {
             witchspellsId = (int) getWitchspellsDao().insertWitchspells(witchspells);
+            witchspells.witchspellsId = witchspellsId;
         }
 
         WitchspellsPathDao witchspellsPathDao = getWitchspellsPathDao();
@@ -45,6 +45,7 @@ public class WitchspellsBusinessService {
             witchPath.parentPathId = witchspellsId;
             witchspellsPathDao.insertWitchspellsPath(witchPath);
         }
+        return witchspells;
     }
 
     @WorkerThread
