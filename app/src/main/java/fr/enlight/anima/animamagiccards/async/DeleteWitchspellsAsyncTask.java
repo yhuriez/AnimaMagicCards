@@ -9,24 +9,16 @@ import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 
 public class DeleteWitchspellsAsyncTask extends AsyncTask<Witchspells, Integer, Void> {
 
-    private Listener mListener;
+    private WitchspellsBusinessService mWitchspellsBusinessService;
 
-    public DeleteWitchspellsAsyncTask(Listener mListener) {
-        this.mListener = mListener;
-    }
-
-    @Override
-    protected void onPreExecute() {
-        super.onPreExecute();
-        mListener.onDeleteStarted();
+    public DeleteWitchspellsAsyncTask() {
+        this.mWitchspellsBusinessService = new WitchspellsBusinessService(MainApplication.getMainContext());
     }
 
     @Override
     protected Void doInBackground(Witchspells... witchspellsList) {
-        WitchspellsBusinessService witchspellsBusinessService = new WitchspellsBusinessService(MainApplication.getMainContext());
-
         for (Witchspells witchspells : witchspellsList) {
-            witchspellsBusinessService.deleteWitchspells(witchspells);
+            mWitchspellsBusinessService.deleteWitchspells(witchspells);
         }
 
         return null;
@@ -35,12 +27,7 @@ public class DeleteWitchspellsAsyncTask extends AsyncTask<Witchspells, Integer, 
     @Override
     protected void onPostExecute(Void aVoid) {
         super.onPostExecute(aVoid);
-        mListener.onDeleteFinished();
-        mListener = null;
-    }
 
-    public interface Listener{
-        void onDeleteStarted();
-        void onDeleteFinished();
+        mWitchspellsBusinessService.notifyWitchspellsUpdated();
     }
 }

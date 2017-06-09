@@ -22,6 +22,7 @@ import java.util.List;
 import java.util.Map;
 
 import fr.enlight.anima.animamagiccards.R;
+import fr.enlight.anima.animamagiccards.async.SaveWitchspellsAsyncTask;
 import fr.enlight.anima.animamagiccards.async.SpellbooksLoader;
 import fr.enlight.anima.animamagiccards.databinding.ActivityWitchspellsPathChooserBinding;
 import fr.enlight.anima.animamagiccards.ui.AnimaBaseActivity;
@@ -31,8 +32,11 @@ import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.freeaccess.Wit
 import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.secondary.WitchspellsSecondaryPathChooserFragment;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.animamagiccards.views.viewmodels.RecyclerViewModel;
+import fr.enlight.anima.cardmodel.business.WitchspellsBusinessService;
+import fr.enlight.anima.cardmodel.business.WitchspellsUpdateListener;
 import fr.enlight.anima.cardmodel.model.spells.Spellbook;
 import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
+import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 import fr.enlight.anima.cardmodel.model.witchspells.WitchspellsPath;
 import fr.enlight.anima.cardmodel.utils.SpellUtils;
 
@@ -41,11 +45,11 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
         WitchspellsSecondaryPathChooserFragment.Listener,
         LoaderManager.LoaderCallbacks<List<Spellbook>>,
         WitchspellsMainPathChooserListener,
-        WitchspellsFreeAccessChooserFragment.Listener {
+        WitchspellsFreeAccessChooserFragment.Listener, WitchspellsUpdateListener {
 
-    public static final String WITCHSPELLS_PATHS_RESULT = "WITCHSPELLS_PATHS_PARAM";
+    public static final String WITCHSPELLS_PATHS_RESULT = "WITCHSPELLS_PARAM";
 
-    private static final String WITCHSPELLS_PATHS_PARAM = "WITCHSPELLS_PATHS_PARAM";
+    private static final String WITCHSPELLS_PARAM = "WITCHSPELLS_PARAM";
     private static final String SECONDARY_DIALOG_FRAGMENT_TAG = "SECONDARY_DIALOG_FRAGMENT_TAG";
     private static final String FREE_ACCESS_DIALOG_FRAGMENT_TAG = "FREE_ACCESS_DIALOG_FRAGMENT_TAG";
 
@@ -56,14 +60,16 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
     private List<Spellbook> mSpellbooks;
     private SparseArray<Spellbook> mSpellbookMapping;
 
+    private Witchspells mWitchspells;
+
     @SuppressLint("UseSparseArrays")
     // Key is the spellbook related id
     private final Map<Integer, WitchspellsPath> mWitchspellsPathMap = new HashMap<>();
 
 
-    public static Intent navigateForEdition(Context context, ArrayList<WitchspellsPath> witchspells) {
+    public static Intent navigateForEdition(Context context, Witchspells witchspells) {
         Intent intent = new Intent(context, WitchspellsMainPathChooserActivity.class);
-        intent.putParcelableArrayListExtra(WITCHSPELLS_PATHS_PARAM, witchspells);
+        intent.putExtra(WITCHSPELLS_PARAM, witchspells);
         return intent;
     }
 
@@ -74,11 +80,12 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        ArrayList<WitchspellsPath> witchspellsPaths = getIntent().getParcelableArrayListExtra(WITCHSPELLS_PATHS_PARAM);
-        if(witchspellsPaths == null) {
+        mWitchspells = getIntent().getParcelableExtra(WITCHSPELLS_PARAM);
+        if(mWitchspells == null) {
             throw new IllegalStateException("Witchspell should not be null at this point");
         }
-        for (WitchspellsPath path : witchspellsPaths) {
+
+        for (WitchspellsPath path : mWitchspells.witchPaths) {
             mWitchspellsPathMap.put(path.pathBookId, path);
         }
 
@@ -86,8 +93,19 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
         mRecyclerViewModel.setLayoutManager(new LinearLayoutManager(this));
 
         mBinding.setListener(this);
+    }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        WitchspellsBusinessService.addWitchspellsListener(this);
         getLoaderManager().initLoader(1, null, this);
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        WitchspellsBusinessService.removeWitchspellsListener(this);
     }
 
     @Override
@@ -204,7 +222,7 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
         // Reevaluate free access spells every time the secondary path changes
         witchspellsPath.freeAccessSpellsIds = SpellUtils.reevaluateFreeAccessMap(witchspellsPath, null);
 
-        refreshViewModels();
+        updateWitchspells();
     }
 
     @Override
@@ -240,16 +258,25 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
     private void updateFreeAccess(int mainPathId, Map<Integer, Integer> freeAccessSpellsIds){
         WitchspellsPath witchspellsPath = mWitchspellsPathMap.get(mainPathId);
         witchspellsPath.freeAccessSpellsIds = freeAccessSpellsIds;
-        refreshViewModels();
+
+        updateWitchspells();
     }
 
     @Override
     public void onValidationClicked() {
-        ArrayList<WitchspellsPath> witchspellsPaths = new ArrayList<>(mWitchspellsPathMap.values());
-        Intent intent = new Intent();
-        intent.putParcelableArrayListExtra(WITCHSPELLS_PATHS_RESULT, witchspellsPaths);
-        setResult(RESULT_OK, intent);
+        updateWitchspells();
         finish();
+    }
+
+    public void updateWitchspells(){
+        mWitchspells.witchPaths = new ArrayList<>(mWitchspellsPathMap.values());
+
+        new SaveWitchspellsAsyncTask().execute(mWitchspells);
+    }
+
+    @Override
+    public void onWitchspellsUpdated() {
+        refreshViewModels();
     }
 
     // endregion

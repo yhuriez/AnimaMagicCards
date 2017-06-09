@@ -1,7 +1,6 @@
 package fr.enlight.anima.animamagiccards.ui;
 
 import android.app.AlertDialog;
-import android.app.Fragment;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,10 +8,10 @@ import android.os.Bundle;
 import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.animamagiccards.async.DeleteWitchspellsAsyncTask;
 import fr.enlight.anima.animamagiccards.ui.spells.SpellStackFragment;
-import fr.enlight.anima.animamagiccards.ui.witchspells.WitchspellsEditionActivity;
+import fr.enlight.anima.animamagiccards.ui.witchspells.WitchspellsMainPathChooserActivity;
 import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 
-public class HomePageActivity extends AnimaBaseActivity implements HomePageFragment.Callbacks, DeleteWitchspellsAsyncTask.Listener {
+public class HomePageActivity extends AnimaBaseActivity implements HomePageFragment.Callbacks {
 
     private static final int WITCHSPELLS_REQUEST_CODE = 712;
 
@@ -41,20 +40,14 @@ public class HomePageActivity extends AnimaBaseActivity implements HomePageFragm
 
     @Override
     public void onAddWitchspells() {
-        startActivityForResult(WitchspellsEditionActivity.navigate(this), WITCHSPELLS_REQUEST_CODE);
-    }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == WITCHSPELLS_REQUEST_CODE && resultCode == RESULT_OK) {
-            reloadHomePage();
-        }
+        // TODO Edit dialog for witchspells
+
     }
 
     @Override
     public void onModifyWitchspells(Witchspells witchspells) {
-        Intent intent = WitchspellsEditionActivity.navigateForEdition(this, witchspells);
+        Intent intent = WitchspellsMainPathChooserActivity.navigateForEdition(this, witchspells);
         startActivityForResult(intent, WITCHSPELLS_REQUEST_CODE);
     }
 
@@ -84,7 +77,7 @@ public class HomePageActivity extends AnimaBaseActivity implements HomePageFragm
                 .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        new DeleteWitchspellsAsyncTask(HomePageActivity.this).execute(witchspells);
+                        new DeleteWitchspellsAsyncTask().execute(witchspells);
                     }
                 })
                 .setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
@@ -95,23 +88,4 @@ public class HomePageActivity extends AnimaBaseActivity implements HomePageFragm
                 })
                 .show();
     }
-
-
-    private void reloadHomePage(){
-        Fragment spellbookFragment = getFragmentManager().findFragmentByTag(HOME_PAGE_FRAGMENT_TAG);
-        if (spellbookFragment != null && spellbookFragment instanceof HomePageFragment) {
-            ((HomePageFragment) spellbookFragment).resetSpellbooks();
-        }
-    }
-
-    @Override
-    public void onDeleteStarted() {
-        // Nothing to do
-    }
-
-    @Override
-    public void onDeleteFinished() {
-        reloadHomePage();
-    }
-
 }

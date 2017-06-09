@@ -2,7 +2,10 @@ package fr.enlight.anima.cardmodel.business;
 
 
 import android.content.Context;
+import android.support.annotation.WorkerThread;
 
+import java.lang.ref.WeakReference;
+import java.util.ArrayList;
 import java.util.List;
 
 import fr.enlight.anima.cardmodel.dao.WitchspellsDao;
@@ -18,10 +21,14 @@ public class WitchspellsBusinessService {
     private WitchspellsDao witchspellsDao;
     private WitchspellsPathDao witchspellsPathDao;
 
+    private static final List<WitchspellsUpdateListener> sWitchspellsListeners = new ArrayList<>();
+
+
     public WitchspellsBusinessService(Context context) {
         this.context = context;
     }
 
+    @WorkerThread
     public void saveWitchspells(Witchspells witchspells){
         int witchspellsId = witchspells.witchspellsId;
         if(witchspellsId > 0){
@@ -40,6 +47,7 @@ public class WitchspellsBusinessService {
         }
     }
 
+    @WorkerThread
     public List<Witchspells> getAllWitchspells(){
         List<Witchspells> witchspellsList = getWitchspellsDao().getWitchspells();
 
@@ -51,6 +59,7 @@ public class WitchspellsBusinessService {
         return witchspellsList;
     }
 
+    @WorkerThread
     public void deleteWitchspells(Witchspells witchspells) {
         getWitchspellsPathDao().deleteWitchspellsPaths(witchspells.witchspellsId);
         getWitchspellsDao().deleteWitchspells(witchspells);
@@ -68,5 +77,19 @@ public class WitchspellsBusinessService {
             witchspellsPathDao = AppDatabase.getInstance(context).getWitchspellsPathDao();
         }
         return witchspellsPathDao;
+    }
+
+    public void notifyWitchspellsUpdated(){
+        for (WitchspellsUpdateListener listener : sWitchspellsListeners) {
+            listener.onWitchspellsUpdated();
+        }
+    }
+
+    public static void addWitchspellsListener(WitchspellsUpdateListener witchspellsUpdateListener){
+        sWitchspellsListeners.add(witchspellsUpdateListener);
+    }
+
+    public static void removeWitchspellsListener(WitchspellsUpdateListener witchspellsUpdateListener){
+        sWitchspellsListeners.remove(witchspellsUpdateListener);
     }
 }
