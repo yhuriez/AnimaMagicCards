@@ -48,6 +48,7 @@ import fr.enlight.anima.cardmodel.business.SpellFilterFactory;
 import fr.enlight.anima.cardmodel.model.spells.Spell;
 import fr.enlight.anima.cardmodel.model.spells.SpellActionType;
 import fr.enlight.anima.cardmodel.model.spells.SpellType;
+import fr.enlight.anima.cardmodel.model.spells.Spellbook;
 import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
 import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 
@@ -58,7 +59,7 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     private static final String EFFECT_DIALOG = "EFFECT_DIALOG";
     private static final String GRADE_DIALOG = "GRADE_DIALOG";
 
-    private static final String SPELLBOOK_ID = "SPELLBOOK_ID";
+    private static final String SPELLBOOK_PARAM = "SPELLBOOK_PARAM";
     private static final String WITCHSPELLS_PARAM = "WITCHSPELLS_PARAM";
 
     private static final String FREE_ACCESS_LIMIT_PARAM = "FREE_ACCESS_LIMIT_PARAM";
@@ -85,10 +86,10 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     private Listener mListener;
 
 
-    public static SpellStackFragment newInstance(int spellbookId) {
+    public static SpellStackFragment newInstance(Spellbook spellbook) {
         SpellStackFragment fragment = new SpellStackFragment();
         Bundle bundle = new Bundle();
-        bundle.putInt(SPELLBOOK_ID, spellbookId);
+        bundle.putParcelable(SPELLBOOK_PARAM, spellbook);
         fragment.setArguments(bundle);
         return fragment;
     }
@@ -140,7 +141,7 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
         if (getArguments().containsKey(FREE_ACCESS_LIMIT_PARAM)) {
             quickAccessViewModel = new SpellQuickAccessViewModel(getArguments().getInt(FREE_ACCESS_LIMIT_PARAM), this);
 
-        } else if (getArguments().getInt(SPELLBOOK_ID) == SpellbookType.FREE_ACCESS.bookId) {
+        } else if (getArguments().getInt(SPELLBOOK_PARAM) == SpellbookType.FREE_ACCESS.bookId) {
             quickAccessViewModel = new SpellQuickAccessViewModel(100, this);
         }
 
@@ -159,9 +160,9 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
             Witchspells witchspells = arguments.getParcelable(WITCHSPELLS_PARAM);
             title = getString(R.string.Witchspells_Name_Format, witchspells.witchName);
 
-        } else if (arguments.containsKey(SPELLBOOK_ID)) {
-            SpellbookType spellbookType = SpellbookType.getTypeFromBookId(arguments.getInt(SPELLBOOK_ID));
-            title = getString(spellbookType.titleRes);
+        } else if (arguments.containsKey(SPELLBOOK_PARAM)) {
+            Spellbook spellbook = arguments.getParcelable(SPELLBOOK_PARAM);
+            title = spellbook.bookName;
 
         } else if (arguments.containsKey(FREE_ACCESS_LIMIT_PARAM)) {
             if (selectionMode && spellExpanded) {
@@ -330,8 +331,9 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     public Loader<List<Spell>> onCreateLoader(int id, Bundle args) {
         spellViewModels.stackVisible.set(false);
 
-        if (args.containsKey(SPELLBOOK_ID)) {
-            return new SpellsLoader(getActivity(), args.getInt(SPELLBOOK_ID), filters, mQuickAccessFilter);
+        if (args.containsKey(SPELLBOOK_PARAM)) {
+            Spellbook spellbook = args.getParcelable(SPELLBOOK_PARAM);
+            return new SpellsLoader(getActivity(), spellbook.bookId, filters, mQuickAccessFilter);
 
         } else if (args.containsKey(WITCHSPELLS_PARAM)) {
             return new SpellsLoader(getActivity(), (Witchspells) args.getParcelable(WITCHSPELLS_PARAM), filters, mQuickAccessFilter);

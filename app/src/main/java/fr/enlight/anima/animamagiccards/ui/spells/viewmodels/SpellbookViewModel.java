@@ -55,11 +55,11 @@ public class SpellbookViewModel implements BindableViewModel {
 
     public void onSpellbookClicked(){
         if(mListener != null){
-            mListener.onSpellbookClicked(mSpellbook.bookId);
+            mListener.onSpellbookClicked(mSpellbook);
         }
     }
 
     public interface Listener {
-        void onSpellbookClicked(int spellbookId);
+        void onSpellbookClicked(Spellbook spellbook);
     }
 }

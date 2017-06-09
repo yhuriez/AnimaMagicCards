@@ -9,7 +9,6 @@ import android.support.annotation.Nullable;
 import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.animamagiccards.ui.AnimaBaseActivity;
 import fr.enlight.anima.cardmodel.model.spells.Spell;
-import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
 import fr.enlight.anima.cardmodel.utils.SpellUtils;
 
 
@@ -20,12 +19,8 @@ public class SpellSelectionActivity extends AnimaBaseActivity implements SpellSt
 
     private int freeAccessPosition;
 
-    public static Intent navigate(Context context){
-        return new Intent(context, SpellSelectionActivity.class);
-    }
-
     public static Intent navigate(Context context, int freeAccessLimit){
-        Intent intent = navigate(context);
+        Intent intent = new Intent(context, SpellSelectionActivity.class);
         intent.putExtra(FREE_ACCESS_POSITION_PARAM, freeAccessLimit);
         return intent;
     }
@@ -43,13 +38,11 @@ public class SpellSelectionActivity extends AnimaBaseActivity implements SpellSt
             if(getIntent().getExtras().containsKey(FREE_ACCESS_POSITION_PARAM)){
                 freeAccessPosition = getIntent().getIntExtra(FREE_ACCESS_POSITION_PARAM, -1);
                 fragment = SpellStackFragment.newInstanceForSelection(SpellUtils.getCeilingLevelForSpellPosition(freeAccessPosition));
-            } else {
-                fragment = SpellStackFragment.newInstance(SpellbookType.FREE_ACCESS.bookId);
-            }
 
-            getFragmentManager().beginTransaction()
-                    .replace(R.id.fragment_placeholder, fragment)
-                    .commit();
+                getFragmentManager().beginTransaction()
+                        .replace(R.id.fragment_placeholder, fragment)
+                        .commit();
+            }
         }
     }
 
