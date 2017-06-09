@@ -9,24 +9,16 @@ import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 
 public class SaveWitchspellsAsyncTask extends AsyncTask<Witchspells, Integer, Void> {
 
-    private Listener mListener;
+    private WitchspellsBusinessService mWitchspellsBusinessService;
 
-    public SaveWitchspellsAsyncTask(Listener mListener) {
-        this.mListener = mListener;
-    }
-
-    @Override
-    protected void onPreExecute() {
-        super.onPreExecute();
-        mListener.onSaveStarted();
+    public SaveWitchspellsAsyncTask() {
+        this.mWitchspellsBusinessService = new WitchspellsBusinessService(MainApplication.getMainContext());
     }
 
     @Override
     protected Void doInBackground(Witchspells... witchspellsList) {
-        WitchspellsBusinessService witchspellsBusinessService = new WitchspellsBusinessService(MainApplication.getMainContext());
-
         for (Witchspells witchspells : witchspellsList) {
-            witchspellsBusinessService.saveWitchspells(witchspells);
+            mWitchspellsBusinessService.saveWitchspells(witchspells);
         }
 
         return null;
@@ -35,12 +27,7 @@ public class SaveWitchspellsAsyncTask extends AsyncTask<Witchspells, Integer, Vo
     @Override
     protected void onPostExecute(Void aVoid) {
         super.onPostExecute(aVoid);
-        mListener.onSaveFinished();
-        mListener = null;
-    }
 
-    public interface Listener{
-        void onSaveStarted();
-        void onSaveFinished();
+        mWitchspellsBusinessService.notifyWitchspellsUpdated();
     }
 }

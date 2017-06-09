@@ -76,8 +76,6 @@ public class HomePageFragment extends Fragment implements
         homePageViewModel.setOnScrollListener(new CenterScrollListener());
 
         binding.setModel(homePageViewModel);
-
-        getLoaderManager().initLoader(LOADER_ID, null, this);
     }
 
     @Override
@@ -95,6 +93,12 @@ public class HomePageFragment extends Fragment implements
     public void onAttach(Activity activity) {
         super.onAttach(activity);
         mListener = (Callbacks) activity;
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        getLoaderManager().restartLoader(LOADER_ID, null, this);
     }
 
     @Override
@@ -188,11 +192,6 @@ public class HomePageFragment extends Fragment implements
             homePageViewModel.setCurrentTitle(title);
         }
     }
-
-    public void resetSpellbooks() {
-        getLoaderManager().restartLoader(LOADER_ID, null, this);
-    }
-
 
     public interface Callbacks extends
             BookSubviewViewModel.Listener,

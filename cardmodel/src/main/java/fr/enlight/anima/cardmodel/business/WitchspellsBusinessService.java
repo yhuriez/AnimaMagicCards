@@ -2,7 +2,9 @@ package fr.enlight.anima.cardmodel.business;
 
 
 import android.content.Context;
+import android.support.annotation.WorkerThread;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import fr.enlight.anima.cardmodel.dao.WitchspellsDao;
@@ -18,16 +20,21 @@ public class WitchspellsBusinessService {
     private WitchspellsDao witchspellsDao;
     private WitchspellsPathDao witchspellsPathDao;
 
+    private static final List<WitchspellsUpdateListener> sWitchspellsListeners = new ArrayList<>();
+
+
     public WitchspellsBusinessService(Context context) {
         this.context = context;
     }
 
-    public void saveWitchspells(Witchspells witchspells){
+    @WorkerThread
+    public Witchspells saveWitchspells(Witchspells witchspells){
         int witchspellsId = witchspells.witchspellsId;
         if(witchspellsId > 0){
             getWitchspellsDao().updateWitchspells(witchspells);
         } else {
             witchspellsId = (int) getWitchspellsDao().insertWitchspells(witchspells);
+            witchspells.witchspellsId = witchspellsId;
         }
 
         WitchspellsPathDao witchspellsPathDao = getWitchspellsPathDao();
@@ -38,8 +45,10 @@ public class WitchspellsBusinessService {
             witchPath.parentPathId = witchspellsId;
             witchspellsPathDao.insertWitchspellsPath(witchPath);
         }
+        return witchspells;
     }
 
+    @WorkerThread
     public List<Witchspells> getAllWitchspells(){
         List<Witchspells> witchspellsList = getWitchspellsDao().getWitchspells();
 
@@ -51,6 +60,7 @@ public class WitchspellsBusinessService {
         return witchspellsList;
     }
 
+    @WorkerThread
     public void deleteWitchspells(Witchspells witchspells) {
         getWitchspellsPathDao().deleteWitchspellsPaths(witchspells.witchspellsId);
         getWitchspellsDao().deleteWitchspells(witchspells);
@@ -68,5 +78,19 @@ public class WitchspellsBusinessService {
             witchspellsPathDao = AppDatabase.getInstance(context).getWitchspellsPathDao();
         }
         return witchspellsPathDao;
+    }
+
+    public void notifyWitchspellsUpdated(){
+        for (WitchspellsUpdateListener listener : sWitchspellsListeners) {
+            listener.onWitchspellsUpdated();
+        }
+    }
+
+    public static void addWitchspellsListener(WitchspellsUpdateListener witchspellsUpdateListener){
+        sWitchspellsListeners.add(witchspellsUpdateListener);
+    }
+
+    public static void removeWitchspellsListener(WitchspellsUpdateListener witchspellsUpdateListener){
+        sWitchspellsListeners.remove(witchspellsUpdateListener);
     }
 }

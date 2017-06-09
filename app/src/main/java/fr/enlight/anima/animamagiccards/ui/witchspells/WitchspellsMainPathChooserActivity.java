@@ -12,7 +12,11 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
+import android.text.TextUtils;
 import android.util.SparseArray;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.android.databinding.library.baseAdapters.BR;
 
@@ -22,17 +26,23 @@ import java.util.List;
 import java.util.Map;
 
 import fr.enlight.anima.animamagiccards.R;
+import fr.enlight.anima.animamagiccards.async.SaveWitchspellsAsyncTask;
 import fr.enlight.anima.animamagiccards.async.SpellbooksLoader;
 import fr.enlight.anima.animamagiccards.databinding.ActivityWitchspellsPathChooserBinding;
 import fr.enlight.anima.animamagiccards.ui.AnimaBaseActivity;
+import fr.enlight.anima.animamagiccards.ui.HomePageActivity;
 import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsMainPathChooserListener;
 import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsMainSpellbookViewModel;
 import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.freeaccess.WitchspellsFreeAccessChooserFragment;
 import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.secondary.WitchspellsSecondaryPathChooserFragment;
+import fr.enlight.anima.animamagiccards.utils.DialogUtils;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.animamagiccards.views.viewmodels.RecyclerViewModel;
+import fr.enlight.anima.cardmodel.business.WitchspellsBusinessService;
+import fr.enlight.anima.cardmodel.business.WitchspellsUpdateListener;
 import fr.enlight.anima.cardmodel.model.spells.Spellbook;
 import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
+import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 import fr.enlight.anima.cardmodel.model.witchspells.WitchspellsPath;
 import fr.enlight.anima.cardmodel.utils.SpellUtils;
 
@@ -41,11 +51,11 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
         WitchspellsSecondaryPathChooserFragment.Listener,
         LoaderManager.LoaderCallbacks<List<Spellbook>>,
         WitchspellsMainPathChooserListener,
-        WitchspellsFreeAccessChooserFragment.Listener {
+        WitchspellsFreeAccessChooserFragment.Listener, WitchspellsUpdateListener {
 
-    public static final String WITCHSPELLS_PATHS_RESULT = "WITCHSPELLS_PATHS_PARAM";
+    public static final String WITCHSPELLS_PATHS_RESULT = "WITCHSPELLS_PARAM";
 
-    private static final String WITCHSPELLS_PATHS_PARAM = "WITCHSPELLS_PATHS_PARAM";
+    private static final String WITCHSPELLS_PARAM = "WITCHSPELLS_PARAM";
     private static final String SECONDARY_DIALOG_FRAGMENT_TAG = "SECONDARY_DIALOG_FRAGMENT_TAG";
     private static final String FREE_ACCESS_DIALOG_FRAGMENT_TAG = "FREE_ACCESS_DIALOG_FRAGMENT_TAG";
 
@@ -56,14 +66,16 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
     private List<Spellbook> mSpellbooks;
     private SparseArray<Spellbook> mSpellbookMapping;
 
+    private Witchspells mWitchspells;
+
     @SuppressLint("UseSparseArrays")
     // Key is the spellbook related id
     private final Map<Integer, WitchspellsPath> mWitchspellsPathMap = new HashMap<>();
 
 
-    public static Intent navigateForEdition(Context context, ArrayList<WitchspellsPath> witchspells) {
+    public static Intent navigateForEdition(Context context, Witchspells witchspells) {
         Intent intent = new Intent(context, WitchspellsMainPathChooserActivity.class);
-        intent.putParcelableArrayListExtra(WITCHSPELLS_PATHS_PARAM, witchspells);
+        intent.putExtra(WITCHSPELLS_PARAM, witchspells);
         return intent;
     }
 
@@ -72,13 +84,16 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
         super.onCreate(savedInstanceState);
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_witchspells_path_chooser);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        mWitchspells = getIntent().getParcelableExtra(WITCHSPELLS_PARAM);
 
-        ArrayList<WitchspellsPath> witchspellsPaths = getIntent().getParcelableArrayListExtra(WITCHSPELLS_PATHS_PARAM);
-        if(witchspellsPaths == null) {
+        if(mWitchspells == null) {
             throw new IllegalStateException("Witchspell should not be null at this point");
         }
-        for (WitchspellsPath path : witchspellsPaths) {
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        updateTitle();
+
+        for (WitchspellsPath path : mWitchspells.witchPaths) {
             mWitchspellsPathMap.put(path.pathBookId, path);
         }
 
@@ -86,8 +101,33 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
         mRecyclerViewModel.setLayoutManager(new LinearLayoutManager(this));
 
         mBinding.setListener(this);
+    }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.edit_name, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(item.getItemId() == R.id.action_edit){
+            createEditNameDialog();
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        WitchspellsBusinessService.addWitchspellsListener(this);
         getLoaderManager().initLoader(1, null, this);
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        WitchspellsBusinessService.removeWitchspellsListener(this);
     }
 
     @Override
@@ -204,7 +244,7 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
         // Reevaluate free access spells every time the secondary path changes
         witchspellsPath.freeAccessSpellsIds = SpellUtils.reevaluateFreeAccessMap(witchspellsPath, null);
 
-        refreshViewModels();
+        updateWitchspells();
     }
 
     @Override
@@ -240,17 +280,47 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
     private void updateFreeAccess(int mainPathId, Map<Integer, Integer> freeAccessSpellsIds){
         WitchspellsPath witchspellsPath = mWitchspellsPathMap.get(mainPathId);
         witchspellsPath.freeAccessSpellsIds = freeAccessSpellsIds;
-        refreshViewModels();
+
+        updateWitchspells();
     }
 
     @Override
     public void onValidationClicked() {
-        ArrayList<WitchspellsPath> witchspellsPaths = new ArrayList<>(mWitchspellsPathMap.values());
-        Intent intent = new Intent();
-        intent.putParcelableArrayListExtra(WITCHSPELLS_PATHS_RESULT, witchspellsPaths);
-        setResult(RESULT_OK, intent);
+        updateWitchspells();
         finish();
     }
 
+    public void updateWitchspells(){
+        mWitchspells.witchPaths = new ArrayList<>(mWitchspellsPathMap.values());
+
+        new SaveWitchspellsAsyncTask().execute(mWitchspells);
+    }
+
+    @Override
+    public void onWitchspellsUpdated() {
+        refreshViewModels();
+    }
+
     // endregion
+
+
+    private void createEditNameDialog() {
+        DialogUtils.showEditTextDialog(this, R.string.Witchspells_Choose_Witch_Name, R.string.Witchspells_Witch_Name, mWitchspells.witchName, new DialogUtils.EditTextDialogListener() {
+            @Override
+            public void onTextValidated(DialogInterface dialog, String textValue) {
+                if(TextUtils.isEmpty(textValue)){
+                    Toast.makeText(WitchspellsMainPathChooserActivity.this, R.string.Error_No_Witchspells_Name, Toast.LENGTH_SHORT).show();
+                } else {
+                    mWitchspells.witchName = textValue;
+                    updateTitle();
+                    updateWitchspells();
+                }
+            }
+        });
+    }
+
+    @SuppressWarnings("ConstantConditions")
+    private void updateTitle() {
+        getSupportActionBar().setTitle(getString(R.string.Witchspells_Name_Format, mWitchspells.witchName));
+    }
 }
