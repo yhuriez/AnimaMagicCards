@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spell_card_max_width">500dp</dimen>
+    <dimen name="home_page_title_height">100dp</dimen>
+
+    <dimen name="spell_stack_header_height_normal">200dp</dimen>
+    <dimen name="subview_panel_height">200dp</dimen>
+</resources>

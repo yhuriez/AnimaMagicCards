@@ -60,7 +60,7 @@
             android:paddingLeft="@dimen/spacing_base"
             android:paddingRight="@dimen/spacing_base"
             android:textColor="@android:color/black"
-            android:textSize="11sp"
+            android:textSize="@dimen/textSize_min"
             android:text="@{model.effect}"
             tools:text="1 Sphère" />
 

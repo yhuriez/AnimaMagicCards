@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSize_technical">60sp</dimen>
+    <dimen name="textSize_spell_title">46sp</dimen>
+    <dimen name="textSize_spell_reduced_title">32sp</dimen>
+
+    <dimen name="textSize_book_title">56sp</dimen>
+
+    <dimen name="textSize_min">15sp</dimen>
+    <dimen name="textSize_regular">18sp</dimen>
+    <dimen name="textSize_medium">21sp</dimen>
+    <dimen name="textSize_large">28sp</dimen>
+    <dimen name="textSize_xlarge">32sp</dimen>
+    <dimen name="textSize_big">40sp</dimen>
+    <dimen name="textSize_xbig">50sp</dimen>
+</resources>
