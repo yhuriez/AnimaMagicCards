@@ -1,6 +1,7 @@
 package fr.enlight.anima.animamagiccards.ui;
 
 import android.app.AlertDialog;
+import android.app.Fragment;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,12 +15,14 @@ import fr.enlight.anima.animamagiccards.async.DeleteWitchspellsAsyncTask;
 import fr.enlight.anima.animamagiccards.ui.spells.SpellStackFragment;
 import fr.enlight.anima.animamagiccards.ui.witchspells.WitchspellsMainPathChooserActivity;
 import fr.enlight.anima.animamagiccards.utils.DialogUtils;
+import fr.enlight.anima.animamagiccards.utils.OnBackPressedListener;
 import fr.enlight.anima.cardmodel.model.spells.Spellbook;
 import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 
 public class HomePageActivity extends AnimaBaseActivity implements HomePageFragment.Callbacks, CreateWitchspellsAsyncTask.Listener {
 
     private static final String HOME_PAGE_FRAGMENT_TAG = "HOME_PAGE_FRAGMENT_TAG";
+    private static final String SPELL_STACK_FRAGMENT_TAG = "SPELL_STACK_FRAGMENT_TAG";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +39,7 @@ public class HomePageActivity extends AnimaBaseActivity implements HomePageFragm
     @Override
     public void onSpellbookClicked(Spellbook spellbook) {
         getFragmentManager().beginTransaction()
-                .add(R.id.fragment_placeholder, SpellStackFragment.newInstance(spellbook))
+                .add(R.id.fragment_placeholder, SpellStackFragment.newInstance(spellbook), SPELL_STACK_FRAGMENT_TAG)
                 .addToBackStack(null)
                 .commit();
     }
@@ -47,7 +50,7 @@ public class HomePageActivity extends AnimaBaseActivity implements HomePageFragm
         DialogUtils.showEditTextDialog(view, R.string.Witchspells_Choose_Witch_Name, R.string.Witchspells_Witch_Name, null, new DialogUtils.EditTextDialogListener() {
             @Override
             public void onTextValidated(DialogInterface dialog, String textValue) {
-                if(TextUtils.isEmpty(textValue)){
+                if (TextUtils.isEmpty(textValue)) {
                     Toast.makeText(HomePageActivity.this, R.string.Error_No_Witchspells_Name, Toast.LENGTH_SHORT).show();
                 } else {
                     createNewWitchspells(textValue);
@@ -81,13 +84,12 @@ public class HomePageActivity extends AnimaBaseActivity implements HomePageFragm
         goToWitchspells(witchspells);
     }
 
-    private void goToWitchspells(Witchspells witchspells){
+    private void goToWitchspells(Witchspells witchspells) {
         getFragmentManager().beginTransaction()
-                .replace(R.id.fragment_placeholder, SpellStackFragment.newInstance(witchspells))
+                .replace(R.id.fragment_placeholder, SpellStackFragment.newInstance(witchspells), SPELL_STACK_FRAGMENT_TAG)
                 .addToBackStack(null)
                 .commit();
     }
-
 
     @Override
     public void onDeleteWitchspells(final Witchspells witchspells) {
@@ -109,5 +111,14 @@ public class HomePageActivity extends AnimaBaseActivity implements HomePageFragm
                 .show();
     }
 
-
+    @Override
+    public void onBackPressed() {
+        Fragment fragment = getFragmentManager().findFragmentByTag(SPELL_STACK_FRAGMENT_TAG);
+        if (fragment != null && fragment instanceof OnBackPressedListener) {
+            boolean catched = ((OnBackPressedListener) fragment).onBackPressed();
+            if(!catched){
+                super.onBackPressed();
+            }
+        }
+    }
 }

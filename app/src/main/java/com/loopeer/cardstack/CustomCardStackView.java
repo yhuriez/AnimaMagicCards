@@ -1,13 +1,12 @@
-package fr.enlight.anima.animamagiccards.views;
+package com.loopeer.cardstack;
 
 import android.content.Context;
 import android.util.AttributeSet;
 
-import com.loopeer.cardstack.CardStackView;
-
 public class CustomCardStackView extends CardStackView {
 
     private ItemSelectionListener mItemSelectionListener;
+    private int mCurrentSelectedPosition;
 
     public CustomCardStackView(Context context) {
         super(context);
@@ -21,10 +20,6 @@ public class CustomCardStackView extends CardStackView {
         super(context, attrs, defStyleAttr);
     }
 
-    public CustomCardStackView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
-    }
-
     public void setItemSelectionListener(ItemSelectionListener itemSelectionListener) {
         this.mItemSelectionListener = itemSelectionListener;
     }
@@ -32,9 +27,16 @@ public class CustomCardStackView extends CardStackView {
     @Override
     public void setSelectPosition(int selectPosition) {
         if(mItemSelectionListener != null){
+            mCurrentSelectedPosition = selectPosition;
             mItemSelectionListener.onItemSelected(selectPosition);
         }
         super.setSelectPosition(selectPosition);
+    }
+
+    public void unselectCard(){
+        if(mCurrentSelectedPosition >= 0){
+            performItemClick(getViewHolder(mCurrentSelectedPosition));
+        }
     }
 
     public interface ItemSelectionListener{

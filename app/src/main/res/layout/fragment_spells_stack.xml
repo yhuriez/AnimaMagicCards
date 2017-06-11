@@ -5,6 +5,7 @@
 
     <data>
 
+        <import type="com.loopeer.cardstack.CardStackView"/>
         <import type="android.view.View" />
 
         <variable
@@ -72,7 +73,7 @@
             tools:text="@string/Spell_Empty_List_Message"
             app:setVisible="@{!model.stackVisible || model.messageMode}" />
 
-        <fr.enlight.anima.animamagiccards.views.CustomCardStackView
+        <com.loopeer.cardstack.CustomCardStackView
             android:id="@+id/card_stack_view"
             android:layout_width="0dp"
             android:layout_height="0dp"

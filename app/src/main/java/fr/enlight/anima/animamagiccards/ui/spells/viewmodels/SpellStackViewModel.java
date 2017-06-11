@@ -7,7 +7,7 @@ import com.loopeer.cardstack.CardStackView;
 
 import java.util.List;
 
-import fr.enlight.anima.animamagiccards.views.CustomCardStackView;
+import com.loopeer.cardstack.CustomCardStackView;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.animamagiccards.views.viewmodels.ListBindableViewModel;
 

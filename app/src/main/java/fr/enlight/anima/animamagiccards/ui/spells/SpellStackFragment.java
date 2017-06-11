@@ -27,6 +27,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.loopeer.cardstack.CardStackView;
+import com.loopeer.cardstack.CustomCardStackView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,8 +42,8 @@ import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.SpellStackViewModel
 import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.SpellViewModel;
 import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.quickaccess.SpellQuickAccessViewModel;
 import fr.enlight.anima.animamagiccards.utils.DeviceUtils;
+import fr.enlight.anima.animamagiccards.utils.OnBackPressedListener;
 import fr.enlight.anima.animamagiccards.views.BindingDialogFragment;
-import fr.enlight.anima.animamagiccards.views.CustomCardStackView;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.cardmodel.business.SpellFilterFactory;
 import fr.enlight.anima.cardmodel.model.spells.Spell;
@@ -54,7 +55,12 @@ import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 
 
 public class SpellStackFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<Spell>>,
-        SpellViewModel.Listener, SearchView.OnQueryTextListener, SpellQuickAccessViewModel.Listener, CardStackView.ItemExpendListener, CustomCardStackView.ItemSelectionListener {
+        SpellViewModel.Listener,
+        SearchView.OnQueryTextListener,
+        SpellQuickAccessViewModel.Listener,
+        CardStackView.ItemExpendListener,
+        CustomCardStackView.ItemSelectionListener,
+        OnBackPressedListener {
 
     private static final String EFFECT_DIALOG = "EFFECT_DIALOG";
     private static final String GRADE_DIALOG = "GRADE_DIALOG";
@@ -77,6 +83,8 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     private boolean selectionMode;
     private boolean spellExpanded;
     private Spell mLastSelectedSpell;
+
+    private CustomCardStackView mCardStack;
 
     private SearchView mSearchView;
     private MenuItem searchMenuItem;
@@ -116,6 +124,13 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_spells_stack, container, false);
         return binding.getRoot();
+    }
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        mCardStack = (CustomCardStackView) view.findViewById(R.id.card_stack_view);
+        mCardStack.setAnimationType(CardStackView.ALL_DOWN);
     }
 
     @Override
@@ -370,9 +385,9 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
 
     @Override
     public void onItemExpend(boolean expend) {
-        if (selectionMode) {
-            spellExpanded = expend;
+        spellExpanded = expend;
 
+        if (selectionMode) {
             ActionBar actionBar = ((AppCompatActivity) getActivity()).getSupportActionBar();
             modifyTitle(actionBar, getArguments());
 
@@ -410,6 +425,15 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
         } else {
             mLastSelectedSpell = null;
         }
+    }
+
+    @Override
+    public boolean onBackPressed() {
+        if(mLastSelectedSpell != null && spellExpanded){
+            mCardStack.unselectCard();
+            return true;
+        }
+        return false;
     }
 
     public interface Listener {
