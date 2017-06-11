@@ -183,6 +183,8 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
         } else if (mWitchspellsPathMap.containsKey(pathBookId)){
             mWitchspellsPathMap.remove(pathBookId);
         }
+
+        updateWitchspellsWithoutRefresh();
     }
 
     @Override
@@ -294,6 +296,12 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
         mWitchspells.witchPaths = new ArrayList<>(mWitchspellsPathMap.values());
 
         new SaveWitchspellsAsyncTask().execute(mWitchspells);
+    }
+
+    public void updateWitchspellsWithoutRefresh(){
+        mWitchspells.witchPaths = new ArrayList<>(mWitchspellsPathMap.values());
+
+        new SaveWitchspellsAsyncTask(false).execute(mWitchspells);
     }
 
     @Override

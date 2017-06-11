@@ -5,14 +5,12 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.LoaderManager;
-import android.arch.lifecycle.ViewModelProviders;
 import android.content.Context;
 import android.content.Loader;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -148,7 +146,7 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
         spellViewModels = new SpellStackViewModel(this, this, getArguments().containsKey(WITCHSPELLS_PARAM));
         binding.setModel(spellViewModels);
 
-        filterViewModel = ViewModelProviders.of((FragmentActivity) getActivity()).get(SpellFilterViewModel.class);
+        filterViewModel = new SpellFilterViewModel();
         binding.setFilterModel(filterViewModel);
 
         selectionMode = getArguments().getBoolean(SELECTION_MODE_PARAM);

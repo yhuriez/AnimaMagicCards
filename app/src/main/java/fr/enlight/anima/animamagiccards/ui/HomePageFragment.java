@@ -32,13 +32,15 @@ import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsAdd
 import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsBookViewModel;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.animamagiccards.views.viewmodels.EmptyItemViewModel;
+import fr.enlight.anima.cardmodel.business.WitchspellsBusinessService;
+import fr.enlight.anima.cardmodel.business.WitchspellsUpdateListener;
 import fr.enlight.anima.cardmodel.model.spells.Spellbook;
 import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
 import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 
 public class HomePageFragment extends Fragment implements
         LoaderManager.LoaderCallbacks<AllSpellGroupLoader.LoaderResult>,
-        CarouselLayoutManager.OnCenterItemSelectionListener {
+        CarouselLayoutManager.OnCenterItemSelectionListener, WitchspellsUpdateListener {
 
     private static final int LOADER_ID = 1;
 
@@ -99,6 +101,13 @@ public class HomePageFragment extends Fragment implements
     public void onStart() {
         super.onStart();
         getLoaderManager().restartLoader(LOADER_ID, null, this);
+        WitchspellsBusinessService.addWitchspellsListener(this);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        WitchspellsBusinessService.removeWitchspellsListener(this);
     }
 
     @Override
@@ -191,6 +200,11 @@ public class HomePageFragment extends Fragment implements
         if (title != null) {
             homePageViewModel.setCurrentTitle(title);
         }
+    }
+
+    @Override
+    public void onWitchspellsUpdated() {
+        getLoaderManager().restartLoader(LOADER_ID, null, this);
     }
 
     public interface Callbacks extends

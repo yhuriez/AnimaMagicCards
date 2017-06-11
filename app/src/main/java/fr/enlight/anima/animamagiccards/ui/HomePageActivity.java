@@ -119,6 +119,8 @@ public class HomePageActivity extends AnimaBaseActivity implements HomePageFragm
             if(!catched){
                 super.onBackPressed();
             }
+        } else {
+            super.onBackPressed();
         }
     }
 }

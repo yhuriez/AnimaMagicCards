@@ -72,6 +72,7 @@ public class SpellViewModel implements BindableViewModel, SpellGradeViewModel.Li
 
     public CharSequence getActionType(Context context){
         CharSequence actionTypeSpannable = new SpannableString(context.getText(R.string.spell_action_type_format) + " ");
+
         SpannableString actionValue = new SpannableString(spell.actionType);
         if(spell.highlightActionType){
             actionValue.setSpan(
