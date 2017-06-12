@@ -57,8 +57,18 @@ public class SpellViewModel implements BindableViewModel, SpellGradeViewModel.Li
 
         String spellLevel;
         if(spell.bookId == SpellbookType.FREE_ACCESS.bookId){
-            int ceilingLevel = ((spell.level / 10) + 1) * 10;
-            spellLevel = 1 + "-" + ceilingLevel;
+            int ceilingLevel;
+            if(spell.level % 10 == 0){
+                // Free access book case
+                ceilingLevel = spell.level;
+            } else {
+                // Free access in witchspells case
+                ceilingLevel = ((spell.level / 10) + 1) * 10;
+            }
+            int bottomLevel = Math.max(1, ceilingLevel - 10);
+
+            spellLevel = bottomLevel + " - " + ceilingLevel;
+
         } else {
             spellLevel = String.valueOf(spell.level);
         }

@@ -57,6 +57,7 @@ public class HomePageFragment extends Fragment implements
 
     private final SparseArray<String> switchingTitlesIndex = new SparseArray<>();
     private final SparseArray<BookSubviewViewModel> switchingSubviewModelIndex = new SparseArray<>();
+    private boolean mFirstLoad;
 
     @Nullable
     @Override
@@ -75,6 +76,8 @@ public class HomePageFragment extends Fragment implements
             actionBar.setTitle(getString(R.string.HomePage_Title));
         }
         setHasOptionsMenu(true);
+
+        mFirstLoad = true;
 
         homePageViewModel = new HomePageViewModel();
         CarouselLayoutManager carouselLayoutManager = new CarouselLayoutManager(CarouselLayoutManager.HORIZONTAL, false);
@@ -125,7 +128,6 @@ public class HomePageFragment extends Fragment implements
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        super.onCreateOptionsMenu(menu, inflater);
         inflater.inflate(R.menu.homepage_menu, menu);
     }
 
@@ -187,7 +189,11 @@ public class HomePageFragment extends Fragment implements
         }
 
         homePageViewModel.setViewModels(viewModels);
-        updateHomePageElements(0);
+
+        if(mFirstLoad){
+            updateHomePageElements(0);
+            mFirstLoad = false;
+        }
     }
 
     private void addNewWitchspellsToIndex(int position) {

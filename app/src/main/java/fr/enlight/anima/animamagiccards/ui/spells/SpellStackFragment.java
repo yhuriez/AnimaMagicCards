@@ -217,8 +217,6 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        super.onCreateOptionsMenu(menu, inflater);
-
         if (selectionMode && spellExpanded) {
             inflater.inflate(R.menu.validate_selection_menu, menu);
 

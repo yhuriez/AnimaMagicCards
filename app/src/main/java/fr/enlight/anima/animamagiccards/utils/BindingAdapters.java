@@ -183,4 +183,6 @@ public class BindingAdapters {
         String strValue = textView.getContext().getString(value);
         textView.setText(Html.fromHtml(strValue));
     }
+
+
 }

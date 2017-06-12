@@ -142,35 +142,4 @@
     <string name="Notify_Misspelling_Body">Bonjour, j\'ai trouvé une faute d\'orthographe dans un des sorts de l\'application : \n\nTexte corrigé : \n\n(Corriger le texte ci-dessous ou bien indiquez où se trouve la faute d\'orthographe)\n%1$s</string>
     <string name="Notify_Misspelling_Spell_subject">Faute d\'orthographe dans le sort %1$s</string>
 
-    <string name="About_Us_Body"><![CDATA[<h2><a id="A_propos_0"></a>A propos</h2>
-<p>Cette application est un recueil des sorts du jeu de rôle Anima Beyond Fantasy. Il utilise le système de magie de Core Exxet, à savoir des sorts ayant quatre niveaux de puissances : initial, intermédiaire, avancé et arcane.</p>
-<p>L’objectif de l’application est de vous fournir un accès simplifié aux très nombreux sorts de ce jeu. Il vous permet ainsi de voir les sorts par voie, de créer vos propres listes de sorts et de rechercher un sort ou un type de sort dans une voie.</p>
-<p>Si vous ne connaissez pas le jeu, je vous conseille  d’y jeter un oeil, en vous rendant sur le site de Edge ou sur celui de votre vendeur préféré.</p>
-<h3><a id="Remerciements_8"></a>Remerciements</h3>
-<p>Un énorme merci à <strong><em>Nouvan</em></strong> du forum Edge pour ses maquettes de cartes de sorts, qui ont été en grande partie à l’origine de cette application. <a href="http://www.edgeent.com/sujet/11196-des_memo_cartes_de_sorts_et_de_capacites">Vous pouvez trouver son travail ici</a>.</p>
-<p>Merci à <strong><em>Alexsarge</em>, <em>Schmurtz</em>, <em>Moklo</em> et <em>Kayn</em></strong> du site <a href="http://projet.animajdr.free.fr/news.php">Anima Project</a> pour avoir compilé les sorts qui sont utilisés dans cette application.</p>
-<h3><a id="Licence_14"></a>Licence</h3>
-<p>Cette application est open-source, c’est-à-dire que le code est disponible pour tous et modifiable sur demande.</p>
-<p>L’illustration du fond d’écran appartient à <a href="http://cargocollective.com/luisnct#1293881/Anima-rpg">LuisNCT</a>.<br>
-L’illustration utilisé pour l’icône principale de l’application appartient à <a href="http://wen-m.deviantart.com/gallery/">Wen-M</a>.</p>
-<p>Aucun argent n’est perçu grâce à cette application : celle-ci est gratuite, sans publicité et sans utilisation des données personnelles. Elle est simplement faite par un passionné :).</p>
-<h3><a id="Contribuer_23"></a>Contribuer</h3>
-<p>Si vous avez envie de contribuer à l’amélioration de l’application, vous pouvez me contacter à cette adresse : <a href="mailto:enlightainement@gmail.com">enlightainement@gmail.com</a></p>
-<p>Voici plusieurs choses que vous pouvez faire pour aider l’application à évoluer :</p>
-<ul>
-<li>
-<p>Je cherche à traduire l’application en anglais, pour permettre à un maximum de joueurs d’Anima d’accéder à l’application. Pour cela, il me faut un document (pdf formaté, document word) avec l’ensemble des sorts traduits. Si vous possédez un document de ce genre et que vous pouvez me le transmettre je pourrai me débrouiller pour les intégrer dans l’application.</p>
-</li>
-<li>
-<p>De nombreux sorts ont des fautes d’orthographe ainsi que des coquilles. Vous pouvez m’aider à les corriger en sélectionnant l’option “Signaler une erreur” sur l’écran de visualisation des sorts.</p>
-</li>
-<li>
-<p>Des bugs peuvent toujours être présent dans l’application. Si vous en décelez un, n’hésitez pas à le signaler grâce à l’option “Signaler un bug” sur l’écran d’accueil.</p>
-</li>
-<li>
-<p>Enfin, n’hésitez pas à partager cette application à d’autres joueurs d’Anima et à laisser une note / un commentaire sur le Google Play si l’application vous plaît, ça fait toujours plaisir :).</p>
-</li>
-</ul>]]></string>
-
-
 </resources>
