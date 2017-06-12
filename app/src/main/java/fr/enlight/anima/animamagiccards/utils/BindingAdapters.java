@@ -6,10 +6,12 @@ import android.databinding.ViewDataBinding;
 import android.graphics.Typeface;
 import android.os.Handler;
 import android.support.annotation.DrawableRes;
+import android.support.annotation.StringRes;
 import android.support.constraint.ConstraintLayout;
 import android.support.constraint.ConstraintSet;
 import android.support.transition.TransitionManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -174,5 +176,11 @@ public class BindingAdapters {
                 recyclerView.scrollToPosition(scrollPosition);
             }
         }, 100);
+    }
+
+    @BindingAdapter("toHtml")
+    public static void setTextToHtml(TextView textView, @StringRes int value){
+        String strValue = textView.getContext().getString(value);
+        textView.setText(Html.fromHtml(strValue));
     }
 }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_about_us"
+        android:title="@string/About_Us"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_notify_bug"
+        android:title="@string/Notify_Bug"
+        app:showAsAction="never" />
+</menu>

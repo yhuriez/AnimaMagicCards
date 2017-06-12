@@ -40,6 +40,7 @@ import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.SpellStackViewModel
 import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.SpellViewModel;
 import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.quickaccess.SpellQuickAccessViewModel;
 import fr.enlight.anima.animamagiccards.utils.DeviceUtils;
+import fr.enlight.anima.animamagiccards.utils.IntentsUtils;
 import fr.enlight.anima.animamagiccards.utils.OnBackPressedListener;
 import fr.enlight.anima.animamagiccards.views.BindingDialogFragment;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
@@ -260,6 +261,8 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
 
             if (filterViewModel.filterPanelVisible.get()) {
                 inflater.inflate(R.menu.validate_filter_menu, menu);
+            } else {
+                inflater.inflate(R.menu.notify_error_menu, menu);
             }
         }
     }
@@ -287,6 +290,13 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
             }
             mListener.onSpellSelected(mLastSelectedSpell);
             return true;
+
+        } else if (item.getItemId() == R.id.action_notify_error){
+            if(mLastSelectedSpell != null){
+                startActivity(IntentsUtils.navigateToSendMisspellingMail(getActivity(), mLastSelectedSpell));
+            } else {
+                startActivity(IntentsUtils.navigateToSendMisspellingMail(getActivity()));
+            }
         }
 
         return super.onOptionsItemSelected(item);

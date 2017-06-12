@@ -7,4 +7,6 @@
     <string name="spell_title_font" translatable="false">anima_2</string>
     <string name="spellbook_title_font" translatable="false">anima_2</string>
 
+    <string name="Mail_TMA" translatable="false">yann.huriez@gmail.com</string>
+
 </resources>

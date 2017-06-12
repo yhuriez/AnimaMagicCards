@@ -39,6 +39,7 @@ dependencies {
     compile 'com.azoft.carousellayoutmanager:carousel:1.2.1'
     compile 'com.loopeer.library:cardstack:1.0.2'
     compile 'com.google.android:flexbox:0.1.3'
+    compile 'de.cketti.mailto:email-intent-builder:1.0.0'
 
     testCompile 'junit:junit:4.12'
 }
