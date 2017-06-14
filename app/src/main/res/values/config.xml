@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <bool name="orientation_blocked">true</bool>
+    <integer name="carousel_max_item">1</integer>
 </resources>

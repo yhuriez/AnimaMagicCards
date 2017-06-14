@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="textSize_technical">60sp</dimen>
+    <dimen name="textSize_technical">80sp</dimen>
     <dimen name="textSize_spell_title">46sp</dimen>
     <dimen name="textSize_spell_reduced_title">32sp</dimen>
 

@@ -130,11 +130,11 @@ public class SpellsLoader extends BaseLoader<List<Spell>> {
         SpellbookType typeFromBookId = SpellbookType.getTypeFromBookId(bookId);
         List<Spell> spellsForBook = spellBusinessService.getSpellsForBook(bookId);
         for (Spell spell : spellsForBook) {
-            spell.spellbookType = typeFromBookId;
-            result.add(spell);
             if (spell.level > levelMax) {
                 break;
             }
+            spell.spellbookType = typeFromBookId;
+            result.add(spell);
         }
         return result;
     }

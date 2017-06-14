@@ -38,8 +38,10 @@ public class QuickAccessFreeSpellsViewModel implements QuickAccessViewModel {
     }
 
     public void onItemClicked(){
-        selected.set(true);
-        mListener.onQuickAccessFreeSpell(this);
+        if(!selected.get()) {
+            selected.set(true);
+            mListener.onQuickAccessFreeSpell(this);
+        }
     }
 
     @Override

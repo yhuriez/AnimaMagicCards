@@ -58,6 +58,7 @@ public class HomePageFragment extends Fragment implements
     private final SparseArray<String> switchingTitlesIndex = new SparseArray<>();
     private final SparseArray<BookSubviewViewModel> switchingSubviewModelIndex = new SparseArray<>();
     private boolean mFirstLoad;
+    private int mLastElementIndex = -1;
 
     @Nullable
     @Override
@@ -81,7 +82,7 @@ public class HomePageFragment extends Fragment implements
 
         homePageViewModel = new HomePageViewModel();
         CarouselLayoutManager carouselLayoutManager = new CarouselLayoutManager(CarouselLayoutManager.HORIZONTAL, false);
-        carouselLayoutManager.setMaxVisibleItems(1);
+        carouselLayoutManager.setMaxVisibleItems(getResources().getInteger(R.integer.carousel_max_item));
         carouselLayoutManager.setPostLayoutListener(new CarouselZoomPostLayoutListener());
         carouselLayoutManager.addOnItemSelectionListener(this);
         homePageViewModel.setLayoutManager(carouselLayoutManager);
@@ -92,6 +93,7 @@ public class HomePageFragment extends Fragment implements
 
     @Override
     public void onCenterItemChanged(int index) {
+        mLastElementIndex = index;
         updateHomePageElements(index);
     }
 
@@ -193,6 +195,8 @@ public class HomePageFragment extends Fragment implements
         if(mFirstLoad){
             updateHomePageElements(0);
             mFirstLoad = false;
+        } else if(mLastElementIndex >= 0){
+            updateHomePageElements(mLastElementIndex);
         }
     }
 

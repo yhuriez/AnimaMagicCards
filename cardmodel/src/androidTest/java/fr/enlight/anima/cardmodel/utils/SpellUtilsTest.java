@@ -53,6 +53,23 @@ public class SpellUtilsTest {
     }
 
     @Test
+    public void should_have_right_set_of_levels_for_major_path_and_with_secondary_book_low_level(){
+        // Given
+        SpellbookType spellbookType = SpellbookType.LIGHT;
+
+        WitchspellsPath witchspellsPath = new WitchspellsPath();
+        witchspellsPath.secondaryPathBookId = 2;
+        witchspellsPath.pathLevel = 100;
+        witchspellsPath.freeAccessSpellsIds = new TreeMap<>();
+
+        // When
+        Map<Integer, Integer> levelMapping = SpellUtils.reevaluateFreeAccessMap(witchspellsPath, spellbookType);
+
+        // Then
+        assertEquals(0, levelMapping.size());
+    }
+
+    @Test
     public void should_have_right_set_of_levels_for_minor_path_and_no_secondary_book(){
         // Given
         SpellbookType spellbookType = SpellbookType.FIRE;

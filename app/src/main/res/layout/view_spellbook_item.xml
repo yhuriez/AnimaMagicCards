@@ -53,7 +53,7 @@
             app:layout_constraintVertical_chainStyle="spread"
             android:text="@{model.getTitle(context)}"
             app:customFont="@{@string/spellbook_title_font}"
-            android:textSize="32sp"
+            android:textSize="@dimen/textSize_spell_title"
             tools:text="Lumière" />
 
         <Space

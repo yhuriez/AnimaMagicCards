@@ -54,14 +54,14 @@ public class FreeAccessSpellLoader extends BaseLoader<Map<Integer, Spell>> {
     private List<Spell> getBookFromIdWithType(int bookId, int levelMax) {
         List<Spell> result = new ArrayList<>();
         SpellbookType typeFromBookId = SpellbookType.getTypeFromBookId(bookId);
-        for (Spell spell : spellBusinessService.getSpellsForBook(bookId)) {
-            spell.spellbookType = typeFromBookId;
-            result.add(spell);
-            if (spell.level >= levelMax) {
+        List<Spell> spellsForBook = spellBusinessService.getSpellsForBook(bookId);
+        for (Spell spell : spellsForBook) {
+            if (spell.level > levelMax) {
                 break;
             }
+            spell.spellbookType = typeFromBookId;
+            result.add(spell);
         }
         return result;
     }
-
 }

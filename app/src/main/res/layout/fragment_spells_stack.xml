@@ -59,11 +59,11 @@
             android:contentDescription="@string/Common_Loading_Message" />
 
         <TextView
-            android:layout_width="250dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="@dimen/spacing_xbig"
             android:text="@{model.messageMode ? @string/Spell_Empty_List_Message : @string/Common_Loading_Message}"
-            android:textSize="40sp"
+            android:textSize="@dimen/textSize_technical"
             android:gravity="center"
             app:customFont="@{@string/technical_font}"
             android:textColor="@{model.witchspellsMode ? @android:color/white : @android:color/black}"
