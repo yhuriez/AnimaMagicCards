@@ -101,7 +101,14 @@ public class WitchspellsPathViewModel implements BindableViewModel {
         if(mWitchspellsPath.freeAccessSpellsIds == null){
             return 0;
         }
-        return mWitchspellsPath.freeAccessSpellsIds.size();
+
+        int count = 0;
+        for (Integer spellId : mWitchspellsPath.freeAccessSpellsIds.values()) {
+            if(spellId >= 0){
+                count ++;
+            }
+        }
+        return count;
     }
 
     public void onPathClicked(){

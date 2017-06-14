@@ -81,7 +81,13 @@ public class SpellViewModel implements BindableViewModel, SpellGradeViewModel.Li
     }
 
     public CharSequence getActionType(Context context){
-        CharSequence actionTypeSpannable = new SpannableString(context.getText(R.string.spell_action_type_format) + " ");
+        SpannableString actionTypeSpannable = new SpannableString(context.getText(R.string.spell_action_type_format) + " ");
+        actionTypeSpannable.setSpan(
+                new StyleSpan(Typeface.BOLD),
+                0,
+                actionTypeSpannable.length(),
+                Spanned.SPAN_EXCLUSIVE_EXCLUSIVE
+        );
 
         SpannableString actionValue = new SpannableString(spell.actionType);
         if(spell.highlightActionType){
@@ -89,28 +95,41 @@ public class SpellViewModel implements BindableViewModel, SpellGradeViewModel.Li
                     new StyleSpan(Typeface.BOLD),
                     0,
                     actionValue.length(),
-                    Spanned.SPAN_INCLUSIVE_EXCLUSIVE
+                    Spanned.SPAN_EXCLUSIVE_EXCLUSIVE
             );
         }
-        return TextUtils.concat(actionTypeSpannable, " " + actionValue);
+        return TextUtils.concat(actionTypeSpannable, actionValue);
     }
 
     public CharSequence getType(Context context){
-        CharSequence actionTypeSpannable = new SpannableString(context.getText(R.string.spell_type_format) + " ");
+        SpannableString actionTypeSpannable = new SpannableString(context.getText(R.string.spell_type_format) + " ");
+        actionTypeSpannable.setSpan(
+                new StyleSpan(Typeface.BOLD),
+                0,
+                actionTypeSpannable.length(),
+                Spanned.SPAN_EXCLUSIVE_EXCLUSIVE
+        );
+
         SpannableString typeValue = new SpannableString(spell.type);
-        if(spell.highlightActionType){
+        if(spell.highlightType){
             typeValue.setSpan(
                     new StyleSpan(Typeface.BOLD),
                     0,
                     typeValue.length(),
-                    Spanned.SPAN_INCLUSIVE_EXCLUSIVE
+                    Spanned.SPAN_EXCLUSIVE_EXCLUSIVE
             );
         }
         return TextUtils.concat(actionTypeSpannable, typeValue);
     }
 
     public CharSequence getEffect(Context context){
-        CharSequence actionTypeSpannable = new SpannableString(context.getText(R.string.spell_effect_format) + " ");
+        SpannableString actionTypeSpannable = new SpannableString(context.getText(R.string.spell_effect_format) + " ");
+        actionTypeSpannable.setSpan(
+                new StyleSpan(Typeface.BOLD),
+                0,
+                actionTypeSpannable.length(),
+                Spanned.SPAN_EXCLUSIVE_EXCLUSIVE
+        );
 
         if(spell.effect.length() > 300){
             effectEllipsized.set(true);
