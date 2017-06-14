@@ -5,4 +5,9 @@
 
     <dimen name="spell_stack_header_height_normal">200dp</dimen>
     <dimen name="subview_panel_height">200dp</dimen>
+
+    <dimen name="main_path_frame_size">60dp</dimen>
+    <dimen name="main_path_symbol_size">40dp</dimen>
+    <dimen name="sub_path_frame_size">30dp</dimen>
+    <dimen name="sub_path_symbol_size">20dp</dimen>
 </resources>

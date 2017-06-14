@@ -30,4 +30,9 @@
 
     <dimen name="spell_card_max_width">450dp</dimen>
     <dimen name="subview_panel_height">150dp</dimen>
+
+    <dimen name="main_path_frame_size">40dp</dimen>
+    <dimen name="main_path_symbol_size">25dp</dimen>
+    <dimen name="sub_path_frame_size">20dp</dimen>
+    <dimen name="sub_path_symbol_size">12dp</dimen>
 </resources>

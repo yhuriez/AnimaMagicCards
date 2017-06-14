@@ -31,13 +31,13 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="@dimen/main_path_frame_size"
+                android:layout_height="@dimen/main_path_frame_size"
                 android:background="@drawable/spell_circle" />
 
             <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
+                android:layout_width="@dimen/main_path_symbol_size"
+                android:layout_height="@dimen/main_path_symbol_size"
                 android:layout_gravity="center"
                 android:layout_margin="@dimen/spacing_base"
                 android:src="@{model.mainPathIcon}"
@@ -46,8 +46,8 @@
 
         <FrameLayout
             android:id="@+id/free_access_icon"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="@dimen/sub_path_frame_size"
+            android:layout_height="@dimen/sub_path_frame_size"
             android:layout_marginEnd="@dimen/spacing_small"
             android:layout_marginRight="@dimen/spacing_small"
             android:background="@drawable/spell_circle_small"
@@ -56,8 +56,8 @@
             app:layout_constraintTop_toBottomOf="@+id/first_line_description">
 
             <ImageView
-                android:layout_width="12dp"
-                android:layout_height="12dp"
+                android:layout_width="@dimen/sub_path_symbol_size"
+                android:layout_height="@dimen/sub_path_symbol_size"
                 android:layout_gravity="center"
                 android:layout_margin="@dimen/spacing_base"
                 android:src="@drawable/card_icon_book_free_access" />
@@ -65,8 +65,8 @@
 
         <FrameLayout
             android:id="@+id/secondary_path_icon"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="@dimen/sub_path_frame_size"
+            android:layout_height="@dimen/sub_path_frame_size"
             android:layout_marginEnd="@dimen/spacing_small"
             android:layout_marginRight="@dimen/spacing_small"
             android:background="@drawable/spell_circle_small"
@@ -75,8 +75,8 @@
             app:setVisible="@{model.secondaryPathIcon != null}">
 
             <ImageView
-                android:layout_width="12dp"
-                android:layout_height="12dp"
+                android:layout_width="@dimen/sub_path_symbol_size"
+                android:layout_height="@dimen/sub_path_symbol_size"
                 android:layout_gravity="center"
                 android:layout_margin="@dimen/spacing_base"
                 android:src="@{model.secondaryPathIcon}"
@@ -87,12 +87,12 @@
             android:id="@+id/main_path_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/spacing_base"
-            android:layout_marginStart="@dimen/spacing_base"
+            android:layout_marginLeft="@dimen/spacing_small"
+            android:layout_marginStart="@dimen/spacing_small"
             android:layout_marginTop="@dimen/spacing_small"
             android:text="@{@string/Witchspells_Path_Title_And_Level_Format(model.mainPathTitle, model.pathLevel)}"
             android:textColor="@android:color/white"
-            android:textSize="@dimen/textSize_medium"
+            android:textSize="@dimen/textSize_regular"
             app:layout_constraintLeft_toRightOf="@id/main_path_icon"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Necromancie niv 20" />
@@ -109,11 +109,11 @@
             android:id="@+id/first_line_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/spacing_base"
-            android:layout_marginStart="@dimen/spacing_base"
+            android:layout_marginLeft="@dimen/spacing_small"
+            android:layout_marginStart="@dimen/spacing_small"
             android:text="@{model.secondaryPathTitle}"
             android:textColor="@android:color/white"
-            android:textSize="@dimen/textSize_regular"
+            android:textSize="@dimen/textSize_min"
             android:textStyle="italic"
             app:layout_constraintBottom_toBottomOf="@id/secondary_path_icon"
             app:layout_constraintLeft_toRightOf="@id/main_path_icon"
@@ -124,12 +124,12 @@
             android:id="@+id/second_line_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/spacing_base"
-            android:layout_marginStart="@dimen/spacing_base"
+            android:layout_marginLeft="@dimen/spacing_small"
+            android:layout_marginStart="@dimen/spacing_small"
             android:layout_marginTop="@dimen/spacing_small"
             android:text="@{@plurals/Witchspells_Free_Access_Count(model.freeAccessSpellsCount, model.freeAccessSpellsCount)}"
             android:textColor="@android:color/white"
-            android:textSize="@dimen/textSize_regular"
+            android:textSize="@dimen/textSize_min"
             android:textStyle="italic"
             setVisible="@{model.secondLineVisible}"
             app:layout_constraintBottom_toBottomOf="@id/free_access_icon"
