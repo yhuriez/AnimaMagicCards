@@ -18,7 +18,7 @@
         android:id="@+id/parent_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/witchspells_book_background">
+        android:background="@drawable/witchspells_book_background_path">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -58,6 +58,7 @@
                 android:id="@+id/recycler_view"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
+                app:layout_constraintWidth_max="500dp"
                 android:layout_marginBottom="@dimen/spacing_base"
                 android:layout_marginTop="@dimen/spacing_base"
                 app:layoutManager="@{model.layoutManager}"

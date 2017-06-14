@@ -12,16 +12,16 @@
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/home_book_height"
+        android:layout_height="match_parent"
         android:onClick="@{() -> model.onBookClicked()}">
 
         <ImageView
             android:id="@+id/witchspells_background"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/home_book_height"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:src="@drawable/witchspells_book_background"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintDimensionRatio="H,7:10"
+            app:layout_constraintDimensionRatio="7:10"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -41,7 +41,7 @@
             app:customFont="@{@string/spell_title_font}"
             app:layout_constraintLeft_toLeftOf="@id/witchspells_background"
             app:layout_constraintRight_toRightOf="@id/witchspells_background"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toTopOf="@id/witchspells_background"
             tools:text="Sorts de Célia" />
 
         <android.support.v7.widget.RecyclerView

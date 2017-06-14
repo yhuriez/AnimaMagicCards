@@ -93,8 +93,8 @@
 
         <Spinner
             android:id="@+id/path_level_spinner"
-            android:layout_width="50dp"
-            android:layout_height="35dp"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/spacing_large"
             android:layout_marginRight="@dimen/spacing_large"
             android:background="@drawable/rounded_white_rectangle"

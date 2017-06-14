@@ -11,70 +11,93 @@
     </data>
 
     <android.support.constraint.ConstraintLayout
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/home_book_height"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:gravity="center"
         android:onClick="@{() -> model.onSpellbookClicked()}"
         android:orientation="vertical">
 
-        <android.support.constraint.Guideline
-            android:id="@+id/bottom_guideline"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.8" />
-
-        <android.support.constraint.Guideline
-            android:id="@+id/left_guideline"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.30" />
-
-        <android.support.constraint.Guideline
-            android:id="@+id/right_guideline"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.70" />
-
         <ImageView
             android:id="@+id/spell_card_background"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:layout_marginLeft="@dimen/spacing_large"
             android:layout_marginRight="@dimen/spacing_large"
+            app:layout_constraintDimensionRatio="161:225"
             android:src="@drawable/card_verso"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
-        <ImageView
-            android:id="@+id/spellbook_icon"
-            android:layout_width="0dp"
+        <Space
+            android:id="@+id/top_space"
+            android:layout_width="wrap_content"
             android:layout_height="0dp"
-            android:src="@{model.getSpellbookIcon(context)}"
-            app:layout_constraintBottom_toBottomOf="@id/bottom_guideline"
-            app:layout_constraintDimensionRatio="H,1:1"
-            app:layout_constraintLeft_toLeftOf="@id/left_guideline"
-            app:layout_constraintRight_toRightOf="@id/right_guideline"
-            tools:src="@drawable/card_icon_book_light" />
+            app:layout_constraintVertical_weight="1"
+            app:layout_constraintTop_toTopOf="@id/spell_card_background"
+            app:layout_constraintBottom_toTopOf="@+id/spellbook_title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
 
         <TextView
             android:id="@+id/spellbook_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:gravity="center"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/top_space"
             app:layout_constraintBottom_toTopOf="@id/spellbook_icon"
             app:layout_constraintLeft_toLeftOf="@id/spell_card_background"
             app:layout_constraintRight_toRightOf="@id/spell_card_background"
-            app:layout_constraintVertical_bias="0.8"
             android:textColor="@android:color/black"
+            app:layout_constraintVertical_chainStyle="spread"
             android:text="@{model.getTitle(context)}"
             app:customFont="@{@string/spellbook_title_font}"
             android:textSize="32sp"
             tools:text="Lumière" />
+
+        <Space
+            android:id="@+id/left_space"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="@id/spell_card_background"
+            app:layout_constraintTop_toTopOf="@+id/spellbook_icon"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintRight_toLeftOf="@+id/spellbook_icon"
+            app:layout_constraintHorizontal_chainStyle="spread"/>
+
+        <ImageView
+            android:id="@+id/spellbook_icon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@{model.getSpellbookIcon(context)}"
+            android:layout_marginTop="@dimen/spacing_xlarge"
+            app:layout_constraintBottom_toTopOf="@id/bottom_space"
+            app:layout_constraintTop_toBottomOf="@id/spellbook_title"
+            app:layout_constraintHorizontal_weight="3"
+            app:layout_constraintVertical_weight="3"
+            app:layout_constraintLeft_toRightOf="@id/left_space"
+            app:layout_constraintRight_toLeftOf="@+id/right_space"
+            tools:src="@drawable/card_icon_book_light" />
+
+        <Space
+            android:id="@+id/right_space"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintRight_toRightOf="@id/spell_card_background"
+            app:layout_constraintTop_toTopOf="@+id/spellbook_icon"
+            app:layout_constraintLeft_toRightOf="@id/spellbook_icon"/>
+
+        <Space
+            android:id="@+id/bottom_space"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintVertical_weight="1"
+            app:layout_constraintTop_toBottomOf="@id/spellbook_icon"
+            app:layout_constraintBottom_toBottomOf="@id/spell_card_background"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
 
     </android.support.constraint.ConstraintLayout>
 </layout>

@@ -31,24 +31,11 @@
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.82" />
 
-        <android.support.constraint.Guideline
-            android:id="@+id/left_guideline"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.10" />
-
-        <android.support.constraint.Guideline
-            android:id="@+id/right_guideline"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.90" />
-
         <ImageView
             android:id="@+id/spell_effect_background"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            app:layout_constraintWidth_max="500dp"
             android:scaleType="fitXY"
             android:src="@drawable/card_spell_effect_scroll"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -59,9 +46,11 @@
         <ScrollView
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
             app:layout_constraintBottom_toBottomOf="@id/bottom_guideline"
-            app:layout_constraintLeft_toLeftOf="@id/left_guideline"
-            app:layout_constraintRight_toRightOf="@id/right_guideline"
+            app:layout_constraintLeft_toLeftOf="@id/spell_effect_background"
+            app:layout_constraintRight_toRightOf="@id/spell_effect_background"
             app:layout_constraintTop_toTopOf="@id/top_guideline">
 
             <TextView
@@ -81,8 +70,9 @@
             android:layout_height="wrap_content"
             android:onClick="@{() -> model.onDismissClicked()}"
             android:text="@string/Common_Close"
+            android:layout_marginRight="@dimen/spacing_xbig"
             app:customFont="@{@string/regular_bold_font}"
-            app:layout_constraintRight_toRightOf="@id/right_guideline"
+            app:layout_constraintRight_toRightOf="@id/spell_effect_background"
             app:layout_constraintTop_toBottomOf="@id/bottom_guideline" />
 
     </android.support.constraint.ConstraintLayout>

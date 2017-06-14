@@ -45,7 +45,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.25" />
+                app:layout_constraintGuide_percent="0.23" />
 
             <android.support.constraint.Guideline
                 android:id="@+id/center_guideline"
@@ -59,14 +59,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.10" />
+                app:layout_constraintGuide_percent="0.12" />
 
             <android.support.constraint.Guideline
                 android:id="@+id/right_guideline"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.90" />
+                app:layout_constraintGuide_percent="0.88" />
 
             <ImageView
                 android:id="@+id/spell_card_background"

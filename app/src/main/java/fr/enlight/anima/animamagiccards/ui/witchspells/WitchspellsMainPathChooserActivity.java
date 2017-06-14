@@ -101,6 +101,8 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
         mRecyclerViewModel.setLayoutManager(new LinearLayoutManager(this));
 
         mBinding.setListener(this);
+
+        getLoaderManager().initLoader(1, null, this);
     }
 
     @Override
@@ -121,7 +123,6 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
     protected void onStart() {
         super.onStart();
         WitchspellsBusinessService.addWitchspellsListener(this);
-        getLoaderManager().initLoader(1, null, this);
     }
 
     @Override
