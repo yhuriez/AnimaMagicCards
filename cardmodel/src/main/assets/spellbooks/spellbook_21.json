@@ -1,1 +1,363 @@
-{"bookId":21,"bookName":"Livre de la Connaissance","description":"Connaissance est, une voie secondaire primordiale qui domine le concept même du savoir. Les sorciers qui l'utilisent ont la maîtrise sur tout ce qui peut être appris.","primaryBookUnaccessibles":["Destruction","Feu","Terre","Illusion."],"spells":[{"spellId":1,"bookId":21,"name":"Catégoriser","level":4,"actionType":"Active","type":"Effet","effect":"Le lanceur du sort obtient des connaissances sur la nature d'une création et peut, par exemple, l'utiliser sur un plat cuisiné pour tenter de découvrir sa recette, ou sur un engin pour voir comment et de quoi il est fait. Il ne permet pas au lanceur de savoir comment recréer une telle chose, mais au moins il le guide sur les matériaux à chercher ou les éléments à utiliser. Si l'objet ciblé est particulièrement complexe, ou s'il possède une présence très élevée, il sera immunisé contre ce sort.","initialGrade":{"zeon":30,"requiredIntelligence":5,"effect":"Le lanceur sait dans quel champ d'étude l'objet se situe : cuisine, mécanique, forge... sans avoir plus d'informations.","retention":0},"intermediateGrade":{"zeon":60,"requiredIntelligence":7,"effect":"Il obtient des informations sur les matériaux qui composent l'objet, ainsi qu'une idée approximative du pourcentage de chacun d'entre eux dans la composition finale.","retention":0},"advancedGrade":{"zeon":90,"requiredIntelligence":9,"effect":"Il obtient une vague idée de comment l'objet fonctionne, mais pas à quoi il sert.","retention":0},"arcaneGrade":{"zeon":120,"requiredIntelligence":11,"effect":"Le lanceur obtient une vague idée de comment a été créé l'objet, mais pas suffisamment pour savoir comment le créer à nouveau.","retention":0},"withRetention":false,"dailyRetention":false},{"spellId":2,"bookId":21,"name":"Savoir","level":14,"actionType":"Active","type":"Effet","effect":"Accorde au lanceur un savoir inné dans une matière. Le sorcier obtient une valeur dans la compétence de connaissance qu'il souhaite, la substituant à celle qu'il avait déjà. Un personnage peut lancer plusieurs fois ce sort, mais à chaque fois il doit choisir un savoir différent.","initialGrade":{"zeon":40,"requiredIntelligence":6,"effect":"40 à une compétence.","retention":5},"intermediateGrade":{"zeon":80,"requiredIntelligence":9,"effect":"60 à une compétence.","retention":10},"advancedGrade":{"zeon":120,"requiredIntelligence":11,"effect":"80 à une compétence.","retention":15},"arcaneGrade":{"zeon":160,"requiredIntelligence":13,"effect":"100 à une compétence.","retention":20},"withRetention":true,"dailyRetention":false},{"spellId":3,"bookId":21,"name":"Connaissance des Faiblesses","level":24,"actionType":"Active","type":"Détection","effect":"Permet au sorcier de voir les imperfections et les faiblesses de quelque chose ou de quelqu'un. Lancé sur une créature, il permet de découvrir ses défauts et ses faiblesses, alors que si la cible est un objet, le sorcier saura s'il a une faiblesse particulière contre quelque chose et quel est son point de faille. La seule condition pour être affecté par ce sort est de se trouver en présence du lanceur, mais la cible peut résister à ses effets en réussissant une RMys.","initialGrade":{"zeon":60,"requiredIntelligence":7,"effect":"120 RMys.","retention":0},"intermediateGrade":{"zeon":100,"requiredIntelligence":9,"effect":"140 RMys.","retention":0},"advancedGrade":{"zeon":140,"requiredIntelligence":11,"effect":"160 RMys.","retention":0},"arcaneGrade":{"zeon":180,"requiredIntelligence":13,"effect":"180 RMys.","retention":0},"withRetention":false,"dailyRetention":false},{"spellId":4,"bookId":21,"name":"Savoir la Vérité","level":34,"actionType":"Active","type":"Détection","effect":"Le sorcier sait quand quelqu'un lui ment. Si une personne ment face au lanceur, elle doit réussir une RMys contre la difficulté déterminée par le Degré  du sort. Si elle échoue, le sorcier saura qu'elle a menti, mais pas exactement à propos de quoi.","initialGrade":{"zeon":80,"requiredIntelligence":7,"effect":"80 RMys.","retention":10},"intermediateGrade":{"zeon":120,"requiredIntelligence":9,"effect":"100 RMys.","retention":15},"advancedGrade":{"zeon":160,"requiredIntelligence":11,"effect":"120 RMys.","retention":20},"arcaneGrade":{"zeon":200,"requiredIntelligence":13,"effect":"140 RMys.","retention":20},"withRetention":true,"dailyRetention":true},{"spellId":5,"bookId":21,"name":"Savoir Magique","level":44,"actionType":"Active","type":"Effet","effect":"Le lanceur obtient les connaissances pour lancer un sort dans une voie .7É ne connaît pas, tant que ce sortilège n'est pas d'un niveau supérieur à indiquer par le Degré  du sort. Une fois que Savoir Magique a été exécuté, le sorcier a un maximum de 5 rounds pour utiliser le nouveau sortilège, sous d'en perdre la possibilité. Ce sort ne permet pas d'utiliser un sortilège une voie opposée à celle dont dépend cette voie secondaire.","initialGrade":{"zeon":100,"requiredIntelligence":8,"effect":"Un sort jusqu'au niveau 20.","retention":0},"intermediateGrade":{"zeon":150,"requiredIntelligence":10,"effect":"Un sort jusqu'au niveau 30.","retention":0},"advancedGrade":{"zeon":200,"requiredIntelligence":12,"effect":"Un sort jusqu'au niveau 40.","retention":0},"arcaneGrade":{"zeon":250,"requiredIntelligence":14,"effect":"Un sort jusqu'au niveau 50.","retention":0},"withRetention":false,"dailyRetention":false},{"spellId":6,"bookId":21,"name":"Connaissance du Combat","level":54,"actionType":"Active","type":"Automatique","effect":"Le sorcier perçoit et comprend les compétences d'un adversaire, ainsi sa tactique de combat et comment anticiper ses déplacements. Ainsi, si la cible ne réussit pas à surpasser la RMys déterminée par le sort, le lanceur obtient un bonus à toutes les compétences opposées à cet ennemi. Pour être affecté par ce sortilège, il suffit d'être en présence du sorcier.","initialGrade":{"zeon":80,"requiredIntelligence":7,"effect":"140 RMys / +20 à toute action opposée.","retention":5},"intermediateGrade":{"zeon":120,"requiredIntelligence":9,"effect":"160 RMys / +30 à toute action opposée.","retention":10},"advancedGrade":{"zeon":160,"requiredIntelligence":11,"effect":"180 RMys / +30 à toute action opposée.","retention":20},"arcaneGrade":{"zeon":200,"requiredIntelligence":13,"effect":"200 RMys / +40 à toute action opposée.","retention":20},"withRetention":true,"dailyRetention":false},{"spellId":7,"bookId":21,"name":"Apprentissage","level":64,"actionType":"Active","type":"Effet","effect":"La cible du sort améliore sa capacité à apprendre de nouvelles choses à des niveaux impossibles, diminuant le temps d'études ou de pratique pour maîtriser la connaissance qu'elle souhaite acquérir. Elle pourra par exemple apprendre un sortilège en baissant d'un niveau sa complexité d'apprentissage.","initialGrade":{"zeon":100,"requiredIntelligence":8,"effect":"Diminue d'un niveau les difficultés d'apprentissage.","retention":10},"intermediateGrade":{"zeon":150,"requiredIntelligence":10,"effect":"Diminue de deux niveaux les difficultés d'apprentissage.","retention":20},"advancedGrade":{"zeon":200,"requiredIntelligence":12,"effect":"Diminue de trois niveaux les difficultés d'apprentissage.","retention":30},"arcaneGrade":{"zeon":250,"requiredIntelligence":14,"effect":"Diminue de quatre niveaux les difficultés d'apprentissage.","retention":40},"withRetention":true,"dailyRetention":true},{"spellId":8,"bookId":21,"name":"Conseiller","level":74,"actionType":"Active","type":"Effet","effect":"Comme son nom l'indique, ce sort conseille judicieusement le lanceur quant à un questionnement ou un doute. Le sort ne devine rien et n'a pas un savoir supérieur à celui que possède le lanceur, mais en utilisant ses connaissances comme une Initial il conseillera le lanceur du mieux qu'il peut, ce qui peut prendre plusieurs rounds et nécessiter un maintien.","initialGrade":{"zeon":60,"requiredIntelligence":6,"effect":"Le lanceur obtient un conseil approximatif sur la meilleure décision à prendre. L'indice de certitude est élevé, mais c'est loin d'être une prédiction parfaite.","retention":5},"intermediateGrade":{"zeon":100,"requiredIntelligence":9,"effect":"Le conseiller montre l'éventail de possibilités et les éventuelles conséquences de ces événements ainsi que celle qui est la plus susceptible de se produire.","retention":10},"advancedGrade":{"zeon":140,"requiredIntelligence":11,"effect":"Le lanceur obtient un conseil très judicieux à propos des décisions qu'il doit prendre ou de ce qu'il doit faire. L'indice de certitude est très élevé.","retention":15},"arcaneGrade":{"zeon":200,"requiredIntelligence":13,"effect":"Le lanceur obtient un conseil détaillé avec toutes les possibilités et possibles conséquences de ses actes, ainsi qu'un pourcentage approximatif des probabilités d'occurrence de chacune d'entre elles.","retention":20},"withRetention":true,"dailyRetention":false},{"spellId":9,"bookId":21,"name":"Accorder des Connaissances","level":84,"actionType":"Active","type":"Animique","effect":"Permet de transférer des connaissances d'un individu à un autre. Par exemple, il pourra faire en sorte qu'une personne perde ses connaissances sur l'archéologie ou les rituels occultes pour les accorder à un autre individu tant que durera le sortilège. En termes de jeu, Accorder des Connaissances permet de transmettre une compétence intellectuelle dont la valeur ne dépasse pas la valeur indiquée par le Degré  du sort. Il faut noter que le lanceur peut choisir s'il transfère toutes les informations pertinentes ou seulement un thème en particulier. Cette compétence permet également d'envoyer des informations ayant trait à la connaissance de sorts, dans une proportion maximale équivalente à la valeur déterminée par le Degré  du sortilège. Dans ce cas, si le lanceur transfère, par exemple, 40 Niveaux de Magie de Lumière à un individu qui a cette voie à 70, la personne affectée perdra la capacité de lancer les sorts des niveaux 2 à 40, mais pourra continuer à lancer ceux des niveaux 42 à 70. Il est important de garder à l'esprit que ce sort n'accorde pas le Don mystique, donc si l'on transfère des sorts à une personne qui n'a pas cet avantage","initialGrade":{"zeon":100,"requiredIntelligence":8,"effect":"120 RMys / Compétence intellectuelle jusqu'à une valeur de 50 ou 20 Niveaux de Magie","retention":5},"intermediateGrade":{"zeon":150,"requiredIntelligence":10,"effect":"140 RMys / Compétence intellectuelle jusqu'à une valeur de 100 ou 40 Niveaux de Magie.","retention":10},"advancedGrade":{"zeon":200,"requiredIntelligence":12,"effect":"160 RMys / Compétence intellectuelle jusqu'à une valeur de 150 ou 60 Niveaux de Magie.","retention":15},"arcaneGrade":{"zeon":250,"requiredIntelligence":14,"effect":"180 RMys / Compétence intellectuelle jusqu'à une valeur de 200 ou 80 Niveaux de Magie.","retention":20},"withRetention":true,"dailyRetention":true},{"spellId":10,"bookId":21,"name":"Vie","level":94,"actionType":"Active","type":"Effet","effect":"Ce sort accorde temporairement des expériences vitales au personnage, lui permettant d'augmenter en un instant ses compétences et son savoir. En termes de jeu ce sortilège accorde des niveaux supplémentaires au lanceur, lui donnant momentanément la capacité d'utiliser les PF obtenus pour s'améliorer de façon tout à fait normale. Les effets de ce sort ne se superposent pas, et le sorcier ne peut bénéficier que d'un sort de Vie à la fois.","initialGrade":{"zeon":400,"requiredIntelligence":10,"effect":"+1 niveau.","retention":40},"intermediateGrade":{"zeon":600,"requiredIntelligence":12,"effect":"+2 niveaux.","retention":60},"advancedGrade":{"zeon":800,"requiredIntelligence":14,"effect":"+3 niveaux.","retention":80},"arcaneGrade":{"zeon":1000,"requiredIntelligence":16,"effect":"+4 niveaux.","retention":100},"withRetention":true,"dailyRetention":false}]}
+{
+  "bookId": 21,
+  "bookName": "Livre de la Connaissance",
+  "description": "Connaissance est, une voie secondaire primordiale qui domine le concept même du savoir. Les sorciers qui l'utilisent ont la maîtrise sur tout ce qui peut être appris.",
+  "primaryBookUnaccessibles": [
+    "Destruction",
+    "Feu",
+    "Terre",
+    "Illusion."
+  ],
+  "spells": [
+    {
+      "spellId": 1,
+      "bookId": 21,
+      "name": "Catégoriser",
+      "level": 4,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Le lanceur du sort obtient des connaissances sur la nature d'une création et peut, par exemple, l'utiliser sur un plat cuisiné pour tenter de découvrir sa recette, ou sur un engin pour voir comment et de quoi il est fait. Il ne permet pas au lanceur de savoir comment recréer une telle chose, mais au moins il le guide sur les matériaux à chercher ou les éléments à utiliser. Si l'objet ciblé est particulièrement complexe, ou s'il possède une présence très élevée, il sera immunisé contre ce sort.",
+      "initialGrade": {
+        "zeon": 30,
+        "requiredIntelligence": 5,
+        "effect": "Le lanceur sait dans quel champ d'étude l'objet se situe : cuisine, mécanique, forge... sans avoir plus d'informations.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 7,
+        "effect": "Il obtient des informations sur les matériaux qui composent l'objet, ainsi qu'une idée approximative du pourcentage de chacun d'entre eux dans la composition finale.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": "Il obtient une vague idée de comment l'objet fonctionne, mais pas à quoi il sert.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 11,
+        "effect": "Le lanceur obtient une vague idée de comment a été créé l'objet, mais pas suffisamment pour savoir comment le créer à nouveau.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 2,
+      "bookId": 21,
+      "name": "Savoir",
+      "level": 14,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Accorde au lanceur un savoir inné dans une matière. Le sorcier obtient une valeur dans la compétence de connaissance qu'il souhaite, la substituant à celle qu'il avait déjà. Un personnage peut lancer plusieurs fois ce sort, mais à chaque fois il doit choisir un savoir différent.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 6,
+        "effect": "40 à une compétence.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 9,
+        "effect": "60 à une compétence.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 11,
+        "effect": "80 à une compétence.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 13,
+        "effect": "100 à une compétence.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 3,
+      "bookId": 21,
+      "name": "Connaissance des Faiblesses",
+      "level": 24,
+      "actionType": "Active",
+      "type": "Détection",
+      "effect": "Permet au sorcier de voir les imperfections et les faiblesses de quelque chose ou de quelqu'un. Lancé sur une créature, il permet de découvrir ses défauts et ses faiblesses, alors que si la cible est un objet, le sorcier saura s'il a une faiblesse particulière contre quelque chose et quel est son point de faille. La seule condition pour être affecté par ce sort est de se trouver en présence du lanceur, mais la cible peut résister à ses effets en réussissant une RMys.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 7,
+        "effect": "120 RMys.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": "140 RMys.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 11,
+        "effect": "160 RMys.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 13,
+        "effect": "180 RMys.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 4,
+      "bookId": 21,
+      "name": "Savoir la Vérité",
+      "level": 34,
+      "actionType": "Active",
+      "type": "Détection",
+      "effect": "Le sorcier sait quand quelqu'un lui ment. Si une personne ment face au lanceur, elle doit réussir une RMys contre la difficulté déterminée par le Degré  du sort. Si elle échoue, le sorcier saura qu'elle a menti, mais pas exactement à propos de quoi.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 7,
+        "effect": "80 RMys.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 9,
+        "effect": "100 RMys.",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 11,
+        "effect": "120 RMys.",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 13,
+        "effect": "140 RMys.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 5,
+      "bookId": 21,
+      "name": "Savoir Magique",
+      "level": 44,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Le lanceur obtient les connaissances pour lancer un sort dans une voie .7É ne connaît pas, tant que ce sortilège n'est pas d'un niveau supérieur à indiquer par le Degré  du sort. Une fois que Savoir Magique a été exécuté, le sorcier a un maximum de 5 rounds pour utiliser le nouveau sortilège, sous d'en perdre la possibilité. Ce sort ne permet pas d'utiliser un sortilège une voie opposée à celle dont dépend cette voie secondaire.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 8,
+        "effect": "Un sort jusqu'au niveau 20.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 10,
+        "effect": "Un sort jusqu'au niveau 30.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": "Un sort jusqu'au niveau 40.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 14,
+        "effect": "Un sort jusqu'au niveau 50.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 6,
+      "bookId": 21,
+      "name": "Connaissance du Combat",
+      "level": 54,
+      "actionType": "Active",
+      "type": "Automatique",
+      "effect": "Le sorcier perçoit et comprend les compétences d'un adversaire, ainsi sa tactique de combat et comment anticiper ses déplacements. Ainsi, si la cible ne réussit pas à surpasser la RMys déterminée par le sort, le lanceur obtient un bonus à toutes les compétences opposées à cet ennemi. Pour être affecté par ce sortilège, il suffit d'être en présence du sorcier.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 7,
+        "effect": "140 RMys / +20 à toute action opposée.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 9,
+        "effect": "160 RMys / +30 à toute action opposée.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 11,
+        "effect": "180 RMys / +30 à toute action opposée.",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 13,
+        "effect": "200 RMys / +40 à toute action opposée.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 7,
+      "bookId": 21,
+      "name": "Apprentissage",
+      "level": 64,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "La cible du sort améliore sa capacité à apprendre de nouvelles choses à des niveaux impossibles, diminuant le temps d'études ou de pratique pour maîtriser la connaissance qu'elle souhaite acquérir. Elle pourra par exemple apprendre un sortilège en baissant d'un niveau sa complexité d'apprentissage.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 8,
+        "effect": "Diminue d'un niveau les difficultés d'apprentissage.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 10,
+        "effect": "Diminue de deux niveaux les difficultés d'apprentissage.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": "Diminue de trois niveaux les difficultés d'apprentissage.",
+        "retention": 30
+      },
+      "arcaneGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 14,
+        "effect": "Diminue de quatre niveaux les difficultés d'apprentissage.",
+        "retention": 40
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 8,
+      "bookId": 21,
+      "name": "Conseiller",
+      "level": 74,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Comme son nom l'indique, ce sort conseille judicieusement le lanceur quant à un questionnement ou un doute. Le sort ne devine rien et n'a pas un savoir supérieur à celui que possède le lanceur, mais en utilisant ses connaissances comme une Initial il conseillera le lanceur du mieux qu'il peut, ce qui peut prendre plusieurs rounds et nécessiter un maintien.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": "Le lanceur obtient un conseil approximatif sur la meilleure décision à prendre. L'indice de certitude est élevé, mais c'est loin d'être une prédiction parfaite.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": "Le conseiller montre l'éventail de possibilités et les éventuelles conséquences de ces événements ainsi que celle qui est la plus susceptible de se produire.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 11,
+        "effect": "Le lanceur obtient un conseil très judicieux à propos des décisions qu'il doit prendre ou de ce qu'il doit faire. L'indice de certitude est très élevé.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 13,
+        "effect": "Le lanceur obtient un conseil détaillé avec toutes les possibilités et possibles conséquences de ses actes, ainsi qu'un pourcentage approximatif des probabilités d'occurrence de chacune d'entre elles.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 9,
+      "bookId": 21,
+      "name": "Accorder des Connaissances",
+      "level": 84,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Permet de transférer des connaissances d'un individu à un autre. Par exemple, il pourra faire en sorte qu'une personne perde ses connaissances sur l'archéologie ou les rituels occultes pour les accorder à un autre individu tant que durera le sortilège. En termes de jeu, Accorder des Connaissances permet de transmettre une compétence intellectuelle dont la valeur ne dépasse pas la valeur indiquée par le Degré  du sort. Il faut noter que le lanceur peut choisir s'il transfère toutes les informations pertinentes ou seulement un thème en particulier. Cette compétence permet également d'envoyer des informations ayant trait à la connaissance de sorts, dans une proportion maximale équivalente à la valeur déterminée par le Degré  du sortilège. Dans ce cas, si le lanceur transfère, par exemple, 40 Niveaux de Magie de Lumière à un individu qui a cette voie à 70, la personne affectée perdra la capacité de lancer les sorts des niveaux 2 à 40, mais pourra continuer à lancer ceux des niveaux 42 à 70. Il est important de garder à l'esprit que ce sort n'accorde pas le Don mystique, donc si l'on transfère des sorts à une personne qui n'a pas cet avantage",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 8,
+        "effect": "120 RMys / Compétence intellectuelle jusqu'à une valeur de 50 ou 20 Niveaux de Magie",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 10,
+        "effect": "140 RMys / Compétence intellectuelle jusqu'à une valeur de 100 ou 40 Niveaux de Magie.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": "160 RMys / Compétence intellectuelle jusqu'à une valeur de 150 ou 60 Niveaux de Magie.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 14,
+        "effect": "180 RMys / Compétence intellectuelle jusqu'à une valeur de 200 ou 80 Niveaux de Magie.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 10,
+      "bookId": 21,
+      "name": "Vie",
+      "level": 94,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort accorde temporairement des expériences vitales au personnage, lui permettant d'augmenter en un instant ses compétences et son savoir. En termes de jeu ce sortilège accorde des niveaux supplémentaires au lanceur, lui donnant momentanément la capacité d'utiliser les PF obtenus pour s'améliorer de façon tout à fait normale. Les effets de ce sort ne se superposent pas, et le sorcier ne peut bénéficier que d'un sort de Vie à la fois.",
+      "initialGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 10,
+        "effect": "+1 niveau.",
+        "retention": 40
+      },
+      "intermediateGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 12,
+        "effect": "+2 niveaux.",
+        "retention": 60
+      },
+      "advancedGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 14,
+        "effect": "+3 niveaux.",
+        "retention": 80
+      },
+      "arcaneGrade": {
+        "zeon": 1000,
+        "requiredIntelligence": 16,
+        "effect": "+4 niveaux.",
+        "retention": 100
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    }
+  ]
+}

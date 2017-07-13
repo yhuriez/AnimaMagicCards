@@ -1,1 +1,365 @@
-{"bookId":26,"bookName":"Livre du Vide","description":"Vide est la voie secondaire qui contrôle les énergies du néant, l'absence totale de toute matière physique ou spirituelle.","primaryBookUnaccessibles":["Lumière","Création","Feu","Terre","Essence","Illusion."],"spells":[{"spellId":1,"bookId":26,"name":"L'Ombre du Vide","level":4,"actionType":"Active","type":"Animique","effect":"Amène dans l'existence un fragment de vide, une simple ombre du néant primordial qui pendant quelques instants absorbe en partie la lumière, réduit la quantité d'oxygène de la zone et aspire l'énergie vitale qui l'entoure. Tout ce qui se trouve dans la zone affectée par ce sort doit réussir un test de RMys ou perdre un point de Fatigue pour les êtres vivants et deux intensités pour les énergies, ce qui revient à 10 Points de Vie pour les élémentaires. Degré  Initial Intermédiaire Avancé Arcane Zéon 30 60 90 120 Int. R. 5 8 11 14 Initial: 80 RMys / Zone de 5 m de large. Intermédiaire : 100 RMys / Zone de 10 m de large. Avancé : 120 RMys / Zone de 15 m de large. Arcane : 150 RMys / Zone de 30 m de large. Maintien : Non Type de sort : Animique","initialGrade":{"zeon":30,"requiredIntelligence":5,"effect":"80 RMys / Zone de 5 m de large.","retention":0},"intermediateGrade":{"zeon":60,"requiredIntelligence":8,"effect":"100 RMys / Zone de 10 m de large.","retention":0},"advancedGrade":{"zeon":90,"requiredIntelligence":11,"effect":"120 RMys / Zone de 15 m de large.","retention":0},"arcaneGrade":{"zeon":120,"requiredIntelligence":14,"effect":"150 RMys / Zone de 30 m de large.","retention":0},"withRetention":false,"dailyRetention":false},{"spellId":2,"bookId":26,"name":"Vague de Vide","level":14,"actionType":"Active","type":"Attaque","effect":"Ce sort envoie une légère onde de vide capable de déstructurer les fibres surnaturelles de n'importe quelle protection. Ce sort ne provoque pas en soi de dégâts à ses adversaires, mais dirigé contre un bouclier surnaturel, il entraîne sa désagrégation. La Vague de Vide est invisible à l'œil humain, sauf pour ceux capables de voir la magie.","initialGrade":{"zeon":30,"requiredIntelligence":6,"effect":"Dégâts 120 contre les boucliers.","retention":0},"intermediateGrade":{"zeon":60,"requiredIntelligence":9,"effect":"Dégâts 250 contre les boucliers.","retention":0},"advancedGrade":{"zeon":90,"requiredIntelligence":12,"effect":"Dégâts 400 contre les boucliers.","retention":0},"arcaneGrade":{"zeon":120,"requiredIntelligence":15,"effect":"Dégâts 600 contre les boucliers.","retention":0},"withRetention":false,"dailyRetention":false},{"spellId":3,"bookId":26,"name":"Bouclier de Vide","level":24,"actionType":"Passive","type":"Défense","effect":"Crée une barrière de particules de vide qui absorbent et anéantissent les attaques qu'elle subit. Outre le fait qu'il résiste comme un bouclier conventionnel, tout pouvoir surnaturel qu'il arrête sera automatiquement annulé si l'attaquant ne réussit pas un test de Volonté ou de Pouvoir contre la difficulté déterminée par le Degré  du sort. C'est-à-dire que si un adversaire lance un sortilège offensif ou animique contre un mage qui se protège derrière un Bouclier de Vide au Degré  Intermédiaire, et que ce dernier obtient une défense avec succès, l'attaquant devra réussir un test de Volonté ou de Pouvoir contre 16, sinon son attaque sera annulé sans faire le moindre dégât au bouclier. De la même façon, tout objet physique que le bouclier réussi à parer doit réussir une RPhy contre la difficulté déterminée par le bouclier ou être détruit immédiatement.","initialGrade":{"zeon":50,"requiredIntelligence":6,"effect":"200 points de vie / Difficulté 14 / 100 RPhy.","retention":15},"intermediateGrade":{"zeon":90,"requiredIntelligence":9,"effect":"300 points de vie / Difficulté 16/ 120 RPhy.","retention":20},"advancedGrade":{"zeon":120,"requiredIntelligence":12,"effect":"400 points de vie / Difficulté 18 / 140 RPhy.","retention":25},"arcaneGrade":{"zeon":150,"requiredIntelligence":15,"effect":"500 points de vie / Difficulté 20/ 160 RPhy.","retention":30},"withRetention":true,"dailyRetention":false},{"spellId":4,"bookId":26,"name":"Vortex de Réalité","level":34,"actionType":"Active","type":"Automatique","effect":"Crée une zone remplie de millions de microscopiques particules de vide. Tout individu se trouvant à l'intérieur pendant plus d'un round doit réussir automatiquement un test de RMys à chaque round, ou subir des dégâts et une perte de points de Ki équivalents à la moitié de la marge d'échec, ainsi qu'une perte de points de Zéon équivalents à la marge d'échec. Ce sort ne permet pas de choisir de cibles, il affecte tout le monde de la même façon y compris le lanceur lui-même.","initialGrade":{"zeon":80,"requiredIntelligence":7,"effect":"100 RMys / 5 m de rayon.","retention":5},"intermediateGrade":{"zeon":120,"requiredIntelligence":10,"effect":"120 RMys / 10 m de rayon.","retention":10},"advancedGrade":{"zeon":180,"requiredIntelligence":13,"effect":"140 RMys / 20 m de rayon.","retention":15},"arcaneGrade":{"zeon":240,"requiredIntelligence":15,"effect":"160 RMys / 40 m de rayon.","retention":20},"withRetention":true,"dailyRetention":false},{"spellId":5,"bookId":26,"name":"Lame Noire de Perdition","level":44,"actionType":"Active","type":"Attaque","effect":"Invoque le vide à l'état le plus pur, donnant forme à une lame de pouvoir crépitante qui se manifeste entre les mains du sorcier. L'arme est de taille grande (G), a la même initiative que le lancer d'un sort, peut être utilisée par le sorcier pour parer ou attaquer sur le mode Tranchant avec la Projection magique ou la compétence de corps-à-corps du lanceur, ne peut être brisée ni briser d'autre arme en combattant, et elle ignore complètement tout Indice de Protection. Le sorcier peut maintenir la lame active pour faire de nouvelles attaques au cours des rounds suivants, mais à chaque round il doit réussir un test de Volonté contre une difficulté de 12 ou perdre le contrôle de l'épée et du sort. Chaque fois qu'il arrive à réussir le test il augmente d'un point sa difficulté pour le test du round suivant. S'il échoue, l'épée se retourne contre le sorcier, l'attaquant avec sa propre compétence entière +50.","initialGrade":{"zeon":100,"requiredIntelligence":6,"effect":"Dégâts 80.","retention":5},"intermediateGrade":{"zeon":150,"requiredIntelligence":9,"effect":"Dégâts 120.","retention":10},"advancedGrade":{"zeon":200,"requiredIntelligence":12,"effect":"Dégâts 160.","retention":10},"arcaneGrade":{"zeon":250,"requiredIntelligence":15,"effect":"Dégâts 200.","retention":15},"withRetention":true,"dailyRetention":false},{"spellId":6,"bookId":26,"name":"Aura de Vide","level":54,"actionType":"Active","type":"Effet","effect":"Recouvre le sorcier d'une aura de vide qui le protège des effets des attaques surnaturelles, lui accordant une IP contre le Mode Énergie chaque fois qu'elle dévore un sort ou un pouvoir psychique d'une valeur inférieure à celle indiquée, laquelle perdure pendant toute la durée du sort et se cumule aux précédentes selon les règles habituelles pour les sorts procurant un Indice de Protection. Malheureusement, ce sort ne fait pas la différence entre les pouvoirs amis et ennemis, et les dévore tous sans distinction. La couche de vide est invisible, mais tout ce qui entoure le sorcier semble plus ténu et éteint.","initialGrade":{"zeon":120,"requiredIntelligence":6,"effect":"IP 4 / Valeur en Zéon de 60 / Talent psychique de 80.","retention":15},"intermediateGrade":{"zeon":180,"requiredIntelligence":9,"effect":"IP 6 / Valeur en Zéon de 90/ Talent psychique de 120.","retention":20},"advancedGrade":{"zeon":240,"requiredIntelligence":12,"effect":"IP 8 / Valeur en Zéon de 120 / Talent psychique de 140.","retention":25},"arcaneGrade":{"zeon":350,"requiredIntelligence":15,"effect":"IP 10 / Valeur en Zéon de 160 / Talent psychique de 180","retention":35},"withRetention":true,"dailyRetention":true},{"spellId":7,"bookId":26,"name":"Points Noirs","level":64,"actionType":"Active","type":"Automatique","effect":"Crée une zone autour du sorcier remplie de vortex existentiels et de trous de vide qui se déplacent d'un côté à l'autre de façon chaotique. Toute personne entrant dans cette zone, à l'exception du sorcier, doit réussir à chaque round un test d'Athlétisme, d'Acrobaties ou de Défense (une parade incapable d'affecter l'énergie est inefficace) contre une difficulté déterminée par le Degré  du sort, sous peine de heurter un des Points Noirs. Dans ce cas, le personnage doit réussir un test de RPhy ou de RMys contre la difficulté déterminée par le sort ou subir des dégâts et une perte de points de Ki équivalents à la moitié de ta marge d'échec, ainsi qu'une perte de Zéon équivalente à la marge d'échec. Il n’est pas possible de désigner de cibles à l'intérieur du sortilège.","initialGrade":{"zeon":150,"requiredIntelligence":8,"effect":"Difficulté de 120 / 10 m de rayon / 120 RMys ou RPhy.","retention":15},"intermediateGrade":{"zeon":250,"requiredIntelligence":10,"effect":"Difficulté de 140 / 20 m de rayon / 140 RMys ou RPhy.","retention":25},"advancedGrade":{"zeon":350,"requiredIntelligence":12,"effect":"Difficulté de 180 / 50 m de rayon / 160 RMys ou RPhy.","retention":35},"arcaneGrade":{"zeon":500,"requiredIntelligence":15,"effect":"Difficulté de 240 / 100 m de rayon / 180 RMys ou RPhy.","retention":50},"withRetention":true,"dailyRetention":false},{"spellId":8,"bookId":26,"name":"Protection contre le Vide","level":74,"actionType":"Active","type":"Effet","effect":"Recouvre le sorcier d'une énergie surnaturelle qui repousse les effets du vide. Tout sort ou pouvoir en relation avec le néant n'a aucun effet sur lui, ni ne peut lui infliger de dégâts.","initialGrade":{"zeon":140,"requiredIntelligence":10,"effect":"Protège contre les sorts de cette voie secondaire à l'exception de la Porte sur Nulle Part.","retention":15},"intermediateGrade":{"zeon":200,"requiredIntelligence":12,"effect":"Comme pour le Degré  Initial sans son exception, mais personnage est également immunisé contre les effets et les attaques de créatures basées sur le vide, comme les Etrien Gnosos.","retention":20},"advancedGrade":{"zeon":280,"requiredIntelligence":14,"effect":"Le personnage est immunisé contre tout effet en relation avec le vide, sauf le néant primordial.","retention":30},"arcaneGrade":{"zeon":400,"requiredIntelligence":16,"effect":"Comme pour le Degré  Avancé, mais le personnage est capable de survivre même au néant primordial.","retention":40},"withRetention":true,"dailyRetention":false},{"spellId":9,"bookId":26,"name":"Implosion","level":84,"actionType":"Active","type":"Attaque","effect":"Ce sort terrorisant crée un point de vide à l'intérieur de quelque chose, attirant toute sa masse vers l'intérieur et provoquant une implosion de sa structure et sa disparition complète. Comme il absorbe la chair","initialGrade":{"zeon":250,"requiredIntelligence":14,"effect":"200 points de dégâts / Niveau de critique +20.","retention":0},"intermediateGrade":{"zeon":500,"requiredIntelligence":16,"effect":"400 points de dégâts / Niveau de critique +40.","retention":0},"advancedGrade":{"zeon":750,"requiredIntelligence":18,"effect":"600 points de dégâts / Niveau de critique +60.","retention":0},"arcaneGrade":{"zeon":1000,"requiredIntelligence":20,"effect":"800 points de dégâts / Niveau de critique +100.","retention":0},"withRetention":false,"dailyRetention":false},{"spellId":10,"bookId":26,"name":"Porte sur Nulle Part","level":94,"actionType":"Passive","type":"Effet","effect":"Ouvre un portail à sens unique vers le vide le plus absolu, le néant primitif qui dévorera un jour l'univers. Tout ce qui passe la porte cesse d'exister automatiquement, sans qu'aucun test de Résistance ne soit possible. Seuls les êtres possédant une Gnose de 35 ou plus, les objets d'une présence équivalente ou les individus protégés par quelque moyen que ce soit contre le Vide peuvent y survivre, mais ils perdent un point par minute à leur caractéristique de Pouvoir, qu'ils récupèrent au rythme d'un par jour. Naturellement, quelque chose qui reste à l'intérieur est virtuellement immunisé contre tout type d'attaque car celles-ci ne peuvent l'atteindre. Les dimensions du portail sont déterminées par le Degré du sort.","initialGrade":{"zeon":300,"requiredIntelligence":11,"effect":"2 m de diamètre.","retention":30},"intermediateGrade":{"zeon":500,"requiredIntelligence":13,"effect":"5 m de diamètre.","retention":50},"advancedGrade":{"zeon":800,"requiredIntelligence":15,"effect":"15 m de diamètre.","retention":80},"arcaneGrade":{"zeon":1200,"requiredIntelligence":18,"effect":"50 m de diamètre.","retention":120},"withRetention":true,"dailyRetention":false}]}
+{
+  "bookId": 26,
+  "bookName": "Livre du Vide",
+  "description": "Vide est la voie secondaire qui contrôle les énergies du néant, l'absence totale de toute matière physique ou spirituelle.",
+  "primaryBookUnaccessibles": [
+    "Lumière",
+    "Création",
+    "Feu",
+    "Terre",
+    "Essence",
+    "Illusion."
+  ],
+  "spells": [
+    {
+      "spellId": 1,
+      "bookId": 26,
+      "name": "L'Ombre du Vide",
+      "level": 4,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Amène dans l'existence un fragment de vide, une simple ombre du néant primordial qui pendant quelques instants absorbe en partie la lumière, réduit la quantité d'oxygène de la zone et aspire l'énergie vitale qui l'entoure. Tout ce qui se trouve dans la zone affectée par ce sort doit réussir un test de RMys ou perdre un point de Fatigue pour les êtres vivants et deux intensités pour les énergies, ce qui revient à 10 Points de Vie pour les élémentaires. Degré  Initial Intermédiaire Avancé Arcane Zéon 30 60 90 120 Int. R. 5 8 11 14 Initial: 80 RMys / Zone de 5 m de large. Intermédiaire : 100 RMys / Zone de 10 m de large. Avancé : 120 RMys / Zone de 15 m de large. Arcane : 150 RMys / Zone de 30 m de large. Maintien : Non Type de sort : Animique",
+      "initialGrade": {
+        "zeon": 30,
+        "requiredIntelligence": 5,
+        "effect": "80 RMys / Zone de 5 m de large.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 8,
+        "effect": "100 RMys / Zone de 10 m de large.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 11,
+        "effect": "120 RMys / Zone de 15 m de large.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 14,
+        "effect": "150 RMys / Zone de 30 m de large.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 2,
+      "bookId": 26,
+      "name": "Vague de Vide",
+      "level": 14,
+      "actionType": "Active",
+      "type": "Attaque",
+      "effect": "Ce sort envoie une légère onde de vide capable de déstructurer les fibres surnaturelles de n'importe quelle protection. Ce sort ne provoque pas en soi de dégâts à ses adversaires, mais dirigé contre un bouclier surnaturel, il entraîne sa désagrégation. La Vague de Vide est invisible à l'œil humain, sauf pour ceux capables de voir la magie.",
+      "initialGrade": {
+        "zeon": 30,
+        "requiredIntelligence": 6,
+        "effect": "Dégâts 120 contre les boucliers.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 9,
+        "effect": "Dégâts 250 contre les boucliers.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 12,
+        "effect": "Dégâts 400 contre les boucliers.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 15,
+        "effect": "Dégâts 600 contre les boucliers.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 3,
+      "bookId": 26,
+      "name": "Bouclier de Vide",
+      "level": 24,
+      "actionType": "Passive",
+      "type": "Défense",
+      "effect": "Crée une barrière de particules de vide qui absorbent et anéantissent les attaques qu'elle subit. Outre le fait qu'il résiste comme un bouclier conventionnel, tout pouvoir surnaturel qu'il arrête sera automatiquement annulé si l'attaquant ne réussit pas un test de Volonté ou de Pouvoir contre la difficulté déterminée par le Degré  du sort. C'est-à-dire que si un adversaire lance un sortilège offensif ou animique contre un mage qui se protège derrière un Bouclier de Vide au Degré  Intermédiaire, et que ce dernier obtient une défense avec succès, l'attaquant devra réussir un test de Volonté ou de Pouvoir contre 16, sinon son attaque sera annulé sans faire le moindre dégât au bouclier. De la même façon, tout objet physique que le bouclier réussi à parer doit réussir une RPhy contre la difficulté déterminée par le bouclier ou être détruit immédiatement.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": "200 points de vie / Difficulté 14 / 100 RPhy.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": "300 points de vie / Difficulté 16/ 120 RPhy.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "400 points de vie / Difficulté 18 / 140 RPhy.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 15,
+        "effect": "500 points de vie / Difficulté 20/ 160 RPhy.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 4,
+      "bookId": 26,
+      "name": "Vortex de Réalité",
+      "level": 34,
+      "actionType": "Active",
+      "type": "Automatique",
+      "effect": "Crée une zone remplie de millions de microscopiques particules de vide. Tout individu se trouvant à l'intérieur pendant plus d'un round doit réussir automatiquement un test de RMys à chaque round, ou subir des dégâts et une perte de points de Ki équivalents à la moitié de la marge d'échec, ainsi qu'une perte de points de Zéon équivalents à la marge d'échec. Ce sort ne permet pas de choisir de cibles, il affecte tout le monde de la même façon y compris le lanceur lui-même.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 7,
+        "effect": "100 RMys / 5 m de rayon.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 10,
+        "effect": "120 RMys / 10 m de rayon.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 13,
+        "effect": "140 RMys / 20 m de rayon.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 15,
+        "effect": "160 RMys / 40 m de rayon.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 5,
+      "bookId": 26,
+      "name": "Lame Noire de Perdition",
+      "level": 44,
+      "actionType": "Active",
+      "type": "Attaque",
+      "effect": "Invoque le vide à l'état le plus pur, donnant forme à une lame de pouvoir crépitante qui se manifeste entre les mains du sorcier. L'arme est de taille grande (G), a la même initiative que le lancer d'un sort, peut être utilisée par le sorcier pour parer ou attaquer sur le mode Tranchant avec la Projection magique ou la compétence de corps-à-corps du lanceur, ne peut être brisée ni briser d'autre arme en combattant, et elle ignore complètement tout Indice de Protection. Le sorcier peut maintenir la lame active pour faire de nouvelles attaques au cours des rounds suivants, mais à chaque round il doit réussir un test de Volonté contre une difficulté de 12 ou perdre le contrôle de l'épée et du sort. Chaque fois qu'il arrive à réussir le test il augmente d'un point sa difficulté pour le test du round suivant. S'il échoue, l'épée se retourne contre le sorcier, l'attaquant avec sa propre compétence entière +50.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 6,
+        "effect": "Dégâts 80.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 9,
+        "effect": "Dégâts 120.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": "Dégâts 160.",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 15,
+        "effect": "Dégâts 200.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 6,
+      "bookId": 26,
+      "name": "Aura de Vide",
+      "level": 54,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Recouvre le sorcier d'une aura de vide qui le protège des effets des attaques surnaturelles, lui accordant une IP contre le Mode Énergie chaque fois qu'elle dévore un sort ou un pouvoir psychique d'une valeur inférieure à celle indiquée, laquelle perdure pendant toute la durée du sort et se cumule aux précédentes selon les règles habituelles pour les sorts procurant un Indice de Protection. Malheureusement, ce sort ne fait pas la différence entre les pouvoirs amis et ennemis, et les dévore tous sans distinction. La couche de vide est invisible, mais tout ce qui entoure le sorcier semble plus ténu et éteint.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 6,
+        "effect": "IP 4 / Valeur en Zéon de 60 / Talent psychique de 80.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": "IP 6 / Valeur en Zéon de 90/ Talent psychique de 120.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "IP 8 / Valeur en Zéon de 120 / Talent psychique de 140.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 15,
+        "effect": "IP 10 / Valeur en Zéon de 160 / Talent psychique de 180",
+        "retention": 35
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 7,
+      "bookId": 26,
+      "name": "Points Noirs",
+      "level": 64,
+      "actionType": "Active",
+      "type": "Automatique",
+      "effect": "Crée une zone autour du sorcier remplie de vortex existentiels et de trous de vide qui se déplacent d'un côté à l'autre de façon chaotique. Toute personne entrant dans cette zone, à l'exception du sorcier, doit réussir à chaque round un test d'Athlétisme, d'Acrobaties ou de Défense (une parade incapable d'affecter l'énergie est inefficace) contre une difficulté déterminée par le Degré  du sort, sous peine de heurter un des Points Noirs. Dans ce cas, le personnage doit réussir un test de RPhy ou de RMys contre la difficulté déterminée par le sort ou subir des dégâts et une perte de points de Ki équivalents à la moitié de ta marge d'échec, ainsi qu'une perte de Zéon équivalente à la marge d'échec. Il n’est pas possible de désigner de cibles à l'intérieur du sortilège.",
+      "initialGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 8,
+        "effect": "Difficulté de 120 / 10 m de rayon / 120 RMys ou RPhy.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 10,
+        "effect": "Difficulté de 140 / 20 m de rayon / 140 RMys ou RPhy.",
+        "retention": 25
+      },
+      "advancedGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 12,
+        "effect": "Difficulté de 180 / 50 m de rayon / 160 RMys ou RPhy.",
+        "retention": 35
+      },
+      "arcaneGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 15,
+        "effect": "Difficulté de 240 / 100 m de rayon / 180 RMys ou RPhy.",
+        "retention": 50
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 8,
+      "bookId": 26,
+      "name": "Protection contre le Vide",
+      "level": 74,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Recouvre le sorcier d'une énergie surnaturelle qui repousse les effets du vide. Tout sort ou pouvoir en relation avec le néant n'a aucun effet sur lui, ni ne peut lui infliger de dégâts.",
+      "initialGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 10,
+        "effect": "Protège contre les sorts de cette voie secondaire à l'exception de la Porte sur Nulle Part.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": "Comme pour le Degré  Initial sans son exception, mais personnage est également immunisé contre les effets et les attaques de créatures basées sur le vide, comme les Etrien Gnosos.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 14,
+        "effect": "Le personnage est immunisé contre tout effet en relation avec le vide, sauf le néant primordial.",
+        "retention": 30
+      },
+      "arcaneGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 16,
+        "effect": "Comme pour le Degré  Avancé, mais le personnage est capable de survivre même au néant primordial.",
+        "retention": 40
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 9,
+      "bookId": 26,
+      "name": "Implosion",
+      "level": 84,
+      "actionType": "Active",
+      "type": "Attaque",
+      "effect": "Ce sort terrorisant crée un point de vide à l'intérieur de quelque chose, attirant toute sa masse vers l'intérieur et provoquant une implosion de sa structure et sa disparition complète. Comme il absorbe la chair",
+      "initialGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 14,
+        "effect": "200 points de dégâts / Niveau de critique +20.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 16,
+        "effect": "400 points de dégâts / Niveau de critique +40.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 750,
+        "requiredIntelligence": 18,
+        "effect": "600 points de dégâts / Niveau de critique +60.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 1000,
+        "requiredIntelligence": 20,
+        "effect": "800 points de dégâts / Niveau de critique +100.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 10,
+      "bookId": 26,
+      "name": "Porte sur Nulle Part",
+      "level": 94,
+      "actionType": "Passive",
+      "type": "Effet",
+      "effect": "Ouvre un portail à sens unique vers le vide le plus absolu, le néant primitif qui dévorera un jour l'univers. Tout ce qui passe la porte cesse d'exister automatiquement, sans qu'aucun test de Résistance ne soit possible. Seuls les êtres possédant une Gnose de 35 ou plus, les objets d'une présence équivalente ou les individus protégés par quelque moyen que ce soit contre le Vide peuvent y survivre, mais ils perdent un point par minute à leur caractéristique de Pouvoir, qu'ils récupèrent au rythme d'un par jour. Naturellement, quelque chose qui reste à l'intérieur est virtuellement immunisé contre tout type d'attaque car celles-ci ne peuvent l'atteindre. Les dimensions du portail sont déterminées par le Degré du sort.",
+      "initialGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 11,
+        "effect": "2 m de diamètre.",
+        "retention": 30
+      },
+      "intermediateGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 13,
+        "effect": "5 m de diamètre.",
+        "retention": 50
+      },
+      "advancedGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 15,
+        "effect": "15 m de diamètre.",
+        "retention": 80
+      },
+      "arcaneGrade": {
+        "zeon": 1200,
+        "requiredIntelligence": 18,
+        "effect": "50 m de diamètre.",
+        "retention": 120
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    }
+  ]
+}
