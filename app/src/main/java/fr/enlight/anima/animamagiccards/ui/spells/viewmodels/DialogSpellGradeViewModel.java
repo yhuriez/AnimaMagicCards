@@ -10,7 +10,7 @@ import fr.enlight.anima.cardmodel.model.spells.Spell;
 import fr.enlight.anima.cardmodel.model.spells.SpellGrade;
 
 
-public class DialogSpellGradeViewModel extends SpellGradeViewModel implements DialogViewModel{
+public class DialogSpellGradeViewModel extends SpellGradeViewModel implements DialogViewModel {
 
     private DismissDialogListener mListener;
 
@@ -23,15 +23,17 @@ public class DialogSpellGradeViewModel extends SpellGradeViewModel implements Di
         mListener = listener;
     }
 
-    public void onDismissClicked(){
+    public void onDismissClicked() {
         mListener.dismissDialog();
     }
 
-    public String getFormattedEffect(){
+    public String getFormattedEffect() {
         String effect = getEffect();
-        String[] split = effect.split(" / ");
-        if(split.length > 1){
-            effect = effect.replace(" / ", "\n");
+        if (effect != null && !effect.equals("")) {
+            String[] split = effect.split(" / ");
+            if (split.length > 1) {
+                effect = effect.replace(" / ", "\n");
+            }
         }
         return effect;
     }
