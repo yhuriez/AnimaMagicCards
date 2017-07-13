@@ -47,7 +47,8 @@
             android:layout_marginTop="@dimen/spacing_base"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/book_separator">
+            app:layout_constraintTop_toBottomOf="@id/book_separator"
+            app:layout_constraintBottom_toBottomOf="parent">
 
             <TextView
                 android:id="@+id/spellbook_message_textview"
