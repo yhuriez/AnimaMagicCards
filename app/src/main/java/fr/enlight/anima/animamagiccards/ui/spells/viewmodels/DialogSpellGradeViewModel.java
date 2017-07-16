@@ -12,19 +12,13 @@ import fr.enlight.anima.cardmodel.model.spells.SpellGrade;
 
 public class DialogSpellGradeViewModel extends SpellGradeViewModel implements DialogViewModel {
 
-    private DismissDialogListener mListener;
-
     public DialogSpellGradeViewModel(SpellGradeLevel gradeLevel, SpellGrade spellGrade, Spell spell) {
         super(gradeLevel, spellGrade, spell);
     }
 
     @Override
     public void setListener(DismissDialogListener listener) {
-        mListener = listener;
-    }
-
-    public void onDismissClicked() {
-        mListener.dismissDialog();
+        // No listener needed here
     }
 
     public String getFormattedEffect() {

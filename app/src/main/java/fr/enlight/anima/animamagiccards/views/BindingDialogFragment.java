@@ -36,6 +36,18 @@ public abstract class BindingDialogFragment extends DialogFragment implements Di
         throw new UnsupportedOperationException("This dialog fragment should have a ViewModel to show");
     }
 
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dismiss();
+            }
+        });
+    }
+
     @SuppressWarnings("ConstantConditions")
     @Override
     public void onActivityCreated(final Bundle savedInstanceState) {
@@ -47,6 +59,8 @@ public abstract class BindingDialogFragment extends DialogFragment implements Di
                 ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.MATCH_PARENT
         );
+
+        getDialog().setCanceledOnTouchOutside(true);
 
         viewModel.setListener(this);
         binding.setVariable(viewModel.getVariableId(), viewModel);
