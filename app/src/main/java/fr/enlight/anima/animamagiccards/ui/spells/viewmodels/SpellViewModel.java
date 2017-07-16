@@ -174,22 +174,20 @@ public class SpellViewModel implements BindableViewModel, SpellGradeViewModel.Li
 
     public void expandEffect(){
         if(mListener != null){
-            DialogSpellEffectViewModel dialogViewModel = new DialogSpellEffectViewModel(spell, spellbookType);
-            mListener.onEffectClicked(dialogViewModel);
+            mListener.onEffectClicked(spell, spellbookType);
         }
     }
 
     @Override
     public void onGradeClicked(SpellGradeLevel level, SpellGrade spellGrade) {
         if(mListener != null){
-            DialogSpellGradeViewModel dialogViewModel = new DialogSpellGradeViewModel(level, spellGrade, spell);
-            mListener.onGradeClicked(dialogViewModel);
+            mListener.onGradeClicked(level, spellGrade, spell);
         }
     }
 
     public interface Listener{
-        void onEffectClicked(DialogSpellEffectViewModel dialogViewModel);
+        void onEffectClicked(Spell spell, SpellbookType spellbookType);
 
-        void onGradeClicked(DialogSpellGradeViewModel dialogViewModel);
+        void onGradeClicked(SpellGradeLevel level, SpellGrade spellGrade, Spell spell);
     }
 }

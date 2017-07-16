@@ -17,26 +17,18 @@ import fr.enlight.anima.animamagiccards.views.viewmodels.DismissDialogListener;
  *
  * @author Alexandre Gianquinto
  */
-public class BindingDialogFragment extends DialogFragment implements DismissDialogListener {
-
-    public static final String ARG_VIEW_MODEL = "ARG_VIEW_MODEL";
+public abstract class BindingDialogFragment extends DialogFragment implements DismissDialogListener {
 
     private DialogViewModel viewModel;
     private ViewDataBinding binding;
 
-    public static BindingDialogFragment newInstance(DialogViewModel dialogViewModel) {
-        final BindingDialogFragment fragment = new BindingDialogFragment();
-        final Bundle args = new Bundle();
-        args.putSerializable(ARG_VIEW_MODEL, dialogViewModel);
-        fragment.setArguments(args);
-        return fragment;
-    }
+    public abstract DialogViewModel createViewModel();
 
     @Override
     public View onCreateView(final LayoutInflater inflater,
                              @Nullable final ViewGroup container,
                              @Nullable final Bundle savedInstanceState) {
-        viewModel = (DialogViewModel) getArguments().getSerializable(ARG_VIEW_MODEL);
+        viewModel = createViewModel();
         if(viewModel != null) {
             binding = DataBindingUtil.inflate(inflater, viewModel.getLayoutRes(), container, false);
             return binding.getRoot();

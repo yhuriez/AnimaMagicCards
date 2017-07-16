@@ -33,8 +33,7 @@ import java.util.List;
 import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.animamagiccards.async.SpellsLoader;
 import fr.enlight.anima.animamagiccards.databinding.FragmentSpellsStackBinding;
-import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.DialogSpellEffectViewModel;
-import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.DialogSpellGradeViewModel;
+import fr.enlight.anima.animamagiccards.ui.spells.bo.SpellGradeLevel;
 import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.SpellFilterViewModel;
 import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.SpellStackViewModel;
 import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.SpellViewModel;
@@ -42,11 +41,11 @@ import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.quickaccess.SpellQu
 import fr.enlight.anima.animamagiccards.utils.DeviceUtils;
 import fr.enlight.anima.animamagiccards.utils.IntentsUtils;
 import fr.enlight.anima.animamagiccards.utils.OnBackPressedListener;
-import fr.enlight.anima.animamagiccards.views.BindingDialogFragment;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.cardmodel.business.SpellFilterFactory;
 import fr.enlight.anima.cardmodel.model.spells.Spell;
 import fr.enlight.anima.cardmodel.model.spells.SpellActionType;
+import fr.enlight.anima.cardmodel.model.spells.SpellGrade;
 import fr.enlight.anima.cardmodel.model.spells.SpellType;
 import fr.enlight.anima.cardmodel.model.spells.Spellbook;
 import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
@@ -410,14 +409,14 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     }
 
     @Override
-    public void onEffectClicked(DialogSpellEffectViewModel dialogViewModel) {
-        BindingDialogFragment.newInstance(dialogViewModel)
+    public void onEffectClicked(Spell spell, SpellbookType spellbookType) {
+        SpellEffectDialogFragment.newInstance(spell, spellbookType)
                 .show(getFragmentManager(), EFFECT_DIALOG);
     }
 
     @Override
-    public void onGradeClicked(DialogSpellGradeViewModel dialogViewModel) {
-        BindingDialogFragment.newInstance(dialogViewModel)
+    public void onGradeClicked(SpellGradeLevel level, SpellGrade spellGrade, Spell spell) {
+        SpellGradeDialogFragment.newInstance(level, spellGrade, spell)
                 .show(getFragmentManager(), GRADE_DIALOG);
     }
 

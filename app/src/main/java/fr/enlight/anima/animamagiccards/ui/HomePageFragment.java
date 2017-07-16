@@ -29,13 +29,12 @@ import java.util.List;
 import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.animamagiccards.async.AllSpellGroupLoader;
 import fr.enlight.anima.animamagiccards.databinding.FragmentHomePageBinding;
-import fr.enlight.anima.animamagiccards.ui.other.AboutUsViewModel;
+import fr.enlight.anima.animamagiccards.ui.other.AboutUsDialogFragment;
 import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.BookSubviewViewModel;
 import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.SpellbookViewModel;
 import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsAddViewModel;
 import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsBookViewModel;
 import fr.enlight.anima.animamagiccards.utils.IntentsUtils;
-import fr.enlight.anima.animamagiccards.views.BindingDialogFragment;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.animamagiccards.views.viewmodels.EmptyItemViewModel;
 import fr.enlight.anima.cardmodel.business.WitchspellsBusinessService;
@@ -141,7 +140,7 @@ public class HomePageFragment extends Fragment implements
                 break;
 
             case R.id.action_about_us:
-                BindingDialogFragment.newInstance(new AboutUsViewModel()).show(getFragmentManager(), "");
+                new AboutUsDialogFragment().show(getFragmentManager(), "");
                 break;
         }
         return super.onOptionsItemSelected(item);
