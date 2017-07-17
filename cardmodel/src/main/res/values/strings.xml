@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_real_name">Anima Magic Books</string>
-    <string name="app_name">Anima Magic Books</string>
+    <string name="app_real_name">Anima Magic Cards</string>
+    <string name="app_name">Anima Magic Cards</string>
 
     <!--Spellbook Name-->
     <string name="spellbook_title_blood">Sang</string>

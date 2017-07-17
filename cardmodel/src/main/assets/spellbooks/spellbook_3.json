@@ -936,25 +936,25 @@
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 8,
-        "effect": "affecte les sorts de rang Initial",
+        "effect": "Affecte les sorts de rang Initial",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 200,
         "requiredIntelligence": 12,
-        "effect": "affecte les sorts de rang Intermédiaire",
+        "effect": "Affecte les sorts de rang Intermédiaire",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "affecte les sorts de rang Avancée",
+        "effect": "Affecte les sorts de rang Avancée",
         "retention": 30
       },
       "arcaneGrade": {
         "zeon": 400,
         "requiredIntelligence": 18,
-        "effect": "affecte les sorts de rang Arcane",
+        "effect": "Affecte les sorts de rang Arcane",
         "retention": 40
       },
       "withRetention": true,
@@ -1286,25 +1286,25 @@
       "initialGrade": {
         "zeon": 600,
         "requiredIntelligence": 12,
-        "effect": "affecte un sort de rang Initial",
+        "effect": "Affecte un sort de rang Initial",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 1000,
         "requiredIntelligence": 14,
-        "effect": "affecte un sort de rang Intermédiaire",
+        "effect": "Affecte un sort de rang Intermédiaire",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 2500,
         "requiredIntelligence": 16,
-        "effect": "affecte un sort de rang Avancé",
+        "effect": "Affecte un sort de rang Avancé",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 5000,
         "requiredIntelligence": 18,
-        "effect": "affecte un sort de rang Arcane",
+        "effect": "Affecte un sort de rang Arcane",
         "retention": 0
       },
       "withRetention": false,
@@ -1409,7 +1409,7 @@
       "arcaneGrade": {
         "zeon": 12000,
         "requiredIntelligence": 20,
-        "effect": "100 000 points de Présence / Présence maximale 320 / un nombre illimité de règles existentielles",
+        "effect": "100 000 points de Présence / Présence maximale 320 / Un nombre illimité de règles existentielles",
         "retention": 0
       },
       "withRetention": false,

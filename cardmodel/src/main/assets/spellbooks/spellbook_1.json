@@ -208,12 +208,13 @@
       "intermediateGrade": {
         "zeon": 90,
         "requiredIntelligence": 9,
-        "effect": "IP 5 contre l’Énergie et IP 2 contre le reste Avancé : IP 8 contre l’Énergie et IP 4 contre le reste",
+        "effect": "IP 5 contre l’Énergie et IP 2 contre le reste",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
+        "effect": "IP 8 contre l’Énergie et IP 4 contre le reste",
         "retention": 15
       },
       "arcaneGrade": {
@@ -738,13 +739,13 @@
       "advancedGrade": {
         "zeon": 140,
         "requiredIntelligence": 13,
-        "effect": "comme le rang intermédiaire à ceci près que les bonus de résistances s’applique aussi à tous les effets surnaturels à l’exception de ceux basés sur l’Obscurité.",
+        "effect": "Comme le rang intermédiaire à ceci près que les bonus de résistances s’applique aussi à tous les effets surnaturels à l’exception de ceux basés sur l’Obscurité.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 160,
         "requiredIntelligence": 16,
-        "effect": "comme le rang avancé à ceci près que les dégâts reçus par des attaques basés sur l’Obscurité ne sont plus doublés.",
+        "effect": "Comme le rang avancé à ceci près que les dégâts reçus par des attaques basés sur l’Obscurité ne sont plus doublés.",
         "retention": 20
       },
       "withRetention": true,
@@ -831,25 +832,25 @@
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 8,
-        "effect": "permet de percevoir la magie, les matrices psychiques et les êtres invisibles / RMys +50 contre les illusions",
+        "effect": "Permet de percevoir la magie, les matrices psychiques et les êtres invisibles / RMys +50 contre les illusions",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "comme le rang Initial mais permet aussi de voir les êtres spirituels",
+        "effect": "Comme le rang Initial mais permet aussi de voir les êtres spirituels",
         "retention": 15
       },
       "advancedGrade": {
         "zeon": 180,
         "requiredIntelligence": 14,
-        "effect": "comme le rang Intermédiaire à ceci près que le bonus de RMys passe à +75",
+        "effect": "Comme le rang Intermédiaire à ceci près que le bonus de RMys passe à +75",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 250,
         "requiredIntelligence": 16,
-        "effect": "comme le rang avancé à ceci près que le bonus de RMys passe a +100",
+        "effect": "Comme le rang avancé à ceci près que le bonus de RMys passe a +100",
         "retention": 25
       },
       "withRetention": true,

@@ -62,25 +62,25 @@
       "initialGrade": {
         "zeon": 30,
         "requiredIntelligence": 5,
-        "effect": "poids maximal 10 kg",
+        "effect": "Poids maximal 10 kg",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 60,
         "requiredIntelligence": 8,
-        "effect": "poids maximal 50 kg",
+        "effect": "Poids maximal 50 kg",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 90,
         "requiredIntelligence": 10,
-        "effect": "poids maximal 100 kg",
+        "effect": "Poids maximal 100 kg",
         "retention": 10
       },
       "arcaneGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "poids maximal 250 kg",
+        "effect": "Poids maximal 250 kg",
         "retention": 15
       },
       "withRetention": true,
@@ -412,25 +412,25 @@
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 6,
-        "effect": "ligne de 3 m de long",
+        "effect": "Ligne de 3 m de long",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 150,
         "requiredIntelligence": 9,
-        "effect": "ligne de 12 m de long",
+        "effect": "Ligne de 12 m de long",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "ligne de 25 m de long",
+        "effect": "Ligne de 25 m de long",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 350,
         "requiredIntelligence": 15,
-        "effect": "ligne de 50 m de long",
+        "effect": "Ligne de 50 m de long",
         "retention": 0
       },
       "withRetention": false,
@@ -552,25 +552,25 @@
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 8,
-        "effect": "la cible gagne les capacités décrites plus haut",
+        "effect": "La cible gagne les capacités décrites plus haut",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 120,
         "requiredIntelligence": 11,
-        "effect": "comme Initial, et la cible peut voler avec une qualité de vol égale à son mouvement naturel",
+        "effect": "Comme Initial, et la cible peut voler avec une qualité de vol égale à son mouvement naturel",
         "retention": 15
       },
       "advancedGrade": {
         "zeon": 140,
         "requiredIntelligence": 13,
-        "effect": "comme Intermédiaire, à ceci près que même les personnes capables de percevoir la magie doit effectuer les tests de perception décrits plus haut",
+        "effect": "Comme Intermédiaire, à ceci près que même les personnes capables de percevoir la magie doit effectuer les tests de perception décrits plus haut",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 160,
         "requiredIntelligence": 16,
-        "effect": "comme Avancé, sauf que les attaques Tranchantes ou Perforantes capables d’affecter l’énergie ne lui infligent que la moitié des dégâts.",
+        "effect": "Comme Avancé, sauf que les attaques Tranchantes ou Perforantes capables d’affecter l’énergie ne lui infligent que la moitié des dégâts.",
         "retention": 20
       },
       "withRetention": true,
@@ -587,25 +587,25 @@
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 8,
-        "effect": "rayon de 50 m / RMys 120",
+        "effect": "Rayon de 50 m / RMys 120",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 150,
         "requiredIntelligence": 10,
-        "effect": "rayon de 300 m / RMys 140",
+        "effect": "Rayon de 300 m / RMys 140",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 13,
-        "effect": "rayon de 500 m / RMys 180",
+        "effect": "Rayon de 500 m / RMys 180",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 350,
         "requiredIntelligence": 15,
-        "effect": "rayon de 1 km / RMys 220",
+        "effect": "Rayon de 1 km / RMys 220",
         "retention": 35
       },
       "withRetention": true,
@@ -675,7 +675,7 @@
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "aucune limite d’esquive / Mouvement 18",
+        "effect": "Aucune limite d’esquive / Mouvement 18",
         "retention": 30
       },
       "withRetention": true,
@@ -710,7 +710,7 @@
       "arcaneGrade": {
         "zeon": 600,
         "requiredIntelligence": 16,
-        "effect": "Présence maximale 350 / pas de limite de distance",
+        "effect": "Présence maximale 350 / Pas de limite de distance",
         "retention": 0
       },
       "withRetention": false,
@@ -780,7 +780,7 @@
       "arcaneGrade": {
         "zeon": 600,
         "requiredIntelligence": 16,
-        "effect": "5 km de rayon / le test se fait contre une force de 14",
+        "effect": "5 km de rayon / Le test se fait contre une force de 14",
         "retention": 25
       },
       "withRetention": true,
@@ -815,7 +815,7 @@
       "arcaneGrade": {
         "zeon": 350,
         "requiredIntelligence": 16,
-        "effect": "500 m de rayon / dans le cadre des règles d’immobilisation, la force passe à 16",
+        "effect": "500 m de rayon / Dans le cadre des règles d’immobilisation, la force passe à 16",
         "retention": 25
       },
       "withRetention": true,
@@ -937,25 +937,25 @@
       "initialGrade": {
         "zeon": 180,
         "requiredIntelligence": 9,
-        "effect": "sorts jusqu’à 100 points de Zéon",
+        "effect": "Sorts jusqu’à 100 points de Zéon",
         "retention": 20
       },
       "intermediateGrade": {
         "zeon": 270,
         "requiredIntelligence": 11,
-        "effect": "sorts jusqu’à 200 points de Zéon",
+        "effect": "Sorts jusqu’à 200 points de Zéon",
         "retention": 30
       },
       "advancedGrade": {
         "zeon": 360,
         "requiredIntelligence": 13,
-        "effect": "sorts jusqu’à 300 points de Zéon",
+        "effect": "Sorts jusqu’à 300 points de Zéon",
         "retention": 40
       },
       "arcaneGrade": {
         "zeon": 450,
         "requiredIntelligence": 16,
-        "effect": "sorts jusqu’à 400 points de Zéon",
+        "effect": "Sorts jusqu’à 400 points de Zéon",
         "retention": 45
       },
       "withRetention": true,
@@ -972,25 +972,25 @@
       "initialGrade": {
         "zeon": 300,
         "requiredIntelligence": 10,
-        "effect": "affecte un sort de rang Initial",
+        "effect": "Affecte un sort de rang Initial",
         "retention": 30
       },
       "intermediateGrade": {
         "zeon": 400,
         "requiredIntelligence": 12,
-        "effect": "affecte un sort de rang Intermédiaire",
+        "effect": "Affecte un sort de rang Intermédiaire",
         "retention": 40
       },
       "advancedGrade": {
         "zeon": 550,
         "requiredIntelligence": 14,
-        "effect": "affecte un sort de rang Avancé",
+        "effect": "Affecte un sort de rang Avancé",
         "retention": 55
       },
       "arcaneGrade": {
         "zeon": 800,
         "requiredIntelligence": 16,
-        "effect": "affecte un sort de rang Arcane",
+        "effect": "Affecte un sort de rang Arcane",
         "retention": 80
       },
       "withRetention": true,

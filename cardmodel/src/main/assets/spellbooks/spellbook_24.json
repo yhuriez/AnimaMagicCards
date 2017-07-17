@@ -1,1 +1,366 @@
-{"bookId":24,"bookName":"Livre du Temps ","description":"Pour beaucoup d'occultistes le principe qui contrôle cette voie secondaire est le plus grand de tous, y compris parmi ceux des voies majeures. Ceux qui l'utilisent sont appelés les Chronomants, ou mages du temps, et leurs capacités consistent à utiliser la magie pour contrôler le passage du temps comme s'il s'agissait simplement d'un élément de plus.","primaryBookUnaccessibles":["Air","Eau","Feu","Terre","Essence","Illusion","Nécromancie."],"spells":[{"spellId":1,"bookId":24,"name":"Connaissance du Temps","level":4,"actionType":"Active","type":"Effet","effect":"Le personnage peut percevoir de façon surnaturelle le passage du temps.","initialGrade":{"zeon":30,"requiredIntelligence":5,"effect":"Permet de percevoir de façon surnaturelle la date et l'heure en utilisant un calendrier connu du lanceur.","retention":0},"intermediateGrade":{"zeon":50,"requiredIntelligence":7,"effect":"Comme pour le Degré  Initial mais le lanceur ressent en plus avec une exactitude absolue les secondes et les millièmes de secondes. De plus, il permet de sentir s'il existe une altération surnaturelle dans le flux du temps.","retention":0},"advancedGrade":{"zeon":70,"requiredIntelligence":10,"effect":"Comme Pour le Degré  Intermédiaire, mais le personnage peut mettre en place une alarme à un moment déterminé à partir de cet instant, ressentant automatiquement lorsque le temps prévu est écoulé. Par exemple, il pourra déterminer qu'il veut savoir quand quatre heures, douze minutes et sept secondes se seront écoulées.","retention":0},"arcaneGrade":{"zeon":90,"requiredIntelligence":12,"effect":"Comme pour le Degré  Avancé, mais le lanceur peut calculer le laps de temps que va prendre une chose pour se terminer, comme par exemple combien de temps mettra une personne qui marche à une vitesse constante pour traverser une plage ou combien de temps va s'écouler avant qu'une mélodie en train d'être jouée ne se termine.","retention":0},"withRetention":false,"dailyRetention":false},{"spellId":2,"bookId":24,"name":"Accélération du Temps","level":14,"actionType":"Active","type":"Effet","effect":"Le sorcier accélère son essence face au passage du temps. Pendant qu'il perçoit le monde au ralenti, les autres ne voient qu'une tache en mouvement. En termes de jeu, cela accorde différents bonus au lanceur ou à l'individu désigné par celui-ci, en fonction du Degré  du sort.","initialGrade":{"zeon":100,"requiredIntelligence":7,"effect":"+1 en Mouvement / +20 à l'Initiative / +10 à toutes les actions.","retention":10},"intermediateGrade":{"zeon":140,"requiredIntelligence":10,"effect":"+2 en Mouvement / +30 à l'Initiative / +15 à toutes les actions.","retention":15},"advancedGrade":{"zeon":180,"requiredIntelligence":12,"effect":"+2 en Mouvement / +40 à l'Initiative / +20 à toutes les actions.","retention":20},"arcaneGrade":{"zeon":240,"requiredIntelligence":15,"effect":"+3 en Mouvement / +50 à l'Initiative / +25 à toutes les actions.","retention":25},"withRetention":true,"dailyRetention":false},{"spellId":3,"bookId":24,"name":"Ralentissement du temps","level":24,"actionType":"Active","type":"Effet","effect":"Ce sort affecte une zone déterminée dans laquelle tout individu désigné par le lanceur est entraîné dans un flux temporel ralenti. Par conséquent, les personnes affectées se déplacent beaucoup plus lentement, souffrant ainsi de divers malus indiqués en fonction des Degré s du sortilège. La zone affectée par Ralentissement du Temps reste à l'endroit où elle a été lancée. Pour résister à ses effets il faut réussir une RMys, mais quelqu'un qui a échoué au test ne peut pas le refaire tant qu'il ne sort pas de la zone d'influence du sort.","initialGrade":{"zeon":100,"requiredIntelligence":7,"effect":"-2 en Mouvement / -40 à l'Initiative / 10 m de rayon / 100 RMys.","retention":10},"intermediateGrade":{"zeon":150,"requiredIntelligence":10,"effect":"-4 en Mouvement / -60 à l'Initiative / -10 à toutes les actions / 25 m de rayon / 120 RMys.","retention":15},"advancedGrade":{"zeon":200,"requiredIntelligence":12,"effect":"-6 en Mouvement / -80 à l'Initiative / -20 à toutes les actions / 50 m de rayon / 140 RMys.","retention":20},"arcaneGrade":{"zeon":250,"requiredIntelligence":15,"effect":"-8 en Mouvement / -100 à l'Initiative / -30 à toutes les actions / 100 m de rayon / 160 RMys.","retention":25},"withRetention":true,"dailyRetention":false},{"spellId":4,"bookId":24,"name":"Retenir le Temps","level":34,"actionType":"Active","type":"Automatique","effect":"Ce sort crée une bulle surnaturelle qui bloque le flux du temps. Tant que le sortilège est actif, l'état des choses à l'intérieur de cette bulle ne peut changer. En termes de jeu, ce sort mémorise l'état et la condition actuels de tout ce qui se trouve dans un rayon d'action déterminé par le Degré  du sortilège au moment où celui-d est lancé, empêchant à tout moment que, quels que soient les dégâts que subissent des choses ou des personnes à partir de ce moment, leurs effets ou conséquences puissent se produire. Par exemple, pendant que le sort est maintenu, un personnage blessé conservera toujours la même quantité de points de vie perdus, même si par la suite il essuie de nouvelles attaques qui peuvent le blesser plus sérieusement et même le tuer. De la même manière, les effets négatifs physiques comme la douleur ou la fatigue n'ont .pas plus d'effet pendant ce temps. Malheureusement, Retenir le Temps ne peut que retarder les effets de ce qui s'est réellement passé, et non les éviter, donc tout ce qu'a subi un individu ou une chose durant ce laps de temps bloqué apparaîtra immédiatement à la fin du sort ou en sortant de sa zone d'influence. Cela signifie que si quelqu'un est mort à l'intérieur d'une zone bloquée, quels que soient les soins qu'elle reçoit à posteriori elle ne pourra 'être sauvée lorsque le sort s'arrêtera, car elle sera morte depuis longtemps. Le sorcier peut choisir librement qui est affecté ou non, et quelles choses pourront être détruites ou non. Néanmoins, ce sortilège n'affecte jamais* son lanceur, car il est le nœud qui relie le passé au présent. La zone affectée par Retenir le Temps reste à l'endroit où elle a été lancée.","initialGrade":{"zeon":150,"requiredIntelligence":8,"effect":"5 m.","retention":15},"intermediateGrade":{"zeon":200,"requiredIntelligence":11,"effect":"10 m.","retention":20},"advancedGrade":{"zeon":280,"requiredIntelligence":13,"effect":"25 m.","retention":30},"arcaneGrade":{"zeon":380,"requiredIntelligence":15,"effect":"50 m","retention":40},"withRetention":true,"dailyRetention":false},{"spellId":5,"bookId":24,"name":"Arrêter le Temps","level":44,"actionType":"Active","type":"Automatique","effect":"Ce sort fait en sorte que le temps s'arrête à l'intérieur d'un espace déterminé. Toute chose ou tout individu qui, à partir du round postérieur au lancement du sort, se trouve à l'intérieur de sa zone d'effet reste figé dans le temps s'il ne réussit pas un test de RMys dont la difficulté est déterminée par le Degré  du sort. Les personnes ou choses figées dans le temps sont complètement solides, rien ne peut interagir avec elles, les toucher ou leur infliger de dégâts d'aucune sorte, et elles ne peuvent pas non plus interagir avec quoi que ce soit. Les créatures avec une Gnose de 40 ou plus peuvent ignorer cet effet, car elles sont capables d'interagir librement avec les choses figées sans aucun problème. Une personne affectée peut refaire le test une fois par jour. La zone affectée par Arrêter le Temps reste fixe, là où le sort a été lancé, et il n'est pas possible de choisir des cibles à l'intérieur. Il affecte donc tout ce qui s'y trouve à l'exception du lanceur.","initialGrade":{"zeon":200,"requiredIntelligence":9,"effect":"120 RMys / 10 m.","retention":40},"intermediateGrade":{"zeon":300,"requiredIntelligence":12,"effect":"140 RMys / 25 m.","retention":60},"advancedGrade":{"zeon":400,"requiredIntelligence":14,"effect":"160 RMys / 50 m.","retention":80},"arcaneGrade":{"zeon":500,"requiredIntelligence":16,"effect":"180 RMys / 100 m.","retention":100},"withRetention":true,"dailyRetention":true},{"spellId":6,"bookId":24,"name":"Rétroévolution","level":54,"actionType":"Active","type":"Animique","effect":"Ce sortilège affecte l'essence de la cible, faisant repartir son \"\"existence\"\" en arrière dans le temps. Naturellement, la personne affectée ne voyage pas vraiment dans le passé, c'est son essence qui revient à un moment antérieur de sa vie. De cette façon, un vieillard redeviendra jeune et un adulte pourra se transformer en enfant, et même en bébé. Malheureusement, le temps remonté s'efface de la vie de l'individu et il perd donc cette partie de sa vie, oubliant ses souvenirs ou même perdant (ou regagnant) les capacités qu'il avait avant. Bien sûr, si cela est nécessaire, cela peut aller jusqu'à modifier le niveau de la personne affectée. Ce sort ne permet pas de récupérer des membres amputés' ni d'annuler des effets ou des dégâts infligés par des créatures de Gnose 40 ou supérieure. Pour résister aux effets de ce sort il faut réussir un test de RMys contre la difficulté déterminée par le Degré  du sort.","initialGrade":{"zeon":250,"requiredIntelligence":10,"effect":"120 RMys / Remonte au plus d'un jour.","retention":0},"intermediateGrade":{"zeon":350,"requiredIntelligence":13,"effect":"140 RMys / Remonte au plus d'un mois.","retention":0},"advancedGrade":{"zeon":450,"requiredIntelligence":15,"effect":"160 RMys / Remonte au plus d'un an.","retention":0},"arcaneGrade":{"zeon":600,"requiredIntelligence":17,"effect":"180 RMys / Remonte au plus d'une décennie.","retention":0},"withRetention":false,"dailyRetention":false},{"spellId":7,"bookId":24,"name":"Défaire le Temps","level":64,"actionType":"Active","type":"Effet","effect":"Ce sort permet de faire en sorte que les fibres du temps reculent de quelques instants dans un zone déterminée, défaisant n'importe quel événement étant survenu pendant cette période. De cette manière, il est possible de refaire à nouveau quelques rounds, ou même de faire revenir à la vie quelqu'un mort pendant ce laps de temps. Seul le lanceur, les créatures avec une Gnose supérieure de 15 points à sa Natura ou celles de nature divine seront conscientes de ce qui s'est passé durant la période de temps défaite. Pour les autres, elle n'aura jamais existé. Ce sort ne permet pas de défaire les actions dans lesquelles est directement impliquée une créature avec une Gnose de 40 ou plus, sauf si le lanceur a une Gnose encore plus élevée, ni de rendre la vie à une personne dont l'âme a été décréée. Il est important de noter que pour la réalité générale, le temps ne recule pas, mais qu'une partie du monde se sépare du continuum espace-temps naturel et le fait brièvement repartir en arrière. Ainsi, une brève distorsion temporelle se crée, que l'existence se chargera de réparer en faisant le moins de dégâts possibles. La zone affectée et la période de temps qu'il est possible de remonter sont déterminées par le Degré  du sort. Aucun jet de Résistance n'est possible.","initialGrade":{"zeon":200,"requiredIntelligence":11,"effect":"15 secondes (5 rounds) / 50 m.","retention":0},"intermediateGrade":{"zeon":350,"requiredIntelligence":14,"effect":"30 secondes (10 rounds) / 150 m.","retention":0},"advancedGrade":{"zeon":500,"requiredIntelligence":16,"effect":"Une minute / 250 m.","retention":0},"arcaneGrade":{"zeon":800,"requiredIntelligence":18,"effect":"Une heure / 1 km.","retention":0},"withRetention":false,"dailyRetention":false},{"spellId":8,"bookId":24,"name":"Saut dans le Temps","level":74,"actionType":"Active","type":"Animique","effect":"Ce sort affecte un individu ou une chose en lui faisant faire un saut Ifs le futur. En termes de jeu, la cible du sort disparaît d'où elle était, apparaissant au même endroit un certain temps après, ou au plus proche lieu Fore si quelque chose a pris sa place. Alors que pour elle seul l'environnement change et qu'elle ne perçoit aucun écoulement du temps, une personne à ses côtés à cet instant la verrait disparaître complètement. Le lanceur choisit combien de temps dans le futur il va envoyer la personne affectée, tant que cela ne dépasse pas les limites déterminées par le Degré  du sort. Toutefois, il y a une limite à ces effets. Certains moments de l'histoire sont des événements si importants de l'existence qu'il est impossible de les éviter. De ce fait, si la période de temps du saut temporel devrait contenir l’un d'entre eux, l'individu qui fait ce saut sera stoppé, le sortilège s'arrêtant avant ce qui été prévu. La cible du sort peut résister à ses effets en réussissant une RMys.","initialGrade":{"zeon":250,"requiredIntelligence":11,"effect":"10 minutes au maximum / 120 RMys.","retention":0},"intermediateGrade":{"zeon":350,"requiredIntelligence":14,"effect":"Un jour au maximum / 160 RMys.","retention":0},"advancedGrade":{"zeon":450,"requiredIntelligence":16,"effect":"Un mois au maximum / 200 RMys.","retention":0},"arcaneGrade":{"zeon":600,"requiredIntelligence":18,"effect":"Un an au maximum / 240 RMys","retention":0},"withRetention":false,"dailyRetention":false},{"spellId":9,"bookId":24,"name":"Boucle Temporelle","level":84,"actionType":"Active","type":"Effet","effect":"Ce sort crée une boucle sur un laps de temps, faisant se répéter l’histoire encore et encore. Tant que le sortilège est maintenu, lorsque la période arrive à la fin assignée par le lanceur, le temps se réinitialise, donnant un nouveau début aux mêmes événements. À part les individus désignés par le lanceur, ou ceux qui ont une Gnose de 35 ou plus (ou, à défaut, ceux dont la Gnose est au moins de 15 points supérieure à la Natura du lanceur), personne ne sera conscient que l'histoire se répète. Ce sort a une zone d'effet définie, mais cela ne signifie pas que le temps avance hors de cette zone. Lorsque le sort se termine, on considère que seule la dernière occurrence de la Boucle Temporelle a réellement eu lieu. Les créatures avec une Gnose de 40 ou plus sont conscientes du lieu et de la position de toutes les Boucles Temporelles existantes à chaque instant. S’il le souhaite, le lanceur peut imposer un événement comme fin du sortilège. Ainsi, si les choses se passent comme il l'avait défini, le sort se termine immédiatement. Le maintien de ce sort se calcule d'une façon spéciale. Contrairement aux règles générales, le sorcier doit payer un coût de maintien à la fin de chaque occurrence de la boucle qu'il a définie. C'est-à-dire que s'il établit une boucle temporelle de dix minutes, il devra dépenser son Zéon à la fin de cette période. Malheureusement, en liant son essence à un moment statique de l'histoire, le lanceur de la Boucle Temporelle n'a aucun moyen de récupérer du Zéon tant que le sort est maintenu actif. Aucun jet de Résistance n'est possible contre une Boucle Temporelle. Limitation spéciale : Contrairement aux règles générales des sorts d'Accès Libre et des voies secondaires, la Boucle Temporelle est considérée comme un sort de Haute Magie.","initialGrade":{"zeon":400,"requiredIntelligence":11,"effect":"Initial : 250 m de rayon / Un jour au maximum.","retention":40},"intermediateGrade":{"zeon":600,"requiredIntelligence":14,"effect":"500 m de rayon / Une semaine au maximum.","retention":60},"advancedGrade":{"zeon":900,"requiredIntelligence":16,"effect":"1 km de rayon / Un mois au maximum.","retention":90},"arcaneGrade":{"zeon":1400,"requiredIntelligence":18,"effect":"5 km de rayon / Un an au maximum.","retention":140},"withRetention":true,"dailyRetention":false},{"spellId":10,"bookId":24,"name":"Superposition du Temps","level":94,"actionType":"Active","type":"Effet","effect":"Ce sort permet au lanceur de créer un point de réunion entre le présent et le passé, fusionnant les deux instants en un. Ainsi, tout ce qu'il y avait à l'intérieur de la zone déterminée par le Degré  du sort au moment désigné par le sorcier se manifeste dans le présent, comme s'il avait toujours été là. En réalité, le passé n'est pas du tout altéré, c'est le présent qui est modifié, en rajoutant sur celui-ci une ligne temporelle antérieure. Cela signifie que, aussi bien les personnes que les choses qui existaient à ce moment et à cet endroit réapparaissent dans le présent. Il n'y a aucune limite à la quantité d'éléments qui sont amenés dans la zone affectée. Il peut s'agir d'armées entières ou de villes qui existaient il y a des éons. Les êtres et les objets qui apparaissent ne sont .pas vraiment des copies, mais en même temps, ils ne sont pas complètement réels. Ce sont des êtres hors de leur ligne temporelle dont l'existence prolongée est, dans le meilleur des cas, non naturelle. Si deux choses identiques se superposent au même endroit (comme c'est souvent le cas avec les constructions pérennes et les reliefs géographiques), s'imposera celle qui aura le plus de présence entre les deux versions ou, dans le cas de deux présences très similaires, elles se mêleront pour donner un résultat intermédiaire entre les deux. Dans le cas où une même personne se trouve au même endroit aux deux moments, le résultat est toujours instable. Il est possible qu'elle fusionne en une seule personne, qu'elle existe comme deux entités séparées ou, même que les deux soient complètement détruites. Néanmoins, ce sort a aussi ses limites. En premier lieu, il est impossible de \"\"ramener\"\" du passé quelqu'un ou quelque chose qui a été décréé ou dont l'âme a été détruite (dans le second de ces cas, son corps apparaîtra, mais ne sera qu'une carcasse vide). De plus, si un objet unique avec un niveau de Pouvoir de 5 devrait être ramené et qu'il existe toujours dans le présent, la manifestation de cet objet sera incomplète, possédant des qualités très inférieures à celles de l'objet qui existe toujours.\nLimitation spéciale : Contrairement aux règles générales des sorts d'Accès Libre et donc des voies secondaires, la Superposition du Temps est considérée comme un sort de Magie Divine.","initialGrade":{"zeon":500,"requiredIntelligence":12,"effect":"5 m de rayon / Un an au maximum dans le passé.","retention":0},"intermediateGrade":{"zeon":800,"requiredIntelligence":15,"effect":"25 m de rayon / Une décennie au maximum dans le passé.","retention":0},"advancedGrade":{"zeon":1250,"requiredIntelligence":17,"effect":"500 m de rayon / Un siècle au maximum dans le passé.","retention":0},"arcaneGrade":{"zeon":2500,"requiredIntelligence":19,"effect":"1 km de rayon / Mille ans au maximum dans le passé","retention":0},"withRetention":false,"dailyRetention":false}]}
+{
+  "bookId": 24,
+  "bookName": "Livre du Temps ",
+  "description": "Pour beaucoup d'occultistes le principe qui contrôle cette voie secondaire est le plus grand de tous, y compris parmi ceux des voies majeures. Ceux qui l'utilisent sont appelés les Chronomants, ou mages du temps, et leurs capacités consistent à utiliser la magie pour contrôler le passage du temps comme s'il s'agissait simplement d'un élément de plus.",
+  "primaryBookUnaccessibles": [
+    "Air",
+    "Eau",
+    "Feu",
+    "Terre",
+    "Essence",
+    "Illusion",
+    "Nécromancie."
+  ],
+  "spells": [
+    {
+      "spellId": 1,
+      "bookId": 24,
+      "name": "Connaissance du Temps",
+      "level": 4,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Le personnage peut percevoir de façon surnaturelle le passage du temps.",
+      "initialGrade": {
+        "zeon": 30,
+        "requiredIntelligence": 5,
+        "effect": "Permet de percevoir de façon surnaturelle la date et l'heure en utilisant un calendrier connu du lanceur.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 7,
+        "effect": "Comme pour le Degré  Initial mais le lanceur ressent en plus avec une exactitude absolue les secondes et les millièmes de secondes. De plus, il permet de sentir s'il existe une altération surnaturelle dans le flux du temps.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 70,
+        "requiredIntelligence": 10,
+        "effect": "Comme Pour le Degré  Intermédiaire, mais le personnage peut mettre en place une alarme à un moment déterminé à partir de cet instant, ressentant automatiquement lorsque le temps prévu est écoulé. Par exemple, il pourra déterminer qu'il veut savoir quand quatre heures, douze minutes et sept secondes se seront écoulées.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 12,
+        "effect": "Comme pour le Degré  Avancé, mais le lanceur peut calculer le laps de temps que va prendre une chose pour se terminer, comme par exemple combien de temps mettra une personne qui marche à une vitesse constante pour traverser une plage ou combien de temps va s'écouler avant qu'une mélodie en train d'être jouée ne se termine.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 2,
+      "bookId": 24,
+      "name": "Accélération du Temps",
+      "level": 14,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Le sorcier accélère son essence face au passage du temps. Pendant qu'il perçoit le monde au ralenti, les autres ne voient qu'une tache en mouvement. En termes de jeu, cela accorde différents bonus au lanceur ou à l'individu désigné par celui-ci, en fonction du Degré  du sort.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 7,
+        "effect": "+1 en Mouvement / +20 à l'Initiative / +10 à toutes les actions.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 10,
+        "effect": "+2 en Mouvement / +30 à l'Initiative / +15 à toutes les actions.",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 12,
+        "effect": "+2 en Mouvement / +40 à l'Initiative / +20 à toutes les actions.",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 15,
+        "effect": "+3 en Mouvement / +50 à l'Initiative / +25 à toutes les actions.",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 3,
+      "bookId": 24,
+      "name": "Ralentissement du temps",
+      "level": 24,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort affecte une zone déterminée dans laquelle tout individu désigné par le lanceur est entraîné dans un flux temporel ralenti. Par conséquent, les personnes affectées se déplacent beaucoup plus lentement, souffrant ainsi de divers malus indiqués en fonction des Degré s du sortilège. La zone affectée par Ralentissement du Temps reste à l'endroit où elle a été lancée. Pour résister à ses effets il faut réussir une RMys, mais quelqu'un qui a échoué au test ne peut pas le refaire tant qu'il ne sort pas de la zone d'influence du sort.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 7,
+        "effect": "-2 en Mouvement / -40 à l'Initiative / 10 m de rayon / 100 RMys.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 10,
+        "effect": "-4 en Mouvement / -60 à l'Initiative / -10 à toutes les actions / 25 m de rayon / 120 RMys.",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": "-6 en Mouvement / -80 à l'Initiative / -20 à toutes les actions / 50 m de rayon / 140 RMys.",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 15,
+        "effect": "-8 en Mouvement / -100 à l'Initiative / -30 à toutes les actions / 100 m de rayon / 160 RMys.",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 4,
+      "bookId": 24,
+      "name": "Retenir le Temps",
+      "level": 34,
+      "actionType": "Active",
+      "type": "Automatique",
+      "effect": "Ce sort crée une bulle surnaturelle qui bloque le flux du temps. Tant que le sortilège est actif, l'état des choses à l'intérieur de cette bulle ne peut changer. En termes de jeu, ce sort mémorise l'état et la condition actuels de tout ce qui se trouve dans un rayon d'action déterminé par le Degré  du sortilège au moment où celui-d est lancé, empêchant à tout moment que, quels que soient les dégâts que subissent des choses ou des personnes à partir de ce moment, leurs effets ou conséquences puissent se produire. Par exemple, pendant que le sort est maintenu, un personnage blessé conservera toujours la même quantité de points de vie perdus, même si par la suite il essuie de nouvelles attaques qui peuvent le blesser plus sérieusement et même le tuer. De la même manière, les effets négatifs physiques comme la douleur ou la fatigue n'ont .pas plus d'effet pendant ce temps. Malheureusement, Retenir le Temps ne peut que retarder les effets de ce qui s'est réellement passé, et non les éviter, donc tout ce qu'a subi un individu ou une chose durant ce laps de temps bloqué apparaîtra immédiatement à la fin du sort ou en sortant de sa zone d'influence. Cela signifie que si quelqu'un est mort à l'intérieur d'une zone bloquée, quels que soient les soins qu'elle reçoit à posteriori elle ne pourra 'être sauvée lorsque le sort s'arrêtera, car elle sera morte depuis longtemps. Le sorcier peut choisir librement qui est affecté ou non, et quelles choses pourront être détruites ou non. Néanmoins, ce sortilège n'affecte jamais* son lanceur, car il est le nœud qui relie le passé au présent. La zone affectée par Retenir le Temps reste à l'endroit où elle a été lancée.",
+      "initialGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 8,
+        "effect": "5 m.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 11,
+        "effect": "10 m.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 13,
+        "effect": "25 m.",
+        "retention": 30
+      },
+      "arcaneGrade": {
+        "zeon": 380,
+        "requiredIntelligence": 15,
+        "effect": "50 m",
+        "retention": 40
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 5,
+      "bookId": 24,
+      "name": "Arrêter le Temps",
+      "level": 44,
+      "actionType": "Active",
+      "type": "Automatique",
+      "effect": "Ce sort fait en sorte que le temps s'arrête à l'intérieur d'un espace déterminé. Toute chose ou tout individu qui, à partir du round postérieur au lancement du sort, se trouve à l'intérieur de sa zone d'effet reste figé dans le temps s'il ne réussit pas un test de RMys dont la difficulté est déterminée par le Degré  du sort. Les personnes ou choses figées dans le temps sont complètement solides, rien ne peut interagir avec elles, les toucher ou leur infliger de dégâts d'aucune sorte, et elles ne peuvent pas non plus interagir avec quoi que ce soit. Les créatures avec une Gnose de 40 ou plus peuvent ignorer cet effet, car elles sont capables d'interagir librement avec les choses figées sans aucun problème. Une personne affectée peut refaire le test une fois par jour. La zone affectée par Arrêter le Temps reste fixe, là où le sort a été lancé, et il n'est pas possible de choisir des cibles à l'intérieur. Il affecte donc tout ce qui s'y trouve à l'exception du lanceur.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 9,
+        "effect": "120 RMys / 10 m.",
+        "retention": 40
+      },
+      "intermediateGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 12,
+        "effect": "140 RMys / 25 m.",
+        "retention": 60
+      },
+      "advancedGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 14,
+        "effect": "160 RMys / 50 m.",
+        "retention": 80
+      },
+      "arcaneGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 16,
+        "effect": "180 RMys / 100 m.",
+        "retention": 100
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 6,
+      "bookId": 24,
+      "name": "Rétroévolution",
+      "level": 54,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Ce sortilège affecte l'essence de la cible, faisant repartir son \"\"existence\"\" en arrière dans le temps. Naturellement, la personne affectée ne voyage pas vraiment dans le passé, c'est son essence qui revient à un moment antérieur de sa vie. De cette façon, un vieillard redeviendra jeune et un adulte pourra se transformer en enfant, et même en bébé. Malheureusement, le temps remonté s'efface de la vie de l'individu et il perd donc cette partie de sa vie, oubliant ses souvenirs ou même perdant (ou regagnant) les capacités qu'il avait avant. Bien sûr, si cela est nécessaire, cela peut aller jusqu'à modifier le niveau de la personne affectée. Ce sort ne permet pas de récupérer des membres amputés' ni d'annuler des effets ou des dégâts infligés par des créatures de Gnose 40 ou supérieure. Pour résister aux effets de ce sort il faut réussir un test de RMys contre la difficulté déterminée par le Degré  du sort.",
+      "initialGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 10,
+        "effect": "120 RMys / Remonte au plus d'un jour.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 13,
+        "effect": "140 RMys / Remonte au plus d'un mois.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 450,
+        "requiredIntelligence": 15,
+        "effect": "160 RMys / Remonte au plus d'un an.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 17,
+        "effect": "180 RMys / Remonte au plus d'une décennie.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 7,
+      "bookId": 24,
+      "name": "Défaire le Temps",
+      "level": 64,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort permet de faire en sorte que les fibres du temps reculent de quelques instants dans un zone déterminée, défaisant n'importe quel événement étant survenu pendant cette période. De cette manière, il est possible de refaire à nouveau quelques rounds, ou même de faire revenir à la vie quelqu'un mort pendant ce laps de temps. Seul le lanceur, les créatures avec une Gnose supérieure de 15 points à sa Natura ou celles de nature divine seront conscientes de ce qui s'est passé durant la période de temps défaite. Pour les autres, elle n'aura jamais existé. Ce sort ne permet pas de défaire les actions dans lesquelles est directement impliquée une créature avec une Gnose de 40 ou plus, sauf si le lanceur a une Gnose encore plus élevée, ni de rendre la vie à une personne dont l'âme a été décréée. Il est important de noter que pour la réalité générale, le temps ne recule pas, mais qu'une partie du monde se sépare du continuum espace-temps naturel et le fait brièvement repartir en arrière. Ainsi, une brève distorsion temporelle se crée, que l'existence se chargera de réparer en faisant le moins de dégâts possibles. La zone affectée et la période de temps qu'il est possible de remonter sont déterminées par le Degré  du sort. Aucun jet de Résistance n'est possible.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 11,
+        "effect": "15 secondes (5 rounds) / 50 m.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 14,
+        "effect": "30 secondes (10 rounds) / 150 m.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 16,
+        "effect": "Une minute / 250 m.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 18,
+        "effect": "Une heure / 1 km.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 8,
+      "bookId": 24,
+      "name": "Saut dans le Temps",
+      "level": 74,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Ce sort affecte un individu ou une chose en lui faisant faire un saut Ifs le futur. En termes de jeu, la cible du sort disparaît d'où elle était, apparaissant au même endroit un certain temps après, ou au plus proche lieu Fore si quelque chose a pris sa place. Alors que pour elle seul l'environnement change et qu'elle ne perçoit aucun écoulement du temps, une personne à ses côtés à cet instant la verrait disparaître complètement. Le lanceur choisit combien de temps dans le futur il va envoyer la personne affectée, tant que cela ne dépasse pas les limites déterminées par le Degré  du sort. Toutefois, il y a une limite à ces effets. Certains moments de l'histoire sont des événements si importants de l'existence qu'il est impossible de les éviter. De ce fait, si la période de temps du saut temporel devrait contenir l’un d'entre eux, l'individu qui fait ce saut sera stoppé, le sortilège s'arrêtant avant ce qui été prévu. La cible du sort peut résister à ses effets en réussissant une RMys.",
+      "initialGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 11,
+        "effect": "10 minutes au maximum / 120 RMys.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 14,
+        "effect": "Un jour au maximum / 160 RMys.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 450,
+        "requiredIntelligence": 16,
+        "effect": "Un mois au maximum / 200 RMys.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 18,
+        "effect": "Un an au maximum / 240 RMys",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 9,
+      "bookId": 24,
+      "name": "Boucle Temporelle",
+      "level": 84,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort crée une boucle sur un laps de temps, faisant se répéter l’histoire encore et encore. Tant que le sortilège est maintenu, lorsque la période arrive à la fin assignée par le lanceur, le temps se réinitialise, donnant un nouveau début aux mêmes événements. À part les individus désignés par le lanceur, ou ceux qui ont une Gnose de 35 ou plus (ou, à défaut, ceux dont la Gnose est au moins de 15 points supérieure à la Natura du lanceur), personne ne sera conscient que l'histoire se répète. Ce sort a une zone d'effet définie, mais cela ne signifie pas que le temps avance hors de cette zone. Lorsque le sort se termine, on considère que seule la dernière occurrence de la Boucle Temporelle a réellement eu lieu. Les créatures avec une Gnose de 40 ou plus sont conscientes du lieu et de la position de toutes les Boucles Temporelles existantes à chaque instant. S’il le souhaite, le lanceur peut imposer un événement comme fin du sortilège. Ainsi, si les choses se passent comme il l'avait défini, le sort se termine immédiatement. Le maintien de ce sort se calcule d'une façon spéciale. Contrairement aux règles générales, le sorcier doit payer un coût de maintien à la fin de chaque occurrence de la boucle qu'il a définie. C'est-à-dire que s'il établit une boucle temporelle de dix minutes, il devra dépenser son Zéon à la fin de cette période. Malheureusement, en liant son essence à un moment statique de l'histoire, le lanceur de la Boucle Temporelle n'a aucun moyen de récupérer du Zéon tant que le sort est maintenu actif. Aucun jet de Résistance n'est possible contre une Boucle Temporelle. Limitation spéciale : Contrairement aux règles générales des sorts d'Accès Libre et des voies secondaires, la Boucle Temporelle est considérée comme un sort de Haute Magie.",
+      "initialGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 11,
+        "effect": "Initial : 250 m de rayon / Un jour au maximum.",
+        "retention": 40
+      },
+      "intermediateGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 14,
+        "effect": "500 m de rayon / Une semaine au maximum.",
+        "retention": 60
+      },
+      "advancedGrade": {
+        "zeon": 900,
+        "requiredIntelligence": 16,
+        "effect": "1 km de rayon / Un mois au maximum.",
+        "retention": 90
+      },
+      "arcaneGrade": {
+        "zeon": 1400,
+        "requiredIntelligence": 18,
+        "effect": "5 km de rayon / Un an au maximum.",
+        "retention": 140
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 10,
+      "bookId": 24,
+      "name": "Superposition du Temps",
+      "level": 94,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort permet au lanceur de créer un point de réunion entre le présent et le passé, fusionnant les deux instants en un. Ainsi, tout ce qu'il y avait à l'intérieur de la zone déterminée par le Degré  du sort au moment désigné par le sorcier se manifeste dans le présent, comme s'il avait toujours été là. En réalité, le passé n'est pas du tout altéré, c'est le présent qui est modifié, en rajoutant sur celui-ci une ligne temporelle antérieure. Cela signifie que, aussi bien les personnes que les choses qui existaient à ce moment et à cet endroit réapparaissent dans le présent. Il n'y a aucune limite à la quantité d'éléments qui sont amenés dans la zone affectée. Il peut s'agir d'armées entières ou de villes qui existaient il y a des éons. Les êtres et les objets qui apparaissent ne sont .pas vraiment des copies, mais en même temps, ils ne sont pas complètement réels. Ce sont des êtres hors de leur ligne temporelle dont l'existence prolongée est, dans le meilleur des cas, non naturelle. Si deux choses identiques se superposent au même endroit (comme c'est souvent le cas avec les constructions pérennes et les reliefs géographiques), s'imposera celle qui aura le plus de présence entre les deux versions ou, dans le cas de deux présences très similaires, elles se mêleront pour donner un résultat intermédiaire entre les deux. Dans le cas où une même personne se trouve au même endroit aux deux moments, le résultat est toujours instable. Il est possible qu'elle fusionne en une seule personne, qu'elle existe comme deux entités séparées ou, même que les deux soient complètement détruites. Néanmoins, ce sort a aussi ses limites. En premier lieu, il est impossible de \"\"ramener\"\" du passé quelqu'un ou quelque chose qui a été décréé ou dont l'âme a été détruite (dans le second de ces cas, son corps apparaîtra, mais ne sera qu'une carcasse vide). De plus, si un objet unique avec un niveau de Pouvoir de 5 devrait être ramené et qu'il existe toujours dans le présent, la manifestation de cet objet sera incomplète, possédant des qualités très inférieures à celles de l'objet qui existe toujours.\nLimitation spéciale : Contrairement aux règles générales des sorts d'Accès Libre et donc des voies secondaires, la Superposition du Temps est considérée comme un sort de Magie Divine.",
+      "initialGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 12,
+        "effect": "5 m de rayon / Un an au maximum dans le passé.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 15,
+        "effect": "25 m de rayon / Une décennie au maximum dans le passé.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 1250,
+        "requiredIntelligence": 17,
+        "effect": "500 m de rayon / Un siècle au maximum dans le passé.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 2500,
+        "requiredIntelligence": 19,
+        "effect": "1 km de rayon / Mille ans au maximum dans le passé",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    }
+  ]
+}
