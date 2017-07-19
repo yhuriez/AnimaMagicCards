@@ -189,53 +189,53 @@
     },
     {
       "bookId": 13,
-      "bookName": "Livre du Chaos",
-      "description": "Cette voie manie le principe absolu du chaos, le pouvoir de l'imprédictible e l'altération des événements.",
+      "bookName": "Path of Chaos",
+      "description": "This path controls the principle of chaos, the power of unpredictability and alteration of events.",
       "primaryBookUnaccessibles": [
-        "Eau",
-        "Feu",
-        "Terre",
+        "Water",
+        "Fire",
+        "Earth",
         "Essence",
         "Illusion",
-        "Nécromancie"
+        "Necromancy"
       ]
     },
     {
       "bookId": 14,
-      "bookName": "Livre de la Guerre",
-      "description": "Les sorciers de la guerre sont ceux qui maîtrisent les champs de bataille à volonté, pouvant renforcer selon leurs souhaits les compétences de leurs alliés ou même d'armées entières.",
+      "bookName": "Path of War",
+      "description": "The Path of War is one that dominates the fields of battle, allowing the mage to enhance their skills as well as their peers, or entire armies.",
       "primaryBookUnaccessibles": [
-        "Lumière",
-        "Création",
+        "Light",
+        "Creation",
         "Air",
-        "Eau",
+        "Water",
         "Essence",
         "Illusion"
       ]
     },
     {
       "bookId": 15,
-      "bookName": "Livre de la Literae",
-      "description": "Literae est la magie des mots, la voie de la modification de la réalité en écrivant des annotations en marge du livre que nous appelons la réalité. Ceux qui l’emploient sont capables d'utiliser la sorcellerie pour réécrire le scénario de la vie en l'adaptant à leurs besoins.",
+      "bookName": "Path of Literae",
+      "description": "Literae is the magic of words, changing the writing in the margins of the book we call reality.",
       "primaryBookUnaccessibles": [
         "Destruction",
         "Air",
-        "Feu",
-        "Terre",
+        "Fire",
+        "Earth",
         "Essence",
-        "Nécromancie"
+        "Necromancy"
       ]
     },
     {
       "bookId": 16,
-      "bookName": "Livre de la Mort",
-      "description": "Cette voie secondaire contrôle la fin des choses, la mort dans son concept fin de la vie.",
+      "bookName": "Path of Death",
+      "description": "This sub-path controls the order of things, the concept of the ending of life",
       "primaryBookUnaccessibles": [
-        "Lumière",
-        "Création",
+        "Light",
+        "Creation",
         "Air",
-        "Eau",
-        "Terre",
+        "Water",
+        "Earth",
         "Essence",
         "Illusion"
       ]

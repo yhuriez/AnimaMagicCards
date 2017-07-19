@@ -1,46 +1,46 @@
 {
   "bookId": 15,
-  "bookName": "Livre de la Literae",
-  "description": "Literae est la magie des mots, la voie de la modification de la réalité en écrivant des annotations en marge du livre que nous appelons la réalité. Ceux qui l’emploient sont capables d'utiliser la sorcellerie pour réécrire le scénario de la vie en l'adaptant à leurs besoins.",
+  "bookName": "Path of Literae",
+  "description": "Literae is the magic of words, changing the writing in the margins of the book we call reality.",
   "primaryBookUnaccessibles": [
     "Destruction",
     "Air",
-    "Feu",
-    "Terre",
+    "Fire",
+    "Earth",
     "Essence",
-    "Nécromancie."
+    "Necromancy"
   ],
   "spells": [
     {
       "spellId": 1,
       "bookId": 15,
-      "name": "Plumes de la Réalité",
-      "level": 4,
+      "name": "Pen of Reality",
+      "level": 2,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Crée une plume surnaturelle qui écrit sur n'importe quelle surface sans avoir besoin d'encre. En l'utilisant tout en lançant un sort de la voie secondaire Literae, le sorcier peut renforcer considérablement les effets de sortilège, et réduire de moitié son coût en Zéon. Par exemple, un sort de Missive au Degré  Initial aura un coût de 40 points au lieu de 80.",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: Creates a supernatural pen that writes on any surface without the need for ink.  Using this pen during the casting of a Literae spell reduces the Zeon cost by half.",
       "initialGrade": {
         "zeon": 30,
         "requiredIntelligence": 5,
-        "effect": "Affecte les sorts Literae en Degré  Initial.",
+        "effect": " Affects base Literae spells.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 80,
         "requiredIntelligence": 8,
-        "effect": "Affecte les sorts Literae en Degré  Intermédiaire.",
+        "effect": " Affects Intermediate Literae spells.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 100,
         "requiredIntelligence": 10,
-        "effect": "Affecte les sorts Literae en Degré  Avancé.",
+        "effect": " Affects Advanced Literae spells.",
         "retention": 10
       },
       "arcaneGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "Affecte (es sorts Literae en Degré  Arcane.",
+        "effect": " Affects Arcane Literae spells.",
         "retention": 15
       },
       "withRetention": true,
@@ -50,67 +50,67 @@
       "spellId": 2,
       "bookId": 15,
       "name": "Missive",
-      "level": 14,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Après avoir écrit une lettre il est possible d'utiliser ce sort pour envoyer son contenu à un individu que le sorcier connait personnellement. La lettre, comme son enveloppe, disparaît dans un éclair et un nuage de fumée, réapparaissant quelques instants après à côté de son destinataire. La portée du sort dépend de son Degré. Missive peut traverser des structures enchantées de moindre pouvoir tant qu'il y suffisamment d'espace pour cela, par exemple en \"\"glissant\"\" la lettre sous une porte.",
+      "level": 2,
+      "actionType": "Action: Active",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: After writing a letter you can use this spell to send the content to an individual the sorcerer knows. The letter and its envelope, disappears in a flash and a cloud of smoke, reappearing moments later by the receiver.  The letter can pass through structures so long as there is sufficient room for a letter to get in, for example appearing in a room with a closed door so long as the letter could have been slipped under the door.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 6,
-        "effect": "10 km.",
+        "effect": " 10 miles.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 140,
         "requiredIntelligence": 9,
-        "effect": "100 km.",
+        "effect": " 100 miles.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 200,
         "requiredIntelligence": 12,
-        "effect": "1000 km.",
+        "effect": " 1000 miles.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 280,
         "requiredIntelligence": 15,
-        "effect": "N'importe où.",
+        "effect": " Anywhere.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 3,
       "bookId": 15,
-      "name": "Journal de Bord",
-      "level": 24,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Enchante un livre afin qu'il recueille toutes les péripéties que traverse le mage pour pouvoir les examiner ultérieurement, comme si dans le jeu il tenait un journal détaillé. Le Degré  du sort détermine la période de temps maximum que le livre couvre rétrospectivement à partir du moment du lancement.",
+      "name": "Travel Journal",
+      "level": 2,
+      "actionType": "Action: Active",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: Enchants a book so that it contains all the magician’s experiences so that he may refer to them later.  The level of the spell determines the maximum time passed that the book will have covered from the time of launch.",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 6,
-        "effect": "1 jour.",
-        "retention": 15
+        "effect": " 1 day.",
+        "retention": 5
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 9,
-        "effect": "1 semaine.",
+        "effect": " 1 week.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "1 mois.",
+        "effect": " 1 month.",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "1 an.",
+        "effect": " 1 year.",
         "retention": 30
       },
       "withRetention": true,
@@ -119,68 +119,68 @@
     {
       "spellId": 4,
       "bookId": 15,
-      "name": "Ordre Écrit",
-      "level": 34,
-      "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Permet d'écrire sur un parchemin un ordre simple qui affectera la première personne qui le lira, l'obligeant à l'accomplir s'il échoue au test de résistance du sortilège. L'ordre fonctionnera même s'il est caché parmi d'autres phrases, toutefois le personnage affecté obtient entre +20 et +60 à son test si la directive va directement à l'encontre de sa nature.\nCe sort peut contenir plusieurs directives liées pour créer un ordre complet comme \"\"ouvre la porte et ensuite oublie ce qui s'est passé\"\". Le pouvoir des phrases perd son pouvoir après avoir imprégné une personne avec l'ordre, se transformant en une lettre classique à partir de ce moment.",
+      "name": "Written order",
+      "level": 2,
+      "actionType": "Action: Active",
+      "type": "Spell Type: Automatic",
+      "effect": "Effect: Allows you to write a simple command in a scroll that will affect the first to read it, forcing them to comply unless they pass the resistance test.  The command will work even if it is hidden among other phrases, though the character recives between +20 and +60 to the resistance test if the mandate goes directly against their nature.This spell can be repeated several times to chain a complex order, such as \"open the door and then forget it occurred.  The words loose their power after being read.",
       "initialGrade": {
         "zeon": 120,
         "requiredIntelligence": 6,
-        "effect": "120 RMys ou RPhy.",
+        "effect": " MR or PhR 120.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 240,
         "requiredIntelligence": 9,
-        "effect": "140 RMys ou RPhy.",
+        "effect": " MR or PhR  140.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 360,
         "requiredIntelligence": 12,
-        "effect": "160 RMys ou RPhy.",
+        "effect": " MR or PhR  160.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 480,
         "requiredIntelligence": 15,
-        "effect": "180 RMys ou RPhy.",
+        "effect": " MR or PhR  180.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 5,
       "bookId": 15,
-      "name": "Bouclier de Mots",
-      "level": 44,
+      "name": "Shield of Words",
+      "level": 2,
       "actionType": "Passive",
-      "type": "Défense",
-      "effect": "Utilisant une plume magique (qui peut être la Plume de la Réalité) pour tracer des caractères dans l'air, le sorcier crée un bouclier de mots qui le défendent aussi bien des attaques physiques que surnaturelles. Le bouclier se régénère à chaque round d'autant de points de vie que le score de la compétence du mage en Art (littérature).",
+      "type": "Spell Type: Defense",
+      "effect": "Effect: Using the Magic Pen to draw characters in the air the wizard creates a shield of words that defends both the physical and supernatural. The shield regenerates after each attack a number of Resistance points equal to the casters base Art score.",
       "initialGrade": {
         "zeon": 150,
         "requiredIntelligence": 8,
-        "effect": "200 Points de Vie.",
+        "effect": " 200 Resistance points.",
         "retention": 15
       },
       "intermediateGrade": {
         "zeon": 200,
         "requiredIntelligence": 10,
-        "effect": "500 Points de Vie.",
+        "effect": " 500 Resistance points",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 250,
         "requiredIntelligence": 12,
-        "effect": "800 Points de Vie.",
+        "effect": " 800 Resistance points",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "1 200 Points de Vie.",
+        "effect": " 1,200 Resistance points",
         "retention": 30
       },
       "withRetention": true,
@@ -189,33 +189,33 @@
     {
       "spellId": 6,
       "bookId": 15,
-      "name": "Théâtre de la Vie",
-      "level": 54,
-      "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Permet au sorcier de modifier le comportement des personnes qui sont autour de lui en écrivant sur une surface les actions qu'il souhaite les voir accomplir. Tout simplement, le sorcier se convertit en écrivain d'une pièce de théâtre en mettant les cibles du sort dans la position d'acteurs qui jouent leur rôle suivant sa narration. Ce sort peut affecter plusieurs personnes, tant que leur présence combinée ne dépasse pas la limite indiquée par le Degré  du sortilège. Pour que les cibles de ce sort qui sont dans sa zone d'effet soient affectées, il faut que le lanceur connaisse leurs véritables noms. Celles-ci peuvent tenter de résister en réussissant une RMys ou une RPsy pour ne pas être contrôlées. Si le narrateur-cesse d'écrire et que les personnes affectées n'ont plus de nouveaux ordres à suivre, elles resteront tranquilles dans l'attente du rôle suivant.",
+      "name": "Theater of Life",
+      "level": 2,
+      "actionType": "Action: Active",
+      "type": "Spell Type: Automatic",
+      "effect": "Allows the caster to modify the behavior of people found around the writing on a surface.  Basically, the wizard becomes the writer of a play, putting people in the roles of actors who fulfill their purpose as he narrates.It can affect many people, provided their combined presence did notexceed the limit set by the spell level.  To be affected by this spell the target must be within the radius and the caster must know their real name.  Targets can still attempt to resist with either their MR or PhR.  If the mage stops writing and those over his influence do not have orders to fulfill they stand ideally awaiting their next role. ",
       "initialGrade": {
         "zeon": 240,
         "requiredIntelligence": 6,
-        "effect": "120 RMys ou RPsy / Présence maximale affectable 100/ 20 m de rayon.",
+        "effect": " MR or PhR 120 / Max Presence 100 / 20m/21yd radius.",
         "retention": 15
       },
       "intermediateGrade": {
         "zeon": 360,
         "requiredIntelligence": 9,
-        "effect": "RMys ou RPsy / Présence maximale affectable 180/ 40 m de rayon.",
+        "effect": " MR or PhR 140 / Max Presence 180 / 40m/43yd radius.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 480,
         "requiredIntelligence": 12,
-        "effect": "160 RMys ou RPhy / Présence maximale affectable 240/ 80 m de rayon.",
+        "effect": " MR or PhR / Max Presence 240 / 80m/87yd radius.",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 600,
         "requiredIntelligence": 15,
-        "effect": "180 RMys ou RPhy / Présence maximale affectable 320/ 150 m de rayon.",
+        "effect": " MR or PhR 180 / Max Presence 320 / 150m/164yd radius.",
         "retention": 30
       },
       "withRetention": true,
@@ -225,32 +225,32 @@
       "spellId": 7,
       "bookId": 15,
       "name": "Compendium",
-      "level": 64,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Enchante un livre pour qu'il réponde aux questions qui lui sont posées de manière à ce que, lorsque quelqu'un pose une question en sa présence, il inscrive la réponse entre ses pages. Malheureusement, le livre n'est pas capable de répondre à un doute. En lançant Compendium, le manuscrit affecté reçoit un score dans une compétence du champ secondaire intellectuel déterminée par le Degré  du sort. Quand on l'interrogera, il donnera la réponse appropriée selon ce que saurait un expert avec ce score sur le thème de la compétence.",
+      "level": 2,
+      "actionType": "Action: Active",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: This spells enchants a book so that it will answer any question asked of it.  The user must simply ask its question and await a response to be written upon the page.  Unfortunately the book cannot answer every question; its scope of knowledge is limited to the level the spell is activated at.  In game terms the Compendium receives a number of points to be distributed amongst Intellectual secondary abilities based on the spell level.",
       "initialGrade": {
         "zeon": 120,
         "requiredIntelligence": 7,
-        "effect": "120 points de compétence intellectuelle.",
+        "effect": " 120 points of intellectual ability.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 260,
         "requiredIntelligence": 10,
-        "effect": "240 points de compétence intellectuelle.",
+        "effect": " 240 points of intellectual ability.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 380,
         "requiredIntelligence": 13,
-        "effect": "320 points de compétence intellectuelle.",
+        "effect": " 320 points of intellectual ability.",
         "retention": 30
       },
       "arcaneGrade": {
         "zeon": 500,
         "requiredIntelligence": 15,
-        "effect": "Arcane 440 points de compétence intellectuelle.",
+        "effect": " 440 points of intellectual ability.",
         "retention": 40
       },
       "withRetention": true,
@@ -259,68 +259,68 @@
     {
       "spellId": 8,
       "bookId": 15,
-      "name": "Dramaturge",
-      "level": 74,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Ce sort modifie la réalité tant que cela reste plausible et que cela n'affecte pas directement un autre être vivant. Par exemple, si le sorcier tombe depuis une échelle il peut \"écrire\" qu'il le fait sur une carriole de foin qui amortit sa chute et cela se passera ainsi, ou s'il veut entrer dans un endroit fermé, il pourra \"raconter\" que la porte n'est pas verrouillée et il en sera ainsi. Les possibilités de ce sort sont presque infinies, tant que les éléments et les objets utilisés sont simples et avec une présence qui ne dépasse pas ce qui est déterminé par le Degré  du sort.",
+      "name": "Playwright",
+      "level": 2,
+      "actionType": "Action: Active",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: This spell will alter reality slightly adding something plausible.  This spell will never directly affect a living being.  For example a mage falling from a roof can “write in” a wagon filled with hay for him to land on, or when entering a room “scripting” the door to be unlocked and it be true.  The applications of this spell are endless as long as the objects and elements written in are simple and plausible. ",
       "initialGrade": {
         "zeon": 280,
         "requiredIntelligence": 10,
-        "effect": "Présence maximum de 40.",
+        "effect": " Max Presence 40.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 320,
         "requiredIntelligence": 12,
-        "effect": "Présence maximum de 80.",
+        "effect": " Max Presence 80.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 480,
         "requiredIntelligence": 14,
-        "effect": "Présence maximum de 120.",
+        "effect": " Max Presence 120.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 700,
         "requiredIntelligence": 16,
-        "effect": "Présence maximum de 160.",
+        "effect": " Max Presence 160.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 9,
       "bookId": 15,
-      "name": "Secondaire",
-      "level": 84,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Crée un \"\"personnage\"\" ayant la personnalité et les compétences souhaitées par le sorcier. Pour ce faire, le lanceur doit décrire dans un livre la personnalité, l'histoire et la nature de cet individu, et celui-ci croira vraiment être tel que le sorcier l'a décrit. L'existence du Secondaire est liée au livre et donc, si ce dernier est détruit, le personnage disparaîtra immédiatement. Le niveau du Secondaire ne peut dépasser ce qui est indiqué par le Degré  du sortilège et ne peut pas être supérieur à celui du sorcier.",
+      "name": "Secondary (Understudy? Seems more fitting) ",
+      "level": 2,
+      "actionType": "Action: Active",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: This spell creates a “character” with the personality and skills chosen by the caster.  The mage must describe in a book the nature of the individual.  The character created by this spell truly believes anything the mage writes in their book.  The existence of the secondary is tied to the book which if destroyed will disappear immediately. The level of the Secondary can not exceed the level indicated by the spell or the level of the sorcerer.",
       "initialGrade": {
         "zeon": 400,
         "requiredIntelligence": 10,
-        "effect": "Niveau 2.",
+        "effect": " Level 2.",
         "retention": 40
       },
       "intermediateGrade": {
         "zeon": 600,
         "requiredIntelligence": 12,
-        "effect": "Niveau 5.",
+        "effect": " Level 5.",
         "retention": 60
       },
       "advancedGrade": {
         "zeon": 800,
         "requiredIntelligence": 14,
-        "effect": "Niveau 7.",
+        "effect": " Level 7.",
         "retention": 80
       },
       "arcaneGrade": {
         "zeon": 1200,
         "requiredIntelligence": 17,
-        "effect": "Niveau 10.",
+        "effect": " Level 10.",
         "retention": 120
       },
       "withRetention": true,
@@ -329,37 +329,37 @@
     {
       "spellId": 10,
       "bookId": 15,
-      "name": "Tragédie",
-      "level": 94,
-      "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Ce sort réalise la transformation ultime de la réalité, altérant la destinée d'un autre être vivant pour la faire se terminer comme il plaît au mage. Le lanceur peut écrire tout type de dénouement qu'il souhaite pour la vie d'une personne, comme \"\"et en trébuchant, il tomba sur son épée, s'embrochant mortellement\"\" ou \"\"le ciel s'illumina quand, des nuages de la tempête un éclair tomba sur lui, apaisant les dieux vindicatifs\"\". La condition pour être affecté par ce sortilège est d'avoir été vue par le sorcier au moins une fois et que celui-ci connaisse votre nom véritable. Pour éviter ces effets, aussi bien la cible de Tragédie que toute personne directement impliquée dans le destin écrit doit réussir une RMys contre la difficulté indiquée par le Degré  du sort. Si elles réussissent, elles deviennent immunisées contre ce sort (lancé par le même sorcier) pendant le reste de leur existence.",
+      "name": "Tragedy",
+      "level": 2,
+      "actionType": "Action: Active",
+      "type": "Spell Type: Automatic.",
+      "effect": "Effect: This spell is the ultimate transformation of reality, altering the fate of another living being by having them meet their end as chosen by the caster. You can enter any desired outcome for the life of a person, such as \"And stumbling, he fell mortally impaled on his sword\" or \"the sky brightened when, among the storm clouds, lightning struck him like an arrow from the gods”.  To cast this spell the mage has to of seen the target at least once and know his true name.  If the target resists this spell (or if anyone directly involved in the fate) it fails, and the mage can never attempt to cast it on them again.",
       "initialGrade": {
         "zeon": 500,
         "requiredIntelligence": 12,
-        "effect": "120 RMys",
+        "effect": " MR 120",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 900,
         "requiredIntelligence": 15,
-        "effect": "140 RMys",
+        "effect": " MR 140",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 1400,
         "requiredIntelligence": 17,
-        "effect": "160 RMys",
+        "effect": " MR 160",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 2500,
         "requiredIntelligence": 19,
-        "effect": "18ORMys",
+        "effect": " MR 180",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     }
   ]
 }

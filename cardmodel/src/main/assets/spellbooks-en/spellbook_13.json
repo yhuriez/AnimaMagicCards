@@ -1,46 +1,46 @@
 {
   "bookId": 13,
-  "bookName": "Livre du Chaos",
-  "description": "Cette voie manie le principe absolu du chaos, le pouvoir de l'imprédictible e l'altération des événements.",
+  "bookName": "Path of Chaos",
+  "description": "This path controls the principle of chaos, the power of unpredictability and alteration of events.",
   "primaryBookUnaccessibles": [
-    "Eau",
-    "Feu",
-    "Terre",
+    "Water",
+    "Fire",
+    "Earth",
     "Essence",
     "Illusion",
-    "Nécromancie."
+    "Necromancy"
   ],
   "spells": [
     {
       "spellId": 1,
       "bookId": 13,
-      "name": "Sentir le Chaos",
-      "level": 4,
+      "name": "Feel the Chaos",
+      "level": 2,
       "actionType": "Active",
-      "type": "Effet, Détection",
-      "effect": "Le sorcier est capable de remarquer les fluctuations provoquées par le chaos dans l'environnement, lui permettant de sentir tout ce qui arrive à l'Intérieur de la zone du sort et qui n'est pas naturel. Sans en déterminer la localisation exacte, il est conscient du niveau d'influence qu'exerce le chaos l'existence.",
+      "type": "Spell Type: Effect, Detection",
+      "effect": "The caster is able to notice the fluctuations caused by chaos in the environment, allowing the mage to notice alterations of reality within the radius of the spell.  This spell does not grant the exact location, but rather the mage is aware of the level of chaos influence excreted on reality. ",
       "initialGrade": {
         "zeon": 50,
         "requiredIntelligence": 5,
-        "effect": "50 m de rayon.",
+        "effect": " 50m/54yd radius.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 80,
         "requiredIntelligence": 8,
-        "effect": "100 m de rayon",
+        "effect": " 100m/109yd radius.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 100,
         "requiredIntelligence": 10,
-        "effect": "250 m de rayon.",
+        "effect": " 250m/273yd radius.",
         "retention": 10
       },
       "arcaneGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "Arcane 500 m de rayon / Le sorcier perçoit la présence de toute créature avec une Gnose supérieure à 20 ou à sa Natura de 10 points ou plus qui se trouve dans la zone d'effet du sort si celle-ci ne réussit pas une RMys contre 160.",
+        "effect": " 500m/546yd radius / The sorcerer perceives the presence of any being with more than 20 Gnosis or Natura over 10 who is within the action area of the spell if they do not exceed an MR against 160.",
         "retention": 15
       },
       "withRetention": true,
@@ -49,33 +49,33 @@
     {
       "spellId": 2,
       "bookId": 13,
-      "name": "Aura de Chaos",
-      "level": 14,
+      "name": "Aura of Chaos",
+      "level": 2,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Le sorcier provoque une vague d'énergie qui modifie les probabilités, enduisant des résultats chaotiques et imprévisibles. Tant que ce sortilège est actif, toutes les personnes se comportent comme si elles avaient une Glose de 10 points supérieure à leur Natura (bien que par rapport à leur importance dans la réalité, elles conservent leurs valeurs d'origine) et tout type de réussite inhabituelle et impossible survient constamment. Autrement ta c'est comme si la chance était devenue folle et que tout pouvait arriver. Au moment de lancer ce sort, le sorcier doit décider s'il sera fixé sur une zone déterminée, ou si l'aura se déplacera avec lui.",
+      "type": "Spell Type: Effect",
+      "effect": "The caster causes a surge of energy that alters reality forcing potentially chaotic and unpredictable results. While this spell is active, all people behave as if they have Natura 10 (although for the purpose of its importance in reality, retain their original value) and all sorts of unusual events and impossible things occur without stopping. In other words, it's as if fate went crazy, and anything could happen. At the time of launching this spell, the wizard must decide whether to leave a fixed area or if the aura moves with you.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 6,
-        "effect": "80 RMys / 10 m de rayon/ Présence maximum 100.",
+        "effect": " MR 80 / 10m/10yd radius / maximum Presence 100.",
         "retention": 15
       },
       "intermediateGrade": {
         "zeon": 90,
         "requiredIntelligence": 9,
-        "effect": "100 RMys / 20 m de rayon/ Présence maximum 120.",
+        "effect": " MR 100 / 20m/21yd radius / maximum Presence 120.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "120 RMys / 40 m de rayon/ Présence maximum 140.",
+        "effect": " MR 120 / 40m/43yd radius / maximum Presence 140.",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 150,
         "requiredIntelligence": 15,
-        "effect": "140 RMys / 60 m de rayon/ Présence maximum 160.",
+        "effect": " MR 140 / 60m/65yd radius / maximum Presence 160.",
         "retention": 30
       },
       "withRetention": true,
@@ -84,33 +84,33 @@
     {
       "spellId": 3,
       "bookId": 13,
-      "name": "Altération des Probabilités",
-      "level": 24,
+      "name": "Alteration of Probability",
+      "level": 2,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Le sorcier ou le personnage subit une altération temporaire de sa nature. Il est alors capable de réaliser avec beaucoup plus de facilité des actions extrêmes, qu'elles soient bonnes ou mauvaises. Par conséquent, il augmente ses chances de Maladresse et de Jet Ouvert, aux valeurs indiquées par le Degré  du sort. Par exemple, quelqu'un sans maîtrise qui est affecté par ce sort en Degré  Initial subit une Maladresse avec un jet de 5 ou moins et obtient un Jet Ouvert avec un jet de 85 ou plus.",
+      "type": "Spell Type: Spiritual",
+      "effect": "The magician or target of the characters choice undergoes a temporary alteration of nature.  This spell increases both the chances of a fumble and open roll.  Example at the base level a character botches on a 5 or below, but an 85 and up would be an open roll",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 8,
-        "effect": "+2 au seuil de maladresse / -5 au seuil de jet Ouvert.",
+        "effect": " +2 to Fumble / -5 to Open Rolls.",
         "retention": 20
       },
       "intermediateGrade": {
         "zeon": 100,
         "requiredIntelligence": 10,
-        "effect": "+4 au seuil de maladresse / -10 au seuil de jet Ouvert.",
+        "effect": " +4 to Fumble / -10 to Open Rolls.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "+6 au seuil de maladresse / -15 au seuil de jet Ouvert.",
+        "effect": " +6  to Fumble / -15 to Open Rolls.",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 140,
         "requiredIntelligence": 14,
-        "effect": "+8 au seuil de maladresse / -20 au seuil de jet Ouvert.",
+        "effect": " +8 to Fumble / -20 to Open Rolls.",
         "retention": 30
       },
       "withRetention": true,
@@ -119,33 +119,33 @@
     {
       "spellId": 4,
       "bookId": 13,
-      "name": "Modifier la Chance",
-      "level": 34,
-      "actionType": "Active",
-      "type": "Animique",
-      "effect": "La cible de ce sort voit les résultats du hasard et de la chance\"\" augmentés suivant le désir du sorcier, de façon à ce que n'importe quelle situation déterminée par le hasard ait toujours des résultats démesurés, en bien ou en mal. Un joueur de cartes, par exemple, obtiendra continuellement des mains incroyablement chanceuses ou désastreuses. Les personnages avec l'avantage Bonne Fortune et le désavantage Mauvaise Fortune voient leurs effets augmenter de façon exponentielle. Il est possible d'éviter ces effets en réussissant une RMys contre la valeur déterminée par le Degré  du sort.",
+      "name": "Alter Luck",
+      "level": 2,
+      "actionType": "Action: Active",
+      "type": "Spell Type: Spiritual",
+      "effect": "Effect: The target of this spell has increased resultsproduced by chance and luck as desired by the sorcerer.  Any situation that is determined by chance will always getdisproportionate results, either for Good or Bad. A playersrolls, for example, result in continuously incredibly fortunate or disastrous results. Characters with the advantage Good Luck or disadvantage Bad Luck  are increased exponentially. ",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 8,
-        "effect": "120 RMys.",
+        "effect": " MR 120.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 140,
         "requiredIntelligence": 10,
-        "effect": "140 RMys.",
+        "effect": " MR 140.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 250,
         "requiredIntelligence": 12,
-        "effect": "160 RMys / La chance accordée est un peu disproportionnée, frôlant l'absurde.",
+        "effect": " MR 160 / Luck is so disproportionate its bordering the absurd.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 400,
         "requiredIntelligence": 14,
-        "effect": "180 RMys / Comme pour le Degré  Avancé, mais face à des créatures surnaturelles de Gnose ou très supérieure à leur Natura, le personnage gagnera toujours, ou il perdra contre tout le monde, pour tout ce qui touche à la chance.",
+        "effect": " MR 180 / As advanced degree, but the character always wins or loses to anyone (Unless their Gnosis or Natura is higher) at all things related to luck.",
         "retention": 15
       },
       "withRetention": true,
@@ -154,33 +154,33 @@
     {
       "spellId": 5,
       "bookId": 13,
-      "name": "Chemins du Chaos",
-      "level": 44,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Le sorcier peut refaire un certain nombre de jets par round, uniquement lorsqu'aucun d'entre eux n'est une Maladresse. Il n'est pas possible de refaire deux fois le même jet.",
+      "name": "Path of Chaos",
+      "level": 2,
+      "actionType": "Action: Active",
+      "type": "Spell Type: Spiritual",
+      "effect": "Effect: The caster can reroll an offensive roll provided it was not a fumble,  this can only be done once per roll.",
       "initialGrade": {
         "zeon": 120,
         "requiredIntelligence": 7,
-        "effect": "Un jet par round.",
+        "effect": " One reroll.",
         "retention": 20
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 9,
-        "effect": "Deux jets par round.",
+        "effect": " Two rerolls.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 280,
         "requiredIntelligence": 12,
-        "effect": "Trois jets par round.",
+        "effect": " Three rerolls.",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 400,
         "requiredIntelligence": 14,
-        "effect": "Quatre jets par round ou annuler une maladresse.",
+        "effect": " Four rerolls, can be used on fumbles.",
         "retention": 30
       },
       "withRetention": true,
@@ -189,138 +189,138 @@
     {
       "spellId": 6,
       "bookId": 13,
-      "name": "Aberration Chaotique",
-      "level": 54,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Crée un avorton en solidifiant le chaos environnant. Le lanceur n'a aucun pouvoir sur lui, et ce dernier se comportera de façon complètement imprévisible (mais en règle générale, toujours violemment). L'entité doit être créée comme une créature d'Entre Mondes en utilisant les règles décrites au Chapitre 26 du Livre de base et de Gnose 20, mais le lanceur peut choisir de dépenser volontairement seulement la moitié des PF de la créature, alors que l'autre moitié sera déterminée au hasard par le Meneur de Jeu. Quel que soit le Degré  auquel a été lancé le sort, ce sortilège ne permet pas de créer des créatures d'un niveau supérieur à celui du sorcier, car celles-ci sont basées sur sa présence spirituelle Les avortons du chaos ne peuvent pas recevoir une âme, il est donc impossible de leur donner une vie indépendante grâce au sort Offrir une Âme, ni d'y faire transmigrer un esprit avec le sort Transférer l'Âme ou tout autre moyen.",
+      "name": "Chaotic aberration",
+      "level": 2,
+      "actionType": "Action: Active",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: Creates a monster of solidified chaos in the environment.The caster has no power over it, and it will behave completely unpredictable (although as a rule, always in a violent way). The being should be developed as a Being Between Worldsusing the rules described in Chapter 26 of the corebook, but the caster can only choose half of the DP of the creature, while the other half will be determined randomly by theGM. The creature will be Gnosis 20 regardless of the degree in which the spell is launched; thisspell can not create creatures of a higher level than the sorcerer. It is not possible to give this being a soul.",
       "initialGrade": {
         "zeon": 120,
         "requiredIntelligence": 8,
-        "effect": "Niveau 2.",
+        "effect": " Level 2.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 200,
         "requiredIntelligence": 10,
-        "effect": "Niveau 4.",
+        "effect": " Level 4.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 300,
         "requiredIntelligence": 12,
-        "effect": "Niveau 8.",
+        "effect": " Level 8.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 700,
         "requiredIntelligence": 15,
-        "effect": "Niveau 12.",
+        "effect": " Level 12.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 7,
       "bookId": 13,
-      "name": "Manipulation du Chaos",
-      "level": 64,
+      "name": "Handling of Chaos",
+      "level": 2,
       "actionType": "Passive",
-      "type": "Automatique",
-      "effect": "En altérant l'essence du chaos, ce sort permet de changer le dénouement d'un événement, provoquant une modification dans l'action d'une personne. Le sort doit être lancé immédiatement après que l'action ait été faite. Le personnage qui a agi devra relancer les dés immédiatement. Par exemple, un personnage qui tente de sauter au-dessus du vide et échoue à son jet de Saut peut le refaire, annulant le résultat antérieur pour en créer un autre. Ce sort est automatique, et pour être obligé de réussir la RMys il suffit d'être face au sorcier et d'avoir réalisé une action au moment du lancement. Les êtres avec une Gnose de 35 ou très supérieure à leur Natura sont conscients du changement, alors que les autres ne s'en rendent pas compte.",
+      "type": "Spell Type: Automatic",
+      "effect": "Effect: Altering the essence of chaos this spell changes theoutcome of an event.  The spell must be released immediately after and action has been taken, forcing a reroll.  The Gnosis 35 or beings with a higher Natura are aware of the change, while others can not perceive it.",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 10,
-        "effect": "140 RMys / Peut obliger à relancer les dés une fois.",
+        "effect": " MR 140.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 200,
         "requiredIntelligence": 12,
-        "effect": "180 RMys / Peut obliger à relancer les dés deux fois.",
+        "effect": " MR 180 / may force re-roll twice.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 300,
         "requiredIntelligence": 14,
-        "effect": "220 RMys / Peut obliger à relancer les dés trois fois.",
+        "effect": " MR 220 / may force re-roll three times.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 400,
         "requiredIntelligence": 16,
-        "effect": "260 RMys / Peut obliger à relancer les dés quatre fois.",
+        "effect": " MR 260 / may force re-roll four times.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 8,
       "bookId": 13,
-      "name": "Mutation Chaotique",
-      "level": 74,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "La cible de ce sort subit une série de mutations physiologiques, altérant tant son apparence que ses capacités. En utilisant Mutation Chaotique, le sorcier ou l'individu que celui-ci sélectionne obtient des RF supplémentaires pour obtenir des pouvoirs de créature décrits dans le Chapitre 26 du Livre de base comme s'il était une créature d'Entre Mondes avec une Gnose de 25. Toutefois il ne pourra choisir comment dépenser que la moitié des PF, l'autre moitié étant déterminée au hasard par le Meneur de Jeu. En règle générale, les pouvoirs que déclenche ce sort laissent toujours des modifications visibles du physique. Une personne peut essayer de résister à ses effets, si elle réussit une RMys contre une valeur déterminée par le Degré  du sort. Les PF obtenus augmentent le niveau du personnage. Ce sort ne peut être lancé qu'une fois contre un même individu, ne permet pas d'acquérir de désavantages de monstres, et est lié au corps de la cible de la même façon que pour le sort Chimère.",
+      "name": "Chaotic mutation",
+      "level": 2,
+      "actionType": "Action: Active",
+      "type": "Spell Type: Effect",
+      "effect": "The target of this spell suffers serious mutations in thier body, altering both their physiognomy and their capabilities. Using Chaotic Mutation,the sorcerer or the target get additional DP to get monster powers like a  Being Between Worlds with Gnosis 25. However, you can only  spend half the DP voluntarily, while the other half will be randomly determined by the GM. Generally, the powers this causes always leave visible physical changes.  The DP increases the level of the character, and a character can only be affected by this spell once.",
       "initialGrade": {
         "zeon": 200,
         "requiredIntelligence": 8,
-        "effect": "100 PF / 100 RMys.",
+        "effect": " 100 DP / 100 MR to resist.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 400,
         "requiredIntelligence": 11,
-        "effect": "200 PF / 120 RMys.",
+        "effect": " 200 DP / 120 MR to resist.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 800,
         "requiredIntelligence": 13,
-        "effect": "300 PF / 140 RMys.",
+        "effect": " 300 DP / 140 MR to resist.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 1200,
         "requiredIntelligence": 15,
-        "effect": "400 PF / Gnose de 30 / 160 RMys.",
+        "effect": " 400 DP / Gnosis 30 / 160 MR to resist.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 9,
       "bookId": 13,
-      "name": "Contrôle du Chaos",
-      "level": 84,
-      "actionType": "Active",
-      "type": "Effet, Animique",
-      "effect": "Le sorcier a la capacité de plier la nature du chaos à volonté et de l'utiliser afin d'obtenir les résultats qu'il souhaite. De cette manière, il peut faire des choses très simples comme faire se briser une chaise ou aller jusqu'à plier l'espace pour créer des portails. Il est important de préciser que ce sort ne permet pas à un personnage de contrôler le chaos s'il n'existe pas en tant que tel dans la zone. Ainsi plus l'environnement est chaotique, plus ses pouvoirs sont grands. Par exemple, contrôler un endroit dans lequel l'environnement chaotique est très bas ne lui permettra pas de faire quoi que ce soit, alors qu'en le maîtrisant dans une zone affectée par un chaos important, il pourra faire presque n'importe quoi. Dans le jeu, le sorcier obtient les pouvoirs de Gnose Influer sur la réalité et Auspice, avec une Gnose maximum qui dépend du Degré  du sort et du niveau de chaos ambiant, Pour un être basé sur ie chaos qui se trouve en présence du sorcier, celui-ci peut le dominer si la créature rate un test de RMys dont la valeur est indiquée par le Degré  du sortilège.",
+      "name": "Chaos Control",
+      "level": 2,
+      "actionType": "Action: Active",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: The magician has the ability to bend the nature of chaos to theircommand, allowing them to get the results they want.  It is important to note that thisspell does not give a character a control of chaos if it does not exist in an area, so the more chaotic environment is, the greater their powers. For example, controlling a place where the environment is low in chaos would not allow him to do anything, while in an area affected by a lots of chaos, could make almost anything. For the purpose of play, the mage gets the powers granted to beings with Gnosis(see Core book page 277).  Chaos aspected beings just pass an MR test indicated in the spell level or fall under the control of the caster.",
       "initialGrade": {
         "zeon": 300,
         "requiredIntelligence": 11,
-        "effect": "Gnose jusqu'à 30 / 120 RMys.",
+        "effect": " Gnosis 30 / MR 120.",
         "retention": 50
       },
       "intermediateGrade": {
         "zeon": 500,
         "requiredIntelligence": 13,
-        "effect": "Gnose jusqu'à 35 / 160 RMys",
+        "effect": " Gnosis 35 / MR 160.",
         "retention": 60
       },
       "advancedGrade": {
         "zeon": 800,
         "requiredIntelligence": 15,
-        "effect": "Gnose jusqu'à 40 / 200 RMys.",
+        "effect": " Gnosis 40 / MR 200.",
         "retention": 65
       },
       "arcaneGrade": {
         "zeon": 1200,
         "requiredIntelligence": 17,
-        "effect": "Gnose jusqu'à 45 / 260 RMys.",
+        "effect": " Gnosis 45 / MR 260.",
         "retention": 75
       },
       "withRetention": true,
@@ -329,33 +329,33 @@
     {
       "spellId": 10,
       "bookId": 13,
-      "name": "Chaos Primaire",
-      "level": 94,
-      "actionType": "Activé",
-      "type": "Automatique",
-      "effect": "En altérant complètement les lois de la réalité, le sorcier crée un chaos à l'état le plus pur, une zone dont tout k contenu cesse de répondre aux règles de la raison. L'espace est distordu de manière que le haut peut devenir le bas, les kilomètres sont parcourus en quelques secondes e les mètres en plusieurs heures. Une personne peut être à la fois jeune et vieille, un orage peut éclater et la journée rester ensoleillée... rien ne fait sens, car le concept même de logique a cessé d'exister. Quelqu'un de normal Peut devenir fou en quelques minutes, alors que tout pouvoir surnaturel peut échapper à tout contrôle. La zone d'effet de ce sort est déterminée par son Degré et ne bouge pas de l'endroit où elle a été lancée.",
+      "name": "Primary chaos",
+      "level": 2,
+      "actionType": "Action: Active",
+      "type": "Spell Type: Automatic",
+      "effect": "Effect: This spell completely alters the laws of reality, the sorcerercreates chaos in its purest form, an area where everything has stopped responding to any form of reason. The space is so distorted that up may become down, miles are traveled in seconds and yards in hours. A person can be young and old at the time, storms on a sunny day ... nothing makes sense, because the concept of logic has ceased to exist. Normal people go crazy as supernatural power gets out of control. The area of this spell isdetermined by the grade.",
       "initialGrade": {
         "zeon": 500,
         "requiredIntelligence": 12,
-        "effect": "500 mètres.",
+        "effect": " 546 yards.",
         "retention": 100
       },
       "intermediateGrade": {
         "zeon": 900,
         "requiredIntelligence": 14,
-        "effect": "1 km.",
+        "effect": " 1100 yards.",
         "retention": 180
       },
       "advancedGrade": {
         "zeon": 1500,
         "requiredIntelligence": 16,
-        "effect": "5 km / Toute personne à l'intérieur du Chaos Primaire pendant au moins une minute est irrémédiablement affectée par le sort Mutation Chaotique lancé au Degré  Arcane.",
+        "effect": " 3 miles / Anyone inside the area for over a minute is affected by the Chaotic Mutation spell cast at arcane level.",
         "retention": 300
       },
       "arcaneGrade": {
         "zeon": 2400,
         "requiredIntelligence": 18,
-        "effect": "25 km / Idem que pour le Degré  Avancé, mais à moins d'un kilomètre du noyau du sort, l'état de la modification est absolu, et aucune règle de l'existence ne fonctionne. En termes de jeu, même la matière cesse d'exister, se convertissant simplement en un amas d'atomes animé d'un mouvement continu. Tout ce qu'il y a à l'intérieur de la zone du sort doit réussir un test de RMys contre 160 au risque de se dissoudre simplement dans le chaos et de disparaître à jamais.",
+        "effect": " 15 miles / As the advanced degree, but at the core of the area for a one mile radius everything ceases to exist, everything is simply atoms in motion.  Anyone in the core must pass a MR 160 test or merge with the chaos and disappear forever.",
         "retention": 480
       },
       "withRetention": true,
