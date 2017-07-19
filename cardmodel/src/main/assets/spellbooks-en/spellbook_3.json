@@ -1,0 +1,1419 @@
+{
+  "bookId": 3,
+  "bookName": "Path of Creation",
+  "description": "The power of creation is the magical ability to organize and alter the reality that surrounds spellcasters. These spells are about change, healing, and creating things. It is a distinctly defensive magic.",
+  "type": "Main",
+  "oppositeBook": "Destruction",
+  "secondaryBookAccessible": [
+    "Chaos",
+    "Literae",
+    "Music",
+    "Peace",
+    "Sin",
+    "Knowledge",
+    "Blood",
+    "Time"
+  ],
+  "spells": [
+    {
+      "spellId": 1,
+      "bookId": 3,
+      "name": "﻿Minor Creation",
+      "level": 2,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Creates a simple object with a Presence of no more than what is allowed based on spell level.",
+      "initialGrade": {
+        "zeon": 30,
+        "requiredIntelligence": 5,
+        "effect": " 1 object / Max Presence 25",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": " 5 objects / Max Presence 25",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": " 1 object / Max Presence 30",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": " 5 objects / Max Presence 30",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 2,
+      "bookId": 3,
+      "name": "Reconstruct",
+      "level": 6,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Restores a non-organic object to its original form from parts or pieces that remain. Note that it is necessary to either have all the pieces, or enough of the prime material to rebuild the complete object, otherwise it will be only partly reconstructed. The maximum presence this spell can effect is based on spell level.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 5,
+        "effect": " Max Presence 20",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 8,
+        "effect": " Max Presence 60",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": " Max Presence 100",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 12,
+        "effect": " Max Presence 120",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 3,
+      "bookId": 3,
+      "name": "Create Energy",
+      "level": 8,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Creates intensities of one of the three types of existing energies (Cold, Fire, or Electricity).",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 5,
+        "effect": " 1 Intensity",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 8,
+        "effect": " 5 Intensities",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": " 10 Intensities",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 12,
+        "effect": " 20 Intensities",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 4,
+      "bookId": 3,
+      "name": "Regeneration",
+      "level": 10,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Increases the ability of a body to heal all types of wounds. This spell provides a base Regeneration Level based on spell level to anyone designated by the caster, substituting it for the person’s natural Regeneration Level.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": " Regeneration 4.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 8,
+        "effect": " Regeneration 8.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 10,
+        "effect": " Regeneration 12.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 12,
+        "effect": " Regeneration 16.",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 5,
+      "bookId": 3,
+      "name": "Inorganic Modification",
+      "level": 12,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Through control of magic, the caster can alter the form and nature of an inorganic object, transforming it into a completely different thing but of similar spiritual power. This permits the caster to transform something into something else of equal or lesser Presence, maximum presence affected is based on spell level.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": " Max Presence 20.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 8,
+        "effect": " Max Presence 30.",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 10,
+        "effect": " Max Presence 40.",
+        "retention": 5
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 12,
+        "effect": " Max Presence 50.",
+        "retention": 10
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 6,
+      "bookId": 3,
+      "name": "Increase Resistances",
+      "level": 16,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Supernaturally increases all Resistances (Disease, Magic, Physical, Psychic, and Venom) of an individual. Multiple castings of this spell on a single target are not cumulative.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": " +10 Resistances.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 10,
+        "effect": " +20 Resistances.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 12,
+        "effect": " +30 Resistances.",
+        "retention": 30
+      },
+      "arcaneGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 14,
+        "effect": " +40 Resistances.",
+        "retention": 40
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 7,
+      "bookId": 3,
+      "name": "Royal Shield",
+      "level": 18,
+      "actionType": "Passive",
+      "type": "Defense",
+      "effect": "Forms a barrier of Energy that protects the caster from any source of attack. The shield will absorb 500 points of damage (at base level) before breaking.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 6,
+        "effect": " 500 Resistance Points.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 8,
+        "effect": " 3000 Resistance Points.",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 260,
+        "requiredIntelligence": 10,
+        "effect": " 5000 Resistance Points.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 12,
+        "effect": " 10000 Resistance Points.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 8,
+      "bookId": 3,
+      "name": "Heal",
+      "level": 20,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Effect:Causes whomever the spell is directed at to recover Life Points. This spell does not permit recovery of permanently lost or destroyed limbs, but does eliminate the temporary penalties caused by Criticals, up to a quantity equivalent to half the Life Points returned.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": " 50 Life Points.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 10,
+        "effect": " 150 Life Points.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 12,
+        "effect": " 250 Life Points.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 14,
+        "effect": " 350 Life Points.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 9,
+      "bookId": 3,
+      "name": "Damage Barrier",
+      "level": 22,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Effect:The supernatural energies governed by this spell adhere to the body of the designated individual, and provide him with certain immunity to damage. In game terms, he obtains a Damage Barrier (see Chapter 14).",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": " Damage Barrier 30.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": " Damage Barrier 50.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": " Damage Barrier 80.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 15,
+        "effect": " Damage Barrier 100.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 10,
+      "bookId": 3,
+      "name": "Create Homunculus",
+      "level": 26,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Homunculi are small magical elementals that casters use at times for various purposes, from espionage to housework. The spell creates a zero level mystical being under complete control of the caster, as per the rules inChapter 26. It is a Being Between Worlds with a Gnosis of 5, but, given its minor nature, the following rules apply:1- First of all, its characteristics can never be higher than 5, nor can it have any Primary Ability or Secondary Ability higher than 50.2- It also suffers a –2 penalty to size, and it cannot choose Uncommon Size.3- It can’t have any Intellectual Ability higher than their Caster.Each Homunculus created might be completely different.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": " 1 Homunculus.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 9,
+        "effect": " 10 Homunculi.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 12,
+        "effect": " 25 Homunculi.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 15,
+        "effect": " 100 Homunculi.",
+        "retention": 35
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 11,
+      "bookId": 3,
+      "name": "Minor Change",
+      "level": 28,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "This spell permits altering the appearance of an object or being by modifying its form. The change is limited to varying its exterior appearance, and never alters its original qualities or nature. In this way, a shining short sword might become old and rusty, but could never become a walking stick. In the case of living things, this spell can change things by no more than two points of size, perhaps making an ugly and overweight man into a young good looking one. The MR Difficulty to avoid the change is based on spell level. Regarding objects, once affected they have no further right to make Resistance Checks, but people can repeat the Check once a day if they wish to be free of the effects. It is possible to affect various targets, as long as the sum of all their Presences is no higher than the limit set by the spell level.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": " MR 80 / Max Presence 60.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": " MR 100 / Max Presence 90.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 12,
+        "effect": " MR 140 / Max Presence 120.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 15,
+        "effect": " MR 180 / Max Presence 180.",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 12,
+      "bookId": 3,
+      "name": "Imitate",
+      "level": 30,
+      "actionType": "Active",
+      "type": "Effect/Spiritual",
+      "effect": "Creates an exact copy of an already existing inorganic object within reach of the caster. It creates a perfect imitation of the original that retains all its qualities, including the supernatural ones. The copied object can not have Presence greater than the limit set by spell level. The spell has no effect on magically animated creatures, but can affect mechanical constructions as long as they have no soul.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 6,
+        "effect": " Max Presence 30.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 9,
+        "effect": " Max Presence 80.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 12,
+        "effect": " Max Presence 120.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 15,
+        "effect": " Max Presence 160.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 13,
+      "bookId": 3,
+      "name": "Immunity",
+      "level": 32,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell permits the caster, or those people designated by him, to be immune to Intensities of a given type of Energy, whether it is Fire, Electricity, or Cold. If an attack is made using the type of Energy to which they are immune, each Intensity of immunity reduces the Base Damage by 5 points and provides a +5 to the Resistances against its effects.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 6,
+        "effect": " 5 Intensities.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": " 15 Intensities.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " 25 Intensities.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " 35 Intensities.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 14,
+      "bookId": 3,
+      "name": "Damage Reduction",
+      "level": 36,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "The magic of this spell affects the power of an attack, reducing the force of its impact. Upon being cast, this spell reduces the Base Damage of an attack. If the damage is lowered to zero, the attack produces no effect. If, for example, this spell is used against an attack with Base Damage 60, when it actually hits, it does so as if it were an attack of only 20. Reduction of Damage must being cast before rolling any dice. The effects of two Damage Reduction Spells don’t cumulate.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": " -40 Damage.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 10,
+        "effect": " -60 Damage.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 12,
+        "effect": " -80 Damage.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 14,
+        "effect": " -120 Damage.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 15,
+      "bookId": 3,
+      "name": "Physical Control",
+      "level": 38,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "Using this spell, the caster is able to control the body of a being as though it were a simple puppet. Since the control is purely physical, not spiritual, the subject being controlled is not obliged to use any Supernatural Ability (Magic, Ki, and Psychic Powers) against his will, although any natural fighting abilities are under the caster’s control. Resisting the spell requires beating a MR Check. The person being controlled has the right to one new Resistance Check per day, and also any time he receives orders that are entirely against his nature.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 6,
+        "effect": " MR 80.",
+        "retention": 25
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": " MR 120.",
+        "retention": 40
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " MR 140.",
+        "retention": 50
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " MR 180.",
+        "retention": 60
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 16,
+      "bookId": 3,
+      "name": "Raise Abilities",
+      "level": 40,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell temporarily increases the Secondary Abilities of an individual, providing him with a bonus to divide freely among them, except for those Abilities that are not currently considered trained. Cannot raise Abilities above 320.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 6,
+        "effect": " +50 Bonus.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": " +150 Bonus.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 12,
+        "effect": " +250 Bonus.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 15,
+        "effect": " +400 Bonus.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 17,
+      "bookId": 3,
+      "name": "Fuse",
+      "level": 42,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "Unites two beings in a single body, creating a new individual who possesses the characteristics and abilities of both. The caster designates which capacities prevail, selecting those that he is interested in from each. If the spell joins a fighter and a psychic, for example, the resulting individual could have the fighting ability of the warrior, the mental powers of the mentalist, and the highest Secondary Abilities of each one. Control of the resulting united body falls to whichever of the two wins an Opposed Check of Willpower, although some characteristics typical of the other personality can be retained. The original bodies remain in the state they were in before the fusion and so, when the spell lapses, return to the state and condition they were in before it was cast. The death of the joint entity causes the death of both original people. The total Presence of both originals cannot be more than allowed based on spell level. It is also possible to Fuse an individual with objects, in which case the GM can award the result the advantages and abilities he considers appropriate.",
+      "initialGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 7,
+        "effect": " MR80 / Max Presence 80.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": " MR120 / Max Presence 100.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " MR140 / Max Presence 150.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 15,
+        "effect": " MR180 / Max Presence 200.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 18,
+      "bookId": 3,
+      "name": "Create Memories",
+      "level": 46,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "Permits creation of new memories in the target, without necessarily erasing the pre-existing ones. Most of the time, unless very deeply-rooted memories are modified, the person affected will feel slightly confused, but will be convinced that his memories are real. The caster determines what information he is trying to introduce, regardless of its complexity or duration. Resisting the spell requires beating a MR or PsR Check. Although this spell doesn’t require maintenance, the individual affected has the right to a new Resistance Check any time something makes him suspect his memory might be inaccurate.",
+      "initialGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 7,
+        "effect": " MR or PsR 100.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": " MR or PsR 120.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " MR or PsR 160.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 15,
+        "effect": " MR or PsR 200.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 19,
+      "bookId": 3,
+      "name": "Recover",
+      "level": 48,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell completely restores the physical condition of the subject, curing damage and removing all physical penalties, unless caused by amputations or similar losses. This spell does not restore Fatigue Points, nor eliminate negative States caused by supernatural means.",
+      "initialGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 8,
+        "effect": " 500 Life Points.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 10,
+        "effect": " 750 Life Points.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 12,
+        "effect": " MR 1000 Life Points.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 14,
+        "effect": " 1500 Life Points.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 20,
+      "bookId": 3,
+      "name": "Acquire Powers",
+      "level": 50,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Gives the caster, or the person on whom the spell is cast, the ability to acquire the abilities of supernatural beings. In game terms, it gives the character additional DP with which to acquire any of the Powers listed in Chapter 26, as though they had a Gnosis of 25. These also temporarily affect their physical form. If, for example, someone obtains Natural Flight, it would be logical for him to have developed enormous wings. The effects of this spell are not cumulative and a subject can only be affected by one Acquire Powers at a time.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 7,
+        "effect": " 100DP.",
+        "retention": 20
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": " 200DP.",
+        "retention": 40
+      },
+      "advancedGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 13,
+        "effect": " 300DP.",
+        "retention": 50
+      },
+      "arcaneGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 16,
+        "effect": " 400DP.",
+        "retention": 60
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 21,
+      "bookId": 3,
+      "name": "Create Monstrosity",
+      "level": 52,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Creates a magical being with the appearance of life, but completely under the control of the caster. The being is developed as a Being Between Worlds using the rules described in Chapter 26. The creature is first-level with the equivalent of Gnosis 20. The spell does not permit the creation of a creature of higher level than the caster, since it is based on the caster’s spiritualpresence. The Monstrosity is not able to receive a soul, so it is not possible to give it independent life.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": " Level 2.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 10,
+        "effect": " Level 4.",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 12,
+        "effect": " Level 8.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 15,
+        "effect": " Level 12.",
+        "retention": 50
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 22,
+      "bookId": 3,
+      "name": "Protective Aura",
+      "level": 56,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Supernaturally increases all the Resistances (VR, PhR, DR, MR, and PsR) of all the designated individuals within range of the caster. The effects of this spell are not cumulative, and a subject can only be affected by one Protective Aura at a time.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 6,
+        "effect": " +20 Resistances / 100m area.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": " +50 Resistances / 500m/546yd area.",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " +80 Resistances / 1km/1093yd area.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 15,
+        "effect": " +120 Resistances / 10km/6.2mile area.",
+        "retention": 35
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 23,
+      "bookId": 3,
+      "name": "Spiritual Standstill",
+      "level": 58,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "As the name indicates, this spell preserves the spirit of the individual on whom it is cast in the same state as at the moment it is cast. From that moment on, the affected person does not make any further MR or PsR Checks, and remains inalterably in the same spiritual condition. The person cannot be affected by States of any kind, either positive or negative. The subject can resist this spell by passing a MR Check. Naturally, the person affected by this spell cannot make any type of Check to free himself of it while it is in effect.",
+      "initialGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 8,
+        "effect": " MR 100.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": " MR 120.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 12,
+        "effect": " MR 140.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " MR 180.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 24,
+      "bookId": 3,
+      "name": "Perfect Shield",
+      "level": 60,
+      "actionType": "Active",
+      "type": "Defense",
+      "effect": "Forms a barrier of Energy that protects from any source of attack. The shield can absorb 100 points of damage (at base level) before breaking. If it is not destroyed by the end of the combat turn, it automatically recovers all lost Resistance Points.",
+      "initialGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 8,
+        "effect": " 100 Resistance Points.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": " 250 Resistance Points.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 13,
+        "effect": " 500 Resistance Points.",
+        "retention": 30
+      },
+      "arcaneGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 16,
+        "effect": " 1000 Resistance Points.",
+        "retention": 40
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 25,
+      "bookId": 3,
+      "name": "Vitality",
+      "level": 62,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell creates a state of supernatural vitality in an individual, increasing his maximum Life Points while the spell is maintained. The effects of this spell are not cumulative, and only one casting can affect a subject at a time. Beings with Damage Resistance apply this quantity to their Damage Resistance multiple.",
+      "initialGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 8,
+        "effect": " +50 Life Points.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": " +75 Life Points.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 13,
+        "effect": " MR +100 Life Points.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 16,
+        "effect": " MR +150 Life Points.",
+        "retention": 35
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 26,
+      "bookId": 3,
+      "name": "Complete Creation",
+      "level": 66,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Creates an object with a maximum presence based on spell level. The creation must appear in a location that is logical for it, according to its nature. It would not be possible, for instance, to conjure up a small mountain in mid-air, and then let it fall on someone. As a limit, the Presence of the object cannot be more than twice the Base Presence of the caster. For example, a fifth-level character with a Presence of 50 could therefore create objects with a maximum Presence of 100.",
+      "initialGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 8,
+        "effect": " Max Presence 50.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": " Max Presence 80.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 12,
+        "effect": " Max Presence 120.",
+        "retention": 30
+      },
+      "arcaneGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 14,
+        "effect": " Max Presence 150.",
+        "retention": 40
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 27,
+      "bookId": 3,
+      "name": "Reinforce Magic",
+      "level": 68,
+      "actionType": "Passive",
+      "type": "Effect",
+      "effect": "Reinforce Magic adds strength to another spell launched either at thesame time or that is being maintained. Gives to the Reinforced Spell the following bonuses.+20MR+50% to Damage / Resistance Points (round down at discretes of 5)+20% to all other numerals present on the spell, except for Gnosis.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 8,
+        "effect": " Affects spells cast at Base Level.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": " Affects spells cast at Intermediate Level.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " Affects spells cast at Advanced Level.",
+        "retention": 30
+      },
+      "arcaneGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 18,
+        "effect": " Affects spells cast at Arcane Level.",
+        "retention": 40
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 28,
+      "bookId": 3,
+      "name": "Transmute",
+      "level": 70,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "The caster transforms an inorganic object, converting it to a different one of similar spiritual power. This permits the caster to modify something with a Presence no higher than the maximum set by the spell level or less into something else of equal or lesser Presence. If the object is supernatural, or especially powerful, it can resist by passing a MR Check.",
+      "initialGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 8,
+        "effect": " MR 120 / Max Presence 50.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 12,
+        "effect": " MR 160 / Max Presence 100.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 15,
+        "effect": " MR 220 / Max Presence 150.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 18,
+        "effect": " MR 260 / Max Presence 200.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 29,
+      "bookId": 3,
+      "name": "Metamorphism",
+      "level": 72,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "Using this spell, the caster can transform a person or object into anything he wishes (a mouse, a statue, etc.) as long as the Presence of the new form is not higher than the target’s original Presence. Living things metamorphosized into non-living objects continue to be alive in their new forms even if it happens that they cannot move or breathe. When the spell lapses, the individual or object returns to its original form. Metamorphism does not permit the acquisition of essential powers or abilities, except those possessed by natural living creatures with a Gnosis of zero. Resisting this spell requires passing a MR Check. It is only possible torepeat the Resistance check once per day.",
+      "initialGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 8,
+        "effect": " MR100",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": " MR120",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 12,
+        "effect": " MR160",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 14,
+        "effect": " MR200",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 30,
+      "bookId": 3,
+      "name": "Recreate",
+      "level": 76,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Manipulating the essence of both matter and soul, the caster is able to restore any damage or loss an individual or object might have suffered. The caster can decide which parts to recreate, and is not obligated to restore the target to its original state. If he uses the spell on a one-eyed, one-armed person, the caster can Recreate only the eye, only the arm, or both of them at once. Casting this spell on a wounded individual or a damaged object makes any damage or penalty disappears automatically (as long as the caster wishes it to, of course). Recreate also eliminates the effects of any Supernatural Abilities that have diminished the individual or object physically or spiritually; it restores lost memories or DP. This spell has only two limitations. The first is that it affects only loses or damage suffered artificially, not due to natural or positive change. It therefore cannot “restore” a person to an earlier state that was damaged or inferior. Secondly, it has no jurisdiction over deceased souls, or those that have passed into the Flow, so is unable to return the dead to life. The maximum Presence that can be affected is based on spell level. Halve the maximum Presence affected, if the entity that caused the damage to the target has Gnosis higher of that of the caster by at least 15 points.",
+      "initialGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 8,
+        "effect": " Presence 60",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 12,
+        "effect": " Presence 120",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 750,
+        "requiredIntelligence": 15,
+        "effect": " Presence 180",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 1500,
+        "requiredIntelligence": 18,
+        "effect": " Presence 240",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 31,
+      "bookId": 3,
+      "name": "Create Being",
+      "level": 78,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Creates a creature with the appearance of life, but completely under the control of the caster. The entity is developed as is a Being Between Worlds, with a Gnosis of 25. Given that their existence is directly tied to the soul of the caster, the number of beings that are created by and that depend on him (whether through this spell or the Level 82 spells of the minor Paths) will limit the maximum level of the entity. The creature can therefore have at most the level of its creator minus the number of entities he has magically created and is maintaining. For example, if the caster creates only a single being, it can have at most one level less than its creator, two levels less if there are two beings, three less if he is maintaining three entities, etc. If one or more beings were already created at the highest possible level for them, and the caster thereafter creates another, the earlier ones automatically drop one level immediately.",
+      "initialGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 9,
+        "effect": " Level 1.",
+        "retention": 50
+      },
+      "intermediateGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 12,
+        "effect": " Level 5.",
+        "retention": 80
+      },
+      "advancedGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 15,
+        "effect": " Level 9.",
+        "retention": 120
+      },
+      "arcaneGrade": {
+        "zeon": 1000,
+        "requiredIntelligence": 17,
+        "effect": " Level 12.",
+        "retention": 200
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 32,
+      "bookId": 3,
+      "name": "Chimera",
+      "level": 80,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "The caster, or whomever he designates, ceases to be a natural being to become a Being Between Worlds with a Gnosis of 25, enjoying all the advantages and disadvantages that implies. He also obtains additional DP to use to choose between Essential Abilities and powers from the Creation of Beings, described in Chapter 26. It also permits him to choose Disadvantages or penalties to obtain additional points. Excess DP raises the Character Level. In case of partial improvement, if for instance he only gets 170 DP, the character still improves two levels, but when he goes up another level he will receive 30 additional DP to use. This spell works only on Natural creatures, and so cannot be cast on Being Between Worlds or Spirits to increase their abilities. All the powers and gifts acquired through this spell depend directly on the physical body of the individual, and so if by any means he returns to his prior state, or his soul transmigrates to another body or form, he automatically loses the advantages received.",
+      "initialGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 10,
+        "effect": " +100DP / Up to 100DP of Disadvantages.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 13,
+        "effect": " +200DP / Up to 100DP of Disadvantages.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 1000,
+        "requiredIntelligence": 15,
+        "effect": " +300DP / Up to 200DP of Disadvantages.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 2500,
+        "requiredIntelligence": 17,
+        "effect": " +400DP / Up to 200DP of Disadvantages.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 33,
+      "bookId": 3,
+      "name": "Zone of Safety",
+      "level": 82,
+      "actionType": "Active",
+      "type": "Automatic",
+      "effect": "Creates a magical zone inside which no person or object can be harmed in any way by anyone or anything. A person within the zone could not, for instance, break down a door or even harm a cockroach by stepping on it by mistake. Zone of Safety automatically affects anyone within the area, including the caster. The affected area has a radius based on spell level and remains where it was cast without being movable by the caster. To overcome the effect requires beating a MR Check. It is only possible to repeat the Resistance check once per day, even if someone has left the zone and then returned.",
+      "initialGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 12,
+        "effect": " MR140 / 100m/109yd area.",
+        "retention": 35
+      },
+      "intermediateGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 15,
+        "effect": " MR180 / 500m/546yd area.",
+        "retention": 50
+      },
+      "advancedGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 17,
+        "effect": " MR220 / 1km/1093yd area.",
+        "retention": 80
+      },
+      "arcaneGrade": {
+        "zeon": 1500,
+        "requiredIntelligence": 18,
+        "effect": " MR250 / 5km/3.1mile area.",
+        "retention": 150
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 34,
+      "bookId": 3,
+      "name": "Maintain Magic",
+      "level": 86,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Affects an existing active spell, tying it to the world in a more lasting way. In game terms, it adds points of Zeon to keep up maintenance of the designated spell. Remember these points do not add to the spell’s power, only to its Maintenance.",
+      "initialGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 10,
+        "effect": " 500 Zeon Points.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 12,
+        "effect": " 2000 Zeon Points.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 900,
+        "requiredIntelligence": 14,
+        "effect": " 5000 Zeon Points.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 1600,
+        "requiredIntelligence": 16,
+        "effect": " 10000 Zeon Points.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 35,
+      "bookId": 3,
+      "name": "Provide Soul",
+      "level": 88,
+      "actionType": "Passive",
+      "type": "Effect",
+      "effect": "Through this spell, the caster is able to create a complete soul, giving the breath of life to an object or body able to contain one. If the soul is provided to a magically engendered creature such as those developed with the level 78 spell of this Path, or with the level 82 elemental spells, Provide Soul makes it unnecessary to continue maintaining those spells to sustain the creature. The creature thereby breaks any bond it has with its creator, obtaining free will as just one more Being Between Worlds. Not all souls created by this spell are capable of entering the body into which they are introduced. It is possible to provide souls to bodies or objects with a Presence of no more than the limit set by the spell level. It cannot be used to provide a soul to something that already has a living soul.",
+      "initialGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 13,
+        "effect": " Max Presence 30.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 14,
+        "effect": " Max Presence 50.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 1200,
+        "requiredIntelligence": 15,
+        "effect": " Max Presence 80.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 2000,
+        "requiredIntelligence": 16,
+        "effect": " Max Presence 100.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 36,
+      "bookId": 3,
+      "name": "Greater Creation",
+      "level": 90,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Gives the caster the gift of creating at whim, awarding him Presence points to distribute freely between various objects or constructions. He can create any inanimate object he wishes, from castles to mountains, as long as the Presence of each of his creations is not greater than the limit set by the spell level.",
+      "initialGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 10,
+        "effect": " 500 Presence Points / Max Presence 100.",
+        "retention": 20
+      },
+      "intermediateGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 12,
+        "effect": " 1000 Presence Points / Max Presence 120.",
+        "retention": 25
+      },
+      "advancedGrade": {
+        "zeon": 1200,
+        "requiredIntelligence": 14,
+        "effect": " 2000 Presence Points / Max Presence 140.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 2000,
+        "requiredIntelligence": 16,
+        "effect": " 5000 Presence Points / Max Presence 180.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 37,
+      "bookId": 3,
+      "name": "Eternal Magic",
+      "level": 92,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "As the name indicates, this spell affects another existing one, enormously reducing (or even eliminating) it’s Maintenance Cost. Eternal Magic effects vary according to whether or not it affects a spell with Daily maintenance. If the spell in question is Daily, Eternal Magic stabilizes it, making maintenance unnecessary. The spell continues being controlled by its caster, but it will continue in effect even after his death. If the spell’s maintenance requirement is “per Combat Turn,” it becomes one requiring only Daily maintenance.",
+      "initialGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 12,
+        "effect": " Affects a spell cast at Base Level.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 1000,
+        "requiredIntelligence": 14,
+        "effect": " Affects a spell cast at Intermediate Level.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 2500,
+        "requiredIntelligence": 16,
+        "effect": " Affects a spell cast at Advanced Level.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 5000,
+        "requiredIntelligence": 18,
+        "effect": " Affects a spell cast at Arcane Level.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 38,
+      "bookId": 3,
+      "name": "The Barrier",
+      "level": 96,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This unusual spell forms a breach in reality that is capable of separating the world into two parts. This separation cannot be perceived naturally, even by those capable of seeing magic. It may adopt any appearance, from being completely invisible to looking like a simple stone wall. Whatever form it takes, it does not permit anyone so much as a glimpse of what hides beyond it.Usually none are aware of its existence, even when attempting to go through it. If someone attempts to cross it, they exit at another point of The Barrier, completely unaware of what is behind (it is even possible to turn directly around without noting it). Transport is not automatic, rather, little by little, reality starts adapting to the exit location almost imperceptibly (Inhuman difficulty for Notice).As an example, The Barrier can be used over an island, to separate it from the rest of the world. That location disappears from view, and any ship sailing in the area will see only water, being transported immediately to another place to innocently continue their voyage. The Barrier need not be made absolutely perfect. The caster can choose to deliberately leave passages or openings, in one or both directions, to use for crossing. There are certain requirements for someone to be able to pass through it. To start with, it must be someone with a Gnosis greater than 25 who knows of The Barrier and its exact location. If both conditions are fulfilled, he must pass a MR Check to get through. If he fails, he can only repeat the check once per day. The spell can affect a maximum area set by the spell level, or be extended in a line of the same length. Once cast, it remains in the same location.",
+      "initialGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 15,
+        "effect": " MR 120 / 100 cubic km/62.1 cubic miles",
+        "retention": 40
+      },
+      "intermediateGrade": {
+        "zeon": 2500,
+        "requiredIntelligence": 16,
+        "effect": " MR 180 / 1000 cubic km/621.3 cubic miles.",
+        "retention": 45
+      },
+      "advancedGrade": {
+        "zeon": 5000,
+        "requiredIntelligence": 17,
+        "effect": " MR 240 / 10000 cubic km/6213.7 cubic miles.",
+        "retention": 45
+      },
+      "arcaneGrade": {
+        "zeon": 10000,
+        "requiredIntelligence": 19,
+        "effect": " MR 300 / No space limit.",
+        "retention": 50
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 39,
+      "bookId": 3,
+      "name": "The Gift of Life",
+      "level": 98,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "The caster is imbued with the ability to create a new form of life, the newborn of a race that never existed before. The creation can be of any class (Natural, Spiritual, or Between Worlds) and can be tied to a particular element. The maximum level of the creature cannot be higher than that of his creator. The creator should choose the Gnosis of his creation, awarding it no more than ten points less than his own. In the beginning it will be a first level creature, although if it is a Natural Being with a Gnosis 20 or less, it will be given 50 DP with which to select additional racial powers and abilities, employing the rules described in Chapter 26.",
+      "initialGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 16,
+        "effect": " Level 1 and 50DP for Natural Beings.",
+        "retention": 30
+      },
+      "intermediateGrade": {
+        "zeon": 2000,
+        "requiredIntelligence": 17,
+        "effect": " Level 6 and 100DP for Natural Beings.",
+        "retention": 40
+      },
+      "advancedGrade": {
+        "zeon": 4000,
+        "requiredIntelligence": 18,
+        "effect": " Level 11 and 150DP for Natural Beings.",
+        "retention": 45
+      },
+      "arcaneGrade": {
+        "zeon": 8000,
+        "requiredIntelligence": 19,
+        "effect": " Level 16 and 200DP for Natural Beings.",
+        "retention": 50
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 40,
+      "bookId": 3,
+      "name": "Create",
+      "level": 100,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Permits the caster to obtain absolute power over creation, giving him the ability to create anything he wishes: Continents, oceans, and even entire worlds. In game terms, it grants Presence Points to create whatever the caster wishes, as long as it doesn’t exceed the limit set by the spell level. This spell can also impose new rules of reality: alter gravity, modify the rate at which time passes, and so forth. Anyone with a Gnosis of less than half that of the caster is affected by such changes.",
+      "initialGrade": {
+        "zeon": 1000,
+        "requiredIntelligence": 17,
+        "effect": " Presence 1000 / Max Presence 180 / 1 existential rule.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 3000,
+        "requiredIntelligence": 18,
+        "effect": " Presence 10000 / Max Presence 220 / 5 existential rules.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 6000,
+        "requiredIntelligence": 19,
+        "effect": " Presence 10000 / Max Presence 260 / 10 existential rules.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 12000,
+        "requiredIntelligence": 20,
+        "effect": " Presence 100000 / Max Presence 320 / any number of existential rules.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    }
+  ]
+}

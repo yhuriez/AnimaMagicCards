@@ -1,0 +1,1420 @@
+{
+  "bookId": 1,
+  "bookName": "Path of Light",
+  "description": "This is the Path that confers dominion over one of the two Higher Elements, pure light. It controls man's most positive emotions, such as love, peace, and pleasure. Light also regulates knowledge and detection. Its offensive and defensive powvers are very balanced.",
+  "type": "Main",
+  "oppositeBook": "Darkness",
+  "secondaryBookAccessible": [
+    "Chaos",
+    "War",
+    "Literae",
+    "Music",
+    "Nobility",
+    "Peace",
+    "Knowledge",
+    "Dream",
+    "Time"
+  ],
+  "spells": [
+    {
+      "spellId": 1,
+      "bookId": 1,
+      "name": "Create Light",
+      "level": 2,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": " Creates Light in a radius.",
+      "initialGrade": {
+        "zeon": 20,
+        "requiredIntelligence": 5,
+        "effect": " 5m/5yd area",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 8,
+        "effect": " 25m/27yd area",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": " 100m/109yd area",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": " 500m/546yd area",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 2,
+      "bookId": 1,
+      "name": "Imbue Calm",
+      "level": 6,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "Calms individuals feeling fear or hatred around the caster. Makes any Fear, Terror, or Anger States disappear, even if of supernatural origin. It does not prevent violent actions deliberately done in cold blood.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 5,
+        "effect": " MR or PsR 80 / 10m/11yd area",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": " MR or PsR 100 / 25m/27yd area",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 11,
+        "effect": " MR or PsR 120 / 50m/54yd area",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 14,
+        "effect": " MR or PsR 140 / 100m/109yd area",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 3,
+      "bookId": 1,
+      "name": "Blinding Flash",
+      "level": 8,
+      "actionType": "Active",
+      "type": "Automatic",
+      "effect": "Causes a sudden flash of light around the caster. It blinds anyone looking at it when it goes off for as many combat turns as he fails the MR check by, divided by 10. It is not possible to designate specific targets within the flash, and everyone except the caster is equally affected. Characters can resist this spell by passing a PhR Check. Bonus for not looking is only +40 to PhR.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": " PhR 140 / 10m/11yd area",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": " PhR 140 / 25m/27yd area",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 11,
+        "effect": " PhR 140 / 50m/54yd area",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 14,
+        "effect": " PhR 160 / 100m/109yd area",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 4,
+      "bookId": 1,
+      "name": "Shield of Light",
+      "level": 10,
+      "actionType": "Passive",
+      "type": "Defense",
+      "effect": "Forms a barrier of Energy that protects the caster from any source of attack. The shield can absorb up to 300 points at base level before breaking, but is only damaged by supernatural attacks. Impacts based on Darkness cause double damage.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": " 300 Resistance Points.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 8,
+        "effect": " 1000 Resistance Points.",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 10,
+        "effect": " 1800 Resistance Points.",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 14,
+        "effect": " 3000 Resistance Points.",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 5,
+      "bookId": 1,
+      "name": "Perceive",
+      "level": 12,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell improves the perception of the caster, increasing his secondary abilities of Notice and Search. It also increases his Magical Appraisal by the same amount, but only for the purpose of detecting or measuring the magic potency of something or someone, not to hide it.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": " +50 Notice, Search and Magic Appraisal.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 9,
+        "effect": " +150 Notice, Search and Magic Appraisal.",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": " +200 Notice, Search and Magic Appraisal.",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 14,
+        "effect": " +250 Notice, Search and Magic Appraisal.",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 6,
+      "bookId": 1,
+      "name": "Armor of Light",
+      "level": 16,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Forms a strong mystical armor against Energy-based Attacks, and a minor mystical armor against all others. Although it counts as armor, it does not count as an additional layer of armor for purposes of penalties to Initiative.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": "  Energy AT 2, other AT 1.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": "  Energy AT 5, other AT 2.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "  Energy AT 8, other AT 4.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 15,
+        "effect": "  Energy AT 12, other AT 6.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 7,
+      "bookId": 1,
+      "name": "Banish Shadows",
+      "level": 18,
+      "actionType": "Active",
+      "type": "Effect/Spiritual",
+      "effect": "Destroys shadows within a radius. Any darkness based creatures within the radius must pass a MR Check, or lose the double their Failure level in Life Points (Damage Resistance creatures increases this amount by its Damage Resistance multiple). As long as the spell is maintained over the creatures, they must do a new MR Check each combat turn.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": " MR 140 / 10m/11yd area.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": " MR 180 / 100m/109yd area.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 12,
+        "effect": " MR 220 / 250m/273yd area.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 15,
+        "effect": " MR 280 / 500m/546yd area.",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 8,
+      "bookId": 1,
+      "name": "Detect Negative Emotions",
+      "level": 20,
+      "actionType": "Active",
+      "type": "Detection",
+      "effect": "Detects any negative sentiments such as hatred, fear, or anger around the caster. It also senses creatures based on such emotions. Resisting the spell requires beating a MR Check.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": " MR 80 / 25m/27yd area.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": " MR 140 / 150m/164yd area.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 12,
+        "effect": " MR 160 / 500m/546yd area.",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 15,
+        "effect": " MR 200 / 1km/1093yd area.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 9,
+      "bookId": 1,
+      "name": "Light Beam",
+      "level": 22,
+      "actionType": "Active",
+      "type": "Attack",
+      "effect": "Projects a beam of Light based magical energy. Light Beam is an Energy Attack Type.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": "  Base Damage 60.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": "  Base Damage 90.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "  Base Damage 120.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 15,
+        "effect": "  Base Damage 150.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 10,
+      "bookId": 1,
+      "name": "Hologram",
+      "level": 26,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Creates an immaterial luminous form with a maximum size based on the spell level. The caster can give the hologram the appearance he desires, making it very difficult to tell it from something real. If he creates a creature, it can perform any inhuman action the caster wishes, but will mimic the physical abilities of the caster. If, for example, the hologram is used to simulate an attack, it uses the combat ability of the caster. The hologram cannot touch anyone nor be touched, but if it receives any damage based on Energy, it disappears. To detect that the hologram is not real, it is necessary to beat a Notice check against a difficulty of Almost Impossible, or Search against Very Difficult.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 6,
+        "effect": " Image has maximum size of 1 cubic meter / 1 cubic yard.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 9,
+        "effect": " Image has maximum size of 15 cubic meters / 16 cubic yards.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 12,
+        "effect": " Image has maximum size of 50 cubic meters / 54 cubic yards.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 15,
+        "effect": " Image has maximum size of 100 cubic meters / 109 cubic yards.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 11,
+      "bookId": 1,
+      "name": "Bonds of Light",
+      "level": 28,
+      "actionType": "Active",
+      "type": "Attack",
+      "effect": "It cast bonds of light that hold the designated target immobile. An attack is made using the rules for Trapping, although the caster suffers no penalty to his Ability for performing this maneuver. The bonds use a Strength based on spell level for the check. If anyone tries to help free the person Trapped, the Bonds of Light are treated as an Energy weapon with Fortitude of 25.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": " Strength 8.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": " Strength 12.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 12,
+        "effect": " Strength 15 and Fortitude 30.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 15,
+        "effect": " Strength 18 and Fortitude 35.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 12,
+      "bookId": 1,
+      "name": "Control Light",
+      "level": 30,
+      "actionType": "Active",
+      "type": "Effect/Spiritual",
+      "effect": "Modifies and controls the form, color, or intensity of light in a radius. If cast at Light-based beings, they must pass a MR Check or they will fall under the control of the caster. A creature can only repeat the check if it is ordered to do something against its nature.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": " MR 80 / 20m/21yd area.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 9,
+        "effect": " MR 140 / 150m/164yd area.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 12,
+        "effect": " MR 180 / 300m/328yd area.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 16,
+        "effect": " MR 220 / 500m/546yd area.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 13,
+      "bookId": 1,
+      "name": "Detect Life",
+      "level": 32,
+      "actionType": "Active",
+      "type": "Detection",
+      "effect": "Detects any life-form within a radius. The spell only detects the number of life-forms and their exact location. Resisting the spell requires beating a MR check.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": " MR 140 / 25m/27yd area.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": " MR 180 / 50m/54yd area.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 12,
+        "effect": " MR 220 / 150m/164yd area.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " MR 280 / 500m/546yd area.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 14,
+      "bookId": 1,
+      "name": "Spy of Light",
+      "level": 36,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Creates a small light of energy that moves as wished by the caster, with a Flight Value of 14, for a maximum distance of one mile. Through it, the caster can see and hear as though he were present, but doing so overwhelms his body’s senses, and he can only perceive the world through the Spy of Light. Each combat turn the caster decides if he will see through the Spy of Light, or his own senses. The Spy of Light has an ability of 100 at Notice and Search. If attacked, it can defend itself with the Magic Projection of its caster. For purposes of Initiative, it acts when its controller does. It is only possible to attack it with supernatural attacks, although it is destroyed if it receives any damage.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 6,
+        "effect": " Notice and Search 100 / 1km/1093yd maximum distance.",
+        "retention": 20
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 9,
+        "effect": " Notice and Search 150 /10km/6.2miles maximum distance.",
+        "retention": 40
+      },
+      "advancedGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 12,
+        "effect": " Notice and Search 200 / 50km/31miles maximum distance.",
+        "retention": 60
+      },
+      "arcaneGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 16,
+        "effect": " Notice and Search 250 / 500km/310.6miles maximum distance.",
+        "retention": 80
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 15,
+      "bookId": 1,
+      "name": "Ecstasy",
+      "level": 38,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "This spell intoxicates anyone affected with a feeling of utter ecstasy. The sensation of pleasure is so powerful that the victim’s senses are completely clouded, and he receives a –20 All Action Penalty while affected. However, the spell’s victims are also completely oblivious and immune to any pain or other affliction based penalty, except those for actually being physically incapacitated. The MR Check to resist this spell has a Difficulty based on spell level, and affects a radius based on spell level.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": " MR 80 / 10m/11yd area.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": " MR 100 / 50m/54yd area.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": " MR 120 / 100m/109yd area.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 16,
+        "effect": " MR 160 / 250m/273yd area.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 16,
+      "bookId": 1,
+      "name": "Banish Negative Emotions",
+      "level": 40,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "Temporarily banishes any negative sentiments such as hatred, fear, or anger around the caster. Resisting the spell requires beating a MR or PsR Check.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 6,
+        "effect": " MR or PsR 100 / 100m/109yd area.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": " MR or PsR 150 / 500m/546yd area.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " MR or PsR 180 / 1km/1093yd area.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 15,
+        "effect": " MR or PsR 220 / 5km/3.1mile area.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 17,
+      "bookId": 1,
+      "name": "Healing Light",
+      "level": 42,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Causes whomever the spell is directed at to recover Life Points. This spell does not restore permanently lost or destroyed limbs, nor eliminate penalties caused by Critical attacks.",
+      "initialGrade": {
+        "zeon": 70,
+        "requiredIntelligence": 7,
+        "effect": " 40 Life Points.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": " 80 Life Points.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 13,
+        "effect": " 120 Life Points.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 15,
+        "effect": " 250 Life Points.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 18,
+      "bookId": 1,
+      "name": "Seeking Sphere",
+      "level": 46,
+      "actionType": "Active",
+      "type": "Attack",
+      "effect": "Unleashes a sphere of luminous energy. The caster can control it using his Magic Projection until it hits its target. If the target successfully dodges, the Seeking Sphere can continue attacking the following turn, since it has not been destroyed. When Seeking Sphere causes damage, or is blocked, the Sphere explodes and vanishes. If the caster abandons control of it, it will act independently, following its last designated target with a Magic Projection based on spell level.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 6,
+        "effect": " Base Damage 100 / Magic Projection 150.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": " Base Damage 120 / Magic Projection 180.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " Base Damage 160 / Magic Projection 210.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " Base Damage 200 / Magic Projection 240.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 19,
+      "bookId": 1,
+      "name": "Zone of Detection",
+      "level": 48,
+      "actionType": "Active",
+      "type": "Detection",
+      "effect": "This spell allows the caster to detect any being within the area of thespell who does not beat a MR Check. The Zone of Detection only tells the caster how many individuals are in the zone, and their exact location. It also senses spells of Detection that attempt to enter into the area, as long as the spell caster using them does not beat the MR (regardless of his actual location). The affected zone is stationary in the place it was cast.",
+      "initialGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 7,
+        "effect": " MR 180 / 20m/21yd area.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": " MR 240 / 80m/87yd area.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 12,
+        "effect": " MR 280 / 150m/164yd area.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 360,
+        "requiredIntelligence": 15,
+        "effect": " MR 340 / 250m/273yd area.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 20,
+      "bookId": 1,
+      "name": "Enter Another’s Dreams",
+      "level": 50,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "This allows the caster to physically enter a sleeper’s dreams. The caster has no control over the dream world of the dreamer, and anything that happens there will be real to the caster. The person must have peaceful dreams to be affected by this spell, and the moment the dream turns into a nightmare, or he awakens or dies, the mage abandons the dream world and returns to reality. Any Spiritual spell cast on the dreamer while the caster is present in his dreams will also affect the caster. The MR or PsR Check has a Difficulty based on spell level. Once he is in the target person’s dreams, the caster can jump to the unconscious of yet another dreamer who is physically no more than 10m/11yd (at base level) from the original sleeper. Naturally, this new dreamer will have the right to his own MR or PsR Check. If the dreamer’s consciousness happens to be in the world of The Wake, the caster is trapped there even when the spell expires.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 6,
+        "effect": " MR or PsR 140 / 10m/11yd distance.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": " MR or PsR 160 / 80m/87yd distance.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " MR or PsR 200 / 140m/153yd distance.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " MR or PsR 240 / 200m/218yd distance.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 21,
+      "bookId": 1,
+      "name": "Light Form",
+      "level": 52,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "The body designated by the caster is transformed to pure luminous energy and becomes intangible to matter and non-energy attacks. While in this state, the transformed person gains a +50 bonus to his abilities of Notice and Search, and a +30 to his Resistance against effects based on Light. In this state, the damage caused by Darkness based attacks is doubled.  No Maximum Presence.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 8,
+        "effect": " +50 Notice and Search / +20 Resistances.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 11,
+        "effect": " +60 Notice and Search / +30 Resistances.",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 13,
+        "effect": " As Intermediate, but resistance bonus applies to all effects not based on Darkness.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 16,
+        "effect": " As Advanced, but doesn’t suffer double damage from Darkness based attacks.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 22,
+      "bookId": 1,
+      "name": "Blessing",
+      "level": 56,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Blessing endows the affected party with incredible energy. Those affected receive a bonus to all their actions and Resistances. All allies within a radius the caster are affected. No one can be affected by more than one Blessing at a time.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 8,
+        "effect": " +10 All action bonus / +10 Resistances / 5m/5yd area.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 10,
+        "effect": " +20 All action bonus / +20 Resistances / 25m/27yd area.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " +30 All action bonus / +30 Resistances / 50m/54yd area.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " +30 All action bonus / +30 Resistances / 150m/164yd area.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 23,
+      "bookId": 1,
+      "name": "Create Good Feelings",
+      "level": 58,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "This creates positive sentiments such as love, pleasure, or friendship in the people designated by the caster. The radius of the spell and the MR or PsR Check is based on spell level. Those affected can repeat the Resistance Check once per day.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 8,
+        "effect": " MR or PsR 120 / 20m/21yd area.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 10,
+        "effect": " MR or PsR 160 / 100m/109yd area.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " MR or PsR 180 / 250m/273yd area.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " MR or PsR 220 / 500m/546yd area.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 24,
+      "bookId": 1,
+      "name": "See Truth",
+      "level": 60,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Permits the affected person to perceive supernatural forces that are invisible to the human eye, including magic, psychic matrices, and invisible or spiritual beings. Although this spell does not directly work against illusion spells because they affect the mind, not the vision it does help to detect their falseness.  ",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 8,
+        "effect": " Allows seeing Magic, Matrixes and Invisible Beings / +50MR against Illusions.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": " As Base, but also allows seeing Spiritual Beings.",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 14,
+        "effect": " As Intermediate, but gives +75MR against Illusions.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 16,
+        "effect": " As Advanced, but gives +100MR against Illusions.",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 25,
+      "bookId": 1,
+      "name": "Shield from Negative",
+      "level": 62,
+      "actionType": "Active",
+      "type": "Automatic",
+      "effect": "This spell enchants a certain area, making it impenetrable for beings naturally based in negative emotions or Darkness. Any such creature entering the zone must pass a MR Check or suffer the loss of a number of Life Points equal to the margin of failure. Additionally, if it fails the check, it receives an immediate –40 All Action Penalty. The affected zone  is stationary in the place it was cast.",
+      "initialGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 7,
+        "effect": " MR 120 / 20m/21yd area.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": " MR 140 / 100m/109yd area.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " MR 160 / 250m/273 area.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " MR 180 / 500m/546yd area.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 26,
+      "bookId": 1,
+      "name": "Find",
+      "level": 66,
+      "actionType": "Active",
+      "type": "Detection",
+      "effect": "By means of Find, the caster can locate any person, place, or thing, and know its exact location in that moment regardless of the distance separating them. Anything can be found, whether an individual object, or a type of object, or simply something that fulfills a specified condition. For example, the caster can try to locate a city, the thief who stole his crosier (even if he doesn’t know who did it), or the closest eligible maiden of royal blood. Objects, places, or people affected must make a dice roll against a MR Check with a Difficulty based on spell level. Large places apply a –40 penalty to this check.",
+      "initialGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 8,
+        "effect": " MR 140.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": " MR 180.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 260,
+        "requiredIntelligence": 13,
+        "effect": " MR 220.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 320,
+        "requiredIntelligence": 16,
+        "effect": " MR 260.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 27,
+      "bookId": 1,
+      "name": "Restore",
+      "level": 68,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell allows the person affected to recover from any penalties including those caused by fatigue, hunger, physical damage, and even spells, although not from actual physical loss such as from the loss of a limb or other body part. Restore automatically restores Fatigue points lost due to fatigue. ",
+      "initialGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 8,
+        "effect": " Eliminates up to -40 penalty / Restores up to 2 Fatigue points.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": " Eliminates up to -80 penalty / Restores up to 5 Fatigue points.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 12,
+        "effect": " Eliminates up to -120 penalty / Restores up to 10 Fatigue points.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " Eliminates any penalty / Restores Fatigue points to maximum.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 28,
+      "bookId": 1,
+      "name": "Hypnotic Display",
+      "level": 70,
+      "actionType": "Active",
+      "type": "Automatic",
+      "effect": "This spell creates spectacle of lights in a specified place that has a fascinating and dumbfounding affect. All the characters that see the display cannot help but continue watching it, and anyone seeing it must make a MR or PsR Check to resist its effects. Those affected can perform Passive Actions, but cannot move. They can make a new Resistance Check every time they are attacked. The condition for being affected is looking directly at the Hypnotic Display.",
+      "initialGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 10,
+        "effect": " MR or PsR 120 / 1 km/1093yd area.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": " MR or PsR 150 / 5 km/3.1mile area.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 14,
+        "effect": " MR or PsR 180 / 15km/9.3mile area.",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 360,
+        "requiredIntelligence": 16,
+        "effect": " MR or PsR 220 / 25km/15.5mile area.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 29,
+      "bookId": 1,
+      "name": "Catastrophic Light",
+      "level": 72,
+      "actionType": "Active",
+      "type": "Attack",
+      "effect": "Creates a deadly discharge of Light with an Energy Attack Type.",
+      "initialGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 10,
+        "effect": " Base Damage 120 / 25m/27yd area.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 12,
+        "effect": " Base Damage 150 / 100m/109yd area.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 14,
+        "effect": " Base Damage 200 / 150m/164yd area.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 16,
+        "effect": " Base Damage 250 / 250m/273yd area.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 30,
+      "bookId": 1,
+      "name": "Luminous Material Objects",
+      "level": 76,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Forms a material object from luminous energy. Whether it is something as complex as a clock, or as simple as a sword, the object created cannot have a Presence of more than allowed by spell level, but for all purposes it is treated as having a quality bonus. As an exceptional rule, the quality of the object does not affect its Presence.",
+      "initialGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 10,
+        "effect": " Presence 60  / +5 Quality.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": " Presence 100 / +10 Quality.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 14,
+        "effect": " Presence 14 0 / +10 Quality.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 16,
+        "effect": " Presence 180  / +15 Quality.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 31,
+      "bookId": 1,
+      "name": "Travel by Light",
+      "level": 78,
+      "actionType": "Active",
+      "type": "Effect/Spiritual",
+      "effect": "Transports individuals or objects designated by the caster from one light source to another. The quantity of Presence that can be transported cannot be greater than is based on spell level. If someone wishes to resist, the MR Check is needed.",
+      "initialGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 10,
+        "effect": " 100km/62miles / Presence 250 / MR120.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 360,
+        "requiredIntelligence": 12,
+        "effect": " 1000km/621miles / Presence 500 / MR140.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 450,
+        "requiredIntelligence": 14,
+        "effect": " 5000km/3106.8miles / Presence 1000 / MR180.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 16,
+        "effect": " 15000km/9320.5miles / Presence 2000 / MR200.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 32,
+      "bookId": 1,
+      "name": "Lordship over Dreams",
+      "level": 80,
+      "actionType": "Active",
+      "type": "Effect/Spiritual",
+      "effect": "Permits the control of any type of dream. The caster has the ability to control the sleeper’s dream world, modifying it as if he had a Gnosis of 45 (although it is not real). If the dream is fed by negative energy, in other words, if it turns into a nightmare, his Gnosis becomes only 30. If the dreamer wishes to resist the spell, it requires beating a MR Check. This spell also has a second use, depending on whether or not the caster is in the Wake.  Base level has no effect on the Wake",
+      "initialGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 12,
+        "effect": " MR140.",
+        "retention": 60
+      },
+      "intermediateGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 14,
+        "effect": " MR150 / If the caster is in the Wake can control his surrounding and gain powers as a being with Gnosis 40, while in a place influenced by positive energy. On a neutral area, his powers will reach Gnosis 30. This spell affects only the Wake’s area where it’s used and only if there isn’t another entity with similar Gnosis entwined with it.",
+        "retention": 65
+      },
+      "advancedGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 16,
+        "effect": " MR160 / Like Intermediate but caster’s Gnosis on neutral areas is 35.",
+        "retention": 70
+      },
+      "arcaneGrade": {
+        "zeon": 750,
+        "requiredIntelligence": 18,
+        "effect": " MR180 / As Advanced but the spell has no spatial limits, influencing all the positive areas of the Wake.",
+        "retention": 80
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 33,
+      "bookId": 1,
+      "name": "Create Being of Light",
+      "level": 82,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Creates a luminous being with the appearance of life, but completely under the control of the caster. The entity is developed as a Being Between Worlds, using the powers and limitations of Light Elementals explained in Chapter 26. The creatures maximum level is calculated using the same rules as in the spell Create Being from the Path of Creation.",
+      "initialGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 10,
+        "effect": " Level 1.",
+        "retention": 50
+      },
+      "intermediateGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 12,
+        "effect": " Level 3.",
+        "retention": 70
+      },
+      "advancedGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 14,
+        "effect": " Level 6.",
+        "retention": 100
+      },
+      "arcaneGrade": {
+        "zeon": 700,
+        "requiredIntelligence": 16,
+        "effect": " Level 10.",
+        "retention": 140
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 34,
+      "bookId": 1,
+      "name": "Reflecting Prism",
+      "level": 86,
+      "actionType": "Passive",
+      "type": "Defense",
+      "effect": "Creates a body of light that works like a prismatic shield, reflecting any spell, psychic attack, or Ki technique back at the caster. For the charge to be reflected back, it must lose a Clashing Spells check against an equivalent damage based on level. It is also necessary to make a successful Block using the Prism. If defending against an Area Attack, the prism does not reflect the entire spell; it will still affect anyone in the area of the spell except the caster of the Reflecting Prism. This spell does not reflect Spiritual spells. The caster can use his Magic Projection to redirect the attack. It will absorb points based on level of damage before breaking.",
+      "initialGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 10,
+        "effect": " Clashing Spells Check against 100 / 800 Resistance Points.",
+        "retention": 20
+      },
+      "intermediateGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 13,
+        "effect": " Clashing Spells Check against 120 / 1500 Resistance Points.",
+        "retention": 25
+      },
+      "advancedGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " Clashing Spells Check against 140 / 3000 Resistance Points.",
+        "retention": 30
+      },
+      "arcaneGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 17,
+        "effect": " Clashing Spells Check against 180 / 6000 Resistance Points.",
+        "retention": 40
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 35,
+      "bookId": 1,
+      "name": "Radius of Omniscience",
+      "level": 88,
+      "actionType": "Passive",
+      "type": "Effect",
+      "effect": "Permits the caster to be omniscient concerning any occurrence or thought within a radius. Affects only individuals whose Presence is less than that indicated in the spell level and who do not have higher Gnosis than the caster. The caster will automatically know everything that is happening and everything thought within the Radius. No Resistance check  is possible.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": " Presence 60 / 500m/546yd area.",
+        "retention": 40
+      },
+      "intermediateGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 12,
+        "effect": " Presence 80 / 2km/1.25mile area.",
+        "retention": 50
+      },
+      "advancedGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 15,
+        "effect": " Presence 100 / 10km/6.2mile area.",
+        "retention": 60
+      },
+      "arcaneGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 18,
+        "effect": " Presence 120 / 50km/31mile area.",
+        "retention": 65
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 36,
+      "bookId": 1,
+      "name": "Predict",
+      "level": 90,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "Permits the caster to foresee future events that will happen around a given person, place, or thing. Predict shows the caster the most probable destiny awaiting someone or something, providing him with detailed information about future events.  The Game Master can truthfully tell the caster what events will occur in the future. Of course, these predictions are not infallible; what is seen is only the most probable destiny, which may be changed through the intervention of higher powers or the actions of persons with elevated Gnosis.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": " 1 year.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 12,
+        "effect": " 5 years.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 450,
+        "requiredIntelligence": 14,
+        "effect": " 50 years / If the prediction is about something happening within 1 day, it will be very accurate.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 16,
+        "effect": " 100 years / If the prediction is about something happening within 1 year, it will be very accurate.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 37,
+      "bookId": 1,
+      "name": "Prison of Light",
+      "level": 92,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "Encloses the victim in an inescapable world of Light, a separate universe which has no interaction with our own. While the victim is imprisoned, he will have no knowledge of anything that happens outside the prison, nor does anyone outside have any knowledge of the prisoner. To try to break out from within, the prison will resist damage according to the rules of Damage Resistance with an AT of 10. From the outside, the prison can only be damaged by Energy-based Attacks with a Presence greater than 180. The prison recovers from any damage with a Regeneration of 19. The spell can be avoided by passing a MR Check, but if that fails, the prisoner has no chance to check again later; if he wants to get out, he better be able to break through the spell. The caster cannot affect himself with the Prison of Light.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 14,
+        "effect": " MR 140 / 10000 Resistance Points.",
+        "retention": 40
+      },
+      "intermediateGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 16,
+        "effect": " MR 180 / 250000 Resistance Points.",
+        "retention": 70
+      },
+      "advancedGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 18,
+        "effect": " MR 220 / 500000 Resistance Points.",
+        "retention": 100
+      },
+      "arcaneGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 20,
+        "effect": " MR 240 / The prison cannot be broken from the inside, but possesses 500000 Resistance Points if attacked from the outside.",
+        "retention": 160
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 38,
+      "bookId": 1,
+      "name": "One with the Light",
+      "level": 96,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Permits the caster to enter a state of utter meditation in which his body becomes one with the Light. He abandons this world and ascends to the Flow of Souls to nourish himself from their energies. Apart from, and without knowledge of anything happening elsewhere, he multiplies his Zeon Regeneration rate by 10, and cures his wounds with a Healing Regeneration of 16. Although there is no maintenance cost for this spell, the amount of time the caster can remain this way is based on spell level.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": " One Day.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 14,
+        "effect": " One Week.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 16,
+        "effect": " One Month.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 18,
+        "effect": " One Year.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 39,
+      "bookId": 1,
+      "name": "Ascension",
+      "level": 98,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell exchanges the material essence of a person for divine energy, modifying his spirit through pure supernatural power.  It can give the target as much Gnosis as desired based on spell level.  no difference to Gnosis awarded to caster or other people.",
+      "initialGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 14,
+        "effect": " Gnosis 30.",
+        "retention": 30
+      },
+      "intermediateGrade": {
+        "zeon": 1000,
+        "requiredIntelligence": 16,
+        "effect": " Gnosis 35.",
+        "retention": 40
+      },
+      "advancedGrade": {
+        "zeon": 2000,
+        "requiredIntelligence": 18,
+        "effect": " Gnosis 40.",
+        "retention": 45
+      },
+      "arcaneGrade": {
+        "zeon": 5000,
+        "requiredIntelligence": 20,
+        "effect": " Gnosis 45.",
+        "retention": 50
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 40,
+      "bookId": 1,
+      "name": "Light Holocaust",
+      "level": 100,
+      "actionType": "Active",
+      "type": "Attack/Spiritual",
+      "effect": "This spell unleashes the power of Light in its purest state, sweeping away everything in the spiritual as well as the material world. The freed energy sweeps up and devours everything, unifying its existence to the Light. Even elemental creatures of light are assimilated by its power. The Holocaust of Light creates a great luminous dome within which everything is dissolved. It has a radius based on spell level, attacks the Energy AT, and causes a Base Damage based on spell level. Anyone receiving damage, no matter how small, must beat a MR Check with a Difficulty of 160 or be joined with the Light, and automatically destroyed in body and soul. It is not possible to designate specific targets within the Holocaust; all except the caster are equally affected.",
+      "initialGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 14,
+        "effect": " Base Damage 350 / 100m/109yd area.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 1000,
+        "requiredIntelligence": 16,
+        "effect": " Base Damage 500 / 100km/62mile area.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 2500,
+        "requiredIntelligence": 18,
+        "effect": " Base Damage 800 / 10000km/6213mile area.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 10000,
+        "requiredIntelligence": 20,
+        "effect": " Base Damage 1000 / 1 au (astronomic unit) area.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    }
+  ]
+}

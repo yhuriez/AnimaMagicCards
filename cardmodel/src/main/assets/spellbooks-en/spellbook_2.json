@@ -1,0 +1,1425 @@
+{
+  "bookId": 2,
+  "bookName": "Path of Darkness",
+  "description": "Darkness does not govern the absence of light, but rather It manipulates the very power of the shadows. It controls all negative emotions, such as fear, anger and hatred. It also represents the power of secrets, among which concealment and obfuscation are included. Like Light, its power is very well balanced.",
+  "type": "Main",
+  "oppositeBook": "Light",
+  "secondaryBookAccessible": [
+    "War",
+    "Chaos",
+    "Literae",
+    "Death",
+    "Music",
+    "Nobility",
+    "Sin",
+    "Knowledge",
+    "Blood",
+    "Dream",
+    "Time",
+    "Threshold",
+    "Void"
+
+  ],
+  "spells": [
+    {
+      "spellId": 1,
+      "bookId": 2,
+      "name": "﻿Create Darkness",
+      "level": 2,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Completely darkens a radius. Everything within the area is perceived as though on a dark and moonless night.",
+      "initialGrade": {
+        "zeon": 20,
+        "requiredIntelligence": 5,
+        "effect": " 5m/5yd area",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 8,
+        "effect": " 25m/27yd area",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": " 100m/109yd area",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": " 500m/546yd area",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 2,
+      "bookId": 2,
+      "name": "Induce Fear",
+      "level": 6,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "Temporarily causes a Fear State in all people around the caster. The spell caster decides what the victims are afraid of. The MR or PsR Check is based on the spell level.",
+      "initialGrade": {
+        "zeon": 20,
+        "requiredIntelligence": 5,
+        "effect": " MR or PsR 80 / 10m/11yd area",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": " MR or PsR 100 / 50m/54yd area",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 10,
+        "effect": " MR or PsR 120 / 100m/109yd area",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 12,
+        "effect": " MR or PsR 140 / 250m/273yd area",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 3,
+      "bookId": 2,
+      "name": "See in Darkness",
+      "level": 8,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Permits the caster, or anyone he selects, to see perfectly in the dark. This spell can affect as many targets as desired as long as their accumulated Presence is no higher than the limit allowed by the spell level. Only works on natural darkness.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 5,
+        "effect": " Max Presence 80",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": " Max Presence 100",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": " Max Presence 120",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": " Max Presence 140 / Works also on Supernatural Darkness.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 4,
+      "bookId": 2,
+      "name": "Shield of Darkness",
+      "level": 10,
+      "actionType": "Passive",
+      "type": "Defense",
+      "effect": "Forms a barrier of Energy that protects from any source of attack. The shield can absorb up to 300 points (at base level) before breaking, but is only damaged by supernatural attacks. Impacts based on Light cause it double damage.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": " 300 Resistance Points.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 8,
+        "effect": " 1000 Resistance Points.",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 10,
+        "effect": " 1800 Resistance Points.",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 14,
+        "effect": " 3000 Resistance Points.",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 5,
+      "bookId": 2,
+      "name": "Shadow",
+      "level": 12,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell increases the caster’s ability to conceal, boosting his Secondary Abilities of Stealth and Hide. It also increases his Magic Appraisal, but only for the purpose of hiding the magical potency of something or someone, not to detect it.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 5,
+        "effect": " +50 Hide, Stealth and Magic Appraisal.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 9,
+        "effect": " +150 Hide, Stealth and Magic Appraisal.",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": " +200 Hide, Stealth and Magic Appraisal.",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 14,
+        "effect": " +250 Hide, Stealth and Magic Appraisal.",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 6,
+      "bookId": 2,
+      "name": "Armor of Darkness",
+      "level": 16,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Forms a strong mystical armor against Energy-based Attacks, and a minor mystical armor against all others. Although it counts as armor, it does not count as an additional layer of armor for purposes of penalties to Initiative.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": "  Energy AT 2, other AT 1.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": "  Energy AT 5, other AT 2.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "  Energy AT 8, other AT 4.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 15,
+        "effect": "  Energy AT 12, other AT 6.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 7,
+      "bookId": 2,
+      "name": "Banish Light",
+      "level": 18,
+      "actionType": "Active",
+      "type": "Effect/Spiritual",
+      "effect": "Destroys ambient light around the caster. Any light-based creatures within the radius must pass a MR Check, or lose double their Failure level in Life Points (Damage Resistance creatures increases this amount by its Damage Resistance multiple). As long as the spell is maintained over the creatures, they must make a new MR Check each combat turn.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": " MR 140 / 10m/11yd area.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": " MR 180 / 100m/109yd area.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 12,
+        "effect": " MR 220 / 250m/273yd area.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 15,
+        "effect": " MR 280 / 500m/546yd area.",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 8,
+      "bookId": 2,
+      "name": "Hide Magic",
+      "level": 20,
+      "actionType": "Passive",
+      "type": "Effect",
+      "effect": "Hides a spell, or the mystical properties of an object, from any type of magical detection. In game terms, it produces a penalty to the Magic Appraisal spell of anyone attempting to detect or measure a spell or object that has been hidden (it also hides the Hide Magic spell itself).",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": " -100 Magic Appraisal",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": " -180 Magic Appraisal",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " -240 Magic Appraisal",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " -320 Magic Appraisal",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 9,
+      "bookId": 2,
+      "name": "Dark Beam",
+      "level": 22,
+      "actionType": "Active",
+      "type": "Attack",
+      "effect": "Projects a beam of Darkness based magical energy. Light Beam is an Energy Attack Type.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": "  Base Damage 60.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": "  Base Damage 90.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "  Base Damage 120.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 15,
+        "effect": "  Base Damage 150.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 10,
+      "bookId": 2,
+      "name": "Darkzone",
+      "level": 26,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Creates a mystical environment that clouds the senses of anyone within it. The Darkzone increases the difficulty of any Perceptive check within it by 2 levels. This ability also affects Ki Detection. The spell has a radius and it is not possible to designate targets within it. No Resistance is possible. also affect Magic detections.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": " 20m/21yd area.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": " 250m/273yd area.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " 500m/546yd area.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " 1km/1093yd area.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 11,
+      "bookId": 2,
+      "name": "Bonds of Darkness",
+      "level": 28,
+      "actionType": "Active",
+      "type": "Attack",
+      "effect": "It cast bonds of darkness that hold the designated target immobile. An attack is made using the rules for Trapping, although the caster suffers no penalty to his Ability for performing this maneuver. The bonds use a Strength based on spell level for the check. If anyone tries to help free the person Trapped, the Bonds of Light are treated as an Energy weapon with Fortitude of 25.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": " Strength 8.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": " Strength 12.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 12,
+        "effect": " Strength 15 and Fortitude 30.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 15,
+        "effect": " Strength 18 and Fortitude 35.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 12,
+      "bookId": 2,
+      "name": "Control Darkness",
+      "level": 30,
+      "actionType": "Active",
+      "type": "Effect/Spiritual",
+      "effect": "Modifies and controls the form, color, or intensity of darkness in a radius. If cast at Darkness-based beings, they must pass a MR Check or they will fall under the control of the caster. A creature can only repeat the check if it is ordered to do something against its nature.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": " MR 80 / 20m/21yd area.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 9,
+        "effect": " MR 140 / 150m/164yd area.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 12,
+        "effect": " MR 180 / 300m/328yd area.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 16,
+        "effect": " MR 220 / 500m/546yd area.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 13,
+      "bookId": 2,
+      "name": "Concealment",
+      "level": 32,
+      "actionType": "Passive",
+      "type": "Effect",
+      "effect": "Conceals the presence of the caster or a target designated by him from any type of detection. In game terms, it increases the resistance to supernatural (mystical or psychic) detections. This ability also increases the Ki Concealment of the person, permitting him to hide his energy even if he has not developed that ability.Casting Level Base Intermediate Advanced Arcane",
+      "initialGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 6,
+        "effect": " +50 MR or PsR / +50 Ki Concealment",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": " +140 MR or PsR / +150 Ki Concealment",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " +220 MR or PsR / +200 Ki Concealment",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " +280 MR or PsR / +250 Ki Concealment",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 14,
+      "bookId": 2,
+      "name": "Obfuscate",
+      "level": 36,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Modifies the body of the individual, blending him into the background and permitting him to hide himself naturally. While the spell is active, the person can exchange his own level of ability at Stealth and Hide for a that provided by the spell. It also offers the same level of ability at Ki Concealment, even if he has not developed that ability. Remember that these numbers are not added to the person’s Secondary Abilities, but are substituted for them if they are lower.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 6,
+        "effect": " Hide, Stealth and Ki Concealment 100",
+        "retention": 20
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": " Hide, Stealth and Ki Concealment 150",
+        "retention": 40
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " Hide, Stealth and Ki Concealment 200",
+        "retention": 50
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " Hide, Stealth and Ki Concealment 250",
+        "retention": 60
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 15,
+      "bookId": 2,
+      "name": "Enrage",
+      "level": 38,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "Provokes a Rage State in those affected, making them lose control and attack the person closest to them. The spell’s victims apply a bonus of +10 to their offensive abilities and a –30 to all other checks. Enrage has a radius and can be resisted by beating a MR Check.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": " MR 80 / 5m/5yd area.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": " MR 100 / 20m/21m area.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 12,
+        "effect": " MR 120 / 50m/54yd area.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 15,
+        "effect": " MR 140 / 100m/109yd area.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 16,
+      "bookId": 2,
+      "name": "Banish Positive Emotions",
+      "level": 40,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "Temporarily banishes any positive sentiments such as inner peace, calm, or joy within 300 feet of the caster. Resisting this spell requires beating a MR or PsR Check.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 6,
+        "effect": " MR or PsR 100 / 100m/109yd area.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": " MR or PsR 150 / 500m/546yd area.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " MR or PsR 180 / 1km/1093yd area.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 15,
+        "effect": " MR or PsR 220 / 5km/3.1mile area.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 17,
+      "bookId": 2,
+      "name": "Night",
+      "level": 42,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Forms a dome of darkness in a radius. Everyone in the interior area, except the caster, is subject to the rules for Vision Totally Obscured. To see through this darkness, whether from inside or outside the done, requires a difficulty check of Inhuman in Notice, or Almost Impossible in Search. Seeing through the Darkness requires Impossible Notice Check or Absurd Search Check. It’s not considered supernatural darkness.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 6,
+        "effect": " 25m/27yd area.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": " 250m/273yd area.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " 500m/546yd area / It’s considered supernatural darkness.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " MR 1km/1093yd area / It’s considered supernatural darkness.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 18,
+      "bookId": 2,
+      "name": "Dark Sphere",
+      "level": 46,
+      "actionType": "Active",
+      "type": "Attack",
+      "effect": "Unleashes a sphere of Dark energy. The caster can control it using his Magic Projection until it hits its target. If the target successfully dodges, the Dark Sphere can continue attacking the following turn, since it has not been destroyed. When Dark Sphere causes damage, or is blocked, the Sphere explodes and vanishes. If the caster abandons control of it, it will act independently, following its last designated target with a Magic Projection based on spell level.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 6,
+        "effect": " Base Damage 100 / Magic Projection 150.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": " Base Damage 120 / Magic Projection 180.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " Base Damage 160 / Magic Projection 210.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " Base Damage 200 / Magic Projection 240.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 19,
+      "bookId": 2,
+      "name": "Zone of Concealment",
+      "level": 48,
+      "actionType": "Active",
+      "type": "Detection",
+      "effect": "By casting this spell over a particular zone, the spell caster creates a mystical area that impedes the detection of anything within it. Anything within the area is concealed, with a bonus to MR Checks to avoid detections. Additionally, any Ki Detection or Magic Appraisal used within the zone suffers a penalty to its Final Result. The affected zone is stationary in the place it was cast.Casting Level Base Intermediate Advanced Arcane",
+      "initialGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 7,
+        "effect": " +100MR / -140 Detection Abilities / 20m/21yd area.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": " +150MR / -180 Detection Abilities / 50m/54yd area.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " +200MR / -240 Detection Abilities / 250m/273 area.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " +300MR / -320 Detection Abilities / 500m/546yd area.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 20,
+      "bookId": 2,
+      "name": "Enter Another’s Nightmares",
+      "level": 50,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "This allows the caster to physically enter a sleeper’s nightmares. The caster has no control over the dream world of the dreamer, and anything that happens there will be real to the caster. The person must have terrible dreams to be affected by this spell, and the moment the dream turns peaceful, or he awakens or dies, the mage abandons the dream world and returns to reality. Any Spiritual spell cast on the dreamer while the caster is present in his dreams will also affect the caster. The MR or PsR Check has a Difficulty based on spell level. Once he is in the target person’s nightmare, the caster can jump to the unconscious of yet another dreamer who is physically no more than 10m/11yd (at base level) from the original sleeper. Naturally, this new dreamer will have the right to his own MR or PsR Check. If the dreamer’s consciousness happens to be in the world of The Wake, the caster is trapped there even when the spell expires.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 6,
+        "effect": " MR or PsR 140 / 10m/11yd distance.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": " MR or PsR 160 / 80m/87yd distance.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " MR or PsR 200 / 140m/153yd distance.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " MR or PsR 240 / 200m/218yd distance.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 21,
+      "bookId": 2,
+      "name": "Dark Form",
+      "level": 52,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "The body designated by the caster is transformed to pure dark energy and becomes intangible to matter and non-energy attacks. While in this state, the transformed person gains a bonus to his abilities of Stealth and Hide, and to his Resistance against effects based on Darkness. In this state, the damage caused by any attacks based on Light are doubled. No Maximum Presence.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 8,
+        "effect": " +50 Notice and Search / +20 Resistances.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 11,
+        "effect": " +60 Notice and Search / +30 Resistances.",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 13,
+        "effect": " As Intermediate, but resistance bonus applies to all effects not based on Light.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 16,
+        "effect": " As Advanced, but doesn’t suffer double damage from Light based attacks.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 22,
+      "bookId": 2,
+      "name": "Perdition",
+      "level": 56,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Perdition causes a disturbed feeling among those affected, reducing their abilities. Those within its area of influence must pass a MR Check, or else receive a –30 All Action Penalty. The area around the caster effects anyone within that radius. The penalties for Perdition are not cumulative, and so no one ever suffers a double penalty if in the area of influence of more than one such spell.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 6,
+        "effect": " MR120 / 5m/5yd area.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": " MR160 / 25m/27yd area.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " MR180 / 50m/54yd area / -40 All Action Penalty",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " MR200 / 150m/164yd area / -50 All Action Penalty",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 23,
+      "bookId": 2,
+      "name": "Create Negative Feelings",
+      "level": 58,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "This creates negative sentiments such as hatred, fear, or anger in the people designated by the caster. The radius of the spell and the MR or PsR Check is based on spell level. Those affected can repeat the Resistance Check once per day.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 8,
+        "effect": " MR or PsR 120 / 20m/21yd area.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 10,
+        "effect": " MR or PsR 160 / 100m/109yd area.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " MR or PsR 180 / 250m/273yd area.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " MR or PsR 220 / 500m/546yd area.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 24,
+      "bookId": 2,
+      "name": "Erase Traces",
+      "level": 60,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "The caster can erase the evidence that he has been in a certain place. In fact, any sign whatsoever of his passing, whether detectable naturally, or by supernatural means, disappears completely. The spell erases all such traces within a radius. Even Zen Level Track ability has no effect on it. Does not affect time scanning powers.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 8,
+        "effect": " 50m/54yd area.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": " 250m/273yd area.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 13,
+        "effect": " 1km/1093yd area / The spell also allows to eliminate traces of the caster from time scanning powers.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 16,
+        "effect": " 5km/3.1mile area / As Advanced, but the spell can eliminate traces of everything that happened in the past of the whole area.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 25,
+      "bookId": 2,
+      "name": "Shield from Positive",
+      "level": 62,
+      "actionType": "Active",
+      "type": "Automatic",
+      "effect": "This spell enchants a certain area, making it impenetrable for beings naturally based in positive emotions or Light. Any such creature entering the zone must pass a MR Check or suffer the loss of a number of Life Points equal to the margin of failure. Additionally, if the creature fails the check, he receives an immediate –40 All Action Penalty. The affectedzone is stationary in the place it was cast.",
+      "initialGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 7,
+        "effect": " MR 120 / 20m/21yd area.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": " MR 140 / 100m/109yd area.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " MR 160 / 250m/273 area.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " MR 180 / 500m/546yd area.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 26,
+      "bookId": 2,
+      "name": "Dark",
+      "level": 66,
+      "actionType": "Passive",
+      "type": "Defense",
+      "effect": "Creates a shadow shield with the ability to swallow any attack spell received. For the defense against an attacking spell to work, it is necessary to achieve a Block against the attack. If the defender does achieve it, the attacking spell must then lose a Clashing Spells Check against a damage of based on spell level. The void absorbs half the Zeon of the devoured spell, giving those points to the caster. It is also possible for it to devour Area Attacks. ",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 6,
+        "effect": " Clashing Spell Damage 80 / 600 Resistance Points.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": " Clashing Spell Damage 110 / 1200 Resistance Points.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " Clashing Spell Damage 140 / 1800 Resistance Points.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " Clashing Spell Damage 170 / 2200 Resistance Points.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 27,
+      "bookId": 2,
+      "name": "Devastate",
+      "level": 68,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "Causes penalties through an accumulation of pain, suffering, misery, and other negative mystical effects. The affected person must pass a MR Check or suffer an All Action Penalty and a penalty to the margin of failure of the Check. If he does not pass the Check, the target of Devastate does not have the right to a new check for as long as the spell is maintained.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 6,
+        "effect": " MR 120",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": " MR 160",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " MR 200",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " MR 240",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 28,
+      "bookId": 2,
+      "name": "Mark of Fear",
+      "level": 70,
+      "actionType": "Active",
+      "type": "Automatic",
+      "effect": "This spell creates a display of shadows in a designated spot that terrorizes all who see it   Anyone seeing it must make a MR or PsR Check to resist the terror state. The condition for being affected is looking directly at the Mark of Fear.",
+      "initialGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 10,
+        "effect": " MR or PsR 120 / 1 km/1093yd area.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": " MR or PsR 150 / 5 km/3.1mile area.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 14,
+        "effect": " MR or PsR 180 / 15km/9.3mile area.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 360,
+        "requiredIntelligence": 16,
+        "effect": " MR or PsR 220 / 25km/15.5mile area.",
+        "retention": 0
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 29,
+      "bookId": 2,
+      "name": "Catastrophic Darkness",
+      "level": 72,
+      "actionType": "Active",
+      "type": "Attack",
+      "effect": "Creates a deadly discharge of darkness with an Energy Attack Type.",
+      "initialGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 10,
+        "effect": " Base Damage 120 / 25m/27yd area.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 12,
+        "effect": " Base Damage 150 / 100m/109yd area.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 14,
+        "effect": " Base Damage 200 / 150m/164yd area.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 16,
+        "effect": " Base Damage 250 / 250m/273yd area.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 30,
+      "bookId": 2,
+      "name": "Dark Material Objects",
+      "level": 76,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Forms a material object from Darkness energy. Whether it is something as complex as a clock, or as simple as a sword, the object created cannot have a Presence of more than allowed by spell level, but for all purposes it is treated as having a quality bonus. As an exceptional rule, the quality of the object does not affect its Presence.",
+      "initialGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 10,
+        "effect": " Presence 60  / +5 Quality.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": " Presence 100 / +10 Quality.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 14,
+        "effect": " Presence 14 0 / +10 Quality.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 16,
+        "effect": " Presence 180  / +15 Quality.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 31,
+      "bookId": 2,
+      "name": "Travel by Shadows",
+      "level": 78,
+      "actionType": "Active",
+      "type": "Effect/Spiritual",
+      "effect": "Transports individuals or objects designated by the caster from one shadow to another. The quantity of Presence that can be transported cannot be greater than is based on spell level. If someone wishes to resist, the MR Check is needed.",
+      "initialGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 10,
+        "effect": " 100km/62miles / Presence 250 / MR120.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 360,
+        "requiredIntelligence": 12,
+        "effect": " 1000km/621miles / Presence 500 / MR140.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 450,
+        "requiredIntelligence": 14,
+        "effect": " 5000km/3106.8miles / Presence 1000 / MR180.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 16,
+        "effect": " 15000km/9320.5miles / Presence 2000 / MR200.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 32,
+      "bookId": 2,
+      "name": "Lord of Nightmares",
+      "level": 80,
+      "actionType": "Active",
+      "type": "Effect/Spiritual",
+      "effect": "Permits the control of any type of nightmare. The caster has the ability to control the sleeper’s dream world, modifying it as if he had a Gnosis of 45 (although it is not real). If the dream is fed by positive energy, in other words, if it stops being a nightmare, his Gnosis becomes only 30. If the dreamer wishes to resist the spell, it requires beating a MR Check. This spell also has a second use, depending on whether or not the caster is in the Wake.  Base level has no effect on the Wake",
+      "initialGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 12,
+        "effect": " MR140.",
+        "retention": 60
+      },
+      "intermediateGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 14,
+        "effect": " MR150 / If the caster is in the Wake can control his surrounding and gain powers as a being with Gnosis 40, while in a place influenced by negative energy. On a neutral area, his powers will reach Gnosis 30. This spell affects only the Wake’s area where it’s used and only if there isn’t another entity with similar Gnosis entwined with it.",
+        "retention": 65
+      },
+      "advancedGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 16,
+        "effect": " MR160 / Like Intermediate but caster’s Gnosis on neutral areas is 35.",
+        "retention": 70
+      },
+      "arcaneGrade": {
+        "zeon": 750,
+        "requiredIntelligence": 18,
+        "effect": " MR180 / As Advanced but the spell has no spatial limits, influencing all the negative areas of the Wake.",
+        "retention": 80
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 33,
+      "bookId": 2,
+      "name": "Create Being of Darkness",
+      "level": 82,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Creates a darkness being with the appearance of life, but completely under the control of the caster. The entity is developed as a Being Between Worlds, using the powers and limitations of Light Elementals explained in Chapter 26. The creatures maximum level is calculated using the same rules as in the spell Create Being from the Path of Creation.",
+      "initialGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 10,
+        "effect": " Level 1.",
+        "retention": 50
+      },
+      "intermediateGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 12,
+        "effect": " Level 3.",
+        "retention": 70
+      },
+      "advancedGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 14,
+        "effect": " Level 6.",
+        "retention": 100
+      },
+      "arcaneGrade": {
+        "zeon": 700,
+        "requiredIntelligence": 16,
+        "effect": " Level 10.",
+        "retention": 140
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 34,
+      "bookId": 2,
+      "name": "Concealment from Magic",
+      "level": 86,
+      "actionType": "Passive",
+      "type": "Effect",
+      "effect": "Hides the presence of the individual from Automatic spells, causing him to be directly unaffected by them. As an exception to the general rule, an opposing caster maintaining any Automatic Spell must succeed in fixing his Magic Projection on the caster who is defending himself using Concealment from Magic, as though the Automatic Spell were a Spiritual one (even if the caster of Concealment from Magic meets the condition for being subject to the Automatic Spell). ",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": " Affects Automatic Spells on Base level.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " Affects Automatic Spells on Intermediate level.",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 14,
+        "effect": " Affects Automatic Spells on Advanced level.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 320,
+        "requiredIntelligence": 16,
+        "effect": " Affects Automatic Spells on Arcane level.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 35,
+      "bookId": 2,
+      "name": "Kingdom of Darkness",
+      "level": 88,
+      "actionType": "Active",
+      "type": "Automatic",
+      "effect": "Creates a zone around the caster in which total darkness reigns. The body of the spell caster blends into the shadows, increasing his resistance to all kinds of detection by +40. To locate him using the senses requires passing a check of Impossible difficulty with Search, or Inhuman using Notice. Even while using Ki Detection, it is still necessary to beat an Inhuman level check. In addition, as long as he is one with the Darkness, the caster can transport himself each Combat Turn anywhere he wishes within the Kingdom of Darkness. The MA of the caster is also increased by 20 points when using spells of darkness, and any living being (except Dark Elementals) within the covered area automatically loses 10 points of Zeon per Combat Turn (20 points per turn if an Light Elemental). The spell is stationary in the place it was cast. Detection by Ki Detection requires Zen. Non Dark Elemental beings within the Kingdom of Darkness also loose 1ki per turn (double for Light Elementals).",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": " 50m/54yd area.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 360,
+        "requiredIntelligence": 12,
+        "effect": " 500m/546yd area.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 420,
+        "requiredIntelligence": 14,
+        "effect": " 1km/1093yd area.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 480,
+        "requiredIntelligence": 16,
+        "effect": " 1km/1093yd area / +30MA for casting Dark Magic Spells.",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 36,
+      "bookId": 2,
+      "name": "Undetectable",
+      "level": 90,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "The target of this spell becomes completely immune to supernaturalDetection. Only affects certain supernatural detections. No maximum presence.",
+      "initialGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 12,
+        "effect": " Invisible to spells and psychic abilities.",
+        "retention": 80
+      },
+      "intermediateGrade": {
+        "zeon": 450,
+        "requiredIntelligence": 14,
+        "effect": " As Base, but also invisible to ki abilities.",
+        "retention": 90
+      },
+      "advancedGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 16,
+        "effect": " As Intermediate, but also invisible to all supernatural detections.",
+        "retention": 105
+      },
+      "arcaneGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 18,
+        "effect": " As Advanced, but can only be perceived by natural senses.",
+        "retention": 115
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 37,
+      "bookId": 2,
+      "name": "Prison of Darkness",
+      "level": 92,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "Encloses the victim in an inescapable world of Darkness, a separate universe which has no interaction with our own. While the victim is imprisoned, he will have no knowledge of anything that happens outside the prison, nor does anyone outside have any knowledge of the prisoner. To try to break out from within, the prison will resist damage according to the rules of Damage Resistance with an AT of 10. From the outside, the prison can only be damaged by Energy-based Attacks with a Presence greater than 180. The prison recovers from any damage with a Regeneration of 19. The spell can be avoided by passing a MR Check, but if that fails, the prisoner has no chance to check again later; if he wants to get out, he better be able to break through the spell. The caster cannot affect himself with the Prison of Darkness.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 14,
+        "effect": " MR 140 / 10000 Resistance Points.",
+        "retention": 40
+      },
+      "intermediateGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 16,
+        "effect": " MR 180 / 250000 Resistance Points.",
+        "retention": 70
+      },
+      "advancedGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 18,
+        "effect": " MR 220 / 500000 Resistance Points.",
+        "retention": 100
+      },
+      "arcaneGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 20,
+        "effect": " MR 240 / The prison cannot be broken from the inside, but possesses 500000 Resistance Points if attacked from the outside.",
+        "retention": 160
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 38,
+      "bookId": 2,
+      "name": "One with the Darkness",
+      "level": 96,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Permits the caster to enter a state of utter meditation in which his body becomes one with the Darkness. He abandons this world and ascends to the Flow of Souls to nourish himself from their energies. Apart from, and without knowledge of anything happening elsewhere, he multiplies his Zeon Regeneration rate by 10, and cures his wounds with a Healing Regeneration of 16. Although there is no maintenance cost for this spell, the amount of time the caster can remain this way is based on spell level.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": " One Day.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 14,
+        "effect": " One Week.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 16,
+        "effect": " One Month.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 18,
+        "effect": " One Year.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 39,
+      "bookId": 2,
+      "name": "Dark Ascension",
+      "level": 98,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell exchanges the material essence of a person for divine energy, modifying his spirit through pure supernatural power.  It can give the target as much Gnosis as desired based on spell level.  no difference to Gnosis awarded to caster or other people.",
+      "initialGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 14,
+        "effect": " Gnosis 30.",
+        "retention": 30
+      },
+      "intermediateGrade": {
+        "zeon": 1000,
+        "requiredIntelligence": 16,
+        "effect": " Gnosis 35.",
+        "retention": 40
+      },
+      "advancedGrade": {
+        "zeon": 2000,
+        "requiredIntelligence": 18,
+        "effect": " Gnosis 40.",
+        "retention": 45
+      },
+      "arcaneGrade": {
+        "zeon": 5000,
+        "requiredIntelligence": 20,
+        "effect": " Gnosis 45.",
+        "retention": 50
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 40,
+      "bookId": 2,
+      "name": "Holocaust of Darkness",
+      "level": 100,
+      "actionType": "Active",
+      "type": "Attack/Spiritual",
+      "effect": "This spell unleashes the power of Darkness in its purest state, sweeping away everything in the spiritual as well as the material world. The freed energy sweeps up and devours everything, unifying its existence to the Darkness. Even elemental creatures of Darkness are assimilated by its power. The Holocaust of Darkness creates a great dome within which everything is dissolved. It has a radius based on spell level, attacks the Energy AT, and causes a Base Damage based on spell level. Anyone receiving damage, no matter how small, must beat a MR Check with a Difficulty of 160 or be joined with the darkness, and automatically destroyed in body and soul. It is not possible to designate specific targets within the Holocaust; all except the caster are equally affected.",
+      "initialGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 14,
+        "effect": " Base Damage 350 / 100m/109yd area.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 1000,
+        "requiredIntelligence": 16,
+        "effect": " Base Damage 500 / 100km/62mile area.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 2500,
+        "requiredIntelligence": 18,
+        "effect": " Base Damage 800 / 10000km/6213mile area.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 10000,
+        "requiredIntelligence": 20,
+        "effect": " Base Damage 1000 / 1 au (astronomic unit) area.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    }
+  ]
+}
