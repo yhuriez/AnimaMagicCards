@@ -41,7 +41,7 @@ public class WitchspellsBookViewModel extends RecyclerViewModel implements Binda
     }
 
     @Override
-    public List<BindableViewModel> getViewModels() {
+    public List<? extends BindableViewModel> getViewModels() {
         List<BindableViewModel> result = new ArrayList<>();
 
         for (WitchspellsPath witchPath : witchspells.witchPaths) {

@@ -14,7 +14,7 @@ import java.util.List;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 
 
-public class BindingStackAdapter extends StackAdapter<BindableViewModel> {
+public class BindingStackAdapter<T extends BindableViewModel> extends StackAdapter<T> {
 
     public BindingStackAdapter(Context context) {
         super(context);
@@ -36,8 +36,9 @@ public class BindingStackAdapter extends StackAdapter<BindableViewModel> {
         ((BindingStackViewHolder)holder).setData(data);
     }
 
+    @SuppressWarnings("unchecked")
     @BindingAdapter("viewModels")
-    public static void setViewModels(CardStackView stackView, List<BindableViewModel> viewModels){
+    public static void setViewModels(CardStackView stackView, List<? extends BindableViewModel> viewModels){
         BindingStackAdapter bindingStackAdapter = new BindingStackAdapter(stackView.getContext());
         stackView.setAdapter(bindingStackAdapter);
         bindingStackAdapter.updateData(viewModels);

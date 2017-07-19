@@ -26,7 +26,7 @@ public class SpellStackViewModel extends ListBindableViewModel {
     }
 
     public boolean isMessageMode(){
-        List<BindableViewModel> viewModels = getViewModels();
+        List<? extends BindableViewModel> viewModels = getViewModels();
         return stackVisible.get() && viewModels != null && viewModels.isEmpty();
     }
 

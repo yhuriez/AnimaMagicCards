@@ -35,4 +35,5 @@
     <dimen name="main_path_symbol_size">25dp</dimen>
     <dimen name="sub_path_frame_size">20dp</dimen>
     <dimen name="sub_path_symbol_size">12dp</dimen>
+    <dimen name="quick_access_item_dimen">45dp</dimen>
 </resources>

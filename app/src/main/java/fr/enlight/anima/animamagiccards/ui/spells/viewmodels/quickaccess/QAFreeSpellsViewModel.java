@@ -8,16 +8,16 @@ import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.cardmodel.business.SpellFilterFactory;
 
 
-public class QuickAccessFreeSpellsViewModel implements QuickAccessViewModel {
+public class QAFreeSpellsViewModel implements QAViewModel {
 
     private final int mBottomLevel;
     private final int mTopLevel;
 
     public final ObservableBoolean selected = new ObservableBoolean(false);
 
-    private final Listener mListener;
+    private final QAClickListener mListener;
 
-    public QuickAccessFreeSpellsViewModel(int bottomLevel, int topLevel, Listener listener) {
+    public QAFreeSpellsViewModel(int bottomLevel, int topLevel, QAClickListener listener) {
         mBottomLevel = bottomLevel;
         mTopLevel = topLevel;
         mListener = listener;
@@ -40,7 +40,7 @@ public class QuickAccessFreeSpellsViewModel implements QuickAccessViewModel {
     public void onItemClicked(){
         if(!selected.get()) {
             selected.set(true);
-            mListener.onQuickAccessFreeSpell(this);
+            mListener.onQuickAccessClicked(this);
         }
     }
 
@@ -52,9 +52,5 @@ public class QuickAccessFreeSpellsViewModel implements QuickAccessViewModel {
     @Override
     public SpellFilterFactory.SpellFilter getFilter(SpellFilterFactory factory) {
         return factory.createLevelWindowFilter(mBottomLevel + 1, mTopLevel);
-    }
-
-    public interface Listener{
-        void onQuickAccessFreeSpell(QuickAccessFreeSpellsViewModel viewModel);
     }
 }

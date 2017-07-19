@@ -37,7 +37,9 @@ import fr.enlight.anima.animamagiccards.ui.spells.bo.SpellGradeLevel;
 import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.SpellFilterViewModel;
 import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.SpellStackViewModel;
 import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.SpellViewModel;
-import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.quickaccess.SpellQuickAccessViewModel;
+import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.quickaccess.AbstractGroupQAViewModel;
+import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.quickaccess.GroupQAFreeSpellsViewModel;
+import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.quickaccess.GroupQASpellbookPathViewModel;
 import fr.enlight.anima.animamagiccards.utils.DeviceUtils;
 import fr.enlight.anima.animamagiccards.utils.IntentsUtils;
 import fr.enlight.anima.animamagiccards.utils.OnBackPressedListener;
@@ -50,12 +52,14 @@ import fr.enlight.anima.cardmodel.model.spells.SpellType;
 import fr.enlight.anima.cardmodel.model.spells.Spellbook;
 import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
 import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
+import fr.enlight.anima.cardmodel.model.witchspells.WitchspellsPath;
 
 
+@SuppressWarnings("ConstantConditions")
 public class SpellStackFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<Spell>>,
         SpellViewModel.Listener,
         SearchView.OnQueryTextListener,
-        SpellQuickAccessViewModel.Listener,
+        GroupQAFreeSpellsViewModel.Listener,
         CardStackView.ItemExpendListener,
         CustomCardStackView.ItemSelectionListener,
         OnBackPressedListener {
@@ -73,7 +77,7 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
 
     private SpellStackViewModel spellViewModels;
     private SpellFilterViewModel filterViewModel;
-    private SpellQuickAccessViewModel quickAccessViewModel;
+    private AbstractGroupQAViewModel quickAccessViewModel;
 
     private final List<SpellFilterFactory.SpellFilter> filters = new ArrayList<>();
     private SpellFilterFactory.SpellFilter mQuickAccessFilter;
@@ -135,37 +139,25 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
+        Bundle arguments = getArguments();
+
         // Toolbar
         ActionBar actionBar = ((AppCompatActivity) getActivity()).getSupportActionBar();
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
-            modifyTitle(actionBar, getArguments());
+            modifyTitle(actionBar, arguments);
         }
         setHasOptionsMenu(true);
 
-        spellViewModels = new SpellStackViewModel(this, this, getArguments().containsKey(WITCHSPELLS_PARAM));
+        spellViewModels = new SpellStackViewModel(this, this, arguments.containsKey(WITCHSPELLS_PARAM));
         binding.setModel(spellViewModels);
 
         filterViewModel = new SpellFilterViewModel();
         binding.setFilterModel(filterViewModel);
 
-        selectionMode = getArguments().getBoolean(SELECTION_MODE_PARAM);
+        selectionMode = arguments.getBoolean(SELECTION_MODE_PARAM);
 
-        if (getArguments().containsKey(FREE_ACCESS_LIMIT_PARAM)) {
-            quickAccessViewModel = new SpellQuickAccessViewModel(getArguments().getInt(FREE_ACCESS_LIMIT_PARAM), this);
-
-        } else if (getArguments().containsKey(SPELLBOOK_PARAM)) {
-            Spellbook spellbook = getArguments().getParcelable(SPELLBOOK_PARAM);
-            if(spellbook.bookId == SpellbookType.FREE_ACCESS.bookId){
-                quickAccessViewModel = new SpellQuickAccessViewModel(100, this, true);
-            }
-        }
-
-        if (quickAccessViewModel != null) {
-            quickAccessViewModel.setLayoutManager(new LinearLayoutManager(getActivity()));
-            mQuickAccessFilter = quickAccessViewModel.getCurrentQuickAccessFilter();
-            binding.setQuickAccessModel(quickAccessViewModel);
-        }
+        initQuickAccess(arguments);
 
         reloadSpellFilters();
     }
@@ -190,6 +182,32 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
         }
 
         actionBar.setTitle(title);
+    }
+
+    private void initQuickAccess(Bundle arguments){
+        if (arguments.containsKey(FREE_ACCESS_LIMIT_PARAM)) {
+            quickAccessViewModel = new GroupQAFreeSpellsViewModel(arguments.getInt(FREE_ACCESS_LIMIT_PARAM), this);
+
+        } else if (arguments.containsKey(SPELLBOOK_PARAM)) {
+            Spellbook spellbook = arguments.getParcelable(SPELLBOOK_PARAM);
+            if(spellbook.bookId == SpellbookType.FREE_ACCESS.bookId){
+                quickAccessViewModel = new GroupQAFreeSpellsViewModel(100, this);
+            }
+
+        } else if(arguments.containsKey(WITCHSPELLS_PARAM)){
+            Witchspells witchspells = arguments.getParcelable(WITCHSPELLS_PARAM);
+            List<SpellbookType> spellbookTypes = new ArrayList<>();
+            for (WitchspellsPath path : witchspells.witchPaths) {
+                spellbookTypes.add(SpellbookType.getTypeFromBookId(path.pathBookId));
+            }
+            quickAccessViewModel = new GroupQASpellbookPathViewModel(spellbookTypes, this, true);
+        }
+
+        if (quickAccessViewModel != null) {
+            quickAccessViewModel.setLayoutManager(new LinearLayoutManager(getActivity()));
+            mQuickAccessFilter = quickAccessViewModel.getCurrentQuickAccessFilter();
+            binding.setQuickAccessModel(quickAccessViewModel);
+        }
     }
 
     @Override
@@ -423,7 +441,7 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     @Override
     public void onItemSelected(int position) {
         if (position >= 0) {
-            List<BindableViewModel> viewModels = spellViewModels.getViewModels();
+            List<? extends BindableViewModel> viewModels = spellViewModels.getViewModels();
             if (viewModels != null && !viewModels.isEmpty()) {
                 SpellViewModel spellViewModel = (SpellViewModel) viewModels.get(position);
                 mLastSelectedSpell = spellViewModel.getSpell();

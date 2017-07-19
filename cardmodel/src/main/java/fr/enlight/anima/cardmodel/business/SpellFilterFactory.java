@@ -9,6 +9,7 @@ import fr.enlight.anima.cardmodel.model.spells.Spell;
 import fr.enlight.anima.cardmodel.model.spells.SpellActionType;
 import fr.enlight.anima.cardmodel.model.spells.SpellGrade;
 import fr.enlight.anima.cardmodel.model.spells.SpellType;
+import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
 import fr.enlight.anima.cardmodel.utils.SpellUtils;
 
 import static fr.enlight.anima.cardmodel.utils.StringUtils.containsIgnoreCase;
@@ -39,6 +40,14 @@ public class SpellFilterFactory {
         return new LevelWindowSpellFilter(bottomLevel, topLevel);
     }
 
+    public SpellFilter createSpellbookPathFilter(SpellbookType spellbookType) {
+        return new SpellbookPathFilter(spellbookType);
+    }
+
+    public SpellFilter createNonFilteringFilter() {
+        return new NonFilteringFilter();
+    }
+
     // ////////////////////////////
     // Filter interface and classes
     // ////////////////////////////
@@ -46,7 +55,7 @@ public class SpellFilterFactory {
     public interface SpellFilter{
         boolean matchFilter(Spell spell);
 
-        void updateSpellWithFIlter(Spell spell);
+        void updateSpellWithFilter(Spell spell);
     }
 
     public class SearchSpellFilter implements SpellFilter{
@@ -67,7 +76,7 @@ public class SpellFilterFactory {
         }
 
         @Override
-        public void updateSpellWithFIlter(Spell spell) {
+        public void updateSpellWithFilter(Spell spell) {
             spell.searchWord = textToSearch;
             spell.searchInDescription = searchInDescription;
         }
@@ -92,7 +101,7 @@ public class SpellFilterFactory {
         }
 
         @Override
-        public void updateSpellWithFIlter(Spell spell) {
+        public void updateSpellWithFilter(Spell spell) {
             spell.highlightType = true;
         }
     }
@@ -111,7 +120,7 @@ public class SpellFilterFactory {
         }
 
         @Override
-        public void updateSpellWithFIlter(Spell spell) {
+        public void updateSpellWithFilter(Spell spell) {
             for (SpellGrade spellGrade : SpellUtils.extractGrades(spell)) {
                 if(spellGrade.requiredIntelligence > intelligenceMax){
                     spellGrade.limitedIntelligence = true;
@@ -148,7 +157,7 @@ public class SpellFilterFactory {
         }
 
         @Override
-        public void updateSpellWithFIlter(Spell spell) {
+        public void updateSpellWithFilter(Spell spell) {
             for (SpellGrade spellGrade : SpellUtils.extractGrades(spell)) {
                 if(spellGrade.zeon > zeonMax){
                     spellGrade.limitedZeon = true;
@@ -174,7 +183,7 @@ public class SpellFilterFactory {
         }
 
         @Override
-        public void updateSpellWithFIlter(Spell spell) {
+        public void updateSpellWithFilter(Spell spell) {
             spell.highlightActionType = true;
         }
     }
@@ -195,8 +204,43 @@ public class SpellFilterFactory {
         }
 
         @Override
-        public void updateSpellWithFIlter(Spell spell) {
+        public void updateSpellWithFilter(Spell spell) {
             // Nothing to do here
+        }
+    }
+
+    private class SpellbookPathFilter implements SpellFilter {
+
+        private final SpellbookType mSpellbookType;
+
+        public SpellbookPathFilter(SpellbookType spellbookType) {
+            mSpellbookType = spellbookType;
+        }
+
+        @Override
+        public boolean matchFilter(Spell spell) {
+            if(spell.freeAccessAssociatedType!= null){
+                return spell.freeAccessAssociatedType.bookId == mSpellbookType.bookId;
+            }
+            return spell.spellbookType != null && spell.spellbookType.bookId == mSpellbookType.bookId;
+        }
+
+        @Override
+        public void updateSpellWithFilter(Spell spell) {
+            // Nothing to update here
+        }
+    }
+
+    private class NonFilteringFilter implements SpellFilter {
+
+        @Override
+        public boolean matchFilter(Spell spell) {
+            return true;
+        }
+
+        @Override
+        public void updateSpellWithFilter(Spell spell) {
+            // Nothing to update here
         }
     }
 }
