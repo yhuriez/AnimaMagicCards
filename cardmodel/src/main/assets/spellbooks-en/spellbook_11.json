@@ -1,0 +1,1419 @@
+{
+  "bookId": 11,
+  "bookName": "Livre de la Nécromancie",
+  "description": "La nécromancie est une perversion de la magie en tant que telle. Alors que les autres voies se nourrissent de l’énergie qui s’échappe du flux des âmes, la Nécromancie l’y arrache littéralement. Ses sorts détruisent l’essence de la vie, étouffant et pervertissant les âmes qu’elle utilise. Son pouvoir permet de rendre la vie aux morts, de détruire les âmes, de drainer les vies et l’essence d’autres êtres.",
+  "type": "Automatique",
+  "oppositeBook": "Toutes les autres voies",
+  "secondaryBookAccessibles": [
+    "Guerre",
+    "Mort",
+    "Pêché",
+    "Connaissance",
+    "Sang",
+    "Rêve",
+    "Seuil",
+    "Néant."
+  ],
+  "spells": [
+    {
+      "spellId": 1,
+      "bookId": 11,
+      "name": "Sentir la Mort",
+      "level": 2,
+      "actionType": "Active",
+      "type": "Détection",
+      "effect": "Le nécromancien détecte automatiquement tous les décès qui se passent autour de lui. Ce sort permet aussi de révéler les créatures non mortes, mais elles ont droit à un test de RMys pour éviter d'être découvertes.",
+      "initialGrade": {
+        "zeon": 30,
+        "requiredIntelligence": 6,
+        "effect": "100 m de rayon / RMys 120",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 8,
+        "effect": "250 m de rayon / RMys 140",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 10,
+        "effect": "500 m de rayon / RMys 160",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "1 km de rayon / RMys 180",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 2,
+      "bookId": 11,
+      "name": "Voir l'Au-Delà",
+      "level": 6,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Permet de voir les spectres et les autres créatures Animiques invisibles pour l'œil humain.",
+      "initialGrade": {
+        "zeon": 30,
+        "requiredIntelligence": 6,
+        "effect": "Permet de voir les créatures spectrales",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 8,
+        "effect": "Comme Initial et permet aussi de voir les âmes sur le point d’être réclamées par le flux des âmes",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 10,
+        "effect": "Permet de voir tous les types de créatures animiques",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "Comme Avancé, et permet également de percevoir l’ensemble des effets animiques dans l’environnement du nécromant.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 3,
+      "bookId": 11,
+      "name": "Dominer les Charognards",
+      "level": 8,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Permet au sorcier de contrôler tous les animaux charognards qui se trouvent autour de lui. Un charognard est une créature de nature inférieure. Dont la Présence ne dépasse pas 20, qui se nourrit généralement des cadavres. Les corbeaux, vers et bien d'autres insectes rentrent parfaitement dans cette catégorie.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 6,
+        "effect": "10 m de rayon",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 8,
+        "effect": "150 m de rayon",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 11,
+        "effect": "500 m de rayon",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 13,
+        "effect": "2 km de rayon",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 4,
+      "bookId": 11,
+      "name": "Bouclier Spectral",
+      "level": 10,
+      "actionType": "Passive",
+      "type": "Défense",
+      "effect": "Crée un bouclier d'énergie nécromantique pouvant arrêter toutes les attaques animiques affectant les Résistances surnaturelles du personnage, mais pas les attaques de nature physique ou qui infligent des dégâts. Ce bouclier permet de bloquer les effets mystiques, tant que la difficulté des tests de Résistance qu'ils requièrent ne dépasse pas une valeur fixée par le rang du sort.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 6,
+        "effect": "Détient une Résistance jusqu’à 140",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 9,
+        "effect": "Détient une Résistance jusqu’à 180",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 11,
+        "effect": "Détient une Résistance jusqu’à 220",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 13,
+        "effect": "Détient une Résistance jusqu’à 260",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 5,
+      "bookId": 11,
+      "name": "Drainer la Vie",
+      "level": 12,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Le nécromant peut absorber une partie de la vie d'une autre personne, la blessant gravement alors que lui-même regagne de la vie. Tout individu affecté par ce sort doit réussir un test de RMys sous peine de perdre une quantité de points de vie équivalant à la marge d'échec. Ces points de vie perdus par la cible servent au sorcier pour guérir ses propres blessures. Les créatures à Encaissement perdent cinq fois la marge d'échec au test de Résistance en PV, mais le nécromant ne récupère qu'une quantité de PV égale à cette marge d'échec (par exemple, si une créature à Encaissement échoue de 20 points son test de Résistance, elle perd 100 PV et le sorcier n'en regagne que 20).",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": "RMys 100",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 9,
+        "effect": "RMys 140",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 230,
+        "requiredIntelligence": 12,
+        "effect": "RMys 180",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 320,
+        "requiredIntelligence": 14,
+        "effect": "RMys 240",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 6,
+      "bookId": 11,
+      "name": "Détection Nécromantique",
+      "level": 16,
+      "actionType": "Active",
+      "type": "Détection",
+      "effect": "Ce sort permet au nécromant de détecter la présence de n'importe quelle créature se trouvant autour de lui. Pour résister à cet effet, il faut réussir un test de RMys.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": "RMys 120 / 20 m de rayon",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 9,
+        "effect": "RMys 160 / 50 m de rayon",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 11,
+        "effect": "RMys 200 / 100 m de rayon",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 13,
+        "effect": "RMys 240 / 150 m de rayon",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 7,
+      "bookId": 11,
+      "name": "Parler avec les Morts",
+      "level": 18,
+      "actionType": "Active",
+      "type": "Automatique",
+      "effect": "Ce sort confère au nécromant le pouvoir de communiquer avec les âmes et les esprits des défunts se trouvant autour de lui, même s'il n'a pas conscience de leur localisation exacte. Il affecte toutes les entités dont le niveau ne dépasse pas celui indiqué par le rang du sort.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": "Niveau 4",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": "Niveau 8",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "Niveau 12",
+        "retention": 5
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 15,
+        "effect": "Niveau 16",
+        "retention": 5
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 8,
+      "bookId": 11,
+      "name": "Paralysie Nécromantique",
+      "level": 20,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Ce sort congèle l'essence surnaturelle des créatures non mortes, les empêchant ainsi de se déplacer. Toute créature nécromantique dans un rayon proche du sorcier, est automatiquement soumise à un effet de paralysie totale si elle ne réussit pas un test de RMys.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 7,
+        "effect": "10 m de rayon / RMys 120",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 10,
+        "effect": "25 m de rayon / RMys 140",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 13,
+        "effect": "50 m de rayon / RMys 160",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 15,
+        "effect": "100 m de rayon / RMys 180",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 9,
+      "bookId": 11,
+      "name": "Nécrotisme",
+      "level": 22,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Permet de faire récupérer des Points de Vie à une créature nécromantique. Ce sort n'a aucun effet sur les êtres vivants.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "50 Points de Vie",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": "100 Points de Vie",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "150 Points de Vie",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 14,
+        "effect": "250 Points de Vie",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 10,
+      "bookId": 11,
+      "name": "Décharge de Mort",
+      "level": 26,
+      "actionType": "Active",
+      "type": "Attaque",
+      "effect": "Projette une puissante décharge nécromantique. Cette attaque se fait sur le Mode Énergie.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": "Dégâts de base 80",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": "Dégâts de base 100",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "Dégâts de base 140",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 15,
+        "effect": "Dégâts de base 180",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 11,
+      "bookId": 11,
+      "name": "Lever les Cadavres",
+      "level": 28,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "En manipulant les énergies nécromantiques, le sorcier parvient à animer des cadavres et à les changer en zombies ou squelettes sous son contrôle. Les morts ne conservent pas les capacités spéciales ou les connaissances qu'ils avaient de leur vivant puisqu'il s'agit uniquement d'imitations de chair et d'os des personnes qu'ils étaient auparavant. Par contre, ils gardent leurs capacités basiques, comme les éventuelles armes naturelles ou certaines de leurs caractéristiques physiques. Le pouvoir et la résistance d'une telle créature dépend de leur corps. Par exemple, le cadavre d'un ours est considérablement plus dangereux que celui d'un être humain. Le MJ peut prendre en référence les fiches des zombies basiques présentées dans le bestiaire. Ce sort permet d'animer un nombre illimité de cadavre dont la Présence totale cumulée ne dépasse pas la valeur indiquée par le rang du sort. Chacune de ces créatures ne peut posséder un niveau supérieur à la valeur également fixée par le rang.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 7,
+        "effect": "100 points de Présence / Niveau maximum 0",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 10,
+        "effect": "300 points de Présence / Niveau maximum 1",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 13,
+        "effect": "600 points de Présence / Niveau maximum 2",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 450,
+        "requiredIntelligence": 15,
+        "effect": "1 000 points de Présence / Niveau maximum 3",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 12,
+      "bookId": 11,
+      "name": "Corps Mort",
+      "level": 30,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort stoppe temporairement toutes les fonctions organiques d'un individu sans le tuer. Par contre, il peut encore se déplacer et agir normalement. Tant que le sort est maintenu, le personnage se révèle extrêmement résistant aux effets des dégâts et à leurs conséquences: tous les malus physiques sont réduits de moitié. De plus, il permet de rester conscient dans l'état entre la vie et la mort. Toute personne inspectant le corps ne pourra pas découvrir qu'il ne s'agit pas d'un véritable cadavre. Le personnage ciblé doit avoir un niveau inférieur ou égal à ce qu’indique le rang du sort.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "Niveau 3",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": "Niveau 6",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "Niveau 12",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 14,
+        "effect": "Niveau 18",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 13,
+      "bookId": 11,
+      "name": "Drainer la Magie",
+      "level": 32,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Ce sort permet de drainer l'énergie magique d'un individu ou d'un objet et de la transférer vers le sorcier. Pour ne pas être affecté par le sort, il faut réussir un test de RMys, sous peine de perdre une quantité de points de Zéon équivalant au double de la marge d'échec. Le sorcier absorbe immédiatement ces points de Zéon perdus.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 8,
+        "effect": "RMys 140",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 10,
+        "effect": "RMys 180",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 220,
+        "requiredIntelligence": 13,
+        "effect": "RMys 220",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": "RMys 260",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 14,
+      "bookId": 11,
+      "name": "Détruire les Non Morts",
+      "level": 36,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Ce sort détruit complètement l'essence des non morts. Tout être nécromantique ciblé par ce sort doit réussir un test de RMys, sous peine de subir des dégâts équivalant au double de la marge d'échec. Une créature à Encaissement subit dix fois cette quantité.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "RMys 140",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 10,
+        "effect": "RMys 180",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 13,
+        "effect": "RMys 220",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 320,
+        "requiredIntelligence": 15,
+        "effect": "RMys 260",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 15,
+      "bookId": 11,
+      "name": "Drainer les Caractéristiques",
+      "level": 38,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Le nécromancien dérobe les capacités d'autres individus et augmente les siennes dans le même temps. Le sorcier doit décider quelle caractéristique il désire drainer avant de réaliser le sort. La cible désignée perd un point de caractéristique par tranche de 10 points d'échec sur un test de RMys. Si la valeur naturelle de la caractéristique drainée est supérieure à celle du nécromancien, il augmente d'un point la sienne.\nSi elle est inférieure, il doit drainer trois points pour en rajouter un seul. Tant que le sort est maintenu, le sorcier conserve les caractéristiques augmentées. Les points de caractéristiques perdus se récupèrent à un rythme d'un par heure après l'arrêt du sort.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 8,
+        "effect": "RMys 140",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 10,
+        "effect": "RMys 180",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 13,
+        "effect": "RMys 220",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 320,
+        "requiredIntelligence": 15,
+        "effect": "RMys 260",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 16,
+      "bookId": 11,
+      "name": "Contrôler les Morts",
+      "level": 40,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Le nécromant prend le contrôle absolu de n'importe quel non mort se trouvant dans un rayon fixé par le rang du sort au lancement du sort. Ce contrôle sur les non morts reste actif tant que le sort est maintenu, mais il n'affecte pas les autres créatures nécromantiques qui pourraient s'approcher de lui après. Les non morts peuvent éviter les effets de ce sort en réussissant un test de RMys. Ces entités n'ont le droit de refaire ce test que si elles reçoivent un ordre allant à l'encontre de leur nature. Par conséquent, les créatures sans volonté comme les cadavres animés, ne peuvent jamais se libérer.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": "20 m de rayon / RMys 120",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 11,
+        "effect": "50 m de rayon / RMys 140",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 14,
+        "effect": "100 m de rayon / RMys 160",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 16,
+        "effect": "150 m de rayon / RMys 180",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 17,
+      "bookId": 11,
+      "name": "Amenuiser la Vie",
+      "level": 42,
+      "actionType": "Active",
+      "type": "Automatique",
+      "effect": "Ce sort crée une zone d'énergie nécromantique qui tue immédiatement toutes les formes de vie inférieures se trouvant à proximité du sorcier, comme les petits animaux et les plantes. Tout être vivant avec une Présence inférieure à 20 et se trouvant autour du sorcier, meurt automatiquement sans avoir droit à aucun test de Résistance.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": "10 m de rayon",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 12,
+        "effect": "20 m de rayon",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 14,
+        "effect": "30 m de rayon",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 220,
+        "requiredIntelligence": 16,
+        "effect": "50 m de rayon",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 18,
+      "bookId": 11,
+      "name": "Bouclier Nécromantique",
+      "level": 46,
+      "actionType": "Passive",
+      "type": "Défense",
+      "effect": "En utilisant l'essence d'âmes mortes, ce sort forme un bouclier d'énergie qui protège contre tout type d'attaque.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 9,
+        "effect": "Le bouclier possède 1 000 Points de Vie",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 11,
+        "effect": "Le bouclier possède 2 000 Points de Vie",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 13,
+        "effect": "Le bouclier possède 3 5000 Points de Vie",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": "Le bouclier possède 5 000 Points de Vie",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 19,
+      "bookId": 11,
+      "name": "Dominer la Vie",
+      "level": 48,
+      "actionType": "Passive",
+      "type": "Animique",
+      "effect": "Permet au sorcier de faire son esclave de l'âme d'un être vivant, en la soumettant à un contrôle similaire à celui de créatures non mortes. Le personnage pourra résister en réussissant un test de RMys. L'individu a droit à un test de Résistance par jour et chaque fois que les ordres reçus vont à l'encontre de sa nature profonde.",
+      "initialGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 9,
+        "effect": "RMys 100",
+        "retention": 30
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 11,
+        "effect": "RMys 120",
+        "retention": 40
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 13,
+        "effect": "RMys 140",
+        "retention": 50
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": "RMys 160",
+        "retention": 60
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 20,
+      "bookId": 11,
+      "name": "Stigmate Vampirique",
+      "level": 50,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Le personnage sur lequel est lancé ce sort a la capacité d'absorber automatiquement un certain pourcentage des dégâts qu'il inflige personnellement à ses adversaires. Le stigmate vampirique fonctionne autant contre les attaques physiques que contre les sorts de dégâts directs ou pouvoirs similaires. En ce qui concerne les créatures à Encaissement, la quantité de points absorbés est réduite au cinquième des dégâts infligés.",
+      "initialGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 9,
+        "effect": "20% d’absorption",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 11,
+        "effect": "40% d’absorption",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 13,
+        "effect": "60% d’absorption",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": "100% d’absorption",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 21,
+      "bookId": 11,
+      "name": "Forme Spectrale",
+      "level": 52,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Le corps physique du nécromancien se change en énergie spectrale crépitante qui endommage l'essence de tout être vivant entrant en contact avec elle.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": "Le nécromant ne peut être blessé que par des attaques qui affectent l’énergie",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 12,
+        "effect": "Comme Initial, et tout personnage qui entre en contact avec le Nécromant touche ressent un froid mortel qui l'oblige à réaliser un test de RPhy ou RMys contre le double de la  Présence du personnage. En cas d'échec, le personnage subit un malus à toutes ses actions et une perte de points de vie égale à la moitié de la marge d'échec.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 14,
+        "effect": "Comme Intermédiaire, à ceci près que le nécromant regagne une quantité de Points de Vie égale à celle que perdent ceux qui entrent en contact avec lui",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 16,
+        "effect": "Comme Avancé, sauf que ceux qui entrent en contact avec le nécromant et échouent à leur test de résistance de plus de 40 points meurent instantanément.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 22,
+      "bookId": 11,
+      "name": "Modification Nécromantique",
+      "level": 56,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "L'entité prise pour cible du sort s'alimente de son énergie et acquiert temporairement de nouveaux pouvoirs et capacités. En termes de jeu, un non mort obtient un certain nombre de PF supplémentaires pour acquérir des pouvoirs spéciaux détaillés dans le Chapitre 26, comme s'il s'agissait d'une créature avec 25 en Gnose. Si le sort est utilisé contre un être vivant, les PF qu'accorde ce sort sont réduits de moitié. Les effets de ce sort ne se cumulent pas, un seul sort de ce type peut affecter un individu précis en même temps.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": "100 PF",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 11,
+        "effect": "200 PF",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 13,
+        "effect": "300 PF",
+        "retention": 30
+      },
+      "arcaneGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 16,
+        "effect": "400 PF",
+        "retention": 40
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 23,
+      "bookId": 11,
+      "name": "Appeler les Morts",
+      "level": 58,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort attire vers le nécromancien les âmes de personnes défuntes ou de spectres. Le sorcier décide quel esprit il attire, mais si celui-ci ne peut pas lui répondre, il est possible qu'un autre se présente à sa place. Appeler les Morts ne fonctionne qu'avec les esprits qui restent liés au monde ou avec les créatures spectrales, il n'a aucun pouvoir contre les âmes qui ont déjà transcendé. Le niveau de l'âme appelée ne peut pas dépasser ce qu’indique le rang du sort.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": "Niveau maximum 3",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 12,
+        "effect": "Niveau maximum 6",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 14,
+        "effect": "Niveau maximum 9",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 16,
+        "effect": "Niveau maximum 12",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 24,
+      "bookId": 11,
+      "name": "Lever les Spectres",
+      "level": 60,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "En dominant les âmes des morts, le nécromancien acquiert le pouvoir de pervertir leur essence et les transformer en spectres œuvrant à son service. Ces fantômes conservent une petite partie des capacités de leur vivant, mais ils perdent la plupart de leurs anciens pouvoirs et caractéristiques durant le processus. Un spectre obtenu grâce à ce sort réduit de moitié le niveau qu'il avait de son vivant (arrondi au supérieur) mais il utilise les règles générales des esprits non morts et bénéficie de 100 PF supplémentaires, que le sorcier dépense pour acquérir des pouvoirs qu'il estime appropriés pour une créature de Gnose 20. Ce ne fonctionne que sur les âmes récemment défuntes et qui attendent encore l'Appel. Ce sort permet de lever un nombre illimité d’esprit. En revanche, aussi bien la Présence cumulée que le niveau de chacun ne peut dépasser les valeurs indiquées par le rang du sort.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": "Niveau maximum de l’esprit 1 / Somme totale de Présence 100",
+        "retention": 20
+      },
+      "intermediateGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "Niveau maximum de l’esprit 2 / Somme totale de Présence 160",
+        "retention": 25
+      },
+      "advancedGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 14,
+        "effect": "Niveau maximum de l’esprit 4 / Somme totale de Présence 220",
+        "retention": 30
+      },
+      "arcaneGrade": {
+        "zeon": 320,
+        "requiredIntelligence": 16,
+        "effect": "Niveau maximum de l’esprit 6 / Somme totale de Présence 280",
+        "retention": 35
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 25,
+      "bookId": 11,
+      "name": "Drainer la Force Vitale",
+      "level": 62,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Ce sort absorbe la force vitale d'un individu et la transmet à la personne que désigne le nécromancien. Le personnage ciblé doit réussir un test de RMys sous peine de perdre un point de Constitution et de Pouvoir pour chaque dizaine de marge d'échec. Suivant cette même marge d'échec, la cible vieilli progressivement. Les points absorbés permettent au nécromancien ou à la personne qui les reçoit de récupérer une partie de leur vigueur perdue, jusqu'aux niveaux initiaux et de rajeunir. Le personnage dont la force vitale est arrachée ne la récupère jamais si ce n'est avec des moyens surnaturels qui le permettent.",
+      "initialGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": "RMys 100",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "RMys 130",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": "RMys 160",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 360,
+        "requiredIntelligence": 18,
+        "effect": "RMys 190",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 26,
+      "bookId": 11,
+      "name": "Tuer",
+      "level": 66,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Ce sort stoppe les fonctions vitales d'une personne, la tuant instantanément. Il ne fonctionne que contre les êtres vivants, ce qui le rend inutile contre les esprits ou les créatures d'Entre Monde inanimées. Les cibles de ce sort doivent réussir un test de RMys ou RPhy pour survivre.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": "RMys ou RPhy 80",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 12,
+        "effect": "RMys ou RPhy 100",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 14,
+        "effect": "RMys ou RPhy 120",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 220,
+        "requiredIntelligence": 16,
+        "effect": "RMys ou RPhy 140",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 27,
+      "bookId": 11,
+      "name": "Décharge d'âmes",
+      "level": 68,
+      "actionType": "Active",
+      "type": "Attaque",
+      "effect": "Projette une décharge d'énergie magique composée d'âmes flétries. Ce sort attaque sur le Mode. Il n'affecte que les êtres possédant une âme et ignore les corps physiques sans vie, comme les murs, les golems, etc... Vu la nature de cette décharge, seuls ceux qui peuvent voir les esprits ont la capacité de la percevoir.",
+      "initialGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 9,
+        "effect": "Dégâts 100",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 260,
+        "requiredIntelligence": 11,
+        "effect": "Dégâts 200",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 380,
+        "requiredIntelligence": 13,
+        "effect": "Dégâts 300",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 16,
+        "effect": "Dégâts 400",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 28,
+      "bookId": 11,
+      "name": "Chimère Nécromantique",
+      "level": 70,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Permet au sorcier de construire une créature non morte soumise à son contrôle. Cet être est créé comme une créature d'Entre Mondes, avec 600 PF et une gnose de 25. Cependant le nécromancien ne peut pas fabriquer cette créature à partir de rien. Il doit réunir des parts de divers cadavres pour lui donner forme. Il doit trouver des corps d'êtres possédant les pouvoirs ou les capacités qu'il compte conférer à sa création. Si, par exemple, le nécromancien voulait donner : le pouvoir Vol Naturel à sa créature, il devrait auparavant obtenir le cadavre d'une créature qui le possède. Comme l'existence de cette chimère est directement liée à l'âme du nécromancien, il faut pour calculer son niveau maximal utiliser les mêmes règles que pour le sort Créer Être de la voie de Création.",
+      "initialGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 9,
+        "effect": "Niveau 2",
+        "retention": 50
+      },
+      "intermediateGrade": {
+        "zeon": 360,
+        "requiredIntelligence": 12,
+        "effect": "Niveau 6",
+        "retention": 80
+      },
+      "advancedGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 15,
+        "effect": "Niveau 10",
+        "retention": 100
+      },
+      "arcaneGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 17,
+        "effect": "Niveau 13",
+        "retention": 160
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 29,
+      "bookId": 11,
+      "name": "Perversion de Vie",
+      "level": 72,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Ce sort corrompt l'essence d'un être vivant et stoppe ses fonctions physiques, le transformant immédiatement en être non mort Le personnage affecté conserve les mêmes caractéristiques et compétences que lors de son vivant, et il obtient en plus, du fait de son état de cadavre animé, l'avantage Aucun besoin physique. Il faut pour éviter la transformation réussir un test de RMys ou RPhy.",
+      "initialGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 10,
+        "effect": "RMys ou RPhy 100",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 13,
+        "effect": "RMys ou RPhy 140",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": "RMys ou RPhy 180",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 360,
+        "requiredIntelligence": 18,
+        "effect": "RMys ou RPhy 220",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 30,
+      "bookId": 11,
+      "name": "Vassal",
+      "level": 76,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Ce sort lie pour l'éternité l'essence d'une créature non morte à celle du nécromant. Le sorcier devient automatiquement son supérieur hiérarchique, son existence dépendant de lui. Bien que ce sort n'accorde pas vraiment au sorcier un contrôle sur le vassal, sa vie est unie à celle de son maître",
+      "initialGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 10,
+        "effect": "RMys ou RPhy 100",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 360,
+        "requiredIntelligence": 13,
+        "effect": "RMys ou RPhy 140",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 450,
+        "requiredIntelligence": 15,
+        "effect": "RMys ou RPhy 180",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 540,
+        "requiredIntelligence": 18,
+        "effect": "RMys ou RPhy 220",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 31,
+      "bookId": 11,
+      "name": "Drainer les Âmes",
+      "level": 78,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Le nécromant arrache l'âme d'une autre personne afin de se nourrir de son essence et de son pouvoir. Plus l'esprit absorbé est puissant et plus grande est l'énergie reçue. L'individu ciblé par ce sort doit réussir un test de RMys sous peine de perdre une quantité de Présence égale à la moitié de la marge d'échec. Il faut aussi rabaisser d'un point son niveau tous les 5 points perdus",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": "RMys 120",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "RMys 140",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 14,
+        "effect": "RMys 160",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 320,
+        "requiredIntelligence": 16,
+        "effect": "RMys 180",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 32,
+      "bookId": 11,
+      "name": "Vaincre la Mort",
+      "level": 80,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort permet au nécromancien ou à l'individu qu'il choisit pour cible de vaincre la mort elle-même, en se transformant en non mort sans attaches, une entité pouvant survivre dans la mort grâce à sa propre puissance. Ce sortilège doit être lancé à l'instant où le personnage décède ou quelques secondes après (le sort lui-même ne permet pas de tuer). Le sorcier peut décider si la cible du sort se transforme en une créature d'Entre Mondes ou Animique",
+      "initialGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 10,
+        "effect": "+100 PF / Jusqu’à 100 PF supplémentaires en désavantages",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 13,
+        "effect": "+200 PF / Jusqu’à 100 PF supplémentaires en désavantages",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 1000,
+        "requiredIntelligence": 15,
+        "effect": "+300 PF / Jusqu’à 200 PF supplémentaires en désavantages",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 2500,
+        "requiredIntelligence": 17,
+        "effect": "+400 PF / Jusqu’à 200 PF supplémentaires en désavantages",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 33,
+      "bookId": 11,
+      "name": "Relever",
+      "level": 82,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Permet de relever un cadavre en conservant tous ses pouvoirs, toutes ses connaissances et toutes les compétences qu'il avait de son vivant. Malheureusement, ce n'est que l'ombre de la personne qu'il était jadis, un être non mort sans âme véritable. Ce sort permet d'affecter n'importe quelle personne ou créature défunte dont le cadavre se trouve à portée du sorcier, tant que son niveau ne dépasse pas une valeur fixée par le rang du sort. Parfois, si beaucoup de temps a passé et que le corps est en mauvais état, ses compétences physiques peuvent en pâtir. Tout individu relevé par ce sort ne peut être à nouveau relevé. Gardez à l'esprit que le cadavre, bien qu'il soit non mort, n'est pas contrôlé par le nécromancien.",
+      "initialGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 9,
+        "effect": "Niveau maximum 3",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 12,
+        "effect": "Niveau maximum 6",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 14,
+        "effect": "Niveau maximum 9",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 1200,
+        "requiredIntelligence": 16,
+        "effect": "Niveau maximum 12",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 34,
+      "bookId": 11,
+      "name": "Puits de Vie",
+      "level": 86,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Le nécromancien absorbe la moitié des points de vie perdus par les êtres vivants se trouvant autour de lui, comme un trou noir qui se nourrirait des dégâts qu'il inflige aux autres. Ces PV lui permettent de guérir n'importe quel type de blessure.",
+      "initialGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 9,
+        "effect": "50 m de rayon",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 12,
+        "effect": "250 m de rayon",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 14,
+        "effect": "500 m de rayon",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 16,
+        "effect": "1 km de rayon",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 35,
+      "bookId": 11,
+      "name": "Terre Maudite",
+      "level": 88,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Corrompant un petit fragment du monde, le sorcier enchante une zone, pour que tout être mourant à l'intérieur se relève à l'instant même comme un non mort sous son contrôle. Les défunts deviennent automatiquement des cadavres animés, mais un petit pourcentage (environ un pour cent) se transforme en spectres (prenez pour référence les sorts de niveau 28 et 60 de cette voie). Les créatures ne peuvent agir qu'à l'intérieur de la Terre Maudite. Si elles en sortent, la magie qui les anime disparaît. Le sort affecte une zone de rayon déterminé par son rang et reste fixée à l'endroit où il a été lancé.",
+      "initialGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 9,
+        "effect": "1 km de rayon",
+        "retention": 35
+      },
+      "intermediateGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 12,
+        "effect": "10 km de rayon",
+        "retention": 60
+      },
+      "advancedGrade": {
+        "zeon": 900,
+        "requiredIntelligence": 14,
+        "effect": "100 km de rayon",
+        "retention": 90
+      },
+      "arcaneGrade": {
+        "zeon": 1500,
+        "requiredIntelligence": 16,
+        "effect": "1 000 km de rayon",
+        "retention": 150
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 36,
+      "bookId": 11,
+      "name": "Subsistance",
+      "level": 90,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Affecte l'essence d'une ou plusieurs créatures non mortes à qui un sort fournit l'énergie, afin de leur permettre de continuer d'exister même après que le nécromancien cesse de payer le maintien. Si, par exemple, le sorcier utilise Subsistance sur un zombie animé par un sortilège de Lever les Cadavres, la créature affectée continue d'exister après la fin de ce sort. Subsistance affecte autant de non morts que le désire le nécromancien, tant que la somme de leurs Présences ne dépasse pas une valeur fixée par le rang du sort.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": "Jusqu’à 60 de Présence",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 13,
+        "effect": "Jusqu’à 120 de Présence",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 16,
+        "effect": "Jusqu’à 240 de Présence",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 18,
+        "effect": "Jusqu’à 480 de Présence",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 37,
+      "bookId": 11,
+      "name": "Matière Première",
+      "level": 92,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort génère les énergies corruptrices qu'utilise la magie nécromantique pour lever les cadavres et les spectres, permettant ainsi au sorcier de créer à partir de rien la matière première servant à lever des corps. Ce sort crée de la matière nécromantique équivalant à plusieurs milliers corps humain ou, au choix, une quantité réduite de créatures plus puissantes.",
+      "initialGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 12,
+        "effect": "1 000 corps humains",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 14,
+        "effect": "10 000 corps humains",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 900,
+        "requiredIntelligence": 16,
+        "effect": "100 000 corps humains",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 1500,
+        "requiredIntelligence": 18,
+        "effect": "1 000 000 corps humains",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 38,
+      "bookId": 11,
+      "name": "Seigneur des Morts",
+      "level": 96,
+      "actionType": "Active",
+      "type": "Automatique",
+      "effect": "Le Seigneur des Morts étend sa présence dans le monde, et prend le contrôle de toutes les créatures non mortes se trouvant autour de lui. Tous ces êtres se trouvant à l'intérieur de la zone du sort doivent réussir un test de RMys sous peine de tomber sous le contrôle absolu du nécromancien. En cas de réussite à ce test, une créature n'a pas à le refaire. Les cibles affectées n'ont droit à un nouveau test que quand elles modifient leurs Résistances.",
+      "initialGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 12,
+        "effect": "100 km de rayon / RMys 140",
+        "retention": 30
+      },
+      "intermediateGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 14,
+        "effect": "1 000 km de rayon / RMys 160",
+        "retention": 60
+      },
+      "advancedGrade": {
+        "zeon": 1000,
+        "requiredIntelligence": 16,
+        "effect": "10 000 km de rayon / RMys 180",
+        "retention": 100
+      },
+      "arcaneGrade": {
+        "zeon": 2000,
+        "requiredIntelligence": 18,
+        "effect": "100 000 km de rayon / RMys 200",
+        "retention": 200
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 39,
+      "bookId": 11,
+      "name": "Revenir d'entre les Morts",
+      "level": 98,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort ramène dans le monde l'esprit d'une créature défunte, même si elle est retournée dans le flux des âmes ou a été dissipée. La créature revient alors sous une forme non morte, mais en conservant son âme et son essence. Si le corps de la créature défunte existe encore, elle revient en lui. Dans le cas contraire, elle peut aussi s'incarner dans un corps neuf ou se transformer en spectre immatériel. Comme pour les autres sorts similaires, le temps passé entre la mort et le retour conditionnent l'efficacité de ce sort. Le niveau maximum de l’entité et le temps passé depuis la mort dépendent de valeurs déterminées par le rang du sort. II n'est pas possible de ressusciter une âme déjà réincarnée ou détruite.",
+      "initialGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 16,
+        "effect": "Niveau 4 maximum / Un mois maximum depuis la mort",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 17,
+        "effect": "Niveau 8 maximum / Un an maximum depuis la mort",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 1600,
+        "requiredIntelligence": 18,
+        "effect": "Niveau 12 maximum / Une décennie maximum depuis la mort",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 3200,
+        "requiredIntelligence": 19,
+        "effect": "Niveau 16 maximum / Un siècle maximum depuis la mort",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 40,
+      "bookId": 11,
+      "name": "Le Réveil",
+      "level": 100,
+      "actionType": "active",
+      "type": "Automatique",
+      "effect": "Le Réveil est le plus puissant des sorts nécromantiques. En corrompant une partie de l'âme du monde, le sorcier étend son ombre sur l'existence toute entière, rendant la vie aux morts et les soumettant à son contrôle. Le Réveil n'a pas de rayon d'action déterminé : il affecte tous les êtres dont le niveau est inférieur ou égal à celui indiqué par le rang du sort. Si leurs esprits attendent encore l'Appel, ils se relèvent sous forme de spectres ou, dans le cas contraire, de cadavres animés. Un petit pourcentage des défunts, un pour dix mille, récupère ses pleines capacités.",
+      "initialGrade": {
+        "zeon": 900,
+        "requiredIntelligence": 17,
+        "effect": "Niveau 4",
+        "retention": 45
+      },
+      "intermediateGrade": {
+        "zeon": 2000,
+        "requiredIntelligence": 18,
+        "effect": "Niveau 8",
+        "retention": 100
+      },
+      "advancedGrade": {
+        "zeon": 3500,
+        "requiredIntelligence": 19,
+        "effect": "Niveau 12",
+        "retention": 175
+      },
+      "arcaneGrade": {
+        "zeon": 5000,
+        "requiredIntelligence": 20,
+        "effect": "Niveau 15",
+        "retention": 250
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    }
+  ]
+}

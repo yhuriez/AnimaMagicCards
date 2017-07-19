@@ -1,0 +1,364 @@
+{
+  "bookId": 22,
+  "bookName": "Livre du Sang",
+  "description": "Cette voie secondaire contrôle le principe qui donne la vie aux êtres organiques, celui du sang lui-même.",
+  "primaryBookUnaccessibles": [
+    "Lumière",
+    "Air",
+    "Feu",
+    "Terre",
+    "Illusion."
+  ],
+  "spells": [
+    {
+      "spellId": 1,
+      "bookId": 22,
+      "name": "Ralentissement du Pouls",
+      "level": 4,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Affecte le torrent sanguin de ses cibles, le ralentissant s'il est anormalement rapide (comme dans le cas d'émotions extrêmes, comme la Colère ou la Peur). La personne affectée se sent relaxée, toute émotion extrême étant éliminée, qu'elle soit d'origine naturelle ou non. La sensation de tranquillité est si grande, que durant la minute qui suit la cible du sort subit un -10 à toutes ses actions physiques. Pour résister aux effets de ce sort il faut réussir un test de RMys contre la difficulté déterminée par le Degré  du sort.",
+      "initialGrade": {
+        "zeon": 30,
+        "requiredIntelligence": 5,
+        "effect": "80 RMys.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 8,
+        "effect": "100 RMys.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": "120 RMys.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 13,
+        "effect": "160 RMys.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 2,
+      "bookId": 22,
+      "name": "Coagulation",
+      "level": 14,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Soigne magiquement les blessures, les suturant et empêchant la perte de sang. Il n'est pas possible d'affecter quelqu'un plus d'une fois par jour avec ce sort.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 6,
+        "effect": "Élimine automatiquement toute hémorragie.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "Redonne 20 % des points de vie perdus à cause de blessures dues à des coupures ou des hémorragies.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 10,
+        "effect": "Redonne 40% des points de vie perdus à cause de blessures dues à des coupures ou des hémorragies.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 13,
+        "effect": "Redonne 60% des points de vie perdus à cause de blessures dues à des coupures ou des hémorragies.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 3,
+      "bookId": 22,
+      "name": "Sang Froid",
+      "level": 24,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Change la température corporelle des cibles du sort, leur permettant de la réguler en fonction des conditions externes. Ainsi, elles ne seront pas affectées par une météorologie défavorable, et pourront survivre à des déserts glacés ou brûlants. Affecte autant de personnes que le détermine le lanceur, tant que la somme de leurs présences ne dépasse pas ce qui est indiqué dans le Degré  du sort.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": "Présence maximale affectable de 60.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": "Présence maximale affectable de 100.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "Présence maximale affectable de 180.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 15,
+        "effect": "Présence maximale affectable de 300.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 4,
+      "bookId": 22,
+      "name": "Création de Sang",
+      "level": 34,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Crée un objet ou une arme à partir du sang du sorcier, le cristallisant jusqu'à le convertir en un matériau d'une extrême dureté. Malheureusement, cela implique obligatoirement le sacrifice d'une partie du propre sang du sorcier, qui perd par ce biais des points de vie comme indiqué par le Degré  du sort.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 6,
+        "effect": "Sacrifice de -10 PV / Qualité +0 / Objets jusqu'à 2 kg.",
+        "retention": 30
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 9,
+        "effect": "Sacrifice de -20 PV / Qualité +5 / Objets jusqu'à 5 kg.",
+        "retention": 40
+      },
+      "advancedGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 12,
+        "effect": "Sacrifice de -40 PV / Qualité +10 / Objets jusqu'à 15 kg.",
+        "retention": 50
+      },
+      "arcaneGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 15,
+        "effect": "Sacrifice de -60 PV / Qualité +15 / Objets jusqu'à 25 kg.",
+        "retention": 60
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 5,
+      "bookId": 22,
+      "name": "Transfusion",
+      "level": 44,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "En séparant les éléments vitaux du sang du sorcier et en les imprégnant dans le corps d'un allié, cela lui permet de transférer une partie de ses points de vie à une autre personne. La quantité de points de vie sacrifiée par le lanceur est multipliée par la quantité indiquée par le Degré  du sort. Par exemple, si le sorcier lance ce sort en Degré  Intermédiaire et sacrifie 10 PV, son allié récupère 50 PV. Ce sort ne permet pas de restaurer des membres arrachés ou des pertes définitives, mais il élimine les malus causés par les critiques d'une valeur équivalente aux points de vie sacrifiés.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 6,
+        "effect": "Points de vie sacrifiés x2",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 8,
+        "effect": "Points de vie sacrifiés x5",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 10,
+        "effect": "Points de vie sacrifiés x10",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 12,
+        "effect": "Points de vie sacrifiés x20",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 6,
+      "bookId": 22,
+      "name": "Saigner",
+      "level": 54,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Ce sort provoque sur la cible des blessures qui saignent horriblement, augmentant ainsi les dégâts qu'elle subit. Tant qu'il est actif, la personne affectée augmente les dégâts qu'elle subit d'une quantité déterminée par le Degré  du sort. Pour que Saigner ait un effet, les dégâts doivent provenir de contusions, d'hémorragies et de coupures, alors que les blessures provoquées par la chaleur, le froid, l'électricité ou l'énergie ne sont pas concernées par cette règle. Pour éviter d'être affectée par ces effets la cible doit réussir un test de RMys, mais elle peut le refaire à chaque fois qu'elle subit un coup dont les dégâts sont accrus par ce sortilège.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 6,
+        "effect": "Augmente les dégâts subis de 50 / 120 RMys.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 9,
+        "effect": "Double les dégâts subis / 140 RMys.",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": "Triple les dégâts subis / 160 RMys.",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 15,
+        "effect": "Quadruple les dégâts subis / 180 RMys.",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 7,
+      "bookId": 22,
+      "name": "Vampirisme",
+      "level": 64,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort fait en sorte qu'une arme boive une partie du sang de ceux qu'elle blesse, canalisant leurs énergies vitales et les offrant à celui qui la manie pour qu'il récupère ses points de vie perdus. Dans le cas d'une attaque contre une créature à Encaissement, la quantité drainée doit être divisée par dix.",
+      "initialGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 8,
+        "effect": "Draine 10 % des blessures causées.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": "Draine 20% des blessures causées.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 12,
+        "effect": "Draine 30% des blessures causées.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": "Draine 40% des blessures causées.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 8,
+      "bookId": 22,
+      "name": "Larmes de Sang",
+      "level": 74,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Ce sort terrifiant provoque une dilatation du sang dans le cœur de la cible et le fait exploser de l'intérieur sous la pression. Si le personnage échoue à son test de plus de 40 points, il meurt automatiquement. Mais si la marge d'échec est inférieure à 40, il subit les dégâts déterminés dans la description du Degré  du sort.",
+      "initialGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 10,
+        "effect": "140 RMys ou RPhy / 50 points de dégâts.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 13,
+        "effect": "180 RMys ou RPhy / 100 points de dégâts.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 360,
+        "requiredIntelligence": 15,
+        "effect": "220 RMys ou RPhy / 150 points de dégâts.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 17,
+        "effect": "260 RMys ou RPhy / 200 points de dégâts.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 9,
+      "bookId": 22,
+      "name": "Circulation Sanguine",
+      "level": 84,
+      "actionType": "Passive",
+      "type": "Effet",
+      "effect": "Augmente la vitesse du torrent sanguin du sorcier et des alliés qu'il désigne, ce qui a pour effet d'augmenter leurs capacités de façon importante. Toutefois, la pression à laquelle est soumis le cœur de ceux qui en bénéficient leur provoque des dégâts internes qui peuvent aller jusqu'à les tuer si le sort est maintenu trop longtemps.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": "+10 à toutes les actions / -5 PV par round.",
+        "retention": 40
+      },
+      "intermediateGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "+20 à toutes les actions / -15 PV par round.",
+        "retention": 50
+      },
+      "advancedGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": "+40 à toutes les actions / -30 PV par round.",
+        "retention": 60
+      },
+      "arcaneGrade": {
+        "zeon": 340,
+        "requiredIntelligence": 17,
+        "effect": "+60 à toutes les actions / -50 PV par round.",
+        "retention": 70
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 10,
+      "bookId": 22,
+      "name": "Un Monde de Sang",
+      "level": 94,
+      "actionType": "Active",
+      "type": "Animique, Effet",
+      "effect": "Le sorcier obtient une maîtrise absolue sur le sang qui se trouve à l'intérieur du rayon d'action du sortilège. Sa maîtrise est telle qu'elle peut aller de la paralysie des corps des êtres vivants à la création de pratiquement toute chose qu'il désire avec le sang qui a été versé. Tout individu affecté par le sort devra réussir un test de RMys ou RPhy pour ne pas être contrôlé comme une marionnette par le sorcier. Si celui-ci le désire, il peut à la place occasionner des dégâts équivalents au double de la marge d'échec. Si le sorcier souhaite utiliser le sang versé comme moyen d'attaque ou de défense (en créant des lames, des épines ou des écrans avec), il peut utiliser sa Projection magique pour le manier en tant que projectiles aiguisés ou que bouclier mystique. Tant les bases de dégâts de ces attaques que la résistance des objets matérialisés pour se défendre sont déterminés par le Degré  du sort, mais il ne peut bien sûr utiliser ces derniers que s'il y a suffisamment de sang aux alentours.",
+      "initialGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 10,
+        "effect": "120 RMys ou RPhy / Dégâts 60 / 500 Points de Vie.",
+        "retention": 60
+      },
+      "intermediateGrade": {
+        "zeon": 320,
+        "requiredIntelligence": 13,
+        "effect": "140 RMys ou RPhy / Dégâts 90 / 1 200 Points de Vie.",
+        "retention": 65
+      },
+      "advancedGrade": {
+        "zeon": 360,
+        "requiredIntelligence": 15,
+        "effect": "160 RMys ou RPhy / Dégâts 120 / 2 400 Points de Vie.",
+        "retention": 75
+      },
+      "arcaneGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 17,
+        "effect": "180 RMys ou RPhy / Dégâts 150 / 3 600 Points de Vie. Maintien",
+        "retention": 80
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    }
+  ]
+}

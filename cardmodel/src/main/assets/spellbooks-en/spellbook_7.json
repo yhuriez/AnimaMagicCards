@@ -1,0 +1,1103 @@
+{
+  "bookId": 7,
+  "bookName": "Path of Earth",
+  "description": "",
+  "type": "Main",
+  "oppositeBook": "Creation",
+  "secondaryBookAccessible": [
+    "War",
+    "Chaos",
+    "Death",
+    "Sin",
+    "Blood",
+    "Time",
+    "Void"
+  ],
+  "spells": [
+    {
+      "spellId": 1,
+      "bookId": 7,
+      "name": "Detect Minerals",
+      "level": 2,
+      "actionType": "Active",
+      "type": "Detection",
+      "effect": "The caster can detect a particular mineral’s location in a radius. The spell also gives an approximation of the size and purity of the source. Energy based barriers can not be overcome.",
+      "initialGrade": {
+        "zeon": 20,
+        "requiredIntelligence": 5,
+        "effect": " 10m/11yd area.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 8,
+        "effect": " 50m/54yd area.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": " 150m/164yd area.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 12,
+        "effect": " 500m/546yd area.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 2,
+      "bookId": 7,
+      "name": "Mineral Control",
+      "level": 6,
+      "actionType": "Active",
+      "type": "Effect, Spiritual",
+      "effect": "This spell enables the caster to move, reshape, and control any mineral substance. However, the caster cannot endow a mineral with capacities it does not already possess. In other words, the caster may reshape a pebble into an arrowhead, but he could not make it inflict electrical damage. Some golems and stone elementals can be controlled with this spell. Mineral based creatures may avoid the effect of this spell by passing a MR Check. The control check must be repeated immediately if the creature is given an order completely opposed to its nature.",
+      "initialGrade": {
+        "zeon": 30,
+        "requiredIntelligence": 5,
+        "effect": " Max Presence 30 / MR 100.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 8,
+        "effect": " Max Presence 60 / MR 120.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": " Max Presence 90 / MR 130.",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 12,
+        "effect": " Max Presence 120 / MR 140.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 3,
+      "bookId": 7,
+      "name": "Weight Increment",
+      "level": 10,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "It increases a physical body’s weight.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 5,
+        "effect": " +20Kg/+44lbs.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 8,
+        "effect": " +120Kg/264lbs.",
+        "retention": 25
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": " +200Kg/440lbs.",
+        "retention": 30
+      },
+      "arcaneGrade": {
+        "zeon": 320,
+        "requiredIntelligence": 12,
+        "effect": " +300Kg/661lbs.",
+        "retention": 40
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 4,
+      "bookId": 7,
+      "name": "Transform Mineral",
+      "level": 12,
+      "actionType": "Passive",
+      "type": "Effect",
+      "effect": "This spell changes one type of material into another, modifying its natural composition. It can affect rocks and metals with a base Presence not higher than 30. For instance, it can turn a piece of limestone into a gold nugget.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 6,
+        "effect": " Max Presence 30 / Up to 10kg/22lbs of mass.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": " Max Presence 50 / Up to 50kg/110lbs of mass.",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 11,
+        "effect": " Max Presence 70 / Up to 100kg of/220lbs mass.",
+        "retention": 5
+      },
+      "arcaneGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 13,
+        "effect": " Max Presence 90 / Up to 250km/551lbs of mass.",
+        "retention": 10
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 5,
+      "bookId": 7,
+      "name": "Firmness",
+      "level": 16,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell enhances the endurance of individuals or objects, making them more resistant to damage. When cast upon a living organism, it grants a bonus to any PhR Check to avoid the effects of a Critical. On the other hand, when applied to an object it increases its fortitude. Each Firmness spell can affect only one body or object at a time.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": " +20 PhR / +3 Fortitude.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 9,
+        "effect": " +30 PhR / +5 Fortitude.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 11,
+        "effect": " +45 PhR / +7 Fortitude.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 13,
+        "effect": " +60 PhR / +9 Fortitude.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 6,
+      "bookId": 7,
+      "name": "Stone Barrier",
+      "level": 20,
+      "actionType": "Active",
+      "type": "Defense",
+      "effect": "This spell raises a material barrier allowing the spellcaster to repel any damaging attacks including those based on energy. However, this shield is unable to stop Spiritual effects that only call for MR or PsR checks.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": " Damage Barrier 60 / 600 Resistance Points.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 9,
+        "effect": " Damage Barrier 100 / 1600 Resistance Points.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " Damage Barrier 150 / 3000 Resistance Points.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " Damage Barrier 200 / 5000 Resistance Points.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 7,
+      "bookId": 7,
+      "name": "Slowness",
+      "level": 22,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "This spell decreases motion and reaction speed of the selected individual. If the affected character does not pass a MR check, his Initiative decreases and a penalty is applied to his Movement Value.  If Movement is reduced to 0, each additional Movement reduction point inflicts an All Action Penalty of -20.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": " MR 120 / -50 Initiative, -2 Movement.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": " MR 140 / -70 Initiative, -4 Movement.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": " MR 160 / -90 Initiative, -6 Movement.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 15,
+        "effect": " MR 180 / -120 Initiative, -10 Movement.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 8,
+      "bookId": 7,
+      "name": "Shell",
+      "level": 26,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell creates a physical shell with an AT against all kinds of attack, except energy-based attacks. Even though it is considered armor, no penalties are applied to the turn Initiative for using extra protection layers.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": " AT 2.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": " AT 4.",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": " AT 6.",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 15,
+        "effect": " AT 8.",
+        "retention": 10
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 9,
+      "bookId": 7,
+      "name": "Magnetic Shield",
+      "level": 30,
+      "actionType": "Passive",
+      "type": "Defense",
+      "effect": "Effect:By controlling magnetic fields around him, the spellcaster raises a shield with the ability of repelling any attack of a metallicnature made against him, including bullets and arrows and darts with metal tips. The shield’s magnetism causes a distortion that results in a –50 penalty to the attacker’s offensive ability. The shield will take up to 300 damage points before being broken at base level, but it will only be affected by energy damaging attacks. This barrier is virtually useless against immaterial or Spiritual attacks.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": " 300 Resistance Points.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 8,
+        "effect": " 600 Resistance Points.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 11,
+        "effect": " 900 Resistance Points.",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 14,
+        "effect": " 1200 Resistance Points.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 10,
+      "bookId": 7,
+      "name": "Pass Through Solid Matter",
+      "level": 32,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell enables one or more subjects, as appointed by the spellcaster, to pass through solid objects. The recipients of the spell do not exactly become immaterial, as they are still affected by heat or cold, but they can completely ignore all things non-energy based. In this way, characters can decide to pass through anything from walls to sword blades as if they did not exist. It is possible for the caster to determine what materials can be passed through and which cannot.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 7,
+        "effect": " Max Presence 100.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": " Max Presence 140.",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": " Max Presence 180.",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 14,
+        "effect": " Max Presence 240.",
+        "retention": 10
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 11,
+      "bookId": 7,
+      "name": "Earth Spike",
+      "level": 36,
+      "actionType": "Active",
+      "type": "Attack",
+      "effect": "Giant stone spikes erupt from the ground and impale targets on the surface. The spell allows for spikes, each with a 60 point Base Damage in the Thrust Attack Type; they cannot affect immaterial beings, or those only damaged by energy, unless Earth Spike is combined with an Enchant spell. Each spike may be used to attack the same, or different targets. This spell cannot be employed to perform a spell clash. Cannot be used on targets flying above 10m from ground.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": " 2 Spikes.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 10,
+        "effect": " 4 Spikes.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 12,
+        "effect": " 6 Spikes.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 14,
+        "effect": " 8 Spikes.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 12,
+      "bookId": 7,
+      "name": "Breakage",
+      "level": 40,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This magically increases a targeted object’s or weapon’s breakage by four points",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": " +4 Breakage.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": " +8 Breakage.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": " +12 Breakage.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 15,
+        "effect": " +15 Breakage.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 13,
+      "bookId": 7,
+      "name": "Telemetry",
+      "level": 42,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell allows the caster to read the story of an object or person he comes into contact with, including the most important events in which it has been involved in. Individuals have the chance of repelling the spell if they pass a MR check.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 6,
+        "effect": " MR 80 / 1 month.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": " MR 120 / 1 year.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " MR 140 / 10 years.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " MR 160 / 1 century.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 14,
+      "bookId": 7,
+      "name": "Magnetic Control",
+      "level": 46,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell grants control over the surrounding magnetic fields in a radius, allowing the caster to freely move any metallic body with a force equivalent to Strength 10 (at base level). Magnetism control is such that actions are executed as an automatic effect on metal. For instance, a character using this spell could paralyze someone on a full armor, or snatch the sword out of his hands. In these cases, it is possible to avoid such effects by passing an opposed Strength or Agility Check. This control is an active action, therefore the caster must have the action in order to perform it, and consequently this cannot be used as a defense.Against objects or creatures only partially composed of metals, or those that are energy shielded, the control has -4 to the strength.If used to maneuver a weapon at distance, use rules for Lesser Telekinesis.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 6,
+        "effect": " 25m/27yd area / Str 10.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": " 150m/164yd area / Str 12.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " 350m/382yd area / Str 13.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 320,
+        "requiredIntelligence": 15,
+        "effect": " 500m/546yd area / Str 14.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 15,
+      "bookId": 7,
+      "name": "Forge",
+      "level": 50,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell employs magic with the purpose of forging objects. Since the action is based on supernatural powers, none of the time modifiers in Table 17 apply, and no forging equipment is required. This spell does not produce the materials, such as steel, needed for creating specific items; the spellcaster must provide them.",
+      "initialGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 7,
+        "effect": " Forge 120.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 270,
+        "requiredIntelligence": 9,
+        "effect": " Forge 180.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 360,
+        "requiredIntelligence": 12,
+        "effect": " Forge 240.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 450,
+        "requiredIntelligence": 15,
+        "effect": " Forge 280.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 16,
+      "bookId": 7,
+      "name": "Solid Body",
+      "level": 52,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "The targeted body becomes immensely solid with stone-like resistance. When cast upon individuals, they receive a natural armor Type (except against  energy) and a Damage Barrier equal to double character’s presence. The character’s muscles strengthen for as long as he remains in this state, increasing his Strength characteristic anddecreasing his Movement Value by 2. The transformed body resembles a different material depending on the additions employed in the spell; iron, granite, steel, diamonds, etc.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 8,
+        "effect": " As described / AT 6 / +1 Str.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 11,
+        "effect": " As described / AT 8 / +2 Str.",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 13,
+        "effect": " As Intermediate, but cannot be harmed except by physical attacks not based on energy / AT 10 / +3 Str.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 16,
+        "effect": " As Advanced, but physical attacks based on energy only inflict half damage / AT 12 / +4 Str.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 17,
+      "bookId": 7,
+      "name": "Resistance",
+      "level": 56,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell confers the temporary ability to absorb almost any damage inflicted on an individual. It provides additional Life Points, which allow the targeted individual to use the defense rules of Damage Resistance beings. These extra LP are subtracted before any of the target’s actual LP. Its Armor Type depends on the character’s size, as it is described in Chapter 26. The target of this spell cannot use any defense abilities for as long as the spell is maintained. Resistance spells affect only one individual at a time.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 8,
+        "effect": " +500 Life Points.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 10,
+        "effect": " +1200 Life Points.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 13,
+        "effect": " +2000 Life Points.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " +3000 Life Points.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 18,
+      "bookId": 7,
+      "name": "Petrify",
+      "level": 60,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "This spell transforms a physical being into a stone statue. The targeted individual cannot move and has no awareness of the events going on around him for the duration of the spell. This spell can be maintained for years, but the affected being does not age. As soon as the spell ends, the individual returns to his original condition. Any damage or breakage inflicted upon the statue may result in damage, or even death, of the actual character. The target of this spell can resist its affects by passing a MR Check. A subject affected by a Petrify spell is entitled to a reroll after the first day he has been affected, and later, once a week.",
+      "initialGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 7,
+        "effect": " MR 120.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": " MR 150.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 260,
+        "requiredIntelligence": 13,
+        "effect": " MR 180.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 320,
+        "requiredIntelligence": 16,
+        "effect": " MR 220.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 19,
+      "bookId": 7,
+      "name": "Fissure",
+      "level": 62,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell causes a violent, but highly concentrated tremor that splits open the earth, creating a fissure 60 – 150 feet deep. Individuals in the area of the fissure must pass an Agility Check to avoid falling inside and suffering the appropriate impact damage. Constructions in the area of the fissure can also be severely damage, but any structure with a Damage Barrier higher than 40 is not be affected by this spell, since their structure is too dense.",
+      "initialGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 8,
+        "effect": " Max 10m/11yd length and 3m/3yd width / Constructions with Damage Barrier 40.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": " 25m/27yd length and 8m/8yd width / Constructions with Damage Barrier 60.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 12,
+        "effect": " 36m/39yd length and 12m/13yd width / Constructions with Damage Barrier 80.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 14,
+        "effect": " 48m/52yd length and 15m/16yd width / Constructions with Damage Barrier 100.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 20,
+      "bookId": 7,
+      "name": "Reverse Gravity",
+      "level": 66,
+      "actionType": "Active",
+      "type": "Automatic",
+      "effect": "This spell completely alters gravity in a particular area of the planet, reversing its force. In a way, it turns the world upside down. Everything encompassed within a radius immediately starts to “fall” into the sky. The caster may set limits on this spell, such as only affecting the interior of a designated structure. Naturally, objects rooted or otherwise fixed to the ground will not fall. Individuals may avoid the effects of the spell by passing a MR Check. The area of effect remains stationary.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": " 25m/27yd area / 50m/54yd fall / MR 120.",
+        "retention": 40
+      },
+      "intermediateGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " 50m/54yd area / 100m/109yd fall / MR 140.",
+        "retention": 50
+      },
+      "advancedGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 14,
+        "effect": " 100m/109yd area / 200m/218yd fall / MR 160.",
+        "retention": 60
+      },
+      "arcaneGrade": {
+        "zeon": 320,
+        "requiredIntelligence": 16,
+        "effect": " 150m/164yd area / 300m/328yd fall / MR 180.",
+        "retention": 65
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 21,
+      "bookId": 7,
+      "name": "Mineral Creation",
+      "level": 70,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "The spellcaster may use this spell to create anything he wishes, provided it is composed of minerals or metal. The created item must appear in a logical location according to its nature.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 8,
+        "effect": " Max Presence 40.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 10,
+        "effect": " Max Presence 70.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " Max Presence 100.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " Max Presence 140.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 22,
+      "bookId": 7,
+      "name": "Terrain Erudition",
+      "level": 72,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "The caster gains immediate and total knowledge of everything in contact with the ground for several miles around him. Both constructions and living creatures can be detected straightaway, provided they are not immaterial. This spell does not affect energy-sealed places. Terrain Erudition covers a radius around the caster.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 7,
+        "effect": " 500m/546yd area.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 270,
+        "requiredIntelligence": 10,
+        "effect": " 3km/1.8mile area.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 360,
+        "requiredIntelligence": 12,
+        "effect": " 10km/6.2mile area.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 450,
+        "requiredIntelligence": 15,
+        "effect": " 15km/9.3mile area.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 23,
+      "bookId": 7,
+      "name": "Earthquake",
+      "level": 76,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell causes a devastating tremor in a radius with enough potential force to destroy a city. Any construction with a Damage Barrier lower than 40 is be immediately destroyed, while the rest suffer 5 points of damage in the first round; this damage is doubled every subsequent round (10 in the second, 20 in the third, etc.). Constructions with a Damage Barrier higher than 150 are not affected by the earthquake at all. All individuals inside the spell zone suffer the appropriate effects from falling debris, depending on their surroundings.",
+      "initialGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 8,
+        "effect": " 500m/546yd area.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": " 3km/1.8mile area.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 12,
+        "effect": " 10km/6.2mile area.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 14,
+        "effect": " 15km/9.3mile area.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 24,
+      "bookId": 7,
+      "name": "Gravity Destruction",
+      "level": 80,
+      "actionType": "Active",
+      "type": "Automatic",
+      "effect": "This spell creates a high pressure gravity bubble that can trap any physical entity and damage it to the point it bursts. Trapped creatures must pass a PhR with a Difficulty of 180 every round, or be subject to damage equal to half the failure level. The victim receives a +5 bonus to the PhR roll for every AT point against Impact. The extreme pressure prevents the target from escaping the area of effect unless it passes an Opposed Check against a Strength of 16. The power of gravity is so strong that even immaterial beings are partially affected by it, although they can apply a +40 bonus to their Resistance controls and +6 to Strength. The spell affects everything in a radius except for the caster. The area of effect remains stationary.",
+      "initialGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": " 20m/21yd area.",
+        "retention": 20
+      },
+      "intermediateGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 12,
+        "effect": " 50m/54yd area.",
+        "retention": 25
+      },
+      "advancedGrade": {
+        "zeon": 320,
+        "requiredIntelligence": 15,
+        "effect": " 100m/109yd area.",
+        "retention": 35
+      },
+      "arcaneGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 17,
+        "effect": " 150m/164yd area.",
+        "retention": 40
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 25,
+      "bookId": 7,
+      "name": "Create Golem",
+      "level": 82,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell creates a living earthly creature completely under the caster’s control. This entity is treated as a Being between Worlds and is subject to the elemental powers and limitations of Earth elementals covered in Chapter 26. The creatures maximum level is calculated using the same rules as in the spell Create Being from the Path of Creation.",
+      "initialGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 10,
+        "effect": " Level 1.",
+        "retention": 50
+      },
+      "intermediateGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 12,
+        "effect": " Level 3.",
+        "retention": 70
+      },
+      "advancedGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 14,
+        "effect": " Level 6.",
+        "retention": 100
+      },
+      "arcaneGrade": {
+        "zeon": 700,
+        "requiredIntelligence": 16,
+        "effect": " Level 10.",
+        "retention": 140
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 26,
+      "bookId": 7,
+      "name": "Gravity Increment",
+      "level": 86,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "The spell increases the atmosphere’s mass in a particular area, thus augmenting the pull of gravity and with it, the weight of everything contained in the zone.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": " 2x weight / 100m/109yd area.",
+        "retention": 20
+      },
+      "intermediateGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " 3x weight / 200m/218yd area.",
+        "retention": 25
+      },
+      "advancedGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 14,
+        "effect": " 5x weight / 300m/328yd area.",
+        "retention": 30
+      },
+      "arcaneGrade": {
+        "zeon": 320,
+        "requiredIntelligence": 16,
+        "effect": " 10x weight / 400m/437yd area.",
+        "retention": 35
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 27,
+      "bookId": 7,
+      "name": "Meteor",
+      "level": 90,
+      "actionType": "Active",
+      "type": "Attack",
+      "effect": "This spell allows the caster to call down a small meteor from the heavens that smashes into the earth with devastating force. Everything within 30 feet of the meteor’s point of impact suffers a Base Damage of 100 points against the Impact AT, plus an additional 100 points of damage against the Heat AT. Everything 30–150 feet from the point of impact suffers the effects of the expansion wave, which immediately hits with the force of a Strength 14 melee attack and inflicts a Base Damage of 60 points. Any point in space the caster can see is considered a valid target for this spell. The meteor takes 1d10 rounds to impact after the spell has been cast.  This spell does not take full effect when cast indoors, or in subterranean spaces, so its consequences may be altered depending on the environment. Base Damage for direct impact is 200 using either Impact or Fire AT.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": " 1 meteor.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 13,
+        "effect": " 5 meteors.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 15,
+        "effect": " 10 meteors.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 450,
+        "requiredIntelligence": 17,
+        "effect": " 15 meteors.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 28,
+      "bookId": 7,
+      "name": "Gravity Control",
+      "level": 92,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell grants complete control of all gravity forces in a particular area of the planet within a radius of the caster. Inside this area, the spellcaster has absolute dominion of gravity, allowing him to increase or decrease its affects up to ten times its original value, or reverse it. Everything in the area is automatically affected. Caster can also null gravity within the area.",
+      "initialGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 12,
+        "effect": " 100km/62mile area.",
+        "retention": 70
+      },
+      "intermediateGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 14,
+        "effect": " 750km/466mile area.",
+        "retention": 100
+      },
+      "advancedGrade": {
+        "zeon": 650,
+        "requiredIntelligence": 16,
+        "effect": " 1500km/932mile area.",
+        "retention": 130
+      },
+      "arcaneGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 18,
+        "effect": " 5000km/3106mile area.",
+        "retention": 160
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 29,
+      "bookId": 7,
+      "name": "One With The Earth",
+      "level": 96,
+      "actionType": "Active",
+      "type": "Automatic",
+      "effect": "The spellcaster merges his essence with the world, obtaining complete control of all mineral and metallic elements in a radius. This allows him to alter the face of the earth by creating or removing mountains and valleys, redirecting rivers, and so forth. Every stone-based creature within the spell’s area is required to pass a MR check in order to avoid being subject to the spellcaster’s will. Once passed, no rerolls are necessary. The affected parties are entitled to a second roll only when they have raised their base Resistance.",
+      "initialGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 10,
+        "effect": " MR 140/ 100km/62mile area.",
+        "retention": 30
+      },
+      "intermediateGrade": {
+        "zeon": 450,
+        "requiredIntelligence": 12,
+        "effect": " MR 180/ 1000km/621mile area.",
+        "retention": 45
+      },
+      "advancedGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 15,
+        "effect": " MR 200/ 10000km/6213mile area.",
+        "retention": 60
+      },
+      "arcaneGrade": {
+        "zeon": 1000,
+        "requiredIntelligence": 18,
+        "effect": " MR 240/ Affects all minerals.",
+        "retention": 100
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 30,
+      "bookId": 7,
+      "name": "Atomic Control",
+      "level": 100,
+      "actionType": "Active",
+      "type": "Automatic",
+      "effect": "The caster is able to mold atomic matter in his surroundings like clay. To him, everything that moves is nothing but a set of atoms to manipulate as he wishes. He gains full dominion of all organic and inorganic matter within a 300- foot radius that does not pass a PhR or MR check. There is no limit to what the caster can do with a body or object under his dominion; he may alter its shape and appearance, transform into anything else, or simply scatter its atoms, thereby causing its complete destruction. Since this spell only affects physical matter, it has no effect upon souls or completely immaterial bodies.",
+      "initialGrade": {
+        "zeon": 450,
+        "requiredIntelligence": 12,
+        "effect": " MR or PhR 140 / 100m area.",
+        "retention": 45
+      },
+      "intermediateGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 14,
+        "effect": " MR or PhR 160 / 250m/273yd area.",
+        "retention": 80
+      },
+      "advancedGrade": {
+        "zeon": 1200,
+        "requiredIntelligence": 16,
+        "effect": " MR or PhR 200 / 500m/546yd area.",
+        "retention": 120
+      },
+      "arcaneGrade": {
+        "zeon": 1600,
+        "requiredIntelligence": 18,
+        "effect": " MR or PhR 240 / 1km/1093yd area.",
+        "retention": 160
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 31,
+      "bookId": 7,
+      "name": "",
+      "level": 2,
+      "actionType": "",
+      "type": "",
+      "effect": "",
+      "initialGrade": {
+        "zeon": 0,
+        "requiredIntelligence": 0,
+        "effect": "",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 0,
+        "requiredIntelligence": 0,
+        "effect": "",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 0,
+        "requiredIntelligence": 0,
+        "effect": "",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 0,
+        "requiredIntelligence": 0,
+        "effect": "",
+        "retention": 0
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    }
+  ]
+}
