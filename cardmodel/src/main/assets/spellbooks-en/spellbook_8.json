@@ -1,16 +1,18 @@
 {
   "bookId": 8,
   "bookName": "Path of Air",
-  "description": "",
-  "type": "Main",
-  "oppositeBook": "Creation",
-  "secondaryBookAccessible": [
-    "War",
+  "description": "This is the Path of the ethereal and incorporeal. It contains movement and speed spells. With its power, space may be altered and bodies may be transported from one place to another. This is also the Path in charge of the weather and electricity.",
+  "type": "Minor",
+  "oppositeBook": "Earth",
+  "secondaryBookAccessibles": [
     "Chaos",
-    "Death",
+    "Music",
+    "Nobility",
+    "Peace",
     "Sin",
-    "Blood",
-    "Time",
+    "Knowledge",
+    "Dream",
+    "Threshold",
     "Void"
   ],
   "spells": [

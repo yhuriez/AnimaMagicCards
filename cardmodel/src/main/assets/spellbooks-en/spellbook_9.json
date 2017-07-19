@@ -1,17 +1,15 @@
 {
   "bookId": 9,
   "bookName": "Path of Essence",
-  "description": "",
-  "type": "Main",
-  "oppositeBook": "Creation",
-  "secondaryBookAccessible": [
-    "War",
-    "Chaos",
-    "Death",
-    "Sin",
+  "description": "Essence controls life and souls. This Path has control over spirits and natural beings that belong to the world. It is also the Path of nature and spells of a druidic origin.",
+  "type": "Minor",
+  "oppositeBook": "Illusion",
+  "secondaryBookAccessibles": [
+    "Music",
+    "Peace",
+    "Knowledge",
     "Blood",
-    "Time",
-    "Void"
+    "Dream"
   ],
   "spells": [
     {

@@ -2,16 +2,13 @@
   "bookId": 5,
   "bookName": "Path of Fire",
   "description": "The first of the four Lower Elemental Paths rules over high temperatures. These spells generate heat and fire and they devastate large areas of land. It also contains enchantments that consume certain sides of an Individual to bring up others in turn. It is a very offensive Path.",
-  "type": "Main",
-  "oppositeBook": "Creation",
-  "secondaryBookAccessible": [
+  "type": "Minor",
+  "oppositeBook": "Eau",
+  "secondaryBookAccessibles": [
     "War",
-    "Chaos",
     "Death",
     "Sin",
-    "Blood",
-    "Time",
-    "Void"
+    "Threshold"
   ],
   "spells": [
     {

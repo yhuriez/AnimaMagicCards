@@ -1,16 +1,16 @@
 {
   "bookId": 6,
   "bookName": "Path of Water",
-  "description": "",
-  "type": "Main",
-  "oppositeBook": "Creation",
-  "secondaryBookAccessible": [
-    "War",
-    "Chaos",
-    "Death",
-    "Sin",
+  "description": "This Element hosts a variety of diverging concepts. This Is the Path that confers dominion over liquids and the purity of things. It also represents the power of ice and low temperalures. Its power is offensively and defensively balanced.",
+  "type": "Minor",
+  "oppositeBook": "Fire",
+  "secondaryBookAccessibles": [
+    "Literae",
+    "Music",
+    "Nobility",
+    "Peace",
+    "Knowledge",
     "Blood",
-    "Time",
     "Void"
   ],
   "spells": [

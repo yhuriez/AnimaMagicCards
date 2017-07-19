@@ -75,117 +75,117 @@
     },
     {
       "bookId": 5,
-      "bookName": "Livre du Feu",
-      "description": "La première des quatre voies élémentaires mineures contrôle les hautes températures. Ses sorts se basent sur la chaleur, le feu et peuvent englober de vastes superficies. Elle accueille aussi les sorts de sacrifice, permettant de consumer certains aspects d’un individu pour en améliorer d’autres. C’est une voie très offensive.",
-      "type": "Mineure",
-      "oppositeBook": "Eau",
+      "bookName": "Path of Fire",
+      "description": "The first of the four Lower Elemental Paths rules over high temperatures. These spells generate heat and fire and they devastate large areas of land. It also contains enchantments that consume certain sides of an Individual to bring up others in turn. It is a very offensive Path.",
+      "type": "Minor",
+      "oppositeBook": "Water",
       "secondaryBookAccessibles": [
-        "Guerre",
-        "Mort",
-        "Pêché",
-        "Seuil"
+        "War",
+        "Death",
+        "Sin",
+        "Threshold"
       ]
     },
     {
       "bookId": 6,
-      "bookName": "Livre de l’Eau",
-      "description": "L’élément de l’eau accueille de nombreux principes différents. Cette voie contrôle les liquides et la pureté des choses. Elle représente aussi le pouvoir du gel et des basses températures. En combat, c’est une magie très équilibrée, à la fois offensive et défensive.",
-      "type": "Mineure",
-      "oppositeBook": "Feu",
+      "bookName": "Path of Water",
+      "description": "This Element hosts a variety of diverging concepts. This Is the Path that confers dominion over liquids and the purity of things. It also represents the power of ice and low temperalures. Its power is offensively and defensively balanced.",
+      "type": "Minor",
+      "oppositeBook": "Fire",
       "secondaryBookAccessibles": [
         "Literae",
-        "Musique",
-        "Noblesse",
-        "Paix",
-        "Connaissance",
-        "Sang",
-        "Néant"
+        "Music",
+        "Nobility",
+        "Peace",
+        "Knowledge",
+        "Blood",
+        "Void"
       ]
     },
     {
       "bookId": 7,
-      "bookName": "Livre de la Terre",
-      "description": "La terre est le pouvoir de la planète, de la pierre et des minéraux. Il s’agit de la magie la plus matérielle de toutes, contrôlant les lois de la physique, comme la gravité ou le magnétisme. Son influence sur les esprits et les choses immatérielles est très limitée. Les sorts de terre sont liés à la résistance, la solidité et la lenteur.",
-      "type": "Mineure",
+      "bookName": "Path of Earth",
+      "description": "Earth is the powmer of the planet, stones and minerals. It is the most substantial of magics and It governs the laws of physics - like gravity and magnetism. Its influence over spirits and the immaterial is very limited. Earth spells are the magic of resistance, endurance, and slowness.",
+      "type": "Minor",
       "oppositeBook": "Air",
       "secondaryBookAccessibles": [
-        "Guerre",
+        "War",
         "Literae",
-        "Noblesse",
-        "Paix",
-        "Seuil"
+        "Nobility",
+        "Peace",
+        "Threshold"
       ]
     },
     {
       "bookId": 8,
-      "bookName": "Livre de l’Air",
-      "description": "Il s’agit de la voie des choses éthérées et intangibles. Elle comporte les sorts de vitesse, de vol et de mouvement. Son pouvoir permet d’altérer l’espace et de transporter les corps d’un lieu à l’autre. Cette voie contrôle aussi les perturbations atmosphériques et donc le climat et l’électricité.",
-      "type": "Mineure",
-      "oppositeBook": "Terre",
+      "bookName": "Path of Air",
+      "description": "This is the Path of the ethereal and incorporeal. It contains movement and speed spells. With its power, space may be altered and bodies may be transported from one place to another. This is also the Path in charge of the weather and electricity.",
+      "type": "Minor",
+      "oppositeBook": "Earth",
       "secondaryBookAccessibles": [
         "Chaos",
-        "Musique",
-        "Noblesse",
-        "Paix",
-        "Pêché",
-        "Connaissance",
-        "Songes",
-        "Seuil",
-        "Néant"
+        "Music",
+        "Nobility",
+        "Peace",
+        "Sin",
+        "Knowledge",
+        "Dream",
+        "Threshold",
+        "Void"
       ]
     },
     {
       "bookId": 9,
-      "bookName": "Livre de l’Essence",
-      "description": "L’essence contrôle la vie et les âmes. Cette voie contrôle également les esprits et les être naturels de ce monde. C’est enfin la voie de la nature et des sortilèges druidiques.",
-      "type": "Mineure",
+      "bookName": "Path of Essence",
+      "description": "Essence controls life and souls. This Path has control over spirits and natural beings that belong to the world. It is also the Path of nature and spells of a druidic origin.",
+      "type": "Minor",
       "oppositeBook": "Illusion",
       "secondaryBookAccessibles": [
-        "Musique",
-        "Paix",
-        "Connaissance",
-        "Sang",
-        "Songes"
+        "Music",
+        "Peace",
+        "Knowledge",
+        "Blood",
+        "Dream"
       ]
     },
     {
       "bookId": 10,
-      "bookName": "Livre de l’Illusion",
-      "description": "Le pouvoir de cette voie permet à un sorcier de contrôler la mystification et l’illusion. Ses sorts peuvent altérer la réalité et, avec elle, la perception des gens.",
-      "type": "Mineure",
+      "bookName": "Path of Illusion",
+      "description": "The power of this Path gives spellcasters control over Deception and Illusion. Spells can alter reality and the way it is perceived.",
+      "type": "Minor",
       "oppositeBook": "Essence",
       "secondaryBookAccessibles": [
         "Literae",
-        "Mort",
-        "Musique",
-        "Noblesse",
-        "Pêché",
-        "Songes",
-        "Seuil"
+        "Death",
+        "Music",
+        "Nobility",
+        "Sin",
+        "Dream",
+        "Threshold"
       ]
     },
     {
       "bookId": 11,
-      "bookName": "Livre de la Nécromancie",
-      "description": "La nécromancie est une perversion de la magie en tant que telle. Alors que les autres voies se nourrissent de l’énergie qui s’échappe du flux des âmes, la Nécromancie l’y arrache littéralement. Ses sorts détruisent l’essence de la vie, étouffant et pervertissant les âmes qu’elle utilise. Son pouvoir permet de rendre la vie aux morts, de détruire les âmes, de drainer les vies et l’essence d’autres êtres.",
-      "type": "Automatique",
-      "oppositeBook": "Toutes les autres voies",
+      "bookName": "Path of Necromancy",
+      "description": "Necromancy is a perversion of magic. While the rest of the Paths derive their power from the network of souls, these spells destroy the essence of life by stagnating and perverting the souls it uses. Its power gives back life to the dead, destroys souls and drains the life and essence of other being.",
+      "type": "Automatic",
+      "oppositeBook": "The rest of the magic Paths",
       "secondaryBookAccessibles": [
-        "Guerre",
-        "Mort",
-        "Pêché",
-        "Connaissance",
-        "Sang",
-        "Songes",
-        "Seuil",
-        "Néant"
+        "War",
+        "Death",
+        "Sin",
+        "Knowledge",
+        "Blood",
+        "Dream",
+        "Threshold",
+        "Void"
       ]
     },
     {
       "bookId": 12,
-      "bookName": "Sorts d’accès libre ",
-      "description": "Les sorts d'accès libre sont des sorts générique que tout sorcier peut apprendre, peu importe les voies qu'il a choisis. Lorsqu'un sorcier apprend une voie, il peut choisir parmi ces sorts pour compléter sa voie et la rendre unique.",
-      "type": "Inderterminé"
+      "bookName": "Free Access Spells",
+      "description": "The free access spells are generic spells that every spellcaster can learn, no matter which paths he chose. When a spellcaster learn a path, he can learn among those spells to complete his path and make it unique.",
+      "type": "Undetermined"
     },
     {
       "bookId": 13,
