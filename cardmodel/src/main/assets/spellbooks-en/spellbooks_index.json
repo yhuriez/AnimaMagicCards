@@ -242,121 +242,121 @@
     },
     {
       "bookId": 17,
-      "bookName": "Livre de la Musique",
-      "description": "Cette voie secondaire regroupe tous les pouvoirs en relation avec la musique les mélodies. Les sorciers qui utilisent ses sorts sont habituellement appelés mages musiciens, car c'est au travers de leurs mélodies qu'ils sont capables de provoquer les effets et les merveilles les plus invraisemblables.",
+      "bookName": "Path of Music",
+      "description": "This sub-path contains all the powers related to music and melodies. The witches who use this spells are usually called musical magicians, because through their melodies they are capable of causing the most unbelievable effects and wonders.",
       "primaryBookUnaccessibles": [
         "Destruction",
-        "Feu",
-        "Terre",
-        "Nécromancie"
+        "Fire",
+        "Earth",
+        "Necromancy"
       ]
     },
     {
       "bookId": 18,
-      "bookName": "Livre de la Noblesse",
-      "description": "Cette voie secondaire regroupe tous les principes en relation avec l'apparence, la position sociale et la supériorité sur les autres. C'est la magie dont usent la noblesse et les grands seigneurs pour assurer leur domination sur les autres.",
+      "bookName": "Path of Nobility",
+      "description": "This sub-path contains all the principles related to appearance, status and superiority over other people. It is the magic used by nobles and great lords to ensure its dominance over others.",
       "primaryBookUnaccessibles": [
-        "Création",
+        "Creation",
         "Destruction",
-        "Feu",
+        "Fire",
         "Essence",
-        "Nécromancie"
+        "Necromancy"
       ]
     },
     {
       "bookId": 19,
-      "bookName": "Livre de la Paix ",
-      "description": "C'est la voie qui incarne l'harmonie et l'absence de conflits.",
+      "bookName": "Path of Peace",
+      "description": "This is the sub-path that embodies harmony and lack of conflict.",
       "primaryBookUnaccessibles": [
-        "Obscurité",
+        "Obscurity",
         "Destruction",
-        "Feu",
+        "Fire",
         "Illusion",
-        "Nécromancie"
+        "Necromancy"
       ]
     },
     {
       "bookId": 20,
-      "bookName": "Livre du Péché",
-      "description": "Cette voie secondaire est la plus obscure et la plus retorse de toutes, car elle regroupe tous les pouvoirs en relation avec les émotions négatives, le péché et plus globalement le mal à l'état pur. C'est la magie utilisée par la grande majorité des créatures infernales, ainsi que par les adorateurs des divinités maléfiques de chaque culture.",
+      "bookName": "Path of Sin",
+      "description": "This sub-path is the darkest and most twisted of all, bringing together all the powers associated with negative emotions, sin and pure evil. It's the magic used by the vast majority of hellish creatures as well as the worshipers of the evil deities of each culture.",
       "primaryBookUnaccessibles": [
-        "Lumière",
-        "Eau",
-        "Terre",
+        "Light",
+        "Water",
+        "Earth",
         "Essence",
         "Illusion"
       ]
     },
     {
       "bookId": 21,
-      "bookName": "Livre de la Connaissance",
-      "description": "Connaissance est, une voie secondaire primordiale qui domine le concept même du savoir. Les sorciers qui l'utilisent ont la maîtrise sur tout ce qui peut être appris.",
+      "bookName": "Path of Knowledge",
+      "description": "Knowledge is a primary sub-path that dominates the very concept of knowing. Sorcerers who use it have control over everything that can be learned.",
       "primaryBookUnaccessibles": [
         "Destruction",
-        "Feu",
-        "Terre",
+        "Fire",
+        "Earth",
         "Illusion"
       ]
     },
     {
       "bookId": 22,
-      "bookName": "Livre du Sang",
-      "description": "Cette voie secondaire contrôle le principe qui donne la vie aux êtres organiques, celui du sang lui-même.",
+      "bookName": "Path of Blood",
+      "description": "This sub-pathway controls the principle that gives life to organic beings, that of their own blood.",
       "primaryBookUnaccessibles": [
-        "Lumière",
+        "Light",
         "Air",
-        "Feu",
-        "Terre",
+        "Fire",
+        "Earth",
         "Illusion"
       ]
     },
     {
       "bookId": 23,
-      "bookName": "Livre des Songes",
-      "description": "Songes est la voie de magie secondaire qui contrôle le monde onirique des rêveurs, ainsi que son reflet dans la Veille.",
+      "bookName": "Path of Dreams",
+      "description": "Dreams is the way of magic that controls the dream world of dreamers, as reflected in the Wake.",
       "primaryBookUnaccessibles": [
-        "Création",
+        "Creation",
         "Destruction",
-        "Eau",
-        "Feu",
-        "Terre"
+        "Water",
+        "Fire",
+        "Earth"
       ]
     },
     {
       "bookId": 24,
-      "bookName": "Livre du Temps ",
-      "description": "Pour beaucoup d'occultistes le principe qui contrôle cette voie secondaire est le plus grand de tous, y compris parmi ceux des voies majeures. Ceux qui l'utilisent sont appelés les Chronomants, ou mages du temps, et leurs capacités consistent à utiliser la magie pour contrôler le passage du temps comme s'il s'agissait simplement d'un élément de plus.",
+      "bookName": "Path of Time",
+      "description": "To many occultists the sub-path that controls time is the greatest of all, valued even more than the higher paths. Those who use it are often called Chronomancers or magicians of the time, and as they wield the ability is to use magic to control the flow of time like an element.",
       "primaryBookUnaccessibles": [
         "Air",
-        "Eau",
-        "Feu",
-        "Terre",
+        "Water",
+        "Fire",
+        "Earth",
         "Essence",
         "Illusion",
-        "Nécromancie"
+        "Necromancy"
       ]
     },
     {
       "bookId": 25,
-      "bookName": "Livre du Seuil",
-      "description": "La peur et la folie sont les émotions les plus sombres, primaires et puissantes, antérieures même aux temps où les hommes ont pris conscience de leur destin. Cette voie secondaire à ces deux concepts comme base, c'est la magie des horreurs primitives qui sont au-delà des ténèbres elles-mêmes.",
+      "bookName": "Path of Threshold",
+      "description": "Fear and madness are the darker emotions, primary and powerful from earlier times the man who was unaware of his destination. This track has two sub-concepts the principle of primal horrors and things that are beyond the darkness.",
       "primaryBookUnaccessibles": [
-        "Lumière",
-        "Création",
+        "Light",
+        "Creation",
         "Destruction",
-        "Eau",
+        "Water",
         "Essence"
       ]
     },
     {
       "bookId": 26,
-      "bookName": "Livre du Vide",
-      "description": "Vide est la voie secondaire qui contrôle les énergies du néant, l'absence totale de toute matière physique ou spirituelle.",
+      "bookName": "Path of Void",
+      "description": "Void is the sub-pathway that controls  the complete absence of all physical and spiritual matters.",
       "primaryBookUnaccessibles": [
-        "Lumière",
-        "Création",
-        "Feu",
-        "Terre",
+        "Light",
+        "Creation",
+        "Fire",
+        "Earth",
         "Essence",
         "Illusion"
       ]
