@@ -186,7 +186,7 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
 
     private void initQuickAccess(Bundle arguments){
         if (arguments.containsKey(FREE_ACCESS_LIMIT_PARAM)) {
-            quickAccessViewModel = new GroupQAFreeSpellsViewModel(arguments.getInt(FREE_ACCESS_LIMIT_PARAM), this);
+            quickAccessViewModel = new GroupQAFreeSpellsViewModel(arguments.getInt(FREE_ACCESS_LIMIT_PARAM), this, false);
 
         } else if (arguments.containsKey(SPELLBOOK_PARAM)) {
             Spellbook spellbook = arguments.getParcelable(SPELLBOOK_PARAM);

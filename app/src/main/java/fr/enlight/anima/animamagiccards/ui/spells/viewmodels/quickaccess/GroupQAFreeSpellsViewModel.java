@@ -8,11 +8,16 @@ public class GroupQAFreeSpellsViewModel extends AbstractGroupQAViewModel {
 
     private final int mLevelLimit;
 
-    public GroupQAFreeSpellsViewModel(int levelLimit, Listener listener) {
+    public GroupQAFreeSpellsViewModel(int levelLimit, Listener listener, boolean firstSelected) {
         super(listener);
         mLevelLimit = levelLimit;
+        setFirstSelected(firstSelected);
 
         initViewModels();
+    }
+
+    public GroupQAFreeSpellsViewModel(int levelLimit, Listener listener) {
+        this(levelLimit, listener, true);
     }
 
     protected List<QAViewModel> createViewModels() {
