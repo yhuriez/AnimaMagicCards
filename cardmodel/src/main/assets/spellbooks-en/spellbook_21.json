@@ -1,0 +1,364 @@
+{
+  "bookId": 21,
+  "bookName": "Path of Knowledge",
+  "description": "Knowledge is a primary sub-path that dominates the very concept of knowing. Sorcerers who use it have control over everything that can be learned.",
+  "primaryBookUnaccessibles": [
+    "Destruction",
+    "Fire",
+    "Earth",
+    "Illusion"
+
+  ],
+  "spells": [
+    {
+      "spellId": 1,
+      "bookId": 21,
+      "name": "Categorize",
+      "level": 4,
+      "actionType": "Active",
+      "type": "Spell Type: Effect.",
+      "effect": "The caster gains knowledge about the nature of a creation; from how to use a cooking utensil to trying to find your recipe, seeing how to use something and why it was made.  The spell doesn’t actually grant the skill necessary to use the item but rather a guide on its use. Items such as building or complex items with a high presence are immune to this spell.",
+      "initialGrade": {
+        "zeon": 30,
+        "requiredIntelligence": 5,
+        "effect": " The caster knows that field of study it covers: the kitchen, mechanics, blacksmithing ... without acquiring more data.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 7,
+        "effect": " Obtains information about the materials or compounds, as well as an approximate percentage of each in the final set.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": " Get a rough idea of how it works, but not for the purpose it serves.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 11,
+        "effect": " The caster gets a vague idea of ​​how the object was created, but not enough to recreate it.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 2,
+      "bookId": 21,
+      "name": "Knowledge",
+      "level": 14,
+      "actionType": "Active",
+      "type": "Spell Type: Effect",
+      "effect": "Grants the caster innate knowledge in a subject. The Sorcerer gets a value for the ability of his choosing, replacing the current base score. A character may cast this spell multiple times to access multiple abilities.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 6,
+        "effect": " 40 in a skill.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 9,
+        "effect": " 60 in a skill.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 11,
+        "effect": " 80 in a skill.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 13,
+        "effect": " 100 in a skill.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 3,
+      "bookId": 21,
+      "name": "Knowing Weakness",
+      "level": 24,
+      "actionType": "Active",
+      "type": "Spell Type: Detection",
+      "effect": "Allows the caster to see the imperfections and weaknesses of some thing or someone. If cast on a being the mage will find out their faults and weaknesses, while if it is an object, you'll know if something is particularly weak and at what point it is weakest.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 7,
+        "effect": " MR 120",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": " MR 140 ",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 11,
+        "effect": " MR 160 ",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 13,
+        "effect": " MR 180 ",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 4,
+      "bookId": 21,
+      "name": "Know the Truth",
+      "level": 34,
+      "actionType": "Active",
+      "type": "Spell Type: Detection",
+      "effect": "Effect: The caster will know when someone is lying to him. Everyone he faces must overcome the MR test determined by the level of the spell. In case of failure, the sorcerer knows if you've lied about something, though not specifically what.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 7,
+        "effect": " MR 80.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 9,
+        "effect": " MR 100.",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 11,
+        "effect": " MR 120.",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 13,
+        "effect": " MR 140.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 5,
+      "bookId": 21,
+      "name": "Magical knowledge",
+      "level": 44,
+      "actionType": "Active",
+      "type": "Spell Type: Effect",
+      "effect": " The mage gains the knowledge required to cast a spell from a path he does not know.  After this spell has been cast the gained spell must be cast within five rounds, after that the benefits of this spell fade.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 7,
+        "effect": " A spell up to level 20.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 9,
+        "effect": " A spell to level 30.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 11,
+        "effect": " A spell up to level 40.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 13,
+        "effect": " A spell up to level 50.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 6,
+      "bookId": 21,
+      "name": "Combat Knowledge",
+      "level": 54,
+      "actionType": "Active",
+      "type": "Spell Type: Automatic",
+      "effect": "Effect: The magician perceives and understands the skills of an opponent and methodology of combat and how to anticipate their movements. Therefore, if the target fails the MR test, the caster gains a bonus to all skills while facing the enemy.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 7,
+        "effect": " MR 140  / +20 any contested action.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 9,
+        "effect": " MR 160 / +30 any contested action.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 11,
+        "effect": " MR 180 / +30 any contested action.",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 13,
+        "effect": " MR 200 / +40 any contested action.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 7,
+      "bookId": 21,
+      "name": "Learning",
+      "level": 64,
+      "actionType": "Active",
+      "type": "Spell Type: Automatic.",
+      "effect": "Effect: The target of the spell improves your ability to learn, reducing the time for study and practice to master the knowledge they want to achieve. For example, you could learn a spell and its level is decreased by degree of difficulty.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 8,
+        "effect": " Decreases a degree of difficulty of learning.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 10,
+        "effect": " Decrease in two the degree of learning difficulty.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": " Decreases in three degree of difficulty of learning.",
+        "retention": 30
+      },
+      "arcaneGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 14,
+        "effect": " Decreases in four degree of difficulty of learning.",
+        "retention": 40
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 8,
+      "bookId": 21,
+      "name": "Counselor",
+      "level": 74,
+      "actionType": "Active",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: As the name suggests, this spell wisely advises the caster on an issue or question. The spell will not guess or possess a knowledge greater than the caster.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": " The Mage gets a tip about what is the best decisions to be taken. The success rate is high, but it is far from being a perfect prediction.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": " The counselor will show the range of possibilities and potential consequences of their events as well as the most appropriate to perform.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 11,
+        "effect": " The Mage gets a very rough council on decisions to be taken or done. The success rate is very high.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 13,
+        "effect": " Caster receives detailed advice with all the possibilities and possible consequences of their actions, as well as an approximate percentage the possibilities of success of each.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 9,
+      "bookId": 21,
+      "name": "Giving Knowledge",
+      "level": 84,
+      "actionType": "Active",
+      "type": "Spell Type: Spiritual",
+      "effect": "Allows transfer of knowledge from one individual to another. For example, could make someone lose their knowledge of archeology or occult rituals to give another individual those skills for the duration of the spell. The spell grants a knowledge ability to convey knowledge whose value does not exceed the level indicated by the spell. This ability also allows you to send information concerning the knowledge of spells, a maximum amount equivalent the value determined by the spell. In this case, for example, if the caster gives 40 levels of the path of light but has it up to level 70, the giver would lose the ability to cast spells of level 2 to 40, but could continue casting level 42 to 70. It is important to remember that spells do not grant the gift, so if someone receives spells without this advantage, they simply can not use them. Resisting the effects of this spell requires overcoming a MR test determined by the degree of the spell. Anyone affected can repeat the MR test once a day.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 8,
+        "effect": " MR 120 / intellectual ability 50 or magic level 20.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 10,
+        "effect": " MR 140 / intellectual ability 100 or Magic level 40.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": " MR 160 / intellectual ability of 150 or magic level 60.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 14,
+        "effect": " MR 180 / intellectual ability to 200 or magic level 80.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 10,
+      "bookId": 21,
+      "name": "Life",
+      "level": 94,
+      "actionType": "Active",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: This spell temporarily gives the character life experiences, allowing for a few moments to increase your skills and knowledge. The caster gains additional levels, giving the ability to momentarily use the DP obtained to improve. The effect of this spell does not overlap, and a sorcerer can only benefit from one spell of life at a time.",
+      "initialGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 10,
+        "effect": " +1 Level.",
+        "retention": 40
+      },
+      "intermediateGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 12,
+        "effect": " +2 Levels.",
+        "retention": 60
+      },
+      "advancedGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 14,
+        "effect": " +3 Levels.",
+        "retention": 80
+      },
+      "arcaneGrade": {
+        "zeon": 1000,
+        "requiredIntelligence": 16,
+        "effect": " +4 Levels.",
+        "retention": 100
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    }
+  ]
+}

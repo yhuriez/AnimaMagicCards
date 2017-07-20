@@ -1,0 +1,365 @@
+{
+  "bookId": 25,
+  "bookName": "Path of Threshold",
+  "description": "Fear and madness are the darker emotions, primary and powerful from earlier times the man who was unaware of his destination. This track has two sub-concepts the principle of primal horrors and things that are beyond the darkness.",
+  "primaryBookUnaccessibles": [
+    "Light",
+    "Creation",
+    "Destruction",
+    "Water",
+    "Essence"
+
+  ],
+  "spells": [
+    {
+      "spellId": 1,
+      "bookId": 25,
+      "name": "﻿Eyes of the Other Side",
+      "level": 4,
+      "actionType": "Active",
+      "type": "Spell Type: Detection",
+      "effect": "Effect: The magician's eyes let you see the fears inherent in the people and their disorders and insanity. While this spell is active, anyone capable of perceiving spirits sees the eyes of the character turn completely black, as if an inner darkness devours them. To avoid detection by this spell, an individual can overcome a MR or PsR test.",
+      "initialGrade": {
+        "zeon": 30,
+        "requiredIntelligence": 5,
+        "effect": " The character can sense if a person is scared or not / MR or PsR 120.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 8,
+        "effect": " The character can perceive not only whether a person is or is not scared, but also the origin of fear they are feeling at the moment / MR or PsR 140.",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 11,
+        "effect": " The Wizard senses disorders and perceived fears of the people in a generic way, even when the people he sees are not actively scared / MR or PsR 160.",
+        "retention": 5
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 14,
+        "effect": " The character senses disorders and perceived fears of the people, seeing visual representations of those fears walking beside them / MR or PsR 180.",
+        "retention": 10
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 2,
+      "bookId": 25,
+      "name": "Shadow of Fear",
+      "level": 14,
+      "actionType": "Active",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: This spell affects an area of land, making it seem gloomy and dark to others. It is important to note that different people canperceive the same area differently, depending on what they consider a gloomy place.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 6,
+        "effect": " 50m/54yd radius.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 70,
+        "requiredIntelligence": 9,
+        "effect": " 250m/273yd radius.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 12,
+        "effect": " 500m/564yd radius.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 130,
+        "requiredIntelligence": 15,
+        "effect": " 1km/1093yd radius.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 3,
+      "bookId": 25,
+      "name": "Whispers from the Other Side",
+      "level": 24,
+      "actionType": "Active",
+      "type": "Spell Type: Automatic",
+      "effect": "Causes whispering voices in a given area, sounds that fill the hearts of victims of a primal fear. Anyone within range of the spell hearing more than five rounds of the voices must pass a MR or PsR test or suffer the fear state.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": " MR or PsR 80 / 10 m radius.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": " MR or PsR  100 / 25m/27yd radius.",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 12,
+        "effect": " MR or PsR  120 / 50m/54yd radius.",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 15,
+        "effect": " MR or PsR  140 / 100m/109yd radius.",
+        "retention": 10
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 4,
+      "bookId": 25,
+      "name": "Path of Madness",
+      "level": 34,
+      "actionType": "Active",
+      "type": "Spell Type: Spiritual",
+      "effect": "The magician changes the mind of a person filling it with ideas and concepts demented, and disturbing plunging them into temporarily insanity. The target of this spell must overcome MR or PsR test determined by the level of the spell or will be subject to temporary insanity, psychosis, schizophrenia or paranoia, losing the ability to take their own actions. The affected person may only attempt the MR or PsR test once a day.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 7,
+        "effect": " MR or PsR 120.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": " MR or PsR  140.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 13,
+        "effect": " MR or PsR  160.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 15,
+        "effect": " MR or PsR  180.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 5,
+      "bookId": 25,
+      "name": "Stalking in Dreams",
+      "level": 44,
+      "actionType": "Active",
+      "type": "Spell Type: Spiritual",
+      "effect": "Effect: This curse allows the wizard to convert the dreams of his victim into a prison where his soul trapped in a nightmare without end. The target is immersed in an eternal sleep in which they are constantly haunted by monsters and other unspeakable creatures who want to hunt and kill him. This spell must be cast on an individual who is dreaming and, if this fails MR or PsR test they can not wake up again until the spell is completed.  The target is entitled to repeat the MR or PsR after winning against one of the things haunting him in the nightmare.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 7,
+        "effect": " MR or PsR 120.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 10,
+        "effect": " MR or PsR  160.",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 13,
+        "effect": " MR or PsR  200.",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 15,
+        "effect": " MR or PsR  240.",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 6,
+      "bookId": 25,
+      "name": "Sharpen",
+      "level": 54,
+      "actionType": "Active",
+      "type": "Spell Type: Spiritual",
+      "effect": "Effect: The character heightens fears and follies of those individuals within the area of ​​the spell. Any person failing this test will suffer terror state from those things that frighten him, creating a form of dementia. You can only repeat the test once a day or when increasing the resistance of the character.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 6,
+        "effect": " 50m/54yd  / MR or PsR 120.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": " 100m/109yd / MR or PsR 140.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " 250m/273yd  / MR or PsR 160.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " 500m/546yd  / MR or PsR 180.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 7,
+      "bookId": 25,
+      "name": "Terror",
+      "level": 64,
+      "actionType": "Active",
+      "type": "Spell Type: Spiritual",
+      "effect": "Temporarily causes Terror status to all subjects around the caster. The sorcerer is the one who decides what is the source of terror and who is affected.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": " MR or PsR 120 / 10m/10yd radius.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 10,
+        "effect": " MR or PsR 140 / 50m/54yd radius.",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": " MR or PsR 180 / 100m/109yd radius.",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 15,
+        "effect": " MR or PsR 200 / 250m/273yd radius.",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 8,
+      "bookId": 25,
+      "name": "Lord of the Mad",
+      "level": 74,
+      "actionType": "Active",
+      "type": "Spell Type: Automatic",
+      "effect": "The witch gains the ability to control any insane person altering their dementia will and perception of reality. The condition to be affected by this spell is to be in area of influence of the spell and be plunged into a severe dementia, those who only have a temporary insanity can apply a +40 to their resistance test for the effects of this spell. The victims are only entitled to repeat the test once a day or when they increase their resistances.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": " MR or PsR 140 / 100m/109yd radius.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 12,
+        "effect": " MR or PsR 160 / 250m/273yd radius.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 14,
+        "effect": " MR or PsR 180 / 1km/1093yd radius.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 16,
+        "effect": " MR or PsR 200 / 5km/3mile radius.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 9,
+      "bookId": 25,
+      "name": "Incarnation of Fear",
+      "level": 84,
+      "actionType": "Active",
+      "type": "Spell Type: Automatic",
+      "effect": "Effect: This spell creates a pure incarnation of the fear of a person, it is a being between worlds born from the deepest terrors of the subconscious. The creature is real in every respect, but only individual or individuals who fear it can see or interact with (just as the creature feel or touch only those who fear it). By launching this spell, the caster must choose a person in his presence as a target, which is affected automatically. If this individual fails the MR or PsR test, the spell shapes instantly the image of the character's fears. The creature can have any level or power, provided they have no more than one Gnosis 30 ability.",
+      "initialGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 10,
+        "effect": " Level 4 / MR 140.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 12,
+        "effect": " Level 8 / MR 160.",
+        "retention": 25
+      },
+      "advancedGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 15,
+        "effect": " Level 12 / MR 180.",
+        "retention": 50
+      },
+      "arcaneGrade": {
+        "zeon": 700,
+        "requiredIntelligence": 18,
+        "effect": " Level 15 / MR 200.",
+        "retention": 70
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 10,
+      "bookId": 25,
+      "name": "Fear made ​​Flesh",
+      "level": 94,
+      "actionType": "Active",
+      "type": "Spell Type: Automatic",
+      "effect": "Effect: The character becomes a source of fear, causing fear of all sorts to creatures, even those that are immune to such a state. Anyone who is in his presence is automatically subject to fear automatically, and must pass a MR or PsR test to avoid also being subjected to Terror.",
+      "initialGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 11,
+        "effect": " MR or PsR 120",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 13,
+        "effect": " MR or PsR  140",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 450,
+        "requiredIntelligence": 15,
+        "effect": " MR or PsR  200",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 17,
+        "effect": " MR or PsR  240",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    }
+  ]
+}

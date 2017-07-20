@@ -10,6 +10,7 @@ import com.google.gson.GsonBuilder;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.Locale;
 
 import fr.enlight.anima.cardmodel.model.spells.SpellbookResponse;
 
@@ -21,14 +22,20 @@ import static android.content.ContentValues.TAG;
 
 public class SpellDao {
 
-    public static final String SPELLBOOK_FILE_PREFIX = "spellbooks/spellbook_";
-    public static final String SPELLBOOK_INDEX_FILE = "spellbooks/spellbooks_index.json";
+    private static final String SPELLBOOK_FILE_FRENCH_PREFIX = "spellbooks/spellbook_";
+    private static final String SPELLBOOK_INDEX_FRENCH_FILE = "spellbooks/spellbooks_index.json";
+
+    private static final String SPELLBOOK_FILE_ENGLISH_PREFIX = "spellbooks-en/spellbook_";
+    private static final String SPELLBOOK_INDEX_ENGLISH_FILE = "spellbooks-en/spellbooks_index.json";
 
     /**
      * @return the index of all existing spellbooks
      */
-    public SpellbookIndexResponse getSpellbookIndex(Context context) {
-        return readFile(context, SPELLBOOK_INDEX_FILE, SpellbookIndexResponse.class);
+    public SpellbookIndexResponse getSpellbookIndex(Context context, String locale) {
+        if (locale.equals("fr"))
+            return readFile(context, SPELLBOOK_INDEX_FRENCH_FILE, SpellbookIndexResponse.class);
+        else
+            return readFile(context, SPELLBOOK_INDEX_ENGLISH_FILE, SpellbookIndexResponse.class);
     }
 
     /**
@@ -36,8 +43,13 @@ public class SpellDao {
      * @param spellbookId the bookId of the spellbook to retrieve
      * @return the complete spellbook with all contained spells
      */
-    public SpellbookResponse getSpellbook(Context context, int spellbookId) {
-        String filename = SPELLBOOK_FILE_PREFIX + spellbookId + ".json";
+    public SpellbookResponse getSpellbook(Context context, int spellbookId, String locale) {
+        String filename;
+        if (locale.equals("fr"))
+            filename = SPELLBOOK_FILE_FRENCH_PREFIX + spellbookId + ".json";
+        else
+            filename = SPELLBOOK_FILE_ENGLISH_PREFIX + spellbookId + ".json";
+
         return readFile(context, filename, SpellbookResponse.class);
     }
 

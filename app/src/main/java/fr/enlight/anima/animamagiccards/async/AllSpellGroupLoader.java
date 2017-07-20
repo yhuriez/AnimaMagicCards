@@ -4,10 +4,13 @@ import android.content.Context;
 
 import java.util.List;
 
+import fr.enlight.anima.animamagiccards.MainApplication;
 import fr.enlight.anima.cardmodel.business.SpellBusinessService;
 import fr.enlight.anima.cardmodel.business.WitchspellsBusinessService;
 import fr.enlight.anima.cardmodel.model.spells.Spellbook;
 import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
+
+import static fr.enlight.anima.animamagiccards.MainApplication.mDefSystemLanguage;
 
 /**
  *
@@ -25,7 +28,7 @@ public class AllSpellGroupLoader extends BaseLoader<AllSpellGroupLoader.LoaderRe
         List<Witchspells> allWitchspells = witchspellsBusinessService.getAllWitchspells();
 
         SpellBusinessService spellBusinessService = new SpellBusinessService(getContext());
-        List<Spellbook> spellbooksIndex = spellBusinessService.getSpellbooksIndex();
+        List<Spellbook> spellbooksIndex = spellBusinessService.getSpellbooksIndex(mDefSystemLanguage);
 
         return new LoaderResult(allWitchspells, spellbooksIndex);
     }

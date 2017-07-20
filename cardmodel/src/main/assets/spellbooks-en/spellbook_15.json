@@ -1,0 +1,365 @@
+{
+  "bookId": 15,
+  "bookName": "Path of Literae",
+  "description": "Literae is the magic of words, changing the writing in the margins of the book we call reality.",
+  "primaryBookUnaccessibles": [
+    "Destruction",
+    "Air",
+    "Fire",
+    "Earth",
+    "Essence",
+    "Necromancy"
+  ],
+  "spells": [
+    {
+      "spellId": 1,
+      "bookId": 15,
+      "name": "Pen of Reality",
+      "level": 4,
+      "actionType": "Active",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: Creates a supernatural pen that writes on any surface without the need for ink.  Using this pen during the casting of a Literae spell reduces the Zeon cost by half.",
+      "initialGrade": {
+        "zeon": 30,
+        "requiredIntelligence": 5,
+        "effect": " Affects base Literae spells.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": " Affects Intermediate Literae spells.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": " Affects Advanced Literae spells.",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": " Affects Arcane Literae spells.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 2,
+      "bookId": 15,
+      "name": "Missive",
+      "level": 14,
+      "actionType": "Action: Active",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: After writing a letter you can use this spell to send the content to an individual the sorcerer knows. The letter and its envelope, disappears in a flash and a cloud of smoke, reappearing moments later by the receiver.  The letter can pass through structures so long as there is sufficient room for a letter to get in, for example appearing in a room with a closed door so long as the letter could have been slipped under the door.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 6,
+        "effect": " 10 miles.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 9,
+        "effect": " 100 miles.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": " 1000 miles.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 15,
+        "effect": " Anywhere.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 3,
+      "bookId": 15,
+      "name": "Travel Journal",
+      "level": 24,
+      "actionType": "Action: Active",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: Enchants a book so that it contains all the magician’s experiences so that he may refer to them later.  The level of the spell determines the maximum time passed that the book will have covered from the time of launch.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 6,
+        "effect": " 1 day.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": " 1 week.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " 1 month.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " 1 year.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 4,
+      "bookId": 15,
+      "name": "Written order",
+      "level": 34,
+      "actionType": "Action: Active",
+      "type": "Spell Type: Automatic",
+      "effect": "Effect: Allows you to write a simple command in a scroll that will affect the first to read it, forcing them to comply unless they pass the resistance test.  The command will work even if it is hidden among other phrases, though the character recives between +20 and +60 to the resistance test if the mandate goes directly against their nature.This spell can be repeated several times to chain a complex order, such as \"open the door and then forget it occurred.  The words loose their power after being read.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 6,
+        "effect": " MR or PhR 120.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 9,
+        "effect": " MR or PhR  140.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 360,
+        "requiredIntelligence": 12,
+        "effect": " MR or PhR  160.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 480,
+        "requiredIntelligence": 15,
+        "effect": " MR or PhR  180.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 5,
+      "bookId": 15,
+      "name": "Shield of Words",
+      "level": 44,
+      "actionType": "Passive",
+      "type": "Spell Type: Defense",
+      "effect": "Effect: Using the Magic Pen to draw characters in the air the wizard creates a shield of words that defends both the physical and supernatural. The shield regenerates after each attack a number of Resistance points equal to the casters base Art score.",
+      "initialGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 8,
+        "effect": " 200 Resistance points.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": " 500 Resistance points",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 12,
+        "effect": " 800 Resistance points",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " 1,200 Resistance points",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 6,
+      "bookId": 15,
+      "name": "Theater of Life",
+      "level": 54,
+      "actionType": "Action: Active",
+      "type": "Spell Type: Automatic",
+      "effect": "Allows the caster to modify the behavior of people found around the writing on a surface.  Basically, the wizard becomes the writer of a play, putting people in the roles of actors who fulfill their purpose as he narrates.It can affect many people, provided their combined presence did notexceed the limit set by the spell level.  To be affected by this spell the target must be within the radius and the caster must know their real name.  Targets can still attempt to resist with either their MR or PhR.  If the mage stops writing and those over his influence do not have orders to fulfill they stand ideally awaiting their next role. ",
+      "initialGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 6,
+        "effect": " MR or PhR 120 / Max Presence 100 / 20m/21yd radius.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 360,
+        "requiredIntelligence": 9,
+        "effect": " MR or PhR 140 / Max Presence 180 / 40m/43yd radius.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 480,
+        "requiredIntelligence": 12,
+        "effect": " MR or PhR / Max Presence 240 / 80m/87yd radius.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 15,
+        "effect": " MR or PhR 180 / Max Presence 320 / 150m/164yd radius.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 7,
+      "bookId": 15,
+      "name": "Compendium",
+      "level": 64,
+      "actionType": "Action: Active",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: This spells enchants a book so that it will answer any question asked of it.  The user must simply ask its question and await a response to be written upon the page.  Unfortunately the book cannot answer every question; its scope of knowledge is limited to the level the spell is activated at.  In game terms the Compendium receives a number of points to be distributed amongst Intellectual secondary abilities based on the spell level.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 7,
+        "effect": " 120 points of intellectual ability.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 260,
+        "requiredIntelligence": 10,
+        "effect": " 240 points of intellectual ability.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 380,
+        "requiredIntelligence": 13,
+        "effect": " 320 points of intellectual ability.",
+        "retention": 30
+      },
+      "arcaneGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 15,
+        "effect": " 440 points of intellectual ability.",
+        "retention": 40
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 8,
+      "bookId": 15,
+      "name": "Playwright",
+      "level": 74,
+      "actionType": "Action: Active",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: This spell will alter reality slightly adding something plausible.  This spell will never directly affect a living being.  For example a mage falling from a roof can “write in” a wagon filled with hay for him to land on, or when entering a room “scripting” the door to be unlocked and it be true.  The applications of this spell are endless as long as the objects and elements written in are simple and plausible. ",
+      "initialGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 10,
+        "effect": " Max Presence 40.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 320,
+        "requiredIntelligence": 12,
+        "effect": " Max Presence 80.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 480,
+        "requiredIntelligence": 14,
+        "effect": " Max Presence 120.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 700,
+        "requiredIntelligence": 16,
+        "effect": " Max Presence 160.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 9,
+      "bookId": 15,
+      "name": "Secondary (Understudy? Seems more fitting) ",
+      "level": 84,
+      "actionType": "Action: Active",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: This spell creates a “character” with the personality and skills chosen by the caster.  The mage must describe in a book the nature of the individual.  The character created by this spell truly believes anything the mage writes in their book.  The existence of the secondary is tied to the book which if destroyed will disappear immediately. The level of the Secondary can not exceed the level indicated by the spell or the level of the sorcerer.",
+      "initialGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 10,
+        "effect": " Level 2.",
+        "retention": 40
+      },
+      "intermediateGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 12,
+        "effect": " Level 5.",
+        "retention": 60
+      },
+      "advancedGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 14,
+        "effect": " Level 7.",
+        "retention": 80
+      },
+      "arcaneGrade": {
+        "zeon": 1200,
+        "requiredIntelligence": 17,
+        "effect": " Level 10.",
+        "retention": 120
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 10,
+      "bookId": 15,
+      "name": "Tragedy",
+      "level": 94,
+      "actionType": "Action: Active",
+      "type": "Spell Type: Automatic.",
+      "effect": "Effect: This spell is the ultimate transformation of reality, altering the fate of another living being by having them meet their end as chosen by the caster. You can enter any desired outcome for the life of a person, such as \"And stumbling, he fell mortally impaled on his sword\" or \"the sky brightened when, among the storm clouds, lightning struck him like an arrow from the gods”.  To cast this spell the mage has to of seen the target at least once and know his true name.  If the target resists this spell (or if anyone directly involved in the fate) it fails, and the mage can never attempt to cast it on them again.",
+      "initialGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 12,
+        "effect": " MR 120",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 900,
+        "requiredIntelligence": 15,
+        "effect": " MR 140",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 1400,
+        "requiredIntelligence": 17,
+        "effect": " MR 160",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 2500,
+        "requiredIntelligence": 19,
+        "effect": " MR 180",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    }
+  ]
+}

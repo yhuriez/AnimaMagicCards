@@ -1,0 +1,364 @@
+{
+  "bookId": 18,
+  "bookName": "Path of Nobility",
+  "description": "This sub-path contains all the principles related to appearance, status and superiority over other people. It is the magic used by nobles and great lords to ensure its dominance over others.",
+  "primaryBookUnaccessibles": [
+    "Creation",
+    "Destruction",
+    "Fire",
+    "Essence",
+    "Necromancy"
+  ],
+  "spells": [
+    {
+      "spellId": 1,
+      "bookId": 18,
+      "name": "Face",
+      "level": 4,
+      "actionType": "Active",
+      "type": "Spell Type: Effect",
+      "effect": "Removes imperfections that may affect the face of the target, covering the defects with a soft layer of makeup and applying a slight supernatural healing effect that eliminates any skin condition and enhances color. The character gains a vital and healthy appearance.",
+      "initialGrade": {
+        "zeon": 30,
+        "requiredIntelligence": 5,
+        "effect": " As described.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 8,
+        "effect": " As base level, but the character gains +1 appearance (up to 9) and makes him look several years younger.",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 10,
+        "effect": " As in intermediate grade, but +2 Appearance (up to 10).",
+        "retention": 5
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": " As advanced degree, but +3 Appearance (up to 10).",
+        "retention": 10
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 2,
+      "bookId": 18,
+      "name": "Perfume",
+      "level": 14,
+      "actionType": "Active",
+      "type": "Spell Type: Effect , Automatic",
+      "effect": "Effect: This spell changes the targets body odor, making it a fragrant aroma, soft and pleasant to smell that evokes pleasant feelings in those who are in the radius. ",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 5,
+        "effect": " As described / 20m/21yd radius.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 8,
+        "effect": " As base level, The target can use their body odor to influence Style tests, increasing their success by one degree. 30m/32yd radius.",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 10,
+        "effect": " As in intermediate grade, but it increases style tests by two degrees. 40m/43yd radius",
+        "retention": 5
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": " As advanced degree, but everyone who smells the perfume for over 5 rounds to perform a MR 100 test or will automatically be in a state of fascination,  being more receptive to the words of the target. 50m/54yd radius",
+        "retention": 10
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 3,
+      "bookId": 18,
+      "name": "Muse",
+      "level": 24,
+      "actionType": "Active",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: Gives the caster the inspiration to make a masterful interpretation of a traditional art form such as playing an instrument, singing, dancing, painting, writing, composing ... This spell gives the witch a base ability in the secondary skill for that check (Music, Dance or Art), or half the value granted as a bonus to your own ability. Although no maintenance, the effects of this spell persist long enough to complete the work, provided that this does not last more than a day.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": " 120 skill.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": " 180 skill.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 11,
+        "effect": " 240 skill.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 13,
+        "effect": " 280 skill.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 4,
+      "bookId": 18,
+      "name": "Wardrobe",
+      "level": 34,
+      "actionType": "Active",
+      "type": "Spell Type: Effect",
+      "effect": "Temporarily transforms the clothes of the target to exquisite quality with the ability to stay clean and pressed at all times. Spots and splashes slip by the fabric without causing the slightest imperfection and any tears will mend supernaturally in seconds.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": " As described.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": " As base level, but while wearing the clothes the character gains +50 Style.",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 11,
+        "effect": " As mid-level Clothes vary in shape and color depending on the location and time, but always keeping a glorious and impressive appearance.",
+        "retention": 5
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 13,
+        "effect": " As advanced degree, but the clothes give a AT 4 against any kind of attack, and repair immediately if suffering any kind of damage not of supernatural nature.",
+        "retention": 10
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 5,
+      "bookId": 18,
+      "name": "Pleasant conversation",
+      "level": 44,
+      "actionType": "Active",
+      "type": "Spell Type: Automatic",
+      "effect": "Allows target to perceive surface thoughts and interests for an individual allowing him to carry on a conversation that is pleasant or enjoyable. The victim may resist making a MR or PhR test. In case of failure, the mage gets a bonus of +200 bonus to Style and Persuasion directed to fascinate the target and drag him into small talk. The spell works if the target has been talking at least half a minute a person who is not overtly hostile. Although not maintenance, the bond is maintained as long as the conversation continues.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 7,
+        "effect": " 120 MR or PsR.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": " 160 MR or PsR.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": " 200 MR or PsR.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 14,
+        "effect": " 240 MR or PsR.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 6,
+      "bookId": 18,
+      "name": "Greatness",
+      "level": 54,
+      "actionType": "Active",
+      "type": "Spell Type: Automatic",
+      "effect": "Effect: This spell covers the sorcerer with an air of grandeur providing a powerful authority that intimidates those accustomed to obey orders. Anyone who is in a 5m/5yd radius should make a MR or PsR, or be compelled to please him, treating him with respect and deference due to a superior. Greatness has no effect on individuals who have hostility against the caster, who know or feel they are their equals or superiors, or those beings who simply consider that they could not obey the witch under any circumstances.  Affected individuals may repeat the test only when the caster does some action so contrary to reason that they may reconsider their submission to him.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 7,
+        "effect": " 120 MR or PsR.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": " 160 MR or PsR.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": " 200 MR or PsR.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 14,
+        "effect": " 240 MR or PsR.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 7,
+      "bookId": 18,
+      "name": "Conquering hearts",
+      "level": 64,
+      "actionType": "Active",
+      "type": "Spell Type: Automatic",
+      "effect": "Effect: This spell alters the perception of people into feeling that the caster or designated target is a being of beauty and intoxicating sensuality. Any target sexually compatible with the character that must pass a MR or PsR test or be automatically enthralled, demonstrating a clear interest according to their nature, personality and disposition. In addition, the individual who is responsible for this spell gets a bonus of +200 to Persuasion (Seduction) against anyone who has not been able to overcome the test. To be affected the “victim” must be able to see the caster/target.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 8,
+        "effect": " 120 MR or PsR",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 11,
+        "effect": " 160 MR or PsR.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 13,
+        "effect": " 200 MR or PsR.",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 15,
+        "effect": " 240 MR or PsR.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 8,
+      "bookId": 18,
+      "name": "Absolute presence",
+      "level": 74,
+      "actionType": "Active",
+      "type": "Spell Type: Automatic",
+      "effect": "Effect: This spell makes any individual in a radius around the Sorcerer completely focused on the caster, being unable to focus on someone other than the witch. Anyone attempting to perform an activity that is targeting the caster automatically receives a penalty of -40 to all actions (-120 with perceptual skills). ",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 9,
+        "effect": " 120 MR or PsR / 20m/21yd radius.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 12,
+        "effect": " 160 MR or PsR / 50m/54yd radius.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 14,
+        "effect": " 200 MR or PsR / 100m/109yd radius.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 16,
+        "effect": " 240 MR or PsR / 150m/164yd radius.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 9,
+      "bookId": 18,
+      "name": "Perfection",
+      "level": 84,
+      "actionType": "Active",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: The target of the spell alters their physique acquiring the perfect look.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 9,
+        "effect": " Appearance 10 and +100 to Style, Persuasion, Intimidation and Leadership.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 12,
+        "effect": " As base level, but his injuries disappear forever without leaving a mark or scar, increasing their level of regeneration +3.",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 14,
+        "effect": " As in intermediate grade, but the bonus to Style, Persuasion, Leadership, and intimidate increases to +200.",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 16,
+        "effect": " As advanced degree, but the character gets a bonus +1 To all attributes.",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 10,
+      "bookId": 18,
+      "name": "The King of the World",
+      "level": 94,
+      "actionType": "Active",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: The magician uses magic to deify their social skills, becoming the center of attention and veneration of all those around him. Anyone within a radius of it must overcome MR test or consider the sorcerer as his teacher and ideal, the culmination of all his admiration. The wizard will not have real control over the victims, who continue to behave and correspond to their personality, but all seek to satisfy,  help, and seek approval from the caster as if they were loyal followers.",
+      "initialGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 10,
+        "effect": " 500m/546yd radius / 120 MR",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 450,
+        "requiredIntelligence": 13,
+        "effect": " 1km/1093yd radius / 160 MR.",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 15,
+        "effect": " 2km/1.24mile radius / 200 MR.",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 700,
+        "requiredIntelligence": 17,
+        "effect": " 5km/3mile radius / 240 MR.",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    }
+  ]
+}

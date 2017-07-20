@@ -1,0 +1,363 @@
+{
+  "bookId": 17,
+  "bookName": "Path of Music",
+  "description": "This sub-path contains all the powers related to music and melodies. The witches who use this spells are usually called musical magicians, because through their melodies they are capable of causing the most unbelievable effects and wonders.",
+  "primaryBookUnaccessibles": [
+    "Destruction",
+    "Fire",
+    "Earth",
+    "Necromancy"
+  ],
+  "spells": [
+    {
+      "spellId": 1,
+      "bookId": 17,
+      "name": "Tempo",
+      "level": 4,
+      "actionType": "Active",
+      "type": "Spell Type: Effect",
+      "effect": "Managing the pace of the world, this spell isolates the sorcerer preventing outside distractions. Consequently, you get a bonus to your search skill on sound related tests.",
+      "initialGrade": {
+        "zeon": 30,
+        "requiredIntelligence": 5,
+        "effect": " +40 to Search.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 8,
+        "effect": " +60 to Search.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 70,
+        "requiredIntelligence": 10,
+        "effect": " +80 to Search.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 12,
+        "effect": " +100 to Search.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 2,
+      "bookId": 17,
+      "name": "Cantabile",
+      "level": 14,
+      "actionType": "Active",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: This spell allows the character to “throw” your voice or a melody. Allowing the mage to determine the origin of the sound.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 5,
+        "effect": " 100 meters/109 yards.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 8,
+        "effect": " 250meters/273 yards.",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 10,
+        "effect": " 500 meters/546 yards.",
+        "retention": 5
+      },
+      "arcaneGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 12,
+        "effect": " 1 km/1093 yards.",
+        "retention": 10
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 3,
+      "bookId": 17,
+      "name": "Plagiarism",
+      "level": 24,
+      "actionType": "Active",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: Provides the magician's the ability to carry out necessary artistic interpretation of any musical composition, whether playing a instrument or singing. The sorcerer must know or have heard, albeit incomplete, the part you wish want to represent. In doing so, the character has the equivalent of a particular music ability based on the level of the spell.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": " 120 Music.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 70,
+        "requiredIntelligence": 8,
+        "effect": " 180 Music.",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 10,
+        "effect": " 240 Music.",
+        "retention": 5
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": " 280 Music.",
+        "retention": 10
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 4,
+      "bookId": 17,
+      "name": "Mezzo Forte",
+      "level": 34,
+      "actionType": "Active",
+      "type": "Spell Type: Attack",
+      "effect": "Effect: Creating a discordant note of music, the wizard unleashes adestructive sound wave that destroys anything solid it comes in contact with. The energy based attack is has very low base damage but should damage result, the defender must make an PhR test against a difficulty equal to 10 x Damage taken (MAX Difficulty 240) loosing additional LP equal to the failure level.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 7,
+        "effect": " Damage 10.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": " Damage 20.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 11,
+        "effect": " Damage 30.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 13,
+        "effect": " Damage 40.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 5,
+      "bookId": 17,
+      "name": "Adage",
+      "level": 44,
+      "actionType": "Active",
+      "type": "Spell Type: Automatic",
+      "effect": "Effect: This spell creates a melody filled with strong emotionsaffect all who hear at least one assault. Targets must pass a MR test or be completelyimbued with an emotion chosen by the wizard based on the symphony. If someone is only half listening or ears are covered they receive +40 to their MR test.  The Mage is not able to use target selection, all people in the radius are impacted.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 7,
+        "effect": " 120 MR / 20m/21yd radius.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 9,
+        "effect": " 140 MR / 50m/54yd radius.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 220,
+        "requiredIntelligence": 11,
+        "effect": " 160 MR / 100m/109yd radius.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 13,
+        "effect": " 180 MR / 150m/164yd radius.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 6,
+      "bookId": 17,
+      "name": "Allegro",
+      "level": 54,
+      "actionType": "Active",
+      "type": "Spell Type: Automatic",
+      "effect": "Effect: Creates the most beautiful melody imaginable, which stuns and captivates its listeners. Anyone who is around the sorcerermust pass two MR tests or suffer the fascination state.  Those who are unable to hear are immune to this effect.   If someone is only half listening or ears are covered they receive +40 to their MR test.  ",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 7,
+        "effect": " 120 MR / 10m/11yd radius.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 9,
+        "effect": " 140 MR / 25m/27yd radius.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 220,
+        "requiredIntelligence": 11,
+        "effect": " 160 MR / 50m/54yd radius.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 13,
+        "effect": " 180 MR / 100m/109yd radius.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 7,
+      "bookId": 17,
+      "name": "Prestissimo",
+      "level": 64,
+      "actionType": "Active",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: This spell creates a frenetic tune that increasesrate of reaction of anyone who listens as selected by the caster. Those affected in the radius of the spell increase their speed.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 8,
+        "effect": " 10m/10yd radius/ +1 movement / +30 Initiative.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 10,
+        "effect": " 20m/21yd radius/ +2 movement / +30 Initiative.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " 30m/32yd radius/ +2 movement / +40 Initiative.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 14,
+        "effect": " 40m/43yd radius/ +3 movement / +50 Initiative.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 8,
+      "bookId": 17,
+      "name": "Fortissimo",
+      "level": 74,
+      "actionType": "Active",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: The caster receives complete control over any sound produced in the area of ​​influence, and can alter, increase in power or make completely imperceptible any sound. For example, bringing together small environmental whispers to form a nice melody or misrepresent the words of a person. Beings with a presence higher than that of the caster, or Gnosis 40+ are immune to having their sound altered. ",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 8,
+        "effect": " 10m/10yd radius.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 10,
+        "effect": " 25m/27yd radius.",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " 50m/54yd radius.",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 14,
+        "effect": " 100m/109yd radius.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 9,
+      "bookId": 17,
+      "name": "Marziale",
+      "level": 84,
+      "actionType": "Active",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: Creates a powerful melody that enhances endurance for those who listen and are selected by the caster. A person can only be under the influence of one instance of this spell ",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 8,
+        "effect": " 10m/10yd radius / +2 AT / MR +20.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 10,
+        "effect": " 25m/27yd radius / +3 AT / MR +20 and PhR +20.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " 50m/54yd / +4 AT / +20 MR, PhR, and PsR / Damage Barrier 50.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 14,
+        "effect": " 100m/109yd / +5 AT / +20 MR, PhR, and PsR / Damage Barrier 60.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 10,
+      "bookId": 17,
+      "name": "Anima",
+      "level": 94,
+      "actionType": "Active",
+      "type": "Spell Type: Automatic",
+      "effect": "Effect: Anima is a spell that carries a tune of supernatural power automatically penetrating the soul of all who listen. Anima should be cast in combination with a spiritual spell, causing the spell to become automatic and affect anyone within 50m/54yd of the sorcerer who listen to the melody. The MR test will be based on the spiritual spell; if someone is only half listening or ears are covered they receive +40 to their MR test.",
+      "initialGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 8,
+        "effect": " Affects base level spells.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 450,
+        "requiredIntelligence": 10,
+        "effect": " Affects Intermediate level spells.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 12,
+        "effect": " Affects Advanced level spells.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 14,
+        "effect": " Affects Arcane level spells.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    }
+  ]
+}
