@@ -11,37 +11,25 @@
     </data>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_width="@dimen/quick_access_item_dimen"
+        android:layout_height="@dimen/quick_access_item_dimen"
+        android:layout_marginBottom="@dimen/spacing_base"
+        android:gravity="center"
+        android:onClick="@{() -> model.onItemClicked()}"
+        android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="@dimen/quick_access_item_dimen"
-            android:layout_height="@dimen/quick_access_item_dimen"
-            android:layout_marginBottom="@dimen/spacing_base"
-            android:gravity="center"
-            android:onClick="@{() -> model.onItemClicked()}"
-            android:orientation="horizontal">
+        <View
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:background="@color/free_spells_color"
+            app:setVisible="@{model.selected}" />
 
-            <View
-                android:layout_width="5dp"
-                android:layout_height="5dp"
-                android:background="@color/free_spells_color"
-                app:setVisible="@{model.selected}" />
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:scaleType="fitXY"
+            android:src="@{model.getSpellbookDrawable(context)}"
+            tools:src="@drawable/card_icon_book_chaos" />
 
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:scaleType="fitXY"
-                android:src="@{model.getSpellbookDrawable(context)}"
-                tools:src="@drawable/card_icon_book_chaos" />
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="10sp"
-            android:text="Tous les sorts"/>
     </LinearLayout>
 </layout>
