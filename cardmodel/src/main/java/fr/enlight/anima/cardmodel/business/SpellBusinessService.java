@@ -25,13 +25,13 @@ public class SpellBusinessService {
         this.context = context;
     }
 
-    public List<Spell> getSpellsForBook(int bookId){
-        SpellbookResponse spellbookResponse = getSpellDao().getSpellbook(context, bookId);
+    public List<Spell> getSpellsForBook(int bookId, String locale){
+        SpellbookResponse spellbookResponse = getSpellDao().getSpellbook(context, bookId, locale);
         return spellbookResponse.spells;
     }
 
-    public List<Spellbook> getSpellbooksIndex(){
-        SpellbookIndexResponse spellbookIndex = getSpellDao().getSpellbookIndex(context);
+    public List<Spellbook> getSpellbooksIndex(String locale){
+        SpellbookIndexResponse spellbookIndex = getSpellDao().getSpellbookIndex(context, locale);
 
         for (Spellbook spellbook : spellbookIndex.spellbooks) {
             spellbook.spellbookType = SpellbookType.getTypeFromBookId(spellbook.bookId);

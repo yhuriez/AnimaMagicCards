@@ -14,6 +14,8 @@ import fr.enlight.anima.cardmodel.model.spells.Spell;
 import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 import fr.enlight.anima.cardmodel.model.witchspells.WitchspellsPath;
 
+import static fr.enlight.anima.animamagiccards.MainApplication.mDefSystemLanguage;
+
 /**
  *
  */
@@ -128,7 +130,7 @@ public class SpellsLoader extends BaseLoader<List<Spell>> {
     private List<Spell> getBookFromIdWithType(int bookId, int levelMax) {
         List<Spell> result = new ArrayList<>();
         SpellbookType typeFromBookId = SpellbookType.getTypeFromBookId(bookId);
-        List<Spell> spellsForBook = spellBusinessService.getSpellsForBook(bookId);
+        List<Spell> spellsForBook = spellBusinessService.getSpellsForBook(bookId, mDefSystemLanguage);
         for (Spell spell : spellsForBook) {
             if (spell.level > levelMax) {
                 break;

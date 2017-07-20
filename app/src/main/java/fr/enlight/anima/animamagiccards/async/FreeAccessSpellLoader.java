@@ -7,9 +7,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
+import fr.enlight.anima.animamagiccards.MainApplication;
 import fr.enlight.anima.cardmodel.business.SpellBusinessService;
 import fr.enlight.anima.cardmodel.model.spells.Spell;
 import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
+
+import static fr.enlight.anima.animamagiccards.MainApplication.mDefSystemLanguage;
 
 /**
  *
@@ -54,7 +57,7 @@ public class FreeAccessSpellLoader extends BaseLoader<Map<Integer, Spell>> {
     private List<Spell> getBookFromIdWithType(int bookId, int levelMax) {
         List<Spell> result = new ArrayList<>();
         SpellbookType typeFromBookId = SpellbookType.getTypeFromBookId(bookId);
-        List<Spell> spellsForBook = spellBusinessService.getSpellsForBook(bookId);
+        List<Spell> spellsForBook = spellBusinessService.getSpellsForBook(bookId, mDefSystemLanguage);
         for (Spell spell : spellsForBook) {
             if (spell.level > levelMax) {
                 break;

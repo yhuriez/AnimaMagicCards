@@ -7,6 +7,8 @@ import java.util.List;
 import fr.enlight.anima.cardmodel.business.SpellBusinessService;
 import fr.enlight.anima.cardmodel.model.spells.Spellbook;
 
+import static fr.enlight.anima.animamagiccards.MainApplication.mDefSystemLanguage;
+
 /**
  *
  */
@@ -21,6 +23,6 @@ public class SpellbooksLoader extends BaseLoader<List<Spellbook>> {
 
     @Override
     public List<Spellbook> loadInBackground() {
-        return spellBusinessService.getSpellbooksIndex();
+        return spellBusinessService.getSpellbooksIndex(mDefSystemLanguage);
     }
 }
