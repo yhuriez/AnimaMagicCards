@@ -1,0 +1,1070 @@
+{
+  "bookId": 8,
+  "bookName": "Livre de l’Air",
+  "description": "Il s’agit de la voie des choses éthérées et intangibles. Elle comporte les sorts de vitesse, de vol et de mouvement. Son pouvoir permet d’altérer l’espace et de transporter les corps d’un lieu à l’autre. Cette voie contrôle aussi les perturbations atmosphériques et donc le climat et l’électricité.",
+  "type": "Mineure",
+  "oppositeBook": "Terre",
+  "secondaryBookAccessibles": [
+    "Chaos",
+    "Musique",
+    "Noblesse",
+    "Paix",
+    "Pêché",
+    "Connaissance",
+    "Rêve",
+    "Seuil",
+    "Néant."
+  ],
+  "spells": [
+    {
+      "spellId": 1,
+      "bookId": 8,
+      "name": "Créer du vent",
+      "level": 2,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Lève un vent d'une vitesse maximale fixée par le rang du sort. Le sorcier doit se trouver en extérieur ou dans une zone où l'air peut souffler. La largeur de la zone ventée ne peut pas dépasser une valeur déterminée par le rang du sort.",
+      "initialGrade": {
+        "zeon": 30,
+        "requiredIntelligence": 5,
+        "effect": "20 km/h / 25 m de largeur",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 8,
+        "effect": "40 km/h / 50 m de largeur",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 10,
+        "effect": "80 km/h / 75 m de largeur",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "100 km/h / 100 m de largeur",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 2,
+      "bookId": 8,
+      "name": "Mouvoir",
+      "level": 6,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort permet au sorcier de mouvoir des objets inanimés à distance, sans avoir besoin de contact physique entre eux, à une vitesse équivalant à une qualité de vol 10. Ce sort peut affecter un poids maximal fixé par le rang du sort.",
+      "initialGrade": {
+        "zeon": 30,
+        "requiredIntelligence": 5,
+        "effect": "Poids maximal 10 kg",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 8,
+        "effect": "Poids maximal 50 kg",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 10,
+        "effect": "Poids maximal 100 kg",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "Poids maximal 250 kg",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 3,
+      "bookId": 8,
+      "name": "Réduire le poids",
+      "level": 10,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Réduit le poids d'un objet matériel.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 5,
+        "effect": "-20 kg",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 8,
+        "effect": "-150 kg",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 10,
+        "effect": "-300 kg",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 12,
+        "effect": "-500 kg",
+        "retention": 35
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 4,
+      "bookId": 8,
+      "name": "Sans respirer",
+      "level": 12,
+      "actionType": "Passive",
+      "type": "Effet",
+      "effect": "La cible de ce sort cesse d'avoir besoin de respirer et n'est donc plus affecté par le manque d'air. Ce sort peut affecter autant d'individus que le désire le sorcier, tant que la somme de leurs Présences ne dépasse pas une valeur fixée par le rang du sort.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 6,
+        "effect": "Présence maximale 80",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "Présence maximale 150",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 110,
+        "requiredIntelligence": 10,
+        "effect": "Présence maximale 200",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 12,
+        "effect": "Présence maximale 350",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 5,
+      "bookId": 8,
+      "name": "Mouvement Libre",
+      "level": 16,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Permet à la cible du sort de se déplacer librement sur n'importe quel type de surface solide, en ignorant complètement les lois de la gravité. De cette façon, un individu peut marcher sur l'eau ou courir sur les murs et les plafonds. Ce sort peut affecter autant d'individus que le désire le sorcier, tant que la somme de leurs Présences ne dépasse pas la valeur fixée par le rang du sort.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": "Présence maximale 80",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "Présence maximale 120",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 110,
+        "requiredIntelligence": 10,
+        "effect": "Présence maximale 160",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 12,
+        "effect": "Présence maximale 240",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 6,
+      "bookId": 8,
+      "name": "Coup de Vent",
+      "level": 20,
+      "actionType": "Active",
+      "type": "Attaque",
+      "effect": "Le sorcier déchaîne une puissante rafale de vent, la concentrant assez pour frapper une cible unique très éloignée, ou la laissant assez dispersée pour qu'elle puisse retenir un groupe de personnes à distance. Le vent ne peut pas s'étendre sur une largeur supérieure à la valeur fixée par le rang du sort et exerce une pression équivalant à une Force de déterminée par ce même rang. S'il se concentre sur une cible unique, il ajoute un bonus de +2 à sa Force. Bien que faible, une rafale de vent peut provoquer de vrais dégâts, équivalents au double du modificateur de Force de l'attaque, sur le Mode Contondant. Comme il s'agit d'un coup infligé par de l'air, l'attaque ne peut être perçue que par ceux qui voient la magie ou qui réussissent un test Absurde de Vigilance.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 6,
+        "effect": "5 m de largeur / Force 6",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 9,
+        "effect": "20 m de largeur / Force 9",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 11,
+        "effect": "30 m de largeur / Force 12",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 13,
+        "effect": "50 m de largeur / Force 14",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 7,
+      "bookId": 8,
+      "name": "Écran d'Air",
+      "level": 22,
+      "actionType": "Passive",
+      "type": "Défense",
+      "effect": "Forme une barrière d'air qui protège contre toutes les sources d'attaque, sauf celles basées sur l'énergie ou l'électricité. De plus, les vents forts qu'elle soulève gênent les projectiles physiques tirés ou lancés en direction du jeteur de sort, ce qui provoque un malus de -50 à l'Attaque du projectile.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": "300 Points de Vie",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 8,
+        "effect": "1 500 Points de Vie",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": "2 000 Points de Vie",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 14,
+        "effect": "3 500 Points de Vie",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 8,
+      "bookId": 8,
+      "name": "Transport Automatique",
+      "level": 26,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Le sorcier, ou celui qu'il désigne, est transporté à une distance maximale déterminée par le rang du sort. Ce sort permet de traverser les obstacles matériels, comme les murs ou les portes, tant qu'ils ne sont pas basés sur l'énergie. Il peut affecter autant de zones que désire le sorcier, tant que la somme de leurs Présences ne dépasse pas une valeur fixée par le rang du sort.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": "50 m / Présence maximale 60",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "250 m / Présence maximale 90",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 10,
+        "effect": "400 m / Présence maximale 120",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 12,
+        "effect": "1 km / Présence maximale 150",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 9,
+      "bookId": 8,
+      "name": "Vol",
+      "level": 30,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Permet à l'individu affecté de se déplacer avec une Qualité de Vol fixée par le rang du sort.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": "Qualité de Vol 4",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": "Qualité de Vol 8",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 12,
+        "effect": "Qualité de Vol 12",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 15,
+        "effect": "Qualité de Vol 15",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 10,
+      "bookId": 8,
+      "name": "Augmentation de la Réaction",
+      "level": 32,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Augmente la capacité de réaction d'un individu, ce qui rajoute un bonus à son Initiative.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": "+30 à l’initiative",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": "+60 à l’initiative",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "+90 à l’initiative",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 15,
+        "effect": "+120 à l’initiative",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 11,
+      "bookId": 8,
+      "name": "Électrifier",
+      "level": 36,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort électrifie un objet matériel, qui envoie de fortes décharges à toutes les personnes qui le touchent. Toute personne entrant en contact avec l'objet électrifié, y compris le sorcier, doit réussir un test de RPhy, à chaque round de contact, sous peine de perdre une quantité de PV égale à la moitié de la marge d'échec. Les dégâts reçus sont considérés d'électricité. La Présence maximale de l'objet électrifié et sa longueur  dépendent du rang du sort.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 7,
+        "effect": "RPhy 100 / Présence maximale 30 / 1 m de longueur",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 10,
+        "effect": "RPhy 120 / Présence maximale 40 / 3 m de longueur",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 13,
+        "effect": "RPhy 140 / Présence maximale 60 / 5 m de longueur",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 15,
+        "effect": "RPhy 160 / Présence maximale 80 / 10 m de longueur",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 12,
+      "bookId": 8,
+      "name": "Rafale d'Air",
+      "level": 40,
+      "actionType": "Active",
+      "type": "Attaque",
+      "effect": "Produit une puissante rafale d'air, qui peut couper tout ce comme s'il s'agissait d'une épée effilée. La rafale affecte une ligne dont la longueur dépend du rang du sort, sur laquelle on ne peut pas choisir de cible. Les Dégâts de la rafale sont de 80 sur le Mode Tranchant, mais en réduisant de 2 l'IP du défenseur",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": "Ligne de 3 m de long",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 9,
+        "effect": "Ligne de 12 m de long",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "Ligne de 25 m de long",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 15,
+        "effect": "Ligne de 50 m de long",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 13,
+      "bookId": 8,
+      "name": "Vitesse",
+      "level": 42,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Augmente de façon incroyable la vitesse de déplacement des individus affectés. En termes de jeu, ce sort double le nombre de mètres parcourus par round, en fonction du Mouvement. Ce sort peut affecter autant de cibles que le désire le sorcier, tant que la somme de leurs Présences ne dépasse une valeur fixée par le rang du sort.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "Présence maximale 50",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": "Présence maximale 80",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "Présence maximale 120",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 14,
+        "effect": "Présence maximale 160",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 14,
+      "bookId": 8,
+      "name": "Rayon",
+      "level": 46,
+      "actionType": "Active",
+      "type": "Attaque",
+      "effect": "Ce sort libère un éclair de Dégâts 100. Le sorcier doit dans un premier temps choisir s’il concentre tout son pouvoir sur une seule décharge ou si, au contraire, après avoir atteint son but, l’éclair rebondit vers la cible la plus proche en effectuant une nouvelle attaque de caractéristiques identiques à la première décharge. Dans ce dernier cas, le sorcier ne peut pas choisir sur qui rebondi le rayon et il ne pourra jamais se retourner contre lui. Un même éclair ne peut frapper deux fois la même cible, aussi, s'il n'y a personne dans le rayon de rebond, il disparaît simplement ou frappe le sol.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 6,
+        "effect": "1 rebond ou +10 dégâts de base",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": "10 rebond ou +40 dégâts de base",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 12,
+        "effect": "15 rebond ou +80 dégâts de base",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 15,
+        "effect": "25 rebond ou +150 dégâts de base",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 15,
+      "bookId": 8,
+      "name": "Tourbillon",
+      "level": 50,
+      "actionType": "Active",
+      "type": "Automatique",
+      "effect": "Le sorcier lève un tourbillon d'air d'un rayon maximal fixé par le rang du sort, qui rase tout sur son passage. Toute personne se trouvant à l'intérieur de la zone subit automatiquement une attaque avec un résultat final de 180 et des dégâts de 40 sur le Mode Contondant. De plus, toutes les cibles affectées doivent réussir un test opposé de caractéristiques, en utilisant leur Force ou leur agilité, contre une Force équivalente de 12, sous peine d'être emportées dans les airs par le tourbillon. Une personne emportée subit un malus de -60 à toutes ses actions tant qu'elle reste à l'intérieur du tourbillon. À la fin du sortilège, les objets emportés retombent d'une hauteur de 30 à 40 mètres. Il suffit pour être affectés par le tourbillon de se trouver dans sa zone d'effet, à partir du round suivant sa création. Le sorcier peut déplacer ce sort avec un Mouvement de 8. Il n'a aucun effet sur les objets immatériels ou ceux qui ne sont pas affectés par l'air.",
+      "initialGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 7,
+        "effect": "3 m de rayon",
+        "retention": 30
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": "6 m de rayon",
+        "retention": 40
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "12 m de rayon",
+        "retention": 50
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": "25 m de rayon",
+        "retention": 60
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 16,
+      "bookId": 8,
+      "name": "Forme Éthérée",
+      "level": 52,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "La créature désignée par le sorcier se transforme en air, devient intangible vis à vis de toutes les matières et de toutes les attaques non basées sur l'énergie. Dans cet état, un individu devient invisible pour toute personne incapable de voir la magie ou qui ne réussit pas un test Quasiment Impossible de Vigilance ou un test Très Difficile d'Observation. Bien qu'une créature éthérée ne puisse pas traverser une matière solide, il peut s'introduire par n'importe quel trou ou espace dans lequel peut souffler de l'air.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 8,
+        "effect": "La cible gagne les capacités décrites plus haut",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 11,
+        "effect": "Comme Initial, et la cible peut voler avec une qualité de vol égale à son mouvement naturel",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 13,
+        "effect": "Comme Intermédiaire, à ceci près que même les personnes capables de percevoir la magie doit effectuer les tests de perception décrits plus haut",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 16,
+        "effect": "Comme Avancé, sauf que les attaques Tranchantes ou Perforantes capables d’affecter l’énergie ne lui infligent que la moitié des dégâts.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 17,
+      "bookId": 8,
+      "name": "Contrôle de l'Air",
+      "level": 56,
+      "actionType": "Active",
+      "type": "Effet, Animique",
+      "effect": "Permet au sorcier de contrôler l'air, ainsi que toute substance gazeuse qui se trouve autour de lui. Le sorcier peut manœuvrer les courants de vent et les élémentaires d'air présents autour de lui comme il le désire. Il pourrait, par exemple, vider une zone de son air ou changer la direction d'une tornade. Si ce sort est lancé sur un être naturellement basé sur l'air, le sorcier peut la contrôler si celle-ci ne réussit pas un test de RMys.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "Rayon de 50 m / RMys 120",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 10,
+        "effect": "Rayon de 300 m / RMys 140",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 13,
+        "effect": "Rayon de 500 m / RMys 180",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 15,
+        "effect": "Rayon de 1 km / RMys 220",
+        "retention": 35
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 18,
+      "bookId": 8,
+      "name": "Contrôle de l'Électricité",
+      "level": 60,
+      "actionType": "Active",
+      "type": "Effet, Animique",
+      "effect": "Permet de contrôler la forme et la direction d'une source électrique qui ne dépasse pas une certaine intensité. S'il s'agit d'un être naturellement basé sur l'électricité, le sorcier peut le contrôler si celui-ci ne réussit pas un test de RMys.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "RMys 120 / 5 intensités",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 10,
+        "effect": "RMys 160 / 15 intensités",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 13,
+        "effect": "RMys 180 / 25 intensités",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 15,
+        "effect": "RMys 220 / 40 intensités",
+        "retention": 35
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 19,
+      "bookId": 8,
+      "name": "Mouvement Défensif",
+      "level": 62,
+      "actionType": "Passive",
+      "type": "Défense",
+      "effect": "Grâce à cette défense, le sorcier se déplace ou se téléporte hors de portée d'une attaque. En termes de jeu, ce sort permet d'utiliser la compétence de Projection magique du sorcier comme s'il s'agissait de son Esquive. Le sorcier obtient une certaine quantité de défense par round",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 7,
+        "effect": "3 esquives par round / Mouvement 8",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 10,
+        "effect": "9 esquives par round / Mouvement 12",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "15 esquives par round / Mouvement 16",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": "Aucune limite d’esquive / Mouvement 18",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 20,
+      "bookId": 8,
+      "name": "Téléportation",
+      "level": 66,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Le sorcier ou celui qu'il désigne est téléporté jusqu'à une distance maximale déterminée par le rang du sort. Ce sort permet de passer à travers les obstacles physiques, du moment qu'ils ne sont pas basés sur l'énergie. Il peut affecter autant de cibles que désire le sorcier, tant que la somme de leurs Présences ne dépasse pas une valeur fixée par le rang du sort.",
+      "initialGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 8,
+        "effect": "Présence maximale 80 / 10 km",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 11,
+        "effect": "Présence maximale 150 / 10 000 km",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 450,
+        "requiredIntelligence": 13,
+        "effect": "Présence maximale 240 / 100 000 km",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 16,
+        "effect": "Présence maximale 350 / Pas de limite de distance",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 21,
+      "bookId": 8,
+      "name": "Immatérialité",
+      "level": 70,
+      "actionType": "Active",
+      "type": "Effet, Animique",
+      "effect": "La créature désignée par le sorcier devient complètement immatérielle, intangible vis à vis de tout ce qui n'est pas basé sur l'énergie. Dans cet état, la personne affectée ne peut plus toucher ni être touchée et pourra donc traverser toute chose non surnaturelle. Si le sorcier lance ce sort sur un individu ou un objet qui souhaite résister à ses effets, ce dernier devra réussir un test de RMys. En cas d'échec à ce test, l'individu devient immatériel, mais pourra effectuer un nouveau test de RMys tous les jours. La Présence affectable maximale dépend du rang du sort.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 6,
+        "effect": "RMys 100 / Présence 80",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": "RMys 140 / Présence 120",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "RMys 160 / Présence 160",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 15,
+        "effect": "RMys 200 / Présence 200",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 22,
+      "bookId": 8,
+      "name": "Ouragan",
+      "level": 72,
+      "actionType": "Active",
+      "type": "Effet, Auto.",
+      "effect": "Comme son nom l'indique, ce sort crée une bourrasque terrible qui rase tout ce qui se trouve dans un rayon déterminé par le rang du sort. Toute chose à l'intérieure de la zone doit réussir un test opposé contre une Force de 12 sous peine d'être emportée par le vent. Toute construction dont le Seuil d'invulnérabilité est inférieur à 60 est automatiquement détruite",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 9,
+        "effect": "500 m de rayon",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 12,
+        "effect": "1 km de rayon",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 450,
+        "requiredIntelligence": 14,
+        "effect": "2 km de rayon",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 16,
+        "effect": "5 km de rayon / Le test se fait contre une force de 14",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 23,
+      "bookId": 8,
+      "name": "Air Solide",
+      "level": 76,
+      "actionType": "Active",
+      "type": "Effet, Attaque",
+      "effect": "Permet de solidifier l'air, créant ainsi une matière compacte et résistante. Le sorcier peut choisir quelle forme lui donner et où la placer, mais il ne pourra jamais la faire plus grande qu’une valeur fixée par le rang du sort. Il pourrait, par exemple, bloquer une entrée en créant un bloc solide qui interdirait le passage ou former un pont invisible permettant de franchir une crevasse. L'air solide ne peut être endommagé que par les armes capables d'altérer l'énergie et chaque tranche de 5 mètres possède 150 points de vie. Il n'est pas possible de voir cette substance, si ce n'est en réussissant un test Surhumain de Vigilance ou un test Absurde d'Observation. Ce sort peut aussi être utilisé pour envelopper des personnes et les empêcher de se déplacer librement. Dans ce cas, il est possible d'effectuer une attaque avec les règles d'Immobilisation sans que le sorcier ne subisse de malus à sa compétence de Projection magique pour réaliser cette manœuvre. L'air possède une Force de 14 et affecte tous les individus désignés se trouvant à l'intérieur de la zone du sort.",
+      "initialGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 9,
+        "effect": "25 m de rayon",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 11,
+        "effect": "150 m de rayon",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 260,
+        "requiredIntelligence": 13,
+        "effect": "300 m de rayon",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 16,
+        "effect": "500 m de rayon / Dans le cadre des règles d’immobilisation, la force passe à 16",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 24,
+      "bookId": 8,
+      "name": "Contrôle du Climat",
+      "level": 80,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Le sorcier prend le contrôle du climat dans un rayon fixé par le rang du sort. Il peut modifier tous les éléments météorologiques dans cette zone, créant la situation climatique désirée de façon progressive.",
+      "initialGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 9,
+        "effect": "5 km",
+        "retention": 50
+      },
+      "intermediateGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 12,
+        "effect": "25 km",
+        "retention": 60
+      },
+      "advancedGrade": {
+        "zeon": 380,
+        "requiredIntelligence": 14,
+        "effect": "100 km",
+        "retention": 80
+      },
+      "arcaneGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 16,
+        "effect": "1 000 km",
+        "retention": 100
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 25,
+      "bookId": 8,
+      "name": "Créer Sylphe",
+      "level": 82,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Façonne une créature d'air avec l'apparence de la vie, sous le contrôle absolu du sorcier. Cet être est développé comme une créature d'Entre Mondes, en se servant des pouvoirs et des limitations des élémentaires d'air du Chapitre 26. Le niveau maximal de la création dépend du rang du sort.",
+      "initialGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 10,
+        "effect": "Niveau 1",
+        "retention": 50
+      },
+      "intermediateGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 12,
+        "effect": "Niveau 3",
+        "retention": 70
+      },
+      "advancedGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 14,
+        "effect": "Niveau 6",
+        "retention": 100
+      },
+      "arcaneGrade": {
+        "zeon": 700,
+        "requiredIntelligence": 16,
+        "effect": "Niveau 10",
+        "retention": 140
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 26,
+      "bookId": 8,
+      "name": "Télékinésie Supérieure",
+      "level": 86,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort permet au sorcier de déplacer à distance n'importe quel objet matériel, organique ou inorganique, sans besoin d'un contact physique et à une vitesse équivalent à une qualité de vol de 10. Le poids maximal que peut affecter ce sort dépend du rang du sort. Les êtres vivants peuvent résister s'ils réussissent un test de RMys.",
+      "initialGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 10,
+        "effect": "RMys 100 / 100 tonnes",
+        "retention": 35
+      },
+      "intermediateGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 12,
+        "effect": "RMys 120 / 10 000 tonnes",
+        "retention": 40
+      },
+      "advancedGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 14,
+        "effect": "RMys 140 / 250 000 tonnes",
+        "retention": 50
+      },
+      "arcaneGrade": {
+        "zeon": 550,
+        "requiredIntelligence": 16,
+        "effect": "RMys 160 / 150 000 tonnes",
+        "retention": 60
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 27,
+      "bookId": 8,
+      "name": "Relocalisation de Magie",
+      "level": 90,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Permet au sorcier de déplacer librement les sources magiques qui alimentent un sort actif d'un endroit vers un autre. De cette façon, il peut changer de lieu un sortilège et le placer où cela lui convient. Il peut ainsi déplacer n'importe quel sortilège maintenu même s'il ne se trouve pas sous son contrôle, dont la valeur Zéonique est inférieure à une valeur déterminée par le rang du sort. La distance maximale de relocalisation est déterminée par les règles générales de la Projection magique. Ce sort peut être utilisé contre les sorts affectant un lieu précis autant que sur ceux qui affectent des choses ou des individus. Si un sort Animique est transféré d'un individu à un autre, on l'applique en tout point comme s'il venait d'être lancé : la nouvelle cible a le droit de s'en défendre et d'effectuer un test de Résistance normal.",
+      "initialGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": "Sorts jusqu’à 100 points de Zéon",
+        "retention": 20
+      },
+      "intermediateGrade": {
+        "zeon": 270,
+        "requiredIntelligence": 11,
+        "effect": "Sorts jusqu’à 200 points de Zéon",
+        "retention": 30
+      },
+      "advancedGrade": {
+        "zeon": 360,
+        "requiredIntelligence": 13,
+        "effect": "Sorts jusqu’à 300 points de Zéon",
+        "retention": 40
+      },
+      "arcaneGrade": {
+        "zeon": 450,
+        "requiredIntelligence": 16,
+        "effect": "Sorts jusqu’à 400 points de Zéon",
+        "retention": 45
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 28,
+      "bookId": 8,
+      "name": "Magie Passive",
+      "level": 92,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort enveloppe l'essence du sorcier, faisant en sorte que la magie afflue en lui de façon instinctive et qu'elle manifeste automatiquement ses désirs. Par conséquent, la magie et le sorcier répondent à l'unisson face à tout événement. Tant que ce sort est maintenu, tous les sorts que réalise le sorcier sont considérés comme des actions passives, y compris ceux d'attaque ou animiques.",
+      "initialGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 10,
+        "effect": "Affecte un sort de rang Initial",
+        "retention": 30
+      },
+      "intermediateGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 12,
+        "effect": "Affecte un sort de rang Intermédiaire",
+        "retention": 40
+      },
+      "advancedGrade": {
+        "zeon": 550,
+        "requiredIntelligence": 14,
+        "effect": "Affecte un sort de rang Avancé",
+        "retention": 55
+      },
+      "arcaneGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 16,
+        "effect": "Affecte un sort de rang Arcane",
+        "retention": 80
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 29,
+      "bookId": 8,
+      "name": "Seigneur de l'Air",
+      "level": 96,
+      "actionType": "Active",
+      "type": "Automatique",
+      "effect": "Le sorcier contrôle tous les atomes d'air et d'électricité, quelle que soit leur intensité, dans un rayon fixé par le rang du sort. Ce contrôle lui permet aussi de modifier le climat de son environnement, de créer des tempêtes ou des blizzards de n'importe quelle puissance. Toute créature basée sur l'air présente dans la zone d'effet doit réussir un test de RMys pour ne pas tomber sous le contrôle immédiat du sorcier. En cas de réussite, elles n'ont pas à refaire ce test. Les êtres affectés n'ont droit à un nouveau test de Résistance que s'ils modifient la base de leur Résistance.",
+      "initialGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 10,
+        "effect": "100 km de rayon / RMys 140",
+        "retention": 30
+      },
+      "intermediateGrade": {
+        "zeon": 450,
+        "requiredIntelligence": 12,
+        "effect": "1 000 km de rayon / RMys 180",
+        "retention": 45
+      },
+      "advancedGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 14,
+        "effect": "10 000 km de rayon / RMys 200",
+        "retention": 60
+      },
+      "arcaneGrade": {
+        "zeon": 1000,
+        "requiredIntelligence": 16,
+        "effect": "100 000 km de rayon / RMys 240",
+        "retention": 100
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 30,
+      "bookId": 8,
+      "name": "Un Lieu dans le Monde",
+      "level": 100,
+      "actionType": "Active",
+      "type": "Automatique",
+      "effect": "Quand il exécute ce sort, le sorcier altère l'agencement du flux des âmes et de la réalité même. Bien qu'il ne puisse pas changer l'essence des choses ni leur forme, ce sort lui permet de les déplacer dans le monde et de les placer où qu'il le désire, sans autre limite que celle de sa volonté. De cette façon, il peut déplacer toute chose ou tout individu, physique ou spirituel, et le téléporter où il veut. Le sorcier peut transférer autant de choses qu'il souhaite en un round, quelles que soient leur nombre ou leurs conditions, et les relocaliser à volonté. La seule façon de résister à cet effet consiste à réussir un test de RMys, à chaque téléportation non désirée. Le rayon d'action de ce sort est déterminé par le rang du sort et il affecte toutes les choses et personnes se trouvant dans cette zone.",
+      "initialGrade": {
+        "zeon": 450,
+        "requiredIntelligence": 12,
+        "effect": "50 km de rayon / RMys 140",
+        "retention": 45
+      },
+      "intermediateGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 14,
+        "effect": "250 km de rayon / RMys 180",
+        "retention": 80
+      },
+      "advancedGrade": {
+        "zeon": 1200,
+        "requiredIntelligence": 16,
+        "effect": "500 km de rayon / RMys 240",
+        "retention": 120
+      },
+      "arcaneGrade": {
+        "zeon": 1600,
+        "requiredIntelligence": 18,
+        "effect": "1 000 km de rayon / RMys 280",
+        "retention": 200
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    }
+  ]
+}

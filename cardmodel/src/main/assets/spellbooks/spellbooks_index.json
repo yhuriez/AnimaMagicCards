@@ -2,361 +2,361 @@
   "spellbooks": [
     {
       "bookId": 1,
-      "bookName": "Livre de la Lumière",
-      "description": "Cette voie permet aux sorciers de contrôler un des deux éléments supérieurs, la lumière pure. Elle contrôle les émotions positives de l’homme, comme l’amour, la tranquillité ou le plaisir. Elle offre également la maîtrise de la connaissance et de la détection. Ses pouvoirs offensifs et défensifs se révèlent très équilibrés.",
-      "type": "Majeure",
-      "oppositeBook": "Obscurité",
-      "secondaryBookAccessibles": [
+      "bookName": "Path of Light",
+      "description": "This is the Path that confers dominion over one of the two Higher Elements, pure light. It controls man's most positive emotions, such as love, peace, and pleasure. Light also regulates knowledge and detection. Its offensive and defensive powvers are very balanced.",
+      "type": "Main",
+      "oppositeBook": "Darkness",
+      "secondaryBookAccessible": [
         "Chaos",
-        "Guerre",
+        "War",
         "Literae",
-        "Musique",
-        "Noblesse",
-        "Paix",
-        "Connaissance",
-        "Songes",
-        "Temps"
+        "Music",
+        "Nobility",
+        "Peace",
+        "Knowledge",
+        "Dream",
+        "Time"
       ]
     },
     {
       "bookId": 2,
-      "bookName": "Livre de l’Obscurité",
-      "description": "L’obscurité n’est pas seulement l’absence de lumière, il s’agit de la réelle maîtrise du pur pouvoir des ténèbres. Elle offre le contrôle de toutes les émotions négatives comme la peur, la haine ou la colère. Elle correspond au pouvoir des secrets, parmi lesquels on compte les sorts de dissimulation. Son pouvoir martial est également assez équilibré.",
-      "type": "Majeure",
-      "oppositeBook": "Lumière",
-      "secondaryBookAccessibles": [
+      "bookName": "Path of Darkness",
+      "description": "Darkness does not govern the absence of light, but rather It manipulates the very power of the shadows. It controls all negative emotions, such as fear, anger and hatred. It also represents the power of secrets, among which concealment and obfuscation are included. Like Light, its power is very well balanced.",
+      "type": "Main",
+      "oppositeBook": "Light",
+      "secondaryBookAccessible": [
+        "War",
         "Chaos",
-        "Guerre",
         "Literae",
-        "Mort",
-        "Musique",
-        "Noblesse",
-        "Pêché",
-        "Connaissance",
-        "Sang",
-        "Songes",
-        "Temps",
-        "Seuil",
-        "Néant"
+        "Death",
+        "Music",
+        "Nobility",
+        "Sin",
+        "Knowledge",
+        "Blood",
+        "Dream",
+        "Time",
+        "Threshold",
+        "Void"
       ]
     },
     {
       "bookId": 3,
-      "bookName": "Livre de la Création",
-      "description": "Le pouvoir de la création est la capacité magique à composer et altérer la réalité qui entoure les sorciers. Ses sorts concernent le changement, la guérison et la création de choses. C’est une magie principalement défensive.",
-      "type": "Majeure",
+      "bookName": "Path of Creation",
+      "description": "The power of creation is the magical ability to organize and alter the reality that surrounds spellcasters. These spells are about change, healing, and creating things. It is a distinctly defensive magic.",
+      "type": "Main",
       "oppositeBook": "Destruction",
-      "secondaryBookAccessibles": [
+      "secondaryBookAccessible": [
         "Chaos",
         "Literae",
-        "Musique",
-        "Paix",
-        "Pêché",
-        "Connaissance",
-        "Sang",
-        "Temps"
-      ]
+        "Music",
+        "Peace",
+        "Sin",
+        "Knowledge",
+        "Blood",
+        "Time"
+        ]
     },
     {
       "bookId": 4,
-      "bookName": "Livre de la Destruction",
-      "description": "Cette voie permet d’utiliser le pouvoir du flux des âmes pour détruire la réalité elle-même. Ses sorts affectent autant le monde matériel que spirituel. Son pouvoir est, par nature, très offensif.",
-      "type": "Majeure",
-      "oppositeBook": "Création",
-      "secondaryBookAccessibles": [
+      "bookName": "Path of Destruction",
+      "description": "This Path allows the caster to channel the power of the Flow of Souls, turning it against reality itself. These spells affect both the material and spiritual worlds. It is naturally offensive power.",
+      "type": "Main",
+      "oppositeBook": "Creation",
+      "secondaryBookAccessible": [
+        "War",
         "Chaos",
-        "Guerre",
-        "Mort",
-        "Pêché",
-        "Sang",
-        "Temps",
-        "Néant"
+        "Death",
+        "Sin",
+        "Blood",
+        "Time",
+        "Void"
       ]
     },
     {
       "bookId": 5,
-      "bookName": "Livre du Feu",
-      "description": "La première des quatre voies élémentaires mineures contrôle les hautes températures. Ses sorts se basent sur la chaleur, le feu et peuvent englober de vastes superficies. Elle accueille aussi les sorts de sacrifice, permettant de consumer certains aspects d’un individu pour en améliorer d’autres. C’est une voie très offensive.",
-      "type": "Mineure",
-      "oppositeBook": "Eau",
+      "bookName": "Path of Fire",
+      "description": "The first of the four Lower Elemental Paths rules over high temperatures. These spells generate heat and fire and they devastate large areas of land. It also contains enchantments that consume certain sides of an Individual to bring up others in turn. It is a very offensive Path.",
+      "type": "Minor",
+      "oppositeBook": "Water",
       "secondaryBookAccessibles": [
-        "Guerre",
-        "Mort",
-        "Pêché",
-        "Seuil"
+        "War",
+        "Death",
+        "Sin",
+        "Threshold"
       ]
     },
     {
       "bookId": 6,
-      "bookName": "Livre de l’Eau",
-      "description": "L’élément de l’eau accueille de nombreux principes différents. Cette voie contrôle les liquides et la pureté des choses. Elle représente aussi le pouvoir du gel et des basses températures. En combat, c’est une magie très équilibrée, à la fois offensive et défensive.",
-      "type": "Mineure",
-      "oppositeBook": "Feu",
+      "bookName": "Path of Water",
+      "description": "This Element hosts a variety of diverging concepts. This Is the Path that confers dominion over liquids and the purity of things. It also represents the power of ice and low temperalures. Its power is offensively and defensively balanced.",
+      "type": "Minor",
+      "oppositeBook": "Fire",
       "secondaryBookAccessibles": [
         "Literae",
-        "Musique",
-        "Noblesse",
-        "Paix",
-        "Connaissance",
-        "Sang",
-        "Néant"
+        "Music",
+        "Nobility",
+        "Peace",
+        "Knowledge",
+        "Blood",
+        "Void"
       ]
     },
     {
       "bookId": 7,
-      "bookName": "Livre de la Terre",
-      "description": "La terre est le pouvoir de la planète, de la pierre et des minéraux. Il s’agit de la magie la plus matérielle de toutes, contrôlant les lois de la physique, comme la gravité ou le magnétisme. Son influence sur les esprits et les choses immatérielles est très limitée. Les sorts de terre sont liés à la résistance, la solidité et la lenteur.",
-      "type": "Mineure",
+      "bookName": "Path of Earth",
+      "description": "Earth is the powmer of the planet, stones and minerals. It is the most substantial of magics and It governs the laws of physics - like gravity and magnetism. Its influence over spirits and the immaterial is very limited. Earth spells are the magic of resistance, endurance, and slowness.",
+      "type": "Minor",
       "oppositeBook": "Air",
       "secondaryBookAccessibles": [
-        "Guerre",
+        "War",
         "Literae",
-        "Noblesse",
-        "Paix",
-        "Seuil"
+        "Nobility",
+        "Peace",
+        "Threshold"
       ]
     },
     {
       "bookId": 8,
-      "bookName": "Livre de l’Air",
-      "description": "Il s’agit de la voie des choses éthérées et intangibles. Elle comporte les sorts de vitesse, de vol et de mouvement. Son pouvoir permet d’altérer l’espace et de transporter les corps d’un lieu à l’autre. Cette voie contrôle aussi les perturbations atmosphériques et donc le climat et l’électricité.",
-      "type": "Mineure",
-      "oppositeBook": "Terre",
+      "bookName": "Path of Air",
+      "description": "This is the Path of the ethereal and incorporeal. It contains movement and speed spells. With its power, space may be altered and bodies may be transported from one place to another. This is also the Path in charge of the weather and electricity.",
+      "type": "Minor",
+      "oppositeBook": "Earth",
       "secondaryBookAccessibles": [
         "Chaos",
-        "Musique",
-        "Noblesse",
-        "Paix",
-        "Pêché",
-        "Connaissance",
-        "Songes",
-        "Seuil",
-        "Néant"
+        "Music",
+        "Nobility",
+        "Peace",
+        "Sin",
+        "Knowledge",
+        "Dream",
+        "Threshold",
+        "Void"
       ]
     },
     {
       "bookId": 9,
-      "bookName": "Livre de l’Essence",
-      "description": "L’essence contrôle la vie et les âmes. Cette voie contrôle également les esprits et les être naturels de ce monde. C’est enfin la voie de la nature et des sortilèges druidiques.",
-      "type": "Mineure",
+      "bookName": "Path of Essence",
+      "description": "Essence controls life and souls. This Path has control over spirits and natural beings that belong to the world. It is also the Path of nature and spells of a druidic origin.",
+      "type": "Minor",
       "oppositeBook": "Illusion",
       "secondaryBookAccessibles": [
-        "Musique",
-        "Paix",
-        "Connaissance",
-        "Sang",
-        "Songes"
+        "Music",
+        "Peace",
+        "Knowledge",
+        "Blood",
+        "Dream"
       ]
     },
     {
       "bookId": 10,
-      "bookName": "Livre de l’Illusion",
-      "description": "Le pouvoir de cette voie permet à un sorcier de contrôler la mystification et l’illusion. Ses sorts peuvent altérer la réalité et, avec elle, la perception des gens.",
-      "type": "Mineure",
+      "bookName": "Path of Illusion",
+      "description": "The power of this Path gives spellcasters control over Deception and Illusion. Spells can alter reality and the way it is perceived.",
+      "type": "Minor",
       "oppositeBook": "Essence",
       "secondaryBookAccessibles": [
         "Literae",
-        "Mort",
-        "Musique",
-        "Noblesse",
-        "Pêché",
-        "Songes",
-        "Seuil"
+        "Death",
+        "Music",
+        "Nobility",
+        "Sin",
+        "Dream",
+        "Threshold"
       ]
     },
     {
       "bookId": 11,
-      "bookName": "Livre de la Nécromancie",
-      "description": "La nécromancie est une perversion de la magie en tant que telle. Alors que les autres voies se nourrissent de l’énergie qui s’échappe du flux des âmes, la Nécromancie l’y arrache littéralement. Ses sorts détruisent l’essence de la vie, étouffant et pervertissant les âmes qu’elle utilise. Son pouvoir permet de rendre la vie aux morts, de détruire les âmes, de drainer les vies et l’essence d’autres êtres.",
-      "type": "Automatique",
-      "oppositeBook": "Toutes les autres voies",
+      "bookName": "Path of Necromancy",
+      "description": "Necromancy is a perversion of magic. While the rest of the Paths derive their power from the network of souls, these spells destroy the essence of life by stagnating and perverting the souls it uses. Its power gives back life to the dead, destroys souls and drains the life and essence of other being.",
+      "type": "Automatic",
+      "oppositeBook": "The rest of the magic Paths",
       "secondaryBookAccessibles": [
-        "Guerre",
-        "Mort",
-        "Pêché",
-        "Connaissance",
-        "Sang",
-        "Songes",
-        "Seuil",
-        "Néant"
+        "War",
+        "Death",
+        "Sin",
+        "Knowledge",
+        "Blood",
+        "Dream",
+        "Threshold",
+        "Void"
       ]
     },
     {
       "bookId": 12,
-      "bookName": "Sorts d’accès libre ",
-      "description": "Les sorts d'accès libre sont des sorts générique que tout sorcier peut apprendre, peu importe les voies qu'il a choisis. Lorsqu'un sorcier apprend une voie, il peut choisir parmi ces sorts pour compléter sa voie et la rendre unique.",
-      "type": "Inderterminé"
+      "bookName": "Free Access Spells",
+      "description": "The free access spells are generic spells that every spellcaster can learn, no matter which paths he chose. When a spellcaster learn a path, he can learn among those spells to complete his path and make it unique.",
+      "type": "Undetermined"
     },
     {
       "bookId": 13,
-      "bookName": "Livre du Chaos",
-      "description": "Cette voie manie le principe absolu du chaos, le pouvoir de l'imprédictible e l'altération des événements.",
+      "bookName": "Path of Chaos",
+      "description": "This path controls the principle of chaos, the power of unpredictability and alteration of events.",
       "primaryBookUnaccessibles": [
-        "Eau",
-        "Feu",
-        "Terre",
+        "Water",
+        "Fire",
+        "Earth",
         "Essence",
         "Illusion",
-        "Nécromancie"
+        "Necromancy"
       ]
     },
     {
       "bookId": 14,
-      "bookName": "Livre de la Guerre",
-      "description": "Les sorciers de la guerre sont ceux qui maîtrisent les champs de bataille à volonté, pouvant renforcer selon leurs souhaits les compétences de leurs alliés ou même d'armées entières.",
+      "bookName": "Path of War",
+      "description": "The Path of War is one that dominates the fields of battle, allowing the mage to enhance their skills as well as their peers, or entire armies.",
       "primaryBookUnaccessibles": [
-        "Lumière",
-        "Création",
+        "Light",
+        "Creation",
         "Air",
-        "Eau",
+        "Water",
         "Essence",
         "Illusion"
       ]
     },
     {
       "bookId": 15,
-      "bookName": "Livre de la Literae",
-      "description": "Literae est la magie des mots, la voie de la modification de la réalité en écrivant des annotations en marge du livre que nous appelons la réalité. Ceux qui l’emploient sont capables d'utiliser la sorcellerie pour réécrire le scénario de la vie en l'adaptant à leurs besoins.",
+      "bookName": "Path of Literae",
+      "description": "Literae is the magic of words, changing the writing in the margins of the book we call reality.",
       "primaryBookUnaccessibles": [
         "Destruction",
         "Air",
-        "Feu",
-        "Terre",
+        "Fire",
+        "Earth",
         "Essence",
-        "Nécromancie"
+        "Necromancy"
       ]
     },
     {
       "bookId": 16,
-      "bookName": "Livre de la Mort",
-      "description": "Cette voie secondaire contrôle la fin des choses, la mort dans son concept fin de la vie.",
+      "bookName": "Path of Death",
+      "description": "This sub-path controls the order of things, the concept of the ending of life",
       "primaryBookUnaccessibles": [
-        "Lumière",
-        "Création",
+        "Light",
+        "Creation",
         "Air",
-        "Eau",
-        "Terre",
+        "Water",
+        "Earth",
         "Essence",
         "Illusion"
       ]
     },
     {
       "bookId": 17,
-      "bookName": "Livre de la Musique",
-      "description": "Cette voie secondaire regroupe tous les pouvoirs en relation avec la musique les mélodies. Les sorciers qui utilisent ses sorts sont habituellement appelés mages musiciens, car c'est au travers de leurs mélodies qu'ils sont capables de provoquer les effets et les merveilles les plus invraisemblables.",
+      "bookName": "Path of Music",
+      "description": "This sub-path contains all the powers related to music and melodies. The witches who use this spells are usually called musical magicians, because through their melodies they are capable of causing the most unbelievable effects and wonders.",
       "primaryBookUnaccessibles": [
         "Destruction",
-        "Feu",
-        "Terre",
-        "Nécromancie"
+        "Fire",
+        "Earth",
+        "Necromancy"
       ]
     },
     {
       "bookId": 18,
-      "bookName": "Livre de la Noblesse",
-      "description": "Cette voie secondaire regroupe tous les principes en relation avec l'apparence, la position sociale et la supériorité sur les autres. C'est la magie dont usent la noblesse et les grands seigneurs pour assurer leur domination sur les autres.",
+      "bookName": "Path of Nobility",
+      "description": "This sub-path contains all the principles related to appearance, status and superiority over other people. It is the magic used by nobles and great lords to ensure its dominance over others.",
       "primaryBookUnaccessibles": [
-        "Création",
+        "Creation",
         "Destruction",
-        "Feu",
+        "Fire",
         "Essence",
-        "Nécromancie"
+        "Necromancy"
       ]
     },
     {
       "bookId": 19,
-      "bookName": "Livre de la Paix ",
-      "description": "C'est la voie qui incarne l'harmonie et l'absence de conflits.",
+      "bookName": "Path of Peace",
+      "description": "This is the sub-path that embodies harmony and lack of conflict.",
       "primaryBookUnaccessibles": [
-        "Obscurité",
+        "Obscurity",
         "Destruction",
-        "Feu",
+        "Fire",
         "Illusion",
-        "Nécromancie"
+        "Necromancy"
       ]
     },
     {
       "bookId": 20,
-      "bookName": "Livre du Péché",
-      "description": "Cette voie secondaire est la plus obscure et la plus retorse de toutes, car elle regroupe tous les pouvoirs en relation avec les émotions négatives, le péché et plus globalement le mal à l'état pur. C'est la magie utilisée par la grande majorité des créatures infernales, ainsi que par les adorateurs des divinités maléfiques de chaque culture.",
+      "bookName": "Path of Sin",
+      "description": "This sub-path is the darkest and most twisted of all, bringing together all the powers associated with negative emotions, sin and pure evil. It's the magic used by the vast majority of hellish creatures as well as the worshipers of the evil deities of each culture.",
       "primaryBookUnaccessibles": [
-        "Lumière",
-        "Eau",
-        "Terre",
+        "Light",
+        "Water",
+        "Earth",
         "Essence",
         "Illusion"
       ]
     },
     {
       "bookId": 21,
-      "bookName": "Livre de la Connaissance",
-      "description": "Connaissance est, une voie secondaire primordiale qui domine le concept même du savoir. Les sorciers qui l'utilisent ont la maîtrise sur tout ce qui peut être appris.",
+      "bookName": "Path of Knowledge",
+      "description": "Knowledge is a primary sub-path that dominates the very concept of knowing. Sorcerers who use it have control over everything that can be learned.",
       "primaryBookUnaccessibles": [
         "Destruction",
-        "Feu",
-        "Terre",
+        "Fire",
+        "Earth",
         "Illusion"
       ]
     },
     {
       "bookId": 22,
-      "bookName": "Livre du Sang",
-      "description": "Cette voie secondaire contrôle le principe qui donne la vie aux êtres organiques, celui du sang lui-même.",
+      "bookName": "Path of Blood",
+      "description": "This sub-pathway controls the principle that gives life to organic beings, that of their own blood.",
       "primaryBookUnaccessibles": [
-        "Lumière",
+        "Light",
         "Air",
-        "Feu",
-        "Terre",
+        "Fire",
+        "Earth",
         "Illusion"
       ]
     },
     {
       "bookId": 23,
-      "bookName": "Livre des Songes",
-      "description": "Songes est la voie de magie secondaire qui contrôle le monde onirique des rêveurs, ainsi que son reflet dans la Veille.",
+      "bookName": "Path of Dreams",
+      "description": "Dreams is the way of magic that controls the dream world of dreamers, as reflected in the Wake.",
       "primaryBookUnaccessibles": [
-        "Création",
+        "Creation",
         "Destruction",
-        "Eau",
-        "Feu",
-        "Terre"
+        "Water",
+        "Fire",
+        "Earth"
       ]
     },
     {
       "bookId": 24,
-      "bookName": "Livre du Temps ",
-      "description": "Pour beaucoup d'occultistes le principe qui contrôle cette voie secondaire est le plus grand de tous, y compris parmi ceux des voies majeures. Ceux qui l'utilisent sont appelés les Chronomants, ou mages du temps, et leurs capacités consistent à utiliser la magie pour contrôler le passage du temps comme s'il s'agissait simplement d'un élément de plus.",
+      "bookName": "Path of Time",
+      "description": "To many occultists the sub-path that controls time is the greatest of all, valued even more than the higher paths. Those who use it are often called Chronomancers or magicians of the time, and as they wield the ability is to use magic to control the flow of time like an element.",
       "primaryBookUnaccessibles": [
         "Air",
-        "Eau",
-        "Feu",
-        "Terre",
+        "Water",
+        "Fire",
+        "Earth",
         "Essence",
         "Illusion",
-        "Nécromancie"
+        "Necromancy"
       ]
     },
     {
       "bookId": 25,
-      "bookName": "Livre du Seuil",
-      "description": "La peur et la folie sont les émotions les plus sombres, primaires et puissantes, antérieures même aux temps où les hommes ont pris conscience de leur destin. Cette voie secondaire à ces deux concepts comme base, c'est la magie des horreurs primitives qui sont au-delà des ténèbres elles-mêmes.",
+      "bookName": "Path of Threshold",
+      "description": "Fear and madness are the darker emotions, primary and powerful from earlier times the man who was unaware of his destination. This track has two sub-concepts the principle of primal horrors and things that are beyond the darkness.",
       "primaryBookUnaccessibles": [
-        "Lumière",
-        "Création",
+        "Light",
+        "Creation",
         "Destruction",
-        "Eau",
+        "Water",
         "Essence"
       ]
     },
     {
       "bookId": 26,
-      "bookName": "Livre du Vide",
-      "description": "Vide est la voie secondaire qui contrôle les énergies du néant, l'absence totale de toute matière physique ou spirituelle.",
+      "bookName": "Path of Void",
+      "description": "Void is the sub-pathway that controls  the complete absence of all physical and spiritual matters.",
       "primaryBookUnaccessibles": [
-        "Lumière",
-        "Création",
-        "Feu",
-        "Terre",
+        "Light",
+        "Creation",
+        "Fire",
+        "Earth",
         "Essence",
         "Illusion"
       ]

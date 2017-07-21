@@ -1,49 +1,49 @@
 {
   "bookId": 10,
-  "bookName": "Livre de l’Illusion",
-  "description": "Le pouvoir de cette voie permet à un sorcier de contrôler la mystification et l’illusion. Ses sorts peuvent altérer la réalité et, avec elle, la perception des gens.",
-  "type": "Mineure",
+  "bookName": "Path of Illusion",
+  "description": "The power of this Path gives spellcasters control over Deception and Illusion. Spells can alter reality and the way it is perceived.",
+  "type": "Minor",
   "oppositeBook": "Essence",
   "secondaryBookAccessibles": [
     "Literae",
-    "Mort",
-    "Musique",
-    "Noblesse",
-    "Pêché",
-    "Rêve",
-    "Seuil."
+    "Death",
+    "Music",
+    "Nobility",
+    "Sin",
+    "Dream",
+    "Threshold"
   ],
   "spells": [
     {
       "spellId": 1,
       "bookId": 10,
-      "name": "Illusion Sonore",
+      "name": "﻿Illusory Sound",
       "level": 2,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Crée une illusion sonore que le sorcier compose librement. Il pourrait par exemple créer des voix humaines ou le bruit d'un ruisseau. Le sort affecte tous ceux qui ne réussissent pas un test de RMys dans un rayon déterminé par le rang du sort. Le sorcier peut choisir les êtres qui entendent ou pas le sont dans la zone d'effet.",
+      "type": "Automatic",
+      "effect": "This spell allows the caster to create any sound, including human voices, in an area. All subjects within the area of effect must pass a MR check to disbelieve the effect, though the spellcaster may choose which specific characters hear the illusion.",
       "initialGrade": {
         "zeon": 30,
         "requiredIntelligence": 5,
-        "effect": "RMys 100 / 20 m de rayon",
+        "effect": " MR 100 / 20m/21yd area.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 50,
         "requiredIntelligence": 8,
-        "effect": "RMys 120 / 50 m de rayon",
+        "effect": " MR 120 / 50m/54yd area.",
         "retention": 5
       },
       "advancedGrade": {
         "zeon": 90,
         "requiredIntelligence": 10,
-        "effect": "RMys 140 / 100 m de rayon",
+        "effect": " MR 140 / 100m/109yd area.",
         "retention": 10
       },
       "arcaneGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "RMys 160 / 250 m de rayon",
+        "effect": " MR 160 / 250m/273yd area.",
         "retention": 10
       },
       "withRetention": true,
@@ -52,33 +52,33 @@
     {
       "spellId": 2,
       "bookId": 10,
-      "name": "Illusion Olfactive",
+      "name": "Illusory Smell",
       "level": 6,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Crée une illusion olfactive. Le sort affecte tous ceux qui ne réussissent pas un test de RMys dans un rayon déterminé par le rang du sort. Le sorcier peut choisir les êtres qui sentent ou pas l'odeur dans la zone d'effet.",
+      "type": "Automatic",
+      "effect": "This spell creates an illusory smell. It affects those subjects in a radius who fail a MR Check. The caster can choose who will smell the illusory scent and who will not.",
       "initialGrade": {
         "zeon": 30,
         "requiredIntelligence": 5,
-        "effect": "RMys 100 / 20 m de rayon",
+        "effect": " MR 100 / 20m/21yd area.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 50,
         "requiredIntelligence": 8,
-        "effect": "RMys 120 / 50 m de rayon",
+        "effect": " MR 120 / 50m/54yd area.",
         "retention": 5
       },
       "advancedGrade": {
         "zeon": 90,
         "requiredIntelligence": 10,
-        "effect": "RMys 140 / 100 m de rayon",
+        "effect": " MR 140 / 100m/109yd area.",
         "retention": 10
       },
       "arcaneGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "RMys 160 / 250 m de rayon",
+        "effect": " MR 160 / 250m/273yd area.",
         "retention": 10
       },
       "withRetention": true,
@@ -87,33 +87,33 @@
     {
       "spellId": 3,
       "bookId": 10,
-      "name": "Illusion Tactile",
+      "name": "Illusory Touch",
       "level": 10,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Fausse l'impression tactile ou le goût d'un élément précis. L'illusionniste décide de la nouvelle sensation ou du nouveau goût qu'acquiert la cible du sort et qui la remarquera à l'intérieur de la zone. Le sort affecte tous ceux qui ne réussissent pas un test de RMys dans un rayon déterminé par le rang du sort.",
+      "type": "Automatic",
+      "effect": "This spell can distort the touch or the taste of a specific element. The caster decides the element’s new taste or feel, which is noticed by all within a radius who fail a MR Check. The caster can choose who notices the illusion and who does not.",
       "initialGrade": {
         "zeon": 30,
         "requiredIntelligence": 5,
-        "effect": "RMys 100 / 20 m de rayon",
+        "effect": " MR 100 / 20m/21yd area.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 50,
         "requiredIntelligence": 8,
-        "effect": "RMys 120 / 50 m de rayon",
+        "effect": " MR 120 / 50m/54yd area.",
         "retention": 5
       },
       "advancedGrade": {
         "zeon": 90,
         "requiredIntelligence": 10,
-        "effect": "RMys 140 / 100 m de rayon",
+        "effect": " MR 140 / 100m/109yd area.",
         "retention": 10
       },
       "arcaneGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "RMys 160 / 250 m de rayon",
+        "effect": " MR 160 / 250m/273yd area.",
         "retention": 10
       },
       "withRetention": true,
@@ -122,33 +122,33 @@
     {
       "spellId": 4,
       "bookId": 10,
-      "name": "Illusion Visuelle",
+      "name": "Visual Illusion",
       "level": 12,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Crée une image illusoire qui affecte le sens de la vision. Cette illusion s'étend au maximum sur deux mètres carré et ne peut pas se déplacer. Le sort affecte tous ceux qui ne réussissent pas un test de RMys contre 100 dans un rayon de 20 mètres. Le sorcier peut choisir les êtres qui la voient ou pas dans la zone d'effet.",
+      "type": "Automatic",
+      "effect": "This spell creates a false image that can deceive the viewer. The image must remain static and have only a maximum mass of 5 cubic feet. The spell affects anyone who sees the image and fails a MR Check and is within the radius. It is up to the caster to decide who will see the image and who will not.",
       "initialGrade": {
         "zeon": 40,
         "requiredIntelligence": 6,
-        "effect": "RMys 100 / 10 m de rayon",
+        "effect": " MR 100 / 10m/11yd area.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 70,
         "requiredIntelligence": 8,
-        "effect": "RMys 120 / 25 m de rayon",
+        "effect": " MR 120 / 25m/27yd area.",
         "retention": 5
       },
       "advancedGrade": {
         "zeon": 100,
         "requiredIntelligence": 10,
-        "effect": "RMys 140 / 50 m de rayon",
+        "effect": " MR 140 / 50m/54yd area.",
         "retention": 10
       },
       "arcaneGrade": {
         "zeon": 130,
         "requiredIntelligence": 12,
-        "effect": "RMys 160 / 100 m de rayon",
+        "effect": " MR 160 / 100m/109yd area.",
         "retention": 10
       },
       "withRetention": true,
@@ -157,33 +157,33 @@
     {
       "spellId": 5,
       "bookId": 10,
-      "name": "Détecter les Illusions",
+      "name": "Detect Illusions",
       "level": 16,
       "actionType": "Active",
-      "type": "Détection",
-      "effect": "Permet au sorcier de percevoir les illusions dans un rayon déterminé par le rang du sort. Quand la détection est active, tous les sorts de cette voie d’un rang inférieur ou égal à celui du sort sont automatiquement révélés au sorcier.",
+      "type": "Automatic",
+      "effect": "This spell enables the spellcaster to sense the presence of all Illusions in a 150-foot radius.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 6,
-        "effect": "Affecte un sort de Degré Initial",
+        "effect": " Affects Base Level Spells.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 160,
         "requiredIntelligence": 8,
-        "effect": "Affecte un sort de Degré Intermédiaire",
+        "effect": " Affects Intermediate Level Spells.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 200,
         "requiredIntelligence": 10,
-        "effect": "Affecte un sort de Degré Avancé",
+        "effect": " Affects Advanced Level Spells.",
         "retention": 20
       },
       "arcaneGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "Affecte un sort de Degré Arcane",
+        "effect": " Affects Arcane Level Spells.",
         "retention": 25
       },
       "withRetention": true,
@@ -192,68 +192,68 @@
     {
       "spellId": 6,
       "bookId": 10,
-      "name": "Mystifier",
+      "name": "Sweet Talk",
       "level": 20,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Le charisme et la séduction de la cible du sort sont augmentés par ce sort. Tant qu'il est maintenu, le personnage bénéficie d'un bonus à ses compétences secondaires de Commandement et de Persuasion.",
+      "type": "Effect",
+      "effect": "This spell enhances the targeted individual’s charisma and personal charm. The character receives a bonus the Leadership and Persuasion Secondary Abilities.",
       "initialGrade": {
         "zeon": 50,
         "requiredIntelligence": 6,
-        "effect": "+50 en Commandement et Persuasion",
+        "effect": " +50 Leadership and Persuasion.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 80,
         "requiredIntelligence": 8,
-        "effect": "+80 en Commandement et Persuasion",
+        "effect": " +80 Leadership and Persuasion.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 100,
         "requiredIntelligence": 10,
-        "effect": "+100 en Commandement et Persuasion",
+        "effect": " +100 Leadership and Persuasion.",
         "retention": 10
       },
       "arcaneGrade": {
         "zeon": 120,
         "requiredIntelligence": 13,
-        "effect": "+120 en Commandement et Persuasion",
+        "effect": " +120 Leadership and Persuasion.",
         "retention": 15
       },
       "withRetention": true,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 7,
       "bookId": 10,
-      "name": "Altérer l'apparence",
+      "name": "Alter Appearance",
       "level": 22,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "L'illusionniste altère l'aspect physique visuel d'un individu ou d'un objet, en le remplaçant par un autre de son choix. Ce sort ne peut qu'augmenter ou réduire de deux points les caractéristiques de Taille et d'Apparence de l'individu ciblé. Tous ceux qui regardent l'illusion doivent effectuer un test de RMys pour percevoir la réalité cachée sous cette fausse apparence. Si quelqu'un est affecté par cette illusion, il n'a droit à un nouveau test de Résistance que quand il trouve une bonne raison de penser que l'identité ou l'apparence de la cible du sort sont suspecte.",
+      "type": "Effect",
+      "effect": "The spellcaster can change the appearance of an individual or object into that of another of his choosing. This spell will only increase or decrease the targeted individual’s Size and Appearance by two degrees. All subjects in contact with the image can see through the illusion if they pass a MR Check. Once a viewer is affected by an illusion, he only receives a new Resistance Check when he has reason to doubt the identity or appearance of the subject.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 6,
-        "effect": "RMys 120",
+        "effect": " MR 120.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 90,
         "requiredIntelligence": 9,
-        "effect": "RMys 160",
+        "effect": " MR 160.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "RMys 200",
+        "effect": " MR 200.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 150,
         "requiredIntelligence": 15,
-        "effect": "RMys 240",
+        "effect": " MR 240.",
         "retention": 15
       },
       "withRetention": true,
@@ -262,33 +262,33 @@
     {
       "spellId": 8,
       "bookId": 10,
-      "name": "Invisibilité Illusoire",
+      "name": "Illusory Invisibility",
       "level": 26,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Grâce à ce sort, un illusionniste peut faire dispara1tre visuellement n'importe quelle personne ou objet. Ce sort affecte autant de personnes que le désire le sorcier, tant que la somme de leurs Présences ne dépasse pas une valeur fixée par le rang du sort. Tous les individus regardant en direction des créatures ou objets invisibles doit réussir un test de RMys sous peine de ne pas pouvoir les détecter de façon visuelle.",
+      "type": "Automatic",
+      "effect": "This spell allows the caster to make any being or object vanish from sight. He can affect any number of people, as long as the sum of their Presence does not exceed the limit set by the spell. Only individuals who pass a MR Check can detect the presence of the invisible character through their sense of vision.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 6,
-        "effect": "RMys 120 / Présence maximale 140",
+        "effect": " MR 120 / Max Presence 140.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 90,
         "requiredIntelligence": 9,
-        "effect": "RMys 150 / Présence maximale 200",
+        "effect": " MR 150 / Max Presence 200.",
         "retention": 5
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "RMys 180 / Présence maximale 260",
+        "effect": " MR 180 / Max Presence 260.",
         "retention": 10
       },
       "arcaneGrade": {
         "zeon": 150,
         "requiredIntelligence": 15,
-        "effect": "RMys 210 / Présence maximale 320",
+        "effect": " MR 210 / Max Presence 320.",
         "retention": 10
       },
       "withRetention": true,
@@ -297,33 +297,33 @@
     {
       "spellId": 9,
       "bookId": 10,
-      "name": "Image Miroir",
+      "name": "Mirror Image",
       "level": 30,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Crée plusieurs copies d'une cible déterminée. Il ne s'agit que d'images illusoires qui ne peuvent pas être séparées de plus de 10 mètres. Comme s'il s'agissait de miroirs, elles réalisent les mêmes mouvements que la cible du sort. Si l'une des images miroir est atteinte par un coup qui altère l'énergie, elle est immédiatement détruite. Il faut, pour voir l'illusion, réussir un test de RMys.",
+      "type": "Automatic",
+      "effect": "This spell creates eight illusory copies of any given target. The caster can not place these mirror images more than 15 feet apart from one another. Acting as mirrors, they perform the same actions as the targeted individual. Any images hit by an Energy damaging attack are immediately destroyed. Seeing through this illusion requires a MR Check.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 8,
-        "effect": "RMys 120 / 5 images",
+        "effect": " MR 120 / 5 Copies.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 90,
         "requiredIntelligence": 10,
-        "effect": "RMys 140 / 10 images",
+        "effect": " MR 140 / 10 Copies.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "RMys 160 / 20 images",
+        "effect": " MR 160 / 20 Copies.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 150,
         "requiredIntelligence": 14,
-        "effect": "RMys 180 / 50 images",
+        "effect": " MR 180 / 50 Copies.",
         "retention": 15
       },
       "withRetention": true,
@@ -332,33 +332,33 @@
     {
       "spellId": 10,
       "bookId": 10,
-      "name": "Illusion Totale",
+      "name": "Total Illusion",
       "level": 32,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Forme une illusion qui trompe les cinq sens des cibles affectées. Le sorcier peut créer n'importe quelle chose inanimée, tant que son volume ne dépasse pas deux mètres cube. L'illusion est détruite si elle est touchée par des attaques altérant l'énergie. Le sort affecte toutes les personnes capables de voir, entendre ou sentir l'illusion et qui ne réussissent pas un test de RMys.",
+      "type": "Automatic",
+      "effect": "This spell creates a complete illusion that deceives all five of a victim’s senses. The caster can create any inanimate object with a volume not exceeding 5 cubic feet. The illusion can be destroyed by Energy damaging attacks. This spell affects anyone able to see, hear, smell, or feel the illusion who fails a MR Check. No Max Presence.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 6,
-        "effect": "RMys 120",
+        "effect": " MR 120",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 9,
-        "effect": "RMys 160",
+        "effect": " MR 160",
         "retention": 5
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "RMys 200",
+        "effect": " MR 200",
         "retention": 10
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "RMys 240",
+        "effect": " MR 240",
         "retention": 10
       },
       "withRetention": true,
@@ -370,30 +370,30 @@
       "name": "Confusion",
       "level": 36,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Trouble les sens d'un individu qui échoue un test de RMys et inflige à toutes ses compétences secondaires sensorielles un malus égal à la marge d'échec. Si la différence dépasse 40, la cible subit un malus supplémentaire de -20 à toutes les actions à cause des vertiges. Un individu affecté n'a pas droit à un nouveau test de Résistance sauf s'il l'augmente.",
+      "type": "Spiritual",
+      "effect": "This spell confounds all five senses of a single target. The target must pass a MR Check to resist the spell. If he fails, he suffers a penalty equal to his Failure Level to all of his perception-based Secondary Abilities.Furthermore, if he fails by more than 40, the target also suffers a –20 All Action Penalty due to dizziness. An affected cannot make a new Check unless he increases his Resistances.",
       "initialGrade": {
         "zeon": 50,
         "requiredIntelligence": 6,
-        "effect": "RMys 140",
+        "effect": " MR 140.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 70,
         "requiredIntelligence": 9,
-        "effect": "RMys 160",
+        "effect": " MR 160.",
         "retention": 5
       },
       "advancedGrade": {
         "zeon": 90,
         "requiredIntelligence": 11,
-        "effect": "RMys 180",
+        "effect": " MR 180.",
         "retention": 5
       },
       "arcaneGrade": {
         "zeon": 120,
         "requiredIntelligence": 13,
-        "effect": "RMys 200",
+        "effect": " MR 200.",
         "retention": 10
       },
       "withRetention": true,
@@ -402,33 +402,33 @@
     {
       "spellId": 12,
       "bookId": 10,
-      "name": "Créer Être Illusoire",
+      "name": "Create Illusory Being",
       "level": 40,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Crée un être i1lusoire de premier niveau. L'être est créé comme une créature d'Entre Mondes à l'aide des règles du Chapitre 26, même s'il est irréel",
+      "type": "Automatic",
+      "effect": "This spell creates a first-level illusory being. The entity is fashioned according to the caster’s desires, using the rules set forth in Chapter 26 for Beings between Worlds. However, the illusory being’s nature automatically grants it the Physical Exemption ability.Because the creature is not real, it can not inflict damage or affect physical reality whatsoever. All non-Energy based attacks pass right through it without damaging it in any way. This spell must be cast upon a specific area not exceeding a radius set by spell level. Those characters entering the spell’s area of effect must pass a MR Check to avoid it. Even though the spell is circumscribed to a specific zone, the illusory creature can leave that area while chasing after a subject affected by the spell. However, it remains unseen by anyone not previously inside the spell’s area. Keep in mind that those subjects who pass the MR Check do not exist to the illusory creature, and it will ignore them. No Level restriction besides that of Casting Level.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 7,
-        "effect": "RMys 120 / Niveau 2 / 20 m de rayon",
+        "effect": " MR 120 / Level 2 / 20m/21yd area.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 90,
         "requiredIntelligence": 10,
-        "effect": "RMys 140 / Niveau 4 / 50 m de rayon",
+        "effect": " MR 140 / Level 4 / 50m/54yd area.",
         "retention": 5
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 13,
-        "effect": "RMys 160 / Niveau 7 / 100 m de rayon",
+        "effect": " MR 160 / Level 7 / 100m/109yd area.",
         "retention": 10
       },
       "arcaneGrade": {
         "zeon": 150,
         "requiredIntelligence": 15,
-        "effect": "RMys 180 / Niveau 10 / 250 m de rayon",
+        "effect": " MR 180 / Level 10 / 250m/273yd area.",
         "retention": 10
       },
       "withRetention": true,
@@ -437,33 +437,33 @@
     {
       "spellId": 13,
       "bookId": 10,
-      "name": "Résistances aux Illusions",
+      "name": "Resistance to Illusions",
       "level": 42,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Augmente la Résistance mystique d'un individu contre les effets illusoires. Ce sort accorde un aux tests de RMys effectués contre des sorts de la voie d'Illusion. Les effets de ce sort ne se cumulent pas. Un individu ne peut être affecté que par un tel sort à la fois.",
+      "type": "Effect",
+      "effect": "This spell increases a subject’s MR against illusory effects. It grants a bonus to every MR Check made against an illusion spell. The effects of this spell do not overlap, and subjects may be affected by it only once.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 7,
-        "effect": "RMys +20",
+        "effect": " +20 MR.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 100,
         "requiredIntelligence": 10,
-        "effect": "RMys +40",
+        "effect": " +40 MR.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "RMys +60",
+        "effect": " +60 MR.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 140,
         "requiredIntelligence": 14,
-        "effect": "RMys +80",
+        "effect": " +80 MR.",
         "retention": 15
       },
       "withRetention": true,
@@ -472,33 +472,33 @@
     {
       "spellId": 14,
       "bookId": 10,
-      "name": "Détecter les Mensonges",
+      "name": "Detect Lie",
       "level": 46,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Détecte automatiquement tous les mensonges dits en présence du sorcier, Chaque fois qu'une personne ment consciemment devant le sorcier, elle doit effectuer un test de RMys ou RPsy, sous peine qu'il se rende compte que la personne n'a pas dit la vérité, Si quelqu'un ne sait pas qu'il ne dit pas la vérité, il n'est pas affecté par ce sort.",
+      "type": "Automatic",
+      "effect": "This spell automatically detects any lie told in the caster’s presence. Every time a lie is deliberately told before him, the liar must make a MR or PsR Check to prevent the caster from finding out. Lies unknowingly told are not detected by the spell.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 7,
-        "effect": "RMys ou RPsy 120",
+        "effect": " MR or PsR 120.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 120,
         "requiredIntelligence": 10,
-        "effect": "RMys ou RPsy 140",
+        "effect": " MR or PsR 140.",
         "retention": 15
       },
       "advancedGrade": {
         "zeon": 160,
         "requiredIntelligence": 13,
-        "effect": "RMys ou RPsy 160",
+        "effect": " MR or PsR 160.",
         "retention": 20
       },
       "arcaneGrade": {
         "zeon": 200,
         "requiredIntelligence": 15,
-        "effect": "RMys ou RPsy 180",
+        "effect": " MR or PsR 180.",
         "retention": 20
       },
       "withRetention": true,
@@ -507,33 +507,33 @@
     {
       "spellId": 15,
       "bookId": 10,
-      "name": "Illusion Fantasmatique",
+      "name": "Ghostly Illusion",
       "level": 50,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Crée un ou plusieurs objets soumis aux règles de ce sort. Le sorcier peut créer tout ce qu'il désire comme chose inanimée (épée, mur ...) tant que sa Présence ne dépasse pas une valeur fixée par le rang du sort. Il faut réussir un test de RMys pour ne pas être affecté par l'illusion. Si le test de Résistance échoue, les personnages affectés n'ont droit à un nouveau test que quand ils trouvent une bonne raison de douter de la réalité de l'illusion.",
+      "type": "Automatic",
+      "effect": "This spell creates one or several objects governed by the Ghostly Spell rules. Any inanimate object the caster desires can be produced, from a sword to a wall, provided that its theoretical Presence does not exceed the limit. A character or creature can avoid the spell and ignore the illusion if he or it passes a MR Check Anyone can make another Check if he has reason to doubt the reality of the object. Created Animals cannot be above Level 5.",
       "initialGrade": {
         "zeon": 120,
         "requiredIntelligence": 6,
-        "effect": "RMys 120 / Présence maximale 60",
+        "effect": " MR 120 / Max Presence 60.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 9,
-        "effect": "RMys 150 / Présence maximale 80",
+        "effect": " MR 150 / Max Presence 80.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "RMys 180 / Présence maximale 100",
+        "effect": " MR 180 / Max Presence 100.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "RMys 210 / Présence maximale 120",
+        "effect": " MR 210 / Max Presence 120.",
         "retention": 15
       },
       "withRetention": true,
@@ -542,33 +542,33 @@
     {
       "spellId": 16,
       "bookId": 10,
-      "name": "Fausser la Détection",
+      "name": "Distort Detection",
       "level": 52,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Ce sort permet à l'i1iusionniste d'altérer le résultat de n'importe quelle détection de caractère surnaturel, réalisée dans un rayon déterminé par le rang du sort. Il peut fausser les informations comme il le désire, en augmentant ou en diminuant le potentiel d'une créature ou d'un objet, ses capacités ou sa localisation. Le personnage qui réalise la détection doit réussir un test de RMys pour ne pas être trompé.\nCe sort ne fonctionne pas contre les individus se trouvant à l'intérieur de la zone, mais uniquement contre la détection surnaturelle. Par conséquent, si une personne tente de détecter quelque chose qui se trouve à l'intérieur, même si elle se trouve physiquement hors de la zone d'effet du sort, elle doit aussi réussir le test de RMys. Ce serait par exemple le cas d'un sorcier qui, à des kilomètres de distance, tenterait de découvrir magiquement l'illusionniste ou ceux qui l'accompagnent. De même, comme ce sort affecte directement la détection, celui qui l'utilise ne s'aperçoit même pas qu'il a dû effectuer un test de Résistance.",
+      "type": "Effect",
+      "effect": "Casting this spell, the caster distorts the result of any supernatural detection methods in a radius. The distortion may be applied in any possible way; increasing or decreasing the potential, abilities, or situation of a creature or object. The character using the supernatural detection will have to pass a MR Check to avoid deception. This spell works on the supernatural detection itself and not on the individuals inside an area. Therefore, characters attempting to detect something inside the area must pass the MR even if they are physically outside the spell’s radius. An example of this could be a spellcaster trying to locate an illusionist miles away, through magic.",
       "initialGrade": {
         "zeon": 120,
         "requiredIntelligence": 7,
-        "effect": "RMys 120 / 10 m de rayon",
+        "effect": " MR 120 / 10m/11yd area.",
         "retention": 15
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 10,
-        "effect": "RMys 140 / 50 m de rayon",
+        "effect": " MR 140 / 50m/54yd area.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 13,
-        "effect": "RMys 180 / 250 m de rayon",
+        "effect": " MR 180 / 250m/273yd area.",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "RMys 220 / 500 m de rayon",
+        "effect": " MR 220 / 500m/546yd area.",
         "retention": 30
       },
       "withRetention": true,
@@ -577,33 +577,33 @@
     {
       "spellId": 17,
       "bookId": 10,
-      "name": "Mensonge",
+      "name": "Lie",
       "level": 56,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Quand un illusionniste lance ce sort, il incite tous ceux qui l'écoutent à croire à ses mensonges, aussi absurdes ou illogiques qu'ils soient. Cela ne signifie pas que les cibles affectées lui obéiront forcément, mais elles se sentiront portées à le croire. Une personne peut éviter les effets de ce sort en réussissant un test de RMys. Les personnes affectées ont droit à un nouveau test de Résistance à chaque heure. Si le mensonge est vraiment incroyable ou qu'une personne est avertie contre ce pouvoir, elle peut bénéficier d'un bonus de +40 à son test.",
+      "type": "Spiritual",
+      "effect": "This spell allows the caster to convince his audience to believe anything he says, no matter how ridiculous or absurd. The affected parties will not necessarily obey orders from him, but they will believe what he says to be true.Any given subject can avoid the result of the spell by passing a MR Check. Characters are permitted a new Resistance roll each hour. In the case of an exceptionally unbelievable lie, or if the subjects have been warned of this ability, they may apply a +40 bonus to their MR Check.",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 8,
-        "effect": "RMys 100",
+        "effect": " MR 100.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 120,
         "requiredIntelligence": 11,
-        "effect": "RMys 120",
+        "effect": " MR 120.",
         "retention": 15
       },
       "advancedGrade": {
         "zeon": 140,
         "requiredIntelligence": 14,
-        "effect": "RMys 140",
+        "effect": " MR 140.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 160,
         "requiredIntelligence": 16,
-        "effect": "RMys 160",
+        "effect": " MR 160.",
         "retention": 20
       },
       "withRetention": true,
@@ -612,68 +612,68 @@
     {
       "spellId": 18,
       "bookId": 10,
-      "name": "Détruire Illusions",
+      "name": "Destroy Illusions",
       "level": 60,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Détruit un sort actif appartenant à la voie de l'Illusion, du moment que sa valeur Zéonique ne dépasse pas une valeur fixée par le rang du sort.",
+      "type": "Effect",
+      "effect": "This spell destroys any other Illusion spell .",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 7,
-        "effect": "Valeur zéonique maximale de 80",
+        "effect": " Max Zeon 80.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 10,
-        "effect": "Valeur zéonique maximale de 140",
+        "effect": " Max Zeon 140.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 300,
         "requiredIntelligence": 12,
-        "effect": "Valeur zéonique maximale de 200",
+        "effect": " Max Zeon 200.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 500,
         "requiredIntelligence": 15,
-        "effect": "Valeur zéonique maximale de 300",
+        "effect": " Max Zeon 300.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 19,
       "bookId": 10,
-      "name": "Créer Être Fantasmatique",
+      "name": "Ghostly Being",
       "level": 62,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Crée un être fantasmatique de niveau variable. Cet être illusoire est développé selon les désirs du sorcier comme une créature d'Entre Mondes, en utilisant les règles du Chapitre 26.\nCe sort fonctionne en tout point comme Créer Être Illusoire (Illusion niveau 40). Il dispose d'une zone d'action limitée par le rang du sort et tous ceux qui échouent à un test de RMys sont soumis aux règles des sorts fantasmatiques. Il n'est possible pour un personnage d'effectuer un nouveau test que s'il en vient à douter de l'authenticité de la créature. Ce fantasme peut avoir au maximum trois niveaux de plus que le sorcier.",
+      "type": "Effect",
+      "effect": "This spell creates a ghostly being fashioned according to the caster’s desires using the Being between Worlds rules in Chapter 26. Ghostly being functions exactly as the spell Create Illusory Being (Illusion level 40), except those who fail the MR Check are subjected to the rules of Ghostly Spells. A character might receive a new Check if he had reason to doubt the authenticity of the entity. The illusion may be a maximum of three levels higher than the caster. Has same area limitations of Create Illusory Being.",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 8,
-        "effect": "RMys 120 / Niveau 2 / 20 m de rayon",
+        "effect": " MR 120 / Level 2 / 20m/21yd area.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 120,
         "requiredIntelligence": 11,
-        "effect": "RMys 140 / Niveau 4 / 50 m de rayon",
+        "effect": " MR 140 / Level 4 / 50m/54yd area.",
         "retention": 15
       },
       "advancedGrade": {
         "zeon": 150,
         "requiredIntelligence": 13,
-        "effect": "RMys 160 / Niveau 7 / 100 m de rayon",
+        "effect": " MR 160 / Level 7 / 100m/109yd area.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 200,
         "requiredIntelligence": 16,
-        "effect": "RMys 180 / Niveau 10 / 250 m de rayon",
+        "effect": " MR 180 / Level 10 / 250m/273yd area.",
         "retention": 20
       },
       "withRetention": true,
@@ -682,33 +682,33 @@
     {
       "spellId": 20,
       "bookId": 10,
-      "name": "Crédulité",
+      "name": "Gullibility",
       "level": 66,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Affaiblit les Résistances surnaturelles d'une cible contre les sorts d'Illusion. La personne affectée doit réussir un test de RMys sous peine de subir un malus à sa RMys et sa RPsy égal à la marge d'échec. Ce malus ne fonctionne que contre les sorts d'Illusion.",
+      "type": "Spiritual",
+      "effect": "This spell weakens a target’s Resistance against illusion spells. The affected party must pass a MR check or suffer a penalty to future MR and PsR Checks against illusion spells equal to his Failure Level. This penalty will only work against spells of this Path.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 7,
-        "effect": "RMys 140",
+        "effect": " MR 140.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 100,
         "requiredIntelligence": 10,
-        "effect": "RMys 160",
+        "effect": " MR 160.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 140,
         "requiredIntelligence": 12,
-        "effect": "RMys 180",
+        "effect": " MR 180.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 200,
         "requiredIntelligence": 14,
-        "effect": "RMys 200",
+        "effect": " MR 200.",
         "retention": 15
       },
       "withRetention": true,
@@ -717,68 +717,68 @@
     {
       "spellId": 21,
       "bookId": 10,
-      "name": "Attaque Fantasmatique",
+      "name": "Ghostly Attack",
       "level": 70,
       "actionType": "Active",
-      "type": "Att., Animique",
-      "effect": "Projette une décharge d'énergie fantasmatique de Dégâts 100. Ces dégâts suivent les règles des dégâts fantasmatiques. Il faut réussir un test de RMys contre 120 pour résister à ses effets. Comme cette attaque n'est pas réelle, on ne peut pas l'utiliser pour un choc contre d'autres décharges.",
+      "type": "Attack, Spiritual",
+      "effect": "This spell projects a discharge of energy that uses the Ghostly Spell rules. Character’s can avoid the damage of this spell by passing a MR Check. Given the attack’s unreal status, it can not clash against other discharges. Caster may choose the Attack Type.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 6,
-        "effect": "RMys 140 / Dégâts de base 100",
+        "effect": " MR 140 / Damage 100.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 140,
         "requiredIntelligence": 9,
-        "effect": "RMys 140 / Dégâts de base 180",
+        "effect": " MR 160 / Damage 180.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 220,
         "requiredIntelligence": 12,
-        "effect": "RMys 140 / Dégâts de base 250",
+        "effect": " MR 180 / Damage 250.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "RMys 140 / Dégâts de base 350",
+        "effect": " MR 200 / Damage 300.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 22,
       "bookId": 10,
-      "name": "Le Don du Mensonge",
+      "name": "The Gift of Lying",
       "level": 72,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "L'illusionniste a le pouvoir d'obliger un individu à mentir. Il peut contraindre sa cible à mentir sur absolument tout ce qu'elle dit ou uniquement sur un thème précis. La personne affectée ne peut pas indiquer aux autres qu'elle ment ni donner des informations authentiques sur le thème choisi. Il faut réussir un test de RMys ou RPsy pour résister à cet effet. Si la cible rate ce test, elle ne peut le retenter qu'une fois par jour.",
+      "type": "Spiritual",
+      "effect": "This spell can force an individual to lie. The illusionist can compel the target to lie in absolutely everything he says, or about a specific subject matter. The affected party is not able to indicate the deceptive nature of his words or convey any truthful information. A character can avoid this spell’s effects by passing a MR or PsR Check. Characters who fail this Check receive a new check each day.",
       "initialGrade": {
         "zeon": 120,
         "requiredIntelligence": 8,
-        "effect": "RMys ou RPsy 140",
+        "effect": " MR or PsR 140.",
         "retention": 15
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 10,
-        "effect": "RMys ou RPsy 160",
+        "effect": " MR or PsR 160.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 240,
-        "requiredIntelligence": 13,
-        "effect": "RMys ou RPsy 180",
+        "requiredIntelligence": 14,
+        "effect": " MR or PsR 180.",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 320,
         "requiredIntelligence": 16,
-        "effect": "RMys ou RPsy 200",
+        "effect": " MR or PsR220.",
         "retention": 35
       },
       "withRetention": true,
@@ -787,33 +787,33 @@
     {
       "spellId": 23,
       "bookId": 10,
-      "name": "Vie Illusoire",
+      "name": "Illusory Life",
       "level": 76,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Ce sort introduit de faux souvenirs dans l'esprit d'un individu. L'illusionniste peut altérer les souvenirs de sa cible et y introduire tous les nouveaux faits qu'il désire. Une personne influencée par ce sort ne peut pas faire la différence entre les souvenirs illusoires et les siens propres. Il faut réussir un test de RMys ou RPhy pour résister à cet effet. Si la cible échoue au test de Résistance, elle n'aura droit à un nouveau test que si elle trouve des raisons valables lui permettant de penser que ces souvenirs sont faux.",
+      "type": "Spiritual",
+      "effect": "This spell introduces fake memories into an individual’s mind. The illusionist is able to alter memories and include as much new information as he desires. Once under the effects of this spell, characters can not distinguish illusory memories from their own real experiences. The MR or PsR Check for resisting this spell is based on the spell level. Characters receive a new roll only upon finding a reason to doubt the authenticity of their recollections.",
       "initialGrade": {
         "zeon": 140,
         "requiredIntelligence": 8,
-        "effect": "RMys ou RPsy 140",
+        "effect": " MR or PsR 140.",
         "retention": 15
       },
       "intermediateGrade": {
         "zeon": 200,
         "requiredIntelligence": 10,
-        "effect": "RMys ou RPsy 160",
+        "effect": " MR or PsR 160.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 260,
         "requiredIntelligence": 13,
-        "effect": "RMys ou RPsy 180",
+        "effect": " MR or PsR 180.",
         "retention": 30
       },
       "arcaneGrade": {
         "zeon": 320,
         "requiredIntelligence": 16,
-        "effect": "RMys ou RPsy 200",
+        "effect": " MR or PsR 200.",
         "retention": 35
       },
       "withRetention": true,
@@ -822,33 +822,33 @@
     {
       "spellId": 24,
       "bookId": 10,
-      "name": "Illusion Majeure",
+      "name": "Major Illusion",
       "level": 80,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Ce sort crée une énorme illusion qui affecte les cinq sens humains. Le sort se manifeste sur une zone déterminée par le rang du sort, à l'intérieur de laquelle les personnes affectées voient et entendent tout ce que désire le sorcier. Il peut par exemple créer l'apparence d'un village inhabité à la place d'une cité prospère. Toute personne entrant dans la zone est automatiquement affectée par l'illusion si elle ne réussit pas un test de RMys. En cas d'échec, ses sens s'adaptent au mensonge",
+      "type": "Spiritual",
+      "effect": "This spell creates an enormous illusion affecting all five human senses. The spell develops within a radius within which people see, hear, feel, smell, and taste whatever the spellcaster desires. For instance, he may trick someone into thinking a whole town is deserted, when it is actually a thriving city. Any character entering the area of this spell is automatically affected by the illusion unless he passes a MR Check. Affected characters only receive a new Check upon encountering a reason to doubt the illusory world around them.",
       "initialGrade": {
         "zeon": 250,
         "requiredIntelligence": 9,
-        "effect": "RMys 120 / 1 km de rayon",
-        "retention": 20
+        "effect": " MR 120 / 1km/1093yd area.",
+        "retention": 25
       },
       "intermediateGrade": {
         "zeon": 350,
         "requiredIntelligence": 12,
-        "effect": "RMys 160 / 5 km de rayon",
+        "effect": " MR 160 / 5km/3.1mile area.",
         "retention": 35
       },
       "advancedGrade": {
         "zeon": 500,
         "requiredIntelligence": 15,
-        "effect": "RMys 200 / 10 km de rayon",
+        "effect": " MR 200 / 10km/6.2mile area.",
         "retention": 50
       },
       "arcaneGrade": {
         "zeon": 700,
         "requiredIntelligence": 18,
-        "effect": "RMys 240 / 20 km de rayon",
+        "effect": " MR 240 / 20km/12.4mile area.",
         "retention": 70
       },
       "withRetention": true,
@@ -857,68 +857,68 @@
     {
       "spellId": 25,
       "bookId": 10,
-      "name": "Fixer Illusion",
+      "name": "Fix Illusion",
       "level": 82,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Fixe une illusion à la réalité de façon permanente. En termes de jeu, ce sort rajoute une certaine quantité de points de Zéon au maintien d'un sort de la voie d'Illusion. Cette quantité ne se rajoute pas à la valeur du sort, elle sert uniquement à payer son maintien. Ce sort ne peut être utilisé sur les sorts d'Accès Libre, même s'ils sont inclus dans la voie de l'Illusion.",
+      "type": "Effect",
+      "effect": "This spell creates a permanent illusion. In game terms, it adds Zeon Maintenance Points to any spell from the Path of Illusion. Bear in mind that this amount will not serve to increase the power of the spell. It only provides the caster with the points to maintain the illusion constantly. It cannot be used in connection with Free Access spells – even if these spells are from Illusion slots.",
       "initialGrade": {
         "zeon": 250,
         "requiredIntelligence": 9,
-        "effect": "+1 000 points de Zéon pour maintenir",
-        "retention": 0
+        "effect": " +1000 Zeon Maintenance.",
+        "retention": 50
       },
       "intermediateGrade": {
         "zeon": 360,
         "requiredIntelligence": 12,
-        "effect": "+1 500 points de Zéon pour maintenir",
-        "retention": 0
+        "effect": " +1500 Zeon Maintenance.",
+        "retention": 70
       },
       "advancedGrade": {
         "zeon": 450,
         "requiredIntelligence": 15,
-        "effect": "+3 000 points de Zéon pour maintenir",
-        "retention": 0
+        "effect": " +3000 Zeon Maintenance.",
+        "retention": 100
       },
       "arcaneGrade": {
         "zeon": 600,
         "requiredIntelligence": 18,
-        "effect": "+5 000 points de Zéon pour maintenir",
-        "retention": 0
+        "effect": " +5000 Zeon Maintenance.",
+        "retention": 140
       },
-      "withRetention": false,
-      "dailyRetention": false
+      "withRetention": true,
+      "dailyRetention": true
     },
     {
       "spellId": 26,
       "bookId": 10,
-      "name": "Illusion de Sens",
+      "name": "Illusion of the Senses",
       "level": 86,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Le sorcier a le pouvoir de faire croire à un individu n'importe quelle chose qu'il désire. Le sorcier ne change pas la réalité, mais la personne affectée considère que l'illusion est réelle en tout point, et réagit en fonction de cela. Si, par exemple, on utilise ce sort pour faire croire à quelqu'un qu'il n'a ni bras ni jambes, il cesse de sentir ses membres et tombe au sol en pensant qu'il les a vraiment perdus. Un autre exemple : l'illusion peut être lancée sur un combattant blessé, qui subit des malus, pour lui faire croire non seulement qu'il est en pleine forme mais qu'il bénéficie aussi d'un bonus de +50 à toutes ses actions. Si on dit à une personne qu'elle est morte, elle tombe immédiatement inconsciente. Un test de RMys ou RPsy permet de résister aux effets de ce sort. Un personnage affecté n'a droit à aucun nouveau test de Résistance, sauf s'il a la conviction d'être victime d'une tromperie.",
+      "type": "Spiritual",
+      "effect": "The caster has the ability to lead a subject to believe whatever he wishes. Though the caster does not actually modify reality, his spell convinces an affected character that an illusion is so real, that he will react as if it were true in every aspect. For example, if an illusionist wants to trick somebody into thinking he has no legs or arms, the subject will lose all sense of his limbs and fall to the ground in the belief that he has, indeed, lost them. Another example of this could be a fighter suffering from wounds who is led to believe, not only that he is in perfect shape, but also that he possesses a +50 All Action Bonus. A character convinced that he is dead automatically lapses into unconsciousness. The MR or PsR Difficulty for resisting the spell based on spell level. A character receives a new Resistance roll only upon becoming convinced he is being deceived.",
       "initialGrade": {
         "zeon": 200,
         "requiredIntelligence": 10,
-        "effect": "RMys ou RPsy 120",
+        "effect": " MR or PsR 120.",
         "retention": 20
       },
       "intermediateGrade": {
         "zeon": 250,
         "requiredIntelligence": 12,
-        "effect": "RMys ou RPsy 150",
+        "effect": " MR or PsR 150.",
         "retention": 25
       },
       "advancedGrade": {
         "zeon": 300,
         "requiredIntelligence": 14,
-        "effect": "RMys ou RPsy 190",
+        "effect": " MR or PsR 190.",
         "retention": 30
       },
       "arcaneGrade": {
         "zeon": 350,
         "requiredIntelligence": 16,
-        "effect": "RMys ou RPsy 220",
+        "effect": " MR or PsR 220.",
         "retention": 35
       },
       "withRetention": true,
@@ -927,33 +927,33 @@
     {
       "spellId": 27,
       "bookId": 10,
-      "name": "Inexistence",
+      "name": "Non-Existence",
       "level": 90,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Le personnage ou l'objet ciblé par ce sort ne peut plus être perçu par aucun des sens naturels. Par conséquent, on ne peut le voir, l'entendre, le sentir, le toucher ou le goûter d'aucune façon, bien qu'il reste matériel et ancré dans la réalité. De plus, tant que le sort est maintenu, le personnage ne laisse pas non plus de traces ou d'empreintes visibles. La seule façon de se rendre compte de sa présence consiste à utiliser des méthodes de détection surnaturelles, magiques, psychiques ou du Ki. Toute personne pouvant ressentir la présence du personnage ciblé doit automatiquement effectuer un test de RMys si elle veut pouvoir le détecter. En cas d'échec à ce test, on peut le retenter que chaque fois que l'on a une bonne raison de penser que quelqu'un se trouve à proximité.",
+      "type": "Automatic",
+      "effect": "The target of this spell cannot be perceived by any of the natural senses – although he still has a material existence. Others cannot see, smell, hear, touch, or taste his presence in any way. In addition to this, the target does not leave any visible trace or marks behind while the spell is maintained. The only ways to realize a Non-existent character’s presence is via supernatural (magical or Ki related) detection. A character can resist the effects of this spell by passing a MR Check. Those subjects failing the Check are entitled to repeat it every time they have reason to believe there is someone around. Psychic Detections can also work.",
       "initialGrade": {
         "zeon": 250,
         "requiredIntelligence": 11,
-        "effect": "RMys 120",
+        "effect": " MR 120.",
         "retention": 25
       },
       "intermediateGrade": {
         "zeon": 300,
         "requiredIntelligence": 13,
-        "effect": "RMys 140",
+        "effect": " MR 140.",
         "retention": 30
       },
       "advancedGrade": {
         "zeon": 400,
         "requiredIntelligence": 15,
-        "effect": "RMys 160",
+        "effect": " MR 160.",
         "retention": 40
       },
       "arcaneGrade": {
         "zeon": 500,
         "requiredIntelligence": 17,
-        "effect": "RMys 180",
+        "effect": " MR 180.",
         "retention": 50
       },
       "withRetention": true,
@@ -962,33 +962,33 @@
     {
       "spellId": 28,
       "bookId": 10,
-      "name": "Mystifier la Mort",
+      "name": "Deceive Death",
       "level": 92,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "L'illusionniste parvient grâce à ce sort à tromper la mort elle-même. Tant qu'il reste actif, l'individu affecté par ce sort ne pourra pas mourir, le flux des âmes ignorant sa présence et étant incapable de le réclamer. Bien que son esprit ne sorte pas de son corps, sa forme physique peut être détruite et le personnage continuera de subir tous les effets négatifs infligés par les dégâts. Ce sort ne protège pas contre les effets qui détruisent l'âme. Le rang du sort détermine le niveau maximum que ne peut dépasser le personnage pour pouvoir être protégé par ce sort.",
+      "type": "Effect",
+      "effect": "A person affected by this spell cannot die; the Flow of Souls will ignore his presence and thus be unable to claim him. However, his physical form is vulnerable to destruction, and even though his spirit will not abandon his body, he will still suffer any adverse effects produced by damage. This spell does not offer protection from soul- destroying effects. The maximum level this spell affects is based on spell level.",
       "initialGrade": {
         "zeon": 500,
-        "requiredIntelligence": 13,
-        "effect": "Niveau 5",
+        "requiredIntelligence": 10,
+        "effect": " Level 5.",
         "retention": 100
       },
       "intermediateGrade": {
         "zeon": 800,
         "requiredIntelligence": 15,
-        "effect": "Niveau 10",
+        "effect": " Level 10.",
         "retention": 160
       },
       "advancedGrade": {
         "zeon": 1200,
         "requiredIntelligence": 17,
-        "effect": "Niveau 15",
+        "effect": " Level 15.",
         "retention": 240
       },
       "arcaneGrade": {
         "zeon": 1500,
         "requiredIntelligence": 19,
-        "effect": "Niveau 20",
+        "effect": " Level 20.",
         "retention": 300
       },
       "withRetention": true,
@@ -997,33 +997,33 @@
     {
       "spellId": 29,
       "bookId": 10,
-      "name": "Monde de Mensonges",
+      "name": "World of Lies",
       "level": 96,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Ce sort crée une réalité de mensonges que le sorcier peut modifier à sa guise. Il peut créer une cité à partir de rien et la transformer le round suivant en un lieu paradisiaque. Son imagination constitue la seule limite. Ce sort affecte une zone dont le rayon est fixé par le rang du sort, et à l'intérieur de laquelle toutes les illusions ont une nature fantasmatique. Tous ceux qui entrent dans cette zone doivent réussir un test de RMys pour ne pas en subir les effets. Ce sort permet aussi de créer des créatures irréelles qui habitent le Monde des Mensonges, de nature fantasmatique comme toutes les autres illusions. Le sorcier dispose d'un certain nombre de niveaux à répartir entre ces entités, mais aucune ne pourra dépasser la moitié de son propre niveau, arrondi au supérieur. Les fantasmes seront développés comme des créatures d'Entre Monde, en utilisant les règles de conception des créatures. Ces créatures font preuve d'une intelligence et d'une vie (fictives) et peuvent agir de façon indépendante en suivant les ordres que leur seigneur leur a donnés. Les personnes présentes à l'intérieure de la zone d'effet ayant échoué au test de Résistance ne peuvent le refaire que si elles commencent à nourrir des doutes sur la réalité de ce qui les entoure.",
+      "type": "Automatic",
+      "effect": "This spell creates an artificial reality that the caster can modify as he pleases. He might create a city out of nowhere and turn it into a fantasy land in the next turn, for example. Imagination is the limit. This spell covers a one mile radius within which all illusions have Ghostly Spell status. Everyone entering the spell’s radius must pass a MR Check or fall beneath the power of this spell. World of Lies also allows the caster to create unreal creatures to populate it. These creatures exist as illusions of a Ghostly nature. The caster has levels at his disposal to distribute among these entities—although none of them can have more than half of the caster's level rounded up. The entities are fashioned according to the caster’s desires using the Beings Between Worlds rules in Chapter 26. These creatures have illusory intelligence and life; they are able to act independently following the orders given by their master. Those characters entering the area of influence and failing the Resistance Check can only repeat it when encountering doubts on the reality of their surroundings.Casting Level Base Intermediate Advanced Arcane",
       "initialGrade": {
         "zeon": 500,
         "requiredIntelligence": 13,
-        "effect": "RMys 140 / 10 km de rayon / 100 niveaux à répartir",
+        "effect": " MR 140 / 1km/1093yd area / 100 Levels to distribute.",
         "retention": 50
       },
       "intermediateGrade": {
         "zeon": 900,
         "requiredIntelligence": 15,
-        "effect": "RMys 180 / 100 km de rayon / 500 niveaux à répartir",
+        "effect": " MR 180 / 100km/62.1mile area / 500 Levels to distribute.",
         "retention": 90
       },
       "advancedGrade": {
         "zeon": 1400,
         "requiredIntelligence": 17,
-        "effect": "RMys 220 / 1 000 km de rayon / 1 500 niveaux à répartir",
+        "effect": " MR 220 / 1000km/621.3mile area / 1500 Levels to distribute.",
         "retention": 140
       },
       "arcaneGrade": {
         "zeon": 2000,
         "requiredIntelligence": 19,
-        "effect": "RMys 260 / 10  000km de rayon / 5 000 niveaux à répartir",
+        "effect": " MR 260 / 10000km/6213.7mile area / 5000 Levels to distribute.",
         "retention": 200
       },
       "withRetention": true,
@@ -1032,37 +1032,37 @@
     {
       "spellId": 30,
       "bookId": 10,
-      "name": "La Fausse Réalité",
+      "name": "False Reality",
       "level": 100,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Ce sort trompe l'existence et rend réel un fait qui n'a jamais existé. On peut ainsi inventer des événements qui n'ont jamais eu lieu et qui ont des répercutions sur le présent. L'histoire n'est pas vraiment modifiée puisque ce sort change les choses au moment où elles se déroulent, mais très peu sont capables de faire la différence. Ce sortilège ne peut pas réaliser de choses impossibles, il ne peut qu'altérer les événements factices qui peuvent prendre place si le sorcier crée une situation appropriée.\nVoyons quelques exemples. Celui qui lance ce sort pourrait décider qu'un pan de montagne a bloqué un chemin parce que des brigands ont provoqué un éboulement quelques jours plus tôt. Par conséquent, La Fausse Réalité affecterait un groupe de brigands quelconques (si des individus précis ne sont pas désignés) et toutes les personnes qui voyagent par ce chemin en ce moment. Une autre possibilité : le sorcier pourrait affirmer qu'une entité terrible n'existant pas, qu'il décide d'appeler Ethon, est sur le point d'attaquer une cité tant qu'il peut justifier sa naissance en proclamant, par exemple, qu'elle a été créée par un puissant sorcier. Tout dépend de la créativité dont il fait preuve pour composer son mensonge.\nLa difficulté de la RMys de ce sort est difficile à calculer. Il faut chercher l'être ou l'objet avec la plus grande Résistance introduit dans le mensonge, ou affecté par ce mensonge. Dans le premier des exemples précédents, il semble naturel que les pierres ou le groupe de brigands fasse le test de RMys",
+      "type": "Automatic",
+      "effect": "This spell creates a distorted reality and makes something fake real. In this way, events that can have never taken place can be invented and made to produce effects upon the present. History is not really altered, since the spell only manages to change the status of things at the time it is cast. However, few people are able to tell the difference. The spell can not accomplish the impossible; it can only alter feasible events which are likely to happen if the appropriate situation is created by the caster.For example, the caster might say a certain mountain pass has been blocked due to a landslide caused by thieves making their escape. According to this, the False Reality spell would affect a random bunch of burglars and all individuals in the mountain pass at the time. Another example may be that the caster could claim that a non-existent entity, called Ethon, is about to destroy a city. He only needs to be able to justify the birth of the creature by saying, for instance, that it was created by a powerful sorcerer in the past. It is all up to the creativity he puts into the lie.Utilizing MR Checks for this spell is hard to do. It is necessary to find the being or object with the highest Resistance introduced “within the lie” or affected by it. In the first of the examples above, the burglars would make the MR Check.However, if a high-level individual crossed the pass at the time, he would use his Magic Resistance instead of the thieves. In the second example, a sorcerer powerful enough to create Ethon would be the one who do the Check. Whoever he is, the chosen individual may resist (disbelieve) this spell with a MR Check . The GM can adjust this Difficulty depending on the nature of the False Realty created. Extremely absurd events or circumstances should be easier to disbelieve.",
       "initialGrade": {
         "zeon": 600,
         "requiredIntelligence": 14,
-        "effect": "RMys 140",
+        "effect": " MR 140.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 1000,
         "requiredIntelligence": 16,
-        "effect": "RMys 180",
+        "effect": " MR 180.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 2000,
         "requiredIntelligence": 18,
-        "effect": "RMys 220",
+        "effect": " MR 220.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 3000,
         "requiredIntelligence": 19,
-        "effect": "RMys 240",
+        "effect": " MR 240.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     }
   ]
 }

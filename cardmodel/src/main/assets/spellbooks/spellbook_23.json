@@ -1,80 +1,80 @@
 {
   "bookId": 23,
-  "bookName": "Livre des Songes",
-  "description": "Songes est la voie de magie secondaire qui contrôle le monde onirique des rêveurs, ainsi que son reflet dans la Veille.",
+  "bookName": "Path of Dreams",
+  "description": "Dreams is the way of magic that controls the dream world of dreamers, as reflected in the Wake.",
   "primaryBookUnaccessibles": [
-    "Création",
+    "Creation",
     "Destruction",
-    "Eau",
-    "Feu",
-    "Terre."
+    "Water",
+    "Fire",
+    "Earth"
   ],
   "spells": [
     {
       "spellId": 1,
       "bookId": 23,
-      "name": "Sentir les Songes",
+      "name": "Feel the Dream",
       "level": 4,
       "actionType": "Active",
-      "type": "Détection",
-      "effect": "Grâce à ce sort, le sorcier est capable de localiser les énergies oniriques de tous les êtres qui rêvent près de lui. De plus, grâce à l'énergie qu'ils dégagent il pourra savoir si leurs rêves sont paisibles ou si ce sont au contraire de terribles cauchemars. Pour résister à la détection, les dormeurs doivent réussir une RMys.",
+      "type": "Spell Type: Detection",
+      "effect": "With this spell the caster is able to locate the energies of all beings dreaming, what they are dreaming about it, and in addition placid dreams, or terrible nightmares. To resist detection, sleepers must overcome an MR test.",
       "initialGrade": {
         "zeon": 40,
         "requiredIntelligence": 5,
-        "effect": "50 mètres / 120 RMys.",
+        "effect": " 50m/54yd radius / MR 120.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 60,
         "requiredIntelligence": 8,
-        "effect": "150 mètres / 160 RMys.",
+        "effect": " 150m/164yd radius / MR 160.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 80,
         "requiredIntelligence": 10,
-        "effect": "200 mètres / 200 RMys.",
+        "effect": " 200m/218yd radius / MR 200.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 100,
         "requiredIntelligence": 12,
-        "effect": "500 mètres / 240 RMys.",
+        "effect": " 500m/546yd radius / MR 240",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 2,
       "bookId": 23,
-      "name": "Sommeil Imperturbable",
+      "name": "Undisturbed Sleep",
       "level": 14,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Ce sort protège un personnage des -sorts ou effets de tous types en relation avec les rêves, lui accordant un bonus à la RMys et à la RPsy contre eux. De plus, ce sort évite que le personnage soit transporté de façon involontaire dans la Veille, lui accordant le même bonus à la RMys et à la RPsy si quelqu'un tentait de le forcer à s'y rendre contre sa volonté.",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: This spell protects a person from being assaulted by spells or effects of any kind related to dreams, giving a bonus to MR or PsR against such attacks. Also, this spell prevents the character from accidentally traveling to the wake, giving the same bonus to your resistance if someone tries to force them to go against their will.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 5,
-        "effect": "+40 à la RMys ou RPsy.",
+        "effect": " +40 MR or PsR.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 80,
         "requiredIntelligence": 8,
-        "effect": "+60 à la RMys ou RPsy.",
+        "effect": " +60 MR or PsR.",
         "retention": 5
       },
       "advancedGrade": {
         "zeon": 100,
         "requiredIntelligence": 10,
-        "effect": "+80 à la RMys ou RPsy.",
+        "effect": " +80 MR or PsR.",
         "retention": 5
       },
       "arcaneGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "+100 à la RMys ou RPsy.",
+        "effect": " +100 MR or PsR.",
         "retention": 10
       },
       "withRetention": true,
@@ -83,33 +83,33 @@
     {
       "spellId": 3,
       "bookId": 23,
-      "name": "Espionner les Songes",
+      "name": "Dream Spy",
       "level": 24,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Ce sort permet d'observer ce qui se passe dans les rêves d'un dormeur, qu'ils soient paisibles ou que ce soient des cauchemars. Il n'est pas possible d'intervenir dans ceux-ci mais on peut les voir de façon détaillée. Une personne peut résister en réussissant un test de RMys. Si elle échoue, elle n'a droit qu'à un nouvel essai par jour, à partir du moment où elle est consciente ou qu'elle suspecte qu'elle peut être affectée par un sortilège de ce type.",
+      "type": "Spell Type: Spiritual",
+      "effect": "Effect: This spell allows you to observe what is occurring in the dreams of a sleeper, whether they are quiet as nightmares. It is not possible to intervene in any way, but you see them in detail. A person can resist  by passing an MR test, but if it fails, only entitled to a new test each day if it is aware or suspects they may being affected by a spell like this.",
       "initialGrade": {
         "zeon": 60,
-        "requiredIntelligence": 6,
-        "effect": "140 RMys.",
+        "requiredIntelligence": 5,
+        "effect": " MR 140.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 80,
         "requiredIntelligence": 8,
-        "effect": "160 RMys.",
+        "effect": " MR 160.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 100,
         "requiredIntelligence": 10,
-        "effect": "180 RMys.",
+        "effect": " MR 180.",
         "retention": 10
       },
       "arcaneGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "200 RMys / Le lanceur peut créer une image matérielle des songes de l'individu affecté, permettant à n'importe quelle personne proche de lui de les voir.",
+        "effect": " MR 200 / caster can show an image of the affected individual's dreams, allowing any person next to him to see.",
         "retention": 15
       },
       "withRetention": true,
@@ -118,33 +118,33 @@
     {
       "spellId": 4,
       "bookId": 23,
-      "name": "Altérer les Songes",
+      "name": "Altering Dreams",
       "level": 34,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Grâce à ce sort, le sorcier peut altérer les songes (qu'ils soient bons ou mauvais) de toutes les personnes dans le rayon d'action déterminé par le Degré  du sortilège. Ce sort ne fonctionne que si le sorcier ne fait pas lui-même partie du songe, et il n'est pas possible de l'utiliser pour ses propres rêves ou dans la Veille. Ce sort n'affecte que les personnes endormies à ce moment et disparaît dès qu'elles se réveillent.",
+      "type": "Spell Type: Spiritual",
+      "effect": "With this spell the wizard has the ability to alter dreams (whether peaceful or nightmares) for everyone within the radius. This spell only works if the caster is \"outside\" the dream, and if they enter the dream or the wake the spell is not usable.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 7,
-        "effect": "100 RMys / 50 m de rayon.",
+        "effect": " MR 100 / 50 m radius.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 100,
         "requiredIntelligence": 9,
-        "effect": "120 RMys / 150 m de rayon.",
+        "effect": " MR 120 / 150m/164yd radius.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 11,
-        "effect": "140 RMys / 250 m de rayon.",
+        "effect": " MR 140 / 250m/273yd radius.",
         "retention": 10
       },
       "arcaneGrade": {
         "zeon": 140,
         "requiredIntelligence": 13,
-        "effect": "160 RMys / 500 m de rayon.",
+        "effect": " MR 160 / 500m/546yd radius.",
         "retention": 15
       },
       "withRetention": true,
@@ -153,33 +153,33 @@
     {
       "spellId": 5,
       "bookId": 23,
-      "name": "Noctambulisme",
+      "name": "Night Walker",
       "level": 44,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Grâce ce sortilège, le sorcier ou la personne désignée par celui-ci peut amener dans le monde son alter ego onirique, la forme que prend sa conscience le plus souvent lorsqu'il rêve. Ainsi, pendant que son corps est endormi, il peut se déplacer librement dans le monde sous la forme qu'il revêt dans ses songes. Pendant qu'une personne est affectée par ce sort et arpente le monde de cette façon, elle est invisible à l'œil humain (sauf pour ceux capables de voir les esprits) et ne fait aucun bruit. Elle est également complètement intangible et ne peut rien toucher. La distance maximale sur laquelle la personne affectée peut se séparer de son enveloppe corporelle est déterminée par le Degré  du sort. Si cette projection subit des dégâts de quelque type que ce soit, le sort est interrompu.",
+      "type": "Spell Type: Effect.",
+      "effect": "Effect: With this spell the caster or his target This can bring the world his dream consciousness, so while your physical body sleeps, can move freely around the world in the form of dreams. While someone is affected by this spell they are invisible to the naked eye (except those capable of seeing spirits) and make no noise.  At the same time they are completely intangible, and can not touch anything material. The maximum distance that the person can leave his physical body is determined by the level of the spell. If the walker receives any kind of damage the spell is broken.",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 10,
-        "effect": "Distance maximale 1 kilomètre.",
+        "effect": " 1km/1093yd maximum distance.",
         "retention": 30
       },
       "intermediateGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "Distance maximale 2 kilomètres / La personne affectée peut devenir visible à volonté et parler avec n'importe qui.",
+        "effect": " 2km/1.25mile maximum distance / The target may become visible at will and to speak with anyone.",
         "retention": 30
       },
       "advancedGrade": {
         "zeon": 140,
         "requiredIntelligence": 14,
-        "effect": "Distance maximale 5 kilomètres / Comme pour le Degré  Intermédiaire, mais le personnage peut altérer son aspect physique à volonté, prenant toute forme dont il pourrait rêver.",
+        "effect": "  5km/3mile maximum distance  / As intermediate, but the character can alter his physical appearance at will, acquiring any shape you can dream.",
         "retention": 40
       },
       "arcaneGrade": {
         "zeon": 160,
         "requiredIntelligence": 16,
-        "effect": "Distance illimitée / Comme pour le Degré  Avancé, mais la projection peut entrer dans le monde onirique de n'importe quel dormeur qu'elle croise, si le rêveur ne réussit pas un test de RMys contre 150.",
+        "effect": " Any Distance / As advanced degree, but walkers can enter the dream world oft hose sleeping if the dreamer fails an MR 150 test.",
         "retention": 40
       },
       "withRetention": true,
@@ -188,33 +188,33 @@
     {
       "spellId": 6,
       "bookId": 23,
-      "name": "Sommeil Éternel",
+      "name": "Eternal dream",
       "level": 54,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Ce terrible sort plonge sa victime dans un sommeil dont elle ne peut s'éveiller avant que le sorcier ne le décide, quoi qu'il arrive à son corps. Une personne affectée par ce sort a le droit de faire un test de Résistance par jour, mais en appliquant -40 à ses Résistances pour arriver à se réveiller.",
+      "type": "Spell Type: Spiritual.",
+      "effect": "Effect: This terrible spell binds its victim in a dream from which nothing can wake up the target until the caster desires, no matter what happens to your body. Anyone affected by this spell has the right to a resistance test once a day, but uses a -40 to their resistance to wake up if already under the influence of the spell.",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 7,
-        "effect": "80 RMys.",
+        "effect": " MR 80.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 140,
         "requiredIntelligence": 9,
-        "effect": "100 RMys.",
+        "effect": " MR 100.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 180,
         "requiredIntelligence": 11,
-        "effect": "120 RMys.",
+        "effect": " MR 120.",
         "retention": 20
       },
       "arcaneGrade": {
         "zeon": 240,
         "requiredIntelligence": 13,
-        "effect": "140 RMys.",
+        "effect": " MR 140.",
         "retention": 25
       },
       "withRetention": true,
@@ -223,33 +223,33 @@
     {
       "spellId": 7,
       "bookId": 23,
-      "name": "Déchirer la Membrane",
+      "name": "Barrier Tear",
       "level": 64,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Le sorcier crée un vortex dans la réalité qui lui permet d'ouvrir un portail vers la Veille.",
+      "type": "Spell Type: Effect.",
+      "effect": "Effect: The caster creates a vortex in reality establishing a portal to the wake.",
       "initialGrade": {
         "zeon": 200,
         "requiredIntelligence": 10,
-        "effect": "Le portail ne laisse passer que le sorcier et dans une seule direction.",
+        "effect": " The portal allows only the sorcerer, and is only one direction.",
         "retention": 40
       },
       "intermediateGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "Le portail peut être traversé par n'importe quel type et nombre de créatures, mais dans une seule direction.",
+        "effect": " The portal can be passed by any kind of being, but only in one direction.",
         "retention": 50
       },
       "advancedGrade": {
         "zeon": 280,
         "requiredIntelligence": 14,
-        "effect": "Comme pour le Degré  Intermédiaire, mais le portail peut être utilisé dans les deux sens.",
+        "effect": " As in intermediate grade, but the portal can be used in both directions.",
         "retention": 60
       },
       "arcaneGrade": {
         "zeon": 320,
         "requiredIntelligence": 16,
-        "effect": "Comme pour le Degré  Avancé, mais le sorcier peut déterminer librement qui peut traverser le portail ou s'il faut éprouver un sentiment ou posséder une qualité spécifique pour l'ouvrir.",
+        "effect": " As the advanced degree, but the sorcerer can determinewho can freely cross the portal or require some special quality to open it.",
         "retention": 70
       },
       "withRetention": true,
@@ -258,68 +258,68 @@
     {
       "spellId": 8,
       "bookId": 23,
-      "name": "Bannir dans la Veille",
+      "name": "Banish to the Wake",
       "level": 74,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Ce sort permet d'arracher une entité au monde terrestre et de renvoyer dans un endroit au hasard dans la Veille. Le lanceur peut choisir de faire voyager uniquement le subconscient onirique de la personne affectée corps restant endormi pendant que son esprit est envoyé dans la Veille). Si elle dormait déjà elle ne pourra pas remarquer le saut dimensionnel, mais si a était éveillée son corps tombera dans un profond sommeil. Si ce sortilège est utilisé pour affecter des créatures propres à la Veille, elles sont alors complétement entraînées. Pour y résister il faut réussir un test de RMys d'une difficulté déterminée par le Degré  du Sort.",
+      "type": "Spell Type: Spiritual.",
+      "effect": "Effect: This spell allows you to banish a person or being to a random place in the wake. The caster only to sends the subconscious dream of a person affected (ie, your body remains asleep while your mind goes to the Wake). If the target is asleep when the spell is cast they will not the feel dimensional jump, if he was awake his body fall into a deep sleep. It can also affect creatures that are from the wake banishing them completely. To resist exceed an MR test.",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 10,
-        "effect": "100 RMys.",
+        "effect": " MR 100.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "120 RMys.",
+        "effect": " MR 120.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 140,
         "requiredIntelligence": 14,
-        "effect": "140 RMys.",
+        "effect": " MR 140.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 160,
         "requiredIntelligence": 16,
-        "effect": "160 RMys.",
+        "effect": " MR 160.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 9,
       "bookId": 23,
-      "name": "Entre Rêve et Réalité",
+      "name": "Between Dreams and Reality",
       "level": 84,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Permet au sorcier d'altérer les liens entre le monde réel et la Veille, lui permettant temporairement de fondre ces deux aspects de la réalité en un seul. Les créatures qui entrent dans cette zone resteront cependant \"\"de leur côté\"\", car en sortant de la zone affectée elles seront toujours \"\"de leur côté\"\" (c'est-à-dire qu'une créature de la Veille continuera sur son plan d'existence en traversant la zone affectée par le sort). Toutefois, les créatures qui ont des pouvoirs spéciaux dans la Veille les conserveront dans cette zone.",
+      "type": "Spell Type: Effect.",
+      "effect": "Allows the caster to alter the links between the real world and the Wake, allowing him to temporarily fuse both realities into one. The beings that come into that area will remain \"on your side\" of reality (ie, the Wake will be on your plane of existence across the area affected by the spell). However, the creatures that have powers Special  to the Wake keep them while inside the spell radius.",
       "initialGrade": {
         "zeon": 400,
         "requiredIntelligence": 13,
-        "effect": "100 m de rayon.",
+        "effect": " 100m/109yd500 radius.",
         "retention": 80
       },
       "intermediateGrade": {
         "zeon": 500,
         "requiredIntelligence": 15,
-        "effect": "500 m de rayon.",
+        "effect": " 500m/546yd radius.",
         "retention": 100
       },
       "advancedGrade": {
         "zeon": 700,
         "requiredIntelligence": 17,
-        "effect": "1 km de rayon. Arcane",
+        "effect": " 1km/1093yd radius.",
         "retention": 140
       },
       "arcaneGrade": {
         "zeon": 900,
         "requiredIntelligence": 19,
-        "effect": "3 km de rayon.",
+        "effect": " 3km/1.8mile  radius.",
         "retention": 180
       },
       "withRetention": true,
@@ -328,33 +328,33 @@
     {
       "spellId": 10,
       "bookId": 23,
-      "name": "Rendre les Rêves Réels",
+      "name": "Making dreams come true",
       "level": 94,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Ce sort fait exactement ce qu'indique son titre : il permet au sorcier d'amener dans le monde réel tout être ou objet issu des songes d'une personne endormie. Il pourra, par exemple, attirer à la réalité un bouclier dont rêve un guerrier ou le cheval qu'il montait dans son enfance. En faisant cela, la réalité le matérialisera, lui donnant de la \"substance\". Si c'est un être \"vivant\", la créature aura tous les aspects d'une entité réelle, mais elle ne pourra pas avoir de pouvoirs supérieurs à ceux accessibles aux êtres d'une Gnose de 25 ni un niveau supérieur à celui déterminé par le Degré  du sort. Si c'est un objet, sa présence maximale sera déterminée par le Degré  du sortilège. Il est important de noter que ce sort ne permet pas au lanceur d'observer ce qui se passe à l'intérieur des rêves des personnes, pour choisir exactement ce qu'il veut rapporter il devra utiliser un autre moyen pour \"voir\" le songe.",
+      "type": "Spell Type: Effect.",
+      "effect": "Effect: This spell is literally what its name suggests, allowing the sorcerer to bring into the real world any being or object that is in the dreams of a sleeper. He Could bring, for example, a shield you used while you are dreaming your a warrior.  In doing so actually materializing the object/thing. In the case of bringing a live being the creature is apparently real, but can not have Gnosis powers beyond level 25 or above as determined by the level of the spell. If instead it is an object, its maximum presence will be determined by the degree of the spell. It is important to note that this spell does not allow the caster to see what's inside the dreams of people, so it will be necessary to use some other means to \"see\" exactly what you want to bring.",
       "initialGrade": {
         "zeon": 300,
         "requiredIntelligence": 12,
-        "effect": "Présence maximum 80 / Niveau 3.",
+        "effect": " Maximum Presence  80 / Max Level 3.",
         "retention": 50
       },
       "intermediateGrade": {
         "zeon": 600,
         "requiredIntelligence": 14,
-        "effect": "Présence maximum 120 / Niveau 6.",
+        "effect": " Maximum Presence 120 / Max Level 6.",
         "retention": 60
       },
       "advancedGrade": {
         "zeon": 900,
         "requiredIntelligence": 16,
-        "effect": "Présence maximum 160 / Niveau 9.",
+        "effect": " Maximum Presence  160 / Max Level 9.",
         "retention": 65
       },
       "arcaneGrade": {
         "zeon": 1200,
         "requiredIntelligence": 18,
-        "effect": "Présence maximum 200 / Niveau 12.",
+        "effect": " Maximum Presence  200 / Max Level 12.",
         "retention": 75
       },
       "withRetention": true,

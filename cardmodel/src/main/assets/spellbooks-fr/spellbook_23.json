@@ -1,0 +1,364 @@
+{
+  "bookId": 23,
+  "bookName": "Livre des Songes",
+  "description": "Songes est la voie de magie secondaire qui contrôle le monde onirique des rêveurs, ainsi que son reflet dans la Veille.",
+  "primaryBookUnaccessibles": [
+    "Création",
+    "Destruction",
+    "Eau",
+    "Feu",
+    "Terre."
+  ],
+  "spells": [
+    {
+      "spellId": 1,
+      "bookId": 23,
+      "name": "Sentir les Songes",
+      "level": 4,
+      "actionType": "Active",
+      "type": "Détection",
+      "effect": "Grâce à ce sort, le sorcier est capable de localiser les énergies oniriques de tous les êtres qui rêvent près de lui. De plus, grâce à l'énergie qu'ils dégagent il pourra savoir si leurs rêves sont paisibles ou si ce sont au contraire de terribles cauchemars. Pour résister à la détection, les dormeurs doivent réussir une RMys.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 5,
+        "effect": "50 mètres / 120 RMys.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 8,
+        "effect": "150 mètres / 160 RMys.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 10,
+        "effect": "200 mètres / 200 RMys.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 12,
+        "effect": "500 mètres / 240 RMys.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 2,
+      "bookId": 23,
+      "name": "Sommeil Imperturbable",
+      "level": 14,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort protège un personnage des -sorts ou effets de tous types en relation avec les rêves, lui accordant un bonus à la RMys et à la RPsy contre eux. De plus, ce sort évite que le personnage soit transporté de façon involontaire dans la Veille, lui accordant le même bonus à la RMys et à la RPsy si quelqu'un tentait de le forcer à s'y rendre contre sa volonté.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 5,
+        "effect": "+40 à la RMys ou RPsy.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "+60 à la RMys ou RPsy.",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": "+80 à la RMys ou RPsy.",
+        "retention": 5
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "+100 à la RMys ou RPsy.",
+        "retention": 10
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 3,
+      "bookId": 23,
+      "name": "Espionner les Songes",
+      "level": 24,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Ce sort permet d'observer ce qui se passe dans les rêves d'un dormeur, qu'ils soient paisibles ou que ce soient des cauchemars. Il n'est pas possible d'intervenir dans ceux-ci mais on peut les voir de façon détaillée. Une personne peut résister en réussissant un test de RMys. Si elle échoue, elle n'a droit qu'à un nouvel essai par jour, à partir du moment où elle est consciente ou qu'elle suspecte qu'elle peut être affectée par un sortilège de ce type.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": "140 RMys.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "160 RMys.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": "180 RMys.",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "200 RMys / Le lanceur peut créer une image matérielle des songes de l'individu affecté, permettant à n'importe quelle personne proche de lui de les voir.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 4,
+      "bookId": 23,
+      "name": "Altérer les Songes",
+      "level": 34,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Grâce à ce sort, le sorcier peut altérer les songes (qu'ils soient bons ou mauvais) de toutes les personnes dans le rayon d'action déterminé par le Degré  du sortilège. Ce sort ne fonctionne que si le sorcier ne fait pas lui-même partie du songe, et il n'est pas possible de l'utiliser pour ses propres rêves ou dans la Veille. Ce sort n'affecte que les personnes endormies à ce moment et disparaît dès qu'elles se réveillent.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 7,
+        "effect": "100 RMys / 50 m de rayon.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": "120 RMys / 150 m de rayon.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 11,
+        "effect": "140 RMys / 250 m de rayon.",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 13,
+        "effect": "160 RMys / 500 m de rayon.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 5,
+      "bookId": 23,
+      "name": "Noctambulisme",
+      "level": 44,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Grâce ce sortilège, le sorcier ou la personne désignée par celui-ci peut amener dans le monde son alter ego onirique, la forme que prend sa conscience le plus souvent lorsqu'il rêve. Ainsi, pendant que son corps est endormi, il peut se déplacer librement dans le monde sous la forme qu'il revêt dans ses songes. Pendant qu'une personne est affectée par ce sort et arpente le monde de cette façon, elle est invisible à l'œil humain (sauf pour ceux capables de voir les esprits) et ne fait aucun bruit. Elle est également complètement intangible et ne peut rien toucher. La distance maximale sur laquelle la personne affectée peut se séparer de son enveloppe corporelle est déterminée par le Degré  du sort. Si cette projection subit des dégâts de quelque type que ce soit, le sort est interrompu.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": "Distance maximale 1 kilomètre.",
+        "retention": 30
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "Distance maximale 2 kilomètres / La personne affectée peut devenir visible à volonté et parler avec n'importe qui.",
+        "retention": 30
+      },
+      "advancedGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 14,
+        "effect": "Distance maximale 5 kilomètres / Comme pour le Degré  Intermédiaire, mais le personnage peut altérer son aspect physique à volonté, prenant toute forme dont il pourrait rêver.",
+        "retention": 40
+      },
+      "arcaneGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 16,
+        "effect": "Distance illimitée / Comme pour le Degré  Avancé, mais la projection peut entrer dans le monde onirique de n'importe quel dormeur qu'elle croise, si le rêveur ne réussit pas un test de RMys contre 150.",
+        "retention": 40
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 6,
+      "bookId": 23,
+      "name": "Sommeil Éternel",
+      "level": 54,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Ce terrible sort plonge sa victime dans un sommeil dont elle ne peut s'éveiller avant que le sorcier ne le décide, quoi qu'il arrive à son corps. Une personne affectée par ce sort a le droit de faire un test de Résistance par jour, mais en appliquant -40 à ses Résistances pour arriver à se réveiller.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 7,
+        "effect": "80 RMys.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 9,
+        "effect": "100 RMys.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 11,
+        "effect": "120 RMys.",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 13,
+        "effect": "140 RMys.",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 7,
+      "bookId": 23,
+      "name": "Déchirer la Membrane",
+      "level": 64,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Le sorcier crée un vortex dans la réalité qui lui permet d'ouvrir un portail vers la Veille.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": "Le portail ne laisse passer que le sorcier et dans une seule direction.",
+        "retention": 40
+      },
+      "intermediateGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "Le portail peut être traversé par n'importe quel type et nombre de créatures, mais dans une seule direction.",
+        "retention": 50
+      },
+      "advancedGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 14,
+        "effect": "Comme pour le Degré  Intermédiaire, mais le portail peut être utilisé dans les deux sens.",
+        "retention": 60
+      },
+      "arcaneGrade": {
+        "zeon": 320,
+        "requiredIntelligence": 16,
+        "effect": "Comme pour le Degré  Avancé, mais le sorcier peut déterminer librement qui peut traverser le portail ou s'il faut éprouver un sentiment ou posséder une qualité spécifique pour l'ouvrir.",
+        "retention": 70
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 8,
+      "bookId": 23,
+      "name": "Bannir dans la Veille",
+      "level": 74,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Ce sort permet d'arracher une entité au monde terrestre et de renvoyer dans un endroit au hasard dans la Veille. Le lanceur peut choisir de faire voyager uniquement le subconscient onirique de la personne affectée corps restant endormi pendant que son esprit est envoyé dans la Veille). Si elle dormait déjà elle ne pourra pas remarquer le saut dimensionnel, mais si a était éveillée son corps tombera dans un profond sommeil. Si ce sortilège est utilisé pour affecter des créatures propres à la Veille, elles sont alors complétement entraînées. Pour y résister il faut réussir un test de RMys d'une difficulté déterminée par le Degré  du Sort.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": "100 RMys.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "120 RMys.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 14,
+        "effect": "140 RMys.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 16,
+        "effect": "160 RMys.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 9,
+      "bookId": 23,
+      "name": "Entre Rêve et Réalité",
+      "level": 84,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Permet au sorcier d'altérer les liens entre le monde réel et la Veille, lui permettant temporairement de fondre ces deux aspects de la réalité en un seul. Les créatures qui entrent dans cette zone resteront cependant \"\"de leur côté\"\", car en sortant de la zone affectée elles seront toujours \"\"de leur côté\"\" (c'est-à-dire qu'une créature de la Veille continuera sur son plan d'existence en traversant la zone affectée par le sort). Toutefois, les créatures qui ont des pouvoirs spéciaux dans la Veille les conserveront dans cette zone.",
+      "initialGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 13,
+        "effect": "100 m de rayon.",
+        "retention": 80
+      },
+      "intermediateGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 15,
+        "effect": "500 m de rayon.",
+        "retention": 100
+      },
+      "advancedGrade": {
+        "zeon": 700,
+        "requiredIntelligence": 17,
+        "effect": "1 km de rayon. Arcane",
+        "retention": 140
+      },
+      "arcaneGrade": {
+        "zeon": 900,
+        "requiredIntelligence": 19,
+        "effect": "3 km de rayon.",
+        "retention": 180
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 10,
+      "bookId": 23,
+      "name": "Rendre les Rêves Réels",
+      "level": 94,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort fait exactement ce qu'indique son titre : il permet au sorcier d'amener dans le monde réel tout être ou objet issu des songes d'une personne endormie. Il pourra, par exemple, attirer à la réalité un bouclier dont rêve un guerrier ou le cheval qu'il montait dans son enfance. En faisant cela, la réalité le matérialisera, lui donnant de la \"substance\". Si c'est un être \"vivant\", la créature aura tous les aspects d'une entité réelle, mais elle ne pourra pas avoir de pouvoirs supérieurs à ceux accessibles aux êtres d'une Gnose de 25 ni un niveau supérieur à celui déterminé par le Degré  du sort. Si c'est un objet, sa présence maximale sera déterminée par le Degré  du sortilège. Il est important de noter que ce sort ne permet pas au lanceur d'observer ce qui se passe à l'intérieur des rêves des personnes, pour choisir exactement ce qu'il veut rapporter il devra utiliser un autre moyen pour \"voir\" le songe.",
+      "initialGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 12,
+        "effect": "Présence maximum 80 / Niveau 3.",
+        "retention": 50
+      },
+      "intermediateGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 14,
+        "effect": "Présence maximum 120 / Niveau 6.",
+        "retention": 60
+      },
+      "advancedGrade": {
+        "zeon": 900,
+        "requiredIntelligence": 16,
+        "effect": "Présence maximum 160 / Niveau 9.",
+        "retention": 65
+      },
+      "arcaneGrade": {
+        "zeon": 1200,
+        "requiredIntelligence": 18,
+        "effect": "Présence maximum 200 / Niveau 12.",
+        "retention": 75
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    }
+  ]
+}

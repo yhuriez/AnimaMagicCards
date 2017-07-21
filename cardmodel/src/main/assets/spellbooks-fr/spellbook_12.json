@@ -1,0 +1,4138 @@
+{
+  "bookId": 12,
+  "bookName": "Livre d’Accès Libre ",
+  "description": "Niveau 1-10",
+  "type": "Animique",
+  "spells": [
+    {
+      "spellId": 1,
+      "bookId": 12,
+      "name": "Nœud",
+      "level": 10,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort fait en sorte que les cordes, chaînes ou tout type de filament dont la nature permet de les attacher, se nouent avec une compétence en Habileté manuelle égale à une valeur fixée par le rang du sort. Le sorcier peut ordonner à des ficelles de lier un individu",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 5,
+        "effect": "120 en Habileté Manuelle",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "140 en Habileté Manuelle",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 10,
+        "effect": "180 en Habileté Manuelle",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 12,
+        "effect": "240 en Habileté Manuelle",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 2,
+      "bookId": 12,
+      "name": "Créer du Feu",
+      "level": 10,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Crée plusieurs intensités de feu sur une matière naturellement inflammable. Si le feu prend, il n'est plus nécessaire de maintenir le sort.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 6,
+        "effect": "1 intensité",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "3 intensités",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 110,
+        "requiredIntelligence": 10,
+        "effect": "6 intensités",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 130,
+        "requiredIntelligence": 12,
+        "effect": "9 intensités",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 3,
+      "bookId": 12,
+      "name": "Ouverture",
+      "level": 10,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Permet d'ouvrir n'importe quelle porte fermée. Si celle-ci est bloquée, le sort peut tenter de la forcer avec un équivalent en Crochetage égal à une valeur déterminée par le rang du sort.",
+      "initialGrade": {
+        "zeon": 30,
+        "requiredIntelligence": 5,
+        "effect": "Présence maximale 40",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 8,
+        "effect": "Présence maximale 80",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": "Présence maximale 120",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 12,
+        "effect": "Présence maximale 140",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 4,
+      "bookId": 12,
+      "name": "Déplacement d'Objets",
+      "level": 10,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort déplace les objets inorganiques sans besoin d'un contact physique, en leur accordant une Qualité de Vol de 10. Le poids maximal que l’on peut déplacer dépend du rang du sort.",
+      "initialGrade": {
+        "zeon": 30,
+        "requiredIntelligence": 5,
+        "effect": "10 kg",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 70,
+        "requiredIntelligence": 8,
+        "effect": "50 kg",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 10,
+        "effect": "100 kg",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "150 kg",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 5,
+      "bookId": 12,
+      "name": "Stopper la Chute",
+      "level": 10,
+      "actionType": "Passive",
+      "type": "Effet",
+      "effect": "Annule les effets d'une chute depuis une hauteur élevée. En termes de jeu, ce sort annule complètement l'impact d'une chute d’une hauteur maximale déterminée par le rang du sort, ou le réduit de la même valeur pour une chute supérieure. Ce sort peut affecter plusieurs cibles, tant que la somme des Présences ne dépasse pas ce qu’indique le rang du sort.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 5,
+        "effect": "50 m de hauteur / Présence maximale 60",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "150 m de hauteur / Présence maximale 160",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 10,
+        "effect": "500 m de hauteur / Présence maximale 240",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "Annule les effets d’une chute quelle que soit la hauteur / Présence maximale 320",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 6,
+      "bookId": 12,
+      "name": "Nettoyage",
+      "level": 10,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort élimine toutes les impuretés physiques mineures, comme la saleté, les mauvaises odeurs,... sur le corps et les vêtements de la cible du sort. Il peut aussi être utilisé sur des lieux ou des objets pour les assainir. Ce sort affecte une Présence maximale fixée par le rang du sort.",
+      "initialGrade": {
+        "zeon": 30,
+        "requiredIntelligence": 5,
+        "effect": "Présence maximale 40",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 8,
+        "effect": "Présence maximale 80",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": "Présence maximale 120",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 12,
+        "effect": "Présence maximale 140",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 7,
+      "bookId": 12,
+      "name": "Détection de Magie",
+      "level": 10,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Le sorcier détecte automatiquement toutes les sources de magie autour de lui. Si une source est cachée, il utilise l'équivalent d'Évaluation magique à une valeur fixée par le rang du sort.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 5,
+        "effect": "25 m de rayon / Evaluation Magique 140",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "100 m de rayon / Evaluation Magique 180",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 10,
+        "effect": "200 m de rayon / Evaluation Magique 200",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 12,
+        "effect": "300 m de rayon / Evaluation Magique 240",
+        "retention": 10
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 8,
+      "bookId": 12,
+      "name": "Créer Musique",
+      "level": 10,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Crée une mélodie que l'on peut entendre dans un rayon fixé par le rang du sort. La composition est effectuée avec une compétence en Musique également déterminée par le rang. Ce sort ne permet de reproduire que des musiques que connaît déjà le sorcier, même vaguement.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 5,
+        "effect": "10 m de rayon / Musique 80",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "50 m de rayon / Musique 120",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": "150 m de rayon / Musique 180",
+        "retention": 5
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "250 m de rayon / Musique 240",
+        "retention": 10
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 9,
+      "bookId": 12,
+      "name": "Défaire l'Écrit",
+      "level": 10,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort fait disparaître tout texte ne dépassant pas une certaine quantité de signes. Il ne détruit pas la matière sur laquelle est écrit le texte mais élimine les lettres ou les caractères. Par exemple, l'encre disparaît sur une feuille de papier, des symboles gravés sur de la pierre se remplissent à nouveau. Ce sort n'affecte que les objets dont la Présence ne dépasse pas une valeur fixée par le rang du sort.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 5,
+        "effect": "Présence maximale 30 / 500 signes",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "Présence maximale 60 / 5 000 signes",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 10,
+        "effect": "Présence maximale 90 / 50 000 signes",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 12,
+        "effect": "Présence maximale 120 / 250 000 signes",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 10,
+      "bookId": 12,
+      "name": "Message Statique",
+      "level": 10,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Marque un lieu ou un objet d'un message écrit. Le sorcier peut faire en sorte que le message apparaisse et disparaisse à volonté, même s'il n'est pas présent (mais il ne saurait donc pas si quelqu'un a pu le lire ou pas). Ce message compte un maximum de mots défini par le rang du sort.",
+      "initialGrade": {
+        "zeon": 30,
+        "requiredIntelligence": 5,
+        "effect": "Maximum de 50 mots",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 70,
+        "requiredIntelligence": 8,
+        "effect": "Maximum de 150 mots",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 10,
+        "effect": "Maximum de 250 mots",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 12,
+        "effect": "Maximum de 500 mots",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 11,
+      "bookId": 12,
+      "name": "Sauter",
+      "level": 10,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "L'individu affecté par ce sort augmente sa compétence Saut de façon surnaturelle. Il rajoute un bonus au Total de sa compétence Saut.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 5,
+        "effect": "+50 en Saut",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "+100 en Saut",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": "+150 en Saut / Permet d’atteindre la difficulté Surhumaine pour les tests de saut",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 12,
+        "effect": "+200 en Saut / Permet d’atteindre la difficulté Zen pour les tests de saut",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 12,
+      "bookId": 12,
+      "name": "Changement de Couleur",
+      "level": 10,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Ce sort change la couleur d'une matière, d'un objet ou même d'un personnage, tant que leur Présence ne dépasse pas une valeur fixé par le rang du sort. Il est possible de résister à ce sort en réussissant un test de RMys.",
+      "initialGrade": {
+        "zeon": 30,
+        "requiredIntelligence": 5,
+        "effect": "Présence maximale 40 / RMys 100",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "Présence maximale 60 / RMys 120",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": "Présence maximale 80 / RMys 140",
+        "retention": 5
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "Présence maximale 100 / RMys 160",
+        "retention": 10
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 13,
+      "bookId": 12,
+      "name": "Créer Sons",
+      "level": 20,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Crée un son dans un endroit déterminé.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 6,
+        "effect": "À 50 m du sorcier",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 9,
+        "effect": "À 200 m du sorcier",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 11,
+        "effect": "À 500 m du sorcier",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 13,
+        "effect": "À 1 km du sorcier",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 14,
+      "bookId": 12,
+      "name": "Brouillard",
+      "level": 20,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Forme du brouillard dans une zone délimité. La densité est au choix du sorcier. Le brouillard reste fixé à l'endroit où le sort a été lancé.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": "100 m de rayon",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 9,
+        "effect": "250 m de rayon",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 11,
+        "effect": "500 m de rayon",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 13,
+        "effect": "1 km de rayon",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 15,
+      "bookId": 12,
+      "name": "Recréer Image",
+      "level": 20,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Recrée l'image de quelque chose que le sorcier a déjà vu. Cette image ne peut pas dépasser  une superficie supérieure à une valeur fixée par le rang du sort. L'apparition prend la forme d'un hologramme translucide et intangible, qui reste immobile à l'endroit où il a été créé.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 6,
+        "effect": "Image de 1 m²",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 70,
+        "requiredIntelligence": 9,
+        "effect": "Image de 5 m²",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 11,
+        "effect": "Image de 10 m²",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 130,
+        "requiredIntelligence": 13,
+        "effect": "Image de 15 m²",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 16,
+      "bookId": 12,
+      "name": "Enchanter",
+      "level": 20,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Donne à un lieu ou à un objet, de Présence inférieure à une valeur fixée par le rang du sort, une nature surnaturelle. La matière affectée s'avère matérielle pour les êtres intangibles et pour les sorts. Si, par exemple, ce sort est lancé sur une arme, elle pourra endommager les créatures immatérielles (en utilisant la Présence de l'objet)",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": "Présence maximale 40",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 9,
+        "effect": "Présence maximale 60",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 110,
+        "requiredIntelligence": 11,
+        "effect": "Présence maximale 90",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 130,
+        "requiredIntelligence": 13,
+        "effect": "Présence maximale 120",
+        "retention": 10
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 17,
+      "bookId": 12,
+      "name": "Respirer les Liquides",
+      "level": 20,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Confère la capacité de respirer à l'intérieur de n'importe quel liquide, comme s'il s'agissait d'air. Ce sort peut affecter plusieurs cibles, tant que la somme de leurs Présences ne dépasse pas une valeur fixée par le rang du sort.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 6,
+        "effect": "Présence maximale 60",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 9,
+        "effect": "Présence maximale 100",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 11,
+        "effect": "Présence maximale 200",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 13,
+        "effect": "Présence maximale 320",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 18,
+      "bookId": 12,
+      "name": "Zone Glissante",
+      "level": 20,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Enchante une zone statique, sur laquelle il est aussi facile de glisser que sur une superficie gelée. Il faut pour ne pas tomber en traversant, réussir un test Difficile d'Athlétisme ou Acrobaties en allant lentement, Absurde en courant.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": "5 m de rayon",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": "25 m de rayon",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 11,
+        "effect": "50 m de rayon",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 13,
+        "effect": "100 m de rayon / Les SR des tests d’Athlétisme et d’Acrobaties passent respectivement à Très Difficile et Quasiment Impossible en marchant et courant.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 19,
+      "bookId": 12,
+      "name": "Réparation",
+      "level": 20,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Répare complètement un objet inorganique. Ce sort ne recrée pas les fragments perdus, il faut donc conserver toutes les parties ou avoir la matière première nécessaire pour la réparation. Ce sort peut être lancé sur n'importe objet, des armes aux édifices, tant que leur Présence ne dépasse pas une valeur fixée par le rang du sort.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": "Présence maximale 30",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": "Présence maximale 50",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "Présence maximale 70",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 15,
+        "effect": "Présence maximale 90",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 20,
+      "bookId": 12,
+      "name": "Escalader",
+      "level": 20,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort augmente la capacité d'escalade d'un individu. Il rajoute un bonus à la compétence Escalade.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": "+50 en Escalade",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 9,
+        "effect": "+100 en Escalade",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 11,
+        "effect": "+150 en Escalade / Permet d’atteindre la difficulté Surhumaine pour les tests de saut",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 13,
+        "effect": "+200 en Escalade / Permet d’atteindre la difficulté Zen pour les tests de saut",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 21,
+      "bookId": 12,
+      "name": "Passage sans Trace",
+      "level": 20,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort élimine les traces que laisse une personne derrière elle. Il faut, pour suivre les empreintes d'une personne bénéficiant de ce sortilège, réussir un test surhumain de Pistage. Ce sort peut affecter autant de cibles que le sorcier le désire, tant que la somme de leurs Présences ne dépasse pas une valeur fixée par le rang du sort.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": "Présence maximale 120",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 9,
+        "effect": "Présence maximale 180",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 220,
+        "requiredIntelligence": 11,
+        "effect": "Présence maximale 240 / La difficulté à atteindre sur un test de Pistage passe à Surhumain (320)",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 340,
+        "requiredIntelligence": 13,
+        "effect": "Présence maximale 320 / La difficulté à atteindre sur un test de Pistage passe à Zen (440)",
+        "retention": 35
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 22,
+      "bookId": 12,
+      "name": "Attirer Vermine Mineure",
+      "level": 20,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort invoque une masse de vermines dans le lieu que désigne le sorcier. Leur apparition n'est pas automatique, elles sont attirées immédiatement vers la zone la plus proche où elles se trouvent. Ce sortilège ne permet pas de contrôler ces créatures.",
+      "initialGrade": {
+        "zeon": 30,
+        "requiredIntelligence": 6,
+        "effect": "Attire jusqu’à 500 êtres",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 9,
+        "effect": "Attire jusqu’à 10 000 êtres",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 11,
+        "effect": "Attire jusqu’à 100 000 êtres",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 13,
+        "effect": "Attire plusieurs millions d’êtres",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 23,
+      "bookId": 12,
+      "name": "Poche Infinie",
+      "level": 20,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Permet à un sac, une poche ou un baluchon de porter des objets dépassant plusieurs fois son volume normal, sans qu'augmente leur poids. Le sorcier peut toujours en tirer ce qu'il désire, mais les autres en sortent les choses au hasard. On ne peut pas y placer d'objets qui ne rentrent pas physiquement par l'ouverture, comme une lance dans une petite bourse. Quand le sort prend fin, le chargement réapparaît et peut faire éclater le contenant.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 5,
+        "effect": "x10 sa capacité",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "x30 sa capacité",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": "x40 sa capacité",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "x50 sa capacité",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 24,
+      "bookId": 12,
+      "name": "Surhumanité",
+      "level": 20,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Les cibles de ce sort peuvent atteindre la difficulté Surhumaine dans tous les champs ou domaines. Cela ne veut pas dire que les actions réalisées par ces personnes sont toujours surhumaines, mais qu'elles peuvent l'être si leurs tests de compétences ou leurs caractéristiques le permettent.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": "Octroie la Surhumanité sur une compétence donnée",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 9,
+        "effect": "Octroie la Surhumanité sur toutes les compétences",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 110,
+        "requiredIntelligence": 11,
+        "effect": "Octroie la Surhumanité sur toutes les compétences et Zen sur une compétence donnée",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 13,
+        "effect": "Octroie le Zen à toutes les compétences",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 25,
+      "bookId": 12,
+      "name": "Verrou Magique",
+      "level": 30,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ferme automatiquement une porte ou une serrure, et augmente la difficulté à dépasser pour l'ouvrir, jusqu'à un maximum de Surhumaine. Bien que la serrure soit enchantée, il n'est pas nécessaire de payer un maintien car le sort se maintient seul jusqu'à ce que la porte soit ouverte. Une serrure ne peut être affectée que par un seul sort de Verrou Magique à la fois.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 6,
+        "effect": "+1 Degré  de difficulté",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 9,
+        "effect": "+2 Degré  de difficulté",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 11,
+        "effect": "+3 Degré  de difficulté",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 13,
+        "effect": "+4 Degré  de difficulté",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 26,
+      "bookId": 12,
+      "name": "Compréhension des Langues",
+      "level": 30,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort permet de comprendre temporairement un langage inconnu, aussi bien à l'écrit qu'à l'oral.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 7,
+        "effect": "Affecte les langues de bases parlées, communément dans la plupart des pays du monde",
+        "retention": 20
+      },
+      "intermediateGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 10,
+        "effect": "Affecte les langues étranges et inhabituelles, parlées par des groupes minoritaires",
+        "retention": 35
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": "Affecte les langues uniques et oubliées",
+        "retention": 40
+      },
+      "arcaneGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 15,
+        "effect": "Affecte toutes les langues",
+        "retention": 50
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 27,
+      "bookId": 12,
+      "name": "Provoquer la Peur",
+      "level": 30,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Les personnes affectées se trouvant autour du sorcier sont prises d'une terrible peur magique si elles ne réussissent pas un test de RMys. Celles qui échouent à ce test ont peur du sorcier et subissent l'état de Peur.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": "5 m de rayon / RMys 100",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "15 m de rayon / RMys 120",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 14,
+        "effect": "25 m de rayon / RMys 140",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 16,
+        "effect": "50 m de rayon / RMys 160",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 28,
+      "bookId": 12,
+      "name": "Sérénité",
+      "level": 30,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Engendre une sensation de tranquillité et de paix chez la cible du sort, l'incitant à se calmer même si elle est en pleine colère ou terrorisée. Ce sort annule tous les états de peur, de terreur ou de colère que subit la cible affectée, sauf s'ils sont d'origine surnaturelle. Un test de RMys permet de résister.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": "RMys 120",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 70,
+        "requiredIntelligence": 9,
+        "effect": "RMys 140",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 11,
+        "effect": "RMys 160",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 130,
+        "requiredIntelligence": 13,
+        "effect": "RMys 180",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 29,
+      "bookId": 12,
+      "name": "Bouclier Magique",
+      "level": 30,
+      "actionType": "Passive",
+      "type": "Défense",
+      "effect": "Crée un bouclier magique qui protège le sorcier contre tout type d'attaque, même celles d'origine surnaturelle.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": "300 Points de Vie",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 9,
+        "effect": "1 000 Points de Vie",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 11,
+        "effect": "2 000 Points de Vie",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 13,
+        "effect": "3 000 Points de Vie",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 30,
+      "bookId": 12,
+      "name": "Protection Magique",
+      "level": 30,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Accorde une armure d'IP variable contre tous les Modes, à l'exception de l'Énergie. Cette protection peut être combinée avec d'autres armures comme une couche supplémentaire, mais elle ne provoque pas de malus spécial à l'Initiative.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": "IP 2",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": "IP 4",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "IP 6",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 15,
+        "effect": "IP 8",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 31,
+      "bookId": 12,
+      "name": "Nuages",
+      "level": 30,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Forme une couche épaisse de nuages. Le sorcier, qui les contrôle, peut les déplacer ou leur donner la forme qu'il désire.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 6,
+        "effect": "100 m de rayon",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 9,
+        "effect": "250 m de rayon",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 11,
+        "effect": "500 m de rayon",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 260,
+        "requiredIntelligence": 13,
+        "effect": "1 km de rayon",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 32,
+      "bookId": 12,
+      "name": "Filet",
+      "level": 30,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sortilège crée des fibres magiques de densité élevée, qui agissent comme un filet très collant. Le sorcier peut décider de leur utilisation : pour bloquer une zone, pour le lancer directement sur des gens... La taille maximale du filet dépend du rang du sort. Il immobilise avec une Force de 10 et résiste comme une créature à Encaissement et un IP de 4 avant d'être brisé. Comme il s'agit d'une substance de nature mystique, seules les attaques surnaturelles ou de Chaleur peuvent l'endommager.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": "Filet de 3 m² / 500 PV",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": "Filet de 6 m² / 750 PV",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "Filet de 9 m² / 1 000 PV",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 15,
+        "effect": "Filet de 12 m² / 1 500 PV",
+        "retention": 10
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 33,
+      "bookId": 12,
+      "name": "Envoyer Message",
+      "level": 30,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Envoie un message oral ou écrit à une personne ou un lieu connu, situé à l’intérieur de la zone d’influence du sort.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 6,
+        "effect": "Jusqu’à 500 mots / 10 km.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": "Jusqu’à 1000 mots / 100 km.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 11,
+        "effect": "Jusqu’à 250 mots / 250 km.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 13,
+        "effect": "Jusqu’à 5000 mots / 1000 km.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 34,
+      "bookId": 12,
+      "name": "Célérité",
+      "level": 30,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Augmente le Mouvement d'un personnage et rajoute un bonus à son Initiative. Si le Mouvement dépasse 12, les points de bonus supplémentaires sont divisés par deux.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 6,
+        "effect": "Mouvement +1 / Initiative +20",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 9,
+        "effect": "Mouvement +2 / Initiative +40",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 11,
+        "effect": "Mouvement +4 / Initiative +60",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 13,
+        "effect": "Mouvement +6 / Initiative +80",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 35,
+      "bookId": 12,
+      "name": "Lévitation",
+      "level": 30,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "La cible de ce sort peut s'élever verticalement à volonté, avec une Qualité de Vol dépendant du rang du sort.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": "Qualité de Vol 4",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 9,
+        "effect": "Qualité de Vol 6",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 11,
+        "effect": "Qualité de Vol 8",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 13,
+        "effect": "Qualité de Vol 10",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 36,
+      "bookId": 12,
+      "name": "Protection Contraceptive",
+      "level": 30,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Évite au personnage de contracter des maladies vénériennes ou de concevoir une descendance. Ce sort peut affecter plusieurs cibles, tant que la somme de leurs Présences ne dépasse pas une valeur fixée par le rang du sort.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": "Présence maximale 80",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": "Présence maximale 180",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "Présence maximale 260",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 15,
+        "effect": "Présence maximale 380",
+        "retention": 10
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 37,
+      "bookId": 12,
+      "name": "Invoquer Agressivité",
+      "level": 40,
+      "actionType": "Active",
+      "type": "Automatique",
+      "effect": "Augmente automatiquement l'agressivité de toutes les cibles qui se trouvent autour du sorcier, si les cibles affectées ratent un test de RMys. Ces individus agissent de façon violente vis-à-vis de tout individu ou chose qui puisse être la cible de leur colère.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 7,
+        "effect": "20 m de rayon / RMys 80",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 10,
+        "effect": "40 m de rayon / RMys 100",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 12,
+        "effect": "60 m de rayon / RMys 120",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 14,
+        "effect": "80 m de rayon / RMys 140",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 38,
+      "bookId": 12,
+      "name": "Annulation de Sort",
+      "level": 40,
+      "actionType": "Active",
+      "type": "Automatique",
+      "effect": "Détruit un sort actif.",
+      "initialGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 7,
+        "effect": "Valeur zéonique maximale 60",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": "Valeur zéonique maximale 80",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "Valeur zéonique maximale 100",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 14,
+        "effect": "Valeur zéonique maximale 120",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 39,
+      "bookId": 12,
+      "name": "Verrou Réel",
+      "level": 40,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Grâce à ce sort, le sorcier obstrue automatiquement n'importe quel type de porte, de volet ou de fenêtre dont la Présence ne dépasse pas une valeur fixée par le rang du sort. Si, par exemple, ce sort est lancé sur une porte ouverte, celle-ci se ferme toute seule",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 7,
+        "effect": "Présence maximale 20",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 10,
+        "effect": "Présence maximale 40",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": "Présence maximale 60",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 14,
+        "effect": "Présence maximale 80",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 40,
+      "bookId": 12,
+      "name": "Purification",
+      "level": 40,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Purifie la cible en éliminant tous les éléments nocifs pour le système, comme les venins ou les toxines. Ce sort extirpe automatiquement toutes les substances de niveau inférieur ou égal à ce qu’indique le rang du sort. La purification n'affecte que les éléments de cible qui peuvent le blesser et ne lui appartiennent pas. Ainsi, lancé sur un serpent, ce sort ne purifie sas son venin puisqu'il est naturel pour lui, tandis qu'il l'éliminerait dans le corps d'une personne.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 7,
+        "effect": "Niveau maximal de venin 30",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": "Niveau maximal de venin 50",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "Niveau maximal de venin 70",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 14,
+        "effect": "Niveau maximal de venin 90",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 41,
+      "bookId": 12,
+      "name": "Extension de Présence",
+      "level": 40,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Le sorcier peut étendre volontairement sa présence autour de lui, lui permettant ainsi d'agir à distance comme à proximité directe. Tant qu'il est séparé de son corps, le sorcier ne peut pas se déplacer mais il peut revenir à son corps chaque fois qu'il le désire sans mettre fin au sortilège. La présence peut toucher des objets matériels et même attaquer, mais elle s'avère invisible pour l'œil humain",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 7,
+        "effect": "5 m",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 10,
+        "effect": "25 m",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": "50 m",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 15,
+        "effect": "100 m / le sort créé aussi des copies de la présence des objets portés par le sorcier, lui permettant de les utiliser à distance également",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 42,
+      "bookId": 12,
+      "name": "Changement d'Aspect",
+      "level": 40,
+      "actionType": "Active",
+      "type": "Effet, Animique",
+      "effect": "Ce sort modifie l'apparence physique et corporelle de la cible sur lequel il est lancé. Il peut altérer sa couleur de peau ou sa physionomie, mais pas sa taille ou son poids au-delà des limites qu'impose sa Taille. Il est possible de résister à cette altération en réussissant un test de RMys. En cas d'échec, il est possible refaire ce test une fois par jour.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 7,
+        "effect": "RMys 100",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": "RMys 110",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "RMys 120",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 14,
+        "effect": "RMys 130",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 43,
+      "bookId": 12,
+      "name": "Modifier la Taille",
+      "level": 40,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Augmente ou diminue la Taille de la personne ou de l'objet sur lequel ce sort est lancé. Quel que soit le nombre d'effets supplémentaires pris, la Taille ne peut jamais descendre au-dessous de 1. Il faut réussir un test de RMys pour résister à ce sort.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 7,
+        "effect": "Altère la taille de +/-2 / RMys 100",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": "Altère la taille de +/-4 / RMys 120",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 12,
+        "effect": "Altère la taille de +/-6 / RMys 140",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 14,
+        "effect": "Altère la taille de +/-8 / RMys 160",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 44,
+      "bookId": 12,
+      "name": "Résistance à la Douleur",
+      "level": 40,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Augmente la résistance à la douleur d'un être vivant, en lui accordant un bonus à sa compétence Résistance à la Douleur.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": "+50 en Résistance à la Douleur",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": "+100 en Résistance à la Douleur",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 11,
+        "effect": "+150 en Résistance à la Douleur / Permet d’atteindre la difficulté Surhumaine",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 14,
+        "effect": "+200 en Résistance à la Douleur / Permet d’atteindre la difficulté Zen",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 45,
+      "bookId": 12,
+      "name": "Soigner les Maladies",
+      "level": 40,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Élimine automatiquement toute maladie de niveau égal ou inférieur à une valeur déterminée par le rang du sort. Ce dernier peut être employé sur plusieurs individus, tant que la somme de leurs Présences ne dépasse pas ce qu’indique le rang.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "Niveau maximum de la maladie 30 / Présence maximale 80",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 11,
+        "effect": "Niveau maximum de la maladie 50 / Présence maximale 120",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 13,
+        "effect": "Niveau maximum de la maladie 70 / Présence maximale 180",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 16,
+        "effect": "Niveau maximum de la maladie 100 / Présence maximale 240",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 46,
+      "bookId": 12,
+      "name": "Décharge de Magie",
+      "level": 40,
+      "actionType": "Active",
+      "type": "Attaque",
+      "effect": "Projette une décharge d'énergie magique basée sur l'IP Énergie.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": "Dégâts de base 40",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": "Dégâts de base 60",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 11,
+        "effect": "Dégâts de base 80",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 14,
+        "effect": "Dégâts de base 100",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 47,
+      "bookId": 12,
+      "name": "Annulation des Rêves",
+      "level": 40,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Supprime la capacité de rêver d'un individu. Si la cible se trouve dans la veille, elle sera immédiatement explosée dans le monde réel. Pour résister, la victime doit réussir un test de RMys. Ce test ne peut être tenté qu’une fois par jour.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": "RMys 120",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": "RMys 160",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 11,
+        "effect": "RMys 200",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 14,
+        "effect": "RMys 240",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 48,
+      "bookId": 12,
+      "name": "Percevoir les Sentiments",
+      "level": 40,
+      "actionType": "Active",
+      "type": "Détection",
+      "effect": "Détecte un sentiment déterminé chez un individu se trouvant près du sorcier. Celui-ci doit choisir l'émotion qu'il souhaite percevoir. Les cibles affectées peuvent résister à ce sort en réussissant un test de RMys ou RPsy.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 7,
+        "effect": "50 m de rayon / RMys ou RPsy 120",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 10,
+        "effect": "100 m de rayon / RMys ou RPsy 140",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 13,
+        "effect": "250 m de rayon / RMys ou RPsy 160",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 16,
+        "effect": "500 m de rayon / RMys ou RPsy 180",
+        "retention": 10
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 49,
+      "bookId": 12,
+      "name": "Amitié",
+      "level": 50,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Ce sort crée un lien d'amitié chez une personne vers une autre que désigne le sorcier. Gardez à l'esprit que la cible affectée ne devient pas stupide : elle n'obéit pas aveuglément à son « ami ». Dans tous les cas, elle agit conformément à son éthique et à sa personnalité. Pour résister à ce sort, il faut réussir un test de RMys ou RPsy. La cible affectée peut refaire un test par jour ou chaque fois que quelque chose peut la faire douter de la sincérité de l'amitié.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "RMys ou RPsy 120",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 10,
+        "effect": "RMys ou RPsy 140",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 12,
+        "effect": "RMys ou RPsy 160",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 220,
+        "requiredIntelligence": 14,
+        "effect": "RMys ou RPsy 180",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 50,
+      "bookId": 12,
+      "name": "Transport Rapide",
+      "level": 50,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Transporte la cible du sort à une distance maximale dépendant du rang du sort. Ce sort permet de passer à travers les objets physiques, tant qu'ils ne sont pas basés sur l'énergie.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": "25 m",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": "100 m",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "200 m",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 15,
+        "effect": "350 m",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 51,
+      "bookId": 12,
+      "name": "Envoyer des Rêves",
+      "level": 50,
+      "actionType": "Active",
+      "type": "Automatique",
+      "effect": "Permet d'envoyer des images et des sorts au subconscient d'un dormeur. Ce sort ne fonctionne pas comme un système de communication : le sorcier n'a pas conscience de ce que dit ou fait le rêveur. Le message peut être envoyé à n'importe quelle personne que désire le sorcier, quelle que soit la distance. Ce sort ne peut affecter qu'une cible endormie précisément désignée par le sorcier.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 8,
+        "effect": "Les rêves seront vagues, flous, ne montrant que des images fragmentées et sons étranges, sans rapports apparents.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 10,
+        "effect": "Les rêves seront vagues, mais permettront de montrer des séquences complètes ou des lieux précis au rêveur.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "Les rêves seront clairs et transmettront un message compréhensible, ainsi que des images et séquences complètes conçues par le lanceur.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": "Les rêves seront complètement clairs et dotés d’une conscience calquée sur celle du sorcier, permettant au rêveur de formuler des questions ou d’interagir avec ce qu’il voit dans le rêve.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 52,
+      "bookId": 12,
+      "name": "Lire les Pensées",
+      "level": 50,
+      "actionType": "Active",
+      "type": "Automatique",
+      "effect": "Permet au sorcier de fouiller parmi les pensées ou les souvenirs d'un individu. Le Meneur de Jeu doit décider combien de rounds prend cette recherche de l'information désirée, suivant sa position plus ou moins cachée dans l'esprit de la cible. La cible peut résister à ce sort en réussissant un test de RMys ou RPsy. Tant que le sorcier peut lire les intentions de son adversaire, il bénéficie d'un bonus de +30 aux actions opposées contre cet adversaire.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 8,
+        "effect": "RMys ou RPsy 80",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 10,
+        "effect": "RMys ou RPsy 120",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": "RMys ou RPsy 140",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 15,
+        "effect": "RMys ou RPsy 180",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 53,
+      "bookId": 12,
+      "name": "Annulation de Magie",
+      "level": 50,
+      "actionType": "Active",
+      "type": "Automatique",
+      "effect": "Annule les effets de tous les sorts qui se trouvent autour du sorcier, dont la valeur zéonique ne dépasse pas ce qu’indique le rang du sort. Ce sort ne détruit pas tous les enchantements présents, il neutralise simplement leurs effets tant qu'ils se trouvent dans la zone d'effet.",
+      "initialGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 8,
+        "effect": "Valeur zéonique maximale 60 / 10 m de rayon",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": "Valeur zéonique maximale 100 / 25 m de rayon",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "Valeur zéonique maximale 140 / 50 m de rayon",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 14,
+        "effect": "Valeur zéonique maximale 180 / 100 m de rayon",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 54,
+      "bookId": 12,
+      "name": "Montrer l'Invisible",
+      "level": 50,
+      "actionType": "Active",
+      "type": "Automatique",
+      "effect": "Ce sort révèle toutes les forces ou présences invisibles à tous les individus présents. Il révèle aussi bien les effets surnaturels que les êtres de nature surnaturelle ou invisibles. Le sort s'étend sur une zone déterminée par le rang du sort. Les créatures affectées peuvent éviter de se manifester en réussissant un test de RMys. Il suffit, pour être affecté par ce sort, de se trouver dans sa zone d'effet.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": "Rayon de 25 m / RMys 120",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": "Rayon de 50 m / RMys 160",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "Rayon de 100 m / RMys 200",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 15,
+        "effect": "Rayon de 250 m / RMys 240",
+        "retention": 10
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 55,
+      "bookId": 12,
+      "name": "Malédiction",
+      "level": 50,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Ce sort provoque une série de conditions négatives chez la personne qu'il affecte. Il a pour but de frapper de malchance une action déterminée accomplie par l'individu maudit : entretenir une relation amoureuse, écrire des poèmes, aider quelqu'un, etc. Le sorcier décide quelle est cette action précise ainsi que ses conséquences, dans les limites fixées par le rang du sort.\nPar sa nature, le sortilège n’influence pas seulement la personne qui en est la cible, mais également d’autres personnes, en rapport avec lui, si elles entrent dans le cadre de la malédiction. Dans ce cas, chacun a le droit à son propre test de RMys. Par exemple, une jeune fille voulant commencer une relation sentimentale avec un jeune homme affecté par une malédiction empêchant que l'on tombe amoureux de lui changerait immédiatement d'idée si elle ne réussissait pas son test de RMys. On ne peut réaliser un nouveau test qu'à chaque fois où s'active l'effet de malédiction.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 8,
+        "effect": "La malédiction n’affecte que des actes très concrets (comme écrire un poème pour quelqu’un ou le désir de réaliser une action précise) et se contente de faire échouer les actions, sans autres conséquences / RMys 120",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 10,
+        "effect": "La malédiction affecte aussi des actes génériques (comme combattre, aider les autres, etc.) et provoque une malchance complète en interdisant la cible d’atteindre ses objectifs, ou en maudissant une compétence primaire ou secondaire, qui subit dès lors un malus de -60 chaque fois qu’elle est utilisée / RMys 140",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 13,
+        "effect": "La malédiction affecte tout acte ou condition et produit tout type d’effets négatifs (douleur, tristesse, etc.) ou en maudissant une compétence (primaire ou secondaire), qui subit dès lors un malus de -80 chaque fois qu’elle est utilisée / RMys 160",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 700,
+        "requiredIntelligence": 16,
+        "effect": "La malédiction peut avoir n’importe quel niveau de complexité et produire tous les effets possible, y compris la mort, pour tous ceux qui se retrouvent impliqués / RMys 180",
+        "retention": 35
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 56,
+      "bookId": 12,
+      "name": "Défaire",
+      "level": 50,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Détruit un certain poids de n'importe quelle matière inorganique, si celle-ci ne réussit pas un test de Résistance.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 8,
+        "effect": "50 kg / Résistance 80",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 10,
+        "effect": "100 kg / Résistance 100",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 12,
+        "effect": "250 kg / Résistance 120",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 15,
+        "effect": "500 kg / Résistance 140",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 57,
+      "bookId": 12,
+      "name": "Provoquer Maladie",
+      "level": 50,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Inflige une maladie à un individu, si celui-ci ne réussit pas le test de RMal requis.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 8,
+        "effect": "Maladie de niveau 30",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": "Maladie de niveau 50",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 12,
+        "effect": "Maladie de niveau 70",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 15,
+        "effect": "Maladie de niveau 90",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 58,
+      "bookId": 12,
+      "name": "Ralentir",
+      "level": 50,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Diminue la vitesse de réaction et le déplacement de la cible sur laquelle est lancé ce sort, infligeant un malus à son Mouvement si elle ne réussit pas un test de RMys.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": "Mouvement -2 / RMys 120",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": "Mouvement -4 / RMys 140",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "Mouvement -8 / RMys 160",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 15,
+        "effect": "Mouvement -12 / RMys 180",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 59,
+      "bookId": 12,
+      "name": "Absorber les Informations",
+      "level": 50,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Grâce à ce sort, un sorcier absorbe des connaissances écrites ou dessinées qu'il peut voir ou toucher. Il devient donc capable de lire un livre en quelques secondes et de s'en souvenir comme s'il l'avait fait avec attention. La quantité et la complexité des informations absorbées dépendent du rang du sort. À la fin du sort, seule la mémoire naturelle du sorcier lui permet de retenir correctement les informations.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "Un livre court et simple",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 10,
+        "effect": "Un volume lourd de grande complexité",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 320,
+        "requiredIntelligence": 12,
+        "effect": "L’équivalent d’une encyclopédie",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 16,
+        "effect": "Une bibliothèque complète",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 60,
+      "bookId": 12,
+      "name": "Altérer l'Énergie",
+      "level": 50,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Le sorcier peut transformer plusieurs intensités de n'importe quel type d'énergie élémentaire en une autre, par exemple en transformant le feu en électricité. Si ces intensités sont magiques ou qu'elles ont une Présence propre, des peuvent résister à ce sort en réussissant un test de RMys.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 8,
+        "effect": "10 intensités / RMys 120",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 10,
+        "effect": "15 intensités / RMys 140",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": "20 intensités / RMys 160",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 14,
+        "effect": "25 intensités / RMys 180",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 61,
+      "bookId": 12,
+      "name": "Cécité",
+      "level": 60,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Les cibles affectées dans un rayon déterminé par le rang du sort perdent le sens de la vue si elles échouent à un test de RMys.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "5 m de rayon / RMys 100",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 10,
+        "effect": "25 m de rayon / RMys 120",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 13,
+        "effect": "50 m de rayon / RMys 140",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 15,
+        "effect": "100 m de rayon / RMys 160",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 62,
+      "bookId": 12,
+      "name": "Surdité",
+      "level": 60,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Les cibles affectées dans un rayon déterminé par le rang du sort perdent le sens de l'ouïe si elles échouent à un test de RMys.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "5 m de rayon / RMys 120",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": "25 m de rayon / RMys 140",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 13,
+        "effect": "50 m de rayon / RMys 160",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 15,
+        "effect": "100 m de rayon / RMys 180",
+        "retention": 10
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 63,
+      "bookId": 12,
+      "name": "Mutisme",
+      "level": 60,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Les cibles affectées dans un rayon déterminé par le rang du sort perdent la capacité de parler si elles échouent à un test de RMys.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "5 m de rayon / RMys 120",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": "25 m de rayon / RMys 150",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "50 m de rayon / RMys 190",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 14,
+        "effect": "100 m de rayon / RMys 220",
+        "retention": 10
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 64,
+      "bookId": 12,
+      "name": "Soigner les Blessures",
+      "level": 60,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Guérit n'importe quel type de blessure, en redonnant plusieurs points de vie. Cette guérison ne permet pas de récupérer les membres perdus ou autres dégâts similaires, mais stoppe les effets des hémorragies.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 8,
+        "effect": "40 Points de Vie",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 10,
+        "effect": "80 Points de Vie",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 13,
+        "effect": "160 Points de Vie",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 220,
+        "requiredIntelligence": 16,
+        "effect": "320 Points de Vie",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 65,
+      "bookId": 12,
+      "name": "Visualiser la Carte",
+      "level": 60,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Permet au sorcier de visualiser les éléments de terrain se trouvant dans une zone autour de là où il se tient. Il ne peut localiser ni des individus précis ni des bâtiments, mais place exactement les éléments géographiques : cités, les rivières, les montagnes...",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 8,
+        "effect": "25 km de rayon",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 10,
+        "effect": "100 km de rayon",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 13,
+        "effect": "250 km de rayon",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 15,
+        "effect": "1 000 km de rayon",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 66,
+      "bookId": 12,
+      "name": "Dormir",
+      "level": 60,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Provoque un sommeil intense chez les cibles de ce sort se trouvant dans une zone déterminé par le rang du sort. Les cibles affectées doivent réussir un test de RMys sous peine de tomber dans un profond sommeil en un peu moins d'une minute. Si les cibles ratent ce test par plus de 20 points, les effets du sort sont immédiats. Tant que le sort est maintenu, les cibles affectées ne peuvent pas se réveiller. Toute chose qui permettrait à une cible affectée de se réveiller alors que le sort est maintenu lui donne le droit d'effectuer un nouveau test de RMys.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "10 m de rayon / RMys 80",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 10,
+        "effect": "25 m de rayon / RMys 100",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 12,
+        "effect": "50 m de rayon / RMys 120",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 14,
+        "effect": "100 m de rayon / RMys 140",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 67,
+      "bookId": 12,
+      "name": "Monture Magique",
+      "level": 60,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Crée un être surnaturel avec pour unique but de servir de monture. Cette créature n'a aucune capacité d'attaque et se défend en utilisant la règle d'Encaissement. La monture magique utilise les règles du pouvoir du Ki Annulation du poids pour se déplacer.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 8,
+        "effect": "Mouvement 10 / 500 PV / Force 10 / Taille max 20",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 10,
+        "effect": "Mouvement 12 /1000 PV / Force 12 / Taille max 22",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 12,
+        "effect": "Mouvement 14 / 1 500 PV / Force 10 / Taille max 20",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 220,
+        "requiredIntelligence": 15,
+        "effect": "Mouvement 15 / 2 000 PV / Force 10 / Taille max 20",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 68,
+      "bookId": 12,
+      "name": "Marcher sur les Murs",
+      "level": 60,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Permet à un individu de se déplacer sur les murs ou les plafonds comme s'il s'agissait du sol, en annulant totalement les lois de la gravité.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 8,
+        "effect": "Se déplace sur les murs à une vitesse égale au quart de son Mouvement",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 10,
+        "effect": "Se déplace sur les murs à une vitesse égale à la moitié de son Mouvement",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 12,
+        "effect": "Se déplace sur les murs à une vitesse égale à son Mouvement",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 15,
+        "effect": "Peut se déplacer ou rester immobile et parfaitement stable sur des surfaces complètement impossibles, comme un fil, une plume qui tombe lentement du ciel ou sauter d’une goutte de pluie à l’autre.",
+        "retention": 10
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 69,
+      "bookId": 12,
+      "name": "Fusion avec le Corps",
+      "level": 60,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort permet de faire fusionner un ou plusieurs objets (armes, armures, rossignol...) avec l'individu désigné par le sorcier. L'objet est caché sous une marque visible, comme une cicatrice ou un tatouage, jusqu'au moment où la personne qui le conserve désire l'extraire. La Présence maximale des objets pouvant être fusionnés ne peut pas dépasser une valeur déterminée par le rang du sort. Tant que les objets sont cachés, celui qui les porte ne subit aucun malus pour leur poids ou leur taille, mais ne bénéficie pas non plus de leurs avantages. Il n'est pas possible de faire fusionner un objet qui fait plus de dix fois la taille de la personne désignée. Il faut un round complet pour séparer un objet d'un corps.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": "Présence maximale 80",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": "Présence maximale 180",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "Présence maximale 280",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 15,
+        "effect": "Présence maximale 320",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 70,
+      "bookId": 12,
+      "name": "Annulation de la Fatigue",
+      "level": 60,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort permet à une personne de récupérer de l'épuisement physique dont elle souffre. Il fait récupérer à la cible ses points de Fatigue perdus.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "1 Point de Fatigue",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": "3 Point de Fatigue",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "5 Point de Fatigue",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 14,
+        "effect": "7 Point de Fatigue",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 71,
+      "bookId": 12,
+      "name": "Nuage Acide",
+      "level": 60,
+      "actionType": "Active",
+      "type": "Automatique",
+      "effect": "Ce sort crée un nuage corrosif qui fait fondre les substances matérielles avec lesquelles elle entre en contact. Ces substances doivent réussir un test de RPsy sous peine de perdre une quantité de points de vie égale à la marge d'échec. Si un objet échoue à ce test par plus de 50 points, il perd un niveau de qualité. Pour chaque round où il se trouve exposé et où il échoue au test de Résistance, une substance subit un malus de -10 cumulatif à son test de RPsy du round suivant. Le nuage s'étend sur un rayon déterminé par le rang du sort, et se déplace comme le désire le sorcier avec une qualité de vol variable. Il suffit, pour être affecté par ce sort, de se trouver dans la zone d'effet le round suivant son lancement. Il n'est pas possible de désigner des cibles à l'intérieur de la zone d'effet. Ce sort affecte même le sorcier.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 8,
+        "effect": "RPhy 120 / 5 m de rayon / Qualité de Vol 6",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 10,
+        "effect": "RPhy 140 / 10 m de rayon / Qualité de Vol 8",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 13,
+        "effect": "RPhy 160 / 20 m de rayon / Qualité de Vol 10",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 320,
+        "requiredIntelligence": 16,
+        "effect": "RPhy 180 / 50 m de rayon / Qualité de Vol 12",
+        "retention": 35
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 72,
+      "bookId": 12,
+      "name": "Annulation de la Protection",
+      "level": 60,
+      "actionType": "Active",
+      "type": "Automatique",
+      "effect": "Réduit l'IP d'un défenseur, si celui-ci (ou son armure) ne réussit pas un test de RMys.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "- 2 à l’IP / RMys 140",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": "-4 à l’IP / RMys 160",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "-6 à l’IP / RMys 180",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 14,
+        "effect": "-8 à l’IP / RMys 200",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 73,
+      "bookId": 12,
+      "name": "Augmenter les Caractéristiques Spirituelles",
+      "level": 70,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort augmente une des trois caractéristiques spirituelles d'un personnage : Intelligence, Pouvoir ou Volonté. De plus, il permet aussi d'augmenter la Perception. La progression est réduite de moitié si la caractéristique augmentée atteint 12. L'augmentation de l'Intelligence ne permet pas à un sorcier d'augmenter la valeur Zéonique maximale de ses sorts. Chaque caractéristique ne peut être affectée que par un seul de ces sorts à la fois.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": "+1 à la caractéristique",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 11,
+        "effect": "+3 à la caractéristique",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 14,
+        "effect": "+5 à la caractéristique",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 16,
+        "effect": "+7 à la caractéristique",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 74,
+      "bookId": 12,
+      "name": "Arme Magique",
+      "level": 70,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Le sorcier fait de son arme une arme surnaturelle. L'objet est considéré en tout point comme un objet de qualité variable capable d'altérer l'énergie. La Présence de l'arme ciblée ne peut pas excéder 25",
+      "initialGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 9,
+        "effect": "Qualité +5",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 11,
+        "effect": "Qualité +10",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 14,
+        "effect": "Qualité +15",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 16,
+        "effect": "Qualité +20",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 75,
+      "bookId": 12,
+      "name": "Augmenter les Caractéristiques Physiques",
+      "level": 70,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort augmente une des quatre caractéristiques physiques d'un personnage : Dextérité, Agilité, Force ou Constitution. De plus, il permet aussi d'augmenter la Perception. La progression est réduite de moitié si la caractéristique augmentée atteint 12. L'augmentation de l'Intelligence ne permet pas à un sorcier d'augmenter la valeur Zéonique maximale de ses sorts. Chaque caractéristique ne peut être affectée que par un seul de ces sorts à la fois.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": "+1 à la caractéristique",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 11,
+        "effect": "+3 à la caractéristique",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 14,
+        "effect": "+5 à la caractéristique",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 16,
+        "effect": "+7 à la caractéristique",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 76,
+      "bookId": 12,
+      "name": "Altération Mineure",
+      "level": 70,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Permet au sorcier de modeler la forme de la matière inorganique, de façon à transformer un objet en un autre similaire d'égale Présence. Par exemple, il est possible de transformer un harpon en lance, puisque tous deux ont une forme similaire et la même Présence, mais pas en épée à deux mains, puisque la Présence de l'épée à deux mains est supérieure et que leurs formes sont considérablement différentes. La Présence affectable maximale dépend du rang du sort.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 9,
+        "effect": "Présence maximale 30",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 11,
+        "effect": "Présence maximale 50",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 14,
+        "effect": "Présence maximale 70",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 320,
+        "requiredIntelligence": 16,
+        "effect": "Présence maximale 100",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 78,
+      "bookId": 12,
+      "name": "Paralyser",
+      "level": 70,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Soumet à l'effet de Paralysie totale n'importe quelle cible se trouvant dans une zone fixée par le rang du sort. Il faut réussir une RMys pour éviter ce sort.",
+      "initialGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 8,
+        "effect": "10 m de rayon / RMys 80",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 9,
+        "effect": "25 m de rayon / RMys 100",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 13,
+        "effect": "50 m de rayon / RMys 120",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 16,
+        "effect": "100 m de rayon / RMys 140",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 79,
+      "bookId": 12,
+      "name": "Repousser",
+      "level": 70,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Enchante un objet physique avec de l'énergie magique, afin qu'il repousse fermement tout ce qui le touche. Ce sort provoque un impact de Force 8 sur tout ce qui entre en contact avec l'objet enchanté. Comme pour tous les coups similaires, le MJ doit déterminer les dégâts que subit un individu repoussé, en fonction de la différence entre un test opposé d'Agilité ou de Force, et de ce qui l'entoure. L'indice d'augmentation de Force est réduit de moitié à partir du moment où la Force dépasse une valeur fixée par le rang du sort. La Présence de l'objet est également déterminée par le rang.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "Présence maximale 30 / Force 8",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 11,
+        "effect": "Présence maximale 40 / Force 10",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 13,
+        "effect": "Présence maximale 50 / Force 12",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 220,
+        "requiredIntelligence": 16,
+        "effect": "Présence maximale 60 / Force 14",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 80,
+      "bookId": 12,
+      "name": "Fléau",
+      "level": 70,
+      "actionType": "Active",
+      "type": "Automatique",
+      "effect": "Ce sort doit être lancé sur un individu ou un lieu infecté par une maladie. Il étend automatiquement l'infection à toutes les personnes se trouvant dans un rayon fixé par le rang du sort. Ces personnes ont droit à un test de RMal contre la maladie propagée pour éviter l'infection. Il suffit simplement de se trouver dans la zone d'effet pour être affecté par ce sort. Il est aussi possible d'éviter ce fléau en réussissant un test de RMys contre 100. Le niveau de la maladie choisie est également déterminé par le rang du sort.",
+      "initialGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 8,
+        "effect": "1 km de rayon / Niveau maximal de maladie 20",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 11,
+        "effect": "5 km de rayon / Niveau maximal de maladie 40",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 13,
+        "effect": "10 km de rayon / Niveau maximal de maladie 60",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 16,
+        "effect": "25 km de rayon / Niveau maximal de maladie / Le SR du test de RMal augmente de +10",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 81,
+      "bookId": 12,
+      "name": "Faiblesse",
+      "level": 70,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "La cible de ce sort est temporairement soumise à l'effet de Faiblesse évoqué dans le Chapitre 14. Il faut pour éviter cet effet réussir un test de RMys.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 9,
+        "effect": "RMys 120",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 11,
+        "effect": "RMys 140",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 14,
+        "effect": "RMys 160",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 16,
+        "effect": "RMys 180",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 82,
+      "bookId": 12,
+      "name": "Oubli",
+      "level": 70,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Ce sort affecte la mémoire d'un individu, lui faisant oublier tout ce que désire le sorcier. Si les souvenirs que ce dernier souhaite effacer sont très importants pour la cible, celle-ci bénéficie d'un bonus de +40 à son test. Bien que ce sort n'ait pas de maintien, la cible a la possibilité d'effectuer un nouveau test de résistance si elle découvre quelque chose qui puisse lui rendre la mémoire. Ce sort n'affecte pas les compétences du personnage, seulement sa mémoire consciente. Il faut réussir un test de RMys ou RPsy pour en éviter les effets.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 8,
+        "effect": "RMys ou RPsy 120",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 11,
+        "effect": "RMys ou RPsy 140",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 13,
+        "effect": "RMys ou RPsy 160",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 16,
+        "effect": "RMys ou RPsy 180",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 83,
+      "bookId": 12,
+      "name": "Résister",
+      "level": 70,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Augmente une des Résistances de la cible. Seule une Résistance est augmentée, comme la RMys ou la RPsy, et pas toutes en même temps.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "+20 à une Résistance",
+        "retention": 20
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 11,
+        "effect": "+40 à une Résistance",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 13,
+        "effect": "+60 à une Résistance",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 16,
+        "effect": "+80 à une Résistance",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 84,
+      "bookId": 12,
+      "name": "Créer des Émotions",
+      "level": 70,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Engendre un type précis de sentiment ou d'émotion chez l'individu désigné par le sorcier. La cible de ce sort peut y résister en réussissant un test de RMys ou RPsy. Elle peut effectuer un nouveau test chaque jour ou chaque fois qu'elle se doute sérieusement d'avoir subi une influence surnaturelle.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 8,
+        "effect": "RMys ou RPsy 120",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 11,
+        "effect": "RMys ou RPsy 140",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 220,
+        "requiredIntelligence": 13,
+        "effect": "RMys ou RPsy 160",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 16,
+        "effect": "RMys ou RPsy 180",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 85,
+      "bookId": 12,
+      "name": "Sphère de Lévitation",
+      "level": 80,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Ce sort fait léviter tout ce qui se trouve dans un rayon déterminé par le rang du sort autour du sorcier. Il décide de ce qui s'élève et de ce qui reste à terre, quel que soit le poids ou la taille des cibles. Les objets ou personnes se trouvant dans la zone d'effet sont déplacés par le sorcier avec l'équivalent d'une Qualité de Vol de 6. S'ils désirent résister à ce sort, ils doivent réussir un test de RMys ou RPsy. Seuls les êtres vivants ou animés ont droit à un test de Résistance, ainsi que les bâtisses dotées de caractéristiques surnaturelles.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 8,
+        "effect": "RMys 80 / 25 m de rayon",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 11,
+        "effect": "RMys 100 / 150 m de rayon",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 13,
+        "effect": "RMys 120 / 250 m de rayon",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 16,
+        "effect": "RMys 140 / 350 m de rayon",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 86,
+      "bookId": 12,
+      "name": "Dévier la Trajectoire",
+      "level": 80,
+      "actionType": "Passive",
+      "type": "Effet, Défense",
+      "effect": "Le sorcier peut modifier la trajectoire d'un corps en mouvement en le redirigeant dans la direction qu'il désire. Ce sort affecte n'importe quelle masse, aussi petite qu'une flèche ou aussi grande qu'un bateau. Ce sort ne permet pas de déplacer un objet statique, uniquement de modifier le chemin d'un corps déjà en mouvement. Dévier la Trajectoire peut aussi être utilisé comme moyen de défense contre les attaques physiques, comme les coups d'épée ou les projectiles. Si le sorcier réussit à se défendre avec sa Projection magique, il peut rediriger cette attaque contre un autre adversaire. Il est possible d'éviter les effets de ce sort en réussissant un test de RMys.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": "RMys 140",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 11,
+        "effect": "RMys 160",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 220,
+        "requiredIntelligence": 13,
+        "effect": "RMys 200",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 16,
+        "effect": "RMys 240",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 87,
+      "bookId": 12,
+      "name": "Inutilité",
+      "level": 80,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "La cible affectée par le sort d'Inutilité devient torpide, incapable d'effectuer des actions physiques. Elle doit réussir un test de RMys sous peine de subir un malus à toutes ses actions égal à sa marge d'échec. Ce sort n'affecte pas les compétences magiques, psychiques et de perception.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 8,
+        "effect": "RMys 120",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 11,
+        "effect": "RMys 140",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 13,
+        "effect": "RMys 180",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 16,
+        "effect": "RMys 220",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 88,
+      "bookId": 12,
+      "name": "Sort en Suspens",
+      "level": 80,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort permet de stocker un sort à l'intérieur d'un objet pour qu'il puisse être utilisé plus tard par d'autres sorciers. Sort en Suspens doit être lancé en même temps que l'autre sort, de façon à ce que ce deuxième sort, au lieu de fonctionner normalement, soit placé en suspens à l'intérieur de quelque chose. Le sort en suspens peut être activé plus tard, par n'importe quel sorcier qui insuffle dans le réceptacle le coût Zéonique exact avec lequel il a été lancé. Le sorcier qui possède l'objet contrôle le sort comme s'il l'avait lancé lui-même, et il peut même en payer le maintien si besoin est. Le sort en suspens peut être utilisé chaque fois que l'on paie le coût Zéonique requis. Voici un exemple : un archimage suspend un sort de Boule de Feu avec une valeur Zéonique de 50 dans un bâton. Dès ce moment, tout personnage tenant ce bâton et lui insufflant 50 points de Zéon déclenche une Boule de Feu. On peut suspendre n'importe quel type de sort de cette façon, tant que sa valeur Zéonique ne dépasse pas ce qu’indique le rang du sort.",
+      "initialGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 9,
+        "effect": "Zéon maximal 80",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 11,
+        "effect": "Zéon maximal 120",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 13,
+        "effect": "Zéon maximal 180",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 16,
+        "effect": "Zéon maximal 240",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 89,
+      "bookId": 12,
+      "name": "Invisibilité",
+      "level": 80,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort rend invisible une ou plusieurs cibles que désigne le sorcier. Il est possible de percevoir les altérations produites par un objet ou une créature rendu invisible par ce sort en réussissant un test de Vigilance ou un test d'Observation.",
+      "initialGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 9,
+        "effect": "Le test de Vigilance se fait contre un SR Absurde (180)",
+        "retention": 20
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 11,
+        "effect": "Le test de Vigilance se fait contre un SR Quasiment Impossible (240)",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 13,
+        "effect": "Le test de Vigilance se fait contre un SR Impossible (280)",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 16,
+        "effect": "Il est impossible de voir la cible avec son sens visuel naturel",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 90,
+      "bookId": 12,
+      "name": "Domination",
+      "level": 80,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Ce sort permet de dominer la volonté de quiconque ne réussit pas un test de RMys ou RPsy. Une cible affectée a droit à un nouveau test chaque jour ou chaque fois qu'on lui donne un ordre allant totalement à rencontre de sa nature. Si l'ordre est vraiment très contraire à sa nature, elle peut bénéficier d'un bonus de +20 à son test.",
+      "initialGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 9,
+        "effect": "RMys ou RPsy 100",
+        "retention": 20
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 11,
+        "effect": "RMys ou RPsy 120",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 13,
+        "effect": "RMys ou RPsy 140",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 16,
+        "effect": "RMys ou RPsy 160",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 91,
+      "bookId": 12,
+      "name": "Marque de Détection",
+      "level": 80,
+      "actionType": "Active",
+      "type": "Effet, Animique",
+      "effect": "Ce sort enchante une personne, un objet ou un lieu et permet au sorcier d'y unir ses cinq sens. De cette façon, le sorcier peut utiliser ses compétences sensorielles comme s'il se trouvait sur place,  à une distance maximale fixée par le rang du sort. De plus, il a toujours conscience d'où se situe sa marque par rapport à sa position. Dans le cas où il s'agit d'un être vivant ou d'un objet surnaturel, celui-ci peut éviter d'être affecté en réussissant un test de RMys.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": "10 km / RMys 120",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 11,
+        "effect": "100 km / RMys 140",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 14,
+        "effect": "1 000 km / RMys 160",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 16,
+        "effect": "N’importe quelle distance / RMys 180",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 92,
+      "bookId": 12,
+      "name": "Vol",
+      "level": 80,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Permet à la cible de se mouvoir avec une Qualité de Vol fixée par le rang du sort.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 8,
+        "effect": "Qualité de Vol 8",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 11,
+        "effect": "Qualité de Vol 10",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 13,
+        "effect": "Qualité de Vol 12",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 16,
+        "effect": "Qualité de Vol 14",
+        "retention": 10
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 93,
+      "bookId": 12,
+      "name": "Connaissance Offensive",
+      "level": 80,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Avec ce sort, le sorcier augmente sa Projection magique Offensive. Une personne précise ne peut être affectée que par un seul sort de Connaissance Offensive à la fois.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 9,
+        "effect": "+20 en Projection Magique Offensive",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 11,
+        "effect": "+30 en Projection Magique Offensive",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 13,
+        "effect": "+40 en Projection Magique Offensive",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 16,
+        "effect": "+50 en Projection Magique Offensive",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 94,
+      "bookId": 12,
+      "name": "Connaissance Défensive",
+      "level": 80,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Avec ce sort, le sorcier augmente sa Projection magique défensive. Une personne précise ne peut être affectée que par un seul sort de Connaissance Défensive à la fois.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 9,
+        "effect": "+20 en Projection Magique Défensive",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 11,
+        "effect": "+30 en Projection Magique Défensive",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 13,
+        "effect": "+40 en Projection Magique Défensive",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 16,
+        "effect": "+50 en Projection Magique Défensive",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 95,
+      "bookId": 12,
+      "name": "Contention",
+      "level": 80,
+      "actionType": "Active",
+      "type": "Automatique",
+      "effect": "Ce sort enchante un lieu déterminé pour faire, en sorte que tous les êtres qui y entrent, ou qui se trouvent déjà à l'intérieur, ne puissent pas en sortir s'ils ne réussissent pas un test de RMys. Même si une personne affectée peut se déplacer librement dans la zone d'effet, il lui est complètement impossible de traverser la barrière extérieure. Après un échec au test de Résistance, un être affecté n'a plus droit à un test de Résistance tant que le sort est maintenu, sauf si ses Résistances augmentent. Il suffit pour être affecté par ce sort de se trouver à l'intérieur de la zone d'effet durant le round suivant son lancement. Le sorcier ne peut pas choisir de cible à l'intérieur de la zone et peut se retrouver enfermé lui aussi. La zone affectée ne peut pas dépasser une valeur fixée par le rang du sort.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 9,
+        "effect": "10 m de rayon / RMys 120",
+        "retention": 40
+      },
+      "intermediateGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 11,
+        "effect": "25 m de rayon / RMys 140",
+        "retention": 50
+      },
+      "advancedGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 14,
+        "effect": "50 m de rayon / RMys 160",
+        "retention": 60
+      },
+      "arcaneGrade": {
+        "zeon": 320,
+        "requiredIntelligence": 16,
+        "effect": "100 m de rayon / RMys 180",
+        "retention": 65
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 96,
+      "bookId": 12,
+      "name": "Cible Parfaite",
+      "level": 80,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort enchante un projectile conventionnel de façon à ce que, une fois tiré, il atteigne inéluctablement sa cible. Ce projectile utilise la compétence de son tireur",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 9,
+        "effect": "Bonus de compétence +40",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 11,
+        "effect": "Bonus de compétence +60",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 13,
+        "effect": "Bonus de compétence +80",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 16,
+        "effect": "Bonus de compétence +100",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 97,
+      "bookId": 12,
+      "name": "Désenchantement",
+      "level": 90,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Détruit automatiquement un objet magique dont la Présence ne dépasse pas une valeur déterminée par le rang du sort. Le sorcier peut choisir entre détruire complètement l'objet ou simplement les déposséder de ses qualités surnaturelles.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": "Présence maximale 80",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 13,
+        "effect": "Présence maximale 100",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 320,
+        "requiredIntelligence": 15,
+        "effect": "Présence maximale 120",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 17,
+        "effect": "Présence maximale 140",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 98,
+      "bookId": 12,
+      "name": "Sort Naturel",
+      "level": 90,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Le Sort Naturel permet à un sorcier de lier à son essence un ou plusieurs sortilèges qu'il prépare pour une occasion particulière, ce qui lui donne la capacité de les lancer plus tard, autant de fois qu'il le désire, sans qu’il ne lui coûte aucun point de Zéon. De cette façon, le sorcier peut lancer instantanément un de ces sorts à chaque round. Au moment où il lance un tel sort, le sorcier doit effectuer tous les sortilèges qu'il compte préparer. La valeur Zéonique maximale d'un sort inné, ou de la somme de plusieurs sorts innés, ne peut pas dépasser ce qu’indique le rang du sort. Un même personnage ne peut maintenir qu'un seul Sort Naturel à la fois.",
+      "initialGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 10,
+        "effect": "Valeur zéonique maximale 100",
+        "retention": 70
+      },
+      "intermediateGrade": {
+        "zeon": 420,
+        "requiredIntelligence": 13,
+        "effect": "Valeur zéonique maximale 140",
+        "retention": 85
+      },
+      "advancedGrade": {
+        "zeon": 480,
+        "requiredIntelligence": 15,
+        "effect": "Valeur zéonique maximale 180",
+        "retention": 100
+      },
+      "arcaneGrade": {
+        "zeon": 540,
+        "requiredIntelligence": 17,
+        "effect": "Valeur zéonique maximale 220",
+        "retention": 110
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 99,
+      "bookId": 12,
+      "name": "Préparer un Sort",
+      "level": 90,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort permet d'introduire un sort à l'intérieur d'un objet ou d'un individu pour le lancer plus tard, automatiquement, sans aucun besoin d'accumulation ou de préparation. Ce sort doit être lancé en même temps que le sorcier réalise un autre sort, de façon à ce que le deuxième sort, au lieu de fonctionner normalement, reste à l'intérieur de la cible, dans l'attente d'être libéré plus tard. Le sort préparé peut être activé à volonté par le sorcier, par l'individu dans lequel il est placé ou par celui qui possède l'objet enchanté. Il utilise la Projection magique de la personne qui l'a lancé, sauf si celui qui le possède actuellement décide d'utiliser la sienne. Une fois lancé, ce sort disparaît.\nLa valeur Zéonique maximale du sort ne peut pas dépasser ce qu’indique le rang du sort. Si le coût de maintien de Préparer un Sort n'est plus payé, le deuxième sort est lui aussi perdu. Il n'est possible de lancer qu'un seul sort préparé par round, quel que soit le nombre de sorts stockés. Un objet ou une personne peut contenir jusqu'à quatre fois sa Présence en Valeur Zéonique.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": "Valeur zéonique maximale 100",
+        "retention": 20
+      },
+      "intermediateGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 12,
+        "effect": "Valeur zéonique maximale 200",
+        "retention": 30
+      },
+      "advancedGrade": {
+        "zeon": 360,
+        "requiredIntelligence": 14,
+        "effect": "Valeur zéonique maximale 300",
+        "retention": 40
+      },
+      "arcaneGrade": {
+        "zeon": 420,
+        "requiredIntelligence": 16,
+        "effect": "Valeur zéonique maximale 400",
+        "retention": 45
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 100,
+      "bookId": 12,
+      "name": "Voler un Sort",
+      "level": 90,
+      "actionType": "Active",
+      "type": "Automatique",
+      "effect": "Permet de couper les liens d'un sort avec celui qui l'a lancé et de le lier à autre individu. En termes de jeu, le sorcier prend le contrôle d'un sort qui ne lui appartient pas et le contrôle dès ce moment, comme s'il s'agissait du sien. La valeur Zéonique du sort volé ne peut pas dépasser ce qu’indique le rang du sort et il n'est possible de voler que les sorts à maintien, jamais les sorts sans maintien. Le sorcier qui contrôle le sort peut éviter qu'il ne lui soit dérobé en réussissant un test de RMys.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": "Valeur zéonique maximale 120 / RMys 120",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 12,
+        "effect": "Valeur zéonique maximale 180 / RMys 140",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 340,
+        "requiredIntelligence": 14,
+        "effect": "Valeur zéonique maximale 240 / RMys 160",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 16,
+        "effect": "Valeur zéonique maximale 300 / RMys 180",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 101,
+      "bookId": 12,
+      "name": "Immortalité",
+      "level": 90,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Tant que ce sort reste actif, le sorcier ou celui qu'il désigne comme cible ne vieillit plus ni ne souffre des ravages du temps. Il devient donc un être immortel, sauf vis-à-vis des morts violentes. Si ce sort n'est plus maintenu ou est détruit, l'individu récupère l'âge qu'il devrait avoir à un rythme accéléré.",
+      "initialGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 10,
+        "effect": "Les capacités décrites plus haut",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 13,
+        "effect": "Comme Initial, et la cible n'est plus vulnérable aux poisons ou aux maladies d'origine naturelle",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 15,
+        "effect": "Comme Intermédiaire, et la cible ne peut plus être tué en subissant des dégâts physiques naturels",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 17,
+        "effect": "Comme Avancé, mais le personnage peut encaisser n’importe quelle quantité de dégâts physique sans mourir à moins qu’il ne subisse un critique mortel",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 102,
+      "bookId": 12,
+      "name": "Prisme de Magie",
+      "level": 90,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort solidifie la magie et crée un récipient surnaturel pour le Zéon. En termes de jeu, il crée un réceptacle de magie accueillant un maximum de Zéon fixé par le rang du sort. Ce réceptacle apparaît comme vide. Il n'est possible de maintenir actif qu'un seul Prisme de Magie à la fois.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": "400 Points de Zéon",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "800 Points de Zéon",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 14,
+        "effect": "1 500 Points de Zéon",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 320,
+        "requiredIntelligence": 16,
+        "effect": "3 000 Points de Zéon",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 103,
+      "bookId": 12,
+      "name": "Annulation des Besoins",
+      "level": 90,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort fait disparaître tous les besoins physiques d'un individu. Tant que le sort est maintenu, il n'est pas affecté par la faim, la fatigue ou le sommeil, et ignore tous les malus naturels que provoquent des effets surnaturels. Le personnage peut continuer à dépenser des points de fatigue pour améliorer ses actions physiques (récupérées au rythme d’un point par heure) mais ne souffre d’aucun malus dus à des valeurs de fatigue trop faibles.",
+      "initialGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 10,
+        "effect": "Les capacités décrites plus haut",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 360,
+        "requiredIntelligence": 12,
+        "effect": "Comme Initial, et le personnage ne subit plus les effets des événements climatiques",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 420,
+        "requiredIntelligence": 14,
+        "effect": "Comme Intermédiaire, et le personnage ignore tout malus naturel qui n’est pas provoqué par des effets surnaturels",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 480,
+        "requiredIntelligence": 16,
+        "effect": "Comme Avancé, et le personnage récupère un point de fatigue par round",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 104,
+      "bookId": 12,
+      "name": "Immunité Physique",
+      "level": 90,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "L'individu ou l'objet désigné devient complètement invulnérable vis-à-vis de toutes les sources de dégât qui n'affectent pas l'énergie. Ce sort peut affecter autant de cibles que désire le sorcier, tant que la somme de leurs Présences ne dépasse pas ce qu’indique le rang du sort.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": "Présence maximale 60",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "Présence maximale 80",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 14,
+        "effect": "Présence maximale 100",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 320,
+        "requiredIntelligence": 16,
+        "effect": "Présence maximale 120",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 105,
+      "bookId": 12,
+      "name": "Portail",
+      "level": 90,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Portail crée une porte magique de transit entre deux lieux distants. Tout ce qui la passe se retrouve instantanément de l'autre côté. Le sort reste fixé dans le lieu où il est lancé et à l'endroit de sortie, et le sorcier ne peut donc en changer la localisation plus tard. Son créateur peut aussi décider, au cours du lancement, si ce portail fonctionne dans les deux sens ou s'il ne transporte que dans une direction. Les dimensions de l’ouverture et la distance maximale à travers le portail ne peuvent dépasser ce qui est fixé par le rang du sort. Le portail peut transporter au maximum une valeur de présence également déterminée par le rang.",
+      "initialGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 10,
+        "effect": "5 m de large / 1 000 km de distance / 500 de présence totale",
+        "retention": 25
+      },
+      "intermediateGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 12,
+        "effect": "15 m de large / 5 000 km de distance / 1 000 de présence totale",
+        "retention": 30
+      },
+      "advancedGrade": {
+        "zeon": 700,
+        "requiredIntelligence": 14,
+        "effect": "25 m de large / 25 000 km de distance / 2 000 de présence totale",
+        "retention": 35
+      },
+      "arcaneGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 16,
+        "effect": "50 m de large / n’importe quelle distance / sans limite de présence",
+        "retention": 40
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 106,
+      "bookId": 12,
+      "name": "Renvoi de Sort",
+      "level": 90,
+      "actionType": "Passive",
+      "type": "Automatique",
+      "effect": "Ce sort renvoie un sort actif à l'envoyeur, ou sur une autre cible au choix. Le sortilège renvoyé utilise la même Projection magique que celui qui l'a lancé. Le renvoi est un effet automatique, tant que la valeur Zéonique du sort affecté ne dépasse pas ce qu’indique le rang du sort.",
+      "initialGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 10,
+        "effect": "Valeur zéonique maximale 100",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": "Valeur zéonique maximale 120",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 14,
+        "effect": "Valeur zéonique maximale 140",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 16,
+        "effect": "Valeur zéonique maximale 160",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 107,
+      "bookId": 12,
+      "name": "Téléportation Libre",
+      "level": 90,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Le sorcier, ou celui qu'il désigne, est transporté à une distance maximale fixé par le rang du sort. Ce sort permet de passer à travers des obstacles physiques, tant qu'ils ne sont pas basés sur l'énergie. Il peut affecter autant de cibles que désire le sorcier, tant que la somme de leurs Présences n'est pas supérieure à ce qu’indique le rang du sort.",
+      "initialGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 10,
+        "effect": "50 km / Présence maximale 80",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 480,
+        "requiredIntelligence": 12,
+        "effect": "1 000 km / Présence maximale 180",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 560,
+        "requiredIntelligence": 14,
+        "effect": "5 000 km / Présence maximale 240",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 640,
+        "requiredIntelligence": 16,
+        "effect": "10 000 km / Présence maximale 320",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 108,
+      "bookId": 12,
+      "name": "Localisation",
+      "level": 90,
+      "actionType": "Active",
+      "type": "Détection",
+      "effect": "Localisation permet de trouver une personne, un objet ou un lieu, et de connaître son emplacement exact à ce moment, tant qu'il se situe en deçà d’une distance fixée par le rang du sort. Le sorcier peut chercher n'importe quelle chose précise, mais pas de qualités subjectives",
+      "initialGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 10,
+        "effect": "100 km / RMys 120",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 360,
+        "requiredIntelligence": 12,
+        "effect": "1 000 km / RMys 140",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 420,
+        "requiredIntelligence": 14,
+        "effect": "10 000 km / RMys 180",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 480,
+        "requiredIntelligence": 16,
+        "effect": "N’importe quelle distance / RMys 220",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 109,
+      "bookId": 12,
+      "name": "Œil du Temps",
+      "level": 100,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Le sorcier peut envoyer ses sens dans le passé pour observer tous les événements qui se sont passé dans le lieu où il se trouve. Le sorcier peut librement avancer ou reculer dans le temps jusqu'au moment désiré.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 11,
+        "effect": "Jusqu’à une décennie en arrière",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 13,
+        "effect": "Jusqu’à un siècle en arrière",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 15,
+        "effect": "Jusqu’à un millénaire en arrière",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 17,
+        "effect": "Sans limite de temps",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 110,
+      "bookId": 12,
+      "name": "Bouclier contre les Pouvoirs",
+      "level": 100,
+      "actionType": "Active",
+      "type": "Automatique",
+      "effect": "Affecte une zone précise, à l'intérieur de laquelle le sorcier empêche d'utiliser des pouvoirs surnaturels de n'importe quel type. Aucun sort, aucun pouvoir psychique et aucune Technique de Ki ne fonctionne dans cette zone. Il n'est pas non plus possible de réaliser une activité de convocation. Les seuils de compétences, talent psychique, coût en Ki et valeur zéonique maximale sont fixés par le rang du sort, tout comme le rayon de la zone d’effet. Une fois déterminée, la zone reste fixée à cet endroit. Il suffit pour être affecté par ce sort de se trouver dans la zone d'effet.",
+      "initialGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 11,
+        "effect": "50 m de rayon / Valeur Zéonique 100 / Talent psychique 140 / Coût en Ki 8 / Convocation 180",
+        "retention": 30
+      },
+      "intermediateGrade": {
+        "zeon": 360,
+        "requiredIntelligence": 13,
+        "effect": "150 m de rayon / Valeur Zéonique 150 / Talent psychique 180 / Coût en Ki 14 / Convocation 240",
+        "retention": 40
+      },
+      "advancedGrade": {
+        "zeon": 420,
+        "requiredIntelligence": 15,
+        "effect": "300 m de rayon / Valeur Zéonique 200 / Talent psychique 240 / Coût en Ki 22 / Convocation 280",
+        "retention": 45
+      },
+      "arcaneGrade": {
+        "zeon": 480,
+        "requiredIntelligence": 17,
+        "effect": "500 m de rayon / Valeur Zéonique 250 / Talent psychique 280 / Coût en Ki 30 / Convocation 320",
+        "retention": 50
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 111,
+      "bookId": 12,
+      "name": "Possession",
+      "level": 100,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Permet au sorcier de prendre le contrôle du corps d'un autre individu et de transférer temporairement une part de son esprit vers son hôte. Ce contrôle permet au sorcier d'utiliser librement toutes les capacités du sujet possédé ou tes siennes. Dans ce dernier cas, les caractéristiques physiques et leurs modificateurs sont celles du corps d'accueil et pas celles du sorcier. Si l'individu possédé n'a pas une forme physique similaire à celle du sorcier, ce dernier applique un malus compris entre -20 et -40, au choix du MJ, représentant la difficulté à contrôler efficacement cette forme. Le sorcier décide à chaque round s'il utilise ses propres caractéristiques ou celles du corps possédé, mais il ne pourra en aucune manière les mélanger. Tant que Possession est maintenue, le corps du sorcier reste dans un état comateux. Les attaques qui n'altèrent pas l'énergie ne peuvent affecter que le corps possédé",
+      "initialGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 10,
+        "effect": "RMys 120",
+        "retention": 30
+      },
+      "intermediateGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 12,
+        "effect": "RMys 140",
+        "retention": 40
+      },
+      "advancedGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 14,
+        "effect": "RMys 180",
+        "retention": 50
+      },
+      "arcaneGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 16,
+        "effect": "RMys 220",
+        "retention": 60
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 112,
+      "bookId": 12,
+      "name": "Conditionnement",
+      "level": 100,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Conditionnement affecte directement les autres sorts que lance le sorcier, en les mettant en suspens et en ne les activant que lors d'une circonstance ou d'une condition déterminée, choisi par le sorcier. Ce sort doit être lancé en même temps que les autres sorts, afin que ceux-ci puissent attendre les conditions choisies pour s'activer, au lieu de prendre instantanément effet. Chaque sort conditionné peut être soumis à une condition distincte\nLe sort conditionné est automatiquement activé au moment même où se présente la circonstance déterminée, même si le sorcier n'en a pas conscience. Par exemple, si un sorcier conditionne le sort Stopper la Chute, il peut décider qu'il s'active à l'instant où il tombe d'une grande hauteur. De même, un nécromant peut conditionner un sort de Vaincre la Mort pour qu'il s'exécute au moment où il meurt. L'action de ce sort est active ou passive, suivant sa nature propre. Quand ils sont mis en suspens, les sorts n'ont pas de maintien, puisqu'ils ne sont pas actifs. Si le sort de conditionnement disparaît, les autres sorts sont eux aussi perdus. Un sorcier peut conditionner autant de sorts qu'il le désire, tant que la somme de leur valeur Zéonique ne dépasse pas ce qu’indique le rang du sort. On ne peut maintenir actif qu'un seul sort de Conditionnement à la fois.",
+      "initialGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 11,
+        "effect": "Zéon maximal 100",
+        "retention": 30
+      },
+      "intermediateGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 13,
+        "effect": "Zéon maximal 150",
+        "retention": 40
+      },
+      "advancedGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 15,
+        "effect": "Zéon maximal 200",
+        "retention": 50
+      },
+      "arcaneGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 17,
+        "effect": "Zéon maximal 250",
+        "retention": 60
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 113,
+      "bookId": 12,
+      "name": "Lier le Maintien",
+      "level": 100,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Le sorcier peut lier le coût de maintien d'un de ses sorts à un autre individu ou objet, l'obligeant ainsi à dépenser ses points de Zéon de façon inconsciente. Ce lien ne peut être utilisé que sur des personnes qui possèdent le Don mystique ou des objets ou créatures magiques. Il faut pour ne pas être affecté réussir un test de RMys. Si l'individu lié ne se rend pas compte qu'il est pris pour cible de ce sortilège, il ne peut pas réaliser de nouveau test de Résistance. S'il s'en aperçoit et qu'il essaie d'y résister, il a droit à un nouveau test de Résistance en fonction du type de sort qui lui est lié",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": "RMys 120",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 12,
+        "effect": "RMys 140",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 14,
+        "effect": "RMys 160",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 16,
+        "effect": "RMys 180",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 114,
+      "bookId": 12,
+      "name": "Le Magistrat",
+      "level": 100,
+      "actionType": "Active",
+      "type": "Automatique",
+      "effect": "Ce sort crée une zone à l'intérieur de laquelle le sorcier devient le juge absolu de tout ce qui advient",
+      "initialGrade": {
+        "zeon": 450,
+        "requiredIntelligence": 12,
+        "effect": "50 m de rayon / RMys 140",
+        "retention": 45
+      },
+      "intermediateGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 14,
+        "effect": "100 m de rayon / RMys 180",
+        "retention": 60
+      },
+      "advancedGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 16,
+        "effect": "500 m de rayon / RMys 220",
+        "retention": 80
+      },
+      "arcaneGrade": {
+        "zeon": 1000,
+        "requiredIntelligence": 18,
+        "effect": "1 km de rayon / RMys 260",
+        "retention": 100
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 115,
+      "bookId": 12,
+      "name": "Sceller",
+      "level": 100,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Sceller suspend un sortilège animique actif sur une personne et interdit qu'elle se libère plus tard de ses effets. Ce sort s'utilise sur n'importe quel sort de type Animique, lancé auparavant sur un individu qui a échoué au test de Résistance. Jusqu'au moment où le sort Animique est détruit ou n'est plus maintenu, la personne affectée perd toute capacité de réaliser un nouveau test de résistance, quelles que soient les règles générales ou celles du sort concerné. Sceller a aucun effet sur les sorts sans maintien ni sur ceux qui agissent uniquement dans une zone précise.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 11,
+        "effect": "Suspend un sortilège de rang Initial au maximum",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 360,
+        "requiredIntelligence": 13,
+        "effect": "Suspend un sortilège de rang Intermédiaire au maximum",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 420,
+        "requiredIntelligence": 15,
+        "effect": "Suspend un sortilège de rang Avancé au maximum",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 480,
+        "requiredIntelligence": 17,
+        "effect": "Suspend un sortilège de rang Arcane au maximum",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 116,
+      "bookId": 12,
+      "name": "Le Don de la Connaissance",
+      "level": 100,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Le sorcier, ou celui qu'il désigne, obtient des connaissances intellectuelles grâce à ce sort : il accorde un bonus aux compétences secondaires du champ intellectuel, qu'il peut librement répartir. Il peut par exemple attribuer 40 points à sa compétence d'Histoire, et 30 en Science et en Animaux. Un seul sort du Don de la Connaissance peut affecter un individu à la fois.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": "+100 de bonus à répartir",
+        "retention": 30
+      },
+      "intermediateGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 12,
+        "effect": "+250 de bonus à répartir",
+        "retention": 45
+      },
+      "advancedGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 14,
+        "effect": "+400 de bonus à répartir",
+        "retention": 60
+      },
+      "arcaneGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 16,
+        "effect": "+600 de bonus à répartir",
+        "retention": 75
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 117,
+      "bookId": 12,
+      "name": "Renforcer la Magie",
+      "level": 100,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort intensifie le pouvoir de la magie qu'utilise le sorcier, et rend ses sorts plus difficiles à détruire. Tant qu'il est maintenu, il renforce les autres sorts que lance le sorcier contre les effets qui pourraient s'avérer préjudiciables à sa magie. En termes de jeu, ce sort rajoute de « faux » points à la valeur Zéonique des sorts qu'il utilise. Cette augmentation n'est pas réelle, ces points n'ajoutent aucun effet supplémentaire aux sortilèges, mais ils augmentent virtuellement leur valeur zéonique, augmentant mécaniquement la difficulté des effets visant à les détruire ou les perturber. Si, par exemple, un sorcier maintient « renforcer la magie » au rang de base (+50 points) et lance « Créer Lumière » au rang intermédiaire (valeur zéonique 50), le sort de Lumière n'est pas augmenté",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 11,
+        "effect": "+50 à la valeur zéonique des sorts",
+        "retention": 20
+      },
+      "intermediateGrade": {
+        "zeon": 360,
+        "requiredIntelligence": 13,
+        "effect": "+100 à la valeur zéonique des sorts",
+        "retention": 40
+      },
+      "advancedGrade": {
+        "zeon": 480,
+        "requiredIntelligence": 15,
+        "effect": "+150 à la valeur zéonique des sorts",
+        "retention": 50
+      },
+      "arcaneGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 17,
+        "effect": "+250 à la valeur zéonique des sorts",
+        "retention": 60
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 119,
+      "bookId": 12,
+      "name": "Magie Innée",
+      "level": 100,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort augmente exponentiellement le potentiel magique ambiant et la capacité des sorciers à contrôler leur magie. En termes de jeu, il enchante une zone statique ne dépassant pas un rayon fixé par le rang du sort, dans laquelle les sorts innés bénéficient d'un bonus par rapport à ce qu'indique l'AMR du sorcier. Le sorcier peut choisir si cette capacité affecte tous les individus présents, ou si lui seul en bénéficie.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": "25 m de rayon / Magie innée +10",
+        "retention": 50
+      },
+      "intermediateGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 12,
+        "effect": "100 m de rayon / Magie innée +20",
+        "retention": 60
+      },
+      "advancedGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 14,
+        "effect": "250 m de rayon / Magie innée +30",
+        "retention": 70
+      },
+      "arcaneGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 16,
+        "effect": "50 m de rayon / Magie innée +40",
+        "retention": 80
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 120,
+      "bookId": 12,
+      "name": "Prédestination",
+      "level": 100,
+      "actionType": "Active",
+      "type": "Automatique",
+      "effect": "Grâce à ce sort, le sorcier peut modifier les événements à venir suivant ses désirs, en les imaginant à l'avance. Le sorcier a pour tâche de désigner leur complexité comme il le souhaite. Il lui est possible de ne préparer qu'un unique événement, en laissant au soin du hasard les différents événements qui permettront sa réalisation ou au contraire essayer de déterminer chacun des points qui contribueront à l'objectif désiré. Bien que normalement ce sort ne puisse pas provoquer de résultat complètement impossible, les possibilités sont seulement limitées par l'imagination du sorcier. Les événements déterminés peuvent être fixés sur une date précise ou de façon à se répéter de façon éternelle, par exemple tous les solstices des années bissextiles. Vu l'énorme complexité de ce sort, nous allons maintenant étudier quelques exemples de ce que l'on pourrait en faire. Une Prédestination imprécise pourrait être la suivante : un sorcier décide que la fatalité s'acharnera sur une famille et toute sa lignée, dont les membres décéderont d'une mort terrible avant un certain âge. Au contraire, si le sorcier désirait détailler plus avant la prédestination, il pourrait préciser que tous les premiers nés seront assassinés par des loups sauvages la nuit même de leur naissance. Bien sûr, toutes les prédestinations n'ont pas à être négatives. On peut même dire qu'un enfant finira par devenir roi. Prédestination ne crée pas un futur absolu et inéluctable puisqu'il y a toujours une possibilité d'éviter la fin prévue. Tous ceux qui ne se trouvent pas dans les limites fixées par le sorcier (autrement dit, qui a réussi leur test de RMys) ont le pouvoir d'empêcher que le destin ne s'accomplisse. Pour contrer l'action de tiers, le sorcier peut introduire des mesures de sécurité dans les limites du sort. Par exemple, il pourrait décider que toute personne essayant de changer le destin prévu sera assassinée par des loups, qui agiront ainsi comme une sorte de protection. Pour éviter de subir les effets de ce sort, il faut simplement réussir un unique test de RMys au moment du lancement, test réalisé par la personne, la créature ou l'objet possédant la meilleure résistance de tous ceux qui sont directement affectés par la Prédestination. Ceux qui se trouvent dans les limites de ses effets ne peuvent rien faire pour en éviter la complétion : le hasard joue contre eux de façon inéluctable. Il n'est possible de refaire le test de RMys que quand l'un des événements prédéterminés arrive et donc, plus le sort détaille précisément les événements, et plus il existe de possibilités pour l'éviter. Si l'un des événements prédéterminés est empêché, le sort cesse de fonctionner. La seule condition pour être affectée par ce sort est de se trouver impliqué dans le destin préconçu.",
+      "initialGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 12,
+        "effect": "RMys 140",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 900,
+        "requiredIntelligence": 15,
+        "effect": "RMys 170",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 1200,
+        "requiredIntelligence": 17,
+        "effect": "RMys 200",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 1500,
+        "requiredIntelligence": 19,
+        "effect": "RMys 240",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    }
+  ]
+}

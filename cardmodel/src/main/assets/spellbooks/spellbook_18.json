@@ -1,45 +1,45 @@
 {
   "bookId": 18,
-  "bookName": "Livre de la Noblesse",
-  "description": "Cette voie secondaire regroupe tous les principes en relation avec l'apparence, la position sociale et la supériorité sur les autres. C'est la magie dont usent la noblesse et les grands seigneurs pour assurer leur domination sur les autres.",
+  "bookName": "Path of Nobility",
+  "description": "This sub-path contains all the principles related to appearance, status and superiority over other people. It is the magic used by nobles and great lords to ensure its dominance over others.",
   "primaryBookUnaccessibles": [
-    "Création",
+    "Creation",
     "Destruction",
-    "Feu",
+    "Fire",
     "Essence",
-    "Nécromancie."
+    "Necromancy"
   ],
   "spells": [
     {
       "spellId": 1,
       "bookId": 18,
-      "name": "Visage",
+      "name": "Face",
       "level": 4,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Élimine les imperfections externes qui peuvent altérer le visage de la cible du sort, couvrant ces effets d'une douce couche de maquillage surnaturel et appliquant un léger effet curatif qui élimine toute maladie de la peau et en rehausse le teint. Le personnage obtient une apparence de vitalité et de bonne santé.",
+      "type": "Spell Type: Effect",
+      "effect": "Removes imperfections that may affect the face of the target, covering the defects with a soft layer of makeup and applying a slight supernatural healing effect that eliminates any skin condition and enhances color. The character gains a vital and healthy appearance.",
       "initialGrade": {
         "zeon": 30,
         "requiredIntelligence": 5,
-        "effect": "Les effets généraux décrits pour le sort.",
+        "effect": " As described.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 50,
         "requiredIntelligence": 8,
-        "effect": "Comme pour le Degré  Initial, mais le personnage augmente d'un point son Apparence (jusqu'à un maximum de 9) ce qui le fait paraître plus jeune de quelques années.",
+        "effect": " As base level, but the character gains +1 appearance (up to 9) and makes him look several years younger.",
         "retention": 5
       },
       "advancedGrade": {
         "zeon": 80,
         "requiredIntelligence": 10,
-        "effect": "Comme pour le Degré  Intermédiaire, mais il augmente de deux points son Apparence (jusqu'à un maximum de 10).",
+        "effect": " As in intermediate grade, but +2 Appearance (up to 10).",
         "retention": 5
       },
       "arcaneGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "Comme pour le Degré  Avancé, mais il augmente de trois points son Apparence (jusqu'à un maximum de 10).",
+        "effect": " As advanced degree, but +3 Appearance (up to 10).",
         "retention": 10
       },
       "withRetention": true,
@@ -48,33 +48,33 @@
     {
       "spellId": 2,
       "bookId": 18,
-      "name": "Parfum",
+      "name": "Perfume",
       "level": 14,
       "actionType": "Active",
-      "type": "Effet, Auto.",
-      "effect": "Ce sort modifie l'odeur corporelle de la cible désignée par le sorcier, la transformant en un arôme d'une fragrance suave et agréable au nez, qui évoque des sensations plaisantes à qui les respire dans une zone déterminée par le Degré  du sort.",
+      "type": "Spell Type: Effect , Automatic",
+      "effect": "Effect: This spell changes the targets body odor, making it a fragrant aroma, soft and pleasant to smell that evokes pleasant feelings in those who are in the radius. ",
       "initialGrade": {
         "zeon": 40,
         "requiredIntelligence": 5,
-        "effect": "Les effets généraux décrits pour le sort / 20 m de rayon.",
+        "effect": " As described / 20m/21yd radius.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 60,
         "requiredIntelligence": 8,
-        "effect": "Comme pour le Degré  Initial, mais à chaque fois qu'une personne affectée par ce sort doit réussir un test de Style sur lequel peut influer son odeur corporelle, elle augmente automatiquement d'un niveau la difficulté atteinte / 30 m de rayon.",
+        "effect": " As base level, The target can use their body odor to influence Style tests, increasing their success by one degree. 30m/32yd radius.",
         "retention": 5
       },
       "advancedGrade": {
         "zeon": 90,
         "requiredIntelligence": 10,
-        "effect": "Comme pour le Degré  Intermédiaire, mais augmente automatiquement de deux niveaux la difficulté atteinte / 40 m de rayon.",
+        "effect": " As in intermediate grade, but it increases style tests by two degrees. 40m/43yd radius",
         "retention": 5
       },
       "arcaneGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "Comme pour le Degré  Avancé, mais tous ceux qui sentent le parfum pendant plus de 5 rounds doivent réussir un test de RMys contre 100 ou passer automatiquement en état de Fascination, restant étourdis et plus sensibles aux paroles de la cible du sort / 50 m de rayon.",
+        "effect": " As advanced degree, but everyone who smells the perfume for over 5 rounds to perform a MR 100 test or will automatically be in a state of fascination,  being more receptive to the words of the target. 50m/54yd radius",
         "retention": 10
       },
       "withRetention": true,
@@ -86,65 +86,65 @@
       "name": "Muse",
       "level": 24,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Accorde au lanceur l'inspiration nécessaire pour donner une interprétation magistrale de toute forme d'an traditionnel comme jouer d'un instrument, chanter, danser, peindre, écrire, composer... Ce sort accorde au sorcier, soit la valeur indiquée par le Degré  du sort dans la compétence secondaire mise à l'épreuve (Musique, Danse ou Art), soit la moitié de cette valeur comme bonus à sa propre compétence. Bien qu'il n'y ait pas de maintien, les effets de ce sort durent le temps suffisant pour finir l'œuvre commencée, tant que cela ne prend pas plus d'un jour.",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: Gives the caster the inspiration to make a masterful interpretation of a traditional art form such as playing an instrument, singing, dancing, painting, writing, composing ... This spell gives the witch a base ability in the secondary skill for that check (Music, Dance or Art), or half the value granted as a bonus to your own ability. Although no maintenance, the effects of this spell persist long enough to complete the work, provided that this does not last more than a day.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 6,
-        "effect": "120 de compétence.",
+        "effect": " 120 skill.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 90,
         "requiredIntelligence": 9,
-        "effect": "180 de compétence.",
+        "effect": " 180 skill.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 11,
-        "effect": "240 de compétence.",
+        "effect": " 240 skill.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 150,
         "requiredIntelligence": 13,
-        "effect": "280 de compétence.",
+        "effect": " 280 skill.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 4,
       "bookId": 18,
-      "name": "Garde-Robe",
+      "name": "Wardrobe",
       "level": 34,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Transforme temporairement les vêtements de la cible du sort en d'autres d'une qualité exquise, et leur donne la capacité de rester propres et sans le moindre pli à tout moment. Les taches et les éclaboussures rebondissent sur la toile sans causer la moindre imperfection au tissu et tout accroc sera recousu de façon surnaturelle en quelques secondes.",
+      "type": "Spell Type: Effect",
+      "effect": "Temporarily transforms the clothes of the target to exquisite quality with the ability to stay clean and pressed at all times. Spots and splashes slip by the fabric without causing the slightest imperfection and any tears will mend supernaturally in seconds.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 6,
-        "effect": "Les effets généraux décrits pour le sort.",
+        "effect": " As described.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 90,
         "requiredIntelligence": 9,
-        "effect": "Comme pour le Degré  Initial, mais pendant qu'il porte les vêtements, le personnage obtient un bonus de +50 à sa compétence secondaire Style.",
+        "effect": " As base level, but while wearing the clothes the character gains +50 Style.",
         "retention": 5
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 11,
-        "effect": "Comme pour le Degré  Intermédiaire, mais les vêtements varient de forme et de couleur suivant la situation et le besoin du moment, tout en conservant à tout moment un aspect resplendissant et impressionnant.",
+        "effect": " As mid-level Clothes vary in shape and color depending on the location and time, but always keeping a glorious and impressive appearance.",
         "retention": 5
       },
       "arcaneGrade": {
         "zeon": 150,
         "requiredIntelligence": 13,
-        "effect": "Comme pour le Degré  Avancé, mais les vêtements accordent un IP de 4 contre tout type d'attaque, et se réparent automatiquement s'ils subissent des dégâts, tant qu'ils ne sont pas d'origine surnaturelle.",
+        "effect": " As advanced degree, but the clothes give a AT 4 against any kind of attack, and repair immediately if suffering any kind of damage not of supernatural nature.",
         "retention": 10
       },
       "withRetention": true,
@@ -153,68 +153,68 @@
     {
       "spellId": 5,
       "bookId": 18,
-      "name": "Conversation Agréable",
+      "name": "Pleasant conversation",
       "level": 44,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Permet de ressentir tes pensées superficielles et les centres d'intérêts les plus courants d'un individu pour pouvoir avoir avec lui une conversation qui lui soit agréable ou distrayante. La personne affectée peut résister en réussissant un test de RMys ou RPsy. En cas d'échec, le mage obtient seulement un bonus de +200 à tous ses jets de Style et Persuasion dans le but de fasciner la cible et de l'attirer, au cours d'une conversation élémentaire. Pour que le sort fonctionne il faut parler au moins 30 secondes avec une personne qui n'est pas ouvertement hostile. Bien qu'il n'y ait pas de maintien, le bonus est valable tant que la conversation dure.",
+      "type": "Spell Type: Automatic",
+      "effect": "Allows target to perceive surface thoughts and interests for an individual allowing him to carry on a conversation that is pleasant or enjoyable. The victim may resist making a MR or PhR test. In case of failure, the mage gets a bonus of +200 bonus to Style and Persuasion directed to fascinate the target and drag him into small talk. The spell works if the target has been talking at least half a minute a person who is not overtly hostile. Although not maintenance, the bond is maintained as long as the conversation continues.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 7,
-        "effect": "120 RMys ou RPsy.",
+        "effect": " 120 MR or PsR.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 100,
         "requiredIntelligence": 10,
-        "effect": "160 RMys ou RPsy.",
+        "effect": " 160 MR or PsR.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "200 RMys ou RPsy.",
+        "effect": " 200 MR or PsR.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 150,
         "requiredIntelligence": 14,
-        "effect": "240 RMys ou RPsy.",
+        "effect": " 240 MR or PsR.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 6,
       "bookId": 18,
-      "name": "Grandeur",
+      "name": "Greatness",
       "level": 54,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Ce sort recouvre le sorcier d'une chape de grandeur, lui accordant une puissante autorité qui intimide tous ceux qui sont habitués à obéir aux ordres. Tous ceux qui se trouvent dans une zone de 5 mètres autour de lui devront réussir un jet de RMys ou de RPsy, sous peine de se sentir poussés à lui plaire, le traitant avec le respect et la déférence dus à un supérieur. Un soldat ne posera pas de questions, un aubergiste offrira sa meilleure table et les serviteurs s'agenouilleront à son passage en répondant au moindre de ses désirs. Grandeur n'a aucun effet sur les individus qui ont une attitude hostile marquée contre le lanceur, ceux qui le connaissent ou sont capables de sentir qu'ils sont son égal ou qu'ils lui sont supérieurs, ou bien les êtres qui, simplement, considèrent qu'ils ne pourraient obéir au sorcier sous aucun prétexte. Les personnes affectées peuvent refaire le test uniquement lorsque le lanceur fait une action tellement inappropriée qu'ils remettent en question leur soumission.",
+      "type": "Spell Type: Automatic",
+      "effect": "Effect: This spell covers the sorcerer with an air of grandeur providing a powerful authority that intimidates those accustomed to obey orders. Anyone who is in a 5m/5yd radius should make a MR or PsR, or be compelled to please him, treating him with respect and deference due to a superior. Greatness has no effect on individuals who have hostility against the caster, who know or feel they are their equals or superiors, or those beings who simply consider that they could not obey the witch under any circumstances.  Affected individuals may repeat the test only when the caster does some action so contrary to reason that they may reconsider their submission to him.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 7,
-        "effect": "120 RMys ou RPsy.",
+        "effect": " 120 MR or PsR.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 100,
         "requiredIntelligence": 10,
-        "effect": "160 RMys ou RPsy",
+        "effect": " 160 MR or PsR.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "200 RMys ou RPsy.",
+        "effect": " 200 MR or PsR.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 150,
         "requiredIntelligence": 14,
-        "effect": "240 RMys ou RPsy.",
+        "effect": " 240 MR or PsR.",
         "retention": 15
       },
       "withRetention": true,
@@ -223,33 +223,33 @@
     {
       "spellId": 7,
       "bookId": 18,
-      "name": "Conquête des Cœurs",
+      "name": "Conquering hearts",
       "level": 64,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Ce sort altère la perception des personnes en présence du lanceur ou de la cible qu'il a désignée, leur faisant ressentir qu'il est un être d'une beauté et d'une sensualité enivrante. Toute personne sexuellement compatible avec le personnage qui est touchée par ces effets doit réussir un test de RMys ou de RPsy, sous peine d'être automatiquement charmée, montrant un intérêt marqué conforme à sa nature, sa personnalité ou sa façon d'être. De plus, l'individu sur lequel est placé ce sort obtient un bonus de +200 en Persuasion (Séduction) contre toute personne qui aurait échoué au test. Pour être affecté par ce sortilège il faut accorder une véritable attention à l'apparence de l'individu qui en bénéficie.",
+      "type": "Spell Type: Automatic",
+      "effect": "Effect: This spell alters the perception of people into feeling that the caster or designated target is a being of beauty and intoxicating sensuality. Any target sexually compatible with the character that must pass a MR or PsR test or be automatically enthralled, demonstrating a clear interest according to their nature, personality and disposition. In addition, the individual who is responsible for this spell gets a bonus of +200 to Persuasion (Seduction) against anyone who has not been able to overcome the test. To be affected the “victim” must be able to see the caster/target.",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 8,
-        "effect": "120 RMys ou RPsy.",
+        "effect": " 120 MR or PsR",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 150,
         "requiredIntelligence": 11,
-        "effect": "160 RMys ou RPsy.",
+        "effect": " 160 MR or PsR.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 200,
         "requiredIntelligence": 13,
-        "effect": "200 RMys ou RPsy.",
+        "effect": " 200 MR or PsR.",
         "retention": 10
       },
       "arcaneGrade": {
         "zeon": 250,
         "requiredIntelligence": 15,
-        "effect": "240 RMys ou RPsy.",
+        "effect": " 240 MR or PsR.",
         "retention": 15
       },
       "withRetention": true,
@@ -258,33 +258,33 @@
     {
       "spellId": 8,
       "bookId": 18,
-      "name": "Présence Absolue",
+      "name": "Absolute presence",
       "level": 74,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Ce sortilège fait que n'importe quel individu dans un rayon déterminé par le Degré  du sort autour du sorcier concentre complètement son attention sur lui, devenant incapable de fixer du regard ou de se concentrer sur une autre personne que celui-ci. Toute personne qui tente de faire une activité qui n'est pas centrée sur le sorcier subit automatiquement un malus de -40 à toutes les actions (-120 si l'action est en relation avec les compétences de perception). Pour être affecté par ce sort il faut simplement être à l'intérieur de la zone et échouer à un test de RMys ou de RPsy.",
+      "type": "Spell Type: Automatic",
+      "effect": "Effect: This spell makes any individual in a radius around the Sorcerer completely focused on the caster, being unable to focus on someone other than the witch. Anyone attempting to perform an activity that is targeting the caster automatically receives a penalty of -40 to all actions (-120 with perceptual skills). ",
       "initialGrade": {
         "zeon": 120,
         "requiredIntelligence": 9,
-        "effect": "120 RMys ou RPsy / 20 m de rayon.",
+        "effect": " 120 MR or PsR / 20m/21yd radius.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 150,
         "requiredIntelligence": 12,
-        "effect": "160 RMys ou RPsy / 50 m de rayon.",
+        "effect": " 160 MR or PsR / 50m/54yd radius.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 200,
         "requiredIntelligence": 14,
-        "effect": "200 RMys ou RPsy / 100 m de-rayon.",
+        "effect": " 200 MR or PsR / 100m/109yd radius.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 250,
         "requiredIntelligence": 16,
-        "effect": "240 RMys ou RPsy / 150 m de rayon.",
+        "effect": " 240 MR or PsR / 150m/164yd radius.",
         "retention": 20
       },
       "withRetention": true,
@@ -296,30 +296,30 @@
       "name": "Perfection",
       "level": 84,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "La cible du sort altère son apparence physique, la rendant automatiquement parfaite.",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: The target of the spell alters their physique acquiring the perfect look.",
       "initialGrade": {
         "zeon": 120,
         "requiredIntelligence": 9,
-        "effect": "La cible obtient une Apparence de 10 et un bonus de +100 à ses compétences Style, Persuasion, Intimidation et Commandement.",
+        "effect": " Appearance 10 and +100 to Style, Persuasion, Intimidation and Leadership.",
         "retention": 15
       },
       "intermediateGrade": {
         "zeon": 150,
         "requiredIntelligence": 12,
-        "effect": "Comme pour le Degré  Initial, mais ses blessures disparaissent toujours sans laisser de marques ou de cicatrices. Elle augmente de 3 points sa base de Régénération.",
+        "effect": " As base level, but his injuries disappear forever without leaving a mark or scar, increasing their level of regeneration +3.",
         "retention": 15
       },
       "advancedGrade": {
         "zeon": 200,
         "requiredIntelligence": 14,
-        "effect": "Comme pour le Degré  Intermédiaire, mais le bonus en Style, Persuasion, Intimidation et Commandement passe à +200.",
+        "effect": " As in intermediate grade, but the bonus to Style, Persuasion, Leadership, and intimidate increases to +200.",
         "retention": 20
       },
       "arcaneGrade": {
         "zeon": 250,
         "requiredIntelligence": 16,
-        "effect": "Comme pour le Degré  Avancé, mais le personnage obtient un bonus de +1 à toutes ses caractéristiques.",
+        "effect": " As advanced degree, but the character gets a bonus +1 To all attributes.",
         "retention": 25
       },
       "withRetention": true,
@@ -328,33 +328,33 @@
     {
       "spellId": 10,
       "bookId": 18,
-      "name": "Le Roi du Monde",
+      "name": "The King of the World",
       "level": 94,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Le sorcier utilise la magie pour diviniser ses capacités sociales, se transformant en centre de l'attention et de la vénération de tous ceux qui l'entourent. Toute personne dans un rayon autour de lui déterminé par le Degré  du sort doit réussir automatiquement un test de RMys, ou il considérera le sorcier comme son maître et son idéal, le sommet de son admiration. Le sorcier n'aura pas de véritable contrôle sur les personnes affectées, qui continueront à se comporter suivant leur personnalité, mais elles essaieront toutes de satisfaire, d'aider et d'obtenir l'approbation du lanceur comme si elles étaient ses fidèles adeptes.",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: The magician uses magic to deify their social skills, becoming the center of attention and veneration of all those around him. Anyone within a radius of it must overcome MR test or consider the sorcerer as his teacher and ideal, the culmination of all his admiration. The wizard will not have real control over the victims, who continue to behave and correspond to their personality, but all seek to satisfy,  help, and seek approval from the caster as if they were loyal followers.",
       "initialGrade": {
         "zeon": 300,
         "requiredIntelligence": 10,
-        "effect": "500 m de rayon / 120 RMys",
+        "effect": " 500m/546yd radius / 120 MR",
         "retention": 15
       },
       "intermediateGrade": {
         "zeon": 450,
         "requiredIntelligence": 13,
-        "effect": "1 km de rayon / 160 RMys.",
+        "effect": " 1km/1093yd radius / 160 MR.",
         "retention": 15
       },
       "advancedGrade": {
         "zeon": 500,
         "requiredIntelligence": 15,
-        "effect": "2 km de rayon / 200 RMys.",
+        "effect": " 2km/1.24mile radius / 200 MR.",
         "retention": 20
       },
       "arcaneGrade": {
         "zeon": 700,
         "requiredIntelligence": 17,
-        "effect": "5 km de rayon / 240 RMys.",
+        "effect": " 5km/3mile radius / 240 MR.",
         "retention": 25
       },
       "withRetention": true,
