@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Common wordings-->
+    <string name="Common_Close">Fermer</string>
+    <string name="Common_See_All">Voir tout</string>
+    <string name="Common_Loading_Message">Chargement</string>
+    <string name="Common_Validate">Valider</string>
+    <string name="Common_Modify">Modifier</string>
+    <string name="Common_Delete">Supprimer</string>
+    <string name="Common_Search">Rechercher</string>
+    <string name="Common_Filter">Filtrer</string>
+    <string name="Common_All">Toutes</string>
+
+    <string name="HomePage_Title">Livres de sorts</string>
+
+    <!--Spellbooks-->
+    <string name="Spellbooks_Title">Livres de sorts</string>
+
+    <!--Spell Formats-->
+    <string name="spell_book_and_level_format">%1$s Niv. %2$s</string>
+    <string name="spell_action_type_format"><b>Action : </b></string>
+    <string name="spell_type_format"><b>Type : </b></string>
+    <string name="spell_effect_format"><b>Effet : </b></string>
+
+    <!--Grade-->
+    <string name="initial_grade_title">Initial</string>
+    <string name="intermediate_grade_title">Intermédiaire</string>
+    <string name="advanced_grade_title">Avancé</string>
+    <string name="arcane_grade_title">Arcane</string>
+
+    <string name="spell_grade_int_format">Int : %1$d</string>
+    <string name="spell_grade_zeon_format">%1$d Zéon</string>
+    <string name="spell_grade_retention_format">Maintien : %1$d</string>
+    <string name="spell_grade_retention_daily_format">Maintien : %1$d Quot.</string>
+
+    <!--Witchspells    -->
+    <string name="Witch_Creation_Title">Liste de sorts</string>
+    <string name="Witchspells_Path_Title_And_Level_Format">%1$s Niv. %2$s</string>
+    <string name="Witchspells_Secondary_Path_Title_And_Level_Format">Voie secondaire : %1$s Niv. %2$s</string>
+
+    <string name="Witchspells_Name_Format">Sorts de %1$s</string>
+
+
+    <string name="Witchspells_Free_Access_Title_Singular">+ %1$d Sort d\'accès libre</string>
+    <string name="Witchspells_Free_Access_Title_Plural">+ %1$d Sorts d\'accès libre</string>
+
+    <plurals name="Witchspells_Free_Access_Title">
+        <item quantity="one">Witchspells_Free_Access_Title_Singular</item>
+        <item quantity="other">Witchspells_Free_Access_Title_Plural</item>
+    </plurals>
+
+    <string name="Witchspells_Free_Access_Format_Singular">%1$d Sort d\'accès libre</string>
+    <string name="Witchspells_Free_Access_Format_Plural">%1$d Sorts d\'accès libre</string>
+
+    <plurals name="Witchspells_Free_Access_Format">
+        <item quantity="one">@string/Witchspells_Free_Access_Format_Singular</item>
+        <item quantity="other">@string/Witchspells_Free_Access_Format_Plural</item>
+    </plurals>
+
+    <string name="Witchspells_No_Secondary_Spells">Aucun sort secondaire</string>
+
+    <string name="Witchspells_Name_Label">Titulaire du grimoire</string>
+
+    <string name="Witchspells_Choose_Main_Path">Choisir ses voies</string>
+    <string name="Witchspells_Choose_Secondary_Path">Choisir sa voie secondaire</string>
+
+    <string name="Witchspells_Major_Path">Voie majeure</string>
+    <string name="Witchspells_Minor_Path">Voie mineure</string>
+    <string name="Witchspells_Opposite_Path_Format">Voie opposée : %1$s</string>
+    <string name="Witchspells_Secondary_Path_Format">Secondaire : %1$s</string>
+
+    <plurals name="Witchspells_Free_Access_Count">
+        <item quantity="one">+ 1 sort d\'accès libre</item>
+        <item quantity="other">+ %d sorts d\'accès libre</item>
+    </plurals>
+
+    <string name="Witchspells_Add_Label">Ajouter un grimoire</string>
+    <string name="Error_No_Witchspells_Name">Un nom est nécessaire pour pouvoir créer le grimoire</string>
+    <string name="Witchspells_Save_Waiting_Message">Création du grimoire…</string>
+
+    <string name="Witchspells_Title_Create">Nouveau grimoire</string>
+
+    <string name="Main_Path_Title">Voies principales</string>
+    <string name="Secondary_Path_Title">Voies secondaires</string>
+    <string name="Free_Access_Title">Sorts d\'accès libre</string>
+
+    <string name="Witchspells_See_Spells">Voir les sorts</string>
+    <string name="Witchspells_Title">Grimoires</string>
+    <string name="Witchspells_Add_Description_Label">Un grimoire est le recueil de sorts d\'un sorcier, créé à partir de ses niveaux de voies.\n Cliquez sur le livre ci-dessus pour créer votre grimoire.</string>
+    <string name="Witchspells_Delete_Confirmation_Title">Supprimer le grimoire ?</string>
+    <string name="Witchspells_Delete_Confirmation_Message">Etes-vous sûr de vouloir supprimer ce grimoire ?</string>
+
+    <string name="Witchspells_Choose_Spell_Title">Choisir un sort 1-%1$d</string>
+    <string name="Witchspells_Choose_Spell_Confirm">Choisir ce sort ?</string>
+
+    <string name="Witchspells_Free_Access_Title">Choisir ses sorts</string>
+    <string name="Witchspells_Free_Access_Choose">Choisir ses sorts d\'accès libre</string>
+
+    <string name="Witchspells_Free_Access_Modify_Single">Sorts d\'accès libre\n(1 sort choisi sur %2$d)</string>
+    <string name="Witchspells_Free_Access_Modify_Plurals">Sorts d\'accès libre\n(%1$d sorts choisis sur %2$d)</string>
+    <plurals name="Witchspells_Free_Access_Modify">
+        <item quantity="one">@string/Witchspells_Free_Access_Modify_Single</item>
+        <item quantity="other">@string/Witchspells_Free_Access_Modify_Plurals</item>
+    </plurals>
+
+
+    <string name="Spell_Filter_Search_Description">Rechercher dans la description</string>
+    <string name="Spell_Filter_Type">Types de sorts</string>
+    <string name="Spell_Filter_Type_Attack">Attaque</string>
+    <string name="Spell_Filter_Type_Defense">Défense</string>
+    <string name="Spell_Filter_Type_Effect">Effet</string>
+    <string name="Spell_Filter_Type_Animismic">Animique</string>
+    <string name="Spell_Filter_Type_Automatic">Automatique</string>
+    <string name="Spell_Filter_Type_Detection">Détection</string>
+    <string name="Spell_Filter_Intelligence_Max">Intelligence maximum</string>
+    <string name="Spell_Filter_Max_Int_Description">Les niveaux de sorts au dessus de ce maximum seront grisées</string>
+    <string name="Spell_Filter_Zeon_Title">Zéon</string>
+    <string name="Spell_Filter_Max_Zeon">Zéon maximum</string>
+    <string name="Spell_Filter_Max_Maintain">Maintien maximum</string>
+    <string name="Spell_Filter_Daily_Maintain">Quotidien ?</string>
+    <string name="Spell_Filter_Action_Type">Type d\'action</string>
+    <string name="Spell_Filter_Action_Type_Active">Active</string>
+    <string name="Spell_Filter_Action_Type_Passive">Passive</string>
+
+    <string name="Spell_Empty_List_Message">Aucun sort ne correspond à la recherche.</string>
+    <string name="Witchspells_Free_Access_Slot">Sorts d\'accès libre 1-%1$d</string>
+    <string name="Common_Level">Niveau</string>
+    <string name="Witchspells_Delete_Free_Access_Title">Supprimer les sorts d\'accès libre</string>
+    <string name="Witchspells_Delete_Free_Access_Message">Etes-vous sûr de vouloir réinitialiser tous vos sorts d\'accès libre pour cette voie ?</string>
+    <string name="Witchspells_Delete_Secondary_Path_Title">Supprimer la voie secondaire</string>
+    <string name="Witchspells_Delete_Secondary_Path_Message">Supprimer la voie secondaire associée à cette voie ?</string>
+    <string name="Common_Leave">Quitter</string>
+    <string name="Witchspells_Cancel_Creation">En quittant cette page vous annulerez la création du grimoire. Etes-vous sûr de vouloir quitter ?</string>
+    <string name="Witchspells_Choose_Witch_Name">Choisir le nom du sorcier</string>
+    <string name="Witchspells_Witch_Name">Nom du sorcier</string>
+    <string name="About_Us">A propos</string>
+    <string name="Notify_Bug">Signaler un bug</string>
+    <string name="Notify_Misspelling">Signaler une faute d\'orthographe</string>
+    <string name="Notify_Bug_Body">Bonjour, j\'ai trouvé un bug dans l\'application : \n\nEtapes pour reproduire : \n\n(remplacer cette ligne par les étapes pour reproduire le bug, par exemple "1 - Cliquer sur un livre de sort", "2 - Cliquer sur un sort", "3 - Le sort n\'a pas de type" )</string>
+    <string name="Notify_Misspelling_Body_Reduced">Bonjour, j\'ai trouvé une faute d\'orthographe dans un des sorts de l\'application : \n\n(Indiquez ici à quel endroit se trouve la faute d\'orthographe)\n</string>
+    <string name="Notify_Misspelling_Body">Bonjour, j\'ai trouvé une faute d\'orthographe dans un des sorts de l\'application : \n\nTexte corrigé : \n\n(Corriger le texte ci-dessous ou bien indiquez où se trouve la faute d\'orthographe)\n%1$s</string>
+    <string name="Notify_Misspelling_Spell_subject">Faute d\'orthographe dans le sort %1$s</string>
+
+</resources>
