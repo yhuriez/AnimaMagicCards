@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_real_name">Anima Magic Cards</string>
+    <string name="app_name">Anima Magic Cards</string>
+
+    <!--Spellbook Name-->
+    <string name="spellbook_title_blood">Sang</string>
+    <string name="spellbook_title_chaos">Chaos</string>
+    <string name="spellbook_title_creation">Création</string>
+    <string name="spellbook_title_darkness">Obscurité</string>
+    <string name="spellbook_title_death">Mort</string>
+    <string name="spellbook_title_destruction">Destruction</string>
+    <string name="spellbook_title_dream">Songes</string>
+    <string name="spellbook_title_earth">Terre</string>
+    <string name="spellbook_title_emptyness">Néant</string>
+    <string name="spellbook_title_essence">Essence</string>
+    <string name="spellbook_title_fire">Feu</string>
+    <string name="spellbook_title_free_access">Libre accès</string>
+    <string name="spellbook_title_illusion">Illusion</string>
+    <string name="spellbook_title_knowledge">Connaissance</string>
+    <string name="spellbook_title_light">Lumière</string>
+    <string name="spellbook_title_limit">Seuil</string>
+    <string name="spellbook_title_literae">Literae</string>
+    <string name="spellbook_title_music">Musique</string>
+    <string name="spellbook_title_necromancer">Nécromancie</string>
+    <string name="spellbook_title_nobility">Noblesse</string>
+    <string name="spellbook_title_peace">Paix</string>
+    <string name="spellbook_title_sin">Pêché</string>
+    <string name="spellbook_title_time">Temps</string>
+    <string name="spellbook_title_war">Guerre</string>
+    <string name="spellbook_title_water">Eau</string>
+    <string name="spellbook_title_wind">Air</string>
+</resources>
