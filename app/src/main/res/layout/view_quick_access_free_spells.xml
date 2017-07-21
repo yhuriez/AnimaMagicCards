@@ -6,12 +6,12 @@
 
         <variable
             name="model"
-            type="fr.enlight.anima.animamagiccards.ui.spells.viewmodels.quickaccess.QuickAccessFreeSpellsViewModel" />
+            type="fr.enlight.anima.animamagiccards.ui.spells.viewmodels.quickaccess.QAFreeSpellsViewModel" />
     </data>
 
     <LinearLayout
-        android:layout_width="45dp"
-        android:layout_height="45dp"
+        android:layout_width="@dimen/quick_access_item_dimen"
+        android:layout_height="@dimen/quick_access_item_dimen"
         android:background="@{model.selected ? @drawable/circle_gray_background : null}"
         android:gravity="center"
         android:layout_marginBottom="@dimen/spacing_base"

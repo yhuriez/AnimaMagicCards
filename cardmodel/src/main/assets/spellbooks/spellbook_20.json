@@ -1,80 +1,80 @@
 {
   "bookId": 20,
-  "bookName": "Livre du Péché",
-  "description": "Cette voie secondaire est la plus obscure et la plus retorse de toutes, car elle regroupe tous les pouvoirs en relation avec les émotions négatives, le péché et plus globalement le mal à l'état pur. C'est la magie utilisée par la grande majorité des créatures infernales, ainsi que par les adorateurs des divinités maléfiques de chaque culture.",
+  "bookName": "Path of Sin",
+  "description": "This sub-path is the darkest and most twisted of all, bringing together all the powers associated with negative emotions, sin and pure evil. It's the magic used by the vast majority of hellish creatures as well as the worshipers of the evil deities of each culture.",
   "primaryBookUnaccessibles": [
-    "Lumière",
-    "Eau",
-    "Terre",
+    "Light",
+    "Water",
+    "Earth",
     "Essence",
-    "Illusion."
+    "Illusion"
   ],
   "spells": [
     {
       "spellId": 1,
       "bookId": 20,
-      "name": "Ressentir le Péché",
+      "name": "Feeling Sin",
       "level": 4,
       "actionType": "Active",
-      "type": "Détection",
-      "effect": "Grâce à ce sort, le sorcier peut voir les péchés que quelqu'un a commis. Il n'obtiendra aucune information spécifique sur eux (il saura le type de péché sans savoir exactement ce qu'ils ont fait), mais il en ressentira plus ou moins le Degré  de gravité et approximativement à quel moment ils ont été perpétrés. Par exemple, il pourra savoir que le péché commis par une personne est le mensonge, mais sans savoir sur quoi ou pourquoi il a menti. Le lanceur peut ressentir un péché tous les 10 points de marge d'échec de la cible à son test de RMys contre la difficulté prévue par le Degré  du sort.",
+      "type": "Spell Type: Detection",
+      "effect": "With this spell the caster can see the sins someone committed. You will not get specific information about them (you know the kind of sin), but feel the severity and approximate time they were committed. For example, you might know that the sin committed by a person is lie, but not knowing where or why he lied. The Caster may feel a sin for every 10 points the target fails their MR test.",
       "initialGrade": {
         "zeon": 40,
         "requiredIntelligence": 6,
-        "effect": "120 RMys.",
+        "effect": " MR 120",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 60,
         "requiredIntelligence": 8,
-        "effect": "140 RMys.",
+        "effect": " MR 140 ",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 90,
         "requiredIntelligence": 10,
-        "effect": "160 RMys.",
+        "effect": " MR 160 ",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "180 RMys.",
+        "effect": " MR 180 ",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 2,
       "bookId": 20,
-      "name": "Inciter au Péché",
+      "name": "Imbue Sin",
       "level": 14,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "La cible du sorcier est incitée à commettre le péché capital qui lui correspond le plus. Une personne très gourmande ressentira le besoin de manger en permanence, alors qu'un individu porté à la luxure se jettera dans les bras de toute personne proche qu'il considère comme attractive. Quiconque échoue à la RMys du sort sera affecté et n'aura le droit de refaire le test qu'à chaque fois qu'il verra quelque chose qui lui donnera à nouveau l'envie de pécher.",
+      "type": "Spell Type: Automatic",
+      "effect": "The target of the spell is prompted to commit the cardinal sin they would be most likely to commit. Someone with an enormous gluttony would feel the need to eat, insatiably lustful while in the arms of someone they find attractive.  The target can repeat the MR test every time they are prompted to sin",
       "initialGrade": {
         "zeon": 50,
         "requiredIntelligence": 6,
-        "effect": "120 RMys.",
+        "effect": " MR 120",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 70,
         "requiredIntelligence": 8,
-        "effect": "140 RMys.",
+        "effect": " MR 140",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 100,
         "requiredIntelligence": 10,
-        "effect": "160 RMys.",
+        "effect": " MR 160",
         "retention": 10
       },
       "arcaneGrade": {
         "zeon": 140,
         "requiredIntelligence": 12,
-        "effect": "180 RMys.",
+        "effect": " MR 180",
         "retention": 15
       },
       "withRetention": true,
@@ -83,33 +83,33 @@
     {
       "spellId": 3,
       "bookId": 20,
-      "name": "Gourmandise",
+      "name": "Gluttony",
       "level": 24,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Le sorcier récupère automatiquement une partie des points de Zéon (arrondie à l'inférieur par tranches de 5) et de Ki dépensés dans un rayon autour de lui déterminé par le Degré  du sort. Par exemple, si le lanceur a activé Gourmandise en Degré  Initial et qu'un sorcier lance un sort dans son rayon d'action avec un coût en Zéon de 100 points, il récupèrera automatiquement 10 points de Zéon. Gourmandise n'a aucun effet sur les sorts innés ou les pouvoirs magiques qui ne consomment pas de Zéon, pas plus que sur les capacités utilisées par le lanceur.",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: The Wizard automatically retrieves a part of all Zeon points (rounded up in groups of 5) and Ki points spent in a radius around him. For example, if the mage has Gluttony active at the base degree and another sorcerer casts a spell inside of its range at a cost of 100 points Zeon, the mage recovers 10 Zeon.  Gluttony has no effect on innate magical powers or spells/Ki powers activated by the mage.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 7,
-        "effect": "Absorbe 10 % / 10 m de rayon.",
+        "effect": " Absorbs 10% / 10m/10yd radius.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 100,
         "requiredIntelligence": 9,
-        "effect": "Absorbe 20% / 20 m de rayon.",
+        "effect": " Absorbs 20% / 20m/21yd radius.",
         "retention": 5
       },
       "advancedGrade": {
         "zeon": 140,
         "requiredIntelligence": 11,
-        "effect": "Absorbe 30% / 40 m de rayon.",
+        "effect": " Absorbs 30% / 40m/43yd radius.",
         "retention": 10
       },
       "arcaneGrade": {
         "zeon": 180,
         "requiredIntelligence": 13,
-        "effect": "Absorbe 50% / 60 m de rayon.",
+        "effect": " Absorbs 50% / 60m/65yd radius.",
         "retention": 10
       },
       "withRetention": true,
@@ -118,33 +118,33 @@
     {
       "spellId": 4,
       "bookId": 20,
-      "name": "Luxure",
+      "name": "Lust",
       "level": 34,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "La cible du sort se transforme en un aimant pour toute personne attirée par le genre de celle-ci. Toute personne dans ce cas qui la voit et ne réussit pas la RMys déterminée par le Degré  du sort se sentira extrêmement attirée physiquement par la cible, et celle qui échouera de plus de 40 points au test subira une attraction obsessionnelle et maladive, perdant même la raison et faisant tout pour posséder l'objet de son désir. Tout individu affecté peut refaire le test une fois par heure. La cible du sort peut résister à Luxure si elle le désire, en dépassant la RMys du sortilège.",
+      "type": "Spell Type: Spiritual",
+      "effect": "Effect: The target of the spell will become a magnet for anyone attracted to the sex of the target. Anyone who sees him and does not pass the MR test will feel immensely attracted to the target, while one who fails by more than 40 points feels an obsessive and unhealthy attraction, losing reason and anything to possess the target of his lust. Any affected individual can repeat the MR test every hour. The target of the spell can resist being imbued with Lust by passing the MR.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 7,
-        "effect": "140 RMys.",
+        "effect": " MR 140 ",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 100,
         "requiredIntelligence": 9,
-        "effect": "160 RMys.",
+        "effect": " MR 160 ",
         "retention": 5
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 11,
-        "effect": "180 RMys.",
+        "effect": " MR 180 ",
         "retention": 10
       },
       "arcaneGrade": {
         "zeon": 150,
         "requiredIntelligence": 13,
-        "effect": "200 RMys.",
+        "effect": " MR 200 ",
         "retention": 10
       },
       "withRetention": true,
@@ -153,68 +153,68 @@
     {
       "spellId": 5,
       "bookId": 20,
-      "name": "Avarice",
+      "name": "Greed",
       "level": 44,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Dérobera automatiquement un objet en possession de la cible du sort, le faisant apparaître devant le sorcier. Il n'est pas nécessaire que l'objet puisse se \"\"déplacer\"\" jusqu'au lanceur. Ce sortilège peut affecter depuis quelque chose que la cible tient dans ses mains, jusqu'aux vêtements ou aux pièces d'armure qu'elle porte. L'objet choisit ne peut avoir une présence supérieure à celle qui est déterminée par le Degré  du sort. Toute personne consciente qu'elle pourrait être la cible de ce sort peut essayer de résister à ses effets en réussissant une RMys.",
+      "type": "Spell Type: Automatic.",
+      "effect": "Effect: automatically steals something that is in possession of the target of the spell, making it appear to the magician. It is not even necessary that the object \"move\" toward the caster, and can affect from something that is held in the hands, clothes, or armor you are wearing. The Maximum presence effected is determined by the level of the spell.  The target can resist with a MR test.",
       "initialGrade": {
         "zeon": 50,
         "requiredIntelligence": 8,
-        "effect": "120 RMys / Présence maximale de 50.",
+        "effect": " MR 120  / 50 Presence",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 80,
         "requiredIntelligence": 10,
-        "effect": "140 RMys / Présence maximale de 80.",
+        "effect": " MR 140  / 80 Presence",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "160 RMys / Présence maximale de 100.",
+        "effect": " MR 160 / 100 Presence.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 260,
         "requiredIntelligence": 14,
-        "effect": "180 RMys / Présence maximale de 120.",
+        "effect": " MR 180 / 120 of Presence.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 6,
       "bookId": 20,
-      "name": "Paresse",
+      "name": "Sloth",
       "level": 54,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "La cible est soumise à un profond état de paresse. Par conséquent, durant toute la durée de l'effet du sortilège elle ne pourra réaliser que des actions passives. Pour résister aux effets de ce sort il faut réussir un test de RMys contre la difficulté déterminée par le Degré  du sort.",
+      "type": "Spell Type: Effect",
+      "effect": "The target is placed in a deep state of laziness. For the duration of spell the target may only take passive actions. To withstand the effects of this spell is necessary to overcome a MR test against the difficulty determined by the degree of the spell.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 7,
-        "effect": "100 RMys.",
+        "effect": " MR 100 ",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 80,
         "requiredIntelligence": 9,
-        "effect": "120 RMys.",
+        "effect": " MR 120 ",
         "retention": 5
       },
       "advancedGrade": {
         "zeon": 100,
         "requiredIntelligence": 11,
-        "effect": "140 RMys.",
+        "effect": " MR 140 ",
         "retention": 10
       },
       "arcaneGrade": {
         "zeon": 120,
         "requiredIntelligence": 13,
-        "effect": "160 RMys.",
+        "effect": " MR 160 ",
         "retention": 10
       },
       "withRetention": true,
@@ -223,33 +223,33 @@
     {
       "spellId": 7,
       "bookId": 20,
-      "name": "Orgueil",
+      "name": "Pride",
       "level": 64,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Celui qui souffre de cet effet obtient une confiance en lui-même illimitée, méprisant les compétences de tous ceux qui l'entourent. Cette personne augmente automatiquement ses compétences, obtenant des bonus spéciaux déterminés par le Degré  du sort. Toutefois, dans le même temps ses capacités spéciales sont très limitées, avec une incapacité à utiliser les techniques de Ki ou les Ars Magnus, les pouvoirs psychiques de Niveau 2 ou 3, ou les sort d'un niveau supérieur à 40, bien que les effets maintenus restent en place normalement. Pour résister à ces effets, il faut réussir une RMys contre une difficulté déterminée par le Degré  du sort.",
+      "type": "Spell Type: Spiritual",
+      "effect": "Effect: The target of this effect gets infinite confidence neglecting the skills of those around him. The target automatically increases their skills, gaining special bonuses determined by the level of the spell. However, their capacities become limited, leaving them unable to use Ki techniques, Magnus powers, Level 2-3 psychic abilities and spells over level 40.  To resist its effects, it is necessary to pass an MR test difficulty determined by the level of the spell.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 7,
-        "effect": "120 RMys / +10 à toutes les actions / +50 au Style.",
+        "effect": " MR 120  / +10 to All Action / +50 to Style.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 100,
         "requiredIntelligence": 9,
-        "effect": "140 RMys / +20 à toutes les actions / +100 au Style.",
+        "effect": " MR 140 / +20 to All Action / +100 to Style.",
         "retention": 5
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 11,
-        "effect": "160 RMys / +20 à toutes les actions / +150 au Style / +100 en Résistance à la douleur.",
+        "effect": " MR 160 / +20 to All Action / +150 to Style / +100 Withstand Pain.",
         "retention": 10
       },
       "arcaneGrade": {
         "zeon": 150,
         "requiredIntelligence": 13,
-        "effect": "180 RMys / +30 à toutes les actions / +200 au Style / +150 en Résistance à la douleur.",
+        "effect": " MR 180 / +30 to All Action / +200 to Style / +150 Withstand Pain.",
         "retention": 10
       },
       "withRetention": true,
@@ -258,33 +258,33 @@
     {
       "spellId": 8,
       "bookId": 20,
-      "name": "Colère",
+      "name": "Wrath",
       "level": 74,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "La cible du sorcier entre dans un état de Colère digne d'un berserker qu'elle ne peut contrôler, attaquant immédiatement tous ceux api sont l'objet de sa fureur. Le sorcier pourra, en tançant le sort, cibler contre qui toute cette colère sera dirigée. Pour résister aux effets de ce sort il faut réussir un test de RMys contre la difficulté déterminée par le Degré  du sort.",
+      "type": "Spell Type: Spiritual",
+      "effect": "The target of the spell goes into a state of berserk rage that he can not control, attacking anyone that is the subject their rage. The magician may, at the time of casting, focus on who will be targeted by all that anger. To withstand the effects of this spell the target must overcome MR test against the difficulty determined by the level of the spell.",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 8,
-        "effect": "120 RMys.",
+        "effect": " MR 120 ",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 140,
         "requiredIntelligence": 10,
-        "effect": "140 RMys.",
+        "effect": " MR 140 ",
         "retention": 5
       },
       "advancedGrade": {
         "zeon": 180,
         "requiredIntelligence": 12,
-        "effect": "160 RMys.",
+        "effect": " MR 160 ",
         "retention": 10
       },
       "arcaneGrade": {
         "zeon": 220,
         "requiredIntelligence": 14,
-        "effect": "180 RMys.",
+        "effect": " MR 180 ",
         "retention": 10
       },
       "withRetention": true,
@@ -293,33 +293,33 @@
     {
       "spellId": 9,
       "bookId": 20,
-      "name": "Envie",
+      "name": "Envy",
       "level": 84,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Si la cible échoue au test de RMys déterminé par le Degré  du sort, elle subira tout ce que subit le sorcier, tant en positif qu’en négatif. Par exemple, si le personnage affecté inflige des dégâts au lanceur, il subira les mêmes dégâts. Ou si le sorcier reçoit n'importe quel effet mystique, quelle que soit sa nature, ce dernier sera aussi transféré.",
+      "type": "Spell Type: Spiritual",
+      "effect": "If the target fails the MR test determined by the degree the spell will suffer all the sorcerer suffers both positive and negative. For example, if damage is dealt to the caster the target is also affected, or if the sorcerer receives any mystical effect it will also be transferred to the target.",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 9,
-        "effect": "120 RMys.",
+        "effect": " MR 120 ",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 150,
         "requiredIntelligence": 11,
-        "effect": "140 RMys.",
+        "effect": " MR 140 ",
         "retention": 5
       },
       "advancedGrade": {
         "zeon": 200,
         "requiredIntelligence": 13,
-        "effect": "160 RMys.",
+        "effect": " MR 160 ",
         "retention": 10
       },
       "arcaneGrade": {
         "zeon": 250,
         "requiredIntelligence": 15,
-        "effect": "180 RMys.",
+        "effect": " MR 180 ",
         "retention": 10
       },
       "withRetention": true,
@@ -328,37 +328,37 @@
     {
       "spellId": 10,
       "bookId": 20,
-      "name": "La Semence du Mal",
+      "name": "The Evil Seed",
       "level": 94,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Un individu affecté par ce sortilège devient entièrement  mauvais, perdant tout concept de moralité. Le personnage devient automatiquement d'une méchanceté extrême. Une personne réellement Dure, sans aucun concept du mal en elle, est immunisée contre ce sort. Pour résister à ses effets, il faut réussir un test de RMys contre la difficulté déterminée par le Degré  du sort.",
+      "type": "Spell Type: Spiritual",
+      "effect": "Effect: A person affected by this spell becomes intrinsically evil, losing any concept morality. The character will acquire an extreme wickedness automatically. A person truly pure, without any concept of evil, is immune to this spell. To resist its effects is control necessary to overcome the difficulty of the MR test determined by the level of the spell.",
       "initialGrade": {
         "zeon": 120,
         "requiredIntelligence": 10,
-        "effect": "120 RMys.",
+        "effect": " MR 120 ",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 12,
-        "effect": "140 RMys.",
+        "effect": " MR 140 ",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 260,
         "requiredIntelligence": 14,
-        "effect": "160 RMys",
+        "effect": " MR 160 ",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 320,
         "requiredIntelligence": 16,
-        "effect": "180 RMys.",
+        "effect": " MR 180 ",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     }
   ]
 }

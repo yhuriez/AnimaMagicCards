@@ -1,50 +1,50 @@
 {
   "bookId": 3,
-  "bookName": "Livre de la Création",
-  "description": "Le pouvoir de la création est la capacité magique à composer et altérer la réalité qui entoure les sorciers. Ses sorts concernent le changement, la guérison et la création de choses. C’est une magie principalement défensive.",
-  "type": "Majeure",
+  "bookName": "Path of Creation",
+  "description": "The power of creation is the magical ability to organize and alter the reality that surrounds spellcasters. These spells are about change, healing, and creating things. It is a distinctly defensive magic.",
+  "type": "Main",
   "oppositeBook": "Destruction",
-  "secondaryBookAccessibles": [
+  "secondaryBookAccessible": [
     "Chaos",
     "Literae",
-    "Musique",
-    "Paix",
-    "Pêché",
-    "Connaissance",
-    "Sang",
-    "Temps."
+    "Music",
+    "Peace",
+    "Sin",
+    "Knowledge",
+    "Blood",
+    "Time"
   ],
   "spells": [
     {
       "spellId": 1,
       "bookId": 3,
-      "name": "Création mineure",
+      "name": "﻿Minor Creation",
       "level": 2,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Crée un objet simple, dont la Présence maximale dépend du rang du sort.",
+      "type": "Effect",
+      "effect": "Creates a simple object with a Presence of no more than what is allowed based on spell level.",
       "initialGrade": {
         "zeon": 30,
         "requiredIntelligence": 5,
-        "effect": "Un objet / Présence maximale 25",
+        "effect": " 1 object / Max Presence 25",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 80,
         "requiredIntelligence": 8,
-        "effect": "5 objets / Présence maximale 25",
+        "effect": " 5 objects / Max Presence 25",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 100,
         "requiredIntelligence": 10,
-        "effect": "Un objet / Présence maximale 30",
+        "effect": " 1 object / Max Presence 30",
         "retention": 10
       },
       "arcaneGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "5 objets / Présence maximale 30",
+        "effect": " 5 objects / Max Presence 30",
         "retention": 15
       },
       "withRetention": true,
@@ -53,68 +53,68 @@
     {
       "spellId": 2,
       "bookId": 3,
-      "name": "Reconstruire",
+      "name": "Reconstruct",
       "level": 6,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Redonne à un objet sa forme originelle, à partir des pièces ou des composants qui restent de lui. Il faut en posséder tous les fragments ou la matière première nécessaire pour que la reconstruction soit complète, sinon l'objet ne se répare pas totalement. Ce sort affecte les objets dont la Présence ne dépasse pas une valeur fixée par le rang.",
+      "type": "Effect",
+      "effect": "Restores a non-organic object to its original form from parts or pieces that remain. Note that it is necessary to either have all the pieces, or enough of the prime material to rebuild the complete object, otherwise it will be only partly reconstructed. The maximum presence this spell can effect is based on spell level.",
       "initialGrade": {
         "zeon": 40,
         "requiredIntelligence": 5,
-        "effect": "Présence maximale affectable 20",
+        "effect": " Max Presence 20",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 140,
         "requiredIntelligence": 8,
-        "effect": "Présence maximale affectable 60",
+        "effect": " Max Presence 60",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 200,
         "requiredIntelligence": 10,
-        "effect": "Présence maximale affectable 100",
+        "effect": " Max Presence 100",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 280,
         "requiredIntelligence": 12,
-        "effect": "Présence maximale affectable 120",
+        "effect": " Max Presence 120",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 3,
       "bookId": 3,
-      "name": "Créer Énergie",
+      "name": "Create Energy",
       "level": 8,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Crée une intensité d'un des trois types d'énergie existants : le froid, le feu et l'électricité.",
+      "type": "Effect",
+      "effect": "Creates intensities of one of the three types of existing energies (Cold, Fire, or Electricity).",
       "initialGrade": {
         "zeon": 40,
         "requiredIntelligence": 5,
-        "effect": "1 Intensité",
+        "effect": " 1 Intensity",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 150,
         "requiredIntelligence": 8,
-        "effect": "5 Intensités",
+        "effect": " 5 Intensities",
         "retention": 15
       },
       "advancedGrade": {
         "zeon": 200,
         "requiredIntelligence": 10,
-        "effect": "10 Intensités",
+        "effect": " 10 Intensities",
         "retention": 20
       },
       "arcaneGrade": {
         "zeon": 250,
         "requiredIntelligence": 12,
-        "effect": "20 Intensité",
+        "effect": " 20 Intensities",
         "retention": 25
       },
       "withRetention": true,
@@ -123,33 +123,33 @@
     {
       "spellId": 4,
       "bookId": 3,
-      "name": "Régénération",
+      "name": "Regeneration",
       "level": 10,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Augmente la capacité d'une créature à soigner tous les types de blessures. Ce sort accorde un score de régénération précis à une cible. Il ne permet cependant pas de dépasser Régénération 18 si la cible n'a pas la Gnose suffisante.",
+      "type": "Effect",
+      "effect": "Increases the ability of a body to heal all types of wounds. This spell provides a base Regeneration Level based on spell level to anyone designated by the caster, substituting it for the person’s natural Regeneration Level.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 6,
-        "effect": "Régénération 4",
+        "effect": " Regeneration 4.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 100,
         "requiredIntelligence": 8,
-        "effect": "Régénération 8",
+        "effect": " Regeneration 8.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 150,
         "requiredIntelligence": 10,
-        "effect": "Régénération12",
+        "effect": " Regeneration 12.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 250,
         "requiredIntelligence": 12,
-        "effect": "Régénération16",
+        "effect": " Regeneration 16.",
         "retention": 25
       },
       "withRetention": true,
@@ -158,33 +158,33 @@
     {
       "spellId": 5,
       "bookId": 3,
-      "name": "Modification inorganique",
+      "name": "Inorganic Modification",
       "level": 12,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Grâce à son contrôle de la magie, le sorcier peut altérer la forme et d'un objet inorganique, le transformant en un autre objet distinct mais de puissance spirituelle équivalente. On peut donc transformer n'importe quelle chose, dont la Présence ne dépasse pas une valeur fixée par le rang du sort, en un objet dont la Présence est égale ou inférieure à celle de l’objet original.",
+      "type": "Effect",
+      "effect": "Through control of magic, the caster can alter the form and nature of an inorganic object, transforming it into a completely different thing but of similar spiritual power. This permits the caster to transform something into something else of equal or lesser Presence, maximum presence affected is based on spell level.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 6,
-        "effect": "Présence maximale 20",
+        "effect": " Max Presence 20.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 90,
         "requiredIntelligence": 8,
-        "effect": "Présence maximale 30",
+        "effect": " Max Presence 30.",
         "retention": 5
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 10,
-        "effect": "Présence maximale 40",
+        "effect": " Max Presence 40.",
         "retention": 5
       },
       "arcaneGrade": {
         "zeon": 150,
         "requiredIntelligence": 12,
-        "effect": "Présence maximale 50",
+        "effect": " Max Presence 50.",
         "retention": 10
       },
       "withRetention": true,
@@ -193,33 +193,33 @@
     {
       "spellId": 6,
       "bookId": 3,
-      "name": "Augmenter les Résistances",
+      "name": "Increase Resistances",
       "level": 16,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Augmente de façon surnaturelle toutes les Résistances d'un individu (RPhy, RPoi, RMal, RMys et RPsy). Les effets de ce sort ne se cumulent pas et il ne peut affecter qu'une fois chaque cible.",
+      "type": "Effect",
+      "effect": "Supernaturally increases all Resistances (Disease, Magic, Physical, Psychic, and Venom) of an individual. Multiple castings of this spell on a single target are not cumulative.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 8,
-        "effect": "+10 à toutes les résistances",
+        "effect": " +10 Resistances.",
         "retention": 15
       },
       "intermediateGrade": {
         "zeon": 120,
         "requiredIntelligence": 10,
-        "effect": "+20 à toutes les résistances",
+        "effect": " +20 Resistances.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 150,
         "requiredIntelligence": 12,
-        "effect": "+30 à toutes les résistances",
+        "effect": " +30 Resistances.",
         "retention": 30
       },
       "arcaneGrade": {
         "zeon": 200,
         "requiredIntelligence": 14,
-        "effect": "+40 à toutes les résistances",
+        "effect": " +40 Resistances.",
         "retention": 40
       },
       "withRetention": true,
@@ -228,33 +228,33 @@
     {
       "spellId": 7,
       "bookId": 3,
-      "name": "Bouclier Réel",
+      "name": "Royal Shield",
       "level": 18,
       "actionType": "Passive",
-      "type": "Défense",
-      "effect": "Forme une barrière d'énergie qui protège de toutes les sources d'attaque.",
+      "type": "Defense",
+      "effect": "Forms a barrier of Energy that protects the caster from any source of attack. The shield will absorb 500 points of damage (at base level) before breaking.",
       "initialGrade": {
         "zeon": 40,
         "requiredIntelligence": 6,
-        "effect": "500 Points de Vie",
+        "effect": " 500 Resistance Points.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 150,
         "requiredIntelligence": 8,
-        "effect": "3 000 Points de Vie",
+        "effect": " 3000 Resistance Points.",
         "retention": 15
       },
       "advancedGrade": {
         "zeon": 260,
         "requiredIntelligence": 10,
-        "effect": "5 000 Points de Vie",
+        "effect": " 5000 Resistance Points.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 400,
         "requiredIntelligence": 12,
-        "effect": "10 000 Points de Vie",
+        "effect": " 10000 Resistance Points.",
         "retention": 20
       },
       "withRetention": true,
@@ -263,68 +263,68 @@
     {
       "spellId": 8,
       "bookId": 3,
-      "name": "Guérison",
+      "name": "Heal",
       "level": 20,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Permet à l'individu ciblé de récupérer des points de vie. Ce sort ne permet pas de faire repousser les membres coupés ou amputés",
+      "type": "Effect",
+      "effect": "Effect:Causes whomever the spell is directed at to recover Life Points. This spell does not permit recovery of permanently lost or destroyed limbs, but does eliminate the temporary penalties caused by Criticals, up to a quantity equivalent to half the Life Points returned.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 8,
-        "effect": "50 Points de Vie",
+        "effect": " 50 Life Points.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 120,
         "requiredIntelligence": 10,
-        "effect": "150 Points de Vie",
+        "effect": " 150 Life Points.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 150,
         "requiredIntelligence": 12,
-        "effect": "250 Points de Vie",
+        "effect": " 250 Life Points.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 200,
         "requiredIntelligence": 14,
-        "effect": "350 Points de Vie",
+        "effect": " 350 Life Points.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 9,
       "bookId": 3,
-      "name": "Invulnérabilité",
+      "name": "Damage Barrier",
       "level": 22,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Les énergies surnaturelles que manœuvre ce sort s'unissent au corps de l'individu désigné, lui accordant une quasi-invulnérabilité aux dégâts. En termes de jeu, il bénéficie d'une Seuil d'Invulnérabilité (voir Chapitre 14).",
+      "type": "Effect",
+      "effect": "Effect:The supernatural energies governed by this spell adhere to the body of the designated individual, and provide him with certain immunity to damage. In game terms, he obtains a Damage Barrier (see Chapter 14).",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 6,
-        "effect": "Seuil d’Invulnérabilité 30",
+        "effect": " Damage Barrier 30.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 90,
         "requiredIntelligence": 9,
-        "effect": "Seuil d’Invulnérabilité 50",
+        "effect": " Damage Barrier 50.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "Seuil d’Invulnérabilité 80",
+        "effect": " Damage Barrier 80.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 150,
         "requiredIntelligence": 15,
-        "effect": "Seuil d’Invulnérabilité 100",
+        "effect": " Damage Barrier 100.",
         "retention": 15
       },
       "withRetention": true,
@@ -333,33 +333,33 @@
     {
       "spellId": 10,
       "bookId": 3,
-      "name": "Créer Homoncule",
+      "name": "Create Homunculus",
       "level": 26,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Les homoncules sont de petits élémentaires de magie que les sorciers utilisent pour de nombreuses tâches, allant de l'espionnage à l'entretien de leur maison. Ce sort crée un ou plusieurs êtres mystiques de niveau 0 sous le contrôle absolu du sorcier, en se servant des règles décrites dans le Chapitre 26. Il s'agit d'une créature d'Entre Mondes avec Gnose 5 mais, au vu de sa nature inférieure, qui est dirigée par des règles spéciales\n1- Tout d'abord, ses caractéristiques ne peuvent pas être supérieures à 5, il ne peut avoir aucune compétence principale ou secondaire au-dessus de 50 et il ne peut pas posséder le Don mystique.\n2· Ils subissent ensuite un malus de -2 à leur Taille et ne peut pas choisir Taille inhabituelle.\nChaque homoncule créé peut être distinct des autres.",
+      "type": "Effect",
+      "effect": "Homunculi are small magical elementals that casters use at times for various purposes, from espionage to housework. The spell creates a zero level mystical being under complete control of the caster, as per the rules inChapter 26. It is a Being Between Worlds with a Gnosis of 5, but, given its minor nature, the following rules apply:1- First of all, its characteristics can never be higher than 5, nor can it have any Primary Ability or Secondary Ability higher than 50.2- It also suffers a –2 penalty to size, and it cannot choose Uncommon Size.3- It can’t have any Intellectual Ability higher than their Caster.Each Homunculus created might be completely different.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 6,
-        "effect": "1 Homoncule",
+        "effect": " 1 Homunculus.",
         "retention": 10
       },
       "intermediateGrade": {
-        "zeon": 180,
+        "zeon": 80,
         "requiredIntelligence": 9,
-        "effect": "10 Homoncules",
+        "effect": " 10 Homunculi.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 250,
         "requiredIntelligence": 12,
-        "effect": "25 Homoncules",
+        "effect": " 25 Homunculi.",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 350,
         "requiredIntelligence": 15,
-        "effect": "100 Homoncules",
+        "effect": " 100 Homunculi.",
         "retention": 35
       },
       "withRetention": true,
@@ -368,33 +368,33 @@
     {
       "spellId": 11,
       "bookId": 3,
-      "name": "Changement Mineur",
+      "name": "Minor Change",
       "level": 28,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Ce sort permet d'altérer l'apparence d'un objet ou d'un être en modifiant sa forme. Le changement se limite à son aspect extérieur",
+      "type": "Spiritual",
+      "effect": "This spell permits altering the appearance of an object or being by modifying its form. The change is limited to varying its exterior appearance, and never alters its original qualities or nature. In this way, a shining short sword might become old and rusty, but could never become a walking stick. In the case of living things, this spell can change things by no more than two points of size, perhaps making an ugly and overweight man into a young good looking one. The MR Difficulty to avoid the change is based on spell level. Regarding objects, once affected they have no further right to make Resistance Checks, but people can repeat the Check once a day if they wish to be free of the effects. It is possible to affect various targets, as long as the sum of all their Presences is no higher than the limit set by the spell level.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 6,
-        "effect": "RMys 80 / Présence Maximale 60",
+        "effect": " MR 80 / Max Presence 60.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 90,
         "requiredIntelligence": 9,
-        "effect": "RMys 100 / Présence Maximale 90",
+        "effect": " MR 100 / Max Presence 90.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 150,
         "requiredIntelligence": 12,
-        "effect": "RMys 140 / Présence Maximale 120",
+        "effect": " MR 140 / Max Presence 120.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 250,
         "requiredIntelligence": 15,
-        "effect": "RMys 180 / Présence Maximale 180",
+        "effect": " MR 180 / Max Presence 180.",
         "retention": 25
       },
       "withRetention": true,
@@ -403,33 +403,33 @@
     {
       "spellId": 12,
       "bookId": 3,
-      "name": "Imiter",
+      "name": "Imitate",
       "level": 30,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Crée une copie exacte d'un objet inorganique déjà existant qui se trouve à portée du sorcier. Il se forme une imitation parfaite de l'original, avec toutes ses qualités, même surnaturelles. L'objet copié ne peut pas avoir une Présence supérieure à la valeur fixée par le rang. Ce sort n'a aucun effet sur les créatures animées par magie, mais fonctionne sur les créations mécaniques si elles ne possèdent pas d'âme.",
+      "type": "Effect/Spiritual",
+      "effect": "Creates an exact copy of an already existing inorganic object within reach of the caster. It creates a perfect imitation of the original that retains all its qualities, including the supernatural ones. The copied object can not have Presence greater than the limit set by spell level. The spell has no effect on magically animated creatures, but can affect mechanical constructions as long as they have no soul.",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 6,
-        "effect": "Présence maximale 30",
+        "effect": " Max Presence 30.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 200,
         "requiredIntelligence": 9,
-        "effect": "Présence maximale 80",
+        "effect": " Max Presence 80.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 300,
         "requiredIntelligence": 12,
-        "effect": "Présence maximale 120",
+        "effect": " Max Presence 120.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 400,
         "requiredIntelligence": 15,
-        "effect": "Présence maximale 160",
+        "effect": " Max Presence 160.",
         "retention": 20
       },
       "withRetention": true,
@@ -438,33 +438,33 @@
     {
       "spellId": 13,
       "bookId": 3,
-      "name": "Immunité",
+      "name": "Immunity",
       "level": 32,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Ce sort permet au sorcier, ou aux cibles qu'il a désignées, d'être immunisées à plusieurs intensités d'un type précis d'énergie, que ce soit le feu, le froid ou l'électricité. S'il subit une attaque basée sur un élément contre lequel il est immunisé, chaque intensité diminue de 5 points les Dégâts et accorde un bonus de +5 aux Résistances contre ses effets.",
+      "type": "Effect",
+      "effect": "This spell permits the caster, or those people designated by him, to be immune to Intensities of a given type of Energy, whether it is Fire, Electricity, or Cold. If an attack is made using the type of Energy to which they are immune, each Intensity of immunity reduces the Base Damage by 5 points and provides a +5 to the Resistances against its effects.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 6,
-        "effect": "5 intensités",
+        "effect": " 5 Intensities.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 9,
-        "effect": "15 intensités",
+        "effect": " 15 Intensities.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "25 intensités",
+        "effect": " 25 Intensities.",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "35 intensités",
+        "effect": " 35 Intensities.",
         "retention": 30
       },
       "withRetention": true,
@@ -473,68 +473,68 @@
     {
       "spellId": 14,
       "bookId": 3,
-      "name": "Réduction de dégâts",
+      "name": "Damage Reduction",
       "level": 36,
-      "actionType": "Passive",
-      "type": "Automatique",
-      "effect": "La magie de ce sort affecte la puissance d'une attaque en diminuant la force de l'impact. Il réduit les Dégâts d'une attaque. Si ces dégâts chutent en dessous de 0, l'attaque n'a aucun effet. Si, par exemple, ce sort est utilisé au rang de base contre une attaque de Dégâts 60, un coup infligé sera calculé comme si les Dégâts n'étaient que de 20 points.",
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "The magic of this spell affects the power of an attack, reducing the force of its impact. Upon being cast, this spell reduces the Base Damage of an attack. If the damage is lowered to zero, the attack produces no effect. If, for example, this spell is used against an attack with Base Damage 60, when it actually hits, it does so as if it were an attack of only 20. Reduction of Damage must being cast before rolling any dice. The effects of two Damage Reduction Spells don’t cumulate.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 8,
-        "effect": "-40 aux dégâts de base de l’attaque",
+        "effect": " -40 Damage.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 120,
         "requiredIntelligence": 10,
-        "effect": "-60 aux dégâts de base de l’attaque",
+        "effect": " -60 Damage.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 160,
         "requiredIntelligence": 12,
-        "effect": "-80 aux dégâts de base de l’attaque",
+        "effect": " -80 Damage.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 240,
         "requiredIntelligence": 14,
-        "effect": "-120 aux dégâts de base de l’attaque",
+        "effect": " -120 Damage.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 15,
       "bookId": 3,
-      "name": "Contrôle Physique",
+      "name": "Physical Control",
       "level": 38,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Grâce à ce sort, un sorcier peut contrôler le corps d'un être comme s'il s'agissait d'une simple poupée. Comme ce sort n'accorde qu'un contrôle physique et pas mental, l'individu subjugué ne peut pas être forcé à utiliser ses compétences surnaturelles (magie, Ki, pouvoirs psychiques ...) de façon contraire à sa volonté, à la différence de ses compétences martiales. Pour résister au contrôle, la cible doit réussir un test de RMys. Elle a droit à une nouvelle Résistance par jour, ainsi que chaque fois que les ordres reçus vont complètement à l'encontre de son comportement habituel.",
+      "type": "Spiritual",
+      "effect": "Using this spell, the caster is able to control the body of a being as though it were a simple puppet. Since the control is purely physical, not spiritual, the subject being controlled is not obliged to use any Supernatural Ability (Magic, Ki, and Psychic Powers) against his will, although any natural fighting abilities are under the caster’s control. Resisting the spell requires beating a MR Check. The person being controlled has the right to one new Resistance Check per day, and also any time he receives orders that are entirely against his nature.",
       "initialGrade": {
         "zeon": 120,
         "requiredIntelligence": 6,
-        "effect": "RMys 80",
+        "effect": " MR 80.",
         "retention": 25
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 9,
-        "effect": "RMys 120",
+        "effect": " MR 120.",
         "retention": 40
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "RMys 140",
+        "effect": " MR 140.",
         "retention": 50
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "RMys 180",
+        "effect": " MR 180.",
         "retention": 60
       },
       "withRetention": true,
@@ -543,33 +543,33 @@
     {
       "spellId": 16,
       "bookId": 3,
-      "name": "Acquérir Compétences",
+      "name": "Raise Abilities",
       "level": 40,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Ce sort augmente temporairement les compétences secondaires d'un individu, lui accordant un bonus à répartir dans les compétences de son choix jusqu’à un maximum de 320, à l'exception de celles qui requièrent des connaissances.",
+      "type": "Effect",
+      "effect": "This spell temporarily increases the Secondary Abilities of an individual, providing him with a bonus to divide freely among them, except for those Abilities that are not currently considered trained. Cannot raise Abilities above 320.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 6,
-        "effect": "+50 à répartir",
+        "effect": " +50 Bonus.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 9,
-        "effect": "+150 à répartir",
+        "effect": " +150 Bonus.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 280,
         "requiredIntelligence": 12,
-        "effect": "+250 à répartir",
+        "effect": " +250 Bonus.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 350,
         "requiredIntelligence": 15,
-        "effect": "+400 à répartir",
+        "effect": " +400 Bonus.",
         "retention": 20
       },
       "withRetention": true,
@@ -578,33 +578,33 @@
     {
       "spellId": 17,
       "bookId": 3,
-      "name": "Fusionner",
+      "name": "Fuse",
       "level": 42,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Ce sort unit deux êtres dans un corps unique, créant ainsi un nouvel individu possédant les caractéristiques et les compétences des deux. Le sorcier choisit les futures capacités prédominantes, sélectionnant celles qui lui conviennent le plus chez chacun des deux êtres. De cette façon, si un combattant et un mentaliste fusionnent, l'individu en résultant pourra avoir l'expérience du combat du guerrier, les capacités mentales du psy et les compétences secondaires les plus élevées des deux. Le contrôle du corps appartiendra à celui qui remporte un test opposé de Volonté, bien qu'il puisse conserver quelques traits typiques de la personnalité de l'autre individu. Les corps d'origine restent dans le même état que juste avant la fusion, et ils se séparent à la fin du sort, retrouvant leur forme et leur état originels. La mort de cette entité a pour conséquence la mort des deux êtres qui la composent. La somme des Présences des deux individus ne peut pas être supérieure à une valeur fixée par le rang du sort. Il est aussi possible de fusionner des personnes avec des objets",
+      "type": "Spiritual",
+      "effect": "Unites two beings in a single body, creating a new individual who possesses the characteristics and abilities of both. The caster designates which capacities prevail, selecting those that he is interested in from each. If the spell joins a fighter and a psychic, for example, the resulting individual could have the fighting ability of the warrior, the mental powers of the mentalist, and the highest Secondary Abilities of each one. Control of the resulting united body falls to whichever of the two wins an Opposed Check of Willpower, although some characteristics typical of the other personality can be retained. The original bodies remain in the state they were in before the fusion and so, when the spell lapses, return to the state and condition they were in before it was cast. The death of the joint entity causes the death of both original people. The total Presence of both originals cannot be more than allowed based on spell level. It is also possible to Fuse an individual with objects, in which case the GM can award the result the advantages and abilities he considers appropriate.",
       "initialGrade": {
         "zeon": 140,
         "requiredIntelligence": 7,
-        "effect": "Présence maximale 80 / RMys 80",
+        "effect": " MR80 / Max Presence 80.",
         "retention": 15
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 9,
-        "effect": "Présence maximale 100 / RMys 120",
+        "effect": " MR120 / Max Presence 100.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "Présence maximale 150 / RMys 140",
+        "effect": " MR140 / Max Presence 150.",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 350,
         "requiredIntelligence": 15,
-        "effect": "Présence maximale 200 / RMys 180",
+        "effect": " MR180 / Max Presence 200.",
         "retention": 30
       },
       "withRetention": true,
@@ -613,103 +613,103 @@
     {
       "spellId": 18,
       "bookId": 3,
-      "name": "Créer Souvenirs",
+      "name": "Create Memories",
       "level": 46,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Permet de créer des souvenirs nouveaux dans l'esprit d'une cible, sans forcément effacer les souvenirs antérieurs. Le plus souvent, le personnage affecté se sent légèrement confus, mais il est convaincu que tous ses souvenirs sont exacts, sauf si le sort affecte des souvenirs bien ancrés dans sa mémoire. Le sorcier peut déterminer quelles informations il compte introduire, sans se soucier de leur complexité ou de leur durée. Pour éviter l'effet de ce sort, la cible doit réussir un test de RMys ou RPsy. Bien que ce sort ne requière aucun maintien, l'individu affecté a droit à un nouveau test de Résistance s'il voit ou fait quelque chose qui puisse l'inciter à croire qu'il a été trompé.",
+      "type": "Spiritual",
+      "effect": "Permits creation of new memories in the target, without necessarily erasing the pre-existing ones. Most of the time, unless very deeply-rooted memories are modified, the person affected will feel slightly confused, but will be convinced that his memories are real. The caster determines what information he is trying to introduce, regardless of its complexity or duration. Resisting the spell requires beating a MR or PsR Check. Although this spell doesn’t require maintenance, the individual affected has the right to a new Resistance Check any time something makes him suspect his memory might be inaccurate.",
       "initialGrade": {
         "zeon": 140,
         "requiredIntelligence": 7,
-        "effect": "RMys / RPsy 100",
+        "effect": " MR or PsR 100.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 9,
-        "effect": "RMys / RPsy 120",
+        "effect": " MR or PsR 120.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "RMys / RPsy 160",
+        "effect": " MR or PsR 160.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 350,
         "requiredIntelligence": 15,
-        "effect": "RMys / RPsy 200",
+        "effect": " MR or PsR 200.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 19,
       "bookId": 3,
-      "name": "Récupérer",
+      "name": "Recover",
       "level": 48,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Ce sort restaure complètement la condition physique d'un individu, en lui soignant ses points de vie perdus et en faisant disparaître tous les malus physiques qu'il subissait, s'ils n'avaient pas pour origine des membres amputés ou des dégâts similaires. Ce sort ne permet pas de récupérer les points de Fatigue, ni n'annule les malus provoqués par des effets surnaturels.",
+      "type": "Effect",
+      "effect": "This spell completely restores the physical condition of the subject, curing damage and removing all physical penalties, unless caused by amputations or similar losses. This spell does not restore Fatigue Points, nor eliminate negative States caused by supernatural means.",
       "initialGrade": {
         "zeon": 250,
         "requiredIntelligence": 8,
-        "effect": "500 Points de Vie",
+        "effect": " 500 Life Points.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 300,
         "requiredIntelligence": 10,
-        "effect": "750 Points de Vie",
+        "effect": " 750 Life Points.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 350,
         "requiredIntelligence": 12,
-        "effect": "1 000 Points de Vie",
+        "effect": " MR 1000 Life Points.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 400,
         "requiredIntelligence": 14,
-        "effect": "1 500 Points de Vie",
+        "effect": " 1500 Life Points.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 20,
       "bookId": 3,
-      "name": "Acquérir des Pouvoirs",
+      "name": "Acquire Powers",
       "level": 50,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Confère au sorcier, ou à celui qu'il désigne, la capacité d'acquérir des capacités de créatures surnaturelles. En termes de jeu, ce sort procure au personnage un certain nombre de PF supplémentaires pour obtenir n'importe lequel des Pouvoirs détaillés dans le Chapitre 26, comme s'il avait une Gnose de 25. Ces changements affectent temporairement sa forme physique. Si, par exemple, il acquérait Vol Naturel, il serait très logiquement doté de grandes ailes. Les effets de ce sort ne se cumulent pas et il ne peut affecter plus d'une fois en même temps un individu.",
+      "type": "Effect",
+      "effect": "Gives the caster, or the person on whom the spell is cast, the ability to acquire the abilities of supernatural beings. In game terms, it gives the character additional DP with which to acquire any of the Powers listed in Chapter 26, as though they had a Gnosis of 25. These also temporarily affect their physical form. If, for example, someone obtains Natural Flight, it would be logical for him to have developed enormous wings. The effects of this spell are not cumulative and a subject can only be affected by one Acquire Powers at a time.",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 7,
-        "effect": "100 PF",
+        "effect": " 100DP.",
         "retention": 20
       },
       "intermediateGrade": {
         "zeon": 200,
         "requiredIntelligence": 10,
-        "effect": "200 PF",
+        "effect": " 200DP.",
         "retention": 40
       },
       "advancedGrade": {
         "zeon": 300,
         "requiredIntelligence": 13,
-        "effect": "300 PF",
+        "effect": " 300DP.",
         "retention": 50
       },
       "arcaneGrade": {
         "zeon": 400,
         "requiredIntelligence": 16,
-        "effect": "400 PF / Gnose 30",
+        "effect": " 400DP.",
         "retention": 60
       },
       "withRetention": true,
@@ -718,33 +718,33 @@
     {
       "spellId": 21,
       "bookId": 3,
-      "name": "Créer Rejeton",
+      "name": "Create Monstrosity",
       "level": 52,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Ce sort crée un être magique ayant l'apparence de la vie, sous le contrôle total du sorcier. Il s'agit d'une créature d'Entre Mondes développée avec les règles décrites dans le Chapitre 26. Elle est de premier niveau et possède Gnose de 20. Ce sort ne permet pas de créer des créatures de niveau supérieur à celui du sorcier, car elles se basent sur sa présence spirituelle. Les rejetons n'ont pas la capacité de recevoir une âme et il n'est donc pas possible de donner vie de façon indépendante, à l'aide du sort Offrir une Âme, ni d'installer un esprit dans leur corps.",
+      "type": "Effect",
+      "effect": "Creates a magical being with the appearance of life, but completely under the control of the caster. The being is developed as a Being Between Worlds using the rules described in Chapter 26. The creature is first-level with the equivalent of Gnosis 20. The spell does not permit the creation of a creature of higher level than the caster, since it is based on the caster’s spiritualpresence. The Monstrosity is not able to receive a soul, so it is not possible to give it independent life.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 8,
-        "effect": "Niveau 2",
+        "effect": " Level 2.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 120,
         "requiredIntelligence": 10,
-        "effect": "Niveau4",
+        "effect": " Level 4.",
         "retention": 15
       },
       "advancedGrade": {
         "zeon": 250,
         "requiredIntelligence": 12,
-        "effect": "Niveau 8",
+        "effect": " Level 8.",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 500,
         "requiredIntelligence": 15,
-        "effect": "Niveau 12",
+        "effect": " Level 12.",
         "retention": 50
       },
       "withRetention": true,
@@ -753,33 +753,33 @@
     {
       "spellId": 22,
       "bookId": 3,
-      "name": "Aura de Protection",
+      "name": "Protective Aura",
       "level": 56,
-      "actionType": "Passive",
-      "type": "Effet",
-      "effect": "Augmente les Résistances (RPhy, RPoi, RMal, RMys et RPsy, tous les individus désignés par le sorcier autour de lui. Les effets de ce sort ne se cumulent pas et il ne peut affecter plus d'une fois même temps un individu.",
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Supernaturally increases all the Resistances (VR, PhR, DR, MR, and PsR) of all the designated individuals within range of the caster. The effects of this spell are not cumulative, and a subject can only be affected by one Protective Aura at a time.",
       "initialGrade": {
         "zeon": 120,
         "requiredIntelligence": 6,
-        "effect": "+20 à la résistance / 100 m de rayon",
+        "effect": " +20 Resistances / 100m area.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 9,
-        "effect": "+50 à la résistance / 500 m de rayon",
+        "effect": " +50 Resistances / 500m/546yd area.",
         "retention": 15
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "+80 à la résistance / 1 km de rayon",
+        "effect": " +80 Resistances / 1km/1093yd area.",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 350,
         "requiredIntelligence": 15,
-        "effect": "+120 à la résistance / 10 km de rayon",
+        "effect": " +120 Resistances / 10km/6.2mile area.",
         "retention": 35
       },
       "withRetention": true,
@@ -788,33 +788,33 @@
     {
       "spellId": 23,
       "bookId": 3,
-      "name": "Suspendre l'Essence",
+      "name": "Spiritual Standstill",
       "level": 58,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Comme son nom l'indique, ce sort suspend l'esprit d'un individu l'état où il se trouvait au moment du lancement du sort. A partir de cet instant, la cible ne réalise plus de nouveaux tests magiques ou psychiques et conserve la position mentale inaltérable dans laquelle elle se trouve. Elle ne peut plus être influencée par aucun état, autant positif que négatif. Si la cible désire résister à la suspension, elle doit réussir un test de RMys ou RPsy. En toute logique, une personne affectée par ce sort ne peut pas effectuer de test pour s'en libérer tant qu'il est maintenu.",
+      "type": "Spiritual",
+      "effect": "As the name indicates, this spell preserves the spirit of the individual on whom it is cast in the same state as at the moment it is cast. From that moment on, the affected person does not make any further MR or PsR Checks, and remains inalterably in the same spiritual condition. The person cannot be affected by States of any kind, either positive or negative. The subject can resist this spell by passing a MR Check. Naturally, the person affected by this spell cannot make any type of Check to free himself of it while it is in effect.",
       "initialGrade": {
         "zeon": 150,
         "requiredIntelligence": 8,
-        "effect": "RMys 100",
+        "effect": " MR 100.",
         "retention": 15
       },
       "intermediateGrade": {
         "zeon": 200,
         "requiredIntelligence": 10,
-        "effect": "RMys 120",
+        "effect": " MR 120.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 250,
         "requiredIntelligence": 12,
-        "effect": "RMys 140",
+        "effect": " MR 140.",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "RMys 180",
+        "effect": " MR 180.",
         "retention": 30
       },
       "withRetention": true,
@@ -823,33 +823,33 @@
     {
       "spellId": 24,
       "bookId": 3,
-      "name": "Bouclier Parfait",
+      "name": "Perfect Shield",
       "level": 60,
       "actionType": "Active",
-      "type": "Défense",
-      "effect": "Forme une barrière d'énergie qui protège contre toute source d'attaque. S'il n'est pas détruit à la fin d'un round, il récupère instantanément tous ses points de vie perdus.",
+      "type": "Defense",
+      "effect": "Forms a barrier of Energy that protects from any source of attack. The shield can absorb 100 points of damage (at base level) before breaking. If it is not destroyed by the end of the combat turn, it automatically recovers all lost Resistance Points.",
       "initialGrade": {
         "zeon": 150,
         "requiredIntelligence": 8,
-        "effect": "Le bouclier possède 100 Points de Vie",
+        "effect": " 100 Resistance Points.",
         "retention": 15
       },
       "intermediateGrade": {
         "zeon": 200,
         "requiredIntelligence": 10,
-        "effect": "Le bouclier possède 250 Points de Vie",
+        "effect": " 250 Resistance Points.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 300,
         "requiredIntelligence": 13,
-        "effect": "Le bouclier possède 500 Points de Vie",
+        "effect": " 500 Resistance Points.",
         "retention": 30
       },
       "arcaneGrade": {
         "zeon": 400,
         "requiredIntelligence": 16,
-        "effect": "Le bouclier possède 1 000 Points de Vie",
+        "effect": " 1000 Resistance Points.",
         "retention": 40
       },
       "withRetention": true,
@@ -858,33 +858,33 @@
     {
       "spellId": 25,
       "bookId": 3,
-      "name": "Vitalité",
+      "name": "Vitality",
       "level": 62,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "La magie crée un état de vitalité surnaturelle chez un individu, augmentant ainsi la valeur maximale de ses points de vie tant que le sort est maintenu. Ces effets ne se cumulent pas et il ne peut affecter plus d'une fois en même temps un individu. Les créatures à Encaissement multiplient cette valeur par 5.",
+      "type": "Effect",
+      "effect": "This spell creates a state of supernatural vitality in an individual, increasing his maximum Life Points while the spell is maintained. The effects of this spell are not cumulative, and only one casting can affect a subject at a time. Beings with Damage Resistance apply this quantity to their Damage Resistance multiple.",
       "initialGrade": {
         "zeon": 150,
         "requiredIntelligence": 8,
-        "effect": "+50 Points de Vie",
+        "effect": " +50 Life Points.",
         "retention": 15
       },
       "intermediateGrade": {
         "zeon": 200,
         "requiredIntelligence": 10,
-        "effect": "+75 Points de Vie",
+        "effect": " +75 Life Points.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 250,
         "requiredIntelligence": 13,
-        "effect": "+100 Points de Vie",
+        "effect": " MR +100 Life Points.",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 350,
         "requiredIntelligence": 16,
-        "effect": "+150 Points de Vie",
+        "effect": " MR +150 Life Points.",
         "retention": 35
       },
       "withRetention": true,
@@ -893,33 +893,33 @@
     {
       "spellId": 26,
       "bookId": 3,
-      "name": "Création complète",
+      "name": "Complete Creation",
       "level": 66,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Forme un objet dont la Présence ne peut pas excéder une valeur fixée par le rang du sort. La création doit se trouver dans un lieu logique en fonction de sa nature. Par exemple, il n'est pas possible de faire apparaître une petite montagne dans les airs, puis de la laisser tomber. La Présence de l'objet créé ne peut pas dépasser le double de la Présence du sorcier. Par conséquent, un personnage de niveau cinq avec une Présence de 50, pourrait au maximum concevoir des objets de Présence 100.",
+      "type": "Effect",
+      "effect": "Creates an object with a maximum presence based on spell level. The creation must appear in a location that is logical for it, according to its nature. It would not be possible, for instance, to conjure up a small mountain in mid-air, and then let it fall on someone. As a limit, the Presence of the object cannot be more than twice the Base Presence of the caster. For example, a fifth-level character with a Presence of 50 could therefore create objects with a maximum Presence of 100.",
       "initialGrade": {
         "zeon": 150,
         "requiredIntelligence": 8,
-        "effect": "Présence maximale 50",
+        "effect": " Max Presence 50.",
         "retention": 15
       },
       "intermediateGrade": {
         "zeon": 200,
         "requiredIntelligence": 10,
-        "effect": "Présence maximale 80",
+        "effect": " Max Presence 80.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 300,
         "requiredIntelligence": 12,
-        "effect": "Présence maximale 120",
+        "effect": " Max Presence 120.",
         "retention": 30
       },
       "arcaneGrade": {
         "zeon": 400,
         "requiredIntelligence": 14,
-        "effect": "Présence maximale 150",
+        "effect": " Max Presence 150.",
         "retention": 40
       },
       "withRetention": true,
@@ -928,33 +928,33 @@
     {
       "spellId": 27,
       "bookId": 3,
-      "name": "Renforcer la Magie",
+      "name": "Reinforce Magic",
       "level": 68,
       "actionType": "Passive",
-      "type": "Effet",
-      "effect": "Renforce la puissance d'un autre sort qui est soit lancé en même temps soit déjà maintenu. En termes de jeu, accorde au sort les bonus suivants :\n+ 20 à la RMys\n+50% aux dégâts de base / résistances aux dégâts additionnels (arrondi vers le haut au groupe de 5)\n+20% aux valeurs numériques du sort (présence, intensité, portée, rayon d’effet, etc.)",
+      "type": "Effect",
+      "effect": "Reinforce Magic adds strength to another spell launched either at thesame time or that is being maintained. Gives to the Reinforced Spell the following bonuses.+20MR+50% to Damage / Resistance Points (round down at discretes of 5)+20% to all other numerals present on the spell, except for Gnosis.",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 8,
-        "effect": "Affecte les sorts de rang Initial",
+        "effect": " Affects spells cast at Base Level.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 200,
         "requiredIntelligence": 12,
-        "effect": "Affecte les sorts de rang Intermédiaire",
+        "effect": " Affects spells cast at Intermediate Level.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "Affecte les sorts de rang Avancée",
+        "effect": " Affects spells cast at Advanced Level.",
         "retention": 30
       },
       "arcaneGrade": {
         "zeon": 400,
         "requiredIntelligence": 18,
-        "effect": "Affecte les sorts de rang Arcane",
+        "effect": " Affects spells cast at Arcane Level.",
         "retention": 40
       },
       "withRetention": true,
@@ -963,68 +963,68 @@
     {
       "spellId": 28,
       "bookId": 3,
-      "name": "Transmuter",
+      "name": "Transmute",
       "level": 70,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Le sorcier transforme un objet inorganique en un autre objet différent, de puissance animique équivalente. Il peut ainsi modifier quelque chose, dont la Présence ne dépasse pas 50, en une autre chose de Présence égale ou inférieure. Si l'objet est surnaturel ou très puissant, il peut résister avec un test de RMys. Si la Présence transmutée dépasse la valeur fixée par le sort, il faut deux effets supplémentaires au lieu d'un pour augmenter de 5 points la valeur affectable maximale.",
+      "type": "Spiritual",
+      "effect": "The caster transforms an inorganic object, converting it to a different one of similar spiritual power. This permits the caster to modify something with a Presence no higher than the maximum set by the spell level or less into something else of equal or lesser Presence. If the object is supernatural, or especially powerful, it can resist by passing a MR Check.",
       "initialGrade": {
         "zeon": 250,
-        "requiredIntelligence": 9,
-        "effect": "RMys 120 / Présence maximale 50",
+        "requiredIntelligence": 8,
+        "effect": " MR 120 / Max Presence 50.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 350,
         "requiredIntelligence": 12,
-        "effect": "RMys 160 / Présence maximale 100",
+        "effect": " MR 160 / Max Presence 100.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 500,
         "requiredIntelligence": 15,
-        "effect": "RMys 220 / Présence maximale 150",
+        "effect": " MR 220 / Max Presence 150.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 800,
         "requiredIntelligence": 18,
-        "effect": "RMys 260 / Présence maximale 200",
+        "effect": " MR 260 / Max Presence 200.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 29,
       "bookId": 3,
-      "name": "Métamorphose",
+      "name": "Metamorphism",
       "level": 72,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Le sorcier transmute la substance et la forme de la cible, le changement en ce qu'il désire, tant que sa Présence finale ne dépasse pas l'originelle. Par exemple, le sorcier peut changer une personne en ce qu'il désire (un rat, une statue de pierre ...) tant que la Présence de l'individu n'est pas inférieure à celle après la métamorphose. Les êtres vivants transformés en choses inorganiques continuent de vivre sous leur nouvelle forme, même s'ils ne peuvent pas se déplacer ou respirer. Quand le sort cesse, l'individu ou l'objet transformé récupère son apparence originelle. Ce sort ne permet pas d'accorder des pouvoirs ou des capacités primordiales, à l'exception de ceux que peuvent posséder des êtres vivants naturels avec une Gnose de 0. Pour éviter d'être métamorphosé, une cible doit réussir un test de RMys. On ne peut effectuer ce test qu'une fois par jour.",
+      "type": "Spiritual",
+      "effect": "Using this spell, the caster can transform a person or object into anything he wishes (a mouse, a statue, etc.) as long as the Presence of the new form is not higher than the target’s original Presence. Living things metamorphosized into non-living objects continue to be alive in their new forms even if it happens that they cannot move or breathe. When the spell lapses, the individual or object returns to its original form. Metamorphism does not permit the acquisition of essential powers or abilities, except those possessed by natural living creatures with a Gnosis of zero. Resisting this spell requires passing a MR Check. It is only possible torepeat the Resistance check once per day.",
       "initialGrade": {
         "zeon": 150,
         "requiredIntelligence": 8,
-        "effect": "RMys 100",
+        "effect": " MR100",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 200,
         "requiredIntelligence": 10,
-        "effect": "RMys 120",
+        "effect": " MR120",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 250,
         "requiredIntelligence": 12,
-        "effect": "RMys 160",
+        "effect": " MR160",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 350,
         "requiredIntelligence": 14,
-        "effect": "RMys 200",
+        "effect": " MR200",
         "retention": 20
       },
       "withRetention": true,
@@ -1033,68 +1033,68 @@
     {
       "spellId": 30,
       "bookId": 3,
-      "name": "Recréer",
+      "name": "Recreate",
       "level": 76,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "En manipulant l'essence de la matière et des âmes, le sorcier a la capacité de restaurer toute perte ou tout dégât subi par un individu ou un objet ciblé par ce sort. Il peut choisir quels éléments ou parties recréer, sans être obligé de lui redonner son état originel. De cette façon, si un individu borgne et manchot était pour cible d'un sort de Recréer, le sorcier pourrait lui rendre son œil, son bras ou les deux. Lancer ce sort sur une personne blessée ou une construction détruite fait automatiquement disparaître les malus ou dégâts (selon ce quelle sorcier désire). Recréer annule aussi les effets de pouvoirs surnaturels qui ont physiquement ou spirituellement diminué des individus ou des choses: il restaure les souvenirs effacés, ou les PF perdus.\nCe sort n'a que deux limitations. La première est qu'il affecte uniquement les carences ou pertes subies de façon artificielle, pas celles résultant d'une évolution naturelle ou positive. Par conséquent, il ne permet pas de faire revenir une personne à un état précédent, préjudiciable ou inférieur. Deuxièmement, il n'affecte pas les âmes défuntes ou qui sont déjà passées par le flux des âmes, car il ne peut pas rendre la vie aux défunts. La Présence affectable maximale ne peut pas dépasser une valeur fixée par le rang du sort.",
+      "type": "Effect",
+      "effect": "Manipulating the essence of both matter and soul, the caster is able to restore any damage or loss an individual or object might have suffered. The caster can decide which parts to recreate, and is not obligated to restore the target to its original state. If he uses the spell on a one-eyed, one-armed person, the caster can Recreate only the eye, only the arm, or both of them at once. Casting this spell on a wounded individual or a damaged object makes any damage or penalty disappears automatically (as long as the caster wishes it to, of course). Recreate also eliminates the effects of any Supernatural Abilities that have diminished the individual or object physically or spiritually; it restores lost memories or DP. This spell has only two limitations. The first is that it affects only loses or damage suffered artificially, not due to natural or positive change. It therefore cannot “restore” a person to an earlier state that was damaged or inferior. Secondly, it has no jurisdiction over deceased souls, or those that have passed into the Flow, so is unable to return the dead to life. The maximum Presence that can be affected is based on spell level. Halve the maximum Presence affected, if the entity that caused the damage to the target has Gnosis higher of that of the caster by at least 15 points.",
       "initialGrade": {
         "zeon": 300,
         "requiredIntelligence": 8,
-        "effect": "Présence maximale 60",
+        "effect": " Presence 60",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 500,
         "requiredIntelligence": 12,
-        "effect": "Présence maximale 120",
+        "effect": " Presence 120",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 750,
         "requiredIntelligence": 15,
-        "effect": "Présence maximale 180",
+        "effect": " Presence 180",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 1500,
         "requiredIntelligence": 18,
-        "effect": "Présence maximale 240",
+        "effect": " Presence 240",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 31,
       "bookId": 3,
-      "name": "Créer Être",
+      "name": "Create Being",
       "level": 78,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Crée une créature avec l'apparence de la vie, sous le contrôle absolu du sorcier. Cet être est développé comme une créature d'Entres Mondes avec une Gnose de 25 de niveau fixée par le rang du sort. Comme son existence est directement liée à l'âme du sorcier, le nombre d'êtres qu'il a créé et qui dépendent de lui (qu'il ait utilisé ce sort ou ceux de niveau 82 des voies mineures) limite niveau maximal de l'entité. Par conséquent, une créature peut avoir comme niveau maximal le niveau de son créateur moins le nombre total de créatures qu'il a fabriquées magiquement et qu'il maintient. Par exemple, si le sorcier crée un seul être, celui-ci pourra atteindre au maximum le niveau au-dessous celui de son créateur",
+      "type": "Effect",
+      "effect": "Creates a creature with the appearance of life, but completely under the control of the caster. The entity is developed as is a Being Between Worlds, with a Gnosis of 25. Given that their existence is directly tied to the soul of the caster, the number of beings that are created by and that depend on him (whether through this spell or the Level 82 spells of the minor Paths) will limit the maximum level of the entity. The creature can therefore have at most the level of its creator minus the number of entities he has magically created and is maintaining. For example, if the caster creates only a single being, it can have at most one level less than its creator, two levels less if there are two beings, three less if he is maintaining three entities, etc. If one or more beings were already created at the highest possible level for them, and the caster thereafter creates another, the earlier ones automatically drop one level immediately.",
       "initialGrade": {
         "zeon": 250,
         "requiredIntelligence": 9,
-        "effect": "Niveau 1",
+        "effect": " Level 1.",
         "retention": 50
       },
       "intermediateGrade": {
         "zeon": 400,
         "requiredIntelligence": 12,
-        "effect": "Niveau 5",
+        "effect": " Level 5.",
         "retention": 80
       },
       "advancedGrade": {
         "zeon": 600,
         "requiredIntelligence": 15,
-        "effect": "Niveau 9",
+        "effect": " Level 9.",
         "retention": 120
       },
       "arcaneGrade": {
         "zeon": 1000,
         "requiredIntelligence": 17,
-        "effect": "Niveau 12",
+        "effect": " Level 12.",
         "retention": 200
       },
       "withRetention": true,
@@ -1103,68 +1103,68 @@
     {
       "spellId": 32,
       "bookId": 3,
-      "name": "Chimère",
+      "name": "Chimera",
       "level": 80,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Le sorcier, ou la cible qu'il désigne, cesse d'être une créature naturelle pour se convertir en créature d'Entre Mondes avec une Gnose de 25, en profitant de tous les avantages que cela comporte. De plus, il obtient des PF supplémentaires pour choisir parmi les Capacités Primordiales et les pouvoirs de la Conception de Créatures, au Chapitre 26. Il peut aussi choisir jusqu'à 50 PF de désavantages et malus pour obtenir des points supplémentaires. Les nouveaux PF augmentent le niveau du personnage. Ce sort ne fonctionne que sur les êtres naturels\nTous les pouvoirs et les dons acquis par ce sort dépendent directement de la forme physique de l'individu. Si, pour une quelconque raison, il retourne à son état antérieur ou qu'il installe son âme dans un autre corps, il perd automatiquement les avantages obtenus.",
+      "type": "Effect",
+      "effect": "The caster, or whomever he designates, ceases to be a natural being to become a Being Between Worlds with a Gnosis of 25, enjoying all the advantages and disadvantages that implies. He also obtains additional DP to use to choose between Essential Abilities and powers from the Creation of Beings, described in Chapter 26. It also permits him to choose Disadvantages or penalties to obtain additional points. Excess DP raises the Character Level. In case of partial improvement, if for instance he only gets 170 DP, the character still improves two levels, but when he goes up another level he will receive 30 additional DP to use. This spell works only on Natural creatures, and so cannot be cast on Being Between Worlds or Spirits to increase their abilities. All the powers and gifts acquired through this spell depend directly on the physical body of the individual, and so if by any means he returns to his prior state, or his soul transmigrates to another body or form, he automatically loses the advantages received.",
       "initialGrade": {
         "zeon": 250,
         "requiredIntelligence": 10,
-        "effect": "+100 PF / jusqu’à 100 PF supplémentaires en désavantages",
+        "effect": " +100DP / Up to 100DP of Disadvantages.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 500,
         "requiredIntelligence": 13,
-        "effect": "+200 PF / jusqu’à 200 PF supplémentaires en désavantages",
+        "effect": " +200DP / Up to 100DP of Disadvantages.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 1000,
         "requiredIntelligence": 15,
-        "effect": "+300 PF / jusqu’à 300 PF supplémentaires en désavantages",
+        "effect": " +300DP / Up to 200DP of Disadvantages.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 2500,
         "requiredIntelligence": 17,
-        "effect": "+400 PF / jusqu’à 400 PF supplémentaires en désavantages",
+        "effect": " +400DP / Up to 200DP of Disadvantages.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 33,
       "bookId": 3,
-      "name": "Zone de Sauvegarde",
+      "name": "Zone of Safety",
       "level": 82,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Créé une zone magique à l'intérieur de laquelle rien ni personne ne peut causer aucun dégât, ni par action ni par omission, à aucun être ni aucune chose. De cette façon, un individu influencé par ce sort sera dans l'incapacité de fracturer une porte en la frappant ou d'écraser un simple cafard par erreur. Ce sort affecte automatiquement toutes les personnes qui se trouvent à l'intérieur de sa zone, y compris le sorcier. La zone enchantée a un rayon fixé par le rang du sort et reste à l'endroit où le sort a été lancé, le sorcier ne pouvant pas la délocaliser plus tard. Il faut réussir un test de RMys pour ne pas en subir les effets. On ne peut refaire le test de Résistance qu'une fois par jour, même si on sort de la zone et si on y rentre à nouveau.",
+      "type": "Automatic",
+      "effect": "Creates a magical zone inside which no person or object can be harmed in any way by anyone or anything. A person within the zone could not, for instance, break down a door or even harm a cockroach by stepping on it by mistake. Zone of Safety automatically affects anyone within the area, including the caster. The affected area has a radius based on spell level and remains where it was cast without being movable by the caster. To overcome the effect requires beating a MR Check. It is only possible to repeat the Resistance check once per day, even if someone has left the zone and then returned.",
       "initialGrade": {
         "zeon": 350,
         "requiredIntelligence": 12,
-        "effect": "RMys 140 / 100 m de rayon",
+        "effect": " MR140 / 100m/109yd area.",
         "retention": 35
       },
       "intermediateGrade": {
         "zeon": 500,
         "requiredIntelligence": 15,
-        "effect": "RMys 180 / 500 m de rayon",
+        "effect": " MR180 / 500m/546yd area.",
         "retention": 50
       },
       "advancedGrade": {
         "zeon": 800,
         "requiredIntelligence": 17,
-        "effect": "RMys 220 / 1 km de rayon",
+        "effect": " MR220 / 1km/1093yd area.",
         "retention": 80
       },
       "arcaneGrade": {
         "zeon": 1500,
         "requiredIntelligence": 18,
-        "effect": "RMys 250 / 5 km de rayon",
+        "effect": " MR250 / 5km/3.1mile area.",
         "retention": 150
       },
       "withRetention": true,
@@ -1173,103 +1173,103 @@
     {
       "spellId": 34,
       "bookId": 3,
-      "name": "Maintien",
+      "name": "Maintain Magic",
       "level": 86,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Affecte un autre sort actif, le fixant de façon plus durable dans le monde. En termes de jeu, ce sort affecte de 500 à 10 000 points de Zéon au maintien d'un sort déterminé. Gardez à l'esprit que cette quantité n'est pas rajoutée à son potentiel, mais seulement employée pour payer le cout de maintien.",
+      "type": "Effect",
+      "effect": "Affects an existing active spell, tying it to the world in a more lasting way. In game terms, it adds points of Zeon to keep up maintenance of the designated spell. Remember these points do not add to the spell’s power, only to its Maintenance.",
       "initialGrade": {
         "zeon": 250,
         "requiredIntelligence": 10,
-        "effect": "500 Points de Zéon",
+        "effect": " 500 Zeon Points.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 500,
         "requiredIntelligence": 12,
-        "effect": "2 000 Points de Zéon",
+        "effect": " 2000 Zeon Points.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 900,
         "requiredIntelligence": 14,
-        "effect": "5 000 Points de Zéon",
+        "effect": " 5000 Zeon Points.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 1600,
         "requiredIntelligence": 16,
-        "effect": "10 000 Points de Zéon",
+        "effect": " 10000 Zeon Points.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 35,
       "bookId": 3,
-      "name": "Offrir une Âme",
+      "name": "Provide Soul",
       "level": 88,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Grâce à ce sort, un sorcier peut concevoir une âme complète, accordant ainsi le souffle de vie à un objet ou une créature qui peut la contenir. S'il offre une âme à une créature engendrée par magie, comme les entités créées par le sort de niveau 78 de cette voie ou de niveau 82 des voies élémentaires, il n'est plus nécessaire de maintenir le sort qui lui donne son énergie: l'être peut désormais vivre de façon indépendante. Il rompt alors tous les liens avec son créateur, obtenant son libre arbitre comme une nouvelle créature d'Entre Mondes. Toutes les âmes créées par ce sort ne sont pas capables de pénétrer la cible qu'on leur propose. On ne peut pas les affecter à des créatures ou des objets dont la Présence ne dépasse pas une valeur fixée par le rang du sort. On ne peut pas non plus les affecter à un être ou un objet qui possède déjà une âme vivante.",
+      "actionType": "Passive",
+      "type": "Effect",
+      "effect": "Through this spell, the caster is able to create a complete soul, giving the breath of life to an object or body able to contain one. If the soul is provided to a magically engendered creature such as those developed with the level 78 spell of this Path, or with the level 82 elemental spells, Provide Soul makes it unnecessary to continue maintaining those spells to sustain the creature. The creature thereby breaks any bond it has with its creator, obtaining free will as just one more Being Between Worlds. Not all souls created by this spell are capable of entering the body into which they are introduced. It is possible to provide souls to bodies or objects with a Presence of no more than the limit set by the spell level. It cannot be used to provide a soul to something that already has a living soul.",
       "initialGrade": {
         "zeon": 500,
         "requiredIntelligence": 13,
-        "effect": "Présence maximale 30",
+        "effect": " Max Presence 30.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 800,
         "requiredIntelligence": 14,
-        "effect": "Présence maximale 50",
+        "effect": " Max Presence 50.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 1200,
         "requiredIntelligence": 15,
-        "effect": "Présence maximale 80",
+        "effect": " Max Presence 80.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 2000,
         "requiredIntelligence": 16,
-        "effect": "Présence maximale 100",
+        "effect": " Max Presence 100.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 36,
       "bookId": 3,
-      "name": "Création Majeure",
+      "name": "Greater Creation",
       "level": 90,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Ce sort permet au sorcier de créer son environnement, en lui accordant une certaine quantité de points de Présence à répartir librement entre divers objets et constructions. Il peut créer toute chose inanimée qu'il désire, allant des châteaux aux montagnes, tant que la Présence de chacune de ses créations ne dépasse pas une valeur fixée par le rang du sort.",
+      "type": "Effect",
+      "effect": "Gives the caster the gift of creating at whim, awarding him Presence points to distribute freely between various objects or constructions. He can create any inanimate object he wishes, from castles to mountains, as long as the Presence of each of his creations is not greater than the limit set by the spell level.",
       "initialGrade": {
         "zeon": 400,
         "requiredIntelligence": 10,
-        "effect": "500 points de Présence / Présence maximale 100",
+        "effect": " 500 Presence Points / Max Presence 100.",
         "retention": 20
       },
       "intermediateGrade": {
         "zeon": 800,
         "requiredIntelligence": 12,
-        "effect": "1 000 points de Présence / Présence maximale 120",
+        "effect": " 1000 Presence Points / Max Presence 120.",
         "retention": 25
       },
       "advancedGrade": {
         "zeon": 1200,
         "requiredIntelligence": 14,
-        "effect": "2 000 points de Présence / Présence maximale 140",
+        "effect": " 2000 Presence Points / Max Presence 140.",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 2000,
         "requiredIntelligence": 16,
-        "effect": "3 000 points de Présence / Présence maximale 180",
+        "effect": " 5000 Presence Points / Max Presence 180.",
         "retention": 30
       },
       "withRetention": true,
@@ -1278,68 +1278,68 @@
     {
       "spellId": 37,
       "bookId": 3,
-      "name": "Magie Éternelle",
+      "name": "Eternal Magic",
       "level": 92,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Comme son nom l'indique, ce sort affecte tous les autres sorts actifs, en diminuant énormément leur coût de maintien, voire en le faisant disparaître. Ses effets varient selon que le sort a un maintien quotidien ou normal. Si le maintien est quotidien, Magie Éternelle le suspend et le sort n'a plus besoin d'être maintenu. Il est toujours contrôlé par la personne qui l'a lancé, mais perdurera même après sa mort. Si le maintien se compte en rounds, Magie Éternelle pourra transformer ce sort en type Quotidien. Magie Éternelle n'influe que sur les sorts dont le rang ne dépasse pas celui de Magie Eternelle et dont le niveau de voie est inférieur à 8O.",
+      "type": "Effect",
+      "effect": "As the name indicates, this spell affects another existing one, enormously reducing (or even eliminating) it’s Maintenance Cost. Eternal Magic effects vary according to whether or not it affects a spell with Daily maintenance. If the spell in question is Daily, Eternal Magic stabilizes it, making maintenance unnecessary. The spell continues being controlled by its caster, but it will continue in effect even after his death. If the spell’s maintenance requirement is “per Combat Turn,” it becomes one requiring only Daily maintenance.",
       "initialGrade": {
         "zeon": 600,
         "requiredIntelligence": 12,
-        "effect": "Affecte un sort de rang Initial",
+        "effect": " Affects a spell cast at Base Level.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 1000,
         "requiredIntelligence": 14,
-        "effect": "Affecte un sort de rang Intermédiaire",
+        "effect": " Affects a spell cast at Intermediate Level.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 2500,
         "requiredIntelligence": 16,
-        "effect": "Affecte un sort de rang Avancé",
+        "effect": " Affects a spell cast at Advanced Level.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 5000,
         "requiredIntelligence": 18,
-        "effect": "Affecte un sort de rang Arcane",
+        "effect": " Affects a spell cast at Arcane Level.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 38,
       "bookId": 3,
-      "name": "La Barrière",
+      "name": "The Barrier",
       "level": 96,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Ce sort inhabituel forme une brèche dans la réalité même, capable de séparer le monde en deux parties. De cette façon, il lève une barrière invisible qui ne permet à personne d'atteindre l'autre côté, comme si le monde se divisait en deux plans distincts indépendants l'un de l'autre.\nLa séparation n'est pas perceptible de façon naturelle, pas même pour les personnes qui peuvent voir la magie. Elle peut revêtir n'importe quelle apparence, allant d'une barrière invisible à un basique mur de pierres. Dans tous les cas, quelle que soit sa forme, nul ne peut percevoir ce qui est de l'autre côté. En général, personne n'a conscience de l'existence d'une telle barrière, même quand on tente de la traverser. Si quelqu'un essaie de passer de l'autre côté, il ressort d'un autre côté de la barrière en ignorant complètement ce qu'il y a derrière (il est même possible de faire demi-tour sans s'en apercevoir). Le transport n'est pas automatique la réalité s'adapte progressivement au lieu de sortie, de façon imperceptible (difficulté surhumaine en Vigilance). Par exemple on pourrait utiliser la Barrière sur une ile, pour la séparer du reste du monde. Ce lieu disparaîtrait de la vue de tous",
+      "type": "Effect",
+      "effect": "This unusual spell forms a breach in reality that is capable of separating the world into two parts. This separation cannot be perceived naturally, even by those capable of seeing magic. It may adopt any appearance, from being completely invisible to looking like a simple stone wall. Whatever form it takes, it does not permit anyone so much as a glimpse of what hides beyond it.Usually none are aware of its existence, even when attempting to go through it. If someone attempts to cross it, they exit at another point of The Barrier, completely unaware of what is behind (it is even possible to turn directly around without noting it). Transport is not automatic, rather, little by little, reality starts adapting to the exit location almost imperceptibly (Inhuman difficulty for Notice).As an example, The Barrier can be used over an island, to separate it from the rest of the world. That location disappears from view, and any ship sailing in the area will see only water, being transported immediately to another place to innocently continue their voyage. The Barrier need not be made absolutely perfect. The caster can choose to deliberately leave passages or openings, in one or both directions, to use for crossing. There are certain requirements for someone to be able to pass through it. To start with, it must be someone with a Gnosis greater than 25 who knows of The Barrier and its exact location. If both conditions are fulfilled, he must pass a MR Check to get through. If he fails, he can only repeat the check once per day. The spell can affect a maximum area set by the spell level, or be extended in a line of the same length. Once cast, it remains in the same location.",
       "initialGrade": {
         "zeon": 800,
         "requiredIntelligence": 15,
-        "effect": "RMys 120 / 100 km²",
+        "effect": " MR 120 / 100 cubic km/62.1 cubic miles",
         "retention": 40
       },
       "intermediateGrade": {
         "zeon": 2500,
         "requiredIntelligence": 16,
-        "effect": "RMys 180 / 1 000 km²",
+        "effect": " MR 180 / 1000 cubic km/621.3 cubic miles.",
         "retention": 45
       },
       "advancedGrade": {
         "zeon": 5000,
         "requiredIntelligence": 17,
-        "effect": "RMys 240 / 100 000 km²",
+        "effect": " MR 240 / 10000 cubic km/6213.7 cubic miles.",
         "retention": 45
       },
       "arcaneGrade": {
         "zeon": 10000,
         "requiredIntelligence": 19,
-        "effect": "RMys 300 / Sans limite spatiale",
+        "effect": " MR 300 / No space limit.",
         "retention": 50
       },
       "withRetention": true,
@@ -1348,72 +1348,72 @@
     {
       "spellId": 39,
       "bookId": 3,
-      "name": "Le Don de la Vie",
+      "name": "The Gift of Life",
       "level": 98,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Le sorcier a la capacité de créer une nouvelle forme de vie, le premier né d'une race qui n'a jamais existé auparavant. La création peut être de n'importe quel type (Naturelle, d'Entre Mondes ou Animique) et être liée à un élément déterminé. Le niveau maximal de la créature ne pourra pas être supérieur à celui de son créateur. Ce dernier doit choisir la Gnose de son œuvre, en lui accordant au maximum une valeur inférieure de dix points à la sienne.\nIl s'agit au départ d'une créature de premier niveau, mais s'il s'agit d'une créature d'Entre Mondes avec une Gnose inférieure à 20, elle bénéficie d’un certain nombre de PF supplémentaires pour choisir des pouvoirs et capacités raciales spéciaux, en utilisant les règles du Chapitre 26.",
+      "type": "Effect",
+      "effect": "The caster is imbued with the ability to create a new form of life, the newborn of a race that never existed before. The creation can be of any class (Natural, Spiritual, or Between Worlds) and can be tied to a particular element. The maximum level of the creature cannot be higher than that of his creator. The creator should choose the Gnosis of his creation, awarding it no more than ten points less than his own. In the beginning it will be a first level creature, although if it is a Natural Being with a Gnosis 20 or less, it will be given 50 DP with which to select additional racial powers and abilities, employing the rules described in Chapter 26.",
       "initialGrade": {
         "zeon": 800,
         "requiredIntelligence": 16,
-        "effect": "Niveau 1 & 50 PF pour obtenir des pouvoirs de créature",
-        "retention": 0
+        "effect": " Level 1 and 50DP for Natural Beings.",
+        "retention": 30
       },
       "intermediateGrade": {
         "zeon": 2000,
         "requiredIntelligence": 17,
-        "effect": "Niveau 5 & 100 PF pour obtenir des pouvoirs de créature",
-        "retention": 0
+        "effect": " Level 6 and 100DP for Natural Beings.",
+        "retention": 40
       },
       "advancedGrade": {
         "zeon": 4000,
         "requiredIntelligence": 18,
-        "effect": "Niveau 11 & 150 PF pour obtenir des pouvoirs de créature",
-        "retention": 0
+        "effect": " Level 11 and 150DP for Natural Beings.",
+        "retention": 45
       },
       "arcaneGrade": {
         "zeon": 8000,
         "requiredIntelligence": 19,
-        "effect": "Niveau 16 & 200 PF pour obtenir des pouvoirs de créature",
-        "retention": 0
+        "effect": " Level 16 and 200DP for Natural Beings.",
+        "retention": 50
       },
-      "withRetention": false,
+      "withRetention": true,
       "dailyRetention": false
     },
     {
       "spellId": 40,
       "bookId": 3,
-      "name": "Créer",
+      "name": "Create",
       "level": 100,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Permet au sorcier d'obtenir le pouvoir de création absolu, la capacité de concevoir tout ce qu'il désire: des continents, des océans, voire des mondes entiers. En termes de jeu, le sorcier dispose d’un certain nombre de points de Présence pour créer ce qu'il désire, chaque élément ayant une Présence maximale fixée par le rang du sort.\nCe sort peut aussi imposer de nouvelles règles à la réalité: altérer la gravité, modifier la vitesse à laquelle passe le temps... Toute personne dont la Gnose est inférieure de moitié à celle du sorcier est soumise à ces nouvelles règles.",
+      "type": "Effect",
+      "effect": "Permits the caster to obtain absolute power over creation, giving him the ability to create anything he wishes: Continents, oceans, and even entire worlds. In game terms, it grants Presence Points to create whatever the caster wishes, as long as it doesn’t exceed the limit set by the spell level. This spell can also impose new rules of reality: alter gravity, modify the rate at which time passes, and so forth. Anyone with a Gnosis of less than half that of the caster is affected by such changes.",
       "initialGrade": {
         "zeon": 1000,
         "requiredIntelligence": 17,
-        "effect": "1 000 points de Présence / Présence maximale 180 / 1 règle existentielle",
+        "effect": " Presence 1000 / Max Presence 180 / 1 existential rule.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 3000,
         "requiredIntelligence": 18,
-        "effect": "10 000 points de Présence / Présence maximale 220 / 5 règles existentielles",
+        "effect": " Presence 10000 / Max Presence 220 / 5 existential rules.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 6000,
         "requiredIntelligence": 19,
-        "effect": "10 000 points de Présence / Présence maximale 260 / 10 règles existentielles",
+        "effect": " Presence 10000 / Max Presence 260 / 10 existential rules.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 12000,
         "requiredIntelligence": 20,
-        "effect": "100 000 points de Présence / Présence maximale 320 / Un nombre illimité de règles existentielles",
+        "effect": " Presence 100000 / Max Presence 320 / any number of existential rules.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     }
   ]
 }

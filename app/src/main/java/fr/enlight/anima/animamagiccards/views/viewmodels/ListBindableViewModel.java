@@ -15,7 +15,7 @@ public class ListBindableViewModel extends BaseObservable {
     private List<BindableViewModel> viewModels;
 
     @Bindable
-    public List<BindableViewModel> getViewModels() {
+    public List<? extends BindableViewModel> getViewModels() {
         return viewModels;
     }
 

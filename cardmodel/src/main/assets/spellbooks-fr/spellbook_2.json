@@ -1,0 +1,1389 @@
+{
+  "bookId": 2,
+  "bookName": "Livre de l’Obscurité",
+  "description": "L’obscurité n’est pas seulement l’absence de lumière, il s’agit de la réelle maîtrise du pur pouvoir des ténèbres. Elle offre le contrôle de toutes les émotions négatives comme la peur, la haine ou la colère. Elle correspond au pouvoir des secrets, parmi lesquels on compte les sorts de dissimulation. Son pouvoir martial est également assez équilibré.",
+  "type": "Majeure",
+  "oppositeBook": "Lumière",
+  "secondaryBookAccessibles": [
+    "Chaos",
+    "Guerre",
+    "Literae",
+    "Mort",
+    "Musique",
+    "Noblesse",
+    "Pêché",
+    "Connaissance",
+    "Sang",
+    "Rêve",
+    "Temps",
+    "Seuil",
+    "Néant."
+  ],
+  "spells": [
+    {
+      "spellId": 1,
+      "bookId": 2,
+      "name": "Créer Obscurité",
+      "level": 2,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Obscurcit complètement une zone. Tout ce qui se trouve à l'intérieur de cette zone est perçu comme sous une nuit nuageuse et sans lune.",
+      "initialGrade": {
+        "zeon": 20,
+        "requiredIntelligence": 5,
+        "effect": "5 m de rayon",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 8,
+        "effect": "25 m de rayon",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": "100 m de rayon",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": "500 m de rayon",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 2,
+      "bookId": 2,
+      "name": "Apeurer",
+      "level": 6,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Provoque temporairement l'état de Peur chez tous les individus se trouvant autour du sorcier et échouant à un test de RMys. Le sorcier décide quelle est l'origine de la peur que ressentent les personnes affectées.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 5,
+        "effect": "RMys ou RPsy 80 / 10 m de rayon",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "RMys ou RPsy 100 / 50 m de rayon",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 10,
+        "effect": "RMys ou RPsy 120 / 100 m de rayon",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 12,
+        "effect": "RMys ou RPsy 140 / 250 m de rayon",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 3,
+      "bookId": 2,
+      "name": "Voir dans l'Obscurité",
+      "level": 8,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Permet au sorcier, ou à la personne qu'il choisit, de voir parfaitement dans l'obscurité. Il peut affecter autant de cibles qu'il le désire, tant que la somme de leurs Présences ne dépasse pas une valeur fixée par le rang du sort.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 5,
+        "effect": "Présence maximale 80",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "Présence maximale 100",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": "Présence maximale 120",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "Présence maximale 140 / Permet de voir à travers l’obscurité surnaturelle",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 4,
+      "bookId": 2,
+      "name": "Bouclier Obscur",
+      "level": 10,
+      "actionType": "Passive",
+      "type": "Défense",
+      "effect": "Forme une barrière d'énergie, qui protège contre toute source d'attaque. Seules les attaques surnaturelles peuvent lui infliger des dégâts. Les attaques basées sur la lumière lui infligent le double de dégâts.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": "Le bouclier possède 300 Points de Vie",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 8,
+        "effect": "Le bouclier possède 1 000 Points de Vie",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 10,
+        "effect": "Le bouclier possède 1 800 Points de Vie",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 14,
+        "effect": "Le bouclier possède 3 000 Points de Vie",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 5,
+      "bookId": 2,
+      "name": "Ombre",
+      "level": 12,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort augmente les capacités de dissimulation du sorcier, en rehaussant ses compétences secondaires de Camouflage et de Discrétion. Son Évaluation magique augmente de la même valeur, mais seulement s'il compte cacher le potentiel magique de quelque chose ou quelqu'un, pas pour le détecter.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 5,
+        "effect": "+50 en Camouflage, Discrétion et Eval. Magique",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 9,
+        "effect": "+150 en Camouflage, Discrétion et Eval. Magique",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": "+200 en Camouflage, Discrétion et Eval. Magique",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 14,
+        "effect": "+250 en Camouflage, Discrétion et Eval. Magique",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 6,
+      "bookId": 2,
+      "name": "Armure Obscure",
+      "level": 16,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Forme une carapace mystique qui contre les attaques de Mode Énergie, et de la moitié contre les autres Modes. Bien que cette protection compte comme une armure, on n'applique aucun malus à l'Initiative pour les couches de protection supplémentaires.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": "IP 2 contre l’Énergie et IP 1 contre le reste",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": "IP 5 contre l’Énergie et IP 2 contre le reste",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "IP 8 contre l’Énergie et IP 4 contre le reste",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 15,
+        "effect": "IP 12 contre l’Énergie et IP 6 contre le reste",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 7,
+      "bookId": 2,
+      "name": "Destruction de Lumière",
+      "level": 18,
+      "actionType": "Active",
+      "type": "Effet, Animique",
+      "effect": "Détruit la lumière ambiante dans un rayon de 10 mètres. Si ce sort est lancé sur des êtres naturellement basés sur la lumière, ils doivent réussir un test de RMys contre 120, sous peine de perdre une quantité de points de vie égale au double de leur marge d'échec (dix fois la marge d'échec dans le cas d'une créature à Encaissement). Si ce sort est maintenu, les créatures devront effectuer un nouveau test de RMys à chaque round.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": "10 m de rayon / RMys 140",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": "100 m de rayon / RMys 180",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 12,
+        "effect": "250 m de rayon / RMys 220",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 15,
+        "effect": "500 m de rayon / RMys 280",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 8,
+      "bookId": 2,
+      "name": "Occultation de Magie",
+      "level": 20,
+      "actionType": "Passive",
+      "type": "Effet",
+      "effect": "Cache un sort, ou les propriétés mystiques d'un objet, face à tout type de détection magique. En termes de jeu, ce sort inflige un malus à l'Évaluation magique de quiconque tente de détecter ou mesurer le sort ou un objet mystique (ainsi que ce sort lui-même).",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": "Évaluation Magique -100",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": "Évaluation Magique -180",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "Évaluation Magique -240",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": "Évaluation Magique -320",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 9,
+      "bookId": 2,
+      "name": "Décharge Obscure",
+      "level": 22,
+      "actionType": "Active",
+      "type": "Attaque",
+      "effect": "Projette une décharge d'énergie magique basée sur l'obscurité. Les Dégâts se font sur le Mode Énergie.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": "Dégâts de base 60",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": "Dégâts de base 90",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "Dégâts de base 120",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 15,
+        "effect": "Dégâts de base 150",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 10,
+      "bookId": 2,
+      "name": "Obscurité Ambiante",
+      "level": 26,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Crée une ambiance mystique qui engourdit les sens de toutes les personnes se trouvant à l'intérieur. L'Obscurité Ambiante augmente de deux niveaux la Difficulté de tout test de Perception réalisé à l'intérieur de cette zone",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": "20 m de rayon",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": "250 m de rayon",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "500 m de rayon",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": "1 km de rayon",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 11,
+      "bookId": 2,
+      "name": "Liens Obscurs",
+      "level": 28,
+      "actionType": "Active",
+      "type": "Attaque",
+      "effect": "Forme quelques liens d'obscurité qui subjuguent la cible désignée. Il faut réaliser une attaque en utilisant les règles d'Immobilisation, mais le sorcier ne subit aucun malus à sa compétence pour exécuter cette manœuvre. Les liens ont une Force fixée par le rang du sort en ce qui concerne les tests appropriés. Si un tiers tente de libérer une personne immobilisée par des liens d'obscurité, ceux-ci sont considérés comme une arme d'énergie de solidité 25.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": "Force 8",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": "Force 12",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 12,
+        "effect": "Force 15 et la solidité passe à 30",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 15,
+        "effect": "Force 18 et la solidité passe à 35",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 12,
+      "bookId": 2,
+      "name": "Maîtrise obscure",
+      "level": 30,
+      "actionType": "Active",
+      "type": "Effet, Animique",
+      "effect": "Modifie et contrôle la forme, la couleur et l'intensité de l'obscurité dans un rayon de 20 mètres. Si ce sort est lancé contre des êtres naturellement basés sur cet élément, ils doivent réussir un test de RMys contre 80 sous peine d'être contrôlés par le sorcier. Une créature contrôlée ne peut refaire ce test que si elle reçoit un ordre contraire à sa nature.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": "20 m de rayon / RMys 80",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 9,
+        "effect": "260 m de rayon / RMys 140",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 12,
+        "effect": "300 m de rayon / RMys 180",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 16,
+        "effect": "500 m de rayon / RMys 220",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 13,
+      "bookId": 2,
+      "name": "Occultation",
+      "level": 32,
+      "actionType": "Passive",
+      "type": "Effet",
+      "effect": "Cache la présence du sorcier ou de la cible désignée par ce dernier, face à tout type de détection. En termes de jeu, ce sort augmente les Résistances effectuées contre les détections surnaturelles, qu'elles soient mystiques ou psychiques. Il augmente aussi la compétence de Dissimulation du Ki du personnage, ce qui lui permet de cacher son énergie même s'il n'a pas développé ce pouvoir.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": "RMys ou RPsy +50 / Occultation du Ki +50",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": "RMys ou RPsy +140 / Occultation du Ki +150",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "RMys ou RPsy +220 / Occultation du Ki +200",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": "RMys ou RPsy +280 / Occultation du Ki +250",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 14,
+      "bookId": 2,
+      "name": "Dissimulation",
+      "level": 36,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Modifie le corps d'un individu, afin de lui permettre de se fondre dans son environnement et de se cacher naturellement. Tant que ce sort est maintenu actif, le personnage peut substituer à ses scores dans les compétences de Camouflage et de Discrétion une valeur de base fixée par le rang du sort. Ce dernier fournit la même valeur au pouvoir de Dissimulation du Ki, même s'il ne l'a pas développé.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 6,
+        "effect": "Base de 100 en Camouflage, Discrétion et Dissimulation du Ki",
+        "retention": 20
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": "Base de 150 en Camouflage, Discrétion et Dissimulation du Ki",
+        "retention": 40
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "Base de 200 en Camouflage, Discrétion et Dissimulation du Ki",
+        "retention": 50
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": "Base de 250 en Camouflage, Discrétion et Dissimulation du Ki",
+        "retention": 60
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 15,
+      "bookId": 2,
+      "name": "Rage",
+      "level": 38,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Provoque l'état de Colère chez les cibles du sort, en leur empêchant de contrôler leurs actions et les faisant attaquer l'individu le plus proche d'elles. Les victimes dans le rayon d’action et échouant à un test de RMys appliquent un bonus de +10 en Attaque et un malus de -30 à tous leurs autres tests.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": "5 m de rayon / RMys 80",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": "20 m de rayon / RMys 100",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 12,
+        "effect": "50 m de rayon / RMys 120",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 15,
+        "effect": "100 m de rayon / 140",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 16,
+      "bookId": 2,
+      "name": "Détruire les Sentiments Positifs",
+      "level": 40,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Détruit temporairement tous les sentiments positifs, comme la paix intérieure, le calme ou l'allégresse autour du sorcier. Il faut réussir un test de RMys ou de RPsy pour résister à ce sort.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 6,
+        "effect": "RMys ou RPsy 100 / 100 m de rayon",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": "RMys ou RPsy 150 / 500 m de rayon",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "RMys ou RPsy 180 / 1 km de rayon",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 15,
+        "effect": "RMys ou RPsy 220 / 5 km de rayon",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 17,
+      "bookId": 2,
+      "name": "Nuit",
+      "level": 42,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Forme un dôme d'obscurité absolue. Tout ce qui se trouve à l'intérieur de cette zone, à l'exception du sorcier, subit les règles de Cécité. Pour voir à travers cette obscurité, que ce soit à l'intérieur ou depuis l'extérieur, il faut réussir un test Surhumain de Vigilance ou un test Quasiment Impossible d'Observation. Il n'est pas possible de désigner des cibles à l'intérieur de la zone.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 6,
+        "effect": "25 m de rayon",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": "250 m de rayon",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "500 m de rayon / l’obscurité est considérée comme surnaturelle",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": "1 km de rayon / l’obscurité est considérée comme surnaturelle",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 18,
+      "bookId": 2,
+      "name": "Sphère Obscure",
+      "level": 46,
+      "actionType": "Active",
+      "type": "Attaque",
+      "effect": "Libère une sphère d'énergie obscure infligeant des dégâts sur le mode Énergie. Le sort peut être contrôlé avec la Projection magique du sorcier jusqu'au moment de l'impact. Si une cible esquive l'attaque d'une Sphère Obscure, elle peut continuer à attaquer le round suivant, puisqu'elle n'est pas détruite. Quand la sphère inflige des dégâts ou est bloquée, elle disparaît. Si le sorcier abandonne son contrôle sur la sphère, elle agit indépendamment et suit la dernière cible fixée avec une Projection magique dépendant du rang du sort.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 6,
+        "effect": "Dégâts de base 100 / Projection Magique 150",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": "Dégâts de base 120 / Projection Magique 180",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "Dégâts de base 160 / Projection Magique 210",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": "Dégâts de base 200 / Projection Magique 240",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 19,
+      "bookId": 2,
+      "name": "Zone d'Occultation",
+      "level": 48,
+      "actionType": "Active",
+      "type": "Détection",
+      "effect": "Quand il lance ce sort sur un lieu précis, le sorcier crée une zone mystique empêchant de détecter ce qui se trouve à l'intérieur. La zone bloque les sorts de Détection, à moins que la personne qui les lancent ne réussisse une RMys. De plus, les compétences de Détection du Ki ou d'Évaluation magique utilisées à l'intérieur de la zone subissent un malus au résultat final. De même, toute forme de détection psychique subit un malus équivalent. La Zone d'Occultation à son centre fixé au lieu où le sort a été lancé.",
+      "initialGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 7,
+        "effect": "20 m de rayon / RMys -100 / Comp. de détection -140",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": "50 m de rayon / RMys -150 / Comp. de détection -180",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "250 m de rayon / RMys -200 / Comp. de détection -240",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": "500 m de rayon / RMys -300 / Comp. de détection -320",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 20,
+      "bookId": 2,
+      "name": "S'introduire dans les cauchemars",
+      "level": 50,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Permet au sorcier de s'introduire physiquement dans les cauchemars d'un dormeur. Le sorcier n'a aucun contrôle sur le monde onirique du rêveur et toute chose qui s'y déroule sera réelle pour lui. Le rêveur doit avoir des cauchemars effrayants pour que ce sort puisse l'affecter et, dès que le cauchemar se change en rêve paisible, qu'il se réveille ou qu'il meurt, le sorcier abandonne le monde onirique et revient à la réalité. Tous les sorts d'Essence réalisés sur le dormeur affectent aussi le sorcier. La victime a droit à un test de RMys ou RPsy. Une fois dans les cauchemars, le sorcier peut sauter vers l'inconscient d'un autre rêveur si celui-ci se trouve physiquement à maximum du premier rêveur fixée par le rang du sort. Bien sûr, cette personne à elle aussi droit au test de RMys ou RPsy. Si la conscience du dormeur se trouve dans le monde de la Veille, le sorcier y reste coincé, même après la fin du sort.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 6,
+        "effect": "RMys ou RPsy 140 / 10 m de distance",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": "RMys ou RPsy 160 / 80 m de distance",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "RMys ou RPsy 200 / 140 m de distance",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": "RMys ou RPsy 240 / 200 m de distance",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 22,
+      "bookId": 2,
+      "name": "Perdition",
+      "level": 56,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "La Perdition provoque un choc chez les individus qu'elle affecte, en diminuant toutes leurs capacités. Ceux qui en subissent l'influence doivent réussir un test de RMys sous peine de subit un malus de -40 à toutes leurs actions et Résistances. Le sort affecte automatiquement toute personne se trouvant à l'intérieur de la zone. Les malus de Perdition ne sont pas cumulables : un personnage ne subit pas deux fois les malus quand il se trouve dans la zone d'influence de deux sorts de Perdition.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 6,
+        "effect": "RMys 120 / 5 m de rayon",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": "RMys 160 / 25 m de rayon",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "RMys 180 / 50 m de rayon",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": "RMys 200 / 150 m de rayon",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 23,
+      "bookId": 2,
+      "name": "Créer des Sentiments Négatifs",
+      "level": 58,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Ce sort introduit un type de sentiment négatif, comme la haine, la peur ou la colère, chez les cibles désignées par le sorcier et échouant à un test de RMys ou de RPsy. Une cible affectée peut effectuer ce test une fois par jour.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 8,
+        "effect": "20 m de rayon / RMys ou RPsy 120",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 10,
+        "effect": "100 m de rayon / RMys ou RPsy 160",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "250 m de rayon / RMys ou RPsy 180",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": "500 m de rayon / RMys ou RPsy 220",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 24,
+      "bookId": 2,
+      "name": "Éliminer les Traces",
+      "level": 60,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Le sorcier peut effacer les traces de sa présence dans un lieu déterminé. En fait, toute trace de son passage à cet endroit disparaît complètement, que ce soit vis à vis des compétences naturelles, comme Pistage, ou des détections surnaturelles.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 8,
+        "effect": "50 m de rayon",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": "250 m de rayon",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 13,
+        "effect": "1 km de rayon / ce sort efface également les actions d’un personnage capable de lire dans les lieux ou les objets",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 16,
+        "effect": "5 km de rayon / comme Avancé à ceci près que le sorcier efface absolument toutes les traces de son passage dans toute la zone d’effet",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 25,
+      "bookId": 2,
+      "name": "Bouclier Anti-Positif",
+      "level": 62,
+      "actionType": "Active",
+      "type": "Automatique",
+      "effect": "Enchante une zone déterminée pour la rendre impénétrable pour les êtres basés naturellement sur les sentiments positifs ou la lumière. Toute créature de ce type pénétrant dans la zone d'effet du sort doit effectuer à chaque round un test de RMys, sous peine de perdre autant de points de vie que sa marge d'échec. De plus, si elle échoue à ce test, la créature subit immédiatement un malus de -40 à toutes ses actions. La zone d'effet voit son centre est fixé au lieu où le sort a été lancé.",
+      "initialGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 7,
+        "effect": "RMys 120 / 20 m de rayon",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": "RMys 140 / 100 m de rayon",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "RMys 160 / 250 m de rayon",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": "RMys 180 / 500 m de rayon",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 26,
+      "bookId": 2,
+      "name": "Obscurité Dévorante",
+      "level": 66,
+      "actionType": "Passive",
+      "type": "Défense",
+      "effect": "Crée une ombre qui fonctionne à la manière d'un bouclier, avec la capacité d'absorber tout sort d'Attaque qu'elle reçoit. Pour que le sort soit absorbé, il faut réussir une parade contre l'attaque portée. Si le défenseur réussit sa parade, le sortilège d'attaque doit échouer lors d'un test de choc contre l'équivalant d'une décharge de dégâts fixée par le rang du sort. Le vide absorbe la moitié du Zéon du sort dévoré, qui est transféré au sorcier. Il est aussi possible d'absorber des Attaques de zone.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 6,
+        "effect": "Dégâts de choc 80 / le bouclier possède 600 PV",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": "Dégâts de choc 110 / le bouclier possède 1 200 PV",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "Dégâts de choc 140 / le bouclier possède 1 800 PV",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": "Dégâts de choc 170 / le bouclier possède 2 200 PV",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 27,
+      "bookId": 2,
+      "name": "Mettre en Pièces",
+      "level": 68,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Ce sort provoque des malus par une accumulation de souffrances, de malheurs et d'autres effets mystiques négatifs. La cible affectée doit réussir un test de RMys sous peine de subir un malus équivalent à la marge d'échec de ce test à toutes ses actions et ses Résistances. Si elle échoue au test de Résistance, elle n'aura droit à aucun nouveau test jusqu'à la fin du sort.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 6,
+        "effect": "RMys 120",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": "RMys 160",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "RMys 200",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": "RMys 240",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 28,
+      "bookId": 2,
+      "name": "Marque de la Peur",
+      "level": 70,
+      "actionType": "Active",
+      "type": "Automatique",
+      "effect": "Crée un spectacle d'ombres dans un lieu déterminé, qui terrorise tous ceux qui l'observent. Les spectateurs doivent réussir un test de RMys ou RPsy sous peine de subir un état de Terreur. Le sort est visible à une distance fixée par le rang du sort. Ce sort affecte ses victimes à l'unique condition qu'elles regardent directement la Marque de la Peur.",
+      "initialGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 10,
+        "effect": "Visible dans un rayon d’1 km / RMys ou RPsy 120",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": "Visible dans un rayon de 5 km / RMys ou RPsy 150",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 14,
+        "effect": "Visible dans un rayon de 15 km / RMys ou RPsy 180",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 360,
+        "requiredIntelligence": 16,
+        "effect": "Visible dans un rayon de 25 km / RMys ou RPsy 220",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 29,
+      "bookId": 2,
+      "name": "Obscurité Catastrophique",
+      "level": 72,
+      "actionType": "Active",
+      "type": "Attaque",
+      "effect": "Projette une décharge d'énergie basée sur l'obscurité, sur le Mode Énergie.",
+      "initialGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 10,
+        "effect": "Dégâts de base 120 / 25 m de rayon",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 12,
+        "effect": "Dégâts de base 150 / 100 m de rayon",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 14,
+        "effect": "Dégâts de base 200 / 150 m de rayon",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 16,
+        "effect": "Dégâts de base 250 / 250 m de rayon",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 30,
+      "bookId": 2,
+      "name": "Objets Obscurs",
+      "level": 76,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Forme un objet physique d'énergie obscure. L'objet créé ne peut pas avoir une Présence supérieure à une valeur fixée par le rang du sort, qu'il soit aussi complexe qu'une horloge ou aussi simple qu'une épée, et il obtient un bonus de qualité dépendant de ce même rang. Exceptionnellement, la qualité de l'objet n'influe pas sur sa Présence.",
+      "initialGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 10,
+        "effect": "Présence 60 / Qualité +5",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": "Présence 100 / Qualité +10",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 14,
+        "effect": "Présence 140 / Qualité +10",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 16,
+        "effect": "Présence 180 / Qualité +15",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 31,
+      "bookId": 2,
+      "name": "Transmission par les Ombres",
+      "level": 78,
+      "actionType": "Active",
+      "type": "Effet, Animique",
+      "effect": "Transporte instantanément les individus ou les objets désignés par le sorcier, d'une ombre à une autre qui se trouve à une distance maximale fixée par le rang du sort. La somme de Présence transportable ne peut pas être supérieure à une valeur fixée par ce même rang. Si une cible souhaite résister, elle doit réussir un test de RMys.",
+      "initialGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 10,
+        "effect": "100 km / 250 de Présence / RMys 120",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 360,
+        "requiredIntelligence": 12,
+        "effect": "1 000 km / 500 de Présence / RMys 140",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 450,
+        "requiredIntelligence": 14,
+        "effect": "5 000 km / 1 000 de Présence / RMys 180",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 16,
+        "effect": "15 000 km / 2 000 de Présence / RMys 200",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 32,
+      "bookId": 2,
+      "name": "Roi des Cauchemars",
+      "level": 80,
+      "actionType": "Active",
+      "type": "Effet, Animique",
+      "effect": "Permet de dominer n'importe quel type de rêve. Le sorcier a la capacité de contrôler le monde onirique d'un dormeur, en le modifiant comme s'il avait 45 en Gnose. Si le rêve s'alimente d'énergie négative, autrement dit qu'il se change en cauchemar, la Gnose du sorcier ne sera que de 30. Si le dormeur souhaite éviter le sort, il doit effectuer un test de RMys. Ce sort a aussi une deuxième fonction, suivant si le sorcier se trouve dans la Veille ou pas. Les sorts lancés par le sorciers autorisés par ce niveau de gnose (comme les sorts de Magie Divine par exemple) ne peuvent avoir d’effets en dehors de la zone d’influence du sortilège et durent jusqu’à ce que le sorcier ne quitte le rêve (ou la veille).",
+      "initialGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 12,
+        "effect": "RMys 140",
+        "retention": 60
+      },
+      "intermediateGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 14,
+        "effect": "RMys 150 / Si le sorcier se retrouve dans la Veille, il en contrôle également l’environnement et obtient les pouvoirs d’une créature de Gnose 40, à condition que la zone soit fortement influencée par les énergies négatives. S’il se trouve dans une zone neutre, la Gnose équivalente sera de 30. Ce sort n’affecte que ce qui se trouve dans sa zone d’effet et seulement si aucune autre entité de Gnose similaire s’y trouve ou n’y pénètre.",
+        "retention": 65
+      },
+      "advancedGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 16,
+        "effect": "RMys 160 / Comme pour Intermédiaire à ceci près que la Gnose équivalent en zone neutre passe à 35",
+        "retention": 70
+      },
+      "arcaneGrade": {
+        "zeon": 750,
+        "requiredIntelligence": 18,
+        "effect": "RMys 180 / Comme pour Avancé à ceci près que les sortilèges n’ont plus de limites spatiales et peuvent atteindre tout ce qui se trouve dans les zones de la veille influencées par les énergies négatives.",
+        "retention": 80
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 33,
+      "bookId": 2,
+      "name": "Création Obscure",
+      "level": 82,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Crée un être obscur avec l'apparence de la vie, sous le contrôle absolu du sorcier. Cet être sera conçu comme une créature d'Entre Mondes, en utilisant les pouvoirs et les limitations des élémentaires d’Obscurité du Chapitre 26. Le niveau de la créature sera fixé par le rang du sort.",
+      "initialGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 10,
+        "effect": "Niveau 1",
+        "retention": 50
+      },
+      "intermediateGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 12,
+        "effect": "Niveau 3",
+        "retention": 70
+      },
+      "advancedGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 14,
+        "effect": "Niveau 6",
+        "retention": 100
+      },
+      "arcaneGrade": {
+        "zeon": 700,
+        "requiredIntelligence": 16,
+        "effect": "Niveau 10",
+        "retention": 140
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 34,
+      "bookId": 2,
+      "name": "Occultation devant la Magie",
+      "level": 86,
+      "actionType": "Passive",
+      "type": "Effet",
+      "effect": "Dissimule la présence d'un individu vis à vis des sorts de type Automatique, ce qui lui permet de ne pas être affecté par eux de manière directe. Contrairement à ce qu'indiquent les règles générales, le sorcier qui maintient actif un sort Automatique devra réussir à cibler le personnage avec sa Projection magique, comme s'il s'agissait d'un sort Animique traditionnel, si ce n'est que cette condition est nécessaire pour affecter le personnage.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": "Affecte un sort Automatique de Degré  Initial",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "Affecte un sort Automatique de Degré  Intermédiaire",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 14,
+        "effect": "Affecte un sort Automatique de Degré  Avancé",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 320,
+        "requiredIntelligence": 16,
+        "effect": "Affecte un sort Automatique de Degré  Arcane",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 35,
+      "bookId": 2,
+      "name": "Règne des Ténèbres",
+      "level": 88,
+      "actionType": "Active",
+      "type": "Automatique",
+      "effect": "Crée une zone autour du sorcier, où tout se couvre d'une obscurité absolue. Le corps du sorcier se fond avec les ombres, augmentant ainsi de +40 ses Résistances contre tout type de détection. Pour le localiser en utilisant ses sens, il faut réussir un test Impossible d'Observation ou un test Surhumain de Vigilance. Même Détection du Ki exige de réussir un test Surhumain. De plus, tant que le sorcier reste dans l'obscurité, il peut se téléporter en un round vers tout endroit compris sous le Règne des Ténèbres. Enfin, son AMR augmente de +20 quand il utilise des sorts d'obscurité\nTous les êtres vivants pris dans l’aire d’effet et qui ne sont pas des élémentaires obscurs perdent automatiquement 10 points de Zéon par round (le double pour un élémentaire de lumière). La zone ne peut pas s'étendre au-delà du lieu où le sort a été lancé.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": "50 m de rayon",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 360,
+        "requiredIntelligence": 12,
+        "effect": "500 m de rayon",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 420,
+        "requiredIntelligence": 14,
+        "effect": "1 km de rayon",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 480,
+        "requiredIntelligence": 16,
+        "effect": "1 km de rayon / AMR + 30 pour les sorts d’Obscurité",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 36,
+      "bookId": 2,
+      "name": "Non Détection",
+      "level": 90,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Le sorcier, ou celui qu'il désigne comme cible, devient complètement immunisé à tout type de détection de caractère surnaturel, magique, psychique ou du Ki. Par exemple, un personnage qui utilise ce sort au rang Arcane ne peut être détecté que par l’utilisation des sens physiques, comme la vue et l'ouïe.",
+      "initialGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 12,
+        "effect": "Le personnage n’est plus détectables par la magie ou les pouvoirs psychiques.",
+        "retention": 80
+      },
+      "intermediateGrade": {
+        "zeon": 450,
+        "requiredIntelligence": 14,
+        "effect": "Comme Initial, sauf que le personnage n’est plus non plus détectable par le Ki.",
+        "retention": 90
+      },
+      "advancedGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 16,
+        "effect": "Comme Intermédiaire, sauf que le personnage n’est plus détectable du tout par aucun type de capacité surnaturelle.",
+        "retention": 105
+      },
+      "arcaneGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 18,
+        "effect": "Ignore tout autre test que ceux effectués avec les cinq sens naturels.",
+        "retention": 115
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 37,
+      "bookId": 2,
+      "name": "Prison d'Obscurité",
+      "level": 92,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Emprisonne une créature dans un monde d'obscurité impossible à traverser, un univers dans lequel elle ne pourra pas interagir avec l'extérieur, ni inversement. Tant que la cible du sort se trouve à l'intérieur de la prison, elle n'a pas conscience de ce qui se passe à l'extérieur, ou inversement. Pour briser le sortilège de l'intérieur, on considère que la prison possède une quantité de PV fixée par le rang du sort, et qu'elle suit les règles d'Encaissement avec une IP de 10. De l'extérieur, les dommages infligés sont doublés mais la prison régénère les dégâts subis avec une Régénération de 19. On peut éviter ce sort en réussissant un test de RMys. En cas d'échec, la cible n'a droit à aucun test ultérieur",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 14,
+        "effect": "RMys 140 / La prison possède 10 000 PV",
+        "retention": 40
+      },
+      "intermediateGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 16,
+        "effect": "RMys 180 / La prison possède 250 000 PV",
+        "retention": 70
+      },
+      "advancedGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 18,
+        "effect": "RMys 220 / La prison possède 500 000 PV",
+        "retention": 100
+      },
+      "arcaneGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 20,
+        "effect": "RMys 240 / La prison ne peut être brisée de l’intérieur, mais possède 500 000 PV de résistance aux dégâts de l’extérieur.",
+        "retention": 160
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 38,
+      "bookId": 2,
+      "name": "Essence Obscure",
+      "level": 96,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Permet au sorcier d'entrer dans un état de léthargie absolue, tandis que son corps ne fait plus qu'un avec l'obscurité. Il abandonne le monde et commence son ascension vers le flux des âmes pour se nourrir de son énergie. À l'écart et inconscient de tout ce qui se passe autour de lui, le personnage multiplie par 10 sa régénération Zéonique et soigne ses blessures avec une Régénération de 16. Bien que ce sort n'ait pas de maintien, le sorcier peut rester dans le flux des âmes pour une durée maximale fixée par le rang du sort.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": "Un jour",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 14,
+        "effect": "Une semaine",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 16,
+        "effect": "Un mois",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 18,
+        "effect": "Un an",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 39,
+      "bookId": 2,
+      "name": "Ascension Obscure",
+      "level": 98,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Le sort échange l'essence physique d'un individu avec de l'énergie divine, transformant son esprit en pure puissance surnaturelle. En pratique, le sorcier ou sa cible acquiert augmentent leur Gnose jusqu’à une valeur maximale déterminée par le rang du sort.",
+      "initialGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 14,
+        "effect": "Gnome maximale 30",
+        "retention": 30
+      },
+      "intermediateGrade": {
+        "zeon": 1000,
+        "requiredIntelligence": 16,
+        "effect": "Gnome maximale 35",
+        "retention": 40
+      },
+      "advancedGrade": {
+        "zeon": 2000,
+        "requiredIntelligence": 18,
+        "effect": "Gnome maximale 40",
+        "retention": 45
+      },
+      "arcaneGrade": {
+        "zeon": 5000,
+        "requiredIntelligence": 20,
+        "effect": "Gnome maximale 45",
+        "retention": 50
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 40,
+      "bookId": 2,
+      "name": "Holocauste d'Obscurité",
+      "level": 100,
+      "actionType": "Active",
+      "type": "Att., Animique",
+      "effect": "Ce sort déchaîne la puissance de l'obscurité dans son état le plus pur, rasant tout ce qui se trouve sur son passage, aussi bien dans le monde matériel que dans le monde spirituel. L'énergie libérée arrache et dévore toute chose, unifiant toute existence à celle de l'obscurité. Même les créatures élémentaires d'obscurité sont assimilées par ce sort.\nL'Holocauste crée une grande coupole ténébreuse, à l'intérieur de laquelle tout se dissout instantanément. L’attaque se fait sur le mode Énergie. Tout être subissant des dégâts, aussi minimes soient-ils, doit réussir un test de RMys contre 160 sous peine d'être unifié à l'obscurité et de fait détruit de corps comme d'esprit. Il n'est pas possible de désigner des cibles précises dans le rayon du sort, qui affecte tout de la même manière, à l'exception du sorcier.",
+      "initialGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 14,
+        "effect": "Dégâts de base 350 / 100m de rayon",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 1000,
+        "requiredIntelligence": 16,
+        "effect": "Dégâts de base 500 / 100 km de rayon",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 2500,
+        "requiredIntelligence": 18,
+        "effect": "Dégâts de base 800 / 10 000 km de rayon",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 10000,
+        "requiredIntelligence": 20,
+        "effect": "Dégâts de base 1 000 / 1 UA de rayon",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    }
+  ]
+}

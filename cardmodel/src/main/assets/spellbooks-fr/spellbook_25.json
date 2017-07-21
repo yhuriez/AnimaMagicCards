@@ -1,0 +1,364 @@
+{
+  "bookId": 25,
+  "bookName": "Livre du Seuil",
+  "description": "La peur et la folie sont les émotions les plus sombres, primaires et puissantes, antérieures même aux temps où les hommes ont pris conscience de leur destin. Cette voie secondaire à ces deux concepts comme base, c'est la magie des horreurs primitives qui sont au-delà des ténèbres elles-mêmes.",
+  "primaryBookUnaccessibles": [
+    "Lumière",
+    "Création",
+    "Destruction",
+    "Eau",
+    "Essence."
+  ],
+  "spells": [
+    {
+      "spellId": 1,
+      "bookId": 25,
+      "name": "Les Yeux de l'Autre Côté",
+      "level": 4,
+      "actionType": "Active",
+      "type": "Détection",
+      "effect": "Les yeux du sorcier lui permettent de voir les peurs intrinsèques des gens, tout comme leurs troubles et leurs folies. Pendant que ce sort est actif, toute personne capable de percevoir les esprits verra comment les yeux du personnage deviennent intégralement noirs, comme si une obscurité intérieure les dévorait. Pour éviter les effets de ce sort, un individu devra réussir un test de RMys ou de RPsy contre la difficulté déterminée par le Degré  du sort.",
+      "initialGrade": {
+        "zeon": 30,
+        "requiredIntelligence": 5,
+        "effect": "Le personnage peut sentir si une personne est apeurée ou non / 120 RMys ou RPsy.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 8,
+        "effect": "Le personnage peut percevoir, non seulement si une personne est effrayée ou non, mais aussi quelles sont la nature et l'origine de la peur qu'elle ressent à cet instant / 140 RMys ou RPsy.",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 11,
+        "effect": "Le mage perçoit les peurs et les troubles de façon générale, même lorsque les personnes qu'il observe ne sont pas effrayées / 160 RMys ou RPsy.",
+        "retention": 5
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 14,
+        "effect": "Le personnage perçoit les peurs et les troubles des personnes, voyant des représentations visuelles de ces peurs marcher à côté d'elles / 180 RMys ou RPsy.",
+        "retention": 10
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 2,
+      "bookId": 25,
+      "name": "Ombre de la Peur",
+      "level": 14,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Ce sort affecte une zone, la rendant lugubre et sombre pour tout autre que le sorcier. Il est important de préciser que différentes personnes peuvent percevoir la même zone de façon différente, selon ce qu'elles considèrent comme un endroit lugubre.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 6,
+        "effect": "50 m de rayon.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 70,
+        "requiredIntelligence": 9,
+        "effect": "250 m de rayon.",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 12,
+        "effect": "500 m de rayon.",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 130,
+        "requiredIntelligence": 15,
+        "effect": "1 km de rayon.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 3,
+      "bookId": 25,
+      "name": "Les Susurrements de l'Autre Côté",
+      "level": 24,
+      "actionType": "Active",
+      "type": "Automatique",
+      "effect": "Provoque l'apparition de voix susurrantes dans une zone donnée. Ces sons inondent les cœurs de leurs victimes d'une peur primordiale. Toute personne à l'intérieur du rayon d'action du sort qui écoute les voix plus de cinq rounds doit réussir automatiquement un test de RMys ou de RPsy contre la difficulté déterminée par le Degré  du sort, sous peine de tomber sous l'emprise de la Peur. Degré  Initial Intermédiaire Avancé Arcane",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": "80 RMys ou RPsy / 10 m de rayon.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": "100 RMys ou RPsy / 25 m de rayon.",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 12,
+        "effect": "120 RMys ou RPsy / 50 m de rayon",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 15,
+        "effect": "140 RMys ou RPsy / 100 m de rayon.",
+        "retention": 10
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 4,
+      "bookId": 25,
+      "name": "Sentier de la Folie",
+      "level": 34,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Le sorcier altère l'esprit d'une personne par des idées et des concepts démentiels, chamboulant sa perception du monde et la soumettant temporairement à la folie. La cible de ce sort doit réussir un test de RMys ou de RPsy contre une difficulté déterminée par le Degré  du sort sous peine d'être prise d'une folie passagère comme la psychose, la schizophrénie ou la Paranoïa, perdant toute capacité à être maîtresse de ses propres actes. Le personnage affecté ne pourra refaire le test de Résistance qu'une fois par pur.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 7,
+        "effect": "120 RMys ou RPsy.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": "140 RMys ou RPsy.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 13,
+        "effect": "160 RMys ou RPsy.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 15,
+        "effect": "180 RMys ou RPsy.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 5,
+      "bookId": 25,
+      "name": "Harceler par les Rêves",
+      "level": 44,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Cette malédiction permet au sorcier de changer les rêves de sa victime en une prison dans laquelle il enferme son âme dans un cauchemar sans fin. La cible reste soumise à un rêve éternel dans lequel elle est constamment harcelée par des monstres et autres créatures innommables qui la pourchasseront pour la tuer. Ce sort doit être lancé contre un individu qui rêve et, si celui-ci échoue à son test de RMys ou de RPsy, d ne pourra pas se réveiller tant que le sort ne se terminera pas. La cible ne pourra pas refaire test de Résistance tant que, dans son monde de cauchemar, son esprit ne considèrera pas qu'il a vaincu les mauvais rêves qui le harcèlent.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 7,
+        "effect": "120 RMys ou RPsy.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 10,
+        "effect": "160 RMys ou RPsy.",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 13,
+        "effect": "200 RMys ou RPsy.",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 15,
+        "effect": "240 RMys ou RPsy.",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 6,
+      "bookId": 25,
+      "name": "Accentuation",
+      "level": 54,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Le personnage accentue les peurs et les folies des individus qui se trouvent dans la zone d'effet du sort. Toute personne qui ne réussit pas le test e RMys ou RPsy passera de l'état de Peur à celui de Terreur quelle que soit la source de l'effroi initial, et la folie passagère se transformera en démence Profonde. Le test ne peut être refait qu'une fois par jour, ou bien quand les Résistances du personnage augmentent.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 6,
+        "effect": "120 RMys ou RPsy / 50 m de rayon.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": "140 RMys ou RPsy / 100 m de rayon.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "160 RMys ou RPsy / 250 m de rayon.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": "180 RMys ou RPsy / 500 m de rayon.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 7,
+      "bookId": 25,
+      "name": "Terreur",
+      "level": 64,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Provoque temporairement l'état de Terreur sur tous les sujets se trouvant autour du lanceur. Le sorcier décide quelle est l'origine de ce sentiment chez les personnes affectées.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "120 RMys ou RPsy / 10 m de rayon.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 10,
+        "effect": "140 RMys ou RPsy / 50 m de rayon.",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": "180 RMys ou RPsy / 100 m de rayon.",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 15,
+        "effect": "200 RMys ou RPsy / 250 m de rayon.",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 8,
+      "bookId": 25,
+      "name": "Seigneur des Fous",
+      "level": 74,
+      "actionType": "Active",
+      "type": "Automatique",
+      "effect": "Le sorcier obtient la capacité de contrôler toute personne folle en altérant à volonté sa démence et sa perception de la réalité. Pour être affecté par ce sortilège il suffit d'être dans la zone d'influence du sort et d'avoir une démence grave. Tous ceux qui ne souffrent que d'une folie passagère peuvent appliquer un +40 à leurs RMys ou RPsy contre les effets de ce sort. Les personnes affectées ont le droit de refaire le test une fois par jour ou quand elles augmentent leurs Résistances.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": "140 RMys ou RPsy / 100 m de rayon.",
+        "retention": 20
+      },
+      "intermediateGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 12,
+        "effect": "160 RMys ou RPsy / 250 m de rayon.",
+        "retention": 30
+      },
+      "advancedGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 14,
+        "effect": "180 RMys ou RPsy / 1 km de rayon.",
+        "retention": 40
+      },
+      "arcaneGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 16,
+        "effect": "200 RMys ou RPsy / 5 km de rayon.",
+        "retention": 50
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 9,
+      "bookId": 25,
+      "name": "Incarnation de la Peur",
+      "level": 84,
+      "actionType": "Active",
+      "type": "Automatique",
+      "effect": "Ce sort crée une incarnation pure de la peur d'une personne, une créature d'Entre Mondes née d'endroits les plus profonds du subconscient de sa cible. La créature est réelle à tous points de vue, mais seul l'individu ou les individus qui la craignent peuvent la voir ou interagir avec elle (de la même façon la créature ne sent et ne peut toucher que ceux qu'elle effraie). Lorsqu'il lance ce sort, le sorcier doit choisir comme cible une personne qui est en sa présence, et celle-ci sera automatiquement affectée. Si cet individu ne réussit pas la RMys ou la RPsy déterminée par le Degré  du sort, elle donne immédiatement forme à un être à l'image en tout point conforme aux peurs du personnage. La créature peut avoir n'importe quel niveau ou pouvoirs, tant qu'elle n'a pas une Gnose supérieure à 30 ou qu'elle ne dépasse pas les limites de niveau imposées par le Degré  du sortilège.",
+      "initialGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 10,
+        "effect": "Niveau 4 / 140 RMys.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 12,
+        "effect": "Niveau 8 / 160 RMys.",
+        "retention": 25
+      },
+      "advancedGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 15,
+        "effect": "Niveau 12 / 180 RMys.",
+        "retention": 50
+      },
+      "arcaneGrade": {
+        "zeon": 700,
+        "requiredIntelligence": 18,
+        "effect": "Niveau 15 / 200 RMys.",
+        "retention": 70
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 10,
+      "bookId": 25,
+      "name": "La Peur faite Chair",
+      "level": 94,
+      "actionType": "Active",
+      "type": "Automatique",
+      "effect": "Le personnage se transforme en source de peur, provoquant l'effroi de toutes les créatures, même celles qui sont normalement immunisées contre les effets psychologiques. Tout ce qui est en sa présence est soumis automatiquement à l'état de Peur, sans possibilité de résister, et doit réussir un test de RMys ou de RPsy pour ne pas être en plus soumis à l'état de Terreur.",
+      "initialGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 11,
+        "effect": "120 RMys ou RPsy.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 13,
+        "effect": "140 RMys ou RPsy",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 450,
+        "requiredIntelligence": 15,
+        "effect": "200 RMys ou RPsy.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 17,
+        "effect": "240 RMys ou RPsy.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    }
+  ]
+}

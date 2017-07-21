@@ -1,49 +1,49 @@
 {
   "bookId": 4,
-  "bookName": "Livre de la Destruction",
-  "description": "Cette voie permet d’utiliser le pouvoir du flux des âmes pour détruire la réalité elle-même. Ses sorts affectent autant le monde matériel que spirituel. Son pouvoir est, par nature, très offensif.",
-  "type": "Majeure",
-  "oppositeBook": "Création",
-  "secondaryBookAccessibles": [
+  "bookName": "Path of Destruction",
+  "description": "This Path allows the caster to channel the power of the Flow of Souls, turning it against reality itself. These spells affect both the material and spiritual worlds. It is naturally offensive power.",
+  "type": "Main",
+  "oppositeBook": "Creation",
+  "secondaryBookAccessible": [
+    "War",
     "Chaos",
-    "Guerre",
-    "Mort",
-    "Pêché",
-    "Sang",
-    "Temps",
-    "Néant."
+    "Death",
+    "Sin",
+    "Blood",
+    "Time",
+    "Void"
   ],
   "spells": [
     {
       "spellId": 1,
       "bookId": 4,
-      "name": "Fragilité",
+      "name": "﻿Fragility",
       "level": 2,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Altère la Solidité d'un objet, en diminuant sa résistance et en le rendant cassant. Tout objet affecté perd automatiquement son Invulnérabilité et, dans le cas d'une arme ou d'une armure, réduit sa Solidité.",
+      "type": "Effect",
+      "effect": "This spell alters the solidity of an object, reducing its sturdiness and making it easy to break. Anything affected automatically loses its Damage Barrier; if the spell is cast on arms or armor, their Fortitude receives a reduction. This spell affects objects with a Presence of no more than the limit set by the spell level.",
       "initialGrade": {
         "zeon": 30,
         "requiredIntelligence": 5,
-        "effect": "-2 en Solidité / Présence affectable maximale 30",
+        "effect": " -2 Fortitude / Max Presence 30",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 60,
         "requiredIntelligence": 8,
-        "effect": "-4 en Solidité / Présence affectable maximale 60",
+        "effect": " -4 Fortitude / Max Presence 60",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 10,
-        "effect": "-8 en Solidité / Présence affectable maximale 90",
+        "effect": " -8 Fortitude / Max Presence 90",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 150,
         "requiredIntelligence": 12,
-        "effect": "-12 en Solidité / Présence affectable maximale 120",
+        "effect": " -12 Fortitude / Max Presence 120",
         "retention": 15
       },
       "withRetention": true,
@@ -52,173 +52,173 @@
     {
       "spellId": 2,
       "bookId": 4,
-      "name": "Démanteler",
+      "name": "Dismantle",
       "level": 6,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Démantèle un objet formé de plusieurs pièces. Ce sort affecte uniquement les choses inanimées dont la présence ne dépasse pas une valeur fixée par le rang du sort.",
+      "type": "Effect",
+      "effect": "Dismantles an object made of various pieces. It affects inanimate objects with a Presence of no more than the limit set by the spell level.",
       "initialGrade": {
         "zeon": 40,
         "requiredIntelligence": 5,
-        "effect": "Présence maximale 20",
+        "effect": " Max Presence 20",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 80,
         "requiredIntelligence": 8,
-        "effect": "Présence maximale 40",
+        "effect": " Max Presence 40",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 10,
-        "effect": "Présence maximale 60",
+        "effect": " Max Presence 60",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 150,
         "requiredIntelligence": 12,
-        "effect": "Présence maximale 80",
+        "effect": " Max Presence 80",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 3,
       "bookId": 4,
-      "name": "Détruire les intensités",
+      "name": "Destroy Intensities",
       "level": 8,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Détruit une ou plusieurs intensités d'un des trois types d'énergie existant : le froid, le feu ou l'électricité.",
+      "type": "Effect",
+      "effect": "Destroys intensities of one of the three types of existing energies (Cold, Fire, or Electricity). Beings made of the Destroyed Intensities lose 5 Life Points per Intensity Destroyed if they fail the RM check.",
       "initialGrade": {
         "zeon": 40,
         "requiredIntelligence": 5,
-        "effect": "1 intensité / 100 RMys",
+        "effect": " 1 Intensity / MR 100",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 80,
         "requiredIntelligence": 8,
-        "effect": "5 intensités / 120 RMys",
+        "effect": " 5 Intensities / MR 120",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 10,
-        "effect": "10 intensités / 140 RMys",
+        "effect": " 10 Intensities / MR 140",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 150,
         "requiredIntelligence": 12,
-        "effect": "15 intensités / 160 RMys",
+        "effect": " 20 Intensities / MR 160",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 4,
       "bookId": 4,
-      "name": "Destruction Mineure",
+      "name": "Minor Destruction",
       "level": 10,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Affecte l'essence d'un objet matériel sans vie, le détruisant complètement, du moment que sa Présence ne dépasse pas une valeur fixée par le rang du sort.",
+      "type": "Effect",
+      "effect": "Affects the essence of a lifeless material object, destroying it completely, as long as its Presence is no greater than the limit set by the spell level.",
       "initialGrade": {
         "zeon": 50,
         "requiredIntelligence": 6,
-        "effect": "Présence maximale 20",
+        "effect": " Max Presence 20.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 90,
         "requiredIntelligence": 9,
-        "effect": "Présence maximale 40",
+        "effect": " Max Presence 40.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 140,
         "requiredIntelligence": 11,
-        "effect": "Présence maximale 60",
+        "effect": " Max Presence 60.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 180,
         "requiredIntelligence": 13,
-        "effect": "Présence maximale 80",
+        "effect": " Max Presence 80.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 5,
       "bookId": 4,
-      "name": "Sphère de destruction",
+      "name": "Sphere of Destruction",
       "level": 12,
       "actionType": "Active",
-      "type": "Attaque",
-      "effect": "Projette plusieurs décharges d'énergies magiques. L'attaque se fait sur le Mode Energie et les dégâts sont de 30 points. Chaque sphère peut attaquer des cibles différentes mais dans ce cas, chacune doit être désignée au lancement du sort, avant de lancer les dés.",
+      "type": "Attack",
+      "effect": "Projects a ball of magical energy. Sphere of Destruction is an Energy Attack Type with a Base Damage of 30. Increasing the Spell Level increases the number of Spheres. Each attack can be used against a different target, but you must decide target distribution when you cast the spell.",
       "initialGrade": {
         "zeon": 30,
         "requiredIntelligence": 5,
-        "effect": "Réalise une attaque",
+        "effect": " 1 attack.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 60,
         "requiredIntelligence": 8,
-        "effect": "Réalise 3 attaques",
+        "effect": " 3 attacks.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 100,
         "requiredIntelligence": 10,
-        "effect": "Réalise 5 attaques",
+        "effect": " 5 attacks.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 150,
         "requiredIntelligence": 13,
-        "effect": "Réalise 7 attaques",
+        "effect": " 7 attacks.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 6,
       "bookId": 4,
-      "name": "Augmenter Faiblesse",
+      "name": "Increase Weakness",
       "level": 16,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Ce sort trouve les points faibles d'un individu et les augmente surnaturellement. En termes de jeu, il double tous les malus que subit un personnage à cause d'une quelconque vulnérabilité. Par exemple, un élémentaire vulnérable à la lumière subit le quadruple des dégâts des attaques lumineuses, au lieu du double, tandis qu'un personnage vulnérable aux poisons réduit sa RPoi au quart plutôt qu'à la moitié. La cible peut effectuer un test de RMys pour éviter ce sort, mais ne peut refaire ce test qu'à chaque fois que sa faiblesse l'affecte à nouveau.",
+      "type": "Spiritual",
+      "effect": "This spell finds a being’s weak points, and makes them weaker supernaturally. In game terms, it doubles the penalty the individual suffers for any vulnerability. For example, an elemental who is especially vulnerable to light would suffer quadruple damage, instead of double damage, from an attack using light, while a character vulnerable to poisons would have his VR reduced to a fourth of its usual value. To avoid being affected by Increase Weakness, its target needs to pass a MR Check. If he fails, he can only roll the Check again when he is affected by his weakness.",
       "initialGrade": {
         "zeon": 50,
         "requiredIntelligence": 6,
-        "effect": "RMys 120",
+        "effect": " MR 120.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 80,
         "requiredIntelligence": 8,
-        "effect": "RMys 140",
+        "effect": " MR 140.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 10,
-        "effect": "RMys 160",
+        "effect": " MR 160.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 150,
         "requiredIntelligence": 12,
-        "effect": "RMys 200",
+        "effect": " MR 200.",
         "retention": 15
       },
       "withRetention": true,
@@ -227,243 +227,243 @@
     {
       "spellId": 7,
       "bookId": 4,
-      "name": "Destruction de Magie",
+      "name": "Magic Destruction",
       "level": 18,
       "actionType": "Passive",
-      "type": "Effet",
-      "effect": "Détruit un sortilège dont la valeur Zéonique n'est pas supérieure à une valeur fixée par le rang du sort. Comme Destruction de Magie est un sort passif, il peut être utilisé pour annuler tout sort lancé durant le même round que lui.",
+      "type": "Effect",
+      "effect": "Destroys a spell whose Zeon value is no greater than the limit set by the spell level. Since Magic Destruction is passive, it can be employed to nullify any spell launched in the same combat turn.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 6,
-        "effect": "Valeur Zéonique 50",
+        "effect": " Up to 50 Zeon Value.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 150,
         "requiredIntelligence": 9,
-        "effect": "Valeur Zéonique 120",
+        "effect": " Up to 120 Zeon Value.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 300,
         "requiredIntelligence": 12,
-        "effect": "Valeur Zéonique 200",
+        "effect": " Up to 200 Zeon Value.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 500,
         "requiredIntelligence": 16,
-        "effect": "Valeur Zéonique 350",
+        "effect": " Up to 350 Zeon Value.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 8,
       "bookId": 4,
-      "name": "Aggraver les Dégâts",
+      "name": "Aggravate Damage",
       "level": 20,
       "actionType": "Passive",
-      "type": "Effet",
-      "effect": "Augmente les Dégâts que produit une attaque, quelle qu'en soit le type, physique ou surnaturelle. Par conséquent, si un combattant frappe avec une arme de dégâts 60, un sorcier peut augmenter ses Dégâts à 90 avec ce sort. Comme il s'agit d'un sortilège passif, il doit être exécuté avant de lancer les dés pour calculer l'attaque et la défense des adversaires.",
+      "type": "Effect",
+      "effect": "Increases the Base Damage of any attack (physical or supernatural). For example, if an attacker is wielding a weapon with a Base Damage of 60, using the base level of this spell increases it to 90. In spite of its being a passive spell, it must be cast before any dice are rolled, to make it possible to calculate the opponents’ respective attack and defense factors.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 6,
-        "effect": "+30 aux dégâts",
+        "effect": " +30 Damage.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 100,
         "requiredIntelligence": 9,
-        "effect": "+50 aux dégâts",
+        "effect": " +50 Damage.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 150,
         "requiredIntelligence": 12,
-        "effect": "+90 aux dégâts",
+        "effect": " +90 Damage.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 220,
         "requiredIntelligence": 15,
-        "effect": "+120 aux dégâts",
+        "effect": " +120 Damage.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 9,
       "bookId": 4,
-      "name": "Destruction de Matrices",
+      "name": "Destruction of Matrices",
       "level": 22,
       "actionType": "Passive",
-      "type": "Effet",
-      "effect": "Ce sort défait les énergies matricielles d'un pouvoir psychique dont le test de Talent n'a pas dépassé pas une difficulté fixée par le rang du sort. Comme Destruction de Matrices est un sort passif, il peut être utilisé pour annuler tout pouvoir psychique utilisé durant le même round que lui.",
+      "type": "Effect",
+      "effect": "This spell unravels the energy matrices of a Psychic Power whose Potential is no more than the limit set by spell level. Since it is a passive spell, it can be employed to nullify any Psychic Power launched in the same combat turn.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 6,
-        "effect": "Difficulté Moyenne (80)",
+        "effect": " Medium Difficulty (80).",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 140,
         "requiredIntelligence": 9,
-        "effect": "Difficulté Très Difficulté (140)",
+        "effect": " Very Difficult Difficulty (140).",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "Difficulté Quasiment Impossible (240)",
+        "effect": " Almost Impossible Difficulty (240).",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 320,
         "requiredIntelligence": 16,
-        "effect": "Difficulté Surhumaine (320)",
+        "effect": " Inhuman Difficulty (320).",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 10,
       "bookId": 4,
-      "name": "Blesser",
+      "name": "Wound",
       "level": 26,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Blesser affecte la condition physique d'un individu, en réduisant son état de santé actuel. Il produit des blessures et des dégâts équivalant un pourcentage des PV actuels de la cible (et pas à son total de PV). Il faut réussir un test de RMys pour résister à ce sort.",
+      "type": "Spiritual",
+      "effect": "Wound affects the physical condition of an individual, doing damage to his health. It produces wounds and damage equal to a percent of his current Life Points(not of his total) based on spell level. Resisting the spell requires beating a MR Check.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 6,
-        "effect": "20% de Points de Vie actuels / RMys 120",
+        "effect": " 20% Life Points / MR 120.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 120,
         "requiredIntelligence": 9,
-        "effect": "40% de Points de Vie actuels / RMys 140",
+        "effect": " 40% Life Points / MR 140.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 180,
         "requiredIntelligence": 12,
-        "effect": "60% de Points de Vie actuels / RMys 160",
+        "effect": " 60% Life Points / MR 160.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "80% de Points de Vie actuels / RMys 200",
+        "effect": " 80% Life Points / MR 200.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 11,
       "bookId": 4,
-      "name": "Destruction de Ki",
+      "name": "Destroy Ki",
       "level": 28,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "La magie que libère ce sort s'introduit dans l'âme d'un individu et défait la réserve de Ki dont il dispose. La cible doit réussir un test de RMys sous peine de perdre une quantité de points de Ki égale à la marge d'échec de ce test. Le sorcier choisit l'ordre et la répartition des points perdus entre chaque caractéristique.",
+      "type": "Spiritual",
+      "effect": "The magic unleashed by this spell penetrates the soul of its victim, dissolving his reserve of Ki. The victim must beat a MR Check, or he loses as many points of Ki as the level of Failure. The caster chooses the order and distribution of points lost among the different characteristics.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 6,
-        "effect": "RMys 140",
+        "effect": " MR 140.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 140,
         "requiredIntelligence": 9,
-        "effect": "RMys 160",
+        "effect": " MR 160.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 220,
         "requiredIntelligence": 12,
-        "effect": "RMys 180",
+        "effect": " MR 180.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "RMys 220",
+        "effect": " MR 220.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 12,
       "bookId": 4,
-      "name": "Infliger Dégâts",
+      "name": "Produce Damage",
       "level": 30,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Grâce à ce sort, un sorcier inflige automatiquement une blessure sur le corps d'un individu. Si la cible ne réussit pas un test de RMys, elle subit immédiatement une certaine quantité de dégâts effectifs. Les créatures à Encaissement multiplient cette valeur par leur multiple d'encaissement.",
+      "type": "Spiritual",
+      "effect": "Through the use of this spell, the caster automatically causes a wound in an individual’s body. If the victim does not beat a MR Check, he suffers direct damage. Creatures with Damage Resistance multiply the damage by their Resistance multiple.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 6,
-        "effect": "50 points de dégâts / RMys 120",
+        "effect": " MR 120 / 50 Damage.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 120,
         "requiredIntelligence": 9,
-        "effect": "100 points de dégâts / RMys 140",
+        "effect": " MR 140 / 100 Damage.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 180,
         "requiredIntelligence": 12,
-        "effect": "180 points de dégâts / RMys 160",
+        "effect": " MR 160 / 180 Damage.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "250 points de dégâts / RMys 200",
+        "effect": " MR 200 / 250 Damage.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 13,
       "bookId": 4,
-      "name": "Destruction de Sens",
+      "name": "Destruction of Senses",
       "level": 32,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Le sorcier annihile les sens d'un individu, si celui-ci échoue à un test de RMys. Le sorcier peut décider des sens qu'il affecte.",
+      "type": "Spiritual",
+      "effect": "The caster cuts off the senses of an individual who fails a MR Check. The caster can choose which senses to take.",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 8,
-        "effect": "RMys 100",
+        "effect": " MR 100.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 140,
         "requiredIntelligence": 10,
-        "effect": "RMys 120",
+        "effect": " MR 120.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 200,
         "requiredIntelligence": 12,
-        "effect": "RMys 140",
+        "effect": " MR 140.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 280,
         "requiredIntelligence": 15,
-        "effect": "RMys 180",
+        "effect": " MR 180.",
         "retention": 15
       },
       "withRetention": true,
@@ -472,103 +472,103 @@
     {
       "spellId": 14,
       "bookId": 4,
-      "name": "Décharge",
+      "name": "Mystic Bolt",
       "level": 36,
       "actionType": "Active",
-      "type": "Attaque",
-      "effect": "Projette une décharge mystique. L'attaque est effectuée sur le Mode énergie.",
+      "type": "Attack",
+      "effect": "Projects a mystical bolt that affects a single target. The attack is an Energy Attack Type.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 6,
-        "effect": "Dégâts 100",
+        "effect": " Damage 100.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 140,
         "requiredIntelligence": 9,
-        "effect": "Dégâts 150",
+        "effect": " Damage 150.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 220,
         "requiredIntelligence": 12,
-        "effect": "Dégâts 200",
+        "effect": " Damage 200.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "Dégâts 250",
+        "effect": " Damage 250.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 15,
       "bookId": 4,
-      "name": "Délier les Liens",
+      "name": "Unravel Ties",
       "level": 38,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Grâce à ce sort, le sorcier défait les liens qui permettent aux invocateurs de dominer leurs créatures. Ce sort peut être indifféremment utilisé sur la créature ou sur celui qui la contrôle",
+      "type": "Spiritual",
+      "effect": "Using this spell, the caster undoes any type of tie that permits a summoner to Control his creatures. It can be used with equal effect on either the controller or the controlled creature, but it is always the creator of the Bound whose MR is checked. If cast upon the creature, it affects only the ties binding the two of them, but if it is cast directly against the summoner, it breaks an additional binding for every 10 points by which the controller fails the MR check. Bonds with Familiars gain +40MR against this spell.",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 8,
-        "effect": "RMys 120",
+        "effect": " MR 120.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 200,
         "requiredIntelligence": 10,
-        "effect": "RMys 140",
+        "effect": " MR 140.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 300,
         "requiredIntelligence": 13,
-        "effect": "RMys 160",
+        "effect": " MR 160.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 500,
         "requiredIntelligence": 16,
-        "effect": "RMys 200",
+        "effect": " MR 200.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 16,
       "bookId": 4,
-      "name": "Détruire les Résistances",
+      "name": "Destroy Resistances",
       "level": 40,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "La cible de ce sort diminue toutes ses Résistances d'une valeur égale à sa marge d'échec sur un test de RMys.",
+      "type": "Spiritual",
+      "effect": "The person affected by this spell has all his Resistances reduced by an amount equal to the margin by which he did not pass a MR Check.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 7,
-        "effect": "RMys 120",
+        "effect": " MR 120.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 160,
         "requiredIntelligence": 9,
-        "effect": "RMys 160",
+        "effect": " MR 160.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "RMys 200",
+        "effect": " MR 200.",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "RMys 240",
+        "effect": " MR 240.",
         "retention": 30
       },
       "withRetention": true,
@@ -577,103 +577,103 @@
     {
       "spellId": 17,
       "bookId": 4,
-      "name": "Annuler les États",
+      "name": "Undo States",
       "level": 42,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Ce sort annule immédiatement tous les états décrits dans le Chapitre 14, ou d'autres états équivalents. Il peut affecter autant de personnes que le souhaite le sorcier, tant que la somme de leurs Présences ne dépasse pas une valeur fixée par le rang du sort. Ce sort ne peut pas annuler les malus aux actions provoqués par un Critique. Si une cible désire résister, elle doit réussir un test de RMys.",
+      "type": "Effect",
+      "effect": "Immediately undoes any of the States described in Chapter 14, or others that are equivalent to them. This spell can affect as many targets as desired as long as their accumulated Presence is no higher than 1the limit set by the spell level. The spell cannot undo the penalties to action caused by a Critical. Resisting the spell requires beating a MR Check.",
       "initialGrade": {
         "zeon": 120,
         "requiredIntelligence": 7,
-        "effect": "RMys 120 / Présence maximale 120",
+        "effect": " MR 120 / Max Presence 120.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 10,
-        "effect": "RMys 140 / Présence maximale 200",
+        "effect": " MR 140 / Max Presence 200.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "RMys 160 / Présence maximale 300",
+        "effect": " MR 160 / Max Presence 300.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "RMys 200 / Présence maximale 400",
+        "effect": " MR 200 / Max Presence 400.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 18,
       "bookId": 4,
-      "name": "Dôme de Destruction",
+      "name": "Dome of Destruction",
       "level": 46,
       "actionType": "Active",
-      "type": "Attaque",
-      "effect": "Ce sort libère un dôme d'énergie surnaturelle, qui explose sur une zone de rayon déterminé par le rang du sort. Il n'est pas possible de choisir ses cibles dans la zone d'effet. L'attaque est effectuée sur le Mode énergie.",
+      "type": "Attack",
+      "effect": "Unleashes a dome of supernatural energy that bursts over an area. It is not possible to choose targets within the area. The attack is an Energy Attack Type .",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 7,
-        "effect": "10 m de rayon / Dégâts de base 80",
+        "effect": " Damage 80 / 10m/11yd area.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 10,
-        "effect": "50 m de rayon / Dégâts de base 120",
+        "effect": " Damage 120 / 50m/54yd area.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "100 m de rayon / Dégâts de base 160",
+        "effect": " Damage 160 / 100m/109yd area.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "150 m de rayon / Dégâts de base 200",
+        "effect": " Damage 200 / 150m/164yd area.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 19,
       "bookId": 4,
-      "name": "Zone de Pourrissement",
+      "name": "Zone of Decay",
       "level": 48,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Ce sort enchante une zone fixe dont le rayon dépend du rang du sort, à l'intérieur de laquelle toute forme de vie commence à pourrir et à se désagréger à un rythme accéléré. Tout être se trouvant au milieu de la zone de pourrissement perd 10% de ses PY totaux s'il échoue à un test de RMys. Il faut effectuer un nouveau test pour chaque round où une cible reste dans la zone, que le précédent ait été réussi ou pas. Le simple fait de se trouver dans la zone de pourrissement force toute personne à effectuer ce test.",
+      "type": "Automatic",
+      "effect": "This spell covers a fixed area , within which all forms of life begin to rot and decay at an accelerated pace. Anyone found within the Zone of Decay loses 10% of their total Life Points unless they beat a MR Check. Each turn they remain within the Zone they must make a new check, regardless of whether they passed a previous check or not. The condition for being affected is simply being within the area.",
       "initialGrade": {
         "zeon": 140,
         "requiredIntelligence": 7,
-        "effect": "10 m de rayon / RMys 100",
+        "effect": " MR 100 / 10m/11yd area.",
         "retention": 15
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 9,
-        "effect": "30 m de rayon / RMys 120",
+        "effect": " MR120 / 30m area.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "60 m de rayon / RMys 160",
+        "effect": " MR 160 / 60m/65yd area.",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "100 m de rayon / RMys 200",
+        "effect": " MR200 / 100m/109yd area.",
         "retention": 30
       },
       "withRetention": true,
@@ -682,33 +682,33 @@
     {
       "spellId": 20,
       "bookId": 4,
-      "name": "Aura de Destruction",
+      "name": "Aura of Destruction",
       "level": 50,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Enchante un objet ou un lieu de manière à créer autour de lui une aura de magie détruisant tout ce qui entre à son contact. Tout ce qui touche cet objet ou ce lieu doit réussir un test de RMys contre 80 sous peine de perdre une quantité de PV égale à sa marge d'échec. La Présence maximale de l'objet affecté ne peut pas dépasser une valeur fixée par le rang du sort. Cependant, même si celui-ci est de grande dimension, l'aura ne s'étend pas au-delà d’une distance déterminée par le rang du sort. Les effets de ce sort touchent même le sorcier.",
+      "type": "Effect",
+      "effect": "Enchants a place or object, creating in the area an aura of magic that destroys everything that comes into contact with it. Anyone who touches it must beat a MR Check, or he loses as many points of Life Points equivalent to the Failure level. The maximum Presence of the object or place affected is based on spell level. However, even if the object is very large, the aura cannot extend more than five feet long. This spell can even affect its caster.",
       "initialGrade": {
         "zeon": 150,
         "requiredIntelligence": 8,
-        "effect": "RMys 80 / Présence maximale 60 / 1 m de diamètre",
+        "effect": " MR 80 / Max Presence 60 / 1m/1yd area.",
         "retention": 15
       },
       "intermediateGrade": {
         "zeon": 200,
         "requiredIntelligence": 10,
-        "effect": "RMys 100 / Présence maximale 90 / 5 m de diamètre",
+        "effect": " MR 100 / Max Presence 90 / 5m/5yd area.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 250,
         "requiredIntelligence": 12,
-        "effect": "RMys 120 / Présence maximale 120 / 15 m de diamètre",
+        "effect": " MR 120 / Max Presence 120 / 15m/16yd area.",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 350,
         "requiredIntelligence": 15,
-        "effect": "RMys 150 / Présence maximale 150 / 25 m de diamètre",
+        "effect": " MR 150 / Max Presence 150 / 25m/27yd area.",
         "retention": 30
       },
       "withRetention": true,
@@ -717,68 +717,68 @@
     {
       "spellId": 21,
       "bookId": 4,
-      "name": "Détruire les Souvenirs",
+      "name": "Destroy Memories",
       "level": 52,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Affecte les souvenirs d'un individu, lui faisant ainsi oublier tout ce que désire le sorcier. Ce sort n'influe pas sur les compétences d'un personnage. Il faut réussir un test de RMys ou RPsy pour en éviter les effets.",
+      "type": "Spiritual",
+      "effect": "Affects the memories of an individual, making him forget whatever the caster wishes. The spell does not affect a person’s abilities, only their conscious memories. The MR or PsR to avoid the effects is based on spell level.",
       "initialGrade": {
         "zeon": 140,
         "requiredIntelligence": 7,
-        "effect": "RMys ou RPsy 100",
+        "effect": " MR or PsR 100.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 9,
-        "effect": "RMys ou RPsy 120",
+        "effect": " MR or PsR 120.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "RMys ou RPsy 160",
+        "effect": " MR or PsR 160.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "RMys ou RPsy 200",
+        "effect": " MR or PsR 200.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 22,
       "bookId": 4,
-      "name": "Bloquer l'Apprentissage",
+      "name": "Block Learning",
       "level": 56,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Ce sort bloque la capacité d'apprentissage d'un individu, l'empêchant complètement d'évoluer ou d'acquérir de nouvelles connaissances. Quand une personne se trouve sous l'effet de ce sort, il ne peut plus acquérir de nouveaux points d'expérience ni développer aucune de ses compétences ou aucun de ses pouvoirs. Pour éviter les effets de ce sort, il faut réussir un test de RMys contre 120. On ne peut effectuer ce test qu'une fois par jour.",
+      "type": "Spiritual",
+      "effect": "This spell impedes the ability of an individual to learn, completely preventing him from developing or acquiring new knowledge. While a person is under the effects of this spell, he cannot acquire new Experience Points or develop any abilities or powers. To avoid the effects of the spell, he must beat a MR Check. It is only possible to repeat the Resistance check once per day.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 7,
-        "effect": "RMys 120",
+        "effect": " MR 120.",
         "retention": 15
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 9,
-        "effect": "RMys 160",
+        "effect": " MR 160.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 300,
         "requiredIntelligence": 12,
-        "effect": "RMys 200",
+        "effect": " MR 200.",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 500,
         "requiredIntelligence": 15,
-        "effect": "RMys 240",
+        "effect": " MR 240.",
         "retention": 30
       },
       "withRetention": true,
@@ -787,33 +787,33 @@
     {
       "spellId": 23,
       "bookId": 4,
-      "name": "Nier",
+      "name": "Forbid",
       "level": 58,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Le sorcier met un veto sur une action précise que compte accomplir un individu, l'empêchant ainsi de la faire ou même de la mener à son terme. Ce sort ne permet d'annuler que les actions actives. Pour y résister, il faut réussir un test de RMys.",
+      "type": "Spiritual",
+      "effect": "The caster vetoes some specific action by the spell’s victim, completely prohibiting him from even attempting to do it. The spell Forbids only Active Actions. Resisting the spell requires beating a MR Check. If the forbidden action is very general, like attack or move, the target can add a special bonus to his MR between +10 and +30.",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 7,
-        "effect": "RMys 120",
+        "effect": " MR 120.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 10,
-        "effect": "RMys 160",
+        "effect": " MR 160.",
         "retention": 15
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 13,
-        "effect": "RMys 200",
+        "effect": " MR 200.",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 16,
-        "effect": "RMys 240",
+        "effect": " MR 240.",
         "retention": 30
       },
       "withRetention": true,
@@ -822,33 +822,33 @@
     {
       "spellId": 24,
       "bookId": 4,
-      "name": "Détruire les Pouvoirs",
+      "name": "Destroy Powers",
       "level": 60,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Si un individu est affecté par ce sort, il perd automatiquement la capacité d'utiliser toutes ses capacités surnaturelles. Ce sort bloque les pouvoirs magiques, psychiques ou de puissance intérieure du Ki que possède la cible. Les créatures mystiques perdent aussi tous leurs pouvoirs (mais pas leurs Capacités Primordiales). Il faut réussir un test de RMys pour éviter les effets de ce sort.",
+      "type": "Spiritual",
+      "effect": "The person affected by this spell is completely unable to use any of his supernatural powers. He is thereby prevented from using any magical, psychic, or Ki powers he possesses. Mystical beings also lose all their powers (although not their natural abilities). To avoid the effects of the spell, its target must beat a MR Check.",
       "initialGrade": {
         "zeon": 140,
         "requiredIntelligence": 7,
-        "effect": "RMys 120",
+        "effect": " MR 120.",
         "retention": 15
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 9,
-        "effect": "RMys 140",
+        "effect": " MR 140.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "RMys 180",
+        "effect": " MR 180.",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "RMys 220",
+        "effect": " MR 220.",
         "retention": 30
       },
       "withRetention": true,
@@ -857,68 +857,68 @@
     {
       "spellId": 25,
       "bookId": 4,
-      "name": "Décharge Majeure",
+      "name": "Greater Mystic Bolt",
       "level": 62,
       "actionType": "Active",
-      "type": "Attaque",
-      "effect": "Projette une puissante décharge surnaturelle. L'attaque est effectuée sur le Mode Énergie.",
+      "type": "Attack",
+      "effect": "Projects a powerful supernatural bolt. The attack is an Energy Attack.",
       "initialGrade": {
         "zeon": 150,
         "requiredIntelligence": 8,
-        "effect": "Dégâts de base 150",
+        "effect": " 150 Damage.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 300,
         "requiredIntelligence": 10,
-        "effect": "Dégâts de base 300",
+        "effect": " 300 Damage.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 450,
         "requiredIntelligence": 13,
-        "effect": "Dégâts de base 450",
+        "effect": " 450 Damage.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 600,
         "requiredIntelligence": 16,
-        "effect": "Dégâts de base 600",
+        "effect": " 600 Damage.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 26,
       "bookId": 4,
-      "name": "Détruire la Volonté",
+      "name": "Destroy Will",
       "level": 66,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Ce sort affecte une zone de rayon déterminé par le rang du sort, à l'intérieur de laquelle tout individu échouant à un test de RMys perd automatiquement la capacité de prendre des décisions. Quand une personne se trouve sous l'influence de ce sort, elle ne peut entreprendre aucune action active, ni se déplacer, sauf en cas d'extrême nécessité.",
+      "type": "Spiritual",
+      "effect": "This spell affects an area, within which any individual who does not beat a MR Check automatically loses the ability to make decisions. While a person is influenced by this spell, he cannot undertake any Active Action, even moving, except in case of necessity.",
       "initialGrade": {
         "zeon": 160,
         "requiredIntelligence": 8,
-        "effect": "RMys 120 / 10 m de rayon",
+        "effect": " MR 120 / 10m/11yd area.",
         "retention": 20
       },
       "intermediateGrade": {
         "zeon": 200,
         "requiredIntelligence": 10,
-        "effect": "RMys 140 / 25 m de rayon",
+        "effect": " MR 140 / 25m/27yd area.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 13,
-        "effect": "RMys 160 / 50 m de rayon",
+        "effect": " MR 160 / 50m/54yd area.",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 280,
         "requiredIntelligence": 16,
-        "effect": "RMys 180 / 100 m de rayon",
+        "effect": " MR 180 / 100m/109yd area.",
         "retention": 30
       },
       "withRetention": true,
@@ -927,33 +927,33 @@
     {
       "spellId": 27,
       "bookId": 4,
-      "name": "Zone de Faiblesse",
+      "name": "Zone of Weakness",
       "level": 68,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Ce sort permet au sorcier d'affaiblir les fibres de la réalité même à l'intérieur d'une zone déterminée",
+      "type": "Automatic",
+      "effect": "With this spell the caster weakens the fibers of reality itself within a given area, making everything inside become fragile and vulnerable. Any damage produced within the spell’s area is automatically doubled, and characters suffer Criticals as though their entire body was a vulnerable point. Structures and constructions automatically lose their Damage Barrier, and objects with a Fortitude rating such as swords and armor suffer a –5 penalty. The spell affects an area and remains stationary where it is cast. Any living being can avoid the spell’s effects by beating a MR Check. The condition for being affected by the Zone of Weakness is simply to be within its area, and it is only possible to free oneself by leaving it, since it is only permitted to repeat the Resistance Check once per day.",
       "initialGrade": {
         "zeon": 200,
         "requiredIntelligence": 9,
-        "effect": "25 m de rayon / RMys 140",
+        "effect": " MR 140 / 25m/27yd area.",
         "retention": 20
       },
       "intermediateGrade": {
         "zeon": 300,
         "requiredIntelligence": 12,
-        "effect": "100 m de rayon / RMys 160",
+        "effect": " MR 160 / 100m/109yd area.",
         "retention": 30
       },
       "advancedGrade": {
         "zeon": 400,
         "requiredIntelligence": 14,
-        "effect": "250 m de rayon / RMys 180",
+        "effect": " MR 180 / 250m/273yd area.",
         "retention": 40
       },
       "arcaneGrade": {
         "zeon": 500,
         "requiredIntelligence": 16,
-        "effect": "500 m de rayon / RMys 200",
+        "effect": " MR200 / 500m/546yd area.",
         "retention": 50
       },
       "withRetention": true,
@@ -962,33 +962,33 @@
     {
       "spellId": 28,
       "bookId": 4,
-      "name": "Essence de Destruction",
+      "name": "Essence of Destruction",
       "level": 70,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Le sorcier altère la matière d'un objet, la transformant en une forme de pure énergie destructrice, capable de dévorer tout ce qui entre en contact avec elle. Tant que l'objet ciblé se trouve dans cet état, il ne peut être blessé que par les attaques pouvant affecter le surnaturel. Tout ce qui entre en contact avec lui doit réussir un test de RMys contre le double de sa Présence, sous peine de perdre une quantité de PV équivalant à la marge d'échec.",
+      "type": "Effect",
+      "effect": "The caster alters the material of a body, transforming it to a form of purely destructive energy capable of devouring everything it comes in contact with. While in this state, the body can only be damaged by attacks capable of affecting supernatural targets, and anyone coming in contact with him must beat a MR Check, or lose as many Life Points as the Failure Level. No Maximum Presence. MR is equal to double target’s Presence. Effect of failure is determined by the Spell Casting Level.",
       "initialGrade": {
         "zeon": 150,
         "requiredIntelligence": 9,
-        "effect": "Dégâts égaux à la marge d’échec",
+        "effect": " Damage equal to failure level.",
         "retention": 15
       },
       "intermediateGrade": {
         "zeon": 200,
         "requiredIntelligence": 12,
-        "effect": "Comme Initial, plus un malus à toutes les équivalent à la marge d’échec",
+        "effect": " Damage and all action penalty equal to failure level.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 250,
         "requiredIntelligence": 14,
-        "effect": "Dégâts égaux au double de la marge d’échec, et malus égal à la marge d’échec",
+        "effect": " Damage equal to double failure level and all action penalty equal to failure level.",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 16,
-        "effect": "Dégâts et malus égaux au double de la marge d’échec",
+        "effect": " Damage and all action penalty equal to double failure level.",
         "retention": 30
       },
       "withRetention": true,
@@ -997,68 +997,68 @@
     {
       "spellId": 29,
       "bookId": 4,
-      "name": "Mort",
+      "name": "Death",
       "level": 72,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Le sorcier a la capacité de provoquer la mort d'un être vivant, en séparant son âme de son corps. Le pouvoir de ce sort est si puissant qu'il peut même tuer des êtres Animiques ou des créatures nécromantiques, en les transformant en simples âmes défuntes ou en les détruisant complètement. Pour résister aux effets de ce sort terrifiant, il faut réussir un test de RMys ou RPhy.",
+      "type": "Spiritual",
+      "effect": "The caster is capable of producing the death of a living being by separating his soul from his body. The power of this spell is so great that it can kill even spiritual beings or necromantic creatures, converting them to simple dead souls or even destroying them completely. To resist the effects of this terrible spell, it is necessary to beat an MR or PhR check.",
       "initialGrade": {
         "zeon": 200,
         "requiredIntelligence": 10,
-        "effect": "RMys ou RPhy 120",
+        "effect": " MR or PhR 120",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 250,
         "requiredIntelligence": 12,
-        "effect": "RMys ou RPhy 140",
+        "effect": " MR or PhR 140",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 300,
         "requiredIntelligence": 14,
-        "effect": "RMys ou RPhy 160",
+        "effect": " MR or PhR 160",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 350,
         "requiredIntelligence": 16,
-        "effect": "RMys ou RPhy 180",
+        "effect": " MR or PhR 180",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 30,
       "bookId": 4,
-      "name": "Zone Dévorante",
+      "name": "Devouring Zone",
       "level": 76,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "La Zone Dévorante s'étend en arrachant l'essence de tout ce qu'elle rencontre sur son chemin et en la consumant lentement, comme un vide mortel. Progressivement, les choses que ce sort atteint s'affaiblissent jusqu'à se décomposer, que ce soient des objets matériels ou des êtres vivants. Pour chaque journée à l'intérieur de la zone, il faut réussir un test de RMys ou RPhy, sous peine de perdre temporairement 5 points de Présence. Si la Présence est réduite à 0, la chose ou l'être se décompose, ne laissant quasiment rien derrière lui. En ce qui concerne les êtres vivants, ils subissent en plus un malus à toutes les actions, équivalant à deux fois les points de Présence perdus. Les dégâts spirituels sont récupérés au rythme de cinq points par jour, dès que l'objet ou l'être se trouve à l'extérieur de la zone. Elle fait effet sur une zone de rayon déterminé par le rang du sort et reste fixée à l'endroit où ce dernier a été lancé.",
+      "type": "Automatic",
+      "effect": "Like a deadly vortex, the Devouring Zone spreads, shredding the essence of everything it finds in its path by slowly consuming it. Little by little, the things this spell reaches weaken until they are unmade, whether they are material objects or living beings. Every day the victims (either people or things) remain within its area, they must beat a MR or PhR, or temporarily have their Base Presence reduced by five points. If their Presence falls to zero, they decompose leaving little trace. Living beings also receive an additional All Action Penalty equivalent to twice the Presence Points lost. The spiritual damage is recouped at a rate of five points per day once the person leaves the area of the spell. Devouring Zone affects an area and remains stationary where it is cast.",
       "initialGrade": {
         "zeon": 250,
         "requiredIntelligence": 9,
-        "effect": "RMys ou RPhy 140 / 500 m de rayon",
+        "effect": " MR or PhR 140 / 500m/546yd area.",
         "retention": 25
       },
       "intermediateGrade": {
         "zeon": 360,
         "requiredIntelligence": 12,
-        "effect": "RMys ou RPhy 195 / 6 000 m de rayon",
+        "effect": " MR or PhR 195 / 6km/3.7mile area.",
         "retention": 40
       },
       "advancedGrade": {
         "zeon": 450,
         "requiredIntelligence": 15,
-        "effect": "RMys ou RPhy 240 / 10 500 m de rayon",
+        "effect": " MR or PhR 240 / 10.5km/6.5mile area.",
         "retention": 45
       },
       "arcaneGrade": {
         "zeon": 600,
         "requiredIntelligence": 17,
-        "effect": "RMys ou RPhy 270 / 13 500 m de rayon",
+        "effect": " MR or PhR 270 / 13.5km/8.3mile area.",
         "retention": 55
       },
       "withRetention": true,
@@ -1067,173 +1067,173 @@
     {
       "spellId": 31,
       "bookId": 4,
-      "name": "Détruire les Capacités",
+      "name": "Destroy Capabilities",
       "level": 78,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Ce sort détruit une part des compétences ou des pouvoirs d'un individu, pour toujours. Le sorcier peut librement réduire les PF du personnage affecté et choisir de quelles compétences ou capacité lui soutirer. Il pourrait par exemple réduire de 30 PF la compétence Attaque et des 20 PF restants une compétence secondaire. Il est aussi possible d'utiliser ce sort pour détruire les capacités surnaturelles des créatures mystiques, en prenant comme référence la valeur en PF indiquée dans le Chapitre 26. Détruire les Capacités permet aussi de faire disparaître les avantages choisis avec les Points de Création, au prix de 100 PF par point. Il faut réussir un test de RMys pour éviter ces effets.",
+      "type": "Spiritual",
+      "effect": "This spell destroys part of the abilities or powers of an individual, stripping him of them forever. The caster freely removes DP from the affected person, choosing the capacities or fields affected. He could, for instance, cut the persons Attack Ability by 30 DP and take the remaining DP from a Secondary Ability he chooses. It is also possible to destroy the Supernatural Powers of mystical creatures with this spell, using the value in DP listed in Chapter 26 for reference. Destroy Capabilities also permits one to strip advantages chosen with Creation Points, at a cost of 100 DP per CP. The MR Difficulty to avoid the effects is based on the spell level.",
       "initialGrade": {
         "zeon": 150,
         "requiredIntelligence": 8,
-        "effect": "-50 PF / RMys 120",
+        "effect": " MR 120 / -50DP.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 250,
         "requiredIntelligence": 10,
-        "effect": "-100 PF / RMys 160",
+        "effect": " MR 160 / -100DP.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 350,
         "requiredIntelligence": 12,
-        "effect": "-150 PF / RMys 200",
+        "effect": " MR 200 / -150DP.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 500,
         "requiredIntelligence": 15,
-        "effect": "-200 PF / RMys 240",
+        "effect": " MR 240 / -200DP.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 32,
       "bookId": 4,
-      "name": "Couper de l'Existence",
+      "name": "Sever Existence",
       "level": 80,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Le sorcier s'avère capable de couper la réalité, comme s'il maniait une lame de vide annihilant tout ce qui se trouve sur son chemin. Il peut de cette façon détruire physiquement et spirituellement toute chose et tout être entrant en contact avec le sort sans qu'ils ne laissent aucune trace de leur existence. Le sort permet de couper une ligne dont la longueur est fixée par le rang du sort ou de concentrer toute sa puissance sur un seul point, détruisant complètement tout ce qu'il touche et qui ne parvient pas à réussir le test de Résistance requis. Bien qu'il s'agisse d'un sort animique, la coupure de la réalité est parfaitement visible, même pour ceux qui ne peuvent pas voir la magie. Les choses ou individus coupés de l'existence par ce sortilège sont complètement détruits et ne retournent pas au flux des âmes. Le test de RMys pour résister à ces effets se fait contre la difficulté indiquée par le rang du sort",
+      "type": "Spiritual",
+      "effect": "As though wielding a knife of nothingness, the caster can cut through reality itself, annihilating anything in his path. Anything that comes in contact with the spell is destroyed physically and spiritually, leaving no sign that it ever existed. The spell permits either cutting a line or focusing all its power in a single point, destroying everything it touches completely unless the required Resistance Check is successful. In spite of being a Spiritual spell, the cut in reality is perfectly visible even to those incapable of seeing magic. The objects or individuals cut off by Sever Existence are destroyed completely, and do not return to the Flow of Souls. The MR Difficulty to resist the effects of the spell is based on spell level, but if focused on a single point is increased by +20.",
       "initialGrade": {
         "zeon": 350,
         "requiredIntelligence": 12,
-        "effect": "RMys 120 / 10 m de longueur",
+        "effect": " MR 120 / 10m/11yd line.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 500,
         "requiredIntelligence": 14,
-        "effect": "RMys 160 / 100 m de longueur",
+        "effect": " MR 160 / 100m/109yd line.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 600,
         "requiredIntelligence": 16,
-        "effect": "RMys 200 / 250 m de longueur",
+        "effect": " MR 200 / 250m/273yd line.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 800,
         "requiredIntelligence": 18,
-        "effect": "RMys 240 / 1 km de longueur",
+        "effect": " MR 240 / 1km/1093yd line.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 33,
       "bookId": 4,
-      "name": "Pluie de Destruction",
+      "name": "Rain of Destruction",
       "level": 82,
       "actionType": "Active",
-      "type": "Attaque",
-      "effect": "Déchaîne une tempête de décharges sélectives qui détruisent uniquement les cibles désignées par le sorcier, sur une zone de rayon déterminée par le rang du sort. Les Dégâts de ce sort sont fixés par le rang du sort et l'attaque se fait sur le Mode Énergie. De plus, si une décharge touche une cible et inflige des dégâts, celle-ci doit réussir un test de RMys sous peine de perdre autant de points de vie que sa marge d'échec.",
+      "type": "Attack",
+      "effect": "This spell unleashes a storm of selective blasts that destroy only the targets designated by the caster within a radius. It attacks on the Energy AT. Additionally, if it impacts a target and causes damage to him, the victim must beat a MR Check, or he loses a quantity of Life Points equal to the Margin of Failure.",
       "initialGrade": {
         "zeon": 250,
         "requiredIntelligence": 10,
-        "effect": "Dégâts 200 / RMys 140 / 50 m de rayon",
+        "effect": " Damage 200 / MR140 / 50m area.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 350,
         "requiredIntelligence": 13,
-        "effect": "Dégâts 250 / RMys 180 / 150 m de rayon",
+        "effect": " Damage 250 / MR180 / 150m area.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 450,
         "requiredIntelligence": 15,
-        "effect": "Dégâts 300 / RMys 220 / 500 m de rayon",
+        "effect": " Damage 300 / MR220 / 500m area.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 600,
         "requiredIntelligence": 17,
-        "effect": "Dégâts 400 / RMys 260 / 1 km de rayon",
+        "effect": " Damage 400 / MR260 / 1km area.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 34,
       "bookId": 4,
-      "name": "Destruction de Zone",
+      "name": "Destruction of Zeon",
       "level": 86,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Ce sort, qui affecte directement l'essence même de la magie, peut dissiper le pouvoir d'un autre sortilège actif, en diminuant automatiquement sa valeur Zéonique. Si le sort réduit descend au-dessous de son coût de base, il disparaît.",
+      "type": "Effect",
+      "effect": "By directly affecting the essence of magic, this spell is capable of dissipating the power of another active spell, automatically diminishing its Zeon value. If the diminished spell is thereby reduced below its base cost, it disappears.",
       "initialGrade": {
         "zeon": 200,
         "requiredIntelligence": 10,
-        "effect": "-50 à la valeur Zéonique / N’affecte que les sorts de rang Initial",
+        "effect": " -50 Zeon Points / Only affects Base Level Spells.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 400,
         "requiredIntelligence": 12,
-        "effect": "-150 à la valeur Zéonique / N’affecte que les sorts de rang Intermédiaire",
+        "effect": " -150 Zeon Points / Affects up to Intermediate Level Spells.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 600,
         "requiredIntelligence": 14,
-        "effect": "-250 à la valeur Zéonique / N’affecte que les sorts de rang Avancée",
+        "effect": " -250 Zeon Points / Affects up to Advanced Level Spells.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 700,
         "requiredIntelligence": 16,
-        "effect": "-350 à la valeur Zéonique / N’affecte que les sorts de rang Arcane",
+        "effect": " -350 Zeon Points / Affects up to Arcane Level Spells.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 35,
       "bookId": 4,
-      "name": "Rejeter des Cieux",
+      "name": "Sweep from the Heavens",
       "level": 88,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Ce sort soutire la présence divine d'un être, le dépossède de sa propre essence, et le transforme temporairement en être terrestre. En termes de jeu, la créature affectée par le sort réduit la valeur de sa Gnose. Cette réduction affecte les pouvoirs et les capacités de l'être qui dépendent de la Gnose, et il ne pourra pas les utiliser durant tout ce temps. Pour éviter ce sort, il faut réussir un test de RMys. Il n'est pas possible de refaire ce test de Résistance tant que ce sort fait effet.",
+      "type": "Spiritual",
+      "effect": "By stealing away its very essence, this spell takes away the divine presence of an entity, temporarily transforming it into an earthly creature. In terms of the rules of the game, the creature affected by the spell has its Gnosis value reduced. That reduction affects the powers or abilities of the entity that depend on Gnosis, and so it cannot use them while in the reduced state.Resisting the spell requires beating a MR Check. It is not possible to repeat the Resistance Check while it remains active.",
       "initialGrade": {
         "zeon": 300,
         "requiredIntelligence": 12,
-        "effect": "-5 de Gnose / RMys 120",
+        "effect": " MR 120 / -5 Gnosis.",
         "retention": 15
       },
       "intermediateGrade": {
         "zeon": 600,
         "requiredIntelligence": 14,
-        "effect": "-10 de Gnose / RMys 160",
+        "effect": " MR 160 / -10 Gnosis.",
         "retention": 30
       },
       "advancedGrade": {
         "zeon": 1000,
         "requiredIntelligence": 16,
-        "effect": "-15 de Gnose / RMys 200",
+        "effect": " MR 200 / -15 Gnosis.",
         "retention": 50
       },
       "arcaneGrade": {
         "zeon": 2000,
         "requiredIntelligence": 18,
-        "effect": "-20 de Gnose / RMys 260",
+        "effect": " MR 260 / -20 Gnosis.",
         "retention": 100
       },
       "withRetention": true,
@@ -1242,33 +1242,33 @@
     {
       "spellId": 36,
       "bookId": 4,
-      "name": "Vide",
+      "name": "Void",
       "level": 90,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Ce sort crée une sphère de vide absolu qui, comme un trou noir, absorbe en elle toute la matière physique et spirituelle qui se trouve autour d'elle la décomposant totalement. Cette sphère a une taille maximale dont le rayon dépend du rang du sort et doit être placée dans un espace ouvert fixée en ce lieu jusqu'au moment où elle disparaîtra. Une fois créée, elle commence à absorber tout ce qui se trouve en deçà d’une distance fixée par le rang du sort. La puissance d'attraction du sort équivaut à une Force de 14 et tout ce qui échoue à un test opposé de Force est attiré à l'intérieur à une vitesse de 10 mètres par point de marge d'échec. Le vide se révèle si puissant que tout ce qui entre en contact avec la sphère s'affaiblit jusqu'à disparaître. Une chose ou un être doit réussir deux tests de Résistance distincts par round passé à l'intérieur de la sphère tous deux contre la même difficulté : un de RMys sous peine de perdre autant de points de Zéon que la marge d'échec, et un autre de RPhy sous peine de perdre autant de PV que la marge d'échec. Quand un personnage se retrouve privé de Zéon, il commence à perdre un point permanent de sa caractéristique de Pouvoir pour chaque 100 points de Zéon qu'il devrait perdre. Si sa caractéristique est réduite à 0 ou qu'il meurt à la suite de la perte des points de vie, tout son être sera englouti par le vide.\nBien que le sorcier ne soit pas soumis à la force de succion de la sphère. Il subit les effets du vide s'il entre en contact avec son noyau.",
+      "type": "Effect",
+      "effect": "This spell forms a sphere of absolute void that absorbs into itself all physical and spiritual matter around it, unmaking them completely. The dome has a radius and must be located in an open space. Once cast, it remains fixed in that location until the spell ends. Once created, it begins to suck in anything within its vortex radius. The power of attraction of the spell employs an equivalent Strength of 14, and anyone failing in an Opposed Check of characteristics will be drawn toward it at a rate of 30 feet for every point of difference. The void is so powerful that anything coming into contact with the sphere weakens until it disappears. Each combat turn a victim remain within the dome, he must beat two distinct Resistance Checks; one is a MR Check which if failed causes him to lose a number of Zeon equivalent to the margin of failure, and the other is a PhR Check, which if failed causes him to lose as many points of Life Points as the Margin of Failure. When a victim has lost all Zeon, he begins to permanently lose one point of Power for every 100 points of Zeon he would continue to lose. If his Power falls to zero, or he dies from loss of Life Points, his being is totally swallowed by the nothingness. Although the caster is not drawn by the attractive power of the dome, he will suffer the effects of the Void if he comes in contact with its nucleus.",
       "initialGrade": {
         "zeon": 250,
         "requiredIntelligence": 12,
-        "effect": "5 m de rayon / 50 m de distance / RMys & RPhy 120",
+        "effect": " MR and PhR 120 / 5m/5yd area / 50m/54yd vortex area.",
         "retention": 25
       },
       "intermediateGrade": {
         "zeon": 350,
         "requiredIntelligence": 14,
-        "effect": "15 m de rayon / 500 m de distance / RMys & RPhy 160",
+        "effect": " MR and PhR 160 / 15m/16yd area / 500m/546yd vortex area.",
         "retention": 40
       },
       "advancedGrade": {
         "zeon": 500,
         "requiredIntelligence": 16,
-        "effect": "25 m de rayon / 1 km de distance / RMys & RPhy 200",
+        "effect": " MR and PhR 200 / 25m/27yd area / 1km/1093yd vortex area.",
         "retention": 45
       },
       "arcaneGrade": {
         "zeon": 800,
         "requiredIntelligence": 18,
-        "effect": "50 m de rayon / 3 km de distance / RMys & RPhy 240",
+        "effect": " MR and PhR 240 / 50m/54yd area / 3km/1.8mile vortex area.",
         "retention": 55
       },
       "withRetention": true,
@@ -1277,72 +1277,72 @@
     {
       "spellId": 37,
       "bookId": 4,
-      "name": "Destruction Majeure",
+      "name": "Greater Destruction",
       "level": 92,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Permet de détruire une partie du monde matériel à grande échelle, en désintégrant même les structures importantes, comme des cités entières ou de vastes régions. Elle peut affecter n'importe quel nombre de choses inorganiques, tant que la somme de leurs Présences ne dépasse pas une valeur fixée par le sort.",
+      "type": "Effect",
+      "effect": "Provides the ability to destroy part of the material world on a grand scale, disintegrating even large constructions such as entire cities or vast areas of land. This spell can affect as many inorganic objects as desired as long as the sum of their Presence is no higher than the limit set by spell level.",
       "initialGrade": {
         "zeon": 350,
         "requiredIntelligence": 12,
-        "effect": "Présence maximale 100",
+        "effect": " Max Presence 100.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 600,
         "requiredIntelligence": 14,
-        "effect": "Présence maximale 160",
+        "effect": " Max Presence 160.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 900,
         "requiredIntelligence": 16,
-        "effect": "Présence maximale 200",
+        "effect": " Max Presence 200.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 1500,
         "requiredIntelligence": 18,
-        "effect": "Présence maximale 240",
+        "effect": " Max Presence 240.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 38,
       "bookId": 4,
-      "name": "Détruire les Âmes",
+      "name": "Destroy Souls",
       "level": 96,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Le pouvoir que déchaîne la destruction des âmes annihile la matière spirituelle qui se trouve autour du sorcier, en mettant fin à l'existence de tout ce qui ne peut en surmonter les effets. Tout individu se trouvant dans un rayon déterminé par le rang du sort autour du point où se déchaîne ce dernier doit automatiquement réussir un test de RMys, sous peine que son âme se décompose totalement et qu'il ne meure immédiatement.",
+      "type": "Automatic",
+      "effect": "The power unleashed by the destruction of souls sweeps away the spiritual matter around the caster, ending the existence of anyone who does not resist its effects. Any individual within the area from  where the spell is unleashed by the caster must make a MR Check or have his soul completely disintegrated, causing immediate death.",
       "initialGrade": {
         "zeon": 500,
         "requiredIntelligence": 13,
-        "effect": "RMys 100 / 5 km de rayon",
+        "effect": " MR 100 / 5km/3.1 mile area.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 800,
         "requiredIntelligence": 15,
-        "effect": "RMys 140 / 50 km de rayon",
+        "effect": " MR 140 / 50km/31mile area.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 1500,
         "requiredIntelligence": 17,
-        "effect": "RMys 180 / 250 km de rayon",
+        "effect": " MR 180 / 250km/155.3mile area.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 2500,
         "requiredIntelligence": 19,
-        "effect": "RMys 220 / 1 000 km de rayon",
+        "effect": " MR 220 / 1000km/621.3mile area.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 39,
@@ -1350,30 +1350,30 @@
       "name": "Chaos",
       "level": 98,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Il s'agit d'un sort de puissance quasi insurmontable puisqu'il peut ébranler les piliers même de la réalité. Quand il le déchaîne, le sorcier désagrège lentement l'ordre du monde, altère l'équilibre de toute chose d'une façon complètement imprévue. A l’intérieur d'une zone de chaos, rien ne fonctionne comme il faudrait et tous les évènements se déroulent de façon incohérente et non naturelle. Voici quelques exemples: le chaos pourrait affecter la gravité, rendant les choses légères comme une plume à certains moments, et lourdes comme le plomb à d'autres. Le chaos pourrait aussi provoquer des bourrasques gelées à quelques mètres de rafales et vagues de chaleur étouffante. Mais ce sort n'attaque pas seulement les éléments naturels, car il influence aussi les sentiments et les réactions des personnes : des couples se haïssent jusqu'à la mort, des ennemis irréconciliables décident de faire la paix. Il peut même affecter le passage du temps, qui fluctue plus ou moins vite (même si cela ne permet de retourner dans le passé). En fait, le Chaos peut affecter quasiment n'importe quel aspect de la réalité.\nLe sorcier peut décider quel aspect précis de l'existence il souhaite altérer ou, au contraire la transformer en entier. Ce sort ne lui accorde aucun contrôle sur ce qui a été changé et donc le résultat et le devenir des événements devient, comme le nom l'indique complètement chaotique.\nLa zone de Chaos dépend du rang du sort, et reste fixé au lieu où ce dernier a été lancé. Il influe donc automatiquement sur tous les individus de Gnose inférieure ou égale à une valeur déterminée par le rang du sort.",
+      "type": "Automatic",
+      "effect": "Chaos is a spell of almost insuperable power, since it is capable of shaking the very pillars of reality. Upon being unleashed, the caster causes the order of things to crumble, altering the balance of all things in a completely unexpected way. Inside the zone of Chaos, nothing works as it should, and all events are unnaturally twisted. For example, chaos can affect gravity, making some things as light as feathers and others as heavy as lead. It can affect the weather, causing icy winds only yards from tropical gales or heat waves. This spell does not affect only the natural elements, though. It can influence the feelings and instincts of living beings, making lovers hate each other with a passion, or irreconcilable enemies form bonds of peace. The spell can even affect the passage of time, making it flow more quickly or slowly (it cannot be used to travel to the past, however). That is to say, Chaos is capable of affecting practically any imaginable facet of reality. The caster can designate a specific aspect of reality he wishes to alter, or on the other hand, transform it completely. In either case, this spell does not give the caster direct control over what is changing, so the results and consequences of events can be, as the name of the spell implies, completely chaotic.Chaos covers a maximum radius determined by the spell level, and is static in the place it was cast. It automatically affects anyone with a Gnosis less that the level indicated .",
       "initialGrade": {
         "zeon": 700,
         "requiredIntelligence": 14,
-        "effect": "100 km de rayon / affecte une gnose max de 10",
+        "effect": " 100km/62.1mile area / Affects beings up to Gnosis 10.",
         "retention": 70
       },
       "intermediateGrade": {
         "zeon": 1200,
         "requiredIntelligence": 16,
-        "effect": "1 000 km de rayon / affecte une gnose max de 20",
+        "effect": " 1000km/621.3mile area / Affects beings up to Gnosis 20.",
         "retention": 80
       },
       "advancedGrade": {
         "zeon": 2000,
         "requiredIntelligence": 18,
-        "effect": "10 000 km de rayon / affecte une gnose max de 30",
+        "effect": " 10000km/6213.7mile area / Affects beings up to Gnosis 30.",
         "retention": 90
       },
       "arcaneGrade": {
         "zeon": 5000,
         "requiredIntelligence": 20,
-        "effect": "affecte toute la création / affecte une gnose max de 40",
+        "effect": " Affects all creation / Affects beings up to Gnosis 40.",
         "retention": 100
       },
       "withRetention": true,
@@ -1382,37 +1382,37 @@
     {
       "spellId": 40,
       "bookId": 4,
-      "name": "Désintégrer",
+      "name": "Uncreation",
       "level": 100,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Ce sort permet au sorcier de choisir un aspect de l'existence, aussi complexe qu'une cité ou une race, ou aussi simple qu'un individu, et de le faire purement et simplement disparaître. L'élément désintégré est effacé de la réalité avec toutes les conséquences que cela implique, afin qu'il n'ait jamais existé. Aucune personne qui le connaissait ne se souviendra de lui",
+      "type": "Automatic",
+      "effect": "This spell permits the caster to designate an aspect of existence, one as far-reaching as a city or race, or as precise as a single specific individual, and simply make it so it ceases to exist. The unmade item or person is erased from reality with all the consequences that implies, so that it never did exist. No one who knew of what was unmade remembers it, and all events it may have affected are modified as though what was unmade had no part in it; even returning to life those whose death the unmade might have caused (as long as their souls were not destroyed). It is only possible to make one MR Check to avoid the effects of this spell, even if it affects a multitude of persons or objects. The MR Check is made using the highest resistance that anyone or anyone to be affected by Uncreation has at that exact moment. It is not possible to unmake elements of the past, only things that are currently present. Not only beings with Gnosis 40, but also those with Natura 20+ will remember the “uncreated thing”.",
       "initialGrade": {
         "zeon": 1000,
         "requiredIntelligence": 17,
-        "effect": "RMys 140",
+        "effect": " MR 140.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 2500,
         "requiredIntelligence": 18,
-        "effect": "RMys 160",
+        "effect": " MR 160.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 5000,
         "requiredIntelligence": 19,
-        "effect": "RMys 200",
+        "effect": " MR 200.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 10000,
         "requiredIntelligence": 20,
-        "effect": "RMys 240",
+        "effect": " MR 240.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     }
   ]
 }

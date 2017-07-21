@@ -70,6 +70,7 @@ public class SpellsLoader extends BaseLoader<List<Spell>> {
                         for (Spell freeAccessSpell : freeAccessSpells) {
                             if (freeAccessSpell.spellId == spellId) {
                                 freeAccessSpell.level = spellPosition;
+                                freeAccessSpell.freeAccessAssociatedType = pathSpells.get(0).spellbookType;
                                 pathSpells.add(freeAccessSpell);
                                 break;
                             }
@@ -121,7 +122,7 @@ public class SpellsLoader extends BaseLoader<List<Spell>> {
                 if (!filter.matchFilter(spell)) {
                     return false;
                 }
-                filter.updateSpellWithFIlter(spell);
+                filter.updateSpellWithFilter(spell);
             }
         }
         return true;

@@ -24,6 +24,7 @@ public class Spell implements Comparable<Spell>, Parcelable {
     public boolean dailyRetention;
 
     public SpellbookType spellbookType;
+    public SpellbookType freeAccessAssociatedType;
     public String searchWord;
     public boolean searchInDescription;
     public boolean highlightActionType;

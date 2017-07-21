@@ -1,46 +1,46 @@
 {
   "bookId": 5,
-  "bookName": "Livre du Feu",
-  "description": "La première des quatre voies élémentaires mineures contrôle les hautes températures. Ses sorts se basent sur la chaleur, le feu et peuvent englober de vastes superficies. Elle accueille aussi les sorts de sacrifice, permettant de consumer certains aspects d’un individu pour en améliorer d’autres. C’est une voie très offensive.",
-  "type": "Mineure",
+  "bookName": "Path of Fire",
+  "description": "The first of the four Lower Elemental Paths rules over high temperatures. These spells generate heat and fire and they devastate large areas of land. It also contains enchantments that consume certain sides of an Individual to bring up others in turn. It is a very offensive Path.",
+  "type": "Minor",
   "oppositeBook": "Eau",
   "secondaryBookAccessibles": [
-    "Guerre",
-    "Mort",
-    "Pêché",
-    "Seuil."
+    "War",
+    "Death",
+    "Sin",
+    "Threshold"
   ],
   "spells": [
     {
       "spellId": 1,
       "bookId": 5,
-      "name": "Créer Feu",
+      "name": "Create Fire",
       "level": 2,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Crée une intensité de feu. Tant que ce sort est maintenu, la flamme continue à brûler même si elle n'a rien à consumer. Si elle est placée sur un support inflammable, elle continue à brûler normalement après la fin du sort.",
+      "type": "Effect",
+      "effect": "This spell creates fire intensities. The flame is magical and does not require any fuel. If placed upon flammable material, the material will continue burn naturally even after the spell has ended.",
       "initialGrade": {
         "zeon": 30,
         "requiredIntelligence": 5,
-        "effect": "1 intensité de feu",
+        "effect": " 1 Intensity.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 80,
         "requiredIntelligence": 8,
-        "effect": "6 intensités de feu",
+        "effect": " 5 Intensities.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 100,
         "requiredIntelligence": 10,
-        "effect": "8 intensités de feu",
+        "effect": " 8 Intensities.",
         "retention": 10
       },
       "arcaneGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "10 intensités de feu",
+        "effect": " 10 Intensities.",
         "retention": 15
       },
       "withRetention": true,
@@ -49,68 +49,68 @@
     {
       "spellId": 2,
       "bookId": 5,
-      "name": "Réduire le Feu",
+      "name": "Put Out Fire",
       "level": 6,
       "actionType": "Active",
-      "type": "Effet, Animique",
-      "effect": "Diminue le feu ou la chaleur d'une intensité. Il faut prendre en compte que certaines sources de feu, comme les volcans ou les grands incendies, se reproduisent automatiquement si elles ne sont pas totalement éteintes. Quand ce sort est lancé sur un être de feu, il subit 5 points de dégâts effectifs par intensité réduite s'il ne réussit pas un test de RMys. Les créatures à Encaissement subissent 25 points de dégâts par intensité.",
+      "type": "Effect, Spiritual",
+      "effect": "This spell reduces heat or fire intensities. Bear in mind that some sources of fire, such as volcanoes, reproduce themselves automatically when not completely extinguished. When cast upon a fire-based being, the creature suffers 5 points of damage for every level of diminished intensity – provided he fails am MR Check. Accumulation creatures get 25 damage points for each intensity.",
       "initialGrade": {
         "zeon": 30,
         "requiredIntelligence": 5,
-        "effect": "-1 intensité de feu / RMys 100",
+        "effect": " -1 Intensity / MR100.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 80,
         "requiredIntelligence": 8,
-        "effect": "-5 intensité de feu / RMys 120",
+        "effect": " -5 Intensity / MR120.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 10,
-        "effect": "-10 intensité de feu / RMys 140",
+        "effect": " -10 Intensity / MR140.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 200,
         "requiredIntelligence": 13,
-        "effect": "-15 intensité de feu / RMys 180",
+        "effect": " -15 Intensity / MR180.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 3,
       "bookId": 5,
-      "name": "Immunité contre le Feu",
+      "name": "Fire Immunity",
       "level": 10,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Ce sort permet au sorcier, ou à la personne qu'il désigne, d'être immunisé à plusieurs intensités de chaleur. S'il subit une attaque basée sur ces éléments, chaque intensité à laquelle il est immunisé réduit de 5 points les Dégâts de l'attaque et lui accorde un bonus de +5 aux Résistances contre ces effets.",
+      "type": "Effect",
+      "effect": "This spell grants the spellcaster, or whoever he designates, immunity to levels of heat intensity. When attacked from such an element, the Base Damage is reduced by 5 points for every level of intensity to which the character is immune. In addition, the immune character receives a +5 bonus to Resistances against fire for each level of intensity.",
       "initialGrade": {
         "zeon": 50,
         "requiredIntelligence": 6,
-        "effect": "5 intensités de chaleur",
+        "effect": " 5 Intensities.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 140,
         "requiredIntelligence": 8,
-        "effect": "12 intensités de chaleur",
+        "effect": " 12 Intensities.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 200,
         "requiredIntelligence": 10,
-        "effect": "20 intensités de chaleur",
+        "effect": " 20 Intensities.",
         "retention": 10
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 13,
-        "effect": "30 intensités de chaleur",
+        "effect": " 30 Intensities.",
         "retention": 15
       },
       "withRetention": true,
@@ -119,33 +119,33 @@
     {
       "spellId": 4,
       "bookId": 5,
-      "name": "Sentir la Chaleur",
+      "name": "Detect Heat",
       "level": 12,
       "actionType": "Active",
-      "type": "Détection",
-      "effect": "Détecte la localisation de n'importe quelle source de chaleur dans un rayon déterminé par le rang du sort. Ce sort ne donne aucune information sur la nature de ces sources, mais permet de sentir les intensités et les tailles. Il est même possible de percevoir la chaleur que diffuse un corps humain, mais pas celle d'êtres inanimés ou immatériels, comme les golems ou les morts vivants. Si une chose ou un individu désire éviter la détection, elle doit réussir un test de RMys.",
+      "type": "Detection",
+      "effect": "This spell enables the caster to locate any source of heat in a radius. The caster can feel intensity, level and size of the heat, and can even perceive heat coming from warm-blooded creatures, but not from inanimate or immaterial beings – such as golems or undead. Living creatures can resist this spell by passing a MR Check.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 6,
-        "effect": "25 m de rayon / RMys 120",
+        "effect": " 25m/27yd  area / MR 120.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 100,
         "requiredIntelligence": 9,
-        "effect": "50 m de rayon / RMys 150",
+        "effect": " 50m/54yd area / MR 150.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 140,
         "requiredIntelligence": 12,
-        "effect": "100 m de rayon / RMys 180",
+        "effect": " 100m/109yd area / MR 180.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 200,
         "requiredIntelligence": 15,
-        "effect": "250 m de rayon / RMys 220",
+        "effect": " 250m/273yd area / MR 220.",
         "retention": 15
       },
       "withRetention": true,
@@ -154,103 +154,103 @@
     {
       "spellId": 5,
       "bookId": 5,
-      "name": "Boule de Feu",
+      "name": "Fire Ball",
       "level": 16,
       "actionType": "Active",
-      "type": "Attaque",
-      "effect": "Ce sort projette une attaque ignée explosant sur une zone dont le rayon dépend du rang du sort. Il n'est pas possible de sélectionner de cibles dans la zone d'explosion. Cette attaque s'effectue sur le Mode Chaleur.",
+      "type": "Attack",
+      "effect": "This spell projects a fire attack which explodes in a radius. The caster can not select targets within the explosion area. The attack qualifies as a Heat Attack Type.",
       "initialGrade": {
         "zeon": 50,
         "requiredIntelligence": 6,
-        "effect": "Dégâts de base 50 / zone de 5 m de rayon",
+        "effect": " 50 Damage / 5m/5yd area.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 100,
         "requiredIntelligence": 9,
-        "effect": "Dégâts de base 100 / zone de 25 m de rayon",
+        "effect": " 100 Damage / 25m/27yd area.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 160,
         "requiredIntelligence": 12,
-        "effect": "Dégâts de base 140 / zone de 80 m de rayon",
+        "effect": " 140 Damage / 80m/87yd area.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 250,
         "requiredIntelligence": 15,
-        "effect": "Dégâts de base 160 / zone de 150 m de rayon",
+        "effect": " 160 Damage / 150m/164yd area.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 6,
       "bookId": 5,
-      "name": "Contrôle sur le Feu",
+      "name": "Control Fire",
       "level": 20,
       "actionType": "Active",
-      "type": "Effet, Animique",
-      "effect": "Permet de contrôler la forme et la croissance d'un feu qui ne dépasse pas une intensité déterminée par le rang du sort. Le sorcier peut modifier divers aspects des flammes, comme leur couleur, leur apparence ou la fumée qu'elles produisent. Si ce sort est lancé sur une créature naturellement basée sur le feu, le sorcier pourra la contrôler si la créature échoue un test de RMys.",
+      "type": "Effect, Spiritual",
+      "effect": "This spell grants the caster control of fire intensities. He can alter different aspects of the flames, such as color of flame and smoke they produce. If faced with a fire-based creature, the magician can control it if the creature fails a MR Check.",
       "initialGrade": {
         "zeon": 50,
         "requiredIntelligence": 6,
-        "effect": "RMys 100 / 5 intensités",
+        "effect": " MR 100 / 5 Intensities.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 80,
         "requiredIntelligence": 9,
-        "effect": "RMys 120 / 8 intensités",
+        "effect": " MR 120 / 8 Intensities.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "RMys 140 / 12 intensités",
+        "effect": " MR 140 / 12 Intensities.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 180,
         "requiredIntelligence": 15,
-        "effect": "RMys 180 / 15 intensités",
+        "effect": " MR 180 / 15 Intensities.",
         "retention": 20
       },
       "withRetention": true,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 7,
       "bookId": 5,
-      "name": "Barrière de Feu",
+      "name": "Fire Barrier",
       "level": 22,
       "actionType": "Active",
-      "type": "Auto., Défense",
-      "effect": "Ce sort élève un puissant mur de feu. Toute personne tentant de traverser le mur subit automatiquement une attaque avec un Résultat de 240 (Quasiment Impossible), de dégâts sur le Mode Chaleur. Recevoir des dégâts n'empêche pas un personnage de traverser ce mur. La barrière ne peut pas dépasser une hauteur et une largeur fixée par le rang du sort. De plus, le sorcier peut l'utiliser comme un bouclier magique pour bloquer uniquement les attaques basées sur l'eau, le froid ou le feu. Le mur possède des Points de Vie comme n’importe quel bouclier mystique.",
+      "type": "Automatic, Defense",
+      "effect": "This spell creates a strong wall of fire. Any character attempting to break through the wall receives an automatic attack with a Final Attack ability of 240 and Base Damage using the Heat Attack Type. Suffering damage does not prevent a creature from breaching the wall. The barrier has a maximum height and length based on spell level. In addition, the caster may use the wall as a magic shield against attacks based on water, cold, or fire.",
       "initialGrade": {
         "zeon": 50,
         "requiredIntelligence": 6,
-        "effect": "Dégâts 80 / 2 m d’extension / 300 Points de Vie",
+        "effect": " Damage 80 / 2m/2yd / 300 Resistance Points.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 90,
         "requiredIntelligence": 9,
-        "effect": "Dégâts 90 / 5 m d’extension / 500 Points de Vie",
+        "effect": " Damage 90 / 5m/5yd / 500 Resistance Points.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "Dégâts 100 / 10 m d’extension / 800 Points de Vie",
+        "effect": " Damage 100 / 10m/11yd / 800 Resistance Points / Blocks attacks based on Energy.",
         "retention": 10
       },
       "arcaneGrade": {
         "zeon": 150,
         "requiredIntelligence": 15,
-        "effect": "Dégâts 100 / 15 m d’extension / 1 500 Points de Vie",
+        "effect": " Damage 100 / 15m/16yd / 1500 Resistance Points / Final Attack 280 / Blocks all kind of attacks.",
         "retention": 15
       },
       "withRetention": true,
@@ -259,33 +259,33 @@
     {
       "spellId": 8,
       "bookId": 5,
-      "name": "Arme Ignée",
+      "name": "Igneous Weapon",
       "level": 26,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Ce sort enveloppe une arme de flammes, ce qui lui permet d'attaquer sur le Mode Chaleur comme Mode principal. Le feu est si puissant qu'il augmente les Dégâts de l'attaque, sans affecter la résistance de l'arme.",
+      "type": "Effect",
+      "effect": "This spell infuses a weapon with fire, thus upgrading its attack into a Heat Attack Type. This eldritch fire increases the weapon’s Base Damage without altering the weapon’s Fortitude.",
       "initialGrade": {
         "zeon": 50,
         "requiredIntelligence": 6,
-        "effect": "+10 aux dégâts de base",
+        "effect": " +10 Base Damage.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 80,
         "requiredIntelligence": 9,
-        "effect": "+20 aux dégâts de base",
+        "effect": " +20 Base Damage.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 100,
         "requiredIntelligence": 11,
-        "effect": "+30 aux dégâts de base",
+        "effect": " +30 Base Damage.",
         "retention": 10
       },
       "arcaneGrade": {
         "zeon": 120,
         "requiredIntelligence": 14,
-        "effect": "+40 aux dégâts de base",
+        "effect": " +40 Base Damage.",
         "retention": 15
       },
       "withRetention": true,
@@ -294,103 +294,103 @@
     {
       "spellId": 9,
       "bookId": 5,
-      "name": "Décharge de Chaleur",
+      "name": "Heat Wave",
       "level": 30,
       "actionType": "Active",
-      "type": "Attaque",
-      "effect": "Ce sort projette une décharge d'ondes à haute température, pouvant enflammer n'importe quoi. Cette attaque est effectuée sur le Mode Chaleur et les dégâts varient selon le rang du sort. Comme les ondes ne sont pas visibles pour l’œil humain, le défenseur doit pouvoir voir la magie, posséder une vision thermique ou réussir un test Absurde de Vigilance pour ne pas subir le malus de Cécité contre cette attaque.",
+      "type": "Attack",
+      "effect": "This spell projects a powerful high-temperature wave that has a Base Damage using the Heat Attack Type. Since waves are invisible to the human eye, the victim must be able to see magic, have thermal vision, or pass an Absurd level Notice Check in order to avoid a Blinded penalty against this attack.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 6,
-        "effect": "Dégâts de base 50",
+        "effect": " Damage 50.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 90,
         "requiredIntelligence": 9,
-        "effect": "Dégâts de base 70",
+        "effect": " Damage 70.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "Dégâts de base 90",
+        "effect": " Damage 90.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 150,
         "requiredIntelligence": 15,
-        "effect": "Dégâts de base 110",
+        "effect": " Damage 110.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 10,
       "bookId": 5,
-      "name": "Voir dans les Cendres",
+      "name": "Read The Ashes",
       "level": 32,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Ce sort transporte les sens du sorcier vers le passé, afin de lui permettre de voir la cause ou l'incident qui a provoqué un incendie précis. Le sorcier doit se trouver parmi les restes de l'incendie pour lancer ce sort, et il n'a pas conscience de ce qui se passe autour de lui pendant toute sa durée. Le sortilège permet de revenir dans le passé d’un laps de temps fixé par son rang.",
+      "type": "Effect",
+      "effect": "This spell transports the caster’s senses to the past, endowing him with the possibility of seeing the causes of a specific fire. The caster must be present in the remains of the fire, but is not aware of reality around him while he is performing the spell.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 6,
-        "effect": "Revient une heure plus tôt",
+        "effect": " Up to 1 day old",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 140,
         "requiredIntelligence": 10,
-        "effect": "Revient un jour plus tôt",
+        "effect": " Up to 1 week old",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 220,
         "requiredIntelligence": 13,
-        "effect": "Revient un mois plus tôt",
+        "effect": " Up to 1 month old.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 340,
         "requiredIntelligence": 15,
-        "effect": "Revient un an plus tôt",
+        "effect": " Up to 1 year old.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 11,
       "bookId": 5,
-      "name": "Augmenter la Température Ambiante",
+      "name": "Raise Weather Temperature",
       "level": 36,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Augmente la température ambiante dans un rayon fixé par le rang du sort. Si la température d'une zone précise augmente de 10 Degré s au-delà de la température naturelle, l’augmentation est réduite de moitié.",
+      "type": "Effect",
+      "effect": "This spell causes temperatures to rise in a radius.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 7,
-        "effect": "+5 Degrés / 1 km de rayon",
+        "effect": " +5°C / 1km/1093yd area.",
         "retention": 15
       },
       "intermediateGrade": {
         "zeon": 140,
         "requiredIntelligence": 10,
-        "effect": "+10 Degrés / 5 km de rayon",
+        "effect": " +10°C / 5km area.",
         "retention": 40
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "+20 Degrés / 10 km de rayon",
+        "effect": " +20°C / 10km/3.1mile area.",
         "retention": 50
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "+30 Degrés / 15 km de rayon",
+        "effect": " +30°C / 15km/9.3mile area.",
         "retention": 60
       },
       "withRetention": true,
@@ -399,33 +399,33 @@
     {
       "spellId": 12,
       "bookId": 5,
-      "name": "Mine de Feu",
+      "name": "Fire Mine",
       "level": 40,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Crée une mine de feu qui explose au moment où le veut le sorcier, dans un rayon fixé par le rang du sort. Cette attaque se fait sur le Mode Chaleur. Pour se défendre de l'explosion, il faut effectuer une défense contre un Résultat d'Attaque de 240 (Quasiment Impossible) si l'on se trouve à plus de la moitié du rayon maximal de l'explosion ou contre 280 (Impossible) à moins de la moitié du rayon maximal. À bout portant, c'est-à-dire à moins d'un mètre du centre, le Résultat d'Attaque est de 320 (difficulté Surhumaine). La mine peut être laissée à un endroit ou sur un objet précis, où elle reste fixée jusqu'à son explosion. Le sorcier peut s'activer quand il le désire, ce qui ne compte pas comme une action active. Il n'est pas possible de choisir des cibles à l'intérieur de la zone d'explosion, qui affecte toutes les choses et personnes présentes, y compris le sorcier.",
+      "type": "Effect",
+      "effect": "This spell creates an igneous mine ready to explode in a radius at the caster’s command. The attack has an 80-point Base Damage using the Heat Attack Type. The extent of the potential damage is determined by proximity. If the distance between a character and the mine is more than half the explosion area, the hapless victim must defend against an attack with a Final Attack Ability of 240, or against a Final Attack Ability of 280 if the distance is less. At a distance of less than five feet from its source, the explosion has a Final Attack Ability of 320. The caster may activate the fire mines at any time as an active action. The mines affect everything in their radius, including the caster.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 7,
-        "effect": "10 m de rayon / Dégâts 80",
+        "effect": " 10m/11yd area / Damage 80.",
         "retention": 20
       },
       "intermediateGrade": {
         "zeon": 160,
         "requiredIntelligence": 10,
-        "effect": "50 m de rayon / Dégâts 120",
+        "effect": " 50m/54yd area / Damage 120.",
         "retention": 40
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "150 m de rayon / Dégâts 180",
+        "effect": " 150m/164yd area / Damage 180.",
         "retention": 50
       },
       "arcaneGrade": {
         "zeon": 320,
         "requiredIntelligence": 15,
-        "effect": "250 m de rayon / Dégâts 240",
+        "effect": " 250m/273yd area / Damage 240.",
         "retention": 60
       },
       "withRetention": true,
@@ -434,103 +434,103 @@
     {
       "spellId": 13,
       "bookId": 5,
-      "name": "Augmenter le Critique",
+      "name": "Increase Critical",
       "level": 42,
       "actionType": "Passive",
-      "type": "Effet",
-      "effect": "Accorde un bonus au jet pour calculer le niveau de Critique provoqué par une attaque déterminée. Bien que ce sort soit passif, il doit être utilisé avant que les dés ne soient jetés.",
+      "type": "Effect",
+      "effect": "This spell adds a bonus when calculating Critical Levels for specific attacks. This spell must be cast before rolling any dice.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 6,
-        "effect": "+20 au niveau de critique",
+        "effect": " +20 Critical.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 90,
         "requiredIntelligence": 9,
-        "effect": "+40 au niveau de critique",
+        "effect": " +40 Critical.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "+60 au niveau de critique",
+        "effect": " +60 Critical.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 150,
         "requiredIntelligence": 15,
-        "effect": "+80 au niveau de critique",
+        "effect": " +80 Critical.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 14,
       "bookId": 5,
-      "name": "Déshydrater",
+      "name": "Dry",
       "level": 46,
       "actionType": "Active",
-      "type": "Effet, Animique",
-      "effect": "Ce sort détruit presque toute trace d'humidité dans un rayon déterminé par le rang du sort. Les êtres vivants dont le corps est constitué d'eau (comme les êtres humains) subissent des dégâts effectifs égaux à la moitié de la marge d'échec d'un  test de RMys ou de RPhy. Dans le cas d'un élémentaire d'eau, les dégâts sont égaux au double de la marge d'échec.",
+      "type": "Effect, Spiritual",
+      "effect": "This spell immediately dries any wet body in a radius. A mage may use this spell to harm water elementals. Such creatures much pass a MR Check or suffer damage equal to twice their Failure. Living creatures targeted by this spell must pass a PhR Check or suffer damage equal to half their Failure.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 8,
-        "effect": "5 m de rayon / RMys ou RPhy 100",
+        "effect": " MR or PhR 100 / 5m/5yd area.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 120,
         "requiredIntelligence": 10,
-        "effect": "15 m de rayon / RMys ou RPhy 120",
+        "effect": " MR or PhR 120 / 15m/16yd area.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 180,
         "requiredIntelligence": 12,
-        "effect": "25 m de rayon / RMys ou RPhy 140",
+        "effect": " MR or PhR 140 / 25m/27yd area.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 240,
         "requiredIntelligence": 14,
-        "effect": "35 m de rayon / RMys ou RPhy 160",
+        "effect": " MR or PhR 160 / 35m/38yd area.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 15,
       "bookId": 5,
-      "name": "Fondre",
+      "name": "Melt",
       "level": 50,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Ce sort chauffe n'importe quel objet inorganique que le sorcier choisit dans un rayon déterminé par son rang, ce qui lui permet d'atteindre des températures extrêmement élevées. La chaleur produite est si intense que l'objet doit réussir un test de RPhy sous peine de fondre en un nombre de rounds égal à sa Solidité. Toute personne en contact avec l'objet doit s'en écarter pour ne pas subir de dégâts. Si elle reste à son contact, elle doit effectuer un jet sur le Tableau 73 à chaque round.",
+      "type": "Spiritual",
+      "effect": "This spell heats up any inorganic object the caster desires in a radius, causing it to reach extremely high temperatures. The intensity of the heat causes any object that fails aPhR Check to melt in a number of rounds equal to its Fortitude. Anyone in contact with the object in question must get rid of it, or they will suffer injury. Injury rolls occur on Table 73.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 8,
-        "effect": "10 m de rayon / RPhy 80",
+        "effect": " PhR 80 / 10m/11yd area.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 120,
         "requiredIntelligence": 10,
-        "effect": "50 m de rayon / RPhy 100",
+        "effect": " PhR 100 / 50m/54yd area.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 180,
         "requiredIntelligence": 12,
-        "effect": "100 m de rayon / RPhy 120",
+        "effect": " PhR 120 / 100m/109yd area.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 240,
         "requiredIntelligence": 14,
-        "effect": "150 m de rayon / RPhy 140",
+        "effect": " PhR 140 / 150m/164yd area.",
         "retention": 15
       },
       "withRetention": true,
@@ -539,33 +539,33 @@
     {
       "spellId": 16,
       "bookId": 5,
-      "name": "De Corps à Feu",
+      "name": "Body of Fire",
       "level": 52,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "La créature désignée par le sorcier se transforme en flammes et devient ainsi immunisé à toutes les attaques non basées sur l'énergie, le froid ou l'eau. Toute substance pouvant éteindre le feu (sable, mousse...) inflige aussi des dégâts au personnage. Tant qu'il se trouve dans cet état, tout ce qui entre en contact avec les flammes de son corps doit réussir un test de RPhy contre le double de sa Présence, sous peine de perdre une quantité de PV égale à la moitié de la marge d'échec. Si la personne affectée possède une protection contre le feu, chaque point d'IP contre le Mode Chaleur lui accorde un bonus de +5 à son test de RPhy.",
+      "type": "Effect",
+      "effect": "This spell transforms a designated body into fire. Once transformed, a fire body becomes immune to all non-energy-, cold-, or water-based attacks. All elements used to extinguish fire (sand, foam, etc.) will injure the character. Anyone who comes into contact with the flames that make up a fire body must pass a PhR Check equal to twice the transformed character’s Presence or suffer damage equal to half the failure level. If a character has fire protection, he receives a +5 bonus for every AT point against Heat on that roll.",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 8,
-        "effect": "Les capacités décrites plus haut",
+        "effect": " As described.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 120,
         "requiredIntelligence": 11,
-        "effect": "Comme Initial, mais en plus, le personnage obtient un bonus de +30 à ses résistances sur tous les effets basés sur la chaleur",
+        "effect": " As Base, but gives +30 Resistance Bonus against Fire Effects.",
         "retention": 15
       },
       "advancedGrade": {
         "zeon": 140,
         "requiredIntelligence": 13,
-        "effect": "Comme Intermédiaire, à ceci près que le personnage peut, en plus, traverser n’importe quel endroit qui laisserait passer des flammes.",
+        "effect": " As Intermediate, but the subject can move through any crack a flame might pass through.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 160,
         "requiredIntelligence": 16,
-        "effect": "Comme Avancé, sauf que les attaques d’eau ou de froid d’origine non surnaturelles n’infligent plus aucun dégât.",
+        "effect": " As Advanced, but immune to Cold and Water attacks not of supernatural nature.",
         "retention": 20
       },
       "withRetention": true,
@@ -574,33 +574,33 @@
     {
       "spellId": 17,
       "bookId": 5,
-      "name": "Sacrifice Vital",
+      "name": "Vital Sacrifice",
       "level": 56,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Permet au sorcier de consumer sa propre force vitale pour augmenter ses capacités physiques quand il en a besoin. Ce sort permet de sacrifier temporairement ses points de vie, à l'aide d'une action passive, pour obtenir un bonus à une action déterminée. Chaque 5 points de vie que le personnage sacrifie ainsi lui accorde un bonus de +5 à l'un de ses tests (en ce qui concerne les créatures à Encaissement, il faut multiplier ces points par leur multiplicateur d'encaissement). Ce bonus ne concerne que les actions physiques et peut être additionné aux compétences principales, comme l'attaque, la défense ou la Projection magique. Bien qu'il s'agisse d'une action passive, il faut déclarer ce sacrifice avant de lancer les dés. Le sorcier peut aussi décider de conférer cette capacité à un autre individu",
+      "type": "Effect",
+      "effect": "This spell allows a spellcaster to consume his own vital energy in order to increase his physical capabilities whenever he requires. This spell grants the Passive ability to temporarily sacrifice Life Points in order to receive a bonus to a specific action. For every 5 Life Points thus spent, a character receives +5 to one of his rolls. Creatures with Damage Resistance shall multiply these points by their DR multiple. This bonus applies only to physical actions, but it can be added to Primary Abilities – such as Attack, Defense, or Magic Projection. Even though this is a Passive action, the sacrifice must be declared prior to rolling the dice. The spellcaster may also bestow this ability upon another individual, in which case is the recipient decides how many points to spend. Characters recover sacrificed Life Points at a rate of 10 per day, independently of the character’s natural Regeneration or any healing spells he might employ.  Effects do not overlap, and only one spell of this class can be held active upon a specific individual.",
       "initialGrade": {
         "zeon": 120,
         "requiredIntelligence": 6,
-        "effect": "50 PV sacrifiables au maximum par round",
+        "effect": " Up to 50 Life Points sacrifice per turn.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 9,
-        "effect": "100 PV sacrifiables au maximum par round",
+        "effect": " Up to 100 Life Points sacrifice per turn.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "150 PV sacrifiables au maximum par round",
+        "effect": " Up to 150 Life Points sacrifice per turn.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "200 PV sacrifiables au maximum par round",
+        "effect": " Up to 200 Life Points sacrifice per turn.",
         "retention": 15
       },
       "withRetention": true,
@@ -609,34 +609,34 @@
     {
       "spellId": 18,
       "bookId": 5,
-      "name": "Incinérer",
+      "name": "Incinerate",
       "level": 60,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Ce sort recouvre de flammes toutes les cibles que désigne le sorcier, qu'il soit organique ou inorganique, du moment qu'il se trouve dans un rayon maximal fixé par le rang. En termes de jeu, le sorcier effectue un jet avec un bonus sur le Tableau 73 : « En flammes », pour chaque cible qu'il désire incinérer. Il faut pour résister aux effets de ce sort réussir un test de RMys.",
+      "type": "Spiritual",
+      "effect": "This spell calls fire down on any target within a 150-foot radius area that the caster designates. The spellcaster rolls the dice to attack every target he intends to incinerate, adding a bonus on Table 73: In Flames. Creatures can resist this spell by passing an MR Check.",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 10,
-        "effect": "RMys 140 / +100 sur la table 73 / 50 m de rayon",
+        "effect": " MR 140 / +100 to Table Result / 50m/54yd area.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 150,
         "requiredIntelligence": 12,
-        "effect": "RMys 160 / +120 sur la table 73 / 100 m de rayon",
+        "effect": " MR 160 / +120 to Table Result / 100m/109yd area.",
         "retention": 15
       },
       "advancedGrade": {
         "zeon": 200,
         "requiredIntelligence": 14,
-        "effect": "RMys 180 / +140 sur la table 73 / 150 m de rayon",
-        "retention": 20
+        "effect": " MR 180 / +140 to Table Result / 150m/194yd area.",
+        "retention": 15
       },
       "arcaneGrade": {
         "zeon": 260,
         "requiredIntelligence": 16,
-        "effect": "RMys 200 / +160 sur la table 73 / 200 m de rayon",
-        "retention": 25
+        "effect": " MR 200 / +160 to Table Result / 200m/218yd area.",
+        "retention": 20
       },
       "withRetention": true,
       "dailyRetention": false
@@ -644,68 +644,68 @@
     {
       "spellId": 19,
       "bookId": 5,
-      "name": "Consumer l'Essence",
+      "name": "Consume Essence",
       "level": 62,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Ce sort crée une terrifiante aura surnaturelle autour du sorcier, qui détruit, l'essence de vie des gens, consume leur énergie et les empêche de se soigner par des moyens naturels. Chaque cible se trouvant dans un rayon fixé par le rang du sort et autour du sorcier doit réussir un test de RMys sous peine de perdre une quantité de points de vie et de Zéon équivalant à la marge d'échec Les PV perdus par un personnage à cause de ce sort ne peuvent pas être récupérés de façon naturelle",
+      "type": "Spiritual",
+      "effect": "This spell creates a terrifying supernatural aura around the spellcaster that can destroy the vital essence of people, consuming their energy and preventing them from healing by natural means. Anyone in a radius must pass a MR Check or suffer damage to Life Points and Zeon equal to their Failure. Life Points lost through this spell can not be recovered naturally; healing magic is required restore the health. Spellcasters can only recover lost Zeon by absorbing it from other spellcasters or from magic containers.",
       "initialGrade": {
         "zeon": 120,
         "requiredIntelligence": 6,
-        "effect": "10 m de rayon / RMys 120",
+        "effect": " MR 120 / 10m/11yd area.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 9,
-        "effect": "25 m de rayon / RMys 160",
+        "effect": " MR 160 / 25m/27yd area.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "50 m de rayon / RMys 200",
+        "effect": " MR 200 / 50m/54yd area.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "150 m de rayon / RMys 220",
+        "effect": " MR 220 / 250m/273yd area.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 20,
       "bookId": 5,
-      "name": "Sacrifice de Pouvoir",
+      "name": "Power Sacrifice",
       "level": 66,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Permet au sorcier de consumer sa propre énergie magique pour augmenter son accumulation magique. Ce sort permet de dépenser des points de Zéon, à l'aide d'une action passive, pour obtenir un bonus temporaire à l'AMR. Pour 10 points dépensés dans ce but, le sorcier bénéficie d'un bonus de +5 à son AMR jusqu'à la fin du round. Les effets de ce sort ne se cumulent pas : un seul sort de ce type peut affecter un individu précis en même temps.",
+      "type": "Effect",
+      "effect": "This spell allows the spellcaster to consume his own magical energy in order to increase his Magic Accumulation. It grants the caster the Passive ability of spending Zeon points in order to receive a temporary bonus to MA. For every 10 points spent with this purpose, the character receives a +5 bonus on his MA until the end of the turn. Effects do not overlap, and only onespell of this class can be held active upon a specific individual.",
       "initialGrade": {
         "zeon": 120,
         "requiredIntelligence": 7,
-        "effect": "20 points de Zéon par round au maximum",
+        "effect": " Up to 20 Zeon per turn.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 10,
-        "effect": "50 points de Zéon par round au maximum",
+        "effect": " Up to 50 Zeon per turn.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 13,
-        "effect": "80 points de Zéon par round au maximum",
+        "effect": " Up to 80 Zeon per turn.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "120 points de Zéon par round au maximum",
+        "effect": " Up to 120 Zeon per turn.",
         "retention": 15
       },
       "withRetention": true,
@@ -714,68 +714,68 @@
     {
       "spellId": 21,
       "bookId": 5,
-      "name": "Critique Direct",
+      "name": "Direct Critical",
       "level": 70,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Provoque une explosion interne chez un individu, ce qui lui inflige un Critique automatique. En termes de jeu, la cible subit l'équivalent d'un niveau de Critique fixé par le rang du sort, mais peut l'encaisser avec un test de RPhy en suivant les règles habituelles. Un test réussi de RMys permet d'éviter les effets de ce sort.",
+      "type": "Spiritual",
+      "effect": "This spell causes an internal explosion in an individual, resulting in an automatic Critical – although the target can counteract it with his PhR as the general rules dictate. A target can resist this spell by passing an MR check.",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 9,
-        "effect": "Critique 120 / RMys 140",
+        "effect": " Critical 120 / MR 140.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 140,
         "requiredIntelligence": 11,
-        "effect": "Critique 140 / RMys 160",
+        "effect": " Critical 140 / MR 160.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 200,
         "requiredIntelligence": 13,
-        "effect": "Critique 180 / RMys 180",
+        "effect": " Critical 180 / MR 180.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 280,
         "requiredIntelligence": 16,
-        "effect": "Critique 220 / RMys 200",
+        "effect": " Critical 220 / MR 200.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 22,
       "bookId": 5,
-      "name": "Magie pour les Capacités",
+      "name": "Magic For Capacities",
       "level": 72,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Ce sort permet au sorcier de consumer son énergie magique pour augmenter temporairement ses caractéristiques et les compétences qui en dépendent. Ce sort permet de sacrifier ses points de Zéon pour obtenir un Bonus aux caractéristiques, de façon passive. Vingt points de Zéon sacrifiés accordent un bonus de +1 aux caractéristiques jusqu'à la fin du round. Les effets de ce sort ne se cumulent pas : un seul sort de ce type peut affecter un individu précis en même temps.",
+      "type": "Effect",
+      "effect": "This spell allows a spellcaster to consume his own Zeon in order to temporarily increase his Characteristics and dependant abilities. This spell grants the caster the Passive ability to gain a +1 to one of his Characteristics (until the end of the turn) for every 25 Zeon points he sacrifices. Effects do not overlap, and only one spell of this class can be held active upon a specific individual.",
       "initialGrade": {
         "zeon": 120,
         "requiredIntelligence": 6,
-        "effect": "50 points de Zéon par round au maximum",
+        "effect": " Up to 50 Zeon per turn.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 9,
-        "effect": "100 points de Zéon par round au maximum",
+        "effect": " Up to 100 Zeon per turn.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "150 points de Zéon par round au maximum",
+        "effect": " Up to 150 Zeon per turn.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "200 points de Zéon par round au maximum",
+        "effect": " Up to 200 Zeon per turn.",
         "retention": 15
       },
       "withRetention": true,
@@ -784,33 +784,33 @@
     {
       "spellId": 23,
       "bookId": 5,
-      "name": "Tempête de Feu",
+      "name": "Fire Storm",
       "level": 76,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Le sorcier désigne une zone où il déchaîne une puissante tempête de feu, qui calcine tout ce qui se trouve à l'intérieur. Les individus se trouvant dans cette zone subissent à chaque round une attaque automatique contre un Résultat d'Attaque dont la valeur dépend du rang du sort. Les Dégâts sont de 100 sur le Mode Chaleur. La zone de la tempête a un rayon maximal  également fixé par le rang. Le sorcier ne peut pas désigner de cibles à l'intérieur de la zone et peut même en subir les effets. Il suffit pour être victime de cette attaque de se trouver dans la zone lors du round suivant le lancer du sort. Ce sort reste toujours fixé à l'endroit où il a été lancé.",
+      "type": "Automatic",
+      "effect": "The caster selects an area within which a heavy fire storm appears, burning everything inside it to the ground. Every turn, individuals encompassed within the area will suffer an automatic attack with an attack using the Heat Attack Type. This attack possesses a Base Damage of 180. The storm area has a radius and affects all within, including the caster. This spell remains stationary.",
       "initialGrade": {
         "zeon": 150,
         "requiredIntelligence": 8,
-        "effect": "25 m de rayon / Niveau d’attaque Absurde (SR 180)",
+        "effect": " 25m/27yd area / Final Attack 180.",
         "retention": 15
       },
       "intermediateGrade": {
         "zeon": 200,
         "requiredIntelligence": 10,
-        "effect": "150 m de rayon / Niveau d’attaque quasiment impossible (SR 240)",
+        "effect": " 150m/164yd area / Final Attack 240.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "200 m de rayon / Niveau d’attaque Impossible (SR 280)",
+        "effect": " 200m/218yd area / Final Attack 280.",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 280,
         "requiredIntelligence": 15,
-        "effect": "250 m de rayon / Niveau d’attaque Surhumain (SR 320)",
+        "effect": " 250m/273yd area / Final Attack 320.",
         "retention": 30
       },
       "withRetention": true,
@@ -819,33 +819,33 @@
     {
       "spellId": 24,
       "bookId": 5,
-      "name": "Consumer la Vie par Magie",
+      "name": "Consume Life for Magic",
       "level": 80,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Ce sort permet au sorcier de consommer sa propre force vitale pour sa réserve de magie. Il peut alors sacrifier temporairement des points de vie pour récupérer du Zéon, à l'aide d'une action passive. Pour 5 PV sacrifiés de cette manière, le sorcier récupère 50 points de Zéon (les créatures à encaissement multiplient cette quantité de PV par leur multiple d'encaissement). Les points de vie perdus de cette façon se récupèrent à un rythme de 10 par jour quelle que soit la Régénération naturelle du personnage. Les effets de ce sort ne se cumulent pas : un seul sort de ce type peut affecter un individu précis en même temps.",
+      "type": "Effect",
+      "effect": "This spell allows the spellcaster to consume his own vital energy in order to increase his magic reserve. This spell grants the Passive Ability to temporarily sacrifice Life Points to recover Zeon. For every 5 LP sacrificed, the caster receives 100 Zeon points to spend. Damage Resistance creatures will increase this number according to their DR Multiple. Life Points lost through this spell recovers at a rate of 10 points per day, regardless of the character’s natural Regeneration or any healing spells he might employ. The maximum number of Effects do not overlap, and only one spell of this class can be held active upon a specific individual.",
       "initialGrade": {
         "zeon": 120,
         "requiredIntelligence": 6,
-        "effect": "20 Points de Vie par round sacrifiables au maximum",
+        "effect": " Up to 20 Life Points per turn.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 9,
-        "effect": "80 Points de Vie par round sacrifiables au maximum",
+        "effect": " Up to 80 Life Points per turn.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "140 Points de Vie par round sacrifiables au maximum",
+        "effect": " Up to 140 Life Points per turn.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "200 Points de Vie par round sacrifiables au maximum",
+        "effect": " Up to 200 Life Points per turn.",
         "retention": 15
       },
       "withRetention": true,
@@ -854,33 +854,33 @@
     {
       "spellId": 25,
       "bookId": 5,
-      "name": "Créer Efrit",
+      "name": "Create Ifreet",
       "level": 82,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Façonne une créature de feu avec l'apparence de la vie, sous le contrôle absolu du sorcier. Cet être est développé comme une créature d'Entre Mondes, en se servant des pouvoirs et des limitations des élémentaires de feu du Chapitre 26. Le niveau maximum de la créature (et la quantité de PF qui en découle) dépend du rang du sort.",
+      "type": "Effect",
+      "effect": "This spell creates a live fire creature completely under the magician’s control. This entity is developed as a Being Between Worlds, subject to the powers and limitations of Fire elementals in Chapter 26. The creature's maximum level is calculated using the same rules as in the spell Create Being from the Path of Creation.",
       "initialGrade": {
         "zeon": 250,
         "requiredIntelligence": 10,
-        "effect": "Niveau 1",
+        "effect": " Level 1.",
         "retention": 50
       },
       "intermediateGrade": {
         "zeon": 350,
         "requiredIntelligence": 12,
-        "effect": "Niveau 3",
+        "effect": " Level 3.",
         "retention": 70
       },
       "advancedGrade": {
         "zeon": 500,
         "requiredIntelligence": 14,
-        "effect": "Niveau 6",
+        "effect": " Level 6.",
         "retention": 100
       },
       "arcaneGrade": {
         "zeon": 700,
         "requiredIntelligence": 16,
-        "effect": "Niveau 10",
+        "effect": " Level 10.",
         "retention": 140
       },
       "withRetention": true,
@@ -889,33 +889,33 @@
     {
       "spellId": 26,
       "bookId": 5,
-      "name": "Bûcher",
+      "name": "Pyre",
       "level": 86,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Crée un certain nombre d’intensités de feu. Tant que le sort est maintenu, les flammes continuent de brûler même si elles n'ont rien à consumer. Si le feu est placé sur un support inflammable, il continue à brûler normalement après la fin du sort.",
+      "type": "Effect",
+      "effect": "This spell produces  levels of fire intensity. The fire created by this spell continues to burn without consuming anything for the duration of the spell. If set on flammable material, it burns naturally after the spell has ended.",
       "initialGrade": {
         "zeon": 250,
         "requiredIntelligence": 10,
-        "effect": "15 intensités",
+        "effect": " 15 Intensities.",
         "retention": 25
       },
       "intermediateGrade": {
         "zeon": 300,
         "requiredIntelligence": 12,
-        "effect": "25 intensités",
+        "effect": " 25 Intensities.",
         "retention": 30
       },
       "advancedGrade": {
         "zeon": 350,
         "requiredIntelligence": 14,
-        "effect": "35 intensités",
+        "effect": " 35 Intensities.",
         "retention": 30
       },
       "arcaneGrade": {
         "zeon": 400,
         "requiredIntelligence": 18,
-        "effect": "45 intensités",
+        "effect": " 45 Intensities.",
         "retention": 35
       },
       "withRetention": true,
@@ -924,68 +924,68 @@
     {
       "spellId": 27,
       "bookId": 5,
-      "name": "Dévastation",
+      "name": "Devastation",
       "level": 90,
       "actionType": "Active",
-      "type": "Attaque",
-      "effect": "Projette une explosion de feu, capable d'altérer l'énergie, sur une zone de rayon fixé par le rang du sort. Les Dégâts sont de 200 points sur le Mode Chaleur. Il n'est pas possible de désigner des cibles à l'intérieur de la zone d'effet",
+      "type": "Attack",
+      "effect": "This spell creates a 200-point Base Damage fire explosion in a radius. Even though this spell can damage energy, it uses the Heat Attack Type. The caster can not select targets within the explosion area.",
       "initialGrade": {
         "zeon": 200,
         "requiredIntelligence": 10,
-        "effect": "1 km de rayon",
+        "effect": " 1km/1093yd area.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 300,
         "requiredIntelligence": 13,
-        "effect": "5 km de rayon",
+        "effect": " 5km/3.1mile area.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 400,
         "requiredIntelligence": 16,
-        "effect": "10 km de rayon",
+        "effect": " 10km/6.2mile area.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 500,
         "requiredIntelligence": 18,
-        "effect": "15 km de rayon",
+        "effect": " 15km/9.3mile area.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 28,
       "bookId": 5,
-      "name": "Sacrifice d'Autrui",
+      "name": "Sacrifice Others",
       "level": 92,
       "actionType": "Active",
-      "type": "Animique, Effet",
-      "effect": "Ce sort enchaîne la force vitale et l'essence d'autres personnes au sorcier, ce qui lui permet de les consumer pour son propre bénéfice. En termes de jeu, le sorcier peut utiliser les points de vie et de Zéon des cibles affectées par ce sort pour ses sorts de sacrifice : Sacrifice Vital, Magie pour les Capacités, Sacrifice de pouvoir et consumer la vie par la magie. Ce sort fonctionne sur une zone fixe de rayon variable, à l'intérieur de laquelle le sorcier peut désigner autant de cibles qu'il le désire. Il faut réussir un test de RMys pour ne pas être affecté par ce sort. Les cibles affectées ont droit à un nouveau test de Résistance par jour, ainsi que chaque fois que leur énergie est absorbée.",
+      "type": "Effect, Spiritual",
+      "effect": "This spell binds other individuals’ essence and vital force to the caster, enabling him to consume them for his own advantage. In gaming terms, it allows the entity to use the Life Points and Zeon of those affected by the spell, for sacrifice spells: Vital Sacrifice, Magic for Capacities, Power Sacrifice and Consume Life for Magic. This spell has a area within which the caster is free to select as many targets as he wishes. MR check to resist the spell is needed. The affected parties will be entitled to a new roll every day, or at the time their energy is being consumed.",
       "initialGrade": {
         "zeon": 250,
         "requiredIntelligence": 13,
-        "effect": "RMys 120 / 1 km de rayon",
+        "effect": " 1km/1093yd area / MR 120.",
         "retention": 50
       },
       "intermediateGrade": {
         "zeon": 350,
         "requiredIntelligence": 15,
-        "effect": "RMys 140 / 2 km de rayon",
+        "effect": " 2km/1.2mile area / MR 140.",
         "retention": 70
       },
       "advancedGrade": {
         "zeon": 500,
         "requiredIntelligence": 17,
-        "effect": "RMys 160 / 3 km de rayon",
+        "effect": " 3km/1.8mile area / MR 160.",
         "retention": 100
       },
       "arcaneGrade": {
         "zeon": 750,
         "requiredIntelligence": 19,
-        "effect": "RMys 180 / 5 km de rayon",
+        "effect": " 5km/3.1mile area / MR 180.",
         "retention": 150
       },
       "withRetention": true,
@@ -994,33 +994,33 @@
     {
       "spellId": 29,
       "bookId": 5,
-      "name": "Seigneur du Feu",
+      "name": "Lord of Fire",
       "level": 96,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Le sorcier contrôle toutes les particules de chaleur dans un rayon fixé par le rang du sort. Ce contrôle lui permet même de manœuvrer les courants de magma sous l'écorce terrestre, et ainsi de créer des volcans ou provoquer des éruptions. Toutes les créatures basées sur le feu présentes à l'intérieur de la zone d'effet du sort doivent réussir un test de RMys sous peine d'être contrôlées par le sorcier. En cas de réussite, elles n'ont pas à refaire de test. Les êtres affectés n'ont droit à un nouveau test de Résistance que s'ils modifient la base de leur Résistance.",
+      "type": "Automatic",
+      "effect": "The caster controls all heat nuclei in a radius. This dominion extends control over planetary magma, thus allowing the spellcaster to produce volcanic eruptions. All fire based creatures within the spell area are subject to the spellcaster’s control unless they pass a MR check. Affected creatures are entitled to a new roll only if they alter their base Resistance. A creature that passes the check need not reroll unless its base Resistance decreases.",
       "initialGrade": {
         "zeon": 300,
         "requiredIntelligence": 10,
-        "effect": "100 km de rayon / RMys 140",
+        "effect": " MR 140/ 100km/62mile area.",
         "retention": 30
       },
       "intermediateGrade": {
         "zeon": 450,
         "requiredIntelligence": 12,
-        "effect": "1 000 km de rayon / RMys 180",
+        "effect": " MR 180/ 1000km/621mile area.",
         "retention": 45
       },
       "advancedGrade": {
         "zeon": 600,
         "requiredIntelligence": 15,
-        "effect": "10 000 km de rayon / RMys 200",
+        "effect": " MR 200/ 10000km/6213mile area.",
         "retention": 60
       },
       "arcaneGrade": {
         "zeon": 1000,
         "requiredIntelligence": 18,
-        "effect": "Sans limite de portée / RMys 240",
+        "effect": " MR 240/ Affects all heat sources.",
         "retention": 100
       },
       "withRetention": true,
@@ -1032,34 +1032,34 @@
       "name": "Armageddon",
       "level": 100,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Le sort de feu ultime donne au sorcier la capacité de consumer une partie de l'essence même du monde, calcinant ainsi les âmes qui se trouvent autour de lui. Armageddon annihile toute forme d'existence dans un rayon déterminé par le rang du sort autour du lieu de lancement de ce dernier. Toute chose, organique ou non, se trouvant à l'intérieur de la zone d'effet, doit réussir un test de RMys à chaque minute, sous peine d'être physiquement et spirituellement incinérée. Tant que le sorcier maintient Armageddon actif, aucune forme de vie ne pourra naître ou être créée dans sa zone d'effet.",
+      "type": "Automatic",
+      "effect": "The definitive fire spell allows the caster to consume a portion ofthe world’s very essence, incinerating everything, including souls. Armageddon inhibits any form of existence in its radius. Any and all organic or inorganic entities inside the area must pass a MR check every minute to avoid being physically and spiritually incinerated. No life form can be born or created in the spell’s zone of influence for as long as the spell is maintained.",
       "initialGrade": {
         "zeon": 450,
         "requiredIntelligence": 15,
-        "effect": "10 km de rayon / RMys 140",
+        "effect": " MR 140 / 10km/6.2mile area.",
         "retention": 90
       },
       "intermediateGrade": {
         "zeon": 800,
         "requiredIntelligence": 16,
-        "effect": "25 km de rayon / RMys 150",
+        "effect": " MR 150 / 25km/15.5mile area.",
         "retention": 100
       },
       "advancedGrade": {
         "zeon": 1200,
         "requiredIntelligence": 17,
-        "effect": "50 km de rayon / RMys 160",
+        "effect": " MR 160 / 50km/31mile area.",
         "retention": 105
       },
       "arcaneGrade": {
         "zeon": 1600,
         "requiredIntelligence": 18,
-        "effect": "150 km de rayon / RMys 180",
+        "effect": " MR 180 / 150km/93.2mile area.",
         "retention": 110
       },
       "withRetention": true,
-      "dailyRetention": true
+      "dailyRetention": false
     }
   ]
 }

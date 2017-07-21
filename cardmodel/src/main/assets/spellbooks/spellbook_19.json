@@ -1,45 +1,46 @@
 {
   "bookId": 19,
-  "bookName": "Livre de la Paix ",
-  "description": "C'est la voie qui incarne l'harmonie et l'absence de conflits.",
+  "bookName": "Path of Peace",
+  "description": "This is the sub-path that embodies harmony and lack of conflict.",
   "primaryBookUnaccessibles": [
-    "Obscurité",
+    "Obscurity",
     "Destruction",
-    "Feu",
+    "Fire",
     "Illusion",
-    "Nécromancie."
+    "Necromancy"
+
   ],
   "spells": [
     {
       "spellId": 1,
       "bookId": 19,
-      "name": "Bouclier Salvateur",
+      "name": "﻿Savior Shield",
       "level": 4,
       "actionType": "Passive",
-      "type": "Défense",
-      "effect": "Crée une barrière protectrice qui abrite de tout type d'attaque. Dans le cas d'une utilisation pour protéger plusieurs individus contre une attaque de zone, le sort permet de protéger autant de cibles qu'il est indiqué pour le Degré  du sort sans souffrir pour autant de dégâts supplémentaires ni appliquer de malus à la compétence défensive du lanceur.",
+      "type": "Spell Type: Defense",
+      "effect": "Effect: Creates a protective barrier that defends against anyattack. In the event that its used to cover multiple individuals onan area attack, the spell can protect as many targets as indicated by the level of the spell without suffering further damage or apply penalty to the defensive ability of the caster.",
       "initialGrade": {
         "zeon": 50,
         "requiredIntelligence": 6,
-        "effect": "Le bouclier a 300 Points de Vie / Il peut protéger jusqu'à deux personnes sans aucun malus.",
+        "effect": " The shield has 300 Resistance points/ is capable of protecting up to two people without penalty.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 100,
         "requiredIntelligence": 8,
-        "effect": "Le bouclier a 900 Points de Vie / Il peut protéger jusqu'à cinq personnes sans aucun malus.",
+        "effect": " The shield has 900 Resistance points / is able to protect up to five people without penalty.",
         "retention": 15
       },
       "advancedGrade": {
         "zeon": 160,
         "requiredIntelligence": 10,
-        "effect": "Le bouclier a 1 500 Points de Vie / Il peut protéger jusqu'à huit personnes sans aucun malus.",
+        "effect": " The shield has 1,500 Resistance points / is able to protect up to eight people without penalty.",
         "retention": 20
       },
       "arcaneGrade": {
         "zeon": 240,
         "requiredIntelligence": 14,
-        "effect": "Le bouclier a 3 000 Points de Vie / Il peut protéger jusqu'à douze personnes sans aucun malus.",
+        "effect": " The shield has 3,000 Resistance points / is able to protect up to twelve people without penalty.",
         "retention": 25
       },
       "withRetention": true,
@@ -48,34 +49,34 @@
     {
       "spellId": 2,
       "bookId": 19,
-      "name": "Équilibre Intérieur",
+      "name": "Internal balance",
       "level": 14,
       "actionType": "Passive",
-      "type": "Effet",
-      "effect": "Le sorcier ou la cible désignée par celui-ci atteint un niveau de paix intérieure qui l'immunise contre tout effet qui peut déséquilibrer son état d'esprit.",
+      "type": "Spell Type: Effect.",
+      "effect": "Effect: The caster or the target designated by the caster reaches a level of peace of mind that makes him immune to any effect that unbalances mood.",
       "initialGrade": {
         "zeon": 120,
         "requiredIntelligence": 6,
-        "effect": "Le personnage est immunisé contre les états psychologiques négatifs.",
-        "retention": 15
+        "effect": " The character becomes immune to negative psychological states. Intermediate: As base level, but also the character gains a +40 to resistance to avoid supernatural mood altering effects",
+        "retention": 0
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 9,
-        "effect": "Comme pour le Degré  Initial, mais le personnage obtient en outre un +40 à ses résistances contre les effets déséquilibrants.",
-        "retention": 20
+        "effect": "Advanced: As in intermediate grade, but the applicable bonus is +80.",
+        "retention": 0
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "Comme pour le Degré  Intermédiaire, mais le bonus applicable est de +80.",
-        "retention": 25
+        "effect": "Arcane: The character can not be affected by any effect that alters behavior negatively.",
+        "retention": 0
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "Le personnage ne peut être affecté par aucun effet qui altère négativement ou de façon déséquilibrante sa conduite.",
-        "retention": 30
+        "effect": "Maintenance:15 / 20 / 25 / 30Daily",
+        "retention": 0
       },
       "withRetention": true,
       "dailyRetention": true
@@ -83,33 +84,33 @@
     {
       "spellId": 3,
       "bookId": 19,
-      "name": "Défenseur",
+      "name": "Defender",
       "level": 24,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Accorde un bonus à la compétence de défense d'un individu qui utilise une manœuvre de Défense totale. Affecte autant de personnes que le détermine le lanceur, tant que la somme de leurs présences ne dépasse pas ce qui est indiqué dans le Degré  du sort",
+      "type": "Spell Type: Effect.",
+      "effect": "Grants a bonus to the defensive ability of an individual or individuals when using the total defense maneuver. ",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 6,
-        "effect": "+20 à la compétence de défense / Présence maximale affectable de 60.",
+        "effect": " +20 to defensive ability / Presence maximum 60.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 100,
         "requiredIntelligence": 8,
-        "effect": "+20 à la compétence de défense / Présence maximale affectable de 100.",
+        "effect": " +20 to defensive ability / Presence maximum 100.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 140,
         "requiredIntelligence": 10,
-        "effect": "+30 à la compétence de défense / Présence maximale affectable de 150.",
+        "effect": " +30 to defensive ability / Presence maximum 150.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 200,
         "requiredIntelligence": 12,
-        "effect": "+40 à la compétence de défense / Présence maximale affectable de 250.",
+        "effect": " +40 to defensive ability / Presence maximum 250.",
         "retention": 20
       },
       "withRetention": true,
@@ -118,33 +119,33 @@
     {
       "spellId": 4,
       "bookId": 19,
-      "name": "Détecter l'Harmonie",
+      "name": "Harmony detection",
       "level": 34,
       "actionType": "Active",
-      "type": "Détection",
-      "effect": "Le sorcier détecte les personnes à l'intérieur du rayon du sort qui ont des sentiments pacifiques et ceux qui en ont des violents, si ils ne dépassent pas la RMys déterminée par le Degré  du sortilège.",
+      "type": "Spell Type: Detection",
+      "effect": "Effect: The magician sees people inside the radius of the spell with peaceful or violent feelings if they do not pass the MR test.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 8,
-        "effect": "10 m de rayon / 100 RMys.",
+        "effect": " 10m/10yd radius / 100 MR.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 100,
         "requiredIntelligence": 10,
-        "effect": "25 m de rayon / 120 RMys.",
+        "effect": " 25m/27yd radius / 120 MR.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "50 m de rayon / 140 RMys.",
+        "effect": " 50m/54yd radius / 140 MR.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 140,
         "requiredIntelligence": 14,
-        "effect": "100 m de rayon / 160 RMys.",
+        "effect": " 100m/109yd radius / 160 MR.",
         "retention": 15
       },
       "withRetention": true,
@@ -153,33 +154,33 @@
     {
       "spellId": 5,
       "bookId": 19,
-      "name": "Havre de Paix",
+      "name": "Haven of Peace",
       "level": 44,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Ce sort génère une zone capable de faire perdre tout instinct agressif. Quiconque pénètre à l'intérieur doit réussir automatiquement un test de RMys contre la difficulté déterminée par le Degré  du sort sous peine de perdre toute attitude violente. Une personne affectée par ce sort ne peut plus retenter le test, sauf si elle ressent quelque chose qui pourrait lui rendre son comportement agressif. Quelqu'un qui a réussi le test n'est plus affecté par les effets de Havre de Paix tant qu'il ne sort pas de sa zone d'influence. La zone reste statique, là où elle a été lancée.",
+      "type": "Spell Type: Automatic.",
+      "effect": "Effect: This spell creates an area within which all aggressive instinct is lost. Anyone failing the MR test loses all violent feelings. A person affected by this spell has no right to repeat the test, unless you feel something you can restore their aggressive attitude. The area remains static in the place it was launched.",
       "initialGrade": {
         "zeon": 160,
         "requiredIntelligence": 8,
-        "effect": "10 m de rayon / 100 RMys.",
+        "effect": " 10m/10yd radius / 100 MR.",
         "retention": 20
       },
       "intermediateGrade": {
         "zeon": 220,
         "requiredIntelligence": 10,
-        "effect": "25 m de rayon / 120 RMys.",
+        "effect": " 25m/27yd radius / 120 MR.",
         "retention": 25
       },
       "advancedGrade": {
         "zeon": 280,
         "requiredIntelligence": 12,
-        "effect": "50 m de rayon / 140 RMys.",
+        "effect": " 50m/54yd radius / 140 MR.",
         "retention": 30
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 14,
-        "effect": "100 m de rayon / 160 RMys.",
+        "effect": " 100m/109yd radius / 160 MR.",
         "retention": 30
       },
       "withRetention": true,
@@ -188,68 +189,68 @@
     {
       "spellId": 6,
       "bookId": 19,
-      "name": "Signe de Paix",
+      "name": "Sign of Peace",
       "level": 54,
       "actionType": "Passive",
-      "type": "Automatique",
-      "effect": "Le sorcier annule une action offensive dirigée contre lui. Pour être affecté il faut être à l'origine d'une attaque dont la cible est le lanceur (y compris s'il y a d'autres individus également visés par l'attaque). Pour éviter ces effets, il faut réussir une RMys contre une difficulté indiquée par le Degré  du sort. Une même attaque ne peut être affectée qu'une fois par un sort de Signe de Paix.",
+      "type": "Spell Type: Automatic.",
+      "effect": "Effect: The caster cancels an attack action targeted against him. The attack has target the mage (even if other individuals are also affected by the attack). To avoid the spells effects, it is necessary to overcome a MR against the difficulty indicated by the degree of the spell. The attack action can only be affected once a spell of peace sign.",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 8,
-        "effect": "120 RMys.",
+        "effect": " MR 120.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 10,
-        "effect": "160 RMys.",
+        "effect": " MR 160.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 260,
         "requiredIntelligence": 12,
-        "effect": "200 RMys",
+        "effect": " MR 200.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 340,
         "requiredIntelligence": 14,
-        "effect": "240 RMys.",
+        "effect": " MR 240.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 7,
       "bookId": 19,
-      "name": "Défense Absolue",
+      "name": "Absolute defense",
       "level": 64,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Quand le sorcier ne fait aucune action offensive pendant un round, il peut ajouter un bonus à sa Projection magique pour se défendre.",
+      "type": "Spell Type: Effect.",
+      "effect": "While the sorcerer does not take any offensive actions during a turn he can apply a Magic projection bonus to defense.",
       "initialGrade": {
         "zeon": 50,
         "requiredIntelligence": 6,
-        "effect": "+20 à la Projection magique en défense",
+        "effect": " Magic +20 to defensive projection.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 80,
         "requiredIntelligence": 9,
-        "effect": "+30 à la Projection magique en défense.",
+        "effect": " Magic +30 to defensive projection.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 110,
         "requiredIntelligence": 12,
-        "effect": "+40 à la Projection magique en défense.",
+        "effect": " Magic +40 to defensive projection.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 140,
         "requiredIntelligence": 15,
-        "effect": "+50 à la Projection magique en défense.",
+        "effect": " Magic +50 to defensive projection.",
         "retention": 15
       },
       "withRetention": true,
@@ -258,33 +259,33 @@
     {
       "spellId": 8,
       "bookId": 19,
-      "name": "Ailes du Salut",
+      "name": "Wings of Salvation",
       "level": 74,
       "actionType": "Passive",
-      "type": "Défense",
-      "effect": "Crée une barrière protectrice qui protège de tout type d'attaque. Le sort permet de protéger tous les individus à l'intérieur du rayon d'action qui est indiqué pour le Degré  du sort sans souffrir pour autant de dégâts supplémentaires ni appliquer de malus à la compétence défensive du lanceur. Degré  Initial Intermédiaire Avancé Arcane Zéon 150 250 350 450 Int. R. 9 11 13 15 Initial : Le bouclier a 500 Points de Vie / 5 m de rayon. Intermédiaire : Le bouclier a 1 200 Points de Vie / 15 m de rayon. Avancé : Le bouclier a 2 500 Points de Vie / 25 m de rayon. Arcane : Le bouclier a S 000 Points de Vie / 50 m de rayon. Maintien : 15 / 25 / 35 / 45 Type de sort : Défense",
+      "type": "Spell Type: Defense",
+      "effect": "Effect: Creates a protective barrier that protects against any attack. The spell can cover all individuals within range of the spell without suffering further damage or penalty to the defensive ability of the caster.",
       "initialGrade": {
         "zeon": 150,
         "requiredIntelligence": 9,
-        "effect": "Le bouclier a 1 200 Points de Vie / 15 m de rayon.",
+        "effect": " The shield has 500 points of Resistance / 5m/5yd radius.",
         "retention": 15
       },
       "intermediateGrade": {
         "zeon": 250,
         "requiredIntelligence": 11,
-        "effect": "Le bouclier a 1 200 Points de Vie / 15 m de rayon.",
+        "effect": " The shield has 1,200 points Resistance / 15m/16yd radius",
         "retention": 25
       },
       "advancedGrade": {
         "zeon": 350,
         "requiredIntelligence": 13,
-        "effect": "Le bouclier a 2 500 Points de Vie / 25 m de rayon.",
+        "effect": " The shield has 2,500 points of Resistance / 25m/27yd radius",
         "retention": 35
       },
       "arcaneGrade": {
         "zeon": 450,
         "requiredIntelligence": 15,
-        "effect": "Le bouclier a 5 000 Points de Vie / 50 m de rayon.",
+        "effect": " The shield has 5,000 points of Resistance / 50m/54yd radius",
         "retention": 45
       },
       "withRetention": true,
@@ -293,68 +294,68 @@
     {
       "spellId": 9,
       "bookId": 19,
-      "name": "Paix Absolue",
+      "name": "Absolute Peace",
       "level": 84,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "La cible de ce sort est imprégnée d'une énergie de la paix la plus pure, qui l'empêchera d'amorcer des actes violents de quelque sorte que ce soit. Quiconque échouant à la RMys déterminée par le Degré  du sortilège ne peut plus faire d'actions offensives contre personne de façon consciente. Son essence violente disparaissant complètement, il n'est alors plus nécessaire de maintenir le sort.",
+      "type": "Spell Type: Animated",
+      "effect": "The target of this spell is imbued with an energy of pure peace, which will prevent him re-engageing in violent acts of any type. Someone who fails MR test can no longer perform offensive actions against anyone in a conscious way since the very nature violence disappears altogether, this spell no maintenance.",
       "initialGrade": {
         "zeon": 120,
         "requiredIntelligence": 9,
-        "effect": "120 RMys.",
+        "effect": " MR 120.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 11,
-        "effect": "140 RMys.",
+        "effect": " MR 140.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 13,
-        "effect": "160 RMys.",
+        "effect": " MR 160.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "180 RMys.",
+        "effect": " MR 180.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 10,
       "bookId": 19,
-      "name": "Pax In Terrax",
+      "name": "Pax in Terrax",
       "level": 94,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Lancer ce sort crée une zone de non-violence absolue, dans laquelle il ne peut y avoir aucun conflit ou guerre. Tous les individus qui entrent dans cette zone doivent réussir automatiquement un test de RMys contre la valeur indiquée dans le Degré  du sort ou abandonner toute idée de violence ou de confrontation, et être incapables de faire des actions violentes. Une personne qui échoue au test de Résistance ne peut plus le refaire tant qu'elle est dans la zone d'action du sort, alors que celles qui le réussissent doivent le refaire à chaque fois qu'elles tentent de réaliser une action violente et qu'elles sont toujours dans la zone d'influence du sortilège.",
+      "type": "Spell Type: Automatic.",
+      "effect": "Effect: When cast this spell creates a zone of absolute non-violence, where there may be no conflicts or wars of any kind. Everyone who enter it must overcome the MR or automatically give up the concepts of violence and confrontation, and being able to carry out violent actions. A person who fails has no right to repeat the MR test as long as within the action area of the spell, while those who pass must retest every time you try to perform an act of violence inside the area.",
       "initialGrade": {
         "zeon": 350,
         "requiredIntelligence": 8,
-        "effect": "1 km de rayon / 120 RMys.",
+        "effect": " 1km/1093yd radius / 120 MR.",
         "retention": 35
       },
       "intermediateGrade": {
         "zeon": 600,
         "requiredIntelligence": 10,
-        "effect": "5 km de rayon / 140 RMys.",
+        "effect": " 5km/3mile radius / 140 MR.",
         "retention": 60
       },
       "advancedGrade": {
         "zeon": 1000,
         "requiredIntelligence": 12,
-        "effect": "15 km de rayon / 160 RMys.",
+        "effect": " 15km/9mile radius / 160 MR.",
         "retention": 100
       },
       "arcaneGrade": {
         "zeon": 1600,
         "requiredIntelligence": 14,
-        "effect": "50 km de rayon / 180 RMys.",
+        "effect": " 50km/31mile  radius / 180 MR.",
         "retention": 160
       },
       "withRetention": true,

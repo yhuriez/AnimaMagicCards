@@ -1,12 +1,12 @@
 {
   "bookId": 17,
-  "bookName": "Livre de la Musique",
-  "description": "Cette voie secondaire regroupe tous les pouvoirs en relation avec la musique les mélodies. Les sorciers qui utilisent ses sorts sont habituellement appelés mages musiciens, car c'est au travers de leurs mélodies qu'ils sont capables de provoquer les effets et les merveilles les plus invraisemblables.",
+  "bookName": "Path of Music",
+  "description": "This sub-path contains all the powers related to music and melodies. The witches who use this spells are usually called musical magicians, because through their melodies they are capable of causing the most unbelievable effects and wonders.",
   "primaryBookUnaccessibles": [
     "Destruction",
-    "Feu",
-    "Terre",
-    "Nécromancie."
+    "Fire",
+    "Earth",
+    "Necromancy"
   ],
   "spells": [
     {
@@ -15,34 +15,34 @@
       "name": "Tempo",
       "level": 4,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Contrôlant le rythme du monde, ce sort isole le sorcier des distractions Extérieures et lui permet de discerner de manière intuitive tous les sons qui l’entourent. Par conséquent, il obtient un bonus à sa compétence secondaire Observation pour tous les tests en relation avec le son pendant un round.",
+      "type": "Spell Type: Effect",
+      "effect": "Managing the pace of the world, this spell isolates the sorcerer preventing outside distractions. Consequently, you get a bonus to your search skill on sound related tests.",
       "initialGrade": {
         "zeon": 30,
         "requiredIntelligence": 5,
-        "effect": "+40 en Observation.",
+        "effect": " +40 to Search.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 50,
         "requiredIntelligence": 8,
-        "effect": "+60 en Observation.",
+        "effect": " +60 to Search.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 70,
         "requiredIntelligence": 10,
-        "effect": "+80 en Observation.",
+        "effect": " +80 to Search.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 100,
         "requiredIntelligence": 12,
-        "effect": "+100 en Observation.",
+        "effect": " +100 to Search.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 2,
@@ -50,30 +50,30 @@
       "name": "Cantabile",
       "level": 14,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Ce sort permet au personnage de faire résonner sa voix ou une mélodie qu'il interprète dans n'importe quel endroit qu'il a choisi jusqu'à une distance maximale déterminée par le Degré  du sort.",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: This spell allows the character to “throw” your voice or a melody. Allowing the mage to determine the origin of the sound.",
       "initialGrade": {
         "zeon": 40,
         "requiredIntelligence": 5,
-        "effect": "100 m.",
+        "effect": " 100 meters/109 yards.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 60,
         "requiredIntelligence": 8,
-        "effect": "250 m.",
+        "effect": " 250meters/273 yards.",
         "retention": 5
       },
       "advancedGrade": {
         "zeon": 80,
         "requiredIntelligence": 10,
-        "effect": "500 m.",
+        "effect": " 500 meters/546 yards.",
         "retention": 5
       },
       "arcaneGrade": {
         "zeon": 100,
         "requiredIntelligence": 12,
-        "effect": "1 km.",
+        "effect": " 1 km/1093 yards.",
         "retention": 10
       },
       "withRetention": true,
@@ -82,33 +82,33 @@
     {
       "spellId": 3,
       "bookId": 17,
-      "name": "Plagiat",
+      "name": "Plagiarism",
       "level": 24,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Permet au mage d'avoir la fibre artistique nécessaire pour interpréter tout type de composition musicale, soit en chantant, soit en jouant d'un instrument. Le sorcier devra connaître ou avoir écouté, même de façon incomplète, l'œuvre musicale qu'il souhaite reproduire. Pour ce faire, le personnage à un niveau de compétence de Musique équivalent à celui déterminé par le Degré  du sort.",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: Provides the magician's the ability to carry out necessary artistic interpretation of any musical composition, whether playing a instrument or singing. The sorcerer must know or have heard, albeit incomplete, the part you wish want to represent. In doing so, the character has the equivalent of a particular music ability based on the level of the spell.",
       "initialGrade": {
         "zeon": 50,
         "requiredIntelligence": 6,
-        "effect": "120 en Musique.",
+        "effect": " 120 Music.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 70,
         "requiredIntelligence": 8,
-        "effect": "180 en Musique.",
+        "effect": " 180 Music.",
         "retention": 5
       },
       "advancedGrade": {
         "zeon": 90,
         "requiredIntelligence": 10,
-        "effect": "240 en Musique.",
+        "effect": " 240 Music.",
         "retention": 5
       },
       "arcaneGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "280 en Musique.",
+        "effect": " 280 Music.",
         "retention": 10
       },
       "withRetention": true,
@@ -120,65 +120,65 @@
       "name": "Mezzo Forte",
       "level": 34,
       "actionType": "Active",
-      "type": "Attaque",
-      "effect": "En créant une note musicale discordante, le sorcier déchaîne une onde sonique destructive qui abat toute chose solide avec laquelle elle entre en contact. L'attaque se fait sur le Mode Energie et a une base de dégâts très basse mais, si elle inflige des dégâts, le défenseur doit réussir un test de RPhy contre une difficulté égale à 10 fois la perte de points de vie subie (jusqu'à un maximum de 240) ou subir des dégâts supplémentaires équivalents à la marge d'échec. Par exemple, si ce sort est lancé au Degré  Intermédiaire (dégâts de 20) et que l'attaque entraîne la perte de 16 Points de Vie, la personne affectée devra faire son test de RPhy contre 160.",
+      "type": "Spell Type: Attack",
+      "effect": "Effect: Creating a discordant note of music, the wizard unleashes adestructive sound wave that destroys anything solid it comes in contact with. The energy based attack is has very low base damage but should damage result, the defender must make an PhR test against a difficulty equal to 10 x Damage taken (MAX Difficulty 240) loosing additional LP equal to the failure level.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 7,
-        "effect": "Base de dégâts 10.",
+        "effect": " Damage 10.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 90,
         "requiredIntelligence": 9,
-        "effect": "Base de dégâts 20.",
+        "effect": " Damage 20.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 11,
-        "effect": "Base de dégâts 30.",
+        "effect": " Damage 30.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 150,
         "requiredIntelligence": 13,
-        "effect": "Base de dégâts 40.",
+        "effect": " Damage 40.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 5,
       "bookId": 17,
-      "name": "Adagio",
+      "name": "Adage",
       "level": 44,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Ce sort crée une mélodie chargée d'émotions fortes qui atteignent tous ceux qui l'écoutent en moins d'un round. Toutes les personnes touchées doivent réussir un test de RMys ou être complètement submergées par l'émotion choisie par le sorcier pour la symphonie. Si quelqu'un écoute partiellement Adagio ou s'il arrive à couvrir ses oreilles, il obtient un bonus de +40 à son test de Résistance. Adagio est entendu dans une zone autour du sorcier, à l'intérieur de laquelle le lanceur ne peut choisir ses cibles.",
+      "type": "Spell Type: Automatic",
+      "effect": "Effect: This spell creates a melody filled with strong emotionsaffect all who hear at least one assault. Targets must pass a MR test or be completelyimbued with an emotion chosen by the wizard based on the symphony. If someone is only half listening or ears are covered they receive +40 to their MR test.  The Mage is not able to use target selection, all people in the radius are impacted.",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 7,
-        "effect": "120 RMys / 20 m de rayon.",
+        "effect": " 120 MR / 20m/21yd radius.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 160,
         "requiredIntelligence": 9,
-        "effect": "140 RMys / 50 m de rayon.",
+        "effect": " 140 MR / 50m/54yd radius.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 220,
         "requiredIntelligence": 11,
-        "effect": "160 RMys / 100 m de rayon.",
+        "effect": " 160 MR / 100m/109yd radius.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 280,
         "requiredIntelligence": 13,
-        "effect": "180 RMys / 150 m de rayon.",
+        "effect": " 180 MR / 150m/164yd radius.",
         "retention": 20
       },
       "withRetention": true,
@@ -190,30 +190,30 @@
       "name": "Allegro",
       "level": 54,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Crée la plus belle mélodie imaginable, qui étourdit et éblouit ceux qui l'écoutent. Tous ceux qui sont autour du sorcier doivent réussir tous les deux rounds une RMys ou subir l'état de Fascination, et être incapables de réaliser des actions actives de leur propre volonté. Les cibles sourdes sont immunisées contre ce sort, et si quelqu'un écoute la musique partiellement ou réussit à se couvrir les oreilles, il obtient un bonus de +40 à son test de Résistance.",
+      "type": "Spell Type: Automatic",
+      "effect": "Effect: Creates the most beautiful melody imaginable, which stuns and captivates its listeners. Anyone who is around the sorcerermust pass two MR tests or suffer the fascination state.  Those who are unable to hear are immune to this effect.   If someone is only half listening or ears are covered they receive +40 to their MR test.  ",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 7,
-        "effect": "120 RMys / 10 m de rayon.",
+        "effect": " 120 MR / 10m/11yd radius.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 160,
         "requiredIntelligence": 9,
-        "effect": "140 RMys 25 m de rayon.",
+        "effect": " 140 MR / 25m/27yd radius.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 220,
         "requiredIntelligence": 11,
-        "effect": "160 RMys / 50 m de rayon.",
+        "effect": " 160 MR / 50m/54yd radius.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 280,
         "requiredIntelligence": 13,
-        "effect": "180 RMys / 100 m de rayon.",
+        "effect": " 180 MR / 100m/109yd radius.",
         "retention": 20
       },
       "withRetention": true,
@@ -222,33 +222,33 @@
     {
       "spellId": 7,
       "bookId": 17,
-      "name": "Presstisimo",
+      "name": "Prestissimo",
       "level": 64,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Ce sort crée une mélodie frénétique qui augmente la rapidité de réaction de tous ceux qui l'écoutent et qui sont désignés par le lanceur. Les personnes affectées qui sont proches du sorcier obtiennent immédiatement un bonus à leur initiative et augmentent leur rapidité de déplacement.",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: This spell creates a frenetic tune that increasesrate of reaction of anyone who listens as selected by the caster. Those affected in the radius of the spell increase their speed.",
       "initialGrade": {
         "zeon": 120,
         "requiredIntelligence": 8,
-        "effect": "10 m de rayon/ +1 au Mouvement / +30 à l'Initiative.",
+        "effect": " 10m/10yd radius/ +1 movement / +30 Initiative.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 10,
-        "effect": "20 m de rayon/ +2 au Mouvement / +30 à l'Initiative.",
+        "effect": " 20m/21yd radius/ +2 movement / +30 Initiative.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "30 m de rayon/ +2 au Mouvement / +40 à l'Initiative.",
+        "effect": " 30m/32yd radius/ +2 movement / +40 Initiative.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 14,
-        "effect": "40 m de rayon/ +3 au Mouvement / +50 à l'Initiative.",
+        "effect": " 40m/43yd radius/ +3 movement / +50 Initiative.",
         "retention": 20
       },
       "withRetention": true,
@@ -260,30 +260,30 @@
       "name": "Fortissimo",
       "level": 74,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Le sorcier obtient un contrôle absolu sur n'importe quel son produit clans la zone d'influence déterminée par le Degré  du sort. Il peut le modifier, augmenter sa puissance ou le rendre complètement imperceptible. Par exemple, il pourrait réunir de faibles murmures dans l'environnement pour former une agréable mélodie ou déformer les paroles d'une personne. À moins que le son n'ait une présence en tant que tel, ou qu'il soit produit par un être avec une Gnose de 40 ou plus, personne ne peut éviter les effets de ce sortilège.",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: The caster receives complete control over any sound produced in the area of ​​influence, and can alter, increase in power or make completely imperceptible any sound. For example, bringing together small environmental whispers to form a nice melody or misrepresent the words of a person. Beings with a presence higher than that of the caster, or Gnosis 40+ are immune to having their sound altered. ",
       "initialGrade": {
         "zeon": 120,
         "requiredIntelligence": 8,
-        "effect": "10 m de rayon.",
+        "effect": " 10m/10yd radius.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 10,
-        "effect": "25 m de rayon.",
+        "effect": " 25m/27yd radius.",
         "retention": 15
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "50 m de rayon",
+        "effect": " 50m/54yd radius.",
         "retention": 20
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 14,
-        "effect": "100 m de rayon.",
+        "effect": " 100m/109yd radius.",
         "retention": 30
       },
       "withRetention": true,
@@ -295,30 +295,30 @@
       "name": "Marziale",
       "level": 84,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Crée une puissante mélodie qui renforce l'endurance innée de ceux qui l'écoutent et sont désignés par le lanceur. Les personnes affectées qui se trouvent autour du sorcier obtiennent différents bonus, décrits dans les Degré s du sort. Les bénéfices de ce sort ne se superposent pas, donc un individu qui est dans la zone d'influence de deux Marziale différents n'applique pas deux fois les bonus.",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: Creates a powerful melody that enhances endurance for those who listen and are selected by the caster. A person can only be under the influence of one instance of this spell ",
       "initialGrade": {
-        "zeon": 102,
+        "zeon": 120,
         "requiredIntelligence": 8,
-        "effect": "10 m de rayon / +2 à l'IP / +20 en RMys.",
+        "effect": " 10m/10yd radius / +2 AT / MR +20.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 10,
-        "effect": "25 m de rayon / +3 à l'IP / +20 en RMys et en RPhy.",
+        "effect": " 25m/27yd radius / +3 AT / MR +20 and PhR +20.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "50 m de rayon / +4 à l'IP / +20 en RMys, en RPhy et en RPsy / Seuil d'invulnérabilité de 50.",
+        "effect": " 50m/54yd / +4 AT / +20 MR, PhR, and PsR / Damage Barrier 50.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 14,
-        "effect": "100 m de rayon/ +5 à l'IP / +30 en RMys, en RPhy et en RPsy / Seuil d'invulnérabilité de 60.",
+        "effect": " 100m/109yd / +5 AT / +20 MR, PhR, and PsR / Damage Barrier 60.",
         "retention": 20
       },
       "withRetention": true,
@@ -330,30 +330,30 @@
       "name": "Anima",
       "level": 94,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Anima est un sort qui charge une mélodie de pouvoirs surnaturels pour pénétrer automatiquement l'âme de ceux qui l'écoutent. Anima doit être lancé en combinaison avec un autre sort, de type Animique, rendant ce sortilège Automatique et le faisant agir sur tous ceux qui sont à moins de 50 mètres du sorcier et qui écoutent la mélodie plus d'un round. La RMys à dépasser est la même que celle du sort affecté par Anima, mais si quelqu'un perçoit partiellement la mélodie ou s'il arrive à couvrir ses oreilles, il obtient un bonus de +40 à son test de RMys.",
+      "type": "Spell Type: Automatic",
+      "effect": "Effect: Anima is a spell that carries a tune of supernatural power automatically penetrating the soul of all who listen. Anima should be cast in combination with a spiritual spell, causing the spell to become automatic and affect anyone within 50m/54yd of the sorcerer who listen to the melody. The MR test will be based on the spiritual spell; if someone is only half listening or ears are covered they receive +40 to their MR test.",
       "initialGrade": {
         "zeon": 300,
         "requiredIntelligence": 8,
-        "effect": "Affecte les sorts en Degré  Initial.",
+        "effect": " Affects base level spells.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 450,
         "requiredIntelligence": 10,
-        "effect": "Affecte les sorts en Degré  Intermédiaire.",
+        "effect": " Affects Intermediate level spells.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 600,
         "requiredIntelligence": 12,
-        "effect": "Affecte les sorts en Degré  Avancé.",
+        "effect": " Affects Advanced level spells.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 800,
         "requiredIntelligence": 14,
-        "effect": "Affecte les sorts en Degré  Arcane.",
+        "effect": " Affects Arcane level spells.",
         "retention": 20
       },
       "withRetention": true,

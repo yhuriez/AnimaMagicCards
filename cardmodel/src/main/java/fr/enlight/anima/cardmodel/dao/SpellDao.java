@@ -22,11 +22,11 @@ import static android.content.ContentValues.TAG;
 
 public class SpellDao {
 
-    private static final String SPELLBOOK_FILE_FRENCH_PREFIX = "spellbooks/spellbook_";
-    private static final String SPELLBOOK_INDEX_FRENCH_FILE = "spellbooks/spellbooks_index.json";
+    private static final String SPELLBOOK_FILE_FRENCH_PREFIX = "spellbooks-fr/spellbook_";
+    private static final String SPELLBOOK_INDEX_FRENCH_FILE = "spellbooks-fr/spellbooks_index.json";
 
-    private static final String SPELLBOOK_FILE_ENGLISH_PREFIX = "spellbooks-en/spellbook_";
-    private static final String SPELLBOOK_INDEX_ENGLISH_FILE = "spellbooks-en/spellbooks_index.json";
+    private static final String SPELLBOOK_FILE_ENGLISH_PREFIX = "spellbooks/spellbook_";
+    private static final String SPELLBOOK_INDEX_ENGLISH_FILE = "spellbooks/spellbooks_index.json";
 
     /**
      * @return the index of all existing spellbooks

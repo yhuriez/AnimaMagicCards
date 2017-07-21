@@ -1,51 +1,51 @@
 {
   "bookId": 1,
-  "bookName": "Livre de la Lumière",
-  "description": "Cette voie permet aux sorciers de contrôler un des deux éléments supérieurs, la lumière pure. Elle contrôle les émotions positives de l’homme, comme l’amour, la tranquillité ou le plaisir. Elle offre également la maîtrise de la connaissance et de la détection. Ses pouvoirs offensifs et défensifs se révèlent très équilibrés.",
-  "type": "Majeure",
-  "oppositeBook": "Obscurité",
-  "secondaryBookAccessibles": [
+  "bookName": "Path of Light",
+  "description": "This is the Path that confers dominion over one of the two Higher Elements, pure light. It controls man's most positive emotions, such as love, peace, and pleasure. Light also regulates knowledge and detection. Its offensive and defensive powvers are very balanced.",
+  "type": "Main",
+  "oppositeBook": "Darkness",
+  "secondaryBookAccessible": [
     "Chaos",
-    "Guerre",
+    "War",
     "Literae",
-    "Musique",
-    "Noblesse",
-    "Paix",
-    "Connaissance",
-    "Rêve",
-    "Temps."
+    "Music",
+    "Nobility",
+    "Peace",
+    "Knowledge",
+    "Dream",
+    "Time"
   ],
   "spells": [
     {
       "spellId": 1,
       "bookId": 1,
-      "name": "Créer Lumière",
+      "name": "Create Light",
       "level": 2,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Crée de la lumière à partir d’un point déterminé par le sorcier.",
+      "type": "Effect",
+      "effect": " Creates Light in a radius.",
       "initialGrade": {
         "zeon": 20,
         "requiredIntelligence": 5,
-        "effect": "5 m de rayon.",
+        "effect": " 5m/5yd area",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 50,
         "requiredIntelligence": 8,
-        "effect": "25 m de rayon.",
+        "effect": " 25m/27yd area",
         "retention": 5
       },
       "advancedGrade": {
         "zeon": 100,
         "requiredIntelligence": 10,
-        "effect": "100 m de rayon.",
+        "effect": " 100m/109yd area",
         "retention": 10
       },
       "arcaneGrade": {
         "zeon": 200,
         "requiredIntelligence": 12,
-        "effect": "500 m de rayon.",
+        "effect": " 500m/546yd area",
         "retention": 15
       },
       "withRetention": true,
@@ -54,103 +54,103 @@
     {
       "spellId": 2,
       "bookId": 1,
-      "name": "Apaiser",
+      "name": "Imbue Calm",
       "level": 6,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Apaise les individus perturbés par un sentiment de peur ou de haine, qui se trouvent autour du sorcier. Ce sort fait disparaître tous les états de Peur, Terreur ou Colère que subissent ces individus, même si ces effets ont une origine surnaturelle. Par contre, il n'empêche pas les actions violentes si celles-ci sont effectuées de sang-froid ou de façon préméditée.",
+      "type": "Spiritual",
+      "effect": "Calms individuals feeling fear or hatred around the caster. Makes any Fear, Terror, or Anger States disappear, even if of supernatural origin. It does not prevent violent actions deliberately done in cold blood.",
       "initialGrade": {
         "zeon": 40,
         "requiredIntelligence": 5,
-        "effect": "RMys ou RPsy 80 / 10m de rayon",
+        "effect": " MR or PsR 80 / 10m/11yd area",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 80,
         "requiredIntelligence": 8,
-        "effect": "RMys ou RPsy 100 / 25m de rayon",
+        "effect": " MR or PsR 100 / 25m/27yd area",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 11,
-        "effect": "RMys ou RPsy 120 / 50m de rayon",
+        "effect": " MR or PsR 120 / 50m/54yd area",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 160,
         "requiredIntelligence": 14,
-        "effect": "RMys ou RPsy 150 / 100m de rayon",
+        "effect": " MR or PsR 140 / 100m/109yd area",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 3,
       "bookId": 1,
-      "name": "Flash aveuglant",
+      "name": "Blinding Flash",
       "level": 8,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Provoque un flash soudain de lumière dans un rayon de 15 mètres. Toutes les personnes qui le voient sont aveuglées pendant un round par tranche de 10 points de marge d'échec au test de Résistance. Il n'est pas possible de choisir des cibles spécifiques dans la zone du flash, qui affecte toutes les personnes présentes de la même manière, à l'exception du sorcier. Si les personnes affectées se couvrent les yeux ou se prémunissent du flash d'une façon quelconque, le défenseur bénéficie d’un bonus de +40 sur son test de résistance.",
+      "type": "Automatic",
+      "effect": "Causes a sudden flash of light around the caster. It blinds anyone looking at it when it goes off for as many combat turns as he fails the MR check by, divided by 10. It is not possible to designate specific targets within the flash, and everyone except the caster is equally affected. Characters can resist this spell by passing a PhR Check. Bonus for not looking is only +40 to PhR.",
       "initialGrade": {
         "zeon": 50,
         "requiredIntelligence": 6,
-        "effect": "RPhy 140 / 10m de rayon.",
+        "effect": " PhR 140 / 10m/11yd area",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 100,
         "requiredIntelligence": 9,
-        "effect": "RPhy 140 / 25m de rayon.",
+        "effect": " PhR 140 / 25m/27yd area",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 150,
         "requiredIntelligence": 11,
-        "effect": "RPhy 140 / 50m de rayon.",
+        "effect": " PhR 140 / 50m/54yd area",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 200,
         "requiredIntelligence": 14,
-        "effect": "RPhy 160 / 100m de rayon.",
+        "effect": " PhR 160 / 100m/109yd area",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 4,
       "bookId": 1,
-      "name": "Bouclier de Lumière",
+      "name": "Shield of Light",
       "level": 10,
       "actionType": "Passive",
-      "type": "Défense",
-      "effect": "Forme une barrière d'énergie, qui protège contre toute source d'attaque. Seules les attaques surnaturelles peuvent lui infliger des dégâts et les attaques basées sur l'obscurité lui en infligent même le double.",
+      "type": "Defense",
+      "effect": "Forms a barrier of Energy that protects the caster from any source of attack. The shield can absorb up to 300 points at base level before breaking, but is only damaged by supernatural attacks. Impacts based on Darkness cause double damage.",
       "initialGrade": {
         "zeon": 50,
         "requiredIntelligence": 6,
-        "effect": "Le bouclier possède 300 points de vie",
+        "effect": " 300 Resistance Points.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 120,
         "requiredIntelligence": 8,
-        "effect": "Le bouclier possède 1000 points de vie",
+        "effect": " 1000 Resistance Points.",
         "retention": 15
       },
       "advancedGrade": {
         "zeon": 180,
         "requiredIntelligence": 10,
-        "effect": "Le bouclier possède 1800 points de vie",
+        "effect": " 1800 Resistance Points.",
         "retention": 20
       },
       "arcaneGrade": {
         "zeon": 250,
         "requiredIntelligence": 14,
-        "effect": "Le bouclier possède 3000 points de vie",
+        "effect": " 3000 Resistance Points.",
         "retention": 25
       },
       "withRetention": true,
@@ -159,33 +159,33 @@
     {
       "spellId": 5,
       "bookId": 1,
-      "name": "Percevoir",
+      "name": "Perceive",
       "level": 12,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Ce sort augmente les perceptions du sorcier en rehaussant ses compétences secondaires de vigilance et d'observation. Son évaluation magique augmente de la même valeur, mais seulement s'il compte mesurer ou détecter le potentiel magique de quelque chose ou quelqu'un, pas pour le dissimuler.",
+      "type": "Effect",
+      "effect": "This spell improves the perception of the caster, increasing his secondary abilities of Notice and Search. It also increases his Magical Appraisal by the same amount, but only for the purpose of detecting or measuring the magic potency of something or someone, not to hide it.",
       "initialGrade": {
         "zeon": 50,
         "requiredIntelligence": 6,
-        "effect": "+50 en Vigilance, Observation et Éval. Magique",
+        "effect": " +50 Notice, Search and Magic Appraisal.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 150,
         "requiredIntelligence": 9,
-        "effect": "+150 en Vigilance, Observation et Éval. Magique",
+        "effect": " +150 Notice, Search and Magic Appraisal.",
         "retention": 15
       },
       "advancedGrade": {
         "zeon": 200,
         "requiredIntelligence": 12,
-        "effect": "+200 en Vigilance, Observation et Éval. Magique",
+        "effect": " +200 Notice, Search and Magic Appraisal.",
         "retention": 20
       },
       "arcaneGrade": {
         "zeon": 250,
         "requiredIntelligence": 14,
-        "effect": "+250 en Vigilance, Observation et Éval. Magique",
+        "effect": " +250 Notice, Search and Magic Appraisal.",
         "retention": 25
       },
       "withRetention": true,
@@ -194,33 +194,33 @@
     {
       "spellId": 6,
       "bookId": 1,
-      "name": "Armure de Lumière",
+      "name": "Armor of Light",
       "level": 16,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Forme une carapace mystique qui protège contre les attaques de Mode Énergie, et de la moitié contre les autres Modes. Bien que cette protection compte comme une armure, on n'applique aucun malus à l'initiative pour les couches de protection supplémentaires.",
+      "type": "Effect",
+      "effect": "Forms a strong mystical armor against Energy-based Attacks, and a minor mystical armor against all others. Although it counts as armor, it does not count as an additional layer of armor for purposes of penalties to Initiative.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 6,
-        "effect": "IP 2 contre l’Énergie et IP 1 contre le reste",
+        "effect": "  Energy AT 2, other AT 1.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 90,
         "requiredIntelligence": 9,
-        "effect": "IP 5 contre l’Énergie et IP 2 contre le reste",
+        "effect": "  Energy AT 5, other AT 2.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "IP 8 contre l’Énergie et IP 4 contre le reste",
+        "effect": "  Energy AT 8, other AT 4.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 150,
         "requiredIntelligence": 15,
-        "effect": "IP 12 contre l’Énergie et IP 6 contre le reste",
+        "effect": "  Energy AT 12, other AT 6.",
         "retention": 20
       },
       "withRetention": true,
@@ -229,33 +229,33 @@
     {
       "spellId": 7,
       "bookId": 1,
-      "name": "Destruction d'Ombres",
+      "name": "Banish Shadows",
       "level": 18,
       "actionType": "Active",
-      "type": "Effet, Animique",
-      "effect": "Détruit les ombres existant dans le rayon d’action du sortilège. Si ce sort est lancé sur des êtres naturellement basés sur l'obscurité, ils doivent réussir un test de RMys, sous peine de perdre une quantité de points de vie égale au double de leur marge d'échec (dix fois la marge d'échec dans le cas de créatures à Encaissement). Si ce sort est maintenu, les créatures devront effectuer un nouveau test de RMys à chaque round.",
+      "type": "Effect/Spiritual",
+      "effect": "Destroys shadows within a radius. Any darkness based creatures within the radius must pass a MR Check, or lose the double their Failure level in Life Points (Damage Resistance creatures increases this amount by its Damage Resistance multiple). As long as the spell is maintained over the creatures, they must do a new MR Check each combat turn.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 6,
-        "effect": "RMys 140 / 10m de rayon",
+        "effect": " MR 140 / 10m/11yd area.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 100,
         "requiredIntelligence": 9,
-        "effect": "RMys 180 / 100m de rayon",
+        "effect": " MR 180 / 100m/109yd area.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 150,
         "requiredIntelligence": 12,
-        "effect": "RMys 220 / 250m de rayon",
+        "effect": " MR 220 / 250m/273yd area.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 250,
         "requiredIntelligence": 15,
-        "effect": "RMys 280 / 500m de rayon",
+        "effect": " MR 280 / 500m/546yd area.",
         "retention": 25
       },
       "withRetention": true,
@@ -264,33 +264,33 @@
     {
       "spellId": 8,
       "bookId": 1,
-      "name": "Détecter le Négatif",
+      "name": "Detect Negative Emotions",
       "level": 20,
       "actionType": "Active",
-      "type": "Détection",
-      "effect": "Détecte tous les sentiments négatifs, comme la haine, la peur ou la colère, qui se trouvent autour du sorcier. Ce sort affecte aussi les créatures se basant sur ces émotions. Pour y résister, elles doivent réussir un test de RMys.",
+      "type": "Detection",
+      "effect": "Detects any negative sentiments such as hatred, fear, or anger around the caster. It also senses creatures based on such emotions. Resisting the spell requires beating a MR Check.",
       "initialGrade": {
-        "zeon": 25,
+        "zeon": 50,
         "requiredIntelligence": 6,
-        "effect": "RMys 80 / 25m de rayon",
+        "effect": " MR 80 / 25m/27yd area.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 100,
         "requiredIntelligence": 9,
-        "effect": "RMys 140 / 150m de rayon",
+        "effect": " MR 140 / 150m/164yd area.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 160,
         "requiredIntelligence": 12,
-        "effect": "RMys 160 / 500m de rayon",
+        "effect": " MR 160 / 500m/546yd area.",
         "retention": 20
       },
       "arcaneGrade": {
         "zeon": 280,
         "requiredIntelligence": 15,
-        "effect": "RMys 200 / 1 km de rayon",
+        "effect": " MR 200 / 1km/1093yd area.",
         "retention": 30
       },
       "withRetention": true,
@@ -299,68 +299,68 @@
     {
       "spellId": 9,
       "bookId": 1,
-      "name": "Décharge de Lumière",
+      "name": "Light Beam",
       "level": 22,
       "actionType": "Active",
-      "type": "Attaque",
-      "effect": "Projette une décharge d'énergie magique basée sur la lumière. L'attaque se fait sur le Mode Énergie.",
+      "type": "Attack",
+      "effect": "Projects a beam of Light based magical energy. Light Beam is an Energy Attack Type.",
       "initialGrade": {
         "zeon": 50,
         "requiredIntelligence": 6,
-        "effect": "Dégâts de base 60",
+        "effect": "  Base Damage 60.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 90,
         "requiredIntelligence": 9,
-        "effect": "Dégâts de base 90",
+        "effect": "  Base Damage 90.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "Dégâts de base 120",
+        "effect": "  Base Damage 120.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 150,
         "requiredIntelligence": 15,
-        "effect": "Dégâts de base 150",
+        "effect": "  Base Damage 150.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 10,
       "bookId": 1,
-      "name": "Hologramme",
+      "name": "Hologram",
       "level": 26,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Crée une forme lumineuse immatérielle dont la taille maximale dépend du rang du sort. Le sorcier peut lui donner l'apparence qu'il désire, ce qui n'aide pas à différencier un hologramme d'un être ou d'une chose véritable. Si on crée un être, ce dernier peut effectuer toutes les actions surhumaines que souhaite celui qui le contrôle, mais en imitant les compétences physiques du sorcier. Si par exemple, il utilise un hologramme pour faire croire à une attaque, l'hologramme utilise l'attaque du jeteur de sort. L'hologramme ne peut toucher personne ni être touché, mais s'il reçoit des dégâts basés sur l'énergie, il disparaît. Pour s'apercevoir qu'il ne s'agit que d'une image, il faut réussir un test Quasiment Impossible de Vigilance, ou un test Très Difficile d'observation.",
+      "type": "Effect",
+      "effect": "Creates an immaterial luminous form with a maximum size based on the spell level. The caster can give the hologram the appearance he desires, making it very difficult to tell it from something real. If he creates a creature, it can perform any inhuman action the caster wishes, but will mimic the physical abilities of the caster. If, for example, the hologram is used to simulate an attack, it uses the combat ability of the caster. The hologram cannot touch anyone nor be touched, but if it receives any damage based on Energy, it disappears. To detect that the hologram is not real, it is necessary to beat a Notice check against a difficulty of Almost Impossible, or Search against Very Difficult.",
       "initialGrade": {
         "zeon": 40,
         "requiredIntelligence": 6,
-        "effect": "La taille maximale est d’un mètre cube",
+        "effect": " Image has maximum size of 1 cubic meter / 1 cubic yard.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 150,
         "requiredIntelligence": 9,
-        "effect": "La taille maximale est de 15 mètres cube",
+        "effect": " Image has maximum size of 15 cubic meters / 16 cubic yards.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 250,
         "requiredIntelligence": 12,
-        "effect": "La taille maximale est de 50 mètres cube",
+        "effect": " Image has maximum size of 50 cubic meters / 54 cubic yards.",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 350,
         "requiredIntelligence": 15,
-        "effect": "La taille maximale est de 100 mètres cube et la difficulté des tests de Vigilance et d’Observation passe respectivement à Impossible et Absurde.",
+        "effect": " Image has maximum size of 100 cubic meters / 109 cubic yards.",
         "retention": 30
       },
       "withRetention": true,
@@ -369,33 +369,33 @@
     {
       "spellId": 11,
       "bookId": 1,
-      "name": "Liens de Lumière",
+      "name": "Bonds of Light",
       "level": 28,
       "actionType": "Active",
-      "type": "Attaque",
-      "effect": "Forme quelques liens de lumière qui subjuguent la cible désignée. Il faut réaliser une attaque en utilisant les règles d'immobilisation, mais le sorcier ne subit aucun malus à sa compétence pour exécuter cette manœuvre. La force des liens ont en ce qui concerne les tests appropriés dépend du rang du sort. Si un tiers tente de libérer une personne immobilisée par des liens de lumière, ceux-ci sont considérés comme une arme d'énergie de Solidité 25.",
+      "type": "Attack",
+      "effect": "It cast bonds of light that hold the designated target immobile. An attack is made using the rules for Trapping, although the caster suffers no penalty to his Ability for performing this maneuver. The bonds use a Strength based on spell level for the check. If anyone tries to help free the person Trapped, the Bonds of Light are treated as an Energy weapon with Fortitude of 25.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 6,
-        "effect": "Force de 8",
+        "effect": " Strength 8.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 100,
         "requiredIntelligence": 9,
-        "effect": "Force de 12",
+        "effect": " Strength 12.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 140,
         "requiredIntelligence": 12,
-        "effect": "Force de 15 et la solidité passe à 30",
+        "effect": " Strength 15 and Fortitude 30.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 180,
         "requiredIntelligence": 15,
-        "effect": "Force de 18 et la solidité passe à 35",
+        "effect": " Strength 18 and Fortitude 35.",
         "retention": 15
       },
       "withRetention": true,
@@ -404,33 +404,33 @@
     {
       "spellId": 12,
       "bookId": 1,
-      "name": "Maîtrise lumineuse",
+      "name": "Control Light",
       "level": 30,
       "actionType": "Active",
-      "type": "Effet, Animique",
-      "effect": "Modifie et contrôle la forme, la couleur et l'intensité de la lumière. Si ce sort est lancé contre des êtres naturellement basés sur cet élément, ils doivent réussir un test de RMys sous peine d'être contrôlés par le sorcier. Une créature contrôlée ne peut refaire ce test que si elle reçoit un ordre contraire à sa nature.",
+      "type": "Effect/Spiritual",
+      "effect": "Modifies and controls the form, color, or intensity of light in a radius. If cast at Light-based beings, they must pass a MR Check or they will fall under the control of the caster. A creature can only repeat the check if it is ordered to do something against its nature.",
       "initialGrade": {
         "zeon": 50,
         "requiredIntelligence": 6,
-        "effect": "RMys 80 / rayon de 20m",
+        "effect": " MR 80 / 20m/21yd area.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 150,
         "requiredIntelligence": 9,
-        "effect": "RMys 140 / rayon de 150m",
+        "effect": " MR 140 / 150m/164yd area.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 250,
         "requiredIntelligence": 12,
-        "effect": "RMys 180 / rayon de 300m",
+        "effect": " MR 180 / 300m/328yd area.",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 350,
         "requiredIntelligence": 16,
-        "effect": "RMys 220 / rayon de 500m",
+        "effect": " MR 220 / 500m/546yd area.",
         "retention": 30
       },
       "withRetention": true,
@@ -439,33 +439,33 @@
     {
       "spellId": 13,
       "bookId": 1,
-      "name": "Détecter la Vie",
+      "name": "Detect Life",
       "level": 32,
       "actionType": "Active",
-      "type": "Détection",
-      "effect": "Détecte toute forme de vie. Le sort ne donne pas plus d'information que le nombre d'êtres présents et le lieu exact où ils se trouvent. Si un individu désire résister, il doit réussir un test de RMys.",
+      "type": "Detection",
+      "effect": "Detects any life-form within a radius. The spell only detects the number of life-forms and their exact location. Resisting the spell requires beating a MR check.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 6,
-        "effect": "RMys 140 / rayon de 25m",
+        "effect": " MR 140 / 25m/27yd area.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 100,
         "requiredIntelligence": 9,
-        "effect": "RMys 180 / rayon de 50m",
+        "effect": " MR 180 / 50m/54yd area.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 150,
         "requiredIntelligence": 12,
-        "effect": "RMys 220 / rayon de 150m",
+        "effect": " MR 220 / 150m/164yd area.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "RMys 280 / rayon de 500m",
+        "effect": " MR 280 / 500m/546yd area.",
         "retention": 30
       },
       "withRetention": true,
@@ -474,33 +474,33 @@
     {
       "spellId": 14,
       "bookId": 1,
-      "name": "Espion de Lumière",
+      "name": "Spy of Light",
       "level": 36,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Crée un petit éclat d'énergie lumineuse qui se déplace selon les désirs du sorcier, avec une Qualité de Vol de 14, jusqu'à une distance maximale dépendant du rang du sort. Le sorcier peut voir et entendre grâce à elle comme s'il se trouvait à sa place",
+      "type": "Effect",
+      "effect": "Creates a small light of energy that moves as wished by the caster, with a Flight Value of 14, for a maximum distance of one mile. Through it, the caster can see and hear as though he were present, but doing so overwhelms his body’s senses, and he can only perceive the world through the Spy of Light. Each combat turn the caster decides if he will see through the Spy of Light, or his own senses. The Spy of Light has an ability of 100 at Notice and Search. If attacked, it can defend itself with the Magic Projection of its caster. For purposes of Initiative, it acts when its controller does. It is only possible to attack it with supernatural attacks, although it is destroyed if it receives any damage.",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 6,
-        "effect": "100 en Observation et Vigilance / 1 km de distance",
+        "effect": " Notice and Search 100 / 1km/1093yd maximum distance.",
         "retention": 20
       },
       "intermediateGrade": {
         "zeon": 200,
         "requiredIntelligence": 9,
-        "effect": "150 en Observation et Vigilance / 10 km de distance",
+        "effect": " Notice and Search 150 /10km/6.2miles maximum distance.",
         "retention": 40
       },
       "advancedGrade": {
         "zeon": 300,
         "requiredIntelligence": 12,
-        "effect": "200 en Observation et Vigilance / 50 km de distance",
+        "effect": " Notice and Search 200 / 50km/31miles maximum distance.",
         "retention": 60
       },
       "arcaneGrade": {
         "zeon": 400,
-        "requiredIntelligence": 15,
-        "effect": "250 en Observation et Vigilance / 500 km de distance",
+        "requiredIntelligence": 16,
+        "effect": " Notice and Search 250 / 500km/310.6miles maximum distance.",
         "retention": 80
       },
       "withRetention": true,
@@ -509,33 +509,33 @@
     {
       "spellId": 15,
       "bookId": 1,
-      "name": "Extase",
+      "name": "Ecstasy",
       "level": 38,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Ce sort envahit d'un sentiment d'extase absolue tous ceux qu'il affecte. La sensation de plaisir est si intense que les sens des cibles sont totalement engourdis, et qu'elles subissent un malus de -20 toutes leurs actions pendant toute la durée de l'effet. Les cibles du sort oublient complètement tout sentiment de douleur ou de tristesse et ignorent tous les malus de douleur, sauf ceux que provoquent des incapacités physiques. Un test de RMys permet d'annuler les effets de ce sort.",
+      "type": "Spiritual",
+      "effect": "This spell intoxicates anyone affected with a feeling of utter ecstasy. The sensation of pleasure is so powerful that the victim’s senses are completely clouded, and he receives a –20 All Action Penalty while affected. However, the spell’s victims are also completely oblivious and immune to any pain or other affliction based penalty, except those for actually being physically incapacitated. The MR Check to resist this spell has a Difficulty based on spell level, and affects a radius based on spell level.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 6,
-        "effect": "RMys 80 / rayon de 10m",
+        "effect": " MR 80 / 10m/11yd area.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 90,
         "requiredIntelligence": 9,
-        "effect": "RMys 100 / rayon de 50m",
+        "effect": " MR 100 / 50m/54yd area.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "RMys 120 / rayon de 100m",
+        "effect": " MR 120 / 100m/109yd area.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 150,
-        "requiredIntelligence": 15,
-        "effect": "RMys 160 / rayon de 250m",
+        "requiredIntelligence": 16,
+        "effect": " MR 160 / 250m/273yd area.",
         "retention": 15
       },
       "withRetention": true,
@@ -544,103 +544,103 @@
     {
       "spellId": 16,
       "bookId": 1,
-      "name": "Détruire les Sentiments Négatifs",
+      "name": "Banish Negative Emotions",
       "level": 40,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Détruit temporairement tous les sentiments négatifs, comme la haine, la peur ou la colère, qui se trouvent autour du sorcier. Il faut réussir un test de RMys ou de RPsy pour résister à ce sort.",
+      "type": "Spiritual",
+      "effect": "Temporarily banishes any negative sentiments such as hatred, fear, or anger around the caster. Resisting the spell requires beating a MR or PsR Check.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 6,
-        "effect": "RMys ou RPsy 80 / 10m de rayon",
+        "effect": " MR or PsR 100 / 100m/109yd area.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 9,
-        "effect": "RMys ou RPsy 100 / 25m de rayon",
+        "effect": " MR or PsR 150 / 500m/546yd area.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "RMys ou RPsy 120 / 50m de rayon",
+        "effect": " MR or PsR 180 / 1km/1093yd area.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 350,
         "requiredIntelligence": 15,
-        "effect": "RMys ou RPsy 150 / 100m de rayon",
+        "effect": " MR or PsR 220 / 5km/3.1mile area.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 17,
       "bookId": 1,
-      "name": "Lumière soignante",
+      "name": "Healing Light",
       "level": 42,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Permet de redonner des points de vie au bénéficiaire du sort. Ce sort ne permet pas de rendre les membres coupés ou amputés, ni n'élimine les malus infligés par les Critiques.",
+      "type": "Effect",
+      "effect": "Causes whomever the spell is directed at to recover Life Points. This spell does not restore permanently lost or destroyed limbs, nor eliminate penalties caused by Critical attacks.",
       "initialGrade": {
         "zeon": 70,
         "requiredIntelligence": 7,
-        "effect": "40 points de vie",
+        "effect": " 40 Life Points.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 100,
         "requiredIntelligence": 10,
-        "effect": "80 points de vie",
+        "effect": " 80 Life Points.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 150,
         "requiredIntelligence": 13,
-        "effect": "120 points de vie",
+        "effect": " 120 Life Points.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 200,
         "requiredIntelligence": 15,
-        "effect": "250 points de vie",
+        "effect": " 250 Life Points.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 18,
       "bookId": 1,
-      "name": "Sphère Chercheuse",
+      "name": "Seeking Sphere",
       "level": 46,
       "actionType": "Active",
-      "type": "Attaque",
-      "effect": "Libère une sphère d'énergie lumineuse qui inflige des dégâts sur le mode Énergie. Le sort peut être contrôlé avec la Projection Magique du sorcier jusqu'au moment de l'impact. Si une cible esquive l'attaque d'une Sphère Chercheuse, elle peut continuer à attaquer le round suivant, puisqu'elle n'est pas détruite. Quand la sphère inflige des dégâts ou est bloquée, elle disparaît. Si le sorcier abandonne son contrôle sur la sphère, elle agit indépendamment et suit la dernière cible fixée avec une Projection magique dépendant du rang du sort.",
+      "type": "Attack",
+      "effect": "Unleashes a sphere of luminous energy. The caster can control it using his Magic Projection until it hits its target. If the target successfully dodges, the Seeking Sphere can continue attacking the following turn, since it has not been destroyed. When Seeking Sphere causes damage, or is blocked, the Sphere explodes and vanishes. If the caster abandons control of it, it will act independently, following its last designated target with a Magic Projection based on spell level.",
       "initialGrade": {
         "zeon": 120,
         "requiredIntelligence": 6,
-        "effect": "Dégâts de base 100 / Projection Magique 150",
+        "effect": " Base Damage 100 / Magic Projection 150.",
         "retention": 15
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 9,
-        "effect": "Dégâts de base 120 / Projection Magique 180",
+        "effect": " Base Damage 120 / Magic Projection 180.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "Dégâts de base 160 / Projection Magique 210",
+        "effect": " Base Damage 160 / Magic Projection 210.",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "Dégâts de base 200 / Projection Magique 240",
+        "effect": " Base Damage 200 / Magic Projection 240.",
         "retention": 30
       },
       "withRetention": true,
@@ -649,33 +649,33 @@
     {
       "spellId": 19,
       "bookId": 1,
-      "name": "Zone de Détection",
+      "name": "Zone of Detection",
       "level": 48,
       "actionType": "Active",
-      "type": "Détection",
-      "effect": "Quand il lance ce sort sur un lieu précis, le sorcier perçoit tous les êtres se trouvant dans la zone, qui ne réussissent pas un test de RMys. La Zone de Détection ne donne pas plus d'information que le nombre d'individus présents à cet endroit, et leur localisation exacte. Les sorts de Détection tentant de pénétrer dans la zone apparaissent aussi, à condition que le sorcier qui les lance rate son test RMys (quel que soit l'endroit où il se trouve). Le centre de la zone de détection est fixé au lieu où le sort a été lancé.",
+      "type": "Detection",
+      "effect": "This spell allows the caster to detect any being within the area of thespell who does not beat a MR Check. The Zone of Detection only tells the caster how many individuals are in the zone, and their exact location. It also senses spells of Detection that attempt to enter into the area, as long as the spell caster using them does not beat the MR (regardless of his actual location). The affected zone is stationary in the place it was cast.",
       "initialGrade": {
         "zeon": 140,
         "requiredIntelligence": 7,
-        "effect": "RMys 180 / rayon de 20m",
+        "effect": " MR 180 / 20m/21yd area.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 200,
         "requiredIntelligence": 10,
-        "effect": "RMys 240 / rayon de 80m",
+        "effect": " MR 240 / 80m/87yd area.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 280,
         "requiredIntelligence": 12,
-        "effect": "RMys 280 / rayon de 150m",
+        "effect": " MR 280 / 150m/164yd area.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 360,
         "requiredIntelligence": 15,
-        "effect": "RMys 340 / rayon de 250m",
+        "effect": " MR 340 / 250m/273yd area.",
         "retention": 15
       },
       "withRetention": true,
@@ -684,33 +684,33 @@
     {
       "spellId": 20,
       "bookId": 1,
-      "name": "S'introduire dans les rêves",
+      "name": "Enter Another’s Dreams",
       "level": 50,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Permet au sorcier de s'introduire physiquement dans les rêves d'un dormeur. Le sorcier n'a aucun contrôle sur le monde onirique du rêveur et toute chose qui s'y déroule sera réelle pour lui. Le rêveur doit avoir des songes paisibles pour que ce sort puisse l'affecter et, dès que le rêve se change en cauchemar, qu'il se réveille ou qu'il meurt, le sorcier abandonne le monde onirique et revient à la réalité. Tous les sorts d'Essence réalisés sur le dormeur affectent aussi le sorcier. La victime a droit à un test de RMys ou RPsy. Une fois dans les rêves, le sorcier peut sauter vers l'inconscient d'un autre rêveur si celui-ci se trouve physiquement près du premier rêveur (la distance dépend du rang du sort). Bien sûr, cette personne à elle aussi droit au test de RMys ou RPsy. Si la conscience du dormeur se trouve dans le monde de la Veille, le sorcier y reste coincé, même après la fin du sort.",
+      "type": "Spiritual",
+      "effect": "This allows the caster to physically enter a sleeper’s dreams. The caster has no control over the dream world of the dreamer, and anything that happens there will be real to the caster. The person must have peaceful dreams to be affected by this spell, and the moment the dream turns into a nightmare, or he awakens or dies, the mage abandons the dream world and returns to reality. Any Spiritual spell cast on the dreamer while the caster is present in his dreams will also affect the caster. The MR or PsR Check has a Difficulty based on spell level. Once he is in the target person’s dreams, the caster can jump to the unconscious of yet another dreamer who is physically no more than 10m/11yd (at base level) from the original sleeper. Naturally, this new dreamer will have the right to his own MR or PsR Check. If the dreamer’s consciousness happens to be in the world of The Wake, the caster is trapped there even when the spell expires.",
       "initialGrade": {
         "zeon": 120,
         "requiredIntelligence": 6,
-        "effect": "RMys ou RPsy 140 / 10m de rayon",
+        "effect": " MR or PsR 140 / 10m/11yd distance.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 9,
-        "effect": "RMys ou RPsy 160 / 80m de rayon",
+        "effect": " MR or PsR 160 / 80m/87yd distance.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "RMys ou RPsy 200 / 140m de rayon",
+        "effect": " MR or PsR 200 / 140m/153yd distance.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "RMys ou RPsy 240 / 200m de rayon",
+        "effect": " MR or PsR 240 / 200m/218yd distance.",
         "retention": 15
       },
       "withRetention": true,
@@ -719,33 +719,33 @@
     {
       "spellId": 21,
       "bookId": 1,
-      "name": "De Corps à Lumière",
+      "name": "Light Form",
       "level": 52,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "La créature désignée par le sorcier se transforme en énergie lumineuse et devient intangible vis à vis de toutes les matières et attaques non basées sur l'énergie. Tant qu'elle se trouve dans cet état, la créature bénéficie d'un bonus dans ses compétences secondaires de Vigilance et d'Observation, et à ses Résistances contre les effets basés sur la Lumière. Dans cet état, tous les dégâts infligés par l'obscurité sont doublés.",
+      "type": "Effect",
+      "effect": "The body designated by the caster is transformed to pure luminous energy and becomes intangible to matter and non-energy attacks. While in this state, the transformed person gains a +50 bonus to his abilities of Notice and Search, and a +30 to his Resistance against effects based on Light. In this state, the damage caused by Darkness based attacks is doubled.  No Maximum Presence.",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 8,
-        "effect": "+50 en Vigilance et Observation / +20 aux Résistances",
+        "effect": " +50 Notice and Search / +20 Resistances.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 120,
         "requiredIntelligence": 11,
-        "effect": "+60 en Vigilance et Observation / +30 aux Résistances",
+        "effect": " +60 Notice and Search / +30 Resistances.",
         "retention": 15
       },
       "advancedGrade": {
         "zeon": 140,
         "requiredIntelligence": 13,
-        "effect": "Comme le rang intermédiaire à ceci près que les bonus de résistances s’applique aussi à tous les effets surnaturels à l’exception de ceux basés sur l’Obscurité.",
+        "effect": " As Intermediate, but resistance bonus applies to all effects not based on Darkness.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 160,
         "requiredIntelligence": 16,
-        "effect": "Comme le rang avancé à ceci près que les dégâts reçus par des attaques basés sur l’Obscurité ne sont plus doublés.",
+        "effect": " As Advanced, but doesn’t suffer double damage from Darkness based attacks.",
         "retention": 20
       },
       "withRetention": true,
@@ -754,33 +754,33 @@
     {
       "spellId": 22,
       "bookId": 1,
-      "name": "Bénédiction",
+      "name": "Blessing",
       "level": 56,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "La bénédiction accorde une énergie incroyable aux personnes affectées. Les cibles d'une bénédiction disposent d'un bonus à toutes leurs actions et leurs Résistances. Le sort est centré sur le sorcier",
+      "type": "Effect",
+      "effect": "Blessing endows the affected party with incredible energy. Those affected receive a bonus to all their actions and Resistances. All allies within a radius the caster are affected. No one can be affected by more than one Blessing at a time.",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 8,
-        "effect": "+10 à toutes les actions / +10 aux résistances / 5m de rayon",
+        "effect": " +10 All action bonus / +10 Resistances / 5m/5yd area.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 10,
-        "effect": "+20 à toutes les actions / +20 aux résistances / 25m de rayon",
+        "effect": " +20 All action bonus / +20 Resistances / 25m/27yd area.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "+20 à toutes les actions / +30 aux résistances / 50m de rayon",
+        "effect": " +30 All action bonus / +30 Resistances / 50m/54yd area.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "+30 à toutes les actions / +30 aux résistances / 150m de rayon",
+        "effect": " +30 All action bonus / +30 Resistances / 150m/164yd area.",
         "retention": 15
       },
       "withRetention": true,
@@ -789,33 +789,33 @@
     {
       "spellId": 23,
       "bookId": 1,
-      "name": "Créer des Sentiments Positifs",
+      "name": "Create Good Feelings",
       "level": 58,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Ce sort introduit un type de sentiment positif, comme l'amour, le plaisir ou l'amitié, chez les cibles désignées par le sorcier. Un test de RMys ou de RPsy peut bloquer les effets de ce sortilège. Une cible affectée peut effectuer à nouveau ce test une fois par jour.",
+      "type": "Spiritual",
+      "effect": "This creates positive sentiments such as love, pleasure, or friendship in the people designated by the caster. The radius of the spell and the MR or PsR Check is based on spell level. Those affected can repeat the Resistance Check once per day.",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 8,
-        "effect": "RMys ou RPsy 120 / 20m de rayon",
+        "effect": " MR or PsR 120 / 20m/21yd area.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 10,
-        "effect": "RMys ou RPsy 160 / 100m de rayon",
+        "effect": " MR or PsR 160 / 100m/109yd area.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "RMys ou RPsy 180 / 250m de rayon",
+        "effect": " MR or PsR 180 / 250m/273yd area.",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "RMys ou RPsy 220 / 500m de rayon",
+        "effect": " MR or PsR 220 / 500m/546yd area.",
         "retention": 30
       },
       "withRetention": true,
@@ -824,33 +824,33 @@
     {
       "spellId": 24,
       "bookId": 1,
-      "name": "Voir Réellement",
+      "name": "See Truth",
       "level": 60,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Permet à la personne affectée par ce sort de percevoir les forces surnaturelles invisibles pour l'œil humain : elle peut voir la magie, les matrices psychiques et les êtres invisibles ou Animiques. Bien qu'il ne fonctionne pas contre les sorts d'illusion, qui affectent l'esprit et pas les sens, tous ceux qui se servent de Voir Réellement contre les illusions visuelles peuvent bénéficier d'un bonus à leur RMys, puisqu'ils auront plus de facilité à s'apercevoir de leur fausseté.",
+      "type": "Effect",
+      "effect": "Permits the affected person to perceive supernatural forces that are invisible to the human eye, including magic, psychic matrices, and invisible or spiritual beings. Although this spell does not directly work against illusion spells because they affect the mind, not the vision it does help to detect their falseness.  ",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 8,
-        "effect": "Permet de percevoir la magie, les matrices psychiques et les êtres invisibles / RMys +50 contre les illusions",
+        "effect": " Allows seeing Magic, Matrixes and Invisible Beings / +50MR against Illusions.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "Comme le rang Initial mais permet aussi de voir les êtres spirituels",
+        "effect": " As Base, but also allows seeing Spiritual Beings.",
         "retention": 15
       },
       "advancedGrade": {
         "zeon": 180,
         "requiredIntelligence": 14,
-        "effect": "Comme le rang Intermédiaire à ceci près que le bonus de RMys passe à +75",
+        "effect": " As Intermediate, but gives +75MR against Illusions.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 250,
         "requiredIntelligence": 16,
-        "effect": "Comme le rang avancé à ceci près que le bonus de RMys passe a +100",
+        "effect": " As Advanced, but gives +100MR against Illusions.",
         "retention": 25
       },
       "withRetention": true,
@@ -859,33 +859,33 @@
     {
       "spellId": 25,
       "bookId": 1,
-      "name": "Bouclier Anti-Négatif",
+      "name": "Shield from Negative",
       "level": 62,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Enchante une zone déterminée pour la rendre impénétrable pour les êtres basés naturellement sur les sentiments négatifs ou l'obscurité. Toute créature de ce type pénétrant dans la zone d'effet du sort doit effectuer à chaque round un test de RMys, sous peine de perdre autant de points de vie que sa marge d'échec. De plus, si elle échoue à ce test, la créature subit immédiatement un malus de -40 à toutes ses actions. La zone d'effet à son centre est fixée au lieu où le sort a été lancé.",
+      "type": "Automatic",
+      "effect": "This spell enchants a certain area, making it impenetrable for beings naturally based in negative emotions or Darkness. Any such creature entering the zone must pass a MR Check or suffer the loss of a number of Life Points equal to the margin of failure. Additionally, if it fails the check, it receives an immediate –40 All Action Penalty. The affected zone  is stationary in the place it was cast.",
       "initialGrade": {
         "zeon": 140,
         "requiredIntelligence": 7,
-        "effect": "RMys 120 / 20m de rayon",
+        "effect": " MR 120 / 20m/21yd area.",
         "retention": 15
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 9,
-        "effect": "RMys 140 / 100m de rayon",
+        "effect": " MR 140 / 100m/109yd area.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "RMys 160 / 250m de rayon",
+        "effect": " MR 160 / 250m/273 area.",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "RMys 180 / 500m de rayon",
+        "effect": " MR 180 / 500m/546yd area.",
         "retention": 30
       },
       "withRetention": true,
@@ -894,103 +894,103 @@
     {
       "spellId": 26,
       "bookId": 1,
-      "name": "Trouver",
+      "name": "Find",
       "level": 66,
       "actionType": "Active",
-      "type": "Détection",
-      "effect": "Grâce au sort Trouver, un sorcier obtient la capacité de localiser une personne, un objet ou un lieu, et de connaître sa localisation exacte à ce moment précis, qu'importe la distance qui les sépare. Il peut chercher une chose précise ou générique, ou simplement une chose qui répond à une condition déterminée. Par exemple, un sorcier peut tenter de localiser une ville, le voleur qui lui a volé sa balance (et qu'il ne connaît pas), ou même la demoiselle de sang royal la plus proche de lui. Les objets, les lieux ou les personnes affectées doivent effectuer un test de RMys pour ne pas être localisés. Les lieux de grande taille subissent un malus de -40 à ce test.",
+      "type": "Detection",
+      "effect": "By means of Find, the caster can locate any person, place, or thing, and know its exact location in that moment regardless of the distance separating them. Anything can be found, whether an individual object, or a type of object, or simply something that fulfills a specified condition. For example, the caster can try to locate a city, the thief who stole his crosier (even if he doesn’t know who did it), or the closest eligible maiden of royal blood. Objects, places, or people affected must make a dice roll against a MR Check with a Difficulty based on spell level. Large places apply a –40 penalty to this check.",
       "initialGrade": {
         "zeon": 160,
         "requiredIntelligence": 8,
-        "effect": "RMys 140",
+        "effect": " MR 140.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 200,
         "requiredIntelligence": 10,
-        "effect": "RMys 180",
+        "effect": " MR 180.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 260,
         "requiredIntelligence": 13,
-        "effect": "RMys 220",
+        "effect": " MR 220.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 320,
         "requiredIntelligence": 16,
-        "effect": "RMys 260",
+        "effect": " MR 260.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 27,
       "bookId": 1,
-      "name": "Rétablir",
+      "name": "Restore",
       "level": 68,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Ce sort annule les malus que subit un individu déterminé. Les malus annulés peuvent avoir pour origine la fatigue, la faim, des dégâts physiques ou même des sorts, mais en aucun cas des carences physiques comme un membre amputé ou équivalent. Le rétablissement permet de récupérer, de façon automatique, tous les points de Fatigue dépensés.",
+      "type": "Effect",
+      "effect": "This spell allows the person affected to recover from any penalties including those caused by fatigue, hunger, physical damage, and even spells, although not from actual physical loss such as from the loss of a limb or other body part. Restore automatically restores Fatigue points lost due to fatigue. ",
       "initialGrade": {
         "zeon": 150,
         "requiredIntelligence": 8,
-        "effect": "Élimine jusqu’à -40 sur éventuel malus à toutes les actions et restitue 2 points de fatigue",
+        "effect": " Eliminates up to -40 penalty / Restores up to 2 Fatigue points.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 200,
         "requiredIntelligence": 10,
-        "effect": "Élimine jusqu’à -80 sur éventuel malus à toutes les actions et restitue 5 points de fatigue",
+        "effect": " Eliminates up to -80 penalty / Restores up to 5 Fatigue points.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 250,
         "requiredIntelligence": 12,
-        "effect": "Élimine jusqu’a -120 sur éventuel malus à toutes les actions et restitue 10 points de fatigue",
+        "effect": " Eliminates up to -120 penalty / Restores up to 10 Fatigue points.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "Élimine tous les malus aux actions et restitue l’intégralité des points de fatigue.",
+        "effect": " Eliminates any penalty / Restores Fatigue points to maximum.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 28,
       "bookId": 1,
-      "name": "Symbole Hypnotique",
+      "name": "Hypnotic Display",
       "level": 70,
       "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Forme un symbole ou un spectacle lumineux dans un lieu déterminé, qui fascine et mystifie tous ceux qui l'observent. Tout individu regardant le Symbole ne peut faire rien d'autre que demeurer absorbé dans sa contemplation. Le sort est visible à un kilomètre de distance. Les observateurs doivent effectuer un test de RMys ou RPsy pour résister à ses effets. Une fois affectée par ce sort, une personne ne peut plus effectuer que des actions passives et ne peut pas se déplacer beaucoup. Chaque fois qu'elle subit une attaque, elle a le droit d'effectuer un nouveau test de RMys ou RPsy. Ce sort affecte ses victimes à l'unique condition qu'elles regardent directement le symbole hypnotique.",
+      "type": "Automatic",
+      "effect": "This spell creates spectacle of lights in a specified place that has a fascinating and dumbfounding affect. All the characters that see the display cannot help but continue watching it, and anyone seeing it must make a MR or PsR Check to resist its effects. Those affected can perform Passive Actions, but cannot move. They can make a new Resistance Check every time they are attacked. The condition for being affected is looking directly at the Hypnotic Display.",
       "initialGrade": {
         "zeon": 140,
         "requiredIntelligence": 10,
-        "effect": "Visible dans un rayon d’1 km / RMys ou RPsy 120",
+        "effect": " MR or PsR 120 / 1 km/1093yd area.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 200,
         "requiredIntelligence": 12,
-        "effect": "Visible dans un rayon de 5 km / RMys ou RPsy 150",
+        "effect": " MR or PsR 150 / 5 km/3.1mile area.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 280,
         "requiredIntelligence": 14,
-        "effect": "Visible dans un rayon de 15 km / RMys ou RPsy 180",
+        "effect": " MR or PsR 180 / 15km/9.3mile area.",
         "retention": 10
       },
       "arcaneGrade": {
         "zeon": 360,
         "requiredIntelligence": 16,
-        "effect": "Visible dans un rayon de 25 km / RMys ou RPsy 220",
+        "effect": " MR or PsR 220 / 25km/15.5mile area.",
         "retention": 15
       },
       "withRetention": true,
@@ -999,68 +999,68 @@
     {
       "spellId": 29,
       "bookId": 1,
-      "name": "Lumière Catastrophique",
+      "name": "Catastrophic Light",
       "level": 72,
       "actionType": "Active",
-      "type": "Attaque",
-      "effect": "Projette une décharge d'énergie basée sur la lumière. Le mode de dégât est Énergie.",
+      "type": "Attack",
+      "effect": "Creates a deadly discharge of Light with an Energy Attack Type.",
       "initialGrade": {
         "zeon": 140,
         "requiredIntelligence": 10,
-        "effect": "Dégâts de base 120 / 25 m de rayon",
+        "effect": " Base Damage 120 / 25m/27yd area.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 12,
-        "effect": "Dégâts de base 150 / 100 m de rayon",
+        "effect": " Base Damage 150 / 100m/109yd area.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 14,
-        "effect": "Dégâts de base 200 / 150 m de rayon",
+        "effect": " Base Damage 200 / 150m/164yd area.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 350,
         "requiredIntelligence": 16,
-        "effect": "Dégâts de base 250 / 250 m de rayon",
+        "effect": " Base Damage 250 / 250m/273yd area.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 30,
       "bookId": 1,
-      "name": "Objets Lumineux Matériels",
+      "name": "Luminous Material Objects",
       "level": 76,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Forme un objet physique d'énergie lumineuse. L'objet créé ne peut pas avoir une Présence supérieure à ce qu’indique le rang du sort, qu'il soit aussi complexe qu'une horloge ou aussi simple qu'une épée. En fonction du rang du sort, il peut être de qualité supérieure. Exceptionnellement, la qualité de l'objet n'influe pas sur sa Présence.",
+      "type": "Effect",
+      "effect": "Forms a material object from luminous energy. Whether it is something as complex as a clock, or as simple as a sword, the object created cannot have a Presence of more than allowed by spell level, but for all purposes it is treated as having a quality bonus. As an exceptional rule, the quality of the object does not affect its Presence.",
       "initialGrade": {
         "zeon": 150,
         "requiredIntelligence": 10,
-        "effect": "Présence 60 / Qualité +5",
+        "effect": " Presence 60  / +5 Quality.",
         "retention": 15
       },
       "intermediateGrade": {
         "zeon": 200,
         "requiredIntelligence": 12,
-        "effect": "Présence 100 / Qualité +10",
+        "effect": " Presence 100 / +10 Quality.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 14,
-        "effect": "Présence 140 / Qualité +10",
+        "effect": " Presence 14 0 / +10 Quality.",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 16,
-        "effect": "Présence 180 / Qualité +15",
+        "effect": " Presence 180  / +15 Quality.",
         "retention": 30
       },
       "withRetention": true,
@@ -1069,103 +1069,103 @@
     {
       "spellId": 31,
       "bookId": 1,
-      "name": "Transmission par la Lumière",
+      "name": "Travel by Light",
       "level": 78,
       "actionType": "Active",
-      "type": "Effet, Animique",
-      "effect": "Transporte instantanément les individus ou les objets désignés par le sorcier, d'une source de lumière à une autre qui se trouve à une distance maximale fixée par le rang du sort. La somme de Présence transportable est également fixée par ce rang. Si une cible souhaite résister, elle doit réussir un test de RMys.",
+      "type": "Effect/Spiritual",
+      "effect": "Transports individuals or objects designated by the caster from one light source to another. The quantity of Presence that can be transported cannot be greater than is based on spell level. If someone wishes to resist, the MR Check is needed.",
       "initialGrade": {
         "zeon": 250,
         "requiredIntelligence": 10,
-        "effect": "100 km / Présence max 250 / RMys 120",
+        "effect": " 100km/62miles / Presence 250 / MR120.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 360,
         "requiredIntelligence": 12,
-        "effect": "1000 km / Présence max 500 / RMys 140",
+        "effect": " 1000km/621miles / Presence 500 / MR140.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 450,
         "requiredIntelligence": 14,
-        "effect": "5000 km / Présence max 1000 / RMys 180",
+        "effect": " 5000km/3106.8miles / Presence 1000 / MR180.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 600,
         "requiredIntelligence": 16,
-        "effect": "15000 km / Présence max 2000 / RMys 200",
+        "effect": " 15000km/9320.5miles / Presence 2000 / MR200.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 32,
       "bookId": 1,
-      "name": "Seigneur des Rêves",
+      "name": "Lordship over Dreams",
       "level": 80,
       "actionType": "Active",
-      "type": "Effet, Animique",
-      "effect": "Permet de dominer n'importe quel type de rêve. Le sorcier a la capacité de contrôler le monde onirique d'un dormeur, en le modifiant comme s'il avait 45 en Gnose. Si le rêve s'alimente d'énergie négative, autrement dit qu'il se change en cauchemar, la Gnose du sorcier ne sera que de 30. Si le dormeur souhaite éviter le sort, il doit effectuer un test de RMys. Ce sort a aussi une deuxième fonction, suivant si le sorcier se trouve dans la Veille ou pas. Les sorts lancés par le sorciers autorisés par ce niveau de gnose (comme les sorts de Magie Divine par exemple) ne peuvent avoir d’effets en dehors de la zone d’influence du sortilège et durent jusqu’à ce que le sorcier ne quitte le rêve (ou la veille).",
+      "type": "Effect/Spiritual",
+      "effect": "Permits the control of any type of dream. The caster has the ability to control the sleeper’s dream world, modifying it as if he had a Gnosis of 45 (although it is not real). If the dream is fed by negative energy, in other words, if it turns into a nightmare, his Gnosis becomes only 30. If the dreamer wishes to resist the spell, it requires beating a MR Check. This spell also has a second use, depending on whether or not the caster is in the Wake.  Base level has no effect on the Wake",
       "initialGrade": {
         "zeon": 300,
         "requiredIntelligence": 12,
-        "effect": "RMys 140",
+        "effect": " MR140.",
         "retention": 60
       },
       "intermediateGrade": {
         "zeon": 400,
         "requiredIntelligence": 14,
-        "effect": "RMys 150 / Si le sorcier se retrouve dans la Veille, il en contrôle également l’environnement et obtient les pouvoirs d’une créature de Gnose 40, à condition que la zone soit fortement influencée par les énergies positives. S’il se trouve dans une zone neutre, la Gnose équivalente sera de 30. Ce sort n’affecte que ce qui se trouve dans sa zone d’effet et seulement si aucune autre entité de Gnose similaire s’y trouve ou n’y pénètre.",
+        "effect": " MR150 / If the caster is in the Wake can control his surrounding and gain powers as a being with Gnosis 40, while in a place influenced by positive energy. On a neutral area, his powers will reach Gnosis 30. This spell affects only the Wake’s area where it’s used and only if there isn’t another entity with similar Gnosis entwined with it.",
         "retention": 65
       },
       "advancedGrade": {
         "zeon": 500,
         "requiredIntelligence": 16,
-        "effect": "RMys 160 / comme pour Intermédiaire à ceci près que la Gnose équivalent en zone neutre passe à 35",
+        "effect": " MR160 / Like Intermediate but caster’s Gnosis on neutral areas is 35.",
         "retention": 70
       },
       "arcaneGrade": {
         "zeon": 750,
         "requiredIntelligence": 18,
-        "effect": "RMys 180 / comme pour Avancé à ceci près que les sortilèges n’ont plus de limites spatiales et peuvent atteindre tout ce qui se trouve dans les zones de la veille influencées par les énergies positives.",
+        "effect": " MR180 / As Advanced but the spell has no spatial limits, influencing all the positive areas of the Wake.",
         "retention": 80
       },
       "withRetention": true,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 33,
       "bookId": 1,
-      "name": "Création de Lumière",
+      "name": "Create Being of Light",
       "level": 82,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Crée un être lumineux avec l'apparence de la vie, sous le contrôle absolu du sorcier. Cet être sera conçu comme une créature d'Entre Mondes, en utilisant les pouvoirs et les limitations des élémentaires de Lumière du Chapitre 26. Le niveau de la créature dépendra du rang du sort.",
+      "type": "Effect",
+      "effect": "Creates a luminous being with the appearance of life, but completely under the control of the caster. The entity is developed as a Being Between Worlds, using the powers and limitations of Light Elementals explained in Chapter 26. The creatures maximum level is calculated using the same rules as in the spell Create Being from the Path of Creation.",
       "initialGrade": {
         "zeon": 250,
         "requiredIntelligence": 10,
-        "effect": "Niveau 1",
+        "effect": " Level 1.",
         "retention": 50
       },
       "intermediateGrade": {
         "zeon": 350,
         "requiredIntelligence": 12,
-        "effect": "Niveau 3",
+        "effect": " Level 3.",
         "retention": 70
       },
       "advancedGrade": {
         "zeon": 500,
         "requiredIntelligence": 14,
-        "effect": "Niveau 6",
+        "effect": " Level 6.",
         "retention": 100
       },
       "arcaneGrade": {
         "zeon": 700,
         "requiredIntelligence": 16,
-        "effect": "Niveau 10",
+        "effect": " Level 10.",
         "retention": 140
       },
       "withRetention": true,
@@ -1174,33 +1174,33 @@
     {
       "spellId": 34,
       "bookId": 1,
-      "name": "Prisme Réfléchissant",
+      "name": "Reflecting Prism",
       "level": 86,
       "actionType": "Passive",
-      "type": "Défense",
-      "effect": "Crée un halo de lumière pure qui fonctionne comme un bouclier prismatique, renvoyant vers son envoyeur tout sort, discipline psychique d'attaque ou technique de Ki, effectué à distance. Pour que le pouvoir soit renvoyé, il doit échouer à un test de choc contre l'équivalent d'une décharge de Dégâts variables, dépendant du rang du sort. Il faut aussi avoir réussi sa parade avec le prisme pour renvoyer une telle attaque. S'il s'agit d'une Attaque de zone, elle ne sera pas renvoyée en totalité : elle affectera toutes les cibles de la zone affectée à l'exception du sorcier protégé par le prisme. Ce sort ne renvoie pas les effets Animiques ou Ésotériques. Le sorcier peut utiliser sa Projection magique pour rediriger l'attaque. La résistance du prisme dépend du rang du sort.",
+      "type": "Defense",
+      "effect": "Creates a body of light that works like a prismatic shield, reflecting any spell, psychic attack, or Ki technique back at the caster. For the charge to be reflected back, it must lose a Clashing Spells check against an equivalent damage based on level. It is also necessary to make a successful Block using the Prism. If defending against an Area Attack, the prism does not reflect the entire spell; it will still affect anyone in the area of the spell except the caster of the Reflecting Prism. This spell does not reflect Spiritual spells. The caster can use his Magic Projection to redirect the attack. It will absorb points based on level of damage before breaking.",
       "initialGrade": {
         "zeon": 160,
         "requiredIntelligence": 10,
-        "effect": "100 contre Choc / 800 Points de Vie",
+        "effect": " Clashing Spells Check against 100 / 800 Resistance Points.",
         "retention": 20
       },
       "intermediateGrade": {
         "zeon": 250,
         "requiredIntelligence": 13,
-        "effect": "120 contre Choc / 1500 Points de Vie",
+        "effect": " Clashing Spells Check against 120 / 1500 Resistance Points.",
         "retention": 25
       },
       "advancedGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "140 contre Choc / 3000 Points de Vie",
+        "effect": " Clashing Spells Check against 140 / 3000 Resistance Points.",
         "retention": 30
       },
       "arcaneGrade": {
         "zeon": 400,
         "requiredIntelligence": 17,
-        "effect": "180 contre Choc / 6000 Points de Vie",
+        "effect": " Clashing Spells Check against 180 / 6000 Resistance Points.",
         "retention": 40
       },
       "withRetention": true,
@@ -1209,33 +1209,33 @@
     {
       "spellId": 35,
       "bookId": 1,
-      "name": "Omniscience Rayonnante",
+      "name": "Radius of Omniscience",
       "level": 88,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Permet au sorcier d'être omniscient, vis à vis de tout événement ou pensée située autour de lui. Cela n'affecte que les individus dont la Présence est inférieure à un seuil fixé par le sort et de Gnose inférieure à celle du personnage. Le sorcier sait automatiquement tout ce que se passe à l'intérieur de cette zone et ce que pensent les personnes. Il n'y a pas de test de Résistance possible.",
+      "actionType": "Passive",
+      "type": "Effect",
+      "effect": "Permits the caster to be omniscient concerning any occurrence or thought within a radius. Affects only individuals whose Presence is less than that indicated in the spell level and who do not have higher Gnosis than the caster. The caster will automatically know everything that is happening and everything thought within the Radius. No Resistance check  is possible.",
       "initialGrade": {
         "zeon": 200,
         "requiredIntelligence": 10,
-        "effect": "500 m de rayon / Présence max 60",
+        "effect": " Presence 60 / 500m/546yd area.",
         "retention": 40
       },
       "intermediateGrade": {
         "zeon": 250,
         "requiredIntelligence": 12,
-        "effect": "2 km de rayon / Présence max 80",
+        "effect": " Presence 80 / 2km/1.25mile area.",
         "retention": 50
       },
       "advancedGrade": {
         "zeon": 400,
         "requiredIntelligence": 15,
-        "effect": "10 km de rayon / Présence max 100",
+        "effect": " Presence 100 / 10km/6.2mile area.",
         "retention": 60
       },
       "arcaneGrade": {
         "zeon": 800,
         "requiredIntelligence": 18,
-        "effect": "50 km de rayon / Présence max 120",
+        "effect": " Presence 120 / 50km/31mile area.",
         "retention": 65
       },
       "withRetention": true,
@@ -1244,68 +1244,68 @@
     {
       "spellId": 36,
       "bookId": 1,
-      "name": "Prédire",
+      "name": "Predict",
       "level": 90,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Permet de visualiser les événements à venir qui se dérouleront autour d'une personne, d'un objet ou d'un lieu. Prédire montre au sorcier le destin le plus probable qui attend une chose ou un individu, en lui donnant des informations détaillées sur les événements futurs. L'intervalle de temps ne pourra pas s'étendre au-delà d’une période fixée par le rang du sort à partir du moment présent. Le Meneur de Jeu doit détailler avec honnêteté au sorcier quels événements vont se dérouler. Cependant, ceux-ci ne sont pas infaillibles",
+      "type": "Spiritual",
+      "effect": "Permits the caster to foresee future events that will happen around a given person, place, or thing. Predict shows the caster the most probable destiny awaiting someone or something, providing him with detailed information about future events.  The Game Master can truthfully tell the caster what events will occur in the future. Of course, these predictions are not infallible; what is seen is only the most probable destiny, which may be changed through the intervention of higher powers or the actions of persons with elevated Gnosis.",
       "initialGrade": {
         "zeon": 200,
         "requiredIntelligence": 10,
-        "effect": "Un an",
+        "effect": " 1 year.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 300,
         "requiredIntelligence": 12,
-        "effect": "5 ans",
+        "effect": " 5 years.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 450,
         "requiredIntelligence": 14,
-        "effect": "50 ans / Dans le cas d’une prédiction d’un évènement situé d’ici moins d’une journée, la description sera parfaitement exacte.",
+        "effect": " 50 years / If the prediction is about something happening within 1 day, it will be very accurate.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 600,
         "requiredIntelligence": 16,
-        "effect": "1 siècle / Dans le cas d’une prédiction d’un évènement situé d’ici moins d’une année, la description sera parfaitement exacte.",
+        "effect": " 100 years / If the prediction is about something happening within 1 year, it will be very accurate.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 37,
       "bookId": 1,
-      "name": "Prison de Lumière",
+      "name": "Prison of Light",
       "level": 92,
       "actionType": "Active",
-      "type": "Animique",
-      "effect": "Emprisonne une créature dans un monde de lumière impossible à traverser, un univers dans lequel elle ne pourra pas interagir avec l'extérieur, ni inversement. Tant que la cible du sort se trouve à l'intérieur de la prison, elle n'a pas conscience de ce qui se passe à l'extérieur, ou inversement. Pour briser le sortilège de l'intérieur, on considère que la prison possède une quantité de point de vie fixée par le rang du sort et est considérée comme une créature avec Encaissement et une IP 10. Les dommages infligés depuis l’extérieur sont doublés mais la prison régénère les dégâts subis avec une Régénération de 19. On peut éviter ce sort en réussissant un test de RMys. En cas d'échec, la cible n'a droit à aucun test ultérieur",
+      "type": "Spiritual",
+      "effect": "Encloses the victim in an inescapable world of Light, a separate universe which has no interaction with our own. While the victim is imprisoned, he will have no knowledge of anything that happens outside the prison, nor does anyone outside have any knowledge of the prisoner. To try to break out from within, the prison will resist damage according to the rules of Damage Resistance with an AT of 10. From the outside, the prison can only be damaged by Energy-based Attacks with a Presence greater than 180. The prison recovers from any damage with a Regeneration of 19. The spell can be avoided by passing a MR Check, but if that fails, the prisoner has no chance to check again later; if he wants to get out, he better be able to break through the spell. The caster cannot affect himself with the Prison of Light.",
       "initialGrade": {
         "zeon": 200,
         "requiredIntelligence": 14,
-        "effect": "RMys 140 / La prison possède 10 000 Points de Vie",
+        "effect": " MR 140 / 10000 Resistance Points.",
         "retention": 40
       },
       "intermediateGrade": {
         "zeon": 350,
         "requiredIntelligence": 16,
-        "effect": "RMys 180 / La prison possède 250 000 Points de Vie",
+        "effect": " MR 180 / 250000 Resistance Points.",
         "retention": 70
       },
       "advancedGrade": {
         "zeon": 500,
         "requiredIntelligence": 18,
-        "effect": "RMys 220 / La prison possède 500 000 Points de Vie",
+        "effect": " MR 220 / 500000 Resistance Points.",
         "retention": 100
       },
       "arcaneGrade": {
         "zeon": 800,
         "requiredIntelligence": 20,
-        "effect": "RMys 240 / La prison ne peut être brisée de l’intérieur et possède 500 000 PV pour résister aux attaques de l’extérieur.",
+        "effect": " MR 240 / The prison cannot be broken from the inside, but possesses 500000 Resistance Points if attacked from the outside.",
         "retention": 160
       },
       "withRetention": true,
@@ -1314,37 +1314,37 @@
     {
       "spellId": 38,
       "bookId": 1,
-      "name": "Essence de Lumière",
+      "name": "One with the Light",
       "level": 96,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Permet au sorcier d'entrer dans un état de léthargie absolue, tandis que son corps ne fait plus qu'un avec la lumière. Il abandonne le monde et commence son ascension vers le flux des âmes pour se nourrir de son énergie. À l'écart et inconscient de tout ce qui se passe autour de lui, le personnage multiplie par 10 sa régénération Zéonique et soigne ses blessures avec une Régénération de 16. Bien que ce sort n'ait pas de maintien, le sorcier peut rester dans le flux des âmes pour une durée fixée par le rang du sort.",
+      "type": "Effect",
+      "effect": "Permits the caster to enter a state of utter meditation in which his body becomes one with the Light. He abandons this world and ascends to the Flow of Souls to nourish himself from their energies. Apart from, and without knowledge of anything happening elsewhere, he multiplies his Zeon Regeneration rate by 10, and cures his wounds with a Healing Regeneration of 16. Although there is no maintenance cost for this spell, the amount of time the caster can remain this way is based on spell level.",
       "initialGrade": {
         "zeon": 200,
         "requiredIntelligence": 12,
-        "effect": "Un jour",
+        "effect": " One Day.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 400,
         "requiredIntelligence": 14,
-        "effect": "Une semaine",
+        "effect": " One Week.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 600,
         "requiredIntelligence": 16,
-        "effect": "Un mois",
+        "effect": " One Month.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 800,
         "requiredIntelligence": 18,
-        "effect": "Un an",
+        "effect": " One Year.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 39,
@@ -1352,69 +1352,69 @@
       "name": "Ascension",
       "level": 98,
       "actionType": "Active",
-      "type": "Effet",
-      "effect": "Le sort échange l'essence physique d'un individu avec de l'énergie divine, transformant son esprit en pure puissance surnaturelle. L’effet permet au sorcier, ou à sa cible, d’augmenter sa Gnose jusqu’à une valeur maximale fixée par le rang du sort.",
+      "type": "Effect",
+      "effect": "This spell exchanges the material essence of a person for divine energy, modifying his spirit through pure supernatural power.  It can give the target as much Gnosis as desired based on spell level.  no difference to Gnosis awarded to caster or other people.",
       "initialGrade": {
         "zeon": 500,
         "requiredIntelligence": 14,
-        "effect": "Gnose maximale 30",
+        "effect": " Gnosis 30.",
         "retention": 30
       },
       "intermediateGrade": {
         "zeon": 1000,
         "requiredIntelligence": 16,
-        "effect": "Gnose maximale 35",
+        "effect": " Gnosis 35.",
         "retention": 40
       },
       "advancedGrade": {
         "zeon": 2000,
         "requiredIntelligence": 18,
-        "effect": "Gnose maximale 40",
+        "effect": " Gnosis 40.",
         "retention": 45
       },
       "arcaneGrade": {
         "zeon": 5000,
         "requiredIntelligence": 20,
-        "effect": "Gnose maximale 45",
+        "effect": " Gnosis 45.",
         "retention": 50
       },
       "withRetention": true,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 40,
       "bookId": 1,
-      "name": "Holocauste de Lumière",
+      "name": "Light Holocaust",
       "level": 100,
       "actionType": "Active",
-      "type": "Att. , Animique",
-      "effect": "Ce sort déchaîne la puissance de la lumière dans son état le plus pur, rasant tout ce qui se trouve sur son passage, aussi bien dans le monde matériel que dans le monde spirituel. L'énergie libérée arrache et dévore toute chose, unifiant toute existence à celle de la lumière. Même les créatures de lumière sont assimilées par ce sort.\nL'Holocauste crée une grande coupole lumineuse, à l'intérieur de laquelle tout se dissout instantanément. Les dégâts provoqués sont de type Énergie. Tout être subissant des dégâts, aussi minimes soient-ils, doit réussir un test de RMys contre 160 sous peine d'être unifié à la lumière et, de fait, détruit de corps comme d'esprit. Il n'est pas possible de désigner des cibles précises dans le rayon du sort, qui affecte tout de la même manière, à l'exception du sorcier.",
+      "type": "Attack/Spiritual",
+      "effect": "This spell unleashes the power of Light in its purest state, sweeping away everything in the spiritual as well as the material world. The freed energy sweeps up and devours everything, unifying its existence to the Light. Even elemental creatures of light are assimilated by its power. The Holocaust of Light creates a great luminous dome within which everything is dissolved. It has a radius based on spell level, attacks the Energy AT, and causes a Base Damage based on spell level. Anyone receiving damage, no matter how small, must beat a MR Check with a Difficulty of 160 or be joined with the Light, and automatically destroyed in body and soul. It is not possible to designate specific targets within the Holocaust; all except the caster are equally affected.",
       "initialGrade": {
         "zeon": 600,
         "requiredIntelligence": 14,
-        "effect": "Dégâts de base 350 / 100m de rayon",
+        "effect": " Base Damage 350 / 100m/109yd area.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 1000,
         "requiredIntelligence": 16,
-        "effect": "Dégâts de base 500 / 100 km de rayon",
+        "effect": " Base Damage 500 / 100km/62mile area.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 2500,
         "requiredIntelligence": 18,
-        "effect": "Dégâts de base 800 / 10 000 km de rayon",
+        "effect": " Base Damage 800 / 10000km/6213mile area.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 10000,
         "requiredIntelligence": 20,
-        "effect": "Dégâts de base 1 000 / 1 UA de rayon",
+        "effect": " Base Damage 1000 / 1 au (astronomic unit) area.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     }
   ]
 }
