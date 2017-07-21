@@ -3,7 +3,7 @@
 
     <!--Common wordings-->
     <string name="Common_Close">Close</string>
-    <string name="Common_See_More">See more</string>
+    <string name="Common_See_All">See all</string>
     <string name="Common_Loading_Message">Loading</string>
     <string name="Common_Validate">Validate</string>
     <string name="Common_Modify">Modify</string>
@@ -26,7 +26,7 @@
     <string name="spell_effect_format"><b>Effect : </b></string>
 
     <!--Grade-->
-    <string name="initial_grade_title">Initial</string>
+    <string name="initial_grade_title">Base</string>
     <string name="intermediate_grade_title">Intermediate</string>
     <string name="advanced_grade_title">Advanced</string>
     <string name="arcane_grade_title">Arcane</string>
@@ -39,9 +39,9 @@
     <!--Witchspells    -->
     <string name="Witch_Creation_Title">Spell List</string>
     <string name="Witchspells_Path_Title_And_Level_Format">%1$s Lvl. %2$s</string>
-    <string name="Witchspells_Secondary_Path_Title_And_Level_Format">Secondary path : %1$s Lvl. %2$s</string>
+    <string name="Witchspells_Secondary_Path_Title_And_Level_Format">Sub-paths : %1$s Lvl. %2$s</string>
 
-    <string name="Witchspells_Name_Format">%1$s\'s Spells</string>
+    <string name="Witchspells_Name_Format">Spells of %1$s</string>
 
 
     <string name="Witchspells_Free_Access_Title_Singular">+ %1$d Free Access Spell</string>
@@ -60,17 +60,17 @@
         <item quantity="other">@string/Witchspells_Free_Access_Format_Plural</item>
     </plurals>
 
-    <string name="Witchspells_No_Secondary_Spells">No Secondary Spells</string>
+    <string name="Witchspells_No_Secondary_Spells">No Sub-paths Spells</string>
 
     <string name="Witchspells_Name_Label">Spellbook\'s Holder</string>
 
     <string name="Witchspells_Choose_Main_Path">Choose your main path</string>
-    <string name="Witchspells_Choose_Secondary_Path">Choose your secondary path</string>
+    <string name="Witchspells_Choose_Secondary_Path">Choose your sub-path</string>
 
-    <string name="Witchspells_Major_Path">Major Path</string>
-    <string name="Witchspells_Minor_Path">Minor Path</string>
+    <string name="Witchspells_Major_Path">Higher Path</string>
+    <string name="Witchspells_Minor_Path">Lower Path</string>
     <string name="Witchspells_Opposite_Path_Format">Opposite Path : %1$s</string>
-    <string name="Witchspells_Secondary_Path_Format">Secondary Path : %1$s</string>
+    <string name="Witchspells_Secondary_Path_Format">Sub-Path : %1$s</string>
 
     <plurals name="Witchspells_Free_Access_Count">
         <item quantity="one">+ 1 free access spell</item>
@@ -78,13 +78,13 @@
     </plurals>
 
     <string name="Witchspells_Add_Label">Add a spellbook</string>
-    <string name="Error_No_Witchspells_Name">You need to a name to be able to save your spellbook</string>
-    <string name="Witchspells_Save_Waiting_Message">Saving the spellbook…</string>
+    <string name="Error_No_Witchspells_Name">A name is needed to create your spellbook</string>
+    <string name="Witchspells_Save_Waiting_Message">Creating the spellbook…</string>
 
     <string name="Witchspells_Title_Create">New spellbook</string>
 
     <string name="Main_Path_Title">Main paths</string>
-    <string name="Secondary_Path_Title">Secondary paths</string>
+    <string name="Secondary_Path_Title">Sub-paths</string>
     <string name="Free_Access_Title">Free access spells</string>
 
     <string name="Witchspells_See_Spells">See the spells</string>
@@ -107,7 +107,7 @@
     </plurals>
 
 
-    <string name="Spell_Filter_Search_Description">Search in the description</string>
+    <string name="Spell_Filter_Search_Description">Search in description</string>
     <string name="Spell_Filter_Type">Spell Types</string>
     <string name="Spell_Filter_Type_Attack">Attack</string>
     <string name="Spell_Filter_Type_Defense">Defense</string>
@@ -125,20 +125,20 @@
     <string name="Spell_Filter_Action_Type_Active">Active</string>
     <string name="Spell_Filter_Action_Type_Passive">Passive</string>
 
-    <string name="Spell_Empty_List_Message">No spells match your search.</string>
+    <string name="Spell_Empty_List_Message">No spell match your search.</string>
     <string name="Witchspells_Free_Access_Slot">Free access spells 1-%1$d</string>
     <string name="Witchspells_Delete_Free_Access_Title">Delete free access spells</string>
     <string name="Witchspells_Delete_Free_Access_Message">Are you sure you want to reset all your free access spells for this path ?</string>
-    <string name="Witchspells_Delete_Secondary_Path_Title">Delete secondary path</string>
-    <string name="Witchspells_Delete_Secondary_Path_Message">Delete the secondary path associated to this path ?</string>
-    <string name="Witchspells_Cancel_Creation">Leavig this page you will cancel the creation of the spellbook. Are you sure you want to leave ?</string>
+    <string name="Witchspells_Delete_Secondary_Path_Title">Delete sub-path</string>
+    <string name="Witchspells_Delete_Secondary_Path_Message">Delete the sub-path associated to this path ?</string>
+    <string name="Witchspells_Cancel_Creation">By leavig this page you will cancel the creation of the spellbook. Are you sure you want to leave ?</string>
     <string name="Witchspells_Choose_Witch_Name">Choose the spellcaster\'s name</string>
     <string name="Witchspells_Witch_Name">Spellcaster\'s name</string>
     <string name="About_Us">About us</string>
     <string name="Notify_Bug">Report a bug</string>
     <string name="Notify_Misspelling">Report a misspelling</string>
     <string name="Notify_Bug_Body">Hello, I\'ve found a bug in the application : \n\nSteps to reproduce :\n\n (replace this line by the steps to reproduce the bug, for example "1 - Click on a spell book" , "2 - Click on a spell", "3 - The spell has no type")</string>
-    <string name="Notify_Misspelling_Body_Reduced">Hello, I\'ve found a misspelling in one of the application\'s spells : \n\n(Indicate where the misspelling)\n</string>
+    <string name="Notify_Misspelling_Body_Reduced">Hello, I\'ve found a misspelling in one of the application\'s spells : \n\n(Indicate where the misspelling is)\n</string>
     <string name="Notify_Misspelling_Body">Hello, I\'ve found a misspelling in one of the application\'s spells : \n\nCorrected text : \n\n(Correct text below or indicate where the misspelling is located)\n%1$s</string>
     <string name="Notify_Misspelling_Spell_subject">Misspelling in spell %1$s</string>
 

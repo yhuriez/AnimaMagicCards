@@ -223,7 +223,7 @@
                 android:layout_height="wrap_content"
                 android:onClick="@{() -> model.expandEffect()}"
                 android:paddingBottom="@dimen/spacing_small"
-                android:text="@string/Common_See_More"
+                android:text="@string/Common_See_All"
                 android:visibility="@{model.effectEllipsized ? View.VISIBLE : View.INVISIBLE}"
                 app:layout_constraintBottom_toTopOf="@id/spell_initial_grade"
                 app:layout_constraintLeft_toLeftOf="@id/spell_card_background"
