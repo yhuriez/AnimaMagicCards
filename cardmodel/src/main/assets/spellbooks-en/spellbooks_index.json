@@ -1,0 +1,365 @@
+{
+  "spellbooks": [
+    {
+      "bookId": 1,
+      "bookName": "Path of Light",
+      "description": "This is the Path that confers dominion over one of the two Higher Elements, pure light. It controls man's most positive emotions, such as love, peace, and pleasure. Light also regulates knowledge and detection. Its offensive and defensive powvers are very balanced.",
+      "type": "Main",
+      "oppositeBook": "Darkness",
+      "secondaryBookAccessible": [
+        "Chaos",
+        "War",
+        "Literae",
+        "Music",
+        "Nobility",
+        "Peace",
+        "Knowledge",
+        "Dream",
+        "Time"
+      ]
+    },
+    {
+      "bookId": 2,
+      "bookName": "Path of Darkness",
+      "description": "Darkness does not govern the absence of light, but rather It manipulates the very power of the shadows. It controls all negative emotions, such as fear, anger and hatred. It also represents the power of secrets, among which concealment and obfuscation are included. Like Light, its power is very well balanced.",
+      "type": "Main",
+      "oppositeBook": "Light",
+      "secondaryBookAccessible": [
+        "War",
+        "Chaos",
+        "Literae",
+        "Death",
+        "Music",
+        "Nobility",
+        "Sin",
+        "Knowledge",
+        "Blood",
+        "Dream",
+        "Time",
+        "Threshold",
+        "Void"
+      ]
+    },
+    {
+      "bookId": 3,
+      "bookName": "Path of Creation",
+      "description": "The power of creation is the magical ability to organize and alter the reality that surrounds spellcasters. These spells are about change, healing, and creating things. It is a distinctly defensive magic.",
+      "type": "Main",
+      "oppositeBook": "Destruction",
+      "secondaryBookAccessible": [
+        "Chaos",
+        "Literae",
+        "Music",
+        "Peace",
+        "Sin",
+        "Knowledge",
+        "Blood",
+        "Time"
+        ]
+    },
+    {
+      "bookId": 4,
+      "bookName": "Path of Destruction",
+      "description": "This Path allows the caster to channel the power of the Flow of Souls, turning it against reality itself. These spells affect both the material and spiritual worlds. It is naturally offensive power.",
+      "type": "Main",
+      "oppositeBook": "Creation",
+      "secondaryBookAccessible": [
+        "War",
+        "Chaos",
+        "Death",
+        "Sin",
+        "Blood",
+        "Time",
+        "Void"
+      ]
+    },
+    {
+      "bookId": 5,
+      "bookName": "Path of Fire",
+      "description": "The first of the four Lower Elemental Paths rules over high temperatures. These spells generate heat and fire and they devastate large areas of land. It also contains enchantments that consume certain sides of an Individual to bring up others in turn. It is a very offensive Path.",
+      "type": "Minor",
+      "oppositeBook": "Water",
+      "secondaryBookAccessibles": [
+        "War",
+        "Death",
+        "Sin",
+        "Threshold"
+      ]
+    },
+    {
+      "bookId": 6,
+      "bookName": "Path of Water",
+      "description": "This Element hosts a variety of diverging concepts. This Is the Path that confers dominion over liquids and the purity of things. It also represents the power of ice and low temperalures. Its power is offensively and defensively balanced.",
+      "type": "Minor",
+      "oppositeBook": "Fire",
+      "secondaryBookAccessibles": [
+        "Literae",
+        "Music",
+        "Nobility",
+        "Peace",
+        "Knowledge",
+        "Blood",
+        "Void"
+      ]
+    },
+    {
+      "bookId": 7,
+      "bookName": "Path of Earth",
+      "description": "Earth is the powmer of the planet, stones and minerals. It is the most substantial of magics and It governs the laws of physics - like gravity and magnetism. Its influence over spirits and the immaterial is very limited. Earth spells are the magic of resistance, endurance, and slowness.",
+      "type": "Minor",
+      "oppositeBook": "Air",
+      "secondaryBookAccessibles": [
+        "War",
+        "Literae",
+        "Nobility",
+        "Peace",
+        "Threshold"
+      ]
+    },
+    {
+      "bookId": 8,
+      "bookName": "Path of Air",
+      "description": "This is the Path of the ethereal and incorporeal. It contains movement and speed spells. With its power, space may be altered and bodies may be transported from one place to another. This is also the Path in charge of the weather and electricity.",
+      "type": "Minor",
+      "oppositeBook": "Earth",
+      "secondaryBookAccessibles": [
+        "Chaos",
+        "Music",
+        "Nobility",
+        "Peace",
+        "Sin",
+        "Knowledge",
+        "Dream",
+        "Threshold",
+        "Void"
+      ]
+    },
+    {
+      "bookId": 9,
+      "bookName": "Path of Essence",
+      "description": "Essence controls life and souls. This Path has control over spirits and natural beings that belong to the world. It is also the Path of nature and spells of a druidic origin.",
+      "type": "Minor",
+      "oppositeBook": "Illusion",
+      "secondaryBookAccessibles": [
+        "Music",
+        "Peace",
+        "Knowledge",
+        "Blood",
+        "Dream"
+      ]
+    },
+    {
+      "bookId": 10,
+      "bookName": "Path of Illusion",
+      "description": "The power of this Path gives spellcasters control over Deception and Illusion. Spells can alter reality and the way it is perceived.",
+      "type": "Minor",
+      "oppositeBook": "Essence",
+      "secondaryBookAccessibles": [
+        "Literae",
+        "Death",
+        "Music",
+        "Nobility",
+        "Sin",
+        "Dream",
+        "Threshold"
+      ]
+    },
+    {
+      "bookId": 11,
+      "bookName": "Path of Necromancy",
+      "description": "Necromancy is a perversion of magic. While the rest of the Paths derive their power from the network of souls, these spells destroy the essence of life by stagnating and perverting the souls it uses. Its power gives back life to the dead, destroys souls and drains the life and essence of other being.",
+      "type": "Automatic",
+      "oppositeBook": "The rest of the magic Paths",
+      "secondaryBookAccessibles": [
+        "War",
+        "Death",
+        "Sin",
+        "Knowledge",
+        "Blood",
+        "Dream",
+        "Threshold",
+        "Void"
+      ]
+    },
+    {
+      "bookId": 12,
+      "bookName": "Free Access Spells",
+      "description": "The free access spells are generic spells that every spellcaster can learn, no matter which paths he chose. When a spellcaster learn a path, he can learn among those spells to complete his path and make it unique.",
+      "type": "Undetermined"
+    },
+    {
+      "bookId": 13,
+      "bookName": "Path of Chaos",
+      "description": "This path controls the principle of chaos, the power of unpredictability and alteration of events.",
+      "primaryBookUnaccessibles": [
+        "Water",
+        "Fire",
+        "Earth",
+        "Essence",
+        "Illusion",
+        "Necromancy"
+      ]
+    },
+    {
+      "bookId": 14,
+      "bookName": "Path of War",
+      "description": "The Path of War is one that dominates the fields of battle, allowing the mage to enhance their skills as well as their peers, or entire armies.",
+      "primaryBookUnaccessibles": [
+        "Light",
+        "Creation",
+        "Air",
+        "Water",
+        "Essence",
+        "Illusion"
+      ]
+    },
+    {
+      "bookId": 15,
+      "bookName": "Path of Literae",
+      "description": "Literae is the magic of words, changing the writing in the margins of the book we call reality.",
+      "primaryBookUnaccessibles": [
+        "Destruction",
+        "Air",
+        "Fire",
+        "Earth",
+        "Essence",
+        "Necromancy"
+      ]
+    },
+    {
+      "bookId": 16,
+      "bookName": "Path of Death",
+      "description": "This sub-path controls the order of things, the concept of the ending of life",
+      "primaryBookUnaccessibles": [
+        "Light",
+        "Creation",
+        "Air",
+        "Water",
+        "Earth",
+        "Essence",
+        "Illusion"
+      ]
+    },
+    {
+      "bookId": 17,
+      "bookName": "Path of Music",
+      "description": "This sub-path contains all the powers related to music and melodies. The witches who use this spells are usually called musical magicians, because through their melodies they are capable of causing the most unbelievable effects and wonders.",
+      "primaryBookUnaccessibles": [
+        "Destruction",
+        "Fire",
+        "Earth",
+        "Necromancy"
+      ]
+    },
+    {
+      "bookId": 18,
+      "bookName": "Path of Nobility",
+      "description": "This sub-path contains all the principles related to appearance, status and superiority over other people. It is the magic used by nobles and great lords to ensure its dominance over others.",
+      "primaryBookUnaccessibles": [
+        "Creation",
+        "Destruction",
+        "Fire",
+        "Essence",
+        "Necromancy"
+      ]
+    },
+    {
+      "bookId": 19,
+      "bookName": "Path of Peace",
+      "description": "This is the sub-path that embodies harmony and lack of conflict.",
+      "primaryBookUnaccessibles": [
+        "Obscurity",
+        "Destruction",
+        "Fire",
+        "Illusion",
+        "Necromancy"
+      ]
+    },
+    {
+      "bookId": 20,
+      "bookName": "Path of Sin",
+      "description": "This sub-path is the darkest and most twisted of all, bringing together all the powers associated with negative emotions, sin and pure evil. It's the magic used by the vast majority of hellish creatures as well as the worshipers of the evil deities of each culture.",
+      "primaryBookUnaccessibles": [
+        "Light",
+        "Water",
+        "Earth",
+        "Essence",
+        "Illusion"
+      ]
+    },
+    {
+      "bookId": 21,
+      "bookName": "Path of Knowledge",
+      "description": "Knowledge is a primary sub-path that dominates the very concept of knowing. Sorcerers who use it have control over everything that can be learned.",
+      "primaryBookUnaccessibles": [
+        "Destruction",
+        "Fire",
+        "Earth",
+        "Illusion"
+      ]
+    },
+    {
+      "bookId": 22,
+      "bookName": "Path of Blood",
+      "description": "This sub-pathway controls the principle that gives life to organic beings, that of their own blood.",
+      "primaryBookUnaccessibles": [
+        "Light",
+        "Air",
+        "Fire",
+        "Earth",
+        "Illusion"
+      ]
+    },
+    {
+      "bookId": 23,
+      "bookName": "Path of Dreams",
+      "description": "Dreams is the way of magic that controls the dream world of dreamers, as reflected in the Wake.",
+      "primaryBookUnaccessibles": [
+        "Creation",
+        "Destruction",
+        "Water",
+        "Fire",
+        "Earth"
+      ]
+    },
+    {
+      "bookId": 24,
+      "bookName": "Path of Time",
+      "description": "To many occultists the sub-path that controls time is the greatest of all, valued even more than the higher paths. Those who use it are often called Chronomancers or magicians of the time, and as they wield the ability is to use magic to control the flow of time like an element.",
+      "primaryBookUnaccessibles": [
+        "Air",
+        "Water",
+        "Fire",
+        "Earth",
+        "Essence",
+        "Illusion",
+        "Necromancy"
+      ]
+    },
+    {
+      "bookId": 25,
+      "bookName": "Path of Threshold",
+      "description": "Fear and madness are the darker emotions, primary and powerful from earlier times the man who was unaware of his destination. This track has two sub-concepts the principle of primal horrors and things that are beyond the darkness.",
+      "primaryBookUnaccessibles": [
+        "Light",
+        "Creation",
+        "Destruction",
+        "Water",
+        "Essence"
+      ]
+    },
+    {
+      "bookId": 26,
+      "bookName": "Path of Void",
+      "description": "Void is the sub-pathway that controls  the complete absence of all physical and spiritual matters.",
+      "primaryBookUnaccessibles": [
+        "Light",
+        "Creation",
+        "Fire",
+        "Earth",
+        "Essence",
+        "Illusion"
+      ]
+    }
+  ]
+}

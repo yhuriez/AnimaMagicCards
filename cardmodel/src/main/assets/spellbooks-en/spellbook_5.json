@@ -1,0 +1,1065 @@
+{
+  "bookId": 5,
+  "bookName": "Path of Fire",
+  "description": "The first of the four Lower Elemental Paths rules over high temperatures. These spells generate heat and fire and they devastate large areas of land. It also contains enchantments that consume certain sides of an Individual to bring up others in turn. It is a very offensive Path.",
+  "type": "Minor",
+  "oppositeBook": "Eau",
+  "secondaryBookAccessibles": [
+    "War",
+    "Death",
+    "Sin",
+    "Threshold"
+  ],
+  "spells": [
+    {
+      "spellId": 1,
+      "bookId": 5,
+      "name": "Create Fire",
+      "level": 2,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell creates fire intensities. The flame is magical and does not require any fuel. If placed upon flammable material, the material will continue burn naturally even after the spell has ended.",
+      "initialGrade": {
+        "zeon": 30,
+        "requiredIntelligence": 5,
+        "effect": " 1 Intensity.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": " 5 Intensities.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": " 8 Intensities.",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": " 10 Intensities.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 2,
+      "bookId": 5,
+      "name": "Put Out Fire",
+      "level": 6,
+      "actionType": "Active",
+      "type": "Effect, Spiritual",
+      "effect": "This spell reduces heat or fire intensities. Bear in mind that some sources of fire, such as volcanoes, reproduce themselves automatically when not completely extinguished. When cast upon a fire-based being, the creature suffers 5 points of damage for every level of diminished intensity – provided he fails am MR Check. Accumulation creatures get 25 damage points for each intensity.",
+      "initialGrade": {
+        "zeon": 30,
+        "requiredIntelligence": 5,
+        "effect": " -1 Intensity / MR100.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": " -5 Intensity / MR120.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 10,
+        "effect": " -10 Intensity / MR140.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 13,
+        "effect": " -15 Intensity / MR180.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 3,
+      "bookId": 5,
+      "name": "Fire Immunity",
+      "level": 10,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell grants the spellcaster, or whoever he designates, immunity to levels of heat intensity. When attacked from such an element, the Base Damage is reduced by 5 points for every level of intensity to which the character is immune. In addition, the immune character receives a +5 bonus to Resistances against fire for each level of intensity.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": " 5 Intensities.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 8,
+        "effect": " 12 Intensities.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": " 20 Intensities.",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 13,
+        "effect": " 30 Intensities.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 4,
+      "bookId": 5,
+      "name": "Detect Heat",
+      "level": 12,
+      "actionType": "Active",
+      "type": "Detection",
+      "effect": "This spell enables the caster to locate any source of heat in a radius. The caster can feel intensity, level and size of the heat, and can even perceive heat coming from warm-blooded creatures, but not from inanimate or immaterial beings – such as golems or undead. Living creatures can resist this spell by passing a MR Check.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": " 25m/27yd  area / MR 120.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": " 50m/54yd area / MR 150.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 12,
+        "effect": " 100m/109yd area / MR 180.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 15,
+        "effect": " 250m/273yd area / MR 220.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 5,
+      "bookId": 5,
+      "name": "Fire Ball",
+      "level": 16,
+      "actionType": "Active",
+      "type": "Attack",
+      "effect": "This spell projects a fire attack which explodes in a radius. The caster can not select targets within the explosion area. The attack qualifies as a Heat Attack Type.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": " 50 Damage / 5m/5yd area.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": " 100 Damage / 25m/27yd area.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 12,
+        "effect": " 140 Damage / 80m/87yd area.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 15,
+        "effect": " 160 Damage / 150m/164yd area.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 6,
+      "bookId": 5,
+      "name": "Control Fire",
+      "level": 20,
+      "actionType": "Active",
+      "type": "Effect, Spiritual",
+      "effect": "This spell grants the caster control of fire intensities. He can alter different aspects of the flames, such as color of flame and smoke they produce. If faced with a fire-based creature, the magician can control it if the creature fails a MR Check.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": " MR 100 / 5 Intensities.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 9,
+        "effect": " MR 120 / 8 Intensities.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": " MR 140 / 12 Intensities.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 15,
+        "effect": " MR 180 / 15 Intensities.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 7,
+      "bookId": 5,
+      "name": "Fire Barrier",
+      "level": 22,
+      "actionType": "Active",
+      "type": "Automatic, Defense",
+      "effect": "This spell creates a strong wall of fire. Any character attempting to break through the wall receives an automatic attack with a Final Attack ability of 240 and Base Damage using the Heat Attack Type. Suffering damage does not prevent a creature from breaching the wall. The barrier has a maximum height and length based on spell level. In addition, the caster may use the wall as a magic shield against attacks based on water, cold, or fire.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": " Damage 80 / 2m/2yd / 300 Resistance Points.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": " Damage 90 / 5m/5yd / 500 Resistance Points.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": " Damage 100 / 10m/11yd / 800 Resistance Points / Blocks attacks based on Energy.",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 15,
+        "effect": " Damage 100 / 15m/16yd / 1500 Resistance Points / Final Attack 280 / Blocks all kind of attacks.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 8,
+      "bookId": 5,
+      "name": "Igneous Weapon",
+      "level": 26,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell infuses a weapon with fire, thus upgrading its attack into a Heat Attack Type. This eldritch fire increases the weapon’s Base Damage without altering the weapon’s Fortitude.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": " +10 Base Damage.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 9,
+        "effect": " +20 Base Damage.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 11,
+        "effect": " +30 Base Damage.",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 14,
+        "effect": " +40 Base Damage.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 9,
+      "bookId": 5,
+      "name": "Heat Wave",
+      "level": 30,
+      "actionType": "Active",
+      "type": "Attack",
+      "effect": "This spell projects a powerful high-temperature wave that has a Base Damage using the Heat Attack Type. Since waves are invisible to the human eye, the victim must be able to see magic, have thermal vision, or pass an Absurd level Notice Check in order to avoid a Blinded penalty against this attack.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": " Damage 50.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": " Damage 70.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": " Damage 90.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 15,
+        "effect": " Damage 110.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 10,
+      "bookId": 5,
+      "name": "Read The Ashes",
+      "level": 32,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell transports the caster’s senses to the past, endowing him with the possibility of seeing the causes of a specific fire. The caster must be present in the remains of the fire, but is not aware of reality around him while he is performing the spell.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": " Up to 1 day old",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 10,
+        "effect": " Up to 1 week old",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 220,
+        "requiredIntelligence": 13,
+        "effect": " Up to 1 month old.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 340,
+        "requiredIntelligence": 15,
+        "effect": " Up to 1 year old.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 11,
+      "bookId": 5,
+      "name": "Raise Weather Temperature",
+      "level": 36,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell causes temperatures to rise in a radius.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 7,
+        "effect": " +5°C / 1km/1093yd area.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 10,
+        "effect": " +10°C / 5km area.",
+        "retention": 40
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " +20°C / 10km/3.1mile area.",
+        "retention": 50
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " +30°C / 15km/9.3mile area.",
+        "retention": 60
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 12,
+      "bookId": 5,
+      "name": "Fire Mine",
+      "level": 40,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell creates an igneous mine ready to explode in a radius at the caster’s command. The attack has an 80-point Base Damage using the Heat Attack Type. The extent of the potential damage is determined by proximity. If the distance between a character and the mine is more than half the explosion area, the hapless victim must defend against an attack with a Final Attack Ability of 240, or against a Final Attack Ability of 280 if the distance is less. At a distance of less than five feet from its source, the explosion has a Final Attack Ability of 320. The caster may activate the fire mines at any time as an active action. The mines affect everything in their radius, including the caster.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 7,
+        "effect": " 10m/11yd area / Damage 80.",
+        "retention": 20
+      },
+      "intermediateGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 10,
+        "effect": " 50m/54yd area / Damage 120.",
+        "retention": 40
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " 150m/164yd area / Damage 180.",
+        "retention": 50
+      },
+      "arcaneGrade": {
+        "zeon": 320,
+        "requiredIntelligence": 15,
+        "effect": " 250m/273yd area / Damage 240.",
+        "retention": 60
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 13,
+      "bookId": 5,
+      "name": "Increase Critical",
+      "level": 42,
+      "actionType": "Passive",
+      "type": "Effect",
+      "effect": "This spell adds a bonus when calculating Critical Levels for specific attacks. This spell must be cast before rolling any dice.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": " +20 Critical.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": " +40 Critical.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": " +60 Critical.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 15,
+        "effect": " +80 Critical.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 14,
+      "bookId": 5,
+      "name": "Dry",
+      "level": 46,
+      "actionType": "Active",
+      "type": "Effect, Spiritual",
+      "effect": "This spell immediately dries any wet body in a radius. A mage may use this spell to harm water elementals. Such creatures much pass a MR Check or suffer damage equal to twice their Failure. Living creatures targeted by this spell must pass a PhR Check or suffer damage equal to half their Failure.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": " MR or PhR 100 / 5m/5yd area.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 10,
+        "effect": " MR or PhR 120 / 15m/16yd area.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 12,
+        "effect": " MR or PhR 140 / 25m/27yd area.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 14,
+        "effect": " MR or PhR 160 / 35m/38yd area.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 15,
+      "bookId": 5,
+      "name": "Melt",
+      "level": 50,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "This spell heats up any inorganic object the caster desires in a radius, causing it to reach extremely high temperatures. The intensity of the heat causes any object that fails aPhR Check to melt in a number of rounds equal to its Fortitude. Anyone in contact with the object in question must get rid of it, or they will suffer injury. Injury rolls occur on Table 73.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": " PhR 80 / 10m/11yd area.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 10,
+        "effect": " PhR 100 / 50m/54yd area.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 12,
+        "effect": " PhR 120 / 100m/109yd area.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 14,
+        "effect": " PhR 140 / 150m/164yd area.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 16,
+      "bookId": 5,
+      "name": "Body of Fire",
+      "level": 52,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell transforms a designated body into fire. Once transformed, a fire body becomes immune to all non-energy-, cold-, or water-based attacks. All elements used to extinguish fire (sand, foam, etc.) will injure the character. Anyone who comes into contact with the flames that make up a fire body must pass a PhR Check equal to twice the transformed character’s Presence or suffer damage equal to half the failure level. If a character has fire protection, he receives a +5 bonus for every AT point against Heat on that roll.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 8,
+        "effect": " As described.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 11,
+        "effect": " As Base, but gives +30 Resistance Bonus against Fire Effects.",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 13,
+        "effect": " As Intermediate, but the subject can move through any crack a flame might pass through.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 16,
+        "effect": " As Advanced, but immune to Cold and Water attacks not of supernatural nature.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 17,
+      "bookId": 5,
+      "name": "Vital Sacrifice",
+      "level": 56,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell allows a spellcaster to consume his own vital energy in order to increase his physical capabilities whenever he requires. This spell grants the Passive ability to temporarily sacrifice Life Points in order to receive a bonus to a specific action. For every 5 Life Points thus spent, a character receives +5 to one of his rolls. Creatures with Damage Resistance shall multiply these points by their DR multiple. This bonus applies only to physical actions, but it can be added to Primary Abilities – such as Attack, Defense, or Magic Projection. Even though this is a Passive action, the sacrifice must be declared prior to rolling the dice. The spellcaster may also bestow this ability upon another individual, in which case is the recipient decides how many points to spend. Characters recover sacrificed Life Points at a rate of 10 per day, independently of the character’s natural Regeneration or any healing spells he might employ.  Effects do not overlap, and only one spell of this class can be held active upon a specific individual.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 6,
+        "effect": " Up to 50 Life Points sacrifice per turn.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": " Up to 100 Life Points sacrifice per turn.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " Up to 150 Life Points sacrifice per turn.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " Up to 200 Life Points sacrifice per turn.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 18,
+      "bookId": 5,
+      "name": "Incinerate",
+      "level": 60,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "This spell calls fire down on any target within a 150-foot radius area that the caster designates. The spellcaster rolls the dice to attack every target he intends to incinerate, adding a bonus on Table 73: In Flames. Creatures can resist this spell by passing an MR Check.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": " MR 140 / +100 to Table Result / 50m/54yd area.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 12,
+        "effect": " MR 160 / +120 to Table Result / 100m/109yd area.",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 14,
+        "effect": " MR 180 / +140 to Table Result / 150m/194yd area.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 260,
+        "requiredIntelligence": 16,
+        "effect": " MR 200 / +160 to Table Result / 200m/218yd area.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 19,
+      "bookId": 5,
+      "name": "Consume Essence",
+      "level": 62,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "This spell creates a terrifying supernatural aura around the spellcaster that can destroy the vital essence of people, consuming their energy and preventing them from healing by natural means. Anyone in a radius must pass a MR Check or suffer damage to Life Points and Zeon equal to their Failure. Life Points lost through this spell can not be recovered naturally; healing magic is required restore the health. Spellcasters can only recover lost Zeon by absorbing it from other spellcasters or from magic containers.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 6,
+        "effect": " MR 120 / 10m/11yd area.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": " MR 160 / 25m/27yd area.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " MR 200 / 50m/54yd area.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " MR 220 / 250m/273yd area.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 20,
+      "bookId": 5,
+      "name": "Power Sacrifice",
+      "level": 66,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell allows the spellcaster to consume his own magical energy in order to increase his Magic Accumulation. It grants the caster the Passive ability of spending Zeon points in order to receive a temporary bonus to MA. For every 10 points spent with this purpose, the character receives a +5 bonus on his MA until the end of the turn. Effects do not overlap, and only onespell of this class can be held active upon a specific individual.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 7,
+        "effect": " Up to 20 Zeon per turn.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 10,
+        "effect": " Up to 50 Zeon per turn.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 13,
+        "effect": " Up to 80 Zeon per turn.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " Up to 120 Zeon per turn.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 21,
+      "bookId": 5,
+      "name": "Direct Critical",
+      "level": 70,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "This spell causes an internal explosion in an individual, resulting in an automatic Critical – although the target can counteract it with his PhR as the general rules dictate. A target can resist this spell by passing an MR check.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": " Critical 120 / MR 140.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 11,
+        "effect": " Critical 140 / MR 160.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 13,
+        "effect": " Critical 180 / MR 180.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 16,
+        "effect": " Critical 220 / MR 200.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 22,
+      "bookId": 5,
+      "name": "Magic For Capacities",
+      "level": 72,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell allows a spellcaster to consume his own Zeon in order to temporarily increase his Characteristics and dependant abilities. This spell grants the caster the Passive ability to gain a +1 to one of his Characteristics (until the end of the turn) for every 25 Zeon points he sacrifices. Effects do not overlap, and only one spell of this class can be held active upon a specific individual.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 6,
+        "effect": " Up to 50 Zeon per turn.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": " Up to 100 Zeon per turn.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " Up to 150 Zeon per turn.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " Up to 200 Zeon per turn.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 23,
+      "bookId": 5,
+      "name": "Fire Storm",
+      "level": 76,
+      "actionType": "Active",
+      "type": "Automatic",
+      "effect": "The caster selects an area within which a heavy fire storm appears, burning everything inside it to the ground. Every turn, individuals encompassed within the area will suffer an automatic attack with an attack using the Heat Attack Type. This attack possesses a Base Damage of 180. The storm area has a radius and affects all within, including the caster. This spell remains stationary.",
+      "initialGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 8,
+        "effect": " 25m/27yd area / Final Attack 180.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": " 150m/164yd area / Final Attack 240.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " 200m/218yd area / Final Attack 280.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 15,
+        "effect": " 250m/273yd area / Final Attack 320.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 24,
+      "bookId": 5,
+      "name": "Consume Life for Magic",
+      "level": 80,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell allows the spellcaster to consume his own vital energy in order to increase his magic reserve. This spell grants the Passive Ability to temporarily sacrifice Life Points to recover Zeon. For every 5 LP sacrificed, the caster receives 100 Zeon points to spend. Damage Resistance creatures will increase this number according to their DR Multiple. Life Points lost through this spell recovers at a rate of 10 points per day, regardless of the character’s natural Regeneration or any healing spells he might employ. The maximum number of Effects do not overlap, and only one spell of this class can be held active upon a specific individual.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 6,
+        "effect": " Up to 20 Life Points per turn.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": " Up to 80 Life Points per turn.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " Up to 140 Life Points per turn.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " Up to 200 Life Points per turn.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 25,
+      "bookId": 5,
+      "name": "Create Ifreet",
+      "level": 82,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell creates a live fire creature completely under the magician’s control. This entity is developed as a Being Between Worlds, subject to the powers and limitations of Fire elementals in Chapter 26. The creature's maximum level is calculated using the same rules as in the spell Create Being from the Path of Creation.",
+      "initialGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 10,
+        "effect": " Level 1.",
+        "retention": 50
+      },
+      "intermediateGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 12,
+        "effect": " Level 3.",
+        "retention": 70
+      },
+      "advancedGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 14,
+        "effect": " Level 6.",
+        "retention": 100
+      },
+      "arcaneGrade": {
+        "zeon": 700,
+        "requiredIntelligence": 16,
+        "effect": " Level 10.",
+        "retention": 140
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 26,
+      "bookId": 5,
+      "name": "Pyre",
+      "level": 86,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell produces  levels of fire intensity. The fire created by this spell continues to burn without consuming anything for the duration of the spell. If set on flammable material, it burns naturally after the spell has ended.",
+      "initialGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 10,
+        "effect": " 15 Intensities.",
+        "retention": 25
+      },
+      "intermediateGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 12,
+        "effect": " 25 Intensities.",
+        "retention": 30
+      },
+      "advancedGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 14,
+        "effect": " 35 Intensities.",
+        "retention": 30
+      },
+      "arcaneGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 18,
+        "effect": " 45 Intensities.",
+        "retention": 35
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 27,
+      "bookId": 5,
+      "name": "Devastation",
+      "level": 90,
+      "actionType": "Active",
+      "type": "Attack",
+      "effect": "This spell creates a 200-point Base Damage fire explosion in a radius. Even though this spell can damage energy, it uses the Heat Attack Type. The caster can not select targets within the explosion area.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": " 1km/1093yd area.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 13,
+        "effect": " 5km/3.1mile area.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 16,
+        "effect": " 10km/6.2mile area.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 18,
+        "effect": " 15km/9.3mile area.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 28,
+      "bookId": 5,
+      "name": "Sacrifice Others",
+      "level": 92,
+      "actionType": "Active",
+      "type": "Effect, Spiritual",
+      "effect": "This spell binds other individuals’ essence and vital force to the caster, enabling him to consume them for his own advantage. In gaming terms, it allows the entity to use the Life Points and Zeon of those affected by the spell, for sacrifice spells: Vital Sacrifice, Magic for Capacities, Power Sacrifice and Consume Life for Magic. This spell has a area within which the caster is free to select as many targets as he wishes. MR check to resist the spell is needed. The affected parties will be entitled to a new roll every day, or at the time their energy is being consumed.",
+      "initialGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 13,
+        "effect": " 1km/1093yd area / MR 120.",
+        "retention": 50
+      },
+      "intermediateGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 15,
+        "effect": " 2km/1.2mile area / MR 140.",
+        "retention": 70
+      },
+      "advancedGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 17,
+        "effect": " 3km/1.8mile area / MR 160.",
+        "retention": 100
+      },
+      "arcaneGrade": {
+        "zeon": 750,
+        "requiredIntelligence": 19,
+        "effect": " 5km/3.1mile area / MR 180.",
+        "retention": 150
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 29,
+      "bookId": 5,
+      "name": "Lord of Fire",
+      "level": 96,
+      "actionType": "Active",
+      "type": "Automatic",
+      "effect": "The caster controls all heat nuclei in a radius. This dominion extends control over planetary magma, thus allowing the spellcaster to produce volcanic eruptions. All fire based creatures within the spell area are subject to the spellcaster’s control unless they pass a MR check. Affected creatures are entitled to a new roll only if they alter their base Resistance. A creature that passes the check need not reroll unless its base Resistance decreases.",
+      "initialGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 10,
+        "effect": " MR 140/ 100km/62mile area.",
+        "retention": 30
+      },
+      "intermediateGrade": {
+        "zeon": 450,
+        "requiredIntelligence": 12,
+        "effect": " MR 180/ 1000km/621mile area.",
+        "retention": 45
+      },
+      "advancedGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 15,
+        "effect": " MR 200/ 10000km/6213mile area.",
+        "retention": 60
+      },
+      "arcaneGrade": {
+        "zeon": 1000,
+        "requiredIntelligence": 18,
+        "effect": " MR 240/ Affects all heat sources.",
+        "retention": 100
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 30,
+      "bookId": 5,
+      "name": "Armageddon",
+      "level": 100,
+      "actionType": "Active",
+      "type": "Automatic",
+      "effect": "The definitive fire spell allows the caster to consume a portion ofthe world’s very essence, incinerating everything, including souls. Armageddon inhibits any form of existence in its radius. Any and all organic or inorganic entities inside the area must pass a MR check every minute to avoid being physically and spiritually incinerated. No life form can be born or created in the spell’s zone of influence for as long as the spell is maintained.",
+      "initialGrade": {
+        "zeon": 450,
+        "requiredIntelligence": 15,
+        "effect": " MR 140 / 10km/6.2mile area.",
+        "retention": 90
+      },
+      "intermediateGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 16,
+        "effect": " MR 150 / 25km/15.5mile area.",
+        "retention": 100
+      },
+      "advancedGrade": {
+        "zeon": 1200,
+        "requiredIntelligence": 17,
+        "effect": " MR 160 / 50km/31mile area.",
+        "retention": 105
+      },
+      "arcaneGrade": {
+        "zeon": 1600,
+        "requiredIntelligence": 18,
+        "effect": " MR 180 / 150km/93.2mile area.",
+        "retention": 110
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    }
+  ]
+}

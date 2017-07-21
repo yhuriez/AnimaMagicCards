@@ -1,0 +1,365 @@
+{
+  "bookId": 26,
+  "bookName": "Path of Void",
+  "description": "Void is the sub-pathway that controls  the complete absence of all physical and spiritual matters.",
+  "primaryBookUnaccessibles": [
+    "Light",
+    "Creation",
+    "Fire",
+    "Earth",
+    "Essence",
+    "Illusion"
+  ],
+  "spells": [
+    {
+      "spellId": 1,
+      "bookId": 26,
+      "name": "﻿Shadow of the Void",
+      "level": 4,
+      "actionType": "Active",
+      "type": "Spell Type: Spiritual",
+      "effect": "Effect: Brings forth a fragment of an empty existence, a mere shadow, of the Void.  Light, air, and energy are partially absorbed by the void fragment.  Anyone exposed must pass a MR test or lose a fatigue point, or in the case of elementals two levels of intensity.",
+      "initialGrade": {
+        "zeon": 30,
+        "requiredIntelligence": 5,
+        "effect": " MR 80 / 5m/5yd radius.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 8,
+        "effect": " MR 100 / 10m/10yd radius.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 11,
+        "effect": " RM 120 / 15m/16yd radius",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 14,
+        "effect": " RM 150 / 30m/32yd radius",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 2,
+      "bookId": 26,
+      "name": "Void Wave",
+      "level": 14,
+      "actionType": "Active",
+      "type": "Spell Type: Attack",
+      "effect": "Effect: This spell sends a slight void wave that can deconstruct the fibers of any supernatural protection. This spell itself does not damage their opponents, but is directed against a supernatural shield causing devastating effects. Void wave is invisible to the naked eye, except for those able to see magic.",
+      "initialGrade": {
+        "zeon": 30,
+        "requiredIntelligence": 6,
+        "effect": " 120 damage against shields.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 9,
+        "effect": " 250 damage against shields.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 12,
+        "effect": " 400 damage against shields.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 15,
+        "effect": " 600 damage against shields.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 3,
+      "bookId": 26,
+      "name": "Void Shield",
+      "level": 24,
+      "actionType": "Passive",
+      "type": "Spell Type: Defense",
+      "effect": "Effect: Creates a barrier that absorbs and converts to nothingness.  In addition to a conventional shield, any supernatural power will stop automatically, canceled if the attacker fails to overcome a WP or POW control test against the difficulty determined by the level of the spell(1d10 + WP or POW). That is, if an opponent launches an offensive power against a magician who is protected behind a Void Shield at intermediate grade, and the caster obtains a successful defense, the attacker must overcome a WP or POW control check of 16 or attack will be canceled without even damaging the shield. Similarly, any physical object stopped by the shield must pass a PhR test or be destroyed immediately.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": " 200 Points of Resistance / Hard 14 / PhR 100.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": " 300 Points of Resistance / Hard 16 / PhR 120.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": " 400 Points of Resistance / Hard 18 / PhR 140.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 15,
+        "effect": " 500 Points of Resistance / Hard 20 / PhR 160.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 4,
+      "bookId": 26,
+      "name": "The Vortex of Reality",
+      "level": 34,
+      "actionType": "Active",
+      "type": "Spell Type: Automatic",
+      "effect": "Effect: Creates an area filled with millions of microscopic void particles. Everyone in the radius of the spell (including the caster) must pass a MR test each turn or suffer damage and loss Ki points equivalent to half the level of failure and Zeon lost points equal to the level of failure.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 7,
+        "effect": " MR 100 / 5 m radius.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 10,
+        "effect": " MR 120 / 10m/10yd radius.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 13,
+        "effect": " MR 140 / 20m/21yd radius.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 15,
+        "effect": " MR 160 / 40m/43yd radius.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 5,
+      "bookId": 26,
+      "name": "Blade of Black Doom ",
+      "level": 44,
+      "actionType": "Active",
+      "type": "Spell Type: Attack",
+      "effect": "Summons the void in its purest form, shaping a crackling blade manifested in the hands of a sorcerer. The weapon can be used to attack with the attack ability or magic projection of the mage, the attacks ignores AT. The sorcerer can keep the blade active for multiple turns, but each turn must make a WP control check (1d10 + WP) difficulty 12 or losing control and suffer and “attack” from the weapon using his attack/magic projection +50.  After passing the WP control check increase the difficulty by +1, so on turn two it is a WP check diff 12, diff 13 for turn 3, diff 14 for turn 4, etc.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 6,
+        "effect": " 80 Damage",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 9,
+        "effect": " Damage 120.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": " Damage 160.",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 15,
+        "effect": " Damage 200.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 6,
+      "bookId": 26,
+      "name": "Aura of Emptiness",
+      "level": 54,
+      "actionType": "Active",
+      "type": "Spell Type: Effect",
+      "effect": "Covers the caster with an aura of emptiness that protects you from supernatural effects or attacks, providing energy AT while devouring any spell or psychic power of indicated value or lower.  Unfortunately, this spell does not discriminate between the powers of friends or enemies, and devours them all without distinction. The aura is invisible, but everything that surrounds the wizard seems to be more tenuous and off.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 6,
+        "effect": " AT 4 / 60 Zeonic Value / Psychic Potential 80.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": " AT 6 / 90 Zeonic Value / Psychic Potential 120.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " AT 8 / 120 Zeonic Value / Psychic Potential 140.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 15,
+        "effect": " AT 10 / 160 Zeonic Value / Psychic Potential 180.",
+        "retention": 35
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 7,
+      "bookId": 26,
+      "name": "Black Holes",
+      "level": 64,
+      "actionType": "Active",
+      "type": "Spell Type: Automatic",
+      "effect": "Effect: Creates a filled area around the sorcerer with a vortex of existential black holes that move chaotically from one side to another. Anyone who falls within that area must overcome an Athletics, or Acrobatics test difficulty determined by the level of the spell, otherwise collide with a black hole. If colliding with such a point a MR or PhR test must be passed you or suffer damage and Ki loss equivalent to half the level of failure, and Zeon loss equivalent to the level of the failure. The mage cannot designate targets within the spell.",
+      "initialGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 8,
+        "effect": " Difficulty 120 / 10m/10yd radius / PhR or MR 120.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 10,
+        "effect": " Difficulty 140 / 20m/21yd radius/ PhR or MR 140.",
+        "retention": 25
+      },
+      "advancedGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 12,
+        "effect": " Difficulty 180 / 50m/54yd radius / PhR or MR 160.",
+        "retention": 35
+      },
+      "arcaneGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 15,
+        "effect": " Difficulty 240 / 100m/109yd radius / PhR or MR 180.",
+        "retention": 50
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 8,
+      "bookId": 26,
+      "name": "Void Protection",
+      "level": 74,
+      "actionType": "Active",
+      "type": "Spell Type: Attack",
+      "effect": "Covers the caster in a supernatural energy that repels effects of the void. ",
+      "initialGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 10,
+        "effect": " Protects against spells of this sub-path.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 12,
+        "effect": " As base level, but the character is also immune to effects and attacks from Void beings.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 14,
+        "effect": " The character is immune to any effects related to the void except primordial nothingness.",
+        "retention": 30
+      },
+      "arcaneGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 16,
+        "effect": " As advanced degree, but the character is capable of surviving even in the primordial nothingness.",
+        "retention": 40
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 9,
+      "bookId": 26,
+      "name": "Implosion",
+      "level": 84,
+      "actionType": "Active",
+      "type": "Spell Type: attack.",
+      "effect": "Effect: This spell creates a void point on the inside of something that attracts all the mass of its interior, causing the structure implode and disappear completely.  By absorbing the flesh, bones and organs, granting an automatic critical with a bonus when ever damage is done.",
+      "initialGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 14,
+        "effect": " 200 Damage / Critical +20.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 16,
+        "effect": " 400 Damage / Critical +40.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 750,
+        "requiredIntelligence": 18,
+        "effect": " 500 Damage / Critical +60.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 1000,
+        "requiredIntelligence": 20,
+        "effect": " 800 Damage / Critical +100.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 10,
+      "bookId": 26,
+      "name": "Gate to Nowhere",
+      "level": 94,
+      "actionType": "Passive",
+      "type": "Spell Type: Effect",
+      "effect": "Effect: Opens a one way portal to the primordial nothingness a force that will one day devour the universe. Anyone who passes through the door automatically ceases to exist only beings with 35+ Gnosis or more objects of equal presence or individuals protected somehow against the Void can survive there, but slowly lose their attribute points for POW, which recovers at a rate of one a day. Naturally, something that remains in the interior is virtually immune to any kind of attack, since these can not reach you. The dimensions of the site are determined by the level of the spell.",
+      "initialGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 11,
+        "effect": " 2m/2yd in diameter.",
+        "retention": 30
+      },
+      "intermediateGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 13,
+        "effect": " 5m/5yd in diameter.",
+        "retention": 50
+      },
+      "advancedGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 15,
+        "effect": " 15m/16yd in diameter.",
+        "retention": 80
+      },
+      "arcaneGrade": {
+        "zeon": 1200,
+        "requiredIntelligence": 18,
+        "effect": " 50m/54yd in diameter.",
+        "retention": 120
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    }
+  ]
+}

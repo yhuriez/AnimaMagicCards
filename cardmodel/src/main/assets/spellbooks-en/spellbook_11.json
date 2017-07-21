@@ -1,0 +1,1419 @@
+{
+  "bookId": 11,
+  "bookName": "Path of Necromancy",
+  "description": "Necromancy is a perversion of magic. While the rest of the Paths derive their power from the network of souls, these spells destroy the essence of life by stagnating and perverting the souls it uses. Its power gives back life to the dead, destroys souls and drains the life and essence of other being.",
+  "type": "Automatic",
+  "oppositeBook": "The rest of the magic Paths",
+  "secondaryBookAccessibles": [
+    "War",
+    "Death",
+    "Sin",
+    "Knowledge",
+    "Blood",
+    "Dream",
+    "Threshold",
+    "Void"
+  ],
+  "spells": [
+    {
+      "spellId": 1,
+      "bookId": 11,
+      "name": "Feel Death",
+      "level": 2,
+      "actionType": "Active",
+      "type": "Detection",
+      "effect": "The necromancer automatically detects any deaths occurring around him. This spell also reveals undead creatures if they fail a MR Check.",
+      "initialGrade": {
+        "zeon": 30,
+        "requiredIntelligence": 6,
+        "effect": " 100m/109yd area / MR 120.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 8,
+        "effect": " 250m/273yd area / MR 140.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 10,
+        "effect": " 500m/546yd area / MR 160.",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": " 1km/1093yd area / MR 180.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 2,
+      "bookId": 11,
+      "name": "See the Great Beyond",
+      "level": 6,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell allows the caster to see specters and other spiritual creatures invisible to the human eye. The caster may bestow this gift upon as many individuals as he wishes.",
+      "initialGrade": {
+        "zeon": 30,
+        "requiredIntelligence": 6,
+        "effect": " Allows seeing Spectral Beings.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 8,
+        "effect": " Allows seeing Spectral Beings and souls waiting for The Call.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 10,
+        "effect": " Allows seeing all class of Spiritual Beings.",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": " Allows seeing all class of Spiritual Beings as well as anything of supernatural characteristics that is in the ambient.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 3,
+      "bookId": 11,
+      "name": "Control Scavengers",
+      "level": 8,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell grants the caster control over creatures that feed mostly on the dead. The affected creatures must all be within a radius and have a Presence less than 20. Some possible examples include vultures, crows, and maggots.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 6,
+        "effect": " 10m/11yd area.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 8,
+        "effect": " 150m/164yd area.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 11,
+        "effect": " 500m/546yd area.",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 13,
+        "effect": " 2km/1.24mile area.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 4,
+      "bookId": 11,
+      "name": "Spectral Shield",
+      "level": 10,
+      "actionType": "Passive",
+      "type": "Shield",
+      "effect": "This spell creates a shield of necromantic energy capable of stopping Spiritual assaults that affect the character’s supernatural Resistances. The spell does not stop physical attacks. Spectral Shield offers protection against mysticaleffects, as long as they do not force the character to make a Resistance Check with a Difficulty greater than that set forth by the spell.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 6,
+        "effect": " Max MR 140.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 9,
+        "effect": " Max MR 180.",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 11,
+        "effect": " Max MR 220.",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 13,
+        "effect": " Max MR 260.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 5,
+      "bookId": 11,
+      "name": "Drain Life",
+      "level": 12,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "This spell allows a necromancer to absorb the life force of another living creature, severely injuring the target in the process, while healing himself in turn. The caster must be able to physically touch the target. Any individual affected by this spell is forced to pass a MR Check or lose a number of Life Points equal to his Failure Level. The caster then adds this number to his own Life Points; however he cannot exceed his normal maximum. Creatures with Damage Resistance lose five times the amount of their Failure Level, but the caster only receives one-fifth of that number to heal his own wounds. For example, a creature with Damage Resistance that fails its MR Check by 20 points would lose 100 LP, but the caster would only add 20 to his LP total.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": " MR 100.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 9,
+        "effect": " MR 140.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 230,
+        "requiredIntelligence": 12,
+        "effect": " MR 180.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 320,
+        "requiredIntelligence": 14,
+        "effect": " MR 240.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 6,
+      "bookId": 11,
+      "name": "Necromantic Detection",
+      "level": 16,
+      "actionType": "Active",
+      "type": "Detection",
+      "effect": "This spell allows the necromancer to detect any living or undead creature within range. Characters must pass a MR Check to remain undetected by this spell.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": " MR 120 / 20m/21yd area.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 9,
+        "effect": " MR 160 / 50m/54yd area.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 11,
+        "effect": " MR 200 / 100m/109yd area.",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 13,
+        "effect": " MR 240 / 150m/164yd area.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 7,
+      "bookId": 11,
+      "name": "Talk To the Dead",
+      "level": 18,
+      "actionType": "Active",
+      "type": "Automatic",
+      "effect": "This spell allows the necromancer to communicate with dead souls and spirits around him. The spell automatically affects all spirits within range that meet the level requirement set by the spell. The caster doesn’t need to be aware of a spirit’s exact location.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": " Level  4.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": " Level  8.",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": " Level  12.",
+        "retention": 5
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 15,
+        "effect": " Level  16.",
+        "retention": 5
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 8,
+      "bookId": 11,
+      "name": "Necromantic Paralysis",
+      "level": 20,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "This spell freezes the supernatural essence of undead creatures, rendering them unable to move. Any undead being in a radius from the caster is automatically subjected to Total Paralysis if unable to pass a MR Check.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 7,
+        "effect": " 10m/11yd area / MR 120.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 10,
+        "effect": " 25m/27yd area / MR 140.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 13,
+        "effect": " 50m/54yd area / MR 160.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 15,
+        "effect": " 100m/109yd area / MR 180.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 9,
+      "bookId": 11,
+      "name": "Necromitude",
+      "level": 22,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell allows an undead creature to recover Life Points. It has no effect upon living beings.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": " 50 Life Points.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": " 100 Life Points.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": " 150 Life Points.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 14,
+        "effect": " 250 Life Points.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 10,
+      "bookId": 11,
+      "name": "Death Beam",
+      "level": 26,
+      "actionType": "Active",
+      "type": "Attack",
+      "effect": "This spell projects a strong necromantic discharge. The attack hits on the Energy AT.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": " Damage 80.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": " Damage 100.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": " Damage 140.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 15,
+        "effect": " Damage 180.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 11,
+      "bookId": 11,
+      "name": "Raise Corpses",
+      "level": 28,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "Through necromantic energy manipulation, the caster can animate corpses and turn them into zombies or skeletons under his control. The dead do not keep the Special Abilities or knowledge they had while alive. But, they maintain their basic abilities – such as those associated with natural weapons and some of their physical Characteristics. The creature’s Power and Resistances vary according to its body. For instance, a bear’s cadaver would be considerably more dangerous than that of a human. Basic information on zombies is included in the Bestiary as reference for the GM. A caster can raise a number of corpses equal to100 Presence points at base spell level.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 7,
+        "effect": " 100 Presence Points (Max Level 0).",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 10,
+        "effect": " 300 Presence Points (Max Level 1).",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 13,
+        "effect": " 600 Presence Points (Max Level 2).",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 450,
+        "requiredIntelligence": 15,
+        "effect": " 1000 Presence Points (Max Level 3).",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 12,
+      "bookId": 11,
+      "name": "Dead Body",
+      "level": 30,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell temporarily stops an individual’s bodily functions without causing his death. The affected target can still move and act normally and becomes extremely resistant to damage effects and consequences for as long as the spell stays active. Any physical penalty he incurs is reduced by half, and he remains conscious while in the state between life and death. In addition, anyone inspecting the body will be unable to determine its true condition. The maximum total of Levels affected by this spell can not exceed the limit set by spell level.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": " Level 3.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": " Level 6.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": " Level 12.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 14,
+        "effect": " Level 18.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 13,
+      "bookId": 11,
+      "name": "Drain Magic",
+      "level": 32,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "This spell drains the magical energy out of an individual or an object and transfers it to the necromancer. Any individual affected by this spell is forced to pass a MR Check or lose a number of Zeon points equal to twice the number by which he failed the Check. The caster immediately absorbs this Zeon.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 8,
+        "effect": " MR 140.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 10,
+        "effect": " MR 180.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 220,
+        "requiredIntelligence": 13,
+        "effect": " MR 220.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " MR 260.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 14,
+      "bookId": 11,
+      "name": "Destroy Undead",
+      "level": 36,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "This spell completely destroys the essence of the undead. Any necromantic entity targeted by this spell is forced to pass a MR Check or suffer damage equivalent to twice the number by which he failed the Check. Creatures with Damage Resistance increase this amount by their Damage Resistance multiple.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": " Base: MR 140.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 10,
+        "effect": " MR 180.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 13,
+        "effect": " MR 220.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 320,
+        "requiredIntelligence": 15,
+        "effect": " MR 260.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 15,
+      "bookId": 11,
+      "name": "Drain Characteristics",
+      "level": 38,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "By touching a living creature, the necromancer can absorb one of the individual’s Characteristics, increasing his own in the process. The necromancer must decide the Characteristic that he will drain before executing the spell. The designated target loses 1 point from that Characteristic for every 10 points by which he fails the MR Check. If the natural value of the victim’s drained Characteristic is higher than that of the necromancer’s, the necromancer adds that drained point to his own Characteristic. If the target’s Characteristic is lower, the necromancer needs to absorb 3 Characteristic points to increase his own by 1. The increased attributes remain for as long as the spell is maintained. Lost Characteristics are recovered at a rate of 1 per hour once the caster cancels the spell.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 8,
+        "effect": " MR 140.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 10,
+        "effect": " MR 180.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 13,
+        "effect": " MR 220.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 320,
+        "requiredIntelligence": 15,
+        "effect": " MR 260.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 16,
+      "bookId": 11,
+      "name": "Control the Dead",
+      "level": 40,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "The necromancer obtains absolute control of any undead creature in a radius. Dominion over the undead stays active for as long as the spell is maintained, but it does not affect other necromantic creatures that might approach the area later. The undead can attempt to avoid being controlled by passing a MR Check. They will only be allowed to reroll upon receiving an order completely contradictory to their nature; therefore creatures without a will, such as animated corpses, can never be freed.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": " MR 120 / 20m/21yd area.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 11,
+        "effect": " MR 140 / 50m/54yd area.",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 14,
+        "effect": " MR 160 / 100m/109yd area.",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 16,
+        "effect": " MR 180 / 150m/164yd area.",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 17,
+      "bookId": 11,
+      "name": "Wither Life",
+      "level": 42,
+      "actionType": "Active",
+      "type": "Automatic",
+      "effect": "This spell creates a necromantic energy area that immediately kills any inferior life form – such as small animals and plants – around the caster. Any living being with a Presence less than 20 that is within range of the caster automatically rots away.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": " 10m/11yd area.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 12,
+        "effect": " 20m/21yd area.",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 14,
+        "effect": " 30m/32yd area.",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 220,
+        "requiredIntelligence": 16,
+        "effect": " 50m/54yd area.",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 18,
+      "bookId": 11,
+      "name": "Necromantic Shield",
+      "level": 46,
+      "actionType": "Passive",
+      "type": "Shield",
+      "effect": "This spell creates an energy shield from the essence of dead souls that protects against all kinds of attacks. The shield can absorb up to 1,000 points of damage before breaking at base level.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 9,
+        "effect": " 1000 Resistance Points.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 11,
+        "effect": " 2000 Resistance Points.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 13,
+        "effect": " 3500 Resistance Points.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " 5000 Resistance Points.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 19,
+      "bookId": 11,
+      "name": "Dominate Life",
+      "level": 48,
+      "actionType": "Passive",
+      "type": "Spiritual",
+      "effect": "This spell allows the caster to enslave a living being’s soul. The targeted victim can resist the spell if he passes a MR Check. The controlled individual receives a new Check each day, and he also receives the chance to make another MR Check every time he receives an order completely against his behavior.",
+      "initialGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 9,
+        "effect": " MR 100.",
+        "retention": 30
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 11,
+        "effect": " MR 120.",
+        "retention": 40
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 13,
+        "effect": " MR 140.",
+        "retention": 50
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " MR 160.",
+        "retention": 60
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 20,
+      "bookId": 11,
+      "name": "Vampire Stigma",
+      "level": 50,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "The target of this spell automatically absorbs a percentage of the damage he deals to any opponent. Vampire Stigma will work both on physical attacks and direct damage spells, as well as similar supernatural powers. Attacks against creatures with Damage Resistance have the damage divided by their damage resistance multiple before awarding the life points.  For example, a creature with a damage resistance multiple of 3 who loses 300 LP to this spell would award the caster 20 LP at base spell level.",
+      "initialGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 9,
+        "effect": " 20% Absorption.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 11,
+        "effect": " 40% Absorption.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 13,
+        "effect": " 60% Absorption.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " 100% Absorption.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 21,
+      "bookId": 11,
+      "name": "Spectral Form",
+      "level": 52,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "The necromancer’s physical body becomes a burning, spectral mass that damages the essence of all living beings that come into contact with it.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": " The caster is immaterial and can only be damaged by attacks capable of damaging energy.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 12,
+        "effect": " As Base, but those who touch the caster must pass a MR or PhR against double the caster’s Presence and if they fail they suffer all action penalty and Lose Life points equal to half their failure level.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 14,
+        "effect": " As Intermediate, but the caster gains Life Points equal to the Life Points lost by people that come into contact with him.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 16,
+        "effect": " As advanced, but if people that come into contact fail their MR or PhR check by more than 40, they instantly die.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 22,
+      "bookId": 11,
+      "name": "Necromantic Modification",
+      "level": 56,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell can targets an undead entity, temporarily granting it new Powers and Abilities. If the target is an undead creature, it receives additional DP to obtain any of the Special Powers detailed in Chapter 26, as a creature with a Gnosis of 25 would. The effects of this spell do not overlap, and subjects may be affected by it only once. Cannot be cast on living beings.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": " 100 DP.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 11,
+        "effect": " 200 DP.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 13,
+        "effect": " 300 DP.",
+        "retention": 30
+      },
+      "arcaneGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 16,
+        "effect": " 400 DP.",
+        "retention": 40
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 23,
+      "bookId": 11,
+      "name": "Summon the Dead",
+      "level": 58,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell calls the souls of dead people or specters to the necromancer. The caster is able to summon spirits selectively, although some other soul may present itself if the specific one he is seeking to contact is unavailable. Summon the Dead only works on spirits still tied to the world, or on spectral creatures, but not upon souls already transmigrated to the Flow of Souls. The maximum total of levels affected cannot exceed the limit set by the spell.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": " Max Level 3.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 12,
+        "effect": " Max Level 6.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 14,
+        "effect": " Max Level 9.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 16,
+        "effect": " Max Level 12.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 24,
+      "bookId": 11,
+      "name": "Raise Spectres",
+      "level": 60,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "By dominating the souls of the dead, the necromancer can pervert their essences and turn them into specters at his service. These ghosts keep a small part of the capacities they used to have in life, but they lose the majority of their old powers and attributes in the process. A specter raised by this spell reduces to half (and round up) the Level achieved in life. However, it abides by the general rules of undead spirits and receives 100 extra DP which the caster employs to provide it with the powers he sees fit (as a Gnosis 20 being). The spell will only work on recently deceased souls still waiting for the Calling.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": " Max number of spirits 1 / Max Total Presence 100.",
+        "retention": 20
+      },
+      "intermediateGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " Max number of spirits 2 / Max Total Presence 160.",
+        "retention": 25
+      },
+      "advancedGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 14,
+        "effect": " Max number of spirits 4 / Max Total Presence 220.",
+        "retention": 30
+      },
+      "arcaneGrade": {
+        "zeon": 320,
+        "requiredIntelligence": 16,
+        "effect": " Max number of spirits 6 / Max Total Presence 280.",
+        "retention": 35
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 25,
+      "bookId": 11,
+      "name": "Drain Life Force",
+      "level": 62,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "This spell absorbs an individual’s vital force and transmits it to whoever the necromancer designates. The target must pass a MR Check or lose 1 Constitution and 1 Power Point for every 10 points by which he fails the Check. The affected individual also ages gradually, according to his Failure Level. Absorbed points allow the necromancer (or the subject absorbing them) to rejuvenate and recover part of his lost vitality, up to starting levels.Characters deprived of their vital force can never recover it, except through supernatural abilities that make it possible. The Aging Effect applies only if the caster decides so.",
+      "initialGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": " MR 100.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " MR 130.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " MR 160.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 360,
+        "requiredIntelligence": 18,
+        "effect": " MR 190.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 26,
+      "bookId": 11,
+      "name": "Kill",
+      "level": 66,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "This spell stops a subject’s bodily functions causing immediate death. It only works on living beings and is useless against spirits and some inanimate Beings Between Worlds. The affected character must pass a MR or PhR Check to survive.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": " MR or PhR 80.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 12,
+        "effect": " MR or PhR 100.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 14,
+        "effect": " MR or PhR 120.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 220,
+        "requiredIntelligence": 16,
+        "effect": " MR or PhR 140.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 27,
+      "bookId": 11,
+      "name": "Soul Beam",
+      "level": 68,
+      "actionType": "Active",
+      "type": "Attack",
+      "effect": "This spell projects a magical energy discharge composed of withered souls. The spell hits on the Energy AT. It only affects beings with a soul; lifeless physical bodies, such as walls or golems, are ignored. Given the nature of the discharge, only those with the capacity of seeing spirits are able to sense it.",
+      "initialGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 9,
+        "effect": " Damage 100.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 260,
+        "requiredIntelligence": 11,
+        "effect": " Damage 200.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 380,
+        "requiredIntelligence": 13,
+        "effect": " Damage 300.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 16,
+        "effect": " Damage 400.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 28,
+      "bookId": 11,
+      "name": "Necromantic Chimera",
+      "level": 70,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell creates an undead creature subject to the caster’s control. This entity is developed as a Being Between Worlds with a Gnosis of 25. However, the necromancer cannot create the entity from scratch; in order to develop it, he must gather pieces from several corpses. If looking to endow any power or essential ability, he must first find the bodies of beings that possessed those powers. For instance, if wanting to confer Natural Flight, he must find the corpse of a creature who had that specific ability in life.The existence of the chimera is directly linked to the necromancer’s soul. Therefore, its maximum level is calculated using the same rules as in the spell Create Being of the path of Creation.",
+      "initialGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 9,
+        "effect": " Level 2.",
+        "retention": 50
+      },
+      "intermediateGrade": {
+        "zeon": 360,
+        "requiredIntelligence": 12,
+        "effect": " Level 6.",
+        "retention": 80
+      },
+      "advancedGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 15,
+        "effect": " Level 10.",
+        "retention": 100
+      },
+      "arcaneGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 17,
+        "effect": " Level 13.",
+        "retention": 160
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 29,
+      "bookId": 11,
+      "name": "Life Perversion",
+      "level": 72,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "This spell corrupts the essence of a living being and stops its bodily functions, immediately transforming it into an undead entity. The affected character maintains the same Characteristics and abilities he had in life – although his animated corpse status will naturally grant him the advantage of Physical Exemption. Individuals may avoid transformation by passing a MR Check.",
+      "initialGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 10,
+        "effect": " MR or PhR 100",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 13,
+        "effect": " MR or PhR 140",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": " MR or PhR 180",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 360,
+        "requiredIntelligence": 18,
+        "effect": " MR or PhR 220",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 30,
+      "bookId": 11,
+      "name": "Vassalage",
+      "level": 76,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "This spell permanently ties an undead creature’s soul to that of the necromancer. Thus, the spellcaster automatically becomes its hierarchical superior, and the monster’s existence depends upon him. Although this spell does not endow the necromancer with real control upon the creature, their lives are tied together in a manner such that if the master is destroyed, the creature will perish too. The affected undead may resist Vassalage by passing a MR or PhR Check.",
+      "initialGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 10,
+        "effect": " MR or PhR 100.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 360,
+        "requiredIntelligence": 13,
+        "effect": " MR or PhR 140.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 450,
+        "requiredIntelligence": 15,
+        "effect": " MR or PhR 180.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 540,
+        "requiredIntelligence": 18,
+        "effect": " MR or PhR 220.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 31,
+      "bookId": 11,
+      "name": "Drain Souls",
+      "level": 78,
+      "actionType": "Active",
+      "type": "Spiritual",
+      "effect": "This spell allows the necromancer to snatch another individual’s soul so he may feed on its essence and power. The stronger the absorbed spirit, the greater the energy received. The targeted individual must pass a MR Check or lose an amount of Presence equal to half the number by which he failed the Check. For every 5 Presence points lost, the target loses 1 level and all the capacities or powers dependent upon it (with the exception of knowledge-based abilities). If the target’s Presence ever reaches zero, its soul is considered to be completely extinguished and he dies. For every 10 points of Presence absorbed, the necromancer temporarily increases one of his Characteristics by 1, or he can choose to receive 10 DP to acquire any Power or Essential creature ability. These increased Characteristics values will vanish at the rate of one per day, and DP will decrease at a rate of 20 per day. The caster can acquire powers and abilities as a being with Gnosis 30.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": " MR 120.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": " MR 140.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 14,
+        "effect": " MR 160.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 30,
+        "requiredIntelligence": 16,
+        "effect": " MR 180.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 32,
+      "bookId": 11,
+      "name": "Surpass Death",
+      "level": 80,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell allows a living person to defeat death. The target becomes an undead entity without ties and can therefore exist in the world on his own power. The spell must be cast at the exact moment of the person’s death – or a few seconds before (it will not cause death by itself). The caster is free to decide if the target in question becomes a Being Between Worlds or a Spirit, but in any case it will have a Gnosis of 25. The spell confers extra DP to use for any of the essential abilities or powers described in Chapter 26. If the caster chooses for the target to become a Spirit, the target must spend 100 DP to that end. He can also choose Disadvantages and Penalties, which will give him extra points. Excess DP increase the level as described in the spell Chimera. Surpass Death will only work on living creatures at the moment of death; therefore, it will have no effect upon creatures of a necromantic nature.",
+      "initialGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 10,
+        "effect": " +100DP / Up to 100DP in Disadvantages.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 13,
+        "effect": " +200DP / Up to 100DP in Disadvantages.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 1000,
+        "requiredIntelligence": 15,
+        "effect": " +300DP / Up to 200DP in Disadvantages.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 2500,
+        "requiredIntelligence": 17,
+        "effect": " +400DP / Up to 200DP in Disadvantages.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 33,
+      "bookId": 11,
+      "name": "True Rise",
+      "level": 82,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell raises a corpse allowing it to maintain its knowledge and every one of the powers and abilities it had in life. Unfortunately, the raised creature becomes an undead being lacking true soul. The spell affects deceased characters whose bodies are at the reach of the caster. If death occurred a long time before the spell is cast, the raised creature’s physical abilities might be damaged. Characters resurrected once through this spell can not be resurrected again. Keep in mind that, even though the character is an undead entity, it is not under the control of the necromancer.",
+      "initialGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 9,
+        "effect": " Max Level 3.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 12,
+        "effect": " Max Level 6.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 14,
+        "effect": " Max Level 9.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 1200,
+        "requiredIntelligence": 16,
+        "effect": " Max Level 12.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 34,
+      "bookId": 11,
+      "name": "Well of Life",
+      "level": 86,
+      "actionType": "Active",
+      "type": "Automatic",
+      "effect": "This spell creates a field of dark energy centered on the necromancer that allows him to absorb half the Life Points lost by all living beings within range of him. These Life Points go towards healing any sort of wounds he may have suffered. Well of Life itself does not inflict damage, but necromancers usually combine its effects with other damaging magic's at their disposal.",
+      "initialGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 10,
+        "effect": " 50m/54yd area.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 12,
+        "effect": " 250m/273yd area.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 14,
+        "effect": " 500m/546yd area.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 16,
+        "effect": " 1km/1093yd area.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 35,
+      "bookId": 11,
+      "name": "Cursed Land",
+      "level": 88,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "The caster corrupts a small fragment of the world, haunting a section of land. Inside this area, all deceased individuals are instantaneously resurrected as undead creatures subject to his control. Deceased characters automatically become animated corpses, but one out of a hundred is resurrected as a specter. These undead creatures only act inside the cursed land (see Level 28 and Level 60 spells of this Path as a reference). The magic sustaining them will vanish if they leave the area. The spell haunts a radius, stationary to the place where it was cast. People with Natura 5 raise as specters.",
+      "initialGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 10,
+        "effect": " 1km/1093yd area.",
+        "retention": 35
+      },
+      "intermediateGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 12,
+        "effect": " 10km/6.2mile area.",
+        "retention": 60
+      },
+      "advancedGrade": {
+        "zeon": 900,
+        "requiredIntelligence": 14,
+        "effect": " 100km/62mile area.",
+        "retention": 90
+      },
+      "arcaneGrade": {
+        "zeon": 1500,
+        "requiredIntelligence": 16,
+        "effect": " 1000km/621mile area.",
+        "retention": 150
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 36,
+      "bookId": 11,
+      "name": "Sustenance",
+      "level": 90,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell affects the essence of one or several undead creatures maintained by the spell, allowing for their existence even after the necromancer stops paying for their maintenance. For instance, if the spellcaster uses Sustenance upon a zombie animated by the spell Raise Corpses, the creature will continue to stay active once that spell has ended. The caster may affect as many individuals as he may wish, provided the total of their Presences is not higher than the limit set by the spell level.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": " Max Presence 60.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 13,
+        "effect": " Max Presence 120.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 16,
+        "effect": " Max Presence 240.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 18,
+        "effect": " Max Presence 480.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 37,
+      "bookId": 11,
+      "name": "Raw Material",
+      "level": 92,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell generates the corrupt energy used by necromantic magic to resurrect corpses and spirits, enabling the caster to create the raw material necessary to resurrect corpses at a later stage. The spell forms necromantic material, equivalent to human bodies, or a smaller amount of other more powerful creatures instead.",
+      "initialGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 12,
+        "effect": " 1000 human bodies.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 14,
+        "effect": " 10000 human bodies.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 900,
+        "requiredIntelligence": 16,
+        "effect": " 100000 human bodies.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 1500,
+        "requiredIntelligence": 18,
+        "effect": " 1000000 human bodies.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 38,
+      "bookId": 11,
+      "name": "Lord of the Dead",
+      "level": 96,
+      "actionType": "Active",
+      "type": "Automatic",
+      "effect": "The Lord of the Dead extends its presence in the world, subduing all undead creatures in a radius. All creatures within the spell area are subjected to the spellcaster’s control unless they pass a MR Check. Once they do, no rerolls are necessary. Affected individuals are not entitled to a new control unless they alter their Resistances.",
+      "initialGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 12,
+        "effect": " MR 140 / 100km/62mile area.",
+        "retention": 30
+      },
+      "intermediateGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 14,
+        "effect": " MR 160 / 1000km/621mile area.",
+        "retention": 60
+      },
+      "advancedGrade": {
+        "zeon": 1000,
+        "requiredIntelligence": 16,
+        "effect": " MR 180 / 10000km/6213mile area.",
+        "retention": 100
+      },
+      "arcaneGrade": {
+        "zeon": 2000,
+        "requiredIntelligence": 18,
+        "effect": " MR 200 / 100000km/62137mile area.",
+        "retention": 200
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 39,
+      "bookId": 11,
+      "name": "Come Back From the Dead",
+      "level": 98,
+      "actionType": "Active",
+      "type": "Effect",
+      "effect": "This spell returns a deceased creature’s spirit to the world, even after it has gone back to the Flow of Souls or has been scattered. The character returns as an undead being, with his soul and essence untouched. If the body of the deceased character still exists, it will come back to it. If it does not, he may reincarnate in a new one or become an immaterial specter. As is the case in similar spells, the time elapsed between death and resurrection is a restraining factor to the efficacy of the spell. Resuscitated souls cannot have a level higher than the limit set by spell level, and the elapsed time since death cannot exceed the time limit. Destroyed or resurrected souls can not be affected by this spell.",
+      "initialGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 16,
+        "effect": " Max Level 4 / up to one month since death.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 17,
+        "effect": " Max Level 8 / up to one year since death.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 1600,
+        "requiredIntelligence": 18,
+        "effect": " Max Level 12 / up to ten years since death.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 3200,
+        "requiredIntelligence": 19,
+        "effect": " Max Level 16 / up to one century since death.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 40,
+      "bookId": 11,
+      "name": "The Awakening",
+      "level": 100,
+      "actionType": "Active",
+      "type": "Automatic",
+      "effect": "The Awakening is the most powerful of necromantic spells. By corrupting a part of the world, the caster extends his shadow over all existence and brings back the dead, subjugating them to his full control. The Awakening is not limited a normal area of effect; all deceased persons in the world with a level lower than the spell limit are affected. In case spirits are still awaiting the calling, they are raised either as specters or animated corpses. A small percentage of the deceased – one out of every ten thousand – come back with full faculties. Only people with Natura 15 are raised as undead with their full capabilities.",
+      "initialGrade": {
+        "zeon": 900,
+        "requiredIntelligence": 17,
+        "effect": " Level 4.",
+        "retention": 45
+      },
+      "intermediateGrade": {
+        "zeon": 2000,
+        "requiredIntelligence": 18,
+        "effect": " Level 8.",
+        "retention": 100
+      },
+      "advancedGrade": {
+        "zeon": 3500,
+        "requiredIntelligence": 19,
+        "effect": " Level 12.",
+        "retention": 175
+      },
+      "arcaneGrade": {
+        "zeon": 5000,
+        "requiredIntelligence": 20,
+        "effect": " Level 15.",
+        "retention": 250
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    }
+  ]
+}
