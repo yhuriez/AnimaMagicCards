@@ -2,6 +2,7 @@ package fr.enlight.anima.cardmodel.business;
 
 import android.content.Context;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import fr.enlight.anima.cardmodel.dao.SpellDao;
@@ -39,6 +40,21 @@ public class SpellBusinessService {
 
         return spellbookIndex.spellbooks;
     }
+
+    public List<Spell> getBookFromIdWithType(int bookId, int levelMax, String defaultSystemLanguage) {
+        List<Spell> result = new ArrayList<>();
+        SpellbookType typeFromBookId = SpellbookType.getTypeFromBookId(bookId);
+        List<Spell> spellsForBook = getSpellsForBook(bookId, defaultSystemLanguage);
+        for (Spell spell : spellsForBook) {
+            if (spell.level > levelMax) {
+                break;
+            }
+            spell.spellbookType = typeFromBookId;
+            result.add(spell);
+        }
+        return result;
+    }
+
 
     public SpellDao getSpellDao() {
         if(mSpellDao == null){

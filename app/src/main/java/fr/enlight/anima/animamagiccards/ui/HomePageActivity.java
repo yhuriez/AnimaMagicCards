@@ -39,7 +39,7 @@ public class HomePageActivity extends AnimaBaseActivity implements HomePageFragm
     @Override
     public void onSpellbookClicked(Spellbook spellbook) {
         getFragmentManager().beginTransaction()
-                .add(R.id.fragment_placeholder, SpellStackFragment.newInstance(spellbook), SPELL_STACK_FRAGMENT_TAG)
+                .add(R.id.fragment_placeholder, SpellStackFragment.newInstanceForSpellbook(spellbook), SPELL_STACK_FRAGMENT_TAG)
                 .addToBackStack(null)
                 .commit();
     }
@@ -86,7 +86,7 @@ public class HomePageActivity extends AnimaBaseActivity implements HomePageFragm
 
     private void goToWitchspells(Witchspells witchspells) {
         getFragmentManager().beginTransaction()
-                .replace(R.id.fragment_placeholder, SpellStackFragment.newInstance(witchspells), SPELL_STACK_FRAGMENT_TAG)
+                .replace(R.id.fragment_placeholder, SpellStackFragment.newInstanceForWitchspells(witchspells), SPELL_STACK_FRAGMENT_TAG)
                 .addToBackStack(null)
                 .commit();
     }

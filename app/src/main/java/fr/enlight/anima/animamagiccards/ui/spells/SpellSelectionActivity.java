@@ -40,7 +40,7 @@ public class SpellSelectionActivity extends AnimaBaseActivity implements SpellSt
 
             if(getIntent().getExtras().containsKey(FREE_ACCESS_POSITION_PARAM)){
                 freeAccessPosition = getIntent().getIntExtra(FREE_ACCESS_POSITION_PARAM, -1);
-                fragment = SpellStackFragment.newInstanceForSelection(SpellUtils.getCeilingLevelForSpellPosition(freeAccessPosition));
+                fragment = SpellStackFragment.newInstanceForFreeSpellSelection(SpellUtils.getCeilingLevelForSpellPosition(freeAccessPosition));
 
                 getFragmentManager().beginTransaction()
                         .replace(R.id.fragment_placeholder, fragment, SPELL_STACK_FRAGMENT_TAG)

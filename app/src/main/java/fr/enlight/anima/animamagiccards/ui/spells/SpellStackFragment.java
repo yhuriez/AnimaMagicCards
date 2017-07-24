@@ -34,17 +34,20 @@ import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.animamagiccards.async.SpellsLoader;
 import fr.enlight.anima.animamagiccards.databinding.FragmentSpellsStackBinding;
 import fr.enlight.anima.animamagiccards.ui.spells.bo.SpellGradeLevel;
+import fr.enlight.anima.animamagiccards.ui.spells.stackstategy.FreeAccessSpellStackStrategy;
+import fr.enlight.anima.animamagiccards.ui.spells.stackstategy.SpellStackStrategy;
+import fr.enlight.anima.animamagiccards.ui.spells.stackstategy.SpellbookSpellStackStrategy;
+import fr.enlight.anima.animamagiccards.ui.spells.stackstategy.WitchspellsSpellStackStrategy;
 import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.SpellFilterViewModel;
 import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.SpellStackViewModel;
 import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.SpellViewModel;
 import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.quickaccess.AbstractGroupQAViewModel;
-import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.quickaccess.GroupQAFreeSpellsViewModel;
-import fr.enlight.anima.animamagiccards.ui.spells.viewmodels.quickaccess.GroupQASpellbookPathViewModel;
 import fr.enlight.anima.animamagiccards.utils.DeviceUtils;
 import fr.enlight.anima.animamagiccards.utils.IntentsUtils;
 import fr.enlight.anima.animamagiccards.utils.OnBackPressedListener;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.cardmodel.business.SpellFilterFactory;
+import fr.enlight.anima.cardmodel.business.SpellFilterManager;
 import fr.enlight.anima.cardmodel.model.spells.Spell;
 import fr.enlight.anima.cardmodel.model.spells.SpellActionType;
 import fr.enlight.anima.cardmodel.model.spells.SpellGrade;
@@ -52,14 +55,13 @@ import fr.enlight.anima.cardmodel.model.spells.SpellType;
 import fr.enlight.anima.cardmodel.model.spells.Spellbook;
 import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
 import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
-import fr.enlight.anima.cardmodel.model.witchspells.WitchspellsPath;
 
 
 @SuppressWarnings("ConstantConditions")
 public class SpellStackFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<Spell>>,
         SpellViewModel.Listener,
         SearchView.OnQueryTextListener,
-        GroupQAFreeSpellsViewModel.Listener,
+        AbstractGroupQAViewModel.Listener,
         CardStackView.ItemExpendListener,
         CustomCardStackView.ItemSelectionListener,
         OnBackPressedListener {
@@ -69,22 +71,23 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
 
     private static final String SPELLBOOK_PARAM = "SPELLBOOK_PARAM";
     private static final String WITCHSPELLS_PARAM = "WITCHSPELLS_PARAM";
-
     private static final String FREE_ACCESS_LIMIT_PARAM = "FREE_ACCESS_LIMIT_PARAM";
-    private static final String SELECTION_MODE_PARAM = "SELECTION_MODE_PARAM";
 
     private FragmentSpellsStackBinding binding;
 
     private SpellStackViewModel spellViewModels;
     private SpellFilterViewModel filterViewModel;
+    @Nullable
     private AbstractGroupQAViewModel quickAccessViewModel;
+
+    private SpellStackStrategy spellStackStrategy;
 
     private final List<SpellFilterFactory.SpellFilter> filters = new ArrayList<>();
     private SpellFilterFactory.SpellFilter mQuickAccessFilter;
 
-    private boolean selectionMode;
     private boolean spellExpanded;
     private Spell mLastSelectedSpell;
+
 
     private CustomCardStackView mCardStack;
 
@@ -96,7 +99,8 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     private Listener mListener;
 
 
-    public static SpellStackFragment newInstance(Spellbook spellbook) {
+
+    public static SpellStackFragment newInstanceForSpellbook(Spellbook spellbook) {
         SpellStackFragment fragment = new SpellStackFragment();
         Bundle bundle = new Bundle();
         bundle.putParcelable(SPELLBOOK_PARAM, spellbook);
@@ -104,7 +108,7 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
         return fragment;
     }
 
-    public static SpellStackFragment newInstance(Witchspells witchspells) {
+    public static SpellStackFragment newInstanceForWitchspells(Witchspells witchspells) {
         SpellStackFragment fragment = new SpellStackFragment();
         Bundle bundle = new Bundle();
         bundle.putParcelable(WITCHSPELLS_PARAM, witchspells);
@@ -112,11 +116,10 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
         return fragment;
     }
 
-    public static SpellStackFragment newInstanceForSelection(int freeAccessLimit) {
+    public static SpellStackFragment newInstanceForFreeSpellSelection(int freeAccessLimit) {
         SpellStackFragment fragment = new SpellStackFragment();
         Bundle bundle = new Bundle();
         bundle.putInt(FREE_ACCESS_LIMIT_PARAM, freeAccessLimit);
-        bundle.putBoolean(SELECTION_MODE_PARAM, true);
         fragment.setArguments(bundle);
         return fragment;
     }
@@ -139,76 +142,52 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        Bundle arguments = getArguments();
+        // Create the spell stack strategy in function of fragment's arguments
+        spellStackStrategy = createSpellStackStrategy(getArguments());
 
         // Toolbar
         ActionBar actionBar = ((AppCompatActivity) getActivity()).getSupportActionBar();
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
-            modifyTitle(actionBar, arguments);
+            actionBar.setTitle(spellStackStrategy.getStackTitle(getActivity()));
         }
         setHasOptionsMenu(true);
 
-        spellViewModels = new SpellStackViewModel(this, this, arguments.containsKey(WITCHSPELLS_PARAM));
+        // Creating ViewModels
+        spellViewModels = new SpellStackViewModel(this, this, spellStackStrategy.getCardBackground(), spellStackStrategy.getBackgroundTextColor());
         binding.setModel(spellViewModels);
 
         filterViewModel = new SpellFilterViewModel();
         binding.setFilterModel(filterViewModel);
 
-        selectionMode = arguments.getBoolean(SELECTION_MODE_PARAM);
-
-        initQuickAccess(arguments);
-
-        reloadSpellFilters();
-    }
-
-    private void modifyTitle(ActionBar actionBar, Bundle arguments) {
-        String title = null;
-        if (arguments.containsKey(WITCHSPELLS_PARAM)) {
-            Witchspells witchspells = arguments.getParcelable(WITCHSPELLS_PARAM);
-            title = getString(R.string.Witchspells_Name_Format, witchspells.witchName);
-
-        } else if (arguments.containsKey(SPELLBOOK_PARAM)) {
-            Spellbook spellbook = arguments.getParcelable(SPELLBOOK_PARAM);
-            title = spellbook.bookName;
-
-        } else if (arguments.containsKey(FREE_ACCESS_LIMIT_PARAM)) {
-            if (selectionMode && spellExpanded) {
-                title = getString(R.string.Witchspells_Choose_Spell_Confirm);
-            } else {
-                int levelLimit = arguments.getInt(FREE_ACCESS_LIMIT_PARAM);
-                title = getString(R.string.Witchspells_Choose_Spell_Title, levelLimit);
-            }
-        }
-
-        actionBar.setTitle(title);
-    }
-
-    private void initQuickAccess(Bundle arguments){
-        if (arguments.containsKey(FREE_ACCESS_LIMIT_PARAM)) {
-            quickAccessViewModel = new GroupQAFreeSpellsViewModel(arguments.getInt(FREE_ACCESS_LIMIT_PARAM), this, false);
-
-        } else if (arguments.containsKey(SPELLBOOK_PARAM)) {
-            Spellbook spellbook = arguments.getParcelable(SPELLBOOK_PARAM);
-            if(spellbook.bookId == SpellbookType.FREE_ACCESS.bookId){
-                quickAccessViewModel = new GroupQAFreeSpellsViewModel(100, this);
-            }
-
-        } else if(arguments.containsKey(WITCHSPELLS_PARAM)){
-            Witchspells witchspells = arguments.getParcelable(WITCHSPELLS_PARAM);
-            List<SpellbookType> spellbookTypes = new ArrayList<>();
-            for (WitchspellsPath path : witchspells.witchPaths) {
-                spellbookTypes.add(SpellbookType.getTypeFromBookId(path.pathBookId));
-            }
-            quickAccessViewModel = new GroupQASpellbookPathViewModel(spellbookTypes, this, true);
-        }
-
-        if (quickAccessViewModel != null) {
+        quickAccessViewModel = spellStackStrategy.createQuickAccessViewModel(this);
+        if(quickAccessViewModel != null) {
             quickAccessViewModel.setLayoutManager(new LinearLayoutManager(getActivity()));
             mQuickAccessFilter = quickAccessViewModel.getCurrentQuickAccessFilter();
             binding.setQuickAccessModel(quickAccessViewModel);
         }
+
+        // Then first load of filters
+        reloadSpellFilters();
     }
+
+    private SpellStackStrategy createSpellStackStrategy(Bundle arguments) {
+        if (arguments.containsKey(WITCHSPELLS_PARAM)) {
+            Witchspells witchspells = arguments.getParcelable(WITCHSPELLS_PARAM);
+            return new WitchspellsSpellStackStrategy(witchspells);
+
+        } else if (arguments.containsKey(SPELLBOOK_PARAM)) {
+            Spellbook spellbook = arguments.getParcelable(SPELLBOOK_PARAM);
+            return new SpellbookSpellStackStrategy(spellbook);
+
+        } else if (arguments.containsKey(FREE_ACCESS_LIMIT_PARAM)) {
+            int levelLimit = arguments.getInt(FREE_ACCESS_LIMIT_PARAM);
+            return new FreeAccessSpellStackStrategy(levelLimit, true);
+
+        }
+        throw new IllegalStateException("Should have at least one parameter handled in arguments. This fragment must be created with one of the newInstance method.");
+    }
+
 
     @Override
     public void onAttach(Context context) {
@@ -236,7 +215,7 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         menu.clear();
 
-        if (selectionMode && spellExpanded) {
+        if (spellStackStrategy.isSelectionMode() && spellExpanded) {
             inflater.inflate(R.menu.validate_selection_menu, menu);
 
         } else {
@@ -375,18 +354,9 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     @Override
     public Loader<List<Spell>> onCreateLoader(int id, Bundle args) {
         spellViewModels.stackVisible.set(false);
+        SpellFilterManager spellFilterManager = new SpellFilterManager(filters, mQuickAccessFilter);
 
-        if (args.containsKey(SPELLBOOK_PARAM)) {
-            Spellbook spellbook = args.getParcelable(SPELLBOOK_PARAM);
-            return new SpellsLoader(getActivity(), spellbook.bookId, filters, mQuickAccessFilter);
-
-        } else if (args.containsKey(WITCHSPELLS_PARAM)) {
-            return new SpellsLoader(getActivity(), (Witchspells) args.getParcelable(WITCHSPELLS_PARAM), filters, mQuickAccessFilter);
-
-        } else if (args.containsKey(FREE_ACCESS_LIMIT_PARAM)) {
-            return new SpellsLoader(getActivity(), SpellbookType.FREE_ACCESS.bookId, filters, mQuickAccessFilter);
-        }
-        throw new IllegalStateException("A param should be given to this fragment");
+        return new SpellsLoader(getActivity(), spellStackStrategy, spellFilterManager);
     }
 
     @Override
@@ -412,9 +382,11 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     public void onItemExpend(boolean expend) {
         spellExpanded = expend;
 
-        if (selectionMode) {
+        if (spellStackStrategy.isSelectionMode()) {
+            spellStackStrategy.setSpellExpanded(spellExpanded);
+
             ActionBar actionBar = ((AppCompatActivity) getActivity()).getSupportActionBar();
-            modifyTitle(actionBar, getArguments());
+            actionBar.setTitle(spellStackStrategy.getStackTitle(getActivity()));
 
             getActivity().invalidateOptionsMenu();
         }
