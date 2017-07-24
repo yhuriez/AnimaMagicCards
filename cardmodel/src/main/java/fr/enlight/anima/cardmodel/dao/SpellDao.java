@@ -10,7 +10,6 @@ import com.google.gson.GsonBuilder;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.util.Locale;
 
 import fr.enlight.anima.cardmodel.model.spells.SpellbookResponse;
 
@@ -22,20 +21,17 @@ import static android.content.ContentValues.TAG;
 
 public class SpellDao {
 
-    private static final String SPELLBOOK_FILE_FRENCH_PREFIX = "spellbooks-fr/spellbook_";
-    private static final String SPELLBOOK_INDEX_FRENCH_FILE = "spellbooks-fr/spellbooks_index.json";
-
-    private static final String SPELLBOOK_FILE_ENGLISH_PREFIX = "spellbooks/spellbook_";
-    private static final String SPELLBOOK_INDEX_ENGLISH_FILE = "spellbooks/spellbooks_index.json";
+    private static final String SPELLBOOK_DIRECTORY_NAME = "spellbooks";
+    private static final String SPELLBOOK_INDEX_FILE_NAME = "spellbooks_index.json";
+    private static final String SPELLBOOK_FILE_NAME = "spellbook_";
 
     /**
      * @return the index of all existing spellbooks
      */
     public SpellbookIndexResponse getSpellbookIndex(Context context, String locale) {
-        if (locale.equals("fr"))
-            return readFile(context, SPELLBOOK_INDEX_FRENCH_FILE, SpellbookIndexResponse.class);
-        else
-            return readFile(context, SPELLBOOK_INDEX_ENGLISH_FILE, SpellbookIndexResponse.class);
+        LocalizedFileDao localizedFileDao = new LocalizedFileDao(SPELLBOOK_DIRECTORY_NAME, locale);
+        String filename = localizedFileDao.getLocalizedAssetFilename(SPELLBOOK_INDEX_FILE_NAME);
+        return readFile(context, filename, SpellbookIndexResponse.class);
     }
 
     /**
@@ -44,13 +40,12 @@ public class SpellDao {
      * @return the complete spellbook with all contained spells
      */
     public SpellbookResponse getSpellbook(Context context, int spellbookId, String locale) {
-        String filename;
-        if (locale.equals("fr"))
-            filename = SPELLBOOK_FILE_FRENCH_PREFIX + spellbookId + ".json";
-        else
-            filename = SPELLBOOK_FILE_ENGLISH_PREFIX + spellbookId + ".json";
+        LocalizedFileDao localizedFileDao = new LocalizedFileDao(SPELLBOOK_DIRECTORY_NAME, locale);
 
-        return readFile(context, filename, SpellbookResponse.class);
+        String filename = SPELLBOOK_FILE_NAME + spellbookId + ".json";
+        String completeFilename = localizedFileDao.getLocalizedAssetFilename(filename);
+
+        return readFile(context, completeFilename, SpellbookResponse.class);
     }
 
 

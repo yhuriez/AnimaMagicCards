@@ -1,5 +1,6 @@
 package fr.enlight.anima.animamagiccards.ui.other;
 
+import fr.enlight.anima.animamagiccards.MainApplication;
 import fr.enlight.anima.animamagiccards.views.BindingDialogFragment;
 import fr.enlight.anima.animamagiccards.views.viewmodels.DialogViewModel;
 
@@ -11,6 +12,7 @@ public class AboutUsDialogFragment extends BindingDialogFragment {
 
     @Override
     public DialogViewModel createViewModel() {
-        return new AboutUsViewModel();
+        String locale = MainApplication.getDefSystemLanguage();
+        return new AboutUsViewModel(locale);
     }
 }
