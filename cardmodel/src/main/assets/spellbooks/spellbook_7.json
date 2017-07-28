@@ -1061,41 +1061,6 @@
       },
       "withRetention": true,
       "dailyRetention": false
-    },
-    {
-      "spellId": 31,
-      "bookId": 7,
-      "name": "",
-      "level": 2,
-      "actionType": "",
-      "type": "",
-      "effect": "",
-      "initialGrade": {
-        "zeon": 0,
-        "requiredIntelligence": 0,
-        "effect": "",
-        "retention": 0
-      },
-      "intermediateGrade": {
-        "zeon": 0,
-        "requiredIntelligence": 0,
-        "effect": "",
-        "retention": 0
-      },
-      "advancedGrade": {
-        "zeon": 0,
-        "requiredIntelligence": 0,
-        "effect": "",
-        "retention": 0
-      },
-      "arcaneGrade": {
-        "zeon": 0,
-        "requiredIntelligence": 0,
-        "effect": "",
-        "retention": 0
-      },
-      "withRetention": true,
-      "dailyRetention": true
     }
   ]
 }
