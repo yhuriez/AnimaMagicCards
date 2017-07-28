@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.chosenspell.WitchspellsChosenSpellViewModel" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="@{() -> model.onModifySpellClicked()}"
+        tools:background="@drawable/witchspells_book_background"
+        android:paddingBottom="@dimen/spacing_large"
+        tools:paddingTop="@dimen/spacing_big">
+
+        <FrameLayout
+            android:id="@+id/main_path_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/spacing_base"
+            android:paddingEnd="@dimen/spacing_base"
+            android:paddingLeft="@dimen/spacing_base"
+            android:paddingRight="@dimen/spacing_base"
+            android:paddingStart="@dimen/spacing_base"
+            android:onClick="@{() -> model.onModifySpellClicked()}"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/main_path_frame_size"
+                android:layout_height="@dimen/main_path_frame_size"
+                android:background="@drawable/spell_circle" />
+
+            <ImageView
+                android:layout_width="@dimen/main_path_symbol_size"
+                android:layout_height="@dimen/main_path_symbol_size"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/spacing_base"
+                android:src="@{model.getPathIcon(context)}"
+                tools:src="@drawable/card_icon_book_necromancer" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/spell_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_small"
+            android:layout_marginStart="@dimen/spacing_small"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:text="@{model.spellTitle}"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textSize_regular"
+            app:layout_constraintLeft_toRightOf="@id/main_path_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Necromancie niv 20" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@id/spell_title"
+            app:layout_constraintLeft_toLeftOf="@id/spell_title"
+            app:layout_constraintRight_toRightOf="@id/spell_title" />
+
+        <TextView
+            android:id="@+id/first_line_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_small"
+            android:layout_marginStart="@dimen/spacing_small"
+            android:text="@{model.getSpellDescription(context)}"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textSize_min"
+            android:textStyle="italic"
+            app:layout_constraintTop_toBottomOf="@id/spell_title"
+            app:layout_constraintLeft_toRightOf="@id/spell_title"
+            tools:text="Voie secondaire : Chaos" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

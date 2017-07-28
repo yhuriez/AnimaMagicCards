@@ -1,6 +1,7 @@
 package fr.enlight.anima.animamagiccards.ui.witchspells;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.LoaderManager;
 import android.content.Context;
@@ -28,11 +29,14 @@ import java.util.Map;
 
 import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.animamagiccards.async.SaveWitchspellsAsyncTask;
-import fr.enlight.anima.animamagiccards.async.SpellbooksLoader;
+import fr.enlight.anima.animamagiccards.async.SpellbooksIndexLoader;
 import fr.enlight.anima.animamagiccards.databinding.ActivityWitchspellsPathChooserBinding;
 import fr.enlight.anima.animamagiccards.ui.AnimaBaseActivity;
-import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsMainPathChooserListener;
-import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsMainSpellbookViewModel;
+import fr.enlight.anima.animamagiccards.ui.spells.SpellSelectionActivity;
+import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsEditionListener;
+import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsEditionViewModel;
+import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.chosenspell.WitchspellsAddChosenSpellViewModel;
+import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.chosenspell.WitchspellsChosenSpellViewModel;
 import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.freeaccess.WitchspellsFreeAccessChooserFragment;
 import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.secondary.WitchspellsSecondaryPathChooserFragment;
 import fr.enlight.anima.animamagiccards.utils.DialogUtils;
@@ -40,20 +44,25 @@ import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewMo
 import fr.enlight.anima.animamagiccards.views.viewmodels.RecyclerViewModel;
 import fr.enlight.anima.cardmodel.business.WitchspellsBusinessService;
 import fr.enlight.anima.cardmodel.business.WitchspellsUpdateListener;
+import fr.enlight.anima.cardmodel.model.spells.Spell;
 import fr.enlight.anima.cardmodel.model.spells.Spellbook;
 import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
 import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 import fr.enlight.anima.cardmodel.model.witchspells.WitchspellsPath;
 import fr.enlight.anima.cardmodel.utils.SpellUtils;
 
-public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implements
-        WitchspellsMainSpellbookViewModel.Listener,
+public class WitchspellsEditionActivity extends AnimaBaseActivity implements
+        WitchspellsEditionViewModel.Listener,
         WitchspellsSecondaryPathChooserFragment.Listener,
-        LoaderManager.LoaderCallbacks<List<Spellbook>>,
-        WitchspellsMainPathChooserListener,
-        WitchspellsFreeAccessChooserFragment.Listener, WitchspellsUpdateListener {
+        LoaderManager.LoaderCallbacks<SpellbooksIndexLoader.Result>,
+        WitchspellsEditionListener,
+        WitchspellsFreeAccessChooserFragment.Listener,
+        WitchspellsAddChosenSpellViewModel.Listener,
+        WitchspellsChosenSpellViewModel.Listener,
+        WitchspellsUpdateListener {
 
-    public static final String WITCHSPELLS_PATHS_RESULT = "WITCHSPELLS_PARAM";
+
+    private static final int SPELL_SELECTION_REQUEST_CODE = 996;
 
     private static final String WITCHSPELLS_PARAM = "WITCHSPELLS_PARAM";
     private static final String SECONDARY_DIALOG_FRAGMENT_TAG = "SECONDARY_DIALOG_FRAGMENT_TAG";
@@ -72,9 +81,14 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
     // Key is the spellbook related id
     private final Map<Integer, WitchspellsPath> mWitchspellsPathMap = new HashMap<>();
 
+    @SuppressLint("UseSparseArrays")
+    private final Map<Integer, List<Integer>> mChosenSpells = new HashMap<>();
+    private List<Spell> mChosenSpellsLoaded;
+    private int mLastChosenSpellPosition;
+
 
     public static Intent navigateForEdition(Context context, Witchspells witchspells) {
-        Intent intent = new Intent(context, WitchspellsMainPathChooserActivity.class);
+        Intent intent = new Intent(context, WitchspellsEditionActivity.class);
         intent.putExtra(WITCHSPELLS_PARAM, witchspells);
         return intent;
     }
@@ -90,12 +104,15 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
             throw new IllegalStateException("Witchspell should not be null at this point");
         }
 
+        //noinspection ConstantConditions
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         updateTitle();
 
         for (WitchspellsPath path : mWitchspells.witchPaths) {
             mWitchspellsPathMap.put(path.pathBookId, path);
         }
+
+        mChosenSpells.putAll(mWitchspells.chosenSpells);
 
         mRecyclerViewModel = new RecyclerViewModel();
         mRecyclerViewModel.setLayoutManager(new LinearLayoutManager(this));
@@ -132,23 +149,25 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
     }
 
     @Override
-    public Loader<List<Spellbook>> onCreateLoader(int id, Bundle args) {
-        return new SpellbooksLoader(this);
+    public Loader<SpellbooksIndexLoader.Result> onCreateLoader(int id, Bundle args) {
+        return new SpellbooksIndexLoader(this, mChosenSpells);
     }
 
     @Override
-    public void onLoadFinished(Loader<List<Spellbook>> loader, List<Spellbook> spellbooks) {
-        mSpellbooks = spellbooks;
+    public void onLoadFinished(Loader<SpellbooksIndexLoader.Result> loader, SpellbooksIndexLoader.Result result) {
+        mSpellbooks = result.getSpellbooks();
         mSpellbookMapping = new SparseArray<>();
-        for (Spellbook spellbook : spellbooks) {
+        for (Spellbook spellbook : mSpellbooks) {
             mSpellbookMapping.append(spellbook.bookId, spellbook);
         }
+
+        mChosenSpellsLoaded = result.getSpells();
 
         refreshViewModels();
     }
 
     @Override
-    public void onLoaderReset(Loader<List<Spellbook>> loader) {
+    public void onLoaderReset(Loader<SpellbooksIndexLoader.Result> loader) {
         // Nothing to do
     }
 
@@ -161,17 +180,22 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
             if(bookType != null && SpellbookType.MAIN_SPELLBOOKS.contains(bookType)){
                 WitchspellsPath pathForMainBook = mWitchspellsPathMap.get(spellbook.bookId);
 
-                WitchspellsMainSpellbookViewModel viewModel = new WitchspellsMainSpellbookViewModel(spellbook, pathForMainBook,this);
+                WitchspellsEditionViewModel viewModel = new WitchspellsEditionViewModel(spellbook, pathForMainBook,this);
 
                 result.add(viewModel);
             }
         }
 
+        for (int index = 0; index < mChosenSpellsLoaded.size(); index++) {
+            Spell spell = mChosenSpellsLoaded.get(index);
+            result.add(new WitchspellsChosenSpellViewModel(index, spell, this));
+        }
+        result.add(new WitchspellsAddChosenSpellViewModel(this));
+
+
         mRecyclerViewModel.setViewModels(result);
         mBinding.setVariable(BR.model, mRecyclerViewModel);
     }
-
-    // region Callbacks
 
     @Override
     public void onWitchspellPathUpdated(@NonNull WitchspellsPath witchspellsPath) {
@@ -185,8 +209,10 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
             mWitchspellsPathMap.remove(pathBookId);
         }
 
-        updateWitchspellsWithoutRefresh();
+        updateWitchspells(false);
     }
+
+    // region Secondary Path
 
     @Override
     public void onShowSecondarySpellbookForMainPath(Spellbook mainSpellbook) {
@@ -194,17 +220,6 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
 
         WitchspellsSecondaryPathChooserFragment.newInstance(spellbooks, mainSpellbook.bookId)
                 .show(getFragmentManager(), SECONDARY_DIALOG_FRAGMENT_TAG);
-    }
-
-    @Override
-    public void onShowFreeAccessSpells(Spellbook mainSpellbook) {
-        WitchspellsPath witchspellsPath = mWitchspellsPathMap.get(mainSpellbook.bookId);
-        if(witchspellsPath.freeAccessSpellsIds == null || witchspellsPath.freeAccessSpellsIds.isEmpty()){
-            witchspellsPath.freeAccessSpellsIds = SpellUtils.reevaluateFreeAccessMap(witchspellsPath, mainSpellbook.spellbookType);
-        }
-
-        WitchspellsFreeAccessChooserFragment.newInstance(witchspellsPath)
-                .show(getFragmentManager(), FREE_ACCESS_DIALOG_FRAGMENT_TAG);
     }
 
     @Override
@@ -247,7 +262,22 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
         // Reevaluate free access spells every time the secondary path changes
         witchspellsPath.freeAccessSpellsIds = SpellUtils.reevaluateFreeAccessMap(witchspellsPath, null);
 
-        updateWitchspells();
+        updateWitchspells(true);
+    }
+
+    // endregion
+
+    // region Free Access
+
+    @Override
+    public void onShowFreeAccessSpells(Spellbook mainSpellbook) {
+        WitchspellsPath witchspellsPath = mWitchspellsPathMap.get(mainSpellbook.bookId);
+        if(witchspellsPath.freeAccessSpellsIds == null || witchspellsPath.freeAccessSpellsIds.isEmpty()){
+            witchspellsPath.freeAccessSpellsIds = SpellUtils.reevaluateFreeAccessMap(witchspellsPath, mainSpellbook.spellbookType);
+        }
+
+        WitchspellsFreeAccessChooserFragment.newInstance(witchspellsPath)
+                .show(getFragmentManager(), FREE_ACCESS_DIALOG_FRAGMENT_TAG);
     }
 
     @Override
@@ -284,33 +314,68 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
         WitchspellsPath witchspellsPath = mWitchspellsPathMap.get(mainPathId);
         witchspellsPath.freeAccessSpellsIds = freeAccessSpellsIds;
 
-        updateWitchspells();
+        updateWitchspells(true);
+    }
+
+    // endregion
+
+    // region Chosen Spells
+
+    @Override
+    public void onAddChosenSpellClicked() {
+        mLastChosenSpellPosition = -1;
+        startActivityForResult(SpellSelectionActivity.navigateForAllSpells(this), SPELL_SELECTION_REQUEST_CODE);
     }
 
     @Override
+    public void onModifyChosenSpellClicked(int position, Spell spell) {
+        mLastChosenSpellPosition = position;
+        startActivityForResult(SpellSelectionActivity.navigateForAllSpells(this), SPELL_SELECTION_REQUEST_CODE);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode == SPELL_SELECTION_REQUEST_CODE && resultCode == Activity.RESULT_OK) {
+            int spellId = data.getIntExtra(SpellSelectionActivity.SELECTED_SPELL_RESULT, -1);
+            int spellbookId = data.getIntExtra(SpellSelectionActivity.SELECTED_SPELLBOOK_RESULT, -1);
+
+            List<Integer> spellIds = mChosenSpells.get(spellbookId);
+            if(spellIds == null){
+                spellIds = new ArrayList<>();
+                mChosenSpells.put(spellbookId, spellIds);
+            }
+
+            if(mLastChosenSpellPosition < 0){
+                spellIds.add(spellId);
+            } else {
+                spellIds.add(mLastChosenSpellPosition, spellId);
+            }
+
+            updateWitchspells(true);
+        }
+    }
+
+    // endregion
+
+    @Override
     public void onValidationClicked() {
-        updateWitchspells();
+        updateWitchspells(true);
         finish();
     }
 
-    public void updateWitchspells(){
+    @SuppressLint("UseSparseArrays")
+    public void updateWitchspells(boolean withRefresh){
         mWitchspells.witchPaths = new ArrayList<>(mWitchspellsPathMap.values());
+        mWitchspells.chosenSpells = new HashMap<>(mChosenSpells);
 
-        new SaveWitchspellsAsyncTask().execute(mWitchspells);
-    }
-
-    public void updateWitchspellsWithoutRefresh(){
-        mWitchspells.witchPaths = new ArrayList<>(mWitchspellsPathMap.values());
-
-        new SaveWitchspellsAsyncTask(false).execute(mWitchspells);
+        new SaveWitchspellsAsyncTask(withRefresh).execute(mWitchspells);
     }
 
     @Override
     public void onWitchspellsUpdated() {
-        refreshViewModels();
+        getLoaderManager().restartLoader(1, null, this);
     }
-
-    // endregion
 
 
     private void createEditNameDialog() {
@@ -319,11 +384,11 @@ public class WitchspellsMainPathChooserActivity extends AnimaBaseActivity implem
             @Override
             public void onTextValidated(DialogInterface dialog, String textValue) {
                 if(TextUtils.isEmpty(textValue)){
-                    Toast.makeText(WitchspellsMainPathChooserActivity.this, R.string.Error_No_Witchspells_Name, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(WitchspellsEditionActivity.this, R.string.Error_No_Witchspells_Name, Toast.LENGTH_SHORT).show();
                 } else {
                     mWitchspells.witchName = textValue;
                     updateTitle();
-                    updateWitchspells();
+                    updateWitchspells(true);
                 }
             }
         });

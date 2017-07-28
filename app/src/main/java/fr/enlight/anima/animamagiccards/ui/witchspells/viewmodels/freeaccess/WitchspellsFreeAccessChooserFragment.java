@@ -93,10 +93,15 @@ public class WitchspellsFreeAccessChooserFragment extends DialogFragment impleme
         super.onActivityCreated(savedInstanceState);
 
         Window window = getDialog().getWindow();
+        //noinspection ConstantConditions
         window.setBackgroundDrawableResource(android.R.color.transparent);
 
         Bundle arguments = getArguments();
         WitchspellsPath witchspellsPath = arguments.getParcelable(WITCHSPELLS_PATH_PARAM);
+
+        if(witchspellsPath == null){
+            throw new IllegalStateException("The fragment should be called using newInstance method");
+        }
 
         mFreeAccessMap = new HashMap<>(witchspellsPath.freeAccessSpellsIds);
         mainPathId = witchspellsPath.pathBookId;

@@ -9,7 +9,7 @@
 
         <variable
             name="model"
-            type="fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsMainSpellbookViewModel" />
+            type="fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsEditionViewModel" />
     </data>
 
     <android.support.constraint.ConstraintLayout

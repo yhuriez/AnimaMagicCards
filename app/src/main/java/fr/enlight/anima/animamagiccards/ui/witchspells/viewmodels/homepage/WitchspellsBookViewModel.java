@@ -1,4 +1,4 @@
-package fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels;
+package fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.homepage;
 
 
 import android.support.v7.widget.LinearLayoutManager;
@@ -11,6 +11,7 @@ import java.util.List;
 
 import fr.enlight.anima.animamagiccards.MainApplication;
 import fr.enlight.anima.animamagiccards.R;
+import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsPathViewModel;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.animamagiccards.views.viewmodels.RecyclerViewModel;
 import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;

@@ -11,7 +11,7 @@
 
         <variable
             name="listener"
-            type="fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsMainPathChooserListener" />
+            type="fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsEditionListener" />
     </data>
 
     <FrameLayout

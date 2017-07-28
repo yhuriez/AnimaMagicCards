@@ -142,4 +142,7 @@
     <string name="Notify_Misspelling_Body">Bonjour, j\'ai trouvé une faute d\'orthographe dans un des sorts de l\'application : \n\nTexte corrigé : \n\n(Corriger le texte ci-dessous ou bien indiquez où se trouve la faute d\'orthographe)\n%1$s</string>
     <string name="Notify_Misspelling_Spell_subject">Faute d\'orthographe dans le sort %1$s</string>
 
+    <string name="chosen_spell_description_format">%1$s, Niv.%2$d</string>
+    <string name="Witchspells_Choose_Spell">Choisir un sort…</string>
+
 </resources>

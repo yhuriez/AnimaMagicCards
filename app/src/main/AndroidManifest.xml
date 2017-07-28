@@ -19,13 +19,13 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.witchspells.WitchspellsMainPathChooserActivity"
+        <activity android:name=".ui.witchspells.WitchspellsEditionActivity"
             android:label="@string/Witchspells_Choose_Main_Path"
             android:parentActivityName=".ui.HomePageActivity"
             tools:ignore="UnusedAttribute" />
 
         <activity android:name=".ui.spells.SpellSelectionActivity"
-            android:parentActivityName=".ui.witchspells.WitchspellsMainPathChooserActivity"
+            android:parentActivityName=".ui.witchspells.WitchspellsEditionActivity"
             tools:ignore="UnusedAttribute" />
 
     </application>

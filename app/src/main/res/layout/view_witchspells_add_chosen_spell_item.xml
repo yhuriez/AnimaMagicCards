@@ -7,13 +7,13 @@
 
         <variable
             name="model"
-            type="fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsAddPathViewModel" />
+            type="fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.chosenspell.WitchspellsAddChosenSpellViewModel" />
     </data>
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="@{() -> model.onPathClicked()}"
+        android:onClick="@{() -> model.onAddClicked()}"
         tools:background="@drawable/witchspells_book_background"
         tools:layout_height="match_parent"
         tools:paddingTop="@dimen/spacing_big">
@@ -22,7 +22,7 @@
             android:id="@+id/add_path_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="@{() -> model.onPathClicked()}"
+            android:onClick="@{() -> model.onAddClicked()}"
             android:padding="@dimen/spacing_base"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -49,7 +49,7 @@
             app:layout_constraintLeft_toRightOf="@id/add_path_icon"
             app:layout_constraintTop_toTopOf="@id/add_path_icon"
             app:layout_constraintBottom_toBottomOf="@id/add_path_icon"
-            android:text="@string/Witchspells_Choose_Main_Path" />
+            android:text="@string/Witchspells_Choose_Spell" />
 
     </android.support.constraint.ConstraintLayout>
 </layout>

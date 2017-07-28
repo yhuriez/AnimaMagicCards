@@ -142,4 +142,7 @@
     <string name="Notify_Misspelling_Body">Hello, I\'ve found a misspelling in one of the application\'s spells : \n\nCorrected text : \n\n(Correct text below or indicate where the misspelling is located)\n%1$s</string>
     <string name="Notify_Misspelling_Spell_subject">Misspelling in spell %1$s</string>
 
+    <string name="chosen_spell_description_format">%1$s, Lvl.%2$d</string>
+    <string name="Witchspells_Choose_Spell">Choose a spell…</string>
+
 </resources>

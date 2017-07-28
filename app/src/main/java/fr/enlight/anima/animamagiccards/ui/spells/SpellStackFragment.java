@@ -34,6 +34,7 @@ import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.animamagiccards.async.SpellsLoader;
 import fr.enlight.anima.animamagiccards.databinding.FragmentSpellsStackBinding;
 import fr.enlight.anima.animamagiccards.ui.spells.bo.SpellGradeLevel;
+import fr.enlight.anima.animamagiccards.ui.spells.stackstategy.AllSpellsSpellStackStrategy;
 import fr.enlight.anima.animamagiccards.ui.spells.stackstategy.FreeAccessSpellStackStrategy;
 import fr.enlight.anima.animamagiccards.ui.spells.stackstategy.SpellStackStrategy;
 import fr.enlight.anima.animamagiccards.ui.spells.stackstategy.SpellbookSpellStackStrategy;
@@ -72,6 +73,7 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     private static final String SPELLBOOK_PARAM = "SPELLBOOK_PARAM";
     private static final String WITCHSPELLS_PARAM = "WITCHSPELLS_PARAM";
     private static final String FREE_ACCESS_LIMIT_PARAM = "FREE_ACCESS_LIMIT_PARAM";
+    private static final String SHOW_ALL_SPELLS_PARAM = "SHOW_ALL_SPELLS_PARAM";
 
     private FragmentSpellsStackBinding binding;
 
@@ -121,6 +123,14 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
         Bundle bundle = new Bundle();
         bundle.putInt(FREE_ACCESS_LIMIT_PARAM, freeAccessLimit);
         fragment.setArguments(bundle);
+        return fragment;
+    }
+
+    public static SpellStackFragment newInstanceForSpellSelection() {
+        Bundle args = new Bundle();
+        args.putBoolean(SHOW_ALL_SPELLS_PARAM, true);
+        SpellStackFragment fragment = new SpellStackFragment();
+        fragment.setArguments(args);
         return fragment;
     }
 
@@ -184,6 +194,8 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
             int levelLimit = arguments.getInt(FREE_ACCESS_LIMIT_PARAM);
             return new FreeAccessSpellStackStrategy(levelLimit, true);
 
+        } else if(arguments.containsKey(SHOW_ALL_SPELLS_PARAM)){
+            return new AllSpellsSpellStackStrategy();
         }
         throw new IllegalStateException("Should have at least one parameter handled in arguments. This fragment must be created with one of the newInstance method.");
     }
@@ -432,6 +444,8 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
         }
         return false;
     }
+
+
 
     public interface Listener {
         void onSpellSelected(Spell mLastSelectedSpell);
