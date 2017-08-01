@@ -4,7 +4,7 @@
   "description": "Darkness does not govern the absence of light, but rather It manipulates the very power of the shadows. It controls all negative emotions, such as fear, anger and hatred. It also represents the power of secrets, among which concealment and obfuscation are included. Like Light, its power is very well balanced.",
   "type": "Main",
   "oppositeBook": "Light",
-  "secondaryBookAccessible": [
+  "secondaryBookAccessibles": [
     "War",
     "Chaos",
     "Literae",

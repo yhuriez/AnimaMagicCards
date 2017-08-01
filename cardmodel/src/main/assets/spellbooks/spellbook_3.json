@@ -4,7 +4,7 @@
   "description": "The power of creation is the magical ability to organize and alter the reality that surrounds spellcasters. These spells are about change, healing, and creating things. It is a distinctly defensive magic.",
   "type": "Main",
   "oppositeBook": "Destruction",
-  "secondaryBookAccessible": [
+  "secondaryBookAccessibles": [
     "Chaos",
     "Literae",
     "Music",
