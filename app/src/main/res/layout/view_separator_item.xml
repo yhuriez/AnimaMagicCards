@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="model"
+            type="fr.enlight.anima.animamagiccards.views.viewmodels.SeparatorViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_big"
+        android:background="@android:color/transparent"/>
+</layout>

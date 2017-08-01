@@ -22,23 +22,19 @@
             android:id="@+id/main_path_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingBottom="@dimen/spacing_base"
-            android:paddingEnd="@dimen/spacing_base"
-            android:paddingLeft="@dimen/spacing_base"
-            android:paddingRight="@dimen/spacing_base"
-            android:paddingStart="@dimen/spacing_base"
+            android:padding="@dimen/spacing_base"
             android:onClick="@{() -> model.onModifySpellClicked()}"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
-                android:layout_width="@dimen/main_path_frame_size"
-                android:layout_height="@dimen/main_path_frame_size"
+                android:layout_width="@dimen/witchspells_icon_main_container_size"
+                android:layout_height="@dimen/witchspells_icon_main_container_size"
                 android:background="@drawable/spell_circle" />
 
             <ImageView
-                android:layout_width="@dimen/main_path_symbol_size"
-                android:layout_height="@dimen/main_path_symbol_size"
+                android:layout_width="@dimen/witchspells_icon_main_size"
+                android:layout_height="@dimen/witchspells_icon_main_size"
                 android:layout_gravity="center"
                 android:layout_margin="@dimen/spacing_base"
                 android:src="@{model.getPathIcon(context)}"
@@ -51,12 +47,13 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/spacing_small"
             android:layout_marginStart="@dimen/spacing_small"
-            android:layout_marginTop="@dimen/spacing_small"
             android:text="@{model.spellTitle}"
             android:textColor="@android:color/white"
-            android:textSize="@dimen/textSize_regular"
+            android:textSize="@dimen/textSize_large"
             app:layout_constraintLeft_toRightOf="@id/main_path_icon"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/first_line_description"
+            app:layout_constraintVertical_chainStyle="packed"
             tools:text="Necromancie niv 20" />
 
         <View
@@ -71,14 +68,13 @@
             android:id="@+id/first_line_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/spacing_small"
-            android:layout_marginStart="@dimen/spacing_small"
             android:text="@{model.getSpellDescription(context)}"
             android:textColor="@android:color/white"
-            android:textSize="@dimen/textSize_min"
+            android:textSize="@dimen/textSize_medium"
             android:textStyle="italic"
             app:layout_constraintTop_toBottomOf="@id/spell_title"
-            app:layout_constraintLeft_toRightOf="@id/spell_title"
+            app:layout_constraintLeft_toLeftOf="@id/spell_title"
+            app:layout_constraintBottom_toBottomOf="parent"
             tools:text="Voie secondaire : Chaos" />
 
     </android.support.constraint.ConstraintLayout>

@@ -41,7 +41,9 @@ import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.freeaccess.Wit
 import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.secondary.WitchspellsSecondaryPathChooserFragment;
 import fr.enlight.anima.animamagiccards.utils.DialogUtils;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
+import fr.enlight.anima.animamagiccards.views.viewmodels.EmptyItemViewModel;
 import fr.enlight.anima.animamagiccards.views.viewmodels.RecyclerViewModel;
+import fr.enlight.anima.animamagiccards.views.viewmodels.SeparatorViewModel;
 import fr.enlight.anima.cardmodel.business.WitchspellsBusinessService;
 import fr.enlight.anima.cardmodel.business.WitchspellsUpdateListener;
 import fr.enlight.anima.cardmodel.model.spells.Spell;
@@ -84,7 +86,6 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements
     @SuppressLint("UseSparseArrays")
     private final Map<Integer, List<Integer>> mChosenSpells = new HashMap<>();
     private List<Spell> mChosenSpellsLoaded;
-    private int mLastChosenSpellPosition;
 
 
     public static Intent navigateForEdition(Context context, Witchspells witchspells) {
@@ -186,6 +187,7 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements
             }
         }
 
+        result.add(new SeparatorViewModel());
         for (int index = 0; index < mChosenSpellsLoaded.size(); index++) {
             Spell spell = mChosenSpellsLoaded.get(index);
             result.add(new WitchspellsChosenSpellViewModel(index, spell, this));
@@ -323,13 +325,11 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements
 
     @Override
     public void onAddChosenSpellClicked() {
-        mLastChosenSpellPosition = -1;
         startActivityForResult(SpellSelectionActivity.navigateForAllSpells(this), SPELL_SELECTION_REQUEST_CODE);
     }
 
     @Override
     public void onModifyChosenSpellClicked(int position, Spell spell) {
-        mLastChosenSpellPosition = position;
         startActivityForResult(SpellSelectionActivity.navigateForAllSpells(this), SPELL_SELECTION_REQUEST_CODE);
     }
 
@@ -346,11 +346,8 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements
                 mChosenSpells.put(spellbookId, spellIds);
             }
 
-            if(mLastChosenSpellPosition < 0){
-                spellIds.add(spellId);
-            } else {
-                spellIds.add(mLastChosenSpellPosition, spellId);
-            }
+            spellIds.add(spellId);
+
 
             updateWitchspells(true);
         }
