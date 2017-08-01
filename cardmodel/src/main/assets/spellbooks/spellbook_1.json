@@ -4,7 +4,7 @@
   "description": "This is the Path that confers dominion over one of the two Higher Elements, pure light. It controls man's most positive emotions, such as love, peace, and pleasure. Light also regulates knowledge and detection. Its offensive and defensive powvers are very balanced.",
   "type": "Main",
   "oppositeBook": "Darkness",
-  "secondaryBookAccessible": [
+  "secondaryBookAccessibles": [
     "Chaos",
     "War",
     "Literae",

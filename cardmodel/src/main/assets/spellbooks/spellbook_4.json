@@ -4,7 +4,7 @@
   "description": "This Path allows the caster to channel the power of the Flow of Souls, turning it against reality itself. These spells affect both the material and spiritual worlds. It is naturally offensive power.",
   "type": "Main",
   "oppositeBook": "Creation",
-  "secondaryBookAccessible": [
+  "secondaryBookAccessibles": [
     "War",
     "Chaos",
     "Death",
