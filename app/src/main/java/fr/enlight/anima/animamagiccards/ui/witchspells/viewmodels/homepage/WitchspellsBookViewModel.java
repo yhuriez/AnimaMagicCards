@@ -8,12 +8,16 @@ import com.android.databinding.library.baseAdapters.BR;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import fr.enlight.anima.animamagiccards.MainApplication;
 import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.WitchspellsPathViewModel;
+import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.chosenspell.WitchspellsChosenSpellViewModel;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
 import fr.enlight.anima.animamagiccards.views.viewmodels.RecyclerViewModel;
+import fr.enlight.anima.animamagiccards.views.viewmodels.SeparatorViewModel;
+import fr.enlight.anima.cardmodel.model.spells.Spell;
 import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 import fr.enlight.anima.cardmodel.model.witchspells.WitchspellsPath;
 
@@ -37,7 +41,7 @@ public class WitchspellsBookViewModel extends RecyclerViewModel implements Binda
         return BR.model;
     }
 
-    public String getWitchName(){
+    public String getWitchName() {
         return witchspells.witchName;
     }
 
@@ -49,6 +53,17 @@ public class WitchspellsBookViewModel extends RecyclerViewModel implements Binda
             result.add(new WitchspellsPathViewModel(witchPath, this, true));
         }
 
+        Map<Integer, List<Spell>> chosenSpells = witchspells.chosenSpellsInstantiated;
+        if (chosenSpells != null && !chosenSpells.isEmpty()) {
+            result.add(new SeparatorViewModel());
+            for (Integer spellbookId : chosenSpells.keySet()) {
+                List<Spell> spells = chosenSpells.get(spellbookId);
+                for (Spell spell : spells) {
+                    result.add(WitchspellsChosenSpellViewModel.newReadOnlyInstance(spell));
+                }
+            }
+        }
+
         return result;
     }
 
@@ -57,11 +72,11 @@ public class WitchspellsBookViewModel extends RecyclerViewModel implements Binda
         return new LinearLayoutManager(MainApplication.getMainContext(), LinearLayoutManager.VERTICAL, false);
     }
 
-    public boolean isWithClickableFrame(){
+    public boolean isWithClickableFrame() {
         return witchspells.witchPaths.size() < 3;
     }
 
-    public void onBookClicked(){
+    public void onBookClicked() {
         mListener.onWitchspellsClicked(witchspells);
     }
 

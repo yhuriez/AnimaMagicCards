@@ -38,6 +38,20 @@ public class Spell implements Comparable<Spell>, Parcelable {
         return level - other.level;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Spell spell = (Spell) o;
+
+        return spellId == spell.spellId;
+    }
+
+    @Override
+    public int hashCode() {
+        return spellId;
+    }
 
     @Override
     public int describeContents() {

@@ -29,6 +29,7 @@ public class CreateWitchspellsAsyncTask extends AsyncTask<String, Integer, Witch
         witchspellsResult.creationDate = System.currentTimeMillis();
         witchspellsResult.witchPaths = new ArrayList<>();
         witchspellsResult.chosenSpells = new HashMap<>();
+        witchspellsResult.chosenSpellsInstantiated = new HashMap<>();
 
         witchspellsResult = mWitchspellsBusinessService.saveWitchspells(witchspellsResult);
         return witchspellsResult;

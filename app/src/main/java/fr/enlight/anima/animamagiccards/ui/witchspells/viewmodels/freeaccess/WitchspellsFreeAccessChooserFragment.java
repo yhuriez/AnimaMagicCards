@@ -155,13 +155,13 @@ public class WitchspellsFreeAccessChooserFragment extends DialogFragment impleme
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == SPELL_STACK_REQUEST_CODE && resultCode == Activity.RESULT_OK){
-            int spellId = data.getIntExtra(SpellSelectionActivity.SELECTED_SPELL_RESULT, -1);
+            Spell spell = data.getParcelableExtra(SpellSelectionActivity.SELECTED_SPELL_RESULT);
             int spellPosition = data.getIntExtra(SpellSelectionActivity.FREE_ACCESS_POSITION_PARAM, -1);
             if(spellPosition < 0){
                 throw new IllegalStateException("Spell position should not be null at this point");
             }
 
-            mFreeAccessMap.put(spellPosition, spellId);
+            mFreeAccessMap.put(spellPosition, spell.spellId);
             getLoaderManager().restartLoader(1, getArguments(), this);
         }
     }

@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-import fr.enlight.anima.animamagiccards.MainApplication;
 import fr.enlight.anima.cardmodel.business.SpellBusinessService;
 import fr.enlight.anima.cardmodel.model.spells.Spell;
 import fr.enlight.anima.cardmodel.model.spells.SpellbookType;
@@ -33,7 +32,7 @@ public class FreeAccessSpellLoader extends BaseLoader<Map<Integer, Spell>> {
     public Map<Integer, Spell> loadInBackground() {
         Map<Integer, Spell> result = new TreeMap<>();
 
-        List<Spell> pathSpells = getBookFromIdWithType(SpellbookType.FREE_ACCESS.bookId, 100);
+        List<Spell> pathSpells = getBookFromIdWithType(SpellbookType.FREE_ACCESS.bookId);
 
         for (Integer spellPosition : freeAccessSpellsIds.keySet()) {
             int spellId = freeAccessSpellsIds.get(spellPosition);
@@ -54,15 +53,13 @@ public class FreeAccessSpellLoader extends BaseLoader<Map<Integer, Spell>> {
         return result;
     }
 
-    private List<Spell> getBookFromIdWithType(int bookId, int levelMax) {
+    private List<Spell> getBookFromIdWithType(int bookId) {
         List<Spell> result = new ArrayList<>();
-        SpellbookType typeFromBookId = SpellbookType.getTypeFromBookId(bookId);
         List<Spell> spellsForBook = spellBusinessService.getSpellsForBook(bookId, mDefSystemLanguage);
         for (Spell spell : spellsForBook) {
-            if (spell.level > levelMax) {
+            if (spell.level > 100) {
                 break;
             }
-            spell.spellbookType = typeFromBookId;
             result.add(spell);
         }
         return result;

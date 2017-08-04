@@ -14,6 +14,7 @@ import java.util.List;
 import java.util.Map;
 
 import fr.enlight.anima.cardmodel.database.ListTypeConverters;
+import fr.enlight.anima.cardmodel.model.spells.Spell;
 
 @Entity(tableName = "witchspells")
 @TypeConverters({ListTypeConverters.class})
@@ -27,6 +28,9 @@ public class Witchspells implements Parcelable {
     public long creationDate;
 
     public Map<Integer, List<Integer>> chosenSpells;
+
+    @Ignore
+    public Map<Integer, List<Spell>> chosenSpellsInstantiated;
 
     @Ignore
     public List<WitchspellsPath> witchPaths;
@@ -47,6 +51,11 @@ public class Witchspells implements Parcelable {
             dest.writeValue(entry.getKey());
             dest.writeList(entry.getValue());
         }
+        dest.writeInt(this.chosenSpellsInstantiated.size());
+        for (Map.Entry<Integer, List<Spell>> entry : this.chosenSpellsInstantiated.entrySet()) {
+            dest.writeValue(entry.getKey());
+            dest.writeTypedList(entry.getValue());
+        }
         dest.writeTypedList(this.witchPaths);
     }
 
@@ -65,6 +74,13 @@ public class Witchspells implements Parcelable {
             List<Integer> value = new ArrayList<>();
             in.readList(value, Integer.class.getClassLoader());
             this.chosenSpells.put(key, value);
+        }
+        int chosenSpellsInstanciedSize = in.readInt();
+        this.chosenSpellsInstantiated = new HashMap<>(chosenSpellsInstanciedSize);
+        for (int i = 0; i < chosenSpellsInstanciedSize; i++) {
+            Integer key = (Integer) in.readValue(Integer.class.getClassLoader());
+            List<Spell> value = in.createTypedArrayList(Spell.CREATOR);
+            this.chosenSpellsInstantiated.put(key, value);
         }
         this.witchPaths = in.createTypedArrayList(WitchspellsPath.CREATOR);
     }

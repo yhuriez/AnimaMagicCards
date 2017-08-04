@@ -23,9 +23,12 @@ import android.widget.Toast;
 import com.android.databinding.library.baseAdapters.BR;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 
 import fr.enlight.anima.animamagiccards.R;
 import fr.enlight.anima.animamagiccards.async.SaveWitchspellsAsyncTask;
@@ -41,7 +44,6 @@ import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.freeaccess.Wit
 import fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.secondary.WitchspellsSecondaryPathChooserFragment;
 import fr.enlight.anima.animamagiccards.utils.DialogUtils;
 import fr.enlight.anima.animamagiccards.views.bindingrecyclerview.BindableViewModel;
-import fr.enlight.anima.animamagiccards.views.viewmodels.EmptyItemViewModel;
 import fr.enlight.anima.animamagiccards.views.viewmodels.RecyclerViewModel;
 import fr.enlight.anima.animamagiccards.views.viewmodels.SeparatorViewModel;
 import fr.enlight.anima.cardmodel.business.WitchspellsBusinessService;
@@ -84,8 +86,7 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements
     private final Map<Integer, WitchspellsPath> mWitchspellsPathMap = new HashMap<>();
 
     @SuppressLint("UseSparseArrays")
-    private final Map<Integer, List<Integer>> mChosenSpells = new HashMap<>();
-    private List<Spell> mChosenSpellsLoaded;
+    private final Map<Integer, List<Spell>> mChosenSpells = new HashMap<>();
 
 
     public static Intent navigateForEdition(Context context, Witchspells witchspells) {
@@ -113,7 +114,7 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements
             mWitchspellsPathMap.put(path.pathBookId, path);
         }
 
-        mChosenSpells.putAll(mWitchspells.chosenSpells);
+        mChosenSpells.putAll(mWitchspells.chosenSpellsInstantiated);
 
         mRecyclerViewModel = new RecyclerViewModel();
         mRecyclerViewModel.setLayoutManager(new LinearLayoutManager(this));
@@ -151,7 +152,7 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements
 
     @Override
     public Loader<SpellbooksIndexLoader.Result> onCreateLoader(int id, Bundle args) {
-        return new SpellbooksIndexLoader(this, mChosenSpells);
+        return new SpellbooksIndexLoader(this);
     }
 
     @Override
@@ -161,8 +162,6 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements
         for (Spellbook spellbook : mSpellbooks) {
             mSpellbookMapping.append(spellbook.bookId, spellbook);
         }
-
-        mChosenSpellsLoaded = result.getSpells();
 
         refreshViewModels();
     }
@@ -188,12 +187,21 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements
         }
 
         result.add(new SeparatorViewModel());
-        for (int index = 0; index < mChosenSpellsLoaded.size(); index++) {
-            Spell spell = mChosenSpellsLoaded.get(index);
-            result.add(new WitchspellsChosenSpellViewModel(index, spell, this));
+        int index = 0;
+
+        List<Integer> spellbookIds = new ArrayList<>(mChosenSpells.keySet());
+        Collections.sort(spellbookIds);
+
+        for (Integer spellbookId : spellbookIds) {
+            List<Spell> spells = mChosenSpells.get(spellbookId);
+            Collections.sort(spells, new SpellIdComparator());
+
+            for (Spell spell : spells) {
+                result.add(WitchspellsChosenSpellViewModel.newEditionInstance(index, spell, this));
+                index++;
+            }
         }
         result.add(new WitchspellsAddChosenSpellViewModel(this));
-
 
         mRecyclerViewModel.setViewModels(result);
         mBinding.setVariable(BR.model, mRecyclerViewModel);
@@ -337,17 +345,16 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == SPELL_SELECTION_REQUEST_CODE && resultCode == Activity.RESULT_OK) {
-            int spellId = data.getIntExtra(SpellSelectionActivity.SELECTED_SPELL_RESULT, -1);
-            int spellbookId = data.getIntExtra(SpellSelectionActivity.SELECTED_SPELLBOOK_RESULT, -1);
+            Spell spell = data.getParcelableExtra(SpellSelectionActivity.SELECTED_SPELL_RESULT);
 
-            List<Integer> spellIds = mChosenSpells.get(spellbookId);
-            if(spellIds == null){
-                spellIds = new ArrayList<>();
-                mChosenSpells.put(spellbookId, spellIds);
+            int spellbookId = spell.spellbookType.bookId;
+            List<Spell> spells = mChosenSpells.get(spellbookId);
+            if(spells == null){
+                spells = new ArrayList<>();
+                mChosenSpells.put(spellbookId, spells);
             }
 
-            spellIds.add(spellId);
-
+            spells.add(spell);
 
             updateWitchspells(true);
         }
@@ -364,9 +371,23 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements
     @SuppressLint("UseSparseArrays")
     public void updateWitchspells(boolean withRefresh){
         mWitchspells.witchPaths = new ArrayList<>(mWitchspellsPathMap.values());
-        mWitchspells.chosenSpells = new HashMap<>(mChosenSpells);
+        mWitchspells.chosenSpells = convertSpellsToIds(mChosenSpells);
 
         new SaveWitchspellsAsyncTask(withRefresh).execute(mWitchspells);
+    }
+
+    private Map<Integer, List<Integer>> convertSpellsToIds(Map<Integer, List<Spell>> chosenSpells) {
+        Map<Integer, List<Integer>> result = new TreeMap<>();
+        for (Integer spellbookId : chosenSpells.keySet()) {
+            List<Spell> spells = chosenSpells.get(spellbookId);
+            List<Integer> spellsId = new ArrayList<>();
+            result.put(spellbookId, spellsId);
+            for (Spell spell : spells) {
+                spellsId.add(spell.spellId);
+            }
+        }
+
+        return result;
     }
 
     @Override
@@ -394,5 +415,14 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements
     @SuppressWarnings("ConstantConditions")
     private void updateTitle() {
         getSupportActionBar().setTitle(getString(R.string.Witchspells_Name_Format, mWitchspells.witchName));
+    }
+
+
+
+    private class SpellIdComparator implements Comparator<Spell> {
+        @Override
+        public int compare(Spell first, Spell second) {
+            return first.spellId - second.spellId;
+        }
     }
 }

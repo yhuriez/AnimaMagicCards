@@ -4,7 +4,6 @@ import android.content.Context;
 
 import java.util.List;
 
-import fr.enlight.anima.animamagiccards.MainApplication;
 import fr.enlight.anima.cardmodel.business.SpellBusinessService;
 import fr.enlight.anima.cardmodel.business.WitchspellsBusinessService;
 import fr.enlight.anima.cardmodel.model.spells.Spellbook;
@@ -25,7 +24,7 @@ public class AllSpellGroupLoader extends BaseLoader<AllSpellGroupLoader.LoaderRe
     public LoaderResult loadInBackground() {
         WitchspellsBusinessService witchspellsBusinessService = new WitchspellsBusinessService(getContext());
 
-        List<Witchspells> allWitchspells = witchspellsBusinessService.getAllWitchspells();
+        List<Witchspells> allWitchspells = witchspellsBusinessService.getAllWitchspells(mDefSystemLanguage);
 
         SpellBusinessService spellBusinessService = new SpellBusinessService(getContext());
         List<Spellbook> spellbooksIndex = spellBusinessService.getSpellbooksIndex(mDefSystemLanguage);

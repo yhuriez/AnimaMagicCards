@@ -16,7 +16,7 @@ import fr.enlight.anima.cardmodel.utils.SpellUtils;
 public class SpellSelectionActivity extends AnimaBaseActivity implements SpellStackFragment.Listener{
 
     public static final String SELECTED_SPELL_RESULT = "SELECTED_SPELL_RESULT";
-    public static final String SELECTED_SPELLBOOK_RESULT = "SELECTED_SPELLBOOK_RESULT";
+
     public static final String FREE_ACCESS_POSITION_PARAM = "FREE_ACCESS_POSITION_PARAM";
 
     public static final String SPELL_STACK_FRAGMENT_TAG = "SPELL_STACK_FRAGMENT_TAG";
@@ -60,8 +60,7 @@ public class SpellSelectionActivity extends AnimaBaseActivity implements SpellSt
     @Override
     public void onSpellSelected(Spell mLastSelectedSpell) {
         Intent intent = new Intent();
-        intent.putExtra(SELECTED_SPELL_RESULT, mLastSelectedSpell.spellId);
-        intent.putExtra(SELECTED_SPELLBOOK_RESULT, mLastSelectedSpell.spellbookType.bookId);
+        intent.putExtra(SELECTED_SPELL_RESULT, mLastSelectedSpell);
         if(freeAccessPosition >= 0){
             intent.putExtra(FREE_ACCESS_POSITION_PARAM, freeAccessPosition);
         }

@@ -1,10 +1,12 @@
 package fr.enlight.anima.animamagiccards.ui.spells.stackstategy;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.support.annotation.DrawableRes;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -39,6 +41,15 @@ public class WitchspellsSpellStackStrategy implements SpellStackStrategy{
         for (WitchspellsPath path : witchspells.witchPaths) {
             spellbookTypes.add(SpellbookType.getTypeFromBookId(path.pathBookId));
         }
+        for (Integer spellbookId : witchspells.chosenSpells.keySet()) {
+            SpellbookType spellbookType = SpellbookType.getTypeFromBookId(spellbookId);
+            if(!spellbookTypes.contains(spellbookType)){
+                spellbookTypes.add(spellbookType);
+            }
+        }
+
+        Collections.sort(spellbookTypes);
+
         return new GroupQASpellbookPathViewModel(spellbookTypes, listener, true);
     }
 
@@ -62,6 +73,10 @@ public class WitchspellsSpellStackStrategy implements SpellStackStrategy{
         List<Spell> result = new ArrayList<>();
         String mDefSystemLanguage = MainApplication.mDefSystemLanguage;
 
+        // Chosen spells
+        @SuppressLint("UseSparseArrays")
+        Map<Integer, List<Spell>> chosenSpells = new HashMap<>(witchspells.chosenSpellsInstantiated);
+
         for (WitchspellsPath witchPath : witchspells.witchPaths) {
             List<Spell> pathSpells = spellBusinessService.getBookFromIdWithType(witchPath.pathBookId, witchPath.pathLevel, mDefSystemLanguage);
 
@@ -69,6 +84,7 @@ public class WitchspellsSpellStackStrategy implements SpellStackStrategy{
                 pathSpells.addAll(spellBusinessService.getBookFromIdWithType(witchPath.secondaryPathBookId, witchPath.pathLevel, mDefSystemLanguage));
             }
 
+            // Free access spells
             Map<Integer, Integer> freeAccessSpellsIds = witchPath.freeAccessSpellsIds;
             if (freeAccessSpellsIds != null && !freeAccessSpellsIds.isEmpty()) {
                 List<Spell> freeAccessSpells = spellBusinessService.getBookFromIdWithType(SpellbookType.FREE_ACCESS.bookId, 100, mDefSystemLanguage);
@@ -85,8 +101,30 @@ public class WitchspellsSpellStackStrategy implements SpellStackStrategy{
                 }
             }
 
+            // Search if this path exists in chosen spells
+            List<Spell> spells = chosenSpells.get(witchPath.pathBookId);
+            if(spells != null && !spells.isEmpty()){
+                for (Spell spell : spells) {
+                    if(!pathSpells.contains(spell)){
+                        pathSpells.add(spell);
+                    }
+                }
+
+            }
+            // IMPORTANT : at last, we delete the entry from the map, because we will create spells for each
+            // entry left
+            chosenSpells.remove(witchPath.pathBookId);
+
             Collections.sort(pathSpells);
             result.addAll(pathSpells);
+        }
+
+        if(!chosenSpells.isEmpty()){
+            for (Integer spellbookId : chosenSpells.keySet()) {
+                List<Spell> spells = chosenSpells.get(spellbookId);
+                Collections.sort(spells);
+                result.addAll(spells);
+            }
         }
 
         return spellFilterManager.filterSpells(result);

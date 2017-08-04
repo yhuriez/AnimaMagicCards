@@ -28,6 +28,12 @@ public class SpellBusinessService {
 
     public List<Spell> getSpellsForBook(int bookId, String locale){
         SpellbookResponse spellbookResponse = getSpellDao().getSpellbook(context, bookId, locale);
+
+        SpellbookType spellbookType = SpellbookType.getTypeFromBookId(bookId);
+        for (Spell spell : spellbookResponse.spells) {
+            spell.spellbookType = spellbookType;
+        }
+
         return spellbookResponse.spells;
     }
 
@@ -43,13 +49,11 @@ public class SpellBusinessService {
 
     public List<Spell> getBookFromIdWithType(int bookId, int levelMax, String defaultSystemLanguage) {
         List<Spell> result = new ArrayList<>();
-        SpellbookType typeFromBookId = SpellbookType.getTypeFromBookId(bookId);
         List<Spell> spellsForBook = getSpellsForBook(bookId, defaultSystemLanguage);
         for (Spell spell : spellsForBook) {
             if (spell.level > levelMax) {
                 break;
             }
-            spell.spellbookType = typeFromBookId;
             result.add(spell);
         }
         return result;
