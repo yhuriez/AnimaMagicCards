@@ -51,10 +51,13 @@ public class Witchspells implements Parcelable {
             dest.writeValue(entry.getKey());
             dest.writeList(entry.getValue());
         }
-        dest.writeInt(this.chosenSpellsInstantiated.size());
-        for (Map.Entry<Integer, List<Spell>> entry : this.chosenSpellsInstantiated.entrySet()) {
-            dest.writeValue(entry.getKey());
-            dest.writeTypedList(entry.getValue());
+        int chosenSpellsSize = chosenSpellsInstantiated == null ? 0 : this.chosenSpellsInstantiated.size();
+        dest.writeInt(chosenSpellsSize);
+        if(chosenSpellsSize > 0) {
+            for (Map.Entry<Integer, List<Spell>> entry : this.chosenSpellsInstantiated.entrySet()) {
+                dest.writeValue(entry.getKey());
+                dest.writeTypedList(entry.getValue());
+            }
         }
         dest.writeTypedList(this.witchPaths);
     }
@@ -77,10 +80,12 @@ public class Witchspells implements Parcelable {
         }
         int chosenSpellsInstanciedSize = in.readInt();
         this.chosenSpellsInstantiated = new HashMap<>(chosenSpellsInstanciedSize);
-        for (int i = 0; i < chosenSpellsInstanciedSize; i++) {
-            Integer key = (Integer) in.readValue(Integer.class.getClassLoader());
-            List<Spell> value = in.createTypedArrayList(Spell.CREATOR);
-            this.chosenSpellsInstantiated.put(key, value);
+        if(chosenSpellsInstanciedSize > 0) {
+            for (int i = 0; i < chosenSpellsInstanciedSize; i++) {
+                Integer key = (Integer) in.readValue(Integer.class.getClassLoader());
+                List<Spell> value = in.createTypedArrayList(Spell.CREATOR);
+                this.chosenSpellsInstantiated.put(key, value);
+            }
         }
         this.witchPaths = in.createTypedArrayList(WitchspellsPath.CREATOR);
     }

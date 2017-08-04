@@ -55,7 +55,9 @@ public class WitchspellsBookViewModel extends RecyclerViewModel implements Binda
 
         Map<Integer, List<Spell>> chosenSpells = witchspells.chosenSpellsInstantiated;
         if (chosenSpells != null && !chosenSpells.isEmpty()) {
-            result.add(new SeparatorViewModel());
+            if(!result.isEmpty()){
+                result.add(new SeparatorViewModel());
+            }
             for (Integer spellbookId : chosenSpells.keySet()) {
                 List<Spell> spells = chosenSpells.get(spellbookId);
                 for (Spell spell : spells) {

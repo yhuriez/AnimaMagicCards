@@ -40,6 +40,9 @@ public class WitchspellsSpellStackStrategy implements SpellStackStrategy{
         List<SpellbookType> spellbookTypes = new ArrayList<>();
         for (WitchspellsPath path : witchspells.witchPaths) {
             spellbookTypes.add(SpellbookType.getTypeFromBookId(path.pathBookId));
+            if(path.secondaryPathBookId >= 0){
+                spellbookTypes.add(SpellbookType.getTypeFromBookId(path.secondaryPathBookId));
+            }
         }
         for (Integer spellbookId : witchspells.chosenSpells.keySet()) {
             SpellbookType spellbookType = SpellbookType.getTypeFromBookId(spellbookId);
@@ -48,7 +51,9 @@ public class WitchspellsSpellStackStrategy implements SpellStackStrategy{
             }
         }
 
-        Collections.sort(spellbookTypes);
+        if(!spellbookTypes.isEmpty()){
+            Collections.sort(spellbookTypes);
+        }
 
         return new GroupQASpellbookPathViewModel(spellbookTypes, listener, true);
     }
@@ -68,14 +73,19 @@ public class WitchspellsSpellStackStrategy implements SpellStackStrategy{
         return false;
     }
 
+    @SuppressLint("UseSparseArrays")
     @Override
     public List<Spell> loadSpells(SpellBusinessService spellBusinessService, SpellFilterManager spellFilterManager) {
         List<Spell> result = new ArrayList<>();
         String mDefSystemLanguage = MainApplication.mDefSystemLanguage;
 
         // Chosen spells
-        @SuppressLint("UseSparseArrays")
-        Map<Integer, List<Spell>> chosenSpells = new HashMap<>(witchspells.chosenSpellsInstantiated);
+        Map<Integer, List<Spell>> chosenSpells;
+        if(witchspells.chosenSpellsInstantiated != null) {
+            chosenSpells = new HashMap<>(witchspells.chosenSpellsInstantiated);
+        } else {
+            chosenSpells = new HashMap<>();
+        }
 
         for (WitchspellsPath witchPath : witchspells.witchPaths) {
             List<Spell> pathSpells = spellBusinessService.getBookFromIdWithType(witchPath.pathBookId, witchPath.pathLevel, mDefSystemLanguage);
