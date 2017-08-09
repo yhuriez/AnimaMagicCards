@@ -41,12 +41,15 @@ public class WitchspellsSpellStackStrategy implements SpellStackStrategy{
         for (WitchspellsPath path : witchspells.witchPaths) {
             spellbookTypes.add(SpellbookType.getTypeFromBookId(path.pathBookId));
             if(path.secondaryPathBookId >= 0){
-                spellbookTypes.add(SpellbookType.getTypeFromBookId(path.secondaryPathBookId));
+                SpellbookType typeFromBookId = SpellbookType.getTypeFromBookId(path.secondaryPathBookId);
+                if(typeFromBookId != null){
+                    spellbookTypes.add(typeFromBookId);
+                }
             }
         }
         for (Integer spellbookId : witchspells.chosenSpells.keySet()) {
             SpellbookType spellbookType = SpellbookType.getTypeFromBookId(spellbookId);
-            if(!spellbookTypes.contains(spellbookType)){
+            if(spellbookType != null && !spellbookTypes.contains(spellbookType)){
                 spellbookTypes.add(spellbookType);
             }
         }
