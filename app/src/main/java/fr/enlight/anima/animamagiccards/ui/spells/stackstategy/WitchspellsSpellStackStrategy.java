@@ -7,8 +7,12 @@ import android.support.annotation.DrawableRes;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
+import java.util.TreeSet;
 
 import fr.enlight.anima.animamagiccards.MainApplication;
 import fr.enlight.anima.animamagiccards.R;
@@ -42,7 +46,7 @@ public class WitchspellsSpellStackStrategy implements SpellStackStrategy{
             spellbookTypes.add(SpellbookType.getTypeFromBookId(path.pathBookId));
             if(path.secondaryPathBookId >= 0){
                 SpellbookType typeFromBookId = SpellbookType.getTypeFromBookId(path.secondaryPathBookId);
-                if(typeFromBookId != null){
+                if(typeFromBookId != null && !spellbookTypes.contains(typeFromBookId)){
                     spellbookTypes.add(typeFromBookId);
                 }
             }
@@ -79,7 +83,7 @@ public class WitchspellsSpellStackStrategy implements SpellStackStrategy{
     @SuppressLint("UseSparseArrays")
     @Override
     public List<Spell> loadSpells(SpellBusinessService spellBusinessService, SpellFilterManager spellFilterManager) {
-        List<Spell> result = new ArrayList<>();
+        Set<Spell> spellsSet = new LinkedHashSet<>();
         String mDefSystemLanguage = MainApplication.mDefSystemLanguage;
 
         // Chosen spells
@@ -129,16 +133,18 @@ public class WitchspellsSpellStackStrategy implements SpellStackStrategy{
             chosenSpells.remove(witchPath.pathBookId);
 
             Collections.sort(pathSpells);
-            result.addAll(pathSpells);
+            spellsSet.addAll(pathSpells);
         }
 
         if(!chosenSpells.isEmpty()){
             for (Integer spellbookId : chosenSpells.keySet()) {
                 List<Spell> spells = chosenSpells.get(spellbookId);
                 Collections.sort(spells);
-                result.addAll(spells);
+                spellsSet.addAll(spells);
             }
         }
+
+        List<Spell> result = new ArrayList<>(spellsSet);
 
         return spellFilterManager.filterSpells(result);
     }

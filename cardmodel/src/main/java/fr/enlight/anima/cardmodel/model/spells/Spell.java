@@ -45,12 +45,14 @@ public class Spell implements Comparable<Spell>, Parcelable {
 
         Spell spell = (Spell) o;
 
-        return spellId == spell.spellId;
+        return spellId == spell.spellId && bookId == spell.bookId;
     }
 
     @Override
     public int hashCode() {
-        return spellId;
+        int result = spellId;
+        result = 51 * result + bookId;
+        return result;
     }
 
     @Override
