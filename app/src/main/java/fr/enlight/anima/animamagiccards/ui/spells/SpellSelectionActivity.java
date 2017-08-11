@@ -21,7 +21,11 @@ public class SpellSelectionActivity extends AnimaBaseActivity implements SpellSt
 
     public static final String SPELL_STACK_FRAGMENT_TAG = "SPELL_STACK_FRAGMENT_TAG";
 
+    public static final String MODIFY_PREVIOUS_SPELL_KEY = "PREVIOUS_POSITION";
+
     private int freeAccessPosition = -1;
+
+    private int mPreviousSpellPosition;
 
     public static Intent navigate(Context context, int freeAccessLimit){
         Intent intent = new Intent(context, SpellSelectionActivity.class);
@@ -37,6 +41,8 @@ public class SpellSelectionActivity extends AnimaBaseActivity implements SpellSt
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
+
+        mPreviousSpellPosition = getIntent().getIntExtra(MODIFY_PREVIOUS_SPELL_KEY, -1);
 
         //noinspection ConstantConditions
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -61,6 +67,11 @@ public class SpellSelectionActivity extends AnimaBaseActivity implements SpellSt
     public void onSpellSelected(Spell mLastSelectedSpell) {
         Intent intent = new Intent();
         intent.putExtra(SELECTED_SPELL_RESULT, mLastSelectedSpell);
+
+        if (mPreviousSpellPosition != -1) {
+            intent.putExtra(MODIFY_PREVIOUS_SPELL_KEY, mPreviousSpellPosition);
+        }
+
         if(freeAccessPosition >= 0){
             intent.putExtra(FREE_ACCESS_POSITION_PARAM, freeAccessPosition);
         }

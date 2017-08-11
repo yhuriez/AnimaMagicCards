@@ -102,7 +102,7 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements
 
         mWitchspells = getIntent().getParcelableExtra(WITCHSPELLS_PARAM);
 
-        if(mWitchspells == null) {
+        if (mWitchspells == null) {
             throw new IllegalStateException("Witchspell should not be null at this point");
         }
 
@@ -132,7 +132,7 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if(item.getItemId() == R.id.action_edit){
+        if (item.getItemId() == R.id.action_edit) {
             createEditNameDialog();
         }
         return super.onOptionsItemSelected(item);
@@ -171,16 +171,16 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements
         // Nothing to do
     }
 
-    public void refreshViewModels(){
+    public void refreshViewModels() {
         List<BindableViewModel> result = new ArrayList<>();
 
         for (Spellbook spellbook : mSpellbooks) {
             SpellbookType bookType = spellbook.spellbookType;
 
-            if(bookType != null && SpellbookType.MAIN_SPELLBOOKS.contains(bookType)){
+            if (bookType != null && SpellbookType.MAIN_SPELLBOOKS.contains(bookType)) {
                 WitchspellsPath pathForMainBook = mWitchspellsPathMap.get(spellbook.bookId);
 
-                WitchspellsEditionViewModel viewModel = new WitchspellsEditionViewModel(spellbook, pathForMainBook,this);
+                WitchspellsEditionViewModel viewModel = new WitchspellsEditionViewModel(spellbook, pathForMainBook, this);
 
                 result.add(viewModel);
             }
@@ -211,11 +211,11 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements
     public void onWitchspellPathUpdated(@NonNull WitchspellsPath witchspellsPath) {
         int pathBookId = witchspellsPath.pathBookId;
 
-        if(witchspellsPath.pathLevel > 0) {
+        if (witchspellsPath.pathLevel > 0) {
             witchspellsPath.freeAccessSpellsIds = SpellUtils.reevaluateFreeAccessMap(witchspellsPath, null);
             mWitchspellsPathMap.put(pathBookId, witchspellsPath);
 
-        } else if (mWitchspellsPathMap.containsKey(pathBookId)){
+        } else if (mWitchspellsPathMap.containsKey(pathBookId)) {
             mWitchspellsPathMap.remove(pathBookId);
         }
 
@@ -261,9 +261,9 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements
         updateSecondaryPath(mainPathId, 0);
     }
 
-    private void updateSecondaryPath(int mainPathId, int secondaryPathId){
+    private void updateSecondaryPath(int mainPathId, int secondaryPathId) {
         WitchspellsPath witchspellsPath = mWitchspellsPathMap.get(mainPathId);
-        if(witchspellsPath == null){
+        if (witchspellsPath == null) {
             throw new IllegalStateException("Witchspells path should not be nut at this point");
         }
 
@@ -282,7 +282,7 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements
     @Override
     public void onShowFreeAccessSpells(Spellbook mainSpellbook) {
         WitchspellsPath witchspellsPath = mWitchspellsPathMap.get(mainSpellbook.bookId);
-        if(witchspellsPath.freeAccessSpellsIds == null || witchspellsPath.freeAccessSpellsIds.isEmpty()){
+        if (witchspellsPath.freeAccessSpellsIds == null || witchspellsPath.freeAccessSpellsIds.isEmpty()) {
             witchspellsPath.freeAccessSpellsIds = SpellUtils.reevaluateFreeAccessMap(witchspellsPath, mainSpellbook.spellbookType);
         }
 
@@ -320,7 +320,7 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements
         updateFreeAccess(mainPathId, new HashMap<Integer, Integer>());
     }
 
-    private void updateFreeAccess(int mainPathId, Map<Integer, Integer> freeAccessSpellsIds){
+    private void updateFreeAccess(int mainPathId, Map<Integer, Integer> freeAccessSpellsIds) {
         WitchspellsPath witchspellsPath = mWitchspellsPathMap.get(mainPathId);
         witchspellsPath.freeAccessSpellsIds = freeAccessSpellsIds;
 
@@ -338,23 +338,31 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements
 
     @Override
     public void onModifyChosenSpellClicked(int position, Spell spell) {
-        startActivityForResult(SpellSelectionActivity.navigateForAllSpells(this), SPELL_SELECTION_REQUEST_CODE);
+
+        Intent modifyChosenSpellIntent = new Intent(this, SpellSelectionActivity.class);
+        modifyChosenSpellIntent.putExtra(SpellSelectionActivity.MODIFY_PREVIOUS_SPELL_KEY, position);
+
+        startActivityForResult(modifyChosenSpellIntent, SPELL_SELECTION_REQUEST_CODE);
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode == SPELL_SELECTION_REQUEST_CODE && resultCode == Activity.RESULT_OK) {
+        if (requestCode == SPELL_SELECTION_REQUEST_CODE && resultCode == Activity.RESULT_OK) {
             Spell spell = data.getParcelableExtra(SpellSelectionActivity.SELECTED_SPELL_RESULT);
 
             int spellbookId = spell.spellbookType.bookId;
             List<Spell> spells = mChosenSpells.get(spellbookId);
-            if(spells == null){
+            if (spells == null) {
                 spells = new ArrayList<>();
                 mChosenSpells.put(spellbookId, spells);
             }
-
-            spells.add(spell);
+            int previousSpellIndex = data.getIntExtra(SpellSelectionActivity.MODIFY_PREVIOUS_SPELL_KEY, -1);
+            if (previousSpellIndex != -1) {
+                spells.set(previousSpellIndex, spell);
+            } else {
+                spells.add(spell);
+            }
 
             updateWitchspells(true);
         }
@@ -369,7 +377,7 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements
     }
 
     @SuppressLint("UseSparseArrays")
-    public void updateWitchspells(boolean withRefresh){
+    public void updateWitchspells(boolean withRefresh) {
         mWitchspells.witchPaths = new ArrayList<>(mWitchspellsPathMap.values());
         mWitchspells.chosenSpells = convertSpellsToIds(mChosenSpells);
 
@@ -401,7 +409,7 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements
         DialogUtils.showEditTextDialog(view, R.string.Witchspells_Choose_Witch_Name, R.string.Witchspells_Witch_Name, mWitchspells.witchName, new DialogUtils.EditTextDialogListener() {
             @Override
             public void onTextValidated(DialogInterface dialog, String textValue) {
-                if(TextUtils.isEmpty(textValue)){
+                if (TextUtils.isEmpty(textValue)) {
                     Toast.makeText(WitchspellsEditionActivity.this, R.string.Error_No_Witchspells_Name, Toast.LENGTH_SHORT).show();
                 } else {
                     mWitchspells.witchName = textValue;
@@ -416,7 +424,6 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements
     private void updateTitle() {
         getSupportActionBar().setTitle(getString(R.string.Witchspells_Name_Format, mWitchspells.witchName));
     }
-
 
 
     private class SpellIdComparator implements Comparator<Spell> {
