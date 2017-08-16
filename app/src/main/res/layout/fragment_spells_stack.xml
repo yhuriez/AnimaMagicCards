@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
-        <import type="com.loopeer.cardstack.CardStackView"/>
+        <import type="com.loopeer.cardstack.CardStackView" />
+
         <import type="android.view.View" />
 
         <variable
@@ -30,64 +31,64 @@
             android:id="@+id/quick_access_recycler_view"
             android:layout_width="50dp"
             android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/spacing_xbig"
             android:layout_marginTop="@dimen/spacing_base"
-            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/witchspells_title_scroll_background"
+            android:paddingTop="@dimen/spacing_base"
+            app:layoutManager="@{quickAccessModel.layoutManager}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
-            android:layout_marginBottom="@dimen/spacing_xbig"
-            android:paddingTop="@dimen/spacing_base"
-            android:background="@drawable/witchspells_title_scroll_background"
+            app:layout_constraintTop_toTopOf="parent"
+            app:scrollTo="@{quickAccessModel.selectedPosition}"
             app:setVisible="@{quickAccessModel != null}"
-            app:layoutManager="@{quickAccessModel.layoutManager}"
-            app:viewModels="@{quickAccessModel.viewModels}"
-            app:scrollTo="@{quickAccessModel.selectedPosition}"/>
+            app:viewModels="@{quickAccessModel.viewModels}" />
 
         <ImageView
             android:id="@+id/spell_card_background"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_constraintWidth_max="@dimen/spell_card_max_width"
-            app:layout_marginLeft="@{quickAccessModel == null ? @dimen/spell_margins : @dimen/spacing_base}"
-            app:layout_marginRight="@{quickAccessModel == null ? @dimen/spell_margins : 0.0f}"
+            android:contentDescription="@string/Common_Loading_Message"
             android:src="@{model.getCardBackground(context)}"
-            tools:src="@drawable/card_verso"
             app:layout_constraintDimensionRatio="H,161:225"
             app:layout_constraintLeft_toRightOf="@id/quick_access_recycler_view"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_max="@dimen/spell_card_max_width"
+            app:layout_marginLeft="@{quickAccessModel == null ? @dimen/spell_margins : @dimen/spacing_base}"
+            app:layout_marginRight="@{quickAccessModel == null ? @dimen/spell_margins : 0.0f}"
             app:setVisible="@{!model.stackVisible || model.messageMode}"
-            android:contentDescription="@string/Common_Loading_Message" />
+            tools:src="@drawable/card_verso" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:paddingBottom="@dimen/spacing_xbig"
             android:text="@{model.messageMode ? @string/Spell_Empty_List_Message : @string/Common_Loading_Message}"
-            android:textSize="@dimen/textSize_technical"
-            android:gravity="center"
-            app:customFont="@{@string/technical_font}"
             android:textColor="@{model.getBackgroundTextColor(context)}"
+            android:textSize="@dimen/textSize_technical"
+            app:customFont="@{@string/technical_font}"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="@id/spell_card_background"
-            app:layout_constraintRight_toRightOf="@id/spell_card_background"
+            app:layout_constraintLeft_toLeftOf="@+id/card_stack_view"
+            app:layout_constraintRight_toRightOf="@+id/card_stack_view"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="@string/Spell_Empty_List_Message"
-            app:setVisible="@{!model.stackVisible || model.messageMode}" />
+            app:setVisible="@{!model.stackVisible || model.messageMode}"
+            tools:text="@string/Spell_Empty_List_Message" />
 
         <com.loopeer.cardstack.CustomCardStackView
             android:id="@+id/card_stack_view"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:layout_marginLeft="@{quickAccessModel == null ? @dimen/spell_margins : @dimen/spacing_base}"
-            app:layout_marginRight="@{quickAccessModel == null ? @dimen/spell_margins : 0.0f}"
             android:background="@android:color/transparent"
             app:expandListener="@{model.expandListener}"
             app:itemSelectionListener="@{model.selectionListener}"
-            app:setVisible="@{model.stackVisible}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toRightOf="@id/quick_access_recycler_view"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_marginLeft="@{quickAccessModel == null ? @dimen/spell_margins : @dimen/spacing_base}"
+            app:layout_marginRight="@{quickAccessModel == null ? @dimen/spell_margins : 0.0f}"
+            app:setVisible="@{model.stackVisible}"
             app:viewModels="@{model.viewModels}" />
 
         <include

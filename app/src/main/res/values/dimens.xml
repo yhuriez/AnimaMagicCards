@@ -25,8 +25,8 @@
     <dimen name="spell_card_margin">@dimen/spacing_large</dimen>
     <dimen name="spell_margins">@dimen/spacing_large</dimen>
 
-    <dimen name="spell_stack_header_height_normal">150dp</dimen>
-    <dimen name="spell_stack_header_height_reduced">120dp</dimen>
+    <dimen name="spell_stack_header_height_normal">120dp</dimen>
+    <dimen name="spell_stack_header_height_reduced">115dp</dimen>
 
     <dimen name="spell_card_max_width">450dp</dimen>
     <dimen name="subview_panel_height">150dp</dimen>

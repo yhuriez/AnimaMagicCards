@@ -4,6 +4,7 @@ import android.content.Context;
 import android.databinding.ObservableBoolean;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
+import android.support.annotation.DimenRes;
 import android.support.v4.content.res.ResourcesCompat;
 import android.text.SpannableString;
 import android.text.Spanned;
@@ -144,6 +145,11 @@ public class SpellViewModel implements BindableViewModel, SpellGradeViewModel.Li
 
     public void setReduced(boolean reduced) {
         this.reduced = reduced;
+    }
+
+    public int getStackHeaderHeight(Context context){
+        @DimenRes int stackRes = reduced ? R.dimen.spell_stack_header_height_reduced : R.dimen.spell_stack_header_height_normal;
+        return context.getResources().getDimensionPixelSize(stackRes);
     }
 
     public SpellGradeViewModel getSpellGradeModel(SpellGradeLevel level){
