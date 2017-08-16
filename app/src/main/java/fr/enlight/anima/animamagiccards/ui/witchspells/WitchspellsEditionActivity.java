@@ -340,6 +340,19 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements
     }
 
     @Override
+    public void onDeleteChosenSpell(int position, Spell spell) {
+        List<Spell> chosenSpells = mChosenSpells.get(spell.bookId);
+        if(chosenSpells != null && !chosenSpells.isEmpty()){
+            chosenSpells.remove(spell);
+            if(chosenSpells.isEmpty()){
+                mChosenSpells.remove(spell.bookId);
+            }
+        }
+
+        updateWitchspells(true);
+    }
+
+    @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == SPELL_SELECTION_REQUEST_CODE && resultCode == Activity.RESULT_OK) {
