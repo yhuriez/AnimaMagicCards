@@ -88,7 +88,6 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements
     @SuppressLint("UseSparseArrays")
     private final Map<Integer, List<Spell>> mChosenSpells = new HashMap<>();
 
-
     public static Intent navigateForEdition(Context context, Witchspells witchspells) {
         Intent intent = new Intent(context, WitchspellsEditionActivity.class);
         intent.putExtra(WITCHSPELLS_PARAM, witchspells);
@@ -187,7 +186,6 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements
         }
 
         result.add(new SeparatorViewModel());
-        int index = 0;
 
         List<Integer> spellbookIds = new ArrayList<>(mChosenSpells.keySet());
         Collections.sort(spellbookIds);
@@ -197,8 +195,7 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements
             Collections.sort(spells, new SpellIdComparator());
 
             for (Spell spell : spells) {
-                result.add(WitchspellsChosenSpellViewModel.newEditionInstance(index, spell, this));
-                index++;
+                result.add(WitchspellsChosenSpellViewModel.newEditionInstance(spell, this));
             }
         }
         result.add(new WitchspellsAddChosenSpellViewModel(this));
@@ -337,11 +334,8 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements
     }
 
     @Override
-    public void onModifyChosenSpellClicked(int position, Spell spell) {
-
-        Intent modifyChosenSpellIntent = new Intent(this, SpellSelectionActivity.class);
-        modifyChosenSpellIntent.putExtra(SpellSelectionActivity.MODIFY_PREVIOUS_SPELL_KEY, position);
-
+    public void onModifyChosenSpellClicked(Spell spell) {
+        Intent modifyChosenSpellIntent = SpellSelectionActivity.navigateWithPreviousSpell(this, spell);
         startActivityForResult(modifyChosenSpellIntent, SPELL_SELECTION_REQUEST_CODE);
     }
 
@@ -351,21 +345,27 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements
         if (requestCode == SPELL_SELECTION_REQUEST_CODE && resultCode == Activity.RESULT_OK) {
             Spell spell = data.getParcelableExtra(SpellSelectionActivity.SELECTED_SPELL_RESULT);
 
+            // Delete previous spell if it replacing one
+            Spell previousSpell = data.getParcelableExtra(SpellSelectionActivity.PREVIOUS_SPELL_KEY);
+            if (previousSpell != null) {
+                deleteSpell();
+            }
+
+            // Then add the new one
             int spellbookId = spell.spellbookType.bookId;
             List<Spell> spells = mChosenSpells.get(spellbookId);
             if (spells == null) {
                 spells = new ArrayList<>();
                 mChosenSpells.put(spellbookId, spells);
             }
-            int previousSpellIndex = data.getIntExtra(SpellSelectionActivity.MODIFY_PREVIOUS_SPELL_KEY, -1);
-            if (previousSpellIndex != -1) {
-                spells.set(previousSpellIndex, spell);
-            } else {
-                spells.add(spell);
-            }
+            spells.add(spell);
 
             updateWitchspells(true);
         }
+    }
+
+    private void deleteSpell(){
+
     }
 
     // endregion

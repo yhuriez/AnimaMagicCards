@@ -21,16 +21,22 @@ public class SpellSelectionActivity extends AnimaBaseActivity implements SpellSt
 
     public static final String SPELL_STACK_FRAGMENT_TAG = "SPELL_STACK_FRAGMENT_TAG";
 
-    public static final String MODIFY_PREVIOUS_SPELL_KEY = "PREVIOUS_POSITION";
+    public static final String PREVIOUS_SPELL_KEY = "PREVIOUS_POSITION";
 
-    private int freeAccessPosition = -1;
+    private int mFreeAccessPosition = -1;
 
-    private int mPreviousSpellPosition;
+    private Spell mPreviousSpell = null;
 
     public static Intent navigate(Context context, int freeAccessLimit){
         Intent intent = new Intent(context, SpellSelectionActivity.class);
         intent.putExtra(FREE_ACCESS_POSITION_PARAM, freeAccessLimit);
         return intent;
+    }
+
+    public static Intent navigateWithPreviousSpell(Context context, Spell previousSpell) {
+        Intent intent = new Intent(context, SpellSelectionActivity.class);
+        intent.putExtra(PREVIOUS_SPELL_KEY, previousSpell);
+        return new Intent(context, SpellSelectionActivity.class);
     }
 
     public static Intent navigateForAllSpells(Context context) {
@@ -42,7 +48,12 @@ public class SpellSelectionActivity extends AnimaBaseActivity implements SpellSt
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
 
-        mPreviousSpellPosition = getIntent().getIntExtra(MODIFY_PREVIOUS_SPELL_KEY, -1);
+        Bundle extras = getIntent().getExtras();
+
+        if(extras != null) {
+            mPreviousSpell = getIntent().getParcelableExtra(PREVIOUS_SPELL_KEY);
+            mFreeAccessPosition = getIntent().getIntExtra(FREE_ACCESS_POSITION_PARAM, -1);
+        }
 
         //noinspection ConstantConditions
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -50,9 +61,8 @@ public class SpellSelectionActivity extends AnimaBaseActivity implements SpellSt
         if(savedInstanceState == null){
             Fragment fragment;
 
-            if(getIntent().getExtras() != null && getIntent().getExtras().containsKey(FREE_ACCESS_POSITION_PARAM)){
-                freeAccessPosition = getIntent().getIntExtra(FREE_ACCESS_POSITION_PARAM, -1);
-                fragment = SpellStackFragment.newInstanceForFreeSpellSelection(SpellUtils.getCeilingLevelForSpellPosition(freeAccessPosition));
+            if(mFreeAccessPosition >= 0){
+                fragment = SpellStackFragment.newInstanceForFreeSpellSelection(SpellUtils.getCeilingLevelForSpellPosition(mFreeAccessPosition));
             } else {
                 fragment = SpellStackFragment.newInstanceForSpellSelection();
             }
@@ -68,12 +78,12 @@ public class SpellSelectionActivity extends AnimaBaseActivity implements SpellSt
         Intent intent = new Intent();
         intent.putExtra(SELECTED_SPELL_RESULT, mLastSelectedSpell);
 
-        if (mPreviousSpellPosition != -1) {
-            intent.putExtra(MODIFY_PREVIOUS_SPELL_KEY, mPreviousSpellPosition);
+        if (mPreviousSpell != null) {
+            intent.putExtra(PREVIOUS_SPELL_KEY, mPreviousSpell);
         }
 
-        if(freeAccessPosition >= 0){
-            intent.putExtra(FREE_ACCESS_POSITION_PARAM, freeAccessPosition);
+        if(mFreeAccessPosition >= 0){
+            intent.putExtra(FREE_ACCESS_POSITION_PARAM, mFreeAccessPosition);
         }
         setResult(RESULT_OK, intent);
         finish();
