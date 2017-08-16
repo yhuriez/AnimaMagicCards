@@ -354,11 +354,11 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements
             // Delete previous spell if it replacing one
             Spell previousSpell = data.getParcelableExtra(SpellSelectionActivity.PREVIOUS_SPELL_KEY);
             if (previousSpell != null) {
-                deleteSpell(spell);
+                deleteSpell(previousSpell);
             }
 
             // Then add the new one
-            int spellbookId = spell.spellbookType.bookId;
+            int spellbookId = spell.bookId;
             List<Spell> spells = mChosenSpells.get(spellbookId);
             if (spells == null) {
                 spells = new ArrayList<>();
@@ -371,11 +371,12 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements
     }
 
     private void deleteSpell(Spell spell){
-        List<Spell> chosenSpells = mChosenSpells.get(spell.bookId);
+        int bookId = spell.bookId;
+        List<Spell> chosenSpells = mChosenSpells.get(bookId);
         if(chosenSpells != null && !chosenSpells.isEmpty()){
             chosenSpells.remove(spell);
             if(chosenSpells.isEmpty()){
-                mChosenSpells.remove(spell.bookId);
+                mChosenSpells.remove(bookId);
             }
         }
     }

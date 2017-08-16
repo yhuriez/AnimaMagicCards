@@ -36,7 +36,7 @@ public class SpellSelectionActivity extends AnimaBaseActivity implements SpellSt
     public static Intent navigateWithPreviousSpell(Context context, Spell previousSpell) {
         Intent intent = new Intent(context, SpellSelectionActivity.class);
         intent.putExtra(PREVIOUS_SPELL_KEY, previousSpell);
-        return new Intent(context, SpellSelectionActivity.class);
+        return intent;
     }
 
     public static Intent navigateForAllSpells(Context context) {
