@@ -383,6 +383,8 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
 
         spellViewModels.setViewModels(result);
         spellViewModels.stackVisible.set(true);
+
+        mCardStack.scrollTo(0, 0);
     }
 
     @Override
