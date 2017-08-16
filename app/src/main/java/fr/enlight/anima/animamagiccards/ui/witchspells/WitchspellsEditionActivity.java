@@ -340,15 +340,8 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements
     }
 
     @Override
-    public void onDeleteChosenSpell(int position, Spell spell) {
-        List<Spell> chosenSpells = mChosenSpells.get(spell.bookId);
-        if(chosenSpells != null && !chosenSpells.isEmpty()){
-            chosenSpells.remove(spell);
-            if(chosenSpells.isEmpty()){
-                mChosenSpells.remove(spell.bookId);
-            }
-        }
-
+    public void onDeleteChosenSpell(Spell spell) {
+        deleteSpell(spell);
         updateWitchspells(true);
     }
 
@@ -361,7 +354,7 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements
             // Delete previous spell if it replacing one
             Spell previousSpell = data.getParcelableExtra(SpellSelectionActivity.PREVIOUS_SPELL_KEY);
             if (previousSpell != null) {
-                deleteSpell();
+                deleteSpell(spell);
             }
 
             // Then add the new one
@@ -377,8 +370,14 @@ public class WitchspellsEditionActivity extends AnimaBaseActivity implements
         }
     }
 
-    private void deleteSpell(){
-
+    private void deleteSpell(Spell spell){
+        List<Spell> chosenSpells = mChosenSpells.get(spell.bookId);
+        if(chosenSpells != null && !chosenSpells.isEmpty()){
+            chosenSpells.remove(spell);
+            if(chosenSpells.isEmpty()){
+                mChosenSpells.remove(spell.bookId);
+            }
+        }
     }
 
     // endregion

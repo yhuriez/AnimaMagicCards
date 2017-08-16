@@ -67,13 +67,13 @@ public class WitchspellsChosenSpellViewModel implements BindableViewModel {
 
     public void onDeleteSpell(){
         if(mListener != null){
-            mListener.onDeleteChosenSpell(mIndex, mSpell);
+            mListener.onDeleteChosenSpell(mSpell);
         }
     }
 
     public interface Listener{
         void onModifyChosenSpellClicked(Spell spell);
 
-        void onDeleteChosenSpell(int position, Spell spell);
+        void onDeleteChosenSpell(Spell spell);
     }
 }
