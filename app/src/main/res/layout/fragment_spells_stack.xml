@@ -64,6 +64,8 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:paddingBottom="@dimen/spacing_xbig"
+            android:paddingLeft="@dimen/spacing_large"
+            android:paddingRight="@dimen/spacing_large"
             android:text="@{model.messageMode ? @string/Spell_Empty_List_Message : @string/Common_Loading_Message}"
             android:textColor="@{model.getBackgroundTextColor(context)}"
             android:textSize="@dimen/textSize_technical"
