@@ -23,8 +23,8 @@ public class WitchspellsChosenSpellViewModel implements BindableViewModel {
         return new WitchspellsChosenSpellViewModel(spell, listener, false);
     }
 
-    public static WitchspellsChosenSpellViewModel newReadOnlyInstance(@NonNull Spell spell) {
-        return new WitchspellsChosenSpellViewModel(spell, null, true);
+    public static WitchspellsChosenSpellViewModel newReadOnlyInstance(@NonNull Spell spell, Listener listener) {
+        return new WitchspellsChosenSpellViewModel(spell, listener, true);
     }
 
     private WitchspellsChosenSpellViewModel(@NonNull Spell spell, Listener listener, boolean reduced) {
