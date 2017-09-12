@@ -18,7 +18,7 @@
       "level": 4,
       "actionType": "Passive",
       "type": "Spell Type: Defense",
-      "effect": "Effect: Creates a protective barrier that defends against anyattack. In the event that its used to cover multiple individuals onan area attack, the spell can protect as many targets as indicated by the level of the spell without suffering further damage or apply penalty to the defensive ability of the caster.",
+      "effect": "Effect: Creates a protective barrier that defends against any attack. In the event that its used to cover multiple individuals on an area attack, the spell can protect as many targets as indicated by the level of the spell without suffering further damage or apply penalty to the defensive ability of the caster.",
       "initialGrade": {
         "zeon": 50,
         "requiredIntelligence": 6,

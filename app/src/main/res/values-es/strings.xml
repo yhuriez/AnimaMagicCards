@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Common wordings-->
+    <string name="Common_Close">Cerrar</string>
+    <string name="Common_See_All">Ver todo</string>
+    <string name="Common_Loading_Message">Cargando</string>
+    <string name="Common_Validate">Validar</string>
+    <string name="Common_Modify">Modificar</string>
+    <string name="Common_Delete">Borrar</string>
+    <string name="Common_Search">Buscar</string>
+    <string name="Common_Filter">Filtrar</string>
+    <string name="Common_All">Todo</string>
+    <string name="Common_Level">Nivel</string>
+    <string name="Common_Leave">Dejar</string>
+
+    <string name="HomePage_Title">Grimorio</string>
+
+    <!--Spellbooks-->
+    <string name="Spellbooks_Title">Grimorio</string>
+
+    <!--Spell Formats-->
+    <string name="spell_book_and_level_format">%1$s Nvl. %2$s</string>
+    <string name="spell_action_type_format"><b>Acción: </b></string>
+    <string name="spell_type_format"><b>Tipo: </b></string>
+    <string name="spell_effect_format"><b>Efecto: </b></string>
+
+    <!--Grade-->
+    <string name="initial_grade_title">Base</string>
+    <string name="intermediate_grade_title">Intermedio</string>
+    <string name="advanced_grade_title">Avanzado</string>
+    <string name="arcane_grade_title">Arcano</string>
+
+    <string name="spell_grade_int_format">Int : %1$d</string>
+    <string name="spell_grade_zeon_format">%1$d Zeon</string>
+    <string name="spell_grade_retention_format">Mantenimiento: %1$d</string>
+    <string name="spell_grade_retention_daily_format">Mantenimiento: %1$d Diario</string>
+
+    <!--Witchspells    -->
+    <string name="Witch_Creation_Title">Lista de hechizos</string>
+    <string name="Witchspells_Path_Title_And_Level_Format">%1$s Nvl. %2$s</string>
+    <string name="Witchspells_Secondary_Path_Title_And_Level_Format">Sub-Vías: %1$s Lvl. %2$s</string>
+
+    <string name="Witchspells_Name_Format">Hechizo de %1$s</string>
+
+
+    <string name="Witchspells_Free_Access_Title_Singular">+ %1$d Hechizo de libre acceso</string>
+    <string name="Witchspells_Free_Access_Title_Plural">+ %1$d Hechizos de libre acceso</string>
+
+    <plurals name="Witchspells_Free_Access_Title">
+        <item quantity="one">Witchspells_Free_Access_Title_Singular</item>
+        <item quantity="other">Witchspells_Free_Access_Title_Plural</item>
+    </plurals>
+
+    <string name="Witchspells_Free_Access_Format_Singular">%1$d Hechizo de libre acceso</string>
+    <string name="Witchspells_Free_Access_Format_Plural">%1$d Hechizos de libre acceso</string>
+
+    <plurals name="Witchspells_Free_Access_Format">
+        <item quantity="one">@string/Witchspells_Free_Access_Format_Singular</item>
+        <item quantity="other">@string/Witchspells_Free_Access_Format_Plural</item>
+    </plurals>
+
+    <string name="Witchspells_No_Secondary_Spells">Sin hechizo de Sub-Vía</string>
+
+    <string name="Witchspells_Name_Label">Grimorio guardado</string>
+
+    <string name="Witchspells_Choose_Main_Path">Elige vía principal</string>
+    <string name="Witchspells_Choose_Secondary_Path">Elige sub vía</string>
+
+    <string name="Witchspells_Major_Path">Vía superior</string>
+    <string name="Witchspells_Minor_Path">Vía inferior</string>
+    <string name="Witchspells_Opposite_Path_Format">Vía opuesta: %1$s</string>
+    <string name="Witchspells_Secondary_Path_Format">Sub-Vía: %1$s</string>
+
+    <plurals name="Witchspells_Free_Access_Count">
+        <item quantity="one">+ 1 Hechizo de libre acceso</item>
+        <item quantity="other">+ %d Hechizos de libre acceso</item>
+    </plurals>
+
+    <string name="Witchspells_Add_Label">Añadir grimorio</string>
+    <string name="Error_No_Witchspells_Name">Necesitas un nombre para crear un grimorio</string>
+    <string name="Witchspells_Save_Waiting_Message">Creando grimorio…</string>
+
+    <string name="Witchspells_Title_Create">Nuevo grimorio</string>
+
+    <string name="Main_Path_Title">Vías</string>
+    <string name="Secondary_Path_Title">Sub-Vías</string>
+    <string name="Free_Access_Title">Hechizos de libre acceso</string>
+
+    <string name="Witchspells_See_Spells">Ver los hechizos</string>
+    <string name="Witchspells_Title">Grimorio</string>
+    <string name="Witchspells_Add_Description_Label">Un grimorio es una lista de todas las magias que sabe el hechicero, basados en los niveles de vía.\n Haz clic en el libro para crear tu grimorio. </string>
+    <string name="Witchspells_Delete_Confirmation_Title">¿Borrar libro de hechizos?</string>
+    <string name="Witchspells_Delete_Confirmation_Message">¿Estás seguro de borrar este grimorio?</string>
+
+    <string name="Witchspells_Choose_Spell_Title">Elige un hechizo 1-%1$d</string>
+    <string name="Witchspells_Choose_Spell_Confirm">¿Elegir este hechizo?</string>
+
+    <string name="Witchspells_Free_Access_Title">Elige tus hechizos</string>
+    <string name="Witchspells_Free_Access_Choose">Elige tus hechizos de libre acceso</string>
+
+    <string name="Witchspells_Free_Access_Modify_Single">Hechizo de libre acceso\n(1 hechizo seleccionado en %2$d)</string>
+    <string name="Witchspells_Free_Access_Modify_Plurals">Hechizos de libre acceso\n(%1$d hechizos seleccionados en %2$d)</string>
+    <plurals name="Witchspells_Free_Access_Modify">
+        <item quantity="one">@string/Witchspells_Free_Access_Modify_Single</item>
+        <item quantity="other">@string/Witchspells_Free_Access_Modify_Plurals</item>
+    </plurals>
+
+    <string name="Spell_Filter_Search_Description">Buscar en descripción</string>
+    <string name="Spell_Filter_Type">Tipo de hechizo</string>
+    <string name="Spell_Filter_Type_Attack">Ataque</string>
+    <string name="Spell_Filter_Type_Defense">Defensa</string>
+    <string name="Spell_Filter_Type_Effect">Efecto</string>
+    <string name="Spell_Filter_Type_Animismic">Espiritual</string>
+    <string name="Spell_Filter_Type_Automatic">Automático</string>
+    <string name="Spell_Filter_Type_Detection">Detección</string>
+    <string name="Spell_Filter_Intelligence_Max">Inteligencia máxima</string>
+    <string name="Spell_Filter_Max_Int_Description">Los niveles de hechizos por encima de este máximo aparecerán atenuados</string>
+    <string name="Spell_Filter_Zeon_Title">Zeon</string>
+    <string name="Spell_Filter_Max_Zeon">Zeon máximo</string>
+    <string name="Spell_Filter_Max_Maintain">Mantenimiento máximo</string>
+    <string name="Spell_Filter_Daily_Maintain">¿Diario?</string>
+    <string name="Spell_Filter_Action_Type">Tipo de acción</string>
+    <string name="Spell_Filter_Action_Type_Active">Activo</string>
+    <string name="Spell_Filter_Action_Type_Passive">Pasivo</string>
+
+    <string name="Spell_Empty_List_Message">Ningún hechizo coincide con tu búsqueda.</string>
+    <string name="Witchspells_Free_Access_Slot">Hechizo de libre acceso 1-%1$d</string>
+    <string name="Witchspells_Delete_Free_Access_Title">Borrar hechizo de libre acceso</string>
+    <string name="Witchspells_Delete_Free_Access_Message">¿Seguro que quieres restablecer todos los hechizos de acceso gratuito para esta vía?</string>
+    <string name="Witchspells_Delete_Secondary_Path_Title">Borrar Sub-Vía</string>
+    <string name="Witchspells_Delete_Secondary_Path_Message">¿Borrar la Sub-Vía asociada a esta vía?</string>
+    <string name="Witchspells_Cancel_Creation">Al dejar esta página, cancelarás la creación del libro de hechizos ¿Estás seguro que quieres irte? </string>
+    <string name="Witchspells_Choose_Witch_Name">Elige el nombre del hechicero</string>
+    <string name="Witchspells_Witch_Name">Nombre del hechicero</string>
+    <string name="About_Us">Sobre nosotros</string>
+    <string name="Notify_Bug">Reportar un fallo</string>
+    <string name="Notify_Misspelling">Informar de un error ortográfico</string>
+    <string name="Notify_Bug_Body">Hola, he encontrado un fallo en esta aplicación: \n\nRepite los pasos :\n\n (Reemplazar esta línea por los pasos para reproducir el error, por ejemplo "1 - Haga clic en un libro de hechizos", "2 - Haga clic en un hechizo", "3 - El hechizo no tiene ningún tipo")</string>
+    <string name="Notify_Misspelling_Body_Reduced">Hola, He encontrado un error ortográfico en uno de los hechizos de la aplicación: \n\n(Indique dónde está el error ortográfico)\n</string>
+    <string name="Notify_Misspelling_Body">Hola, he encontrado un error ortográfico en uno de los hechizos de la aplicación: \n\nCorrected text : \n\n(Corrija el texto a continuación o indique dónde se encuentra la falta de ortografía)\n%1$s</string>
+    <string name="Notify_Misspelling_Spell_subject">La falta esta en el hechizo %1$s</string>
+
+</resources>
