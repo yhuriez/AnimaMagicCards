@@ -44,7 +44,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 2,
@@ -79,7 +79,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 3,
@@ -324,7 +324,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 10,

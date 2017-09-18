@@ -150,7 +150,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 5,
@@ -185,7 +185,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 6,
@@ -325,7 +325,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 10,
@@ -360,7 +360,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 11,
@@ -640,7 +640,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 19,
@@ -675,7 +675,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 20,
@@ -850,7 +850,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 25,
@@ -920,7 +920,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 27,
@@ -955,7 +955,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 28,
@@ -1025,7 +1025,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 30,

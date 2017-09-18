@@ -270,7 +270,7 @@
       "type": "Détection",
       "effect": "Détecte tous les sentiments négatifs, comme la haine, la peur ou la colère, qui se trouvent autour du sorcier. Ce sort affecte aussi les créatures se basant sur ces émotions. Pour y résister, elles doivent réussir un test de RMys.",
       "initialGrade": {
-        "zeon": 25,
+        "zeon": 50,
         "requiredIntelligence": 6,
         "effect": "RMys 80 / 25m de rayon",
         "retention": 5

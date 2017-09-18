@@ -89,7 +89,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 3,
@@ -334,7 +334,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 10,
@@ -579,7 +579,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 17,
@@ -859,7 +859,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 25,
@@ -1034,7 +1034,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 30,
@@ -1104,7 +1104,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 32,
@@ -1349,7 +1349,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 39,
@@ -1419,7 +1419,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     }
   ]
 }

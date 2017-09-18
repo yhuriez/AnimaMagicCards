@@ -83,7 +83,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 3,
@@ -293,7 +293,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 9,
@@ -503,7 +503,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 15,
@@ -643,7 +643,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 19,
@@ -678,7 +678,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 20,
@@ -993,7 +993,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 29,
@@ -1063,7 +1063,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 31,
@@ -1133,7 +1133,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 33,
@@ -1203,7 +1203,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 35,
@@ -1238,7 +1238,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 36,
@@ -1308,7 +1308,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 38,
@@ -1413,7 +1413,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     }
   ]
 }

@@ -45,7 +45,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 2,
@@ -85,37 +85,37 @@
     {
       "spellId": 3,
       "bookId": 16,
-      "name": "Effect: Kill all the creatures with Presence 20 or below targeted by the caster if they fail their MR check.",
+      "name": "Minor Extermination",
       "level": 24,
-      "actionType": "Int Req: Base(7), Intermediate(9), Advanced(11), Arcane(13)",
-      "type": "Base: MR 60 / 10m/11yd radius.",
-      "effect": "Intermediate: MR 80 / 25m/27yd radius.Advanced: MR 100 / 50m/54yd radius.Arcane: MR 120 / 75m/82yd radius.Maintenance: NoSpell Type: effects, automatic",
+      "actionType": "Active",
+      "type": "Effect, Automatic",
+      "effect": "Kill all the creatures with Presence 20 or below targeted by the caster if they fail their MR check.",
       "initialGrade": {
         "zeon": 0,
-        "requiredIntelligence": 0,
-        "effect": "",
+        "requiredIntelligence": 7,
+        "effect": "MR 60 / 10m/11yd radius.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 0,
-        "requiredIntelligence": 0,
-        "effect": "",
+        "requiredIntelligence": 9,
+        "effect": "MR 80 / 25m/27yd radius.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 0,
-        "requiredIntelligence": 0,
-        "effect": "",
+        "requiredIntelligence": 11,
+        "effect": "MR 100 / 50m/54yd radius.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 0,
-        "requiredIntelligence": 0,
-        "effect": "",
+        "requiredIntelligence": 13,
+        "effect": "MR 120 / 75m/82yd radius.",
         "retention": 0
       },
-      "withRetention": true,
-      "dailyRetention": true
+      "withRetention": false,
+      "dailyRetention": false
     },
     {
       "spellId": 4,
@@ -150,7 +150,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 5,
@@ -185,7 +185,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 6,
@@ -255,7 +255,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 8,
