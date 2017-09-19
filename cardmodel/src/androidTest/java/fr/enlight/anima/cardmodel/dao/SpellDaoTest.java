@@ -39,7 +39,7 @@ public class SpellDaoTest {
     @Before
     public void setUp() {
         context = InstrumentationRegistry.getTargetContext();
-        mLanguage = Locale.getDefault().toString();
+        mLanguage = Locale.getDefault().getLanguage();
     }
 
     @Test

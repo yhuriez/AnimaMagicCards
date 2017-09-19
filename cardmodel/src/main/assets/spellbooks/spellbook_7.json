@@ -581,7 +581,7 @@
       "type": "Effect",
       "effect": "This spell confers the temporary ability to absorb almost any damage inflicted on an individual. It provides additional Life Points, which allow the targeted individual to use the defense rules of Damage Resistance beings. These extra LP are subtracted before any of the target’s actual LP. Its Armor Type depends on the character’s size, as it is described in Chapter 26. The target of this spell cannot use any defense abilities for as long as the spell is maintained. Resistance spells affect only one individual at a time.",
       "initialGrade": {
-        "zeon": 120,
+        "zeon": 100,
         "requiredIntelligence": 8,
         "effect": " +500 Life Points.",
         "retention": 10

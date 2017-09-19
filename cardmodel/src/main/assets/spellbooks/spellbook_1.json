@@ -499,7 +499,7 @@
       },
       "arcaneGrade": {
         "zeon": 400,
-        "requiredIntelligence": 16,
+        "requiredIntelligence": 15,
         "effect": " Notice and Search 250 / 500km/310.6miles maximum distance.",
         "retention": 80
       },
@@ -534,7 +534,7 @@
       },
       "arcaneGrade": {
         "zeon": 150,
-        "requiredIntelligence": 16,
+        "requiredIntelligence": 15,
         "effect": " MR 160 / 250m/273yd area.",
         "retention": 15
       },
@@ -1134,7 +1134,7 @@
         "retention": 80
       },
       "withRetention": true,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 33,
@@ -1379,7 +1379,7 @@
         "retention": 50
       },
       "withRetention": true,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 40,

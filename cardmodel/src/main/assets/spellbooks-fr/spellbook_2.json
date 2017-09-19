@@ -721,6 +721,41 @@
       "dailyRetention": true
     },
     {
+      "spellId": 21,
+      "bookId": 2,
+      "name": "De Corps à Obscurité",
+      "level": 52,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "La créature désignée par le sorcier se transforme en pure énergie obscure et devient intangible vis à vis de toutes les matières et attaques non basées sur l'énergie. Tant qu'elle se trouve dans cet état, la créature bénéficie d'un bonus dans ses compétences secondaires de Camouflage et de Discrétion, et à ses Résistances contre les effets basés sur l'Obscurité. Dans cet état, tous les dégâts infligés par la Lumière sont doublés.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 8,
+        "effect": "Discrétion et Camouflage + 50 / +20 aux Résistances",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 11,
+        "effect": "Discrétion et Camouflage + 60 / +30 aux Résistances",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 13,
+        "effect": "Comme Intermédiaire à ceci près que le bonus aux résistances s’appliquent à tous les types d’effet à l’exception de ceux basés sur la lumière",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 16,
+        "effect": "Comme Avancée à ceci près que les dégâts infligés par la lumière ne sont plus doublés",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
       "spellId": 22,
       "bookId": 2,
       "name": "Perdition",

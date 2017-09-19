@@ -45,7 +45,7 @@
         "retention": 15
       },
       "withRetention": true,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 2,
@@ -421,7 +421,7 @@
         "zeon": 240,
         "requiredIntelligence": 12,
         "effect": " 500m/546yd area.",
-        "retention": 15
+        "retention": 25
       },
       "arcaneGrade": {
         "zeon": 300,
@@ -442,19 +442,19 @@
       "effect": "This spell connects the caster’s essence with any living organism with Gnosis 10 or lower, including plants and animals, within a radius. The spell enables the spellcaster to sense the events surrounding the affected parties using their perception, but it will not enable him to exert any control upon them. Since the caster is also transmitting part of his spirit, he can cast spells through the connected target with half his usual MA. Any Spiritual spell cast upon the targeted organism will also affect the caster of Life Mind. The targeted organism can resist Life Mind by passing a MR check. Once established as a guest in a specific body, the spellcaster can jump on to any subject in the radius of effect, provided the new target fails the Resistance. An individual passing the Check cannot be affected by the spell independently of the caster’s attempts. Affected people do not usually realize they are being used even when spells are being cast through them. Anyone hosting the caster’s essence who leaves the area of effect of Life Mind is freed from the caster’s influence.The caster may specifically target any appropriate organism within the spell’s area of effect that he is aware of, but Life Mind cannot be used to detect the presence of living organisms. If the spellcaster has no obvious target, he can direct the power of the spell to simply join with the nearest appropriate target, if there is one. However, this method can be of very limited use, since it is quite possible the nearest living organism would be nothing more than a blade of grass. While this spell is effect, the caster is not aware of events taking place around his true being.",
       "initialGrade": {
         "zeon": 120,
-        "requiredIntelligence": 6,
+        "requiredIntelligence": 7,
         "effect": " MR 80 / 500m/546yd area.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 180,
-        "requiredIntelligence": 9,
+        "requiredIntelligence": 10,
         "effect": " MR 120 / 1km/1093yd area.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 240,
-        "requiredIntelligence": 12,
+        "requiredIntelligence": 13,
         "effect": " MR 140 / 2km/1.2mile area.",
         "retention": 15
       },
@@ -794,27 +794,27 @@
         "zeon": 180,
         "requiredIntelligence": 9,
         "effect": " MR 100 / Max Presence 60.",
-        "retention": 15
+        "retention": 0
       },
       "intermediateGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
         "effect": " MR 140 / Max Presence 100.",
-        "retention": 20
+        "retention": 0
       },
       "advancedGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
         "effect": " MR 160 / Max Presence 140.",
-        "retention": 25
+        "retention": 0
       },
       "arcaneGrade": {
         "zeon": 540,
         "requiredIntelligence": 18,
         "effect": " MR 200 / Max Presence 180.",
-        "retention": 30
+        "retention": 0
       },
-      "withRetention": true,
+      "withRetention": false,
       "dailyRetention": false
     },
     {
@@ -937,20 +937,20 @@
         "retention": 0
       },
       "intermediateGrade": {
-        "zeon": 500,
-        "requiredIntelligence": 13,
+        "zeon": 450,
+        "requiredIntelligence": 12,
         "effect": " 150km/93mile area.",
         "retention": 0
       },
       "advancedGrade": {
-        "zeon": 1000,
-        "requiredIntelligence": 15,
+        "zeon": 600,
+        "requiredIntelligence": 13,
         "effect": " 350km/217mile area.",
         "retention": 0
       },
       "arcaneGrade": {
-        "zeon": 2500,
-        "requiredIntelligence": 17,
+        "zeon": 750,
+        "requiredIntelligence": 16,
         "effect": " 600km/372mile area.",
         "retention": 0
       },

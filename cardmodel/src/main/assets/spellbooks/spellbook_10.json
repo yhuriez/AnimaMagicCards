@@ -222,7 +222,7 @@
         "retention": 15
       },
       "withRetention": true,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 7,
@@ -771,7 +771,7 @@
       },
       "advancedGrade": {
         "zeon": 240,
-        "requiredIntelligence": 14,
+        "requiredIntelligence": 13,
         "effect": " MR or PsR 180.",
         "retention": 25
       },
@@ -831,7 +831,7 @@
         "zeon": 250,
         "requiredIntelligence": 9,
         "effect": " MR 120 / 1km/1093yd area.",
-        "retention": 25
+        "retention": 20
       },
       "intermediateGrade": {
         "zeon": 350,
@@ -866,28 +866,28 @@
         "zeon": 250,
         "requiredIntelligence": 9,
         "effect": " +1000 Zeon Maintenance.",
-        "retention": 50
+        "retention": 0
       },
       "intermediateGrade": {
         "zeon": 360,
         "requiredIntelligence": 12,
         "effect": " +1500 Zeon Maintenance.",
-        "retention": 70
+        "retention": 0
       },
       "advancedGrade": {
         "zeon": 450,
         "requiredIntelligence": 15,
         "effect": " +3000 Zeon Maintenance.",
-        "retention": 100
+        "retention": 0
       },
       "arcaneGrade": {
         "zeon": 600,
         "requiredIntelligence": 18,
         "effect": " +5000 Zeon Maintenance.",
-        "retention": 140
+        "retention": 0
       },
-      "withRetention": true,
-      "dailyRetention": true
+      "withRetention": false,
+      "dailyRetention": false
     },
     {
       "spellId": 26,
@@ -969,7 +969,7 @@
       "effect": "A person affected by this spell cannot die; the Flow of Souls will ignore his presence and thus be unable to claim him. However, his physical form is vulnerable to destruction, and even though his spirit will not abandon his body, he will still suffer any adverse effects produced by damage. This spell does not offer protection from soul- destroying effects. The maximum level this spell affects is based on spell level.",
       "initialGrade": {
         "zeon": 500,
-        "requiredIntelligence": 10,
+        "requiredIntelligence": 13,
         "effect": " Level 5.",
         "retention": 100
       },
