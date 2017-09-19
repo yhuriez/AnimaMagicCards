@@ -57,27 +57,27 @@
         "zeon": 40,
         "requiredIntelligence": 6,
         "effect": "50 m de rayon.",
-        "retention": 5
+        "retention": 0
       },
       "intermediateGrade": {
         "zeon": 70,
         "requiredIntelligence": 9,
         "effect": "250 m de rayon.",
-        "retention": 5
+        "retention": 0
       },
       "advancedGrade": {
         "zeon": 100,
         "requiredIntelligence": 12,
         "effect": "500 m de rayon.",
-        "retention": 10
+        "retention": 0
       },
       "arcaneGrade": {
         "zeon": 130,
         "requiredIntelligence": 15,
         "effect": "1 km de rayon.",
-        "retention": 15
+        "retention": 0
       },
-      "withRetention": true,
+      "withRetention": false,
       "dailyRetention": false
     },
     {
@@ -148,7 +148,7 @@
         "retention": 20
       },
       "withRetention": true,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 5,
@@ -267,28 +267,28 @@
         "zeon": 200,
         "requiredIntelligence": 10,
         "effect": "140 RMys ou RPsy / 100 m de rayon.",
-        "retention": 20
+        "retention": 0
       },
       "intermediateGrade": {
         "zeon": 300,
         "requiredIntelligence": 12,
         "effect": "160 RMys ou RPsy / 250 m de rayon.",
-        "retention": 30
+        "retention": 0
       },
       "advancedGrade": {
         "zeon": 400,
         "requiredIntelligence": 14,
         "effect": "180 RMys ou RPsy / 1 km de rayon.",
-        "retention": 40
+        "retention": 0
       },
       "arcaneGrade": {
         "zeon": 500,
         "requiredIntelligence": 16,
         "effect": "200 RMys ou RPsy / 5 km de rayon.",
-        "retention": 50
+        "retention": 0
       },
-      "withRetention": true,
-      "dailyRetention": true
+      "withRetention": false,
+      "dailyRetention": false
     },
     {
       "spellId": 9,

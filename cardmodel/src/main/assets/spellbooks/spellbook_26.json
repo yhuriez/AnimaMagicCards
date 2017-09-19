@@ -93,7 +93,7 @@
         "zeon": 50,
         "requiredIntelligence": 6,
         "effect": " 200 Points of Resistance / Hard 14 / PhR 100.",
-        "retention": 5
+        "retention": 15
       },
       "intermediateGrade": {
         "zeon": 90,

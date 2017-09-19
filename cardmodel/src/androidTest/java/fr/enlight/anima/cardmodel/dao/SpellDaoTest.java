@@ -147,6 +147,11 @@ public class SpellDaoTest {
 
         for (SpellbookType spellbookType : SpellbookType.values()) {
 
+            // We ignore FREE_ACCESS because the order cannot be assured
+            if(spellbookType == FREE_ACCESS){
+                continue;
+            }
+
             List<Map<String, Spell>> allSpellLanguage = new ArrayList<>();
 
             for (String language : languages) {

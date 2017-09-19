@@ -90,7 +90,7 @@
       "effect": "Effect: This spell allows you to observe what is occurring in the dreams of a sleeper, whether they are quiet as nightmares. It is not possible to intervene in any way, but you see them in detail. A person can resist  by passing an MR test, but if it fails, only entitled to a new test each day if it is aware or suspects they may being affected by a spell like this.",
       "initialGrade": {
         "zeon": 60,
-        "requiredIntelligence": 5,
+        "requiredIntelligence": 6,
         "effect": " MR 140.",
         "retention": 10
       },

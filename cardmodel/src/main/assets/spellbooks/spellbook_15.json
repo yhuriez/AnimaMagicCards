@@ -93,7 +93,7 @@
         "zeon": 100,
         "requiredIntelligence": 6,
         "effect": " 1 day.",
-        "retention": 5
+        "retention": 15
       },
       "intermediateGrade": {
         "zeon": 180,
