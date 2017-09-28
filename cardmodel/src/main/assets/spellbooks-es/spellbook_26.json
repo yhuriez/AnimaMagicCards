@@ -1,0 +1,365 @@
+{
+  "bookId": 26,
+  "bookName": "Vacío",
+  "description": "Vacío es la sub-vía que controla las energías de la nada, la absoluta carencia de toda materia física y espiritual.",
+  "primaryBookUnaccessibles": [
+    "Luz",
+    "Creación",
+    "Tierra",
+    "Fuego",
+    "Ilusión",
+    "Esencia"
+  ],
+  "spells": [
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM 120 / Área 15 metros.",
+        "requiredIntelligence": 11,
+        "retention": 0,
+        "zeon": 90
+      },
+      "arcaneGrade": {
+        "effect": "RM 150 / Área 30 metros.",
+        "requiredIntelligence": 14,
+        "retention": 0,
+        "zeon": 120
+      },
+      "bookId": 1,
+      "dailyRetention": false,
+      "effect": "Trae a la existencia un fragmento del vacío, una mera sombra de la nada primordial que durante unos instantes absorbe parcialmente la luz, reduce la cantidad de oxígeno en la zona, y arrebata energía vital a cuanto la rodea. Todo aquel que se encuentren en la zona afectada por este conjuro deberá realizar un control de RM o perderá o bien un punto de Cansancio en los seres vivos, dos intensidades en el caso de elementales.",
+      "initialGrade": {
+        "effect": "RM 80 / Área 5 metros.",
+        "requiredIntelligence": 5,
+        "retention": 0,
+        "zeon": 30
+      },
+      "intermediateGrade": {
+        "effect": "RM 100 / Área 10 metros.",
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 60
+      },
+      "level": 4,
+      "name": "Sombra de Vacío",
+      "spellId": 0,
+      "type": "Anímico",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Daño 400 contra escudos.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 90
+      },
+      "arcaneGrade": {
+        "effect": "Daño 600 contra escudos.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 120
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "Este hechizo manda una leve onda de vacío capaz de desestructurar las fibras sobrenaturales de cualquier protección. Este conjuro en si no provoca daños a sus adversarios, pero dirigido contra un escudo sobrenatural, provoca demoledoras consecuencias. La Onda Vacua es invisible al ojo humano, salvo para aquellos capaces de ver magia.",
+      "initialGrade": {
+        "effect": "Daño 120 contra escudos.",
+        "requiredIntelligence": 6,
+        "retention": 0,
+        "zeon": 30
+      },
+      "intermediateGrade": {
+        "effect": "Daño 250 contra escudos.",
+        "requiredIntelligence": 9,
+        "retention": 0,
+        "zeon": 60
+      },
+      "level": 14,
+      "name": "Onda Vacua",
+      "spellId": 0,
+      "type": "Ataque",
+      "withRetention": false
+    },
+    {
+      "actionType": "Pasiva",
+      "advancedGrade": {
+        "effect": "400 Puntos de Resistencia / Dificultad 18 / RF 140.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "500 Puntos de Resistencia / Dificultad 20 / RF 160.",
+        "requiredIntelligence": 15,
+        "retention": 30,
+        "zeon": 150
+      },
+      "bookId": 3,
+      "dailyRetention": false,
+      "effect": "Crea una barrera de partículas de vacío que absorbe y convierte en nada los ataques que recibe. Además de tener resistencia como un escudo convencional, cualquier poder sobrenatural que detenga quedará automáticamente anulado si el atacante no logra superar un control de Voluntad o Poder contra la dificultad determinada por el grado del conjuro. Es decir, si un contrincante lanza un sortilegio ofensivo o anímico contra un mago que se proteja tras un escudo de vacío de grado intermedio, y este último obtiene una defensa con éxito, el atacante deberá superar un control de Voluntad o Poder contra 16 o su ataque quedará anulado sin dañar lo más mínimo el escudo. De igual forma, cualquier objeto físico que logre parar el escudo debe superar una RF contra la dificultad determinada por el escudo o será destruido de inmediato.",
+      "initialGrade": {
+        "effect": "200 Puntos de Resistencia / Dificultad 14 / RF 100.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 50
+      },
+      "intermediateGrade": {
+        "effect": "300 Puntos de Resistencia / Dificultad 16 / RF 120.",
+        "requiredIntelligence": 9,
+        "retention": 20,
+        "zeon": 90
+      },
+      "level": 24,
+      "name": "Escudo de Vacío",
+      "spellId": 0,
+      "type": "Escudo",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM 140 / 20 metros de radio.",
+        "requiredIntelligence": 13,
+        "retention": 15,
+        "zeon": 180
+      },
+      "arcaneGrade": {
+        "effect": "RM 160 / 40 metros de radio.",
+        "requiredIntelligence": 15,
+        "retention": 20,
+        "zeon": 240
+      },
+      "bookId": 4,
+      "dailyRetention": false,
+      "effect": "Crea una zona repleta de millones de microscópicas partículas de vacío. Todo individuo que esté en ella más de un asalto deberá hacer automáticamente una RM cada turno o sufrir un daño y una perdida de puntos de Ki equivalente a la mitad del nivel de fracaso, así como una perdida de puntos de Zeon equivalente al nivel de fracaso pleno. Este hechizo no permite elegir blancos, y afecta a todos por igual, inclusive el propio lanzador.",
+      "initialGrade": {
+        "effect": "RM 100 / 5 metros de radio.",
+        "requiredIntelligence": 7,
+        "retention": 5,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "RM 120 / 10 metros de radio.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 120
+      },
+      "level": 34,
+      "name": "Vórtice de Realidad",
+      "spellId": 0,
+      "type": "Automático",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Daño 160.",
+        "requiredIntelligence": 12,
+        "retention": 10,
+        "zeon": 200
+      },
+      "arcaneGrade": {
+        "effect": "Daño 200.",
+        "requiredIntelligence": 15,
+        "retention": 15,
+        "zeon": 250
+      },
+      "bookId": 5,
+      "dailyRetention": false,
+      "effect": "Invoca vacío en su estado más puro, dando forma a una crepitante hoja de poder que se manifiesta en las manos del hechicero. El arma puede usarse para atacar en Filo con la Proyección Mágica del lanzador o bien con su Habilidad de Ataque cuerpo a cuerpo e ignora por completo cualquier clase de Armadura. El hechicero puede mantener activa la hoja para realizar nuevos ataques en asaltos posteriores, pero cada turno que lo haga debe de realizar un control de Voluntad contra dificultad 12 o la espada corre el riesgo de descontrolarse. Cada vez que consiga supera el control incrementa un punto su dificultad en el siguiente turno. Si llegase a fallarlo, la espada se vuelve contra el brujo, atacándole con su habilidad plena +50.",
+      "initialGrade": {
+        "effect": "Daño 80",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "Daño 120.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 150
+      },
+      "level": 44,
+      "name": "Negra Hoja de Perdición",
+      "spellId": 0,
+      "type": "Ataque",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "TA 8 / Valor Zeónico 120/ Potencial Psíquico 140.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "TA 10 / Valor Zeónico 160/ Potencial Psíquico 180.",
+        "requiredIntelligence": 15,
+        "retention": 35,
+        "zeon": 350
+      },
+      "bookId": 6,
+      "dailyRetention": true,
+      "effect": "Cubre al hechicero con un aura de vacío que le protege de los efectos de los ataques sobrenaturales, proporcionándole una TA de Energía a la vez que devora cualquier hechizo o poder psíquico de valor inferior al indicado. Lamentablemente, este conjuro no discrimina entre poderes amigos o enemigos, y los devora todos sin distinción. La capa de vacío es invisible, aunque todo lo que rodea al hechicero parece verse mas tenue y apagado.",
+      "initialGrade": {
+        "effect": "TA 4 / Valor Zeónico 60 / Potencial Psíquico 80.",
+        "requiredIntelligence": 6,
+        "retention": 15,
+        "zeon": 120
+      },
+      "intermediateGrade": {
+        "effect": "TA 6 / Valor Zeónico 90/ Potencial Psíquico 120.",
+        "requiredIntelligence": 9,
+        "retention": 20,
+        "zeon": 180
+      },
+      "level": 54,
+      "name": "Aura de Vacío",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Dificultad 180 / 50 metros de radio / RM o RF 160.",
+        "requiredIntelligence": 12,
+        "retention": 35,
+        "zeon": 350
+      },
+      "arcaneGrade": {
+        "effect": "Dificultad 240 / 100 metros de radio / RM o RF 180.",
+        "requiredIntelligence": 15,
+        "retention": 50,
+        "zeon": 500
+      },
+      "bookId": 7,
+      "dailyRetention": false,
+      "effect": "Crea una zona alrededor del hechicero llena de vórtices existenciales y agujeros de vacío que se mueven caóticamente de un lado a otro. Cualquier que entre dentro de dicha área debe superar cada asalto un control de Atletismo, Acrobacias o Defensa contra la dificultad determinada por el grado del conjuro, o de lo contrario chocará con unos de puntos negros. Si se diera el caso, el personaje debe de superar un control de RF o RM contra la dificultad que determine el conjuro o sufrir un daño y una perdida de puntos de Ki equivalente a la mitad del nivel de fracaso, así como una perdida de Zeon equivalente al nivel de fracaso pleno. No es posible designar blancos en el interior del sortilegio.",
+      "initialGrade": {
+        "effect": "Dificultad 120 / 10 metros de radio / RM o RF 120.",
+        "requiredIntelligence": 8,
+        "retention": 15,
+        "zeon": 150
+      },
+      "intermediateGrade": {
+        "effect": "Dificultad 140 / 20 metros de radio / RM o RF 140.",
+        "requiredIntelligence": 10,
+        "retention": 25,
+        "zeon": 250
+      },
+      "level": 64,
+      "name": "Puntos Negros",
+      "spellId": 0,
+      "type": "Automático",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "El personaje es inmune a cualquier efecto relaciona con el vacío, salvo la nada primordial.",
+        "requiredIntelligence": 14,
+        "retention": 30,
+        "zeon": 280
+      },
+      "arcaneGrade": {
+        "effect": "Como en grado avanzado, pero el personaje es capaz de sobrevivir incluso en la nada primordial.",
+        "requiredIntelligence": 16,
+        "retention": 40,
+        "zeon": 400
+      },
+      "bookId": 8,
+      "dailyRetention": false,
+      "effect": "Cubre al hechicero de una energía sobrenatural que repele los efectos del vacío. Cualquier conjuro o poder relacionado con la nada no tiene efecto sobre él ni puede causarle daño.",
+      "initialGrade": {
+        "effect": "Protege contra conjuros de esta sub-vía.",
+        "requiredIntelligence": 10,
+        "retention": 15,
+        "zeon": 140
+      },
+      "intermediateGrade": {
+        "effect": "Como en grado base, pero el personaje es también inmune a los efectos y ataques de seres basados en el vacío, como los Etrien Gnosos.",
+        "requiredIntelligence": 12,
+        "retention": 20,
+        "zeon": 200
+      },
+      "level": 74,
+      "name": "Protección contra el Vacío",
+      "spellId": 0,
+      "type": "Ataque",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Daño 500 / Crítico +60.",
+        "requiredIntelligence": 18,
+        "retention": 0,
+        "zeon": 750
+      },
+      "arcaneGrade": {
+        "effect": "Daño 800 / Crítico +100.",
+        "requiredIntelligence": 20,
+        "retention": 0,
+        "zeon": 1000
+      },
+      "bookId": 9,
+      "dailyRetention": false,
+      "effect": "Este terrorífico conjuro crea un punto de vacío en el interior de algo que atrae toda la masa del mismo a su interior, provocando que su estructura implosione y desaparezca completamente. Al absorber la carne, huesos y órganos, en caso de causar daño provoca además un crítico automático con un bonificador determinado por el grado del conjuro.",
+      "initialGrade": {
+        "effect": "Daño 200 / Crítico +20.",
+        "requiredIntelligence": 14,
+        "retention": 0,
+        "zeon": 250
+      },
+      "intermediateGrade": {
+        "effect": "Daño 400 / Crítico +40.",
+        "requiredIntelligence": 16,
+        "retention": 0,
+        "zeon": 500
+      },
+      "level": 84,
+      "name": "Implosión",
+      "spellId": 0,
+      "type": "Ataque.",
+      "withRetention": false
+    },
+    {
+      "actionType": "Pasiva",
+      "advancedGrade": {
+        "effect": "15 metros de diámetro.",
+        "requiredIntelligence": 15,
+        "retention": 80,
+        "zeon": 800
+      },
+      "arcaneGrade": {
+        "effect": "50 metros de diámetro.",
+        "requiredIntelligence": 18,
+        "retention": 120,
+        "zeon": 1200
+      },
+      "bookId": 10,
+      "dailyRetention": false,
+      "effect": "Abre un portal unidireccional al vacío más absoluto, la nada primigenia que un día devorará el universo. Cualquiera que cruce la puerta dejará de existir automáticamente, sin control de resistencia posible. Sólo los seres con Gnosis 35 o superior, objetos de presencia equivalente, o individuos protegidos de algún modo contra el Vacío pueden sobrevivir allí, pero van perdiendo poco a poco puntos de su atributo de Poder, que se recupera a un ritmo de uno al día. Naturalmente, algo que permanezca en el interior es virtualmente inmune a ninguna clase de ataque, ya que estos no pueden alcanzarle. Las dimensiones del portal son determinadas por el grado del conjuro.",
+      "initialGrade": {
+        "effect": "2 metros de diámetro.",
+        "requiredIntelligence": 11,
+        "retention": 30,
+        "zeon": 300
+      },
+      "intermediateGrade": {
+        "effect": "5 metros de diámetro.",
+        "requiredIntelligence": 13,
+        "retention": 50,
+        "zeon": 500
+      },
+      "level": 94,
+      "name": "Puerta a Ninguna Parte",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    }
+  ]
+}

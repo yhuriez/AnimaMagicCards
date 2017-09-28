@@ -1,0 +1,1039 @@
+{
+  "bookId": 8,
+  "bookName": "Tierra",
+  "description": "Es la vía de lo etéreo y lo incorpóreo. Recoge los conjuros de velocidad y movimiento. Con su poder se puede alterar el espacio y transportar cuerpos de un lugar a otro. También es la vía que controla el clima y la electricidad.",
+  "oppositeBook": "Aire",
+  "secondaryBookAccessibles": [
+    "CAOS",
+    "GUERRA",
+    "LITERAE",
+    "MUERTE",
+    "MUSICAL",
+    "NOBLEZA",
+    "PAZ",
+    "PECADO",
+    "CONOCIMIENTO",
+    "SANGRE",
+    "SUEÑOS",
+    "TIEMPO",
+    "UMBRAL",
+    "VACÍO"
+  ],
+  "spells": [
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "150 metros de radio.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 100
+      },
+      "arcaneGrade": {
+        "effect": "500 metros de radio.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 140
+      },
+      "bookId": 1,
+      "dailyRetention": false,
+      "effect": "Permite al hechicero detectar la ubicación de un mineral determinado que se encuentre en el radio de acción del conjuro. Este hechizo no da información sobre la forma del material, pero sí indica de un modo aproximado su tamaño o cantidad. No es posible detectar a través de barreras basadas en energía.",
+      "initialGrade": {
+        "effect": "10 metros de radio.",
+        "requiredIntelligence": 5,
+        "retention": 0,
+        "zeon": 20
+      },
+      "intermediateGrade": {
+        "effect": "50 metros de radio.",
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 60
+      },
+      "level": 2,
+      "name": "Detectar Minerales",
+      "spellId": 0,
+      "type": "Detección",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Presencia máxima 90 / RM 130.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 100
+      },
+      "arcaneGrade": {
+        "effect": "Presencia máxima 120 / RM 140.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 140
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "Otorga la capacidad de controlar cualquier sustancia mineral. Ten en cuenta que, por mucho dominio que ejerza el hechicero sobre las cosas, no puede atribuirles capacidades que estas no tengan por sí solas. Es decir, aunque controle una roca, no podría hacer que se moviese por sí sola, pero sí obligar a un golem mecánico o a un elemental de piedra a someterse a su voluntad. Los seres de tales características pueden evitar este efecto superando una RM contra 100. La criatura puede repetir el control una vez al día, o si recibe una orden que sea completamente opuesta a su naturaleza.",
+      "initialGrade": {
+        "effect": "Presencia máxima 30 / RM 100.",
+        "requiredIntelligence": 5,
+        "retention": 5,
+        "zeon": 30
+      },
+      "intermediateGrade": {
+        "effect": "Presencia máxima 60 / RM 120.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 60
+      },
+      "level": 6,
+      "name": "Control Mineral",
+      "spellId": 0,
+      "type": "Efecto, Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "+200 kilogramos.",
+        "requiredIntelligence": 10,
+        "retention": 30,
+        "zeon": 200
+      },
+      "arcaneGrade": {
+        "effect": "+300 kilogramos.",
+        "requiredIntelligence": 12,
+        "retention": 40,
+        "zeon": 320
+      },
+      "bookId": 3,
+      "dailyRetention": true,
+      "effect": "Incrementa el peso de un cuerpo físico ya sea orgánico o inorganico.",
+      "initialGrade": {
+        "effect": "+20 kilogramos.",
+        "requiredIntelligence": 5,
+        "retention": 5,
+        "zeon": 40
+      },
+      "intermediateGrade": {
+        "effect": "+120 kilogramos.",
+        "requiredIntelligence": 8,
+        "retention": 25,
+        "zeon": 120
+      },
+      "level": 10,
+      "name": "Aumentar Peso",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Pasiva",
+      "advancedGrade": {
+        "effect": "Presencia máxima 70 / hasta 100 kilos de masa.",
+        "requiredIntelligence": 11,
+        "retention": 5,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "Presencia máxima 90 / hasta 250 kilos de masa.",
+        "requiredIntelligence": 13,
+        "retention": 10,
+        "zeon": 160
+      },
+      "bookId": 4,
+      "dailyRetention": false,
+      "effect": "Transmuta un determinado tipo de mineral en otro distinto, modificando su composición natural. Puede alterarse minerales convirtiendo, por ejemplo, una roca en oro. El peso resultante puede variar dependiendo de aquello en que se lo transforme y según su presencia.",
+      "initialGrade": {
+        "effect": "Presencia máxima 30 / hasta 10 kilos de masa.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 40
+      },
+      "intermediateGrade": {
+        "effect": "Presencia máxima 50 / hasta 50 kilos de masa.",
+        "requiredIntelligence": 8,
+        "retention": 5,
+        "zeon": 80
+      },
+      "level": 12,
+      "name": "Transformar Mineral",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "+45 RF / +7 entereza.",
+        "requiredIntelligence": 11,
+        "retention": 15,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "+60 RF / +9 entereza.",
+        "requiredIntelligence": 13,
+        "retention": 20,
+        "zeon": 160
+      },
+      "bookId": 5,
+      "dailyRetention": false,
+      "effect": "Aumenta el aguante de un individuo o un objeto, haciéndolo especialmente resistente al daño. Si se lanza sobre un ser vivo, otorga un bonificador a cualquier tirada de RF que realice para evitar los efectos de un critico, mientras que si se aplica sobre un objeto, incrementa su entereza. Sólo es posible afectar con un conjuro de Firmeza a un cuerpo a la vez.",
+      "initialGrade": {
+        "effect": "+20 RF / +3 entereza.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 50
+      },
+      "intermediateGrade": {
+        "effect": "+30 RF / +5 entereza.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 80
+      },
+      "level": 16,
+      "name": "Firmeza",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Barrera de daño 150 / 3.000 Puntos de Resistencia.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "Barrera de daño 200 / 5.000 Puntos de Resistencia.",
+        "requiredIntelligence": 15,
+        "retention": 30,
+        "zeon": 300
+      },
+      "bookId": 6,
+      "dailyRetention": false,
+      "effect": "Levanta una barrera material que permite al hechicero defenderse de cualquier tipo de ataque que provoque daños, incluyendo los basados en energía. No obstante, este escudo es incapaz de detener efectos anímicos o que obliguen únicamente a realizar una RM o RP. Además de su resistencia, tiene una barrera de daño contra los ataques físicos.",
+      "initialGrade": {
+        "effect": "Barrera de daño 60 / 600 Puntos de Resistencia.",
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "Barrera de daño 100 / 1.600 Puntos de Resistencia.",
+        "requiredIntelligence": 9,
+        "retention": 20,
+        "zeon": 160
+      },
+      "level": 20,
+      "name": "Barrera de Piedra",
+      "spellId": 0,
+      "type": "Defensa",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM 160 / -90 al turno y -6 al Tipo de Movimiento.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "RM 180 / -120 al turno y -10 al Tipo de Movimiento.",
+        "requiredIntelligence": 15,
+        "retention": 15,
+        "zeon": 150
+      },
+      "bookId": 7,
+      "dailyRetention": false,
+      "effect": "Reduce la velocidad de desplazamiento y la capacidad de reacción de un individuo si este no supera la RM del conjuro. Si el tipo de movimiento llega a 0, cada punto de movimiento adicional que se disminuya provoca en su lugar un -20 a todas las acciones físicas.",
+      "initialGrade": {
+        "effect": "RM 120 / -50 al turno y -2 al Tipo de Movimiento.",
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "RM 140 / -70 al turno y -4 al Tipo de Movimiento.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 90
+      },
+      "level": 22,
+      "name": "Lentitud",
+      "spellId": 0,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "TA 6.",
+        "requiredIntelligence": 12,
+        "retention": 10,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "TA 8.",
+        "requiredIntelligence": 15,
+        "retention": 10,
+        "zeon": 140
+      },
+      "bookId": 8,
+      "dailyRetention": false,
+      "effect": "Forma una coraza física que protege contra todos los tipos de ataque, salvo los basados en energía. Aunque cuenta como una armadura, no se aplican penalizadores al turno por emplear capas de protección adicionales.",
+      "initialGrade": {
+        "effect": "TA 2.",
+        "requiredIntelligence": 8,
+        "retention": 5,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "TA 4.",
+        "requiredIntelligence": 10,
+        "retention": 5,
+        "zeon": 100
+      },
+      "level": 26,
+      "name": "Coraza",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Pasiva",
+      "advancedGrade": {
+        "effect": "900 puntos de resistencia.",
+        "requiredIntelligence": 11,
+        "retention": 10,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "1.200 puntos de resistencia.",
+        "requiredIntelligence": 14,
+        "retention": 20,
+        "zeon": 160
+      },
+      "bookId": 9,
+      "dailyRetention": false,
+      "effect": "Controlando los campos magnéticos de su entorno, el hechicero levanta un escudo capaz de repeler cualquier ataque que se realice en su contra empleando un medio metálico. Si recibe una acometida de tales características, la distorsión causada por el magnetismo provocará un penalizador de -50 a la habilidad ofensiva del atacante. El escudo sólo puede ser perjudicado por ataques que sean capaces de dañar energía. Esta barrera es virtualmente inútil contra ataques inmateriales o anímicos.",
+      "initialGrade": {
+        "effect": "300 puntos de resistencia.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 50
+      },
+      "intermediateGrade": {
+        "effect": "600 puntos de resistencia.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 90
+      },
+      "level": 30,
+      "name": "Escudo Magnético",
+      "spellId": 0,
+      "type": "Defensa",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Presencia máxima 180.",
+        "requiredIntelligence": 12,
+        "retention": 10,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "Presencia máxima 240.",
+        "requiredIntelligence": 14,
+        "retention": 10,
+        "zeon": 140
+      },
+      "bookId": 10,
+      "dailyRetention": false,
+      "effect": "Este conjuro permite a uno o varios sujetos, a elección del hechicero, ser capaces de atravesar cuerpos sólidos. Aquellos sobre quienes sea lanzado no son realmente inmateriales, viéndose influidos por los efectos de los elementos como el calor o el frío, pero pueden ignorar completamente cualquier cosa no basada en energía. De este modo, podrían atravesar voluntariamente una pared como si no existiera para ellos, o pasar a través de una espada normal sin sufrir daños. Es posible decidir a qué cuerpos se puede atravesar y a cuáles no.",
+      "initialGrade": {
+        "effect": "Presencia máxima 100.",
+        "requiredIntelligence": 7,
+        "retention": 5,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "Presencia máxima 140.",
+        "requiredIntelligence": 10,
+        "retention": 5,
+        "zeon": 100
+      },
+      "level": 32,
+      "name": "Atravesar lo Sólido",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "6 Espinas.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 150
+      },
+      "arcaneGrade": {
+        "effect": "8 Espinas.",
+        "requiredIntelligence": 14,
+        "retention": 0,
+        "zeon": 200
+      },
+      "bookId": 11,
+      "dailyRetention": false,
+      "effect": "El control que ejerce el hechicero sobre la tierra le permite levantar afiladas aristas del suelo, que puede utilizar como medio de ataque contra adversarios que se encuentren en la superficie. Cada espina tiene un daño base de 60 y ataca en Penetrantes. No producen efectos sobre seres inmateriales o en aquellos que sólo sean dañados por energía (salvo si las aristas se combinan a un hechizo de Encantar). Cada espina puede ser utilizada para atacar a un mismo individuo, o sobre distintos blancos. A pesar de ser un sortilegio de ataque, no puede utilizarse para realizar un choque de conjuros. Este ataque no puede usarse contra seres voladores que se encuentren en ese momento a más de 10 metros del una superficie sólida.",
+      "initialGrade": {
+        "effect": "2 Espinas.",
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "4 Espinas.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 120
+      },
+      "level": 36,
+      "name": "Espina de la Tierra",
+      "spellId": 0,
+      "type": "Ataque",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "+12 a la rotura.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "+15 a la rotura.",
+        "requiredIntelligence": 15,
+        "retention": 15,
+        "zeon": 150
+      },
+      "bookId": 12,
+      "dailyRetention": false,
+      "effect": "Mediante la magia, el brujo incrementa la capacidad de un cuerpo para romper cosas. A efectos de juego, la rotura del objeto o arma sobre el que se lance.",
+      "initialGrade": {
+        "effect": "+4 a la rotura.",
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "+8 a la rotura.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 90
+      },
+      "level": 40,
+      "name": "Rotura",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM 140 / 10 años.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "RM 160 / 1 siglo.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 300
+      },
+      "bookId": 13,
+      "dailyRetention": false,
+      "effect": "El brujo puede leer la historia de un objeto con el que se ponga en contacto, percibiendo los acontecimientos más importantes que hayan ocurrido con él durante un tiempo. Puede usarse también sobre personas pero, en tal caso, el individuo afectado podrá evitarlo superando una RM.",
+      "initialGrade": {
+        "effect": "RM 80 / 1 mes.",
+        "requiredIntelligence": 6,
+        "retention": 0,
+        "zeon": 120
+      },
+      "intermediateGrade": {
+        "effect": "RM 120 / 1 año.",
+        "requiredIntelligence": 9,
+        "retention": 0,
+        "zeon": 180
+      },
+      "level": 42,
+      "name": "Telemetría",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "350 metros de radio / Fuerza 13.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "500 metros de radio / Fuerza 14.",
+        "requiredIntelligence": 15,
+        "retention": 30,
+        "zeon": 320
+      },
+      "bookId": 14,
+      "dailyRetention": false,
+      "effect": "Otorga al hechicero el control de los campos magnéticos que se encuentren a su alrededor. De ese modo, podrá mover a distancia con completa libertad cualquier cuerpo metálico que esté a su alcance, con el equivalente de una fuerza determinada por el grado del conjuro. Su control sobre el magnetismo es tal, que sus acciones se ejecutan como un efecto automático sobre el metal. Podría, por ejemplo, paralizar a alguien que utiliza una armadura completa, o arrebatarle la espada de sus manos sin ni siquiera hacer un control de Proyección Mágica. En estos casos, es posible evitar tales efectos superando un control enfrentado de Fuerza o Agilidad. Este control es una acción activa, por lo que el mago ha de tener la acción para ejecutarlo (y, por tanto, no puede ser utilizado como defensa). Si un cuerpo está compuesto por metales sólo en una pequeña parte, o se encuentra escudado con energía, el control de Fuerza aplica un -4. De usarse para enarbolar un arma a distancia, se emplean las mismas reglas que en el poder mental Telequinesis Menor.",
+      "initialGrade": {
+        "effect": "25 metros de radio / Fuerza 10",
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "150 metros de radio / Fuerza 12",
+        "requiredIntelligence": 9,
+        "retention": 20,
+        "zeon": 180
+      },
+      "level": 46,
+      "name": "Control Magnético",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Forja 240.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 360
+      },
+      "arcaneGrade": {
+        "effect": "Forja 280.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 450
+      },
+      "bookId": 15,
+      "dailyRetention": false,
+      "effect": "Este conjuro emplea la magia para fraguar un objeto, empleando el equivalente a la habilidad de Forja. Dado que se utiliza puro poder sobrenatural, la creación no aplica ninguno de los modificadores por tiempo de la Tabla 21, ni necesita tener ningún tipo de equipo o fragua. Este hechizo no fabrica materiales, por lo que debe de ser el propio hechicero quien los consiga.",
+      "initialGrade": {
+        "effect": "Forja 120.",
+        "requiredIntelligence": 7,
+        "retention": 0,
+        "zeon": 160
+      },
+      "intermediateGrade": {
+        "effect": "Forja 180.",
+        "requiredIntelligence": 9,
+        "retention": 0,
+        "zeon": 270
+      },
+      "level": 50,
+      "name": "Forja",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "TA natural 10 / No puede ser dañado por ataques físicos no basados en energía / +3 Fuerza.",
+        "requiredIntelligence": 13,
+        "retention": 15,
+        "zeon": 140
+      },
+      "arcaneGrade": {
+        "effect": "Como en grado Intermedio, pero obtiene TA natural 12 / Los ataques físicos basados en energía le producen sólo la mitad de daño / +4 Fuerza.",
+        "requiredIntelligence": 16,
+        "retention": 20,
+        "zeon": 160
+      },
+      "bookId": 16,
+      "dailyRetention": false,
+      "effect": "El cuerpo designado por el hechicero adquirirá una enorme solidez, obteniendo una resistencia similar a la de la piedra. Si se lanza contra un individuo, obtendrá una armadura natural (salvo contra energía) y una barrera de daño equivalente al doble de su presencia. Mientras se encuentre en este estado sus músculos se fortalecerán, pero también disminuirá en 2 su Tipo de movimiento. El material al que se asemeja el cuerpo transformado varía, dependiendo del grado del conjuro: Roca, acero, diamante y malebolgia.",
+      "initialGrade": {
+        "effect": "Las habilidades descritas / TA natural 6 / +1 Fuerza.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "Las habilidades descritas / TA natural 8 / +2 Fuerza.",
+        "requiredIntelligence": 11,
+        "retention": 15,
+        "zeon": 120
+      },
+      "level": 52,
+      "name": "Cuerpo Sólido",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "2.000 Puntos de Vida.",
+        "requiredIntelligence": 13,
+        "retention": 25,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "3.000 Puntos de Vida.",
+        "requiredIntelligence": 15,
+        "retention": 30,
+        "zeon": 300
+      },
+      "bookId": 17,
+      "dailyRetention": false,
+      "effect": "Este hechizo afecta al cuerpo de un individuo, confiriéndole temporalmente la capacidad de absorber casi cualquier daño. A efectos de juego, otorga “puntos de vida adicionales”, permitiendo al afectado emplear las reglas de defensa de los seres con acumulación. Estos puntos serán los primeros que pierda antes de restar los suyos propios. La TA depende del Tamaño del personaje. Mientras este conjuro permanezca activo, el individuo sobre el que sea lanzado no puede utilizar ningún tipo de habilidad de defensa. Sólo un hechizo de Resistencia puede afectar a la vez a un sujeto determinado.",
+      "initialGrade": {
+        "effect": "500 Puntos de Vida.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "1.200 Puntos de Vida.",
+        "requiredIntelligence": 10,
+        "retention": 20,
+        "zeon": 180
+      },
+      "level": 56,
+      "name": "Resistencia",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM 180.",
+        "requiredIntelligence": 13,
+        "retention": 15,
+        "zeon": 260
+      },
+      "arcaneGrade": {
+        "effect": "RM 220.",
+        "requiredIntelligence": 16,
+        "retention": 20,
+        "zeon": 320
+      },
+      "bookId": 18,
+      "dailyRetention": true,
+      "effect": "Este hechizo transforma en piedra a un ser físico, confinándolo en esa forma durante años si es preciso. Mientras se encuentre petrificado, no podrá moverse ni ser consciente de lo que ocurre a su alrededor. Cuando el conjuro desaparezca, el individuo vuelve a su forma original, con la misma edad y apariencia que tenia en el momento en el que fue petrificado. Si la “estatua” sufre deterioros o se rompe, el sujeto puede recibir daños o incluso morir. Para resistirse a este efecto, es necesario superar una RM contra lo que determine el grado del conjuro. Un sujeto afectado por un conjuro de petrificación tiene derecho a repetir la tirada, al finalizar el primer día en el que fue afectado y, posteriormente, una vez a la semana.",
+      "initialGrade": {
+        "effect": "RM 120.",
+        "requiredIntelligence": 7,
+        "retention": 10,
+        "zeon": 140
+      },
+      "intermediateGrade": {
+        "effect": "RM 150.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 200
+      },
+      "level": 60,
+      "name": "Petrificar",
+      "spellId": 0,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "36 metros de longitud / 12 de anchura / Construcciones con barrera de daño 80.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 250
+      },
+      "arcaneGrade": {
+        "effect": "48 metros de longitud / 15 de anchura / Construcciones con barrera de daño 100.",
+        "requiredIntelligence": 14,
+        "retention": 0,
+        "zeon": 300
+      },
+      "bookId": 19,
+      "dailyRetention": false,
+      "effect": "El brujo es capaz de abrir grietas de gran tamaño en el suelo, capaces de engullir por igual tanto construcciones como personas. Si un individuo se encuentra en la zona en la que se abre la grieta, debe superar un control de Agilidad para evitar caer al interior y sufrir una caída de entre 20 y 50 metros. Las construcciones con una barrera de daño muy elevada no son afectadas por este conjuro, dado que su edificación es demasiado compacta para ser deteriorada por la fisura. La grieta tendrá una longitud y anchura máximas determinadas por el grado del conjuro.",
+      "initialGrade": {
+        "effect": "10 metros de longitud y 3 de anchura / Construcciones con barrera de daño 40.",
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 150
+      },
+      "intermediateGrade": {
+        "effect": "25 metros de longitud / 8 de anchura / Construcciones con barrera de daño 60.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 200
+      },
+      "level": 62,
+      "name": "Grieta",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "100 metros de radio / 200 de altura / 160 RM",
+        "requiredIntelligence": 14,
+        "retention": 60,
+        "zeon": 280
+      },
+      "arcaneGrade": {
+        "effect": "150 metros de radio / 300 de altura / 180 RM",
+        "requiredIntelligence": 16,
+        "retention": 65,
+        "zeon": 320
+      },
+      "bookId": 20,
+      "dailyRetention": true,
+      "effect": "Altera completamente las fuerzas gravitacionales de una zona del planeta, invirtiendo su potencia en cierta manera, le da la vuelta al mundo por completo. Todo lo que se encuentre en el interior de un área, comenzará de inmediato a “caer” hacia el cielo hasta la distancia máxima que determine el conjuro. El lanzador puede fijar un límite a la caída inferior del máximo (por ejemplo, afectar sólo lo que se encuentre en el interior de una construcción), o por el contrario, arrojarlo todo hasta su máxima altura. Naturalmente, las cosas que se encuentren pegadas al suelo no caerán, del mismo modo que un sujeto puede quedarse “colgando” si encuentra algo donde agarrarse. Un individuo puede evitar este efecto superando una RM. El hechizo permanece estático en el lugar donde fue lanzado.",
+      "initialGrade": {
+        "effect": "25 metros de radio / 50 de altura / 120 RM",
+        "requiredIntelligence": 10,
+        "retention": 40,
+        "zeon": 200
+      },
+      "intermediateGrade": {
+        "effect": "50 metros de radio / 100 de altura / 140 RM",
+        "requiredIntelligence": 12,
+        "retention": 50,
+        "zeon": 240
+      },
+      "level": 66,
+      "name": "Invertir la Gravedad",
+      "spellId": 0,
+      "type": "Automático",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Presencia máxima 100.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "Presencia máxima 140.",
+        "requiredIntelligence": 15,
+        "retention": 30,
+        "zeon": 300
+      },
+      "bookId": 21,
+      "dailyRetention": true,
+      "effect": "El hechicero puede utilizar este conjuro para crear cualquier cosa que desee, siempre y cuando esté compuesta por minerales o metales. El objeto creado debe de aparecer ubicado lógicamente según su naturaleza. Es decir, no se puede crear una pequeña montaña en mitad del aire.",
+      "initialGrade": {
+        "effect": "Presencia máxima 40.",
+        "requiredIntelligence": 8,
+        "retention": 15,
+        "zeon": 120
+      },
+      "intermediateGrade": {
+        "effect": "Presencia máxima 70.",
+        "requiredIntelligence": 10,
+        "retention": 20,
+        "zeon": 180
+      },
+      "level": 70,
+      "name": "Libre Acceso Nivel: 1-70 Creación Mineral",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "10 kilómetros de radio.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 360
+      },
+      "arcaneGrade": {
+        "effect": "15 kilómetros de radio.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 450
+      },
+      "bookId": 22,
+      "dailyRetention": false,
+      "effect": "El lanzador obtiene un conocimiento absoluto de todo lo que se halla a su alrededor en contacto con el suelo. En realidad este conjuro no es un hechizo de localización, sino que permite al brujo unir su conciencia con la propia tierra, y sentir todo lo que esté en contacto con ella como si se encontrara presente. Tanto seres vivos como construcciones, son localizados de inmediato (siempre y cuando no se trate de seres inmateriales o voladores). Este conjuro no permite ver a través de lugares sellados por energía.",
+      "initialGrade": {
+        "effect": "500 metros de radio.",
+        "requiredIntelligence": 7,
+        "retention": 0,
+        "zeon": 120
+      },
+      "intermediateGrade": {
+        "effect": "3 kilómetros de radio.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 270
+      },
+      "level": 72,
+      "name": "Erudición del Terreno",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "10 kilómetros de radio.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 300
+      },
+      "arcaneGrade": {
+        "effect": "15 kilómetros de radio.",
+        "requiredIntelligence": 14,
+        "retention": 30,
+        "zeon": 400
+      },
+      "bookId": 23,
+      "dailyRetention": false,
+      "effect": "Provoca una sacudida a gran escala capaz de devastar cuanto rodee al lanzador. Cualquier construcción con una barrera de daño inferior a 40 quedará destruida de inmediato, mientras que el resto sufrirá 5 puntos de daño en el primer asalto, que se irán doblando cada turno posterior. Así pues, recibirá 5 puntos de daño en el primero, 10 en el segundo, 20 en el tercero… Las construcciones con una barrera de daño superior a 150 no son afectadas por el terremoto. Naturalmente, cualquier individuo dentro de la zona del conjuro sufrirá sus efectos, dependiendo siempre del entorno en el que se encuentre.",
+      "initialGrade": {
+        "effect": "500 metros de radio.",
+        "requiredIntelligence": 8,
+        "retention": 15,
+        "zeon": 150
+      },
+      "intermediateGrade": {
+        "effect": "3 kilómetros de radio.",
+        "requiredIntelligence": 10,
+        "retention": 20,
+        "zeon": 200
+      },
+      "level": 76,
+      "name": "Libre Acceso Nivel: 1-80 Terremoto",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "100 metros de radio.",
+        "requiredIntelligence": 15,
+        "retention": 35,
+        "zeon": 320
+      },
+      "arcaneGrade": {
+        "effect": "150 metros de radio.",
+        "requiredIntelligence": 17,
+        "retention": 40,
+        "zeon": 400
+      },
+      "bookId": 24,
+      "dailyRetention": false,
+      "effect": "El control de la gravedad que otorga este hechizo permite al brujo crear una cúpula de alta presión, capaz de reventar completamente cualquier cosa física que se encuentre en su interior. Si un individuo está dentro de ella, deberá superar una RF contra 180 cada asalto, o sufrir un daño equivalente a la mitad de su nivel de fracaso. No obstante, cada punto de TA contra ataques Contundentes otorga un bono de +5 a la tirada de RF. La cúpula permanece estática en el lugar donde es lanzada, aunque la presión impide a cualquiera que se encuentre en su interior salir, si no es capaz de superar un control de Fuerza 16. La potencia gravitacional es tan fuerte que incluso los seres inmateriales son parcialmente afectados por ella, aunque podrán aplicar un bono de +40 a sus controles de Resistencia y +6 a los de Fuerza. Tiene un radio de 20 metros, dentro del cual no es posible seleccionar blancos, y sólo el lanzador será inmune a sus efectos. La condición para ser afectado por el conjuro es encontrarse en el interior de la cúpula el turno siguiente al que es lanzada.",
+      "initialGrade": {
+        "effect": "20 metros de radio.",
+        "requiredIntelligence": 9,
+        "retention": 20,
+        "zeon": 180
+      },
+      "intermediateGrade": {
+        "effect": "50 metros de radio.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 250
+      },
+      "level": 80,
+      "name": "Destrucción Gravitacional",
+      "spellId": 0,
+      "type": "Automático",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Quintuplica el peso / 300 metros de radio.",
+        "requiredIntelligence": 14,
+        "retention": 30,
+        "zeon": 280
+      },
+      "arcaneGrade": {
+        "effect": "Deduplica el peso / 400 metros de radio.",
+        "requiredIntelligence": 16,
+        "retention": 35,
+        "zeon": 320
+      },
+      "bookId": 25,
+      "dailyRetention": false,
+      "effect": "Incrementa la masa de la atmósfera de una zona determinada, aumentando con ello la fuerza de la gravedad y, por tanto, el peso de todo lo que se halle en su interior. A efectos de juego, aumenta el peso de todo lo que determine el hechicero dentro del área del conjuro. El área del sortilegio permanece estática en el lugar donde fue lanzado.",
+      "initialGrade": {
+        "effect": "Dobla el peso / 100 metros de radio.",
+        "requiredIntelligence": 10,
+        "retention": 20,
+        "zeon": 200
+      },
+      "intermediateGrade": {
+        "effect": "Triplica el peso / 200 metros de radio.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 240
+      },
+      "level": 82,
+      "name": "Crear Golem",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "10 meteoros.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 350
+      },
+      "arcaneGrade": {
+        "effect": "15 meteoros.",
+        "requiredIntelligence": 17,
+        "retention": 0,
+        "zeon": 450
+      },
+      "bookId": 26,
+      "dailyRetention": false,
+      "effect": "Este conjuro permite a su lanzador controlar la trayectoria de uno o varios meteoros y arrojarlos desde los cielos para provocar una devastación sin precedentes. A pesar de ser un conjuro de ataque, la llegada de cada asteroide requiere entre uno y diez asaltos tras su lanzamiento, los cuales se determinan lanzando un dado de diez por meteoro. Cada uno de ellos produce un daño base de 200 puntos en 10 metros de radio, atacando en la TA de Contundentes o Calor. No obstante, todo lo que se encuentre en una zona de 50 metros alrededor del impacto central, sufrirá también los efectos de la onda expansiva, que tiene un daño base de 60 puntos y produce adicionalmente un impacto de Fuerza 14. Naturalmente, este conjuro no produce efectos plenos si es lanzado en interiores o subterráneos, por lo que sus consecuencias pueden alterarse dependiendo del entorno.",
+      "initialGrade": {
+        "effect": "1 meteoro.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 200
+      },
+      "intermediateGrade": {
+        "effect": "5 meteoros.",
+        "requiredIntelligence": 13,
+        "retention": 0,
+        "zeon": 250
+      },
+      "level": 90,
+      "name": "Meteoro",
+      "spellId": 0,
+      "type": "Ataque",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "1.500 kilómetros de radio.",
+        "requiredIntelligence": 16,
+        "retention": 130,
+        "zeon": 650
+      },
+      "arcaneGrade": {
+        "effect": "5.000 kilómetros de radio.",
+        "requiredIntelligence": 18,
+        "retention": 160,
+        "zeon": 800
+      },
+      "bookId": 27,
+      "dailyRetention": false,
+      "effect": "Otorga la capacidad de controlar completamente todas las fuerzas gravitacionales de una zona del planeta. Dentro de ella, el lanzador tendrá un dominio absoluto de la gravedad, pudiendo anularla, incrementar hasta diez veces su valor o invertirla. Todo cuerpo físico que se encuentre en esta área, será automáticamente influido por sus efectos.",
+      "initialGrade": {
+        "effect": "100 kilómetros de radio.",
+        "requiredIntelligence": 12,
+        "retention": 70,
+        "zeon": 350
+      },
+      "intermediateGrade": {
+        "effect": "750 kilómetros de radio.",
+        "requiredIntelligence": 14,
+        "retention": 100,
+        "zeon": 500
+      },
+      "level": 92,
+      "name": "Control de la Gravedad",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "10.000 kilómetros de radio / 200 RM.",
+        "requiredIntelligence": 10,
+        "retention": 60,
+        "zeon": 100
+      },
+      "arcaneGrade": {
+        "effect": "Afecta cualquier elemento mineral existente / 240 RM.",
+        "requiredIntelligence": 12,
+        "retention": 100,
+        "zeon": 120
+      },
+      "bookId": 28,
+      "dailyRetention": false,
+      "effect": "El hechicero puede fusionar su esencia con el mundo, obteniendo un control absoluto de cualquier elemento mineral. Este control le permite alterar la apariencia del planeta dentro de su radio de acción, levantando montañas y cordilleras o haciéndolas desaparecer. Toda criatura basada en piedra que se encuentre dentro del área del sortilegio deberá superar una RM o será controlada de inmediato. Si la pasan, ya no necesitan volver a realizar el control. Los afectados tienen derecho a una nueva tirada únicamente si alteran su Resistencia base.",
+      "initialGrade": {
+        "effect": "100 kilómetros de radio / 140 RM.",
+        "requiredIntelligence": 5,
+        "retention": 30,
+        "zeon": 30
+      },
+      "intermediateGrade": {
+        "effect": "1.000 kilómetros de radio / 180 RM.",
+        "requiredIntelligence": 8,
+        "retention": 45,
+        "zeon": 80
+      },
+      "level": 96,
+      "name": "Uno con la Tierra",
+      "spellId": 0,
+      "type": "Automático",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM o RF 200 / 500 metros de radio.",
+        "requiredIntelligence": 15,
+        "retention": 120,
+        "zeon": 600
+      },
+      "arcaneGrade": {
+        "effect": "RM o RF 240 / 1 kilómetro de radio.",
+        "requiredIntelligence": 18,
+        "retention": 160,
+        "zeon": 1000
+      },
+      "bookId": 29,
+      "dailyRetention": false,
+      "effect": "Este hechizo permite a su lanzador controlar completamente la materia atómica que se encuentre a su alrededor, pudiendo moldearla como si fuese arcilla en sus manos. Para él, todo lo que se mueve no es más que un conjunto de átomos que alterar y manejar a su antojo. De este modo, obtiene el dominio absoluto de toda materia, orgánica o inorgánica, que no supere una RF o RM y se encuentre cerca. No hay límite para lo que el brujo puede hacer con un cuerpo que tiene controlado, desde alterar su forma, masa y apariencia, hasta hacerlo desaparecer completamente desperdigando sus átomos. Este conjuro sólo afecta materia física, por lo que no tiene ningún",
+      "initialGrade": {
+        "effect": "RM o RF 140 / 100 metros de radio.",
+        "requiredIntelligence": 10,
+        "retention": 45,
+        "zeon": 300
+      },
+      "intermediateGrade": {
+        "effect": "RM o RF 160 / 250 metros de radio.",
+        "requiredIntelligence": 12,
+        "retention": 80,
+        "zeon": 450
+      },
+      "level": 100,
+      "name": "Control Atómico",
+      "spellId": 0,
+      "type": "Automático",
+      "withRetention": true
+    }
+  ]
+}

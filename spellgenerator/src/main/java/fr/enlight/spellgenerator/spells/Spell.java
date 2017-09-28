@@ -1,7 +1,5 @@
 package fr.enlight.spellgenerator.spells;
 
-import android.os.Parcel;
-import android.os.Parcelable;
 import android.support.annotation.NonNull;
 
 /**
@@ -22,11 +20,6 @@ public class Spell implements Comparable<Spell> {
     public SpellGrade arcaneGrade;
     public boolean withRetention;
     public boolean dailyRetention;
-
-    public String searchWord;
-    public boolean searchInDescription;
-    public boolean highlightActionType;
-    public boolean highlightType;
 
     @Override
     public int compareTo(@NonNull Spell other) {

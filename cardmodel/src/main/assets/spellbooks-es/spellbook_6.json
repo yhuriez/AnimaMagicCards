@@ -1,0 +1,1074 @@
+{
+  "bookId": 6,
+  "bookName": "Agua",
+  "description": "El elemento del agua recoge dentro de sí muchos conceptos distintos. Es la vía que controla los líquidos y la pureza de las cosas. También representa el poder del hielo y el de las bajas temperaturas. Su poder es muy equilibrado ofensiva y defensivamente.",
+  "oppositeBook": "Fuego",
+  "secondaryBookAccessibles": [
+    "CAOS",
+    "GUERRA",
+    "LITERAE",
+    "MUERTE",
+    "MUSICAL",
+    "NOBLEZA",
+    "PAZ",
+    "PECADO",
+    "CONOCIMIENTO",
+    "SANGRE",
+    "SUEÑOS",
+    "TIEMPO",
+    "UMBRAL",
+    "VACÍO"
+  ],
+  "spells": [
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "500 metros.",
+        "requiredIntelligence": 10,
+        "retention": 15,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "1 kilómetro.",
+        "requiredIntelligence": 12,
+        "retention": 20,
+        "zeon": 180
+      },
+      "bookId": 1,
+      "dailyRetention": false,
+      "effect": "Atrae cualquier corriente o arroyo subterráneo que haya en las proximidades, haciendo brotar un manantial en el lugar designado por el brujo. El conjuro influye en los líquidos naturales que se encuentren a menos distancia del lanzador de lo que determina el grado del conjuro, aunque no es capaz de atravesar barreras de energía.",
+      "initialGrade": {
+        "effect": "100 metros.",
+        "requiredIntelligence": 5,
+        "retention": 5,
+        "zeon": 30
+      },
+      "intermediateGrade": {
+        "effect": "250 metros.",
+        "requiredIntelligence": 7,
+        "retention": 10,
+        "zeon": 80
+      },
+      "level": 2,
+      "name": "Manantial",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "5 Intensidades.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 90
+      },
+      "arcaneGrade": {
+        "effect": "8 Intensidades.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 140
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "Crea intensidades de frío o hielo. Mientras se mantenga el conjuro, la temperatura se conservará.",
+      "initialGrade": {
+        "effect": "1 Intensidad.",
+        "requiredIntelligence": 5,
+        "retention": 5,
+        "zeon": 30
+      },
+      "intermediateGrade": {
+        "effect": "3 Intensidades.",
+        "requiredIntelligence": 7,
+        "retention": 5,
+        "zeon": 50
+      },
+      "level": 6,
+      "name": "Crear Frío",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Presencia máxima 200.",
+        "requiredIntelligence": 10,
+        "retention": 20,
+        "zeon": 100
+      },
+      "arcaneGrade": {
+        "effect": "Presencia máxima 350.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 140
+      },
+      "bookId": 3,
+      "dailyRetention": true,
+      "effect": "Confiere la capacidad de respirar y moverse libremente por ambientes acuáticos. El personaje sobre el que se lance podrá trasladarse con su máximo Tipo de movimiento en dichos medios, respirando líquidos y resistiendo cualquier clase de presión. Puede afectar a tantos blancos como desee el brujo, siempre que la suma de sus presencias no supere lo que determine el grado del conjuro.",
+      "initialGrade": {
+        "effect": "Presencia máxima 50.",
+        "requiredIntelligence": 5,
+        "retention": 10,
+        "zeon": 50
+      },
+      "intermediateGrade": {
+        "effect": "Presencia máxima 100.",
+        "requiredIntelligence": 8,
+        "retention": 20,
+        "zeon": 70
+      },
+      "level": 10,
+      "name": "Capacidad Acuática",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "20 intensidades de frío.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 200
+      },
+      "arcaneGrade": {
+        "effect": "30 intensidades de frío.",
+        "requiredIntelligence": 13,
+        "retention": 15,
+        "zeon": 300
+      },
+      "bookId": 4,
+      "dailyRetention": false,
+      "effect": "Este conjuro permite al hechicero, o a las personas que designe, ser inmune a intensidades de frío. En el caso de que se reciba un ataque basado en dicho elemento, cada intensidad a la que es inmune disminuye 5 puntos el daño base del ataque y otorga un +5 a las Resistencias contra sus efectos.",
+      "initialGrade": {
+        "effect": "5 intensidades de frío.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 50
+      },
+      "intermediateGrade": {
+        "effect": "12 intensidades de frío.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 140
+      },
+      "level": 12,
+      "name": "Inmunidad al Frío",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Pasiva",
+      "advancedGrade": {
+        "effect": "Hasta Daño base 120.",
+        "requiredIntelligence": 12,
+        "retention": 10,
+        "zeon": 140
+      },
+      "arcaneGrade": {
+        "effect": "Hasta Daño base 160.",
+        "requiredIntelligence": 15,
+        "retention": 10,
+        "zeon": 220
+      },
+      "bookId": 5,
+      "dailyRetention": false,
+      "effect": "Levanta una burbuja de energía mágica que funciona a modo de escudo contra cualquier clase de ataque. La barrera no sufre perjuicio alguno si detiene ataques con un daño base igual o inferior a lo que indique el grado del conjuro, pero los impactos con un daño base superior la rompen automáticamente.",
+      "initialGrade": {
+        "effect": "Hasta Daño base 40.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 40
+      },
+      "intermediateGrade": {
+        "effect": "Hasta Daño base 90.",
+        "requiredIntelligence": 9,
+        "retention": 5,
+        "zeon": 90
+      },
+      "level": 16,
+      "name": "Burbuja Protectora",
+      "spellId": 0,
+      "type": "Defensa",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Daño 80 / Fuerza 12.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 140
+      },
+      "arcaneGrade": {
+        "effect": "Daño 100 / Fuerza 14.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 200
+      },
+      "bookId": 6,
+      "dailyRetention": false,
+      "effect": "El brujo genera una descarga ofensiva que, aunque ataca en Contundente, es capaz de dañar energía. Si causa daño o es detenido, produce un impacto sobre el blanco del sortilegio con una fuerza determinada por el grado del conjuro.",
+      "initialGrade": {
+        "effect": "Daño 40 / Fuerza 8.",
+        "requiredIntelligence": 5,
+        "retention": 0,
+        "zeon": 50
+      },
+      "intermediateGrade": {
+        "effect": "Daño 60 / Fuerza 10.",
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 90
+      },
+      "level": 20,
+      "name": "Impacto de Agua",
+      "spellId": 0,
+      "type": "Ataque",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM o RF 140 / 500 litros.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 150
+      },
+      "arcaneGrade": {
+        "effect": "RM o RF 180 / 5.000 litros.",
+        "requiredIntelligence": 15,
+        "retention": 15,
+        "zeon": 220
+      },
+      "bookId": 7,
+      "dailyRetention": false,
+      "effect": "Otorga completo control sobre una masa líquida. El hechizo permite alterar su forma y naturaleza, haciendo que se mueva por sí misma, dándole otra apariencia o incluso modificando su solidez. Si se ejecuta contra un elemental de agua, el mago podrá dominarlo si la criatura no supera una RM. Este sortilegio es incluso capaz de manejar el torrente sanguíneo de los seres vivos, pero en tal caso, el individuo afectado aplica un bono de +40 a su RM o RF. Manejar la sangre de una persona permite al hechicero producirle por asalto un negativo a la acción y un daño equivalente a la mitad del nivel de fracaso. En el caso de los elementales, tendrán derecho a un nuevo control al día o si reciben una orden completamente opuesta a su naturaleza, mientras que, cualquier otro individuo afectado, podrá repetirlo cada cinco asaltos para tratar de librarse completamente de la influencia del mago.",
+      "initialGrade": {
+        "effect": "RM o RF 100 / 5 litros.",
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "RM o RF 120 / 50 litros.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 100
+      },
+      "level": 22,
+      "name": "Control sobre los Líquidos",
+      "spellId": 0,
+      "type": "Efecto, Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Como en grado intermedio, pero también afecta a todos los estados sobrenaturales.",
+        "requiredIntelligence": 12,
+        "retention": 10,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "Como en grado Avanzado, pero el hechicero es capaz de elegir libremente que sentimientos congelar y cuales no.",
+        "requiredIntelligence": 15,
+        "retention": 10,
+        "zeon": 150
+      },
+      "bookId": 8,
+      "dailyRetention": false,
+      "effect": "Este hechizo hiela los sentimientos de una persona, otorgándole inmunidad psicológica contra todos los estados emocionales.",
+      "initialGrade": {
+        "effect": "Afecta a estados naturales.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "Como en grado base, pero el afectado deja de sentir también dolor.",
+        "requiredIntelligence": 9,
+        "retention": 5,
+        "zeon": 90
+      },
+      "level": 26,
+      "name": "Congelar las Emociones",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM 140 / 12 intensidades.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "RM 180 / 15 intensidades.",
+        "requiredIntelligence": 15,
+        "retention": 20,
+        "zeon": 180
+      },
+      "bookId": 9,
+      "dailyRetention": false,
+      "effect": "Permite controlar una cantidad de frío o hielo. El dominio capacita al brujo para alterar su potencia (hasta un la mitad de su valor arriba o abajo, en caso de que se mida por intensidades) o cambiar su forma. Si lo usa contra un ser basado naturalmente en frío, el mago podrá controlarlo si este no supera una RM. La criatura tendrá derecho a un nuevo control al día, o si recibe una orden completamente opuesta a su naturaleza.",
+      "initialGrade": {
+        "effect": "RM 100 / 5 intensidades.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 50
+      },
+      "intermediateGrade": {
+        "effect": "RM 120 / 8 intensidades.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 80
+      },
+      "level": 30,
+      "name": "Controlar el Frío",
+      "spellId": 0,
+      "type": "Efecto, Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM 160 / 25 metros de radio.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 140
+      },
+      "arcaneGrade": {
+        "effect": "RM 180 / 50 metros de radio.",
+        "requiredIntelligence": 15,
+        "retention": 15,
+        "zeon": 220
+      },
+      "bookId": 10,
+      "dailyRetention": false,
+      "effect": "Provoca un intenso frío sobre una o varias personas, congelando sus cuerpos al tiempo que los encierra en prisiones de hielo. Si se concentra sobre un único antagonista, aumenta el valor de la Resistencia 20 puntos. Dependiendo del nivel de fracaso del control, las consecuencias del conjuro son distintas. Si la diferencia es menor de 20, el efecto es parálisis menor si es menor de 80, de parálisis normal, y si es superior, parálisis completa.",
+      "initialGrade": {
+        "effect": "RM 120 / 5 metros de radio.",
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "RM 140/ 10 metros de radio.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 100
+      },
+      "level": 32,
+      "name": "Congelar",
+      "spellId": 0,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Pasiva",
+      "advancedGrade": {
+        "effect": "2.500 puntos de Resistencia.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "4.000 puntos de Resistencia.",
+        "requiredIntelligence": 15,
+        "retention": 15,
+        "zeon": 300
+      },
+      "bookId": 11,
+      "dailyRetention": false,
+      "effect": "Forma una barrera de hielo que protege frente a cualquier fuente de ataque. En el caso de que el escudo detenga con éxito una descarga de energía basada en luz u oscuridad, puede devolver el ataque hacia su lanzador con la misma habilidad con la que este lo proyectó.",
+      "initialGrade": {
+        "effect": "400 puntos de Resistencia.",
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "1.500 puntos de Resistencia.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 180
+      },
+      "level": 36,
+      "name": "Pantalla de Hielo",
+      "spellId": 0,
+      "type": "Defensa",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "5.000 litros de agua.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "50.000 litros de agua.",
+        "requiredIntelligence": 16,
+        "retention": 30,
+        "zeon": 350
+      },
+      "bookId": 12,
+      "dailyRetention": true,
+      "effect": "Crea agua o un cuerpo líquido similar. En el caso de que el compuesto tenga una presencia superior al agua, el DJ tiene la capacidad de reducir como considere necesario su cantidad. Este conjuro no permite elaborar líquidos con capacidades místicas.",
+      "initialGrade": {
+        "effect": "50 litros de agua.",
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "500 litros de agua.",
+        "requiredIntelligence": 9,
+        "retention": 20,
+        "zeon": 140
+      },
+      "level": 40,
+      "name": "Crear Líquidos",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Daño 200.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "Daño 250.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 300
+      },
+      "bookId": 13,
+      "dailyRetention": false,
+      "effect": "Produce una potente descarga de hielo capaz de dañar energía. El lanzador puede elegir libremente entre atacar en Frío o en Penetrantes.",
+      "initialGrade": {
+        "effect": "Daño 100.",
+        "requiredIntelligence": 6,
+        "retention": 0,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "Daño 150.",
+        "requiredIntelligence": 9,
+        "retention": 0,
+        "zeon": 160
+      },
+      "level": 42,
+      "name": "Ataque de Hielo",
+      "spellId": 0,
+      "type": "Ataque",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM o RF 180.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 150
+      },
+      "arcaneGrade": {
+        "effect": "RM o RF 200.",
+        "requiredIntelligence": 14,
+        "retention": 20,
+        "zeon": 200
+      },
+      "bookId": 14,
+      "dailyRetention": false,
+      "effect": "Este hechizo cristaliza un cuerpo, tornándolo frágil y quebradizo. El individuo afectado deberá superar un control de RM o RF o todo su cuerpo se congelará, quedando sometido de inmediato a paralización menor. Adicionalmente, cualquier daño que reciba se considera automáticamente crítico, sin importar cuál sea su valor. Los seres con acumulación no reciben un crítico directo, pero todo su cuerpo se torna un punto vulnerable.",
+      "initialGrade": {
+        "effect": "RM o RF 140.",
+        "requiredIntelligence": 8,
+        "retention": 5,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "RM o RF 160.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 120
+      },
+      "level": 46,
+      "name": "Cristalización",
+      "spellId": 0,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM 160.",
+        "requiredIntelligence": 13,
+        "retention": 15,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "RM 200.",
+        "requiredIntelligence": 15,
+        "retention": 20,
+        "zeon": 350
+      },
+      "bookId": 15,
+      "dailyRetention": false,
+      "effect": "El hechicero ata el cuerpo de un individuo al suyo propio, obligándole a imitar todos los movimientos que haga. En cierta manera, el personaje afectado se comporta como un espejo, que copia al instante a su controlador. Para resistir el conjuro es necesario superar un control de RM. El hechizo no permite repetir la tirada, salvo si el afectado se da cuenta de que va a ejecutar una acción que jamás realizaría.",
+      "initialGrade": {
+        "effect": "RM 80.",
+        "requiredIntelligence": 7,
+        "retention": 5,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "RM 130.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 160
+      },
+      "level": 50,
+      "name": "Control Reflejo",
+      "spellId": 0,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Como el Intermedio, pero la calidad de las armas es +10.",
+        "requiredIntelligence": 13,
+        "retention": 15,
+        "zeon": 140
+      },
+      "arcaneGrade": {
+        "effect": "Como el Avanzado, pero los ataques de Filo o Penetrantes basados en energía le producen sólo mitad de daño.",
+        "requiredIntelligence": 16,
+        "retention": 20,
+        "zeon": 160
+      },
+      "bookId": 16,
+      "dailyRetention": false,
+      "effect": "El cuerpo designado por el hechicero se transforma en una sustancia líquida, permitiéndole alterar su forma voluntariamente y volviéndolo inmune a muchas clases de ataques. El limitado metamorfismo funciona con efectividad, ya que quienquiera que lo vea, debe superar un control de Advertir contra Muy difícil para percatarse de su naturaleza líquida. Adicionalmente, tiene la capacidad de convertir sus extremidades en variadas armas físicas, que poseerán una calidad +5. Aunque no es propiamente inmaterial, alguien en forma líquida puede entrar en cualquier lugar en el que sea capaz de filtrarse, como pequeñas rendijas. En este estado, un personaje es completamente invulnerable a los ataques Penetrantes y de Filo que no dañen energía, mientras que los Contundentes le producen sólo la mitad de efecto (salvo si dañan energía, que seguirán afectándole plenamente). Desgraciadamente, se torna vulnerable a los efectos de frío paralizantes, aplicando un penalizador de -20 a sus Resistencias contra ellos.",
+      "initialGrade": {
+        "effect": "Las habilidades descritas.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "El sujeto podrá moverse por el agua a una velocidad equivalente a su Tipo de movimiento natural.",
+        "requiredIntelligence": 11,
+        "retention": 15,
+        "zeon": 120
+      },
+      "level": 52,
+      "name": "Cuerpo Líquido",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Pasiva",
+      "advancedGrade": {
+        "effect": "RM 180.",
+        "requiredIntelligence": 13,
+        "retention": 0,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "RM 220.",
+        "requiredIntelligence": 16,
+        "retention": 0,
+        "zeon": 320
+      },
+      "bookId": 17,
+      "dailyRetention": false,
+      "effect": "El brujo crea un espejo místico, capaz de reflejar cualquier estado sobrenatural del que él o un individuo cercano sea blanco. El efecto se refleja automáticamente sobre aquel que lo haya producido, quien deberá superar una RM para evitar caer víctima de su propio poder. Si, por ejemplo, el brujo es presa de un terrible dolor de carácter mágico, este hechizo obliga al individuo que se lo hubiera provocado a superar automáticamente la RM, o también sufrirá el mismo padecimiento. Este hechizo no tiene mantenimiento, pero el estado reflejado se mantendrá mientras perdure en el sujeto sobre el que fue lanzado originariamente. Cada efecto sólo puede tratar de reflejarse una vez.",
+      "initialGrade": {
+        "effect": "RM 120.",
+        "requiredIntelligence": 7,
+        "retention": 0,
+        "zeon": 120
+      },
+      "intermediateGrade": {
+        "effect": "RM 150.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 180
+      },
+      "level": 56,
+      "name": "Reflejar Estados",
+      "spellId": 0,
+      "type": "Automático",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "500 metros de radio / La RF se incrementa hasta 160.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "1 kilómetro de radio / La RF se incrementa hasta 180.",
+        "requiredIntelligence": 15,
+        "retention": 15,
+        "zeon": 320
+      },
+      "bookId": 18,
+      "dailyRetention": false,
+      "effect": "Crea una potente tormenta helada que congelará todo lo que encuentre. Quienquiera que se halle en ella, debe de superar cada cinco asaltos un control de RF contra 140, o sufrir automáticamente 10 puntos de daño basado en frío y un -5 acumulativo a toda acción. Debido a la intensa ventisca, las habilidades perceptivas aumentan dos niveles su dificultad. La tormenta tendrá un radio dentro del cual no es posible designar blancos. La condición para ser afectado será estar en el interior del área en el asalto posterior a su lanzamiento. El conjuro permanece siempre estático en el mismo lugar.",
+      "initialGrade": {
+        "effect": "50 metros de radio.",
+        "requiredIntelligence": 7,
+        "retention": 10,
+        "zeon": 120
+      },
+      "intermediateGrade": {
+        "effect": "150 metros de radio.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 180
+      },
+      "level": 60,
+      "name": "Tormenta de Hielo",
+      "spellId": 0,
+      "type": "Automático",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "3 kilómetros de radio.",
+        "requiredIntelligence": 12,
+        "retention": 45,
+        "zeon": 450
+      },
+      "arcaneGrade": {
+        "effect": "5 kilómetros de radio.",
+        "requiredIntelligence": 15,
+        "retention": 60,
+        "zeon": 600
+      },
+      "bookId": 19,
+      "dailyRetention": false,
+      "effect": "Otorga la capacidad de controlar limitadamente las corrientes de agua de mares y ríos, permitiendo al hechicero modificar su curso y potencia. El poder de este hechizo es tal, que el mago puede incluso producir pequeños maremotos o invertir el sentido de un río. Afecta en un radio alrededor del hechicero.",
+      "initialGrade": {
+        "effect": "500 metros de radio.",
+        "requiredIntelligence": 6,
+        "retention": 15,
+        "zeon": 150
+      },
+      "intermediateGrade": {
+        "effect": "1 kilómetro de radio.",
+        "requiredIntelligence": 9,
+        "retention": 30,
+        "zeon": 300
+      },
+      "level": 62,
+      "name": "Control de las Mareas",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "100 metros cúbicos.",
+        "requiredIntelligence": 13,
+        "retention": 15,
+        "zeon": 280
+      },
+      "arcaneGrade": {
+        "effect": "150 metros cúbicos / El control es contra Fuerza 15.",
+        "requiredIntelligence": 16,
+        "retention": 20,
+        "zeon": 350
+      },
+      "bookId": 20,
+      "dailyRetention": false,
+      "effect": "Este hechizo crea una inmensa masa de agua que engulle en su interior a todos los individuos que encuentre. Quienquiera que sea atrapado dentro, se moverá como si estuviera buceando y, a menos que respire en cuerpos líquidos, comenzará también a ahogarse. La prisión no permite que nadie escape de ella, produciendo potentes corrientes que empujan a sus víctimas hacia su centro. Si un personaje pretende huir, debe superar un control enfrentado contra una Fuerza 14, aunque obtiene un bonificar de +1 a su característica por cada nivel de Nadar que supere por encima de Fácil. La condición para ser afectado será encontrarse en el interior de la zona seleccionada, en el asalto posterior al lanzamiento del conjuro.",
+      "initialGrade": {
+        "effect": "10 metros cúbicos.",
+        "requiredIntelligence": 7,
+        "retention": 10,
+        "zeon": 140
+      },
+      "intermediateGrade": {
+        "effect": "50 metros cúbicos.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 200
+      },
+      "level": 66,
+      "name": "Prisión de Agua",
+      "spellId": 0,
+      "type": "Automático",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "5 Kilómetros de radio.",
+        "requiredIntelligence": 14,
+        "retention": 80,
+        "zeon": 400
+      },
+      "arcaneGrade": {
+        "effect": "10 Kilómetros de radio.",
+        "requiredIntelligence": 16,
+        "retention": 100,
+        "zeon": 500
+      },
+      "bookId": 21,
+      "dailyRetention": true,
+      "effect": "Como su nombre indica, crea una inmensa zona glacial alrededor del hechicero, sin importar en absoluto cuáles sean las condiciones climáticas del ambiente en el que se encuentra. Todo el entorno se cubrirá de inmediato de hielo y nieve, reduciendo la temperatura ambiental a varios grados bajo cero. Mientras el conjuro se mantenga, el frío no será afectado por los fenómenos atmosféricos naturales.",
+      "initialGrade": {
+        "effect": "1 Kilómetro de radio.",
+        "requiredIntelligence": 10,
+        "retention": 40,
+        "zeon": 200
+      },
+      "intermediateGrade": {
+        "effect": "3 Kilómetros de radio.",
+        "requiredIntelligence": 12,
+        "retention": 60,
+        "zeon": 300
+      },
+      "level": 70,
+      "name": "Glacial",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "20 kilómetros de longitud.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 450
+      },
+      "arcaneGrade": {
+        "effect": "30 kilómetros de longitud / Arrasa construcciones de hasta barrera de daño 90.",
+        "requiredIntelligence": 17,
+        "retention": 0,
+        "zeon": 550
+      },
+      "bookId": 22,
+      "dailyRetention": false,
+      "effect": "Levanta un devastador tsunami capaz de arrasar completamente la costa. Las construcciones con una barrera de daño inferior a 80 serán destruidas de inmediato, mientras que el resto sufrirá enormes daños. Naturalmente, cualquier individuo dentro de la zona de impacto padecerá las consecuencias lógicas del fenómeno.",
+      "initialGrade": {
+        "effect": "1 kilómetro de longitud.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 250
+      },
+      "intermediateGrade": {
+        "effect": "10 kilómetros de longitud.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 350
+      },
+      "level": 72,
+      "name": "Tsunami",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM 180 / Copia entidades de hasta Nivel 8 / Imita poderes de hasta Gnosis 25.",
+        "requiredIntelligence": 14,
+        "retention": 35,
+        "zeon": 320
+      },
+      "arcaneGrade": {
+        "effect": "RM 200 / Copia entidades de hasta Nivel 12 / Imita poderes de hasta Gnosis 30.",
+        "requiredIntelligence": 16,
+        "retention": 40,
+        "zeon": 400
+      },
+      "bookId": 23,
+      "dailyRetention": false,
+      "effect": "El poder de este hechizo manifiesta un reflejo espiritual de una persona o criatura, una copia anímica de un individuo que conserva todas y cada una de las cualidades que tiene el original. La entidad es idéntica al personaje afectado, salvo por el hecho de que es un ser espiritual, con la capacidad de interactuar con el mundo real y visible por cualquiera (pero aun así, inmune a cualquier ataque no basado en energía). Si la criatura tiene poderes que dependen de un Gnosis superior a 20, dichas habilidades no son copiadas. El reflejo obedece las órdenes del brujo, pero sólo puede manifestarse mientras se encuentre en presencia del sujeto a partir del cual se ha formado. Puede exteriorizarse el alma de cualquiera. El brujo sólo puede tener activo un hechizo de reflejo del alma sobre un mismo individuo a la vez. Si el sujeto que va a ser copiado trata de resistirse, puede evitar los efectos del sortilegio superando una RM. Este conjuro no funciona sobre el propio lanzador.",
+      "initialGrade": {
+        "effect": "RM 140 / Copia entidades de hasta Nivel 3.",
+        "requiredIntelligence": 10,
+        "retention": 20,
+        "zeon": 200
+      },
+      "intermediateGrade": {
+        "effect": "RM 160 / Copia entidades de hasta Nivel 5.",
+        "requiredIntelligence": 12,
+        "retention": 30,
+        "zeon": 280
+      },
+      "level": 76,
+      "name": "Reflejo del Alma",
+      "spellId": 0,
+      "type": "Automático",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "500 metros de radio / RM 160 / El tiempo se reduce una milésima parte.",
+        "requiredIntelligence": 14,
+        "retention": 30,
+        "zeon": 450
+      },
+      "arcaneGrade": {
+        "effect": "1 kilómetro de radio / RM 180 / El tiempo se reduce una millonésima parte.",
+        "requiredIntelligence": 16,
+        "retention": 35,
+        "zeon": 600
+      },
+      "bookId": 24,
+      "dailyRetention": false,
+      "effect": "Este conjuro influye en las fibras del continuo espacio tiempo de una parte de la realidad, aminorando su flujo de modo que, para todo el mundo, incluyendo al propio lanzador, trascurre mucho más lentamente. La zona afectada por el hechizo se separa de la realidad momentáneamente, haciendo que cada instante dure más en el exterior por ejemplo, si el tiempo se reduce una décima parte, cada minuto dentro serían diez fuera del área del conjuro. El área de acción es alrededor del brujo, aunque se extiende a una velocidad de 10 metros por asalto a partir del momento en el que es lanzado. Si alguien penetra en ella posteriormente, se ve igualmente influenciado. Las entidades afectadas pueden evitar las consecuencias del hechizo superando una RM, pero únicamente si posee un Gnosis mayor de 30. La condición para ser influido es encontrarse en el interior de la zona seleccionada, en el asalto posterior al lanzamiento del conjuro.",
+      "initialGrade": {
+        "effect": "100 metros de radio / RM 120 / El tiempo se reduce una décima parte.",
+        "requiredIntelligence": 10,
+        "retention": 20,
+        "zeon": 200
+      },
+      "intermediateGrade": {
+        "effect": "200 metros de radio / RM 140 / El tiempo se reduce una centésima parte.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 320
+      },
+      "level": 80,
+      "name": "Enlentecer el Tiempo",
+      "spellId": 0,
+      "type": "Automático",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Nivel 6.",
+        "requiredIntelligence": 14,
+        "retention": 100,
+        "zeon": 500
+      },
+      "arcaneGrade": {
+        "effect": "Nivel 10.",
+        "requiredIntelligence": 16,
+        "retention": 140,
+        "zeon": 700
+      },
+      "bookId": 25,
+      "dailyRetention": false,
+      "effect": "Crea una entidad de agua con apariencia de vida bajo el control absoluto del hechicero. El ente será desarrollado como un Ser Entre Mundos, usando los poderes y limitaciones de los elementales de agua del Capítulo 26. Para calcular su nivel máximo, se emplean las mismas reglas que en el conjuro Crear Ser de la vía de Creación.",
+      "initialGrade": {
+        "effect": "Nivel 1.",
+        "requiredIntelligence": 10,
+        "retention": 50,
+        "zeon": 250
+      },
+      "intermediateGrade": {
+        "effect": "Nivel 3.",
+        "requiredIntelligence": 12,
+        "retention": 70,
+        "zeon": 350
+      },
+      "level": 82,
+      "name": "Crear Ondina",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Pasiva",
+      "advancedGrade": {
+        "effect": "Valor zeónico máximo 300.",
+        "requiredIntelligence": 15,
+        "retention": 90,
+        "zeon": 550
+      },
+      "arcaneGrade": {
+        "effect": "Valor zeónico máximo 400.",
+        "requiredIntelligence": 18,
+        "retention": 110,
+        "zeon": 800
+      },
+      "bookId": 26,
+      "dailyRetention": false,
+      "effect": "Este hechizo congela la magia, paralizando temporalmente un conjuro y anulando sus efectos. Mientras un sortilegio permanezca helado no desaparece, pero se queda estancado sin producir consecuencias, y tampoco requiere que se pague su mantenimiento. Afecta tanto a hechizos controlados por el brujo como a aquellos que han sido lanzados por terceros. En el momento en el que congelar la magia deja de mantenerse, el sortilegio estancado vuelve a ser efectivo. Dado que es pasivo, puede congelar hechizos que se usan en el mismo asalto en que es ejecutado.",
+      "initialGrade": {
+        "effect": "Valor zeónico máximo 150.",
+        "requiredIntelligence": 9,
+        "retention": 50,
+        "zeon": 250
+      },
+      "intermediateGrade": {
+        "effect": "Valor zeónico máximo 250.",
+        "requiredIntelligence": 12,
+        "retention": 75,
+        "zeon": 40
+      },
+      "level": 86,
+      "name": "Congelar la Magia",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "5 kilómetros de radio máximo.",
+        "requiredIntelligence": 15,
+        "retention": 60,
+        "zeon": 600
+      },
+      "arcaneGrade": {
+        "effect": "10 kilómetros de radio máximo / Se pueden imitar seres de hasta presencia 30.",
+        "requiredIntelligence": 17,
+        "retention": 70,
+        "zeon": 800
+      },
+      "bookId": 27,
+      "dailyRetention": false,
+      "effect": "El brujo conjura el reflejo de un territorio, creando una realidad paralela a imagen y semejanza de un lugar que existe en el mundo real. El reflejo es idéntico al sitio imitado, incluyendo tanto construcciones como flora y clima, que permanecen inalterables de la manera en la que se encontraban cuando el sortilegio fue lanzado. Únicamente no podrán ser imitados los seres vivos con una presencia superior a 20 y los lugares con características excepcionales. En el momento de lanzar el conjuro, el hechicero debe crear distintas puertas que conecten el mundo real con su obra, que podrán ubicarse y tener la forma que desee. No hay un número máximo de aperturas, aunque por lo menos está obligado a crear una.",
+      "initialGrade": {
+        "effect": "500 metros de radio máximo.",
+        "requiredIntelligence": 9,
+        "retention": 30,
+        "zeon": 300
+      },
+      "intermediateGrade": {
+        "effect": "2 kilómetros de radio máximo.",
+        "requiredIntelligence": 12,
+        "retention": 50,
+        "zeon": 480
+      },
+      "level": 90,
+      "name": "En el Interior del Espejo",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "10.000 kilómetros de radio / 200 RM.",
+        "requiredIntelligence": 14,
+        "retention": 60,
+        "zeon": 600
+      },
+      "arcaneGrade": {
+        "effect": "100.000 kilómetros de radio / 240 RM.",
+        "requiredIntelligence": 16,
+        "retention": 100,
+        "zeon": 1000
+      },
+      "bookId": 28,
+      "dailyRetention": true,
+      "effect": "El lanzador controla cualquier núcleo de frío o hielo sin importar el número de intensidades que lo compongan. Este dominio le permite disminuir la temperatura ambiental dentro de su área de acción, y cristalizar hielo allí donde desee. Cualquier criatura basada en frío que se encuentre en el interior, deberá superar una RM o será dominada de inmediato. Si la pasan, ya no necesitan volver a realizar el control. Los afectados tienen derecho a una nueva tirada únicamente si alteran sus Resistencias.",
+      "initialGrade": {
+        "effect": "100 kilómetros de radio / 140 RM.",
+        "requiredIntelligence": 10,
+        "retention": 30,
+        "zeon": 300
+      },
+      "intermediateGrade": {
+        "effect": "1.000 kilómetros de radio / 180 RM.",
+        "requiredIntelligence": 12,
+        "retention": 45,
+        "zeon": 450
+      },
+      "level": 92,
+      "name": "Señor de los Hielos",
+      "spellId": 0,
+      "type": "Automático",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "10.000 kilómetros de radio / 200 RM.",
+        "requiredIntelligence": 15,
+        "retention": 60,
+        "zeon": 600
+      },
+      "arcaneGrade": {
+        "effect": "Afecta cualquier sustancia líquida existente / 240 RM.",
+        "requiredIntelligence": 18,
+        "retention": 100,
+        "zeon": 1000
+      },
+      "bookId": 29,
+      "dailyRetention": false,
+      "effect": "Otorga el control absoluto de todas las sustancias líquidas que se encuentren en un radio de 100 kilómetros. Este dominio le permite alterar libremente los océanos, ríos y lagos de cualquier magnitud, moldeándolos a su antojo como si fuesen una extensión de su ser. Toda criatura basada en agua que se encuentre dentro del área del conjuro, deberá superar una RM o será controlada por el lanzador. Si la pasan, ya no necesitan volver a realizar el control. Los afectados tienen derecho a una nueva tirada únicamente si alteran su Resistencia base.",
+      "initialGrade": {
+        "effect": "100 kilómetros de radio / 140 RM.",
+        "requiredIntelligence": 10,
+        "retention": 30,
+        "zeon": 300
+      },
+      "intermediateGrade": {
+        "effect": "1.000 kilómetros de radio / 180 RM.",
+        "requiredIntelligence": 12,
+        "retention": 45,
+        "zeon": 450
+      },
+      "level": 96,
+      "name": "Señor de las Aguas",
+      "spellId": 0,
+      "type": "Automático",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM 220.",
+        "requiredIntelligence": 17,
+        "retention": 130,
+        "zeon": 1200
+      },
+      "arcaneGrade": {
+        "effect": "RM 260.",
+        "requiredIntelligence": 20,
+        "retention": 145,
+        "zeon": 1600
+      },
+      "bookId": 30,
+      "dailyRetention": true,
+      "effect": "Este hechizo congela toda la realidad, deteniendo completamente el paso del tiempo. Mientras duren sus efectos, la existencia permanece paralizada únicamente el lanzador podrá moverse y alterar su entorno libremente (aunque será incapaz de regenerar Zeon). Las entidades afectadas pueden evitar las consecuencias del hechizo superando una RM, pero únicamente si poseen un Gnosis mayor de 35 o 20 puntos por encima de su Natura.",
+      "initialGrade": {
+        "effect": "RM 120.",
+        "requiredIntelligence": 12,
+        "retention": 90,
+        "zeon": 450
+      },
+      "intermediateGrade": {
+        "effect": "RM 180.",
+        "requiredIntelligence": 15,
+        "retention": 115,
+        "zeon": 800
+      },
+      "level": 100,
+      "name": "Un mundo Perfecto",
+      "spellId": 0,
+      "type": "Automático",
+      "withRetention": true
+    }
+  ]
+}

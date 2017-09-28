@@ -1,0 +1,4187 @@
+{
+  "bookId": 12,
+  "bookName": "Libre acceso",
+  "secondaryBookAccessibles": [
+    "CAOS",
+    "GUERRA",
+    "LITERAE",
+    "MUERTE",
+    "MUSICAL",
+    "NOBLEZA",
+    "PAZ",
+    "PECADO",
+    "CONOCIMIENTO",
+    "SANGRE",
+    "SUEÑOS",
+    "TIEMPO",
+    "UMBRAL",
+    "VACÍO"
+  ],
+  "spells": [
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "6 intensidades.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 110
+      },
+      "arcaneGrade": {
+        "effect": "9 intensidades.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 130
+      },
+      "bookId": 1,
+      "dailyRetention": false,
+      "effect": "Crea intensidades de fuego en una materia que sea naturalmente inflamable. Si prende, no será necesario mantener el conjuro.",
+      "initialGrade": {
+        "effect": "1 intensidad.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 40
+      },
+      "intermediateGrade": {
+        "effect": "3 intensidades.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 80
+      },
+      "level": 10,
+      "name": "Crear Llamas",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "100 kilogramos.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 90
+      },
+      "arcaneGrade": {
+        "effect": "150 kilogramos.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 120
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "Este conjuro mueve artefactos inorgánicos sin la necesidad de que exista contacto físico con ellos, otorgándoles un Tipo de Vuelo 10. El peso máximo es determinado por el grado del conjuro.",
+      "initialGrade": {
+        "effect": "10 kilogramos.",
+        "requiredIntelligence": 5,
+        "retention": 5,
+        "zeon": 30
+      },
+      "intermediateGrade": {
+        "effect": "50 kilogramos.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 70
+      },
+      "level": 10,
+      "name": "Mover Objetos",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "150 metros de radio / 180 en Música.",
+        "requiredIntelligence": 10,
+        "retention": 5,
+        "zeon": 100
+      },
+      "arcaneGrade": {
+        "effect": "250 metros de radio / 240 en Música.",
+        "requiredIntelligence": 12,
+        "retention": 10,
+        "zeon": 120
+      },
+      "bookId": 3,
+      "dailyRetention": false,
+      "effect": "Crea una melodía audible para todos aquellos que se encuentren en el radio de acción del hechizo. La calidad musical de la composición será realizada con el equivalente a una habilidad final en Música determinada por el grado del conjuro. Sólo puede reproducir temas que el lanzador conozca, aunque sea de un modo vago.",
+      "initialGrade": {
+        "effect": "10 metros de radio / 80 en Música.",
+        "requiredIntelligence": 5,
+        "retention": 5,
+        "zeon": 50
+      },
+      "intermediateGrade": {
+        "effect": "50 metros de radio / 120 en Música.",
+        "requiredIntelligence": 8,
+        "retention": 5,
+        "zeon": 80
+      },
+      "level": 10,
+      "name": "Crear Música",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Presencia máxima 120.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 100
+      },
+      "arcaneGrade": {
+        "effect": "Presencia máxima 140.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 140
+      },
+      "bookId": 4,
+      "dailyRetention": false,
+      "effect": "Elimina cualquier impureza física menor (como suciedad, mal olor…), en el cuerpo y ropas del objetivo del conjuro. También puede ser utilizado sobre lugares u objetos para sanearlos, siempre que la presencia de estos no supere a lo que determina el grado del conjuro.",
+      "initialGrade": {
+        "effect": "Presencia máxima 40.",
+        "requiredIntelligence": 5,
+        "retention": 0,
+        "zeon": 30
+      },
+      "intermediateGrade": {
+        "effect": "Presencia máxima 80.",
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 60
+      },
+      "level": 10,
+      "name": "Aseamiento",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "+150 a Saltar / Permite alcanzar la dificultad de Inhumano en los controles.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 100
+      },
+      "arcaneGrade": {
+        "effect": "+200 a Saltar/ Permite alcanzar la dificultad de Zen en los controles.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 140
+      },
+      "bookId": 5,
+      "dailyRetention": false,
+      "effect": "El individuo afectado por este hechizo aumenta sobrenaturalmente su capacidad de saltar. El conjuro añade un bono a la base de la habilidad secundaria Saltar.",
+      "initialGrade": {
+        "effect": "+50 a Saltar.",
+        "requiredIntelligence": 5,
+        "retention": 5,
+        "zeon": 50
+      },
+      "intermediateGrade": {
+        "effect": "+100 a Saltar.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 80
+      },
+      "level": 10,
+      "name": "Saltar",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "240 en Cerrajería.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 100
+      },
+      "arcaneGrade": {
+        "effect": "280 en Cerrajería.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 140
+      },
+      "bookId": 6,
+      "dailyRetention": false,
+      "effect": "Permite abrir cualquier puerta cerrada utilizando una habilidad final en Cerrajería determinada por el grado del conjuro.",
+      "initialGrade": {
+        "effect": "80 en Cerrajería.",
+        "requiredIntelligence": 5,
+        "retention": 0,
+        "zeon": 30
+      },
+      "intermediateGrade": {
+        "effect": "140 en Cerrajería.",
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 70
+      },
+      "level": 10,
+      "name": "Apertura",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "180 en Trucos de Manos.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "240 en Trucos de Manos.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 160
+      },
+      "bookId": 7,
+      "dailyRetention": false,
+      "effect": "Este conjuro hace que cuerdas, cadenas o cualquier tipo de filamento cuya naturaleza le permita ser atado, se anuden con una habilidad final en Trucos de Manos determinada por el grado del conjuro. El hechicero también puede ordenar a las sogas que aten a un sujeto, en cuyo caso, el blanco deberá defenderse contra un ataque automático con una Habilidad final equivalente a la habilidad de Trucos de Manos del conjuro La Fuerza de la sujeción dependerá del material usado. Como referencia, una cuerda muy gruesa tendría una Fuerza 10, mientras que unas cadenas emplearían un 12. Cabe aclarar que las sogas no son creadas por el sortilegio.",
+      "initialGrade": {
+        "effect": "120 en Trucos de Manos.",
+        "requiredIntelligence": 5,
+        "retention": 0,
+        "zeon": 40
+      },
+      "intermediateGrade": {
+        "effect": "140 en Trucos de Manos.",
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 80
+      },
+      "level": 10,
+      "name": "Atar",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "200 metros de radio / 200 Valoración mágica.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "300 metros de radio / 240 Valoración mágica.",
+        "requiredIntelligence": 12,
+        "retention": 10,
+        "zeon": 150
+      },
+      "bookId": 8,
+      "dailyRetention": false,
+      "effect": "El hechicero detecta automáticamente cualquier fuente de magia a su alrededor. Si está oculta, emplea una habilidad de Valoración Mágica final determinada por el grado del conjuro para detectarla.",
+      "initialGrade": {
+        "effect": "25 metros de radio / 140 Valoración mágica.",
+        "requiredIntelligence": 5,
+        "retention": 5,
+        "zeon": 40
+      },
+      "intermediateGrade": {
+        "effect": "100 metros de radio / 180 Valoración mágica.",
+        "requiredIntelligence": 8,
+        "retention": 5,
+        "zeon": 80
+      },
+      "level": 10,
+      "name": "Detección de Magia",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Pasiva",
+      "advancedGrade": {
+        "effect": "500 metros de caída / Presencia máxima 240.",
+        "requiredIntelligence": 10,
+        "retention": 20,
+        "zeon": 160
+      },
+      "arcaneGrade": {
+        "effect": "Anula los efectos de una caída desde cualquier distancia / Presencia máxima 320.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 240
+      },
+      "bookId": 9,
+      "dailyRetention": false,
+      "effect": "Anula los efectos de una caída desde gran altura. En juego, suprime completamente el impacto sufrido al caer de una distancia elevada, o lo reduce equivalentemente en mayores distancias. Puede afectar a varios blancos, siempre que la suma de sus presencias no superen lo que determina el grado del conjuro.",
+      "initialGrade": {
+        "effect": "50 metros de caída / Presencia máxima 60.",
+        "requiredIntelligence": 5,
+        "retention": 5,
+        "zeon": 40
+      },
+      "intermediateGrade": {
+        "effect": "150 metros de caída / Presencia máxima 160.",
+        "requiredIntelligence": 8,
+        "retention": 15,
+        "zeon": 80
+      },
+      "level": 10,
+      "name": "Detener Caída",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Presencia máxima del objeto 90 / Hace desaparecer 50.000 caracteres de texto.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "Presencia máxima del objeto 120 / Hace desaparecer 250.000 caracteres de texto.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 160
+      },
+      "bookId": 10,
+      "dailyRetention": false,
+      "effect": "El conjuro hace desaparecer cierta cantidad de caracteres de texto sobre un objeto o superficie. No destruye la materia sobre la que se haya escrito, sino que elimina las letras o caracteres. Por ejemplo, en una hoja de papel desaparecería la tinta, mientras que en un grabado se rellenaría la piedra.",
+      "initialGrade": {
+        "effect": "Presencia máxima del objeto 30 / Hace desaparecer 500 caracteres de texto.",
+        "requiredIntelligence": 5,
+        "retention": 0,
+        "zeon": 40
+      },
+      "intermediateGrade": {
+        "effect": "Presencia máxima del objeto 60 / Hace desaparecer 5.000 caracteres de texto.",
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 80
+      },
+      "level": 10,
+      "name": "Deshacer Escritura",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Máximo de 250 palabras.",
+        "requiredIntelligence": 10,
+        "retention": 15,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "Máximo de 500 palabras.",
+        "requiredIntelligence": 12,
+        "retention": 20,
+        "zeon": 180
+      },
+      "bookId": 11,
+      "dailyRetention": false,
+      "effect": "Marca un lugar u objeto con un mensaje escrito. El hechicero podrá hacer que aparezca y desaparezca a voluntad, incluso si no está presente (aunque no por ello sabe si hay alguien allí para leerlo).",
+      "initialGrade": {
+        "effect": "Máximo de 50 palabras.",
+        "requiredIntelligence": 5,
+        "retention": 5,
+        "zeon": 30
+      },
+      "intermediateGrade": {
+        "effect": "Máximo de 150 palabras.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 70
+      },
+      "level": 10,
+      "name": "Mensaje Estático",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Presencia máxima 80 / RM 140.",
+        "requiredIntelligence": 10,
+        "retention": 5,
+        "zeon": 100
+      },
+      "arcaneGrade": {
+        "effect": "Presencia máxima 100 / RM 160.",
+        "requiredIntelligence": 12,
+        "retention": 10,
+        "zeon": 120
+      },
+      "bookId": 12,
+      "dailyRetention": false,
+      "effect": "Este conjuro cambia el color de una materia, objeto o incluso persona cuya presencia no sea superior a lo que determina el grado del conjuro. Para resistirse, hace falta superar una RM. Alguien afectado no tiene derecho a una nueva resistencia mientras el conjuro se mantenga.",
+      "initialGrade": {
+        "effect": "Presencia máxima 40 / RM 100.",
+        "requiredIntelligence": 5,
+        "retention": 5,
+        "zeon": 30
+      },
+      "intermediateGrade": {
+        "effect": "Presencia máxima 60 / RM 120.",
+        "requiredIntelligence": 8,
+        "retention": 5,
+        "zeon": 80
+      },
+      "level": 10,
+      "name": "Cambiar de Color",
+      "spellId": 0,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "A 500 metros.",
+        "requiredIntelligence": 11,
+        "retention": 15,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "A 1 kilómetro.",
+        "requiredIntelligence": 13,
+        "retention": 20,
+        "zeon": 160
+      },
+      "bookId": 13,
+      "dailyRetention": false,
+      "effect": "Crea un sonido en un lugar determinado.",
+      "initialGrade": {
+        "effect": "A 50 metros.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 40
+      },
+      "intermediateGrade": {
+        "effect": "A 200 metros.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 80
+      },
+      "level": 20,
+      "name": "Crear Sonidos",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Imagen de 10 metros cuadrado.",
+        "requiredIntelligence": 11,
+        "retention": 10,
+        "zeon": 100
+      },
+      "arcaneGrade": {
+        "effect": "Imagen de 15 metros cuadrado / La imagen tiene un mayor grado de realismo, por lo que cualquiera que lo vea debe superar un Advertir contra Muy Difícil o Buscar contra Medio para darse cuenta de que no es real.",
+        "requiredIntelligence": 13,
+        "retention": 15,
+        "zeon": 130
+      },
+      "bookId": 14,
+      "dailyRetention": false,
+      "effect": "Recrea la imagen de algo que el hechicero ha visto con anterioridad. La aparición se trata de un holograma translúcido y sin sustancia, que permanece inmóvil en el lugar donde es creado.",
+      "initialGrade": {
+        "effect": "Imagen de 1 metro cuadrado.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 40
+      },
+      "intermediateGrade": {
+        "effect": "Imagen de 5 metros cuadrado.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 70
+      },
+      "level": 20,
+      "name": "Recrear Imagen",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Presencia máxima 90.",
+        "requiredIntelligence": 11,
+        "retention": 10,
+        "zeon": 110
+      },
+      "arcaneGrade": {
+        "effect": "Presencia máxima 120.",
+        "requiredIntelligence": 13,
+        "retention": 10,
+        "zeon": 130
+      },
+      "bookId": 15,
+      "dailyRetention": false,
+      "effect": "Otorga a un objeto o lugar el carácter de cuerpo sobrenatural. La sustancia afectada será material para seres intangibles y conjuros. Si, por ejemplo, es lanzado sobre un arma, será capaz de dañar a seres inmateriales (empleando la presencia del objeto), y una pared encantada no podrá ser traspasada por seres etéreos o efectos místicos. Permite afectar a multitud de objetos, siempre y cuando la suma de sus presencias no supere el valor indicado por el conjuro.",
+      "initialGrade": {
+        "effect": "Presencia máxima 40.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 50
+      },
+      "intermediateGrade": {
+        "effect": "Presencia máxima 60.",
+        "requiredIntelligence": 9,
+        "retention": 5,
+        "zeon": 80
+      },
+      "level": 20,
+      "name": "Encantar",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Presencia máxima 200.",
+        "requiredIntelligence": 11,
+        "retention": 10,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "Presencia máxima 320.",
+        "requiredIntelligence": 13,
+        "retention": 15,
+        "zeon": 160
+      },
+      "bookId": 16,
+      "dailyRetention": false,
+      "effect": "Confiere la capacidad de respirar en el interior de cualquier líquido, como si se tratase de aire. Se puede afectar a varios sujetos, siempre que la suma de sus presencias no supere el valor indicado por el conjuro.",
+      "initialGrade": {
+        "effect": "Presencia máxima 60.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 40
+      },
+      "intermediateGrade": {
+        "effect": "Presencia máxima 100.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 80
+      },
+      "level": 20,
+      "name": "Respirar Líquidos",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "+150 a Trepar / Permite alcanzar la dificultad de Inhumano en los controles.",
+        "requiredIntelligence": 11,
+        "retention": 15,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "+200 a Trepar / Permite alcanzar la dificultad de Zen en los controles.",
+        "requiredIntelligence": 13,
+        "retention": 20,
+        "zeon": 160
+      },
+      "bookId": 17,
+      "dailyRetention": false,
+      "effect": "Este conjuro aumenta sobrenaturalmente la capacidad de escalar de un individuo, añadiendo un bono a la base de su habilidad secundaria Trepar.",
+      "initialGrade": {
+        "effect": "+50 a Trepar.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 50
+      },
+      "intermediateGrade": {
+        "effect": "+100 a Trepar.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 80
+      },
+      "level": 20,
+      "name": "Trepar",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "500 metros de radio.",
+        "requiredIntelligence": 11,
+        "retention": 20,
+        "zeon": 180
+      },
+      "arcaneGrade": {
+        "effect": "1 kilómetro de radio.",
+        "requiredIntelligence": 13,
+        "retention": 25,
+        "zeon": 240
+      },
+      "bookId": 18,
+      "dailyRetention": false,
+      "effect": "Forma  niebla  con  una  intensidad  a  discreción  del  lanzador. Permanecerá estática donde fue lanzada.",
+      "initialGrade": {
+        "effect": "100 metros de radio.",
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "250 metros de radio.",
+        "requiredIntelligence": 9,
+        "retention": 20,
+        "zeon": 120
+      },
+      "level": 20,
+      "name": "Niebla",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "50 metros de radio.",
+        "requiredIntelligence": 11,
+        "retention": 10,
+        "zeon": 160
+      },
+      "arcaneGrade": {
+        "effect": "100 metros de radio / Pasar lentamente sin caer requiere un control contra Muy Difícil, y corriendo contra Imposible.",
+        "requiredIntelligence": 13,
+        "retention": 15,
+        "zeon": 240
+      },
+      "bookId": 19,
+      "dailyRetention": false,
+      "effect": "Encanta un área estática sobre la cual es tan fácil resbalar como sobre una zona de hielo mojado. Pasar lentamente por ella sin caer requiere una tirada de Atletismo o Acrobacias de Difícil, mientras que corriendo la dificultad aumenta a Absurdo.",
+      "initialGrade": {
+        "effect": "5 metros de radio.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 50
+      },
+      "intermediateGrade": {
+        "effect": "25 metros de radio.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 100
+      },
+      "level": 20,
+      "name": "Zona Resbaladiza",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Presencia máxima 70.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "Presencia máxima 90.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 150
+      },
+      "bookId": 20,
+      "dailyRetention": false,
+      "effect": "Repara completamente un objeto inorgánico. No recrea partes perdidas, por lo que es necesario conservar los fragmentos o tener la materia prima necesaria para su reparación. Puede lanzarse sobre cualquier cosa, desde armas a edificios, mientras su presencia no sea superior a lo que determine el grado del conjuro.",
+      "initialGrade": {
+        "effect": "Presencia máxima 30.",
+        "requiredIntelligence": 6,
+        "retention": 0,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "Presencia máxima 50.",
+        "requiredIntelligence": 9,
+        "retention": 0,
+        "zeon": 90
+      },
+      "level": 20,
+      "name": "Reparación",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Presencia máxima 240 / La dificultad para rastrearle aumenta a Inhumano.",
+        "requiredIntelligence": 11,
+        "retention": 25,
+        "zeon": 220
+      },
+      "arcaneGrade": {
+        "effect": "Presencia máxima 320 / La dificultad para rastrearle aumenta a Zen.",
+        "requiredIntelligence": 13,
+        "retention": 35,
+        "zeon": 340
+      },
+      "bookId": 21,
+      "dailyRetention": false,
+      "effect": "Elimina los rastros físicos que deja tras de sí una persona. Para seguir las huellas de alguien sobre quien está activo este conjuro, será necesario alcanzar una dificultad de Imposible en Rastrear. Puede afectar a tantos blancos como se desee, mientras la suma de sus presencias no supere el valor determinado por el grado del conjuro.",
+      "initialGrade": {
+        "effect": "Presencia máxima 120.",
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "Presencia máxima 180.",
+        "requiredIntelligence": 9,
+        "retention": 15,
+        "zeon": 140
+      },
+      "level": 20,
+      "name": "Pasar Sin Dejar Marca",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Atrae hasta cien mil seres.",
+        "requiredIntelligence": 11,
+        "retention": 10,
+        "zeon": 140
+      },
+      "arcaneGrade": {
+        "effect": "Atrae a varios millones de seres.",
+        "requiredIntelligence": 13,
+        "retention": 15,
+        "zeon": 180
+      },
+      "bookId": 22,
+      "dailyRetention": false,
+      "effect": "Invoca una masa de alimañas (sapos, lagartijas, avispas, insectos…) hasta el lugar que designe el hechicero. Su aparición no es automática, pero son atraídas de inmediato desde la zona más cercana a donde se encuentran. El sortilegio no otorga ningún control sobre los seres. El lanzador determina que clase de alimañas son las que atrae.",
+      "initialGrade": {
+        "effect": "Atrae hasta a quinientos seres.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 30
+      },
+      "intermediateGrade": {
+        "effect": "Atrae hasta diez mil seres.",
+        "requiredIntelligence": 9,
+        "retention": 5,
+        "zeon": 80
+      },
+      "level": 20,
+      "name": "Atraer Alimañas Menores",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "x40 su capacidad.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 100
+      },
+      "arcaneGrade": {
+        "effect": "x50 su capacidad.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 120
+      },
+      "bookId": 23,
+      "dailyRetention": false,
+      "effect": "Permite a una envoltura, bolsa o baúl, cargar materiales que excedan su capacidad de contención, sin aumentar su peso. El mago siempre es capaz de extraer lo que quiere, aunque los demás sacarán las cosas al azar. No se pueden introducir objetos que no entren físicamente en el interior, como una lanza en una pequeña bolsa. Si el conjuro finaliza, la carga reaparecerá, pudiendo incluso reventar el contenedor.",
+      "initialGrade": {
+        "effect": "x10 su capacidad.",
+        "requiredIntelligence": 5,
+        "retention": 5,
+        "zeon": 40
+      },
+      "intermediateGrade": {
+        "effect": "x30 su capacidad.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 80
+      },
+      "level": 20,
+      "name": "Bolsa Infinita",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Permite alcanzar Inhumanidad en cualquier habilidad y Zen en una habilidad determinada.",
+        "requiredIntelligence": 11,
+        "retention": 10,
+        "zeon": 110
+      },
+      "arcaneGrade": {
+        "effect": "Permite alcanzar Zen en cualquier habilidad.",
+        "requiredIntelligence": 13,
+        "retention": 15,
+        "zeon": 150
+      },
+      "bookId": 24,
+      "dailyRetention": false,
+      "effect": "Los afectados por este conjuro podrán alcanzar la dificultad de Inhumano en cualquier campo o materia. Ten en cuenta que ello no quiere decir que las acciones realizadas por dichos sujetos sean automáticamente inhumanas, sino que podrán lograrlas si sus tiradas de habilidad o sus atributos se lo permiten.",
+      "initialGrade": {
+        "effect": "Permite alcanzar Inhumanidad en una habilidad determinada.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 50
+      },
+      "intermediateGrade": {
+        "effect": "Permite alcanzar Inhumanidad en cualquier habilidad.",
+        "requiredIntelligence": 9,
+        "retention": 5,
+        "zeon": 80
+      },
+      "level": 20,
+      "name": "Inhumanidad",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "500 metros de radio.",
+        "requiredIntelligence": 11,
+        "retention": 20,
+        "zeon": 200
+      },
+      "arcaneGrade": {
+        "effect": "1 kilómetro de radio.",
+        "requiredIntelligence": 13,
+        "retention": 30,
+        "zeon": 260
+      },
+      "bookId": 25,
+      "dailyRetention": false,
+      "effect": "Forma una espesa capa de nubes. El hechicero tiene completo control sobre ellas, pudiendo moverlas o darles la forma que desee.",
+      "initialGrade": {
+        "effect": "100 metros de radio.",
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "250 metros de radio.",
+        "requiredIntelligence": 9,
+        "retention": 15,
+        "zeon": 140
+      },
+      "level": 30,
+      "name": "Nubes",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "25 metros de radio / RM 140.",
+        "requiredIntelligence": 14,
+        "retention": 15,
+        "zeon": 140
+      },
+      "arcaneGrade": {
+        "effect": "50 metros de radio / RM 160.",
+        "requiredIntelligence": 16,
+        "retention": 20,
+        "zeon": 160
+      },
+      "bookId": 26,
+      "dailyRetention": false,
+      "effect": "Los afectados que se encuentren en un radio alrededor del hechicero serán presos de un terrible miedo mágico si no superan una RM. Aquellos que fallen el control temerán al lanzador, quedando sometidos al estado de Miedo.",
+      "initialGrade": {
+        "effect": "5 metros de radio / RM 100.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "15 metros de radio / RM 120.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 120
+      },
+      "level": 30,
+      "name": "Causar Miedo",
+      "spellId": 0,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "TA 6.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "TA 8.",
+        "requiredIntelligence": 15,
+        "retention": 15,
+        "zeon": 150
+      },
+      "bookId": 27,
+      "dailyRetention": false,
+      "effect": "Otorga una armadura contra todos los tipos de ataques, salvo energía. Puede combinarse con cualquier otra protección como capa adicional, pero no causa penalizadores especiales al turno. 1   8 0 83.165.181.63",
+      "initialGrade": {
+        "effect": "TA 2.",
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "TA 4.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 90
+      },
+      "level": 30,
+      "name": "Protección Mágica",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Pasiva",
+      "advancedGrade": {
+        "effect": "2.000 puntos de resistencia.",
+        "requiredIntelligence": 11,
+        "retention": 20,
+        "zeon": 180
+      },
+      "arcaneGrade": {
+        "effect": "3.000 puntos de resistencia.",
+        "requiredIntelligence": 13,
+        "retention": 25,
+        "zeon": 240
+      },
+      "bookId": 28,
+      "dailyRetention": false,
+      "effect": "Crea un escudo mágico que protege al hechicero frente a cualquier tipo de ataque, incluyendo los de carácter sobrenatural.",
+      "initialGrade": {
+        "effect": "300 puntos de resistencia.",
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "1.000 puntos de resistencia.",
+        "requiredIntelligence": 9,
+        "retention": 20,
+        "zeon": 120
+      },
+      "level": 30,
+      "name": "Escudo Mágico",
+      "spellId": 0,
+      "type": "Defensa",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "+4 al Tipo de movimiento / +60 al turno.",
+        "requiredIntelligence": 11,
+        "retention": 15,
+        "zeon": 160
+      },
+      "arcaneGrade": {
+        "effect": "+6 al Tipo de movimiento / +80 al turno.",
+        "requiredIntelligence": 13,
+        "retention": 15,
+        "zeon": 200
+      },
+      "bookId": 29,
+      "dailyRetention": false,
+      "effect": "Eleva el movimiento de un sujeto, al igual que le proporciona un bono a su turno. Los valores que hagan aumentar el Tipo de Movimiento por encima de 12 quedan reducidos a la mitad.",
+      "initialGrade": {
+        "effect": "+1 al Tipo de movimiento / +20 al turno.",
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "+2 al Tipo de movimiento / +40 al turno.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 120
+      },
+      "level": 30,
+      "name": "Celeridad",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM 160.",
+        "requiredIntelligence": 11,
+        "retention": 10,
+        "zeon": 100
+      },
+      "arcaneGrade": {
+        "effect": "RM 180.",
+        "requiredIntelligence": 13,
+        "retention": 15,
+        "zeon": 130
+      },
+      "bookId": 30,
+      "dailyRetention": false,
+      "effect": "Causa una sensación de tranquilidad y paz sobre el blanco del conjuro, haciéndolo propenso a calmarse incluso si se encuentra lleno de ira o aterrorizado. Este conjuro anula cualquier estado de miedo, terror o ira que padezca el sujeto afectado, salvo si son de origen sobrenatural.",
+      "initialGrade": {
+        "effect": "RM 120.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 50
+      },
+      "intermediateGrade": {
+        "effect": "RM 140.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 70
+      },
+      "level": 30,
+      "name": "Serenidad",
+      "spellId": 0,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "9 metros cuadrados / 1.000 Puntos de vida.",
+        "requiredIntelligence": 12,
+        "retention": 10,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "12 metros cuadrados / 1.500 Puntos de vida / Presa con Fuerza 12.",
+        "requiredIntelligence": 15,
+        "retention": 10,
+        "zeon": 150
+      },
+      "bookId": 31,
+      "dailyRetention": false,
+      "effect": "Este sortilegio crea unas fibras mágicas de gran densidad, que actúan como una red muy pegajosa. Sus usos quedan a disposición del hechicero: bloquear una zona, lanzarla directamente sobre individuos… Presa con Fuerza 10 a cualquier individuo que la toque y aguanta como un ser con acumulación empleando TA 4. Al ser una sustancia de naturaleza mística, será dañada únicamente por ataques sobrenaturales o calor.",
+      "initialGrade": {
+        "effect": "3 metros cuadrados / 500 Puntos de vida.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "6 metros cuadrados / 750 Puntos de vida.",
+        "requiredIntelligence": 9,
+        "retention": 5,
+        "zeon": 90
+      },
+      "level": 30,
+      "name": "Red",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Afecta a idiomas únicos y olvidados.",
+        "requiredIntelligence": 12,
+        "retention": 40,
+        "zeon": 200
+      },
+      "arcaneGrade": {
+        "effect": "Afecta a cualquier idioma.",
+        "requiredIntelligence": 15,
+        "retention": 50,
+        "zeon": 240
+      },
+      "bookId": 32,
+      "dailyRetention": false,
+      "effect": "Este  conjuro  permite  comprender  temporalmente  un  lenguaje desconocido, tanto si es escrito como oral.",
+      "initialGrade": {
+        "effect": "Afecta a idiomas básicos, conocidos y hablados comúnmente en muchos países del mundo.",
+        "requiredIntelligence": 7,
+        "retention": 20,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "Afecta a idiomas extraños e inusuales, hablados por grupos minoritarios o que ya no son usados en ninguna sociedad.",
+        "requiredIntelligence": 10,
+        "retention": 35,
+        "zeon": 160
+      },
+      "level": 30,
+      "name": "Comprensión de Idiomas",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Tipo de vuelo 8.",
+        "requiredIntelligence": 11,
+        "retention": 10,
+        "zeon": 100
+      },
+      "arcaneGrade": {
+        "effect": "Tipo de vuelo 10.",
+        "requiredIntelligence": 13,
+        "retention": 15,
+        "zeon": 120
+      },
+      "bookId": 33,
+      "dailyRetention": false,
+      "effect": "El blanco de este conjuro podrá elevarse o descender verticalmente a voluntad por el aire, aunque no hacer movimientos horizontales.",
+      "initialGrade": {
+        "effect": "Tipo de vuelo 4.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 50
+      },
+      "intermediateGrade": {
+        "effect": "Tipo de vuelo 6.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 80
+      },
+      "level": 30,
+      "name": "Levitación",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "250 kilómetros / 2.500 palabras.",
+        "requiredIntelligence": 11,
+        "retention": 0,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "1.000 kilómetros / 5.000 palabras.",
+        "requiredIntelligence": 13,
+        "retention": 0,
+        "zeon": 140
+      },
+      "bookId": 34,
+      "dailyRetention": false,
+      "effect": "Envía un mensaje oral o escrito a una persona o lugar conocido, que se encuentre dentro de los límites espaciales del conjuro.",
+      "initialGrade": {
+        "effect": "10 kilómetros / Hasta 500 palabras.",
+        "requiredIntelligence": 6,
+        "retention": 0,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "100 kilómetros / hasta 1.000 palabras.",
+        "requiredIntelligence": 9,
+        "retention": 0,
+        "zeon": 100
+      },
+      "level": 30,
+      "name": "Enviar Mensaje",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Presencia máxima 260.",
+        "requiredIntelligence": 12,
+        "retention": 10,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "Presencia máxima 380.",
+        "requiredIntelligence": 15,
+        "retention": 10,
+        "zeon": 150
+      },
+      "bookId": 35,
+      "dailyRetention": false,
+      "effect": "Evita al personaje contraer enfermedades de transmisión sexual o concebir descendencia. Puede afectar a varios individuos siempre que la suma de sus presencias no supere lo que determine el grado del conjuro.",
+      "initialGrade": {
+        "effect": "Presencia máxima 80.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "Presencia máxima 180.",
+        "requiredIntelligence": 9,
+        "retention": 5,
+        "zeon": 90
+      },
+      "level": 30,
+      "name": "Protección Anticonceptiva",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "+3 niveles de dificultad.",
+        "requiredIntelligence": 11,
+        "retention": 0,
+        "zeon": 140
+      },
+      "arcaneGrade": {
+        "effect": "+4 niveles de dificultad.",
+        "requiredIntelligence": 13,
+        "retention": 0,
+        "zeon": 160
+      },
+      "bookId": 36,
+      "dailyRetention": false,
+      "effect": "Cierra automáticamente cualquier puerta o cerradura, aumentando varios grados la dificultad necesaria para abrirla. Aunque el cerrojo queda encantado, no es necesario pagar un mantenimiento, ya que el hechizo se mantendrá hasta que sea abierta. Un conjuro de Cerrar Mágicamente sólo puede afectar a la vez a una cerradura.",
+      "initialGrade": {
+        "effect": "+1 nivel de dificultad.",
+        "requiredIntelligence": 6,
+        "retention": 0,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "+2 niveles de dificultad.",
+        "requiredIntelligence": 9,
+        "retention": 0,
+        "zeon": 120
+      },
+      "level": 30,
+      "name": "Cerrar Mágicamente",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Presencia máxima 60.",
+        "requiredIntelligence": 12,
+        "retention": 10,
+        "zeon": 200
+      },
+      "arcaneGrade": {
+        "effect": "Presencia máxima 80.",
+        "requiredIntelligence": 14,
+        "retention": 15,
+        "zeon": 240
+      },
+      "bookId": 37,
+      "dailyRetention": false,
+      "effect": "Mediante  este  hechizo,  el  mago  obstruye  automáticamente cualquier tipo de puerta, postigo o ventana. Si, por ejemplo, se lanza sobre una puerta abierta, esta se cerrará sola, o si se usa sobre un rastrillo, bajará taponando la salida. Mientras se mantenga el conjuro, no es posible abrir la puerta físicamente, salvo por medios mágicos o destrozándola. La máxima presencia de la puerta viene determinada por el grado del conjuro.",
+      "initialGrade": {
+        "effect": "Presencia máxima 20.",
+        "requiredIntelligence": 7,
+        "retention": 5,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "Presencia máxima 40.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 160
+      },
+      "level": 40,
+      "name": "Cerrar Realmente",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Nivel máximo del veneno 70.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "Nivel máximo del veneno 90.",
+        "requiredIntelligence": 14,
+        "retention": 0,
+        "zeon": 140
+      },
+      "bookId": 38,
+      "dailyRetention": false,
+      "effect": "Purifica un cuerpo eliminando cualquier elemento nocivo para el sistema, como venenos o toxinas. La purificación sólo afectará a los elementos de un cuerpo que resulten dañinos y que no pertenezcan a él. De este modo, el veneno que posee una serpiente no se verá alterado, dado que es algo natural para ella, pero podría eliminarse cuando se inocule en una víctima.",
+      "initialGrade": {
+        "effect": "Nivel máximo del veneno 30.",
+        "requiredIntelligence": 7,
+        "retention": 0,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "Nivel máximo del veneno 50.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 100
+      },
+      "level": 40,
+      "name": "Purificación",
+      "spellId": 0,
+      "type": "T i p o",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Altera 6 puntos de Tamaño / RM 140.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 140
+      },
+      "arcaneGrade": {
+        "effect": "Altera 8 puntos de Tamaño / RM 160.",
+        "requiredIntelligence": 14,
+        "retention": 20,
+        "zeon": 180
+      },
+      "bookId": 39,
+      "dailyRetention": false,
+      "effect": "Incrementa o disminuye el Tamaño de la persona u objeto sobre el que es lanzado. Por muchos añadidos que se empleen, nunca podrá disminuirse por debajo de 1. Puede resistirse sus efectos superando una RM.",
+      "initialGrade": {
+        "effect": "Altera 2 puntos de Tamaño/ RM 100.",
+        "requiredIntelligence": 7,
+        "retention": 10,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "Altera 4 puntos de Tamaño / RM 120.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 100
+      },
+      "level": 40,
+      "name": "Cambio de Aspecto",
+      "spellId": 0,
+      "type": "Efecto, Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "60 metros de radio / RM 120.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 160
+      },
+      "arcaneGrade": {
+        "effect": "80 metros de radio / RM 140.",
+        "requiredIntelligence": 14,
+        "retention": 15,
+        "zeon": 200
+      },
+      "bookId": 40,
+      "dailyRetention": false,
+      "effect": "Aumenta automáticamente la agresividad de todos los seres vivos que se encuentren cerca del hechicero, siempre y cuando no superen una RM. Los afectados actuarán de una forma violenta sobre cualquier individuo o cosa que pueda ser blanco de su ira.",
+      "initialGrade": {
+        "effect": "20 metros de radio / RM 80.",
+        "requiredIntelligence": 7,
+        "retention": 10,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "40 metros de radio / RM 100.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 120
+      },
+      "level": 40,
+      "name": "Invocar Agresividad",
+      "spellId": 0,
+      "type": "Automático",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Valor zeónico máximo 100.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "Valor zeónico máximo 120.",
+        "requiredIntelligence": 14,
+        "retention": 0,
+        "zeon": 280
+      },
+      "bookId": 41,
+      "dailyRetention": false,
+      "effect": "Destruye un conjuro activo cuyo valor zeónico no supere el indicado por el grado del conjuro.",
+      "initialGrade": {
+        "effect": "Valor zeónico máximo 60.",
+        "requiredIntelligence": 7,
+        "retention": 0,
+        "zeon": 150
+      },
+      "intermediateGrade": {
+        "effect": "Valor zeónico máximo 80.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 200
+      },
+      "level": 40,
+      "name": "Eliminar Conjuros",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "+150 a Resistir el dolor / Permite alcanzar Inhumanidad.",
+        "requiredIntelligence": 11,
+        "retention": 15,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "+200 a Resistir el dolor / Permite alcanzar Zen.",
+        "requiredIntelligence": 14,
+        "retention": 15,
+        "zeon": 150
+      },
+      "bookId": 42,
+      "dailyRetention": false,
+      "effect": "Aumenta el aguante de un ser vivo, otorgando un bonificador a la habilidad secundaria Resistir el Dolor.",
+      "initialGrade": {
+        "effect": "+50 a Resistir el dolor.",
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "+100 a Resistir el dolor.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 90
+      },
+      "level": 40,
+      "name": "Resistencia al Dolor",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Daño 80.",
+        "requiredIntelligence": 11,
+        "retention": 0,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "Daño 100.",
+        "requiredIntelligence": 14,
+        "retention": 0,
+        "zeon": 150
+      },
+      "bookId": 43,
+      "dailyRetention": false,
+      "effect": "Proyecta una descarga de energía mágica, que ataca en la TA de Energía.",
+      "initialGrade": {
+        "effect": "Daño 40.",
+        "requiredIntelligence": 6,
+        "retention": 0,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "Daño 60.",
+        "requiredIntelligence": 9,
+        "retention": 0,
+        "zeon": 90
+      },
+      "level": 40,
+      "name": "Descarga de Magia",
+      "spellId": 0,
+      "type": "Ataque",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM 200.",
+        "requiredIntelligence": 11,
+        "retention": 15,
+        "zeon": 150
+      },
+      "arcaneGrade": {
+        "effect": "RM 240.",
+        "requiredIntelligence": 14,
+        "retention": 15,
+        "zeon": 200
+      },
+      "bookId": 44,
+      "dailyRetention": false,
+      "effect": "Suprime la capacidad de soñar de un individuo. En caso de que sea lanzado sobre un individuo que se encuentre en la Vigilia, este será expulsado de inmediato al mundo real. El objetivo del conjuro puede resistirse superando una RM, aunque en caso de fallarla, sólo podrá repetir el control una vez al día.",
+      "initialGrade": {
+        "effect": "RM 120.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 50
+      },
+      "intermediateGrade": {
+        "effect": "RM 160.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 100
+      },
+      "level": 40,
+      "name": "Eliminar los Sueños",
+      "spellId": 0,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "50 metros.",
+        "requiredIntelligence": 12,
+        "retention": 20,
+        "zeon": 200
+      },
+      "arcaneGrade": {
+        "effect": "100 metros / El conjuro crea también copias de la presencia de los objetos que el brujo lleve encima, permitiéndole usarlos cuando usa su presencia expandida.",
+        "requiredIntelligence": 15,
+        "retention": 25,
+        "zeon": 250
+      },
+      "bookId": 45,
+      "dailyRetention": false,
+      "effect": "El lanzador del conjuro puede separar a voluntad su presencia de su cuerpo permitiéndole actuar a distancia como si realmente se encontrara allí. Mientras esté separada el hechicero no podrá moverse, pero será capaz de hacerla regresar a su cuerpo cuando quiera sin tener que finalizar el sortilegio. La presencia expandida puede tocar objetos físicos e incluso atacar, pero será invisible al ojo humano sólo es posible notarla mediante el uso de detecciones de Ki, la capacidad de ver espíritus, o algún otro medio de ver cuerpos etéreos (aunque si la presencia sostiene algo, dicho objeto sí es perfectamente visible). La presencia es intangible y sólo podrá ser dañada por ataques basados en energía. Cualquier pérdida de puntos de vida también afectará al cuerpo del hechicero. La distancia máxima que la presencia puede expandirse del cuerpo es determinada por el grado del conjuro.",
+      "initialGrade": {
+        "effect": "5 metros.",
+        "requiredIntelligence": 7,
+        "retention": 10,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "25 metros.",
+        "requiredIntelligence": 10,
+        "retention": 15,
+        "zeon": 150
+      },
+      "level": 40,
+      "name": "Extender la Presencia",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Nivel máximo de la enfermedad 70 / Presencia máxima 180.",
+        "requiredIntelligence": 13,
+        "retention": 0,
+        "zeon": 200
+      },
+      "arcaneGrade": {
+        "effect": "Nivel máximo de la enfermedad 100 / Presencia máxima 240.",
+        "requiredIntelligence": 16,
+        "retention": 0,
+        "zeon": 300
+      },
+      "bookId": 46,
+      "dailyRetention": false,
+      "effect": "Elimina automáticamente cualquier enfermedad. Puede emplearse sobre varios individuos, siempre y cuando la suma de sus presencias no supere lo que determina el grado del conjuro.",
+      "initialGrade": {
+        "effect": "Nivel máximo de la enfermedad 30 / Presencia máxima 80.",
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "Nivel máximo de la enfermedad 50 / Presencia máxima 120.",
+        "requiredIntelligence": 11,
+        "retention": 0,
+        "zeon": 140
+      },
+      "level": 40,
+      "name": "Curar Enfermedades",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "250 metros de radio / RM o RP 160.",
+        "requiredIntelligence": 13,
+        "retention": 10,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "500 metros de radio / RM o RP 180.",
+        "requiredIntelligence": 16,
+        "retention": 10,
+        "zeon": 150
+      },
+      "bookId": 47,
+      "dailyRetention": false,
+      "effect": "Detecta un sentimiento determinado en aquellos individuos que se encuentren en un radio cercano al brujo. El hechicero debe elegir qué emoción desea percibir. Los sujetos afectados podrán escudarse superando una RM o RP.",
+      "initialGrade": {
+        "effect": "50 metros de radio / RM o RP 120.",
+        "requiredIntelligence": 7,
+        "retention": 5,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "100 metros de radio / RM o RP 140.",
+        "requiredIntelligence": 10,
+        "retention": 5,
+        "zeon": 90
+      },
+      "level": 40,
+      "name": "Percibir Sentimientos",
+      "spellId": 0,
+      "type": "Detección",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Valor zeónico máximo 140 / 50 metros de radio.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "Valor zeónico máximo 180 / 100 metros de radio.",
+        "requiredIntelligence": 14,
+        "retention": 15,
+        "zeon": 280
+      },
+      "bookId": 48,
+      "dailyRetention": false,
+      "effect": "Anula los efectos de todos los conjuros (incluidos los del lanzador) que se encuentren en un radio alrededor del hechicero y cuyo valor zeónico no supere lo que determine el grado del conjuro. Ten en cuenta que no los destruye, sino simplemente neutraliza sus efectos mientras estén dentro del área.",
+      "initialGrade": {
+        "effect": "Valor zeónico máximo 60 / 10 metros de radio.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 150
+      },
+      "intermediateGrade": {
+        "effect": "Valor zeónico máximo 100 / 25 metros de radio.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 200
+      },
+      "level": 50,
+      "name": "Anulación de Magia",
+      "spellId": 0,
+      "type": "Automático",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "250 kilos / Resistencia 120.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 180
+      },
+      "arcaneGrade": {
+        "effect": "500 kilos / Resistencia 140.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 240
+      },
+      "bookId": 49,
+      "dailyRetention": false,
+      "effect": "Destruye kilogramos de cualquier material inorgánico, siempre que no supere una Resistencia.",
+      "initialGrade": {
+        "effect": "50 kilos / Resistencia 80.",
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "100 kilos / Resistencia 100.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 140
+      },
+      "level": 50,
+      "name": "Deshacer",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "La maldición afecta cualquier acto o condición, y produce toda clase de efectos negativos al objetivo del conjuro (como dolor, hacerle llorar sangre, que deje que hablar…) o, en caso de maldecir una habilidad, ya sea primaria o secundaria, aplique un penalizador de –80 cada vez que la utilice / RM 160.",
+        "requiredIntelligence": 13,
+        "retention": 25,
+        "zeon": 500
+      },
+      "arcaneGrade": {
+        "effect": "La maldición puede tener cualquier nivel de complejidad imaginable y producir efectos mayores, inclusive la muerte, a aquellos que entren dentro de sus consecuencias / RM 180.",
+        "requiredIntelligence": 16,
+        "retention": 35,
+        "zeon": 700
+      },
+      "bookId": 50,
+      "dailyRetention": false,
+      "effect": "Este conjuro provoca una serie de condiciones negativas sobre la persona a la que afecte. Su cometido es causar infortunio sobre ciertas acciones que realice el individuo maldito: mantener una relación amorosa, escribir poemas, ayudar a alguien… El hechicero es quien decide a qué exactamente, así como sus consecuencias, dentro de los límites indicados por el grado del conjuro. Por su naturaleza, el hechizo no influye sólo a quien lo recibe, sino también a otras personas que se relacionen con él si entran en el campo de la maldición. En este caso, cada uno tendrá derecho a su propia RM. Por ejemplo, una jovencita que se sienta interesada en entablar una relación sentimental con un chico, afectado por una maldición que impide que nadie se enamore de él, se sentiría obligatoriamente desanimada si no supera la RM del conjuro. Sólo se puede realizar un nuevo control cuando sus efectos vuelvan a activarse.",
+      "initialGrade": {
+        "effect": "La maldición sólo afecta actos muy concretos (como enamorarse de una persona determinada o escribir un poema para el rey) y produce únicamente infortunio, haciendo que el afectado no pueda lograr sus objetivos con éxito completo / RM 120.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 200
+      },
+      "intermediateGrade": {
+        "effect": "La maldición afecta también actos genéricos (como enamorarse, luchar, ayudar a los demás...) y produce autentica mala suerte, haciendo que el blanco no pueda lograr sus objetivos o, en caso de maldecir una habilidad, ya sea primaria o secundaria, aplique un penalizador de –60 cada vez que la utilice / RM 140.",
+        "requiredIntelligence": 10,
+        "retention": 20,
+        "zeon": 350
+      },
+      "level": 50,
+      "name": "Maldición",
+      "spellId": 0,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM o RP 140.",
+        "requiredIntelligence": 12,
+        "retention": 20,
+        "zeon": 200
+      },
+      "arcaneGrade": {
+        "effect": "RM o RP 180.",
+        "requiredIntelligence": 15,
+        "retention": 25,
+        "zeon": 240
+      },
+      "bookId": 51,
+      "dailyRetention": false,
+      "effect": "Permite al hechicero indagar en los pensamientos o recuerdos de un individuo. Queda a discreción del DJ decidir la cantidad de asaltos que necesita para obtener la información deseada, dependiendo de lo oculto que esté en la memoria del personaje. El afectado puede resistirse superando una RP o una RM. Mientras pueda leer las intenciones de su adversario, el brujo aplica un bonificador de +30 a las acciones enfrentadas en su contra.",
+      "initialGrade": {
+        "effect": "RM o RP 80.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "RM o RP 120.",
+        "requiredIntelligence": 10,
+        "retention": 20,
+        "zeon": 160
+      },
+      "level": 50,
+      "name": "Leer la Mente",
+      "spellId": 0,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "20 intensidades / RM 160.",
+        "requiredIntelligence": 12,
+        "retention": 20,
+        "zeon": 200
+      },
+      "arcaneGrade": {
+        "effect": "25 intensidades / RM 180.",
+        "requiredIntelligence": 14,
+        "retention": 25,
+        "zeon": 240
+      },
+      "bookId": 52,
+      "dailyRetention": false,
+      "effect": "El hechicero puede transformar intensidades de cualquier tipo de energía elemental en otro, como convertir fuego en electricidad. Si estas intensidades son mágicas o tienen presencia propia, podrán resistirse superando una RM. Este conjuro no causa daños a los seres elementales, pero sí altera su naturaleza.",
+      "initialGrade": {
+        "effect": "10 intensidades / RM 120.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "15 intensidades / RM 140.",
+        "requiredIntelligence": 10,
+        "retention": 20,
+        "zeon": 160
+      },
+      "level": 50,
+      "name": "Alterar Energía",
+      "spellId": 0,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Los sueños serán claros y trasmitirán un mensaje comprensible, así como imágenes y secuencias ideadas por el lanzador.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "Los sueños serán completamente claros y tienen una vaga consciencia similar a la del lanzador, permitiendo al soñador incluso formular preguntas o interactuar con lo que ve en el sueño.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 300
+      },
+      "bookId": 53,
+      "dailyRetention": false,
+      "effect": "Permite enviar imágenes y palabras al subconsciente de un durmiente. El conjuro no funciona como un sistema de comunicación, ya que el brujo no tendrá constancia de lo que el soñador diga o haga. El mensaje puede mandarse a cualquier sujeto que el hechicero designe, sin importar la distancia a la que esté. La condición para ser afectado por el conjuro es estar durmiendo, y ser el individuo elegido por el lanzador.",
+      "initialGrade": {
+        "effect": "Los sueños serán vagos y poco esclarecedores, permitiendo mostrar únicamente imágenes fragmentadas, frases inconexas y sonidos.",
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 120
+      },
+      "intermediateGrade": {
+        "effect": "Los sueños serán vagos, pero permiten mostrar secuencias y lugares al soñador.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 180
+      },
+      "level": 50,
+      "name": "Enviar Sueños",
+      "spellId": 0,
+      "type": "Automático",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "El equivalente a una enciclopedia.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 320
+      },
+      "arcaneGrade": {
+        "effect": "El conocimiento de una biblioteca entera.",
+        "requiredIntelligence": 16,
+        "retention": 0,
+        "zeon": 500
+      },
+      "bookId": 54,
+      "dailyRetention": false,
+      "effect": "Mediante este conjuro, el hechicero absorbe conocimientos escritos o gráficos, que se encuentren a su vista o al alcance de su mano. Así pues, le es posible, por ejemplo, leer un libro en escasos segundos tocando su cubierta y recordar los detalles como si lo hubiera hecho con detenimiento. Un personaje que trate de recordar información que ha memorizado usando este conjuro disminuye dos grados la dificultad de cualquier control de Memorizar.",
+      "initialGrade": {
+        "effect": "Un libro corto y no muy complejo.",
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "Un grueso volumen de gran complejidad.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 180
+      },
+      "level": 50,
+      "name": "Absorber Información",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM o RP 160.",
+        "requiredIntelligence": 12,
+        "retention": 20,
+        "zeon": 180
+      },
+      "arcaneGrade": {
+        "effect": "RM o RP 180.",
+        "requiredIntelligence": 14,
+        "retention": 25,
+        "zeon": 220
+      },
+      "bookId": 55,
+      "dailyRetention": false,
+      "effect": "Este conjuro crea en un individuo un vínculo de amistad hacia otra persona designada por el hechicero. Ten en cuenta que el afectado no se vuelve estúpido, por lo que no obedecerá de manera ciega a su “amigo”, actuando siempre conforme a su ética y personalidad. Para superar este conjuro, es necesario pasar una RM o RP. Posteriormente, sólo se repite el control una vez al día, o cuando algo pueda poner en duda la relación de compañerismo que mantiene el hechizado.",
+      "initialGrade": {
+        "effect": "RM o RP 120.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "RM o RP 140.",
+        "requiredIntelligence": 10,
+        "retention": 15,
+        "zeon": 120
+      },
+      "level": 50,
+      "name": "Amistad",
+      "spellId": 0,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Enfermedad de Nivel 70.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 140
+      },
+      "arcaneGrade": {
+        "effect": "Enfermedad de Nivel 90.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 200
+      },
+      "bookId": 56,
+      "dailyRetention": false,
+      "effect": "Hace enfermar a un individuo que falle la RE requerida.",
+      "initialGrade": {
+        "effect": "Enfermedad de Nivel 30.",
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "Enfermedad de Nivel 50.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 100
+      },
+      "level": 50,
+      "name": "Causar Enfermedad",
+      "spellId": 0,
+      "type": "Anímico",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "200 metros.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "350 metros.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 150
+      },
+      "bookId": 57,
+      "dailyRetention": false,
+      "effect": "Transporta al blanco del conjuro a distancia. Este conjuro permite pasar a través de cuerpos físicos, siempre que no se encuentren basados en energía, pero no situar a sus objetivos en una superficie de naturaleza diferente a aquella en la que se encontrara (por ejemplo, haciendo aparecer a alguien en el aire).",
+      "initialGrade": {
+        "effect": "25 metros.",
+        "requiredIntelligence": 6,
+        "retention": 0,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "100 metros.",
+        "requiredIntelligence": 9,
+        "retention": 0,
+        "zeon": 90
+      },
+      "level": 50,
+      "name": "Transporte Rápido",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "-8 al Tipo de movimiento / RM 160.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "-12 al Tipo de movimiento / RM 180.",
+        "requiredIntelligence": 15,
+        "retention": 15,
+        "zeon": 150
+      },
+      "bookId": 58,
+      "dailyRetention": false,
+      "effect": "Disminuye la velocidad de reacción y movimiento del sujeto sobre el que se lance el conjuro, provocando un penalizador a su movimiento si no supera una RM.",
+      "initialGrade": {
+        "effect": "-2 al Tipo de movimiento / RM 120.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "-4 al Tipo de movimiento / RM 140.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 90
+      },
+      "level": 50,
+      "name": "Enlentecer",
+      "spellId": 0,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Radio de 100 metros / RM 200.",
+        "requiredIntelligence": 12,
+        "retention": 10,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "Radio de 250 metros / RM 240.",
+        "requiredIntelligence": 15,
+        "retention": 10,
+        "zeon": 150
+      },
+      "bookId": 59,
+      "dailyRetention": false,
+      "effect": "Muestra cualquier fuerza o presencia invisible, exhibiéndola a la vista de todo el mundo. Este conjuro revela tanto efectos sobrenaturales como seres de naturaleza espiritual o completamente invisibles. Las criaturas afectadas podrán evitar manifestarse superando una RM. La condición consiste, simplemente, en encontrarse dentro del área del hechizo.",
+      "initialGrade": {
+        "effect": "Radio de 25 metros / RM 120.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "Radio de 50 metros / RM 160.",
+        "requiredIntelligence": 9,
+        "retention": 5,
+        "zeon": 90
+      },
+      "level": 50,
+      "name": "Mostrar lo Invisible",
+      "spellId": 0,
+      "type": "Automático",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Radio de 50 metros / RM 140.",
+        "requiredIntelligence": 13,
+        "retention": 20,
+        "zeon": 160
+      },
+      "arcaneGrade": {
+        "effect": "Radio de 100 metros / RM 160.",
+        "requiredIntelligence": 15,
+        "retention": 20,
+        "zeon": 200
+      },
+      "bookId": 60,
+      "dailyRetention": false,
+      "effect": "Los sujetos dentro del radio del conjuro que fallen la RM perderán el sentido de la vista.",
+      "initialGrade": {
+        "effect": "Radio de 5 metros / RM 100.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "Radio de 25 metros / RM 120.",
+        "requiredIntelligence": 10,
+        "retention": 15,
+        "zeon": 120
+      },
+      "level": 60,
+      "name": "Ceguera",
+      "spellId": 0,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "250 kilómetros de radio.",
+        "requiredIntelligence": 13,
+        "retention": 0,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "1.000 kilómetros de radio.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 150
+      },
+      "bookId": 61,
+      "dailyRetention": false,
+      "effect": "Permite al hechicero visualizar los elementos del terreno que se encuentren cercanos al sitio en el que está. No se puede localizar a individuos concretos o construcciones con exactitud, pero sí la ubicación de ciudades, ríos, montañas...",
+      "initialGrade": {
+        "effect": "25 kilómetros de radio.",
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "100 kilómetros de radio.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 90
+      },
+      "level": 60,
+      "name": "Visualizar Cartografía",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Radio de 50 metros / RM 160.",
+        "requiredIntelligence": 13,
+        "retention": 10,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "Radio de 100 metros / RM 180.",
+        "requiredIntelligence": 15,
+        "retention": 10,
+        "zeon": 140
+      },
+      "bookId": 62,
+      "dailyRetention": false,
+      "effect": "Los sujetos dentro del radio del conjuro que fallen la RM perderán el sentido del oído.",
+      "initialGrade": {
+        "effect": "Radio de 5 metros / RM 120.",
+        "requiredIntelligence": 8,
+        "retention": 5,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "Radio de 25 metros / RM 140.",
+        "requiredIntelligence": 10,
+        "retention": 5,
+        "zeon": 100
+      },
+      "level": 60,
+      "name": "Sordera",
+      "spellId": 0,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Radio de 50 metros / RM 190.",
+        "requiredIntelligence": 12,
+        "retention": 10,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "Radio de 100 metros / RM 220.",
+        "requiredIntelligence": 14,
+        "retention": 10,
+        "zeon": 140
+      },
+      "bookId": 63,
+      "dailyRetention": false,
+      "effect": "Los sujetos dentro del radio del conjuro que fallen la RM perderán la capacidad de hablar.",
+      "initialGrade": {
+        "effect": "Radio de 5 metros / RM 120.",
+        "requiredIntelligence": 8,
+        "retention": 5,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "Radio de 25 metros / RM 150.",
+        "requiredIntelligence": 10,
+        "retention": 5,
+        "zeon": 100
+      },
+      "level": 60,
+      "name": "Mudez",
+      "spellId": 0,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "160 Puntos de vida.",
+        "requiredIntelligence": 13,
+        "retention": 0,
+        "zeon": 180
+      },
+      "arcaneGrade": {
+        "effect": "320 Puntos de vida.",
+        "requiredIntelligence": 16,
+        "retention": 0,
+        "zeon": 220
+      },
+      "bookId": 64,
+      "dailyRetention": false,
+      "effect": "Sana cualquier clase de herida recuperando Puntos de Vida. Este tipo de curación no permite recobrar miembros perdidos o daños similares, pero sí evita los efectos del desangramiento.",
+      "initialGrade": {
+        "effect": "40 Puntos de vida.",
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "80 Puntos de vida.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 140
+      },
+      "level": 60,
+      "name": "Curar Heridas",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "5 Puntos de Cansancio.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "7 Puntos de Cansancio.",
+        "requiredIntelligence": 14,
+        "retention": 0,
+        "zeon": 140
+      },
+      "bookId": 65,
+      "dailyRetention": false,
+      "effect": "Este conjuro recupera el agotamiento físico que haya sufrido una persona, permitiendo recobrar sus puntos de Cansancio perdidos.",
+      "initialGrade": {
+        "effect": "1 Punto de Cansancio.",
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "3 Puntos de Cansancio.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 100
+      },
+      "level": 60,
+      "name": "Eliminar Cansancio",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Tipo de movimiento 14, 1.500 PV, Fuerza 14, Tamaño máximo 24.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 180
+      },
+      "arcaneGrade": {
+        "effect": "Tipo de movimiento 15, 2.000 PV, Fuerza 15, Tamaño máximo 28.",
+        "requiredIntelligence": 15,
+        "retention": 20,
+        "zeon": 220
+      },
+      "bookId": 66,
+      "dailyRetention": false,
+      "effect": "Crea un ser sobrenatural, con el único objetivo de servir como montura. No tendrá ninguna habilidad de ataque y se defenderá usando las reglas de acumulación de daño. Para moverse, la montura mágica utiliza las reglas de la habilidad del Ki Eliminación de Peso y Atletismo 200.",
+      "initialGrade": {
+        "effect": "Tipo de movimiento 10, 500 PV, Fuerza 10, Tamaño máximo 20.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "Tipo de movimiento 12, 1.000 PV, Fuerza 12, Tamaño máximo 22.",
+        "requiredIntelligence": 10,
+        "retention": 15,
+        "zeon": 140
+      },
+      "level": 60,
+      "name": "Montura Mágica",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Tipo de Movimiento pleno.",
+        "requiredIntelligence": 12,
+        "retention": 10,
+        "zeon": 100
+      },
+      "arcaneGrade": {
+        "effect": "El personaje puede moverse o quedarse quieto con plena estabilidad por superficies completamente imposibles, como un hilo, una pluma que cae lentamente del cielo o incluso saltar de una gota de lluvia a otra.",
+        "requiredIntelligence": 15,
+        "retention": 10,
+        "zeon": 120
+      },
+      "bookId": 67,
+      "dailyRetention": false,
+      "effect": "Permite a un individuo moverse por paredes o techos como si se tratase del suelo, anulando absolutamente cualquier regla de la gravedad.",
+      "initialGrade": {
+        "effect": "A una cuarta parte del Tipo de Movimiento como máximo.",
+        "requiredIntelligence": 8,
+        "retention": 5,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "A mitad de Tipo de Movimiento como máximo.",
+        "requiredIntelligence": 10,
+        "retention": 5,
+        "zeon": 80
+      },
+      "level": 60,
+      "name": "Andar por las Paredes",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Presencia máxima 280.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "Presencia máxima 320.",
+        "requiredIntelligence": 15,
+        "retention": 30,
+        "zeon": 150
+      },
+      "bookId": 68,
+      "dailyRetention": false,
+      "effect": "Fusiona uno o varios objetos, como armas, armaduras, ganzúas... con el individuo designado por el hechicero. El objeto quedará oculto bajo alguna forma visible, como una cicatriz o un tatuaje, hasta el momento en el que la persona que lo contiene decida extraerlo. Mientras se encuentren ocultos, aquel que los porte no tendrá ningún penalizador por peso o por tamaño, pero tampoco ninguno de sus beneficios. No es posible fusionar algo que exceda en más de diez veces el tamaño de la persona que hace de contenedor. Separar un objeto y exteriorizarlo, requiere un asalto completo. La máxima presencia del objeto viene determinada por el grado del conjuro.",
+      "initialGrade": {
+        "effect": "Presencia máxima 80.",
+        "requiredIntelligence": 6,
+        "retention": 15,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "Presencia máxima 180.",
+        "requiredIntelligence": 9,
+        "retention": 20,
+        "zeon": 90
+      },
+      "level": 60,
+      "name": "Fusionar con el Cuerpo",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RF 160 / 20 metros de radio / Tipo de Vuelo 10.",
+        "requiredIntelligence": 13,
+        "retention": 25,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "RF 180 / 50 metros de radio / Tipo de Vuelo 12.",
+        "requiredIntelligence": 16,
+        "retention": 35,
+        "zeon": 320
+      },
+      "bookId": 69,
+      "dailyRetention": false,
+      "effect": "Forma una nube corrosiva, que derrite cualquier sustancia material con su contacto. Los cuerpos que la toquen deben superar una RF o perderán una cantidad de puntos de vida equivalente al nivel de fracaso. Si un objeto no supera la Resistencia por 50 puntos, perderá además un nivel de calidad. Cada turno que un cuerpo se encuentre expuesto y falle la tirada, aplicará un negativo acumulativo a su RF de -10 en el siguiente asalto contra los efectos de la nube. La nube se mueve a voluntad del mago a una velocidad determinada por el grado del conjuro. La condición para que afecte el conjuro será encontrarse en el interior del área en el turno posterior a su lanzamiento. No es posible designar blancos en el interior del conjuro, y afectará incluso al propio lanzador.",
+      "initialGrade": {
+        "effect": "RF 120 / 5 metros de radio / Tipo de Vuelo 6.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "RF 140 / 10 metros de radio / Tipo de Vuelo 8.",
+        "requiredIntelligence": 10,
+        "retention": 20,
+        "zeon": 160
+      },
+      "level": 60,
+      "name": "Nube Ácida",
+      "spellId": 0,
+      "type": "Automático",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "-6 a la TA / RM 180.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "-8 a la TA / RM 200.",
+        "requiredIntelligence": 14,
+        "retention": 15,
+        "zeon": 140
+      },
+      "bookId": 70,
+      "dailyRetention": false,
+      "effect": "Reduce la TA de un defensor, si este (o su armadura) no superan una RM. La única condición para ser afectado por este conjuro es ser designado como blanco por el lanzador y fallar la RM.",
+      "initialGrade": {
+        "effect": "-2 a la TA / RM 140.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "-4 a la TA / RM 160.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 100
+      },
+      "level": 60,
+      "name": "Desproteger",
+      "spellId": 0,
+      "type": "Automático",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "50 metros de radio / RM 120.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 160
+      },
+      "arcaneGrade": {
+        "effect": "100 metros de radio / RM 140.",
+        "requiredIntelligence": 14,
+        "retention": 15,
+        "zeon": 200
+      },
+      "bookId": 71,
+      "dailyRetention": false,
+      "effect": "Provoca un intenso sueño sobre los sujetos que se encuentren en el radio de acción determinado por el hechicero. Los afectados deberán superar una RM o quedarán sumidos en un profundo sueño en poco más de un minuto. Si fallan el control por una diferencia mayor a 20 puntos, los efectos del conjuro son inmediatos. Mientras se mantenga el sortilegio, los afectados no podrán despertarse. Cualquier causa que permitiría al hechizado despertar mientras sigue preso del conjuro, le dará la oportunidad de realizar una nueva RM.",
+      "initialGrade": {
+        "effect": "10 metros de radio / RM 80.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "25 metros de radio / RM 100.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 120
+      },
+      "level": 60,
+      "name": "Dormir",
+      "spellId": 0,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "+5 a la característica.",
+        "requiredIntelligence": 14,
+        "retention": 15,
+        "zeon": 140
+      },
+      "arcaneGrade": {
+        "effect": "+7 a la característica.",
+        "requiredIntelligence": 16,
+        "retention": 20,
+        "zeon": 160
+      },
+      "bookId": 72,
+      "dailyRetention": false,
+      "effect": "Aumenta una de las cuatro características mentales de un personaje: Inteligencia, Poder, Voluntad y Percepción. En el caso de que el atributo se incremente por encima de 12, el índice de progresión se reduce a la mitad. El aumento de Inteligencia no permite al brujo incrementar el potencial máximo de sus hechizos. Uno de estos conjuros tan sólo puede afectar a una característica concreta a la vez.",
+      "initialGrade": {
+        "effect": "+1 a la característica.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "+3 a la característica.",
+        "requiredIntelligence": 11,
+        "retention": 15,
+        "zeon": 120
+      },
+      "level": 70,
+      "name": "Aumentar Características Mentales",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Presencia máxima 70.",
+        "requiredIntelligence": 14,
+        "retention": 15,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "Presencia máxima 100.",
+        "requiredIntelligence": 16,
+        "retention": 20,
+        "zeon": 320
+      },
+      "bookId": 73,
+      "dailyRetention": false,
+      "effect": "Permite al hechicero moldear la forma de la materia inorgánica, transmutando un objeto en otro similar de idéntica presencia. Por ejemplo, es posible convertir un arpón en una lanza, ya que ambos tienen una forma similar y la misma presencia, pero no en un mandoble, ya que su presencia es mayor y sus formas difieren considerablemente.",
+      "initialGrade": {
+        "effect": "Presencia máxima 30.",
+        "requiredIntelligence": 9,
+        "retention": 5,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "Presencia máxima 50.",
+        "requiredIntelligence": 11,
+        "retention": 10,
+        "zeon": 160
+      },
+      "level": 70,
+      "name": "Alteración Menor",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM o RP 160.",
+        "requiredIntelligence": 13,
+        "retention": 25,
+        "zeon": 220
+      },
+      "arcaneGrade": {
+        "effect": "RM o RP 180.",
+        "requiredIntelligence": 16,
+        "retention": 30,
+        "zeon": 280
+      },
+      "bookId": 74,
+      "dailyRetention": false,
+      "effect": "Introduce algún tipo de sentimiento o emoción en el individuo designado por el hechicero que falle una RM o RP contra la dificultad del conjuro. El afectado puede hacer un nuevo control cada día que transcurra, o cuando tenga una seria sospecha de que está siendo influido sobrenaturalmente.",
+      "initialGrade": {
+        "effect": "RM o RP 120.",
+        "requiredIntelligence": 8,
+        "retention": 15,
+        "zeon": 120
+      },
+      "intermediateGrade": {
+        "effect": "RM o RP 140.",
+        "requiredIntelligence": 11,
+        "retention": 20,
+        "zeon": 180
+      },
+      "level": 70,
+      "name": "Crear Emociones",
+      "spellId": 0,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "50 metros de Radio / RM 120.",
+        "requiredIntelligence": 13,
+        "retention": 25,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "100 metros de Radio / RM 140.",
+        "requiredIntelligence": 16,
+        "retention": 30,
+        "zeon": 280
+      },
+      "bookId": 75,
+      "dailyRetention": false,
+      "effect": "Somete al efecto de Paralización Completa a cualquier sujeto que se encuentre en el área de acción del conjuro y falle la RM.",
+      "initialGrade": {
+        "effect": "10 metros de Radio / RM 80.",
+        "requiredIntelligence": 8,
+        "retention": 15,
+        "zeon": 140
+      },
+      "intermediateGrade": {
+        "effect": "25 metros de Radio / RM 100.",
+        "requiredIntelligence": 9,
+        "retention": 20,
+        "zeon": 200
+      },
+      "level": 70,
+      "name": "Paralizar",
+      "spellId": 0,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "+5 a la característica.",
+        "requiredIntelligence": 14,
+        "retention": 15,
+        "zeon": 140
+      },
+      "arcaneGrade": {
+        "effect": "+7 a la característica.",
+        "requiredIntelligence": 16,
+        "retention": 20,
+        "zeon": 160
+      },
+      "bookId": 76,
+      "dailyRetention": false,
+      "effect": "Aumenta una de las cuatro características físicas de un personaje: Destreza, Agilidad, Fuerza o Constitución. En el caso de que el atributo se incremente por encima de 12, el índice de progresión se reduce a la mitad. Sólo uno de estos conjuros puede afectar a la vez a una característica concreta.",
+      "initialGrade": {
+        "effect": "+1 a la característica.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "+3 a la característica.",
+        "requiredIntelligence": 11,
+        "retention": 10,
+        "zeon": 120
+      },
+      "level": 70,
+      "name": "Aumentar Características Físicas",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Calidad +15.",
+        "requiredIntelligence": 14,
+        "retention": 25,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "Calidad +20.",
+        "requiredIntelligence": 16,
+        "retention": 30,
+        "zeon": 280
+      },
+      "bookId": 77,
+      "dailyRetention": false,
+      "effect": "El brujo elabora con su magia un arma sobrenatural. La creación será considerada un objeto de la calidad determinada por el grado del sortilegio con la habilidad de dañar energía.",
+      "initialGrade": {
+        "effect": "Calidad +5.",
+        "requiredIntelligence": 9,
+        "retention": 15,
+        "zeon": 140
+      },
+      "intermediateGrade": {
+        "effect": "Calidad +10.",
+        "requiredIntelligence": 11,
+        "retention": 20,
+        "zeon": 200
+      },
+      "level": 70,
+      "name": "Arma Mágica",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM 160.",
+        "requiredIntelligence": 14,
+        "retention": 15,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "RM 180.",
+        "requiredIntelligence": 16,
+        "retention": 15,
+        "zeon": 140
+      },
+      "bookId": 78,
+      "dailyRetention": false,
+      "effect": "El blanco de este conjuro se verá sometido temporalmente al",
+      "initialGrade": {
+        "effect": "RM 120.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "RM 140.",
+        "requiredIntelligence": 11,
+        "retention": 10,
+        "zeon": 100
+      },
+      "level": 70,
+      "name": "Debilidad",
+      "spellId": 0,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Como en grado intermedio, pero el objetivo obtiene un +10 a su ACT.",
+        "requiredIntelligence": 13,
+        "retention": 15,
+        "zeon": 140
+      },
+      "arcaneGrade": {
+        "effect": "Como en grado avanzado, pero todo daño basado en una habilidad mágica o un conjuro queda reducido a la mitad.",
+        "requiredIntelligence": 16,
+        "retention": 20,
+        "zeon": 160
+      },
+      "bookId": 79,
+      "dailyRetention": false,
+      "effect": "El cuerpo designado por el hechicero se transformará en energía mágica.",
+      "initialGrade": {
+        "effect": "El objetivo es inmune a todos los ataques no basados en energía.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "Como en grado base, pero el objetivo puede además atravesar cualquier materia física no basada en energía.",
+        "requiredIntelligence": 11,
+        "retention": 15,
+        "zeon": 120
+      },
+      "level": 70,
+      "name": "Cuerpo a Magia",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Pasiva",
+      "advancedGrade": {
+        "effect": "+60 a una Resistencia.",
+        "requiredIntelligence": 13,
+        "retention": 25,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "+80 a una Resistencia.",
+        "requiredIntelligence": 16,
+        "retention": 30,
+        "zeon": 140
+      },
+      "bookId": 80,
+      "dailyRetention": false,
+      "effect": "Potencia una de las Resistencias de un sujeto. Sólo se mejora un único tipo, como la RM o RF no en su totalidad.",
+      "initialGrade": {
+        "effect": "+20 a una Resistencia.",
+        "requiredIntelligence": 8,
+        "retention": 20,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "+40 a una Resistencia.",
+        "requiredIntelligence": 11,
+        "retention": 20,
+        "zeon": 100
+      },
+      "level": 70,
+      "name": "Resistir",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM o RP 160.",
+        "requiredIntelligence": 13,
+        "retention": 0,
+        "zeon": 200
+      },
+      "arcaneGrade": {
+        "effect": "RM o RP 180.",
+        "requiredIntelligence": 16,
+        "retention": 0,
+        "zeon": 240
+      },
+      "bookId": 81,
+      "dailyRetention": false,
+      "effect": "Afecta a la memoria de un sujeto, haciéndole olvidar todo lo que el hechicero desee. Si los recuerdos que se quieren borrar están muy arraigados en el afectado, podrá aplicar un bono de +40 a su tirada de RM o RP. A pesar de no tener mantenimiento, el blanco tendrá una oportunidad de volver a realizar un control de Resistencia si encuentra algo que pueda hacerle recordar. Este conjuro no afecta a las habilidades del personaje, sólo a la memoria consciente.",
+      "initialGrade": {
+        "effect": "RM o RP 120.",
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 120
+      },
+      "intermediateGrade": {
+        "effect": "RM o RP 140.",
+        "requiredIntelligence": 11,
+        "retention": 0,
+        "zeon": 160
+      },
+      "level": 70,
+      "name": "Olvido",
+      "spellId": 0,
+      "type": "Anímico",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Presencia máxima 50 / Fuerza 12.",
+        "requiredIntelligence": 13,
+        "retention": 10,
+        "zeon": 180
+      },
+      "arcaneGrade": {
+        "effect": "Presencia máxima 60 / Fuerza 14.",
+        "requiredIntelligence": 16,
+        "retention": 15,
+        "zeon": 220
+      },
+      "bookId": 82,
+      "dailyRetention": false,
+      "effect": "Encanta un cuerpo físico con energía mágica, produciendo un fuerte rechazo a cualquiera que lo toque. El conjuro provoca un impacto sobre todo aquel con el que se ponga en contacto. Como en todos los golpes similares, el DJ deberá considerar el daño que sufre el afectado, dependiendo de la diferencia con un control enfrentado de Agilidad o Fuerza, y los elementos que haya en el entorno. La presencia máxima del objeto afectado no puede superar lo que determine el grado del conjuro.",
+      "initialGrade": {
+        "effect": "Presencia máxima 30 / Fuerza 8.",
+        "requiredIntelligence": 8,
+        "retention": 5,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "Presencia máxima 40 / Fuerza 10.",
+        "requiredIntelligence": 11,
+        "retention": 5,
+        "zeon": 120
+      },
+      "level": 70,
+      "name": "Rechazo",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "10 Kilómetro de radio / Nivel máximo de enfermedad 60.",
+        "requiredIntelligence": 13,
+        "retention": 0,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "25 Kilómetro de radio / Nivel máximo de enfermedad 80 / La dificultad de la RE de la enfermedad se incrementa 10 puntos.",
+        "requiredIntelligence": 16,
+        "retention": 0,
+        "zeon": 280
+      },
+      "bookId": 83,
+      "dailyRetention": false,
+      "effect": "Este conjuro debe de lanzarse sobre un sujeto o un lugar que esté infectado con una enfermedad. Al hacerlo, extiende la infección de manera automática sobre todos los individuos que se encuentren en el radio. Estas personas tendrán derecho a una RE contra la enfermedad expandida, para evitar el contagio. La condición para ser afectado será encontrarse, simplemente, en el área del conjuro.",
+      "initialGrade": {
+        "effect": "1 Kilómetro de radio / Nivel máximo de enfermedad 20.",
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 140
+      },
+      "intermediateGrade": {
+        "effect": "5 Kilómetro de radio / Nivel máximo de enfermedad 40.",
+        "requiredIntelligence": 11,
+        "retention": 0,
+        "zeon": 200
+      },
+      "level": 70,
+      "name": "Plaga",
+      "spellId": 0,
+      "type": "Automático",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM 180.",
+        "requiredIntelligence": 13,
+        "retention": 25,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "RM 220.",
+        "requiredIntelligence": 16,
+        "retention": 30,
+        "zeon": 300
+      },
+      "bookId": 84,
+      "dailyRetention": false,
+      "effect": "El sujeto afectado por el conjuro de Inutilidad se volverá torpe e incapaz de ejecutar maniobras físicas. Deberá superar una RM o sufrir un penalizador a equivalente a su nivel de fracaso. Este hechizo no afecta a las habilidades mágicas, psíquicas o perceptivas.",
+      "initialGrade": {
+        "effect": "RM 120.",
+        "requiredIntelligence": 8,
+        "retention": 15,
+        "zeon": 120
+      },
+      "intermediateGrade": {
+        "effect": "RM 140.",
+        "requiredIntelligence": 11,
+        "retention": 20,
+        "zeon": 180
+      },
+      "level": 80,
+      "name": "Inutilidad",
+      "spellId": 0,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM 120 / 250 metros de radio.",
+        "requiredIntelligence": 13,
+        "retention": 25,
+        "zeon": 250
+      },
+      "arcaneGrade": {
+        "effect": "RM 140 / 350 metros de radio.",
+        "requiredIntelligence": 16,
+        "retention": 30,
+        "zeon": 300
+      },
+      "bookId": 85,
+      "dailyRetention": false,
+      "effect": "Hace levitar todo lo que se encuentre comprendido en un radio respecto al hechicero. El lanzador decide qué es lo que se eleva y qué no, sin importar el peso o el tamaño de lo que levanta. Los objetos o personas que se encuentren en el aire son movidos por el mago, con un Tipo de vuelo 6 si no superan una RM. Sólo los seres vivos o animados tienen derecho a un control de Resistencia, al igual que las construcciones que estén dotadas de características sobrenaturales.",
+      "initialGrade": {
+        "effect": "RM 80/ 25 metros de radio.",
+        "requiredIntelligence": 8,
+        "retention": 15,
+        "zeon": 150
+      },
+      "intermediateGrade": {
+        "effect": "RM 100 / 150 metros de radio.",
+        "requiredIntelligence": 11,
+        "retention": 20,
+        "zeon": 200
+      },
+      "level": 80,
+      "name": "Esfera de Levitación",
+      "spellId": 0,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Tipo de Vuelo Místico 12.",
+        "requiredIntelligence": 13,
+        "retention": 10,
+        "zeon": 140
+      },
+      "arcaneGrade": {
+        "effect": "Tipo de Vuelo Místico 14.",
+        "requiredIntelligence": 16,
+        "retention": 10,
+        "zeon": 160
+      },
+      "bookId": 86,
+      "dailyRetention": false,
+      "effect": "Otorga al afectado la capacidad de moverse por el aire a voluntad.",
+      "initialGrade": {
+        "effect": "Tipo de Vuelo Místico 8.",
+        "requiredIntelligence": 8,
+        "retention": 5,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "Tipo de Vuelo Místico 10.",
+        "requiredIntelligence": 11,
+        "retention": 10,
+        "zeon": 120
+      },
+      "level": 80,
+      "name": "Vuelo",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM o RP 140.",
+        "requiredIntelligence": 13,
+        "retention": 25,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "RM o RP 160.",
+        "requiredIntelligence": 16,
+        "retention": 30,
+        "zeon": 280
+      },
+      "bookId": 87,
+      "dailyRetention": false,
+      "effect": "Permite dominar la voluntad de cualquiera que no supere una RM o RP. El afectado sólo tiene derecho a un nuevo control cada vez que se le ordene realizar un acto que va completamente en contra de su naturaleza. Si la orden es excepcionalmente opuesta, puede aplicar un +20 a su tirada.",
+      "initialGrade": {
+        "effect": "RM o RP 100.",
+        "requiredIntelligence": 9,
+        "retention": 20,
+        "zeon": 160
+      },
+      "intermediateGrade": {
+        "effect": "RM o RP 120.",
+        "requiredIntelligence": 11,
+        "retention": 20,
+        "zeon": 200
+      },
+      "level": 80,
+      "name": "Dominio",
+      "spellId": 0,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "+40 a la Proyección mágica defensiva.",
+        "requiredIntelligence": 13,
+        "retention": 15,
+        "zeon": 160
+      },
+      "arcaneGrade": {
+        "effect": "+50 a la Proyección mágica defensiva.",
+        "requiredIntelligence": 16,
+        "retention": 15,
+        "zeon": 200
+      },
+      "bookId": 88,
+      "dailyRetention": false,
+      "effect": "Empleando este conjuro, el hechicero aumenta su Proyección Mágica defensiva. Sólo puede emplearse a la vez un conjuro de Erudición Defensiva sobre un sujeto concreto.",
+      "initialGrade": {
+        "effect": "+20 a la Proyección mágica defensiva.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "+30 a la Proyección mágica defensiva.",
+        "requiredIntelligence": 11,
+        "retention": 10,
+        "zeon": 120
+      },
+      "level": 80,
+      "name": "Erudición Defensiva",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Advertir contra Zen y Buscar contra Imposible.",
+        "requiredIntelligence": 13,
+        "retention": 25,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "El blanco no puede ser percibido por el sentido de la vista.",
+        "requiredIntelligence": 16,
+        "retention": 30,
+        "zeon": 280
+      },
+      "bookId": 89,
+      "dailyRetention": false,
+      "effect": "Este conjuro vuelve invisible uno o varios cuerpos designados por el hechicero. Un individuo puede percibir las alteraciones que produce un cuerpo invisible superando un control de Advertir o Buscar contra la Dificultad determinada por el grado del conjuro.",
+      "initialGrade": {
+        "effect": "Advertir contra Imposible y Buscar contra Absurdo.",
+        "requiredIntelligence": 9,
+        "retention": 20,
+        "zeon": 160
+      },
+      "intermediateGrade": {
+        "effect": "Advertir contra Inhumano y Buscar contra Casi Imposible.",
+        "requiredIntelligence": 11,
+        "retention": 20,
+        "zeon": 200
+      },
+      "level": 80,
+      "name": "Invisibilidad",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Pasiva",
+      "advancedGrade": {
+        "effect": "RM 200.",
+        "requiredIntelligence": 13,
+        "retention": 0,
+        "zeon": 220
+      },
+      "arcaneGrade": {
+        "effect": "RM 240.",
+        "requiredIntelligence": 16,
+        "retention": 0,
+        "zeon": 300
+      },
+      "bookId": 90,
+      "dailyRetention": false,
+      "effect": "El hechicero puede modificar la trayectoria de un cuerpo en movimiento, redirigiéndolo hacia la dirección que desee. Este conjuro afecta a cualquier tipo de masa, ya sea algo pequeño como una flecha o grande como un barco. Ten en cuenta que no permite mover un cuerpo estático, sino modificar la ruta que uno en movimiento ya llevaba de por sí. Desviar Trayectoria también puede ser utilizado como defensa contra ataques materiales, como espadazos o proyectiles. En el caso de que el mago consiga una defensa con éxito con su Proyección Mágica, podrá redirigirlo hacia otro adversario. Este conjuro puede evitarse, superando una RM (en caso de usarse como defensa, será el atacante quien deba superar la Resistencia).",
+      "initialGrade": {
+        "effect": "RM 140.",
+        "requiredIntelligence": 9,
+        "retention": 0,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "RM 160.",
+        "requiredIntelligence": 11,
+        "retention": 0,
+        "zeon": 160
+      },
+      "level": 80,
+      "name": "Desviar Trayectoria",
+      "spellId": 0,
+      "type": "Efecto, Defensa",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Zeón máximo 180.",
+        "requiredIntelligence": 13,
+        "retention": 0,
+        "zeon": 250
+      },
+      "arcaneGrade": {
+        "effect": "Zeón máximo 240.",
+        "requiredIntelligence": 16,
+        "retention": 0,
+        "zeon": 300
+      },
+      "bookId": 91,
+      "dailyRetention": false,
+      "effect": "Permite almacenar un segundo conjuro en el interior de un objeto, para que sea usado posteriormente por otros brujos. Estancar Conjuro debe de lanzarse al mismo tiempo que el mago realiza otro hechizo, de modo que el segundo sortilegio, en lugar de funcionar con normalidad, quedará estancado en el interior de algo. El conjuro estancado podrá activarse, más tarde, por cualquier brujo que introduzca en el contenedor el coste zeónico exacto conque fue lanzado. El mago que posea el objeto tendrá el control del conjuro como si se tratase del lanzador, e incluso podrá pagar su mantenimiento en el caso de que lo tenga. El hechizo estancado podrá volver a ser usado, siempre que pague de nuevo el mismo coste zeónico. Imaginemos un ejemplo un archimago estanca en un bastón un conjuro de Bola de Fuego en grado base. A partir de ese momento, cualquier personaje que tenga ese báculo e introduzca en su interior 50 puntos de Zeon, desencadenará una Bola de Fuego.",
+      "initialGrade": {
+        "effect": "Zeón máximo 80.",
+        "requiredIntelligence": 9,
+        "retention": 0,
+        "zeon": 150
+      },
+      "intermediateGrade": {
+        "effect": "Zeón máximo 120.",
+        "requiredIntelligence": 11,
+        "retention": 0,
+        "zeon": 200
+      },
+      "level": 80,
+      "name": "Estancar Conjuro",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "50 metros de radio / RM 160.",
+        "requiredIntelligence": 14,
+        "retention": 60,
+        "zeon": 280
+      },
+      "arcaneGrade": {
+        "effect": "100 metros de radio / RM 180.",
+        "requiredIntelligence": 16,
+        "retention": 65,
+        "zeon": 320
+      },
+      "bookId": 92,
+      "dailyRetention": false,
+      "effect": "Este conjuro encanta un lugar determinado haciendo que cualquier criatura que entre en él (o que ya se encuentre en su interior) no pueda salir de sus límites si no supera una RM. Aunque podrá moverse dentro de la zona con libertad, le será completamente imposible atravesar la barrera exterior. Una vez que se ha fallado la Resistencia, un sujeto afectado no tiene derecho a un nuevo control mientras se mantenga el conjuro, salvo si por alguna causa sus Resistencias aumentan. La condición para ser afectado es, simplemente, encontrarse dentro del lugar en el turno siguiente al de su lanzamiento, por lo que el mago no podrá elegir blancos en su interior, e incluso podrá quedar él mismo encerrado.",
+      "initialGrade": {
+        "effect": "10 metros de radio / RM 120.",
+        "requiredIntelligence": 9,
+        "retention": 40,
+        "zeon": 200
+      },
+      "intermediateGrade": {
+        "effect": "25 metros de radio / RM 140.",
+        "requiredIntelligence": 11,
+        "retention": 50,
+        "zeon": 240
+      },
+      "level": 80,
+      "name": "Contención",
+      "spellId": 0,
+      "type": "Automático",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "1.000 kilómetros /RM 160.",
+        "requiredIntelligence": 14,
+        "retention": 15,
+        "zeon": 140
+      },
+      "arcaneGrade": {
+        "effect": "Cualquier distancia / RM 180.",
+        "requiredIntelligence": 16,
+        "retention": 20,
+        "zeon": 160
+      },
+      "bookId": 93,
+      "dailyRetention": false,
+      "effect": "Encanta una persona, objeto o lugar, permitiendo al hechicero unir con él sus sentidos. De este modo, el brujo puede utilizar sus habilidades de percepción como si estuviera presente hasta la distancia máxima precisada por el grado del conjuro. Además, tendrá siempre constancia de dónde se encuentra su marca con respecto a su posición. En el caso de tratarse de un ser vivo o un objeto sobrenatural, podrá evitar ser afectado superando una RM.",
+      "initialGrade": {
+        "effect": "10 kilómetros / RM 120.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "100 kilómetros /RM 140.",
+        "requiredIntelligence": 11,
+        "retention": 15,
+        "zeon": 120
+      },
+      "level": 80,
+      "name": "Marca de Detección",
+      "spellId": 0,
+      "type": "Efecto, Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "+40 a la Proyección mágica ofensiva.",
+        "requiredIntelligence": 13,
+        "retention": 15,
+        "zeon": 160
+      },
+      "arcaneGrade": {
+        "effect": "+50 a la Proyección mágica ofensiva.",
+        "requiredIntelligence": 16,
+        "retention": 15,
+        "zeon": 200
+      },
+      "bookId": 94,
+      "dailyRetention": false,
+      "effect": "Empleando este conjuro, el hechicero aumenta su Proyección Mágica ofensiva. Sólo puede emplearse a la vez un conjuro de Erudición Ofensiva sobre un sujeto concreto.",
+      "initialGrade": {
+        "effect": "+20 a la Proyección mágica ofensiva.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "+30 a la Proyección mágica ofensiva.",
+        "requiredIntelligence": 11,
+        "retention": 10,
+        "zeon": 120
+      },
+      "level": 80,
+      "name": "Erudición Ofensiva",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Bono de Habilidad +80.",
+        "requiredIntelligence": 13,
+        "retention": 0,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "Bono de Habilidad +100.",
+        "requiredIntelligence": 16,
+        "retention": 0,
+        "zeon": 140
+      },
+      "bookId": 95,
+      "dailyRetention": false,
+      "effect": "Encanta mágicamente un proyectil convencional haciendo que, una vez disparado, alcance su blanco de modo ineludible. El proyectil utiliza la habilidad de su lanzador, y en el caso de que se emplee para atacar a un adversario, este se defiende utilizando las reglas convencionales de defensa contra proyectiles. No obstante, el poder sobrenatural del conjuro confiere al atacante un bono a su tirada, permitiéndole ignorar las dificultades de disparo de la Tabla 48 y la distancia que le separa del blanco siempre llegará hasta donde se encuentre su objetivo, sin importar dónde esté. Blanco Perfecto debe ser lanzado en el mismo asalto en que se realiza el disparo.",
+      "initialGrade": {
+        "effect": "Bono de Habilidad +40.",
+        "requiredIntelligence": 9,
+        "retention": 0,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "Bono de Habilidad +60.",
+        "requiredIntelligence": 11,
+        "retention": 0,
+        "zeon": 100
+      },
+      "level": 80,
+      "name": "Blanco Perfecto",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Presencia máxima 120.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 320
+      },
+      "arcaneGrade": {
+        "effect": "Presencia máxima 140.",
+        "requiredIntelligence": 17,
+        "retention": 0,
+        "zeon": 400
+      },
+      "bookId": 96,
+      "dailyRetention": false,
+      "effect": "Destruye automáticamente un objeto mágico. El hechicero puede elegir si destruir completamente el objeto o, por el contrario, despojarle simplemente de sus cualidades sobrenaturales.",
+      "initialGrade": {
+        "effect": "Presencia máxima 80.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 200
+      },
+      "intermediateGrade": {
+        "effect": "Presencia máxima 100.",
+        "requiredIntelligence": 13,
+        "retention": 0,
+        "zeon": 250
+      },
+      "level": 90,
+      "name": "Desencantamiento",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Valor zeónico máximo 180.",
+        "requiredIntelligence": 15,
+        "retention": 100,
+        "zeon": 480
+      },
+      "arcaneGrade": {
+        "effect": "Valor zeónico máximo 220.",
+        "requiredIntelligence": 17,
+        "retention": 110,
+        "zeon": 540
+      },
+      "bookId": 97,
+      "dailyRetention": false,
+      "effect": "El Conjuro Natural permite al hechicero atar a su esencia uno o más sortilegios que prepare para tal contingencia, otorgándole la capacidad de lanzarlos posteriormente tantas veces como desee como si fueran conjuros innatos, sin que tengan coste zeónico alguno. De este modo, el mago puede ejecutar innatamente uno de dichos hechizos cada asalto. Por ejemplo, podría tener preparados un sortilegio de Bola de Fuego en grado intermedio y uno de Vuelo en grado base y usar uno de ellos por asalto completamente gratis. En el momento del lanzamiento de este conjuro, el brujo debe ejecutar todos los sortilegios que pretende preparar gastando el Zeon con el que pretende usarlos. Sólo es posible mantener activo un conjuro natural a la vez.",
+      "initialGrade": {
+        "effect": "Valor zeónico máximo 100.",
+        "requiredIntelligence": 10,
+        "retention": 70,
+        "zeon": 350
+      },
+      "intermediateGrade": {
+        "effect": "Valor zeónico máximo 140.",
+        "requiredIntelligence": 13,
+        "retention": 85,
+        "zeon": 420
+      },
+      "level": 90,
+      "name": "Conjuro Natural",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Como en grado intermedio, pero el personaje no puede morir a causa de desangramiento o daños físicos que no sean de origen sobrenatural.",
+        "requiredIntelligence": 15,
+        "retention": 25,
+        "zeon": 500
+      },
+      "arcaneGrade": {
+        "effect": "Como en grado avanzado, pero el personaje puede además sufrir cualquier cantidad de daño físico sin morir siempre y cuando no sufra un crítico mortal en uno de sus puntos vulnerables (aunque no por ello deja de sufrir penalizadores por daños físicos).",
+        "requiredIntelligence": 17,
+        "retention": 30,
+        "zeon": 600
+      },
+      "bookId": 98,
+      "dailyRetention": false,
+      "effect": "Mientras este conjuro siga activo, el hechicero o quien este designe no envejece ni sufre los efectos del paso del tiempo. Así, se volverá un ser inmortal, salvo ante una muerte de carácter violento. Si este conjuro deja de mantenerse o es destruido, el individuo recuperará la edad que le corresponde a un ritmo muy acelerado.",
+      "initialGrade": {
+        "effect": "Las habilidades descritas.",
+        "requiredIntelligence": 10,
+        "retention": 15,
+        "zeon": 300
+      },
+      "intermediateGrade": {
+        "effect": "Como en grado base, pero el personaje tampoco es vulnerable a venenos o enfermedades que no sean de origen sobrenatural.",
+        "requiredIntelligence": 13,
+        "retention": 20,
+        "zeon": 400
+      },
+      "level": 90,
+      "name": "Inmortalidad",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Como en grado intermedio, pero el personaje ignorará cualquier penalizador natural que no sea provocado por efectos sobrenaturales.",
+        "requiredIntelligence": 14,
+        "retention": 25,
+        "zeon": 420
+      },
+      "arcaneGrade": {
+        "effect": "Como en grado avanzado, pero el personaje recupera un punto de Cansancio por asalto.",
+        "requiredIntelligence": 16,
+        "retention": 25,
+        "zeon": 480
+      },
+      "bookId": 99,
+      "dailyRetention": false,
+      "effect": "Hace desaparecer completamente cualquier necesidad física de un individuo. Mientras se mantenga el conjuro, no se verá afectado por los efectos del hambre, el cansancio o el sueño, ignorando por completo cualquier penalizador causado por estos. El personaje puede seguir gastando puntos de Cansancio para mejorar sus acciones físicas (que se recuperan a un ritmo de un punto por hora), aunque no sufre negativos por alcanzar valores muy bajos.",
+      "initialGrade": {
+        "effect": "Las habilidades descritas.",
+        "requiredIntelligence": 10,
+        "retention": 15,
+        "zeon": 300
+      },
+      "intermediateGrade": {
+        "effect": "Como en grado base, pero el personaje ignora los penalizadores causados por efectos climáticos naturales como el calor o el frío.",
+        "requiredIntelligence": 12,
+        "retention": 20,
+        "zeon": 360
+      },
+      "level": 90,
+      "name": "Eliminar Necesidades",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Valor zeónico máximo 240 / RM 160.",
+        "requiredIntelligence": 14,
+        "retention": 0,
+        "zeon": 340
+      },
+      "arcaneGrade": {
+        "effect": "Valor zeónico máximo 300 /RM 180.",
+        "requiredIntelligence": 16,
+        "retention": 0,
+        "zeon": 400
+      },
+      "bookId": 100,
+      "dailyRetention": false,
+      "effect": "Sustrae la esencia mágica de un hechizo, cortando sus lazos con el brujo que lo ha lanzado y ligándolo a otro individuo. A efectos de juego, el hechicero toma el control de un conjuro que no es suyo, dominándolo a partir de ese momento como si él mismo fuese el lanzador. El hechizo robado no podrá tener un valor zeónico superior a lo que indique el grado del conjuro, y sólo es posible robar aquellos que tengan mantenimiento nunca los de acción automática. El hechicero que controla el conjuro podrá evitar que le sea robado superando una RM.",
+      "initialGrade": {
+        "effect": "Valor zeónico máximo 120 / RM 120.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 200
+      },
+      "intermediateGrade": {
+        "effect": "Valor zeónico máximo 180 / RM 140.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 280
+      },
+      "level": 90,
+      "name": "Robar Conjuro",
+      "spellId": 0,
+      "type": "Automático",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "25 metros de abertura / 25.000 kilómetros de distancia / 2.000 presencias al día.",
+        "requiredIntelligence": 14,
+        "retention": 35,
+        "zeon": 700
+      },
+      "arcaneGrade": {
+        "effect": "50 metros de abertura / cualquier distancia de separación / Sin límite de presencias al día.",
+        "requiredIntelligence": 16,
+        "retention": 40,
+        "zeon": 800
+      },
+      "bookId": 101,
+      "dailyRetention": false,
+      "effect": "Portal crea una puerta mágica de tránsito entre dos lugares distantes. Cualquiera que la atraviese se trasladará, instantáneamente, hasta la otra abertura. El conjuro queda fijado en el lugar donde es lanzado y en el sitio donde se designe la salida, por lo que el hechicero no puede cambiar su ubicación con posterioridad. Su creador también puede decidir, durante el lanzamiento, si funciona en ambas direcciones o sólo transporta en una dirección. El tamaño de la abertura del portal así como la distancia máxima que puede separar ambas aberturas y la máxima cantidad de presencias que pueden trasportarse a través de ellas al día son determinadas por el grado del conjuro.",
+      "initialGrade": {
+        "effect": "5 metros de abertura / 1.000 kilómetros de distancia / 500 presencias al día.",
+        "requiredIntelligence": 10,
+        "retention": 25,
+        "zeon": 500
+      },
+      "intermediateGrade": {
+        "effect": "15 metros de abertura / 5.000 kilómetros de distancia / 1.000 presencias al día.",
+        "requiredIntelligence": 12,
+        "retention": 30,
+        "zeon": 600
+      },
+      "level": 90,
+      "name": "Portal",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "1.500 puntos de Zeon.",
+        "requiredIntelligence": 14,
+        "retention": 15,
+        "zeon": 280
+      },
+      "arcaneGrade": {
+        "effect": "3.000 puntos de Zeon.",
+        "requiredIntelligence": 16,
+        "retention": 20,
+        "zeon": 320
+      },
+      "bookId": 102,
+      "dailyRetention": false,
+      "effect": "Solidifica la magia, creando un recipiente sobrenatural para el Zeon. Aplicado a reglas de juego, conforma un contenedor de magia que aparece vacío. Sólo es posible mantener activo un conjuro de Prisma de Magia a la vez.",
+      "initialGrade": {
+        "effect": "400 puntos de Zeon.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 200
+      },
+      "intermediateGrade": {
+        "effect": "800 puntos de Zeon.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 240
+      },
+      "level": 90,
+      "name": "Prisma de Magia",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "10.000 kilómetros / RM 180.",
+        "requiredIntelligence": 14,
+        "retention": 0,
+        "zeon": 420
+      },
+      "arcaneGrade": {
+        "effect": "Cualquier distancia / RM 220.",
+        "requiredIntelligence": 16,
+        "retention": 0,
+        "zeon": 480
+      },
+      "bookId": 103,
+      "dailyRetention": false,
+      "effect": "Localización permite encontrar una persona, objeto o lugar, y conocer su ubicación exacta en ese momento. El brujo puede buscar cualquier cosa concreta, pero no cualidades subjetivas, como por ejemplo localizar a la persona que ha matado a su hermano si no sabe quién es exactamente. Para evitar ser encontrados, las personas u objetos deberán superar una RM. Los lugares de gran tamaño aplicarán un penalizador de –40 a dicha tirada.",
+      "initialGrade": {
+        "effect": "100 kilómetros / RM 120.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 300
+      },
+      "intermediateGrade": {
+        "effect": "1.000 kilómetros / RM 140.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 360
+      },
+      "level": 90,
+      "name": "Localización",
+      "spellId": 0,
+      "type": "Detección",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Presencia máxima 100.",
+        "requiredIntelligence": 14,
+        "retention": 15,
+        "zeon": 280
+      },
+      "arcaneGrade": {
+        "effect": "Presencia máxima 120.",
+        "requiredIntelligence": 16,
+        "retention": 20,
+        "zeon": 320
+      },
+      "bookId": 104,
+      "dailyRetention": false,
+      "effect": "El individuo u objeto designado se vuelve completamente invulnerable a cualquier daño que no sea capaz de afectar energía. Es posible elegir tantos blancos como se desee, mientras la suma de sus presencias no supere lo que determine el máximo del conjuro.",
+      "initialGrade": {
+        "effect": "Presencia máxima 60.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 200
+      },
+      "intermediateGrade": {
+        "effect": "Presencia máxima 80.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 240
+      },
+      "level": 90,
+      "name": "Inmunidad Física",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Pasiva",
+      "advancedGrade": {
+        "effect": "Zeón máximo del conjuro 140.",
+        "requiredIntelligence": 14,
+        "retention": 0,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "Zeón máximo del conjuro 160.",
+        "requiredIntelligence": 16,
+        "retention": 0,
+        "zeon": 280
+      },
+      "bookId": 105,
+      "dailyRetention": false,
+      "effect": "Devuelve un conjuro activo contra su lanzador, o sobre cualquier otro blanco que se elija. El sortilegio rechazado utiliza la misma Proyección Mágica de quien lo ejecutó. La devolución es un efecto automático.",
+      "initialGrade": {
+        "effect": "Zeón máximo del conjuro 100.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 150
+      },
+      "intermediateGrade": {
+        "effect": "Zeón máximo del conjuro 120.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 200
+      },
+      "level": 90,
+      "name": "Devolución de Conjuro",
+      "spellId": 0,
+      "type": "Automático",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Zeon máximo del conjuro 300.",
+        "requiredIntelligence": 14,
+        "retention": 40,
+        "zeon": 360
+      },
+      "arcaneGrade": {
+        "effect": "Zeon máximo del conjuro 400.",
+        "requiredIntelligence": 16,
+        "retention": 45,
+        "zeon": 420
+      },
+      "bookId": 106,
+      "dailyRetention": false,
+      "effect": "Permite introducir un segundo conjuro en el interior de un objeto o individuo, para lanzarlo posteriormente de manera automática, sin ningún tipo de acumulación o preparativo. Este conjuro debe lanzarse al mismo tiempo que el mago realiza otro hechizo de modo que el segundo sortilegio, en lugar de funcionar con normalidad, se queda en el interior de algo esperando a ser desencadenado posteriormente. El conjuro preparado podrá activarse por voluntad del brujo, el sujeto en cuyo interior se encuentre, o aquel que esté en posesión del objeto encantado. Utiliza la Proyección Mágica de su lanzador original, salvo si quien lo posee en la actualidad decide utilizar la suya propia. Una vez lanzado, el hechizo preparado desaparece. Si deja de pagarse el mantenimiento de Preparar Conjuro, el segundo hechizo también se pierde. Sólo es posible lanzar un sortilegio preparado por asalto, sin importar el número que se tenga almacenado. Un objeto o persona puede contener hasta cuatro veces su presencia en valor zeónico. Es decir, un individuo con presencia 50 podría tener hasta 200 puntos de Zeon en conjuros preparados.",
+      "initialGrade": {
+        "effect": "Zeon máximo del conjuro 100.",
+        "requiredIntelligence": 10,
+        "retention": 20,
+        "zeon": 200
+      },
+      "intermediateGrade": {
+        "effect": "Zeon máximo del conjuro 200.",
+        "requiredIntelligence": 12,
+        "retention": 30,
+        "zeon": 300
+      },
+      "level": 90,
+      "name": "Preparar Conjuro",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "5.000 kilómetros / Presencia máxima 240.",
+        "requiredIntelligence": 14,
+        "retention": 0,
+        "zeon": 560
+      },
+      "arcaneGrade": {
+        "effect": "10.000 kilómetros / Presencia máxima 320.",
+        "requiredIntelligence": 16,
+        "retention": 0,
+        "zeon": 640
+      },
+      "bookId": 107,
+      "dailyRetention": false,
+      "effect": "El hechicero, o quien este designe, es teletransportado a otra posición. Este conjuro permite pasar a través de cuerpos físicos, mientras no se encuentren basados en energía. Puede afectar a tantos blancos como se desee, mientras la suma de su presencias no supere lo que determina el grado del conjuro.",
+      "initialGrade": {
+        "effect": "50 kilómetros / Presencia máxima 80.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 300
+      },
+      "intermediateGrade": {
+        "effect": "1.000 kilómetros / Presencia máxima 180.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 480
+      },
+      "level": 90,
+      "name": "Teletransporte",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Un milenio.",
+        "requiredIntelligence": 15,
+        "retention": 20,
+        "zeon": 400
+      },
+      "arcaneGrade": {
+        "effect": "Cualquier periodo de tiempo.",
+        "requiredIntelligence": 17,
+        "retention": 25,
+        "zeon": 500
+      },
+      "bookId": 108,
+      "dailyRetention": false,
+      "effect": "El brujo puede enviar sus sentidos al pasado, para observar cualquier acontecimiento que haya ocurrido tiempo atrás en el lugar donde se encuentra como si estuviera presente. El lanzador puede avanzar y retroceder libremente al momento que desee dentro del periodo que le permite el grado del conjuro.",
+      "initialGrade": {
+        "effect": "Una década.",
+        "requiredIntelligence": 11,
+        "retention": 10,
+        "zeon": 200
+      },
+      "intermediateGrade": {
+        "effect": "Un siglo.",
+        "requiredIntelligence": 13,
+        "retention": 15,
+        "zeon": 300
+      },
+      "level": 100,
+      "name": "Ojo del Tiempo",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Estanca un conjuro de grado avanzado.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 420
+      },
+      "arcaneGrade": {
+        "effect": "Estanca un conjuro de grado arcano.",
+        "requiredIntelligence": 17,
+        "retention": 0,
+        "zeon": 480
+      },
+      "bookId": 109,
+      "dailyRetention": false,
+      "effect": "Sellar estanca un sortilegio anímico activo en una persona, haciendo imposible que se libre posteriormente de sus efectos. Este conjuro se utiliza sobre un hechizo de carácter Anímico, lanzado anteriormente con éxito sobre un individuo que fallase el control de Resistencia. De este modo, hasta que el conjuro Anímico no deje de mantenerse o sea destruido, el sujeto afectado pierde toda capacidad de realizar un nuevo control de RM, sin importar lo que las reglas generales o el propio conjuro digan. No tiene efectos sobre hechizos sin mantenimiento, o aquellos que influyan sólo en un área determinada.",
+      "initialGrade": {
+        "effect": "Estanca un conjuro de grado base.",
+        "requiredIntelligence": 11,
+        "retention": 0,
+        "zeon": 200
+      },
+      "intermediateGrade": {
+        "effect": "Estanca un conjuro de grado intermedio.",
+        "requiredIntelligence": 13,
+        "retention": 0,
+        "zeon": 360
+      },
+      "level": 100,
+      "name": "Sellar",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "+400 de bono.",
+        "requiredIntelligence": 14,
+        "retention": 60,
+        "zeon": 400
+      },
+      "arcaneGrade": {
+        "effect": "+600 de bono.",
+        "requiredIntelligence": 16,
+        "retention": 75,
+        "zeon": 500
+      },
+      "bookId": 110,
+      "dailyRetention": false,
+      "effect": "Utilizando la magia, el hechicero obtiene conocimientos intelectuales que desconoce. Este conjuro otorga al brujo, o a quien este designe, un bono a las habilidades secundarias del campo Intelectual, que podrá repartir libremente como considere apropiado (hasta un tope de 340). Por ejemplo si obtuviera 100 puntos, puede aumentar 40 puntos su habilidad de Historia, más 30 en Ciencia y Animales, respectivamente. Sólo un conjuro de El Don del Conocimiento puede estar activo en un sujeto a la vez.",
+      "initialGrade": {
+        "effect": "+100 de bono.",
+        "requiredIntelligence": 10,
+        "retention": 30,
+        "zeon": 200
+      },
+      "intermediateGrade": {
+        "effect": "+250 de bono.",
+        "requiredIntelligence": 12,
+        "retention": 45,
+        "zeon": 300
+      },
+      "level": 100,
+      "name": "El Don del Conocimiento",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "300 metros de radio / Zeon 200 / Potencial Psíquico 240 / Coste de Ki 22 / Convocación 280",
+        "requiredIntelligence": 15,
+        "retention": 45,
+        "zeon": 420
+      },
+      "arcaneGrade": {
+        "effect": "500 metros de radio / Zeon 250 / Potencial Psíquico 280 / Técnica de Ki 30 / Convocación 320",
+        "requiredIntelligence": 17,
+        "retention": 50,
+        "zeon": 480
+      },
+      "bookId": 111,
+      "dailyRetention": false,
+      "effect": "Afecta un lugar dentro del cual el hechicero crea un área que impide utilizar poderes sobrenaturales de cualquier tipo. En su interior, no funcionará ningún conjuro, convocación, poder psíquico o Técnica de Ki cuyo valor zeónico, potencial o coste no supere lo que indique el grado del conjuro. El área permanece siempre estática donde fue creada y afecta automáticamente a todos los que estén en su interior, incluyendo al propio lanzador.",
+      "initialGrade": {
+        "effect": "50 metros de radio / Zeon 100 / Potencial Psíquico 140 / Coste de Ki 8 / Convocación inferior a 180",
+        "requiredIntelligence": 11,
+        "retention": 30,
+        "zeon": 300
+      },
+      "intermediateGrade": {
+        "effect": "150 metros de radio / Zeon 150 / Potencial Psíquico 180 / Coste de Ki 14 / Convocación 240",
+        "requiredIntelligence": 13,
+        "retention": 40,
+        "zeon": 360
+      },
+      "level": 100,
+      "name": "Escudar Contra Poderes",
+      "spellId": 0,
+      "type": "Automático",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "+150 al valor zeónico falso de los conjuros.",
+        "requiredIntelligence": 15,
+        "retention": 50,
+        "zeon": 480
+      },
+      "arcaneGrade": {
+        "effect": "+250 al valor zeónico falso de los conjuros.",
+        "requiredIntelligence": 17,
+        "retention": 60,
+        "zeon": 600
+      },
+      "bookId": 112,
+      "dailyRetention": false,
+      "effect": "Este conjuro intensifica el poder de la magia que utiliza el hechicero, haciendo que los sortilegios que emplee sean más difíciles de destruir. Mientras se mantenga, fortalece todos los conjuros que lance el brujo contra efectos que pudieran ser perjudiciales para su magia. En juego, añade puntos de Zeon “falsos” al valor zeónico de los conjuros que utilice a partir de ese momento. Este incremento no es real, por lo que estos puntos no otorgan ningún efecto añadido a los sortilegios, aunque sí aumentan su potencial contra habilidades que afecten a hechizos de poder inferior. Si, por ejemplo el brujo tiene mantenido este conjuro en grado base (+50 puntos) y lanza crear luz en grado intermedio (valor zeónico 50), el potencial del conjuro de Luz no se vería incrementado, pero en el caso de que otro mago lanzase un Destruir Conjuro contra él, el hechizo tendría a efectos prácticos un valor zeónico de 70, en lugar de sólo 20.",
+      "initialGrade": {
+        "effect": "+50 al valor zeónico falso de los conjuros.",
+        "requiredIntelligence": 11,
+        "retention": 20,
+        "zeon": 200
+      },
+      "intermediateGrade": {
+        "effect": "+100 al valor zeónico falso de los conjuros.",
+        "requiredIntelligence": 13,
+        "retention": 40,
+        "zeon": 360
+      },
+      "level": 100,
+      "name": "Fortalecer la Magia",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Zeón máximo 200.",
+        "requiredIntelligence": 15,
+        "retention": 50,
+        "zeon": 500
+      },
+      "arcaneGrade": {
+        "effect": "Zeón máximo 250.",
+        "requiredIntelligence": 17,
+        "retention": 60,
+        "zeon": 600
+      },
+      "bookId": 113,
+      "dailyRetention": false,
+      "effect": "Condicionamiento afecta directamente a otros conjuros que lance el hechicero, estancándolos y haciendo que no se activen hasta que se dé una circunstancia que su controlador haya elegido. Debe de lanzarse al mismo tiempo que el mago realiza los hechizos adicionales, de modo que dichos sortilegios, en lugar de funcionar con normalidad, esperan para activarse a que se presenten las circunstancias que el brujo hubiera designado. Cada sortilegio condicionado puede ser sometido a una condición distinta pero, una vez prefijadas, posteriormente no pueden cambiarse. El conjuro condicionado se activará automáticamente en el mismo momento en que se dé la circunstancia determinada, incluso si el mago no es consciente de ello. Por ejemplo, si un brujo condiciona el conjuro de Detener Caída, puede decidir que se active en el instante en el que caiga de gran altura, al igual que un nigromante es capaz de condicionar un hechizo de Superar la Muerte para que se ejecute en el momento en el que muera. La acción del conjuro es activa o pasiva, dependiendo de su propia naturaleza, pero siempre se acaba activando al final del asalto en el que se ha dado la condición en caso de que el lanzador no pueda actuar ese asalto. Mientras permanezcan estancados, los conjuros no tienen mantenimiento, ya que no se encuentran activos. Si el hechizo de condicionamiento desaparece, los sortilegios condicionados también se pierden. Pueden condicionarse tantos conjuros como se desee siempre que no excedan el Zeon máximo determinado por el Grado del conjuro. Sólo es posible mantener activo un conjuro de Condicionamiento a la vez.",
+      "initialGrade": {
+        "effect": "Zeón máximo 100.",
+        "requiredIntelligence": 11,
+        "retention": 30,
+        "zeon": 300
+      },
+      "intermediateGrade": {
+        "effect": "Zeón máximo 150.",
+        "requiredIntelligence": 13,
+        "retention": 40,
+        "zeon": 400
+      },
+      "level": 100,
+      "name": "Condicionamiento",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM 180.",
+        "requiredIntelligence": 14,
+        "retention": 50,
+        "zeon": 500
+      },
+      "arcaneGrade": {
+        "effect": "RM 220.",
+        "requiredIntelligence": 16,
+        "retention": 60,
+        "zeon": 600
+      },
+      "bookId": 114,
+      "dailyRetention": false,
+      "effect": "Otorga al hechicero la capacidad de tomar control del cuerpo de otro individuo, trasladando temporalmente una parte de su espíritu hasta el huésped. Este dominio permite al brujo utilizar o bien las habilidades del sujeto poseído o bien las suyas propias (el mago decide cada turno cual de ellas emplea, pero en ningún caso podrá mezclarlas ambas a la vez). En caso de que decida usar las habilidades del cuerpo poseído, las características físicas serán las del cuerpo poseído, y no las del lanzador del conjuro. Si el individuo no tiene una forma física similar a la del brujo, el lanzador aplicará un penalizador de entre –20 y –40, a discreción del DJ, a causa de la dificultad que entraña para él controlarlo correctamente. Mientras Posesión permanece activo, el cuerpo original del hechicero se encuentra en un estado de coma. Los ataques que no sean capaces de dañar energía sólo afectarán al cuerpo poseído, pero si son sobrenaturales, restarán puntos de vida a ambos por igual. Si el cuerpo es de un ser con acumulación, el brujo sólo sufre una décima parte del daño que recibe la forma física. En el caso de que el cuerpo muera, pero al brujo le sigan quedando puntos de vida, su espíritu regresa de inmediato a su forma original. Para evitar los efectos del conjuro, es necesario superar una RM. El afectado tiene derecho a una nueva tirada por día que transcurra, o cada vez que realice una acción que vaya completamente en contra de su comportamiento.",
+      "initialGrade": {
+        "effect": "RM 120.",
+        "requiredIntelligence": 10,
+        "retention": 30,
+        "zeon": 300
+      },
+      "intermediateGrade": {
+        "effect": "RM 140.",
+        "requiredIntelligence": 12,
+        "retention": 40,
+        "zeon": 400
+      },
+      "level": 100,
+      "name": "Posesión",
+      "spellId": 0,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Valor zeónico máximo 200.",
+        "requiredIntelligence": 14,
+        "retention": 0,
+        "zeon": 360
+      },
+      "arcaneGrade": {
+        "effect": "Valor zeónico máximo 250.",
+        "requiredIntelligence": 16,
+        "retention": 0,
+        "zeon": 420
+      },
+      "bookId": 115,
+      "dailyRetention": false,
+      "effect": "Permite al brujo imitar un sortilegio que se encuentre en su presencia. Pueden copiarse tanto hechizos automáticos, si se lanzan en el mismo asalto que se utiliza la imitación, como conjuros mantenidos. Este hechizo imita incluso conjuros de Alta Magia o Divinos, sin necesidad de que el brujo tenga el Gnosis necesario para lanzarlos. El brujo elige si emplea su propia Proyección Mágica o la de quien lanza el conjuro original. El máximo valor zeónico de dichos conjuros no puede exceder lo que indique el grado del conjuro.",
+      "initialGrade": {
+        "effect": "Valor zeónico máximo 100.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 200
+      },
+      "intermediateGrade": {
+        "effect": "Valor zeónico máximo 150.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 300
+      },
+      "level": 100,
+      "name": "Imitar Conjuro",
+      "spellId": 0,
+      "type": "Efecto (Variable)",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "250 metros de radio / +30 al valor zeónico de la magia innata.",
+        "requiredIntelligence": 14,
+        "retention": 70,
+        "zeon": 400
+      },
+      "arcaneGrade": {
+        "effect": "500 metros de radio / +40 al valor zeónico de la magia innata.",
+        "requiredIntelligence": 16,
+        "retention": 80,
+        "zeon": 500
+      },
+      "bookId": 116,
+      "dailyRetention": false,
+      "effect": "Este hechizo incrementa exponencialmente el potencial mágico ambiental, aumentando la capacidad de los brujos para dominar innatamente su magia. En reglas de juego, encanta una zona estática dentro de la cual los conjuros innatos tienen un potencial adicional de lo que indique el ACT del brujo. El lanzador posee la capacidad de elegir si este incremento favorece a todo el mundo, o si sólo él se beneficia de sus efectos.",
+      "initialGrade": {
+        "effect": "25 metros de radio / +10 al valor zeónico de la magia innata.",
+        "requiredIntelligence": 10,
+        "retention": 50,
+        "zeon": 200
+      },
+      "intermediateGrade": {
+        "effect": "100 metros de radio/ +20 al valor zeónico de la magia innata.",
+        "requiredIntelligence": 12,
+        "retention": 60,
+        "zeon": 300
+      },
+      "level": 100,
+      "name": "Magia Innata",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM 160.",
+        "requiredIntelligence": 14,
+        "retention": 0,
+        "zeon": 200
+      },
+      "arcaneGrade": {
+        "effect": "RM 180.",
+        "requiredIntelligence": 16,
+        "retention": 0,
+        "zeon": 250
+      },
+      "bookId": 117,
+      "dailyRetention": false,
+      "effect": "El brujo puede vincular el pago del mantenimiento de uno de sus conjuros a otro individuo u objeto, obligándole a invertir sus puntos de Zeon de un modo inconsciente. La vinculación sólo puede utilizarse sobre personas que posean el Don o, en su defecto, seres u objetos mágicos. Para evitar ser afectado, es necesario superar una RM. Si el individuo vinculado no se da cuenta de que está siendo blanco de este conjuro, no puede realizar un nuevo control de Resistencia. Si se percata y trata de resistirse, tendrá derecho a repetir la tirada, dependiendo del tipo de hechizo al que se le haya vinculado en el caso de conjuros con mantenimiento diario tendrá derecho a una nueva tirada cada día, mientras que con el resto podrá realizar un nuevo control cada cinco asaltos. En el momento en que supere la RM o no le queden suficientes puntos de Zeon, los efectos de la vinculación desaparecerán para siempre.",
+      "initialGrade": {
+        "effect": "RM 120.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "RM 140.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 150
+      },
+      "level": 100,
+      "name": "Vincular Mantenimiento",
+      "spellId": 0,
+      "type": "Anímico",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "500 metros de radio / RM 220.",
+        "requiredIntelligence": 16,
+        "retention": 80,
+        "zeon": 800
+      },
+      "arcaneGrade": {
+        "effect": "1 kilómetro de radio / RM 260.",
+        "requiredIntelligence": 18,
+        "retention": 100,
+        "zeon": 1000
+      },
+      "bookId": 118,
+      "dailyRetention": false,
+      "effect": "Este hechizo crea un área en cuyo interior el brujo se convierte en juez absoluto de lo que ocurre, obteniendo la capacidad de intervenir en las decisiones de todos los presentes. Si lo desea, puede vetar cualquier acción activa de los sujetos que se encuentren en el interior de la zona afectada, prohibiéndoles realizar cualquier cosa que él no quiera que hagan. El brujo no es capaz de someter a nadie a su voluntad, pero sí de impedirles actuar libremente. La prohibición es una acción pasiva, por lo que interrumpe incluso las acciones de individuos que le hayan ganado la iniciativa. El hechicero debe ser consciente de la maniobra que desea vetar. Cada vez que un personaje quiera realizar un acto que prohíba El Magistrado, necesita superar una RM o no podrá iniciarla. Si embargo, incluso si alguien consigue superar la Resistencia, no se verá totalmente libre del conjuro, ya que en el siguiente asalto volverá a someterse a la voluntad del Magistrado si no supera nuevamente el control. El área permanece estática en el lugar donde fue lanzada. La condición para ser afectado consiste, simplemente, en estar dentro del área del conjuro.",
+      "initialGrade": {
+        "effect": "50 metros de radio / RM 140.",
+        "requiredIntelligence": 12,
+        "retention": 45,
+        "zeon": 450
+      },
+      "intermediateGrade": {
+        "effect": "100 metros de radio / RM 180.",
+        "requiredIntelligence": 14,
+        "retention": 60,
+        "zeon": 600
+      },
+      "level": 100,
+      "name": "El Magistrado",
+      "spellId": 0,
+      "type": "Automático",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM 200.",
+        "requiredIntelligence": 17,
+        "retention": 0,
+        "zeon": 1200
+      },
+      "arcaneGrade": {
+        "effect": "RM 240.",
+        "requiredIntelligence": 19,
+        "retention": 0,
+        "zeon": 1500
+      },
+      "bookId": 119,
+      "dailyRetention": false,
+      "effect": "Mediante este conjuro el mago puede modificar los acontecimientos venideros según sus designios, predestinando distintos sucesos en el futuro. Queda a disposición del propio hechicero designar la complejidad de los mismos del modo que desee. Es posible que predestine un único evento, dejando en manos de la casualidad los distintos sucesos que permitan su realización, o por el contrario tratar de determinar cada uno de los aspectos que acabarán causando el fin deseado. Aunque en un principio este conjuro no puede causar un resultado completamente imposible, las posibilidades quedan limitadas únicamente por la imaginación de su lanzador. Los sucesos determinados pueden fijarse para una fecha concreta o para que se repitan eternamente a lo largo del tiempo, como por ejemplo, todos los solsticios de los años bisiestos. Dada la enorme complejidad del sortilegio, veamos ahora algunos ejemplos de lo que se podría hacer con él. Una Predestinación imprecisa sería que el hechicero designe que la fatalidad se cernirá sobre una familia y toda su estirpe, cuyos miembros sufrirán una muerte horrible antes de cumplir cierta edad. Por el contrario, si el brujo quisiese detallarla más, podría precisar, diciendo que sus primogénitos serán asesinados por lobos salvajes la misma noche en la que nazcan. Naturalmente, no todas las predestinaciones han de resultar negativas se puede decidir, incluso, que un niño acabará convirtiéndose en rey. Sin embargo, no crea un futuro absoluto e ineludible, ya que siempre existe la posibilidad de evitar su resultado. Todo aquel que no se encuentre dentro de los límites prefijados por el hechicero, es decir, fuera de la RM del mismo, tiene la capacidad de impedir que el destino se cumpla. Para contrarrestar la acción de terceros, el lanzador puede inventar medidas de seguridad que se encuentren dentro de los límites del conjuro. Un buen ejemplo sería decidir que cualquier persona que trate de detener el destino será asesinada por lobos, que actuarían como una especie de salvaguardia. Para evitar que este conjuro funcione, sólo se requiere que se supere una única RM en el momento de su lanzamiento, que será realizada por la persona, criatura u objeto con mayor Resistencia de cuantos sean afectados directamente por la Predestinación. Los que se encuentren dentro de sus efectos, no podrán hacer nada para evitar su cumplimiento",
+      "initialGrade": {
+        "effect": "RM 140.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 600
+      },
+      "intermediateGrade": {
+        "effect": "RM 170.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 900
+      },
+      "level": 100,
+      "name": "Predestinación",
+      "spellId": 0,
+      "type": "Automático",
+      "withRetention": false
+    }
+  ]
+}

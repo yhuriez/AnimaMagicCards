@@ -16,5 +16,5 @@ public class Spellbook {
     public String oppositeBook;
     public List<String> secondaryBookAccessibles;
     public List<String> primaryBookUnaccessibles;
-
+    public List<Spell> spells;
 }

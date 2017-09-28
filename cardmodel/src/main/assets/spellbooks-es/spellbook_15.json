@@ -1,0 +1,365 @@
+{
+  "bookId": 15,
+  "bookName": "Literae",
+  "description": "Literae es la magia de las palabras, la modificación de la realidad escribiendo anotaciones en los márgenes del libro al que llamamos realidad. Los que la emplean son capaces de utilizar la hechicería para reescribir el guión de la vida adaptándolo a sus necesidades.",
+  "primaryBookUnaccessibles": [
+    "Nigromancia",
+    "Destrucción",
+    "Esencia",
+    "Fuego",
+    "Aire",
+    "Tierra"
+  ],
+  "spells": [
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Afecta a conjuros Literae de grado Avanzado.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 100
+      },
+      "arcaneGrade": {
+        "effect": "Afecta a conjuros Literae de grado Arcano.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 120
+      },
+      "bookId": 1,
+      "dailyRetention": true,
+      "effect": "Crea una pluma sobrenatural que escribe sobre cualquier superficie sin la necesidad de tinta. Usándola durante el lanzamiento de un conjuro de la sub-vía Literae, el hechicero puede potenciar monumentalmente los efectos de dicho sortilegio, haciendo que el coste de Zeon requerido se reduzca a la mitad. Por ejemplo, un conjuro de Misiva en grado base pasaría a costar 40 en lugar de 80.",
+      "initialGrade": {
+        "effect": "Afecta a conjuros Literae de grado base.",
+        "requiredIntelligence": 5,
+        "retention": 5,
+        "zeon": 30
+      },
+      "intermediateGrade": {
+        "effect": "Afecta a conjuros Literae de grado Intermedio.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 80
+      },
+      "level": 4,
+      "name": "Pluma de la Realidad",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "1000 Kilómetros.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 200
+      },
+      "arcaneGrade": {
+        "effect": "Cualquier lugar.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 280
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "Tras escribir una carta es posible utilizar este hechizo para enviar su contenido a un individuo a quien el hechicero conozca personalmente. La carta, así como su envoltorio, desaparece de un fogonazo y una nube de humo, reapareciendo instantes después al lado de su receptor. El alcance del hechizo depende de su grado. Misiva puede traspasar estructuras encantadas de menor poder siempre y cuando haya suficiente espacio para, por ejemplo, “colar” la carta debajo de la puerta.",
+      "initialGrade": {
+        "effect": "10 Kilómetros.",
+        "requiredIntelligence": 6,
+        "retention": 0,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "100 Kilómetros.",
+        "requiredIntelligence": 9,
+        "retention": 0,
+        "zeon": 140
+      },
+      "level": 14,
+      "name": "Misiva",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "1 mes.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "1 año.",
+        "requiredIntelligence": 15,
+        "retention": 30,
+        "zeon": 300
+      },
+      "bookId": 3,
+      "dailyRetention": true,
+      "effect": "Encanta un libro para que recoja todas las experiencias que afecten al mago para poder revisarlas posteriormente, como si a efectos de juego estuviera escribiendo un detallado diario. El grado del conjuro determina el máximo periodo de tiempo que dicho libro cubre retrospectivamente desde el momento del lanzamiento.",
+      "initialGrade": {
+        "effect": "1 día.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "1 semana.",
+        "requiredIntelligence": 9,
+        "retention": 20,
+        "zeon": 180
+      },
+      "level": 24,
+      "name": "Diario de Viaje",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM o RP 160.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 360
+      },
+      "arcaneGrade": {
+        "effect": "RM o RP 180.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 480
+      },
+      "bookId": 4,
+      "dailyRetention": false,
+      "effect": "Permite escribir una orden simple en un pergamino que afectará al primero que la lea, obligándole a cumplirla si falla la resistencia del sortilegio. La orden funcionará incluso si está oculta entre otras frases, aunque el personaje afectado obtiene entre un +20 y un +60 al control si el mandato va directamente en contra de su naturaleza. Este conjuro puede repetirse de manera encadenada en varias ocasiones para crear una orden compleja, como “abre la puerta y luego olvida lo ocurrido”. El poder de las palabras pierde su poder después de haber imbuido a una persona con la orden, convirtiéndose en simples letras desde ese momento.",
+      "initialGrade": {
+        "effect": "RM o RP 120.",
+        "requiredIntelligence": 6,
+        "retention": 0,
+        "zeon": 120
+      },
+      "intermediateGrade": {
+        "effect": "RM o RP 140.",
+        "requiredIntelligence": 9,
+        "retention": 0,
+        "zeon": 240
+      },
+      "level": 34,
+      "name": "Orden Escrita",
+      "spellId": 0,
+      "type": "Automático",
+      "withRetention": false
+    },
+    {
+      "actionType": "Pasiva",
+      "advancedGrade": {
+        "effect": "800 Puntos de Resistencia",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 250
+      },
+      "arcaneGrade": {
+        "effect": "1.200 Puntos de Resistencia",
+        "requiredIntelligence": 15,
+        "retention": 30,
+        "zeon": 300
+      },
+      "bookId": 5,
+      "dailyRetention": false,
+      "effect": "Usando la Pluma Mágica para trazar caracteres en el aire, el hechicero crea un escudo de palabras que le defienden tanto de ataques físicos como sobrenaturales. El escudo regenera cada asalto tantos Puntos de Resistencia como la habilidad base del mago en Arte (Literatura).",
+      "initialGrade": {
+        "effect": "200 Puntos de Resistencia.",
+        "requiredIntelligence": 8,
+        "retention": 15,
+        "zeon": 150
+      },
+      "intermediateGrade": {
+        "effect": "500 Puntos de Resistencia",
+        "requiredIntelligence": 10,
+        "retention": 20,
+        "zeon": 200
+      },
+      "level": 44,
+      "name": "Escudo de Palabras",
+      "spellId": 0,
+      "type": "Defensa",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM o RP 160 / Límite de Presencia 240 / 80 metros de radio.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 480
+      },
+      "arcaneGrade": {
+        "effect": "RM o RP 180 / Límite de Presencia 320 / 150 metros de radio.",
+        "requiredIntelligence": 15,
+        "retention": 30,
+        "zeon": 600
+      },
+      "bookId": 6,
+      "dailyRetention": false,
+      "effect": "Permite al hechicero modificar el comportamiento de las personas que se encuentran a su alrededor escribiendo sobre una superficie las acciones que quiere que dichos individuos realicen. Básicamente, el brujo se convierte en el escritor de una obra de teatro poniendo a la gente en el papel de actores que cumplen su cometido conforme él lo vaya narrando. Puede afectar a varias personas, siempre que su presencia combinada no supere el límite marcado por el grado del sortilegio. La condición para verse afectado es estar dentro del área de efecto del conjuro y que el lanzador conozca el nombre real de las personas sobre las que quiere influir, aunque sus objetivos pueden resistirse al control superando una RM o RP para evitar ser controlados. Si el narrador deja de escribir y los afectados no tienen nuevas órdenes que cumplir, se quedarán quietos, a la espera de su siguiente papel.",
+      "initialGrade": {
+        "effect": "RM o RP 120/ Límite de Presencia 100 / 20 metros de radio.",
+        "requiredIntelligence": 6,
+        "retention": 15,
+        "zeon": 240
+      },
+      "intermediateGrade": {
+        "effect": "RM o RP 140 / Límite de Presencia 180 / 40 metros de radio.",
+        "requiredIntelligence": 9,
+        "retention": 20,
+        "zeon": 360
+      },
+      "level": 54,
+      "name": "Teatro de la Vida",
+      "spellId": 0,
+      "type": "Automático",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "320 puntos de habilidad intelectual.",
+        "requiredIntelligence": 13,
+        "retention": 30,
+        "zeon": 380
+      },
+      "arcaneGrade": {
+        "effect": "440 puntos de habilidad intelectual.",
+        "requiredIntelligence": 15,
+        "retention": 40,
+        "zeon": 500
+      },
+      "bookId": 7,
+      "dailyRetention": true,
+      "effect": "Encanta un libro para que responda las preguntas que se le dirijan de manera que, cuando alguien haga una pregunta ante él, se escribirá en sus páginas una contestación. Lamentablemente, el libro no es capaz de responder a cualquier duda al lanzar Compendio, el manuscrito afectado recibe una cantidad de puntos de una habilidad intelectual determinada por el grado del conjuro, y este dará una respuesta apropiada basada en lo que sabría un experto con la misma puntuación sobre el tema.",
+      "initialGrade": {
+        "effect": "120 puntos de habilidad intelectual.",
+        "requiredIntelligence": 7,
+        "retention": 10,
+        "zeon": 120
+      },
+      "intermediateGrade": {
+        "effect": "240 puntos de habilidad intelectual.",
+        "requiredIntelligence": 10,
+        "retention": 20,
+        "zeon": 260
+      },
+      "level": 64,
+      "name": "Compendio",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Presencia máxima 120.",
+        "requiredIntelligence": 14,
+        "retention": 0,
+        "zeon": 480
+      },
+      "arcaneGrade": {
+        "effect": "Presencia máxima 160.",
+        "requiredIntelligence": 16,
+        "retention": 0,
+        "zeon": 700
+      },
+      "bookId": 8,
+      "dailyRetention": false,
+      "effect": "Este hechizo modifica la realidad siempre que sea algo plausible y no afecte directamente a otro ser vivo. Por ejemplo, si el hechicero cae desde una azotea puede “escribir” que lo hace sobre un carro de heno que amortigua su caída y así ocurrirá o, si quiere entrar en un sitio cerrado, podrá “narrar” que la puerta no está bloqueada y será cierto. Las posibilidades de este hechizo son casi infinitas, siempre y cuando los elementos y objetos empleados sean simples y con una presencia que no supere lo que determine el grado del conjuro.",
+      "initialGrade": {
+        "effect": "Presencia máxima 40.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 280
+      },
+      "intermediateGrade": {
+        "effect": "Presencia máxima 80.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 320
+      },
+      "level": 74,
+      "name": "Dramaturgo",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Nivel 7.",
+        "requiredIntelligence": 14,
+        "retention": 80,
+        "zeon": 800
+      },
+      "arcaneGrade": {
+        "effect": "Nivel 10.",
+        "requiredIntelligence": 17,
+        "retention": 120,
+        "zeon": 1200
+      },
+      "bookId": 9,
+      "dailyRetention": true,
+      "effect": "Crea un “personaje” con la personalidad y habilidades que desee el hechicero. Para hacerlo, el lanzador debe de describir en un libro la personalidad, historia y naturaleza de dicho individuo, quien creerá realmente ser lo que el brujo ha descrito para él. La existencia del Secundario está ligada al libro por lo que, en caso de que este sea destruido, el personaje desaparecerá de inmediato. El nivel del Secundario no puede superar el indicado por el grado del sortilegio ni tampoco el nivel del propio hechicero.",
+      "initialGrade": {
+        "effect": "Nivel 2.",
+        "requiredIntelligence": 10,
+        "retention": 40,
+        "zeon": 400
+      },
+      "intermediateGrade": {
+        "effect": "Nivel 5.",
+        "requiredIntelligence": 12,
+        "retention": 60,
+        "zeon": 600
+      },
+      "level": 84,
+      "name": "Secundario",
+      "spellId": 0,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM 160",
+        "requiredIntelligence": 17,
+        "retention": 0,
+        "zeon": 1400
+      },
+      "arcaneGrade": {
+        "effect": "RM 180",
+        "requiredIntelligence": 19,
+        "retention": 0,
+        "zeon": 2500
+      },
+      "bookId": 10,
+      "dailyRetention": false,
+      "effect": "Este hechizo es la transformación suprema de la realidad, alterar el destino de otro ser vivo haciendo que termine como al mago le plazca. El lanzador puede escribir cualquier desenlace que desee para la vida de una persona, como “y tropezando, cayó sobre su espada ensartándose mortalmente” o “el cielo se iluminó cuando, de entre las nubes de tormenta, un rayo cayó sobre él cual saeta de los vengativos dioses”. La condición para verse afectado por este sortilegio es haber sido visto por el brujo al menos una vez y que este conozca su nombre verdadero. Para evitar sus efectos, tanto el blanco de Tragedia como cualquier persona directamente involucrada en el destino escrito han de superar la RM del sortilegio. De conseguirlo, se vuelven inmunes a este hechizo (lanzado por el mismo brujo) durante el resto de sus existencias.",
+      "initialGrade": {
+        "effect": "RM 120",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 500
+      },
+      "intermediateGrade": {
+        "effect": "RM 140",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 900
+      },
+      "level": 94,
+      "name": "Tragedia",
+      "spellId": 0,
+      "type": "Automático.",
+      "withRetention": false
+    }
+  ]
+}

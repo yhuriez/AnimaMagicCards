@@ -13,10 +13,6 @@ public class SpellGrade implements Parcelable {
     public String effect;
     public int retention;
 
-    public boolean limitedIntelligence;
-    public boolean limitedZeon;
-    public boolean limitedRetention;
-
 
     @Override
     public int describeContents() {
@@ -29,9 +25,6 @@ public class SpellGrade implements Parcelable {
         dest.writeInt(this.requiredIntelligence);
         dest.writeString(this.effect);
         dest.writeInt(this.retention);
-        dest.writeByte(this.limitedIntelligence ? (byte) 1 : (byte) 0);
-        dest.writeByte(this.limitedZeon ? (byte) 1 : (byte) 0);
-        dest.writeByte(this.limitedRetention ? (byte) 1 : (byte) 0);
     }
 
     public SpellGrade() {
@@ -42,9 +35,6 @@ public class SpellGrade implements Parcelable {
         this.requiredIntelligence = in.readInt();
         this.effect = in.readString();
         this.retention = in.readInt();
-        this.limitedIntelligence = in.readByte() != 0;
-        this.limitedZeon = in.readByte() != 0;
-        this.limitedRetention = in.readByte() != 0;
     }
 
     public static final Creator<SpellGrade> CREATOR = new Creator<SpellGrade>() {

@@ -142,7 +142,8 @@ public class SpellDaoTest {
     public void should_have_same_values_between_language_when_load_all_spells_from_managed_languages() {
         String[] languages = new String[]{
                 Locale.FRENCH.toString(),
-                Locale.US.toString()
+                Locale.US.toString(),
+                Locale.forLanguageTag("es").toString()
         };
 
         for (SpellbookType spellbookType : SpellbookType.values()) {
