@@ -7,7 +7,7 @@ import fr.enlight.spellgenerator.spells.Spellbook
 /**
  *
  */
-class SpellFileParser(private val descriptor: SpellFileDescriptor) {
+class SpellFileParser(private val descriptor: SpellFileDescriptor, private val withSpellbookDescription: Boolean = false) {
 
 
     fun parseFileLines(fileLines: List<String>): Map<Spellbook, List<Spell>> {
@@ -43,15 +43,18 @@ class SpellFileParser(private val descriptor: SpellFileDescriptor) {
 
 
     fun createSpellbook(lines: List<String>): Spellbook {
-        if (lines.size < 2) throw IllegalStateException()
-
         val spellbook = Spellbook()
         spellbook.bookName = lines[0].split(":",";")[1]
-        spellbook.description = lines[1].split(";")[0]
-        spellbook.primaryBookUnaccessibles = lines[2].split(":", ",", ";")
-                .map { it.removeSuffix(".").trim() }
-                .filterNot { it.isEmpty() }
-                .filterNot { it.contains(descriptor.closedMarker) || it.contains(descriptor.closedPathMarker) }
+
+        if(withSpellbookDescription) {
+            if (lines.size < 2) throw IllegalStateException()
+
+            spellbook.description = lines[1].split(";")[0]
+            spellbook.primaryBookUnaccessibles = lines[2].split(":", ",", ";")
+                    .map { it.removeSuffix(".").trim() }
+                    .filterNot { it.isEmpty() }
+                    .filterNot { it.contains(descriptor.closedMarker) || it.contains(descriptor.closedPathMarker) }
+        }
         return spellbook
     }
 
@@ -100,14 +103,24 @@ class SpellFileParser(private val descriptor: SpellFileDescriptor) {
             // Level and Action Type
             val levelAndActionType = spellMap[descriptor.levelMarker]
                     ?.toSplitItems(":", ";", "/")
-                    ?.filterNot { it.contains(descriptor.actionMarker) } ?: emptyList()
+                    ?.filterNot { it.contains(descriptor.actionMarker) }
+                    ?.filterNot { it.contains(descriptor.typeMarker) } ?: emptyList()
 
-            if (levelAndActionType.size != 2)
-                throw IllegalStateException("Should have two element (level and action) at this point")
+            if (levelAndActionType.size < 2)
+                throw IllegalStateException("Should have at least two element (level and action) at this point")
 
-            result.level = levelAndActionType[0].toInt()
+            val level = levelAndActionType[0]
+            if(level.contains("-")){
+                result.level = level.split("-")[1].toInt()
+            } else {
+                result.level = level.toInt()
+            }
+
             result.actionType = levelAndActionType[1]
 
+            if(levelAndActionType.size > 2){
+                result.type = levelAndActionType[2]
+            }
 
             // Effect
             result.effect = spellMap[descriptor.effectMarker]?.toSingleItem()
@@ -115,9 +128,10 @@ class SpellFileParser(private val descriptor: SpellFileDescriptor) {
 
 
             // Type
-            result.type = spellMap[descriptor.typeMarker]?.toSingleItem()
-                    ?: throw IllegalStateException("Should have a type at this point")
-
+            if(result.type == null) {
+                result.type = spellMap[descriptor.fullTypeMarker]?.toSingleItem()
+                        ?: throw IllegalStateException("Should have a type at this point")
+            }
 
             // Grade effects
             result.initialGrade.effect = spellMap[descriptor.baseGradeMarker]?.toSingleItem()

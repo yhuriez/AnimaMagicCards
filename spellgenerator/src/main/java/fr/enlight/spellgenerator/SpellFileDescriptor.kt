@@ -20,6 +20,7 @@ sealed class SpellFileDescriptor(
         val retentionMarker: String,
         val dailyRetentionMarker: String,
         val typeMarker: String,
+        val fullTypeMarker: String,
         val noMarker: String,
         val gradeMarker: String,
         val spellsMarkers: List<String> = listOf(
@@ -54,7 +55,8 @@ class SpanishSpellFileDescriptor: SpellFileDescriptor(
         arcaneGradeMarker = "Arcano",
         retentionMarker = "Mantenimiento",
         dailyRetentionMarker = "Diario",
-        typeMarker = "Tipo de Conjuro",
+        typeMarker = "Tipo",
+        fullTypeMarker = "Tipo de Conjuro",
         noMarker = "No",
         gradeMarker = "Grado"
 )
