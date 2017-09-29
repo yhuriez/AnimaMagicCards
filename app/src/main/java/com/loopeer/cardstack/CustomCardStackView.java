@@ -42,4 +42,5 @@ public class CustomCardStackView extends CardStackView {
     public interface ItemSelectionListener{
         void onItemSelected(int position);
     }
+
 }

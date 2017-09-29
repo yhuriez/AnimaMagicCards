@@ -17,7 +17,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:stackHeaderHeight="@dimen/spell_stack_header_height_normal">
+        app:stackHeaderHeightCustom="@{model.getStackHeaderHeight(context)}">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"

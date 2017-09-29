@@ -82,7 +82,7 @@
         "retention": 15
       },
       "withRetention": true,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 3,
@@ -222,7 +222,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 7,
@@ -281,13 +281,13 @@
       },
       "advancedGrade": {
         "zeon": 120,
-        "requiredIntelligence": 10,
+        "requiredIntelligence": 12,
         "effect": " As Intermediate, but also stops supernatural states.",
         "retention": 10
       },
       "arcaneGrade": {
         "zeon": 150,
-        "requiredIntelligence": 12,
+        "requiredIntelligence": 15,
         "effect": " As Advanced, but the caster can choose which feelings to stop and which not.",
         "retention": 10
       },
@@ -327,7 +327,7 @@
         "retention": 20
       },
       "withRetention": true,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 10,
@@ -362,7 +362,7 @@
         "retention": 15
       },
       "withRetention": true,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 11,
@@ -467,7 +467,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 14,
@@ -586,27 +586,27 @@
         "zeon": 120,
         "requiredIntelligence": 7,
         "effect": " MR 120.",
-        "retention": 10
+        "retention": 0
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 10,
         "effect": " MR 150.",
-        "retention": 20
+        "retention": 0
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 13,
         "effect": " MR 180.",
-        "retention": 25
+        "retention": 0
       },
       "arcaneGrade": {
         "zeon": 320,
         "requiredIntelligence": 16,
         "effect": " MR 220.",
-        "retention": 35
+        "retention": 0
       },
-      "withRetention": true,
+      "withRetention": false,
       "dailyRetention": false
     },
     {
@@ -782,7 +782,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 23,
@@ -852,7 +852,7 @@
         "retention": 35
       },
       "withRetention": true,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 25,

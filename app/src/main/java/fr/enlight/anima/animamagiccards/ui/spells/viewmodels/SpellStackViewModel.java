@@ -2,6 +2,7 @@ package fr.enlight.anima.animamagiccards.ui.spells.viewmodels;
 
 
 import android.content.Context;
+import android.databinding.Bindable;
 import android.databinding.ObservableBoolean;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.ColorInt;
@@ -9,6 +10,7 @@ import android.support.annotation.ColorRes;
 import android.support.annotation.DrawableRes;
 import android.support.v4.content.res.ResourcesCompat;
 
+import com.android.databinding.library.baseAdapters.BR;
 import com.loopeer.cardstack.CardStackView;
 
 import java.util.List;
@@ -19,7 +21,7 @@ import fr.enlight.anima.animamagiccards.views.viewmodels.ListBindableViewModel;
 
 public class SpellStackViewModel extends ListBindableViewModel {
 
-    public final ObservableBoolean stackVisible = new ObservableBoolean(false);
+    private boolean stackVisible = false;
 
     private final @DrawableRes int cardBackground;
     private final @ColorRes int backgroundTextColor;
@@ -37,9 +39,10 @@ public class SpellStackViewModel extends ListBindableViewModel {
         this.backgroundTextColor = backgroundTextColor;
     }
 
+    @Bindable
     public boolean isMessageMode(){
         List<? extends BindableViewModel> viewModels = getViewModels();
-        return stackVisible.get() && viewModels != null && viewModels.isEmpty();
+        return stackVisible && viewModels != null && viewModels.isEmpty();
     }
 
     public Drawable getCardBackground(Context context){
@@ -56,5 +59,16 @@ public class SpellStackViewModel extends ListBindableViewModel {
 
     public CustomCardStackView.ItemSelectionListener getSelectionListener(){
         return selectionListener;
+    }
+
+    public void setStackVisible(boolean visible) {
+        stackVisible = visible;
+        notifyPropertyChanged(BR.stackVisible);
+        notifyPropertyChanged(BR.messageMode);
+    }
+
+    @Bindable
+    public boolean isStackVisible() {
+        return stackVisible;
     }
 }

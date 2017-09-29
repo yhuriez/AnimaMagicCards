@@ -83,7 +83,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 3,
@@ -293,7 +293,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 9,
@@ -345,7 +345,7 @@
         "retention": 10
       },
       "intermediateGrade": {
-        "zeon": 80,
+        "zeon": 180,
         "requiredIntelligence": 9,
         "effect": " 10 Homunculi.",
         "retention": 20
@@ -503,7 +503,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 15,
@@ -643,7 +643,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 19,
@@ -678,7 +678,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 20,
@@ -970,7 +970,7 @@
       "effect": "The caster transforms an inorganic object, converting it to a different one of similar spiritual power. This permits the caster to modify something with a Presence no higher than the maximum set by the spell level or less into something else of equal or lesser Presence. If the object is supernatural, or especially powerful, it can resist by passing a MR Check.",
       "initialGrade": {
         "zeon": 250,
-        "requiredIntelligence": 8,
+        "requiredIntelligence": 9,
         "effect": " MR 120 / Max Presence 50.",
         "retention": 0
       },
@@ -993,7 +993,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 29,
@@ -1063,7 +1063,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 31,
@@ -1133,7 +1133,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 33,
@@ -1203,7 +1203,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 35,
@@ -1238,7 +1238,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 36,
@@ -1308,7 +1308,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 38,
@@ -1357,27 +1357,27 @@
         "zeon": 800,
         "requiredIntelligence": 16,
         "effect": " Level 1 and 50DP for Natural Beings.",
-        "retention": 30
+        "retention": 0
       },
       "intermediateGrade": {
         "zeon": 2000,
         "requiredIntelligence": 17,
         "effect": " Level 6 and 100DP for Natural Beings.",
-        "retention": 40
+        "retention": 0
       },
       "advancedGrade": {
         "zeon": 4000,
         "requiredIntelligence": 18,
         "effect": " Level 11 and 150DP for Natural Beings.",
-        "retention": 45
+        "retention": 0
       },
       "arcaneGrade": {
         "zeon": 8000,
         "requiredIntelligence": 19,
         "effect": " Level 16 and 200DP for Natural Beings.",
-        "retention": 50
+        "retention": 0
       },
-      "withRetention": true,
+      "withRetention": false,
       "dailyRetention": false
     },
     {
@@ -1413,7 +1413,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     }
   ]
 }

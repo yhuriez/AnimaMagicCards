@@ -43,7 +43,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 2,
@@ -78,12 +78,12 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 3,
       "bookId": 22,
-      "name": "Sangfroid",
+      "name": "Cold Blood",
       "level": 24,
       "actionType": "Active",
       "type": "Spell Type: Effect",
@@ -92,7 +92,7 @@
         "zeon": 50,
         "requiredIntelligence": 6,
         "effect": " Maximum Presence 60.",
-        "retention": 5
+        "retention": 15
       },
       "intermediateGrade": {
         "zeon": 90,
@@ -127,7 +127,7 @@
         "zeon": 80,
         "requiredIntelligence": 6,
         "effect": " Loss of -10 LP / Quality +0 / Objects up to 2kg/4.5lbs.",
-        "retention": 10
+        "retention": 30
       },
       "intermediateGrade": {
         "zeon": 120,
@@ -183,7 +183,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 6,
@@ -201,19 +201,19 @@
       },
       "intermediateGrade": {
         "zeon": 150,
-        "requiredIntelligence": 8,
+        "requiredIntelligence": 9,
         "effect": " Doubles damage taken / MR 140.",
         "retention": 15
       },
       "advancedGrade": {
         "zeon": 200,
-        "requiredIntelligence": 10,
+        "requiredIntelligence": 12,
         "effect": " Triples damage taken / MR 160.",
         "retention": 20
       },
       "arcaneGrade": {
         "zeon": 250,
-        "requiredIntelligence": 12,
+        "requiredIntelligence": 15,
         "effect": " Quadruples the damage received / MR 180.",
         "retention": 25
       },
@@ -288,7 +288,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 9,
@@ -358,7 +358,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     }
   ]
 }

@@ -25,6 +25,8 @@ import android.widget.TextSwitcher;
 import android.widget.TextView;
 import android.widget.ViewSwitcher;
 
+import com.loopeer.cardstack.CardStackView;
+
 import java.util.List;
 
 import fr.enlight.anima.animamagiccards.R;
@@ -184,5 +186,12 @@ public class BindingAdapters {
         textView.setText(Html.fromHtml(strValue));
     }
 
+    @BindingAdapter("stackHeaderHeightCustom")
+    public static void setStackHeaderHeight(ViewGroup view, int dimenInPixel){
+        ViewGroup.LayoutParams layoutParams = view.getLayoutParams();
+        if(layoutParams instanceof CardStackView.LayoutParams){
+            ((CardStackView.LayoutParams) layoutParams).mHeaderHeight = dimenInPixel;
+        }
+    }
 
 }

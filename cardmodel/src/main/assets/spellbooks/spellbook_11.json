@@ -188,7 +188,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 6,
@@ -328,7 +328,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 10,
@@ -363,7 +363,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 11,
@@ -468,7 +468,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 14,
@@ -503,7 +503,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 15,
@@ -818,7 +818,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 24,
@@ -888,7 +888,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 26,
@@ -923,7 +923,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 27,
@@ -958,7 +958,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 28,
@@ -1028,7 +1028,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 30,
@@ -1063,7 +1063,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 31,
@@ -1092,13 +1092,13 @@
         "retention": 0
       },
       "arcaneGrade": {
-        "zeon": 30,
+        "zeon": 320,
         "requiredIntelligence": 16,
         "effect": " MR 180.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 32,
@@ -1133,7 +1133,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 33,
@@ -1168,7 +1168,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 34,
@@ -1180,7 +1180,7 @@
       "effect": "This spell creates a field of dark energy centered on the necromancer that allows him to absorb half the Life Points lost by all living beings within range of him. These Life Points go towards healing any sort of wounds he may have suffered. Well of Life itself does not inflict damage, but necromancers usually combine its effects with other damaging magic's at their disposal.",
       "initialGrade": {
         "zeon": 300,
-        "requiredIntelligence": 10,
+        "requiredIntelligence": 9,
         "effect": " 50m/54yd area.",
         "retention": 15
       },
@@ -1215,7 +1215,7 @@
       "effect": "The caster corrupts a small fragment of the world, haunting a section of land. Inside this area, all deceased individuals are instantaneously resurrected as undead creatures subject to his control. Deceased characters automatically become animated corpses, but one out of a hundred is resurrected as a specter. These undead creatures only act inside the cursed land (see Level 28 and Level 60 spells of this Path as a reference). The magic sustaining them will vanish if they leave the area. The spell haunts a radius, stationary to the place where it was cast. People with Natura 5 raise as specters.",
       "initialGrade": {
         "zeon": 350,
-        "requiredIntelligence": 10,
+        "requiredIntelligence": 9,
         "effect": " 1km/1093yd area.",
         "retention": 35
       },
@@ -1238,7 +1238,7 @@
         "retention": 150
       },
       "withRetention": true,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 36,
@@ -1273,7 +1273,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 37,
@@ -1308,7 +1308,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 38,
@@ -1378,7 +1378,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 40,

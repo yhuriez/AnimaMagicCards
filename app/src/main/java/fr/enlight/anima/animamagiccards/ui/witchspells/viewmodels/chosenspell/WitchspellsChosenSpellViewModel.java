@@ -2,7 +2,6 @@ package fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.chosenspell;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
-import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.content.res.ResourcesCompat;
 
@@ -15,22 +14,20 @@ import fr.enlight.anima.cardmodel.model.spells.Spell;
 
 public class WitchspellsChosenSpellViewModel implements BindableViewModel {
 
-    private final int mIndex;
     private final Spell mSpell;
     private final Listener mListener;
     private final boolean mReduced;
 
 
-    public static WitchspellsChosenSpellViewModel newEditionInstance(int index, @NonNull Spell spell, Listener listener) {
-        return new WitchspellsChosenSpellViewModel(index, spell, listener, false);
+    public static WitchspellsChosenSpellViewModel newEditionInstance(@NonNull Spell spell, Listener listener) {
+        return new WitchspellsChosenSpellViewModel(spell, listener, false);
     }
 
-    public static WitchspellsChosenSpellViewModel newReadOnlyInstance(@NonNull Spell spell) {
-        return new WitchspellsChosenSpellViewModel(-1, spell, null, true);
+    public static WitchspellsChosenSpellViewModel newReadOnlyInstance(@NonNull Spell spell, Listener listener) {
+        return new WitchspellsChosenSpellViewModel(spell, listener, true);
     }
 
-    private WitchspellsChosenSpellViewModel(int index, @NonNull Spell spell, Listener listener, boolean reduced) {
-        this.mIndex = index;
+    private WitchspellsChosenSpellViewModel(@NonNull Spell spell, Listener listener, boolean reduced) {
         this.mSpell = spell;
         this.mListener = listener;
         this.mReduced = reduced;
@@ -64,11 +61,19 @@ public class WitchspellsChosenSpellViewModel implements BindableViewModel {
 
     public void onModifySpellClicked(){
         if(mListener != null){
-            mListener.onModifyChosenSpellClicked(mIndex, mSpell);
+            mListener.onModifyChosenSpellClicked(mSpell);
+        }
+    }
+
+    public void onDeleteSpell(){
+        if(mListener != null){
+            mListener.onDeleteChosenSpell(mSpell);
         }
     }
 
     public interface Listener{
-        void onModifyChosenSpellClicked(int position, Spell spell);
+        void onModifyChosenSpellClicked(Spell spell);
+
+        void onDeleteChosenSpell(Spell spell);
     }
 }

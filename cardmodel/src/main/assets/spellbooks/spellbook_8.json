@@ -84,7 +84,7 @@
         "retention": 15
       },
       "withRetention": true,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 3,
@@ -224,7 +224,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 7,
@@ -294,7 +294,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 9,
@@ -329,7 +329,7 @@
         "retention": 30
       },
       "withRetention": true,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 10,
@@ -434,7 +434,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 13,
@@ -504,7 +504,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 15,
@@ -714,7 +714,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 21,
@@ -971,7 +971,7 @@
       "effect": "This spell envelops the magician’s essence, allowing magic to flow within him in an instinctive manner. The caster is at one with magic, and they respond to events as a single entity. As long as he maintains this spell, other spells that he performs occur as Passive Actions – including Attack and Spiritual spells.",
       "initialGrade": {
         "zeon": 300,
-        "requiredIntelligence": 12,
+        "requiredIntelligence": 10,
         "effect": " Affects Base Level Spells.",
         "retention": 30
       },

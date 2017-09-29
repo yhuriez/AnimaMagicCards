@@ -75,7 +75,7 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     private static final String FREE_ACCESS_LIMIT_PARAM = "FREE_ACCESS_LIMIT_PARAM";
     private static final String SHOW_ALL_SPELLS_PARAM = "SHOW_ALL_SPELLS_PARAM";
 
-    private FragmentSpellsStackBinding binding;
+    private FragmentSpellsStackBinding mBinding;
 
     private SpellStackViewModel spellViewModels;
     private SpellFilterViewModel filterViewModel;
@@ -137,8 +137,8 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_spells_stack, container, false);
-        return binding.getRoot();
+        mBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_spells_stack, container, false);
+        return mBinding.getRoot();
     }
 
     @Override
@@ -165,16 +165,16 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
 
         // Creating ViewModels
         spellViewModels = new SpellStackViewModel(this, this, spellStackStrategy.getCardBackground(), spellStackStrategy.getBackgroundTextColor());
-        binding.setModel(spellViewModels);
+        mBinding.setModel(spellViewModels);
 
         filterViewModel = new SpellFilterViewModel();
-        binding.setFilterModel(filterViewModel);
+        mBinding.setFilterModel(filterViewModel);
 
         quickAccessViewModel = spellStackStrategy.createQuickAccessViewModel(this);
         if(quickAccessViewModel != null) {
             quickAccessViewModel.setLayoutManager(new LinearLayoutManager(getActivity()));
             mQuickAccessFilter = quickAccessViewModel.getCurrentQuickAccessFilter();
-            binding.setQuickAccessModel(quickAccessViewModel);
+            mBinding.setQuickAccessModel(quickAccessViewModel);
         }
 
         // Then first load of filters
@@ -365,9 +365,10 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
 
     @Override
     public Loader<List<Spell>> onCreateLoader(int id, Bundle args) {
-        spellViewModels.stackVisible.set(false);
-        SpellFilterManager spellFilterManager = new SpellFilterManager(filters, mQuickAccessFilter);
+        spellViewModels.setStackVisible(false);
+        mBinding.executePendingBindings();
 
+        SpellFilterManager spellFilterManager = new SpellFilterManager(filters, mQuickAccessFilter);
         return new SpellsLoader(getActivity(), spellStackStrategy, spellFilterManager);
     }
 
@@ -382,7 +383,9 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
         }
 
         spellViewModels.setViewModels(result);
-        spellViewModels.stackVisible.set(true);
+        spellViewModels.setStackVisible(true);
+
+        mCardStack.scrollTo(0, 0);
     }
 
     @Override

@@ -1,6 +1,7 @@
 package fr.enlight.anima.animamagiccards.ui.witchspells.viewmodels.homepage;
 
 
+import android.databinding.ObservableBoolean;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
@@ -21,10 +22,12 @@ import fr.enlight.anima.cardmodel.model.spells.Spell;
 import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 import fr.enlight.anima.cardmodel.model.witchspells.WitchspellsPath;
 
-public class WitchspellsBookViewModel extends RecyclerViewModel implements BindableViewModel, WitchspellsPathViewModel.Listener {
+public class WitchspellsBookViewModel extends RecyclerViewModel implements BindableViewModel, WitchspellsPathViewModel.Listener, WitchspellsChosenSpellViewModel.Listener {
 
     private final Witchspells witchspells;
     private final Listener mListener;
+
+    public ObservableBoolean withClickableFrame = new ObservableBoolean(false);
 
     public WitchspellsBookViewModel(Witchspells witchspells, Listener listener) {
         this.witchspells = witchspells;
@@ -61,10 +64,12 @@ public class WitchspellsBookViewModel extends RecyclerViewModel implements Binda
             for (Integer spellbookId : chosenSpells.keySet()) {
                 List<Spell> spells = chosenSpells.get(spellbookId);
                 for (Spell spell : spells) {
-                    result.add(WitchspellsChosenSpellViewModel.newReadOnlyInstance(spell));
+                    result.add(WitchspellsChosenSpellViewModel.newReadOnlyInstance(spell, this));
                 }
             }
         }
+
+        withClickableFrame.set(result.size() <= 3);
 
         return result;
     }
@@ -74,9 +79,6 @@ public class WitchspellsBookViewModel extends RecyclerViewModel implements Binda
         return new LinearLayoutManager(MainApplication.getMainContext(), LinearLayoutManager.VERTICAL, false);
     }
 
-    public boolean isWithClickableFrame() {
-        return witchspells.witchPaths.size() < 3;
-    }
 
     public void onBookClicked() {
         mListener.onWitchspellsClicked(witchspells);
@@ -85,6 +87,16 @@ public class WitchspellsBookViewModel extends RecyclerViewModel implements Binda
     @Override
     public void onPathSelected(WitchspellsPath witchspellsPath) {
         mListener.onWitchspellsClicked(witchspells);
+    }
+
+    @Override
+    public void onModifyChosenSpellClicked(Spell spell) {
+        mListener.onWitchspellsClicked(witchspells);
+    }
+
+    @Override
+    public void onDeleteChosenSpell(Spell spell) {
+        // Should not happen
     }
 
     public interface Listener {

@@ -26,7 +26,7 @@ import fr.enlight.anima.cardmodel.model.witchspells.Witchspells;
 import fr.enlight.anima.cardmodel.model.witchspells.WitchspellsPath;
 
 
-public class WitchspellsSpellStackStrategy implements SpellStackStrategy{
+public class WitchspellsSpellStackStrategy implements SpellStackStrategy {
 
     private final Witchspells witchspells;
 
@@ -44,21 +44,21 @@ public class WitchspellsSpellStackStrategy implements SpellStackStrategy{
         List<SpellbookType> spellbookTypes = new ArrayList<>();
         for (WitchspellsPath path : witchspells.witchPaths) {
             spellbookTypes.add(SpellbookType.getTypeFromBookId(path.pathBookId));
-            if(path.secondaryPathBookId >= 0){
+            if (path.secondaryPathBookId >= 0) {
                 SpellbookType typeFromBookId = SpellbookType.getTypeFromBookId(path.secondaryPathBookId);
-                if(typeFromBookId != null && !spellbookTypes.contains(typeFromBookId)){
+                if(typeFromBookId != null && !spellbookTypes.contains(typeFromBookId)) {
                     spellbookTypes.add(typeFromBookId);
                 }
             }
         }
         for (Integer spellbookId : witchspells.chosenSpells.keySet()) {
             SpellbookType spellbookType = SpellbookType.getTypeFromBookId(spellbookId);
-            if(spellbookType != null && !spellbookTypes.contains(spellbookType)){
+            if (spellbookType != null && !spellbookTypes.contains(spellbookType)) {
                 spellbookTypes.add(spellbookType);
             }
         }
 
-        if(!spellbookTypes.isEmpty()){
+        if (!spellbookTypes.isEmpty()) {
             Collections.sort(spellbookTypes);
         }
 
@@ -66,7 +66,8 @@ public class WitchspellsSpellStackStrategy implements SpellStackStrategy{
     }
 
     @Override
-    public @DrawableRes int getCardBackground() {
+    public @DrawableRes
+    int getCardBackground() {
         return R.drawable.witchspells_book_background;
     }
 
@@ -88,7 +89,7 @@ public class WitchspellsSpellStackStrategy implements SpellStackStrategy{
 
         // Chosen spells
         Map<Integer, List<Spell>> chosenSpells;
-        if(witchspells.chosenSpellsInstantiated != null) {
+        if (witchspells.chosenSpellsInstantiated != null) {
             chosenSpells = new HashMap<>(witchspells.chosenSpellsInstantiated);
         } else {
             chosenSpells = new HashMap<>();
@@ -120,9 +121,9 @@ public class WitchspellsSpellStackStrategy implements SpellStackStrategy{
 
             // Search if this path exists in chosen spells
             List<Spell> spells = chosenSpells.get(witchPath.pathBookId);
-            if(spells != null && !spells.isEmpty()){
+            if (spells != null && !spells.isEmpty()) {
                 for (Spell spell : spells) {
-                    if(!pathSpells.contains(spell)){
+                    if (!pathSpells.contains(spell)) {
                         pathSpells.add(spell);
                     }
                 }
@@ -136,7 +137,7 @@ public class WitchspellsSpellStackStrategy implements SpellStackStrategy{
             spellsSet.addAll(pathSpells);
         }
 
-        if(!chosenSpells.isEmpty()){
+        if (!chosenSpells.isEmpty()) {
             for (Integer spellbookId : chosenSpells.keySet()) {
                 List<Spell> spells = chosenSpells.get(spellbookId);
                 Collections.sort(spells);

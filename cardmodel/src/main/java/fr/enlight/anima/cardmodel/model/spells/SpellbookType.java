@@ -23,7 +23,7 @@ public enum SpellbookType {
     WIND(8, R.drawable.card_background_book_wind, R.drawable.card_icon_book_wind, R.string.spellbook_title_wind, PathType.MINOR_PATH),
     ESSENCE(9, R.drawable.card_background_book_essence, R.drawable.card_icon_book_essence, R.string.spellbook_title_essence, PathType.MINOR_PATH),
     ILLUSION(10, R.drawable.card_background_book_illusion, R.drawable.card_icon_book_illusion, R.string.spellbook_title_illusion, PathType.MINOR_PATH),
-    NECROMANCER(11, R.drawable.card_background_book_necromancer, R.drawable.card_icon_book_necromancer, R.string.spellbook_title_necromancer, PathType.MINOR_PATH),
+    NECROMANCER(11, R.drawable.card_background_book_necromancer, R.drawable.card_icon_book_necromancer, R.string.spellbook_title_necromancer, PathType.MAJOR_PATH),
     FREE_ACCESS(12, R.drawable.card_background_book_free_access, R.drawable.card_icon_book_free_access, R.string.spellbook_title_free_access, PathType.FREE_ACCESS_PATH),
     CHAOS(13, R.drawable.card_background_book_chaos, R.drawable.card_icon_book_chaos, R.string.spellbook_title_chaos, PathType.SECONDARY_PATH),
     WAR(14, R.drawable.card_background_book_war, R.drawable.card_icon_book_war, R.string.spellbook_title_war, PathType.SECONDARY_PATH),

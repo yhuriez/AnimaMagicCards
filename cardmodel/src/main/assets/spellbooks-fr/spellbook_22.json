@@ -270,7 +270,7 @@
         "retention": 0
       },
       "intermediateGrade": {
-        "zeon": 300,
+        "zeon": 320,
         "requiredIntelligence": 13,
         "effect": "180 RMys ou RPhy / 100 points de dégâts.",
         "retention": 0
@@ -337,27 +337,27 @@
         "zeon": 280,
         "requiredIntelligence": 10,
         "effect": "120 RMys ou RPhy / Dégâts 60 / 500 Points de Vie.",
-        "retention": 60
+        "retention": 0
       },
       "intermediateGrade": {
         "zeon": 320,
         "requiredIntelligence": 13,
         "effect": "140 RMys ou RPhy / Dégâts 90 / 1 200 Points de Vie.",
-        "retention": 65
+        "retention": 0
       },
       "advancedGrade": {
         "zeon": 360,
         "requiredIntelligence": 15,
         "effect": "160 RMys ou RPhy / Dégâts 120 / 2 400 Points de Vie.",
-        "retention": 75
+        "retention": 0
       },
       "arcaneGrade": {
         "zeon": 400,
         "requiredIntelligence": 17,
-        "effect": "180 RMys ou RPhy / Dégâts 150 / 3 600 Points de Vie. Maintien",
-        "retention": 80
+        "effect": "180 RMys ou RPhy / Dégâts 150 / 3 600 Points de Vie.",
+        "retention": 0
       },
-      "withRetention": true,
+      "withRetention": false,
       "dailyRetention": false
     }
   ]

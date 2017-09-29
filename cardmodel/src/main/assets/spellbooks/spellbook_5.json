@@ -79,7 +79,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 3,
@@ -184,7 +184,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 6,
@@ -219,7 +219,7 @@
         "retention": 20
       },
       "withRetention": true,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 7,
@@ -324,7 +324,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 10,
@@ -359,7 +359,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 11,
@@ -464,7 +464,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 14,
@@ -499,7 +499,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 15,
@@ -630,13 +630,13 @@
         "zeon": 200,
         "requiredIntelligence": 14,
         "effect": " MR 180 / +140 to Table Result / 150m/194yd area.",
-        "retention": 15
+        "retention": 20
       },
       "arcaneGrade": {
         "zeon": 260,
         "requiredIntelligence": 16,
         "effect": " MR 200 / +160 to Table Result / 200m/218yd area.",
-        "retention": 20
+        "retention": 25
       },
       "withRetention": true,
       "dailyRetention": false
@@ -674,7 +674,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 20,
@@ -744,7 +744,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 22,
@@ -954,7 +954,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 28,
@@ -1059,7 +1059,7 @@
         "retention": 110
       },
       "withRetention": true,
-      "dailyRetention": false
+      "dailyRetention": true
     }
   ]
 }

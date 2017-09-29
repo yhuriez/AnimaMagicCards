@@ -651,7 +651,7 @@
       "type": "Effet",
       "effect": "Le sorcier peut faire s'ouvrir des fissures de grande taille dans le sol, tout autant capables d'engloutir des constructions que des personnes. Si un individu se trouve dans la zone où s'ouvre une fissure, il doit réussir un test d'Agilité pour éviter de tomber de 20 à 50 mètres et subir les dégâts équivalents. Les constructions disposant d'un Seuil d'Invulnérabilité supérieur à la valeur fixée par le rang du sort ne sont pas affectées par ce sort, puisque leur structure se révèle trop compacte pour être endommagée par la fissure. La taille de la fissure dépend également du rang du sort.",
       "initialGrade": {
-        "zeon": 260,
+        "zeon": 150,
         "requiredIntelligence": 8,
         "effect": "Taille de 10 m de long sur 3 m de large / Bâtiments de Seuil d’Invulnérabilité inférieurs à 40",
         "retention": 0

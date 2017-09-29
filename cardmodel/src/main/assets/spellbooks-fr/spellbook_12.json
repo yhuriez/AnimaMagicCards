@@ -2665,6 +2665,41 @@
       "dailyRetention": false
     },
     {
+      "spellId": 77,
+      "bookId": 12,
+      "name": "De Corps à Magie",
+      "level": 70,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "La créature désignée par le sorcier se transforme en énergie magique et devient intangible vis-à-vis de toutes les matières et attaques non basées sur l'énergie. La Présence affectable maximale est de 80.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": "Ne prend de dégâts que par des attaques affectant l'énergie.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 11,
+        "effect": "Comme Initial, et peut traverser toute matière qui n'affecte pas l'énergie.",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 13,
+        "effect": "Comme Intermédiaire, et gagne +10 à l'AMR.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 16,
+        "effect": "Comme Avancé, et tous les dégâts provenant de sorts et d'effets magiques sont divisés par deux.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
       "spellId": 78,
       "bookId": 12,
       "name": "Paralyser",
@@ -4063,6 +4098,41 @@
       },
       "withRetention": true,
       "dailyRetention": true
+    },
+    {
+      "spellId": 118,
+      "bookId": 12,
+      "name": "Imiter un sort",
+      "level": 100,
+      "actionType": "Active",
+      "type": "Effet (Variable)",
+      "effect": "Permet au sorcier d'imiter un sort qui se trouve en sa présence. Il peut copier les sorts automatiques s'ils sont lancés au cours du même round que l'imitation, comme les sorts maintenus, tant que leur valeur Zéonique ne dépasse pas ce qu’indique le rang du sort. Ce sort imite même les sorts de Haute Magie ou Divins, sans que le sorcier n'ait besoin de la Gnose nécessaire pour les lancer. Le sorcier choisir s'il utilise sa propre Projection magique ou celle du sorcier qui a lancé le sort imité (Note: le maintien est identique au sort imité).",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": "Valeur zéonique maximale 100",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 12,
+        "effect": "Valeur zéonique maximale 150",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 360,
+        "requiredIntelligence": 14,
+        "effect": "Valeur zéonique maximale 200",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 420,
+        "requiredIntelligence": 16,
+        "effect": "Valeur zéonique maximale 250",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
     },
     {
       "spellId": 119,

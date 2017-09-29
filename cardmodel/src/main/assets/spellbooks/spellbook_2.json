@@ -65,7 +65,7 @@
       "type": "Spiritual",
       "effect": "Temporarily causes a Fear State in all people around the caster. The spell caster decides what the victims are afraid of. The MR or PsR Check is based on the spell level.",
       "initialGrade": {
-        "zeon": 20,
+        "zeon": 40,
         "requiredIntelligence": 5,
         "effect": " MR or PsR 80 / 10m/11yd area",
         "retention": 0
@@ -89,7 +89,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 3,
@@ -299,7 +299,7 @@
         "retention": 30
       },
       "withRetention": true,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 9,
@@ -334,7 +334,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 10,
@@ -450,7 +450,7 @@
       "type": "Effect",
       "effect": "Conceals the presence of the caster or a target designated by him from any type of detection. In game terms, it increases the resistance to supernatural (mystical or psychic) detections. This ability also increases the Ki Concealment of the person, permitting him to hide his energy even if he has not developed that ability.Casting Level Base Intermediate Advanced Arcane",
       "initialGrade": {
-        "zeon": 600,
+        "zeon": 60,
         "requiredIntelligence": 6,
         "effect": " +50 MR or PsR / +50 Ki Concealment",
         "retention": 10
@@ -579,7 +579,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 17,
@@ -859,7 +859,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 25,
@@ -978,28 +978,28 @@
         "zeon": 140,
         "requiredIntelligence": 10,
         "effect": " MR or PsR 120 / 1 km/1093yd area.",
-        "retention": 0
+        "retention": 5
       },
       "intermediateGrade": {
         "zeon": 200,
         "requiredIntelligence": 12,
         "effect": " MR or PsR 150 / 5 km/3.1mile area.",
-        "retention": 0
+        "retention": 10
       },
       "advancedGrade": {
         "zeon": 280,
         "requiredIntelligence": 14,
         "effect": " MR or PsR 180 / 15km/9.3mile area.",
-        "retention": 0
+        "retention": 10
       },
       "arcaneGrade": {
         "zeon": 360,
         "requiredIntelligence": 16,
         "effect": " MR or PsR 220 / 25km/15.5mile area.",
-        "retention": 0
+        "retention": 15
       },
       "withRetention": true,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 29,
@@ -1034,7 +1034,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 30,
@@ -1104,7 +1104,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 32,
@@ -1139,7 +1139,7 @@
         "retention": 80
       },
       "withRetention": true,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 33,
@@ -1349,7 +1349,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 39,
@@ -1384,7 +1384,7 @@
         "retention": 50
       },
       "withRetention": true,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 40,
@@ -1419,7 +1419,7 @@
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": true
+      "dailyRetention": false
     }
   ]
 }
