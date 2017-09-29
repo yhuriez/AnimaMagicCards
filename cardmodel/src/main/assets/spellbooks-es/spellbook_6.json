@@ -230,7 +230,7 @@
       "name": "Control sobre los Líquidos",
       "level": 22,
       "actionType": "Activa",
-      "type": "Efecto,",
+      "type": "Efecto",
       "effect": "Otorga completo control sobre una masa líquida. El hechizo permite alterar su forma y naturaleza, haciendo que se mueva por sí misma, dándole otra apariencia o incluso modificando su solidez. Si se ejecuta contra un elemental de agua, el mago podrá dominarlo si la criatura no supera una RM. Este sortilegio es incluso capaz de manejar el torrente sanguíneo de los seres vivos, pero en tal caso, el individuo afectado aplica un bono de +40 a su RM o RF. Manejar la sangre de una persona permite al hechicero producirle por asalto un negativo a la acción y un daño equivalente a la mitad del nivel de fracaso. En el caso de los elementales, tendrán derecho a un nuevo control al día o si reciben una orden completamente opuesta a su naturaleza, mientras que, cualquier otro individuo afectado, podrá repetirlo cada cinco asaltos para tratar de librarse completamente de la influencia del mago. ",
       "initialGrade": {
         "zeon": 60,
@@ -892,7 +892,7 @@
     {
       "spellId": 26,
       "bookId": 6,
-      "name": "Zeo n 250 40 550 800",
+      "name": "Congelar la Magia",
       "level": 86,
       "actionType": "Pasiva",
       "type": "Efecto",
@@ -997,7 +997,7 @@
     {
       "spellId": 29,
       "bookId": 6,
-      "name": "únicamente el lanzador podrá moverse y alterar su entorno libremente",
+      "name": "Señor de los Hielos",
       "level": 92,
       "actionType": "Activa",
       "type": "Automático",
