@@ -85,25 +85,25 @@
       "initialGrade": {
         "zeon": 30,
         "requiredIntelligence": 5,
-        "effect": "Présence maximale 40",
+        "effect": "80 en Crochetage",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 60,
         "requiredIntelligence": 8,
-        "effect": "Présence maximale 80",
+        "effect": "140 en Crochetage",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 100,
         "requiredIntelligence": 10,
-        "effect": "Présence maximale 120",
+        "effect": "240 en Crochetage",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 140,
         "requiredIntelligence": 12,
-        "effect": "Présence maximale 140",
+        "effect": "280 en Crochetage",
         "retention": 0
       },
       "withRetention": false,

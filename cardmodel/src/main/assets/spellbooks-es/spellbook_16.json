@@ -1,0 +1,366 @@
+{
+  "bookId": 16,
+  "bookName": "Livre de la Mort",
+  "description": "Cette voie secondaire contrôle la fin des choses, la mort dans son concept fin de la vie.",
+  "primaryBookUnaccessibles": [
+    "Lumière",
+    "Création",
+    "Air",
+    "Eau",
+    "Terre",
+    "Essence",
+    "Illusion."
+  ],
+  "spells": [
+    {
+      "spellId": 1,
+      "bookId": 16,
+      "name": "Autopsie",
+      "level": 4,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Détermine la cause de la mort et l'heure du décès. Ne précise pas si la cible du sort est morte assassinée ni qui en est responsable mais si, par exemple, quelqu'un est mort d'une contusion massive ou quel type de maladie l'a tué. Le Degré  du sort précise la portée dans le temps qu'il peut remonter. Au-delà, le sortilège est incapable d'obtenir l'information.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 4,
+        "effect": "1 heure.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "1 jour.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": "1 semaine.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "1 mois.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 2,
+      "bookId": 16,
+      "name": "Résistance à la Mort",
+      "level": 14,
+      "actionType": "Passive",
+      "type": "Effet",
+      "effect": "Ce sort protège contre tout effet qui pourrait provoquer la mort de manière automatique, accordant un bonus aux Résistances de la cible contre des effets de ce type.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": "+20 aux Résistances.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": "+40 aux Résistances.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "+60 aux Résistances.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 14,
+        "effect": "+80 aux Résistances.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 3,
+      "bookId": 16,
+      "name": "Extermination Mineure",
+      "level": 24,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Tue toutes les créatures avec une présence de 20 sélectionnées par le lanceur dans une zone, si celles-ci ne dépassent pas la RMys déterminée par e Degré  du sort.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 7,
+        "effect": "60 RMys / 10 m de rayon.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": "80 RMys / 25 m de rayon.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 11,
+        "effect": "100 RMys / 50 m de rayon.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 13,
+        "effect": "120 RMys / 75 m de rayon.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 4,
+      "bookId": 16,
+      "name": "Coup de Grâce",
+      "level": 34,
+      "actionType": "Active",
+      "type": "Automatique",
+      "effect": "Achève quelqu'un qui est sur le point de mourir. Pour être affectée, a cible devra être dans l'état Entre la Vie et la Mort, et mourra de manière automatique si elle ne dépasse pas la RMys déterminée par le Degré  du sort.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 7,
+        "effect": "140 RMys.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 9,
+        "effect": "160 RMys.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 11,
+        "effect": "180 RMys.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 13,
+        "effect": "200 RMys.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 5,
+      "bookId": 16,
+      "name": "Faire Reposer",
+      "level": 44,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Détruit automatiquement les créatures non mortes sans âme dans la zone d'effet du sort. Les créatures peuvent résister à ses effets en dépassant la RMys déterminée par le Degré  du sort.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 7,
+        "effect": "120 RMys / 10 m de rayon.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 10,
+        "effect": "140 RMys 25 m de rayon.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 13,
+        "effect": "160 RMys / 50 m de rayon.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 15,
+        "effect": "180 RMys / 75 m de rayon.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 6,
+      "bookId": 16,
+      "name": "Sentir la Mort",
+      "level": 54,
+      "actionType": "Active",
+      "type": "Effet",
+      "effect": "Le lanceur est capable de ressentir la mort aux alentours, remarquant si quelqu'un est mort ou sur le point de mourir dans les environs. Cette compétence de prédiction ne permet pas de connaître les choses qui vont se passer avec une certitude absolue, juste de pressentir la mort.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 7,
+        "effect": "Le lanceur remarque si quelqu'un est mort dans une zone de 100 mètres de rayon, il y a moins d'une heure, ou s'il y a tout près un moribond qui va trépasser dans moins d'une minute.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": "Le lanceur remarque si quelqu'un est mort dans une zone de 150 mètres de rayon, il y a moins de six heures, ou s'il y a tout près un moribond qui va trépasser dans moins de dix minutes.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 13,
+        "effect": "Le lanceur pressent la mort avec précision. Il peut percevoir si quelqu'un est mort aux alentours dans le passé ou combien de temps à peu près il reste à vivre à une personne, et si sa mort est probable ou improbable.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 15,
+        "effect": "Comme pour le Degré  Avancé, mais le lanceur est capable de percevoir la cause probable de la mort, aussi bien de ceux qui sont morts par le passé que de ceux qui pourraient mourir dans un futur proche.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 7,
+      "bookId": 16,
+      "name": "Memento Mori",
+      "level": 64,
+      "actionType": "Active",
+      "type": "Animique",
+      "effect": "Ce sort tue dans sa zone d'effet toute créature qui peut être considérée comme un être vivant, quelle que soit sa nature ou sa condition. Les personnes affectées ignorent ces effets en réussissant une RMys contre la difficulté déterminée par le Degré  du sort.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 8,
+        "effect": "80 RMys / 5 m de rayon.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 10,
+        "effect": "100 RMys / 10 m de rayon.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 13,
+        "effect": "120 RMys / 25 m de rayon.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 260,
+        "requiredIntelligence": 15,
+        "effect": "140 RMys / 50 m de rayon.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 8,
+      "bookId": 16,
+      "name": "Malédiction Mortelle",
+      "level": 74,
+      "actionType": "Active",
+      "type": "Animique, Auto.",
+      "effect": "Le lanceur peut faire en sorte qu'un individu meure à un moment déterminé par lui et de la façon qu'il a choisi. Ainsi, il crée pour la cible une certaine \"\"prédestination à mourir\"\" de la façon qui lui convient. Pour que ce sort fonctionne, le lanceur doit atteindre son objectif avec celui-ci avec une marge suffisante, et la cible doit échouer au test de RMys déterminé par le Degré  du sortilège. A partir de ce moment, tous les individus liés à la façon de mourir de celui qui a réussi le test de prédestination à mourir peuvent également tenter d'éviter ses effets de la même manière. Nul besoin de les atteindre avec la projection du sort, ils sont affectés automatiquement par la RMys du simple fait qu'ils sont liés à la personne maudite.",
+      "initialGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 9,
+        "effect": "120 RMys",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 11,
+        "effect": "160 RMys.",
+        "retention": 25
+      },
+      "advancedGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 13,
+        "effect": "200 RMys.",
+        "retention": 35
+      },
+      "arcaneGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 15,
+        "effect": "240 RMys.",
+        "retention": 50
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 9,
+      "bookId": 16,
+      "name": "Arrêter la Mort",
+      "level": 84,
+      "actionType": "Passive",
+      "type": "Effet, Animique",
+      "effect": "La cible de ce sort devient temporairement immortelle. Cela ne signifie absolument pas qu'elle se transforme en non mort, seulement que pendant que le sort est maintenu, la mort n'a aucun pouvoir sur elle. Ce' sort n'a aucun effet sur les pouvoirs qui exterminent directement l'âme ou les effets similaires.",
+      "initialGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 10,
+        "effect": "La cible ignore automatiquement tout effet qui produit une mort automatique, mais elle n'est pas immortelle face aux dégâts physiques.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 12,
+        "effect": "Idem que pour le Degré  Initial, mais le personnage devient immortel aux dégâts physiques. Toutefois, si son corps est endommagé suffisamment pour le tuer, il mourra de manière automatique si jamais les effets de ce sortilège disparaissent avant qu'il puisse être soigné. Cet effet ne le protège pas de la mort s'il reçoit un coup causant un critique à un point vital ou s'il est décapité.",
+        "retention": 25
+      },
+      "advancedGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 14,
+        "effect": "Idem que pour le Degré  Intermédiaire, mais la personne affectée ne peut pas non plus mourir suite à un coup causant un critique, quelles qu'en soient les conséquences.",
+        "retention": 40
+      },
+      "arcaneGrade": {
+        "zeon": 1200,
+        "requiredIntelligence": 16,
+        "effect": "Idem que pour le Degré  Avancé, mais la personne affectée est immunisée contre tous les malus à l'action qui pourraient découler d'une détérioration physique.",
+        "retention": 60
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 10,
+      "bookId": 16,
+      "name": "La Mort",
+      "level": 94,
+      "actionType": "Active",
+      "type": "Effet, Auto.",
+      "effect": "Le sorcier obtient un pouvoir absolu sur la mort, il peut décider librement qui va mourir dans le rayon d'action du sort. Comme pour un effet Automatique, le lanceur peut choisir que n'importe quel être vivant meure s'il ne réussit pas une RMys ou une RPhy contre la valeur déterminée par le Degré  du sort. Une personne qui dépasse une fois la Résistance ne peut plus être affectée à nouveau par ce pouvoir (lancé par le même sorcier).",
+      "initialGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 12,
+        "effect": "500 m de rayon / 80 RPhy ou RMys.",
+        "retention": 40
+      },
+      "intermediateGrade": {
+        "zeon": 750,
+        "requiredIntelligence": 14,
+        "effect": "1 km de rayon / 100 RPhy ou RMys.",
+        "retention": 75
+      },
+      "advancedGrade": {
+        "zeon": 1200,
+        "requiredIntelligence": 16,
+        "effect": "5 km de rayon / 120 RPhy ou RMys.",
+        "retention": 120
+      },
+      "arcaneGrade": {
+        "zeon": 2000,
+        "requiredIntelligence": 18,
+        "effect": "10 km de rayon / 140 RPhy ou RMys.",
+        "retention": 200
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    }
+  ]
+}

@@ -1,0 +1,1070 @@
+{
+  "bookId": 8,
+  "bookName": "Libro de Aire",
+  "description": "Es la vía de lo etéreo y lo incorpóreo. Recoge los conjuros de velocidad y movimiento. Con su poder se puede alterar el espacio y transportar cuerpos de un lugar a otro. También es la vía que controla el clima y la electricidad.",
+  "type": "Menor",
+  "oppositeBook": "Tierra",
+  "secondaryBookAccessibles": [
+    "Caos",
+    "Música",
+    "Nobleza",
+    "Paz",
+    "Pecado",
+    "Conocimiento",
+    "Soñar",
+    "Umbral",
+    "Vacío."
+  ],
+  "spells": [
+    {
+      "spellId": 1,
+      "bookId": 8,
+      "name": "Crear Viento",
+      "level": 2,
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "Levanta viento de gran velocidad. Para usar este conjuro, es necesario que el brujo se encuentre en el exterior, o en una zona en la que sea posible que sople el aire. La anchura de la corriente no deberá exceder lo determinado por el grado del conjuro, y su longitud será 10 veces su anchura.",
+      "initialGrade": {
+        "zeon": 30,
+        "requiredIntelligence": 5,
+        "effect": "20 Km/h / 25 metros de anchura.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 8,
+        "effect": "40 Km/h / 50 metros de anchura.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 10,
+        "effect": "80 Km/h / 75 metros de anchura.",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "100 Km/h / 100 metros de anchura.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 2,
+      "bookId": 8,
+      "name": "Mover",
+      "level": 6,
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "Este conjuro permite al brujo mover objetos inanimados a distancia, sin la necesidad de que exista contacto físico entre ellos, a una velocidad equivalente a un Tipo de vuelo 10. No afecta a objetos que estén directamente en contacto con seres vivos.",
+      "initialGrade": {
+        "zeon": 30,
+        "requiredIntelligence": 5,
+        "effect": "Peso máximo 10 Kg.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 8,
+        "effect": "Peso máximo 50 Kg.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 10,
+        "effect": "Peso máximo 100 Kg.",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "Peso máximo 250 Kg.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 3,
+      "bookId": 8,
+      "name": "Reducir Peso",
+      "level": 10,
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "Reduce el peso de un cuerpo material orgánico o inorgánico hasta un  mínimo de 1 kilogramo.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 5,
+        "effect": "-20 Kg.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 8,
+        "effect": "-150 Kg.",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 10,
+        "effect": "-300 Kg.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 12,
+        "effect": "-500 Kg.",
+        "retention": 35
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 4,
+      "bookId": 8,
+      "name": "No Respirar",
+      "level": 12,
+      "actionType": "Pasiva",
+      "type": "Efecto",
+      "effect": "El blanco de este conjuro deja de tener la necesidad de respirar. Puede afectar a tantos individuos como desee el lanzador, siempre que la suma de sus presencias no supere lo que determine el grado del conjuro.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 6,
+        "effect": "Presencia máxima 80.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "Presencia máxima 150.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 110,
+        "requiredIntelligence": 10,
+        "effect": "Presencia máxima 200.",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 12,
+        "effect": "Presencia máxima 350.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 5,
+      "bookId": 8,
+      "name": "Movimiento Libre",
+      "level": 16,
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "Otorga al blanco del conjuro la habilidad de moverse libremente por cualquier tipo de superficie, ignorando completamente las leyes de la gravedad. De este modo, un individuo podrá caminar por encima del agua o correr sin problemas por paredes y techos. Puede afectar a tantos blancos como desee el brujo, siempre que la suma de sus presencias no supere lo que determine el grado del conjuro.   ",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": "Presencia máxima 80.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "Presencia máxima 120.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 110,
+        "requiredIntelligence": 10,
+        "effect": "Presencia máxima 160.",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 12,
+        "effect": "Presencia máxima 240.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 6,
+      "bookId": 8,
+      "name": "Golpe de Aire",
+      "level": 20,
+      "actionType": "Activa",
+      "type": "Ataque",
+      "effect": "El hechicero desencadena un potente golpe de viento, concentrándolo lo suficiente para impactar a un solo blanco muy lejano, o de una forma tan dispersa como para retener a un grupo de personas a distancia. En el caso de que se concentre sobre un solo blanco, aplica un bonificador de +2 a su Fuerza. Aunque mínimo, un golpe de viento es capaz de causar daño real, que equivaldría al doble del bono de la Fuerza del impacto atacando en Contundente. Al ser un impacto producido por aire, el ataque sólo podrá ser percibido por personas capaces de ver magia o que superen un control de Advertir contra Absurdo.",
+      "initialGrade": {
+        "zeon": 40,
+        "requiredIntelligence": 6,
+        "effect": "5 metros de anchura / Fuerza 6.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 9,
+        "effect": "20 metros de anchura / Fuerza 9.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 11,
+        "effect": "30 metros de anchura / Fuerza 12.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 13,
+        "effect": "50 metros de anchura / Fuerza 14.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 7,
+      "bookId": 8,
+      "name": "Pantalla de Aire",
+      "level": 22,
+      "actionType": "Pasiva",
+      "type": "Defensa",
+      "effect": "Forma una barrera de aire que protege frente a cualquier fuente de ataque, excepto aquellas basadas en electricidad o energía. Adicionalmente, los fuertes vientos que levanta perjudican a cualquier proyectil físico que sea disparado o lanzado contra el defensor, por lo que provocan un penalizador de -50 a la habilidad de ataque final del proyectil.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": "300 puntos de Resistencia.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 8,
+        "effect": "1.500 puntos de Resistencia.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 10,
+        "effect": "2.000 puntos de Resistencia.",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 14,
+        "effect": "3.500 puntos de Resistencia.",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 8,
+      "bookId": 8,
+      "name": "Transporte Automático",
+      "level": 26,
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "El hechicero, o quien este designe, es teletransportado a un lugar que vea o conozca de antemano. Este conjuro permite pasar a través de objetos físicos, como muros o puertas, mientras estos no se encuentren basados en energía o sean de carácter sobrenatural. En caso de que el conjuro se use para teletransportar a alguien a una posición innatural (como por ejemplo, a 50 metros de altura en el aire), el blanco del conjuro puede aplicar un +40 a su RM. Puede afectar a tantos blancos como desee el brujo, siempre que la suma de sus presencias no supere lo que determine el grado del conjuro.",
+      "initialGrade": {
+        "zeon": 50,
+        "requiredIntelligence": 6,
+        "effect": "50 metros / Presencia máxima 60.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "250 metros / Presencia máxima 90.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 10,
+        "effect": "400 metros / Presencia máxima 120.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 12,
+        "effect": "1 kilómetro / Presencia máxima 150.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 9,
+      "bookId": 8,
+      "name": "Vuelo",
+      "level": 30,
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "Otorga al afectado la capacidad de moverse con un Tipo de Vuelo  místico determinado por el grado del conjuro.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": "Tipo de Vuelo 4.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 9,
+        "effect": "Tipo de Vuelo 8.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 12,
+        "effect": "Tipo de Vuelo 12.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 15,
+        "effect": "Tipo de Vuelo 15.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 10,
+      "bookId": 8,
+      "name": "Incremento de Reacción",
+      "level": 32,
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "Aumenta la capacidad de reacción de un sujeto, otorgándole un bono a su turno. A partir de turno 200, este incremento se reduce a la mitad.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": "+30 al turno.",
+        "retention": 5
+      },
+      "intermediateGrade": {
+        "zeon": 90,
+        "requiredIntelligence": 9,
+        "effect": "+60 al turno.",
+        "retention": 5
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "+90 al turno.",
+        "retention": 10
+      },
+      "arcaneGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 15,
+        "effect": "+120 al turno.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 11,
+      "bookId": 8,
+      "name": "Electrificar",
+      "level": 36,
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "Este conjuro electrifica un cuerpo físico, provocando potentes descargas a quien lo toque. Cualquier sujeto que se ponga en contacto con él, incluyendo el lanzador, deberá superar cada asalto una RF o perderá una cantidad de puntos de vida equivalente a la mitad del nivel de fracaso. El daño se considera producido por un ataque de electricidad. La máxima presencia del objeto así como su longitud máxima son determinadas por el grado del conjuro.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 7,
+        "effect": "RF 100 / Presencia máxima 30 / 1 metro de longitud.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 10,
+        "effect": "RF 120 / Presencia máxima 40 / 3 metros de longitud.",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 13,
+        "effect": "RF 140 / Presencia máxima 60 / 5 metros de longitud.",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 15,
+        "effect": "RF 160 / Presencia máxima 80 / 10 metros de longitud.",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 12,
+      "bookId": 8,
+      "name": "Tajo de Aire",
+      "level": 40,
+      "actionType": "Activa",
+      "type": "Ataque",
+      "effect": "Produce una fuerte ráfaga de aire, capaz de cortar lo que toque como si se tratase de una afilada espada. El tajo afecta en una línea en la cual no será posible seleccionar blanco. Tiene un daño base de 80 y ataca en Filo, reduciendo en -2 la TA al defensor.",
+      "initialGrade": {
+        "zeon": 60,
+        "requiredIntelligence": 6,
+        "effect": "Línea de 3 metros de longitud.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 9,
+        "effect": "Línea de 12 metros de longitud.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "Línea de 25 metros de longitud.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 15,
+        "effect": "Línea de 50 metros de longitud.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 13,
+      "bookId": 8,
+      "name": "Velocidad",
+      "level": 42,
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "Incrementa de un modo increíble la velocidad de desplazamiento de los individuos afectados. A efectos de juego, dobla la cantidad de metros por asalto que un personaje puede moverse gracias a su Tipo de movimiento. Puede afectar a tantos blancos como desee el brujo, siempre que la suma de sus presencias no supere lo que determine el grado del conjuro.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "Presencia máxima 50.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 10,
+        "effect": "Presencia máxima 80.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 12,
+        "effect": "Presencia máxima 120.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 14,
+        "effect": "Presencia máxima 160.",
+        "retention": 15
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 14,
+      "bookId": 8,
+      "name": "Rayo",
+      "level": 46,
+      "actionType": "Activa",
+      "type": "Ataque",
+      "effect": "Desencadena un relámpago eléctrico con un daño base de 100 puntos. Antes de impactar, el hechicero debe elegir si concentra todo el poder del rayo en una sola descarga, o por el contrario tras alcanzar su blanco, la electricidad rebota una vez hacia el cuerpo más próximo realizando un nuevo ataque de idénticas características al primero. El hechicero no podrá elegir sobre quién se dirigirá el rayo después del ataque original, aunque nunca podrá volverse contra él. Un mismo blanco no puede ser afectado dos veces por el mismo rayo a causa de los rebotes.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 6,
+        "effect": "1 rebote o +10 al Daño.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": "10 rebotes o + 40 al Daño.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 12,
+        "effect": "15 rebotes o + 80 al Daño.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 15,
+        "effect": "25 rebotes o +150 al Daño.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 15,
+      "bookId": 8,
+      "name": "Remolino",
+      "level": 50,
+      "actionType": "Activa",
+      "type": "Automático",
+      "effect": "El brujo levanta un remolino de aire que lo arrasa todo a su paso. Cualquier sujeto que se encuentre en el interior de su área recibirá automáticamente un ataque con una habilidad directa de Absurdo (es decir, un ataque final de 180) y un daño base de 40 en Contundente. Adicionalmente, todos los afectados deberán superar un control enfrentado de características, usando su Fuerza o Agilidad contra el equivalente a una Fuerza 12, o de lo contrario serán levantados por los aires y arrollados por el remolino. Quien sea arrastrado de esta manera, recibe un penalizador de –60 a toda acción mientras permanezca en su interior. Cuando el conjuro finalice, los cuerpos elevados caen desde una distancia de entre 30 y 50 metros. La condición para ser afectado por el remolino será encontrarse en el interior de su área, a partir del asalto siguiente al que ha sido creado. El hechicero podrá desplazar el hechizo con una velocidad 8. No tiene efectos sobre cuerpos inmateriales o  aquellos que no sean afectados por el aire.",
+      "initialGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 7,
+        "effect": "3 metros de radio.",
+        "retention": 30
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": "6 metros de radio.",
+        "retention": 40
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "12 metros de radio.",
+        "retention": 50
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": "25 metros de radio.",
+        "retention": 60
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 16,
+      "bookId": 8,
+      "name": "Forma etérea",
+      "level": 52,
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "El cuerpo designado por el hechicero se transformará en aire, volviéndose intangible ante todas las materias y ataques no basados en energía. Mientras se encuentre en este estado será invisible ante cualquier individuo incapaz de ver magia o que no supere un control de Advertir contra Casi Imposible, o un Buscar contra Muy Difícil. Aunque no puede traspasar materia física, un cuerpo etéreo se introduce por cualquier rendija o espacio por el que pueda soplar el aire.",
+      "initialGrade": {
+        "zeon": 100,
+        "requiredIntelligence": 8,
+        "effect": "Las habilidades descritas.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 11,
+        "effect": "El sujeto podrá moverse por el aire a una velocidad equivalente a su Tipo de movimiento natural.",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 13,
+        "effect": "Como el Intermedio, pero incluso aquellos con la capacidad de ver magia requieren superar un control de Advertir contra Muy Difícil, o un Buscar contra Medio para ver al personaje.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 16,
+        "effect": "Como el Avanzado, pero los ataques de Filo o Penetrantes basados en energía le producen sólo mitad de daño.",
+        "retention": 20
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 17,
+      "bookId": 8,
+      "name": "Control del Aire",
+      "level": 56,
+      "actionType": "Activa",
+      "type": "Efecto,",
+      "effect": "Otorga al hechicero el control del aire, así como el de cualquier sustancia gaseosa que se encuentre a su alrededor. El mago será capaz de manejar a su antojo las corrientes de viento y los elementos gaseosos para usarlos como desee. Podría, por ejemplo, vaciar de aire una zona o cambiar el curso de un tornado. Si se lanza sobre un ser basado naturalmente en aire, el mago podrá controlarlo si la criatura no supera una RM.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "Radio de 50 metros / RM 120.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 10,
+        "effect": "Radio de 300 metros / RM 140.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 13,
+        "effect": "Radio de 500 metros / RM 180.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 15,
+        "effect": "Radio de 1 kilómetro / RM 220.",
+        "retention": 35
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 18,
+      "bookId": 8,
+      "name": "Control de la Electricidad",
+      "level": 60,
+      "actionType": "Activa",
+      "type": "Efecto,",
+      "effect": "Permite controlar la forma y dirección de una fuente eléctrica. Si se trata de un ser basado naturalmente en electricidad, el mago podrá controlarlo si este no supera una RM.",
+      "initialGrade": {
+        "zeon": 80,
+        "requiredIntelligence": 8,
+        "effect": "RM 120 / 5 intensidades.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 150,
+        "requiredIntelligence": 10,
+        "effect": "RM 160 / 15 intensidades.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 13,
+        "effect": "RM 180 / 25 intensidades.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 15,
+        "effect": "RM 220 / 40 intensidades.",
+        "retention": 35
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 19,
+      "bookId": 8,
+      "name": "Movimiento Defensivo",
+      "level": 62,
+      "actionType": "Pasiva",
+      "type": "Defensa",
+      "effect": "Mediante esta defensa, el brujo se mueve o se transporta fuera del alcance de un ataque. A efectos de juego, permite utilizar la habilidad de Proyección Mágica del hechicero como si se tratase de su esquiva. Podrá apartarse de un máximo de ataques por asalto, tras los cuales deberá encontrar otro método de defensa hasta el siguiente turno. El conjuro esquiva como si se dispusiera de una velocidad equivalente a un Tipo de movimiento determinado por el grado del conjuro a la hora de contabilizar los penalizadores contra ataques en área.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 7,
+        "effect": "3 Esquivas por asalto / Tipo de Movimiento 8.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 10,
+        "effect": "9 Esquivas por asalto / Tipo de Movimiento 12.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "15 Esquivas por asalto / Tipo de Movimiento 16.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 15,
+        "effect": "Sin límite de esquivas / Tipo de Movimiento 18.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 20,
+      "bookId": 8,
+      "name": "Teletransportación",
+      "level": 66,
+      "actionType": "Activa",
+      "type": "Efecto.",
+      "effect": "El hechicero o quien este designe es transportado a distancia. Este conjuro permite pasar a través de cuerpos físicos si no se encuentran basados en energía. Puede afectar a tantos blancos como desee el brujo, siempre que la suma de sus presencias no supere lo que determine el grado del conjuro. El objetivo tiene que conocer o ver el lugar al que va a ser transportado si quiere poder hacerlo con precisión. En caso contrario, sólo se transportará a un lugar aproximado hacia la dirección que desee.",
+      "initialGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 8,
+        "effect": "Presencia máxima 80 / 10 kilómetros.",
+        "retention": 0
+      },
+      "intermediateGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 11,
+        "effect": "Presencia máxima 150 / 10.000 kilómetros.",
+        "retention": 0
+      },
+      "advancedGrade": {
+        "zeon": 450,
+        "requiredIntelligence": 13,
+        "effect": "Presencia máxima 240 / 100.000 kilómetros.",
+        "retention": 0
+      },
+      "arcaneGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 16,
+        "effect": "Presencia máxima 350 / Cualquier distancia.",
+        "retention": 0
+      },
+      "withRetention": false,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 21,
+      "bookId": 8,
+      "name": "Inmaterialidad",
+      "level": 70,
+      "actionType": "Activa",
+      "type": "Efecto,",
+      "effect": "El cuerpo designado por el hechicero se vuelve completamente inmaterial, haciéndose intangible ante todo lo que no esté basado en energía. Mientras esté así el afectado no podrá tocar ni ser tocado y, por tanto, será capaz de atravesar cualquier cosa que no sea de naturaleza sobrenatural. Si el hechicero lanza el conjuro sobre un sujeto o cuerpo que desea resistirse a sus efectos, este deberá superar una RM para conseguirlo. Si fracasa el control y se torna inmaterial, tendrá derecho a una nueva Resistencia cada día. La máxima presencia afectable será de 80 puntos.",
+      "initialGrade": {
+        "zeon": 120,
+        "requiredIntelligence": 6,
+        "effect": "RM 100 / Presencia máxima 80.",
+        "retention": 15
+      },
+      "intermediateGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": "RM 140 / Presencia máxima 120.",
+        "retention": 20
+      },
+      "advancedGrade": {
+        "zeon": 240,
+        "requiredIntelligence": 12,
+        "effect": "RM 160 / Presencia máxima 160.",
+        "retention": 25
+      },
+      "arcaneGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 15,
+        "effect": "RM 200 / Presencia máxima 200.",
+        "retention": 30
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 22,
+      "bookId": 8,
+      "name": "Huracán",
+      "level": 72,
+      "actionType": "Activa",
+      "type": "Automático",
+      "effect": "Como su nombre indica, este conjuro crea un terrible vendaval que arrasará cuanto se encuentre en un radio de acción. Cualquiera que esté en el interior del área deberá superar un control contra una Fuerza 12, o será arrastrado por el viento. Toda construcción que posea una barrera de daño inferior a 60 quedará automáticamente destrozada, mientras que las que tengan menos de 120, recibirán 10 puntos de daño por asalto hasta ser destruidas. Las construcciones con una barrera superior a 120 no se verán afectadas en absoluto. Aquellos cuerpos que hayan sido arrastrados por el viento quedarán suspensos en el aire hasta que el conjuro finalice, momento en el cual caerán desde la altura (la distancia hasta el suelo puede variar dependiendo del entorno y de la voluntad del hechicero, aunque en ningún caso podrá superar los 100 metros). Quien pase el control enfrentado de Fuerza, no tendrá que volver a repetirlo mientras no se mueva y permanezca en la misma posición, pero deberá repetirlo cada turno que se mueva por encima de su movimiento pasivo. El DJ puede aplicar el bono que considere oportuno al control de características de los afectados, dependiendo de su  entorno y de si tienen algo sólido a lo que aferrarse.",
+      "initialGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 9,
+        "effect": "500 metros de radio.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 12,
+        "effect": "1 kilómetro de radio.",
+        "retention": 15
+      },
+      "advancedGrade": {
+        "zeon": 450,
+        "requiredIntelligence": 14,
+        "effect": "2 kilómetros de radio.",
+        "retention": 20
+      },
+      "arcaneGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 16,
+        "effect": "5 kilómetros de radio / El control de Fuerza es contra 14.",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 23,
+      "bookId": 8,
+      "name": "Aire Sólido",
+      "level": 76,
+      "actionType": "Activa",
+      "type": "Efecto,",
+      "effect": "Permite solidificar el aire, creando una materia compacta y resistente. El brujo puede elegir qué forma darle y dónde ubicarla. Podría, por ejemplo, cerrar una entrada creando un bloque sólido que impidiera el paso, o formar un puente invisible por el que pasar una grieta. El aire sólido sólo puede ser dañado con armas capaces de afectar energía, y cada 5 metros de material resiste 150 puntos de daño antes de ser roto. Esta sustancia no puede ser vista, salvo si se supera un control de Advertir contra Inhumano, o de Buscar contra Absurdo. Este conjuro puede también utilizarse para rodear a personas e impedirles moverse con libertad. En caso de que se emplee con este objetivo, es posible realizar un ataque usando las reglas de Presa, aunque el brujo no sufrirá ningún penalizador a su habilidad de Proyección por ejecutar la maniobra. El aire posee una Fuerza 14, afectando a todos los individuos  designados que estén dentro del área del hechizo.",
+      "initialGrade": {
+        "zeon": 140,
+        "requiredIntelligence": 9,
+        "effect": "25 metros de radio.",
+        "retention": 10
+      },
+      "intermediateGrade": {
+        "zeon": 200,
+        "requiredIntelligence": 11,
+        "effect": "150 metros de radio.",
+        "retention": 10
+      },
+      "advancedGrade": {
+        "zeon": 260,
+        "requiredIntelligence": 13,
+        "effect": "300 metros de radio.",
+        "retention": 15
+      },
+      "arcaneGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 16,
+        "effect": "500 metros de radio / Si se usa para apresar, tiene Fuerza 16.",
+        "retention": 25
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 24,
+      "bookId": 8,
+      "name": "Control del Clima",
+      "level": 80,
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "El hechicero obtiene un completo control sobre el clima en un radio de acción determinado por el grado del conjuro. Podrá modificar cualquier elemento meteorológico a su antojo, creando la situación climática que desee de manera gradual.",
+      "initialGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 9,
+        "effect": "5 kilómetros.",
+        "retention": 50
+      },
+      "intermediateGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 12,
+        "effect": "25 kilómetros.",
+        "retention": 60
+      },
+      "advancedGrade": {
+        "zeon": 380,
+        "requiredIntelligence": 14,
+        "effect": "100 kilómetros.",
+        "retention": 80
+      },
+      "arcaneGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 16,
+        "effect": "1.000 kilómetros.",
+        "retention": 100
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 25,
+      "bookId": 8,
+      "name": "Crear Silfo",
+      "level": 82,
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "Crea una criatura de aire con apariencia de vida bajo el control absoluto del hechicero. El ente será desarrollado como un Ser Entre Mundos, usando los poderes y limitaciones de los elementales de aire del Capítulo 26. Para calcular su nivel máximo, se emplean las mismas reglas que en el conjuro Crear Ser de la vía de Creación.",
+      "initialGrade": {
+        "zeon": 250,
+        "requiredIntelligence": 10,
+        "effect": "Nivel 1.",
+        "retention": 50
+      },
+      "intermediateGrade": {
+        "zeon": 350,
+        "requiredIntelligence": 12,
+        "effect": "Nivel 3.",
+        "retention": 70
+      },
+      "advancedGrade": {
+        "zeon": 500,
+        "requiredIntelligence": 14,
+        "effect": "Nivel 6.",
+        "retention": 100
+      },
+      "arcaneGrade": {
+        "zeon": 700,
+        "requiredIntelligence": 16,
+        "effect": "Nivel 10.",
+        "retention": 140
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 26,
+      "bookId": 8,
+      "name": "Telequinesis Superior",
+      "level": 86,
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "Este conjuro permite al brujo mover a distancia cualquier cuerpo material, orgánico o inorgánico, sin la necesidad de que exista contacto físico con ellos y dotándoles de una velocidad equivalente a un Tipo de vuelo 10. Los seres vivos o criaturas de presencia sobrenatural excepcional podrán resistirse si superan una RM.",
+      "initialGrade": {
+        "zeon": 160,
+        "requiredIntelligence": 10,
+        "effect": "RM 100 / 100 toneladas.",
+        "retention": 35
+      },
+      "intermediateGrade": {
+        "zeon": 280,
+        "requiredIntelligence": 12,
+        "effect": "RM 120 / 10.000 toneladas.",
+        "retention": 40
+      },
+      "advancedGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 14,
+        "effect": "RM 140 / 250.000 toneladas.",
+        "retention": 50
+      },
+      "arcaneGrade": {
+        "zeon": 550,
+        "requiredIntelligence": 16,
+        "effect": "RM 160 / 150.000 toneladas.",
+        "retention": 60
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 27,
+      "bookId": 8,
+      "name": "Ubicar Magia",
+      "level": 90,
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "Otorga al brujo la capacidad de trasladar libremente las fuentes mágicas que sustentan un conjuro activo de un sitio a otro. De este modo, puede mover un sortilegio de lugar y situarlo donde le plazca. Será capaz de trasladar cualquier conjuro mantenido, incluso si no se encuentra bajo su control. La distancia máxima de su reubicación queda determinada por las reglas generales de Proyección Mágica. Este hechizo puede emplearse tanto contra conjuros que afecten a un determinado lugar, como contra los que se encuentren sobre un individuo u objeto. Si lo que se traslada es un conjuro Anímico de un sujeto a otro, se tratará a todos los efectos del mismo modo que si acabase de ser lanzado por el hechicero, permitiendo al nuevo blanco defenderse de él y realizar un control de Resistencia con normalidad.",
+      "initialGrade": {
+        "zeon": 180,
+        "requiredIntelligence": 9,
+        "effect": "Conjuros de hasta 100 puntos de Zeon.",
+        "retention": 20
+      },
+      "intermediateGrade": {
+        "zeon": 270,
+        "requiredIntelligence": 11,
+        "effect": "Conjuros de hasta 200 puntos de Zeon.",
+        "retention": 30
+      },
+      "advancedGrade": {
+        "zeon": 360,
+        "requiredIntelligence": 13,
+        "effect": "Conjuros de hasta 300 puntos de Zeon.",
+        "retention": 40
+      },
+      "arcaneGrade": {
+        "zeon": 450,
+        "requiredIntelligence": 16,
+        "effect": "Conjuros de hasta 400 puntos de Zeon.",
+        "retention": 45
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 28,
+      "bookId": 8,
+      "name": "Magia Pasiva",
+      "level": 92,
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "Este hechizo envuelve la esencia de su lanzador, haciendo que la magia fluya en él de un modo instintivo y manifestando automáticamente sus designios. Así pues, la magia y él responden como un solo ser ante cualquier acontecimiento. Mientras se mantenga, cualquier hechizo que ejecute el personaje se considerará una acción pasiva, incluidos los de Ataque y los Anímicos.",
+      "initialGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 12,
+        "effect": "Afecta a conjuros de grado Base.",
+        "retention": 30
+      },
+      "intermediateGrade": {
+        "zeon": 400,
+        "requiredIntelligence": 12,
+        "effect": "Afecta a conjuros de grado Intermedio.",
+        "retention": 40
+      },
+      "advancedGrade": {
+        "zeon": 550,
+        "requiredIntelligence": 14,
+        "effect": "Afecta a conjuros de grado Avanzado.",
+        "retention": 55
+      },
+      "arcaneGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 16,
+        "effect": "Afecta a conjuros de grado Arcano.",
+        "retention": 80
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    },
+    {
+      "spellId": 29,
+      "bookId": 8,
+      "name": "Señor del Aire",
+      "level": 96,
+      "actionType": "Activa",
+      "type": "Automático",
+      "effect": "El lanzador controla cualquier núcleo de aire y electricidad, sin importar el número de intensidades que lo compongan. Este dominio le permite también modificar a su antojo el clima, así como crear vendavales, tormentas o ventiscas de cualquier magnitud. Toda criatura basada en aire que se encuentre dentro del área del sortilegio, deberá superar una RM o será controlada de inmediato. Si la pasan, ya no necesitan volver a realizar el control. Los afectados tienen derecho a una nueva tirada únicamente si alteran su Resistencia base.",
+      "initialGrade": {
+        "zeon": 300,
+        "requiredIntelligence": 10,
+        "effect": "100 kilómetros de radio / 140 RM.",
+        "retention": 30
+      },
+      "intermediateGrade": {
+        "zeon": 450,
+        "requiredIntelligence": 12,
+        "effect": "1.000 kilómetros de radio / 180 RM.",
+        "retention": 45
+      },
+      "advancedGrade": {
+        "zeon": 600,
+        "requiredIntelligence": 14,
+        "effect": "10.000 kilómetros de radio / 200 RM.",
+        "retention": 60
+      },
+      "arcaneGrade": {
+        "zeon": 1000,
+        "requiredIntelligence": 16,
+        "effect": "100.000 kilómetros de radio / 240 RM.",
+        "retention": 100
+      },
+      "withRetention": true,
+      "dailyRetention": true
+    },
+    {
+      "spellId": 30,
+      "bookId": 8,
+      "name": "Un Lugar en el Mundo",
+      "level": 100,
+      "actionType": "Activa",
+      "type": "Automático",
+      "effect": "Al ejecutar este conjuro, el lanzador altera el orden de la misma red de almas y, con ello, el de la propia realidad. Aunque no es capaz de cambiar la esencia de las cosas ni su forma, este hechizo le otorga la habilidad de moverlas por el mundo y situarlas en cualquier lugar que se desee, sin otra limitación que su voluntad. De este modo, puede mover cualesquiera objetos o seres, tanto físicos como espirituales, y teletransportarlos adonde quiera. Es posible mover tantas cosas como se desee por asalto, sin importar su número o condición, y reubicar cada una de ellas a voluntad. La única manera de resistirse a sus efectos será superar una RM en cada ocasión en la que se quiera evitar ser trasladado. El radio de acción afecta automáticamente a cualquier ser u objeto que se encuentre en su interior.",
+      "initialGrade": {
+        "zeon": 450,
+        "requiredIntelligence": 12,
+        "effect": "50 Kilómetros de radio / RM 140.",
+        "retention": 45
+      },
+      "intermediateGrade": {
+        "zeon": 800,
+        "requiredIntelligence": 14,
+        "effect": "250 Kilómetros de radio / RM 180.",
+        "retention": 80
+      },
+      "advancedGrade": {
+        "zeon": 1200,
+        "requiredIntelligence": 16,
+        "effect": "500 Kilómetros de radio / RM 240.",
+        "retention": 120
+      },
+      "arcaneGrade": {
+        "zeon": 1600,
+        "requiredIntelligence": 18,
+        "effect": "1.000 Kilómetros de radio / RM 280.",
+        "retention": 200
+      },
+      "withRetention": true,
+      "dailyRetention": false
+    }
+  ]
+}
