@@ -3,6 +3,7 @@ package fr.enlight.spellgenerator
 import android.support.test.InstrumentationRegistry
 import com.google.gson.GsonBuilder
 import fr.enlight.spellgenerator.spells.Spellbook
+import fr.enlight.spellgenerator.spells.SpellbookIndex
 import org.junit.Test
 import java.io.InputStreamReader
 import java.util.*
@@ -71,22 +72,15 @@ class SpellFilesGenerator {
             "Nigromancia" to "La nigromancia es una perversión de la magia como tal. Mientras que el resto de vías se alimenta de las energías de la red de almas, la nigromancia las arranca de allí. Sus conjuros destruyen la esencia de la vida, estancando y pervirtiendo las almas que utiliza. Su poder permite devolver la vida a los muertos, destruir las almas y drenar la vida y la esencia de otros seres."
     )
 
-    private val secondaryPaths = listOf(
-            "CAOS",
-            "GUERRA",
-            "LITERAE",
-            "MUERTE",
-            "MUSICAL",
-            "NOBLEZA",
-            "PAZ",
-            "PECADO",
-            "CONOCIMIENTO",
-            "SANGRE",
-            "SUEÑOS",
-            "TIEMPO",
-            "UMBRAL",
-            "VACÍO"
+    private val majorPaths = listOf(
+            "Luz",
+            "Oscuridad",
+            "Creación",
+            "Destrucción",
+            "Nigromancia"
     )
+
+    private val freeAccessPath = "Libre Acceso"
 
     @Test
     fun generate_files_on_device(){
@@ -103,20 +97,30 @@ class SpellFilesGenerator {
         val primarySpellbooks = primarySpellParser.parseFileLines(coreExxetLines)
         val secondarySpellbooks = secondarySpellParser.parseFileLines(arcanaExxetLines)
 
-        primarySpellbooks.forEach{
-            it.key.secondaryBookAccessibles = secondaryPaths
-            it.key.oppositeBook = oppositePathMap[it.key.bookName]
-            it.key.description  = descriptionMap[it.key.bookName]
+        primarySpellbooks.forEach{ (spellbook, _) ->
+            spellbook.secondaryBookAccessibles = secondarySpellbooks
+                    .filter { it.key.primaryBookUnaccessibles.contains(spellbook.bookName) }
+                    .map { it.key.bookName.toLowerCase().capitalize() }
+            spellbook.oppositeBook = oppositePathMap[spellbook.bookName]
+            spellbook.description  = descriptionMap[spellbook.bookName]
+            spellbook.type = if(majorPaths.contains(spellbook.bookName)) "Mayor" else "Menor"
+            if(spellbook.bookName == freeAccessPath) spellbook.type = "Libre Acceso"
+        }
+
+        secondarySpellbooks.forEach { (spellbook, _) ->
+            spellbook.type = "Sub-Vía"
         }
 
         val allSpellbooks = primarySpellbooks + secondarySpellbooks
 
-        val spellbooks: List<Spellbook> = allSpellbooks.entries.map {
-            it.key.bookId = spellbookOrderList.indexOf(it.key.bookName) + 1
-            it.key.bookName = it.key.bookName.toLowerCase().capitalize()
-            it.value.mapIndexed { index, spell -> spell.bookId = index + 1 }
-            it.key.spells = it.value
-            it.key
+        val spellbooks: List<Spellbook> = allSpellbooks.entries.map { (spellbook, spells) ->
+            spellbook.bookId = spellbookOrderList.indexOf(spellbook.bookName) + 1
+            spellbook.spells = spells.mapIndexed { index, spell ->
+                spell.spellId = (index + 1)
+                spell.bookId = spellbook.bookId
+                spell
+            }
+            spellbook
         }
 
         Collections.sort(spellbooks, { first, second -> first.bookId - second.bookId})
@@ -130,7 +134,7 @@ class SpellFilesGenerator {
 
         // Spellbook index
         spellbooks.forEach { it.spells = null }
-        val spellbookIndex = gson.toJson(spellbooks)
-        writeInFileDir(InstrumentationRegistry.getContext(), "spellbooks", "spellbook_index.json", spellbookIndex)
+        val spellbookIndex = gson.toJson(SpellbookIndex(spellbooks))
+        writeInFileDir(InstrumentationRegistry.getContext(), "spellbooks", "spellbooks_index.json", spellbookIndex)
     }
 }
