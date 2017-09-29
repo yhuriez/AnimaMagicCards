@@ -1,82 +1,82 @@
 {
   "bookId": 16,
-  "bookName": "Livre de la Mort",
-  "description": "Cette voie secondaire contrôle la fin des choses, la mort dans son concept fin de la vie.",
+  "bookName": "Livre de Muerte",
+  "description": "Esta sub-vía controla el fin de las cosas, la muerte en su concepto de término de la vida.",
   "primaryBookUnaccessibles": [
-    "Lumière",
-    "Création",
-    "Air",
-    "Eau",
-    "Terre",
-    "Essence",
-    "Illusion."
+    "Luz",
+    "Creación",
+    "Aire",
+    "Agua",
+    "Tierra",
+    "Esencia",
+    "Ilusión."
   ],
   "spells": [
     {
       "spellId": 1,
       "bookId": 16,
-      "name": "Autopsie",
+      "name": "Autopsia",
       "level": 4,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Détermine la cause de la mort et l'heure du décès. Ne précise pas si la cible du sort est morte assassinée ni qui en est responsable mais si, par exemple, quelqu'un est mort d'une contusion massive ou quel type de maladie l'a tué. Le Degré  du sort précise la portée dans le temps qu'il peut remonter. Au-delà, le sortilège est incapable d'obtenir l'information.",
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "Determina la causa de la muerte y el momento en el que ocurrió. No especifica si el blanco del conjuro murió asesinado ni tampoco el responsable pero sí, por ejemplo, si alguien ha muerto por una contusión masiva o el tipo de enfermedad que lo mató. El grado del conjuro especifica el alcance de tiempo que puede rastrear, mas allá del cual el sortilegio es incapaz de obtener la información.",
       "initialGrade": {
         "zeon": 50,
         "requiredIntelligence": 4,
-        "effect": "1 heure.",
+        "effect": "1 hora.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 80,
         "requiredIntelligence": 8,
-        "effect": "1 jour.",
+        "effect": "1 día.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 100,
         "requiredIntelligence": 10,
-        "effect": "1 semaine.",
+        "effect": "1 semana.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "1 mois.",
+        "effect": "1 mes.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 2,
       "bookId": 16,
-      "name": "Résistance à la Mort",
+      "name": "Resistencia a la Muerte",
       "level": 14,
-      "actionType": "Passive",
-      "type": "Effet",
-      "effect": "Ce sort protège contre tout effet qui pourrait provoquer la mort de manière automatique, accordant un bonus aux Résistances de la cible contre des effets de ce type.",
+      "actionType": "Pasiva",
+      "type": "Efecto",
+      "effect": "Este conjuro protege contra cualquier efecto que pueda provocar la muerte de manera automática, otorgando un bono a las resistencias del objetivo contra efectos de dicha índole.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 6,
-        "effect": "+20 aux Résistances.",
+        "effect": "+20 a las Resistencias.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 90,
         "requiredIntelligence": 9,
-        "effect": "+40 aux Résistances.",
+        "effect": "+40 a las Resistencias.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "+60 aux Résistances.",
+        "effect": "+60 a las Resistencias.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 140,
         "requiredIntelligence": 14,
-        "effect": "+80 aux Résistances.",
+        "effect": "+80 a las Resistencias.",
         "retention": 15
       },
       "withRetention": true,
@@ -85,68 +85,68 @@
     {
       "spellId": 3,
       "bookId": 16,
-      "name": "Extermination Mineure",
+      "name": "Exterminio Menor",
       "level": 24,
-      "actionType": "Active",
-      "type": "Animique",
-      "effect": "Tue toutes les créatures avec une présence de 20 sélectionnées par le lanceur dans une zone, si celles-ci ne dépassent pas la RMys déterminée par e Degré  du sort.",
+      "actionType": "Activa",
+      "type": "Efecto, Anímico",
+      "effect": "Mata a las criaturas con Presencia 20 determinadas por el lanzador en un área si estos no superan la RM determinada por el grado del conjuro.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 7,
-        "effect": "60 RMys / 10 m de rayon.",
+        "effect": "RM 60 / 10 metros de radio.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 100,
         "requiredIntelligence": 9,
-        "effect": "80 RMys / 25 m de rayon.",
+        "effect": "RM 80 / 25 metros de radio.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 11,
-        "effect": "100 RMys / 50 m de rayon.",
+        "effect": "RM 100 / 50 metros de radio.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 140,
         "requiredIntelligence": 13,
-        "effect": "120 RMys / 75 m de rayon.",
+        "effect": "RM 120 / 75 metros de radio.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 4,
       "bookId": 16,
-      "name": "Coup de Grâce",
+      "name": "Golpe de Gracia",
       "level": 34,
-      "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Achève quelqu'un qui est sur le point de mourir. Pour être affectée, a cible devra être dans l'état Entre la Vie et la Mort, et mourra de manière automatique si elle ne dépasse pas la RMys déterminée par le Degré  du sort.",
+      "actionType": "Activa",
+      "type": "Automático",
+      "effect": "Remata a alguien que esté a punto de morir. La condición para ser afectado es que el objetivo debe encontrarse en el estado de entre la vida y la muerte, y morirá de manera automática si no supera la RM determinada por el grado del conjuro.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 7,
-        "effect": "140 RMys.",
+        "effect": "RM 140.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 80,
         "requiredIntelligence": 9,
-        "effect": "160 RMys.",
+        "effect": "RM 160.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 100,
         "requiredIntelligence": 11,
-        "effect": "180 RMys.",
+        "effect": "RM 180.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 120,
         "requiredIntelligence": 13,
-        "effect": "200 RMys.",
+        "effect": "RM 200.",
         "retention": 0
       },
       "withRetention": false,
@@ -155,33 +155,33 @@
     {
       "spellId": 5,
       "bookId": 16,
-      "name": "Faire Reposer",
+      "name": "Poner en Reposo",
       "level": 44,
-      "actionType": "Active",
-      "type": "Animique",
-      "effect": "Détruit automatiquement les créatures non mortes sans âme dans la zone d'effet du sort. Les créatures peuvent résister à ses effets en dépassant la RMys déterminée par le Degré  du sort.",
+      "actionType": "Activa",
+      "type": "Anímico",
+      "effect": "Destruye automáticamente a criaturas no muertas sin alma en el radio de acción del conjuro. Las criaturas pueden resistirse a sus efectos superando la RM determinada por el grado del conjuro.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 7,
-        "effect": "120 RMys / 10 m de rayon.",
+        "effect": "RM 120 / 10 metros de radio.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 90,
         "requiredIntelligence": 10,
-        "effect": "140 RMys 25 m de rayon.",
+        "effect": "RM 140 / 25 metros de radio.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 13,
-        "effect": "160 RMys / 50 m de rayon.",
+        "effect": "RM 160 / 50 metros de radio.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 150,
         "requiredIntelligence": 15,
-        "effect": "180 RMys / 75 m de rayon.",
+        "effect": "RM 180 / 75 metros de radio.",
         "retention": 0
       },
       "withRetention": false,
@@ -190,33 +190,33 @@
     {
       "spellId": 6,
       "bookId": 16,
-      "name": "Sentir la Mort",
+      "name": "Sentir la Muerte",
       "level": 54,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Le lanceur est capable de ressentir la mort aux alentours, remarquant si quelqu'un est mort ou sur le point de mourir dans les environs. Cette compétence de prédiction ne permet pas de connaître les choses qui vont se passer avec une certitude absolue, juste de pressentir la mort.",
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "El lanzador es capaz de presentir la muerte en las cercanías, notando si alguien ha muerto o está a punto de morir a su alrededor.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 7,
-        "effect": "Le lanceur remarque si quelqu'un est mort dans une zone de 100 mètres de rayon, il y a moins d'une heure, ou s'il y a tout près un moribond qui va trépasser dans moins d'une minute.",
+        "effect": "El lanzador nota si alguien ha muerto en una zona de unos 100 metros de radio hace menos de una hora o si hay algún moribundo cercano que vaya a fallecer en menos de un minuto.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 100,
         "requiredIntelligence": 10,
-        "effect": "Le lanceur remarque si quelqu'un est mort dans une zone de 150 mètres de rayon, il y a moins de six heures, ou s'il y a tout près un moribond qui va trépasser dans moins de dix minutes.",
+        "effect": "El lanzador nota si alguien ha muerto en una zona de unos 150 metros de radio hace menos de seis horas o si alguien cercano a él va a morir en menos de diez minutos. Esta habilidad de predicción no le permite notar cosas con verdadera seguridad, sólo intuir la muerte.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 13,
-        "effect": "Le lanceur pressent la mort avec précision. Il peut percevoir si quelqu'un est mort aux alentours dans le passé ou combien de temps à peu près il reste à vivre à une personne, et si sa mort est probable ou improbable.",
+        "effect": "El lanzador siente la muerte con claridad. Puede percibir si alguien murió a su alrededor en el pasado o cuanto tiempo de vida aproximada le queda a una persona, y lo probable o improbable que resulta su muerte.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 150,
         "requiredIntelligence": 15,
-        "effect": "Comme pour le Degré  Avancé, mais le lanceur est capable de percevoir la cause probable de la mort, aussi bien de ceux qui sont morts par le passé que de ceux qui pourraient mourir dans un futur proche.",
+        "effect": "Como en grado avanzado, salvo que el lanzador es capaz de percibir la probable causa de muerte, tanto de aquellos que fallecieron en el pasado como los que es posible que mueran en un futuro próximo.",
         "retention": 15
       },
       "withRetention": true,
@@ -227,66 +227,66 @@
       "bookId": 16,
       "name": "Memento Mori",
       "level": 64,
-      "actionType": "Active",
-      "type": "Animique",
-      "effect": "Ce sort tue dans sa zone d'effet toute créature qui peut être considérée comme un être vivant, quelle que soit sa nature ou sa condition. Les personnes affectées ignorent ces effets en réussissant une RMys contre la difficulté déterminée par le Degré  du sort.",
+      "actionType": "Activa",
+      "type": "Anímico",
+      "effect": "Este hechizo mata a cualquier criatura dentro de su área que pueda ser considerada como un ser vivo, sin importar su naturaleza o condición. Los afectados pueden ignorar sus efectos superando una RM contra la dificultad determinada por el grado del conjuro.",
       "initialGrade": {
         "zeon": 120,
         "requiredIntelligence": 8,
-        "effect": "80 RMys / 5 m de rayon.",
+        "effect": "RM 80 / 5 metros de radio.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 150,
         "requiredIntelligence": 10,
-        "effect": "100 RMys / 10 m de rayon.",
+        "effect": "RM 100 / 10 metros de radio.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 200,
         "requiredIntelligence": 13,
-        "effect": "120 RMys / 25 m de rayon.",
+        "effect": "RM 120 / 25 metros de radio.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 260,
         "requiredIntelligence": 15,
-        "effect": "140 RMys / 50 m de rayon.",
+        "effect": "RM 140 / 50 metros de radio.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 8,
       "bookId": 16,
-      "name": "Malédiction Mortelle",
+      "name": "Maldición Mortal",
       "level": 74,
-      "actionType": "Active",
-      "type": "Animique, Auto.",
-      "effect": "Le lanceur peut faire en sorte qu'un individu meure à un moment déterminé par lui et de la façon qu'il a choisi. Ainsi, il crée pour la cible une certaine \"\"prédestination à mourir\"\" de la façon qui lui convient. Pour que ce sort fonctionne, le lanceur doit atteindre son objectif avec celui-ci avec une marge suffisante, et la cible doit échouer au test de RMys déterminé par le Degré  du sortilège. A partir de ce moment, tous les individus liés à la façon de mourir de celui qui a réussi le test de prédestination à mourir peuvent également tenter d'éviter ses effets de la même manière. Nul besoin de les atteindre avec la projection du sort, ils sont affectés automatiquement par la RMys du simple fait qu'ils sont liés à la personne maudite.",
+      "actionType": "Activa",
+      "type": "Anímico, Automático",
+      "effect": "El lanzador puede hacer que un individuo muera en un momento       determinado por él y de la manera que elija. De ese modo, crea cierta       “predestinación a morir”, tal y como él crea conveniente. Para que este       conjuro funcione el lanzador debe de alcanzar a su objetivo con el conjuro,       y este fallar la RM determinada por el grado del sortilegio. A partir de ese       momento, todos los demás individuos que estén incluidos en los sucesos       predestinados a la muerte pueden evitar también sus efectos del mismo       modo, pero son afectados por la RM de manera automática, por el mero       hecho de estar involucrados con el personaje maldito.       ",
       "initialGrade": {
         "zeon": 150,
         "requiredIntelligence": 9,
-        "effect": "120 RMys",
+        "effect": "RM 120.",
         "retention": 15
       },
       "intermediateGrade": {
         "zeon": 250,
         "requiredIntelligence": 11,
-        "effect": "160 RMys.",
+        "effect": "RM 160.",
         "retention": 25
       },
       "advancedGrade": {
         "zeon": 350,
         "requiredIntelligence": 13,
-        "effect": "200 RMys.",
+        "effect": "RM 200.",
         "retention": 35
       },
       "arcaneGrade": {
         "zeon": 500,
         "requiredIntelligence": 15,
-        "effect": "240 RMys.",
+        "effect": "RM 240.",
         "retention": 50
       },
       "withRetention": true,
@@ -295,33 +295,33 @@
     {
       "spellId": 9,
       "bookId": 16,
-      "name": "Arrêter la Mort",
+      "name": "Detener la Muerte",
       "level": 84,
-      "actionType": "Passive",
-      "type": "Effet, Animique",
-      "effect": "La cible de ce sort devient temporairement immortelle. Cela ne signifie absolument pas qu'elle se transforme en non mort, seulement que pendant que le sort est maintenu, la mort n'a aucun pouvoir sur elle. Ce' sort n'a aucun effet sur les pouvoirs qui exterminent directement l'âme ou les effets similaires.",
+      "actionType": "Pasiva",
+      "type": "Efecto, Anímico",
+      "effect": "El blanco de este conjuro se vuelve temporalmente inmortal. No significa en absoluto que se convierta en un No Muerto; sólo que       mientras se mantenga el conjuro, la muerte no tendrá ningún poder       sobre él. Este conjuro no tiene efecto sobre poderes que exterminen       directamente el alma o efectos similares.        ",
       "initialGrade": {
         "zeon": 350,
         "requiredIntelligence": 10,
-        "effect": "La cible ignore automatiquement tout effet qui produit une mort automatique, mais elle n'est pas immortelle face aux dégâts physiques.",
+        "effect": "El objetivo ignora automáticamente cualquier efecto que produzca",
         "retention": 15
       },
       "intermediateGrade": {
         "zeon": 500,
         "requiredIntelligence": 12,
-        "effect": "Idem que pour le Degré  Initial, mais le personnage devient immortel aux dégâts physiques. Toutefois, si son corps est endommagé suffisamment pour le tuer, il mourra de manière automatique si jamais les effets de ce sortilège disparaissent avant qu'il puisse être soigné. Cet effet ne le protège pas de la mort s'il reçoit un coup causant un critique à un point vital ou s'il est décapité.",
+        "effect": "El  personaje  se  vuelve  inmortal  ante  el  daño  físico. No obstante, en el caso de que su cuerpo sea dañado hasta grados lo suficientemente elevados como para acabar con su vida, morirá de manera automática si en cualquier caso los efectos de este sortilegio desaparecen antes de que pueda ser curado. Este efecto no le protege de la muerte en caso de recibir un crítico en un punto vital o de perder la cabeza.",
         "retention": 25
       },
       "advancedGrade": {
         "zeon": 800,
         "requiredIntelligence": 14,
-        "effect": "Idem que pour le Degré  Intermédiaire, mais la personne affectée ne peut pas non plus mourir suite à un coup causant un critique, quelles qu'en soient les conséquences.",
+        "effect": "Como en grado intermedio, pero el afectado tampoco puede morir a consecuencia de críticos, sin importar cuales sean las consecuencias.",
         "retention": 40
       },
       "arcaneGrade": {
         "zeon": 1200,
         "requiredIntelligence": 16,
-        "effect": "Idem que pour le Degré  Avancé, mais la personne affectée est immunisée contre tous les malus à l'action qui pourraient découler d'une détérioration physique.",
+        "effect": "Como en grado avanzado, pero el afectado es inmune a cualquier negativo a la acción que pueda sufrir a consecuencia del deterioro físico.",
         "retention": 60
       },
       "withRetention": true,
@@ -330,33 +330,33 @@
     {
       "spellId": 10,
       "bookId": 16,
-      "name": "La Mort",
+      "name": "La Muerte",
       "level": 94,
-      "actionType": "Active",
-      "type": "Effet, Auto.",
-      "effect": "Le sorcier obtient un pouvoir absolu sur la mort, il peut décider librement qui va mourir dans le rayon d'action du sort. Comme pour un effet Automatique, le lanceur peut choisir que n'importe quel être vivant meure s'il ne réussit pas une RMys ou une RPhy contre la valeur déterminée par le Degré  du sort. Une personne qui dépasse une fois la Résistance ne peut plus être affectée à nouveau par ce pouvoir (lancé par le même sorcier).",
+      "actionType": "Activa",
+      "type": "Efecto, Automático",
+      "effect": "El brujo obtiene un poder absoluto sobre la muerte, pudiendo decidir quien fallece en el radio de acción del conjuro a voluntad. Como       un efecto automático, el lanzador puede elegir que cualquier ser vivo muera si no supera una RM o RF contra el valor determinado por el grado del conjuro. Alguien que supere la resistencia una vez ya no puede ser       afectado nuevamente por este poder (lanzado por el mismo hechicero).      ",
       "initialGrade": {
         "zeon": 400,
         "requiredIntelligence": 12,
-        "effect": "500 m de rayon / 80 RPhy ou RMys.",
+        "effect": "500 metros de radio / RF o RM 80.",
         "retention": 40
       },
       "intermediateGrade": {
         "zeon": 750,
         "requiredIntelligence": 14,
-        "effect": "1 km de rayon / 100 RPhy ou RMys.",
+        "effect": "1 kilómetro de radio / RF o RM 100.",
         "retention": 75
       },
       "advancedGrade": {
         "zeon": 1200,
         "requiredIntelligence": 16,
-        "effect": "5 km de rayon / 120 RPhy ou RMys.",
+        "effect": "5 kilómetros de radio / RF o RM 120.",
         "retention": 120
       },
       "arcaneGrade": {
         "zeon": 2000,
         "requiredIntelligence": 18,
-        "effect": "10 km de rayon / 140 RPhy ou RMys.",
+        "effect": "10 kilómetros de radio / RF o RM 140.",
         "retention": 200
       },
       "withRetention": true,

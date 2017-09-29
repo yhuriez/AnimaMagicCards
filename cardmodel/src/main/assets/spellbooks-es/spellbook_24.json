@@ -1,47 +1,47 @@
 {
   "bookId": 24,
-  "bookName": "Livre du Temps ",
-  "description": "Pour beaucoup d'occultistes le principe qui contrôle cette voie secondaire est le plus grand de tous, y compris parmi ceux des voies majeures. Ceux qui l'utilisent sont appelés les Chronomants, ou mages du temps, et leurs capacités consistent à utiliser la magie pour contrôler le passage du temps comme s'il s'agissait simplement d'un élément de plus.",
+  "bookName": "Libro de Tiempo",
+  "description": "Para muchos ocultistas el principio que controla esta sub-vía es el más grande de todos, superior incluso a los de las propias vías mayores. Los que la emplean suelen ser llamados Chronomantes, o magos del tiempo, y su habilidad consiste en emplear la magia para controlar el fluir del tiempo como si fuera un elemento más.",
   "primaryBookUnaccessibles": [
-    "Air",
-    "Eau",
-    "Feu",
-    "Terre",
-    "Essence",
-    "Illusion",
-    "Nécromancie."
+    "Aire",
+    "Agua",
+    "Fuego",
+    "Tierra",
+    "Esencia",
+    "Ilusión",
+    "Nigromancia."
   ],
   "spells": [
     {
       "spellId": 1,
       "bookId": 24,
-      "name": "Connaissance du Temps",
+      "name": "Conocimiento Temporal",
       "level": 4,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Le personnage peut percevoir de façon surnaturelle le passage du temps.",
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "El personaje puede percibir sobrenaturalmente el paso del tiempo. Grado Base Intermedio Avanzado Arcano      ",
       "initialGrade": {
         "zeon": 30,
         "requiredIntelligence": 5,
-        "effect": "Permet de percevoir de façon surnaturelle la date et l'heure en utilisant un calendrier connu du lanceur.",
+        "effect": "Permite percibir sobrenaturalmente la hora y fecha que es en ese instante determinado usando el calendario conocido por el lanzador. Intermedio: Como en grado base, pero el lanzador siente además con absoluta exactitud los segundos y milésimas de segundo. Además, permite sentir si existe alguna clase de alteración sobrenatural en el fluir del tiempo. Avanzado: Como en grado intermedio, pero el personaje puede fijar una alarma desde ese momento hasta que trascurra un periodo de tiempo que él mismo determine, sintiendo automáticamente cuando llegue dicho instante. Por ejemplo, podría determinar que quiere notar cuando pase un periodo de cuatro horas, doce minutos y siete segundos.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 50,
         "requiredIntelligence": 7,
-        "effect": "Comme pour le Degré  Initial mais le lanceur ressent en plus avec une exactitude absolue les secondes et les millièmes de secondes. De plus, il permet de sentir s'il existe une altération surnaturelle dans le flux du temps.",
+        "effect": "150 metros / RM 160.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 70,
         "requiredIntelligence": 10,
-        "effect": "Comme Pour le Degré  Intermédiaire, mais le personnage peut mettre en place une alarme à un moment déterminé à partir de cet instant, ressentant automatiquement lorsque le temps prévu est écoulé. Par exemple, il pourra déterminer qu'il veut savoir quand quatre heures, douze minutes et sept secondes se seront écoulées.",
+        "effect": "200 metros / RM 200.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 90,
         "requiredIntelligence": 12,
-        "effect": "Comme pour le Degré  Avancé, mais le lanceur peut calculer le laps de temps que va prendre une chose pour se terminer, comme par exemple combien de temps mettra une personne qui marche à une vitesse constante pour traverser une plage ou combien de temps va s'écouler avant qu'une mélodie en train d'être jouée ne se termine.",
+        "effect": "Como en grado avanzado, pero el lanzador puede calcular el periodo de tiempo que va a tardar algo en concluir, como cuanto le costará a una persona que anda a velocidad constante cruzar una playa, cuanto va a tardar una melodía en ocurrir.",
         "retention": 0
       },
       "withRetention": false,
@@ -50,33 +50,33 @@
     {
       "spellId": 2,
       "bookId": 24,
-      "name": "Accélération du Temps",
+      "name": "Aceleración Temporal",
       "level": 14,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Le sorcier accélère son essence face au passage du temps. Pendant qu'il perçoit le monde au ralenti, les autres ne voient qu'une tache en mouvement. En termes de jeu, cela accorde différents bonus au lanceur ou à l'individu désigné par celui-ci, en fonction du Degré  du sort.",
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "El brujo acelera su esencia ante el fluir del tiempo. Mientras que él percibe el mundo a cámara lenta, el resto sólo ve un borrón en movimiento. A efectos de juego, otorga diferentes bonos al lanzador o al individuo designado por este indicados por el grado del conjuro.",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 7,
-        "effect": "+1 en Mouvement / +20 à l'Initiative / +10 à toutes les actions.",
+        "effect": "+1 Tipo de Movimiento / +20 al Turno / +10 a Toda Acción.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 140,
         "requiredIntelligence": 10,
-        "effect": "+2 en Mouvement / +30 à l'Initiative / +15 à toutes les actions.",
+        "effect": "+2 Tipos de Movimientos / +30 al Turno / +15 a Toda Acción.",
         "retention": 15
       },
       "advancedGrade": {
         "zeon": 180,
         "requiredIntelligence": 12,
-        "effect": "+2 en Mouvement / +40 à l'Initiative / +20 à toutes les actions.",
+        "effect": "+2 Tipos de Movimientos / +40 al Turno / +20 a Toda Acción.",
         "retention": 20
       },
       "arcaneGrade": {
         "zeon": 240,
         "requiredIntelligence": 15,
-        "effect": "+3 en Mouvement / +50 à l'Initiative / +25 à toutes les actions.",
+        "effect": "+3 Tipos de Movimientos / +50 al Turno / +25 a Toda Acción.",
         "retention": 25
       },
       "withRetention": true,
@@ -85,33 +85,33 @@
     {
       "spellId": 3,
       "bookId": 24,
-      "name": "Ralentissement du temps",
+      "name": "Lentitud Temporal",
       "level": 24,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Ce sort affecte une zone déterminée dans laquelle tout individu désigné par le lanceur est entraîné dans un flux temporel ralenti. Par conséquent, les personnes affectées se déplacent beaucoup plus lentement, souffrant ainsi de divers malus indiqués en fonction des Degré s du sortilège. La zone affectée par Ralentissement du Temps reste à l'endroit où elle a été lancée. Pour résister à ses effets il faut réussir une RMys, mais quelqu'un qui a échoué au test ne peut pas le refaire tant qu'il ne sort pas de la zone d'influence du sort.",
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "Este conjuro afecta un área determinada de terreno dentro de la cual todo aquel individuo designado por el lanzador es arrastrado a un flujo temporal retardado. En consecuencia, los afectados se mueven mucho más lentamente, sufriendo así diversos penalizadores reflejados en los diferentes grados del sortilegio. El área afectada por Lentitud Temporal permanece estática en el lugar donde es lanzada. Para resistirse a sus efectos, es necesario superar una RM, pero alguien que haya fallado el control no podrá repetirlo hasta que salga de la influencia del conjuro.",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 7,
-        "effect": "-2 en Mouvement / -40 à l'Initiative / 10 m de rayon / 100 RMys.",
+        "effect": "-2 Tipos de Movimiento / -40 al Turno / 10 metros de radio / 100 RM.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 150,
         "requiredIntelligence": 10,
-        "effect": "-4 en Mouvement / -60 à l'Initiative / -10 à toutes les actions / 25 m de rayon / 120 RMys.",
+        "effect": "-4 Tipos de Movimiento / -60 al Turno / -10 a Toda Acción / 25 metros de radio / 120 RM.",
         "retention": 15
       },
       "advancedGrade": {
         "zeon": 200,
         "requiredIntelligence": 12,
-        "effect": "-6 en Mouvement / -80 à l'Initiative / -20 à toutes les actions / 50 m de rayon / 140 RMys.",
+        "effect": "-6 Tipos de Movimiento / -80 al Turno / -20 a Toda Acción / 50 metros de radio / 140 RM.",
         "retention": 20
       },
       "arcaneGrade": {
         "zeon": 250,
         "requiredIntelligence": 15,
-        "effect": "-8 en Mouvement / -100 à l'Initiative / -30 à toutes les actions / 100 m de rayon / 160 RMys.",
+        "effect": "-8 Tipos de Movimiento / -100 al Turno / -30 a Toda Acción / 100 metros de radio / 160 RM.",
         "retention": 25
       },
       "withRetention": true,
@@ -120,33 +120,33 @@
     {
       "spellId": 4,
       "bookId": 24,
-      "name": "Retenir le Temps",
+      "name": "Estancar el Tiempo",
       "level": 34,
-      "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Ce sort crée une bulle surnaturelle qui bloque le flux du temps. Tant que le sortilège est actif, l'état des choses à l'intérieur de cette bulle ne peut changer. En termes de jeu, ce sort mémorise l'état et la condition actuels de tout ce qui se trouve dans un rayon d'action déterminé par le Degré  du sortilège au moment où celui-d est lancé, empêchant à tout moment que, quels que soient les dégâts que subissent des choses ou des personnes à partir de ce moment, leurs effets ou conséquences puissent se produire. Par exemple, pendant que le sort est maintenu, un personnage blessé conservera toujours la même quantité de points de vie perdus, même si par la suite il essuie de nouvelles attaques qui peuvent le blesser plus sérieusement et même le tuer. De la même manière, les effets négatifs physiques comme la douleur ou la fatigue n'ont .pas plus d'effet pendant ce temps. Malheureusement, Retenir le Temps ne peut que retarder les effets de ce qui s'est réellement passé, et non les éviter, donc tout ce qu'a subi un individu ou une chose durant ce laps de temps bloqué apparaîtra immédiatement à la fin du sort ou en sortant de sa zone d'influence. Cela signifie que si quelqu'un est mort à l'intérieur d'une zone bloquée, quels que soient les soins qu'elle reçoit à posteriori elle ne pourra 'être sauvée lorsque le sort s'arrêtera, car elle sera morte depuis longtemps. Le sorcier peut choisir librement qui est affecté ou non, et quelles choses pourront être détruites ou non. Néanmoins, ce sortilège n'affecte jamais* son lanceur, car il est le nœud qui relie le passé au présent. La zone affectée par Retenir le Temps reste à l'endroit où elle a été lancée.",
+      "actionType": "Activa",
+      "type": "Automático",
+      "effect": "Este conjuro crea una burbuja sobrenatural que estanca el flujo de tiempo haciendo que, hasta que el sortilegio deje de funcionar, el estado de las cosas que se encuentran en su interior no pueda cambiar. A efectos de juego este hechizo memoriza el estado y condición actual de todo cuanto se encuentra en un radio de acción determinado por el grado del sortilegio en el instante en el que es lanzado, impidiendo en todo momento que, por mucho daño que cosas o personas reciban a partir de entonces, sus efectos o consecuencias puedan aparecer aún en su cuerpo. Por ejemplo, mientras este conjuro se mantenga, un personaje herido permanecerá con la misma cantidad de puntos de vida perdidos incluso si posteriormente recibe nuevos ataques que puedan llegar a producirle daño adicional o incluso matarle. De igual forma, los efectos negativos de carácter físico, como dolor o cansancio, tampoco tendrán efecto en ese momento. Lamentablemente, Estancar el Tiempo sólo puede retrasar los efectos de lo que realmente ha sucedido, y nunca evitarlos, por lo que todo perjuicio que un individuo o cosa haya sufrido durante el lapso de tiempo estancado aparecerá de inmediato en cuanto el conjuro finalice o salgan de su zona de influencia. Eso significa que, si alguien ha muerto en el interior de una zona estancada, por mucha curación que reciba posteriormente no podrá ser salvado cuando el conjuro finalice; ya estará muerto desde hace mucho. El brujo puede elegir libremente que es afectado y que no, siendo capaz de decidir que cosas pueden ser destruidas y cuales no. No obstante, este sortilegio nunca afecta al propio lanzador, pues es el nexo que vincula el pasado con el presente. El área afectada por Estancar el Tiempo permanece estática en el lugar donde es lanzada.      ",
       "initialGrade": {
         "zeon": 150,
         "requiredIntelligence": 8,
-        "effect": "5 m.",
+        "effect": "5 metros.",
         "retention": 15
       },
       "intermediateGrade": {
         "zeon": 200,
         "requiredIntelligence": 11,
-        "effect": "10 m.",
+        "effect": "10 metros.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 280,
         "requiredIntelligence": 13,
-        "effect": "25 m.",
+        "effect": "25 metros.",
         "retention": 30
       },
       "arcaneGrade": {
         "zeon": 380,
         "requiredIntelligence": 15,
-        "effect": "50 m",
+        "effect": "50 metros.",
         "retention": 40
       },
       "withRetention": true,
@@ -155,33 +155,33 @@
     {
       "spellId": 5,
       "bookId": 24,
-      "name": "Arrêter le Temps",
+      "name": "Detener el Tiempo",
       "level": 44,
-      "actionType": "Active",
-      "type": "Automatique",
-      "effect": "Ce sort fait en sorte que le temps s'arrête à l'intérieur d'un espace déterminé. Toute chose ou tout individu qui, à partir du round postérieur au lancement du sort, se trouve à l'intérieur de sa zone d'effet reste figé dans le temps s'il ne réussit pas un test de RMys dont la difficulté est déterminée par le Degré  du sort. Les personnes ou choses figées dans le temps sont complètement solides, rien ne peut interagir avec elles, les toucher ou leur infliger de dégâts d'aucune sorte, et elles ne peuvent pas non plus interagir avec quoi que ce soit. Les créatures avec une Gnose de 40 ou plus peuvent ignorer cet effet, car elles sont capables d'interagir librement avec les choses figées sans aucun problème. Une personne affectée peut refaire le test une fois par jour. La zone affectée par Arrêter le Temps reste fixe, là où le sort a été lancé, et il n'est pas possible de choisir des cibles à l'intérieur. Il affecte donc tout ce qui s'y trouve à l'exception du lanceur.",
+      "actionType": "Activa",
+      "type": "Automático",
+      "effect": "Este hechizo hace que el tiempo se detenga en el interior de un espacio determinado. Todo aquel individuo o cosa que, a partir del asalto posterior al lanzamiento del conjuro, se encuentre en el interior de su zona de efecto quedará congelado en el tiempo si no supera una RM. Las personas o cosas congeladas en el tiempo son completamente sólidas, por lo que nada puede interactuar con ellas, tocarlas no dañarlas de forma alguna, ni interactuar con nada más. Los seres con Gnosis 40 o superior pueden ignorar este hecho, siendo capaces de interactuar libremente con las cosas congeladas sin problema alguno. Alguien afectado por este conjuro sólo puede repetir el control de RM una vez al día. El área afectada por Detener el Tiempo permanece estática en el lugar donde es lanzada, y no es posible elegir blancos en su interior; afecta por igual todo cuanto se encuentre dentro de ella salvo al propio lanzador.      ",
       "initialGrade": {
         "zeon": 200,
         "requiredIntelligence": 9,
-        "effect": "120 RMys / 10 m.",
+        "effect": "120 RM / 10 metros.",
         "retention": 40
       },
       "intermediateGrade": {
         "zeon": 300,
         "requiredIntelligence": 12,
-        "effect": "140 RMys / 25 m.",
+        "effect": "140 RM / 25 metros.",
         "retention": 60
       },
       "advancedGrade": {
         "zeon": 400,
         "requiredIntelligence": 14,
-        "effect": "160 RMys / 50 m.",
+        "effect": "160 RM / 50 metros.",
         "retention": 80
       },
       "arcaneGrade": {
         "zeon": 500,
         "requiredIntelligence": 16,
-        "effect": "180 RMys / 100 m.",
+        "effect": "180 RM / 100 metros.",
         "retention": 100
       },
       "withRetention": true,
@@ -190,103 +190,103 @@
     {
       "spellId": 6,
       "bookId": 24,
-      "name": "Rétroévolution",
+      "name": "Retroevolucionar",
       "level": 54,
-      "actionType": "Active",
-      "type": "Animique",
-      "effect": "Ce sortilège affecte l'essence de la cible, faisant repartir son \"\"existence\"\" en arrière dans le temps. Naturellement, la personne affectée ne voyage pas vraiment dans le passé, c'est son essence qui revient à un moment antérieur de sa vie. De cette façon, un vieillard redeviendra jeune et un adulte pourra se transformer en enfant, et même en bébé. Malheureusement, le temps remonté s'efface de la vie de l'individu et il perd donc cette partie de sa vie, oubliant ses souvenirs ou même perdant (ou regagnant) les capacités qu'il avait avant. Bien sûr, si cela est nécessaire, cela peut aller jusqu'à modifier le niveau de la personne affectée. Ce sort ne permet pas de récupérer des membres amputés' ni d'annuler des effets ou des dégâts infligés par des créatures de Gnose 40 ou supérieure. Pour résister aux effets de ce sort il faut réussir un test de RMys contre la difficulté déterminée par le Degré  du sort.",
+      "actionType": "Activa",
+      "type": "Anímico.",
+      "effect": "Este sortilegio afecta la esencia de un objetivo, haciendo que su “existencia” retroceda en el tiempo. Naturalmente, el afectado no viaja al pasado propiamente; es su esencia la que regresa a un momento anterior de su vida. De ese modo, un anciano volvería a ser joven o un hombre adulto podría llegar a convertirse en un simple niño (o incluso un bebe). Lamentablemente, el tiempo retrocedido se borra de la vida del individuo, por lo que el afectado pierde esa parte de su vida, olvidando sus recuerdos o incluso perdiendo (o ganando) las capacidades que ha tenido anteriormente. Naturalmente, si es necesario es incluso posible alterar el nivel del afectado. Este conjuro no permite recuperar miembros cercenados ni anular efectos o daños producidos por seres de Gnosis 40 o superior. Para resistirse a sus efectos, es necesario realizar un control de RM contra la dificultad determinada por el grado del conjuro.      ",
       "initialGrade": {
         "zeon": 250,
         "requiredIntelligence": 10,
-        "effect": "120 RMys / Remonte au plus d'un jour.",
+        "effect": "120 RM / Retrocede hasta un día.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 350,
         "requiredIntelligence": 13,
-        "effect": "140 RMys / Remonte au plus d'un mois.",
+        "effect": "140 RM / Retrocede hasta un mes.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 450,
         "requiredIntelligence": 15,
-        "effect": "160 RMys / Remonte au plus d'un an.",
+        "effect": "160 RM / Retrocede hasta un año.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 600,
         "requiredIntelligence": 17,
-        "effect": "180 RMys / Remonte au plus d'une décennie.",
+        "effect": "180 RM / Retrocede hasta una década.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 7,
       "bookId": 24,
-      "name": "Défaire le Temps",
+      "name": "Tanto el área afectada como el periodo de tiempo que es posible retroceder son determinados por el grado del conjuro. No hay tirada de Resistencia posible.",
       "level": 64,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Ce sort permet de faire en sorte que les fibres du temps reculent de quelques instants dans un zone déterminée, défaisant n'importe quel événement étant survenu pendant cette période. De cette manière, il est possible de refaire à nouveau quelques rounds, ou même de faire revenir à la vie quelqu'un mort pendant ce laps de temps. Seul le lanceur, les créatures avec une Gnose supérieure de 15 points à sa Natura ou celles de nature divine seront conscientes de ce qui s'est passé durant la période de temps défaite. Pour les autres, elle n'aura jamais existé. Ce sort ne permet pas de défaire les actions dans lesquelles est directement impliquée une créature avec une Gnose de 40 ou plus, sauf si le lanceur a une Gnose encore plus élevée, ni de rendre la vie à une personne dont l'âme a été décréée. Il est important de noter que pour la réalité générale, le temps ne recule pas, mais qu'une partie du monde se sépare du continuum espace-temps naturel et le fait brièvement repartir en arrière. Ainsi, une brève distorsion temporelle se crée, que l'existence se chargera de réparer en faisant le moins de dégâts possibles. La zone affectée et la période de temps qu'il est possible de remonter sont déterminées par le Degré  du sort. Aucun jet de Résistance n'est possible.",
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "Este conjuro permite hacer que las fibras del tiempo retrocedan unos instantes en una zona determinada, deshaciendo cualquier suceso que haya acontecido en dicho periodo. De esa manera, se puede repetir nuevamente unos cuantos asaltos o incluso devolver a la vida a alguien que hubiera muerto en ese periodo de tiempo. Únicamente el lanzador, los seres con Gnosis 15 puntos superior a su natura o criaturas de naturaleza divina serán conscientes de lo que ha pasado en el periodo de tiempo deshecho; para el resto esos momentos nunca habrán pasado. Este conjuro no permite deshacer las acciones en las que esté directamente involucrado un ser con Gnosis 40 o superior, salvo si el lanzador tiene a su vez un Gnosis aún más elevado, ni tampoco devolver a la vida a alguien cuya alma ha quedado descreada.       Es importante puntualizar que en realidad el tiempo en general no retrocede, sino que separa una parte del mundo del continuo espacio-tiempo natural y lo hace retroceder brevemente. Por lo tanto, se crea una breve distorsión temporal que la existencia se ocupará de arreglar del modo menos dañino.             0  5 2     ",
       "initialGrade": {
         "zeon": 200,
         "requiredIntelligence": 11,
-        "effect": "15 secondes (5 rounds) / 50 m.",
+        "effect": "15 segundos (5 asaltos) / 50 metros.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 350,
         "requiredIntelligence": 14,
-        "effect": "30 secondes (10 rounds) / 150 m.",
+        "effect": "30 segundos (10 asaltos) / 150 metros.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 500,
         "requiredIntelligence": 16,
-        "effect": "Une minute / 250 m.",
+        "effect": "Un minuto / 250 metros.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 800,
         "requiredIntelligence": 18,
-        "effect": "Une heure / 1 km.",
+        "effect": "Una hora / 1 kilómetro.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 8,
       "bookId": 24,
-      "name": "Saut dans le Temps",
+      "name": "Salto Temporal",
       "level": 74,
-      "actionType": "Active",
-      "type": "Animique",
-      "effect": "Ce sort affecte un individu ou une chose en lui faisant faire un saut Ifs le futur. En termes de jeu, la cible du sort disparaît d'où elle était, apparaissant au même endroit un certain temps après, ou au plus proche lieu Fore si quelque chose a pris sa place. Alors que pour elle seul l'environnement change et qu'elle ne perçoit aucun écoulement du temps, une personne à ses côtés à cet instant la verrait disparaître complètement. Le lanceur choisit combien de temps dans le futur il va envoyer la personne affectée, tant que cela ne dépasse pas les limites déterminées par le Degré  du sort. Toutefois, il y a une limite à ces effets. Certains moments de l'histoire sont des événements si importants de l'existence qu'il est impossible de les éviter. De ce fait, si la période de temps du saut temporel devrait contenir l’un d'entre eux, l'individu qui fait ce saut sera stoppé, le sortilège s'arrêtant avant ce qui été prévu. La cible du sort peut résister à ses effets en réussissant une RMys.",
+      "actionType": "Activa",
+      "type": "Anímico",
+      "effect": "Este conjuro afecta a un individuo o cosa haciendo que dé un salto temporal al futuro. A efectos de juego, el blanco del conjuro desaparece de donde está, apareciendo en el mismo sitio cierto periodo de tiempo después. Mientras que para él únicamente cambia el entorno y no percibe lapso alguno, quienes estaban a su lado en ese instante lo ven esfumarse por completo.       El lanzador es quien elige cuanto tiempo adelanta el afectado, siempre que este no se exceda de los límites determinados por el grado del conjuro. No obstante, hay un límite a sus efectos; existen ciertos momentos en la historia que marcan acontecimientos tan importantes existencialmente que son imposibles de evitar. Por eso, si el periodo de tiempo que adelanta un salto temporal pasa a través de uno de ellos, el individuo que esté saltando detendrá su avance, dando por finalizado el sortilegio antes de lo previsto. El objetivo del conjuro puede resistirse a sus efectos superando una RM.",
       "initialGrade": {
         "zeon": 250,
         "requiredIntelligence": 11,
-        "effect": "10 minutes au maximum / 120 RMys.",
+        "effect": "Hasta diez minutos / 120 RM.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 350,
         "requiredIntelligence": 14,
-        "effect": "Un jour au maximum / 160 RMys.",
+        "effect": "Hasta un día / 160 RM.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 450,
         "requiredIntelligence": 16,
-        "effect": "Un mois au maximum / 200 RMys.",
+        "effect": "Hasta un mes / 200 RM.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 600,
         "requiredIntelligence": 18,
-        "effect": "Un an au maximum / 240 RMys",
+        "effect": "Hasta un año / 240 RM.",
         "retention": 0
       },
       "withRetention": false,
@@ -295,33 +295,33 @@
     {
       "spellId": 9,
       "bookId": 24,
-      "name": "Boucle Temporelle",
+      "name": "Bucle Temporal",
       "level": 84,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Ce sort crée une boucle sur un laps de temps, faisant se répéter l’histoire encore et encore. Tant que le sortilège est maintenu, lorsque la période arrive à la fin assignée par le lanceur, le temps se réinitialise, donnant un nouveau début aux mêmes événements. À part les individus désignés par le lanceur, ou ceux qui ont une Gnose de 35 ou plus (ou, à défaut, ceux dont la Gnose est au moins de 15 points supérieure à la Natura du lanceur), personne ne sera conscient que l'histoire se répète. Ce sort a une zone d'effet définie, mais cela ne signifie pas que le temps avance hors de cette zone. Lorsque le sort se termine, on considère que seule la dernière occurrence de la Boucle Temporelle a réellement eu lieu. Les créatures avec une Gnose de 40 ou plus sont conscientes du lieu et de la position de toutes les Boucles Temporelles existantes à chaque instant. S’il le souhaite, le lanceur peut imposer un événement comme fin du sortilège. Ainsi, si les choses se passent comme il l'avait défini, le sort se termine immédiatement. Le maintien de ce sort se calcule d'une façon spéciale. Contrairement aux règles générales, le sorcier doit payer un coût de maintien à la fin de chaque occurrence de la boucle qu'il a définie. C'est-à-dire que s'il établit une boucle temporelle de dix minutes, il devra dépenser son Zéon à la fin de cette période. Malheureusement, en liant son essence à un moment statique de l'histoire, le lanceur de la Boucle Temporelle n'a aucun moyen de récupérer du Zéon tant que le sort est maintenu actif. Aucun jet de Résistance n'est possible contre une Boucle Temporelle. Limitation spéciale : Contrairement aux règles générales des sorts d'Accès Libre et des voies secondaires, la Boucle Temporelle est considérée comme un sort de Haute Magie.",
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "Este hechizo crea un bucle en un periodo de tiempo, haciendo que la historia se repita constantemente una y otra vez. Mientras el sortilegio se mantenga, al llegar el final del periodo determinado por el lanzador el tiempo se reinicia, dando nuevamente comienzo a los mismos acontecimientos. Salvo los individuos designados por el lanzador o quienes que tengan más de Gnosis 35 (o, en su defecto, aquellos cuyo Gnosis sea por lo menos 15 puntos por encima de su Natura), nadie será consciente de que la historia se repite.       Este conjuro tiene un área de efecto definida y, sin embargo, ello no significa que el tiempo avance fuera de esa zona. Cuando el conjuro finaliza, únicamente se considera que el último lapso de tiempo ha tenido verdaderamente lugar. Los seres con Gnosis 40 o mayor son conscientes de inmediato del lugar y posicionamiento de todos los bucles temporales existentes en ese instante. Si lo desea, el lanzador puede imponer un acontecimiento como final del sortilegio, haciendo que, en caso de ocurrir las cosas como ha designado, el hechizo termine de inmediato.       El mantenimiento de este sortilegio se calcula de un modo especial. Al contrario de las reglas generales, el hechicero debe de pagar el coste de mantenimiento al finalizar cada uno de los periodos que ha designado. Es decir, en caso de que establezca que el bucle temporal fuera de diez minutos, sería al transcurrir ese periodo cuando debería gastar su Zeon. Lamentablemente, al atar su esencia a un momento estático de la historia el lanzador de Bucle Temporal no puede recuperar Zeon de ningún modo mientras mantenga activo el conjuro.    No hay tirada de Resistencia posible contra un Bucle Temporal. Limitación Especial: En contra de las reglas generales de conjuros de Libre Acceso y sub-vías, Bucle Temporal se considera un conjuro de Alta Magia.      ",
       "initialGrade": {
         "zeon": 400,
         "requiredIntelligence": 11,
-        "effect": "Initial : 250 m de rayon / Un jour au maximum.",
+        "effect": "250 metros de radio / Hasta un día.",
         "retention": 40
       },
       "intermediateGrade": {
         "zeon": 600,
         "requiredIntelligence": 14,
-        "effect": "500 m de rayon / Une semaine au maximum.",
+        "effect": "500 metros de radio / Hasta una semana.",
         "retention": 60
       },
       "advancedGrade": {
         "zeon": 900,
         "requiredIntelligence": 16,
-        "effect": "1 km de rayon / Un mois au maximum.",
+        "effect": "1 kilómetro de radio / Hasta un mes.",
         "retention": 90
       },
       "arcaneGrade": {
         "zeon": 1400,
         "requiredIntelligence": 18,
-        "effect": "5 km de rayon / Un an au maximum.",
+        "effect": "5 kilómetros de radio / Hasta un año.",
         "retention": 140
       },
       "withRetention": true,
@@ -330,37 +330,37 @@
     {
       "spellId": 10,
       "bookId": 24,
-      "name": "Superposition du Temps",
+      "name": "Solapar el Tiempo",
       "level": 94,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Ce sort permet au lanceur de créer un point de réunion entre le présent et le passé, fusionnant les deux instants en un. Ainsi, tout ce qu'il y avait à l'intérieur de la zone déterminée par le Degré  du sort au moment désigné par le sorcier se manifeste dans le présent, comme s'il avait toujours été là. En réalité, le passé n'est pas du tout altéré, c'est le présent qui est modifié, en rajoutant sur celui-ci une ligne temporelle antérieure. Cela signifie que, aussi bien les personnes que les choses qui existaient à ce moment et à cet endroit réapparaissent dans le présent. Il n'y a aucune limite à la quantité d'éléments qui sont amenés dans la zone affectée. Il peut s'agir d'armées entières ou de villes qui existaient il y a des éons. Les êtres et les objets qui apparaissent ne sont .pas vraiment des copies, mais en même temps, ils ne sont pas complètement réels. Ce sont des êtres hors de leur ligne temporelle dont l'existence prolongée est, dans le meilleur des cas, non naturelle. Si deux choses identiques se superposent au même endroit (comme c'est souvent le cas avec les constructions pérennes et les reliefs géographiques), s'imposera celle qui aura le plus de présence entre les deux versions ou, dans le cas de deux présences très similaires, elles se mêleront pour donner un résultat intermédiaire entre les deux. Dans le cas où une même personne se trouve au même endroit aux deux moments, le résultat est toujours instable. Il est possible qu'elle fusionne en une seule personne, qu'elle existe comme deux entités séparées ou, même que les deux soient complètement détruites. Néanmoins, ce sort a aussi ses limites. En premier lieu, il est impossible de \"\"ramener\"\" du passé quelqu'un ou quelque chose qui a été décréé ou dont l'âme a été détruite (dans le second de ces cas, son corps apparaîtra, mais ne sera qu'une carcasse vide). De plus, si un objet unique avec un niveau de Pouvoir de 5 devrait être ramené et qu'il existe toujours dans le présent, la manifestation de cet objet sera incomplète, possédant des qualités très inférieures à celles de l'objet qui existe toujours.\nLimitation spéciale : Contrairement aux règles générales des sorts d'Accès Libre et donc des voies secondaires, la Superposition du Temps est considérée comme un sort de Magie Divine.",
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "Este hechizo permite al lanzador crear un punto de unión entre el presente y el pasado, haciendo que ambos instantes se unan en uno. Al hacerlo, todo lo que hubiera en el momento designado por el hechicero dentro de la zona que determine el grado del conjuro se manifiesta en el presente, como si siempre hubiera estado ahí.       En realidad, el pasado no se altera en absoluto; es el presente el que se modifica, al colarse en este una línea temporal anterior. Eso significa que, tanto personas o cosas que existieran en ese momento y lugar, reaparecen en la actualidad. No hay límite a la cantidad de elementos que son traídos dentro de la zona afectada; puede desde manifestarse ejércitos enteros hasta ciudades que existieron eones atrás. Los seres y objetos aparecidos no son realmente copias, pero al mismo tiempo, tampoco son completamente reales; se trata de seres fuera de su línea temporal, cuya existencia prolongada es, en el mejor de los casos, innatural.       En el caso de que se superpongan dos cosas idénticas en el mismo lugar (como es habitual en las construcciones duraderas y los accidentes geográficos), se impondrá la que tuviera más presencia en ese momento o, en el caso de ambas presencias sean muy parecidas, se mezclarán dando como resultado un punto intermedio entre ambas. De darse el caso de que una misma persona estuviera en el mismo lugar en ambos momentos, el resultado es siempre inestable; es posible que o bien se fusionen en uno, que existan como entes separados, o incluso que ambos sean completamente destruidos.       No obstante, este conjuro también tiene sus límites. En primer lugar, no se puede “traer” del pasado a alguien o algo que haya sido descreado o cuya alma fuese destruida (en el segundo de estos casos, su cuerpo sí aparecería, pero sería poco más que una carcasa vacía). Además, si se trae un objeto único de Nivel de Poder 5 que sigue existiendo en la actualidad, la manifestación del objeto sería incompleta, poseyendo cualidades muy inferiores a las del que sigue existiendo. Limitación Especial: En contra de las reglas generales de conjuros de Libre Acceso y sub-vías, Solapar el Tiempo se considera un conjuro de Magia Divina.",
       "initialGrade": {
         "zeon": 500,
         "requiredIntelligence": 12,
-        "effect": "5 m de rayon / Un an au maximum dans le passé.",
+        "effect": "5 metros de radio / Hasta un año en el pasado.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 800,
         "requiredIntelligence": 15,
-        "effect": "25 m de rayon / Une décennie au maximum dans le passé.",
+        "effect": "25 metros de radio / Hasta una década en el pasado.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 1250,
         "requiredIntelligence": 17,
-        "effect": "500 m de rayon / Un siècle au maximum dans le passé.",
+        "effect": "500 metros de radio / Hasta un siglo en el pasado.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 2500,
         "requiredIntelligence": 19,
-        "effect": "1 km de rayon / Mille ans au maximum dans le passé",
+        "effect": "1 kilómetro de radio / Hasta mil años en el pasado.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     }
   ]
 }

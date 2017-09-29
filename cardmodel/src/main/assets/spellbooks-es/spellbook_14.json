@@ -1,81 +1,81 @@
 {
   "bookId": 14,
-  "bookName": "Livre de la Guerre",
-  "description": "Les sorciers de la guerre sont ceux qui maîtrisent les champs de bataille à volonté, pouvant renforcer selon leurs souhaits les compétences de leurs alliés ou même d'armées entières.",
+  "bookName": "Libro de Guerra",
+  "description": "Los hechiceros de la guerra son aquellos que dominan los campos de batalla a su antojo, pudiendo potenciar a voluntad las habilidades de sus compañeros o incuso de ejércitos enteros.",
   "primaryBookUnaccessibles": [
-    "Lumière",
-    "Création",
-    "Air",
-    "Eau",
-    "Essence",
-    "Illusion."
+    "Luz",
+    "Creación",
+    "Aire",
+    "Agua",
+    "Esencia",
+    "Ilusión."
   ],
-  "spells": [
+    "spells": [
     {
       "spellId": 1,
       "bookId": 14,
       "name": "Moral",
       "level": 4,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Ce cri provoque une augmentation de l'esprit combatif des alliés dans -ne zone centrée autour du sorcier et les immunise contre les effets de la peur et de la douleur. En termes de jeu, ils obtiennent un bonus à leur compétence d'Impassibilité jusqu'à ce que le combat se termine ou après 10 minutes.",
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "Este grito provoca que los aliados del hechicero aumenten su espíritu combativo y se vuelvan inmunes a los efectos del miedo o el dolor. A efectos de juego, obtiene un bono a su habilidad secundaria Frialdad hasta que finalice el combate en el que se encuentran trabados o transcurran más de diez minutos.",
       "initialGrade": {
         "zeon": 30,
         "requiredIntelligence": 5,
-        "effect": "+40 à l'Impassibilité / 10 m de rayon.",
+        "effect": "+40 a Frialdad / 10 metros de radio.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 60,
         "requiredIntelligence": 8,
-        "effect": "+80 à l'Impassibilité / 50 m de rayon.",
+        "effect": "Base: +80 a Frialdad / 50 metros de radio.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 90,
         "requiredIntelligence": 11,
-        "effect": "+120 à l'Impassibilité / 250 m de rayon.",
+        "effect": "Base: +120 a Frialdad / 250 metros de radio.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 120,
         "requiredIntelligence": 13,
-        "effect": "+180 à l'Impassibilité / 500 m de rayon.",
+        "effect": "Base: +180 a Frialdad / 500 metros de radio.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 2,
       "bookId": 14,
-      "name": "Colère Ancestrale",
+      "name": "Ira Ancestral",
       "level": 14,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Réveille chez les alliés proches du sorcier un désir d'en découdre qui les transforme en guerriers implacables, en bêtes humaines pleines d'une fureur sans égal. Le sort accorde un bonus de +10 en Attaque et induit l'état de Colère sur tous les alliés du lanceur qui se trouvent dans le rayon d'action du sortilège. Heureusement les liens surnaturels limitent le désavantage de la rage, empêchant ceux qui sont affectés de perdre vraiment le contrôle ou de s'attaquer les uns les autres.",
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "Despierta en los aliados del brujo un ansia de lucha que los convierte en guerreros imparables, bestias humanas llenas de furia sin par. El hechizo confiere un bono de +10 al ataque y provoca el estado de Ira en todo aquel aliado del lanzador que se encuentre dentro del radio de acción del sortilegio, más por suerte, los vínculos sobrenaturales limitan la desventaja de la rabia impidiendo a los afectados perder el control o atacarse los unos a los otros.",
       "initialGrade": {
         "zeon": 40,
         "requiredIntelligence": 6,
-        "effect": "10 m de rayon.",
+        "effect": "10 metros de radio.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 70,
         "requiredIntelligence": 9,
-        "effect": "50 m de rayon.",
+        "effect": "50 metros de radio.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 100,
         "requiredIntelligence": 12,
-        "effect": "250 m de rayon.",
+        "effect": "250 metros de radio.",
         "retention": 10
       },
       "arcaneGrade": {
         "zeon": 130,
         "requiredIntelligence": 15,
-        "effect": "500 m de rayon.",
+        "effect": "500 metros de radio.",
         "retention": 15
       },
       "withRetention": true,
@@ -84,33 +84,33 @@
     {
       "spellId": 3,
       "bookId": 14,
-      "name": "Vélocité de Bataille",
+      "name": "Velocidad en la Batalla",
       "level": 24,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Canalise l'esprit combatif des alliés proches du personnage, les faisant agir comme un seul homme et leur permettant d'anticiper les actions de leurs ennemis.",
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "Canaliza el espíritu de batalla de los aliados, haciéndolos trabajar como un solo hombre y permitiéndoles anticiparse a las acciones de sus enemigos.",
       "initialGrade": {
         "zeon": 50,
         "requiredIntelligence": 6,
-        "effect": "+10 à l'Initiative / 10 m de rayon.",
+        "effect": "+10 al Turno / 10 metros de radio.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 90,
         "requiredIntelligence": 9,
-        "effect": "+10 à l'Initiative / 50 m de rayon.",
+        "effect": "+10 al Turno / 50 metros de radio.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "+20 à l'Initiative / 250 m de rayon.",
+        "effect": "+20 al Turno / 250 metros de radio.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 150,
         "requiredIntelligence": 15,
-        "effect": "+20 à l'Initiative / 500 m de rayon.",
+        "effect": "+20 al Turno / 500 metros de radio.",
         "retention": 15
       },
       "withRetention": true,
@@ -119,33 +119,33 @@
     {
       "spellId": 4,
       "bookId": 14,
-      "name": "Destruction Déchaînée",
+      "name": "Destrucción Desencadenada",
       "level": 34,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Augmente la puissance destructive des alliés proches du personnage, leur octroyant un bonus aux dégâts de toutes leurs attaques, qu'elles soient physiques ou issues de pouvoirs.",
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "Incrementa la potencia destructiva de los aliados cercanos al personaje, otorgándoles a estos un bono al daño de todos sus ataques.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 7,
-        "effect": "+20 aux dégâts / 10 m de rayon.",
+        "effect": "+20 al Daño / 10 metros de radio.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 120,
         "requiredIntelligence": 9,
-        "effect": "+20 aux dégâts / 50 m de rayon.",
+        "effect": "+20 al Daño / 50 metros de radio.",
         "retention": 15
       },
       "advancedGrade": {
         "zeon": 160,
         "requiredIntelligence": 12,
-        "effect": "+30 aux dégâts / 250 m de rayon.",
+        "effect": "+30 al Daño / 250 metros de radio.",
         "retention": 20
       },
       "arcaneGrade": {
         "zeon": 200,
         "requiredIntelligence": 15,
-        "effect": "+40 aux dégâts / 500 m de rayon.",
+        "effect": "+40 al Daño / 500 metros de radio.",
         "retention": 20
       },
       "withRetention": true,
@@ -154,33 +154,33 @@
     {
       "spellId": 5,
       "bookId": 14,
-      "name": "Protection Ultime",
+      "name": "Protección Final",
       "level": 44,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Augmente la protection et la résistance des alliés proches du personnage, leur accordant un bonus aux Résistances et à l'Indice de Protection.",
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "Incrementa la protección y resistencia de los aliados cercanos al personaje, otorgándoles a estos un bono a sus Resistencias y Tipo de Armadura.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 7,
-        "effect": "+10 à toutes les Résistances / IP +1 / 10 m de rayon.",
+        "effect": "+10 a todas las Resistencias / +1 TA / 10 metros de radio.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 120,
         "requiredIntelligence": 9,
-        "effect": "+10 à toutes les Résistances / IP +2 / 50 m de rayon.",
+        "effect": "+10 a todas las Resistencias / +2 TA / 50 metros de radio.",
         "retention": 15
       },
       "advancedGrade": {
         "zeon": 160,
         "requiredIntelligence": 12,
-        "effect": "+20 à toutes les Résistances / IP +2 / 250 m de rayon.",
+        "effect": "+20 a todas las Resistencias / +2 TA / 250 metros de radio.",
         "retention": 20
       },
       "arcaneGrade": {
         "zeon": 200,
         "requiredIntelligence": 15,
-        "effect": "+30 à toutes les Résistances / IP +3 / 500 m de rayon.",
+        "effect": "+30 a todas las Resistencias / +3 TA / 500 metros de radio.",
         "retention": 20
       },
       "withRetention": true,
@@ -189,33 +189,33 @@
     {
       "spellId": 6,
       "bookId": 14,
-      "name": "Marche Implacable",
+      "name": "Marcha Implacable",
       "level": 54,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Ce sort permet aux compagnons du sorcier qui restent dans son entourage de marcher sans s'arrêter, résistant à la fatigue et à la furie des éléments. Dans le jeu, il accorde à tous les alliés à l'intérieur de la zone d'effet du sort l'équivalent des Pouvoirs de Ki Utilisation de l'Énergie Nécessaire et Élimination des Besoins.",
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "Este hechizo permite a los compañeros del brujo marchar de forma incesante, resistiendo la fatiga y la furia de los elementos. A efectos de juego, proporciona a todos los aliados que se encuentren dentro del área de efecto del conjuro las habilidades del Ki Uso de la Energía Necesaria y Eliminación de Necesidades.",
       "initialGrade": {
         "zeon": 150,
         "requiredIntelligence": 6,
-        "effect": "10 m de rayon.",
+        "effect": "10 metros de radio.",
         "retention": 30
       },
       "intermediateGrade": {
         "zeon": 200,
         "requiredIntelligence": 9,
-        "effect": "50 m de rayon.",
+        "effect": "50 metros de radio.",
         "retention": 40
       },
       "advancedGrade": {
         "zeon": 250,
         "requiredIntelligence": 12,
-        "effect": "100 m de rayon.",
+        "effect": "100 metros de radio.",
         "retention": 50
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "500 m de rayon.",
+        "effect": "500 metros de radio.",
         "retention": 100
       },
       "withRetention": true,
@@ -224,33 +224,33 @@
     {
       "spellId": 7,
       "bookId": 14,
-      "name": "Champion",
+      "name": "Campeón",
       "level": 64,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Canalise l'esprit combatif du groupe dans un de ses guerriers, créant un combattant implacable et invincible. Le sort lui accorde différents bonus aux compétences de combat, tant qu'il lutte aux côtés de ses compagnons. Seul un individu sur 10 dans le groupe de combat peut être affecté par ce sortilège.",
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "Canaliza el espíritu combativo del grupo en uno de sus guerreros, creando como resultado un luchador implacable e invencible. El hechizo otorga diferentes bonos a las habilidades de combate, siempre y cuando combata junto a sus compañeros. Sólo un individuo por cada 10 que compongan un grupo de batalla puede ser afectado por este sortilegio.",
       "initialGrade": {
         "zeon": 140,
         "requiredIntelligence": 10,
-        "effect": "+10 à toutes les actions / +10 aux dégâts / +10 à l'Initiative / IP +2.",
+        "effect": "+10 a toda acción / +10 daño / +10 al Turno / +2 TA.",
         "retention": 15
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 12,
-        "effect": "+10 à toutes les actions/ +20 aux dégâts/ +20 à l'Initiative / IP +3.",
+        "effect": "+10 a toda acción / +20 daño / +20 al Turno / +3 TA.",
         "retention": 15
       },
       "advancedGrade": {
         "zeon": 240,
         "requiredIntelligence": 14,
-        "effect": "+20 à toutes les actions / +20 aux dégâts / +20 à l'Initiative / IP +4.",
+        "effect": "+20 a toda acción / +20 daño / +20 al Turno / +4 TA.",
         "retention": 20
       },
       "arcaneGrade": {
         "zeon": 350,
         "requiredIntelligence": 16,
-        "effect": "+30 à toutes les actions / +30 aux dégâts / +30 à l'Initiative/ IP +5.",
+        "effect": "+30 a toda acción / +30 daño / +30 al Turno / +5 TA.",
         "retention": 30
       },
       "withRetention": true,
@@ -259,68 +259,68 @@
     {
       "spellId": 8,
       "bookId": 14,
-      "name": "Ordres Précis Active",
+      "name": "Órdenes Precisas",
       "level": 74,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Permet au sorcier ou à celui sur qui est lancé le sort de donner des ordres directement à ses compagnons par transmission de pensées. Ces messages sont automatiques, sans qu'il soit nécessaire de parler avec eux ou de formuler de longues phrases ou indications qui pourraient être écoutées par des indésirables. Le personnage peut choisir qui va écouter ses ordres ou pas, et il peut même transmettre différents ordres à la fois d'une simple pensée.",
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "Permite al hechicero o a aquel sobre el que se lance el conjuro transmitir ordenes directamente a la mente de sus compañeros. Estos mensajes son automáticos, sin la necesidad de hablar con ellos o de formular largas frases o indicaciones que pueden ser escuchadas por personas indeseadas. El personaje puede elegir quienes le escuchan y quienes no, o incluso puede transmitir varias ordenes a la vez con un simple pensamiento.",
       "initialGrade": {
         "zeon": 150,
         "requiredIntelligence": 8,
-        "effect": "Jusqu'à 25 m de rayon.",
+        "effect": "Hasta 25 metros de radio.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 200,
         "requiredIntelligence": 10,
-        "effect": "Jusqu'à 100 m de rayon.",
+        "effect": "Hasta 100 metros de radio.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 250,
         "requiredIntelligence": 12,
-        "effect": "Jusqu'à 250 m de rayon.",
+        "effect": "Hasta 250 metros de radio.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "Jusqu'à 500 m de rayon.",
+        "effect": "Hasta 500 metros de radio.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 9,
       "bookId": 14,
-      "name": "Maître de Guerre",
+      "name": "Maestro de la Guerra",
       "level": 84,
-      "actionType": "Passive",
-      "type": "Effet",
-      "effect": "Le sorcier peut combattre physiquement avec n'importe quelle arme en utilisant sa compétence de Projection magique offensive et défensive comme si c'était des compétences d'attaque et de défense. La limite maximum qu'il peut atteindre est déterminée par le Degré  du sort.",
+      "actionType": "Pasiva",
+      "type": "Efecto.",
+      "effect": "El hechicero puede combatir físicamente con cualquier arma usando su habilidad de Proyección Mágica ofensiva y defensiva como si fuera habilidad de ataque y defensa. El límite máximo que puede alcanzar está determinado por el grado del conjuro.",
       "initialGrade": {
         "zeon": 200,
         "requiredIntelligence": 10,
-        "effect": "Jusqu'à 200 de compétence.",
+        "effect": "Hasta 200 de habilidad.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 300,
         "requiredIntelligence": 12,
-        "effect": "Jusqu'à 250 de compétence.",
+        "effect": "Hasta 250 de habilidad.",
         "retention": 15
       },
       "advancedGrade": {
         "zeon": 400,
         "requiredIntelligence": 15,
-        "effect": "Jusqu'à 300 de compétence.",
+        "effect": "Hasta 300 de habilidad.",
         "retention": 20
       },
       "arcaneGrade": {
         "zeon": 500,
         "requiredIntelligence": 18,
-        "effect": "Sans aucune limite.",
+        "effect": "Sin límite alguno",
         "retention": 25
       },
       "withRetention": true,
@@ -329,33 +329,33 @@
     {
       "spellId": 10,
       "bookId": 14,
-      "name": "Vers la Fin et Au-Delà",
+      "name": "Hasta más Allá del Fin",
       "level": 94,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Ce sort amène l'esprit combatif des alliés proches du sorcier au-delà des limites du pouvoir des mortels, leur permettant de continuer à combattre même au seuil de la mort. Tous les alliés à l'intérieur du rayon d'action du sortilège doublent les Points de Vie négatifs qu'ils peuvent supporter (en cas d'utilisation des règles optionnelles d'Entre la Vie et la Mort parues dans l'Écran du Meneur, ils appliquent un +40 à leurs tests de RPhy), et ils ne subissent aucun malus à se battre dans cet état.",
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "Este hechizo lleva más allá del poder de los mortales el espíritu combativo de los aliados del brujo, permitiéndoles seguir adelante incluso en el umbral de la muerte. Todos sus aliados que se encuentren dentro del radio de acción del sortilegio duplican su aguante en puntos de vida negativos (en caso de que se usen las reglas opcionales de entre la vida y la muerte, aplican un +40 a sus controles de RF), y no sufren ningún negativo por combatir en dicho estado.",
       "initialGrade": {
         "zeon": 250,
         "requiredIntelligence": 14,
-        "effect": "25 m de rayon.",
+        "effect": "25 metros de radio.",
         "retention": 25
       },
       "intermediateGrade": {
         "zeon": 500,
         "requiredIntelligence": 16,
-        "effect": "50 m de rayon.",
+        "effect": "50 metros de radio.",
         "retention": 50
       },
       "advancedGrade": {
         "zeon": 750,
         "requiredIntelligence": 18,
-        "effect": "250 m de rayon.",
+        "effect": "250 metros de radio.",
         "retention": 75
       },
       "arcaneGrade": {
         "zeon": 1000,
         "requiredIntelligence": 20,
-        "effect": "500 m de rayon/ En plus des effets décrits, un personnage affecté par ce sort peut continuer à lutter avec toutes ses facultés jusqu'à deux  rounds après sa mort.",
+        "effect": "500 metros de radio / Además de los efectos descritos, un personaje afectado por este hechizo puede seguir luchando en plenas facultados hasta dos asaltos después de haber muerto.",
         "retention": 100
       },
       "withRetention": true,

@@ -6,7 +6,7 @@ import java.util.List;
 
 public class LocalizedFileDao {
 
-    public static final List<String> localizationHandled = Arrays.asList("fr");
+    public static final List<String> localizationHandled = Arrays.asList("fr", "es");
 
     private String mainDirectory;
     private String locale;

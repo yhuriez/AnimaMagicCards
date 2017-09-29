@@ -1,45 +1,45 @@
 {
   "bookId": 23,
-  "bookName": "Livre des Songes",
-  "description": "Songes est la voie de magie secondaire qui contrôle le monde onirique des rêveurs, ainsi que son reflet dans la Veille.",
+  "bookName": "Libro de Sueños",
+  "description": "Sueños es la vía de magia que controla el mundo onírico de los soñadores, así como su reflejo en la Vigilia.",
   "primaryBookUnaccessibles": [
-    "Création",
-    "Destruction",
-    "Eau",
-    "Feu",
-    "Terre."
+    "Creación",
+    "Destrucción",
+    "Agua",
+    "Fuego",
+    "Tierra."
   ],
   "spells": [
     {
       "spellId": 1,
       "bookId": 23,
-      "name": "Sentir les Songes",
+      "name": "Sentir los Sueños",
       "level": 4,
-      "actionType": "Active",
-      "type": "Détection",
-      "effect": "Grâce à ce sort, le sorcier est capable de localiser les énergies oniriques de tous les êtres qui rêvent près de lui. De plus, grâce à l'énergie qu'ils dégagent il pourra savoir si leurs rêves sont paisibles ou si ce sont au contraire de terribles cauchemars. Pour résister à la détection, les dormeurs doivent réussir une RMys.",
+      "actionType": "Activa",
+      "type": "Tipo de conjuro: Detección",
+      "effect": "Mediante este conjuro el hechicero es capaz de localizar las energías oníricas de todos los seres que estén soñando cerca de él. Además, mediante la energía que desprenden podrá saber si están teniendo sueños plácidos o por el contrario, terribles pesadillas. Para resistirse a la detección, los durmientes deben superar una RM.",
       "initialGrade": {
         "zeon": 40,
         "requiredIntelligence": 5,
-        "effect": "50 mètres / 120 RMys.",
+        "effect": "50 metros / RM 120.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 60,
         "requiredIntelligence": 8,
-        "effect": "150 mètres / 160 RMys.",
+        "effect": "150 metros / RM 160.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 80,
         "requiredIntelligence": 10,
-        "effect": "200 mètres / 200 RMys.",
+        "effect": "200 metros / RM 200.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 100,
         "requiredIntelligence": 12,
-        "effect": "500 mètres / 240 RMys.",
+        "effect": "500 metros / RM 240",
         "retention": 0
       },
       "withRetention": false,
@@ -48,33 +48,33 @@
     {
       "spellId": 2,
       "bookId": 23,
-      "name": "Sommeil Imperturbable",
+      "name": "Sueño imperturbable",
       "level": 14,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Ce sort protège un personnage des -sorts ou effets de tous types en relation avec les rêves, lui accordant un bonus à la RMys et à la RPsy contre eux. De plus, ce sort évite que le personnage soit transporté de façon involontaire dans la Veille, lui accordant le même bonus à la RMys et à la RPsy si quelqu'un tentait de le forcer à s'y rendre contre sa volonté.",
+      "actionType": "Activa",
+      "type": "Tipo de conjuro: Efecto",
+      "effect": "Este hechizo protege a un personaje de ser asaltado por conjuros o efectos de cualquier tipo relacionado con los sueños, otorgándole un bono a la RM y RP contra tales menesteres. De igual forma, este conjuro evita que el personaje sea trasportado involuntariamente hasta la Vigilia, otorgándole el mismo bono a sus Resistencias en caso de que alguien trate de forzarle a ir en contra de su voluntad.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 5,
-        "effect": "+40 à la RMys ou RPsy.",
+        "effect": "+40 RM o RP.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 80,
         "requiredIntelligence": 8,
-        "effect": "+60 à la RMys ou RPsy.",
+        "effect": "+60 RM o RP.",
         "retention": 5
       },
       "advancedGrade": {
         "zeon": 100,
         "requiredIntelligence": 10,
-        "effect": "+80 à la RMys ou RPsy.",
+        "effect": "+80 RM o RP.",
         "retention": 5
       },
       "arcaneGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "+100 à la RMys ou RPsy.",
+        "effect": "+100 RM o RP.",
         "retention": 10
       },
       "withRetention": true,
@@ -83,33 +83,33 @@
     {
       "spellId": 3,
       "bookId": 23,
-      "name": "Espionner les Songes",
+      "name": "Espiar los Sueños",
       "level": 24,
-      "actionType": "Active",
-      "type": "Animique",
-      "effect": "Ce sort permet d'observer ce qui se passe dans les rêves d'un dormeur, qu'ils soient paisibles ou que ce soient des cauchemars. Il n'est pas possible d'intervenir dans ceux-ci mais on peut les voir de façon détaillée. Une personne peut résister en réussissant un test de RMys. Si elle échoue, elle n'a droit qu'à un nouvel essai par jour, à partir du moment où elle est consciente ou qu'elle suspecte qu'elle peut être affectée par un sortilège de ce type.",
+      "actionType": "Activa",
+      "type": "Tipo de conjuro: Anímico",
+      "effect": "Este hechizo permite observar que esta ocurriendo en los sueños de un durmiente, tanto si son tranquilos como pesadillas. No es posible intervenir en ellos de ninguna manera, pero si verlos detalladamente. Una persona puede resistirse superando un control de RM, pero si lo falla, sólo tiene derecho a un nuevo control cada día, siempre y cuando sea consciente o sospeche que puede estar siendo afectado por un conjuro de estas características.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 6,
-        "effect": "140 RMys.",
+        "effect": "RM 140.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 80,
         "requiredIntelligence": 8,
-        "effect": "160 RMys.",
+        "effect": "RM 160.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 100,
         "requiredIntelligence": 10,
-        "effect": "180 RMys.",
+        "effect": "RM 180.",
         "retention": 10
       },
       "arcaneGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "200 RMys / Le lanceur peut créer une image matérielle des songes de l'individu affecté, permettant à n'importe quelle personne proche de lui de les voir.",
+        "effect": "RM 200 / El lanzador puede manifestar una imagen material de los sueños del individuo afectado, permitiendo a cualquier persona que esté junto a él verlos.",
         "retention": 15
       },
       "withRetention": true,
@@ -118,33 +118,33 @@
     {
       "spellId": 4,
       "bookId": 23,
-      "name": "Altérer les Songes",
+      "name": "Alterar los Sueños",
       "level": 34,
-      "actionType": "Active",
-      "type": "Animique",
-      "effect": "Grâce à ce sort, le sorcier peut altérer les songes (qu'ils soient bons ou mauvais) de toutes les personnes dans le rayon d'action déterminé par le Degré  du sortilège. Ce sort ne fonctionne que si le sorcier ne fait pas lui-même partie du songe, et il n'est pas possible de l'utiliser pour ses propres rêves ou dans la Veille. Ce sort n'affecte que les personnes endormies à ce moment et disparaît dès qu'elles se réveillent.",
+      "actionType": "Activa",
+      "type": "Tipo de conjuro: Anímico",
+      "effect": "Mediante este conjuro el hechicero tiene la capacidad de alterar los sueños (ya sean tranquilos o pesadillas) que tengan todas las personas que estén dentro del radio de acción determinado por el grado del sortilegio. Este conjuro sólo funciona si el hechicero está “fuera” del sueño, y no permite usarlo si está introducido en el propio sueño o en la Vigilia.       Este hechizo sólo afecta a personas que estén durmiendo en esos momentos, y desaparece en el instante en el que despiertan.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 7,
-        "effect": "100 RMys / 50 m de rayon.",
+        "effect": "RM 100 / 50 metros de radio.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 100,
         "requiredIntelligence": 9,
-        "effect": "120 RMys / 150 m de rayon.",
+        "effect": "RM 120 / 150 metros de radio.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 11,
-        "effect": "140 RMys / 250 m de rayon.",
+        "effect": "RM 140 / 250 metros de radio.",
         "retention": 10
       },
       "arcaneGrade": {
         "zeon": 140,
         "requiredIntelligence": 13,
-        "effect": "160 RMys / 500 m de rayon.",
+        "effect": "RM 160 / 500 metros de radio.",
         "retention": 15
       },
       "withRetention": true,
@@ -153,33 +153,33 @@
     {
       "spellId": 5,
       "bookId": 23,
-      "name": "Noctambulisme",
+      "name": "Caminante Noctámbulo",
       "level": 44,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Grâce ce sortilège, le sorcier ou la personne désignée par celui-ci peut amener dans le monde son alter ego onirique, la forme que prend sa conscience le plus souvent lorsqu'il rêve. Ainsi, pendant que son corps est endormi, il peut se déplacer librement dans le monde sous la forme qu'il revêt dans ses songes. Pendant qu'une personne est affectée par ce sort et arpente le monde de cette façon, elle est invisible à l'œil humain (sauf pour ceux capables de voir les esprits) et ne fait aucun bruit. Elle est également complètement intangible et ne peut rien toucher. La distance maximale sur laquelle la personne affectée peut se séparer de son enveloppe corporelle est déterminée par le Degré  du sort. Si cette projection subit des dégâts de quelque type que ce soit, le sort est interrompu.",
+      "actionType": "Activa",
+      "type": "Tipo de conjuro: Efecto.",
+      "effect": "Gracias a este sortilegio el hechicero o la persona designada por este puede traer al mundo su yo onírico, la forma que toma su consciencia más habitualmente al soñar. Así pues, mientras su cuerpo físico duerme, puede moverse libremente por el mundo en su forma de sueños. Mientras alguien está afectado por este conjuro es invisible al ojo humano (salvo aquellas personas capaces de ver espíritus) y no produce ruido alguno. Al mismo tiempo, es completamente intangible, y no puede tocar nada material. La distancia máxima que el afectado puede separarse de su cuerpo físico es determinada por el grado del conjuro. Si el caminante recibe alguna clase de daño el conjuro es interrumpido.",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 10,
-        "effect": "Distance maximale 1 kilomètre.",
+        "effect": "1 kilómetro de distancia máxima.",
         "retention": 30
       },
       "intermediateGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "Distance maximale 2 kilomètres / La personne affectée peut devenir visible à volonté et parler avec n'importe qui.",
+        "effect": "2 kilómetros de distancia máxima / El afectado puede tornarse visible a voluntad y hablar con cualquier persona.",
         "retention": 30
       },
       "advancedGrade": {
         "zeon": 140,
         "requiredIntelligence": 14,
-        "effect": "Distance maximale 5 kilomètres / Comme pour le Degré  Intermédiaire, mais le personnage peut altérer son aspect physique à volonté, prenant toute forme dont il pourrait rêver.",
+        "effect": "5 kilómetros de distancia máxima / Como en grado intermedio, pero el personaje puede alterar su aspecto físico a voluntad, adquiriendo cualquier forma con la que pueda soñar.",
         "retention": 40
       },
       "arcaneGrade": {
         "zeon": 160,
         "requiredIntelligence": 16,
-        "effect": "Distance illimitée / Comme pour le Degré  Avancé, mais la projection peut entrer dans le monde onirique de n'importe quel dormeur qu'elle croise, si le rêveur ne réussit pas un test de RMys contre 150.",
+        "effect": "A cualquier distancia/ Como en grado avanzado, pero el caminante puede entrar en el mundo onírico de cualquier durmiente con el que se cruce si el soñador no supera un control de RM contra 150.",
         "retention": 40
       },
       "withRetention": true,
@@ -188,33 +188,33 @@
     {
       "spellId": 6,
       "bookId": 23,
-      "name": "Sommeil Éternel",
+      "name": "Sueño Eterno",
       "level": 54,
-      "actionType": "Active",
-      "type": "Animique",
-      "effect": "Ce terrible sort plonge sa victime dans un sommeil dont elle ne peut s'éveiller avant que le sorcier ne le décide, quoi qu'il arrive à son corps. Une personne affectée par ce sort a le droit de faire un test de Résistance par jour, mais en appliquant -40 à ses Résistances pour arriver à se réveiller.",
+      "actionType": "Activa",
+      "type": "Tipo de conjuro: Anímico.",
+      "effect": "Este terrible conjuro sume a su víctima en un sueño del que no puede despertar hasta que el hechicero no lo desee, sin importar lo que le pase a su cuerpo. Alguien afectado por este conjuro tiene derecho a una resistencia al día, aunque aplica un -40 a sus resistencias para lograr despertarse si ya ha sido afectado por el conjuro.",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 7,
-        "effect": "80 RMys.",
+        "effect": "RM 80.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 140,
         "requiredIntelligence": 9,
-        "effect": "100 RMys.",
+        "effect": "RM 100.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 180,
         "requiredIntelligence": 11,
-        "effect": "120 RMys.",
+        "effect": "RM 120.",
         "retention": 20
       },
       "arcaneGrade": {
         "zeon": 240,
         "requiredIntelligence": 13,
-        "effect": "140 RMys.",
+        "effect": "RM 140.",
         "retention": 25
       },
       "withRetention": true,
@@ -223,33 +223,33 @@
     {
       "spellId": 7,
       "bookId": 23,
-      "name": "Déchirer la Membrane",
+      "name": "Rasgar la Membrana",
       "level": 64,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Le sorcier crée un vortex dans la réalité qui lui permet d'ouvrir un portail vers la Veille.",
+      "actionType": "Activa",
+      "type": "Tipo de conjuro: Efecto.",
+      "effect": "El hechicero crea un vórtice en la realidad permitiéndole crear un portal a la Vigilia.",
       "initialGrade": {
         "zeon": 200,
         "requiredIntelligence": 10,
-        "effect": "Le portail ne laisse passer que le sorcier et dans une seule direction.",
+        "effect": "El portal sólo permite pasar al hechicero, y es sólo de una dirección.",
         "retention": 40
       },
       "intermediateGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "Le portail peut être traversé par n'importe quel type et nombre de créatures, mais dans une seule direction.",
+        "effect": "El portal puede ser pasado por cualquier clase de ser, pero es sólo de una dirección.",
         "retention": 50
       },
       "advancedGrade": {
         "zeon": 280,
         "requiredIntelligence": 14,
-        "effect": "Comme pour le Degré  Intermédiaire, mais le portail peut être utilisé dans les deux sens.",
+        "effect": "Como en grado intermedio, pero el portal puede ser usado en ambas direcciones.",
         "retention": 60
       },
       "arcaneGrade": {
         "zeon": 320,
         "requiredIntelligence": 16,
-        "effect": "Comme pour le Degré  Avancé, mais le sorcier peut déterminer librement qui peut traverser le portail ou s'il faut éprouver un sentiment ou posséder une qualité spécifique pour l'ouvrir.",
+        "effect": "Como el grado avanzado, pero el hechicero puede determinar libremente quienes pueden cruzar el portal o si es necesario tener algún sentimiento o cualidad especial para abrirlo.",
         "retention": 70
       },
       "withRetention": true,
@@ -258,33 +258,33 @@
     {
       "spellId": 8,
       "bookId": 23,
-      "name": "Bannir dans la Veille",
+      "name": "Desterrar a la Vigilia",
       "level": 74,
-      "actionType": "Active",
-      "type": "Animique",
-      "effect": "Ce sort permet d'arracher une entité au monde terrestre et de renvoyer dans un endroit au hasard dans la Veille. Le lanceur peut choisir de faire voyager uniquement le subconscient onirique de la personne affectée corps restant endormi pendant que son esprit est envoyé dans la Veille). Si elle dormait déjà elle ne pourra pas remarquer le saut dimensionnel, mais si a était éveillée son corps tombera dans un profond sommeil. Si ce sortilège est utilisé pour affecter des créatures propres à la Veille, elles sont alors complétement entraînées. Pour y résister il faut réussir un test de RMys d'une difficulté déterminée par le Degré  du Sort.",
+      "actionType": "Activa",
+      "type": "Tipo de conjuro: Anímico.",
+      "effect": "Este hechizo permite arrancar del mundo terrenal a un individuo o ser y lanzarlo hasta un lugar al azar de la Vigilia. El lanzador puede elegir si sólo envía el subconsciente onírico del afectado (es decir, que su cuerpo permanece durmiendo mientras su mente va a la Vigilia). Si estaba dormido podría no llegar a notar el salto dimensional, si estaba despierto su cuerpo caerá en un profundo sueño. También puede afectar a criaturas propias de la Vigilia que serán arrastradas por completo. Para resistirse deberá superar una RM.",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 10,
-        "effect": "100 RMys.",
+        "effect": "RM 100.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "120 RMys.",
+        "effect": "RM 120.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 140,
         "requiredIntelligence": 14,
-        "effect": "140 RMys.",
+        "effect": "RM 140.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 160,
         "requiredIntelligence": 16,
-        "effect": "160 RMys.",
+        "effect": "RM 160.",
         "retention": 0
       },
       "withRetention": false,
@@ -293,33 +293,33 @@
     {
       "spellId": 9,
       "bookId": 23,
-      "name": "Entre Rêve et Réalité",
+      "name": "Entre Sueños y Realidad",
       "level": 84,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Permet au sorcier d'altérer les liens entre le monde réel et la Veille, lui permettant temporairement de fondre ces deux aspects de la réalité en un seul. Les créatures qui entrent dans cette zone resteront cependant \"\"de leur côté\"\", car en sortant de la zone affectée elles seront toujours \"\"de leur côté\"\" (c'est-à-dire qu'une créature de la Veille continuera sur son plan d'existence en traversant la zone affectée par le sort). Toutefois, les créatures qui ont des pouvoirs spéciaux dans la Veille les conserveront dans cette zone.",
+      "actionType": "Activa",
+      "type": "Tipo de conjuro: Efecto.",
+      "effect": "Permite al hechicero alterar los lazos entre el mundo real y la Vigilia, permitiendo temporalmente fundir ambos aspectos de la realidad en uno. Los seres que entren en dicha zona seguirán siendo “de su lado”, por lo que si salen de la zona afectada lo seguirán haciendo “por su lado” (es decir, un ser de la Vigilia seguirá en su plano de existencia al cruzar el área afectada por el conjuro). No obstante, las criaturas tienen poderes especiales en la Vigilia los mantendrán en dicha zona.",
       "initialGrade": {
         "zeon": 400,
         "requiredIntelligence": 13,
-        "effect": "100 m de rayon.",
+        "effect": "100 metros de radio.",
         "retention": 80
       },
       "intermediateGrade": {
         "zeon": 500,
         "requiredIntelligence": 15,
-        "effect": "500 m de rayon.",
+        "effect": "500 metros de radio.",
         "retention": 100
       },
       "advancedGrade": {
         "zeon": 700,
         "requiredIntelligence": 17,
-        "effect": "1 km de rayon. Arcane",
+        "effect": "1 kilómetro de radio.",
         "retention": 140
       },
       "arcaneGrade": {
         "zeon": 900,
         "requiredIntelligence": 19,
-        "effect": "3 km de rayon.",
+        "effect": "3 kilómetros de radio.",
         "retention": 180
       },
       "withRetention": true,
@@ -328,33 +328,33 @@
     {
       "spellId": 10,
       "bookId": 23,
-      "name": "Rendre les Rêves Réels",
+      "name": "Hacer los Sueños Realidad",
       "level": 94,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Ce sort fait exactement ce qu'indique son titre : il permet au sorcier d'amener dans le monde réel tout être ou objet issu des songes d'une personne endormie. Il pourra, par exemple, attirer à la réalité un bouclier dont rêve un guerrier ou le cheval qu'il montait dans son enfance. En faisant cela, la réalité le matérialisera, lui donnant de la \"substance\". Si c'est un être \"vivant\", la créature aura tous les aspects d'une entité réelle, mais elle ne pourra pas avoir de pouvoirs supérieurs à ceux accessibles aux êtres d'une Gnose de 25 ni un niveau supérieur à celui déterminé par le Degré  du sort. Si c'est un objet, sa présence maximale sera déterminée par le Degré  du sortilège. Il est important de noter que ce sort ne permet pas au lanceur d'observer ce qui se passe à l'intérieur des rêves des personnes, pour choisir exactement ce qu'il veut rapporter il devra utiliser un autre moyen pour \"voir\" le songe.",
+      "actionType": "Activa",
+      "type": "Tipo de conjuro: Efecto.",
+      "effect": "Este conjuro realiza literalmente lo que su nombre indica; permite al hechicero traer al mundo real cualquier ser u objeto que se encuentre en los sueños de algún durmiente. Podría traer, por ejemplo, un escudo con el que está soñando un guerrero o el caballo con el que montaba en su infancia. Al hacerlo realidad se materializará adquiriendo “sustancia”. En el caso de que se traiga un ser “vivo”, la criatura es aparentemente real, pero no podrá tener poderes superiores a Gnosis 25 ni un nivel superior a lo que determine el grado del conjuro. Si por el contrario es un objeto, su presencia máxima será determinada por el grado del sortilegio. Es importante puntualizar que este conjuro en si no permite al lanzador observar lo que hay en el interior de los sueños de la gente, por lo que será necesario usar algún otro medio para “ver” exactamente lo que quiere traer.",
       "initialGrade": {
         "zeon": 300,
         "requiredIntelligence": 12,
-        "effect": "Présence maximum 80 / Niveau 3.",
+        "effect": "Presencia máxima 80/ Nivel 3.",
         "retention": 50
       },
       "intermediateGrade": {
         "zeon": 600,
         "requiredIntelligence": 14,
-        "effect": "Présence maximum 120 / Niveau 6.",
+        "effect": "Presencia máxima 120/ Nivel 6.",
         "retention": 60
       },
       "advancedGrade": {
         "zeon": 900,
         "requiredIntelligence": 16,
-        "effect": "Présence maximum 160 / Niveau 9.",
+        "effect": "Presencia máxima 160/ Nivel 9.",
         "retention": 65
       },
       "arcaneGrade": {
         "zeon": 1200,
         "requiredIntelligence": 18,
-        "effect": "Présence maximum 200 / Niveau 12.",
+        "effect": "Presencia máxima 200/ Nivel 12.",
         "retention": 75
       },
       "withRetention": true,

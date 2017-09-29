@@ -1,46 +1,46 @@
 {
   "bookId": 13,
-  "bookName": "Livre du Chaos",
-  "description": "Cette voie manie le principe absolu du chaos, le pouvoir de l'imprédictible e l'altération des événements.",
+  "bookName": "Libro de Caos",
+  "description": "Esta vía maneja el principio absoluto del caos, el poder de lo impredecible y la alteración de los acontecimientos.",
   "primaryBookUnaccessibles": [
-    "Eau",
-    "Feu",
-    "Terre",
-    "Essence",
-    "Illusion",
-    "Nécromancie."
+    "Agua",
+    "Fuego",
+    "Tierra",
+    "Esencia",
+    "Ilusión",
+    "Nigromancia."
   ],
-  "spells": [
+ "spells": [
     {
       "spellId": 1,
       "bookId": 13,
-      "name": "Sentir le Chaos",
+      "name": "Sentir el Caos",
       "level": 4,
-      "actionType": "Active",
-      "type": "Effet, Détection",
-      "effect": "Le sorcier est capable de remarquer les fluctuations provoquées par le chaos dans l'environnement, lui permettant de sentir tout ce qui arrive à l'Intérieur de la zone du sort et qui n'est pas naturel. Sans en déterminer la localisation exacte, il est conscient du niveau d'influence qu'exerce le chaos l'existence.",
+      "actionType": "Activa",
+      "type": "Efecto, Detección",
+      "effect": "El hechicero es capaz de notar las fluctuaciones provocadas por el caos en el ambiente, permitiéndole sentir cualquier cosa innatural para la realidad que ocurra dentro del área del conjuro. No determina la localización exacta, pero si es consciente del nivel de influencia que el caos provoca en la existencia.",
       "initialGrade": {
         "zeon": 50,
         "requiredIntelligence": 5,
-        "effect": "50 m de rayon.",
+        "effect": "50 metros de radio.",
         "retention": 5
       },
       "intermediateGrade": {
         "zeon": 80,
         "requiredIntelligence": 8,
-        "effect": "100 m de rayon",
+        "effect": "100 metros de radio.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 100,
         "requiredIntelligence": 10,
-        "effect": "250 m de rayon.",
+        "effect": "250 metros de radio.",
         "retention": 10
       },
       "arcaneGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "Arcane 500 m de rayon / Le sorcier perçoit la présence de toute créature avec une Gnose supérieure à 20 ou à sa Natura de 10 points ou plus qui se trouve dans la zone d'effet du sort si celle-ci ne réussit pas une RMys contre 160.",
+        "effect": "500 metros de radio / El hechicero percibe la presencia de cualquier ser con Gnosis superior a 20 o Natura superior a 10 que esté dentro de la zona de acción del conjuro si estos no superan una RM contra 160.",
         "retention": 15
       },
       "withRetention": true,
@@ -49,33 +49,33 @@
     {
       "spellId": 2,
       "bookId": 13,
-      "name": "Aura de Chaos",
+      "name": "Aura de Caos",
       "level": 14,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Le sorcier provoque une vague d'énergie qui modifie les probabilités, enduisant des résultats chaotiques et imprévisibles. Tant que ce sortilège est actif, toutes les personnes se comportent comme si elles avaient une Glose de 10 points supérieure à leur Natura (bien que par rapport à leur importance dans la réalité, elles conservent leurs valeurs d'origine) et tout type de réussite inhabituelle et impossible survient constamment. Autrement ta c'est comme si la chance était devenue folle et que tout pouvait arriver. Au moment de lancer ce sort, le sorcier doit décider s'il sera fixé sur une zone déterminée, ou si l'aura se déplacera avec lui.",
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "El hechicero provoca una oleada de energía que altera las posibilidades forzando resultados caóticos e impredecibles. Mientras este sortilegio se encuentre activo, todas las personas se comportan como si tuvieran Natura 10 (aunque, a efectos de su importancia en la realidad, mantienen su valor original) y todo tipo de sucesos inusuales e imposibles ocurren sin parar. Dicho de otro modo, es como si la suerte se hubiera vuelto loca, y todo pudiera ocurrir. En el momento de lanzar este conjuro, el hechicero debe decidir si lo deja fijo en una zona determinada o hace que el aura se mueva consigo.",
       "initialGrade": {
         "zeon": 60,
         "requiredIntelligence": 6,
-        "effect": "80 RMys / 10 m de rayon/ Présence maximum 100.",
+        "effect": "RM 80 / 10 metros de radio / Presencia máxima 100.",
         "retention": 15
       },
       "intermediateGrade": {
         "zeon": 90,
         "requiredIntelligence": 9,
-        "effect": "100 RMys / 20 m de rayon/ Présence maximum 120.",
+        "effect": "RM 100 / 20 metros de radio / Presencia máxima 120.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "120 RMys / 40 m de rayon/ Présence maximum 140.",
+        "effect": "RM 120 / 40 metros de radio / Presencia máxima 140.",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 150,
         "requiredIntelligence": 15,
-        "effect": "140 RMys / 60 m de rayon/ Présence maximum 160.",
+        "effect": "RM 140 / 60 metros de radio / Presencia máxima 160.",
         "retention": 30
       },
       "withRetention": true,
@@ -84,33 +84,33 @@
     {
       "spellId": 3,
       "bookId": 13,
-      "name": "Altération des Probabilités",
+      "name": "Alteración de la Probabilidad",
       "level": 24,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Le sorcier ou le personnage subit une altération temporaire de sa nature. Il est alors capable de réaliser avec beaucoup plus de facilité des actions extrêmes, qu'elles soient bonnes ou mauvaises. Par conséquent, il augmente ses chances de Maladresse et de Jet Ouvert, aux valeurs indiquées par le Degré  du sort. Par exemple, quelqu'un sans maîtrise qui est affecté par ce sort en Degré  Initial subit une Maladresse avec un jet de 5 ou moins et obtient un Jet Ouvert avec un jet de 85 ou plus.",
+      "actionType": "Activa",
+      "type": "Anímico",
+      "effect": "El hechicero o el personaje que este elija sufre una alteración temporal de su naturaleza, siendo capaz de realizar con mucha más facilidad acciones extremas, tanto para bien como para mal. En consecuencia, incrementa su rango de pifia y tirada abierta, en los valores indicados por el grado del conjuro. Por ejemplo, alguien sin maestría que fuera afectado por este conjuro en grado base, pifiaría con un resultado de 5 y obtendría una tirada abierta con un 85.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 8,
-        "effect": "+2 au seuil de maladresse / -5 au seuil de jet Ouvert.",
+        "effect": "+2 al rango de pifia / -5 al rango de tirada abierta.",
         "retention": 20
       },
       "intermediateGrade": {
         "zeon": 100,
         "requiredIntelligence": 10,
-        "effect": "+4 au seuil de maladresse / -10 au seuil de jet Ouvert.",
+        "effect": "+4 al rango de pifia / -10 al rango de tirada abierta.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "+6 au seuil de maladresse / -15 au seuil de jet Ouvert.",
+        "effect": "+6 al rango de pifia / -15 al rango de tirada abierta.",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 140,
         "requiredIntelligence": 14,
-        "effect": "+8 au seuil de maladresse / -20 au seuil de jet Ouvert.",
+        "effect": "+8 al rango de pifia / -20 al rango de tirada abierta.",
         "retention": 30
       },
       "withRetention": true,
@@ -119,33 +119,33 @@
     {
       "spellId": 4,
       "bookId": 13,
-      "name": "Modifier la Chance",
+      "name": "Alterar la Suerte",
       "level": 34,
-      "actionType": "Active",
-      "type": "Animique",
-      "effect": "La cible de ce sort voit les résultats du hasard et de la chance\"\" augmentés suivant le désir du sorcier, de façon à ce que n'importe quelle situation déterminée par le hasard ait toujours des résultats démesurés, en bien ou en mal. Un joueur de cartes, par exemple, obtiendra continuellement des mains incroyablement chanceuses ou désastreuses. Les personnages avec l'avantage Bonne Fortune et le désavantage Mauvaise Fortune voient leurs effets augmenter de façon exponentielle. Il est possible d'éviter ces effets en réussissant une RMys contre la valeur déterminée par le Degré  du sort.",
+      "actionType": "Activa",
+      "type": "Anímico",
+      "effect": "El blanco de este conjuro ven incrementados los resultados producidos por el azar y la suerte del modo deseado por el hechicero, de manera que cualquier situación que se vea determinada por el azar obtiene siempre resultados desmesurados, ya sea para bien o para mal. Un jugador de cartas, por ejemplo, obtendrían continuamente resultados increíblemente afortunados o desastrosos. Los personajes con la Ventajas y Desventaja Afortunado y Desafortunado ven incrementados exponencialmente sus efectos. Es posible evitar sus efectos superando una RM contra el valor determinado por el grado del conjuro.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 8,
-        "effect": "120 RMys.",
+        "effect": "RM 120.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 140,
         "requiredIntelligence": 10,
-        "effect": "140 RMys.",
+        "effect": "RM 140.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 250,
         "requiredIntelligence": 12,
-        "effect": "160 RMys / La chance accordée est un peu disproportionnée, frôlant l'absurde.",
+        "effect": "RM 160 / La suerte concedida es algo desproporcionado, rozando lo absurdo.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 400,
         "requiredIntelligence": 14,
-        "effect": "180 RMys / Comme pour le Degré  Avancé, mais face à des créatures surnaturelles de Gnose ou très supérieure à leur Natura, le personnage gagnera toujours, ou il perdra contre tout le monde, pour tout ce qui touche à la chance.",
+        "effect": "RM 180 / Como en grado avanzado, pero aún salvo al enfrentarse a entes sobrenaturales de Gnosis o Natura elevada, el personaje siempre ganará o perderá contra cualquier persona en todo aquello que pueda estar relacionada con la suerte.",
         "retention": 15
       },
       "withRetention": true,
@@ -154,33 +154,33 @@
     {
       "spellId": 5,
       "bookId": 13,
-      "name": "Chemins du Chaos",
+      "name": "Caminos del Caos",
       "level": 44,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Le sorcier peut refaire un certain nombre de jets par round, uniquement lorsqu'aucun d'entre eux n'est une Maladresse. Il n'est pas possible de refaire deux fois le même jet.",
+      "actionType": "Activa",
+      "type": "Anímico",
+      "effect": "El hechicero puede repetir cierta cantidad de tiradas por asalto, siempre y cuando ninguna de ellas sea un resultado de pifia. No es posible afectar dos veces la misma tirada.",
       "initialGrade": {
         "zeon": 120,
         "requiredIntelligence": 7,
-        "effect": "Un jet par round.",
+        "effect": "Una tirada por asalto.",
         "retention": 20
       },
       "intermediateGrade": {
         "zeon": 180,
         "requiredIntelligence": 9,
-        "effect": "Deux jets par round.",
+        "effect": "Dos tiradas por asalto.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 280,
         "requiredIntelligence": 12,
-        "effect": "Trois jets par round.",
+        "effect": "Tres tiradas por asalto.",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 400,
         "requiredIntelligence": 14,
-        "effect": "Quatre jets par round ou annuler une maladresse.",
+        "effect": "Cuatro tiradas por asalto o una que sea un resultado de pifia.",
         "retention": 30
       },
       "withRetention": true,
@@ -189,138 +189,138 @@
     {
       "spellId": 6,
       "bookId": 13,
-      "name": "Aberration Chaotique",
+      "name": "Aberración Caótica",
       "level": 54,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Crée un avorton en solidifiant le chaos environnant. Le lanceur n'a aucun pouvoir sur lui, et ce dernier se comportera de façon complètement imprévisible (mais en règle générale, toujours violemment). L'entité doit être créée comme une créature d'Entre Mondes en utilisant les règles décrites au Chapitre 26 du Livre de base et de Gnose 20, mais le lanceur peut choisir de dépenser volontairement seulement la moitié des PF de la créature, alors que l'autre moitié sera déterminée au hasard par le Meneur de Jeu. Quel que soit le Degré  auquel a été lancé le sort, ce sortilège ne permet pas de créer des créatures d'un niveau supérieur à celui du sorcier, car celles-ci sont basées sur sa présence spirituelle Les avortons du chaos ne peuvent pas recevoir une âme, il est donc impossible de leur donner une vie indépendante grâce au sort Offrir une Âme, ni d'y faire transmigrer un esprit avec le sort Transférer l'Âme ou tout autre moyen.",
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "Crea un engendro solidificado el caos que haya en el ambiente. El lanzador no tiene poder alguno sobre él, y se comportará de un modo completamente impredecible (aunque por regla general, siempre de un modo violento). El ente debe de ser desarrollado como un Ser Entre Mundos usando las reglas descritas en el Capítulo 26 del libro básico, pero el lanzador solamente puede elegir gastar voluntariamente la mitad de los PD de la criatura, mientras que la otra mitad serán determinados al azar por el Director de Juego. La criatura tendrá un Gnosis determinado por el grado del conjuro, 20. Sin importar el Grado en el que el conjuro sea lanzado, este sortilegio no permite crear criaturas de un nivel superior al del hechicero, ya que estas se basan en la presencia espiritual del mismo. Los engendros del caos no tienen la capacidad de recibir un alma, por lo que no es posible darles vida independiente mediante el conjuro de Otorgar Alma, ni transmigrar un espíritu en ellos.      ",
       "initialGrade": {
         "zeon": 120,
         "requiredIntelligence": 8,
-        "effect": "Niveau 2.",
+        "effect": "Nivel 2.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 200,
         "requiredIntelligence": 10,
-        "effect": "Niveau 4.",
+        "effect": "Nivel 4.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 300,
         "requiredIntelligence": 12,
-        "effect": "Niveau 8.",
+        "effect": "Nivel 8.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 700,
         "requiredIntelligence": 15,
-        "effect": "Niveau 12.",
+        "effect": "Nivel 12.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 7,
       "bookId": 13,
-      "name": "Manipulation du Chaos",
+      "name": "Manipulación del Caos",
       "level": 64,
-      "actionType": "Passive",
-      "type": "Automatique",
-      "effect": "En altérant l'essence du chaos, ce sort permet de changer le dénouement d'un événement, provoquant une modification dans l'action d'une personne. Le sort doit être lancé immédiatement après que l'action ait été faite. Le personnage qui a agi devra relancer les dés immédiatement. Par exemple, un personnage qui tente de sauter au-dessus du vide et échoue à son jet de Saut peut le refaire, annulant le résultat antérieur pour en créer un autre. Ce sort est automatique, et pour être obligé de réussir la RMys il suffit d'être face au sorcier et d'avoir réalisé une action au moment du lancement. Les êtres avec une Gnose de 35 ou très supérieure à leur Natura sont conscients du changement, alors que les autres ne s'en rendent pas compte.",
+      "actionType": "Pasiva",
+      "type": "Automático",
+      "effect": "Alterando la esencia del caos este conjuro permite cambiar el desenlace de un suceso provocando el cambio en la acción de una persona. El conjuro debe ser lanzado inmediatamente después de que se realice una acción; el personaje que la haya realizado deberá repetir inmediatamente su tirada de dados. Por ejemplo, un personaje que intente cruzar brincando un vacío y falle una tirada de Saltar puede volver a intentarla nuevamente desechando el resultado anterior y generando uno nuevo. Este conjuro es automático, y la condición para obligar a realizar la RM es estar ante el brujo y haber realizado una acción en ese momento. Los seres con Gnosis 35 o Natura elevada son conscientes del cambio, mientras que los demás no pueden percibirlo.",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 10,
-        "effect": "140 RMys / Peut obliger à relancer les dés une fois.",
+        "effect": "RM 140.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 200,
         "requiredIntelligence": 12,
-        "effect": "180 RMys / Peut obliger à relancer les dés deux fois.",
+        "effect": "RM 180 / Puede obligar a repetir la tirada dos veces.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 300,
         "requiredIntelligence": 14,
-        "effect": "220 RMys / Peut obliger à relancer les dés trois fois.",
+        "effect": "RM 220/ Puede obligar a repetir la tirada tres veces.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 400,
         "requiredIntelligence": 16,
-        "effect": "260 RMys / Peut obliger à relancer les dés quatre fois.",
+        "effect": "RM 260/ Puede obligar a repetir la tirada cuatro veces.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 8,
       "bookId": 13,
-      "name": "Mutation Chaotique",
+      "name": "Mutación Caótica",
       "level": 74,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "La cible de ce sort subit une série de mutations physiologiques, altérant tant son apparence que ses capacités. En utilisant Mutation Chaotique, le sorcier ou l'individu que celui-ci sélectionne obtient des RF supplémentaires pour obtenir des pouvoirs de créature décrits dans le Chapitre 26 du Livre de base comme s'il était une créature d'Entre Mondes avec une Gnose de 25. Toutefois il ne pourra choisir comment dépenser que la moitié des PF, l'autre moitié étant déterminée au hasard par le Meneur de Jeu. En règle générale, les pouvoirs que déclenche ce sort laissent toujours des modifications visibles du physique. Une personne peut essayer de résister à ses effets, si elle réussit une RMys contre une valeur déterminée par le Degré  du sort. Les PF obtenus augmentent le niveau du personnage. Ce sort ne peut être lancé qu'une fois contre un même individu, ne permet pas d'acquérir de désavantages de monstres, et est lié au corps de la cible de la même façon que pour le sort Chimère.",
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "El objetivo de este conjuro sufre serias mutaciones en su cuerpo, alterando tanto su fisionomía como sus capacidades. Al usar Mutación Caótica, el hechicero o el individuo que éste determine consigue PD adicionales para obtener Poderes de monstruo como si fuera un Ser Entre Mundos con Gnosis 25. No obstante, únicamente puede elegir gastar voluntariamente la mitad de dichos PD, mientras que la otra mitad serán determinados al azar por el Director de Juego. Por regla general, los poderes que provoca este conjuro siempre dejan visibles cambios físicos. Una persona puede tratar de resistirse a sus efectos, siempre y cuando supere la RM determinada por el grado del conjuro. El exceso de PD aumenta el nivel del personaje. Este conjuro sólo puede ser lanzado sobre un individuo una sola vez.",
       "initialGrade": {
         "zeon": 200,
         "requiredIntelligence": 8,
-        "effect": "100 PF / 100 RMys.",
+        "effect": "100 PD / 100 RM.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 400,
         "requiredIntelligence": 11,
-        "effect": "200 PF / 120 RMys.",
+        "effect": "200 PD / 120 RM.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 800,
         "requiredIntelligence": 13,
-        "effect": "300 PF / 140 RMys.",
+        "effect": "300 PD / 140 RM.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 1200,
         "requiredIntelligence": 15,
-        "effect": "400 PF / Gnose de 30 / 160 RMys.",
+        "effect": "400 PD / Gnosis 30 / 160 RM.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 9,
       "bookId": 13,
-      "name": "Contrôle du Chaos",
+      "name": "Control del Caos",
       "level": 84,
-      "actionType": "Active",
-      "type": "Effet, Animique",
-      "effect": "Le sorcier a la capacité de plier la nature du chaos à volonté et de l'utiliser afin d'obtenir les résultats qu'il souhaite. De cette manière, il peut faire des choses très simples comme faire se briser une chaise ou aller jusqu'à plier l'espace pour créer des portails. Il est important de préciser que ce sort ne permet pas à un personnage de contrôler le chaos s'il n'existe pas en tant que tel dans la zone. Ainsi plus l'environnement est chaotique, plus ses pouvoirs sont grands. Par exemple, contrôler un endroit dans lequel l'environnement chaotique est très bas ne lui permettra pas de faire quoi que ce soit, alors qu'en le maîtrisant dans une zone affectée par un chaos important, il pourra faire presque n'importe quoi. Dans le jeu, le sorcier obtient les pouvoirs de Gnose Influer sur la réalité et Auspice, avec une Gnose maximum qui dépend du Degré  du sort et du niveau de chaos ambiant, Pour un être basé sur ie chaos qui se trouve en présence du sorcier, celui-ci peut le dominer si la créature rate un test de RMys dont la valeur est indiquée par le Degré  du sortilège.",
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "El hechicero tiene la capacidad de doblegar la naturaleza del caos a su antojo, pudiendo usarlo para obtener los resultados que desee. De ese modo, puede hacer desde cosas tan simples como que una silla se rompa hasta que el espacio se pliegue creando portales. Es importante puntualizar que este conjuro no otorga a un personaje un control del caos si este no existe como tal en una zona, por lo que cuanto mayor ambiente caótico haya, mayores serán sus poderes. Por ejemplo, controlar un lugar en el que el ambiente caótico es muy bajo no le permitiría hacer nada, mientras que dominarlo en una zona que, por ejemplo, está afectada por un fuerte caos, podría hacer casi cualquier cosa. A efectos de juego, el brujo obtiene los poderes Gnosticos Influir en la Realidad y Auspice, con un valor máximo de Gnosis que depende del grado del conjuro y del nivel de caos que haya. En el caso de que un ser basado en caos se encuentre en presencia del hechicero, este puede dominarlo si la criatura no supera un control de RM indicado por el grado del sortilegio.",
       "initialGrade": {
         "zeon": 300,
         "requiredIntelligence": 11,
-        "effect": "Gnose jusqu'à 30 / 120 RMys.",
+        "effect": "Hasta Gnosis 30 / RM 120.",
         "retention": 50
       },
       "intermediateGrade": {
         "zeon": 500,
         "requiredIntelligence": 13,
-        "effect": "Gnose jusqu'à 35 / 160 RMys",
+        "effect": "Hasta Gnosis 35 / RM 160.",
         "retention": 60
       },
       "advancedGrade": {
         "zeon": 800,
         "requiredIntelligence": 15,
-        "effect": "Gnose jusqu'à 40 / 200 RMys.",
+        "effect": "Hasta Gnosis 40 / RM 200.",
         "retention": 65
       },
       "arcaneGrade": {
         "zeon": 1200,
         "requiredIntelligence": 17,
-        "effect": "Gnose jusqu'à 45 / 260 RMys.",
+        "effect": "Hasta Gnosis 45 / RM 260.",
         "retention": 75
       },
       "withRetention": true,
@@ -329,33 +329,33 @@
     {
       "spellId": 10,
       "bookId": 13,
-      "name": "Chaos Primaire",
+      "name": "Caos Primario",
       "level": 94,
-      "actionType": "Activé",
-      "type": "Automatique",
-      "effect": "En altérant complètement les lois de la réalité, le sorcier crée un chaos à l'état le plus pur, une zone dont tout k contenu cesse de répondre aux règles de la raison. L'espace est distordu de manière que le haut peut devenir le bas, les kilomètres sont parcourus en quelques secondes e les mètres en plusieurs heures. Une personne peut être à la fois jeune et vieille, un orage peut éclater et la journée rester ensoleillée... rien ne fait sens, car le concept même de logique a cessé d'exister. Quelqu'un de normal Peut devenir fou en quelques minutes, alors que tout pouvoir surnaturel peut échapper à tout contrôle. La zone d'effet de ce sort est déterminée par son Degré et ne bouge pas de l'endroit où elle a été lancée.",
+      "actionType": "Activa",
+      "type": "Automático",
+      "effect": "Alterando completamente las leyes de la realidad, el hechicero crea caos en su estado más puro, una zona donde todo cuanto contiene deja de responder a ninguna regla de la razón. El espacio se distorsiona de manera que arriba puede ser abajo, kilómetros se recorren en segundos y metros en horas. Una persona puede ser joven y vieja a la vez, estallar una tormenta sin dejar de ser un día soleado… nada tiene lógica, porque el propio concepto de la lógica ha dejado de existir. Alguien normal puede volverse loco en pocos minutos, mientras que todo poder sobrenatural puede salir fuera de control. La zona de acción de este conjuro es determinada por su grado, y permanece estática donde fue lanzada.",
       "initialGrade": {
         "zeon": 500,
         "requiredIntelligence": 12,
-        "effect": "500 mètres.",
+        "effect": "500 metros.",
         "retention": 100
       },
       "intermediateGrade": {
         "zeon": 900,
         "requiredIntelligence": 14,
-        "effect": "1 km.",
+        "effect": "1 kilómetro.",
         "retention": 180
       },
       "advancedGrade": {
         "zeon": 1500,
         "requiredIntelligence": 16,
-        "effect": "5 km / Toute personne à l'intérieur du Chaos Primaire pendant au moins une minute est irrémédiablement affectée par le sort Mutation Chaotique lancé au Degré  Arcane.",
+        "effect": "5 kilómetro / Cualquier persona que esté en el interior del Caos Primario al menos un minuto es afectado irremisiblemente por el conjuro Mutación Caótica lanzado en grado arcano.",
         "retention": 300
       },
       "arcaneGrade": {
         "zeon": 2400,
         "requiredIntelligence": 18,
-        "effect": "25 km / Idem que pour le Degré  Avancé, mais à moins d'un kilomètre du noyau du sort, l'état de la modification est absolu, et aucune règle de l'existence ne fonctionne. En termes de jeu, même la matière cesse d'exister, se convertissant simplement en un amas d'atomes animé d'un mouvement continu. Tout ce qu'il y a à l'intérieur de la zone du sort doit réussir un test de RMys contre 160 au risque de se dissoudre simplement dans le chaos et de disparaître à jamais.",
+        "effect": "25 kilómetros/ Como en grado avanzado, pero a menos de un kilómetro del núcleo del conjuro el estado de la alteración es absoluto, por lo que ninguna regla existencia funciona; a efectos de juego, incluso la materia deja de existir, convirtiéndose simplemente en un conjunto de átomos en continuo movimiento. Todo lo que esté dentro debe superar un control de RM contra 160 o simplemente se fundirá con el caos y desaparecerá para siempre.",
         "retention": 480
       },
       "withRetention": true,

@@ -1,45 +1,45 @@
 {
   "bookId": 22,
-  "bookName": "Livre du Sang",
-  "description": "Cette voie secondaire contrôle le principe qui donne la vie aux êtres organiques, celui du sang lui-même.",
+  "bookName": "Libro de Sangre",
+  "description": "Esta sub-vía controla el principio que da la vida a los seres orgánicos, el de la propia sangre.",
   "primaryBookUnaccessibles": [
-    "Lumière",
-    "Air",
-    "Feu",
-    "Terre",
-    "Illusion."
+    "Luz",
+    "Aire",
+    "Fuego",
+    "Tierra",
+    "Ilusión."
   ],
   "spells": [
     {
       "spellId": 1,
       "bookId": 22,
-      "name": "Ralentissement du Pouls",
+      "name": "Ralentizar Pulso",
       "level": 4,
-      "actionType": "Active",
-      "type": "Animique",
-      "effect": "Affecte le torrent sanguin de ses cibles, le ralentissant s'il est anormalement rapide (comme dans le cas d'émotions extrêmes, comme la Colère ou la Peur). La personne affectée se sent relaxée, toute émotion extrême étant éliminée, qu'elle soit d'origine naturelle ou non. La sensation de tranquillité est si grande, que durant la minute qui suit la cible du sort subit un -10 à toutes ses actions physiques. Pour résister aux effets de ce sort il faut réussir un test de RMys contre la difficulté déterminée par le Degré  du sort.",
+      "actionType": "Activa",
+      "type": "Anímico",
+      "effect": "Afecta al torrente sanguíneo de sus objetivos, ralentizándolo en el caso de que sea anormalmente rápido (como es el caso de emociones extremas, como la ira o el temor). El afectado se siente relajado, siendo eliminada cualquier emoción extrema en el que esté sumido, sea de origen natural o no. La sensación de tranquilidad será tan grande, que durante el siguiente minuto el blanco del conjuro sufre un -10 a toda acción de carácter físico. Para tratar de resistirse a sus efectos es necesario superar una RM contra la dificultad determinada por el grado del conjuro.",
       "initialGrade": {
         "zeon": 30,
         "requiredIntelligence": 5,
-        "effect": "80 RMys.",
+        "effect": "RM 80.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 60,
         "requiredIntelligence": 8,
-        "effect": "100 RMys.",
+        "effect": "RM 100.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 100,
         "requiredIntelligence": 10,
-        "effect": "120 RMys.",
+        "effect": "RM 120.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 150,
         "requiredIntelligence": 13,
-        "effect": "160 RMys.",
+        "effect": "RM 160.",
         "retention": 0
       },
       "withRetention": false,
@@ -48,33 +48,33 @@
     {
       "spellId": 2,
       "bookId": 22,
-      "name": "Coagulation",
+      "name": "Coagular",
       "level": 14,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Soigne magiquement les blessures, les suturant et empêchant la perte de sang. Il n'est pas possible d'affecter quelqu'un plus d'une fois par jour avec ce sort.",
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "Restaña las heridas mágicamente, impidiendo la pérdida de sangre y cerrando las heridas. Sólo es posible afectar a alguien una vez al día con este conjuro.",
       "initialGrade": {
         "zeon": 40,
         "requiredIntelligence": 6,
-        "effect": "Élimine automatiquement toute hémorragie.",
+        "effect": "Elimina automáticamente cualquier desangramiento",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 80,
         "requiredIntelligence": 8,
-        "effect": "Redonne 20 % des points de vie perdus à cause de blessures dues à des coupures ou des hémorragies.",
+        "effect": "Recupera un 20% de los puntos de vida perdidos por heridas producidas por cortes o hemorragias.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 10,
-        "effect": "Redonne 40% des points de vie perdus à cause de blessures dues à des coupures ou des hémorragies.",
+        "effect": "Recupera un 40% de los puntos de vida perdidos por heridas producidas por cortes o hemorragias.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 160,
         "requiredIntelligence": 13,
-        "effect": "Redonne 60% des points de vie perdus à cause de blessures dues à des coupures ou des hémorragies.",
+        "effect": "Recupera un 60% de los puntos de vida perdidos por heridas producidas por cortes o hemorragias.",
         "retention": 0
       },
       "withRetention": false,
@@ -83,33 +83,33 @@
     {
       "spellId": 3,
       "bookId": 22,
-      "name": "Sang Froid",
+      "name": "Sangre Fría",
       "level": 24,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Change la température corporelle des cibles du sort, leur permettant de la réguler en fonction des conditions externes. Ainsi, elles ne seront pas affectées par une météorologie défavorable, et pourront survivre à des déserts glacés ou brûlants. Affecte autant de personnes que le détermine le lanceur, tant que la somme de leurs présences ne dépasse pas ce qui est indiqué dans le Degré  du sort.",
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "Cambia la temperatura corporal de los objetivos del conjuro, permitiéndole regularla de forma acorde a las condiciones externas. Así, no se verán afectados por la meteorología adversa, pudiendo sobrevivir en yermos gélidos o desiertos ardientes. Puede afectar a tantos blancos como se desee, siempre y cuando la suma de sus presencias no supere lo que determine el grado del conjuro.",
       "initialGrade": {
         "zeon": 50,
         "requiredIntelligence": 6,
-        "effect": "Présence maximale affectable de 60.",
-        "retention": 15
+        "effect": "Presencia máxima 60.",
+        "retention": 5
       },
       "intermediateGrade": {
         "zeon": 90,
         "requiredIntelligence": 9,
-        "effect": "Présence maximale affectable de 100.",
+        "effect": "Presencia máxima 100.",
         "retention": 20
       },
       "advancedGrade": {
         "zeon": 120,
         "requiredIntelligence": 12,
-        "effect": "Présence maximale affectable de 180.",
+        "effect": "Presencia máxima 180.",
         "retention": 25
       },
       "arcaneGrade": {
         "zeon": 150,
         "requiredIntelligence": 15,
-        "effect": "Présence maximale affectable de 300.",
+        "effect": "Presencia máxima 300.",
         "retention": 30
       },
       "withRetention": true,
@@ -118,33 +118,33 @@
     {
       "spellId": 4,
       "bookId": 22,
-      "name": "Création de Sang",
+      "name": "Creación de Sangre",
       "level": 34,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Crée un objet ou une arme à partir du sang du sorcier, le cristallisant jusqu'à le convertir en un matériau d'une extrême dureté. Malheureusement, cela implique obligatoirement le sacrifice d'une partie du propre sang du sorcier, qui perd par ce biais des points de vie comme indiqué par le Degré  du sort.",
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "Crea un objeto u arma partir de la propia sangre del hechicero, cristalizándola hasta convertirla en un material de una dureza extrema. Lamentablemente, esto reprenda que el brujo debe de sacrificar necesariamente parte de su propia sangre, perdiendo puntos de vida en el proceso.",
       "initialGrade": {
         "zeon": 80,
         "requiredIntelligence": 6,
-        "effect": "Sacrifice de -10 PV / Qualité +0 / Objets jusqu'à 2 kg.",
-        "retention": 30
+        "effect": "Perdida de -10 PV / Calidad +0 / Objetos de hasta 2 kilos.",
+        "retention": 10
       },
       "intermediateGrade": {
         "zeon": 120,
         "requiredIntelligence": 9,
-        "effect": "Sacrifice de -20 PV / Qualité +5 / Objets jusqu'à 5 kg.",
+        "effect": "Perdida de -20 PV / Calidad +5 / Objetos de hasta 5 kilos.",
         "retention": 40
       },
       "advancedGrade": {
         "zeon": 160,
         "requiredIntelligence": 12,
-        "effect": "Sacrifice de -40 PV / Qualité +10 / Objets jusqu'à 15 kg.",
+        "effect": "Perdida de -40 PV / Calidad +10 / Objetos de hasta 15 kilos.",
         "retention": 50
       },
       "arcaneGrade": {
         "zeon": 200,
         "requiredIntelligence": 15,
-        "effect": "Sacrifice de -60 PV / Qualité +15 / Objets jusqu'à 25 kg.",
+        "effect": "Perdida de -60 PV / Calidad +15 / Objetos de hasta 25 kilos.",
         "retention": 60
       },
       "withRetention": true,
@@ -153,68 +153,68 @@
     {
       "spellId": 5,
       "bookId": 22,
-      "name": "Transfusion",
+      "name": "Transfusión",
       "level": 44,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "En séparant les éléments vitaux du sang du sorcier et en les imprégnant dans le corps d'un allié, cela lui permet de transférer une partie de ses points de vie à une autre personne. La quantité de points de vie sacrifiée par le lanceur est multipliée par la quantité indiquée par le Degré  du sort. Par exemple, si le sorcier lance ce sort en Degré  Intermédiaire et sacrifie 10 PV, son allié récupère 50 PV. Ce sort ne permet pas de restaurer des membres arrachés ou des pertes définitives, mais il élimine les malus causés par les critiques d'une valeur équivalente aux points de vie sacrifiés.",
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "Separando los elementos vitales de la sangre del hechicero e imbuyéndolos sobre un aliado, permite que el brujo transfiera parte de sus puntos de vida a otra persona. La cantidad de PV que sacrifique el lanzador se multiplica por la cantidad que determine el grado del conjuro. Por ejemplo, si el brujo lanzara este conjuro en grado intermedio y sacrificara 10 PV, recuperaría 50 PV de su aliado. Este conjuro no permite restaurar miembros cercenados o pérdidas permanentes, pero sí elimina los penalizadores causados por los críticos en una cantidad equivalente a los puntos de vida sacrificados.",
       "initialGrade": {
         "zeon": 40,
         "requiredIntelligence": 6,
-        "effect": "Points de vie sacrifiés x2",
+        "effect": "x2 a los PV sacrificados.",
         "retention": 0
       },
       "intermediateGrade": {
         "zeon": 60,
         "requiredIntelligence": 8,
-        "effect": "Points de vie sacrifiés x5",
+        "effect": "x5 a los PV sacrificados",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 80,
         "requiredIntelligence": 10,
-        "effect": "Points de vie sacrifiés x10",
+        "effect": "x10 a los PV sacrificados.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 100,
         "requiredIntelligence": 12,
-        "effect": "Points de vie sacrifiés x20",
+        "effect": "x20 a los PV sacrificados.",
         "retention": 0
       },
       "withRetention": false,
-      "dailyRetention": false
+      "dailyRetention": true
     },
     {
       "spellId": 6,
       "bookId": 22,
-      "name": "Saigner",
+      "name": "Desangrar",
       "level": 54,
-      "actionType": "Active",
-      "type": "Animique",
-      "effect": "Ce sort provoque sur la cible des blessures qui saignent horriblement, augmentant ainsi les dégâts qu'elle subit. Tant qu'il est actif, la personne affectée augmente les dégâts qu'elle subit d'une quantité déterminée par le Degré  du sort. Pour que Saigner ait un effet, les dégâts doivent provenir de contusions, d'hémorragies et de coupures, alors que les blessures provoquées par la chaleur, le froid, l'électricité ou l'énergie ne sont pas concernées par cette règle. Pour éviter d'être affectée par ces effets la cible doit réussir un test de RMys, mais elle peut le refaire à chaque fois qu'elle subit un coup dont les dégâts sont accrus par ce sortilège.",
+      "actionType": "Activa",
+      "type": "Anímico.",
+      "effect": "Este hechizo provoca que las heridas de un objetivo sangren horriblemente, incrementando así los daños que reciba. Mientras se mantenga activo, el afectado incrementa el daño que sufra en una cantidad determinada por el grado del conjuro. Para que Desangrar tenga efecto el daño resultante debe provenir de contusiones, hemorragias y cortes, mientras que las heridas provocadas por calor, frío o energía no se benefician de esta regla. Para evitar sus efectos, el objetivo debe superar un control de RM, pero puede volver a repetirlo cada vez que reciba un impacto cuyo daño sea incrementado por este sortilegio.",
       "initialGrade": {
         "zeon": 100,
         "requiredIntelligence": 6,
-        "effect": "Augmente les dégâts subis de 50 / 120 RMys.",
+        "effect": "Incrementa el daño recibido un 50% / RM 120.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 150,
         "requiredIntelligence": 9,
-        "effect": "Double les dégâts subis / 140 RMys.",
+        "effect": "Dobla el daño recibido / RM 140.",
         "retention": 15
       },
       "advancedGrade": {
         "zeon": 200,
         "requiredIntelligence": 12,
-        "effect": "Triple les dégâts subis / 160 RMys.",
+        "effect": "Triplica el daño recibido / RM 160.",
         "retention": 20
       },
       "arcaneGrade": {
         "zeon": 250,
         "requiredIntelligence": 15,
-        "effect": "Quadruple les dégâts subis / 180 RMys.",
+        "effect": "Cuadruplica el daño recibido / RM 180.",
         "retention": 25
       },
       "withRetention": true,
@@ -223,33 +223,33 @@
     {
       "spellId": 7,
       "bookId": 22,
-      "name": "Vampirisme",
+      "name": "Vampirismo",
       "level": 64,
-      "actionType": "Active",
-      "type": "Effet",
-      "effect": "Ce sort fait en sorte qu'une arme boive une partie du sang de ceux qu'elle blesse, canalisant leurs énergies vitales et les offrant à celui qui la manie pour qu'il récupère ses points de vie perdus. Dans le cas d'une attaque contre une créature à Encaissement, la quantité drainée doit être divisée par dix.",
+      "actionType": "Activa",
+      "type": "Efecto",
+      "effect": "Este conjuro provoca que un arma beba parte de la sangre de aquellos a los que hiera, canalizando sus energías vitales y otorgándoselas al portador para que recupere sus PV perdidos. En el caso de que se ataque a un ser con acumulación de daño, la cantidad drenada debe dividirse por diez.                  ",
       "initialGrade": {
         "zeon": 150,
         "requiredIntelligence": 8,
-        "effect": "Draine 10 % des blessures causées.",
+        "effect": "Drena el 10% de las heridas causadas.",
         "retention": 10
       },
       "intermediateGrade": {
         "zeon": 200,
         "requiredIntelligence": 10,
-        "effect": "Draine 20% des blessures causées.",
+        "effect": "Drena el 20% de las heridas causadas.",
         "retention": 10
       },
       "advancedGrade": {
         "zeon": 250,
         "requiredIntelligence": 12,
-        "effect": "Draine 30% des blessures causées.",
+        "effect": "Drena el 30% de las heridas causadas.",
         "retention": 15
       },
       "arcaneGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "Draine 40% des blessures causées.",
+        "effect": "Drena el 40% de las heridas causadas.",
         "retention": 15
       },
       "withRetention": true,
@@ -258,33 +258,33 @@
     {
       "spellId": 8,
       "bookId": 22,
-      "name": "Larmes de Sang",
+      "name": "Lágrimas de Sangre",
       "level": 74,
-      "actionType": "Active",
-      "type": "Animique",
-      "effect": "Ce sort terrifiant provoque une dilatation du sang dans le cœur de la cible et le fait exploser de l'intérieur sous la pression. Si le personnage échoue à son test de plus de 40 points, il meurt automatiquement. Mais si la marge d'échec est inférieure à 40, il subit les dégâts déterminés dans la description du Degré  du sort.",
+      "actionType": "Activa",
+      "type": "Anímico.",
+      "effect": "Este terrorífico conjuro provoca que la sangre del corazón de un objetivo se expanda y lo reviente desde dentro a causa de la presión. Si el personaje falla el control por más de 40 puntos muere de manera automática, mientras que si el nivel de fracaso no es superior a 40, recibe el daño determinado en la descripción del grado del conjuro.",
       "initialGrade": {
         "zeon": 280,
         "requiredIntelligence": 10,
-        "effect": "140 RMys ou RPhy / 50 points de dégâts.",
+        "effect": "RM o RF 140 / Daño 50.",
         "retention": 0
       },
       "intermediateGrade": {
-        "zeon": 300,
+        "zeon": 320,
         "requiredIntelligence": 13,
-        "effect": "180 RMys ou RPhy / 100 points de dégâts.",
+        "effect": "RM o RF 180 / Daño 100.",
         "retention": 0
       },
       "advancedGrade": {
         "zeon": 360,
         "requiredIntelligence": 15,
-        "effect": "220 RMys ou RPhy / 150 points de dégâts.",
+        "effect": "RM o RF 220 / Daño 150.",
         "retention": 0
       },
       "arcaneGrade": {
         "zeon": 400,
         "requiredIntelligence": 17,
-        "effect": "260 RMys ou RPhy / 200 points de dégâts.",
+        "effect": "RM o RF 260 / Daño 200.",
         "retention": 0
       },
       "withRetention": false,
@@ -293,33 +293,33 @@
     {
       "spellId": 9,
       "bookId": 22,
-      "name": "Circulation Sanguine",
+      "name": "Corriente Sanguínea",
       "level": 84,
-      "actionType": "Passive",
-      "type": "Effet",
-      "effect": "Augmente la vitesse du torrent sanguin du sorcier et des alliés qu'il désigne, ce qui a pour effet d'augmenter leurs capacités de façon importante. Toutefois, la pression à laquelle est soumis le cœur de ceux qui en bénéficient leur provoque des dégâts internes qui peuvent aller jusqu'à les tuer si le sort est maintenu trop longtemps.",
+      "actionType": "Pasiva",
+      "type": "Efecto",
+      "effect": "Incrementa la velocidad del torrente sanguíneo del hechicero y aquellos aliados que designe, incrementando notablemente sus capacidades. Sin embargo, la presión a la que se somete el corazón de los beneficiarios del hechizo les provoca daños internos que pueden llegar a matarlos si se mantiene demasiado tiempo.",
       "initialGrade": {
         "zeon": 200,
         "requiredIntelligence": 10,
-        "effect": "+10 à toutes les actions / -5 PV par round.",
+        "effect": "+10 a toda acción / -5 PV por turno.",
         "retention": 40
       },
       "intermediateGrade": {
         "zeon": 240,
         "requiredIntelligence": 12,
-        "effect": "+20 à toutes les actions / -15 PV par round.",
+        "effect": "+20 a toda acción / -15 PV por turno.",
         "retention": 50
       },
       "advancedGrade": {
         "zeon": 300,
         "requiredIntelligence": 15,
-        "effect": "+40 à toutes les actions / -30 PV par round.",
+        "effect": "+40 a toda acción / -30 PV por turno.",
         "retention": 60
       },
       "arcaneGrade": {
         "zeon": 340,
         "requiredIntelligence": 17,
-        "effect": "+60 à toutes les actions / -50 PV par round.",
+        "effect": "+60 a toda acción / -50 PV por turno.",
         "retention": 70
       },
       "withRetention": true,
@@ -328,36 +328,36 @@
     {
       "spellId": 10,
       "bookId": 22,
-      "name": "Un Monde de Sang",
+      "name": "Un Mundo de Sangre",
       "level": 94,
-      "actionType": "Active",
-      "type": "Animique, Effet",
-      "effect": "Le sorcier obtient une maîtrise absolue sur le sang qui se trouve à l'intérieur du rayon d'action du sortilège. Sa maîtrise est telle qu'elle peut aller de la paralysie des corps des êtres vivants à la création de pratiquement toute chose qu'il désire avec le sang qui a été versé. Tout individu affecté par le sort devra réussir un test de RMys ou RPhy pour ne pas être contrôlé comme une marionnette par le sorcier. Si celui-ci le désire, il peut à la place occasionner des dégâts équivalents au double de la marge d'échec. Si le sorcier souhaite utiliser le sang versé comme moyen d'attaque ou de défense (en créant des lames, des épines ou des écrans avec), il peut utiliser sa Projection magique pour le manier en tant que projectiles aiguisés ou que bouclier mystique. Tant les bases de dégâts de ces attaques que la résistance des objets matérialisés pour se défendre sont déterminés par le Degré  du sort, mais il ne peut bien sûr utiliser ces derniers que s'il y a suffisamment de sang aux alentours.",
+      "actionType": "Activa",
+      "type": "Anímico.",
+      "effect": "El hechicero obtiene un control absoluto sobre toda la sangre que se encuentre dentro del radio de acción del sortilegio. Su dominio es tal que puede desde paralizar los cuerpos de los seres vivos hasta crear prácticamente cualquier cosa que desee con la sangre que ya haya sido derramada. Cualquier individuo que se vea afectado por el conjuro debe superar un control de RM o RF para no verse controlado por el brujo como una marioneta, o sufrir si este lo desea un daño equivalente al doble del nivel de fracaso. En el caso de que el hechicero quiera usar la sangre como medio de ataque o de defensa (creando cuchillas, espinas o escudos), tiene la capacidad de emplear su proyección mágica para proyectarla como descargas afiladas o escudos místicos. Tanto el daño de sus ataques como la resistencia de los mismos es determinado por el grado del conjuro, pero únicamente puede usarla si hay suficiente sangre a su alrededor.",
       "initialGrade": {
         "zeon": 280,
         "requiredIntelligence": 10,
-        "effect": "120 RMys ou RPhy / Dégâts 60 / 500 Points de Vie.",
-        "retention": 60
+        "effect": "RM o RF 120 / Daño 60 / 500 Puntos de Resistencia.",
+        "retention": 0
       },
       "intermediateGrade": {
         "zeon": 320,
         "requiredIntelligence": 13,
-        "effect": "140 RMys ou RPhy / Dégâts 90 / 1 200 Points de Vie.",
-        "retention": 65
+        "effect": "RM o RF 140 / Daño 90 / 1.200 Puntos de Resistencia.",
+        "retention": 0
       },
       "advancedGrade": {
         "zeon": 360,
         "requiredIntelligence": 15,
-        "effect": "160 RMys ou RPhy / Dégâts 120 / 2 400 Points de Vie.",
-        "retention": 75
+        "effect": "RM o RF 160 / Daño 120 / 2.400 Puntos de Resistencia.",
+        "retention": 0
       },
       "arcaneGrade": {
         "zeon": 400,
         "requiredIntelligence": 17,
-        "effect": "180 RMys ou RPhy / Dégâts 150 / 3 600 Points de Vie. Maintien",
-        "retention": 80
+        "effect": "RM o RF 180 / Daño 150 / 3.600 Puntos de Resistencia.",
+        "retention": 0
       },
-      "withRetention": true,
+      "withRetention": false,
       "dailyRetention": false
     }
   ]
