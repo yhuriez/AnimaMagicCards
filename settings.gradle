@@ -1,1 +1,1 @@
-include ':app', ':cardmodel', ':spellgenerator'
+include ':app', ':cardmodel'
