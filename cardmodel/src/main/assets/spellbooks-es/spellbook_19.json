@@ -1,364 +1,365 @@
 {
   "bookId": 19,
-  "bookName": "Libro de Paz",
+  "bookName": "PAZ",
   "description": "Es la vía que encarna la armonía y la falta de conflictos.",
   "primaryBookUnaccessibles": [
-    "Oscuridad",
     "Destrucción",
+    "Oscuridad",
     "Fuego",
-    "Ilusión",
-    "Nigromancia."
+    "Nigromancia",
+    "Ilusión"
   ],
   "spells": [
     {
-      "spellId": 1,
-      "bookId": 19,
-      "name": "Escudo Salvador",
-      "level": 4,
       "actionType": "Pasiva",
-      "type": "Defensa",
+      "advancedGrade": {
+        "effect": "El escudo tiene 1.500 puntos de Resistencia / Es capaz de proteger hasta a ocho personas sin penalizador.",
+        "requiredIntelligence": 10,
+        "retention": 20,
+        "zeon": 160
+      },
+      "arcaneGrade": {
+        "effect": "El escudo tiene 3.000 puntos de Resistencia / Es capaz de proteger hasta a doce personas sin penalizador.",
+        "requiredIntelligence": 14,
+        "retention": 25,
+        "zeon": 240
+      },
+      "bookId": 19,
+      "dailyRetention": false,
       "effect": "Crea una barrera protectora que protege contra cualquier tipo de ataque. En el caso de que se utilice para cubrir a varios individuos contra un ataque en área, el conjuro permite proteger a tantos blancos como indique el grado del conjuro sin sufrir por ello daño adicional o aplicar un penalizador a la habilidad defensiva del lanzador.",
       "initialGrade": {
-        "zeon": 50,
-        "requiredIntelligence": 6,
         "effect": "El escudo tiene 300 puntos de Resistencia / Es capaz de proteger hasta a dos personas sin penalizador.",
-        "retention": 5
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 50
       },
       "intermediateGrade": {
-        "zeon": 100,
-        "requiredIntelligence": 8,
         "effect": "El escudo tiene 900 puntos de Resistencia/ Es capaz de proteger hasta a cinco personas sin penalizador.",
-        "retention": 15
+        "requiredIntelligence": 8,
+        "retention": 15,
+        "zeon": 100
       },
-      "advancedGrade": {
-        "zeon": 160,
-        "requiredIntelligence": 10,
-        "effect": "El escudo tiene 1.500 puntos de Resistencia / Es capaz de proteger hasta a ocho personas sin penalizador.",
-        "retention": 20
-      },
-      "arcaneGrade": {
-        "zeon": 240,
-        "requiredIntelligence": 14,
-        "effect": "El escudo tiene 3.000 puntos de Resistencia / Es capaz de proteger hasta a doce personas sin penalizador.",
-        "retention": 25
-      },
-      "withRetention": true,
-      "dailyRetention": false
+      "level": 4,
+      "name": "Escudo Salvador",
+      "spellId": 1,
+      "type": "Defensa",
+      "withRetention": true
     },
     {
-      "spellId": 2,
-      "bookId": 19,
-      "name": "Equilibrio Interior",
-      "level": 14,
       "actionType": "Pasiva",
-      "type": "Tipo de conjuro: Efecto.",
+      "advancedGrade": {
+        "effect": "Como en grado intermedio, pero el bono aplicable es de +80.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "El personaje no puede ser afectado por ningún efecto que altere negativamente su conducta.",
+        "requiredIntelligence": 15,
+        "retention": 30,
+        "zeon": 300
+      },
+      "bookId": 19,
+      "dailyRetention": true,
       "effect": "El hechicero o el objetivo designado por éste alcanza un nivel de paz interior que le hace inmune cualquier efecto que pueda desequilibrar su estado de ánimo.",
       "initialGrade": {
-        "zeon": 120,
-        "requiredIntelligence": 6,
         "effect": "El personaje se vuelve inmune a los estados psicológicos negativos.",
-        "retention": 15
+        "requiredIntelligence": 6,
+        "retention": 15,
+        "zeon": 120
       },
       "intermediateGrade": {
-        "zeon": 180,
-        "requiredIntelligence": 9,
         "effect": "Como en grado base, pero el personaje obtiene además un +40 a sus Resistencias contra efectos desequilibrantes.",
-        "retention": 20
+        "requiredIntelligence": 9,
+        "retention": 20,
+        "zeon": 180
       },
-      "advancedGrade": {
-        "zeon": 240,
-        "requiredIntelligence": 12,
-        "effect": "Como en grado intermedio, pero el bono aplicable es de +80.",
-        "retention": 25
-      },
-      "arcaneGrade": {
-        "zeon": 300,
-        "requiredIntelligence": 15,
-        "effect": "El personaje no puede ser afectado por ningún efecto que altere negativamente su conducta.",
-        "retention": 30
-      },
-      "withRetention": true,
-      "dailyRetention": true
+      "level": 14,
+      "name": "Equilibrio Interior",
+      "spellId": 2,
+      "type": "Efecto.",
+      "withRetention": true
     },
     {
-      "spellId": 3,
-      "bookId": 19,
-      "name": "Defensor",
-      "level": 24,
       "actionType": "Activa",
-      "type": "Tipo de conjuro: Efecto.",
+      "advancedGrade": {
+        "effect": "+30 a la habilidad defensiva / Presencia máxima 150.",
+        "requiredIntelligence": 10,
+        "retention": 15,
+        "zeon": 140
+      },
+      "arcaneGrade": {
+        "effect": "+40 a la habilidad defensiva / Presencia máxima 250.",
+        "requiredIntelligence": 12,
+        "retention": 20,
+        "zeon": 200
+      },
+      "bookId": 19,
+      "dailyRetention": false,
       "effect": "Otorga un bono a la habilidad defensiva de un individuo al utilizar la maniobra de defensa total. Afecta a tantas personas como determine el lanzador, siempre y cuando la suma de sus presencias no supere lo que determine el grado del conjuro.",
       "initialGrade": {
-        "zeon": 60,
-        "requiredIntelligence": 6,
         "effect": "+20 a la habilidad defensiva / Presencia máxima 60.",
-        "retention": 10
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 60
       },
       "intermediateGrade": {
-        "zeon": 100,
-        "requiredIntelligence": 8,
         "effect": "+20 a la habilidad defensiva / Presencia máxima 100.",
-        "retention": 10
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 100
       },
-      "advancedGrade": {
-        "zeon": 140,
-        "requiredIntelligence": 10,
-        "effect": "+30 a la habilidad defensiva / Presencia máxima 150.",
-        "retention": 15
-      },
-      "arcaneGrade": {
-        "zeon": 200,
-        "requiredIntelligence": 12,
-        "effect": "+40 a la habilidad defensiva / Presencia máxima 250.",
-        "retention": 20
-      },
-      "withRetention": true,
-      "dailyRetention": false
+      "level": 24,
+      "name": "Defensor",
+      "spellId": 3,
+      "type": "Efecto.",
+      "withRetention": true
     },
     {
-      "spellId": 4,
-      "bookId": 19,
-      "name": "Detectar Armonía",
-      "level": 34,
       "actionType": "Activa",
-      "type": "Tipo de conjuro: Detección",
+      "advancedGrade": {
+        "effect": "50 metros de radio / 140 RM.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "100 metros de radio / 160 RM.",
+        "requiredIntelligence": 14,
+        "retention": 15,
+        "zeon": 140
+      },
+      "bookId": 19,
+      "dailyRetention": false,
       "effect": "El hechicero percibe las personas en el interior del radio del conjuro que tiene sentimientos pacíficos o violentos si estos no superan la RM determinada por el grado del sortilegio.",
       "initialGrade": {
-        "zeon": 80,
-        "requiredIntelligence": 8,
         "effect": "10 metros de radio / 100 RM.",
-        "retention": 10
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 80
       },
       "intermediateGrade": {
-        "zeon": 100,
-        "requiredIntelligence": 10,
         "effect": "25 metros de radio / 120 RM.",
-        "retention": 10
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 100
       },
-      "advancedGrade": {
-        "zeon": 120,
-        "requiredIntelligence": 12,
-        "effect": "50 metros de radio / 140 RM.",
-        "retention": 15
-      },
-      "arcaneGrade": {
-        "zeon": 140,
-        "requiredIntelligence": 14,
-        "effect": "100 metros de radio / 160 RM.",
-        "retention": 15
-      },
-      "withRetention": true,
-      "dailyRetention": false
+      "level": 34,
+      "name": "Detectar Armonía",
+      "spellId": 4,
+      "type": "Detección",
+      "withRetention": true
     },
     {
-      "spellId": 5,
-      "bookId": 19,
-      "name": "Remanso de Paz",
-      "level": 44,
       "actionType": "Activo",
-      "type": "Tipo de conjuro: Automático.",
+      "advancedGrade": {
+        "effect": "50 metros de radio / 140 RM.",
+        "requiredIntelligence": 12,
+        "retention": 30,
+        "zeon": 280
+      },
+      "arcaneGrade": {
+        "effect": "100 metros de radio / 160 RM.",
+        "requiredIntelligence": 14,
+        "retention": 30,
+        "zeon": 300
+      },
+      "bookId": 19,
+      "dailyRetention": true,
       "effect": "Este hechizo genera una zona en cuyo interior se pierde todo instinto agresivo. Cualquiera que penetre dentro debe de superar automáticamente un control de RM contra la dificultad determinada por el grado del conjuro o perderá toda actitud violenta. Una persona afectada por este conjuro no tiene derecho a repetir el control, salvo que sienta algo que pueda devolverle su actitud agresiva. Alguien que supere el control no vuelve a verse afectado por los efectos de Remanso de Paz mientras no salga de su zona de influencia. El área permanece estática en el lugar en el que fue lanzada.",
       "initialGrade": {
-        "zeon": 160,
-        "requiredIntelligence": 8,
         "effect": "10 metros de radio / 100 RM.",
-        "retention": 20
+        "requiredIntelligence": 8,
+        "retention": 20,
+        "zeon": 160
       },
       "intermediateGrade": {
-        "zeon": 220,
-        "requiredIntelligence": 10,
         "effect": "25 metros de radio / 120 RM.",
-        "retention": 25
+        "requiredIntelligence": 10,
+        "retention": 25,
+        "zeon": 220
       },
-      "advancedGrade": {
-        "zeon": 280,
-        "requiredIntelligence": 12,
-        "effect": "50 metros de radio / 140 RM.",
-        "retention": 30
-      },
-      "arcaneGrade": {
-        "zeon": 300,
-        "requiredIntelligence": 14,
-        "effect": "100 metros de radio / 160 RM.",
-        "retention": 30
-      },
-      "withRetention": true,
-      "dailyRetention": true
+      "level": 44,
+      "name": "Remanso de Paz",
+      "spellId": 5,
+      "type": "Automático.",
+      "withRetention": true
     },
     {
-      "spellId": 6,
-      "bookId": 19,
-      "name": "Signo de Paz",
-      "level": 54,
       "actionType": "Pasiva",
-      "type": "Tipo de conjuro: Automático.",
+      "advancedGrade": {
+        "effect": "RM 200.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 260
+      },
+      "arcaneGrade": {
+        "effect": "RM 240.",
+        "requiredIntelligence": 14,
+        "retention": 0,
+        "zeon": 340
+      },
+      "bookId": 19,
+      "dailyRetention": false,
       "effect": "El hechicero cancela una acción de ataque que sea dirigida contra él. La condición para ser afectado es realizar un ataque que tenga como blanco al lanzador (incluso si hay otros individuos que también son afectados por el ataque). Para evitar sus efectos, es necesario superar una RM contra la dificultad indicada por el grado del conjuro. Un mismo ataque sólo puede ser afectado una vez por un conjuro de Signo de Paz.",
       "initialGrade": {
-        "zeon": 100,
-        "requiredIntelligence": 8,
         "effect": "RM 120.",
-        "retention": 0
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 100
       },
       "intermediateGrade": {
-        "zeon": 180,
-        "requiredIntelligence": 10,
         "effect": "RM 160.",
-        "retention": 0
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 180
       },
-      "advancedGrade": {
-        "zeon": 260,
-        "requiredIntelligence": 12,
-        "effect": "RM 200.",
-        "retention": 0
-      },
-      "arcaneGrade": {
-        "zeon": 340,
-        "requiredIntelligence": 14,
-        "effect": "RM 240.",
-        "retention": 0
-      },
-      "withRetention": false,
-      "dailyRetention": false
+      "level": 54,
+      "name": "Signo de Paz",
+      "spellId": 6,
+      "type": "Automático.",
+      "withRetention": false
     },
     {
-      "spellId": 7,
-      "bookId": 19,
-      "name": "Defensa Absoluta",
-      "level": 64,
       "actionType": "Activa",
-      "type": "Tipo de conjuro: Efecto.",
+      "advancedGrade": {
+        "effect": "+40 a la Proyección Mágica defensiva.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 110
+      },
+      "arcaneGrade": {
+        "effect": "+50 a la Proyección Mágica defensiva.",
+        "requiredIntelligence": 15,
+        "retention": 15,
+        "zeon": 140
+      },
+      "bookId": 19,
+      "dailyRetention": false,
       "effect": "Mientras el hechicero no realice ninguna acción ofensiva durante un asalto puede aplicar un bono a su Proyección Mágica defensiva.",
       "initialGrade": {
-        "zeon": 50,
-        "requiredIntelligence": 6,
         "effect": "+20 a la Proyección Mágica defensiva.",
-        "retention": 10
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 50
       },
       "intermediateGrade": {
-        "zeon": 80,
-        "requiredIntelligence": 9,
         "effect": "+30 a la Proyección Mágica defensiva.",
-        "retention": 10
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 80
       },
-      "advancedGrade": {
-        "zeon": 110,
-        "requiredIntelligence": 12,
-        "effect": "+40 a la Proyección Mágica defensiva.",
-        "retention": 15
-      },
-      "arcaneGrade": {
-        "zeon": 140,
-        "requiredIntelligence": 15,
-        "effect": "+50 a la Proyección Mágica defensiva.",
-        "retention": 15
-      },
-      "withRetention": true,
-      "dailyRetention": false
+      "level": 64,
+      "name": "Defensa Absoluta",
+      "spellId": 7,
+      "type": "Efecto.",
+      "withRetention": true
     },
     {
-      "spellId": 8,
-      "bookId": 19,
-      "name": "Alas de Salvación",
-      "level": 74,
       "actionType": "Pasiva",
-      "type": "Defensa",
+      "advancedGrade": {
+        "effect": "El escudo tiene 2.500 puntos de Resistencia / 25 metros de radio.",
+        "requiredIntelligence": 13,
+        "retention": 35,
+        "zeon": 350
+      },
+      "arcaneGrade": {
+        "effect": "El escudo tiene 5.000 puntos de Resistencia / 50 metros de radio.",
+        "requiredIntelligence": 15,
+        "retention": 45,
+        "zeon": 450
+      },
+      "bookId": 19,
+      "dailyRetention": false,
       "effect": "Crea una barrera protectora que protege contra cualquier tipo de ataque. El conjuro permite cubrir todos los individuos que estén dentro del radio de acción del sortilegio sin sufrir por ello daño adicional o aplicar un penalizador a la habilidad defensiva del lanzador.",
       "initialGrade": {
-        "zeon": 150,
-        "requiredIntelligence": 9,
         "effect": "El escudo tiene 500 puntos de Resistencia / 5 metros de radio.",
-        "retention": 15
+        "requiredIntelligence": 9,
+        "retention": 15,
+        "zeon": 150
       },
       "intermediateGrade": {
-        "zeon": 250,
-        "requiredIntelligence": 11,
         "effect": "El escudo tiene 1.200 puntos de Resistencia / 15 metros de radio.",
-        "retention": 25
+        "requiredIntelligence": 11,
+        "retention": 25,
+        "zeon": 250
       },
-      "advancedGrade": {
-        "zeon": 350,
-        "requiredIntelligence": 13,
-        "effect": "El escudo tiene 2.500 puntos de Resistencia / 25 metros de radio.",
-        "retention": 35
-      },
-      "arcaneGrade": {
-        "zeon": 450,
-        "requiredIntelligence": 15,
-        "effect": "El escudo tiene 5.000 puntos de Resistencia / 50 metros de radio.",
-        "retention": 45
-      },
-      "withRetention": true,
-      "dailyRetention": false
+      "level": 74,
+      "name": "Alas de Salvación",
+      "spellId": 8,
+      "type": "Defensa",
+      "withRetention": true
     },
     {
-      "spellId": 9,
-      "bookId": 19,
-      "name": "Paz Absoluta",
-      "level": 84,
       "actionType": "Activa",
-      "type": "Tipo de conjuro: Anímico.",
+      "advancedGrade": {
+        "effect": "RM 160.",
+        "requiredIntelligence": 13,
+        "retention": 0,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "RM 180.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 300
+      },
+      "bookId": 19,
+      "dailyRetention": false,
       "effect": "El objetivo de este conjuro queda imbuido por una energía de la paz más pura, que le impedirá volver a entablar actos violentos de ningún tipo. Alguien que falle la RM determinada por el grado del sortilegio deja de poder realizar acciones ofensivas contra nadie de un modo consciente. Dado que su propia esencia violenta desaparece por completo, este conjuro no tiene mantenimiento.",
       "initialGrade": {
-        "zeon": 120,
-        "requiredIntelligence": 9,
         "effect": "RM 120.",
-        "retention": 0
+        "requiredIntelligence": 9,
+        "retention": 0,
+        "zeon": 120
       },
       "intermediateGrade": {
-        "zeon": 180,
-        "requiredIntelligence": 11,
         "effect": "RM 140.",
-        "retention": 0
+        "requiredIntelligence": 11,
+        "retention": 0,
+        "zeon": 180
       },
-      "advancedGrade": {
-        "zeon": 240,
-        "requiredIntelligence": 13,
-        "effect": "RM 160.",
-        "retention": 0
-      },
-      "arcaneGrade": {
-        "zeon": 300,
-        "requiredIntelligence": 15,
-        "effect": "RM 180.",
-        "retention": 0
-      },
-      "withRetention": false,
-      "dailyRetention": false
+      "level": 84,
+      "name": "Paz Absoluta",
+      "spellId": 9,
+      "type": "Anímico.",
+      "withRetention": false
     },
     {
-      "spellId": 10,
-      "bookId": 19,
-      "name": "Pax In Terrax",
-      "level": 94,
       "actionType": "Activa",
-      "type": "Tipo de conjuro: Automático.",
-      "effect": "Al lanzar este conjuro se crea una zona absoluta de no violencia, donde no puede haber conflictos o guerras de ningún tipo. Todo individuo que entre en ella debe de superar automáticamente una RM contra dejará de concebir los conceptos de violencia o enfrentamiento, y siendo incapaz de realizar acciones violentas. Una persona que falle la resistencia no tiene derecho a repetirla mientras siga dentro del área de acción del conjuro, mientras que aquellos que la superen deberán volver a realizar el control cada vez que traten de realizar una acción violenta en el interior de la zona.",
-      "initialGrade": {
-        "zeon": 350,
-        "requiredIntelligence": 8,
-        "effect": "1 kilómetro de radio / 120 RM.",
-        "retention": 35
-      },
-      "intermediateGrade": {
-        "zeon": 600,
-        "requiredIntelligence": 10,
-        "effect": "5 kilómetros de radio / 140 RM.",
-        "retention": 60
-      },
       "advancedGrade": {
-        "zeon": 1000,
-        "requiredIntelligence": 12,
         "effect": "15 kilómetros de radio / 160 RM.",
-        "retention": 100
+        "requiredIntelligence": 12,
+        "retention": 100,
+        "zeon": 1000
       },
       "arcaneGrade": {
-        "zeon": 1600,
-        "requiredIntelligence": 14,
         "effect": "50 kilómetros de radio / 180 RM.",
-        "retention": 160
+        "requiredIntelligence": 14,
+        "retention": 160,
+        "zeon": 1600
       },
-      "withRetention": true,
-      "dailyRetention": true
+      "bookId": 19,
+      "dailyRetention": true,
+      "effect": "Al lanzar este conjuro se crea una zona absoluta de no violencia, donde no puede haber conflictos o guerras de ningún tipo. Todo individuo que entre en ella debe de superar automáticamente una RM contra dejará de concebir los conceptos de violencia o enfrentamiento, y siendo incapaz de realizar acciones violentas. Una persona que falle la resistencia no tiene derecho a repetirla mientras siga dentro del área de acción del conjuro, mientras que aquellos que la superen deberán volver a realizar el control cada vez que traten de realizar una acción violenta en el interior de la zona.",
+      "initialGrade": {
+        "effect": "1 kilómetro de radio / 120 RM.",
+        "requiredIntelligence": 8,
+        "retention": 35,
+        "zeon": 350
+      },
+      "intermediateGrade": {
+        "effect": "5 kilómetros de radio / 140 RM.",
+        "requiredIntelligence": 10,
+        "retention": 60,
+        "zeon": 600
+      },
+      "level": 94,
+      "name": "Pax In Terrax",
+      "spellId": 10,
+      "type": "Automático.",
+      "withRetention": true
     }
-  ]
+  ],
+  "type": "Sub-Vía"
 }

@@ -1,1419 +1,1417 @@
 {
   "bookId": 3,
-  "bookName": "Libro de Creación",
+  "bookName": "Creación",
   "description": "El poder de la creación es la capacidad mágica de componer y alterar la realidad que rodea a los hechiceros. Sus conjuros engloban el cambio, la curación y la creación de cosas. Es una magia marcadamente defensiva.",
-  "type": "Mayor",
-  "oppositeBook": "Destrucción",
+  "oppositeBook": "Destrucción",
   "secondaryBookAccessibles": [
-    "Caos",
-    "Letras",
-    "Música",
-    "Paz",
-    "Pecado",
-    "Conocimiento",
-    "Sangre",
-    "Hora."
+    "Guerra",
+    "Muerte",
+    "Nobleza",
+    "Sueños",
+    "Umbral",
+    "Vacío"
   ],
   "spells": [
     {
-      "spellId": 1,
-      "bookId": 3,
-      "name": "Creación Menor",
-      "level": 2,
       "actionType": "Activa",
-      "type": "Efecto",
-      "effect": "Crea un objeto de naturaleza simple, cuya presencia no podrá ser  mayor de 25.",
-      "initialGrade": {
-        "zeon": 30,
-        "requiredIntelligence": 5,
-        "effect": "1 objeto / presencia máxima 25.",
-        "retention": 5
-      },
-      "intermediateGrade": {
-        "zeon": 80,
-        "requiredIntelligence": 8,
-        "effect": "5 objetos / presencia máxima 25.",
-        "retention": 10
-      },
       "advancedGrade": {
-        "zeon": 100,
-        "requiredIntelligence": 10,
         "effect": "1 objetos / presencia máxima 30.",
-        "retention": 10
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 100
       },
       "arcaneGrade": {
-        "zeon": 120,
-        "requiredIntelligence": 12,
         "effect": "5 objetos / presencia máxima 25.",
-        "retention": 15
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 120
       },
-      "withRetention": true,
-      "dailyRetention": false
+      "bookId": 3,
+      "dailyRetention": false,
+      "effect": "Crea un objeto de naturaleza simple, cuya presencia no podrá ser mayor de 25.",
+      "initialGrade": {
+        "effect": "1 objeto / presencia máxima 25.",
+        "requiredIntelligence": 5,
+        "retention": 5,
+        "zeon": 30
+      },
+      "intermediateGrade": {
+        "effect": "5 objetos / presencia máxima 25.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 80
+      },
+      "level": 2,
+      "name": "Creación Menor",
+      "spellId": 1,
+      "type": "Efecto",
+      "withRetention": true
     },
     {
-      "spellId": 2,
-      "bookId": 3,
-      "name": "Reconstruir",
-      "level": 6,
       "actionType": "Activa",
-      "type": "Efecto",
+      "advancedGrade": {
+        "effect": "Presencia máxima afectable 100.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 200
+      },
+      "arcaneGrade": {
+        "effect": "Presencia máxima afectable 120.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 280
+      },
+      "bookId": 3,
+      "dailyRetention": false,
       "effect": "Restaura un objeto inorgánico hasta su forma original, a partir de las piezas o componentes que queden de él. Nótese que es necesario tener todos sus fragmentos o la materia prima necesaria para que la reconstrucción sea completa o, en caso contrario, sólo se reparará parcialmente.",
       "initialGrade": {
-        "zeon": 40,
-        "requiredIntelligence": 5,
         "effect": "Presencia máxima afectable 20.",
-        "retention": 0
-      },
-      "intermediateGrade": {
-        "zeon": 140,
-        "requiredIntelligence": 8,
-        "effect": "Presencia máxima afectable 60.",
-        "retention": 0
-      },
-      "advancedGrade": {
-        "zeon": 200,
-        "requiredIntelligence": 10,
-        "effect": "Presencia máxima afectable 100.",
-        "retention": 0
-      },
-      "arcaneGrade": {
-        "zeon": 280,
-        "requiredIntelligence": 12,
-        "effect": "Presencia máxima afectable 120.",
-        "retention": 0
-      },
-      "withRetention": false,
-      "dailyRetention": true
-    },
-    {
-      "spellId": 3,
-      "bookId": 3,
-      "name": "Crear Energía",
-      "level": 8,
-      "actionType": "Activa",
-      "type": "Efecto",
-      "effect": "Crea intensidades de uno de los tres tipos de energía existentes: frío,  fuego o electricidad.",
-      "initialGrade": {
-        "zeon": 40,
         "requiredIntelligence": 5,
-        "effect": "1 intensidad.",
-        "retention": 5
+        "retention": 0,
+        "zeon": 40
       },
       "intermediateGrade": {
-        "zeon": 150,
+        "effect": "Presencia máxima afectable 60.",
         "requiredIntelligence": 8,
-        "effect": "5 intensidades.",
-        "retention": 15
+        "retention": 0,
+        "zeon": 140
       },
-      "advancedGrade": {
-        "zeon": 200,
-        "requiredIntelligence": 10,
-        "effect": "10 intensidades.",
-        "retention": 20
-      },
-      "arcaneGrade": {
-        "zeon": 250,
-        "requiredIntelligence": 12,
-        "effect": "20 intensidades.",
-        "retention": 25
-      },
-      "withRetention": true,
-      "dailyRetention": false
+      "level": 6,
+      "name": "Reconstruir",
+      "spellId": 2,
+      "type": "Efecto",
+      "withRetention": false
     },
     {
-      "spellId": 4,
-      "bookId": 3,
-      "name": "Regeneración",
-      "level": 10,
       "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "10 intensidades.",
+        "requiredIntelligence": 10,
+        "retention": 20,
+        "zeon": 200
+      },
+      "arcaneGrade": {
+        "effect": "20 intensidades.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 250
+      },
+      "bookId": 3,
+      "dailyRetention": false,
+      "effect": "Crea intensidades de uno de los tres tipos de energía existentes: frío, fuego o electricidad.",
+      "initialGrade": {
+        "effect": "1 intensidad.",
+        "requiredIntelligence": 5,
+        "retention": 5,
+        "zeon": 40
+      },
+      "intermediateGrade": {
+        "effect": "5 intensidades.",
+        "requiredIntelligence": 8,
+        "retention": 15,
+        "zeon": 150
+      },
+      "level": 8,
+      "name": "Crear Energía",
+      "spellId": 3,
       "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Regeneración 12.",
+        "requiredIntelligence": 10,
+        "retention": 15,
+        "zeon": 150
+      },
+      "arcaneGrade": {
+        "effect": "Regeneración 16.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 250
+      },
+      "bookId": 3,
+      "dailyRetention": true,
       "effect": "Aumenta la capacidad de un cuerpo para sanar todo tipo de herida. Este conjuro otorga un nivel de Regeneración base a cualquier individuo designado por el mago, sustituyendo la que poseyera naturalmente.",
       "initialGrade": {
-        "zeon": 60,
-        "requiredIntelligence": 6,
         "effect": "Regeneración 4.",
-        "retention": 10
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 60
       },
       "intermediateGrade": {
-        "zeon": 100,
-        "requiredIntelligence": 8,
         "effect": "Regeneración 8.",
-        "retention": 10
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 100
       },
-      "advancedGrade": {
-        "zeon": 150,
-        "requiredIntelligence": 10,
-        "effect": "Regeneración 12.",
-        "retention": 15
-      },
-      "arcaneGrade": {
-        "zeon": 250,
-        "requiredIntelligence": 12,
-        "effect": "Regeneración 16.",
-        "retention": 25
-      },
-      "withRetention": true,
-      "dailyRetention": true
+      "level": 10,
+      "name": "Regeneración",
+      "spellId": 4,
+      "type": "Efecto",
+      "withRetention": true
     },
     {
-      "spellId": 5,
-      "bookId": 3,
-      "name": "Modificación Inorgánica",
-      "level": 12,
       "actionType": "Activa",
-      "type": "Efecto",
+      "advancedGrade": {
+        "effect": "Presencia máxima 40.",
+        "requiredIntelligence": 10,
+        "retention": 5,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "Presencia máxima 50.",
+        "requiredIntelligence": 12,
+        "retention": 10,
+        "zeon": 150
+      },
+      "bookId": 3,
+      "dailyRetention": false,
       "effect": "Mediante el control de la magia, el brujo puede alterar la forma y naturaleza de un objeto inorgánico, convirtiéndolo en otro completamente distinto pero de poder espiritual similar. De este modo, permite transformar algo en otra cosa que tenga una presencia igual o inferior.",
       "initialGrade": {
-        "zeon": 60,
-        "requiredIntelligence": 6,
         "effect": "Presencia máxima 20.",
-        "retention": 5
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 60
       },
       "intermediateGrade": {
-        "zeon": 90,
-        "requiredIntelligence": 8,
         "effect": "Presencia máxima 30.",
-        "retention": 5
+        "requiredIntelligence": 8,
+        "retention": 5,
+        "zeon": 90
       },
-      "advancedGrade": {
-        "zeon": 120,
-        "requiredIntelligence": 10,
-        "effect": "Presencia máxima 40.",
-        "retention": 5
-      },
-      "arcaneGrade": {
-        "zeon": 150,
-        "requiredIntelligence": 12,
-        "effect": "Presencia máxima 50.",
-        "retention": 10
-      },
-      "withRetention": true,
-      "dailyRetention": false
+      "level": 12,
+      "name": "Modificación Inorgánica",
+      "spellId": 5,
+      "type": "Efecto",
+      "withRetention": true
     },
     {
-      "spellId": 6,
-      "bookId": 3,
-      "name": "Aumentar Resistencias",
-      "level": 16,
       "actionType": "Activa",
-      "type": "Efecto",
+      "advancedGrade": {
+        "effect": "+30 a todas las Resistencias.",
+        "requiredIntelligence": 12,
+        "retention": 30,
+        "zeon": 150
+      },
+      "arcaneGrade": {
+        "effect": "+40 a todas las Resistencias.",
+        "requiredIntelligence": 14,
+        "retention": 40,
+        "zeon": 200
+      },
+      "bookId": 3,
+      "dailyRetention": true,
       "effect": "Incrementa sobrenaturalmente todas las Resistencias de un individuo (RF, RV, RE, RM y RP). Los efectos de este conjuro no se superponen, y sólo se puede afectar con él una vez a cada sujeto.",
       "initialGrade": {
-        "zeon": 80,
-        "requiredIntelligence": 8,
         "effect": "+10 a todas las Resistencias.",
-        "retention": 15
+        "requiredIntelligence": 8,
+        "retention": 15,
+        "zeon": 80
       },
       "intermediateGrade": {
-        "zeon": 120,
-        "requiredIntelligence": 10,
         "effect": "+20 a todas las Resistencias.",
-        "retention": 20
+        "requiredIntelligence": 10,
+        "retention": 20,
+        "zeon": 120
       },
-      "advancedGrade": {
-        "zeon": 150,
-        "requiredIntelligence": 12,
-        "effect": "+30 a todas las Resistencias.",
-        "retention": 30
-      },
-      "arcaneGrade": {
-        "zeon": 200,
-        "requiredIntelligence": 14,
-        "effect": "+40 a todas las Resistencias.",
-        "retention": 40
-      },
-      "withRetention": true,
-      "dailyRetention": true
+      "level": 16,
+      "name": "Aumentar Resistencias",
+      "spellId": 6,
+      "type": "Efecto",
+      "withRetention": true
     },
     {
-      "spellId": 7,
-      "bookId": 3,
-      "name": "Escudo Real",
-      "level": 18,
       "actionType": "Pasiva",
-      "type": "Defensa",
+      "advancedGrade": {
+        "effect": "5.000 Puntos de Resistencia.",
+        "requiredIntelligence": 10,
+        "retention": 15,
+        "zeon": 260
+      },
+      "arcaneGrade": {
+        "effect": "10.000 Puntos de Resistencia.",
+        "requiredIntelligence": 12,
+        "retention": 20,
+        "zeon": 400
+      },
+      "bookId": 3,
+      "dailyRetention": false,
       "effect": "Forma una barrera de energía que protege frente a cualquier fuente de ataque.",
       "initialGrade": {
-        "zeon": 40,
-        "requiredIntelligence": 6,
         "effect": "500 Puntos de Resistencia.",
-        "retention": 5
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 40
       },
       "intermediateGrade": {
-        "zeon": 150,
-        "requiredIntelligence": 8,
         "effect": "3.000 Puntos de Resistencia.",
-        "retention": 15
+        "requiredIntelligence": 8,
+        "retention": 15,
+        "zeon": 150
       },
-      "advancedGrade": {
-        "zeon": 260,
-        "requiredIntelligence": 10,
-        "effect": "5.000 Puntos de Resistencia.",
-        "retention": 15
-      },
-      "arcaneGrade": {
-        "zeon": 400,
-        "requiredIntelligence": 12,
-        "effect": "10.000 Puntos de Resistencia.",
-        "retention": 20
-      },
-      "withRetention": true,
-      "dailyRetention": false
+      "level": 18,
+      "name": "Escudo Real",
+      "spellId": 7,
+      "type": "Defensa",
+      "withRetention": true
     },
     {
-      "spellId": 8,
-      "bookId": 3,
-      "name": "Curación",
-      "level": 20,
       "actionType": "Activa",
-      "type": "Efecto",
+      "advancedGrade": {
+        "effect": "250 Puntos de vida.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 150
+      },
+      "arcaneGrade": {
+        "effect": "350 Puntos de vida.",
+        "requiredIntelligence": 14,
+        "retention": 0,
+        "zeon": 200
+      },
+      "bookId": 3,
+      "dailyRetention": false,
       "effect": "Hace recuperar puntos de vida al sujeto sobre el que se lance. Este conjuro no permite recobrar miembros cercenados o pérdidas permanentes, pero sí elimina los penalizadores temporales causados por críticos, en una cantidad equivalente a la mitad de los puntos de vida devueltos.",
       "initialGrade": {
-        "zeon": 80,
-        "requiredIntelligence": 8,
         "effect": "50 Puntos de vida.",
-        "retention": 0
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 80
       },
       "intermediateGrade": {
-        "zeon": 120,
-        "requiredIntelligence": 10,
         "effect": "150 Puntos de vida.",
-        "retention": 0
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 120
       },
-      "advancedGrade": {
-        "zeon": 150,
-        "requiredIntelligence": 12,
-        "effect": "250 Puntos de vida.",
-        "retention": 0
-      },
-      "arcaneGrade": {
-        "zeon": 200,
-        "requiredIntelligence": 14,
-        "effect": "350 Puntos de vida.",
-        "retention": 0
-      },
-      "withRetention": false,
-      "dailyRetention": true
+      "level": 20,
+      "name": "Curación",
+      "spellId": 8,
+      "type": "Efecto",
+      "withRetention": false
     },
     {
-      "spellId": 9,
-      "bookId": 3,
-      "name": "Barrera de Daño",
-      "level": 22,
       "actionType": "Activa",
-      "type": "Efecto",
+      "advancedGrade": {
+        "effect": "Barrera de Daño 80.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "Barrera de Daño 100.",
+        "requiredIntelligence": 15,
+        "retention": 15,
+        "zeon": 150
+      },
+      "bookId": 3,
+      "dailyRetention": false,
       "effect": "Las energías sobrenaturales que maneja este hechizo se unen al cuerpo del individuo designado, otorgándole así cierta inmunidad al daño. A efectos de juego, obtendrá una barrera de daño (Ver capítulo 14).",
       "initialGrade": {
-        "zeon": 60,
-        "requiredIntelligence": 6,
         "effect": "Barrera de Daño 30.",
-        "retention": 10
-      },
-      "intermediateGrade": {
-        "zeon": 90,
-        "requiredIntelligence": 9,
-        "effect": "Barrera de Daño 50.",
-        "retention": 10
-      },
-      "advancedGrade": {
-        "zeon": 120,
-        "requiredIntelligence": 12,
-        "effect": "Barrera de Daño 80.",
-        "retention": 15
-      },
-      "arcaneGrade": {
-        "zeon": 150,
-        "requiredIntelligence": 15,
-        "effect": "Barrera de Daño 100.",
-        "retention": 15
-      },
-      "withRetention": true,
-      "dailyRetention": true
-    },
-    {
-      "spellId": 10,
-      "bookId": 3,
-      "name": "Crear Homúnculo",
-      "level": 26,
-      "actionType": "Activa",
-      "type": "Efecto",
-      "effect": "Los homúnculos son pequeños elementales de magia que los brujos suelen utilizar en diversas funciones, desde el espionaje hasta el mantenimiento de su casa. El conjuro crea un ser místico de nivel 0 bajo el completo control del hechicero, empleando las reglas descritas en el Capítulo 26. Se trata de Seres Entre Mundos con Gnosis 5 pero, dada su naturaleza menor, se rigen por las siguientes reglas especiales: 1- Sus características no podrán ser superiores a 5, no pueden tener el Don ni tampoco ninguna habilidad primaria o secundaria por encima de 50. 2- Además, tienen un penalizador de –2 a su tamaño y no pueden elegir Tamaño Innatural.  3- No podrán tener ninguna habilidad intelectual por encima de la de su creador.  Cada homúnculo creado puede ser completamente distinto. ",
-      "initialGrade": {
-        "zeon": 60,
         "requiredIntelligence": 6,
-        "effect": "1 Homúnculo.",
-        "retention": 10
+        "retention": 10,
+        "zeon": 60
       },
       "intermediateGrade": {
-        "zeon": 180,
+        "effect": "Barrera de Daño 50.",
         "requiredIntelligence": 9,
-        "effect": "10 Homúnculos.",
-        "retention": 20
+        "retention": 10,
+        "zeon": 90
       },
-      "advancedGrade": {
-        "zeon": 250,
-        "requiredIntelligence": 12,
-        "effect": "25 Homúnculos.",
-        "retention": 25
-      },
-      "arcaneGrade": {
-        "zeon": 350,
-        "requiredIntelligence": 15,
-        "effect": "100 Homúnculos.",
-        "retention": 35
-      },
-      "withRetention": true,
-      "dailyRetention": true
+      "level": 22,
+      "name": "Barrera de Daño",
+      "spellId": 9,
+      "type": "Efecto",
+      "withRetention": true
     },
     {
-      "spellId": 11,
-      "bookId": 3,
-      "name": "Cambio Menor",
-      "level": 28,
       "actionType": "Activa",
-      "type": "Anímico",
+      "advancedGrade": {
+        "effect": "25 Homúnculos.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 250
+      },
+      "arcaneGrade": {
+        "effect": "100 Homúnculos.",
+        "requiredIntelligence": 15,
+        "retention": 35,
+        "zeon": 350
+      },
+      "bookId": 3,
+      "dailyRetention": true,
+      "effect": "Los homúnculos son pequeños elementales de magia que los brujos suelen utilizar en diversas funciones, desde el espionaje hasta el mantenimiento de su casa. El conjuro crea un ser místico de nivel 0 bajo el completo control del hechicero, empleando las reglas descritas en el Capítulo 26. Se trata de Seres Entre Mundos con Gnosis 5 pero, dada su naturaleza menor, se rigen por las siguientes reglas especiales: 1- Sus características no podrán ser superiores a 5, no pueden tener el Don ni tampoco ninguna habilidad primaria o secundaria por encima de 50. 2- Además, tienen un penalizador de –2 a su tamaño y no pueden elegir Tamaño Innatural. 3- No podrán tener ninguna habilidad intelectual por encima de la de su creador. Cada homúnculo creado puede ser completamente distinto.",
+      "initialGrade": {
+        "effect": "1 Homúnculo.",
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "10 Homúnculos.",
+        "requiredIntelligence": 9,
+        "retention": 20,
+        "zeon": 180
+      },
+      "level": 26,
+      "name": "Crear Homúnculo",
+      "spellId": 10,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM 140 / Máxima Presencia 120.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 150
+      },
+      "arcaneGrade": {
+        "effect": "RM 180 / Máxima Presencia 180.",
+        "requiredIntelligence": 15,
+        "retention": 25,
+        "zeon": 250
+      },
+      "bookId": 3,
+      "dailyRetention": false,
       "effect": "Este conjuro permite alterar la apariencia de un objeto o ser, modificando su forma. El cambio se limita a variar su aspecto exterior, sin que en ningún caso pueda perder sus cualidades o naturaleza original. De esta forma, una reluciente espada corta se podría tornar vieja y oxidada, pero no en un objeto distinto, como un bastón. En el caso de los seres vivos, puede modificarse su aspecto físico sin variar más de dos puntos su Tamaño, transformando, por ejemplo, a un hombre gordo y feo en otro joven y atractivo. En el caso de los objetos, una vez que son afectados no tienen derecho a una nueva Resistencia, pero las personas podrán repetir el control una vez al día si desean librarse de sus efectos. Es posible afectar a varios objetivos, siempre y cuando la suma de sus presencias no sea superior a la máxima presencia permitida.",
       "initialGrade": {
-        "zeon": 60,
-        "requiredIntelligence": 6,
         "effect": "RM 80 / Máxima Presencia 60.",
-        "retention": 10
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 60
       },
       "intermediateGrade": {
-        "zeon": 90,
-        "requiredIntelligence": 9,
         "effect": "RM 100 / Máxima Presencia 90.",
-        "retention": 10
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 90
       },
-      "advancedGrade": {
-        "zeon": 150,
-        "requiredIntelligence": 12,
-        "effect": "RM 140 / Máxima Presencia 120.",
-        "retention": 15
-      },
-      "arcaneGrade": {
-        "zeon": 250,
-        "requiredIntelligence": 15,
-        "effect": "RM 180 / Máxima Presencia 180.",
-        "retention": 25
-      },
-      "withRetention": true,
-      "dailyRetention": true
+      "level": 28,
+      "name": "Cambio Menor",
+      "spellId": 11,
+      "type": "Anímico",
+      "withRetention": true
     },
     {
-      "spellId": 12,
-      "bookId": 3,
-      "name": "Imitar",
-      "level": 30,
       "actionType": "Activa",
-      "type": "Efecto",
+      "advancedGrade": {
+        "effect": "Presencia máxima 120.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 300
+      },
+      "arcaneGrade": {
+        "effect": "Presencia máxima 160.",
+        "requiredIntelligence": 15,
+        "retention": 20,
+        "zeon": 400
+      },
+      "bookId": 3,
+      "dailyRetention": true,
       "effect": "Crea una copia exacta de un objeto inorgánico ya existente que se encuentre al alcance del brujo. Se forma una imitación perfecta del original que mantendrá todas sus cualidades, incluso las sobrenaturales, siempre y cuando no sean poderes de Nivel 4 o superior. No tiene efectos sobre criaturas animadas mágicamente, pero sí sobre construcciones mecánicas, en el caso de que no tengan alma.",
       "initialGrade": {
-        "zeon": 100,
-        "requiredIntelligence": 6,
         "effect": "Presencia máxima 30.",
-        "retention": 5
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 100
       },
       "intermediateGrade": {
-        "zeon": 200,
-        "requiredIntelligence": 9,
         "effect": "Presencia máxima 80.",
-        "retention": 10
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 200
       },
-      "advancedGrade": {
-        "zeon": 300,
-        "requiredIntelligence": 12,
-        "effect": "Presencia máxima 120.",
-        "retention": 15
-      },
-      "arcaneGrade": {
-        "zeon": 400,
-        "requiredIntelligence": 15,
-        "effect": "Presencia máxima 160.",
-        "retention": 20
-      },
-      "withRetention": true,
-      "dailyRetention": true
+      "level": 30,
+      "name": "Imitar",
+      "spellId": 12,
+      "type": "Efecto",
+      "withRetention": true
     },
     {
-      "spellId": 13,
-      "bookId": 3,
-      "name": "Inmunidad",
-      "level": 32,
       "actionType": "Activa",
-      "type": "Efecto",
+      "advancedGrade": {
+        "effect": "25 Intensidades.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "35 Intensidades.",
+        "requiredIntelligence": 15,
+        "retention": 30,
+        "zeon": 300
+      },
+      "bookId": 3,
+      "dailyRetention": false,
       "effect": "Este conjuro permite al hechicero, o a aquellas personas designadas por él, ser inmune a intensidades de un tipo concreto de energía, ya sea fuego, electricidad o frío. En el caso de que se reciba un ataque basado en el elemento respecto del que se es inmune, cada intensidad disminuye 5 puntos el daño base y otorga un +5 a las Resistencias contra sus efectos.",
       "initialGrade": {
-        "zeon": 80,
-        "requiredIntelligence": 6,
         "effect": "5 Intensidades.",
-        "retention": 10
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 80
       },
       "intermediateGrade": {
-        "zeon": 180,
-        "requiredIntelligence": 9,
         "effect": "15 Intensidades.",
-        "retention": 20
+        "requiredIntelligence": 9,
+        "retention": 20,
+        "zeon": 180
       },
-      "advancedGrade": {
-        "zeon": 240,
-        "requiredIntelligence": 12,
-        "effect": "25 Intensidades.",
-        "retention": 25
-      },
-      "arcaneGrade": {
-        "zeon": 300,
-        "requiredIntelligence": 15,
-        "effect": "35 Intensidades.",
-        "retention": 30
-      },
-      "withRetention": true,
-      "dailyRetention": true
+      "level": 32,
+      "name": "Inmunidad",
+      "spellId": 13,
+      "type": "Efecto",
+      "withRetention": true
     },
     {
-      "spellId": 14,
-      "bookId": 3,
-      "name": "Reducción de Daño",
-      "level": 36,
       "actionType": "Pasiva",
-      "type": "Automático",
+      "advancedGrade": {
+        "effect": "-80 al daño del ataque.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 160
+      },
+      "arcaneGrade": {
+        "effect": "-120 al daño del ataque.",
+        "requiredIntelligence": 14,
+        "retention": 0,
+        "zeon": 240
+      },
+      "bookId": 3,
+      "dailyRetention": false,
       "effect": "La magia de este conjuro afecta a la potencia de una agresión, disminuyendo la fuerza de su impacto. Al ser lanzado, reduce el daño base de un ataque. Si esta decrece hasta 0, la agresión no produce ningún efecto. Si, por ejemplo, se utiliza en grado base contra un ataque de daño 60, cuando este vaya a golpear se calculará como si tuviera sólo 20. Dos conjuros de reducción de daño no se superponen frente a una misma fuente de ataque.",
       "initialGrade": {
-        "zeon": 80,
-        "requiredIntelligence": 8,
         "effect": "-40 al daño del ataque.",
-        "retention": 0
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 80
       },
       "intermediateGrade": {
-        "zeon": 120,
-        "requiredIntelligence": 10,
         "effect": "-60 al daño del ataque.",
-        "retention": 0
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 120
       },
-      "advancedGrade": {
-        "zeon": 160,
-        "requiredIntelligence": 12,
-        "effect": "-80 al daño del ataque.",
-        "retention": 0
-      },
-      "arcaneGrade": {
-        "zeon": 240,
-        "requiredIntelligence": 14,
-        "effect": "-120 al daño del ataque.",
-        "retention": 0
-      },
-      "withRetention": false,
-      "dailyRetention": true
+      "level": 36,
+      "name": "Reducción de Daño",
+      "spellId": 14,
+      "type": "Automático",
+      "withRetention": false
     },
     {
-      "spellId": 15,
-      "bookId": 3,
-      "name": "Control Físico",
-      "level": 38,
       "actionType": "Activa",
-      "type": "Anímico",
+      "advancedGrade": {
+        "effect": "RM 140.",
+        "requiredIntelligence": 12,
+        "retention": 50,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "RM 180.",
+        "requiredIntelligence": 15,
+        "retention": 60,
+        "zeon": 300
+      },
+      "bookId": 3,
+      "dailyRetention": false,
       "effect": "Mediante este hechizo, el brujo es capaz de controlar el cuerpo de un ser como si fuese un simple títere. Dado que sólo otorga un dominio físico y no espiritual, el individuo sometido no está obligado a usar ninguna habilidad sobrenatural (magia, Ki, poderes psíquicos…) en contra de su voluntad, aunque sí sus habilidades marciales. Para resistir el control, hay que superar una RM. El afectado tendrá derecho a una nueva Resistencia por día, y en cada ocasión en la que las órdenes recibidas vayan completamente en contra de su comportamiento.",
       "initialGrade": {
-        "zeon": 120,
-        "requiredIntelligence": 6,
         "effect": "RM 80.",
-        "retention": 25
+        "requiredIntelligence": 6,
+        "retention": 25,
+        "zeon": 120
       },
       "intermediateGrade": {
-        "zeon": 180,
-        "requiredIntelligence": 9,
         "effect": "RM 120.",
-        "retention": 40
+        "requiredIntelligence": 9,
+        "retention": 40,
+        "zeon": 180
       },
-      "advancedGrade": {
-        "zeon": 240,
-        "requiredIntelligence": 12,
-        "effect": "RM 140.",
-        "retention": 50
-      },
-      "arcaneGrade": {
-        "zeon": 300,
-        "requiredIntelligence": 15,
-        "effect": "RM 180.",
-        "retention": 60
-      },
-      "withRetention": true,
-      "dailyRetention": true
+      "level": 38,
+      "name": "Control Físico",
+      "spellId": 15,
+      "type": "Anímico",
+      "withRetention": true
     },
     {
-      "spellId": 16,
-      "bookId": 3,
-      "name": "Adquirir Habilidades",
-      "level": 40,
       "actionType": "Activa",
-      "type": "Efecto",
+      "advancedGrade": {
+        "effect": "+250 al bonificador.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 280
+      },
+      "arcaneGrade": {
+        "effect": "+400 al bonificador.",
+        "requiredIntelligence": 15,
+        "retention": 20,
+        "zeon": 350
+      },
+      "bookId": 3,
+      "dailyRetention": false,
       "effect": "Este hechizo incrementa temporalmente las habilidades secundarias de un individuo, otorgándole un bonificador que podrá repartir libremente entre cualquier campo hasta un máximo de 320, salvo en aquellos que requieran conocimientos.",
       "initialGrade": {
-        "zeon": 80,
-        "requiredIntelligence": 6,
         "effect": "+50 al bonificador.",
-        "retention": 5
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 80
       },
       "intermediateGrade": {
-        "zeon": 180,
-        "requiredIntelligence": 9,
         "effect": "+150 al bonificador.",
-        "retention": 10
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 180
       },
-      "advancedGrade": {
-        "zeon": 280,
-        "requiredIntelligence": 12,
-        "effect": "+250 al bonificador.",
-        "retention": 15
-      },
-      "arcaneGrade": {
-        "zeon": 350,
-        "requiredIntelligence": 15,
-        "effect": "+400 al bonificador.",
-        "retention": 20
-      },
-      "withRetention": true,
-      "dailyRetention": false
+      "level": 40,
+      "name": "Adquirir Habilidades",
+      "spellId": 16,
+      "type": "Efecto",
+      "withRetention": true
     },
     {
-      "spellId": 17,
-      "bookId": 3,
-      "name": "Fusionar",
-      "level": 42,
       "actionType": "Activa",
-      "type": "Efecto",
+      "advancedGrade": {
+        "effect": "Presencia máxima 150 / RM 140.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "Presencia máxima 200 / RM 180.",
+        "requiredIntelligence": 15,
+        "retention": 30,
+        "zeon": 350
+      },
+      "bookId": 3,
+      "dailyRetention": false,
       "effect": "Une dos seres en un único cuerpo, creando un nuevo individuo que reúne las características y habilidades de ambos. El brujo designará qué capacidades predominarán, seleccionando las que más le interesen de cada uno. De esta forma, si se fusionan un luchador y un mentalista, el individuo resultante podrá tener la pericia de combate del guerrero, las capacidades mentales del psíquico y las habilidades secundarias más elevadas de cada uno. El dominio del cuerpo recaerá en aquel de los dos que gane un control enfrentado de Voluntad, aunque puede mantener algunos rasgos característicos de la personalidad del otro. Los cuerpos originales permanecen en el mismo estado en el que se encontraban en el momento de la fusión, por lo que al finalizar el conjuro se separarán, regresando a su forma y estado original. La muerte de la entidad conlleva que los personajes que la componen también perecen. La suma de la presencia de ambos sujetos no podrá ser superior a lo que determine el grado del conjuro. También es posible fusionar individuos con objetos o cosas, en cuyo caso el DJ puede otorgar las ventajas o habilidades que considere pertinentes.",
       "initialGrade": {
-        "zeon": 140,
-        "requiredIntelligence": 7,
         "effect": "Presencia máxima 80 / RM 80.",
-        "retention": 15
+        "requiredIntelligence": 7,
+        "retention": 15,
+        "zeon": 140
       },
       "intermediateGrade": {
-        "zeon": 180,
-        "requiredIntelligence": 9,
         "effect": "Presencia máxima 100 / RM 120.",
-        "retention": 20
+        "requiredIntelligence": 9,
+        "retention": 20,
+        "zeon": 180
       },
-      "advancedGrade": {
-        "zeon": 240,
-        "requiredIntelligence": 12,
-        "effect": "Presencia máxima 150 / RM 140.",
-        "retention": 25
-      },
-      "arcaneGrade": {
-        "zeon": 350,
-        "requiredIntelligence": 15,
-        "effect": "Presencia máxima 200 / RM 180.",
-        "retention": 30
-      },
-      "withRetention": true,
-      "dailyRetention": false
+      "level": 42,
+      "name": "Fusionar",
+      "spellId": 17,
+      "type": "Efecto",
+      "withRetention": true
     },
     {
-      "spellId": 18,
-      "bookId": 3,
-      "name": "Crear Recuerdos",
-      "level": 46,
       "actionType": "Activa",
-      "type": "Anímico",
+      "advancedGrade": {
+        "effect": "RM o RP 160.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "RM o RP 200.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 350
+      },
+      "bookId": 3,
+      "dailyRetention": false,
       "effect": "Permite crear recuerdos nuevos en la mente de un sujeto, sin borrar necesariamente con ello los anteriores. La gran mayoría de las veces, salvo si se modifican memorias muy arraigadas, el personaje afectado se siente ligeramente confundido, pero está convencido de que todos sus recuerdos son reales. El brujo puede determinar qué información pretende inducir, sin importar su complejidad o duración. Para evitarlo, es necesario superar una RM o RP. Aunque no exige mantenimiento, el individuo afectado tendrá derecho a una nueva tirada si ve o hace algo que pueda llevarle a sospechar que ha sido engañado.",
       "initialGrade": {
-        "zeon": 140,
-        "requiredIntelligence": 7,
         "effect": "RM o RP 100.",
-        "retention": 0
+        "requiredIntelligence": 7,
+        "retention": 0,
+        "zeon": 140
       },
       "intermediateGrade": {
-        "zeon": 180,
-        "requiredIntelligence": 9,
         "effect": "RM o RP 120.",
-        "retention": 0
+        "requiredIntelligence": 9,
+        "retention": 0,
+        "zeon": 180
       },
-      "advancedGrade": {
-        "zeon": 240,
-        "requiredIntelligence": 12,
-        "effect": "RM o RP 160.",
-        "retention": 0
-      },
-      "arcaneGrade": {
-        "zeon": 350,
-        "requiredIntelligence": 15,
-        "effect": "RM o RP 200.",
-        "retention": 0
-      },
-      "withRetention": false,
-      "dailyRetention": false
+      "level": 46,
+      "name": "Crear Recuerdos",
+      "spellId": 18,
+      "type": "Anímico",
+      "withRetention": false
     },
     {
-      "spellId": 19,
-      "bookId": 3,
-      "name": "Recuperar",
-      "level": 48,
       "actionType": "Activa",
-      "type": "Efecto",
+      "advancedGrade": {
+        "effect": "1.000 Puntos de vida.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 350
+      },
+      "arcaneGrade": {
+        "effect": "1.500 Puntos de vida.",
+        "requiredIntelligence": 14,
+        "retention": 0,
+        "zeon": 400
+      },
+      "bookId": 3,
+      "dailyRetention": false,
       "effect": "Restaura completamente la condición física de un sujeto, sanando sus puntos de vida perdidos y haciendo desaparecer cualquier penalizador físico que tuviese, siempre que no sea por causa de miembros amputados o daños similares. Este hechizo no recupera puntos de Cansancio, ni deshace estados negativos provocados por medios sobrenaturales.",
       "initialGrade": {
-        "zeon": 250,
-        "requiredIntelligence": 8,
         "effect": "500 Puntos de vida.",
-        "retention": 0
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 250
       },
       "intermediateGrade": {
-        "zeon": 300,
-        "requiredIntelligence": 10,
         "effect": "750 Puntos de vida.",
-        "retention": 0
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 300
       },
-      "advancedGrade": {
-        "zeon": 350,
-        "requiredIntelligence": 12,
-        "effect": "1.000 Puntos de vida.",
-        "retention": 0
-      },
-      "arcaneGrade": {
-        "zeon": 400,
-        "requiredIntelligence": 14,
-        "effect": "1.500 Puntos de vida.",
-        "retention": 0
-      },
-      "withRetention": false,
-      "dailyRetention": true
+      "level": 48,
+      "name": "Recuperar",
+      "spellId": 19,
+      "type": "Efecto",
+      "withRetention": false
     },
     {
-      "spellId": 20,
-      "bookId": 3,
-      "name": "Adquirir Poderes",
-      "level": 50,
       "actionType": "Activa",
-      "type": "Efecto",
+      "advancedGrade": {
+        "effect": "300 PD.",
+        "requiredIntelligence": 13,
+        "retention": 50,
+        "zeon": 300
+      },
+      "arcaneGrade": {
+        "effect": "400 PD / Gnosis 30.",
+        "requiredIntelligence": 16,
+        "retention": 60,
+        "zeon": 400
+      },
+      "bookId": 3,
+      "dailyRetention": false,
       "effect": "Concede al hechicero, o a quien este elija, la capacidad de adquirir habilidades de seres sobrenaturales. A efectos de juego, otorga al personaje PD adicionales para obtener cualquiera de los Poderes detallados en el Capítulo 26, como si tuviera Gnosis 25. Estos cambios afectarán temporalmente a su forma física. Si, por ejemplo, obtiene Vuelo Natural, lo más lógico sería que estuviese dotado de unas enormes alas. Los beneficios de este conjuro no se superponen, y sólo puede afectar uno cada vez a un mismo sujeto.",
       "initialGrade": {
-        "zeon": 100,
-        "requiredIntelligence": 7,
         "effect": "100 PD.",
-        "retention": 20
+        "requiredIntelligence": 7,
+        "retention": 20,
+        "zeon": 100
       },
       "intermediateGrade": {
-        "zeon": 200,
-        "requiredIntelligence": 10,
         "effect": "200 PD.",
-        "retention": 40
+        "requiredIntelligence": 10,
+        "retention": 40,
+        "zeon": 200
       },
-      "advancedGrade": {
-        "zeon": 300,
-        "requiredIntelligence": 13,
-        "effect": "300 PD.",
-        "retention": 50
-      },
-      "arcaneGrade": {
-        "zeon": 400,
-        "requiredIntelligence": 16,
-        "effect": "400 PD / Gnosis 30.",
-        "retention": 60
-      },
-      "withRetention": true,
-      "dailyRetention": false
+      "level": 50,
+      "name": "Adquirir Poderes",
+      "spellId": 20,
+      "type": "Efecto",
+      "withRetention": true
     },
     {
-      "spellId": 21,
-      "bookId": 3,
-      "name": "Crear Engendro",
-      "level": 52,
       "actionType": "Activa",
-      "type": "Efecto",
+      "advancedGrade": {
+        "effect": "Nivel 8.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 250
+      },
+      "arcaneGrade": {
+        "effect": "Nivel 12.",
+        "requiredIntelligence": 15,
+        "retention": 50,
+        "zeon": 500
+      },
+      "bookId": 3,
+      "dailyRetention": false,
       "effect": "Crea un ser mágico con apariencia de vida bajo el control absoluto del hechicero. El ente debe de ser desarrollado como un Ser Entre Mundos usando las reglas descritas en el Capítulo 26. La criatura tendrá un Gnosis 20. Sin importar el Grado en el que el conjuro sea lanzado, este sortilegio no permite crear criaturas de un nivel superior al del hechicero, ya que estas se basan en la presencia espiritual del mismo. Los engendros no tienen la capacidad de recibir un alma, por lo que no es posible darles vida independiente mediante el conjuro de Otorgar Alma, ni transmigrar un espíritu en ellos.",
       "initialGrade": {
-        "zeon": 80,
-        "requiredIntelligence": 8,
         "effect": "Nivel 2.",
-        "retention": 10
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 80
       },
       "intermediateGrade": {
-        "zeon": 120,
-        "requiredIntelligence": 10,
         "effect": "Nivel 4.",
-        "retention": 15
+        "requiredIntelligence": 10,
+        "retention": 15,
+        "zeon": 120
       },
-      "advancedGrade": {
-        "zeon": 250,
-        "requiredIntelligence": 12,
-        "effect": "Nivel 8.",
-        "retention": 25
-      },
-      "arcaneGrade": {
-        "zeon": 500,
-        "requiredIntelligence": 15,
-        "effect": "Nivel 12.",
-        "retention": 50
-      },
-      "withRetention": true,
-      "dailyRetention": false
+      "level": 52,
+      "name": "Crear Engendro",
+      "spellId": 21,
+      "type": "Efecto",
+      "withRetention": true
     },
     {
-      "spellId": 22,
-      "bookId": 3,
-      "name": "Aura de Protección",
-      "level": 56,
       "actionType": "Pasiva",
-      "type": "Efecto",
+      "advancedGrade": {
+        "effect": "+80 a las Resistencias / 1 kilómetro de radio.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "+120 a las Resistencias / 10 kilómetros de radio.",
+        "requiredIntelligence": 15,
+        "retention": 35,
+        "zeon": 350
+      },
+      "bookId": 3,
+      "dailyRetention": false,
       "effect": "Incrementa sobrenaturalmente todas las Resistencias de los individuos designados por el brujo en un área (RF, RV, RE, RM y RP). Los efectos de este conjuro no se superponen, y sólo se puede afectar con él una vez a cada sujeto.",
       "initialGrade": {
-        "zeon": 120,
-        "requiredIntelligence": 6,
         "effect": "+20 a las Resistencias / 100 metros de radio.",
-        "retention": 10
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 120
       },
       "intermediateGrade": {
-        "zeon": 180,
-        "requiredIntelligence": 9,
         "effect": "+50 a las Resistencias / 500 metros de radio.",
-        "retention": 15
+        "requiredIntelligence": 9,
+        "retention": 15,
+        "zeon": 180
       },
-      "advancedGrade": {
-        "zeon": 240,
-        "requiredIntelligence": 12,
-        "effect": "+80 a las Resistencias / 1 kilómetro de radio.",
-        "retention": 25
-      },
-      "arcaneGrade": {
-        "zeon": 350,
-        "requiredIntelligence": 15,
-        "effect": "+120 a las Resistencias / 10 kilómetros de radio.",
-        "retention": 35
-      },
-      "withRetention": true,
-      "dailyRetention": false
+      "level": 56,
+      "name": "Aura de Protección",
+      "spellId": 22,
+      "type": "Efecto",
+      "withRetention": true
     },
     {
-      "spellId": 23,
-      "bookId": 3,
-      "name": "Estancar Esencia",
-      "level": 58,
       "actionType": "Activa",
-      "type": "Anímico",
+      "advancedGrade": {
+        "effect": "RM 140.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 250
+      },
+      "arcaneGrade": {
+        "effect": "RM 180.",
+        "requiredIntelligence": 15,
+        "retention": 30,
+        "zeon": 300
+      },
+      "bookId": 3,
+      "dailyRetention": false,
       "effect": "Como su nombre indica, el hechizo estanca el espíritu de un individuo en el estado en que se encuentra en el mismo momento de su lanzamiento. A partir de ese instante, el afectado no deberá realizar nuevos controles mágicos o psíquicos, y permanecerá inalterablemente en la condición espiritual en la que se hallase. De este modo, no podrá ser influido por estados de ningún tipo, tanto positivos como negativos. Si desea resistir el estancamiento, será necesario superar una RM. Lógicamente, alguien afectado por este sortilegio no puede realizar ningún control para librarse de él mientras se mantenga.",
       "initialGrade": {
-        "zeon": 150,
-        "requiredIntelligence": 8,
         "effect": "RM 100.",
-        "retention": 15
+        "requiredIntelligence": 8,
+        "retention": 15,
+        "zeon": 150
       },
       "intermediateGrade": {
-        "zeon": 200,
-        "requiredIntelligence": 10,
         "effect": "RM 120.",
-        "retention": 20
+        "requiredIntelligence": 10,
+        "retention": 20,
+        "zeon": 200
       },
-      "advancedGrade": {
-        "zeon": 250,
-        "requiredIntelligence": 12,
-        "effect": "RM 140.",
-        "retention": 25
-      },
-      "arcaneGrade": {
-        "zeon": 300,
-        "requiredIntelligence": 15,
-        "effect": "RM 180.",
-        "retention": 30
-      },
-      "withRetention": true,
-      "dailyRetention": false
+      "level": 58,
+      "name": "Estancar Esencia",
+      "spellId": 23,
+      "type": "Anímico",
+      "withRetention": true
     },
     {
-      "spellId": 24,
-      "bookId": 3,
-      "name": "Escudo Perfecto",
-      "level": 60,
       "actionType": "Activa",
-      "type": "Defensa",
+      "advancedGrade": {
+        "effect": "Aguanta 500 puntos de daño.",
+        "requiredIntelligence": 13,
+        "retention": 30,
+        "zeon": 300
+      },
+      "arcaneGrade": {
+        "effect": "Aguanta 1.000 puntos de daño.",
+        "requiredIntelligence": 16,
+        "retention": 40,
+        "zeon": 400
+      },
+      "bookId": 3,
+      "dailyRetention": true,
       "effect": "Forma una barrera de energía que protege frente a cualquier fuente de ataque. Si no es destruido al finalizar el asalto, recupera automáticamente todos sus puntos de vida perdidos.",
       "initialGrade": {
-        "zeon": 150,
-        "requiredIntelligence": 8,
         "effect": "Aguanta 100 puntos de daño.",
-        "retention": 15
+        "requiredIntelligence": 8,
+        "retention": 15,
+        "zeon": 150
       },
       "intermediateGrade": {
-        "zeon": 200,
-        "requiredIntelligence": 10,
         "effect": "Aguanta 250 puntos de daño.",
-        "retention": 20
+        "requiredIntelligence": 10,
+        "retention": 20,
+        "zeon": 200
       },
-      "advancedGrade": {
-        "zeon": 300,
-        "requiredIntelligence": 13,
-        "effect": "Aguanta 500 puntos de daño.",
-        "retention": 30
-      },
-      "arcaneGrade": {
-        "zeon": 400,
-        "requiredIntelligence": 16,
-        "effect": "Aguanta 1.000 puntos de daño.",
-        "retention": 40
-      },
-      "withRetention": true,
-      "dailyRetention": true
+      "level": 60,
+      "name": "Escudo Perfecto",
+      "spellId": 24,
+      "type": "Defensa",
+      "withRetention": true
     },
     {
-      "spellId": 25,
-      "bookId": 3,
-      "name": "Vitalidad",
-      "level": 62,
       "actionType": "Activa",
-      "type": "Efecto",
+      "advancedGrade": {
+        "effect": "+100 Puntos de Vida.",
+        "requiredIntelligence": 13,
+        "retention": 25,
+        "zeon": 250
+      },
+      "arcaneGrade": {
+        "effect": "+150 Puntos de Vida.",
+        "requiredIntelligence": 16,
+        "retention": 35,
+        "zeon": 350
+      },
+      "bookId": 3,
+      "dailyRetention": false,
       "effect": "La magia crea un estado de vitalidad sobrenatural en un individuo, aumenta el valor máximo de sus puntos de vida mientras este hechizo se mantenga. Sus efectos no se superponen, y sólo se puede afectar con él una vez a cada sujeto. Los seres con acumulación de daño multiplican por cinco esta cantidad.",
       "initialGrade": {
-        "zeon": 150,
-        "requiredIntelligence": 8,
         "effect": "+50 Puntos de Vida.",
-        "retention": 15
+        "requiredIntelligence": 8,
+        "retention": 15,
+        "zeon": 150
       },
       "intermediateGrade": {
-        "zeon": 200,
-        "requiredIntelligence": 10,
         "effect": "+75 Puntos de Vida.",
-        "retention": 20
+        "requiredIntelligence": 10,
+        "retention": 20,
+        "zeon": 200
       },
-      "advancedGrade": {
-        "zeon": 250,
-        "requiredIntelligence": 13,
-        "effect": "+100 Puntos de Vida.",
-        "retention": 25
-      },
-      "arcaneGrade": {
-        "zeon": 350,
-        "requiredIntelligence": 16,
-        "effect": "+150 Puntos de Vida.",
-        "retention": 35
-      },
-      "withRetention": true,
-      "dailyRetention": true
+      "level": 62,
+      "name": "Vitalidad",
+      "spellId": 25,
+      "type": "Efecto",
+      "withRetention": true
     },
     {
-      "spellId": 26,
-      "bookId": 3,
-      "name": "Creación Completa",
-      "level": 66,
       "actionType": "Activa",
-      "type": "Efecto",
+      "advancedGrade": {
+        "effect": "Presencia máxima 120.",
+        "requiredIntelligence": 12,
+        "retention": 30,
+        "zeon": 300
+      },
+      "arcaneGrade": {
+        "effect": "Presencia máxima 150.",
+        "requiredIntelligence": 14,
+        "retention": 40,
+        "zeon": 400
+      },
+      "bookId": 3,
+      "dailyRetention": true,
       "effect": "Forma un objeto con una presencia determinada por el grado del conjuro. La creación debe de encontrarse en una ubicación lógica, dependiendo de su naturaleza. No es posible, por ejemplo, hacer aparecer una pequeña montaña, situarla en el aire y dejarla caer. Como limitación, la presencia del objeto creado no puede ser superior al doble de la presencia base del brujo.",
       "initialGrade": {
-        "zeon": 150,
-        "requiredIntelligence": 8,
         "effect": "Presencia máxima 50.",
-        "retention": 15
-      },
-      "intermediateGrade": {
-        "zeon": 200,
-        "requiredIntelligence": 10,
-        "effect": "Presencia máxima 80.",
-        "retention": 20
-      },
-      "advancedGrade": {
-        "zeon": 300,
-        "requiredIntelligence": 12,
-        "effect": "Presencia máxima 120.",
-        "retention": 30
-      },
-      "arcaneGrade": {
-        "zeon": 400,
-        "requiredIntelligence": 14,
-        "effect": "Presencia máxima 150.",
-        "retention": 40
-      },
-      "withRetention": true,
-      "dailyRetention": true
-    },
-    {
-      "spellId": 27,
-      "bookId": 3,
-      "name": "Potenciar Magia",
-      "level": 68,
-      "actionType": "Pasiva",
-      "type": "Efecto",
-      "effect": "Potencia el poder de otro hechizo al que se le vincule. A términos de juego, otorga al sortilegio vinculado las siguientes ventajas: +20 a su RM.  +50% de daño / resistencia al daño adicional (redondeado hacia arriba en grupos de 5). +20% a cualquier valor numérico de diferente naturaleza (Presencia, intensidades, distancia, radio de efecto, incrementos o elementos similares), salvo los valores relacionados con el Gnosis. ",
-      "initialGrade": {
-        "zeon": 100,
         "requiredIntelligence": 8,
-        "effect": "Afecta la los conjuros de Grado Base.",
-        "retention": 10
+        "retention": 15,
+        "zeon": 150
       },
       "intermediateGrade": {
-        "zeon": 200,
-        "requiredIntelligence": 12,
-        "effect": "Afecta la los conjuros de Grado Intermedio.",
-        "retention": 20
+        "effect": "Presencia máxima 80.",
+        "requiredIntelligence": 10,
+        "retention": 20,
+        "zeon": 200
       },
-      "advancedGrade": {
-        "zeon": 300,
-        "requiredIntelligence": 15,
-        "effect": "Afecta la los conjuros de Grado Avanzado.",
-        "retention": 30
-      },
-      "arcaneGrade": {
-        "zeon": 400,
-        "requiredIntelligence": 18,
-        "effect": "Afecta la los conjuros de Grado Arcano.",
-        "retention": 40
-      },
-      "withRetention": true,
-      "dailyRetention": false
+      "level": 66,
+      "name": "Creación Completa",
+      "spellId": 26,
+      "type": "Efecto",
+      "withRetention": true
     },
     {
-      "spellId": 28,
+      "actionType": "Pasiva",
+      "advancedGrade": {
+        "effect": "Afecta la los conjuros de Grado Avanzado.",
+        "requiredIntelligence": 15,
+        "retention": 30,
+        "zeon": 300
+      },
+      "arcaneGrade": {
+        "effect": "Afecta la los conjuros de Grado Arcano.",
+        "requiredIntelligence": 18,
+        "retention": 40,
+        "zeon": 400
+      },
       "bookId": 3,
-      "name": "1  3 8",
-      "level": 70,
+      "dailyRetention": false,
+      "effect": "Potencia el poder de otro hechizo al que se le vincule. A términos de juego, otorga al sortilegio vinculado las siguientes ventajas: +20 a su RM. +50% de daño / resistencia al daño adicional (redondeado hacia arriba en grupos de 5). +20% a cualquier valor numérico de diferente naturaleza (Presencia, intensidades, distancia, radio de efecto, incrementos o elementos similares), salvo los valores relacionados con el Gnosis.",
+      "initialGrade": {
+        "effect": "Afecta la los conjuros de Grado Base.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "Afecta la los conjuros de Grado Intermedio.",
+        "requiredIntelligence": 12,
+        "retention": 20,
+        "zeon": 200
+      },
+      "level": 68,
+      "name": "Potenciar Magia",
+      "spellId": 27,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
       "actionType": "Activa",
-      "type": "Anímico",
+      "advancedGrade": {
+        "effect": "RM 220 / Presencia Máxima 150.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 500
+      },
+      "arcaneGrade": {
+        "effect": "RM 260 / Presencia Máxima 200.",
+        "requiredIntelligence": 18,
+        "retention": 0,
+        "zeon": 800
+      },
+      "bookId": 3,
+      "dailyRetention": false,
       "effect": "El brujo transforma un objeto inorgánico convirtiéndolo en otro distinto, pero de poder anímico similar. De este modo modifica algo en otra cosa que tenga un valor de presencia igual o inferior. Si el objeto es sobrenatural o especialmente poderoso, puede resistirse pasando una RM.",
       "initialGrade": {
-        "zeon": 250,
-        "requiredIntelligence": 9,
         "effect": "RM 120 / Presencia Máxima 50.",
-        "retention": 0
-      },
-      "intermediateGrade": {
-        "zeon": 350,
-        "requiredIntelligence": 12,
-        "effect": "RM 160 / Presencia Máxima 100.",
-        "retention": 0
-      },
-      "advancedGrade": {
-        "zeon": 500,
-        "requiredIntelligence": 15,
-        "effect": "RM 220 / Presencia Máxima 150.",
-        "retention": 0
-      },
-      "arcaneGrade": {
-        "zeon": 800,
-        "requiredIntelligence": 18,
-        "effect": "RM 260 / Presencia Máxima 200.",
-        "retention": 0
-      },
-      "withRetention": false,
-      "dailyRetention": false
-    },
-    {
-      "spellId": 29,
-      "bookId": 3,
-      "name": "Metamorfismo",
-      "level": 72,
-      "actionType": "Activa",
-      "type": "Anímico",
-      "effect": "El brujo transmuta la sustancia y forma de un cuerpo, convirtiéndolo en cualquier cosa que desee, siempre y cuando su presencia no se incremente por encima de la original. Así, por ejemplo, el hechicero puede convertir a una persona en lo que quiera (un ratón, una estatua de piedra…), mientras la presencia del individuo no sea menor que aquello en lo que se le transforma. Los seres vivos que son polimorfizados en cosas inorgánicas, seguirán viviendo bajo la nueva forma que se les ha dado, incluso sin poder moverse o respirar. Cuando el conjuro desparece, el individuo u objeto mutado recupera su apariencia original. Este hechizo no permite otorgar poderes o habilidades esenciales, salvo aquellos que poseen los seres vivos naturales con Gnosis 0. Para evitar ser polimorfizado, es necesario superar una RM. Sólo es posible  repetir la Resistencia una vez al día.",
-      "initialGrade": {
-        "zeon": 150,
-        "requiredIntelligence": 8,
-        "effect": "RM 100.",
-        "retention": 10
-      },
-      "intermediateGrade": {
-        "zeon": 200,
-        "requiredIntelligence": 10,
-        "effect": "RM 120.",
-        "retention": 10
-      },
-      "advancedGrade": {
-        "zeon": 250,
-        "requiredIntelligence": 12,
-        "effect": "RM 160.",
-        "retention": 15
-      },
-      "arcaneGrade": {
-        "zeon": 350,
-        "requiredIntelligence": 14,
-        "effect": "RM 200.",
-        "retention": 20
-      },
-      "withRetention": true,
-      "dailyRetention": true
-    },
-    {
-      "spellId": 30,
-      "bookId": 3,
-      "name": "Recrear",
-      "level": 76,
-      "actionType": "Activa",
-      "type": "Efecto",
-      "effect": "Manipulando la esencia de la materia y de las almas, el mago es capaz de restaurar cualquier pérdida o menoscabo que haya sufrido el individuo u objeto blanco de este conjuro. Puede elegir qué partes o elementos recrea, sin estar obligado a devolverlo completamente todo a su estado original. De este modo, si una persona tuerta y manca recibe un conjuro de Recrear, el brujo podría elegir entre devolverle su ojo, el brazo, o ambos a la vez. Lanzar este sortilegio sobre un individuo herido o una construcción destrozada hace desaparecer automáticamente cualquier daño o negativo (siempre y cuando el hechicero lo desee, por supuesto). Recrear también deshace los efectos de habilidades sobrenaturales que hayan mermado física o anímicamente a individuos o cosas; restaura recuerdos borrados, o PD perdidos. Este hechizo sólo tiene tres limitaciones. La primera es que afecta únicamente a carencias o pérdidas sufridas de modo artificial, y no una evolución natural o positiva. Así pues, no permite devolver a una persona a un estado anterior perjudicial o inferior. En segundo lugar, no tiene alcance sobre almas fallecidas o que hayan pasado previamente por el flujo, por lo que es incapaz de devolver la vida a los muertos. Finalmente, si el daño o destrucción ha sido provocado por un ser cuyo Gnosis es al menos 15 puntos superior al del lanzador, la máxima  presencia afectable se reduce a la mitad.",
-      "initialGrade": {
-        "zeon": 300,
-        "requiredIntelligence": 8,
-        "effect": "Presencia máxima 60.",
-        "retention": 0
-      },
-      "intermediateGrade": {
-        "zeon": 500,
-        "requiredIntelligence": 12,
-        "effect": "Presencia máxima 120.",
-        "retention": 0
-      },
-      "advancedGrade": {
-        "zeon": 750,
-        "requiredIntelligence": 15,
-        "effect": "Presencia máxima 180.",
-        "retention": 0
-      },
-      "arcaneGrade": {
-        "zeon": 1500,
-        "requiredIntelligence": 18,
-        "effect": "Presencia máxima 240.",
-        "retention": 0
-      },
-      "withRetention": false,
-      "dailyRetention": false
-    },
-    {
-      "spellId": 31,
-      "bookId": 3,
-      "name": "cómo su señora ha creado vida.",
-      "level": 78,
-      "actionType": "Activa",
-      "type": "Efecto",
-      "effect": "Crea una criatura con apariencia de vida bajo el control absoluto del hechicero. El ente será desarrollado como un Ser Entre Mundos con Gnosis  25. Dado que su existencia se encuentra directamente atada al alma del brujo, el número de seres que haya creado y dependan de él (ya sea empleando este hechizo o los de nivel 82 de las vías menores) limitará el nivel máximo de la entidad. De este modo, la criatura puede tener como tope el nivel de su creador, menos el número de entidades que el brujo haya concebido mágicamente y mantenga. Por ejemplo, si se crea un solo ser, este podrá tener como máximo un nivel menos que su señor; dos niveles menos en el caso de que sean dos; tres menos si mantiene a tres entidades... Si uno o varios seres tienen ya su nivel máximo y el brujo crea otro nuevo, los anteriores bajan un nivel inmediatamente.  ",
-      "initialGrade": {
-        "zeon": 250,
         "requiredIntelligence": 9,
-        "effect": "Nivel 1.",
-        "retention": 50
+        "retention": 0,
+        "zeon": 250
       },
       "intermediateGrade": {
-        "zeon": 400,
+        "effect": "RM 160 / Presencia Máxima 100.",
         "requiredIntelligence": 12,
-        "effect": "Nivel 5.",
-        "retention": 80
+        "retention": 0,
+        "zeon": 350
       },
-      "advancedGrade": {
-        "zeon": 600,
-        "requiredIntelligence": 15,
-        "effect": "Nivel 9.",
-        "retention": 120
-      },
-      "arcaneGrade": {
-        "zeon": 1000,
-        "requiredIntelligence": 17,
-        "effect": "Nivel 12.",
-        "retention": 200
-      },
-      "withRetention": true,
-      "dailyRetention": true
+      "level": 70,
+      "name": "Transmutar",
+      "spellId": 28,
+      "type": "Anímico",
+      "withRetention": false
     },
     {
-      "spellId": 32,
-      "bookId": 3,
-      "name": "Quimera",
-      "level": 80,
       "actionType": "Activa",
-      "type": "Efecto",
-      "effect": "El hechicero, o quien este designe, deja de ser una criatura natural para convertirse en un Ser Entre Mundos con Gnosis 25, gozando de todas las ventajas y desventajas que ello supone. Adicionalmente, obtendrá PD extras que podrá utilizar para elegir entre Habilidades Esenciales y poderes de la Creación de Seres, descritas en el Capítulo 26. También le permite escoger PD en desventajas y penalizadores para obtener puntos adicionales.  El exceso de PD aumenta el nivel del personaje. Este conjuro sólo funciona sobre criaturas naturales, por lo que no podrá ser lanzado sobre Seres Entre Mundos o Ánimas para incrementar sus habilidades. Todos los poderes y dones que se adquieran mediante este hechizo dependen directamente de la forma física del individuo, por lo que, si por algún método regresa a su estado anterior o transmigra su alma a otro cuerpo o forma, perderá automáticamente las ventajas recibidas.",
+      "advancedGrade": {
+        "effect": "RM 160.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 250
+      },
+      "arcaneGrade": {
+        "effect": "RM 200.",
+        "requiredIntelligence": 14,
+        "retention": 20,
+        "zeon": 350
+      },
+      "bookId": 3,
+      "dailyRetention": false,
+      "effect": "El brujo transmuta la sustancia y forma de un cuerpo, convirtiéndolo en cualquier cosa que desee, siempre y cuando su presencia no se incremente por encima de la original. Así, por ejemplo, el hechicero puede convertir a una persona en lo que quiera (un ratón, una estatua de piedra…), mientras la presencia del individuo no sea menor que aquello en lo que se le transforma. Los seres vivos que son polimorfizados en cosas inorgánicas, seguirán viviendo bajo la nueva forma que se les ha dado, incluso sin poder moverse o respirar. Cuando el conjuro desparece, el individuo u objeto mutado recupera su apariencia original. Este hechizo no permite otorgar poderes o habilidades esenciales, salvo aquellos que poseen los seres vivos naturales con Gnosis 0. Para evitar ser polimorfizado, es necesario superar una RM. Sólo es posible repetir la Resistencia una vez al día.",
       "initialGrade": {
-        "zeon": 250,
-        "requiredIntelligence": 10,
-        "effect": "+100 PD / hasta 100 PD opcionales en desventajas.",
-        "retention": 0
+        "effect": "RM 100.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 150
       },
       "intermediateGrade": {
-        "zeon": 500,
-        "requiredIntelligence": 13,
-        "effect": "+200 PD / hasta 100 PD opcionales en desventajas.",
-        "retention": 0
+        "effect": "RM 120.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 200
       },
-      "advancedGrade": {
-        "zeon": 1000,
-        "requiredIntelligence": 15,
-        "effect": "+300 PD / hasta 200 PD opcionales en desventajas.",
-        "retention": 0
-      },
-      "arcaneGrade": {
-        "zeon": 2500,
-        "requiredIntelligence": 17,
-        "effect": "+400 PD / hasta 200 PD opcionales en desventajas.",
-        "retention": 0
-      },
-      "withRetention": false,
-      "dailyRetention": true
+      "level": 72,
+      "name": "Metamorfismo",
+      "spellId": 29,
+      "type": "Anímico",
+      "withRetention": true
     },
     {
-      "spellId": 33,
-      "bookId": 3,
-      "name": "Zona de Salvaguardia",
-      "level": 82,
       "actionType": "Activa",
-      "type": "Automático",
+      "advancedGrade": {
+        "effect": "Presencia máxima 180.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 750
+      },
+      "arcaneGrade": {
+        "effect": "Presencia máxima 240.",
+        "requiredIntelligence": 18,
+        "retention": 0,
+        "zeon": 1500
+      },
+      "bookId": 3,
+      "dailyRetention": false,
+      "effect": "Manipulando la esencia de la materia y de las almas, el mago es capaz de restaurar cualquier pérdida o menoscabo que haya sufrido el individuo u objeto blanco de este conjuro. Puede elegir qué partes o elementos recrea, sin estar obligado a devolverlo completamente todo a su estado original. De este modo, si una persona tuerta y manca recibe un conjuro de Recrear, el brujo podría elegir entre devolverle su ojo, el brazo, o ambos a la vez. Lanzar este sortilegio sobre un individuo herido o una construcción destrozada hace desaparecer automáticamente cualquier daño o negativo (siempre y cuando el hechicero lo desee, por supuesto). Recrear también deshace los efectos de habilidades sobrenaturales que hayan mermado física o anímicamente a individuos o cosas restaura recuerdos borrados, o PD perdidos. Este hechizo sólo tiene tres limitaciones. La primera es que afecta únicamente a carencias o pérdidas sufridas de modo artificial, y no una evolución natural o positiva. Así pues, no permite devolver a una persona a un estado anterior perjudicial o inferior. En segundo lugar, no tiene alcance sobre almas fallecidas o que hayan pasado previamente por el flujo, por lo que es incapaz de devolver la vida a los muertos. Finalmente, si el daño o destrucción ha sido provocado por un ser cuyo Gnosis es al menos 15 puntos superior al del lanzador, la máxima presencia afectable se reduce a la mitad.",
+      "initialGrade": {
+        "effect": "Presencia máxima 60.",
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 300
+      },
+      "intermediateGrade": {
+        "effect": "Presencia máxima 120.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 500
+      },
+      "level": 76,
+      "name": "Recrear",
+      "spellId": 30,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Nivel 9.",
+        "requiredIntelligence": 15,
+        "retention": 120,
+        "zeon": 600
+      },
+      "arcaneGrade": {
+        "effect": "Nivel 12.",
+        "requiredIntelligence": 17,
+        "retention": 200,
+        "zeon": 1000
+      },
+      "bookId": 3,
+      "dailyRetention": true,
+      "effect": "Crea una criatura con apariencia de vida bajo el control absoluto del hechicero. El ente será desarrollado como un Ser Entre Mundos con Gnosis 25. Dado que su existencia se encuentra directamente atada al alma del brujo, el número de seres que haya creado y dependan de él (ya sea empleando este hechizo o los de nivel 82 de las vías menores) limitará el nivel máximo de la entidad. De este modo, la criatura puede tener como tope el nivel de su creador, menos el número de entidades que el brujo haya concebido mágicamente y mantenga. Por ejemplo, si se crea un solo ser, este podrá tener como máximo un nivel menos que su señor 83.165.181.63 Ramiel, una Doncella de Luz, observa fascinada cómo su señora ha creado vida.",
+      "initialGrade": {
+        "effect": "Nivel 1.",
+        "requiredIntelligence": 9,
+        "retention": 50,
+        "zeon": 250
+      },
+      "intermediateGrade": {
+        "effect": "Nivel 5.",
+        "requiredIntelligence": 12,
+        "retention": 80,
+        "zeon": 400
+      },
+      "level": 78,
+      "name": "Crear Ser",
+      "spellId": 31,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "+300 PD / hasta 200 PD opcionales en desventajas.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 1000
+      },
+      "arcaneGrade": {
+        "effect": "+400 PD / hasta 200 PD opcionales en desventajas.",
+        "requiredIntelligence": 17,
+        "retention": 0,
+        "zeon": 2500
+      },
+      "bookId": 3,
+      "dailyRetention": false,
+      "effect": "El hechicero, o quien este designe, deja de ser una criatura natural para convertirse en un Ser Entre Mundos con Gnosis 25, gozando de todas las ventajas y desventajas que ello supone. Adicionalmente, obtendrá PD extras que podrá utilizar para elegir entre Habilidades Esenciales y poderes de la Creación de Seres, descritas en el Capítulo 26. También le permite escoger PD en desventajas y penalizadores para obtener puntos adicionales. El exceso de PD aumenta el nivel del personaje. Este conjuro sólo funciona sobre criaturas naturales, por lo que no podrá ser lanzado sobre Seres Entre Mundos o Ánimas para incrementar sus habilidades. Todos los poderes y dones que se adquieran mediante este hechizo dependen directamente de la forma física del individuo, por lo que, si por algún método regresa a su estado anterior o transmigra su alma a otro cuerpo o forma, perderá automáticamente las ventajas recibidas.",
+      "initialGrade": {
+        "effect": "+100 PD / hasta 100 PD opcionales en desventajas.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 250
+      },
+      "intermediateGrade": {
+        "effect": "+200 PD / hasta 100 PD opcionales en desventajas.",
+        "requiredIntelligence": 13,
+        "retention": 0,
+        "zeon": 500
+      },
+      "level": 80,
+      "name": "Quimera",
+      "spellId": 32,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM 220 / radio de 1 kilómetro.",
+        "requiredIntelligence": 17,
+        "retention": 80,
+        "zeon": 800
+      },
+      "arcaneGrade": {
+        "effect": "RM 250 / radio de 5 kilómetros.",
+        "requiredIntelligence": 18,
+        "retention": 150,
+        "zeon": 1500
+      },
+      "bookId": 3,
+      "dailyRetention": false,
       "effect": "Crea una zona mágica en cuyo interior nada ni nadie puede causar ningún tipo de daño, ni por acción ni por omisión, a ninguna persona u objeto. De este modo, un individuo influido por este conjuro será incapaz de derribar una puerta a golpes, o de aplastar una simple cucaracha por error. Afecta automáticamente a cualquiera que se encuentre en el área del sortilegio, incluyendo al propio brujo. La zona encantada permanece en el lugar donde es lanzada, sin que el hechicero pueda reubicarla posteriormente. Para superar sus efectos es necesario superar una RM. Sólo es posible repetir la Resistencia una vez al día, incluso si se sale de ella y se vuelve a entrar.",
       "initialGrade": {
-        "zeon": 350,
-        "requiredIntelligence": 12,
         "effect": "RM 140 / radio de 100 metros.",
-        "retention": 35
+        "requiredIntelligence": 12,
+        "retention": 35,
+        "zeon": 350
       },
       "intermediateGrade": {
-        "zeon": 500,
-        "requiredIntelligence": 15,
         "effect": "RM 180 / radio de 500 metros.",
-        "retention": 50
+        "requiredIntelligence": 15,
+        "retention": 50,
+        "zeon": 500
       },
-      "advancedGrade": {
-        "zeon": 800,
-        "requiredIntelligence": 17,
-        "effect": "RM 220 / radio de 1 kilómetro.",
-        "retention": 80
-      },
-      "arcaneGrade": {
-        "zeon": 1500,
-        "requiredIntelligence": 18,
-        "effect": "RM 250 / radio de 5 kilómetros.",
-        "retention": 150
-      },
-      "withRetention": true,
-      "dailyRetention": true
+      "level": 82,
+      "name": "Zona de Salvaguardia",
+      "spellId": 33,
+      "type": "Automático",
+      "withRetention": true
     },
     {
-      "spellId": 34,
-      "bookId": 3,
-      "name": "Mantenimiento",
-      "level": 86,
       "actionType": "Activa",
-      "type": "Efecto",
+      "advancedGrade": {
+        "effect": "5.000 Puntos de Zeon.",
+        "requiredIntelligence": 14,
+        "retention": 0,
+        "zeon": 900
+      },
+      "arcaneGrade": {
+        "effect": "10.000 Puntos de Zeon.",
+        "requiredIntelligence": 16,
+        "retention": 0,
+        "zeon": 1600
+      },
+      "bookId": 3,
+      "dailyRetention": false,
       "effect": "Afecta a otro hechizo activo, fijándolo de un modo más duradero al mundo. A efectos de juego, añade puntos de Zeon al mantenimiento de un conjuro determinado. Ten en cuenta que esta cantidad no se suma a su potencial, sino que los emplea tan sólo para pagar su conservación.",
       "initialGrade": {
-        "zeon": 250,
-        "requiredIntelligence": 10,
         "effect": "500 Puntos de Zeon.",
-        "retention": 0
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 250
       },
       "intermediateGrade": {
-        "zeon": 500,
-        "requiredIntelligence": 12,
         "effect": "2.000 Puntos de Zeon.",
-        "retention": 0
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 500
       },
-      "advancedGrade": {
-        "zeon": 900,
-        "requiredIntelligence": 14,
-        "effect": "5.000 Puntos de Zeon.",
-        "retention": 0
-      },
-      "arcaneGrade": {
-        "zeon": 1600,
-        "requiredIntelligence": 16,
-        "effect": "10.000 Puntos de Zeon.",
-        "retention": 0
-      },
-      "withRetention": false,
-      "dailyRetention": false
+      "level": 86,
+      "name": "Mantenimiento",
+      "spellId": 34,
+      "type": "Efecto",
+      "withRetention": false
     },
     {
-      "spellId": 35,
-      "bookId": 3,
-      "name": "Otorgar Alma",
-      "level": 88,
       "actionType": "Activa",
-      "type": "Efecto",
-      "effect": "Mediante este hechizo, el brujo es capaz de concebir un alma completa, dándole el soplo de la vida a un objeto o cuerpo que sea capaz de contenerla. Si se la otorga a una criatura engendrada mágicamente, como las entidades desarrolladas con el conjuro de nivel 78 de esta vía o los de nivel 82 de las elementales, deja de ser necesario mantener el hechizo que la sustenta y el ente cobra existencia independiente. De este modo, rompe cualquier lazo con su creador, obteniendo libre albedrío como un Ser Entre Mundos más.  No todas las almas creadas por este conjuro son capaces de penetrar en el cuerpo donde se las imbuye, ni se puede emplear sobre algo que ya posea un alma viva.",
+      "advancedGrade": {
+        "effect": "Presencia máxima 80.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 1200
+      },
+      "arcaneGrade": {
+        "effect": "Presencia máxima 100.",
+        "requiredIntelligence": 16,
+        "retention": 0,
+        "zeon": 2000
+      },
+      "bookId": 3,
+      "dailyRetention": false,
+      "effect": "Mediante este hechizo, el brujo es capaz de concebir un alma completa, dándole el soplo de la vida a un objeto o cuerpo que sea capaz de contenerla. Si se la otorga a una criatura engendrada mágicamente, como las entidades desarrolladas con el conjuro de nivel 78 de esta vía o los de nivel 82 de las elementales, deja de ser necesario mantener el hechizo que la sustenta y el ente cobra existencia independiente. De este modo, rompe cualquier lazo con su creador, obteniendo libre albedrío como un Ser Entre Mundos más. No todas las almas creadas por este conjuro son capaces de penetrar en el cuerpo donde se las imbuye, ni se puede emplear sobre algo que ya posea un alma viva.",
       "initialGrade": {
-        "zeon": 500,
-        "requiredIntelligence": 13,
         "effect": "Presencia máxima 30.",
-        "retention": 0
+        "requiredIntelligence": 13,
+        "retention": 0,
+        "zeon": 500
       },
       "intermediateGrade": {
-        "zeon": 800,
-        "requiredIntelligence": 14,
         "effect": "Presencia máxima 50.",
-        "retention": 0
+        "requiredIntelligence": 14,
+        "retention": 0,
+        "zeon": 800
       },
-      "advancedGrade": {
-        "zeon": 1200,
-        "requiredIntelligence": 15,
-        "effect": "Presencia máxima 80.",
-        "retention": 0
-      },
-      "arcaneGrade": {
-        "zeon": 2000,
-        "requiredIntelligence": 16,
-        "effect": "Presencia máxima 100.",
-        "retention": 0
-      },
-      "withRetention": false,
-      "dailyRetention": true
+      "level": 88,
+      "name": "Otorgar Alma",
+      "spellId": 35,
+      "type": "Efecto",
+      "withRetention": false
     },
     {
-      "spellId": 36,
-      "bookId": 3,
-      "name": "Creación Mayor",
-      "level": 90,
       "actionType": "Activa",
-      "type": "Efecto",
+      "advancedGrade": {
+        "effect": "2.000 Puntos de Presencia / Presencia máxima 140.",
+        "requiredIntelligence": 14,
+        "retention": 25,
+        "zeon": 1200
+      },
+      "arcaneGrade": {
+        "effect": "3.000 Puntos de Presencia / Presencia máxima 180.",
+        "requiredIntelligence": 16,
+        "retention": 30,
+        "zeon": 2000
+      },
+      "bookId": 3,
+      "dailyRetention": false,
       "effect": "Otorga al hechicero el don de crear a su antojo, concediéndole puntos de presencia para repartir libremente entre varios objetos o construcciones. Puede elaborar cualquier cosa inanimada que desee, desde castillos a montañas, siempre y cuando la presencia de sus creaciones no sea superior a lo que permite el grado del conjuro.",
       "initialGrade": {
-        "zeon": 400,
-        "requiredIntelligence": 10,
         "effect": "500 Puntos de Presencia / Presencia máxima 100.",
-        "retention": 20
+        "requiredIntelligence": 10,
+        "retention": 20,
+        "zeon": 400
       },
       "intermediateGrade": {
-        "zeon": 800,
-        "requiredIntelligence": 12,
         "effect": "1.000 Puntos de Presencia / Presencia máxima 120.",
-        "retention": 25
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 800
       },
-      "advancedGrade": {
-        "zeon": 1200,
-        "requiredIntelligence": 14,
-        "effect": "2.000 Puntos de Presencia / Presencia máxima 140.",
-        "retention": 25
-      },
-      "arcaneGrade": {
-        "zeon": 2000,
-        "requiredIntelligence": 16,
-        "effect": "3.000 Puntos de Presencia / Presencia máxima 180.",
-        "retention": 30
-      },
-      "withRetention": true,
-      "dailyRetention": true
+      "level": 90,
+      "name": "Creación Mayor",
+      "spellId": 36,
+      "type": "Efecto",
+      "withRetention": true
     },
     {
-      "spellId": 37,
-      "bookId": 3,
-      "name": "Magia eterna",
-      "level": 92,
       "actionType": "Activa",
-      "type": "Efecto",
+      "advancedGrade": {
+        "effect": "Afecta a un conjuro de Grado Base.",
+        "requiredIntelligence": 16,
+        "retention": 0,
+        "zeon": 2500
+      },
+      "arcaneGrade": {
+        "effect": "Afecta a un conjuro de Grado Arcano.",
+        "requiredIntelligence": 18,
+        "retention": 0,
+        "zeon": 5000
+      },
+      "bookId": 3,
+      "dailyRetention": false,
       "effect": "Como su nombre indica, afecta a otro conjuro activo, disminuyendo enormemente el coste de su mantenimiento o incluso haciéndolo desaparecer. Sus efectos varían dependiendo de si influye o no a un hechizo con mantenimiento diario. Si es diario, Magia Eterna lo estanca, haciendo que deje de ser necesario mantenerlo. El sortilegio sigue siendo controlado por su lanzador, aunque perdurará incluso después de que este haya muerto. Si el mantenimiento es por asalto, pasará a convertirse en un conjuro de tipo Diario. Magia Eterna sólo influye en hechizos que tengan un nivel de vía inferior a 80.",
       "initialGrade": {
-        "zeon": 600,
+        "effect": "Afecta a un conjuro de Grado Base.",
         "requiredIntelligence": 12,
-        "effect": "Afecta a un conjuro de Grado Base.",
-        "retention": 0
+        "retention": 0,
+        "zeon": 600
       },
       "intermediateGrade": {
-        "zeon": 1000,
+        "effect": "Afecta a un conjuro de Grado Base.",
         "requiredIntelligence": 14,
-        "effect": "Afecta a un conjuro de Grado Base.",
-        "retention": 0
+        "retention": 0,
+        "zeon": 1000
       },
-      "advancedGrade": {
-        "zeon": 2500,
-        "requiredIntelligence": 16,
-        "effect": "Afecta a un conjuro de Grado Base.",
-        "retention": 0
-      },
-      "arcaneGrade": {
-        "zeon": 5000,
-        "requiredIntelligence": 18,
-        "effect": "Afecta a un conjuro de Grado Arcano.",
-        "retention": 0
-      },
-      "withRetention": false,
-      "dailyRetention": false
+      "level": 92,
+      "name": "Magia eterna",
+      "spellId": 37,
+      "type": "Efecto",
+      "withRetention": false
     },
     {
-      "spellId": 38,
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM 240 / 100.000 kilómetros cuadrados o línea.",
+        "requiredIntelligence": 17,
+        "retention": 45,
+        "zeon": 5000
+      },
+      "arcaneGrade": {
+        "effect": "RM 300 / Sin límite de espacio.",
+        "requiredIntelligence": 19,
+        "retention": 50,
+        "zeon": 10000
+      },
       "bookId": 3,
-      "name": "La Barrera",
+      "dailyRetention": true,
+      "effect": "Este descomunal hechizo forma una brecha en la propia realidad, capaz de separar en dos partes el mundo. De este modo, levanta una barrera invisible que no permite a nadie alcanzar el otro lado, como si dividiese dos planos distintos independientes el uno del otro. La separación no es percibida de un modo natural, ni siquiera para aquellos que pueden ver magia. Es capaz de adoptar cualquier apariencia Habitualmente, nadie es consciente de su existencia, ni siquiera cuando tratan de atravesarla. Si alguien la intenta cruzar, sale por otro punto de ella, ignorando completamente lo que hay detrás (es posible incluso dar directamente la vuelta sin notarlo). El transporte no es automático, sino que poco a poco la realidad se va adaptando al lugar de salida de un modo casi imperceptible (dificultad en advertir de Inhumano). Como ejemplo, La Barrera podría utilizarse sobre una isla para separarla del resto del mundo. Ese lugar desaparecería de la vista, y cualquier barco que navegase por la zona no vería más que agua, siendo transportado de inmediato hasta otro lugar para proseguir inocentemente su viaje. La Barrera no tiene por qué ser absolutamente perfecta. El lanzador puede elegir dejar deliberadamente abiertos pasajes o aperturas, en una o ambas direcciones, para cruzar a través de ella. Existen ciertos requisitos que permiten a alguien traspasarla. Para empezar, debe tratarse de una entidad con Gnosis superior a 25, y ser además consciente de su existencia y ubicación exacta. Si los cumple ambos, necesita realizar una RM para pasarla. Si fracasa, sólo puede repetir el control una vez al día. Puede afectar a un territorio extenderse en una línea. Una vez lanzada, permanece siempre en la misma ubicación.",
+      "initialGrade": {
+        "effect": "RM 120 / 100 kilómetros cuadrados o línea.",
+        "requiredIntelligence": 15,
+        "retention": 40,
+        "zeon": 800
+      },
+      "intermediateGrade": {
+        "effect": "RM 180 / 1.000 kilómetros cuadrados o línea.",
+        "requiredIntelligence": 16,
+        "retention": 45,
+        "zeon": 2500
+      },
       "level": 96,
-      "actionType": "Activa",
+      "name": "La Barrera",
+      "spellId": 38,
       "type": "Efecto",
-      "effect": "Este descomunal hechizo forma una brecha en la propia realidad, capaz de separar en dos partes el mundo. De este modo, levanta una barrera invisible que no permite a nadie alcanzar el otro lado, como si dividiese dos planos distintos independientes el uno del otro.  La separación no es percibida de un modo natural, ni siquiera para aquellos que pueden ver magia. Es capaz de adoptar cualquier apariencia; desde ser completamente invisible hasta tener el sencillo aspecto de un muro de piedra. De todos modos, tome la forma que tome, no permite vislumbrar la realidad que se oculta detrás de ella.  Habitualmente, nadie es consciente de su existencia, ni siquiera cuando tratan de atravesarla. Si alguien la intenta cruzar, sale por otro punto de ella, ignorando completamente lo que hay detrás (es posible incluso dar directamente la vuelta sin notarlo). El transporte no es automático, sino que poco a poco la realidad se va adaptando al lugar de salida de un modo casi imperceptible (dificultad en advertir de Inhumano). Como ejemplo, La Barrera podría utilizarse sobre una isla para separarla del resto del mundo. Ese lugar desaparecería de la vista, y cualquier barco que navegase por la zona no vería más que agua, siendo transportado de inmediato hasta otro lugar para proseguir inocentemente su viaje. La Barrera no tiene por qué ser absolutamente perfecta. El lanzador puede elegir dejar deliberadamente abiertos pasajes o aperturas, en una o ambas direcciones, para cruzar a través de ella. Existen ciertos requisitos que permiten a alguien traspasarla. Para empezar, debe tratarse de una entidad con Gnosis superior a 25, y ser además consciente de su existencia y ubicación exacta. Si los cumple ambos, necesita realizar una RM para pasarla. Si fracasa, sólo puede repetir el control una vez al día.  Puede afectar a un territorio extenderse en una línea. Una vez lanzada, permanece siempre en la misma ubicación. ",
-      "initialGrade": {
-        "zeon": 500,
-        "requiredIntelligence": 14,
-        "effect": "Gnosis máximo 30.",
-        "retention": 30
-      },
-      "intermediateGrade": {
-        "zeon": 1000,
-        "requiredIntelligence": 16,
-        "effect": "Gnosis máximo 35.",
-        "retention": 40
-      },
-      "advancedGrade": {
-        "zeon": 2000,
-        "requiredIntelligence": 18,
-        "effect": "Gnosis máximo 40.",
-        "retention": 45
-      },
-      "arcaneGrade": {
-        "zeon": 5000,
-        "requiredIntelligence": 20,
-        "effect": "Gnosis máximo 45.",
-        "retention": 50
-      },
-      "withRetention": true,
-      "dailyRetention": false
+      "withRetention": true
     },
     {
-      "spellId": 39,
-      "bookId": 3,
-      "name": "El Don de la Vida",
-      "level": 98,
       "actionType": "Activa",
-      "type": "Efecto",
-      "effect": "El lanzador es imbuido de la capacidad de crear una nueva forma de vida, el neonato de una raza que nunca antes había existido. La creación puede ser de cualquier clase (Natural, Espiritual o Entre Mundos), y estar atada a un elemento determinado. El nivel máximo de la criatura no podrá ser superior a la de su creador. Este último debe elegir el Gnosis de su obra, dándole como máximo diez puntos menos del que él mismo posee.  Si es un Ser Natural con Gnosis inferior a 20, obtendrá además PD adicionales para elegir poderes y habilidades especiales raciales, empleando las reglas descritas en el Capítulo 26.",
-      "initialGrade": {
-        "zeon": 800,
-        "requiredIntelligence": 16,
-        "effect": "Nivel 1 y 50 PD en el caso de que se trate de un ser natural.",
-        "retention": 0
-      },
-      "intermediateGrade": {
-        "zeon": 2000,
-        "requiredIntelligence": 17,
-        "effect": "Nivel 6 y 100 PD en el caso de que se trate de un ser natural.",
-        "retention": 0
-      },
       "advancedGrade": {
-        "zeon": 4000,
-        "requiredIntelligence": 18,
         "effect": "Nivel 11 y 150 PD en el caso de que se trate de un ser natural.",
-        "retention": 0
+        "requiredIntelligence": 18,
+        "retention": 0,
+        "zeon": 4000
       },
       "arcaneGrade": {
-        "zeon": 8000,
-        "requiredIntelligence": 19,
         "effect": "Nivel 16 y 200 PD en el caso de que se trate de un ser natural.",
-        "retention": 0
+        "requiredIntelligence": 19,
+        "retention": 0,
+        "zeon": 8000
       },
-      "withRetention": false,
-      "dailyRetention": false
-    },
-    {
-      "spellId": 40,
       "bookId": 3,
-      "name": "Crear",
-      "level": 100,
-      "actionType": "Activa",
-      "type": "Efecto",
-      "effect": "Permite a su lanzador obtener el poder absoluto de la creación, otorgándole la capacidad de concebir cualquier cosa que desee: continentes, océanos o incluso mundos enteros. A efectos de juego, otorga puntos de presencia para crear lo que este quiera, mientras no supere un límite de presencia determinada por el grado del conjuro.  Este hechizo también puede imponer nuevas reglas a la realidad; alterar la gravedad, modificar la velocidad con la que pasa el tiempo… Cualquiera con un Gnosis inferior a la mitad del que posee el lanzador, se verá sometido a ellas.",
+      "dailyRetention": false,
+      "effect": "El lanzador es imbuido de la capacidad de crear una nueva forma de vida, el neonato de una raza que nunca antes había existido. La creación puede ser de cualquier clase (Natural, Espiritual o Entre Mundos), y estar atada a un elemento determinado. El nivel máximo de la criatura no podrá ser superior a la de su creador. Este último debe elegir el Gnosis de su obra, dándole como máximo diez puntos menos del que él mismo posee. Si es un Ser Natural con Gnosis inferior a 20, obtendrá además PD adicionales para elegir poderes y habilidades especiales raciales, empleando las reglas descritas en el Capítulo 26.",
       "initialGrade": {
-        "zeon": 1000,
-        "requiredIntelligence": 17,
-        "effect": "1.000 Puntos de presencia / Presencia máxima 180 / 1 regla existencial.",
-        "retention": 0
+        "effect": "Nivel 1 y 50 PD en el caso de que se trate de un ser natural.",
+        "requiredIntelligence": 16,
+        "retention": 0,
+        "zeon": 800
       },
       "intermediateGrade": {
-        "zeon": 3000,
-        "requiredIntelligence": 18,
-        "effect": "10.000 Puntos de presencia / Presencia máxima 220 / 5 reglas existenciales.",
-        "retention": 0
+        "effect": "Nivel 6 y 100 PD en el caso de que se trate de un ser natural.",
+        "requiredIntelligence": 17,
+        "retention": 0,
+        "zeon": 2000
       },
+      "level": 98,
+      "name": "El Don de la Vida",
+      "spellId": 39,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
       "advancedGrade": {
-        "zeon": 6000,
-        "requiredIntelligence": 19,
         "effect": "10.000 Puntos de presencia / Presencia máxima 260 / 10 reglas existenciales.",
-        "retention": 0
+        "requiredIntelligence": 19,
+        "retention": 0,
+        "zeon": 6000
       },
       "arcaneGrade": {
-        "zeon": 12000,
-        "requiredIntelligence": 20,
         "effect": "100.000 Puntos de presencia / Presencia máxima 320 / Cualquier número de reglas existenciales.",
-        "retention": 0
+        "requiredIntelligence": 20,
+        "retention": 0,
+        "zeon": 12000
       },
-      "withRetention": false,
-      "dailyRetention": true
+      "bookId": 3,
+      "dailyRetention": false,
+      "effect": "Permite a su lanzador obtener el poder absoluto de la creación, otorgándole la capacidad de concebir cualquier cosa que desee: continentes, océanos o incluso mundos enteros. A efectos de juego, otorga puntos de presencia para crear lo que este quiera, mientras no supere un límite de presencia determinada por el grado del conjuro. Este hechizo también puede imponer nuevas reglas a la realidad",
+      "initialGrade": {
+        "effect": "1.000 Puntos de presencia / Presencia máxima 180 / 1 regla existencial.",
+        "requiredIntelligence": 17,
+        "retention": 0,
+        "zeon": 1000
+      },
+      "intermediateGrade": {
+        "effect": "10.000 Puntos de presencia / Presencia máxima 220 / 5 reglas existenciales.",
+        "requiredIntelligence": 18,
+        "retention": 0,
+        "zeon": 3000
+      },
+      "level": 100,
+      "name": "Crear",
+      "spellId": 40,
+      "type": "Efecto",
+      "withRetention": false
     }
-  ]
+  ],
+  "type": "Mayor"
 }

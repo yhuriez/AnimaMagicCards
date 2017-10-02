@@ -1,366 +1,367 @@
 {
   "bookId": 24,
-  "bookName": "Libro de Tiempo",
+  "bookName": "TIEMPO",
   "description": "Para muchos ocultistas el principio que controla esta sub-vía es el más grande de todos, superior incluso a los de las propias vías mayores. Los que la emplean suelen ser llamados Chronomantes, o magos del tiempo, y su habilidad consiste en emplear la magia para controlar el fluir del tiempo como si fuera un elemento más.",
   "primaryBookUnaccessibles": [
+    "Nigromancia",
     "Aire",
     "Agua",
     "Fuego",
     "Tierra",
     "Esencia",
-    "Ilusión",
-    "Nigromancia."
+    "Ilusión"
   ],
   "spells": [
     {
-      "spellId": 1,
-      "bookId": 24,
-      "name": "Conocimiento Temporal",
-      "level": 4,
       "actionType": "Activa",
-      "type": "Efecto",
-      "effect": "El personaje puede percibir sobrenaturalmente el paso del tiempo. Grado Base Intermedio Avanzado Arcano      ",
-      "initialGrade": {
-        "zeon": 30,
-        "requiredIntelligence": 5,
-        "effect": "Permite percibir sobrenaturalmente la hora y fecha que es en ese instante determinado usando el calendario conocido por el lanzador. Intermedio: Como en grado base, pero el lanzador siente además con absoluta exactitud los segundos y milésimas de segundo. Además, permite sentir si existe alguna clase de alteración sobrenatural en el fluir del tiempo. Avanzado: Como en grado intermedio, pero el personaje puede fijar una alarma desde ese momento hasta que trascurra un periodo de tiempo que él mismo determine, sintiendo automáticamente cuando llegue dicho instante. Por ejemplo, podría determinar que quiere notar cuando pase un periodo de cuatro horas, doce minutos y siete segundos.",
-        "retention": 0
-      },
-      "intermediateGrade": {
-        "zeon": 50,
-        "requiredIntelligence": 7,
-        "effect": "150 metros / RM 160.",
-        "retention": 0
-      },
       "advancedGrade": {
-        "zeon": 70,
+        "effect": "Como en grado intermedio, pero el personaje puede fijar una alarma desde ese momento hasta que trascurra un periodo de tiempo que él mismo determine, sintiendo automáticamente cuando llegue dicho instante. Por ejemplo, podría determinar que quiere notar cuando pase un periodo de cuatro horas, doce minutos y siete segundos.",
         "requiredIntelligence": 10,
-        "effect": "200 metros / RM 200.",
-        "retention": 0
+        "retention": 0,
+        "zeon": 70
       },
       "arcaneGrade": {
-        "zeon": 90,
-        "requiredIntelligence": 12,
         "effect": "Como en grado avanzado, pero el lanzador puede calcular el periodo de tiempo que va a tardar algo en concluir, como cuanto le costará a una persona que anda a velocidad constante cruzar una playa, cuanto va a tardar una melodía en ocurrir.",
-        "retention": 0
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 90
       },
-      "withRetention": false,
-      "dailyRetention": false
+      "bookId": 24,
+      "dailyRetention": false,
+      "effect": "El personaje puede percibir sobrenaturalmente el paso del tiempo. Grado Base Intermedio Avanzado Arcano",
+      "initialGrade": {
+        "effect": "Permite percibir sobrenaturalmente la hora y fecha que es en ese instante determinado usando el calendario conocido por el lanzador.",
+        "requiredIntelligence": 5,
+        "retention": 0,
+        "zeon": 30
+      },
+      "intermediateGrade": {
+        "effect": "Como en grado base, pero el lanzador siente además con absoluta exactitud los segundos y milésimas de segundo. Además, permite sentir si existe alguna clase de alteración sobrenatural en el fluir del tiempo.",
+        "requiredIntelligence": 7,
+        "retention": 0,
+        "zeon": 50
+      },
+      "level": 4,
+      "name": "Conocimiento Temporal",
+      "spellId": 1,
+      "type": "Efecto",
+      "withRetention": false
     },
     {
-      "spellId": 2,
-      "bookId": 24,
-      "name": "Aceleración Temporal",
-      "level": 14,
       "actionType": "Activa",
-      "type": "Efecto",
+      "advancedGrade": {
+        "effect": "+2 Tipos de Movimientos / +40 al Turno / +20 a Toda Acción.",
+        "requiredIntelligence": 12,
+        "retention": 20,
+        "zeon": 180
+      },
+      "arcaneGrade": {
+        "effect": "+3 Tipos de Movimientos / +50 al Turno / +25 a Toda Acción.",
+        "requiredIntelligence": 15,
+        "retention": 25,
+        "zeon": 240
+      },
+      "bookId": 24,
+      "dailyRetention": false,
       "effect": "El brujo acelera su esencia ante el fluir del tiempo. Mientras que él percibe el mundo a cámara lenta, el resto sólo ve un borrón en movimiento. A efectos de juego, otorga diferentes bonos al lanzador o al individuo designado por este indicados por el grado del conjuro.",
       "initialGrade": {
-        "zeon": 100,
-        "requiredIntelligence": 7,
         "effect": "+1 Tipo de Movimiento / +20 al Turno / +10 a Toda Acción.",
-        "retention": 10
+        "requiredIntelligence": 7,
+        "retention": 10,
+        "zeon": 100
       },
       "intermediateGrade": {
-        "zeon": 140,
-        "requiredIntelligence": 10,
         "effect": "+2 Tipos de Movimientos / +30 al Turno / +15 a Toda Acción.",
-        "retention": 15
+        "requiredIntelligence": 10,
+        "retention": 15,
+        "zeon": 140
       },
-      "advancedGrade": {
-        "zeon": 180,
-        "requiredIntelligence": 12,
-        "effect": "+2 Tipos de Movimientos / +40 al Turno / +20 a Toda Acción.",
-        "retention": 20
-      },
-      "arcaneGrade": {
-        "zeon": 240,
-        "requiredIntelligence": 15,
-        "effect": "+3 Tipos de Movimientos / +50 al Turno / +25 a Toda Acción.",
-        "retention": 25
-      },
-      "withRetention": true,
-      "dailyRetention": false
+      "level": 14,
+      "name": "Aceleración Temporal",
+      "spellId": 2,
+      "type": "Efecto",
+      "withRetention": true
     },
     {
-      "spellId": 3,
-      "bookId": 24,
-      "name": "Lentitud Temporal",
-      "level": 24,
       "actionType": "Activa",
-      "type": "Efecto",
+      "advancedGrade": {
+        "effect": "-6 Tipos de Movimiento / -80 al Turno / -20 a Toda Acción / 50 metros de radio / 140 RM.",
+        "requiredIntelligence": 12,
+        "retention": 20,
+        "zeon": 200
+      },
+      "arcaneGrade": {
+        "effect": "-8 Tipos de Movimiento / -100 al Turno / -30 a Toda Acción / 100 metros de radio / 160 RM.",
+        "requiredIntelligence": 15,
+        "retention": 25,
+        "zeon": 250
+      },
+      "bookId": 24,
+      "dailyRetention": false,
       "effect": "Este conjuro afecta un área determinada de terreno dentro de la cual todo aquel individuo designado por el lanzador es arrastrado a un flujo temporal retardado. En consecuencia, los afectados se mueven mucho más lentamente, sufriendo así diversos penalizadores reflejados en los diferentes grados del sortilegio. El área afectada por Lentitud Temporal permanece estática en el lugar donde es lanzada. Para resistirse a sus efectos, es necesario superar una RM, pero alguien que haya fallado el control no podrá repetirlo hasta que salga de la influencia del conjuro.",
       "initialGrade": {
-        "zeon": 100,
-        "requiredIntelligence": 7,
         "effect": "-2 Tipos de Movimiento / -40 al Turno / 10 metros de radio / 100 RM.",
-        "retention": 10
+        "requiredIntelligence": 7,
+        "retention": 10,
+        "zeon": 100
       },
       "intermediateGrade": {
-        "zeon": 150,
-        "requiredIntelligence": 10,
         "effect": "-4 Tipos de Movimiento / -60 al Turno / -10 a Toda Acción / 25 metros de radio / 120 RM.",
-        "retention": 15
-      },
-      "advancedGrade": {
-        "zeon": 200,
-        "requiredIntelligence": 12,
-        "effect": "-6 Tipos de Movimiento / -80 al Turno / -20 a Toda Acción / 50 metros de radio / 140 RM.",
-        "retention": 20
-      },
-      "arcaneGrade": {
-        "zeon": 250,
-        "requiredIntelligence": 15,
-        "effect": "-8 Tipos de Movimiento / -100 al Turno / -30 a Toda Acción / 100 metros de radio / 160 RM.",
-        "retention": 25
-      },
-      "withRetention": true,
-      "dailyRetention": false
-    },
-    {
-      "spellId": 4,
-      "bookId": 24,
-      "name": "Estancar el Tiempo",
-      "level": 34,
-      "actionType": "Activa",
-      "type": "Automático",
-      "effect": "Este conjuro crea una burbuja sobrenatural que estanca el flujo de tiempo haciendo que, hasta que el sortilegio deje de funcionar, el estado de las cosas que se encuentran en su interior no pueda cambiar. A efectos de juego este hechizo memoriza el estado y condición actual de todo cuanto se encuentra en un radio de acción determinado por el grado del sortilegio en el instante en el que es lanzado, impidiendo en todo momento que, por mucho daño que cosas o personas reciban a partir de entonces, sus efectos o consecuencias puedan aparecer aún en su cuerpo. Por ejemplo, mientras este conjuro se mantenga, un personaje herido permanecerá con la misma cantidad de puntos de vida perdidos incluso si posteriormente recibe nuevos ataques que puedan llegar a producirle daño adicional o incluso matarle. De igual forma, los efectos negativos de carácter físico, como dolor o cansancio, tampoco tendrán efecto en ese momento. Lamentablemente, Estancar el Tiempo sólo puede retrasar los efectos de lo que realmente ha sucedido, y nunca evitarlos, por lo que todo perjuicio que un individuo o cosa haya sufrido durante el lapso de tiempo estancado aparecerá de inmediato en cuanto el conjuro finalice o salgan de su zona de influencia. Eso significa que, si alguien ha muerto en el interior de una zona estancada, por mucha curación que reciba posteriormente no podrá ser salvado cuando el conjuro finalice; ya estará muerto desde hace mucho. El brujo puede elegir libremente que es afectado y que no, siendo capaz de decidir que cosas pueden ser destruidas y cuales no. No obstante, este sortilegio nunca afecta al propio lanzador, pues es el nexo que vincula el pasado con el presente. El área afectada por Estancar el Tiempo permanece estática en el lugar donde es lanzada.      ",
-      "initialGrade": {
-        "zeon": 150,
-        "requiredIntelligence": 8,
-        "effect": "5 metros.",
-        "retention": 15
-      },
-      "intermediateGrade": {
-        "zeon": 200,
-        "requiredIntelligence": 11,
-        "effect": "10 metros.",
-        "retention": 20
-      },
-      "advancedGrade": {
-        "zeon": 280,
-        "requiredIntelligence": 13,
-        "effect": "25 metros.",
-        "retention": 30
-      },
-      "arcaneGrade": {
-        "zeon": 380,
-        "requiredIntelligence": 15,
-        "effect": "50 metros.",
-        "retention": 40
-      },
-      "withRetention": true,
-      "dailyRetention": false
-    },
-    {
-      "spellId": 5,
-      "bookId": 24,
-      "name": "Detener el Tiempo",
-      "level": 44,
-      "actionType": "Activa",
-      "type": "Automático",
-      "effect": "Este hechizo hace que el tiempo se detenga en el interior de un espacio determinado. Todo aquel individuo o cosa que, a partir del asalto posterior al lanzamiento del conjuro, se encuentre en el interior de su zona de efecto quedará congelado en el tiempo si no supera una RM. Las personas o cosas congeladas en el tiempo son completamente sólidas, por lo que nada puede interactuar con ellas, tocarlas no dañarlas de forma alguna, ni interactuar con nada más. Los seres con Gnosis 40 o superior pueden ignorar este hecho, siendo capaces de interactuar libremente con las cosas congeladas sin problema alguno. Alguien afectado por este conjuro sólo puede repetir el control de RM una vez al día. El área afectada por Detener el Tiempo permanece estática en el lugar donde es lanzada, y no es posible elegir blancos en su interior; afecta por igual todo cuanto se encuentre dentro de ella salvo al propio lanzador.      ",
-      "initialGrade": {
-        "zeon": 200,
-        "requiredIntelligence": 9,
-        "effect": "120 RM / 10 metros.",
-        "retention": 40
-      },
-      "intermediateGrade": {
-        "zeon": 300,
-        "requiredIntelligence": 12,
-        "effect": "140 RM / 25 metros.",
-        "retention": 60
-      },
-      "advancedGrade": {
-        "zeon": 400,
-        "requiredIntelligence": 14,
-        "effect": "160 RM / 50 metros.",
-        "retention": 80
-      },
-      "arcaneGrade": {
-        "zeon": 500,
-        "requiredIntelligence": 16,
-        "effect": "180 RM / 100 metros.",
-        "retention": 100
-      },
-      "withRetention": true,
-      "dailyRetention": true
-    },
-    {
-      "spellId": 6,
-      "bookId": 24,
-      "name": "Retroevolucionar",
-      "level": 54,
-      "actionType": "Activa",
-      "type": "Anímico.",
-      "effect": "Este sortilegio afecta la esencia de un objetivo, haciendo que su “existencia” retroceda en el tiempo. Naturalmente, el afectado no viaja al pasado propiamente; es su esencia la que regresa a un momento anterior de su vida. De ese modo, un anciano volvería a ser joven o un hombre adulto podría llegar a convertirse en un simple niño (o incluso un bebe). Lamentablemente, el tiempo retrocedido se borra de la vida del individuo, por lo que el afectado pierde esa parte de su vida, olvidando sus recuerdos o incluso perdiendo (o ganando) las capacidades que ha tenido anteriormente. Naturalmente, si es necesario es incluso posible alterar el nivel del afectado. Este conjuro no permite recuperar miembros cercenados ni anular efectos o daños producidos por seres de Gnosis 40 o superior. Para resistirse a sus efectos, es necesario realizar un control de RM contra la dificultad determinada por el grado del conjuro.      ",
-      "initialGrade": {
-        "zeon": 250,
         "requiredIntelligence": 10,
-        "effect": "120 RM / Retrocede hasta un día.",
-        "retention": 0
+        "retention": 15,
+        "zeon": 150
       },
-      "intermediateGrade": {
-        "zeon": 350,
+      "level": 24,
+      "name": "Lentitud Temporal",
+      "spellId": 3,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "25 metros.",
         "requiredIntelligence": 13,
-        "effect": "140 RM / Retrocede hasta un mes.",
-        "retention": 0
+        "retention": 30,
+        "zeon": 280
       },
-      "advancedGrade": {
-        "zeon": 450,
+      "arcaneGrade": {
+        "effect": "50 metros.",
         "requiredIntelligence": 15,
-        "effect": "160 RM / Retrocede hasta un año.",
-        "retention": 0
+        "retention": 40,
+        "zeon": 380
       },
-      "arcaneGrade": {
-        "zeon": 600,
-        "requiredIntelligence": 17,
-        "effect": "180 RM / Retrocede hasta una década.",
-        "retention": 0
-      },
-      "withRetention": false,
-      "dailyRetention": true
-    },
-    {
-      "spellId": 7,
       "bookId": 24,
-      "name": "Tanto el área afectada como el periodo de tiempo que es posible retroceder son determinados por el grado del conjuro. No hay tirada de Resistencia posible.",
-      "level": 64,
-      "actionType": "Activa",
-      "type": "Efecto",
-      "effect": "Este conjuro permite hacer que las fibras del tiempo retrocedan unos instantes en una zona determinada, deshaciendo cualquier suceso que haya acontecido en dicho periodo. De esa manera, se puede repetir nuevamente unos cuantos asaltos o incluso devolver a la vida a alguien que hubiera muerto en ese periodo de tiempo. Únicamente el lanzador, los seres con Gnosis 15 puntos superior a su natura o criaturas de naturaleza divina serán conscientes de lo que ha pasado en el periodo de tiempo deshecho; para el resto esos momentos nunca habrán pasado. Este conjuro no permite deshacer las acciones en las que esté directamente involucrado un ser con Gnosis 40 o superior, salvo si el lanzador tiene a su vez un Gnosis aún más elevado, ni tampoco devolver a la vida a alguien cuya alma ha quedado descreada.       Es importante puntualizar que en realidad el tiempo en general no retrocede, sino que separa una parte del mundo del continuo espacio-tiempo natural y lo hace retroceder brevemente. Por lo tanto, se crea una breve distorsión temporal que la existencia se ocupará de arreglar del modo menos dañino.             0  5 2     ",
+      "dailyRetention": false,
+      "effect": "Este conjuro crea una burbuja sobrenatural que estanca el flujo de tiempo haciendo que, hasta que el sortilegio deje de funcionar, el estado de las cosas que se encuentran en su interior no pueda cambiar. A efectos de juego este hechizo memoriza el estado y condición actual de todo cuanto se encuentra en un radio de acción determinado por el grado del sortilegio en el instante en el que es lanzado, impidiendo en todo momento que, por mucho daño que cosas o personas reciban a partir de entonces, sus efectos o consecuencias puedan aparecer aún en su cuerpo. Por ejemplo, mientras este conjuro se mantenga, un personaje herido permanecerá con la misma cantidad de puntos de vida perdidos incluso si posteriormente recibe nuevos ataques que puedan llegar a producirle daño adicional o incluso matarle. De igual forma, los efectos negativos de carácter físico, como dolor o cansancio, tampoco tendrán efecto en ese momento. Lamentablemente, Estancar el Tiempo sólo puede retrasar los efectos de lo que realmente ha sucedido, y nunca evitarlos, por lo que todo perjuicio que un individuo o cosa haya sufrido durante el lapso de tiempo estancado aparecerá de inmediato en cuanto el conjuro finalice o salgan de su zona de influencia. Eso significa que, si alguien ha muerto en el interior de una zona estancada, por mucha curación que reciba posteriormente no podrá ser salvado cuando el conjuro finalice ya estará muerto desde hace mucho. El brujo puede elegir libremente que es afectado y que no, siendo capaz de decidir que cosas pueden ser destruidas y cuales no. No obstante, este sortilegio nunca afecta al propio lanzador, pues es el nexo que vincula el pasado con el presente. El área afectada por Estancar el Tiempo permanece estática en el lugar donde es lanzada.",
       "initialGrade": {
-        "zeon": 200,
-        "requiredIntelligence": 11,
-        "effect": "15 segundos (5 asaltos) / 50 metros.",
-        "retention": 0
+        "effect": "5 metros.",
+        "requiredIntelligence": 8,
+        "retention": 15,
+        "zeon": 150
       },
       "intermediateGrade": {
-        "zeon": 350,
-        "requiredIntelligence": 14,
-        "effect": "30 segundos (10 asaltos) / 150 metros.",
-        "retention": 0
+        "effect": "10 metros.",
+        "requiredIntelligence": 11,
+        "retention": 20,
+        "zeon": 200
       },
-      "advancedGrade": {
-        "zeon": 500,
-        "requiredIntelligence": 16,
-        "effect": "Un minuto / 250 metros.",
-        "retention": 0
-      },
-      "arcaneGrade": {
-        "zeon": 800,
-        "requiredIntelligence": 18,
-        "effect": "Una hora / 1 kilómetro.",
-        "retention": 0
-      },
-      "withRetention": false,
-      "dailyRetention": true
+      "level": 34,
+      "name": "Estancar el Tiempo",
+      "spellId": 4,
+      "type": "Automático",
+      "withRetention": true
     },
     {
-      "spellId": 8,
-      "bookId": 24,
-      "name": "Salto Temporal",
-      "level": 74,
       "actionType": "Activa",
-      "type": "Anímico",
-      "effect": "Este conjuro afecta a un individuo o cosa haciendo que dé un salto temporal al futuro. A efectos de juego, el blanco del conjuro desaparece de donde está, apareciendo en el mismo sitio cierto periodo de tiempo después. Mientras que para él únicamente cambia el entorno y no percibe lapso alguno, quienes estaban a su lado en ese instante lo ven esfumarse por completo.       El lanzador es quien elige cuanto tiempo adelanta el afectado, siempre que este no se exceda de los límites determinados por el grado del conjuro. No obstante, hay un límite a sus efectos; existen ciertos momentos en la historia que marcan acontecimientos tan importantes existencialmente que son imposibles de evitar. Por eso, si el periodo de tiempo que adelanta un salto temporal pasa a través de uno de ellos, el individuo que esté saltando detendrá su avance, dando por finalizado el sortilegio antes de lo previsto. El objetivo del conjuro puede resistirse a sus efectos superando una RM.",
+      "advancedGrade": {
+        "effect": "160 RM / 50 metros.",
+        "requiredIntelligence": 14,
+        "retention": 80,
+        "zeon": 400
+      },
+      "arcaneGrade": {
+        "effect": "180 RM / 100 metros.",
+        "requiredIntelligence": 16,
+        "retention": 100,
+        "zeon": 500
+      },
+      "bookId": 24,
+      "dailyRetention": true,
+      "effect": "Este hechizo hace que el tiempo se detenga en el interior de un espacio determinado. Todo aquel individuo o cosa que, a partir del asalto posterior al lanzamiento del conjuro, se encuentre en el interior de su zona de efecto quedará congelado en el tiempo si no supera una RM. Las personas o cosas congeladas en el tiempo son completamente sólidas, por lo que nada puede interactuar con ellas, tocarlas no dañarlas de forma alguna, ni interactuar con nada más. Los seres con Gnosis 40 o superior pueden ignorar este hecho, siendo capaces de interactuar libremente con las cosas congeladas sin problema alguno. Alguien afectado por este conjuro sólo puede repetir el control de RM una vez al día. El área afectada por Detener el Tiempo permanece estática en el lugar donde es lanzada, y no es posible elegir blancos en su interior afecta por igual todo cuanto se encuentre dentro de ella salvo al propio lanzador.",
       "initialGrade": {
-        "zeon": 250,
-        "requiredIntelligence": 11,
-        "effect": "Hasta diez minutos / 120 RM.",
-        "retention": 0
+        "effect": "120 RM / 10 metros.",
+        "requiredIntelligence": 9,
+        "retention": 40,
+        "zeon": 200
       },
       "intermediateGrade": {
-        "zeon": 350,
-        "requiredIntelligence": 14,
-        "effect": "Hasta un día / 160 RM.",
-        "retention": 0
-      },
-      "advancedGrade": {
-        "zeon": 450,
-        "requiredIntelligence": 16,
-        "effect": "Hasta un mes / 200 RM.",
-        "retention": 0
-      },
-      "arcaneGrade": {
-        "zeon": 600,
-        "requiredIntelligence": 18,
-        "effect": "Hasta un año / 240 RM.",
-        "retention": 0
-      },
-      "withRetention": false,
-      "dailyRetention": false
-    },
-    {
-      "spellId": 9,
-      "bookId": 24,
-      "name": "Bucle Temporal",
-      "level": 84,
-      "actionType": "Activa",
-      "type": "Efecto",
-      "effect": "Este hechizo crea un bucle en un periodo de tiempo, haciendo que la historia se repita constantemente una y otra vez. Mientras el sortilegio se mantenga, al llegar el final del periodo determinado por el lanzador el tiempo se reinicia, dando nuevamente comienzo a los mismos acontecimientos. Salvo los individuos designados por el lanzador o quienes que tengan más de Gnosis 35 (o, en su defecto, aquellos cuyo Gnosis sea por lo menos 15 puntos por encima de su Natura), nadie será consciente de que la historia se repite.       Este conjuro tiene un área de efecto definida y, sin embargo, ello no significa que el tiempo avance fuera de esa zona. Cuando el conjuro finaliza, únicamente se considera que el último lapso de tiempo ha tenido verdaderamente lugar. Los seres con Gnosis 40 o mayor son conscientes de inmediato del lugar y posicionamiento de todos los bucles temporales existentes en ese instante. Si lo desea, el lanzador puede imponer un acontecimiento como final del sortilegio, haciendo que, en caso de ocurrir las cosas como ha designado, el hechizo termine de inmediato.       El mantenimiento de este sortilegio se calcula de un modo especial. Al contrario de las reglas generales, el hechicero debe de pagar el coste de mantenimiento al finalizar cada uno de los periodos que ha designado. Es decir, en caso de que establezca que el bucle temporal fuera de diez minutos, sería al transcurrir ese periodo cuando debería gastar su Zeon. Lamentablemente, al atar su esencia a un momento estático de la historia el lanzador de Bucle Temporal no puede recuperar Zeon de ningún modo mientras mantenga activo el conjuro.    No hay tirada de Resistencia posible contra un Bucle Temporal. Limitación Especial: En contra de las reglas generales de conjuros de Libre Acceso y sub-vías, Bucle Temporal se considera un conjuro de Alta Magia.      ",
-      "initialGrade": {
-        "zeon": 400,
-        "requiredIntelligence": 11,
-        "effect": "250 metros de radio / Hasta un día.",
-        "retention": 40
-      },
-      "intermediateGrade": {
-        "zeon": 600,
-        "requiredIntelligence": 14,
-        "effect": "500 metros de radio / Hasta una semana.",
-        "retention": 60
-      },
-      "advancedGrade": {
-        "zeon": 900,
-        "requiredIntelligence": 16,
-        "effect": "1 kilómetro de radio / Hasta un mes.",
-        "retention": 90
-      },
-      "arcaneGrade": {
-        "zeon": 1400,
-        "requiredIntelligence": 18,
-        "effect": "5 kilómetros de radio / Hasta un año.",
-        "retention": 140
-      },
-      "withRetention": true,
-      "dailyRetention": false
-    },
-    {
-      "spellId": 10,
-      "bookId": 24,
-      "name": "Solapar el Tiempo",
-      "level": 94,
-      "actionType": "Activa",
-      "type": "Efecto",
-      "effect": "Este hechizo permite al lanzador crear un punto de unión entre el presente y el pasado, haciendo que ambos instantes se unan en uno. Al hacerlo, todo lo que hubiera en el momento designado por el hechicero dentro de la zona que determine el grado del conjuro se manifiesta en el presente, como si siempre hubiera estado ahí.       En realidad, el pasado no se altera en absoluto; es el presente el que se modifica, al colarse en este una línea temporal anterior. Eso significa que, tanto personas o cosas que existieran en ese momento y lugar, reaparecen en la actualidad. No hay límite a la cantidad de elementos que son traídos dentro de la zona afectada; puede desde manifestarse ejércitos enteros hasta ciudades que existieron eones atrás. Los seres y objetos aparecidos no son realmente copias, pero al mismo tiempo, tampoco son completamente reales; se trata de seres fuera de su línea temporal, cuya existencia prolongada es, en el mejor de los casos, innatural.       En el caso de que se superpongan dos cosas idénticas en el mismo lugar (como es habitual en las construcciones duraderas y los accidentes geográficos), se impondrá la que tuviera más presencia en ese momento o, en el caso de ambas presencias sean muy parecidas, se mezclarán dando como resultado un punto intermedio entre ambas. De darse el caso de que una misma persona estuviera en el mismo lugar en ambos momentos, el resultado es siempre inestable; es posible que o bien se fusionen en uno, que existan como entes separados, o incluso que ambos sean completamente destruidos.       No obstante, este conjuro también tiene sus límites. En primer lugar, no se puede “traer” del pasado a alguien o algo que haya sido descreado o cuya alma fuese destruida (en el segundo de estos casos, su cuerpo sí aparecería, pero sería poco más que una carcasa vacía). Además, si se trae un objeto único de Nivel de Poder 5 que sigue existiendo en la actualidad, la manifestación del objeto sería incompleta, poseyendo cualidades muy inferiores a las del que sigue existiendo. Limitación Especial: En contra de las reglas generales de conjuros de Libre Acceso y sub-vías, Solapar el Tiempo se considera un conjuro de Magia Divina.",
-      "initialGrade": {
-        "zeon": 500,
+        "effect": "140 RM / 25 metros.",
         "requiredIntelligence": 12,
-        "effect": "5 metros de radio / Hasta un año en el pasado.",
-        "retention": 0
+        "retention": 60,
+        "zeon": 300
       },
-      "intermediateGrade": {
-        "zeon": 800,
-        "requiredIntelligence": 15,
-        "effect": "25 metros de radio / Hasta una década en el pasado.",
-        "retention": 0
-      },
+      "level": 44,
+      "name": "Detener el Tiempo",
+      "spellId": 5,
+      "type": "Automático",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
       "advancedGrade": {
-        "zeon": 1250,
-        "requiredIntelligence": 17,
-        "effect": "500 metros de radio / Hasta un siglo en el pasado.",
-        "retention": 0
+        "effect": "160 RM / Retrocede hasta un año.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 450
       },
       "arcaneGrade": {
-        "zeon": 2500,
-        "requiredIntelligence": 19,
-        "effect": "1 kilómetro de radio / Hasta mil años en el pasado.",
-        "retention": 0
+        "effect": "180 RM / Retrocede hasta una década.",
+        "requiredIntelligence": 17,
+        "retention": 0,
+        "zeon": 600
       },
-      "withRetention": false,
-      "dailyRetention": true
+      "bookId": 24,
+      "dailyRetention": false,
+      "effect": "Este sortilegio afecta la esencia de un objetivo, haciendo que su “existencia” retroceda en el tiempo. Naturalmente, el afectado no viaja al pasado propiamente es su esencia la que regresa a un momento anterior de su vida. De ese modo, un anciano volvería a ser joven o un hombre adulto podría llegar a convertirse en un simple niño (o incluso un bebe). Lamentablemente, el tiempo retrocedido se borra de la vida del individuo, por lo que el afectado pierde esa parte de su vida, olvidando sus recuerdos o incluso perdiendo (o ganando) las capacidades que ha tenido anteriormente. Naturalmente, si es necesario es incluso posible alterar el nivel del afectado. Este conjuro no permite recuperar miembros cercenados ni anular efectos o daños producidos por seres de Gnosis 40 o superior. Para resistirse a sus efectos, es necesario realizar un control de RM contra la dificultad determinada por el grado del conjuro.",
+      "initialGrade": {
+        "effect": "120 RM / Retrocede hasta un día.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 250
+      },
+      "intermediateGrade": {
+        "effect": "140 RM / Retrocede hasta un mes.",
+        "requiredIntelligence": 13,
+        "retention": 0,
+        "zeon": 350
+      },
+      "level": 54,
+      "name": "Retroevolucionar",
+      "spellId": 6,
+      "type": "Anímico.",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Un minuto / 250 metros.",
+        "requiredIntelligence": 16,
+        "retention": 0,
+        "zeon": 500
+      },
+      "arcaneGrade": {
+        "effect": "Una hora / 1 kilómetro.",
+        "requiredIntelligence": 18,
+        "retention": 0,
+        "zeon": 800
+      },
+      "bookId": 24,
+      "dailyRetention": false,
+      "effect": "Este conjuro permite hacer que las fibras del tiempo retrocedan unos instantes en una zona determinada, deshaciendo cualquier suceso que haya acontecido en dicho periodo. De esa manera, se puede repetir nuevamente unos cuantos asaltos o incluso devolver a la vida a alguien que hubiera muerto en ese periodo de tiempo. Únicamente el lanzador, los seres con Gnosis 15 puntos superior a su natura o criaturas de naturaleza divina serán conscientes de lo que ha pasado en el periodo de tiempo deshecho para el resto esos momentos nunca habrán pasado. Este conjuro no permite deshacer las acciones en las que esté directamente involucrado un ser con Gnosis 40 o superior, salvo si el lanzador tiene a su vez un Gnosis aún más elevado, ni tampoco devolver a la vida a alguien cuya alma ha quedado descreada. Es importante puntualizar que en realidad el tiempo en general no retrocede, sino que separa una parte del mundo del continuo espacio-tiempo natural y lo hace retroceder brevemente. Por lo tanto, se crea una breve distorsión temporal que la existencia se ocupará de arreglar del modo menos dañino. 0  5 2  Tanto el área afectada como el periodo de tiempo que es posible retroceder son determinados por el grado del conjuro. No hay tirada de Resistencia posible.",
+      "initialGrade": {
+        "effect": "15 segundos (5 asaltos) / 50 metros.",
+        "requiredIntelligence": 11,
+        "retention": 0,
+        "zeon": 200
+      },
+      "intermediateGrade": {
+        "effect": "30 segundos (10 asaltos) / 150 metros.",
+        "requiredIntelligence": 14,
+        "retention": 0,
+        "zeon": 350
+      },
+      "level": 64,
+      "name": "Deshacer el Tiempo",
+      "spellId": 7,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Hasta un mes / 200 RM.",
+        "requiredIntelligence": 16,
+        "retention": 0,
+        "zeon": 450
+      },
+      "arcaneGrade": {
+        "effect": "Hasta un año / 240 RM.",
+        "requiredIntelligence": 18,
+        "retention": 0,
+        "zeon": 600
+      },
+      "bookId": 24,
+      "dailyRetention": false,
+      "effect": "Este conjuro afecta a un individuo o cosa haciendo que dé un salto temporal al futuro. A efectos de juego, el blanco del conjuro desaparece de donde está, apareciendo en el mismo sitio cierto periodo de tiempo después. Mientras que para él únicamente cambia el entorno y no percibe lapso alguno, quienes estaban a su lado en ese instante lo ven esfumarse por completo. El lanzador es quien elige cuanto tiempo adelanta el afectado, siempre que este no se exceda de los límites determinados por el grado del conjuro. No obstante, hay un límite a sus efectos",
+      "initialGrade": {
+        "effect": "Hasta diez minutos / 120 RM.",
+        "requiredIntelligence": 11,
+        "retention": 0,
+        "zeon": 250
+      },
+      "intermediateGrade": {
+        "effect": "Hasta un día / 160 RM.",
+        "requiredIntelligence": 14,
+        "retention": 0,
+        "zeon": 350
+      },
+      "level": 74,
+      "name": "Salto Temporal",
+      "spellId": 8,
+      "type": "Anímico",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "1 kilómetro de radio / Hasta un mes.",
+        "requiredIntelligence": 16,
+        "retention": 90,
+        "zeon": 900
+      },
+      "arcaneGrade": {
+        "effect": "5 kilómetros de radio / Hasta un año.",
+        "requiredIntelligence": 18,
+        "retention": 140,
+        "zeon": 1400
+      },
+      "bookId": 24,
+      "dailyRetention": false,
+      "effect": "Este hechizo crea un bucle en un periodo de tiempo, haciendo que la historia se repita constantemente una y otra vez. Mientras el sortilegio se mantenga, al llegar el final del periodo determinado por el lanzador el tiempo se reinicia, dando nuevamente comienzo a los mismos acontecimientos. Salvo los individuos designados por el lanzador o quienes que tengan más de Gnosis 35 (o, en su defecto, aquellos cuyo Gnosis sea por lo menos 15 puntos por encima de su Natura), nadie será consciente de que la historia se repite. Este conjuro tiene un área de efecto definida y, sin embargo, ello no significa que el tiempo avance fuera de esa zona. Cuando el conjuro finaliza, únicamente se considera que el último lapso de tiempo ha tenido verdaderamente lugar. Los seres con Gnosis 40 o mayor son conscientes de inmediato del lugar y posicionamiento de todos los bucles temporales existentes en ese instante. Si lo desea, el lanzador puede imponer un acontecimiento como final del sortilegio, haciendo que, en caso de ocurrir las cosas como ha designado, el hechizo termine de inmediato. El mantenimiento de este sortilegio se calcula de un modo especial. Al contrario de las reglas generales, el hechicero debe de pagar el coste de mantenimiento al finalizar cada uno de los periodos que ha designado. Es decir, en caso de que establezca que el bucle temporal fuera de diez minutos, sería al transcurrir ese periodo cuando debería gastar su Zeon. Lamentablemente, al atar su esencia a un momento estático de la historia el lanzador de Bucle Temporal no puede recuperar Zeon de ningún modo mientras mantenga activo el conjuro. No hay tirada de Resistencia posible contra un Bucle Temporal. Limitación Especial",
+      "initialGrade": {
+        "effect": "250 metros de radio / Hasta un día.",
+        "requiredIntelligence": 11,
+        "retention": 40,
+        "zeon": 400
+      },
+      "intermediateGrade": {
+        "effect": "500 metros de radio / Hasta una semana.",
+        "requiredIntelligence": 14,
+        "retention": 60,
+        "zeon": 600
+      },
+      "level": 84,
+      "name": "Bucle Temporal",
+      "spellId": 9,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "500 metros de radio / Hasta un siglo en el pasado.",
+        "requiredIntelligence": 17,
+        "retention": 0,
+        "zeon": 1250
+      },
+      "arcaneGrade": {
+        "effect": "1 kilómetro de radio / Hasta mil años en el pasado.",
+        "requiredIntelligence": 19,
+        "retention": 0,
+        "zeon": 2500
+      },
+      "bookId": 24,
+      "dailyRetention": false,
+      "effect": "Este hechizo permite al lanzador crear un punto de unión entre el presente y el pasado, haciendo que ambos instantes se unan en uno. Al hacerlo, todo lo que hubiera en el momento designado por el hechicero dentro de la zona que determine el grado del conjuro se manifiesta en el presente, como si siempre hubiera estado ahí. En realidad, el pasado no se altera en absoluto En el caso de que se superpongan dos cosas idénticas en el mismo lugar (como es habitual en las construcciones duraderas y los accidentes geográficos), se impondrá la que tuviera más presencia en ese momento o, en el caso de ambas presencias sean muy parecidas, se mezclarán dando como resultado un punto intermedio entre ambas. De darse el caso de que una misma persona estuviera en el mismo lugar en ambos momentos, el resultado es siempre inestable No obstante, este conjuro también tiene sus límites. En primer lugar, no se puede “traer” del pasado a alguien o algo que haya sido descreado o cuya alma fuese destruida (en el segundo de estos casos, su cuerpo sí aparecería, pero sería poco más que una carcasa vacía). Además, si se trae un objeto único de Nivel de Poder 5 que sigue existiendo en la actualidad, la manifestación del objeto sería incompleta, poseyendo cualidades muy inferiores a las del que sigue existiendo. Limitación Especial",
+      "initialGrade": {
+        "effect": "5 metros de radio / Hasta un año en el pasado.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 500
+      },
+      "intermediateGrade": {
+        "effect": "25 metros de radio / Hasta una década en el pasado.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 800
+      },
+      "level": 94,
+      "name": "Solapar el Tiempo",
+      "spellId": 10,
+      "type": "Efecto La magia del tiempo en Gaïa Al contrario que otras vías de magia, todos los conjuros relacionados con el tiempo en Gaïa están enormemente limitados y controlados por los Poderes en la Sombra. Por ello, cualquier sortilegio relacionado con el continuo espacio tiempo que provoque una posible alteración en la historia, simplemente no tiene efecto, al quedar anulado por los sistemas Ormus de Imperium.",
+      "withRetention": false
     }
-  ]
+  ],
+  "type": "Sub-Vía"
 }

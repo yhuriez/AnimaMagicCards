@@ -1,363 +1,364 @@
 {
   "bookId": 21,
-  "bookName": "Libro de Conocimiento",
+  "bookName": "CONOCIMIENTO",
   "description": "Conocimiento es una sub-vía primaria que domina el propio concepto del saber. Los hechiceros que la usan tienen control sobre todo lo que se puede llegar a aprender.",
   "primaryBookUnaccessibles": [
     "Destrucción",
-    "Fuego",
     "Tierra",
-    "Ilusión."
+    "Fuego",
+    "Ilusión"
   ],
   "spells": [
     {
-      "spellId": 1,
-      "bookId": 21,
-      "name": "Categorizar",
-      "level": 4,
       "actionType": "Activa",
-      "type": "Efecto.",
+      "advancedGrade": {
+        "effect": "Obtiene una vaga idea de como funciona, aunque no para que sirve.",
+        "requiredIntelligence": 9,
+        "retention": 0,
+        "zeon": 90
+      },
+      "arcaneGrade": {
+        "effect": "El lanzador obtiene una vaga idea de como se creó el objeto, aunque no lo suficiente como para recrearlo.",
+        "requiredIntelligence": 11,
+        "retention": 0,
+        "zeon": 120
+      },
+      "bookId": 21,
+      "dailyRetention": false,
       "effect": "El lanzador del conjuro obtiene conocimiento sobre la naturaleza de una creación, como usarlo sobre un plato de cocina tratando de averiguar su receta, o un artilugio para ver como esta hecho y de que esta creado. No otorga al lanzador conocimientos de como realizar tal cosa pero al menos le guía en que materia ha de buscar o que elementos ha de utilizar. Si el objeto o creación es especialmente complejo o posee una presencia muy elevada será inmune a este hechizo.",
       "initialGrade": {
-        "zeon": 30,
-        "requiredIntelligence": 5,
         "effect": "El lanzador sabrá en que campo de estudio se ampara: la cocina, mecánica, herrería... sin adquirir más datos.",
-        "retention": 0
+        "requiredIntelligence": 5,
+        "retention": 0,
+        "zeon": 30
       },
       "intermediateGrade": {
-        "zeon": 60,
-        "requiredIntelligence": 7,
         "effect": "Obtiene información de los materiales de los que está compuesto, así como una idea aproximada del porcentaje de cada uno en el conjunto final.",
-        "retention": 0
+        "requiredIntelligence": 7,
+        "retention": 0,
+        "zeon": 60
       },
-      "advancedGrade": {
-        "zeon": 90,
-        "requiredIntelligence": 9,
-        "effect": "Obtiene una vaga idea de como funciona, aunque no para que sirve.",
-        "retention": 0
-      },
-      "arcaneGrade": {
-        "zeon": 120,
-        "requiredIntelligence": 11,
-        "effect": "El lanzador obtiene una vaga idea de como se creó el objeto, aunque no lo suficiente como para recrearlo.",
-        "retention": 0
-      },
-      "withRetention": false,
-      "dailyRetention": false
+      "level": 4,
+      "name": "Categorizar",
+      "spellId": 1,
+      "type": "Efecto.",
+      "withRetention": false
     },
     {
-      "spellId": 2,
-      "bookId": 21,
-      "name": "Conocimiento",
-      "level": 14,
       "actionType": "Activa",
-      "type": "Efecto",
+      "advancedGrade": {
+        "effect": "80 en una habilidad.",
+        "requiredIntelligence": 11,
+        "retention": 15,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "100 en una habilidad.",
+        "requiredIntelligence": 13,
+        "retention": 20,
+        "zeon": 160
+      },
+      "bookId": 21,
+      "dailyRetention": false,
       "effect": "Otorga al lanzador un conocimiento innato en una materia. El hechicero obtiene un valor en la habilidad de conocimiento que desee, sustituyendo la que tuviese de por si. Un personaje puede tener varias veces lanzado este hechizo, pero cada vez ha de escoger un conocimiento diferente.",
       "initialGrade": {
-        "zeon": 40,
-        "requiredIntelligence": 6,
         "effect": "40 en una habilidad.",
-        "retention": 5
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 40
       },
       "intermediateGrade": {
-        "zeon": 80,
-        "requiredIntelligence": 9,
         "effect": "60 en una habilidad.",
-        "retention": 10
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 80
       },
-      "advancedGrade": {
-        "zeon": 120,
-        "requiredIntelligence": 11,
-        "effect": "80 en una habilidad.",
-        "retention": 15
-      },
-      "arcaneGrade": {
-        "zeon": 160,
-        "requiredIntelligence": 13,
-        "effect": "100 en una habilidad.",
-        "retention": 20
-      },
-      "withRetention": true,
-      "dailyRetention": false
+      "level": 14,
+      "name": "Conocimiento",
+      "spellId": 2,
+      "type": "Efecto",
+      "withRetention": true
     },
     {
-      "spellId": 3,
-      "bookId": 21,
-      "name": "Saber Debilidad",
-      "level": 24,
       "actionType": "Activa",
-      "type": "Detección",
+      "advancedGrade": {
+        "effect": "160 RM.",
+        "requiredIntelligence": 11,
+        "retention": 0,
+        "zeon": 140
+      },
+      "arcaneGrade": {
+        "effect": "180 RM.",
+        "requiredIntelligence": 13,
+        "retention": 0,
+        "zeon": 180
+      },
+      "bookId": 21,
+      "dailyRetention": false,
       "effect": "Permite al hechicero ver las imperfecciones y debilidades de algo o alguien. Si se lanza sobre un ser, averiguará sus defectos y debilidades, mientras que si es sobre un objeto, sabrá si es especialmente débil ante algo y cual es su punto de fisura. La única condición para ser afectado por este conjuro es encontrarse en presencia del lanzador, aunque el objetivo puede resistirse a sus efectos superando una RM.",
       "initialGrade": {
-        "zeon": 60,
-        "requiredIntelligence": 7,
         "effect": "120 RM.",
-        "retention": 0
+        "requiredIntelligence": 7,
+        "retention": 0,
+        "zeon": 60
       },
       "intermediateGrade": {
-        "zeon": 100,
-        "requiredIntelligence": 9,
         "effect": "140 RM.",
-        "retention": 0
+        "requiredIntelligence": 9,
+        "retention": 0,
+        "zeon": 100
       },
-      "advancedGrade": {
-        "zeon": 140,
-        "requiredIntelligence": 11,
-        "effect": "160 RM.",
-        "retention": 0
-      },
-      "arcaneGrade": {
-        "zeon": 180,
-        "requiredIntelligence": 13,
-        "effect": "180 RM.",
-        "retention": 0
-      },
-      "withRetention": false,
-      "dailyRetention": false
+      "level": 24,
+      "name": "Saber Debilidad",
+      "spellId": 3,
+      "type": "Detección Ilustrado por",
+      "withRetention": false
     },
     {
-      "spellId": 4,
-      "bookId": 21,
-      "name": "Saber la Verdad",
-      "level": 34,
       "actionType": "Activa",
-      "type": "Detección.",
+      "advancedGrade": {
+        "effect": "RM 120.",
+        "requiredIntelligence": 11,
+        "retention": 20,
+        "zeon": 160
+      },
+      "arcaneGrade": {
+        "effect": "RM 140.",
+        "requiredIntelligence": 13,
+        "retention": 20,
+        "zeon": 200
+      },
+      "bookId": 21,
+      "dailyRetention": true,
       "effect": "El hechicero sabrá cuando alguien esta mintiendo ante él. Si alguien lo hace frente al lanzador, deberá superar una RM contra la dificultad determinada por el grado del conjuro. En caso de fallarla, el hechicero sabrá que ha mentido en algo, aunque no específicamente en que.",
       "initialGrade": {
-        "zeon": 80,
-        "requiredIntelligence": 7,
         "effect": "RM 80.",
-        "retention": 10
+        "requiredIntelligence": 7,
+        "retention": 10,
+        "zeon": 80
       },
       "intermediateGrade": {
-        "zeon": 120,
-        "requiredIntelligence": 9,
         "effect": "RM 100.",
-        "retention": 15
+        "requiredIntelligence": 9,
+        "retention": 15,
+        "zeon": 120
       },
-      "advancedGrade": {
-        "zeon": 160,
-        "requiredIntelligence": 11,
-        "effect": "RM 120.",
-        "retention": 20
-      },
-      "arcaneGrade": {
-        "zeon": 200,
-        "requiredIntelligence": 13,
-        "effect": "RM 140.",
-        "retention": 20
-      },
-      "withRetention": true,
-      "dailyRetention": true
+      "level": 34,
+      "name": "Saber la Verdad",
+      "spellId": 4,
+      "type": "Detección.",
+      "withRetention": true
     },
     {
-      "spellId": 5,
-      "bookId": 21,
-      "name": "Conocimiento Mágico",
-      "level": 44,
       "actionType": "Activa",
-      "type": "Efecto",
+      "advancedGrade": {
+        "effect": "Un conjuro de hasta nivel 40.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 200
+      },
+      "arcaneGrade": {
+        "effect": "Un conjuro de hasta nivel 50.",
+        "requiredIntelligence": 14,
+        "retention": 0,
+        "zeon": 250
+      },
+      "bookId": 21,
+      "dailyRetention": false,
       "effect": "El lanzador obtiene el conocimiento de lanzar un conjuro de una vía que no conoce, siempre y cuando dicho sortilegio no sea de un nivel superior a lo que indique el grado del conjuro. Una vez ejecutado Conocimiento Mágico, el brujo tiene un periodo máximo de 5 asaltos para usar el nuevo sortilegio, o perderá los beneficios de este sortilegio. Este conjuro no permite usar un sortilegio de una vía que resulte opuesta a aquella de la que depende esta sub-vía.",
       "initialGrade": {
-        "zeon": 100,
-        "requiredIntelligence": 8,
         "effect": "Un conjuro de hasta nivel 20.",
-        "retention": 0
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 100
       },
       "intermediateGrade": {
-        "zeon": 150,
-        "requiredIntelligence": 10,
         "effect": "Un conjuro de hasta nivel 30.",
-        "retention": 0
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 150
       },
-      "advancedGrade": {
-        "zeon": 200,
-        "requiredIntelligence": 12,
-        "effect": "Un conjuro de hasta nivel 40.",
-        "retention": 0
-      },
-      "arcaneGrade": {
-        "zeon": 250,
-        "requiredIntelligence": 14,
-        "effect": "Un conjuro de hasta nivel 50.",
-        "retention": 0
-      },
-      "withRetention": false,
-      "dailyRetention": true
+      "level": 44,
+      "name": "Conocimiento Mágico",
+      "spellId": 5,
+      "type": "Efecto",
+      "withRetention": false
     },
     {
-      "spellId": 6,
-      "bookId": 21,
-      "name": "Conocimiento de Combate",
-      "level": 54,
       "actionType": "Activa",
-      "type": "Automático",
+      "advancedGrade": {
+        "effect": "180 RM/ +30 a toda acción enfrentada.",
+        "requiredIntelligence": 11,
+        "retention": 20,
+        "zeon": 160
+      },
+      "arcaneGrade": {
+        "effect": "200 RM/ +40 a toda acción enfrentada.",
+        "requiredIntelligence": 13,
+        "retention": 20,
+        "zeon": 200
+      },
+      "bookId": 21,
+      "dailyRetention": false,
       "effect": "El hechicero percibe y entiende las habilidades de un adversario, así como su metodología de combate y como anticiparse a sus movimientos. Por tanto, si el objetivo no supera la RM del conjuro, el lanzador obtiene un bono a todas las habilidades enfrentadas a dicho enemigo. La condición para verse afectado por este sortilegio es simplemente estar en presencia del hechicero.",
       "initialGrade": {
-        "zeon": 80,
-        "requiredIntelligence": 7,
         "effect": "140 RM / +20 a toda acción enfrentada.",
-        "retention": 5
+        "requiredIntelligence": 7,
+        "retention": 5,
+        "zeon": 80
       },
       "intermediateGrade": {
-        "zeon": 120,
-        "requiredIntelligence": 9,
         "effect": "160 RM/ +30 a toda acción enfrentada.",
-        "retention": 10
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 120
       },
-      "advancedGrade": {
-        "zeon": 160,
-        "requiredIntelligence": 11,
-        "effect": "180 RM/ +30 a toda acción enfrentada.",
-        "retention": 20
-      },
-      "arcaneGrade": {
-        "zeon": 200,
-        "requiredIntelligence": 13,
-        "effect": "200 RM/ +40 a toda acción enfrentada.",
-        "retention": 20
-      },
-      "withRetention": true,
-      "dailyRetention": false
+      "level": 54,
+      "name": "Conocimiento de Combate",
+      "spellId": 6,
+      "type": "Automático",
+      "withRetention": true
     },
     {
-      "spellId": 7,
-      "bookId": 21,
-      "name": "Aprendizaje",
-      "level": 64,
       "actionType": "Activa",
-      "type": "Automático.",
+      "advancedGrade": {
+        "effect": "Disminuye en tres la dificultad del grado de aprendizaje.",
+        "requiredIntelligence": 12,
+        "retention": 30,
+        "zeon": 200
+      },
+      "arcaneGrade": {
+        "effect": "Disminuye en cuatro la dificultad del grado de aprendizaje.",
+        "requiredIntelligence": 14,
+        "retention": 40,
+        "zeon": 250
+      },
+      "bookId": 21,
+      "dailyRetention": true,
       "effect": "El blanco del hechizo mejora su capacidad de aprender a niveles imposibles, disminuyendo el tiempo de estudio o practica para dominar el conocimiento que desea alcanzar. Por ejemplo, podría lanzarse para aprender un sortilegio y este disminuía un grado su nivel de dificultad.",
       "initialGrade": {
-        "zeon": 100,
-        "requiredIntelligence": 8,
         "effect": "Disminuye en uno la dificultad del grado de aprendizaje.",
-        "retention": 10
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 100
       },
       "intermediateGrade": {
-        "zeon": 150,
-        "requiredIntelligence": 10,
         "effect": "Disminuye en dos la dificultad del grado de aprendizaje.",
-        "retention": 20
+        "requiredIntelligence": 10,
+        "retention": 20,
+        "zeon": 150
       },
-      "advancedGrade": {
-        "zeon": 200,
-        "requiredIntelligence": 12,
-        "effect": "Disminuye en tres la dificultad del grado de aprendizaje.",
-        "retention": 30
-      },
-      "arcaneGrade": {
-        "zeon": 250,
-        "requiredIntelligence": 14,
-        "effect": "Disminuye en cuatro la dificultad del grado de aprendizaje.",
-        "retention": 40
-      },
-      "withRetention": true,
-      "dailyRetention": true
+      "level": 64,
+      "name": "Aprendizaje",
+      "spellId": 7,
+      "type": "Automático.",
+      "withRetention": true
     },
     {
-      "spellId": 8,
-      "bookId": 21,
-      "name": "Consejero",
-      "level": 74,
       "actionType": "Activa",
-      "type": "Efecto",
+      "advancedGrade": {
+        "effect": "El lanzador obtiene un consejo muy aproximado sobre las decisiones que ha de tomar o hacer. El índice de acierto es muy elevado.",
+        "requiredIntelligence": 11,
+        "retention": 15,
+        "zeon": 140
+      },
+      "arcaneGrade": {
+        "effect": "El lanzador obtiene un consejo detallado con todas las posibilidades y posibles consecuencias de sus acciones, así como un porcentaje aproximado de las posibilidades de éxito que tiene cada una de ellas.",
+        "requiredIntelligence": 13,
+        "retention": 20,
+        "zeon": 200
+      },
+      "bookId": 21,
+      "dailyRetention": false,
       "effect": "Como su nombre indica, este hechizo aconseja sabiamente al lanzador respecto a una cuestión o duda. El conjuro no adivinará ni tendrá conocimientos mayores a los que posea el lanzador, pero usando sus conocimientos como base aconsejará lo mejor posible al lanzador.",
       "initialGrade": {
-        "zeon": 60,
-        "requiredIntelligence": 6,
         "effect": "El lanzador obtiene un consejo aproximado sobre cual es la mejor de las decisiones que ha de tomar. El índice de acierto es elevado, pero dista de ser una predicción perfecta.",
-        "retention": 5
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 60
       },
       "intermediateGrade": {
-        "zeon": 100,
+        "effect": "El consejero mostrará el espectro de posibilidades y las posibles consecuencias de sus acontecimientos así como la más apropiada para realizar.",
         "requiredIntelligence": 9,
-        "effect": "El consejero mostrará el espectro de posibilidades y las posibles consecuencias de sus acontecimientos así como la más apropiada para realizar. Avanzado: El lanzador obtiene un consejo muy aproximado sobre las decisiones que ha de tomar o hacer. El índice de acierto es muy elevado.",
-        "retention": 10
+        "retention": 10,
+        "zeon": 100
       },
-      "advancedGrade": {
-        "zeon": 140,
-        "requiredIntelligence": 11,
-        "effect": "160 RM.",
-        "retention": 15
-      },
-      "arcaneGrade": {
-        "zeon": 200,
-        "requiredIntelligence": 13,
-        "effect": "El lanzador obtiene un consejo detallado con todas las posibilidades y posibles consecuencias de sus acciones, así como un porcentaje aproximado de las posibilidades de éxito que tiene cada una de ellas.",
-        "retention": 20
-      },
-      "withRetention": true,
-      "dailyRetention": false
+      "level": 74,
+      "name": "Consejero",
+      "spellId": 8,
+      "type": "Efecto",
+      "withRetention": true
     },
     {
-      "spellId": 9,
-      "bookId": 21,
-      "name": "Otorgar Conocimiento",
-      "level": 84,
       "actionType": "Activa",
-      "type": "Anímico",
+      "advancedGrade": {
+        "effect": "RM 160 / Habilidad intelectual de hasta 150 o Nivel de magia 60.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 200
+      },
+      "arcaneGrade": {
+        "effect": "RM 180 / Habilidad intelectual de hasta 200 o Nivel de magia 80.",
+        "requiredIntelligence": 14,
+        "retention": 20,
+        "zeon": 250
+      },
+      "bookId": 21,
+      "dailyRetention": true,
       "effect": "Permite traspasar el conocimiento de un individuo a otro. Por ejemplo, podría hacer que alguien perdiese sus conocimientos sobre arqueología o rituales ocultistas para otorgárselos a otro individuo mientras dure el sortilegio. En reglas de juego, Otorgar Conocimiento permite transmitir una habilidad intelectual cuyo valor no supere lo indicado por el grado del conjuro. Nótese que el lanzador puede elegir si traspasar toda la información pertinente, o sólo de un tema en concreto. Esta habilidad también permite enviar información referente al conocimiento de conjuros, en una cantidad máxima equivalente al valor determinado por el sortilegio. En tal caso, si por ejemplo el lanzador traspasa 40 niveles de magia de Luz un individuo que tiene nivel de vía 70, el afectado perdería la capacidad de lanzar conjuros de nivel 2 a 40, pero podría seguir lanzándolos de nivel 42 a 70. Es importante recordar que este hechizo no otorga el Don, por lo que si se transfiere conjuros a alguien sin dicha ventaja, simplemente no podrá usarlos. Resistirse a los efectos de este sortilegio requiere superar una RM determinada por el grado del conjuro. Alguien afectado sólo puede repetir el control una vez al día.",
       "initialGrade": {
-        "zeon": 100,
-        "requiredIntelligence": 8,
         "effect": "RM 120 / Habilidad intelectual de hasta 50 o Nivel de magia 20.",
-        "retention": 5
+        "requiredIntelligence": 8,
+        "retention": 5,
+        "zeon": 100
       },
       "intermediateGrade": {
-        "zeon": 150,
-        "requiredIntelligence": 10,
         "effect": "RM 140 / Habilidad intelectual de hasta 100 o Nivel de magia 40.",
-        "retention": 10
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 150
       },
-      "advancedGrade": {
-        "zeon": 200,
-        "requiredIntelligence": 12,
-        "effect": "RM 160 / Habilidad intelectual de hasta 150 o Nivel de magia 60.",
-        "retention": 15
-      },
-      "arcaneGrade": {
-        "zeon": 250,
-        "requiredIntelligence": 14,
-        "effect": "RM 180 / Habilidad intelectual de hasta 200 o Nivel de magia 80.",
-        "retention": 20
-      },
-      "withRetention": true,
-      "dailyRetention": true
+      "level": 84,
+      "name": "Otorgar Conocimiento",
+      "spellId": 9,
+      "type": "Anímico",
+      "withRetention": true
     },
     {
-      "spellId": 10,
-      "bookId": 21,
-      "name": "Vida",
-      "level": 94,
       "actionType": "Activa",
-      "type": "Efecto",
-      "effect": "Este conjuro otorga temporalmente experiencias vitales al personaje, permitiéndole incrementar unos instantes sus habilidades y conocimientos. A efectos de juego, otorga niveles adicionales al lanzador, dándole momentáneamente la capacidad de usar los PD obtenidos para mejorar con absoluta normalidad. Los efectos de este conjuro no se superponen, y el hechicero sólo puede beneficiarse de un conjuro de Vida a la vez.",
-      "initialGrade": {
-        "zeon": 400,
-        "requiredIntelligence": 10,
-        "effect": "+1 Nivel.",
-        "retention": 40
-      },
-      "intermediateGrade": {
-        "zeon": 600,
-        "requiredIntelligence": 12,
-        "effect": "+2 Niveles.",
-        "retention": 60
-      },
       "advancedGrade": {
-        "zeon": 800,
-        "requiredIntelligence": 14,
         "effect": "+3 Niveles.",
-        "retention": 80
+        "requiredIntelligence": 14,
+        "retention": 80,
+        "zeon": 800
       },
       "arcaneGrade": {
-        "zeon": 1000,
-        "requiredIntelligence": 16,
         "effect": "+4 Niveles.",
-        "retention": 100
+        "requiredIntelligence": 16,
+        "retention": 100,
+        "zeon": 1000
       },
-      "withRetention": true,
-      "dailyRetention": false
+      "bookId": 21,
+      "dailyRetention": false,
+      "effect": "Este conjuro otorga temporalmente experiencias vitales al personaje, permitiéndole incrementar unos instantes sus habilidades y conocimientos. A efectos de juego, otorga niveles adicionales al lanzador, dándole momentáneamente la capacidad de usar los PD obtenidos para mejorar con absoluta normalidad. Los efectos de este conjuro no se superponen, y el hechicero sólo puede beneficiarse de un conjuro de Vida a la vez.",
+      "initialGrade": {
+        "effect": "+1 Nivel.",
+        "requiredIntelligence": 10,
+        "retention": 40,
+        "zeon": 400
+      },
+      "intermediateGrade": {
+        "effect": "+2 Niveles.",
+        "requiredIntelligence": 12,
+        "retention": 60,
+        "zeon": 600
+      },
+      "level": 94,
+      "name": "Vida",
+      "spellId": 10,
+      "type": "Efecto",
+      "withRetention": true
     }
-  ]
+  ],
+  "type": "Sub-Vía"
 }

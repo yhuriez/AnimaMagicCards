@@ -1,364 +1,365 @@
 {
   "bookId": 23,
-  "bookName": "Libro de Sueños",
+  "bookName": "SUEÑOS",
   "description": "Sueños es la vía de magia que controla el mundo onírico de los soñadores, así como su reflejo en la Vigilia.",
   "primaryBookUnaccessibles": [
     "Creación",
     "Destrucción",
     "Agua",
-    "Fuego",
-    "Tierra."
+    "Tierra",
+    "Fuego"
   ],
   "spells": [
     {
-      "spellId": 1,
-      "bookId": 23,
-      "name": "Sentir los Sueños",
-      "level": 4,
       "actionType": "Activa",
-      "type": "Tipo de conjuro: Detección",
+      "advancedGrade": {
+        "effect": "200 metros / RM 200.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 80
+      },
+      "arcaneGrade": {
+        "effect": "500 metros / RM 240",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 100
+      },
+      "bookId": 23,
+      "dailyRetention": false,
       "effect": "Mediante este conjuro el hechicero es capaz de localizar las energías oníricas de todos los seres que estén soñando cerca de él. Además, mediante la energía que desprenden podrá saber si están teniendo sueños plácidos o por el contrario, terribles pesadillas. Para resistirse a la detección, los durmientes deben superar una RM.",
       "initialGrade": {
-        "zeon": 40,
-        "requiredIntelligence": 5,
         "effect": "50 metros / RM 120.",
-        "retention": 0
+        "requiredIntelligence": 5,
+        "retention": 0,
+        "zeon": 40
       },
       "intermediateGrade": {
-        "zeon": 60,
-        "requiredIntelligence": 8,
         "effect": "150 metros / RM 160.",
-        "retention": 0
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 60
       },
-      "advancedGrade": {
-        "zeon": 80,
-        "requiredIntelligence": 10,
-        "effect": "200 metros / RM 200.",
-        "retention": 0
-      },
-      "arcaneGrade": {
-        "zeon": 100,
-        "requiredIntelligence": 12,
-        "effect": "500 metros / RM 240",
-        "retention": 0
-      },
-      "withRetention": false,
-      "dailyRetention": false
+      "level": 4,
+      "name": "Sentir los Sueños",
+      "spellId": 1,
+      "type": "Detección",
+      "withRetention": false
     },
     {
-      "spellId": 2,
-      "bookId": 23,
-      "name": "Sueño imperturbable",
-      "level": 14,
       "actionType": "Activa",
-      "type": "Tipo de conjuro: Efecto",
+      "advancedGrade": {
+        "effect": "+80 RM o RP.",
+        "requiredIntelligence": 10,
+        "retention": 5,
+        "zeon": 100
+      },
+      "arcaneGrade": {
+        "effect": "+100 RM o RP.",
+        "requiredIntelligence": 12,
+        "retention": 10,
+        "zeon": 120
+      },
+      "bookId": 23,
+      "dailyRetention": true,
       "effect": "Este hechizo protege a un personaje de ser asaltado por conjuros o efectos de cualquier tipo relacionado con los sueños, otorgándole un bono a la RM y RP contra tales menesteres. De igual forma, este conjuro evita que el personaje sea trasportado involuntariamente hasta la Vigilia, otorgándole el mismo bono a sus Resistencias en caso de que alguien trate de forzarle a ir en contra de su voluntad.",
       "initialGrade": {
-        "zeon": 60,
-        "requiredIntelligence": 5,
         "effect": "+40 RM o RP.",
-        "retention": 5
+        "requiredIntelligence": 5,
+        "retention": 5,
+        "zeon": 60
       },
       "intermediateGrade": {
-        "zeon": 80,
-        "requiredIntelligence": 8,
         "effect": "+60 RM o RP.",
-        "retention": 5
+        "requiredIntelligence": 8,
+        "retention": 5,
+        "zeon": 80
       },
-      "advancedGrade": {
-        "zeon": 100,
-        "requiredIntelligence": 10,
-        "effect": "+80 RM o RP.",
-        "retention": 5
-      },
-      "arcaneGrade": {
-        "zeon": 120,
-        "requiredIntelligence": 12,
-        "effect": "+100 RM o RP.",
-        "retention": 10
-      },
-      "withRetention": true,
-      "dailyRetention": true
+      "level": 14,
+      "name": "Sueño imperturbable",
+      "spellId": 2,
+      "type": "Efecto",
+      "withRetention": true
     },
     {
-      "spellId": 3,
-      "bookId": 23,
-      "name": "Espiar los Sueños",
-      "level": 24,
       "actionType": "Activa",
-      "type": "Tipo de conjuro: Anímico",
+      "advancedGrade": {
+        "effect": "RM 180.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 100
+      },
+      "arcaneGrade": {
+        "effect": "RM 200 / El lanzador puede manifestar una imagen material de los sueños del individuo afectado, permitiendo a cualquier persona que esté junto a él verlos.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 120
+      },
+      "bookId": 23,
+      "dailyRetention": true,
       "effect": "Este hechizo permite observar que esta ocurriendo en los sueños de un durmiente, tanto si son tranquilos como pesadillas. No es posible intervenir en ellos de ninguna manera, pero si verlos detalladamente. Una persona puede resistirse superando un control de RM, pero si lo falla, sólo tiene derecho a un nuevo control cada día, siempre y cuando sea consciente o sospeche que puede estar siendo afectado por un conjuro de estas características.",
       "initialGrade": {
-        "zeon": 60,
-        "requiredIntelligence": 6,
         "effect": "RM 140.",
-        "retention": 10
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 60
       },
       "intermediateGrade": {
-        "zeon": 80,
-        "requiredIntelligence": 8,
         "effect": "RM 160.",
-        "retention": 10
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 80
       },
-      "advancedGrade": {
-        "zeon": 100,
-        "requiredIntelligence": 10,
-        "effect": "RM 180.",
-        "retention": 10
-      },
-      "arcaneGrade": {
-        "zeon": 120,
-        "requiredIntelligence": 12,
-        "effect": "RM 200 / El lanzador puede manifestar una imagen material de los sueños del individuo afectado, permitiendo a cualquier persona que esté junto a él verlos.",
-        "retention": 15
-      },
-      "withRetention": true,
-      "dailyRetention": true
+      "level": 24,
+      "name": "Espiar los Sueños",
+      "spellId": 3,
+      "type": "Anímico",
+      "withRetention": true
     },
     {
-      "spellId": 4,
-      "bookId": 23,
-      "name": "Alterar los Sueños",
-      "level": 34,
       "actionType": "Activa",
-      "type": "Tipo de conjuro: Anímico",
-      "effect": "Mediante este conjuro el hechicero tiene la capacidad de alterar los sueños (ya sean tranquilos o pesadillas) que tengan todas las personas que estén dentro del radio de acción determinado por el grado del sortilegio. Este conjuro sólo funciona si el hechicero está “fuera” del sueño, y no permite usarlo si está introducido en el propio sueño o en la Vigilia.       Este hechizo sólo afecta a personas que estén durmiendo en esos momentos, y desaparece en el instante en el que despiertan.",
+      "advancedGrade": {
+        "effect": "RM 140 / 250 metros de radio.",
+        "requiredIntelligence": 11,
+        "retention": 10,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "RM 160 / 500 metros de radio.",
+        "requiredIntelligence": 13,
+        "retention": 15,
+        "zeon": 140
+      },
+      "bookId": 23,
+      "dailyRetention": false,
+      "effect": "Mediante este conjuro el hechicero tiene la capacidad de alterar los sueños (ya sean tranquilos o pesadillas) que tengan todas las personas que estén dentro del radio de acción determinado por el grado del sortilegio. Este conjuro sólo funciona si el hechicero está “fuera” del sueño, y no permite usarlo si está introducido en el propio sueño o en la Vigilia. Este hechizo sólo afecta a personas que estén durmiendo en esos momentos, y desaparece en el instante en el que despiertan.",
       "initialGrade": {
-        "zeon": 80,
-        "requiredIntelligence": 7,
         "effect": "RM 100 / 50 metros de radio.",
-        "retention": 10
+        "requiredIntelligence": 7,
+        "retention": 10,
+        "zeon": 80
       },
       "intermediateGrade": {
-        "zeon": 100,
-        "requiredIntelligence": 9,
         "effect": "RM 120 / 150 metros de radio.",
-        "retention": 10
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 100
       },
-      "advancedGrade": {
-        "zeon": 120,
-        "requiredIntelligence": 11,
-        "effect": "RM 140 / 250 metros de radio.",
-        "retention": 10
-      },
-      "arcaneGrade": {
-        "zeon": 140,
-        "requiredIntelligence": 13,
-        "effect": "RM 160 / 500 metros de radio.",
-        "retention": 15
-      },
-      "withRetention": true,
-      "dailyRetention": false
+      "level": 34,
+      "name": "Alterar los Sueños",
+      "spellId": 4,
+      "type": "Anímico",
+      "withRetention": true
     },
     {
-      "spellId": 5,
-      "bookId": 23,
-      "name": "Caminante Noctámbulo",
-      "level": 44,
       "actionType": "Activa",
-      "type": "Tipo de conjuro: Efecto.",
+      "advancedGrade": {
+        "effect": "5 kilómetros de distancia máxima / Como en grado intermedio, pero el personaje puede alterar su aspecto físico a voluntad, adquiriendo cualquier forma con la que pueda soñar.",
+        "requiredIntelligence": 14,
+        "retention": 40,
+        "zeon": 140
+      },
+      "arcaneGrade": {
+        "effect": "A cualquier distancia/ Como en grado avanzado, pero el caminante puede entrar en el mundo onírico de cualquier durmiente con el que se cruce si el soñador no supera un control de RM contra 150.",
+        "requiredIntelligence": 16,
+        "retention": 40,
+        "zeon": 160
+      },
+      "bookId": 23,
+      "dailyRetention": true,
       "effect": "Gracias a este sortilegio el hechicero o la persona designada por este puede traer al mundo su yo onírico, la forma que toma su consciencia más habitualmente al soñar. Así pues, mientras su cuerpo físico duerme, puede moverse libremente por el mundo en su forma de sueños. Mientras alguien está afectado por este conjuro es invisible al ojo humano (salvo aquellas personas capaces de ver espíritus) y no produce ruido alguno. Al mismo tiempo, es completamente intangible, y no puede tocar nada material. La distancia máxima que el afectado puede separarse de su cuerpo físico es determinada por el grado del conjuro. Si el caminante recibe alguna clase de daño el conjuro es interrumpido.",
       "initialGrade": {
-        "zeon": 100,
-        "requiredIntelligence": 10,
         "effect": "1 kilómetro de distancia máxima.",
-        "retention": 30
+        "requiredIntelligence": 10,
+        "retention": 30,
+        "zeon": 100
       },
       "intermediateGrade": {
-        "zeon": 120,
-        "requiredIntelligence": 12,
         "effect": "2 kilómetros de distancia máxima / El afectado puede tornarse visible a voluntad y hablar con cualquier persona.",
-        "retention": 30
+        "requiredIntelligence": 12,
+        "retention": 30,
+        "zeon": 120
       },
-      "advancedGrade": {
-        "zeon": 140,
-        "requiredIntelligence": 14,
-        "effect": "5 kilómetros de distancia máxima / Como en grado intermedio, pero el personaje puede alterar su aspecto físico a voluntad, adquiriendo cualquier forma con la que pueda soñar.",
-        "retention": 40
-      },
-      "arcaneGrade": {
-        "zeon": 160,
-        "requiredIntelligence": 16,
-        "effect": "A cualquier distancia/ Como en grado avanzado, pero el caminante puede entrar en el mundo onírico de cualquier durmiente con el que se cruce si el soñador no supera un control de RM contra 150.",
-        "retention": 40
-      },
-      "withRetention": true,
-      "dailyRetention": true
+      "level": 44,
+      "name": "Caminante Noctámbulo",
+      "spellId": 5,
+      "type": "Efecto.",
+      "withRetention": true
     },
     {
-      "spellId": 6,
-      "bookId": 23,
-      "name": "Sueño Eterno",
-      "level": 54,
       "actionType": "Activa",
-      "type": "Tipo de conjuro: Anímico.",
+      "advancedGrade": {
+        "effect": "RM 120.",
+        "requiredIntelligence": 11,
+        "retention": 20,
+        "zeon": 180
+      },
+      "arcaneGrade": {
+        "effect": "RM 140.",
+        "requiredIntelligence": 13,
+        "retention": 25,
+        "zeon": 240
+      },
+      "bookId": 23,
+      "dailyRetention": true,
       "effect": "Este terrible conjuro sume a su víctima en un sueño del que no puede despertar hasta que el hechicero no lo desee, sin importar lo que le pase a su cuerpo. Alguien afectado por este conjuro tiene derecho a una resistencia al día, aunque aplica un -40 a sus resistencias para lograr despertarse si ya ha sido afectado por el conjuro.",
       "initialGrade": {
-        "zeon": 100,
-        "requiredIntelligence": 7,
         "effect": "RM 80.",
-        "retention": 10
+        "requiredIntelligence": 7,
+        "retention": 10,
+        "zeon": 100
       },
       "intermediateGrade": {
-        "zeon": 140,
-        "requiredIntelligence": 9,
         "effect": "RM 100.",
-        "retention": 20
+        "requiredIntelligence": 9,
+        "retention": 20,
+        "zeon": 140
       },
-      "advancedGrade": {
-        "zeon": 180,
-        "requiredIntelligence": 11,
-        "effect": "RM 120.",
-        "retention": 20
-      },
-      "arcaneGrade": {
-        "zeon": 240,
-        "requiredIntelligence": 13,
-        "effect": "RM 140.",
-        "retention": 25
-      },
-      "withRetention": true,
-      "dailyRetention": true
+      "level": 54,
+      "name": "Sueño Eterno",
+      "spellId": 6,
+      "type": "Anímico.",
+      "withRetention": true
     },
     {
-      "spellId": 7,
-      "bookId": 23,
-      "name": "Rasgar la Membrana",
-      "level": 64,
       "actionType": "Activa",
-      "type": "Tipo de conjuro: Efecto.",
+      "advancedGrade": {
+        "effect": "Como en grado intermedio, pero el portal puede ser usado en ambas direcciones.",
+        "requiredIntelligence": 14,
+        "retention": 60,
+        "zeon": 280
+      },
+      "arcaneGrade": {
+        "effect": "Como el grado avanzado, pero el hechicero puede determinar libremente quienes pueden cruzar el portal o si es necesario tener algún sentimiento o cualidad especial para abrirlo.",
+        "requiredIntelligence": 16,
+        "retention": 70,
+        "zeon": 320
+      },
+      "bookId": 23,
+      "dailyRetention": true,
       "effect": "El hechicero crea un vórtice en la realidad permitiéndole crear un portal a la Vigilia.",
       "initialGrade": {
-        "zeon": 200,
-        "requiredIntelligence": 10,
         "effect": "El portal sólo permite pasar al hechicero, y es sólo de una dirección.",
-        "retention": 40
+        "requiredIntelligence": 10,
+        "retention": 40,
+        "zeon": 200
       },
       "intermediateGrade": {
-        "zeon": 240,
-        "requiredIntelligence": 12,
         "effect": "El portal puede ser pasado por cualquier clase de ser, pero es sólo de una dirección.",
-        "retention": 50
+        "requiredIntelligence": 12,
+        "retention": 50,
+        "zeon": 240
       },
-      "advancedGrade": {
-        "zeon": 280,
-        "requiredIntelligence": 14,
-        "effect": "Como en grado intermedio, pero el portal puede ser usado en ambas direcciones.",
-        "retention": 60
-      },
-      "arcaneGrade": {
-        "zeon": 320,
-        "requiredIntelligence": 16,
-        "effect": "Como el grado avanzado, pero el hechicero puede determinar libremente quienes pueden cruzar el portal o si es necesario tener algún sentimiento o cualidad especial para abrirlo.",
-        "retention": 70
-      },
-      "withRetention": true,
-      "dailyRetention": true
+      "level": 64,
+      "name": "Rasgar la Membrana",
+      "spellId": 7,
+      "type": "Efecto.",
+      "withRetention": true
     },
     {
-      "spellId": 8,
-      "bookId": 23,
-      "name": "Desterrar a la Vigilia",
-      "level": 74,
       "actionType": "Activa",
-      "type": "Tipo de conjuro: Anímico.",
+      "advancedGrade": {
+        "effect": "RM 140.",
+        "requiredIntelligence": 14,
+        "retention": 0,
+        "zeon": 140
+      },
+      "arcaneGrade": {
+        "effect": "RM 160.",
+        "requiredIntelligence": 16,
+        "retention": 0,
+        "zeon": 160
+      },
+      "bookId": 23,
+      "dailyRetention": false,
       "effect": "Este hechizo permite arrancar del mundo terrenal a un individuo o ser y lanzarlo hasta un lugar al azar de la Vigilia. El lanzador puede elegir si sólo envía el subconsciente onírico del afectado (es decir, que su cuerpo permanece durmiendo mientras su mente va a la Vigilia). Si estaba dormido podría no llegar a notar el salto dimensional, si estaba despierto su cuerpo caerá en un profundo sueño. También puede afectar a criaturas propias de la Vigilia que serán arrastradas por completo. Para resistirse deberá superar una RM.",
       "initialGrade": {
-        "zeon": 100,
-        "requiredIntelligence": 10,
         "effect": "RM 100.",
-        "retention": 0
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 100
       },
       "intermediateGrade": {
-        "zeon": 120,
-        "requiredIntelligence": 12,
         "effect": "RM 120.",
-        "retention": 0
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 120
       },
-      "advancedGrade": {
-        "zeon": 140,
-        "requiredIntelligence": 14,
-        "effect": "RM 140.",
-        "retention": 0
-      },
-      "arcaneGrade": {
-        "zeon": 160,
-        "requiredIntelligence": 16,
-        "effect": "RM 160.",
-        "retention": 0
-      },
-      "withRetention": false,
-      "dailyRetention": false
+      "level": 74,
+      "name": "Desterrar a la Vigilia",
+      "spellId": 8,
+      "type": "Anímico.",
+      "withRetention": false
     },
     {
-      "spellId": 9,
-      "bookId": 23,
-      "name": "Entre Sueños y Realidad",
-      "level": 84,
       "actionType": "Activa",
-      "type": "Tipo de conjuro: Efecto.",
+      "advancedGrade": {
+        "effect": "1 kilómetro de radio.",
+        "requiredIntelligence": 17,
+        "retention": 140,
+        "zeon": 700
+      },
+      "arcaneGrade": {
+        "effect": "3 kilómetros de radio.",
+        "requiredIntelligence": 19,
+        "retention": 180,
+        "zeon": 900
+      },
+      "bookId": 23,
+      "dailyRetention": true,
       "effect": "Permite al hechicero alterar los lazos entre el mundo real y la Vigilia, permitiendo temporalmente fundir ambos aspectos de la realidad en uno. Los seres que entren en dicha zona seguirán siendo “de su lado”, por lo que si salen de la zona afectada lo seguirán haciendo “por su lado” (es decir, un ser de la Vigilia seguirá en su plano de existencia al cruzar el área afectada por el conjuro). No obstante, las criaturas tienen poderes especiales en la Vigilia los mantendrán en dicha zona.",
       "initialGrade": {
-        "zeon": 400,
-        "requiredIntelligence": 13,
         "effect": "100 metros de radio.",
-        "retention": 80
+        "requiredIntelligence": 13,
+        "retention": 80,
+        "zeon": 400
       },
       "intermediateGrade": {
-        "zeon": 500,
-        "requiredIntelligence": 15,
         "effect": "500 metros de radio.",
-        "retention": 100
+        "requiredIntelligence": 15,
+        "retention": 100,
+        "zeon": 500
       },
-      "advancedGrade": {
-        "zeon": 700,
-        "requiredIntelligence": 17,
-        "effect": "1 kilómetro de radio.",
-        "retention": 140
-      },
-      "arcaneGrade": {
-        "zeon": 900,
-        "requiredIntelligence": 19,
-        "effect": "3 kilómetros de radio.",
-        "retention": 180
-      },
-      "withRetention": true,
-      "dailyRetention": true
+      "level": 84,
+      "name": "Entre Sueños y Realidad",
+      "spellId": 9,
+      "type": "Efecto.",
+      "withRetention": true
     },
     {
-      "spellId": 10,
-      "bookId": 23,
-      "name": "Hacer los Sueños Realidad",
-      "level": 94,
       "actionType": "Activa",
-      "type": "Tipo de conjuro: Efecto.",
-      "effect": "Este conjuro realiza literalmente lo que su nombre indica; permite al hechicero traer al mundo real cualquier ser u objeto que se encuentre en los sueños de algún durmiente. Podría traer, por ejemplo, un escudo con el que está soñando un guerrero o el caballo con el que montaba en su infancia. Al hacerlo realidad se materializará adquiriendo “sustancia”. En el caso de que se traiga un ser “vivo”, la criatura es aparentemente real, pero no podrá tener poderes superiores a Gnosis 25 ni un nivel superior a lo que determine el grado del conjuro. Si por el contrario es un objeto, su presencia máxima será determinada por el grado del sortilegio. Es importante puntualizar que este conjuro en si no permite al lanzador observar lo que hay en el interior de los sueños de la gente, por lo que será necesario usar algún otro medio para “ver” exactamente lo que quiere traer.",
-      "initialGrade": {
-        "zeon": 300,
-        "requiredIntelligence": 12,
-        "effect": "Presencia máxima 80/ Nivel 3.",
-        "retention": 50
-      },
-      "intermediateGrade": {
-        "zeon": 600,
-        "requiredIntelligence": 14,
-        "effect": "Presencia máxima 120/ Nivel 6.",
-        "retention": 60
-      },
       "advancedGrade": {
-        "zeon": 900,
-        "requiredIntelligence": 16,
         "effect": "Presencia máxima 160/ Nivel 9.",
-        "retention": 65
+        "requiredIntelligence": 16,
+        "retention": 65,
+        "zeon": 900
       },
       "arcaneGrade": {
-        "zeon": 1200,
-        "requiredIntelligence": 18,
         "effect": "Presencia máxima 200/ Nivel 12.",
-        "retention": 75
+        "requiredIntelligence": 18,
+        "retention": 75,
+        "zeon": 1200
       },
-      "withRetention": true,
-      "dailyRetention": true
+      "bookId": 23,
+      "dailyRetention": true,
+      "effect": "Este conjuro realiza literalmente lo que su nombre indica permite al hechicero traer al mundo real cualquier ser u objeto que se encuentre en los sueños de algún durmiente. Podría traer, por ejemplo, un escudo con el que está soñando un guerrero o el caballo con el que montaba en su infancia. Al hacerlo realidad se materializará adquiriendo “sustancia”. En el caso de que se traiga un ser “vivo”, la criatura es aparentemente real, pero no podrá tener poderes superiores a Gnosis 25 ni un nivel superior a lo que determine el grado del conjuro. Si por el contrario es un objeto, su presencia máxima será determinada por el grado del sortilegio. Es importante puntualizar que este conjuro en si no permite al lanzador observar lo que hay en el interior de los sueños de la gente, por lo que será necesario usar algún otro medio para “ver” exactamente lo que quiere traer.",
+      "initialGrade": {
+        "effect": "Presencia máxima 80/ Nivel 3.",
+        "requiredIntelligence": 12,
+        "retention": 50,
+        "zeon": 300
+      },
+      "intermediateGrade": {
+        "effect": "Presencia máxima 120/ Nivel 6.",
+        "requiredIntelligence": 14,
+        "retention": 60,
+        "zeon": 600
+      },
+      "level": 94,
+      "name": "Hacer los Sueños Realidad",
+      "spellId": 10,
+      "type": "Efecto.",
+      "withRetention": true
     }
-  ]
+  ],
+  "type": "Sub-Vía"
 }

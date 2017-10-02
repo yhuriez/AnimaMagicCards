@@ -2,364 +2,370 @@
   "spellbooks": [
     {
       "bookId": 1,
-      "bookName": "Livre de la Lumière",
-      "description": "Cette voie permet aux sorciers de contrôler un des deux éléments supérieurs, la lumière pure. Elle contrôle les émotions positives de l’homme, comme l’amour, la tranquillité ou le plaisir. Elle offre également la maîtrise de la connaissance et de la détection. Ses pouvoirs offensifs et défensifs se révèlent très équilibrés.",
-      "type": "Majeure",
-      "oppositeBook": "Obscurité",
+      "bookName": "Luz",
+      "description": "Esta vía es la que permite a los hechiceros controlar uno de los dos elementos superiores, la luz pura. Es la que controla las emociones positivas del hombre, como el amor, la tranquilidad o el placer. También domina el conocimiento y la detección. Su poder ofensivo y defensivo está muy equilibrado.",
+      "oppositeBook": "Oscuridad",
       "secondaryBookAccessibles": [
-        "Chaos",
-        "Guerre",
-        "Literae",
-        "Musique",
-        "Noblesse",
-        "Paix",
-        "Connaissance",
-        "Songes",
-        "Temps"
-      ]
+        "Guerra",
+        "Muerte",
+        "Pecado",
+        "Sangre",
+        "Umbral",
+        "Vacío"
+      ],
+      "type": "Mayor"
     },
     {
       "bookId": 2,
-      "bookName": "Livre de l’Obscurité",
-      "description": "L’obscurité n’est pas seulement l’absence de lumière, il s’agit de la réelle maîtrise du pur pouvoir des ténèbres. Elle offre le contrôle de toutes les émotions négatives comme la peur, la haine ou la colère. Elle correspond au pouvoir des secrets, parmi lesquels on compte les sorts de dissimulation. Son pouvoir martial est également assez équilibré.",
-      "type": "Majeure",
-      "oppositeBook": "Lumière",
+      "bookName": "Oscuridad",
+      "description": "La oscuridad no controla la ausencia de luz, sino el puro poder de las tinieblas. Domina todas las emociones negativas como el miedo, la ira y el odio. Es también el poder de los secretos, entre los que se incluyen los conjuros de ocultación y ofuscación. Al igual que la Luz, su poder está muy equilibrado.",
+      "oppositeBook": "Luz",
       "secondaryBookAccessibles": [
-        "Chaos",
-        "Guerre",
-        "Literae",
-        "Mort",
-        "Musique",
-        "Noblesse",
-        "Pêché",
-        "Connaissance",
-        "Sang",
-        "Songes",
-        "Temps",
-        "Seuil",
-        "Néant"
-      ]
+        "Paz"
+      ],
+      "type": "Mayor"
     },
     {
       "bookId": 3,
-      "bookName": "Livre de la Création",
-      "description": "Le pouvoir de la création est la capacité magique à composer et altérer la réalité qui entoure les sorciers. Ses sorts concernent le changement, la guérison et la création de choses. C’est une magie principalement défensive.",
-      "type": "Majeure",
-      "oppositeBook": "Destruction",
+      "bookName": "Creación",
+      "description": "El poder de la creación es la capacidad mágica de componer y alterar la realidad que rodea a los hechiceros. Sus conjuros engloban el cambio, la curación y la creación de cosas. Es una magia marcadamente defensiva.",
+      "oppositeBook": "Destrucción",
       "secondaryBookAccessibles": [
-        "Chaos",
-        "Literae",
-        "Musique",
-        "Paix",
-        "Pêché",
-        "Connaissance",
-        "Sang",
-        "Temps"
-      ]
+        "Guerra",
+        "Muerte",
+        "Nobleza",
+        "Sueños",
+        "Umbral",
+        "Vacío"
+      ],
+      "type": "Mayor"
     },
     {
       "bookId": 4,
-      "bookName": "Livre de la Destruction",
-      "description": "Cette voie permet d’utiliser le pouvoir du flux des âmes pour détruire la réalité elle-même. Ses sorts affectent autant le monde matériel que spirituel. Son pouvoir est, par nature, très offensif.",
-      "type": "Majeure",
-      "oppositeBook": "Création",
+      "bookName": "Destrucción",
+      "description": "Esta vía permite utilizar el poder del flujo de almas para destruir la propia realidad. Sus conjuros afectan tanto al mundo material como al espiritual. Su poder es por naturaleza muy ofensivo.",
+      "oppositeBook": "Creación",
       "secondaryBookAccessibles": [
-        "Chaos",
-        "Guerre",
-        "Mort",
-        "Pêché",
-        "Sang",
-        "Temps",
-        "Néant"
-      ]
+        "Literae",
+        "Musical",
+        "Nobleza",
+        "Paz",
+        "Conocimiento",
+        "Sueños",
+        "Umbral"
+      ],
+      "type": "Mayor"
     },
     {
       "bookId": 5,
-      "bookName": "Livre du Feu",
-      "description": "La première des quatre voies élémentaires mineures contrôle les hautes températures. Ses sorts se basent sur la chaleur, le feu et peuvent englober de vastes superficies. Elle accueille aussi les sorts de sacrifice, permettant de consumer certains aspects d’un individu pour en améliorer d’autres. C’est une voie très offensive.",
-      "type": "Mineure",
-      "oppositeBook": "Eau",
+      "bookName": "Fuego",
+      "description": "La primera de las cuatro vías elementales menores tiene el control sobre las altas temperaturas. Sus conjuros crean calor, fuego y arrasan grandes cantidades de terreno. También reúne conjuros de sacrificio, que permiten consumir ciertos aspectos de un individuo para potenciar a cambio otros. Es una vía muy ofensiva.",
+      "oppositeBook": "Agua",
       "secondaryBookAccessibles": [
-        "Guerre",
-        "Mort",
-        "Pêché",
-        "Seuil"
-      ]
+        "Caos",
+        "Literae",
+        "Musical",
+        "Nobleza",
+        "Paz",
+        "Conocimiento",
+        "Sangre",
+        "Sueños",
+        "Tiempo",
+        "Vacío"
+      ],
+      "type": "Menor"
     },
     {
       "bookId": 6,
-      "bookName": "Livre de l’Eau",
-      "description": "L’élément de l’eau accueille de nombreux principes différents. Cette voie contrôle les liquides et la pureté des choses. Elle représente aussi le pouvoir du gel et des basses températures. En combat, c’est une magie très équilibrée, à la fois offensive et défensive.",
-      "type": "Mineure",
-      "oppositeBook": "Feu",
+      "bookName": "Agua",
+      "description": "El elemento del agua recoge dentro de sí muchos conceptos distintos. Es la vía que controla los líquidos y la pureza de las cosas. También representa el poder del hielo y el de las bajas temperaturas. Su poder es muy equilibrado ofensiva y defensivamente.",
+      "oppositeBook": "Fuego",
       "secondaryBookAccessibles": [
-        "Literae",
-        "Musique",
-        "Noblesse",
-        "Paix",
-        "Connaissance",
-        "Sang",
-        "Néant"
-      ]
+        "Caos",
+        "Guerra",
+        "Muerte",
+        "Pecado",
+        "Sueños",
+        "Tiempo",
+        "Umbral"
+      ],
+      "type": "Menor"
     },
     {
       "bookId": 7,
-      "bookName": "Livre de la Terre",
-      "description": "La terre est le pouvoir de la planète, de la pierre et des minéraux. Il s’agit de la magie la plus matérielle de toutes, contrôlant les lois de la physique, comme la gravité ou le magnétisme. Son influence sur les esprits et les choses immatérielles est très limitée. Les sorts de terre sont liés à la résistance, la solidité et la lenteur.",
-      "type": "Mineure",
-      "oppositeBook": "Air",
+      "bookName": "Aire",
+      "description": "La Tierra es el poder del planeta, la piedra y los minerales. Es la magia más material de todas y controla las leyes de la física, como la gravedad y el magnetismo. Su influencia sobre los espíritus y lo inmaterial es muy limitada. Los conjuros de piedra recogen la magia relacionada con la resistencia, la dureza y la lentitud.",
+      "oppositeBook": "Tierra",
       "secondaryBookAccessibles": [
-        "Guerre",
+        "Guerra",
         "Literae",
-        "Noblesse",
-        "Paix",
-        "Seuil"
-      ]
+        "Muerte",
+        "Sangre",
+        "Tiempo"
+      ],
+      "type": "Menor"
     },
     {
       "bookId": 8,
-      "bookName": "Livre de l’Air",
-      "description": "Il s’agit de la voie des choses éthérées et intangibles. Elle comporte les sorts de vitesse, de vol et de mouvement. Son pouvoir permet d’altérer l’espace et de transporter les corps d’un lieu à l’autre. Cette voie contrôle aussi les perturbations atmosphériques et donc le climat et l’électricité.",
-      "type": "Mineure",
-      "oppositeBook": "Terre",
+      "bookName": "Tierra",
+      "description": "Es la vía de lo etéreo y lo incorpóreo. Recoge los conjuros de velocidad y movimiento. Con su poder se puede alterar el espacio y transportar cuerpos de un lugar a otro. También es la vía que controla el clima y la electricidad.",
+      "oppositeBook": "Aire",
       "secondaryBookAccessibles": [
-        "Chaos",
-        "Musique",
-        "Noblesse",
-        "Paix",
-        "Pêché",
-        "Connaissance",
-        "Songes",
-        "Seuil",
-        "Néant"
-      ]
+        "Caos",
+        "Literae",
+        "Muerte",
+        "Musical",
+        "Pecado",
+        "Conocimiento",
+        "Sangre",
+        "Sueños",
+        "Tiempo",
+        "Vacío"
+      ],
+      "type": "Menor"
     },
     {
       "bookId": 9,
-      "bookName": "Livre de l’Essence",
-      "description": "L’essence contrôle la vie et les âmes. Cette voie contrôle également les esprits et les être naturels de ce monde. C’est enfin la voie de la nature et des sortilèges druidiques.",
-      "type": "Mineure",
-      "oppositeBook": "Illusion",
+      "bookName": "Esencia",
+      "description": "La Esencia controla la vida y las almas. Esta vía tiene el poder sobre los espíritus y los seres naturales que pertenecen al mundo. Es también la vía de la naturaleza y los conjuros de origen druídicos.",
+      "oppositeBook": "Ilusión",
       "secondaryBookAccessibles": [
-        "Musique",
-        "Paix",
-        "Connaissance",
-        "Sang",
-        "Songes"
-      ]
+        "Caos",
+        "Literae",
+        "Muerte",
+        "Nobleza",
+        "Pecado",
+        "Tiempo",
+        "Umbral",
+        "Vacío"
+      ],
+      "type": "Menor"
     },
     {
       "bookId": 10,
-      "bookName": "Livre de l’Illusion",
-      "description": "Le pouvoir de cette voie permet à un sorcier de contrôler la mystification et l’illusion. Ses sorts peuvent altérer la réalité et, avec elle, la perception des gens.",
-      "type": "Mineure",
-      "oppositeBook": "Essence",
+      "bookName": "Ilusión",
+      "description": "El poder de esta vía permite al hechicero controlar el engaño y la ilusión. Sus conjuros pueden alterar la realidad, y con ella la percepción de las personas.",
+      "oppositeBook": "Esencia",
       "secondaryBookAccessibles": [
-        "Literae",
-        "Mort",
-        "Musique",
-        "Noblesse",
-        "Pêché",
-        "Songes",
-        "Seuil"
-      ]
+        "Caos",
+        "Guerra",
+        "Muerte",
+        "Paz",
+        "Pecado",
+        "Conocimiento",
+        "Sangre",
+        "Tiempo",
+        "Vacío"
+      ],
+      "type": "Menor"
     },
     {
       "bookId": 11,
-      "bookName": "Livre de la Nécromancie",
-      "description": "La nécromancie est une perversion de la magie en tant que telle. Alors que les autres voies se nourrissent de l’énergie qui s’échappe du flux des âmes, la Nécromancie l’y arrache littéralement. Ses sorts détruisent l’essence de la vie, étouffant et pervertissant les âmes qu’elle utilise. Son pouvoir permet de rendre la vie aux morts, de détruire les âmes, de drainer les vies et l’essence d’autres êtres.",
-      "type": "Automatique",
-      "oppositeBook": "Toutes les autres voies",
+      "bookName": "Nigromancia",
+      "description": "La nigromancia es una perversión de la magia como tal. Mientras que el resto de vías se alimenta de las energías de la red de almas, la nigromancia las arranca de allí. Sus conjuros destruyen la esencia de la vida, estancando y pervirtiendo las almas que utiliza. Su poder permite devolver la vida a los muertos, destruir las almas y drenar la vida y la esencia de otros seres.",
+      "oppositeBook": "El resto de las vías de magia.",
       "secondaryBookAccessibles": [
-        "Guerre",
-        "Mort",
-        "Pêché",
-        "Connaissance",
-        "Sang",
-        "Songes",
-        "Seuil",
-        "Néant"
-      ]
+        "Caos",
+        "Literae",
+        "Musical",
+        "Nobleza",
+        "Paz",
+        "Tiempo"
+      ],
+      "type": "Mayor"
     },
     {
       "bookId": 12,
-      "bookName": "Sorts d’accès libre ",
-      "description": "Les sorts d'accès libre sont des sorts générique que tout sorcier peut apprendre, peu importe les voies qu'il a choisis. Lorsqu'un sorcier apprend une voie, il peut choisir parmi ces sorts pour compléter sa voie et la rendre unique.",
-      "type": "Inderterminé"
+      "bookName": "Libre Acceso",
+      "secondaryBookAccessibles": [],
+      "type": "Libre Acceso"
     },
     {
       "bookId": 13,
-      "bookName": "Livre du Chaos",
-      "description": "Cette voie manie le principe absolu du chaos, le pouvoir de l'imprédictible e l'altération des événements.",
+      "bookName": "CAOS",
+      "description": "Esta vía maneja el principio absoluto del caos, el poder de lo impredecible y la alteración de los acontecimientos.",
       "primaryBookUnaccessibles": [
-        "Eau",
-        "Feu",
-        "Terre",
-        "Essence",
-        "Illusion",
-        "Nécromancie"
-      ]
+        "Nigromancia",
+        "Ilusión",
+        "Esencia",
+        "Fuego",
+        "Tierra",
+        "Agua"
+      ],
+      "type": "Sub-Vía"
     },
     {
       "bookId": 14,
-      "bookName": "Livre de la Guerre",
-      "description": "Les sorciers de la guerre sont ceux qui maîtrisent les champs de bataille à volonté, pouvant renforcer selon leurs souhaits les compétences de leurs alliés ou même d'armées entières.",
+      "bookName": "GUERRA",
+      "description": "Los hechiceros de la guerra son aquellos que dominan los campos de batalla a su antojo, pudiendo potenciar a voluntad las habilidades de sus compañeros o incuso de ejércitos enteros.",
       "primaryBookUnaccessibles": [
-        "Lumière",
-        "Création",
-        "Air",
-        "Eau",
-        "Essence",
-        "Illusion"
-      ]
+        "Aire",
+        "Luz",
+        "Agua",
+        "Ilusión",
+        "Creación"
+      ],
+      "type": "Sub-Vía"
     },
     {
       "bookId": 15,
-      "bookName": "Livre de la Literae",
-      "description": "Literae est la magie des mots, la voie de la modification de la réalité en écrivant des annotations en marge du livre que nous appelons la réalité. Ceux qui l’emploient sont capables d'utiliser la sorcellerie pour réécrire le scénario de la vie en l'adaptant à leurs besoins.",
+      "bookName": "LITERAE",
+      "description": "Literae es la magia de las palabras, la modificación de la realidad escribiendo anotaciones en los márgenes del libro al que llamamos realidad. Los que la emplean son capaces de utilizar la hechicería para reescribir el guión de la vida adaptándolo a sus necesidades.",
       "primaryBookUnaccessibles": [
-        "Destruction",
-        "Air",
-        "Feu",
-        "Terre",
-        "Essence",
-        "Nécromancie"
-      ]
+        "Nigromancia",
+        "Destrucción",
+        "Esencia",
+        "Fuego",
+        "Aire",
+        "Tierra"
+      ],
+      "type": "Sub-Vía"
     },
     {
       "bookId": 16,
-      "bookName": "Livre de la Mort",
-      "description": "Cette voie secondaire contrôle la fin des choses, la mort dans son concept fin de la vie.",
+      "bookName": "MUERTE",
+      "description": "Esta sub-vía controla el fin de las cosas, la muerte en su concepto de término de la vida.",
       "primaryBookUnaccessibles": [
-        "Lumière",
-        "Création",
-        "Air",
-        "Eau",
-        "Terre",
-        "Essence",
-        "Illusion"
-      ]
+        "Creación",
+        "Luz",
+        "Esencia",
+        "Tierra",
+        "Agua",
+        "Aire",
+        "Ilusión"
+      ],
+      "type": "Sub-Vía"
     },
     {
       "bookId": 17,
-      "bookName": "Livre de la Musique",
-      "description": "Cette voie secondaire regroupe tous les pouvoirs en relation avec la musique les mélodies. Les sorciers qui utilisent ses sorts sont habituellement appelés mages musiciens, car c'est au travers de leurs mélodies qu'ils sont capables de provoquer les effets et les merveilles les plus invraisemblables.",
+      "bookName": "MUSICAL",
+      "description": "Esta sub-vía recoge todos los poderes relacionados con la música y las melodías. Los brujos que usan sus conjuros son habitualmente llamados magos musicales, ya que a través de sus melodías son capaces de provocar los más inverosímiles efectos y maravillas.",
       "primaryBookUnaccessibles": [
-        "Destruction",
-        "Feu",
-        "Terre",
-        "Nécromancie"
-      ]
+        "Destrucción",
+        "Fuego",
+        "Tierra",
+        "Nigromancia"
+      ],
+      "type": "Sub-Vía"
     },
     {
       "bookId": 18,
-      "bookName": "Livre de la Noblesse",
-      "description": "Cette voie secondaire regroupe tous les principes en relation avec l'apparence, la position sociale et la supériorité sur les autres. C'est la magie dont usent la noblesse et les grands seigneurs pour assurer leur domination sur les autres.",
+      "bookName": "NOBLEZA",
+      "description": "Esta sub-vía recoge todos aquellos principios relacionados con la apariencia, posición social y superioridad sobre el resto de personas. Es la magia que usa la nobleza y los grandes señores para asegurar su predominio sobre los demás.",
       "primaryBookUnaccessibles": [
-        "Création",
-        "Destruction",
-        "Feu",
-        "Essence",
-        "Nécromancie"
-      ]
+        "Creación",
+        "Destrucción",
+        "Esencia",
+        "Fuego",
+        "Nigromancia"
+      ],
+      "type": "Sub-Vía"
     },
     {
       "bookId": 19,
-      "bookName": "Livre de la Paix ",
-      "description": "C'est la voie qui incarne l'harmonie et l'absence de conflits.",
+      "bookName": "PAZ",
+      "description": "Es la vía que encarna la armonía y la falta de conflictos.",
       "primaryBookUnaccessibles": [
-        "Obscurité",
-        "Destruction",
-        "Feu",
-        "Illusion",
-        "Nécromancie"
-      ]
+        "Destrucción",
+        "Oscuridad",
+        "Fuego",
+        "Nigromancia",
+        "Ilusión"
+      ],
+      "type": "Sub-Vía"
     },
     {
       "bookId": 20,
-      "bookName": "Livre du Péché",
-      "description": "Cette voie secondaire est la plus obscure et la plus retorse de toutes, car elle regroupe tous les pouvoirs en relation avec les émotions négatives, le péché et plus globalement le mal à l'état pur. C'est la magie utilisée par la grande majorité des créatures infernales, ainsi que par les adorateurs des divinités maléfiques de chaque culture.",
+      "bookName": "PECADO",
+      "description": "Esta sub-vía es la más oscura y retorcida de todas, ya que recoge todos los poderes relacionados con las emociones negativas, el pecado y, mayoritariamente, el puro mal. Es la magia usada por la gran mayoría de criaturas infernales, así como la de los adoradores de las deidades malignas de cada cultura.",
       "primaryBookUnaccessibles": [
-        "Lumière",
-        "Eau",
-        "Terre",
-        "Essence",
-        "Illusion"
-      ]
+        "Luz",
+        "Esencia",
+        "Ilusión",
+        "Tierra",
+        "Agua"
+      ],
+      "type": "Sub-Vía"
     },
     {
       "bookId": 21,
-      "bookName": "Livre de la Connaissance",
-      "description": "Connaissance est, une voie secondaire primordiale qui domine le concept même du savoir. Les sorciers qui l'utilisent ont la maîtrise sur tout ce qui peut être appris.",
+      "bookName": "CONOCIMIENTO",
+      "description": "Conocimiento es una sub-vía primaria que domina el propio concepto del saber. Los hechiceros que la usan tienen control sobre todo lo que se puede llegar a aprender.",
       "primaryBookUnaccessibles": [
-        "Destruction",
-        "Feu",
-        "Terre",
-        "Illusion"
-      ]
+        "Destrucción",
+        "Tierra",
+        "Fuego",
+        "Ilusión"
+      ],
+      "type": "Sub-Vía"
     },
     {
       "bookId": 22,
-      "bookName": "Livre du Sang",
-      "description": "Cette voie secondaire contrôle le principe qui donne la vie aux êtres organiques, celui du sang lui-même.",
+      "bookName": "SANGRE",
+      "description": "Esta sub-vía controla el principio que da la vida a los seres orgánicos, el de la propia sangre.",
       "primaryBookUnaccessibles": [
-        "Lumière",
-        "Air",
-        "Feu",
-        "Terre",
-        "Illusion"
-      ]
+        "Luz",
+        "Ilusión",
+        "Fuego",
+        "Aire",
+        "Tierra"
+      ],
+      "type": "Sub-Vía"
     },
     {
       "bookId": 23,
-      "bookName": "Livre des Songes",
-      "description": "Songes est la voie de magie secondaire qui contrôle le monde onirique des rêveurs, ainsi que son reflet dans la Veille.",
+      "bookName": "SUEÑOS",
+      "description": "Sueños es la vía de magia que controla el mundo onírico de los soñadores, así como su reflejo en la Vigilia.",
       "primaryBookUnaccessibles": [
-        "Création",
-        "Destruction",
-        "Eau",
-        "Feu",
-        "Terre"
-      ]
+        "Creación",
+        "Destrucción",
+        "Agua",
+        "Tierra",
+        "Fuego"
+      ],
+      "type": "Sub-Vía"
     },
     {
       "bookId": 24,
-      "bookName": "Livre du Temps ",
-      "description": "Pour beaucoup d'occultistes le principe qui contrôle cette voie secondaire est le plus grand de tous, y compris parmi ceux des voies majeures. Ceux qui l'utilisent sont appelés les Chronomants, ou mages du temps, et leurs capacités consistent à utiliser la magie pour contrôler le passage du temps comme s'il s'agissait simplement d'un élément de plus.",
+      "bookName": "TIEMPO",
+      "description": "Para muchos ocultistas el principio que controla esta sub-vía es el más grande de todos, superior incluso a los de las propias vías mayores. Los que la emplean suelen ser llamados Chronomantes, o magos del tiempo, y su habilidad consiste en emplear la magia para controlar el fluir del tiempo como si fuera un elemento más.",
       "primaryBookUnaccessibles": [
-        "Air",
-        "Eau",
-        "Feu",
-        "Terre",
-        "Essence",
-        "Illusion",
-        "Nécromancie"
-      ]
+        "Nigromancia",
+        "Aire",
+        "Agua",
+        "Fuego",
+        "Tierra",
+        "Esencia",
+        "Ilusión"
+      ],
+      "type": "Sub-Vía"
     },
     {
       "bookId": 25,
-      "bookName": "Livre du Seuil",
-      "description": "La peur et la folie sont les émotions les plus sombres, primaires et puissantes, antérieures même aux temps où les hommes ont pris conscience de leur destin. Cette voie secondaire à ces deux concepts comme base, c'est la magie des horreurs primitives qui sont au-delà des ténèbres elles-mêmes.",
+      "bookName": "UMBRAL",
+      "description": "El miedo y la locura son las emociones más oscuras, primarias y poderosas, anteriores incluso a los tiempos el los que el hombre tenía consciencia de su destino. Esta sub-vía tiene ambos conceptos como principio",
       "primaryBookUnaccessibles": [
-        "Lumière",
-        "Création",
-        "Destruction",
-        "Eau",
-        "Essence"
-      ]
+        "Luz",
+        "Esencia",
+        "Agua",
+        "Creación",
+        "Destrucción"
+      ],
+      "type": "Sub-Vía"
     },
     {
       "bookId": 26,
-      "bookName": "Livre du Vide",
-      "description": "Vide est la voie secondaire qui contrôle les énergies du néant, l'absence totale de toute matière physique ou spirituelle.",
+      "bookName": "VACÍO",
+      "description": "Vacío es la sub-vía que controla las energías de la nada, la absoluta carencia de toda materia física y espiritual.",
       "primaryBookUnaccessibles": [
-        "Lumière",
-        "Création",
-        "Feu",
-        "Terre",
-        "Essence",
-        "Illusion"
-      ]
+        "Luz",
+        "Creación",
+        "Tierra",
+        "Fuego",
+        "Ilusión",
+        "Esencia"
+      ],
+      "type": "Sub-Vía"
     }
   ]
 }

@@ -1,365 +1,365 @@
 {
   "bookId": 14,
-  "bookName": "Libro de Guerra",
+  "bookName": "GUERRA",
   "description": "Los hechiceros de la guerra son aquellos que dominan los campos de batalla a su antojo, pudiendo potenciar a voluntad las habilidades de sus compañeros o incuso de ejércitos enteros.",
   "primaryBookUnaccessibles": [
-    "Luz",
-    "Creación",
     "Aire",
+    "Luz",
     "Agua",
-    "Esencia",
-    "Ilusión."
+    "Ilusión",
+    "Creación"
   ],
-    "spells": [
+  "spells": [
     {
-      "spellId": 1,
-      "bookId": 14,
-      "name": "Moral",
-      "level": 4,
       "actionType": "Activa",
-      "type": "Efecto",
+      "advancedGrade": {
+        "effect": "Base: +120 a Frialdad / 250 metros de radio.",
+        "requiredIntelligence": 11,
+        "retention": 0,
+        "zeon": 90
+      },
+      "arcaneGrade": {
+        "effect": "Base: +180 a Frialdad / 500 metros de radio.",
+        "requiredIntelligence": 13,
+        "retention": 0,
+        "zeon": 120
+      },
+      "bookId": 14,
+      "dailyRetention": false,
       "effect": "Este grito provoca que los aliados del hechicero aumenten su espíritu combativo y se vuelvan inmunes a los efectos del miedo o el dolor. A efectos de juego, obtiene un bono a su habilidad secundaria Frialdad hasta que finalice el combate en el que se encuentran trabados o transcurran más de diez minutos.",
       "initialGrade": {
-        "zeon": 30,
-        "requiredIntelligence": 5,
         "effect": "+40 a Frialdad / 10 metros de radio.",
-        "retention": 0
+        "requiredIntelligence": 5,
+        "retention": 0,
+        "zeon": 30
       },
       "intermediateGrade": {
-        "zeon": 60,
-        "requiredIntelligence": 8,
         "effect": "Base: +80 a Frialdad / 50 metros de radio.",
-        "retention": 0
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 60
       },
-      "advancedGrade": {
-        "zeon": 90,
-        "requiredIntelligence": 11,
-        "effect": "Base: +120 a Frialdad / 250 metros de radio.",
-        "retention": 0
-      },
-      "arcaneGrade": {
-        "zeon": 120,
-        "requiredIntelligence": 13,
-        "effect": "Base: +180 a Frialdad / 500 metros de radio.",
-        "retention": 0
-      },
-      "withRetention": false,
-      "dailyRetention": true
+      "level": 4,
+      "name": "Moral",
+      "spellId": 1,
+      "type": "Efecto",
+      "withRetention": false
     },
     {
-      "spellId": 2,
-      "bookId": 14,
-      "name": "Ira Ancestral",
-      "level": 14,
       "actionType": "Activa",
-      "type": "Efecto",
+      "advancedGrade": {
+        "effect": "250 metros de radio.",
+        "requiredIntelligence": 12,
+        "retention": 10,
+        "zeon": 100
+      },
+      "arcaneGrade": {
+        "effect": "500 metros de radio.",
+        "requiredIntelligence": 15,
+        "retention": 15,
+        "zeon": 130
+      },
+      "bookId": 14,
+      "dailyRetention": false,
       "effect": "Despierta en los aliados del brujo un ansia de lucha que los convierte en guerreros imparables, bestias humanas llenas de furia sin par. El hechizo confiere un bono de +10 al ataque y provoca el estado de Ira en todo aquel aliado del lanzador que se encuentre dentro del radio de acción del sortilegio, más por suerte, los vínculos sobrenaturales limitan la desventaja de la rabia impidiendo a los afectados perder el control o atacarse los unos a los otros.",
       "initialGrade": {
-        "zeon": 40,
-        "requiredIntelligence": 6,
         "effect": "10 metros de radio.",
-        "retention": 5
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 40
       },
       "intermediateGrade": {
-        "zeon": 70,
-        "requiredIntelligence": 9,
         "effect": "50 metros de radio.",
-        "retention": 10
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 70
       },
-      "advancedGrade": {
-        "zeon": 100,
-        "requiredIntelligence": 12,
-        "effect": "250 metros de radio.",
-        "retention": 10
-      },
-      "arcaneGrade": {
-        "zeon": 130,
-        "requiredIntelligence": 15,
-        "effect": "500 metros de radio.",
-        "retention": 15
-      },
-      "withRetention": true,
-      "dailyRetention": false
+      "level": 14,
+      "name": "Ira Ancestral",
+      "spellId": 2,
+      "type": "Efecto",
+      "withRetention": true
     },
     {
-      "spellId": 3,
-      "bookId": 14,
-      "name": "Velocidad en la Batalla",
-      "level": 24,
       "actionType": "Activa",
-      "type": "Efecto",
+      "advancedGrade": {
+        "effect": "+20 al Turno / 250 metros de radio.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "+20 al Turno / 500 metros de radio.",
+        "requiredIntelligence": 15,
+        "retention": 15,
+        "zeon": 150
+      },
+      "bookId": 14,
+      "dailyRetention": false,
       "effect": "Canaliza el espíritu de batalla de los aliados, haciéndolos trabajar como un solo hombre y permitiéndoles anticiparse a las acciones de sus enemigos.",
       "initialGrade": {
-        "zeon": 50,
-        "requiredIntelligence": 6,
         "effect": "+10 al Turno / 10 metros de radio.",
-        "retention": 5
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 50
       },
       "intermediateGrade": {
-        "zeon": 90,
-        "requiredIntelligence": 9,
         "effect": "+10 al Turno / 50 metros de radio.",
-        "retention": 10
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 90
       },
-      "advancedGrade": {
-        "zeon": 120,
-        "requiredIntelligence": 12,
-        "effect": "+20 al Turno / 250 metros de radio.",
-        "retention": 15
-      },
-      "arcaneGrade": {
-        "zeon": 150,
-        "requiredIntelligence": 15,
-        "effect": "+20 al Turno / 500 metros de radio.",
-        "retention": 15
-      },
-      "withRetention": true,
-      "dailyRetention": false
+      "level": 24,
+      "name": "Velocidad en la Batalla",
+      "spellId": 3,
+      "type": "Efecto",
+      "withRetention": true
     },
     {
-      "spellId": 4,
-      "bookId": 14,
-      "name": "Destrucción Desencadenada",
-      "level": 34,
       "actionType": "Activa",
-      "type": "Efecto",
+      "advancedGrade": {
+        "effect": "+30 al Daño / 250 metros de radio.",
+        "requiredIntelligence": 12,
+        "retention": 20,
+        "zeon": 160
+      },
+      "arcaneGrade": {
+        "effect": "+40 al Daño / 500 metros de radio.",
+        "requiredIntelligence": 15,
+        "retention": 20,
+        "zeon": 200
+      },
+      "bookId": 14,
+      "dailyRetention": false,
       "effect": "Incrementa la potencia destructiva de los aliados cercanos al personaje, otorgándoles a estos un bono al daño de todos sus ataques.",
       "initialGrade": {
-        "zeon": 80,
-        "requiredIntelligence": 7,
         "effect": "+20 al Daño / 10 metros de radio.",
-        "retention": 5
+        "requiredIntelligence": 7,
+        "retention": 5,
+        "zeon": 80
       },
       "intermediateGrade": {
-        "zeon": 120,
-        "requiredIntelligence": 9,
         "effect": "+20 al Daño / 50 metros de radio.",
-        "retention": 15
+        "requiredIntelligence": 9,
+        "retention": 15,
+        "zeon": 120
       },
-      "advancedGrade": {
-        "zeon": 160,
-        "requiredIntelligence": 12,
-        "effect": "+30 al Daño / 250 metros de radio.",
-        "retention": 20
-      },
-      "arcaneGrade": {
-        "zeon": 200,
-        "requiredIntelligence": 15,
-        "effect": "+40 al Daño / 500 metros de radio.",
-        "retention": 20
-      },
-      "withRetention": true,
-      "dailyRetention": false
+      "level": 34,
+      "name": "Destrucción Desencadenada",
+      "spellId": 4,
+      "type": "Efecto",
+      "withRetention": true
     },
     {
-      "spellId": 5,
-      "bookId": 14,
-      "name": "Protección Final",
-      "level": 44,
       "actionType": "Activa",
-      "type": "Efecto",
+      "advancedGrade": {
+        "effect": "+20 a todas las Resistencias / +2 TA / 250 metros de radio.",
+        "requiredIntelligence": 12,
+        "retention": 20,
+        "zeon": 160
+      },
+      "arcaneGrade": {
+        "effect": "+30 a todas las Resistencias / +3 TA / 500 metros de radio.",
+        "requiredIntelligence": 15,
+        "retention": 20,
+        "zeon": 200
+      },
+      "bookId": 14,
+      "dailyRetention": false,
       "effect": "Incrementa la protección y resistencia de los aliados cercanos al personaje, otorgándoles a estos un bono a sus Resistencias y Tipo de Armadura.",
       "initialGrade": {
-        "zeon": 80,
-        "requiredIntelligence": 7,
         "effect": "+10 a todas las Resistencias / +1 TA / 10 metros de radio.",
-        "retention": 5
+        "requiredIntelligence": 7,
+        "retention": 5,
+        "zeon": 80
       },
       "intermediateGrade": {
-        "zeon": 120,
-        "requiredIntelligence": 9,
         "effect": "+10 a todas las Resistencias / +2 TA / 50 metros de radio.",
-        "retention": 15
+        "requiredIntelligence": 9,
+        "retention": 15,
+        "zeon": 120
       },
-      "advancedGrade": {
-        "zeon": 160,
-        "requiredIntelligence": 12,
-        "effect": "+20 a todas las Resistencias / +2 TA / 250 metros de radio.",
-        "retention": 20
-      },
-      "arcaneGrade": {
-        "zeon": 200,
-        "requiredIntelligence": 15,
-        "effect": "+30 a todas las Resistencias / +3 TA / 500 metros de radio.",
-        "retention": 20
-      },
-      "withRetention": true,
-      "dailyRetention": false
+      "level": 44,
+      "name": "Protección Final",
+      "spellId": 5,
+      "type": "Efecto",
+      "withRetention": true
     },
     {
-      "spellId": 6,
-      "bookId": 14,
-      "name": "Marcha Implacable",
-      "level": 54,
       "actionType": "Activa",
-      "type": "Efecto",
+      "advancedGrade": {
+        "effect": "100 metros de radio.",
+        "requiredIntelligence": 12,
+        "retention": 50,
+        "zeon": 250
+      },
+      "arcaneGrade": {
+        "effect": "500 metros de radio.",
+        "requiredIntelligence": 15,
+        "retention": 100,
+        "zeon": 300
+      },
+      "bookId": 14,
+      "dailyRetention": true,
       "effect": "Este hechizo permite a los compañeros del brujo marchar de forma incesante, resistiendo la fatiga y la furia de los elementos. A efectos de juego, proporciona a todos los aliados que se encuentren dentro del área de efecto del conjuro las habilidades del Ki Uso de la Energía Necesaria y Eliminación de Necesidades.",
       "initialGrade": {
-        "zeon": 150,
-        "requiredIntelligence": 6,
         "effect": "10 metros de radio.",
-        "retention": 30
+        "requiredIntelligence": 6,
+        "retention": 30,
+        "zeon": 150
       },
       "intermediateGrade": {
-        "zeon": 200,
-        "requiredIntelligence": 9,
         "effect": "50 metros de radio.",
-        "retention": 40
+        "requiredIntelligence": 9,
+        "retention": 40,
+        "zeon": 200
       },
-      "advancedGrade": {
-        "zeon": 250,
-        "requiredIntelligence": 12,
-        "effect": "100 metros de radio.",
-        "retention": 50
-      },
-      "arcaneGrade": {
-        "zeon": 300,
-        "requiredIntelligence": 15,
-        "effect": "500 metros de radio.",
-        "retention": 100
-      },
-      "withRetention": true,
-      "dailyRetention": true
+      "level": 54,
+      "name": "Marcha Implacable",
+      "spellId": 6,
+      "type": "Efecto",
+      "withRetention": true
     },
     {
-      "spellId": 7,
-      "bookId": 14,
-      "name": "Campeón",
-      "level": 64,
       "actionType": "Activa",
-      "type": "Efecto",
+      "advancedGrade": {
+        "effect": "+20 a toda acción / +20 daño / +20 al Turno / +4 TA.",
+        "requiredIntelligence": 14,
+        "retention": 20,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "+30 a toda acción / +30 daño / +30 al Turno / +5 TA.",
+        "requiredIntelligence": 16,
+        "retention": 30,
+        "zeon": 350
+      },
+      "bookId": 14,
+      "dailyRetention": false,
       "effect": "Canaliza el espíritu combativo del grupo en uno de sus guerreros, creando como resultado un luchador implacable e invencible. El hechizo otorga diferentes bonos a las habilidades de combate, siempre y cuando combata junto a sus compañeros. Sólo un individuo por cada 10 que compongan un grupo de batalla puede ser afectado por este sortilegio.",
       "initialGrade": {
-        "zeon": 140,
-        "requiredIntelligence": 10,
         "effect": "+10 a toda acción / +10 daño / +10 al Turno / +2 TA.",
-        "retention": 15
+        "requiredIntelligence": 10,
+        "retention": 15,
+        "zeon": 140
       },
       "intermediateGrade": {
-        "zeon": 180,
-        "requiredIntelligence": 12,
         "effect": "+10 a toda acción / +20 daño / +20 al Turno / +3 TA.",
-        "retention": 15
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 180
       },
-      "advancedGrade": {
-        "zeon": 240,
-        "requiredIntelligence": 14,
-        "effect": "+20 a toda acción / +20 daño / +20 al Turno / +4 TA.",
-        "retention": 20
-      },
-      "arcaneGrade": {
-        "zeon": 350,
-        "requiredIntelligence": 16,
-        "effect": "+30 a toda acción / +30 daño / +30 al Turno / +5 TA.",
-        "retention": 30
-      },
-      "withRetention": true,
-      "dailyRetention": false
+      "level": 64,
+      "name": "Campeón",
+      "spellId": 7,
+      "type": "Efecto",
+      "withRetention": true
     },
     {
-      "spellId": 8,
-      "bookId": 14,
-      "name": "Órdenes Precisas",
-      "level": 74,
       "actionType": "Activa",
-      "type": "Efecto",
+      "advancedGrade": {
+        "effect": "Hasta 250 metros de radio.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 250
+      },
+      "arcaneGrade": {
+        "effect": "Hasta 500 metros de radio.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 300
+      },
+      "bookId": 14,
+      "dailyRetention": false,
       "effect": "Permite al hechicero o a aquel sobre el que se lance el conjuro transmitir ordenes directamente a la mente de sus compañeros. Estos mensajes son automáticos, sin la necesidad de hablar con ellos o de formular largas frases o indicaciones que pueden ser escuchadas por personas indeseadas. El personaje puede elegir quienes le escuchan y quienes no, o incluso puede transmitir varias ordenes a la vez con un simple pensamiento.",
       "initialGrade": {
-        "zeon": 150,
-        "requiredIntelligence": 8,
         "effect": "Hasta 25 metros de radio.",
-        "retention": 0
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 150
       },
       "intermediateGrade": {
-        "zeon": 200,
-        "requiredIntelligence": 10,
         "effect": "Hasta 100 metros de radio.",
-        "retention": 0
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 200
       },
-      "advancedGrade": {
-        "zeon": 250,
-        "requiredIntelligence": 12,
-        "effect": "Hasta 250 metros de radio.",
-        "retention": 0
-      },
-      "arcaneGrade": {
-        "zeon": 300,
-        "requiredIntelligence": 15,
-        "effect": "Hasta 500 metros de radio.",
-        "retention": 0
-      },
-      "withRetention": false,
-      "dailyRetention": true
+      "level": 74,
+      "name": "Órdenes Precisas",
+      "spellId": 8,
+      "type": "Efecto",
+      "withRetention": false
     },
     {
-      "spellId": 9,
-      "bookId": 14,
-      "name": "Maestro de la Guerra",
-      "level": 84,
       "actionType": "Pasiva",
-      "type": "Efecto.",
+      "advancedGrade": {
+        "effect": "Hasta 300 de habilidad.",
+        "requiredIntelligence": 15,
+        "retention": 20,
+        "zeon": 400
+      },
+      "arcaneGrade": {
+        "effect": "Sin límite alguno",
+        "requiredIntelligence": 18,
+        "retention": 25,
+        "zeon": 500
+      },
+      "bookId": 14,
+      "dailyRetention": false,
       "effect": "El hechicero puede combatir físicamente con cualquier arma usando su habilidad de Proyección Mágica ofensiva y defensiva como si fuera habilidad de ataque y defensa. El límite máximo que puede alcanzar está determinado por el grado del conjuro.",
       "initialGrade": {
-        "zeon": 200,
-        "requiredIntelligence": 10,
         "effect": "Hasta 200 de habilidad.",
-        "retention": 10
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 200
       },
       "intermediateGrade": {
-        "zeon": 300,
-        "requiredIntelligence": 12,
         "effect": "Hasta 250 de habilidad.",
-        "retention": 15
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 300
       },
-      "advancedGrade": {
-        "zeon": 400,
-        "requiredIntelligence": 15,
-        "effect": "Hasta 300 de habilidad.",
-        "retention": 20
-      },
-      "arcaneGrade": {
-        "zeon": 500,
-        "requiredIntelligence": 18,
-        "effect": "Sin límite alguno",
-        "retention": 25
-      },
-      "withRetention": true,
-      "dailyRetention": false
+      "level": 84,
+      "name": "Maestro de la Guerra",
+      "spellId": 9,
+      "type": "Efecto.",
+      "withRetention": true
     },
     {
-      "spellId": 10,
-      "bookId": 14,
-      "name": "Hasta más Allá del Fin",
-      "level": 94,
       "actionType": "Activa",
-      "type": "Efecto",
-      "effect": "Este hechizo lleva más allá del poder de los mortales el espíritu combativo de los aliados del brujo, permitiéndoles seguir adelante incluso en el umbral de la muerte. Todos sus aliados que se encuentren dentro del radio de acción del sortilegio duplican su aguante en puntos de vida negativos (en caso de que se usen las reglas opcionales de entre la vida y la muerte, aplican un +40 a sus controles de RF), y no sufren ningún negativo por combatir en dicho estado.",
-      "initialGrade": {
-        "zeon": 250,
-        "requiredIntelligence": 14,
-        "effect": "25 metros de radio.",
-        "retention": 25
-      },
-      "intermediateGrade": {
-        "zeon": 500,
-        "requiredIntelligence": 16,
-        "effect": "50 metros de radio.",
-        "retention": 50
-      },
       "advancedGrade": {
-        "zeon": 750,
-        "requiredIntelligence": 18,
         "effect": "250 metros de radio.",
-        "retention": 75
+        "requiredIntelligence": 18,
+        "retention": 75,
+        "zeon": 750
       },
       "arcaneGrade": {
-        "zeon": 1000,
-        "requiredIntelligence": 20,
         "effect": "500 metros de radio / Además de los efectos descritos, un personaje afectado por este hechizo puede seguir luchando en plenas facultados hasta dos asaltos después de haber muerto.",
-        "retention": 100
+        "requiredIntelligence": 20,
+        "retention": 100,
+        "zeon": 1000
       },
-      "withRetention": true,
-      "dailyRetention": false
+      "bookId": 14,
+      "dailyRetention": false,
+      "effect": "Este hechizo lleva más allá del poder de los mortales el espíritu combativo de los aliados del brujo, permitiéndoles seguir adelante incluso en el umbral de la muerte. Todos sus aliados que se encuentren dentro del radio de acción del sortilegio duplican su aguante en puntos de vida negativos (en caso de que se usen las reglas opcionales de entre la vida y la muerte, aplican un +40 a sus controles de RF), y no sufren ningún negativo por combatir en dicho estado.",
+      "initialGrade": {
+        "effect": "25 metros de radio.",
+        "requiredIntelligence": 14,
+        "retention": 25,
+        "zeon": 250
+      },
+      "intermediateGrade": {
+        "effect": "50 metros de radio.",
+        "requiredIntelligence": 16,
+        "retention": 50,
+        "zeon": 500
+      },
+      "level": 94,
+      "name": "Hasta más Allá del Fin",
+      "spellId": 10,
+      "type": "Efecto",
+      "withRetention": true
     }
-  ]
+  ],
+  "type": "Sub-Vía"
 }
