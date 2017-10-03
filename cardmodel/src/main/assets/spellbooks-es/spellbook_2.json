@@ -1,1 +1,1412 @@
-{"bookId":2,"bookName":"Oscuridad","description":"La oscuridad no controla la ausencia de luz, sino el puro poder de las tinieblas. Domina todas las emociones negativas como el miedo, la ira y el odio. Es también el poder de los secretos, entre los que se incluyen los conjuros de ocultación y ofuscación. Al igual que la Luz, su poder está muy equilibrado.","oppositeBook":"Luz","secondaryBookAccessibles":["Paz"],"spells":[{"actionType":"Activa","advancedGrade":{"effect":"100 metros de radio.","requiredIntelligence":10,"retention":10,"zeon":100},"arcaneGrade":{"effect":"500 metros de radio.","requiredIntelligence":12,"retention":15,"zeon":200},"bookId":2,"dailyRetention":false,"effect":"Oscurece completamente una zona. Todo lo que hay en su interior se percibe como en una noche cerrada y sin luna.","initialGrade":{"effect":"5 metros de radio.","requiredIntelligence":5,"retention":5,"zeon":20},"intermediateGrade":{"effect":"25 metros de radio.","requiredIntelligence":8,"retention":5,"zeon":50},"level":2,"name":"Crear Oscuridad","spellId":1,"type":"Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"RM o RP 120 / 100 metros de radio.","requiredIntelligence":10,"retention":0,"zeon":140},"arcaneGrade":{"effect":"RM o RP 140 / 250 metros de radio.","requiredIntelligence":12,"retention":0,"zeon":180},"bookId":2,"dailyRetention":false,"effect":"Provoca, temporalmente, el estado de Miedo a todos los sujetos que se encuentren alrededor del lanzador. El hechicero decidirá cuál es la fuente que origina el miedo a los afectados.","initialGrade":{"effect":"RM o RP 80 / 10 metros de radio.","requiredIntelligence":5,"retention":0,"zeon":40},"intermediateGrade":{"effect":"RM o RP 100 / 50 metros de radio.","requiredIntelligence":8,"retention":0,"zeon":80},"level":6,"name":"Imbuir Miedo","spellId":2,"type":"Anímico","withRetention":false},{"actionType":"Activa","advancedGrade":{"effect":"Presencia máxima 120.","requiredIntelligence":10,"retention":10,"zeon":100},"arcaneGrade":{"effect":"Presencia máxima 140 / Permite ver en la oscuridad sobrenatural.","requiredIntelligence":12,"retention":15,"zeon":120},"bookId":2,"dailyRetention":true,"effect":"Permite al hechicero, o a quienes este seleccione, ver perfectamente en la oscuridad natural, siempre que la suma de sus presencias no supere el valor determinado por el grado del conjuro.","initialGrade":{"effect":"Presencia máxima 80.","requiredIntelligence":5,"retention":5,"zeon":40},"intermediateGrade":{"effect":"Presencia máxima 100.","requiredIntelligence":8,"retention":10,"zeon":80},"level":8,"name":"Ver en la Oscuridad","spellId":3,"type":"Efecto","withRetention":true},{"actionType":"Pasiva","advancedGrade":{"effect":"El escudo tiene 1.800 puntos de Resistencia.","requiredIntelligence":10,"retention":20,"zeon":180},"arcaneGrade":{"effect":"El escudo tiene 3.000 puntos de Resistencia.","requiredIntelligence":14,"retention":25,"zeon":250},"bookId":2,"dailyRetention":false,"effect":"Forma una barrera de energía, que protege frente a cualquier fuente de ataque. El escudo sólo puede ser dañado por ataques de naturaleza sobrenatural, aunque los impactos basados en luz causarán doble daño sobre él.","initialGrade":{"effect":"El escudo tiene 300 puntos de Resistencia.","requiredIntelligence":6,"retention":5,"zeon":50},"intermediateGrade":{"effect":"El escudo tiene 1.000 puntos de Resistencia.","requiredIntelligence":8,"retention":15,"zeon":120},"level":10,"name":"Escudo Oscuro","spellId":4,"type":"Defensa","withRetention":true},{"actionType":"Pasiva","advancedGrade":{"effect":"+200 en Sigilo, Ocultarse y Valoración Mágica.","requiredIntelligence":12,"retention":20,"zeon":200},"arcaneGrade":{"effect":"+250 en Sigilo, Ocultarse y Valoración Mágica.","requiredIntelligence":14,"retention":25,"zeon":240},"bookId":2,"dailyRetention":false,"effect":"Este conjuro aumenta la capacidad de ocultación del hechicero, acrecentando sus habilidades secundarias de Sigilo y Ocultarse, así como su Valoración mágica en la misma cantidad, aunque sólo en el caso de que pretenda ocultar el potencial mágico de algo o alguien (nunca para detectarlo).","initialGrade":{"effect":"+50 en Sigilo, Ocultarse y Valoración Mágica.","requiredIntelligence":5,"retention":5,"zeon":50},"intermediateGrade":{"effect":"+150 en Sigilo, Ocultarse y Valoración Mágica.","requiredIntelligence":9,"retention":15,"zeon":150},"level":10,"name":"Sombra","spellId":5,"type":"Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"TA 8 en Energía y TA 4 en el resto.","requiredIntelligence":12,"retention":15,"zeon":120},"arcaneGrade":{"effect":"TA 12 en Energía y TA 6 en el resto.","requiredIntelligence":15,"retention":20,"zeon":150},"bookId":2,"dailyRetention":false,"effect":"Forma una coraza mística que otorga TA a su usuario contra todo tipo de ataque, en especial contra los basados en energía. Aunque cuenta como una armadura, no se aplican penalizadores al turno por emplear capas de protección adicionales.","initialGrade":{"effect":"TA 2 en Energía y TA 1 en el resto.","requiredIntelligence":6,"retention":5,"zeon":60},"intermediateGrade":{"effect":"TA 5 en Energía y TA 2 en el resto.","requiredIntelligence":9,"retention":10,"zeon":90},"level":16,"name":"Armadura Oscura","spellId":6,"type":"Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"250 metros de radio / 220 RM.","requiredIntelligence":12,"retention":15,"zeon":150},"arcaneGrade":{"effect":"500 metros de radio / 280 RM.","requiredIntelligence":15,"retention":25,"zeon":250},"bookId":2,"dailyRetention":false,"effect":"Destruye la luminosidad ambiental alrededor del hechicero. Si se lanza sobre seres basados naturalmente en luz, estos deberán superar una RM o perderán una cantidad equivalente al doble de su nivel de fracaso en puntos de vida (por diez, si poseen acumulación de daño). Mientras se mantenga el conjuro, la entidad, deberá realizar un nuevo control de RM cada asalto que permanezca en el interior del radio del conjuro.","initialGrade":{"effect":"10 metros de radio / 140 RM.","requiredIntelligence":6,"retention":10,"zeon":60},"intermediateGrade":{"effect":"100 metros de radio / 180 RM.","requiredIntelligence":9,"retention":10,"zeon":100},"level":18,"name":"Destrucción de Luz","spellId":7,"type":"Efecto, Anímico","withRetention":true},{"actionType":"Pasiva","advancedGrade":{"effect":"–240 a Valoración Mágica.","requiredIntelligence":12,"retention":25,"zeon":240},"arcaneGrade":{"effect":"–320 a Valoración Mágica.","requiredIntelligence":15,"retention":30,"zeon":300},"bookId":2,"dailyRetention":false,"effect":"Oculta un conjuro, o las propiedades místicas de un objeto, ante cualquier tipo de detección mágica. A efectos de juego, produce un penalizador a la Valoración mágica de quien intente detectar o medir el conjuro u objeto oculto (así como al propio hechizo de Ocultación de Magia).","initialGrade":{"effect":"–100 a Valoración Mágica.","requiredIntelligence":6,"retention":5,"zeon":50},"intermediateGrade":{"effect":"–180 a Valoración Mágica.","requiredIntelligence":9,"retention":20,"zeon":180},"level":20,"name":"Ocultación de Magia","spellId":8,"type":"Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"Daño 120.","requiredIntelligence":12,"retention":0,"zeon":120},"arcaneGrade":{"effect":"Daño 150.","requiredIntelligence":15,"retention":0,"zeon":150},"bookId":2,"dailyRetention":false,"effect":"Proyecta una descarga mágica basada en oscuridad. El ataque se realiza en la TA de Energía.","initialGrade":{"effect":"Daño 60.","requiredIntelligence":6,"retention":0,"zeon":50},"intermediateGrade":{"effect":"Daño 90.","requiredIntelligence":9,"retention":0,"zeon":90},"level":22,"name":"Descarga Oscura","spellId":9,"type":"Ataque","withRetention":false},{"actionType":"Activa","advancedGrade":{"effect":"Radio de 500 metros.","requiredIntelligence":12,"retention":15,"zeon":240},"arcaneGrade":{"effect":"Radio de 1 kilómetro.","requiredIntelligence":15,"retention":15,"zeon":300},"bookId":2,"dailyRetention":false,"effect":"Crea un ambiente místico que nubla los sentidos de cualquiera que se encuentre en su interior. La Oscuridad Ambiental aumenta en dos grados el nivel de dificultad de cualquier control perceptivo que se realice dentro, incluyendo detección por Ki o medios mágicos. No se puede designar blancos en su interior, y la zona permanece inmóvil en el mismo lugar en el que fue lanzada. No tiene control de RM posible.","initialGrade":{"effect":"Radio de 20 metros.","requiredIntelligence":6,"retention":5,"zeon":60},"intermediateGrade":{"effect":"Radio de 250 metros.","requiredIntelligence":9,"retention":10,"zeon":180},"level":26,"name":"Oscuridad Ambiental","spellId":10,"type":"Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"Disponen de una Fuerza base 15 para los controles y tienen Entereza 30.","requiredIntelligence":12,"retention":15,"zeon":140},"arcaneGrade":{"effect":"Disponen de una Fuerza base 18 para los controles y tienen Entereza 35.","requiredIntelligence":15,"retention":15,"zeon":180},"bookId":2,"dailyRetention":false,"effect":"Forma unos lazos de oscuridad que sujetan al blanco designado. Para ello el lanzador emplea las reglas de Presa, aunque sin penalizador alguno a su habilidad. Los lazos de luz no pueden romperse por el sujeto al que sujetan, pero si un tercero intenta romperlos, estos se consideran un arma de energía con Entereza 25.","initialGrade":{"effect":"Disponen de una Fuerza base 8 para los controles.","requiredIntelligence":6,"retention":10,"zeon":60},"intermediateGrade":{"effect":"Disponen de una Fuerza base 12 para los controles.","requiredIntelligence":9,"retention":10,"zeon":100},"level":28,"name":"Lazos Oscuros","spellId":11,"type":"Ataque","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"Radio de 300 metros y RM 180.","requiredIntelligence":12,"retention":25,"zeon":250},"arcaneGrade":{"effect":"Radio de 500 metros / RM 220.","requiredIntelligence":16,"retention":30,"zeon":350},"bookId":2,"dailyRetention":false,"effect":"Este conjuro modifica y controla la forma e intensidad de la oscuridad y sombras que rodean al hechicero. Si se lanza sobre seres basados naturalmente en este elemento serán dominados por el hechicero si no superan una RM determinada por el grado del conjuro. La criatura sólo puede repetir el control si recibe una orden que sea opuesta a su naturaleza.","initialGrade":{"effect":"Radio de 20 metros / RM 80.","requiredIntelligence":6,"retention":5,"zeon":50},"intermediateGrade":{"effect":"Radio de 150 metros / RM 140.","requiredIntelligence":9,"retention":20,"zeon":150},"level":30,"name":"Dominio Oscuro","spellId":12,"type":"Efecto, Anímico","withRetention":true},{"actionType":"Pasiva","advancedGrade":{"effect":"+220 a la RM o RP / +200 Ocultación del Ki.","requiredIntelligence":12,"retention":25,"zeon":240},"arcaneGrade":{"effect":"+280 a la RM o RP / +250 Ocultación del Ki.","requiredIntelligence":15,"retention":30,"zeon":300},"bookId":2,"dailyRetention":false,"effect":"Oculta la presencia del hechicero o del blanco designado por este ante cualquier tipo de detección. A efectos de juego, aumenta en las Resistencias que se efectúen contra detecciones sobrenaturales, ya sean místicas o psíquicas. Esta habilidad también aumenta la Ocultación del Ki del personaje (aunque este aumento no se contabiliza a la hora de determinar los bonos aplicables a la RM), permitiéndole esconder su energía incluso si no ha desarrollado dicha habilidad.","initialGrade":{"effect":"+50 a la RM o RP / +50 Ocultación del Ki.","requiredIntelligence":6,"retention":10,"zeon":60},"intermediateGrade":{"effect":"+140 a la RM o RP / +150 Ocultación del Ki.","requiredIntelligence":9,"retention":20,"zeon":180},"level":32,"name":"Ocultación","spellId":13,"type":"Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"Base de 200 en Sigilo, Ocultarse y Ocultación del Ki.","requiredIntelligence":12,"retention":50,"zeon":240},"arcaneGrade":{"effect":"Base de 250 en Sigilo, Ocultarse y Ocultación del Ki.","requiredIntelligence":15,"retention":60,"zeon":300},"bookId":2,"dailyRetention":true,"effect":"Modifica el cuerpo de un individuo, fundiéndolo con su entorno y permitiéndole ocultarse naturalmente. Mientras el conjuro de Ofuscar se mantenga activo, el personaje podrá intercambiar su habilidad de Sigilo y Ocultarse por un valor base. También proporciona la misma cantidad a su Ocultación del Ki, incluso si no ha desarrollado dicha habilidad.","initialGrade":{"effect":"Base de 100 en Sigilo, Ocultarse y Ocultación del Ki.","requiredIntelligence":6,"retention":20,"zeon":100},"intermediateGrade":{"effect":"Base de 150 en Sigilo, Ocultarse y Ocultación del Ki.","requiredIntelligence":9,"retention":40,"zeon":180},"level":36,"name":"Ofuscar","spellId":14,"type":"Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"50 metros de radio / RM 120.","requiredIntelligence":12,"retention":15,"zeon":150},"arcaneGrade":{"effect":"100 metros de radio / RM 140.","requiredIntelligence":15,"retention":20,"zeon":200},"bookId":2,"dailyRetention":false,"effect":"Provoca el estado de Ira sobre los objetivos del conjuro, haciendo que estos no controlen sus acciones y ataquen al individuo más cercano a ellos. Mientras alguien se vea influido por sus efectos, aplicará un bono de +10 a su habilidad ofensiva y un –30 al resto de sus controles.","initialGrade":{"effect":"5 metros de radio / RM 80.","requiredIntelligence":6,"retention":10,"zeon":60},"intermediateGrade":{"effect":"20 metros de radio / RM 100.","requiredIntelligence":9,"retention":10,"zeon":90},"level":38,"name":"Rabia","spellId":15,"type":"Anímico","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"RM o RP 180 / 1 kilómetro de radio.","requiredIntelligence":12,"retention":0,"zeon":240},"arcaneGrade":{"effect":"RM o RP 220 / 5 Kilómetros de radio.","requiredIntelligence":15,"retention":0,"zeon":350},"bookId":2,"dailyRetention":false,"effect":"Destruye temporalmente cualquier sentimiento positivo, como paz interior, calma o alegría, que se encuentre en un radio respecto al hechicero. Si desea resistirse, ha de superarse una RM o RP.","initialGrade":{"effect":"RM o RP 100 / 100 metros de radio.","requiredIntelligence":6,"retention":0,"zeon":80},"intermediateGrade":{"effect":"RM o RP 150 / 500 metros de radio.","requiredIntelligence":9,"retention":0,"zeon":180},"level":40,"name":"Destruir Sentimientos Positivos","spellId":16,"type":"Anímico","withRetention":false},{"actionType":"Activa","advancedGrade":{"effect":"Radio 500 metros/ La oscuridad se considera sobrenatural.","requiredIntelligence":12,"retention":25,"zeon":240},"arcaneGrade":{"effect":"Radio 1 kilómetro / La oscuridad se considera sobrenatural.","requiredIntelligence":15,"retention":30,"zeon":300},"bookId":2,"dailyRetention":false,"effect":"Forma una cúpula de oscuridad absoluta. Todo aquel que se encuentre en su interior, excepto el hechicero, se verá sometido a las reglas de Ceguera. Para poder ver a través de esta oscuridad, ya sea desde dentro o fuera de la cúpula, es necesario superar una dificultad de Imposible en Advertir o de Absurdo en Buscar. No se puede designar blancos en el interior del área.","initialGrade":{"effect":"Radio 25 metros.","requiredIntelligence":6,"retention":10,"zeon":80},"intermediateGrade":{"effect":"Radio 250 metros.","requiredIntelligence":9,"retention":20,"zeon":180},"level":42,"name":"Noche","spellId":17,"type":"Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"Daño Base de 160 / Proyección Mágica 210.","requiredIntelligence":12,"retention":25,"zeon":240},"arcaneGrade":{"effect":"Daño Base de 200 / Proyección Mágica 240.","requiredIntelligence":15,"retention":30,"zeon":300},"bookId":2,"dailyRetention":false,"effect":"Desencadena una esfera de energía oscura que ataca en la TA de Energía. El conjuro puede controlarse con la Proyección Mágica del lanzador hasta que impacte sobre un objetivo, por lo que si un blanco esquiva la acometida de una Esfera Buscadora, esta podrá seguir atacando en el turno siguiente al no haber sido destruida. Únicamente cuando causa daño o es parada, la esfera desaparece. Si el hechicero abandona el control directo sobre ella, la esfera se moverá por si misma, atacando todos los asaltos al último blanco prefijado con su propia Proyección Mágica independiente de la del hechicero.","initialGrade":{"effect":"Daño Base 100 / Proyección Mágica 150.","requiredIntelligence":6,"retention":15,"zeon":120},"intermediateGrade":{"effect":"Daño Base de 120 / Proyección Mágica 180.","requiredIntelligence":9,"retention":20,"zeon":180},"level":46,"name":"Esfera Oscura","spellId":18,"type":"Ataque","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"250 metros de radio, RM +200, -240 a Habilidades de detección.","requiredIntelligence":12,"retention":15,"zeon":240},"arcaneGrade":{"effect":"500 metros de radio, RM +300, -320 a Habilidades de detección.","requiredIntelligence":15,"retention":15,"zeon":300},"bookId":2,"dailyRetention":true,"effect":"Al lanzar este conjuro sobre una zona, el hechicero crea un área mística que impide que se pueda detectar nada de lo que se encuentra en el interior. Todo lo que hay dentro de la zona incrementa su RM contra detecciones y cualquier habilidad de Detección del Ki, Valoración mágica o habilidad psíquica de detección que se utilice en ella, sufre un penalizador a su resultado final. La zona afectada permanece estática en el lugar donde fue lanzada.","initialGrade":{"effect":"20 metros de radio, RM +100, -140 a Habilidades de detección.","requiredIntelligence":7,"retention":10,"zeon":140},"intermediateGrade":{"effect":"50 metros de radio, RM +150, -180 a Habilidades de detección.","requiredIntelligence":9,"retention":10,"zeon":180},"level":48,"name":"Zona de Ocultación","spellId":19,"type":"Detección","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"RM o RP 200 / 140 metros de distancia.","requiredIntelligence":12,"retention":15,"zeon":240},"arcaneGrade":{"effect":"RM o RP 240 / 200 metros de distancia.","requiredIntelligence":15,"retention":15,"zeon":300},"bookId":2,"dailyRetention":true,"effect":"Permite al hechicero introducirse físicamente en las pesadillas de un durmiente. El brujo no tendrá ningún control sobre el mundo onírico del soñador, y cualquier cosa que suceda será real para él. La persona deberá tener terribles pesadillas para que este conjuro pueda afectarle y, en el momento en que se torne un sueño plácido, despierte o muera, el mago abandonará el mundo onírico y volverá al real. Cualquier conjuro de Esencia realizado sobre el durmiente afectará también al hechicero. Una vez en las pesadillas, el brujo podrá saltar al subconsciente de otro soñador si este no se encuentra, físicamente, a una distancia cercana del durmiente original. Naturalmente, este sujeto tendrá derecho a una nueva RM. En el caso de que la conciencia del soñador se encuentre en el mundo de la Vigilia, el hechicero quedará atrapado allí incluso después de que finalice el conjuro.","initialGrade":{"effect":"RM o RP 140 / 10 metros de distancia.","requiredIntelligence":6,"retention":10,"zeon":120},"intermediateGrade":{"effect":"RM o RP 160 / 80 metros de distancia.","requiredIntelligence":9,"retention":10,"zeon":180},"level":50,"name":"Introducirse en las Pesadillas","spellId":20,"type":"Anímico","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"Como el Intermedio, pero el bono a sus Resistencias se aplica contra toda clase de efecto sobrenatural no basado en Luz.","requiredIntelligence":13,"retention":15,"zeon":140},"arcaneGrade":{"effect":"Como el Avanzado, pero no sufre doble daño por recibir ataques basados en Luz.","requiredIntelligence":16,"retention":20,"zeon":160},"bookId":2,"dailyRetention":false,"effect":"El cuerpo designado por el hechicero se transformará en pura energía oscura, volviéndose intangible ante todas las materias y ataques no basados en energía. Mientras se encuentre en este estado, el sujeto ganará un bono en sus habilidades secundarias de Advertir y Buscar, así como a sus Resistencias contra efectos basados en Oscuridad. En este estado, cualquier daño causado por Luz se doblará.","initialGrade":{"effect":"+50 en Advertir y Buscar / +20 a sus Resistencias.","requiredIntelligence":8,"retention":10,"zeon":100},"intermediateGrade":{"effect":"+60 en Advertir y Buscar / +30 a sus Resistencias.","requiredIntelligence":11,"retention":15,"zeon":120},"level":52,"name":"Cuerpo a Oscuridad","spellId":21,"type":"Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"RM 180 / 50 metros de radio / -40 a toda acción.","requiredIntelligence":12,"retention":15,"zeon":240},"arcaneGrade":{"effect":"RM 200 / 150 metros de radio / -50 a toda acción.","requiredIntelligence":15,"retention":15,"zeon":300},"bookId":2,"dailyRetention":false,"effect":"La Perdición causa una conmoción a los individuos a los que afecte, disminuyendo sus capacidades y poderes. Aquellos que se encuentren bajo su zona de influencia deberán superar una RM, o recibir un penalizador a toda acción y a sus Resistencias de –30. El conjuro afecta en un radio alrededor del hechicero, afectando automáticamente a cualquiera que el hechicero desee de cuantos se encuentren en el interior. Los penalizadores de la Perdición no se superponen, por lo que un personaje no sufriría el doble de negativos por encontrarse bajo la influencia de dos perdiciones.","initialGrade":{"effect":"RM 120 / Radio de 5 metros.","requiredIntelligence":6,"retention":5,"zeon":100},"intermediateGrade":{"effect":"RM 160 / 25 metros de radio.","requiredIntelligence":9,"retention":10,"zeon":180},"level":56,"name":"Perdición","spellId":22,"type":"Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"Radio de 250 metros / RM o RP 180.","requiredIntelligence":12,"retention":25,"zeon":240},"arcaneGrade":{"effect":"Radio de 500 metros / RM o RP 220.","requiredIntelligence":15,"retention":30,"zeon":300},"bookId":2,"dailyRetention":true,"effect":"Introduce algún tipo de sentimiento negativo, como odio, miedo o ira, en los individuos designados por el hechicero. El afectado puede repetir el control una vez al día.","initialGrade":{"effect":"Radio de 20 metros / RM o RP 120.","requiredIntelligence":8,"retention":10,"zeon":100},"intermediateGrade":{"effect":"Radio de 100 metros / RM o RP 160.","requiredIntelligence":10,"retention":20,"zeon":180},"level":58,"name":"Crear Sentimientos Negativos","spellId":23,"type":"Anímico","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"1 kilómetro de radio / El conjuro permite además borrar las acciones de un individuo ante habilidades que permiten ver el pasado de objetos o lugares.","requiredIntelligence":13,"retention":0,"zeon":300},"arcaneGrade":{"effect":"5 kilómetros de radio / Como en grado Avanzado, salvo que el hechicero puede borrar todo rastro de cuanto aconteció en el pasado en la zona afectada.","requiredIntelligence":16,"retention":0,"zeon":400},"bookId":2,"dailyRetention":false,"effect":"El hechicero puede borrar el rastro de que ha estado en un sitio determinado. De hecho, cualquier residuo de su paso por ese lugar desaparece completamente, ya sea ante habilidades de carácter natural, como Rastrear, o detecciones sobrenaturales.","initialGrade":{"effect":"50 metros de radio.","requiredIntelligence":8,"retention":0,"zeon":100},"intermediateGrade":{"effect":"250 metros de radio.","requiredIntelligence":10,"retention":0,"zeon":200},"level":60,"name":"Eliminar Residuos","spellId":24,"type":"Efecto","withRetention":false},{"actionType":"Activa","advancedGrade":{"effect":"RM 160 / radio de 250 metros.","requiredIntelligence":12,"retention":25,"zeon":240},"arcaneGrade":{"effect":"RM 180 / radio de 500 metros.","requiredIntelligence":15,"retention":30,"zeon":300},"bookId":2,"dailyRetention":false,"effect":"Encanta una zona, haciéndola impenetrable para los seres basados naturalmente en sentimientos positivos u luz. Cualquiera de estas criaturas que entre en la zona del conjuro, deberá realizar cada asalto una RM o sufrir una pérdida en puntos de vida equivalente al nivel de fracaso. Adicionalmente, de fallar el control, el ser recibirá de inmediato un penalizador a toda acción de -40 mientras sigua en su interior. La zona afectada permanece estática en el lugar donde fue lanzada.","initialGrade":{"effect":"RM 120 / radio de 20 metros.","requiredIntelligence":7,"retention":15,"zeon":140},"intermediateGrade":{"effect":"RM 140 / radio de 100 metros.","requiredIntelligence":9,"retention":20,"zeon":180},"level":62,"name":"Escudar Contra lo Positivo","spellId":25,"type":"Automático","withRetention":true},{"actionType":"Pasiva","advancedGrade":{"effect":"Daño del choque 140 y 1800 puntos de Resistencia.","requiredIntelligence":12,"retention":15,"zeon":240},"arcaneGrade":{"effect":"Daño del choque 170 y 2200 puntos de Resistencia.","requiredIntelligence":15,"retention":15,"zeon":300},"bookId":2,"dailyRetention":false,"effect":"Crea un escudo sobrenatural sombrío que posee además la habilidad de tragarse cualquier hechizo de Ataque que reciba. Para que el conjuro sea absorbido, es necesario primero lograr una parada con éxito contra la descarga, y en segundo lugar ganar un control de choque. El vacío permite absorber la mitad del Zeon del conjuro devorado. Es posible incluso que se trague ataques en área.","initialGrade":{"effect":"Daño del choque 80 y 600 puntos de Resistencia.","requiredIntelligence":6,"retention":10,"zeon":120},"intermediateGrade":{"effect":"Daño del choque 110 y 1200 puntos de Resistencia.","requiredIntelligence":9,"retention":10,"zeon":180},"level":66,"name":"Oscuridad Devoradora","spellId":26,"type":"Defensa","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"RM 200.","requiredIntelligence":12,"retention":25,"zeon":240},"arcaneGrade":{"effect":"RM 240.","requiredIntelligence":15,"retention":30,"zeon":300},"bookId":2,"dailyRetention":false,"effect":"Provoca penalizadores mediante la acumulación de dolor, sufrimiento, desdicha y otros efectos místicos tenebrosos. El afectado deberá superar una RM, o sufrir un penalizador a toda acción y a sus Resistencias equivalente al nivel de fracaso del control. Si no supera la RM, el blanco del conjuro no tendrá derecho a una nueva tirada mientras el hechizo se mantenga.","initialGrade":{"effect":"RM 120.","requiredIntelligence":6,"retention":10,"zeon":100},"intermediateGrade":{"effect":"RM 160.","requiredIntelligence":9,"retention":20,"zeon":180},"level":68,"name":"Destrozar","spellId":27,"type":"Anímico","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"Visible en 15 kilómetros de radio / RM o RP 180.","requiredIntelligence":14,"retention":10,"zeon":280},"arcaneGrade":{"effect":"Visible en 25 kilómetros de radio / RM o RP 220.","requiredIntelligence":16,"retention":15,"zeon":360},"bookId":2,"dailyRetention":false,"effect":"Forma una marca o un espectáculo de luces en un lugar determinado que aterroriza y llena de terror a quienes la observen. Todo aquel que lo mire y falle la Resistencia sufrirá de inmediato el estado de Terror. La condición para ser afectado consiste en mirar directamente la Marca del Miedo.","initialGrade":{"effect":"Visible en 1 kilómetro de radio / RM o RP 120.","requiredIntelligence":10,"retention":5,"zeon":140},"intermediateGrade":{"effect":"Visible en 5 kilómetros de radio / RM o RP 150.","requiredIntelligence":12,"retention":10,"zeon":200},"level":70,"name":"Marca del Miedo","spellId":28,"type":"Automático","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"Daño 200 / 150 metros de radio.","requiredIntelligence":14,"retention":0,"zeon":240},"arcaneGrade":{"effect":"Daño 250 / 250 metros de radio.","requiredIntelligence":16,"retention":0,"zeon":350},"bookId":2,"dailyRetention":false,"effect":"Proyecta una descarga de energía basada en oscuridad. Ataca en la TA de Energía.","initialGrade":{"effect":"Daño 120 / 25 metros de radio.","requiredIntelligence":10,"retention":0,"zeon":140},"intermediateGrade":{"effect":"Daño 150 / 100 metros de radio.","requiredIntelligence":12,"retention":0,"zeon":180},"level":72,"name":"Oscuridad Catastrófica","spellId":29,"type":"Ataque","withRetention":false},{"actionType":"Activa","advancedGrade":{"effect":"Presencia 140 / Calidad +10.","requiredIntelligence":14,"retention":25,"zeon":240},"arcaneGrade":{"effect":"Presencia 180 / Calidad +15.","requiredIntelligence":16,"retention":30,"zeon":300},"bookId":2,"dailyRetention":false,"effect":"Forma un objeto físico de energía lumínica, ya sea algo tan complejo como un reloj o tan simple como una espada. Pese a estar hecho de luz, tiene consistencia física. La presencia máxima de dicho objeto y la calidad del mismo viene determinada por el grado del conjuro.","initialGrade":{"effect":"Presencia 60 / Calidad +5.","requiredIntelligence":10,"retention":15,"zeon":150},"intermediateGrade":{"effect":"Presencia 100 / Calidad +10.","requiredIntelligence":12,"retention":20,"zeon":200},"level":76,"name":"Objetos Oscuros","spellId":30,"type":"Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"5.000 kilómetros / 1.000 de presencia / RM 180.","requiredIntelligence":14,"retention":0,"zeon":450},"arcaneGrade":{"effect":"15.000 kilómetros / 2.000 de presencia / RM contra 200.","requiredIntelligence":16,"retention":0,"zeon":600},"bookId":2,"dailyRetention":false,"effect":"Transporta instantáneamente a los individuos u objetos designados por el brujo, desde una sombra hasta otra. Si desea resistirse, hay que superar la RM del conjuro. Tanto la distancia máxima como la máxima presencia afectable son determinadas por el grado del conjuro.","initialGrade":{"effect":"100 kilómetros / 250 de presencia / RM 120.","requiredIntelligence":10,"retention":0,"zeon":250},"intermediateGrade":{"effect":"1.000 kilómetros / 500 de presencia / RM 140.","requiredIntelligence":12,"retention":0,"zeon":360},"level":78,"name":"Transmisión por Sombras","spellId":31,"type":"3Efecto, Anímico","withRetention":false},{"actionType":"Activa","advancedGrade":{"effect":"RM 160 / Como Intermedio, pero el Gnosis del brujo en zonas neutras es de 35.","requiredIntelligence":16,"retention":70,"zeon":500},"arcaneGrade":{"effect":"RM 180 / Como Avanzado, pero los efectos del conjuro no tienen límites espaciales, afectando por igual a toda la Vigilia influenciada por energías positivas.","requiredIntelligence":18,"retention":80,"zeon":750},"bookId":2,"dailyRetention":false,"effect":"Permite dominar cualquier tipo de pesadilla de un individuo que no supere la RM del conjuro. El hechicero tendrá la capacidad de controlar el mundo onírico de un durmiente, modificándolo como si tuviera Gnosis 45. En el caso de que el sueño se alimente de energía positiva, es decir, que se torne un sueño plácido, su Gnosis será sólo de 30. Los conjuros que el brujo lance únicamente gracias a dicho Gnosis (como por ejemplo, magia divina), no tienen efecto fuera de los límites espaciales del conjuro y sus efectos desaparecen en cuanto el hechicero sale del sueño o de la Vigilia.","initialGrade":{"effect":"RM 140.","requiredIntelligence":12,"retention":60,"zeon":300},"intermediateGrade":{"effect":"RM 150 / Si el hechicero se encuentra en la Vigilia, controla además su entorno y gana los poderes de una criatura con Gnosis 40, siempre y cuando esté en un lugar fuertemente influenciado por energías negativas. Si se encuentra en una zona neutra, su puntuación será 30. Este conjuro sólo afecta la zona de la Vigilia en la que fue lanzado, y siempre y cuando no haya otra entidad de Gnosis similar enlazada a ella.","requiredIntelligence":14,"retention":65,"zeon":400},"level":80,"name":"Rey de Pesadillas","spellId":32,"type":"Efecto, Anímico","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"Nivel 6.","requiredIntelligence":14,"retention":100,"zeon":500},"arcaneGrade":{"effect":"Nivel 10.","requiredIntelligence":16,"retention":140,"zeon":700},"bookId":2,"dailyRetention":false,"effect":"Crea un ser oscuro con apariencia de vida, bajo el control absoluto del hechicero. El ente será desarrollado como un Ser Entre Mundos, usando los poderes y limitaciones de los elementales oscuros del Capítulo 26. Para calcular su nivel máximo se emplean las mismas reglas que en el conjuro Crear Ser, de la vía de Creación.","initialGrade":{"effect":"Nivel 1.","requiredIntelligence":10,"retention":50,"zeon":250},"intermediateGrade":{"effect":"Nivel 3.","requiredIntelligence":12,"retention":70,"zeon":350},"level":82,"name":"Creación Oscura","spellId":33,"type":"Efecto","withRetention":true},{"actionType":"Pasiva","advancedGrade":{"effect":"Afecta a conjuros Automáticos de Grado Avanzado.","requiredIntelligence":14,"retention":15,"zeon":280},"arcaneGrade":{"effect":"Afecta a conjuros Automáticos de Grado Arcano.","requiredIntelligence":16,"retention":20,"zeon":320},"bookId":2,"dailyRetention":true,"effect":"Oculta la presencia de un individuo contra los conjuros de tipo Automático, haciendo que no sea afectado de manera directa por ellos. Al contrario de lo que indican las reglas generales, el hechicero que mantenga cualquier conjuro Automático deberá conseguir fijar con su Proyección Mágica al personaje, como si se tratase de un conjuro Anímico normal, a pesar de que este cumpla la condición para ser afectado.","initialGrade":{"effect":"Afecta a conjuros Automáticos de Grado Base.","requiredIntelligence":10,"retention":10,"zeon":200},"intermediateGrade":{"effect":"Afecta a conjuros Automáticos de Grado Intermedio.","requiredIntelligence":12,"retention":15,"zeon":240},"level":86,"name":"Ocultarse Ante la Magia","spellId":34,"type":"Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"1 kilómetro de radio.","requiredIntelligence":14,"retention":25,"zeon":420},"arcaneGrade":{"effect":"1 kilómetros de radio / +30 al ACT al lanzar conjuros oscuros.","requiredIntelligence":16,"retention":25,"zeon":480},"bookId":2,"dailyRetention":false,"effect":"Crea una zona estática alrededor del hechicero donde todo se vuelve oscuridad absoluta. El cuerpo del brujo se funde con las sombras, incrementando en +20 su ACT al lanzar conjuros de Oscuridad y aumentando en +40 sus Resistencias contra cualquier clase de detección. Si alguien intenta localizarlo empleando los sentidos naturales, es necesario superar un control de Buscar contra Imposible, o de Advertir contra Inhumano, mientras que si se usa Detección del Ki, se requiere pasar un control contra Zen. Además, mientras sea uno con la oscuridad el hechicero podrá transportarse una vez por asalto como una acción activa hasta el lugar que desee dentro de los límites del Reino de Tinieblas. Cualquier ser vivo que permanezca dentro del área que no sea un elemental oscuro pierde automáticamente 10 puntos de Zeon por asalto y un punto de Ki (el doble, si es un elemental de luz).","initialGrade":{"effect":"50 metros de radio.","requiredIntelligence":10,"retention":10,"zeon":200},"intermediateGrade":{"effect":"500 metros de radio.","requiredIntelligence":12,"retention":20,"zeon":360},"level":88,"name":"Reino de Tinieblas","spellId":35,"type":"Automático","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"Como en grado Intermedio, pero también se vuelve indetectable ante todas las habilidades sobrenaturales.","requiredIntelligence":16,"retention":105,"zeon":600},"arcaneGrade":{"effect":"Ignora cualquier detección que no sean los sentidos naturales.","requiredIntelligence":18,"retention":115,"zeon":800},"bookId":2,"dailyRetention":false,"effect":"El hechicero, o quien este designe, se vuelve completamente inmune ante ciertos tipos de detecciones sobrenaturales. Por ejemplo, un personaje que use este conjuro en grado Arcano sólo podría ser encontrado mediante los sentidos físicos, como la vista o el oído.","initialGrade":{"effect":"El personaje se vuelve indetectable ante conjuros y habilidades psíquicas.","requiredIntelligence":12,"retention":80,"zeon":350},"intermediateGrade":{"effect":"Como en grado Base, pero también se vuelve indetectable ante habilidades del Ki.","requiredIntelligence":14,"retention":90,"zeon":450},"level":90,"name":"Indetección","spellId":36,"type":"Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"RM 220 / La prisión posee 500.000 puntos de resistencia.","requiredIntelligence":18,"retention":100,"zeon":500},"arcaneGrade":{"effect":"RM 240 / La prisión no puede ser rota desde el interior, pero tiene 500.000 puntos de resistencia si es atacada desde fuera.","requiredIntelligence":20,"retention":160,"zeon":800},"bookId":2,"dailyRetention":false,"effect":"Encierra algo en un mundo de tinieblas intraspasable, un universo propio desde el que no podrá interactuar con el exterior, ni el exterior hacerlo recíprocamente con el objeto o criatura. Mientras el afectado se encuentre dentro de la prisión, no será consciente de lo que ocurre fuera, ni viceversa. Para forzar el conjuro desde el interior, la prisión es considerada como un ser con acumulación de daño y una TA 10, cuya resistencia es determinada por el grado del conjuro. No obstante, todo daño que sufra desde fuera se dobla automáticamente, La prisión se recupera de cualquier daño con Regeneración 19. Si el blanco del conjuro falla la RM y es afectado por el sortilegio, no tendrá derecho a ninguna tirada posterior","initialGrade":{"effect":"RM 140 / La prisión posee 10.000 puntos de resistencia.","requiredIntelligence":14,"retention":40,"zeon":200},"intermediateGrade":{"effect":"RM 180 / La prisión posee 250.000 puntos de resistencia.","requiredIntelligence":16,"retention":70,"zeon":350},"level":92,"name":"Prisión de Oscuridad","spellId":37,"type":"Anímico","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"Un mes.","requiredIntelligence":16,"retention":0,"zeon":600},"arcaneGrade":{"effect":"Un año.","requiredIntelligence":18,"retention":0,"zeon":800},"bookId":2,"dailyRetention":false,"effect":"Permite al lanzador o el objetivo designado por este entrar en un estado de completo letargo, mientras su cuerpo se hace uno con la oscuridad. La entidad abandona el mundo y asciende a la red de almas para nutrirse de sus energías. Apartado y desconocedor de todo lo que sucede en el exterior, multiplica por 10 su regeneración zeónica y cura sus heridas con Regeneración 16. Cuanto tiempo puede permanecer apartado del mundo es determinado por el grado del conjuro.","initialGrade":{"effect":"Un día.","requiredIntelligence":12,"retention":0,"zeon":200},"intermediateGrade":{"effect":"Una semana.","requiredIntelligence":14,"retention":0,"zeon":400},"level":96,"name":"Esencia Oscura","spellId":38,"type":"Efecto","withRetention":false},{"actionType":"Activa","advancedGrade":{"effect":"Gnosis máximo 40.","requiredIntelligence":18,"retention":45,"zeon":2000},"arcaneGrade":{"effect":"Gnosis máximo 45.","requiredIntelligence":20,"retention":50,"zeon":5000},"bookId":2,"dailyRetention":false,"effect":"El conjuro intercambia la esencia del lanzador por energía divina, modificando su espíritu por puro poder sobrenatural. Al hacerlo, el lanzador o el individuo designado por éste aumenta su Gnosis hasta una cantidad máxima determinada por el grado del conjuro.","initialGrade":{"effect":"Gnosis máximo 30.","requiredIntelligence":14,"retention":30,"zeon":500},"intermediateGrade":{"effect":"Gnosis máximo 35.","requiredIntelligence":16,"retention":40,"zeon":1000},"level":98,"name":"Ascensión Oscura","spellId":39,"type":"Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"Daño 800 / 10.000 kilómetros de radio.","requiredIntelligence":18,"retention":0,"zeon":2500},"arcaneGrade":{"effect":"Daño 1.000 / 1 ua de radio.","requiredIntelligence":20,"retention":0,"zeon":10000},"bookId":2,"dailyRetention":false,"effect":"Este conjuro desencadena el poder de la oscuridad en su estado más puro, arrasando todo lo que encuentra a su paso, tanto en el mundo material como en el espiritual. La energía liberada lo arrastra y devora todo, unificando toda existencia con las tinieblas. Incluso las criaturas elementales de oscuridad son asimiladas por su poder. El Holocausto crea una gran cúpula de tinieblas que ataca en la TA de energía. Cualquier ser que reciba daño, por mínimo que sea, deberá superar una RM contra 160 o será unificado con la oscuridad y, por tanto, destruido en cuerpo y alma de forma automática. No es posible designar blancos específicos en el radio del conjuro, y afectará a todos por igual salvo al lanzador.","initialGrade":{"effect":"Daño 350 / 100 metros de radio.","requiredIntelligence":14,"retention":0,"zeon":600},"intermediateGrade":{"effect":"Daño 500 / 100 kilómetros de radio.","requiredIntelligence":16,"retention":0,"zeon":1000},"level":100,"name":"Holocausto de Oscuridad","spellId":40,"type":"Ataque, Anímico","withRetention":false}],"type":"Mayor"}
+{
+  "bookId": 2,
+  "bookName": "Oscuridad",
+  "description": "La oscuridad no controla la ausencia de luz, sino el puro poder de las tinieblas. Domina todas las emociones negativas como el miedo, la ira y el odio. Es también el poder de los secretos, entre los que se incluyen los conjuros de ocultación y ofuscación. Al igual que la Luz, su poder está muy equilibrado.",
+  "oppositeBook": "Luz",
+  "secondaryBookAccessibles": [
+    "Paz"
+  ],
+  "spells": [
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "100 metros de radio.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 100
+      },
+      "arcaneGrade": {
+        "effect": "500 metros de radio.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 200
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "Oscurece completamente una zona. Todo lo que hay en su interior se percibe como en una noche cerrada y sin luna.",
+      "initialGrade": {
+        "effect": "5 metros de radio.",
+        "requiredIntelligence": 5,
+        "retention": 5,
+        "zeon": 20
+      },
+      "intermediateGrade": {
+        "effect": "25 metros de radio.",
+        "requiredIntelligence": 8,
+        "retention": 5,
+        "zeon": 50
+      },
+      "level": 2,
+      "name": "Crear Oscuridad",
+      "spellId": 1,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM o RP 120 / 100 metros de radio.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 140
+      },
+      "arcaneGrade": {
+        "effect": "RM o RP 140 / 250 metros de radio.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 180
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "Provoca, temporalmente, el estado de Miedo a todos los sujetos que se encuentren alrededor del lanzador. El hechicero decidirá cuál es la fuente que origina el miedo a los afectados.",
+      "initialGrade": {
+        "effect": "RM o RP 80 / 10 metros de radio.",
+        "requiredIntelligence": 5,
+        "retention": 0,
+        "zeon": 40
+      },
+      "intermediateGrade": {
+        "effect": "RM o RP 100 / 50 metros de radio.",
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 80
+      },
+      "level": 6,
+      "name": "Imbuir Miedo",
+      "spellId": 2,
+      "type": "Anímico",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Presencia máxima 120.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 100
+      },
+      "arcaneGrade": {
+        "effect": "Presencia máxima 140 / Permite ver en la oscuridad sobrenatural.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 120
+      },
+      "bookId": 2,
+      "dailyRetention": true,
+      "effect": "Permite al hechicero, o a quienes este seleccione, ver perfectamente en la oscuridad natural, siempre que la suma de sus presencias no supere el valor determinado por el grado del conjuro.",
+      "initialGrade": {
+        "effect": "Presencia máxima 80.",
+        "requiredIntelligence": 5,
+        "retention": 5,
+        "zeon": 40
+      },
+      "intermediateGrade": {
+        "effect": "Presencia máxima 100.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 80
+      },
+      "level": 8,
+      "name": "Ver en la Oscuridad",
+      "spellId": 3,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Pasiva",
+      "advancedGrade": {
+        "effect": "El escudo tiene 1.800 puntos de Resistencia.",
+        "requiredIntelligence": 10,
+        "retention": 20,
+        "zeon": 180
+      },
+      "arcaneGrade": {
+        "effect": "El escudo tiene 3.000 puntos de Resistencia.",
+        "requiredIntelligence": 14,
+        "retention": 25,
+        "zeon": 250
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "Forma una barrera de energía, que protege frente a cualquier fuente de ataque. El escudo sólo puede ser dañado por ataques de naturaleza sobrenatural, aunque los impactos basados en luz causarán doble daño sobre él.",
+      "initialGrade": {
+        "effect": "El escudo tiene 300 puntos de Resistencia.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 50
+      },
+      "intermediateGrade": {
+        "effect": "El escudo tiene 1.000 puntos de Resistencia.",
+        "requiredIntelligence": 8,
+        "retention": 15,
+        "zeon": 120
+      },
+      "level": 10,
+      "name": "Escudo Oscuro",
+      "spellId": 4,
+      "type": "Defensa",
+      "withRetention": true
+    },
+    {
+      "actionType": "Pasiva",
+      "advancedGrade": {
+        "effect": "+200 en Sigilo, Ocultarse y Valoración Mágica.",
+        "requiredIntelligence": 12,
+        "retention": 20,
+        "zeon": 200
+      },
+      "arcaneGrade": {
+        "effect": "+250 en Sigilo, Ocultarse y Valoración Mágica.",
+        "requiredIntelligence": 14,
+        "retention": 25,
+        "zeon": 240
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "Este conjuro aumenta la capacidad de ocultación del hechicero, acrecentando sus habilidades secundarias de Sigilo y Ocultarse, así como su Valoración mágica en la misma cantidad, aunque sólo en el caso de que pretenda ocultar el potencial mágico de algo o alguien (nunca para detectarlo).",
+      "initialGrade": {
+        "effect": "+50 en Sigilo, Ocultarse y Valoración Mágica.",
+        "requiredIntelligence": 5,
+        "retention": 5,
+        "zeon": 50
+      },
+      "intermediateGrade": {
+        "effect": "+150 en Sigilo, Ocultarse y Valoración Mágica.",
+        "requiredIntelligence": 9,
+        "retention": 15,
+        "zeon": 150
+      },
+      "level": 10,
+      "name": "Sombra",
+      "spellId": 5,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "TA 8 en Energía y TA 4 en el resto.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "TA 12 en Energía y TA 6 en el resto.",
+        "requiredIntelligence": 15,
+        "retention": 20,
+        "zeon": 150
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "Forma una coraza mística que otorga TA a su usuario contra todo tipo de ataque, en especial contra los basados en energía. Aunque cuenta como una armadura, no se aplican penalizadores al turno por emplear capas de protección adicionales.",
+      "initialGrade": {
+        "effect": "TA 2 en Energía y TA 1 en el resto.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "TA 5 en Energía y TA 2 en el resto.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 90
+      },
+      "level": 16,
+      "name": "Armadura Oscura",
+      "spellId": 6,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "250 metros de radio / 220 RM.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 150
+      },
+      "arcaneGrade": {
+        "effect": "500 metros de radio / 280 RM.",
+        "requiredIntelligence": 15,
+        "retention": 25,
+        "zeon": 250
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "Destruye la luminosidad ambiental alrededor del hechicero. Si se lanza sobre seres basados naturalmente en luz, estos deberán superar una RM o perderán una cantidad equivalente al doble de su nivel de fracaso en puntos de vida (por diez, si poseen acumulación de daño). Mientras se mantenga el conjuro, la entidad, deberá realizar un nuevo control de RM cada asalto que permanezca en el interior del radio del conjuro.",
+      "initialGrade": {
+        "effect": "10 metros de radio / 140 RM.",
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "100 metros de radio / 180 RM.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 100
+      },
+      "level": 18,
+      "name": "Destrucción de Luz",
+      "spellId": 7,
+      "type": "Efecto, Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Pasiva",
+      "advancedGrade": {
+        "effect": "–240 a Valoración Mágica.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "–320 a Valoración Mágica.",
+        "requiredIntelligence": 15,
+        "retention": 30,
+        "zeon": 300
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "Oculta un conjuro, o las propiedades místicas de un objeto, ante cualquier tipo de detección mágica. A efectos de juego, produce un penalizador a la Valoración mágica de quien intente detectar o medir el conjuro u objeto oculto (así como al propio hechizo de Ocultación de Magia).",
+      "initialGrade": {
+        "effect": "–100 a Valoración Mágica.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 50
+      },
+      "intermediateGrade": {
+        "effect": "–180 a Valoración Mágica.",
+        "requiredIntelligence": 9,
+        "retention": 20,
+        "zeon": 180
+      },
+      "level": 20,
+      "name": "Ocultación de Magia",
+      "spellId": 8,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Daño 120.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "Daño 150.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 150
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "Proyecta una descarga mágica basada en oscuridad. El ataque se realiza en la TA de Energía.",
+      "initialGrade": {
+        "effect": "Daño 60.",
+        "requiredIntelligence": 6,
+        "retention": 0,
+        "zeon": 50
+      },
+      "intermediateGrade": {
+        "effect": "Daño 90.",
+        "requiredIntelligence": 9,
+        "retention": 0,
+        "zeon": 90
+      },
+      "level": 22,
+      "name": "Descarga Oscura",
+      "spellId": 9,
+      "type": "Ataque",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Radio de 500 metros.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "Radio de 1 kilómetro.",
+        "requiredIntelligence": 15,
+        "retention": 15,
+        "zeon": 300
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "Crea un ambiente místico que nubla los sentidos de cualquiera que se encuentre en su interior. La Oscuridad Ambiental aumenta en dos grados el nivel de dificultad de cualquier control perceptivo que se realice dentro, incluyendo detección por Ki o medios mágicos. No se puede designar blancos en su interior, y la zona permanece inmóvil en el mismo lugar en el que fue lanzada. No tiene control de RM posible.",
+      "initialGrade": {
+        "effect": "Radio de 20 metros.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "Radio de 250 metros.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 180
+      },
+      "level": 26,
+      "name": "Oscuridad Ambiental",
+      "spellId": 10,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Disponen de una Fuerza base 15 para los controles y tienen Entereza 30.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 140
+      },
+      "arcaneGrade": {
+        "effect": "Disponen de una Fuerza base 18 para los controles y tienen Entereza 35.",
+        "requiredIntelligence": 15,
+        "retention": 15,
+        "zeon": 180
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "Forma unos lazos de oscuridad que sujetan al blanco designado. Para ello el lanzador emplea las reglas de Presa, aunque sin penalizador alguno a su habilidad. Los lazos de luz no pueden romperse por el sujeto al que sujetan, pero si un tercero intenta romperlos, estos se consideran un arma de energía con Entereza 25.",
+      "initialGrade": {
+        "effect": "Disponen de una Fuerza base 8 para los controles.",
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "Disponen de una Fuerza base 12 para los controles.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 100
+      },
+      "level": 28,
+      "name": "Lazos Oscuros",
+      "spellId": 11,
+      "type": "Ataque",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Radio de 300 metros y RM 180.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 250
+      },
+      "arcaneGrade": {
+        "effect": "Radio de 500 metros / RM 220.",
+        "requiredIntelligence": 16,
+        "retention": 30,
+        "zeon": 350
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "Este conjuro modifica y controla la forma e intensidad de la oscuridad y sombras que rodean al hechicero. Si se lanza sobre seres basados naturalmente en este elemento serán dominados por el hechicero si no superan una RM determinada por el grado del conjuro. La criatura sólo puede repetir el control si recibe una orden que sea opuesta a su naturaleza.",
+      "initialGrade": {
+        "effect": "Radio de 20 metros / RM 80.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 50
+      },
+      "intermediateGrade": {
+        "effect": "Radio de 150 metros / RM 140.",
+        "requiredIntelligence": 9,
+        "retention": 20,
+        "zeon": 150
+      },
+      "level": 30,
+      "name": "Dominio Oscuro",
+      "spellId": 12,
+      "type": "Efecto, Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Pasiva",
+      "advancedGrade": {
+        "effect": "+220 a la RM o RP / +200 Ocultación del Ki.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "+280 a la RM o RP / +250 Ocultación del Ki.",
+        "requiredIntelligence": 15,
+        "retention": 30,
+        "zeon": 300
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "Oculta la presencia del hechicero o del blanco designado por este ante cualquier tipo de detección. A efectos de juego, aumenta en las Resistencias que se efectúen contra detecciones sobrenaturales, ya sean místicas o psíquicas. Esta habilidad también aumenta la Ocultación del Ki del personaje (aunque este aumento no se contabiliza a la hora de determinar los bonos aplicables a la RM), permitiéndole esconder su energía incluso si no ha desarrollado dicha habilidad.",
+      "initialGrade": {
+        "effect": "+50 a la RM o RP / +50 Ocultación del Ki.",
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "+140 a la RM o RP / +150 Ocultación del Ki.",
+        "requiredIntelligence": 9,
+        "retention": 20,
+        "zeon": 180
+      },
+      "level": 32,
+      "name": "Ocultación",
+      "spellId": 13,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Base de 200 en Sigilo, Ocultarse y Ocultación del Ki.",
+        "requiredIntelligence": 12,
+        "retention": 50,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "Base de 250 en Sigilo, Ocultarse y Ocultación del Ki.",
+        "requiredIntelligence": 15,
+        "retention": 60,
+        "zeon": 300
+      },
+      "bookId": 2,
+      "dailyRetention": true,
+      "effect": "Modifica el cuerpo de un individuo, fundiéndolo con su entorno y permitiéndole ocultarse naturalmente. Mientras el conjuro de Ofuscar se mantenga activo, el personaje podrá intercambiar su habilidad de Sigilo y Ocultarse por un valor base. También proporciona la misma cantidad a su Ocultación del Ki, incluso si no ha desarrollado dicha habilidad.",
+      "initialGrade": {
+        "effect": "Base de 100 en Sigilo, Ocultarse y Ocultación del Ki.",
+        "requiredIntelligence": 6,
+        "retention": 20,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "Base de 150 en Sigilo, Ocultarse y Ocultación del Ki.",
+        "requiredIntelligence": 9,
+        "retention": 40,
+        "zeon": 180
+      },
+      "level": 36,
+      "name": "Ofuscar",
+      "spellId": 14,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "50 metros de radio / RM 120.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 150
+      },
+      "arcaneGrade": {
+        "effect": "100 metros de radio / RM 140.",
+        "requiredIntelligence": 15,
+        "retention": 20,
+        "zeon": 200
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "Provoca el estado de Ira sobre los objetivos del conjuro, haciendo que estos no controlen sus acciones y ataquen al individuo más cercano a ellos. Mientras alguien se vea influido por sus efectos, aplicará un bono de +10 a su habilidad ofensiva y un –30 al resto de sus controles.",
+      "initialGrade": {
+        "effect": "5 metros de radio / RM 80.",
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "20 metros de radio / RM 100.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 90
+      },
+      "level": 38,
+      "name": "Rabia",
+      "spellId": 15,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM o RP 180 / 1 kilómetro de radio.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "RM o RP 220 / 5 Kilómetros de radio.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 350
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "Destruye temporalmente cualquier sentimiento positivo, como paz interior, calma o alegría, que se encuentre en un radio respecto al hechicero. Si desea resistirse, ha de superarse una RM o RP.",
+      "initialGrade": {
+        "effect": "RM o RP 100 / 100 metros de radio.",
+        "requiredIntelligence": 6,
+        "retention": 0,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "RM o RP 150 / 500 metros de radio.",
+        "requiredIntelligence": 9,
+        "retention": 0,
+        "zeon": 180
+      },
+      "level": 40,
+      "name": "Destruir Sentimientos Positivos",
+      "spellId": 16,
+      "type": "Anímico",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Radio 500 metros/ La oscuridad se considera sobrenatural.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "Radio 1 kilómetro / La oscuridad se considera sobrenatural.",
+        "requiredIntelligence": 15,
+        "retention": 30,
+        "zeon": 300
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "Forma una cúpula de oscuridad absoluta. Todo aquel que se encuentre en su interior, excepto el hechicero, se verá sometido a las reglas de Ceguera. Para poder ver a través de esta oscuridad, ya sea desde dentro o fuera de la cúpula, es necesario superar una dificultad de Imposible en Advertir o de Absurdo en Buscar. No se puede designar blancos en el interior del área.",
+      "initialGrade": {
+        "effect": "Radio 25 metros.",
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "Radio 250 metros.",
+        "requiredIntelligence": 9,
+        "retention": 20,
+        "zeon": 180
+      },
+      "level": 42,
+      "name": "Noche",
+      "spellId": 17,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Daño Base de 160 / Proyección Mágica 210.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "Daño Base de 200 / Proyección Mágica 240.",
+        "requiredIntelligence": 15,
+        "retention": 30,
+        "zeon": 300
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "Desencadena una esfera de energía oscura que ataca en la TA de Energía. El conjuro puede controlarse con la Proyección Mágica del lanzador hasta que impacte sobre un objetivo, por lo que si un blanco esquiva la acometida de una Esfera Buscadora, esta podrá seguir atacando en el turno siguiente al no haber sido destruida. Únicamente cuando causa daño o es parada, la esfera desaparece. Si el hechicero abandona el control directo sobre ella, la esfera se moverá por si misma, atacando todos los asaltos al último blanco prefijado con su propia Proyección Mágica independiente de la del hechicero.",
+      "initialGrade": {
+        "effect": "Daño Base 100 / Proyección Mágica 150.",
+        "requiredIntelligence": 6,
+        "retention": 15,
+        "zeon": 120
+      },
+      "intermediateGrade": {
+        "effect": "Daño Base de 120 / Proyección Mágica 180.",
+        "requiredIntelligence": 9,
+        "retention": 20,
+        "zeon": 180
+      },
+      "level": 46,
+      "name": "Esfera Oscura",
+      "spellId": 18,
+      "type": "Ataque",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "250 metros de radio, RM +200, -240 a Habilidades de detección.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "500 metros de radio, RM +300, -320 a Habilidades de detección.",
+        "requiredIntelligence": 15,
+        "retention": 15,
+        "zeon": 300
+      },
+      "bookId": 2,
+      "dailyRetention": true,
+      "effect": "Al lanzar este conjuro sobre una zona, el hechicero crea un área mística que impide que se pueda detectar nada de lo que se encuentra en el interior. Todo lo que hay dentro de la zona incrementa su RM contra detecciones y cualquier habilidad de Detección del Ki, Valoración mágica o habilidad psíquica de detección que se utilice en ella, sufre un penalizador a su resultado final. La zona afectada permanece estática en el lugar donde fue lanzada.",
+      "initialGrade": {
+        "effect": "20 metros de radio, RM +100, -140 a Habilidades de detección.",
+        "requiredIntelligence": 7,
+        "retention": 10,
+        "zeon": 140
+      },
+      "intermediateGrade": {
+        "effect": "50 metros de radio, RM +150, -180 a Habilidades de detección.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 180
+      },
+      "level": 48,
+      "name": "Zona de Ocultación",
+      "spellId": 19,
+      "type": "Detección",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM o RP 200 / 140 metros de distancia.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "RM o RP 240 / 200 metros de distancia.",
+        "requiredIntelligence": 15,
+        "retention": 15,
+        "zeon": 300
+      },
+      "bookId": 2,
+      "dailyRetention": true,
+      "effect": "Permite al hechicero introducirse físicamente en las pesadillas de un durmiente. El brujo no tendrá ningún control sobre el mundo onírico del soñador, y cualquier cosa que suceda será real para él. La persona deberá tener terribles pesadillas para que este conjuro pueda afectarle y, en el momento en que se torne un sueño plácido, despierte o muera, el mago abandonará el mundo onírico y volverá al real. Cualquier conjuro de Esencia realizado sobre el durmiente afectará también al hechicero. Una vez en las pesadillas, el brujo podrá saltar al subconsciente de otro soñador si este no se encuentra, físicamente, a una distancia cercana del durmiente original. Naturalmente, este sujeto tendrá derecho a una nueva RM. En el caso de que la conciencia del soñador se encuentre en el mundo de la Vigilia, el hechicero quedará atrapado allí incluso después de que finalice el conjuro.",
+      "initialGrade": {
+        "effect": "RM o RP 140 / 10 metros de distancia.",
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 120
+      },
+      "intermediateGrade": {
+        "effect": "RM o RP 160 / 80 metros de distancia.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 180
+      },
+      "level": 50,
+      "name": "Introducirse en las Pesadillas",
+      "spellId": 20,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Como el Intermedio, pero el bono a sus Resistencias se aplica contra toda clase de efecto sobrenatural no basado en Luz.",
+        "requiredIntelligence": 13,
+        "retention": 15,
+        "zeon": 140
+      },
+      "arcaneGrade": {
+        "effect": "Como el Avanzado, pero no sufre doble daño por recibir ataques basados en Luz.",
+        "requiredIntelligence": 16,
+        "retention": 20,
+        "zeon": 160
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "El cuerpo designado por el hechicero se transformará en pura energía oscura, volviéndose intangible ante todas las materias y ataques no basados en energía. Mientras se encuentre en este estado, el sujeto ganará un bono en sus habilidades secundarias de Advertir y Buscar, así como a sus Resistencias contra efectos basados en Oscuridad. En este estado, cualquier daño causado por Luz se doblará.",
+      "initialGrade": {
+        "effect": "+50 en Advertir y Buscar / +20 a sus Resistencias.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "+60 en Advertir y Buscar / +30 a sus Resistencias.",
+        "requiredIntelligence": 11,
+        "retention": 15,
+        "zeon": 120
+      },
+      "level": 52,
+      "name": "Cuerpo a Oscuridad",
+      "spellId": 21,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM 180 / 50 metros de radio / -40 a toda acción.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "RM 200 / 150 metros de radio / -50 a toda acción.",
+        "requiredIntelligence": 15,
+        "retention": 15,
+        "zeon": 300
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "La Perdición causa una conmoción a los individuos a los que afecte, disminuyendo sus capacidades y poderes. Aquellos que se encuentren bajo su zona de influencia deberán superar una RM, o recibir un penalizador a toda acción y a sus Resistencias de –30. El conjuro afecta en un radio alrededor del hechicero, afectando automáticamente a cualquiera que el hechicero desee de cuantos se encuentren en el interior. Los penalizadores de la Perdición no se superponen, por lo que un personaje no sufriría el doble de negativos por encontrarse bajo la influencia de dos perdiciones.",
+      "initialGrade": {
+        "effect": "RM 120 / Radio de 5 metros.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "RM 160 / 25 metros de radio.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 180
+      },
+      "level": 56,
+      "name": "Perdición",
+      "spellId": 22,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Radio de 250 metros / RM o RP 180.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "Radio de 500 metros / RM o RP 220.",
+        "requiredIntelligence": 15,
+        "retention": 30,
+        "zeon": 300
+      },
+      "bookId": 2,
+      "dailyRetention": true,
+      "effect": "Introduce algún tipo de sentimiento negativo, como odio, miedo o ira, en los individuos designados por el hechicero. El afectado puede repetir el control una vez al día.",
+      "initialGrade": {
+        "effect": "Radio de 20 metros / RM o RP 120.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "Radio de 100 metros / RM o RP 160.",
+        "requiredIntelligence": 10,
+        "retention": 20,
+        "zeon": 180
+      },
+      "level": 58,
+      "name": "Crear Sentimientos Negativos",
+      "spellId": 23,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "1 kilómetro de radio / El conjuro permite además borrar las acciones de un individuo ante habilidades que permiten ver el pasado de objetos o lugares.",
+        "requiredIntelligence": 13,
+        "retention": 0,
+        "zeon": 300
+      },
+      "arcaneGrade": {
+        "effect": "5 kilómetros de radio / Como en grado Avanzado, salvo que el hechicero puede borrar todo rastro de cuanto aconteció en el pasado en la zona afectada.",
+        "requiredIntelligence": 16,
+        "retention": 0,
+        "zeon": 400
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "El hechicero puede borrar el rastro de que ha estado en un sitio determinado. De hecho, cualquier residuo de su paso por ese lugar desaparece completamente, ya sea ante habilidades de carácter natural, como Rastrear, o detecciones sobrenaturales.",
+      "initialGrade": {
+        "effect": "50 metros de radio.",
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "250 metros de radio.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 200
+      },
+      "level": 60,
+      "name": "Eliminar Residuos",
+      "spellId": 24,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM 160 / radio de 250 metros.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "RM 180 / radio de 500 metros.",
+        "requiredIntelligence": 15,
+        "retention": 30,
+        "zeon": 300
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "Encanta una zona, haciéndola impenetrable para los seres basados naturalmente en sentimientos positivos u luz. Cualquiera de estas criaturas que entre en la zona del conjuro, deberá realizar cada asalto una RM o sufrir una pérdida en puntos de vida equivalente al nivel de fracaso. Adicionalmente, de fallar el control, el ser recibirá de inmediato un penalizador a toda acción de -40 mientras sigua en su interior. La zona afectada permanece estática en el lugar donde fue lanzada.",
+      "initialGrade": {
+        "effect": "RM 120 / radio de 20 metros.",
+        "requiredIntelligence": 7,
+        "retention": 15,
+        "zeon": 140
+      },
+      "intermediateGrade": {
+        "effect": "RM 140 / radio de 100 metros.",
+        "requiredIntelligence": 9,
+        "retention": 20,
+        "zeon": 180
+      },
+      "level": 62,
+      "name": "Escudar Contra lo Positivo",
+      "spellId": 25,
+      "type": "Automático",
+      "withRetention": true
+    },
+    {
+      "actionType": "Pasiva",
+      "advancedGrade": {
+        "effect": "Daño del choque 140 y 1800 puntos de Resistencia.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "Daño del choque 170 y 2200 puntos de Resistencia.",
+        "requiredIntelligence": 15,
+        "retention": 15,
+        "zeon": 300
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "Crea un escudo sobrenatural sombrío que posee además la habilidad de tragarse cualquier hechizo de Ataque que reciba. Para que el conjuro sea absorbido, es necesario primero lograr una parada con éxito contra la descarga, y en segundo lugar ganar un control de choque. El vacío permite absorber la mitad del Zeon del conjuro devorado. Es posible incluso que se trague ataques en área.",
+      "initialGrade": {
+        "effect": "Daño del choque 80 y 600 puntos de Resistencia.",
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 120
+      },
+      "intermediateGrade": {
+        "effect": "Daño del choque 110 y 1200 puntos de Resistencia.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 180
+      },
+      "level": 66,
+      "name": "Oscuridad Devoradora",
+      "spellId": 26,
+      "type": "Defensa",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM 200.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "RM 240.",
+        "requiredIntelligence": 15,
+        "retention": 30,
+        "zeon": 300
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "Provoca penalizadores mediante la acumulación de dolor, sufrimiento, desdicha y otros efectos místicos tenebrosos. El afectado deberá superar una RM, o sufrir un penalizador a toda acción y a sus Resistencias equivalente al nivel de fracaso del control. Si no supera la RM, el blanco del conjuro no tendrá derecho a una nueva tirada mientras el hechizo se mantenga.",
+      "initialGrade": {
+        "effect": "RM 120.",
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "RM 160.",
+        "requiredIntelligence": 9,
+        "retention": 20,
+        "zeon": 180
+      },
+      "level": 68,
+      "name": "Destrozar",
+      "spellId": 27,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Visible en 15 kilómetros de radio / RM o RP 180.",
+        "requiredIntelligence": 14,
+        "retention": 10,
+        "zeon": 280
+      },
+      "arcaneGrade": {
+        "effect": "Visible en 25 kilómetros de radio / RM o RP 220.",
+        "requiredIntelligence": 16,
+        "retention": 15,
+        "zeon": 360
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "Forma una marca o un espectáculo de luces en un lugar determinado que aterroriza y llena de terror a quienes la observen. Todo aquel que lo mire y falle la Resistencia sufrirá de inmediato el estado de Terror. La condición para ser afectado consiste en mirar directamente la Marca del Miedo.",
+      "initialGrade": {
+        "effect": "Visible en 1 kilómetro de radio / RM o RP 120.",
+        "requiredIntelligence": 10,
+        "retention": 5,
+        "zeon": 140
+      },
+      "intermediateGrade": {
+        "effect": "Visible en 5 kilómetros de radio / RM o RP 150.",
+        "requiredIntelligence": 12,
+        "retention": 10,
+        "zeon": 200
+      },
+      "level": 70,
+      "name": "Marca del Miedo",
+      "spellId": 28,
+      "type": "Automático",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Daño 200 / 150 metros de radio.",
+        "requiredIntelligence": 14,
+        "retention": 0,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "Daño 250 / 250 metros de radio.",
+        "requiredIntelligence": 16,
+        "retention": 0,
+        "zeon": 350
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "Proyecta una descarga de energía basada en oscuridad. Ataca en la TA de Energía.",
+      "initialGrade": {
+        "effect": "Daño 120 / 25 metros de radio.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 140
+      },
+      "intermediateGrade": {
+        "effect": "Daño 150 / 100 metros de radio.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 180
+      },
+      "level": 72,
+      "name": "Oscuridad Catastrófica",
+      "spellId": 29,
+      "type": "Ataque",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Presencia 140 / Calidad +10.",
+        "requiredIntelligence": 14,
+        "retention": 25,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "Presencia 180 / Calidad +15.",
+        "requiredIntelligence": 16,
+        "retention": 30,
+        "zeon": 300
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "Forma un objeto físico de energía lumínica, ya sea algo tan complejo como un reloj o tan simple como una espada. Pese a estar hecho de luz, tiene consistencia física. La presencia máxima de dicho objeto y la calidad del mismo viene determinada por el grado del conjuro.",
+      "initialGrade": {
+        "effect": "Presencia 60 / Calidad +5.",
+        "requiredIntelligence": 10,
+        "retention": 15,
+        "zeon": 150
+      },
+      "intermediateGrade": {
+        "effect": "Presencia 100 / Calidad +10.",
+        "requiredIntelligence": 12,
+        "retention": 20,
+        "zeon": 200
+      },
+      "level": 76,
+      "name": "Objetos Oscuros",
+      "spellId": 30,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "5.000 kilómetros / 1.000 de presencia / RM 180.",
+        "requiredIntelligence": 14,
+        "retention": 0,
+        "zeon": 450
+      },
+      "arcaneGrade": {
+        "effect": "15.000 kilómetros / 2.000 de presencia / RM contra 200.",
+        "requiredIntelligence": 16,
+        "retention": 0,
+        "zeon": 600
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "Transporta instantáneamente a los individuos u objetos designados por el brujo, desde una sombra hasta otra. Si desea resistirse, hay que superar la RM del conjuro. Tanto la distancia máxima como la máxima presencia afectable son determinadas por el grado del conjuro.",
+      "initialGrade": {
+        "effect": "100 kilómetros / 250 de presencia / RM 120.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 250
+      },
+      "intermediateGrade": {
+        "effect": "1.000 kilómetros / 500 de presencia / RM 140.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 360
+      },
+      "level": 78,
+      "name": "Transmisión por Sombras",
+      "spellId": 31,
+      "type": "3Efecto, Anímico",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM 160 / Como Intermedio, pero el Gnosis del brujo en zonas neutras es de 35.",
+        "requiredIntelligence": 16,
+        "retention": 70,
+        "zeon": 500
+      },
+      "arcaneGrade": {
+        "effect": "RM 180 / Como Avanzado, pero los efectos del conjuro no tienen límites espaciales, afectando por igual a toda la Vigilia influenciada por energías positivas.",
+        "requiredIntelligence": 18,
+        "retention": 80,
+        "zeon": 750
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "Permite dominar cualquier tipo de pesadilla de un individuo que no supere la RM del conjuro. El hechicero tendrá la capacidad de controlar el mundo onírico de un durmiente, modificándolo como si tuviera Gnosis 45. En el caso de que el sueño se alimente de energía positiva, es decir, que se torne un sueño plácido, su Gnosis será sólo de 30. Los conjuros que el brujo lance únicamente gracias a dicho Gnosis (como por ejemplo, magia divina), no tienen efecto fuera de los límites espaciales del conjuro y sus efectos desaparecen en cuanto el hechicero sale del sueño o de la Vigilia.",
+      "initialGrade": {
+        "effect": "RM 140.",
+        "requiredIntelligence": 12,
+        "retention": 60,
+        "zeon": 300
+      },
+      "intermediateGrade": {
+        "effect": "RM 150 / Si el hechicero se encuentra en la Vigilia, controla además su entorno y gana los poderes de una criatura con Gnosis 40, siempre y cuando esté en un lugar fuertemente influenciado por energías negativas. Si se encuentra en una zona neutra, su puntuación será 30. Este conjuro sólo afecta la zona de la Vigilia en la que fue lanzado, y siempre y cuando no haya otra entidad de Gnosis similar enlazada a ella.",
+        "requiredIntelligence": 14,
+        "retention": 65,
+        "zeon": 400
+      },
+      "level": 80,
+      "name": "Rey de Pesadillas",
+      "spellId": 32,
+      "type": "Efecto, Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Nivel 6.",
+        "requiredIntelligence": 14,
+        "retention": 100,
+        "zeon": 500
+      },
+      "arcaneGrade": {
+        "effect": "Nivel 10.",
+        "requiredIntelligence": 16,
+        "retention": 140,
+        "zeon": 700
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "Crea un ser oscuro con apariencia de vida, bajo el control absoluto del hechicero. El ente será desarrollado como un Ser Entre Mundos, usando los poderes y limitaciones de los elementales oscuros del Capítulo 26. Para calcular su nivel máximo se emplean las mismas reglas que en el conjuro Crear Ser, de la vía de Creación.",
+      "initialGrade": {
+        "effect": "Nivel 1.",
+        "requiredIntelligence": 10,
+        "retention": 50,
+        "zeon": 250
+      },
+      "intermediateGrade": {
+        "effect": "Nivel 3.",
+        "requiredIntelligence": 12,
+        "retention": 70,
+        "zeon": 350
+      },
+      "level": 82,
+      "name": "Creación Oscura",
+      "spellId": 33,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Pasiva",
+      "advancedGrade": {
+        "effect": "Afecta a conjuros Automáticos de Grado Avanzado.",
+        "requiredIntelligence": 14,
+        "retention": 15,
+        "zeon": 280
+      },
+      "arcaneGrade": {
+        "effect": "Afecta a conjuros Automáticos de Grado Arcano.",
+        "requiredIntelligence": 16,
+        "retention": 20,
+        "zeon": 320
+      },
+      "bookId": 2,
+      "dailyRetention": true,
+      "effect": "Oculta la presencia de un individuo contra los conjuros de tipo Automático, haciendo que no sea afectado de manera directa por ellos. Al contrario de lo que indican las reglas generales, el hechicero que mantenga cualquier conjuro Automático deberá conseguir fijar con su Proyección Mágica al personaje, como si se tratase de un conjuro Anímico normal, a pesar de que este cumpla la condición para ser afectado.",
+      "initialGrade": {
+        "effect": "Afecta a conjuros Automáticos de Grado Base.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 200
+      },
+      "intermediateGrade": {
+        "effect": "Afecta a conjuros Automáticos de Grado Intermedio.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 240
+      },
+      "level": 86,
+      "name": "Ocultarse Ante la Magia",
+      "spellId": 34,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "1 kilómetro de radio.",
+        "requiredIntelligence": 14,
+        "retention": 25,
+        "zeon": 420
+      },
+      "arcaneGrade": {
+        "effect": "1 kilómetros de radio / +30 al ACT al lanzar conjuros oscuros.",
+        "requiredIntelligence": 16,
+        "retention": 25,
+        "zeon": 480
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "Crea una zona estática alrededor del hechicero donde todo se vuelve oscuridad absoluta. El cuerpo del brujo se funde con las sombras, incrementando en +20 su ACT al lanzar conjuros de Oscuridad y aumentando en +40 sus Resistencias contra cualquier clase de detección. Si alguien intenta localizarlo empleando los sentidos naturales, es necesario superar un control de Buscar contra Imposible, o de Advertir contra Inhumano, mientras que si se usa Detección del Ki, se requiere pasar un control contra Zen. Además, mientras sea uno con la oscuridad el hechicero podrá transportarse una vez por asalto como una acción activa hasta el lugar que desee dentro de los límites del Reino de Tinieblas. Cualquier ser vivo que permanezca dentro del área que no sea un elemental oscuro pierde automáticamente 10 puntos de Zeon por asalto y un punto de Ki (el doble, si es un elemental de luz).",
+      "initialGrade": {
+        "effect": "50 metros de radio.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 200
+      },
+      "intermediateGrade": {
+        "effect": "500 metros de radio.",
+        "requiredIntelligence": 12,
+        "retention": 20,
+        "zeon": 360
+      },
+      "level": 88,
+      "name": "Reino de Tinieblas",
+      "spellId": 35,
+      "type": "Automático",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Como en grado Intermedio, pero también se vuelve indetectable ante todas las habilidades sobrenaturales.",
+        "requiredIntelligence": 16,
+        "retention": 105,
+        "zeon": 600
+      },
+      "arcaneGrade": {
+        "effect": "Ignora cualquier detección que no sean los sentidos naturales.",
+        "requiredIntelligence": 18,
+        "retention": 115,
+        "zeon": 800
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "El hechicero, o quien este designe, se vuelve completamente inmune ante ciertos tipos de detecciones sobrenaturales. Por ejemplo, un personaje que use este conjuro en grado Arcano sólo podría ser encontrado mediante los sentidos físicos, como la vista o el oído.",
+      "initialGrade": {
+        "effect": "El personaje se vuelve indetectable ante conjuros y habilidades psíquicas.",
+        "requiredIntelligence": 12,
+        "retention": 80,
+        "zeon": 350
+      },
+      "intermediateGrade": {
+        "effect": "Como en grado Base, pero también se vuelve indetectable ante habilidades del Ki.",
+        "requiredIntelligence": 14,
+        "retention": 90,
+        "zeon": 450
+      },
+      "level": 90,
+      "name": "Indetección",
+      "spellId": 36,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM 220 / La prisión posee 500.000 puntos de resistencia.",
+        "requiredIntelligence": 18,
+        "retention": 100,
+        "zeon": 500
+      },
+      "arcaneGrade": {
+        "effect": "RM 240 / La prisión no puede ser rota desde el interior, pero tiene 500.000 puntos de resistencia si es atacada desde fuera.",
+        "requiredIntelligence": 20,
+        "retention": 160,
+        "zeon": 800
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "Encierra algo en un mundo de tinieblas intraspasable, un universo propio desde el que no podrá interactuar con el exterior, ni el exterior hacerlo recíprocamente con el objeto o criatura. Mientras el afectado se encuentre dentro de la prisión, no será consciente de lo que ocurre fuera, ni viceversa. Para forzar el conjuro desde el interior, la prisión es considerada como un ser con acumulación de daño y una TA 10, cuya resistencia es determinada por el grado del conjuro. No obstante, todo daño que sufra desde fuera se dobla automáticamente, La prisión se recupera de cualquier daño con Regeneración 19. Si el blanco del conjuro falla la RM y es afectado por el sortilegio, no tendrá derecho a ninguna tirada posterior",
+      "initialGrade": {
+        "effect": "RM 140 / La prisión posee 10.000 puntos de resistencia.",
+        "requiredIntelligence": 14,
+        "retention": 40,
+        "zeon": 200
+      },
+      "intermediateGrade": {
+        "effect": "RM 180 / La prisión posee 250.000 puntos de resistencia.",
+        "requiredIntelligence": 16,
+        "retention": 70,
+        "zeon": 350
+      },
+      "level": 92,
+      "name": "Prisión de Oscuridad",
+      "spellId": 37,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Un mes.",
+        "requiredIntelligence": 16,
+        "retention": 0,
+        "zeon": 600
+      },
+      "arcaneGrade": {
+        "effect": "Un año.",
+        "requiredIntelligence": 18,
+        "retention": 0,
+        "zeon": 800
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "Permite al lanzador o el objetivo designado por este entrar en un estado de completo letargo, mientras su cuerpo se hace uno con la oscuridad. La entidad abandona el mundo y asciende a la red de almas para nutrirse de sus energías. Apartado y desconocedor de todo lo que sucede en el exterior, multiplica por 10 su regeneración zeónica y cura sus heridas con Regeneración 16. Cuanto tiempo puede permanecer apartado del mundo es determinado por el grado del conjuro.",
+      "initialGrade": {
+        "effect": "Un día.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 200
+      },
+      "intermediateGrade": {
+        "effect": "Una semana.",
+        "requiredIntelligence": 14,
+        "retention": 0,
+        "zeon": 400
+      },
+      "level": 96,
+      "name": "Esencia Oscura",
+      "spellId": 38,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Gnosis máximo 40.",
+        "requiredIntelligence": 18,
+        "retention": 45,
+        "zeon": 2000
+      },
+      "arcaneGrade": {
+        "effect": "Gnosis máximo 45.",
+        "requiredIntelligence": 20,
+        "retention": 50,
+        "zeon": 5000
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "El conjuro intercambia la esencia del lanzador por energía divina, modificando su espíritu por puro poder sobrenatural. Al hacerlo, el lanzador o el individuo designado por éste aumenta su Gnosis hasta una cantidad máxima determinada por el grado del conjuro.",
+      "initialGrade": {
+        "effect": "Gnosis máximo 30.",
+        "requiredIntelligence": 14,
+        "retention": 30,
+        "zeon": 500
+      },
+      "intermediateGrade": {
+        "effect": "Gnosis máximo 35.",
+        "requiredIntelligence": 16,
+        "retention": 40,
+        "zeon": 1000
+      },
+      "level": 98,
+      "name": "Ascensión Oscura",
+      "spellId": 39,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Daño 800 / 10.000 kilómetros de radio.",
+        "requiredIntelligence": 18,
+        "retention": 0,
+        "zeon": 2500
+      },
+      "arcaneGrade": {
+        "effect": "Daño 1.000 / 1 ua de radio.",
+        "requiredIntelligence": 20,
+        "retention": 0,
+        "zeon": 10000
+      },
+      "bookId": 2,
+      "dailyRetention": false,
+      "effect": "Este conjuro desencadena el poder de la oscuridad en su estado más puro, arrasando todo lo que encuentra a su paso, tanto en el mundo material como en el espiritual. La energía liberada lo arrastra y devora todo, unificando toda existencia con las tinieblas. Incluso las criaturas elementales de oscuridad son asimiladas por su poder. El Holocausto crea una gran cúpula de tinieblas que ataca en la TA de energía. Cualquier ser que reciba daño, por mínimo que sea, deberá superar una RM contra 160 o será unificado con la oscuridad y, por tanto, destruido en cuerpo y alma de forma automática. No es posible designar blancos específicos en el radio del conjuro, y afectará a todos por igual salvo al lanzador.",
+      "initialGrade": {
+        "effect": "Daño 350 / 100 metros de radio.",
+        "requiredIntelligence": 14,
+        "retention": 0,
+        "zeon": 600
+      },
+      "intermediateGrade": {
+        "effect": "Daño 500 / 100 kilómetros de radio.",
+        "requiredIntelligence": 16,
+        "retention": 0,
+        "zeon": 1000
+      },
+      "level": 100,
+      "name": "Holocausto de Oscuridad",
+      "spellId": 40,
+      "type": "Ataque, Anímico",
+      "withRetention": false
+    }
+  ],
+  "type": "Mayor"
+}

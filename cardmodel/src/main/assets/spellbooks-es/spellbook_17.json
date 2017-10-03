@@ -1,1 +1,364 @@
-{"bookId":17,"bookName":"MUSICAL","description":"Esta sub-vía recoge todos los poderes relacionados con la música y las melodías. Los brujos que usan sus conjuros son habitualmente llamados magos musicales, ya que a través de sus melodías son capaces de provocar los más inverosímiles efectos y maravillas.","primaryBookUnaccessibles":["Destrucción","Fuego","Tierra","Nigromancia"],"spells":[{"actionType":"Activa","advancedGrade":{"effect":"+80 a Buscar.","requiredIntelligence":10,"retention":0,"zeon":70},"arcaneGrade":{"effect":"+100 a Buscar.","requiredIntelligence":12,"retention":0,"zeon":100},"bookId":17,"dailyRetention":false,"effect":"Controlando el ritmo del mundo, este conjuro aísla al hechicero de las distracciones exteriores permitiéndole discernir de manera intuitiva todos los sonidos que le rodean. En consecuencia, obtiene un bono a su habilidad secundaria Buscar para todos aquellos controles que estén relacionados con el sonido.","initialGrade":{"effect":"+40 a Buscar.","requiredIntelligence":5,"retention":0,"zeon":30},"intermediateGrade":{"effect":"+60 a Buscar.","requiredIntelligence":8,"retention":0,"zeon":50},"level":4,"name":"Tempo","spellId":1,"type":"Efecto","withRetention":false},{"actionType":"Activa","advancedGrade":{"effect":"500 metros.","requiredIntelligence":10,"retention":5,"zeon":80},"arcaneGrade":{"effect":"1 kilómetro.","requiredIntelligence":12,"retention":10,"zeon":100},"bookId":17,"dailyRetention":false,"effect":"Este conjuro permite al personaje hacer sonar su voz o una melodía interpretada por este en cualquier lugar que desee hasta una distancia máxima determinada por el grado del conjuro.","initialGrade":{"effect":"100 metros.","requiredIntelligence":5,"retention":5,"zeon":40},"intermediateGrade":{"effect":"250 metros.","requiredIntelligence":8,"retention":5,"zeon":60},"level":14,"name":"Cantábile","spellId":2,"type":"Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"240 Música.","requiredIntelligence":10,"retention":5,"zeon":90},"arcaneGrade":{"effect":"280 Música.","requiredIntelligence":12,"retention":10,"zeon":120},"bookId":17,"dailyRetention":false,"effect":"Proporciona al mago la capacidad artística necesaria para efectuar una interpretación de algún tipo de composición musical, ya sea tocando un instrumento o cantando. El hechicero deberá conocer o haber escuchado, aunque sea de forma incompleta, la pieza que desea representar. Al hacerlo, el personaje tiene el equivalente a una habilidad de Música determinado por el grado del conjuro.","initialGrade":{"effect":"120 Música.","requiredIntelligence":6,"retention":5,"zeon":50},"intermediateGrade":{"effect":"180 Música.","requiredIntelligence":8,"retention":5,"zeon":70},"level":24,"name":"Plagio","spellId":3,"type":"Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"Daño 30.","requiredIntelligence":11,"retention":0,"zeon":120},"arcaneGrade":{"effect":"Daño 40.","requiredIntelligence":13,"retention":0,"zeon":150},"bookId":17,"dailyRetention":false,"effect":"Creando una nota musical discordante, el brujo desencadena una destructiva onda de sonido que destroza cualquier cosa sólida con la que se ponga en contacto. El ataque (ENE) tiene daño base muy bajo pero, en caso de causar daño, el defensor debe realizar un control de RF contra una dificultad igual a 10 veces la perdida de puntos de vida recibida (hasta un máximo de 240) o sufrir un daño adicional equivalente al nivel de fracaso. Por ejemplo, si este conjuro es lanzado en grado intermedio (daño base 20) y el ataque produce la perdida de 16 puntos de vida, el afectado deberá realizar un control de RF contra 160.","initialGrade":{"effect":"Daño 10.","requiredIntelligence":7,"retention":0,"zeon":60},"intermediateGrade":{"effect":"Daño 20.","requiredIntelligence":9,"retention":0,"zeon":90},"level":34,"name":"Mezzo Forte","spellId":4,"type":"Ataque","withRetention":false},{"actionType":"Activa","advancedGrade":{"effect":"160 RM / 100 metros de radio.","requiredIntelligence":11,"retention":15,"zeon":220},"arcaneGrade":{"effect":"180 RM / 150 metros de radio.","requiredIntelligence":13,"retention":20,"zeon":280},"bookId":17,"dailyRetention":false,"effect":"Este conjuro crea una melodía cargada con fuertes emociones que penetran en todo aquel que las escuche al menos un asalto. Cualquiera que cumpla tal requisito, debe superar un control de RM o verse completamente imbuido por la emoción elegida por el brujo para la sinfonía. Si alguien escucha Adagio de manera parcial o logra cubrir en parte sus oídos, obtiene un bono de +40 al control de Resistencia. Adagio se escucha en un área alrededor del hechicero, dentro de la cual, el lanzador no puede escoger blancos.","initialGrade":{"effect":"120 RM / 20 metros de radio.","requiredIntelligence":7,"retention":5,"zeon":100},"intermediateGrade":{"effect":"140 RM / 50 metros de radio.","requiredIntelligence":9,"retention":10,"zeon":160},"level":44,"name":"Adagio","spellId":5,"type":"Automático","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"160 RM / 50 metros de radio.","requiredIntelligence":11,"retention":15,"zeon":220},"arcaneGrade":{"effect":"180 RM / 100 metros de radio.","requiredIntelligence":13,"retention":20,"zeon":280},"bookId":17,"dailyRetention":false,"effect":"Crea la más hermosa melodía imaginable, que atonta y embelesa a quienes la escuchan. Todo aquel que se encuentre alrededor del hechicero debe superar cada dos asaltos una RM o quedará Fascinado, siendo incapaz de realizar acciones activas por su propia voluntad. Los objetivos incapaces de oír son inmunes a este hechizo, y si alguien escucha la música de manera parcial o logra cubrir en parte sus oídos, obtiene un bono de +40 al control de Resistencia.","initialGrade":{"effect":"120 RM / 10 metros de radio.","requiredIntelligence":7,"retention":5,"zeon":100},"intermediateGrade":{"effect":"140 RM / 25 metros de radio.","requiredIntelligence":9,"retention":10,"zeon":160},"level":54,"name":"Allegro","spellId":6,"type":"Automático","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"30 metros de radio / +2 al Tipo de Movimiento / +40 al Turno.","requiredIntelligence":12,"retention":15,"zeon":240},"arcaneGrade":{"effect":"40 metros de radio / +3 al Tipo de Movimiento / +50 al Turno.","requiredIntelligence":14,"retention":20,"zeon":300},"bookId":17,"dailyRetention":false,"effect":"Este conjuro crea una frenética melodía que incrementa la velocidad de reacción de todo aquel que la escuche y sea designado por el lanzador. Los afectados que se encuentren cerca del hechicero obtienen de inmediato un bono a su Turno e incrementan su velocidad.","initialGrade":{"effect":"10 metros de radio / +1 al Tipo de Movimiento / +30 al Turno.","requiredIntelligence":8,"retention":5,"zeon":120},"intermediateGrade":{"effect":"20 metros de radio / +2 al Tipo de Movimiento / +30 al Turno.","requiredIntelligence":10,"retention":10,"zeon":180},"level":64,"name":"Presstisimo","spellId":7,"type":"Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"50 metros de radio.","requiredIntelligence":12,"retention":20,"zeon":240},"arcaneGrade":{"effect":"100 metros de radio.","requiredIntelligence":14,"retention":30,"zeon":300},"bookId":17,"dailyRetention":false,"effect":"El hechicero obtiene un control absoluto sobre cualquier sonido que sea producido en el área de influencia determinada por el grado del conjuro, pudiendo alterarlo, incrementar su potencia o hacerlo completamente imperceptible. Por ejemplo, podría reunir pequeños murmullos ambientales para formar una agradable melodía o tergiversar las palabras de una persona. Salvo si el sonido como tal tiene presencia propia o es producido por un ser con Gnosis 40 o superior, no es posible de ningún modo evitar los efectos de este sortilegio.","initialGrade":{"effect":"10 metros de radio.","requiredIntelligence":8,"retention":10,"zeon":120},"intermediateGrade":{"effect":"25 metros de radio.","requiredIntelligence":10,"retention":15,"zeon":180},"level":74,"name":"Fortísimo","spellId":8,"type":"Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"50 metros de radio / +4 a la TA / +20 RM, RF y RP / Barrera de daño 50.","requiredIntelligence":12,"retention":15,"zeon":240},"arcaneGrade":{"effect":"100 metros de radio / +5 a la TA / +30 RM, RF y RP / Barrera de daño 60.","requiredIntelligence":14,"retention":20,"zeon":300},"bookId":17,"dailyRetention":false,"effect":"Crea una potente melodía que refuerza el aguante innato de aquellos que la escuchen y sean designados por el lanzador. Aquellos afectados que se encuentren alrededor del brujo obtienen diferentes bonos, descritos en los grados del conjuro. Los beneficios de este conjuro no se superponen, por lo que un individuo que se encuentre dentro de la zona de influencia de dos Marziale diferentes no aplica dos veces sus beneficios.","initialGrade":{"effect":"10 metros de radio / +2 a la TA / +20 RM.","requiredIntelligence":8,"retention":5,"zeon":120},"intermediateGrade":{"effect":"25 metros de radio / +3 a la TA / +20 RM y RF.","requiredIntelligence":10,"retention":10,"zeon":180},"level":84,"name":"Marziale","spellId":9,"type":"Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"Afecta a conjuros de grado avanzado.","requiredIntelligence":12,"retention":15,"zeon":600},"arcaneGrade":{"effect":"Afecta a conjuros de grado arcano.","requiredIntelligence":14,"retention":20,"zeon":800},"bookId":17,"dailyRetention":false,"effect":"Anima es un conjuro que carga una melodía de poder sobrenatural para penetrar automáticamente en el alma de todos cuanto la escuchen. Anima debe de ser lanzado en combinación con otro conjuro de clase Anímico, haciendo que dicho sortilegio se convierta en Automático y funcione sobre cualquiera que esté a menos de 50 metros del hechicero y escuche la melodía más de un asalto. La RM a superar es la misma de la del conjuro afectado por Anima, pero si alguien percibe la melodía de manera parcial o logra cubrir en parte sus oídos, obtiene un bono de +40 al control de RM.","initialGrade":{"effect":"Afecta a conjuros de grado base.","requiredIntelligence":8,"retention":5,"zeon":300},"intermediateGrade":{"effect":"Afecta a conjuros de grado intermedio.","requiredIntelligence":10,"retention":10,"zeon":450},"level":94,"name":"Anima","spellId":10,"type":"Automático","withRetention":true}],"type":"Sub-Vía"}
+{
+  "bookId": 17,
+  "bookName": "MUSICAL",
+  "description": "Esta sub-vía recoge todos los poderes relacionados con la música y las melodías. Los brujos que usan sus conjuros son habitualmente llamados magos musicales, ya que a través de sus melodías son capaces de provocar los más inverosímiles efectos y maravillas.",
+  "primaryBookUnaccessibles": [
+    "Destrucción",
+    "Fuego",
+    "Tierra",
+    "Nigromancia"
+  ],
+  "spells": [
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "+80 a Buscar.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 70
+      },
+      "arcaneGrade": {
+        "effect": "+100 a Buscar.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 100
+      },
+      "bookId": 17,
+      "dailyRetention": false,
+      "effect": "Controlando el ritmo del mundo, este conjuro aísla al hechicero de las distracciones exteriores permitiéndole discernir de manera intuitiva todos los sonidos que le rodean. En consecuencia, obtiene un bono a su habilidad secundaria Buscar para todos aquellos controles que estén relacionados con el sonido.",
+      "initialGrade": {
+        "effect": "+40 a Buscar.",
+        "requiredIntelligence": 5,
+        "retention": 0,
+        "zeon": 30
+      },
+      "intermediateGrade": {
+        "effect": "+60 a Buscar.",
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 50
+      },
+      "level": 4,
+      "name": "Tempo",
+      "spellId": 1,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "500 metros.",
+        "requiredIntelligence": 10,
+        "retention": 5,
+        "zeon": 80
+      },
+      "arcaneGrade": {
+        "effect": "1 kilómetro.",
+        "requiredIntelligence": 12,
+        "retention": 10,
+        "zeon": 100
+      },
+      "bookId": 17,
+      "dailyRetention": false,
+      "effect": "Este conjuro permite al personaje hacer sonar su voz o una melodía interpretada por este en cualquier lugar que desee hasta una distancia máxima determinada por el grado del conjuro.",
+      "initialGrade": {
+        "effect": "100 metros.",
+        "requiredIntelligence": 5,
+        "retention": 5,
+        "zeon": 40
+      },
+      "intermediateGrade": {
+        "effect": "250 metros.",
+        "requiredIntelligence": 8,
+        "retention": 5,
+        "zeon": 60
+      },
+      "level": 14,
+      "name": "Cantábile",
+      "spellId": 2,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "240 Música.",
+        "requiredIntelligence": 10,
+        "retention": 5,
+        "zeon": 90
+      },
+      "arcaneGrade": {
+        "effect": "280 Música.",
+        "requiredIntelligence": 12,
+        "retention": 10,
+        "zeon": 120
+      },
+      "bookId": 17,
+      "dailyRetention": false,
+      "effect": "Proporciona al mago la capacidad artística necesaria para efectuar una interpretación de algún tipo de composición musical, ya sea tocando un instrumento o cantando. El hechicero deberá conocer o haber escuchado, aunque sea de forma incompleta, la pieza que desea representar. Al hacerlo, el personaje tiene el equivalente a una habilidad de Música determinado por el grado del conjuro.",
+      "initialGrade": {
+        "effect": "120 Música.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 50
+      },
+      "intermediateGrade": {
+        "effect": "180 Música.",
+        "requiredIntelligence": 8,
+        "retention": 5,
+        "zeon": 70
+      },
+      "level": 24,
+      "name": "Plagio",
+      "spellId": 3,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Daño 30.",
+        "requiredIntelligence": 11,
+        "retention": 0,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "Daño 40.",
+        "requiredIntelligence": 13,
+        "retention": 0,
+        "zeon": 150
+      },
+      "bookId": 17,
+      "dailyRetention": false,
+      "effect": "Creando una nota musical discordante, el brujo desencadena una destructiva onda de sonido que destroza cualquier cosa sólida con la que se ponga en contacto. El ataque (ENE) tiene daño base muy bajo pero, en caso de causar daño, el defensor debe realizar un control de RF contra una dificultad igual a 10 veces la perdida de puntos de vida recibida (hasta un máximo de 240) o sufrir un daño adicional equivalente al nivel de fracaso. Por ejemplo, si este conjuro es lanzado en grado intermedio (daño base 20) y el ataque produce la perdida de 16 puntos de vida, el afectado deberá realizar un control de RF contra 160.",
+      "initialGrade": {
+        "effect": "Daño 10.",
+        "requiredIntelligence": 7,
+        "retention": 0,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "Daño 20.",
+        "requiredIntelligence": 9,
+        "retention": 0,
+        "zeon": 90
+      },
+      "level": 34,
+      "name": "Mezzo Forte",
+      "spellId": 4,
+      "type": "Ataque",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "160 RM / 100 metros de radio.",
+        "requiredIntelligence": 11,
+        "retention": 15,
+        "zeon": 220
+      },
+      "arcaneGrade": {
+        "effect": "180 RM / 150 metros de radio.",
+        "requiredIntelligence": 13,
+        "retention": 20,
+        "zeon": 280
+      },
+      "bookId": 17,
+      "dailyRetention": false,
+      "effect": "Este conjuro crea una melodía cargada con fuertes emociones que penetran en todo aquel que las escuche al menos un asalto. Cualquiera que cumpla tal requisito, debe superar un control de RM o verse completamente imbuido por la emoción elegida por el brujo para la sinfonía. Si alguien escucha Adagio de manera parcial o logra cubrir en parte sus oídos, obtiene un bono de +40 al control de Resistencia. Adagio se escucha en un área alrededor del hechicero, dentro de la cual, el lanzador no puede escoger blancos.",
+      "initialGrade": {
+        "effect": "120 RM / 20 metros de radio.",
+        "requiredIntelligence": 7,
+        "retention": 5,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "140 RM / 50 metros de radio.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 160
+      },
+      "level": 44,
+      "name": "Adagio",
+      "spellId": 5,
+      "type": "Automático",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "160 RM / 50 metros de radio.",
+        "requiredIntelligence": 11,
+        "retention": 15,
+        "zeon": 220
+      },
+      "arcaneGrade": {
+        "effect": "180 RM / 100 metros de radio.",
+        "requiredIntelligence": 13,
+        "retention": 20,
+        "zeon": 280
+      },
+      "bookId": 17,
+      "dailyRetention": false,
+      "effect": "Crea la más hermosa melodía imaginable, que atonta y embelesa a quienes la escuchan. Todo aquel que se encuentre alrededor del hechicero debe superar cada dos asaltos una RM o quedará Fascinado, siendo incapaz de realizar acciones activas por su propia voluntad. Los objetivos incapaces de oír son inmunes a este hechizo, y si alguien escucha la música de manera parcial o logra cubrir en parte sus oídos, obtiene un bono de +40 al control de Resistencia.",
+      "initialGrade": {
+        "effect": "120 RM / 10 metros de radio.",
+        "requiredIntelligence": 7,
+        "retention": 5,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "140 RM / 25 metros de radio.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 160
+      },
+      "level": 54,
+      "name": "Allegro",
+      "spellId": 6,
+      "type": "Automático",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "30 metros de radio / +2 al Tipo de Movimiento / +40 al Turno.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "40 metros de radio / +3 al Tipo de Movimiento / +50 al Turno.",
+        "requiredIntelligence": 14,
+        "retention": 20,
+        "zeon": 300
+      },
+      "bookId": 17,
+      "dailyRetention": false,
+      "effect": "Este conjuro crea una frenética melodía que incrementa la velocidad de reacción de todo aquel que la escuche y sea designado por el lanzador. Los afectados que se encuentren cerca del hechicero obtienen de inmediato un bono a su Turno e incrementan su velocidad.",
+      "initialGrade": {
+        "effect": "10 metros de radio / +1 al Tipo de Movimiento / +30 al Turno.",
+        "requiredIntelligence": 8,
+        "retention": 5,
+        "zeon": 120
+      },
+      "intermediateGrade": {
+        "effect": "20 metros de radio / +2 al Tipo de Movimiento / +30 al Turno.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 180
+      },
+      "level": 64,
+      "name": "Presstisimo",
+      "spellId": 7,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "50 metros de radio.",
+        "requiredIntelligence": 12,
+        "retention": 20,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "100 metros de radio.",
+        "requiredIntelligence": 14,
+        "retention": 30,
+        "zeon": 300
+      },
+      "bookId": 17,
+      "dailyRetention": false,
+      "effect": "El hechicero obtiene un control absoluto sobre cualquier sonido que sea producido en el área de influencia determinada por el grado del conjuro, pudiendo alterarlo, incrementar su potencia o hacerlo completamente imperceptible. Por ejemplo, podría reunir pequeños murmullos ambientales para formar una agradable melodía o tergiversar las palabras de una persona. Salvo si el sonido como tal tiene presencia propia o es producido por un ser con Gnosis 40 o superior, no es posible de ningún modo evitar los efectos de este sortilegio.",
+      "initialGrade": {
+        "effect": "10 metros de radio.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 120
+      },
+      "intermediateGrade": {
+        "effect": "25 metros de radio.",
+        "requiredIntelligence": 10,
+        "retention": 15,
+        "zeon": 180
+      },
+      "level": 74,
+      "name": "Fortísimo",
+      "spellId": 8,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "50 metros de radio / +4 a la TA / +20 RM, RF y RP / Barrera de daño 50.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "100 metros de radio / +5 a la TA / +30 RM, RF y RP / Barrera de daño 60.",
+        "requiredIntelligence": 14,
+        "retention": 20,
+        "zeon": 300
+      },
+      "bookId": 17,
+      "dailyRetention": false,
+      "effect": "Crea una potente melodía que refuerza el aguante innato de aquellos que la escuchen y sean designados por el lanzador. Aquellos afectados que se encuentren alrededor del brujo obtienen diferentes bonos, descritos en los grados del conjuro. Los beneficios de este conjuro no se superponen, por lo que un individuo que se encuentre dentro de la zona de influencia de dos Marziale diferentes no aplica dos veces sus beneficios.",
+      "initialGrade": {
+        "effect": "10 metros de radio / +2 a la TA / +20 RM.",
+        "requiredIntelligence": 8,
+        "retention": 5,
+        "zeon": 120
+      },
+      "intermediateGrade": {
+        "effect": "25 metros de radio / +3 a la TA / +20 RM y RF.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 180
+      },
+      "level": 84,
+      "name": "Marziale",
+      "spellId": 9,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Afecta a conjuros de grado avanzado.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 600
+      },
+      "arcaneGrade": {
+        "effect": "Afecta a conjuros de grado arcano.",
+        "requiredIntelligence": 14,
+        "retention": 20,
+        "zeon": 800
+      },
+      "bookId": 17,
+      "dailyRetention": false,
+      "effect": "Anima es un conjuro que carga una melodía de poder sobrenatural para penetrar automáticamente en el alma de todos cuanto la escuchen. Anima debe de ser lanzado en combinación con otro conjuro de clase Anímico, haciendo que dicho sortilegio se convierta en Automático y funcione sobre cualquiera que esté a menos de 50 metros del hechicero y escuche la melodía más de un asalto. La RM a superar es la misma de la del conjuro afectado por Anima, pero si alguien percibe la melodía de manera parcial o logra cubrir en parte sus oídos, obtiene un bono de +40 al control de RM.",
+      "initialGrade": {
+        "effect": "Afecta a conjuros de grado base.",
+        "requiredIntelligence": 8,
+        "retention": 5,
+        "zeon": 300
+      },
+      "intermediateGrade": {
+        "effect": "Afecta a conjuros de grado intermedio.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 450
+      },
+      "level": 94,
+      "name": "Anima",
+      "spellId": 10,
+      "type": "Automático",
+      "withRetention": true
+    }
+  ],
+  "type": "Sub-Vía"
+}

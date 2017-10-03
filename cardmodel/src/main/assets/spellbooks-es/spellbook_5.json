@@ -1,1 +1,1071 @@
-{"bookId":5,"bookName":"Fuego","description":"La primera de las cuatro vías elementales menores tiene el control sobre las altas temperaturas. Sus conjuros crean calor, fuego y arrasan grandes cantidades de terreno. También reúne conjuros de sacrificio, que permiten consumir ciertos aspectos de un individuo para potenciar a cambio otros. Es una vía muy ofensiva.","oppositeBook":"Agua","secondaryBookAccessibles":["Caos","Literae","Musical","Nobleza","Paz","Conocimiento","Sangre","Sueños","Tiempo","Vacío"],"spells":[{"actionType":"Activa","advancedGrade":{"effect":"8 intensidades de fuego.","requiredIntelligence":10,"retention":10,"zeon":100},"arcaneGrade":{"effect":"10 intensidades de fuego.","requiredIntelligence":12,"retention":15,"zeon":120},"bookId":5,"dailyRetention":false,"effect":"Crea intensidades de fuego. Mientras se mantenga el conjuro, la temperatura se conservará.","initialGrade":{"effect":"1 intensidad de fuego.","requiredIntelligence":5,"retention":5,"zeon":30},"intermediateGrade":{"effect":"6 intensidades de fuego.","requiredIntelligence":8,"retention":10,"zeon":80},"level":6,"name":"Crear Fuego","spellId":1,"type":"Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"-10 intensidades de fuego / RM 140.","requiredIntelligence":10,"retention":0,"zeon":120},"arcaneGrade":{"effect":"-15 intensidades de fuego / RM 180.","requiredIntelligence":13,"retention":0,"zeon":200},"bookId":5,"dailyRetention":false,"effect":"Disminuye intensidades de fuego o de calor. Hay que tener en cuenta que algunas fuentes de fuego, como volcanes o grandes incendios, se reproducen automáticamente si no se consiguen mitigar del todo. Al lanzarlo sobre un ser basado en fuego, recibirá 5 puntos de daño por cada intensidad rebajada, si no supera una RM. Los seres con acumulación reciben 25 puntos de daño por cada intensidad.","initialGrade":{"effect":"-1 intensidad de fuego / RM 100.","requiredIntelligence":5,"retention":0,"zeon":30},"intermediateGrade":{"effect":"-5 intensidades de fuego / RM 120.","requiredIntelligence":8,"retention":0,"zeon":80},"level":6,"name":"Mitigar Fuego","spellId":2,"type":"Efecto, Anímico","withRetention":false},{"actionType":"Activa","advancedGrade":{"effect":"20 intensidades de calor.","requiredIntelligence":10,"retention":10,"zeon":200},"arcaneGrade":{"effect":"30 intensidades de calor.","requiredIntelligence":13,"retention":15,"zeon":300},"bookId":5,"dailyRetention":true,"effect":"Este conjuro permite al hechicero, o a las personas que designe, ser inmunes a intensidades de calor. En el caso de que se reciba un ataque basado en dicho elemento, cada intensidad a la que es inmune disminuye 5 puntos el daño base del ataque, otorgando un +5 a las Resistencias contra sus efectos.","initialGrade":{"effect":"5 intensidades de calor.","requiredIntelligence":6,"retention":5,"zeon":50},"intermediateGrade":{"effect":"12 intensidades de calor.","requiredIntelligence":8,"retention":10,"zeon":140},"level":10,"name":"Inmunidad Contra el Fuego","spellId":3,"type":"Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"100 metros / RM 180.","requiredIntelligence":12,"retention":15,"zeon":140},"arcaneGrade":{"effect":"250 metros / RM 220.","requiredIntelligence":15,"retention":15,"zeon":200},"bookId":5,"dailyRetention":false,"effect":"Detecta la localización de cualquier fuente de calor. El conjuro no dará información sobre qué lo produce, pero podrá sentir intensidades y tamaños. Es posible, incluso, percibir el calor que desprende un cuerpo humano, pero no el de seres inanimados o inmateriales, como golems o no muertos. Si se desea resistir, deberá superarse una RM.","initialGrade":{"effect":"25 metros / RM 120.","requiredIntelligence":6,"retention":10,"zeon":60},"intermediateGrade":{"effect":"50 metros / RM 150.","requiredIntelligence":9,"retention":10,"zeon":100},"level":12,"name":"Sentir el Calor","spellId":4,"type":"Detección","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"Daño base 140 / Área de 80 metros de radio.","requiredIntelligence":12,"retention":0,"zeon":160},"arcaneGrade":{"effect":"Daño base 160 / área de 150 metros de radio.","requiredIntelligence":15,"retention":0,"zeon":250},"bookId":5,"dailyRetention":false,"effect":"Proyecta un ataque ígneo que estalla en un área. No es posible seleccionar blancos en el interior de la explosión. Ataca en la TA de calor.","initialGrade":{"effect":"Daño base 50 / Área de 5 metros de radio.","requiredIntelligence":6,"retention":0,"zeon":50},"intermediateGrade":{"effect":"Daño base 100 / Área de 25 metros de radio.","requiredIntelligence":9,"retention":0,"zeon":100},"level":16,"name":"Bola de Fuego","spellId":5,"type":"Ataque","withRetention":false},{"actionType":"Activa","advancedGrade":{"effect":"RM 140 / 12 intensidades.","requiredIntelligence":12,"retention":15,"zeon":120},"arcaneGrade":{"effect":"RM 180 / 15 intensidades.","requiredIntelligence":15,"retention":20,"zeon":180},"bookId":5,"dailyRetention":false,"effect":"Permite controlar la forma y crecimiento de un fuego. Del mismo modo, podrán modificarse distintos aspectos de las llamas, como su color, apariencia e incluso el humo que producen. Si se trata de un ser basado naturalmente en este elemento, el mago podrá controlarlo si la criatura no supera una RM. Un ser que falle la Resistencia no puede repetirla, salvo en caso de que recibir una orden opuesta a su naturaleza.","initialGrade":{"effect":"RM 100 / 5 intensidades.","requiredIntelligence":6,"retention":5,"zeon":50},"intermediateGrade":{"effect":"RM 120 / 8 intensidades.","requiredIntelligence":9,"retention":10,"zeon":80},"level":20,"name":"Control Sobre el Fuego","spellId":6,"type":"Efecto, Anímico","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"Daño 100 / 10 metros de extensión / 800 puntos de Resistencia / Permite detener ataques basados en energía.","requiredIntelligence":12,"retention":10,"zeon":120},"arcaneGrade":{"effect":"Daño 100 / 15 metros de extensión / 1.500 puntos de Resistencia / El ataque es contra Imposible / Permite detener ataques basados en cualquier tipo de ataque.","requiredIntelligence":15,"retention":15,"zeon":150},"bookId":5,"dailyRetention":false,"effect":"Este conjuro levanta un potente muro de fuego. Cualquiera que trate de traspasarlo recibirá automáticamente un ataque contra una habilidad Casi Imposible (es decir, un ataque automático de habilidad final 240) en la TA de calor. Recibir daño no impide a un personaje atravesar el muro. Adicionalmente, el brujo podrá usarla a modo de escudo mágico para detener únicamente ataques basados en agua, frío o fuego.","initialGrade":{"effect":"Daño 80 / 2 metros de extensión / 300 puntos de Resistencia.","requiredIntelligence":6,"retention":5,"zeon":50},"intermediateGrade":{"effect":"Daño 90 / 5 metros de extensión / 500 puntos de Resistencia.","requiredIntelligence":9,"retention":10,"zeon":90},"level":22,"name":"Barrera de Fuego","spellId":7,"type":"Automático, Defensa","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"+30 al daño base.","requiredIntelligence":11,"retention":10,"zeon":100},"arcaneGrade":{"effect":"+40 al daño base.","requiredIntelligence":14,"retention":15,"zeon":120},"bookId":5,"dailyRetention":false,"effect":"Imbuye de llamas un arma, haciendo que ataque en la TA de calor como crítico primario. El fuego será tan potente que aumentará en el daño base del ataque, sin afectar en absoluto la resistencia del arma.","initialGrade":{"effect":"+10 al daño base.","requiredIntelligence":6,"retention":5,"zeon":50},"intermediateGrade":{"effect":"+20 al daño base.","requiredIntelligence":9,"retention":10,"zeon":80},"level":26,"name":"Arma Ígnea","spellId":8,"type":"Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"Daño 90.","requiredIntelligence":12,"retention":0,"zeon":120},"arcaneGrade":{"effect":"Daño 110.","requiredIntelligence":15,"retention":0,"zeon":150},"bookId":5,"dailyRetention":false,"effect":"Proyecta una descarga de ondas de alta temperatura, capaces de abrasar cualquier cosa. El ataque se realiza en la TA de calor. Dado que las ondas no son visibles para el ojo humano, el defensor deberá ser capaz de ver magia, tener visión térmica, o superar un control de Advertir contra Absurdo, si no quiere sufrir el penalizador de Cegado contra este ataque.","initialGrade":{"effect":"Daño 50.","requiredIntelligence":6,"retention":0,"zeon":60},"intermediateGrade":{"effect":"Daño 70.","requiredIntelligence":9,"retention":0,"zeon":90},"level":30,"name":"Descarga de Calor","spellId":9,"type":"Ataque","withRetention":false},{"actionType":"Activa","advancedGrade":{"effect":"Retrocede un mes.","requiredIntelligence":13,"retention":0,"zeon":220},"arcaneGrade":{"effect":"Retrocede un año.","requiredIntelligence":15,"retention":0,"zeon":340},"bookId":5,"dailyRetention":false,"effect":"Traslada los sentidos del hechicero al pasado, permitiéndole ver la causa o incidente que provocó un determinado incendio. El hechicero deberá estar presente entre los restos del incendio para ejecutar el conjuro, y mientras lo hace no será consciente de lo que ocurre a su alrededor en la actualidad.","initialGrade":{"effect":"Retrocede un día hora.","requiredIntelligence":6,"retention":0,"zeon":60},"intermediateGrade":{"effect":"Retrocede un día.","requiredIntelligence":10,"retention":0,"zeon":140},"level":32,"name":"Ver en las Cenizas","spellId":10,"type":"Efecto","withRetention":false},{"actionType":"Activa","advancedGrade":{"effect":"+20 grados / 10 kilómetros de radio.","requiredIntelligence":12,"retention":50,"zeon":240},"arcaneGrade":{"effect":"+30 grados / 15 kilómetros de radio.","requiredIntelligence":15,"retention":60,"zeon":300},"bookId":5,"dailyRetention":false,"effect":"Aumenta la temperatura ambiente. Si la temperatura aumenta 10 grados por encima de lo que es natural en una zona en su momento más cálido, el índice de aumento se reduce a la mitad.","initialGrade":{"effect":"+5 grados / 1 kilómetro de radio.","requiredIntelligence":7,"retention":15,"zeon":60},"intermediateGrade":{"effect":"+10 grados / 5 kilómetros de radio.","requiredIntelligence":10,"retention":40,"zeon":140},"level":36,"name":"Aumentar la Temperatura Ambiental","spellId":11,"type":"Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"150 metros de radio / Daño 180.","requiredIntelligence":12,"retention":50,"zeon":240},"arcaneGrade":{"effect":"250 metros de radio / Daño 240.","requiredIntelligence":15,"retention":60,"zeon":320},"bookId":5,"dailyRetention":true,"effect":"Crea una mina ígnea, que estalla a voluntad del hechicero en radio atacando en la TA de calor. Para defenderse de la explosión, es necesario realizar una defensa contra un ataque final de dificultad Casi Imposible (es decir, una habilidad de ataque final de 240) si se encuentra a más de la mitad de la zona abarcada por el área de explosión, o contra Imposible (ataque de habilidad final 280) si se está a menos. A bocajarro, es decir, a menos de un metro de su centro, el ataque es de dificultad Inhumana (habilidad final de 320). La mina puede dejarse fija en un lugar o en un objeto determinado, y permanece estática en ese lugar hasta que estalla. El brujo puede activarla cuando desee, aunque hacerlo se considera una acción activa. No es posible seleccionar blancos en el interior de su explosión, y afecta a todos los presentes, incluyendo al propio lanzador.","initialGrade":{"effect":"10 metros de radio / Daño 80.","requiredIntelligence":7,"retention":20,"zeon":80},"intermediateGrade":{"effect":"50 metros de radio / Daño 120.","requiredIntelligence":10,"retention":40,"zeon":160},"level":40,"name":"Mina de Fuego","spellId":12,"type":"Efecto","withRetention":true},{"actionType":"Pasiva","advancedGrade":{"effect":"+60 al Nivel de Crítico.","requiredIntelligence":12,"retention":0,"zeon":120},"arcaneGrade":{"effect":"+80 al Nivel de Crítico.","requiredIntelligence":15,"retention":0,"zeon":150},"bookId":5,"dailyRetention":false,"effect":"Proporciona un bonificador a la tirada para calcular el Nivel de Crítico que haya provocado un ataque determinado. A pesar de ser un conjuro pasivo, debe usarse antes de que se lancen los dados.","initialGrade":{"effect":"+20 al Nivel de Crítico.","requiredIntelligence":6,"retention":0,"zeon":60},"intermediateGrade":{"effect":"+40 al Nivel de Crítico.","requiredIntelligence":9,"retention":0,"zeon":90},"level":42,"name":"Aumentar el Crítico","spellId":13,"type":"Efecto","withRetention":false},{"actionType":"Activa","advancedGrade":{"effect":"25 metros de radio / RM o RF 140.","requiredIntelligence":12,"retention":0,"zeon":180},"arcaneGrade":{"effect":"35 metros de radio / RM o RF 160.","requiredIntelligence":14,"retention":0,"zeon":240},"bookId":5,"dailyRetention":false,"effect":"Este conjuro seca inmediatamente cualquier cuerpo mojado que se encuentre dentro de un radio. Puede utilizarse para dañar cualquier tipo de elemental de agua, causándole el doble de daño por el que no supere una RM o RF. Si se usa para perjudicar a seres vivos que poseen organismos basados en agua (lo que incluye a los seres humanos), sus efectos pueden ser también muy perjudiciales, aunque el daño se reduce sólo a la mitad del nivel de fracaso.","initialGrade":{"effect":"5 metros de radio / RM o RF 100.","requiredIntelligence":8,"retention":0,"zeon":80},"intermediateGrade":{"effect":"15 metros de radio / RM o RF 120.","requiredIntelligence":10,"retention":0,"zeon":120},"level":46,"name":"Secar","spellId":14,"type":"Efecto, Anímico","withRetention":false},{"actionType":"Activa","advancedGrade":{"effect":"100 metros de radio / RF 120.","requiredIntelligence":12,"retention":15,"zeon":180},"arcaneGrade":{"effect":"150 metros de radio / RF 140.","requiredIntelligence":14,"retention":15,"zeon":240},"bookId":5,"dailyRetention":false,"effect":"Este conjuro calienta cualquier objeto inorgánico que el hechicero elija en un radio haciendo que alcance altísimas temperaturas. El calor producido será tan intenso que, cualquier objeto susceptible de fundirse que no supere un control de Resistencia se fundirá en un número de asaltos equivalente a su entereza. Cualquier persona que esté en contacto con el cuerpo abrasado, deberá desprenderse de él o sufrirá daños. Si no lo arroja, cada turno realizará una tirada acumulativa en la Tabla 76.","initialGrade":{"effect":"10 metros de radio / RF 80.","requiredIntelligence":8,"retention":10,"zeon":80},"intermediateGrade":{"effect":"50 metros de radio / RF 100.","requiredIntelligence":10,"retention":10,"zeon":120},"level":50,"name":"Fundir","spellId":15,"type":"Anímico","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"Como el Intermedio, el sujeto puede colarse por cualquier lugar en el que pueda pasar las lenguas de fuego.","requiredIntelligence":13,"retention":15,"zeon":140},"arcaneGrade":{"effect":"Como el Avanzado, pero los ataques basados en frío o agua que no sean de origen sobrenatural no le producen daño.","requiredIntelligence":16,"retention":20,"zeon":160},"bookId":5,"dailyRetention":false,"effect":"El cuerpo designado por el hechicero se transformará en llamas, volviéndose inmune a cualquier ataque no basado en energía, frío o agua. Todo aquello capaz de mitigar el fuego (arena, espuma…) producirá también daño al personaje, Cualquiera que se ponga en contacto con las llamas que forman su cuerpo, estará obligado a realizar una RF contra el doble de su presencia, o a perder una cantidad de puntos de vida equivalente a la mitad del nivel de fracaso (si el afectado tiene protección contra fuego, cada punto de TA contra calor que posea le otorga un bono de +5 a esta tirada).","initialGrade":{"effect":"Las habilidades descritas.","requiredIntelligence":8,"retention":10,"zeon":100},"intermediateGrade":{"effect":"El sujeto ganará un bono de +30 a sus Resistencias contra efectos basados en calor.","requiredIntelligence":11,"retention":15,"zeon":120},"level":52,"name":"Cuerpo a Fuego","spellId":16,"type":"Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"Sacrificio máximo de 150 Puntos de Vida por asalto.","requiredIntelligence":12,"retention":15,"zeon":240},"arcaneGrade":{"effect":"Sacrificio máximo de 200 Puntos de Vida por asalto.","requiredIntelligence":15,"retention":15,"zeon":300},"bookId":5,"dailyRetention":false,"effect":"Permite al hechicero consumir su propia fuerza vital para incrementar sus capacidades físicas cuando lo requiera. Este conjuro otorga la habilidad pasiva de sacrificar temporalmente sus puntos de vida para obtener un bonificador a una acción determinada. Cada 5 puntos de vida que gaste de esta forma proporcionarán al personaje +5 a una de sus tiradas (en el caso de las criaturas de acumulación de daño, será necesario multiplicar estos puntos por su múltiplo de acumulación). Este bono sólo será aplicable a las acciones físicas, pero podrá sumarse a habilidades primarias como ataque, defensa o Proyección Mágica. A pesar de ser una acción pasiva, es necesario declarar el sacrificio antes de lanzar los dados. Es también posible que el brujo decida conferir esta habilidad a otro individuo, siendo entonces este quien decida cuántos puntos gastar en cada caso. Los puntos de vida perdidos de esta forma se recuperan a un ritmo de 10 al día, sin importar lo que indique la Regeneración natural del personaje (es decir, cuentan como un Sacrificio). Sus efectos no se superponen, y sólo se puede tener un conjuro de esta clase activo sobre un individuo determinado.","initialGrade":{"effect":"Sacrificio máximo de 50 Puntos de Vida por asalto.","requiredIntelligence":6,"retention":10,"zeon":120},"intermediateGrade":{"effect":"Sacrificio máximo de 100 Puntos de Vida por asalto.","requiredIntelligence":9,"retention":10,"zeon":180},"level":56,"name":"Sacrificio Vital","spellId":17,"type":"Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"RM 180 / +140 a la Tabla 76 / 150 metros de radio.","requiredIntelligence":14,"retention":15,"zeon":200},"arcaneGrade":{"effect":"RM 200 / +160 a la Tabla 76 / 200 metros de radio.","requiredIntelligence":16,"retention":20,"zeon":260},"bookId":5,"dailyRetention":false,"effect":"Prende en llamas cualquier cuerpo que designe el hechicero, orgánico o inorgánico, por la mera condición de hallarse en su presencia. A efectos de juego, el brujo realizará una tirada con un bonificador en la Tabla 76: En Llamas, por cada blanco que desee incinerar.","initialGrade":{"effect":"RM 140 / +100 a la Tabla 76 / 50 metros de radio.","requiredIntelligence":10,"retention":10,"zeon":100},"intermediateGrade":{"effect":"RM 160 / +120 a la Tabla 76 / 100 metros de radio.","requiredIntelligence":12,"retention":15,"zeon":150},"level":60,"name":"Incinerar","spellId":18,"type":"Automático","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"50 metros de radio y RM 200.","requiredIntelligence":12,"retention":0,"zeon":240},"arcaneGrade":{"effect":"150 metros de radio / RM 220.","requiredIntelligence":15,"retention":0,"zeon":300},"bookId":5,"dailyRetention":false,"effect":"Este hechizo crea una terrorífica aura sobrenatural alrededor del brujo que destruye la esencia vital de las personas, consumiendo sus energías e impidiéndoles curarse por medios naturales. Cualquier sujeto que se encuentre en un radio respecto al mago deberá superar una RM o perderá una cantidad de puntos de vida y puntos de Zeon equivalentes al nivel de fracaso. Los puntos de vida que un personaje pierda a causa de este hechizo no se recuperan 83.165.181.63 de manera natural, y sólo podrán sanarse mediante conjuros de curación o medios sobrenaturales equivalentes. En lo que respecta a los puntos de Zeon, deberán ser absorbidos de otros hechiceros o contenedores mágicos.","initialGrade":{"effect":"10 metros de radio / RM 120.","requiredIntelligence":6,"retention":0,"zeon":120},"intermediateGrade":{"effect":"25 metros de radio / RM 160.","requiredIntelligence":9,"retention":0,"zeon":180},"level":62,"name":"Consumir Esencia","spellId":19,"type":"Anímico","withRetention":false},{"actionType":"Activa","advancedGrade":{"effect":"80 puntos de Zeon por asalto.","requiredIntelligence":13,"retention":15,"zeon":240},"arcaneGrade":{"effect":"120 puntos de Zeon por asalto.","requiredIntelligence":15,"retention":15,"zeon":300},"bookId":5,"dailyRetention":false,"effect":"Permite al hechicero consumir su propia energía mágica para incrementar su acumulación mágica. Este conjuro otorga la habilidad pasiva de gastar puntos de Zeon para obtener un bono temporal a su ACT. Cada 10 puntos que invierta con este fin, le proporcionarán un +5 a su ACT hasta el fin del turno. Sus efectos no se superponen, y sólo se puede tener un conjuro de esta clase activo sobre un individuo determinado.","initialGrade":{"effect":"20 puntos de Zeon por asalto.","requiredIntelligence":7,"retention":10,"zeon":120},"intermediateGrade":{"effect":"50 puntos de Zeon por asalto.","requiredIntelligence":10,"retention":10,"zeon":180},"level":66,"name":"Sacrificio de Poder","spellId":20,"type":"Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"Crítico 180 / RM 180.","requiredIntelligence":13,"retention":0,"zeon":200},"arcaneGrade":{"effect":"Crítico 220 / RM 200.","requiredIntelligence":16,"retention":0,"zeon":280},"bookId":5,"dailyRetention":false,"effect":"Causa un estallido interno en un individuo, provocándole un crítico de manera automática. A efectos de juego, el blanco recibirá el equivalente a un Nivel de Crítico aunque tendrá la capacidad de contrarrestarlo con su RF, empleando las reglas generales. Para evitar sus efectos es necesario superar un control de RM contra el valor determinado por el grado del conjuro.","initialGrade":{"effect":"Crítico 120 / RM 140.","requiredIntelligence":9,"retention":0,"zeon":100},"intermediateGrade":{"effect":"Crítico 140 / RM 160.","requiredIntelligence":11,"retention":0,"zeon":140},"level":70,"name":"Crítico Directo","spellId":21,"type":"Anímico","withRetention":false},{"actionType":"Activa","advancedGrade":{"effect":"150 puntos de Zeon por asalto.","requiredIntelligence":12,"retention":15,"zeon":240},"arcaneGrade":{"effect":"200 puntos de Zeon por asalto.","requiredIntelligence":15,"retention":15,"zeon":300},"bookId":5,"dailyRetention":false,"effect":"Permite al hechicero consumir su propia energía mágica, para incrementar temporalmente sus atributos y las habilidades que dependan de ellos. Este conjuro otorga la habilidad pasiva de sacrificar sus puntos de Zeon para obtener un bonificador a las características. Cada 25 puntos de Zeon que gaste de esta forma le proporcionarán un +1 a uno de sus atributos hasta el final del turno. Sus efectos no se superponen, y sólo se puede tener un conjuro de esta clase activo sobre un individuo determinado.","initialGrade":{"effect":"50 puntos de Zeon por asalto.","requiredIntelligence":6,"retention":10,"zeon":120},"intermediateGrade":{"effect":"100 puntos de Zeon por asalto.","requiredIntelligence":9,"retention":10,"zeon":180},"level":72,"name":"Magia por Capacidades","spellId":22,"type":"Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"200 metros de radio/ Habilidad de Imposible (280).","requiredIntelligence":12,"retention":25,"zeon":240},"arcaneGrade":{"effect":"250 metros de radio/ Habilidad de Ataque Inhumano (320).","requiredIntelligence":15,"retention":30,"zeon":280},"bookId":5,"dailyRetention":false,"effect":"El brujo designa un área dentro de la cual se desencadena una potente tormenta de llamas, que calcina todo lo que se encuentra en su interior. Los individuos que se hallen en ella sufrirán, cada asalto, un ataque automático en la TA de calor contra una habilidad final determinada por el grado del conjuro y un daño base de 100 puntos. El área de la tormenta tendrá un radio máximo en cuyo interior no se podrán designar blancos, pudiendo afectar incluso al propio lanzador. La condición para recibir el ataque será estar dentro de la tormenta en el asalto posterior a su lanzamiento. El hechizo siempre permanece estático en el lugar donde fue conjurado.","initialGrade":{"effect":"25 metros de radio / Habilidad de Ataque Absurdo (180).","requiredIntelligence":8,"retention":15,"zeon":150},"intermediateGrade":{"effect":"150 metros de radio / Habilidad de Ataque Casi Imposible (240).","requiredIntelligence":10,"retention":20,"zeon":200},"level":76,"name":"Tormenta de Fuego","spellId":23,"type":"Automático","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"140 puntos de vida asalto.","requiredIntelligence":12,"retention":15,"zeon":240},"arcaneGrade":{"effect":"200 puntos de vida asalto.","requiredIntelligence":15,"retention":15,"zeon":300},"bookId":5,"dailyRetention":false,"effect":"Permite al hechicero consumir su propia fuerza vital para incrementar su reserva de magia. Este conjuro otorga la habilidad pasiva de sacrificar temporalmente puntos de vida para recuperar Zeon. Cada 5 PV que se sacrifiquen con este objetivo, proporcionan al personaje 100 puntos de Zeon que gastar (en el caso de las criaturas con acumulación de daño, la cantidad a sacrificar aumentará dependiendo de su múltiplo). Los puntos de vida perdidos mediante este método se recuperarán a un ritmo de 10 puntos por día, sin importar la Regeneración natural del personaje ni los conjuros de curación que emplee (es decir, cuentan como un Sacrificio). Sus efectos no se superponen, y sólo se puede tener un conjuro de esta clase activo sobre un individuo determinado.","initialGrade":{"effect":"20 puntos de vida asalto.","requiredIntelligence":6,"retention":10,"zeon":120},"intermediateGrade":{"effect":"80 puntos de vida asalto.","requiredIntelligence":9,"retention":10,"zeon":180},"level":80,"name":"Consumir Vida por Magia","spellId":24,"type":"Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"Nivel 6.","requiredIntelligence":14,"retention":100,"zeon":500},"arcaneGrade":{"effect":"Nivel 10.","requiredIntelligence":16,"retention":140,"zeon":700},"bookId":5,"dailyRetention":false,"effect":"Crea una criatura de fuego con apariencia de vida, bajo el control absoluto del hechicero. El ente será desarrollado como un Ser Entre Mundos, usando los poderes y limitaciones de los elementales de Fuego del Capítulo 26. La criatura tendrá PD y, para calcular su nivel máximo, se emplean las mismas reglas que en el conjuro Crear Ser de la vía de Creación.","initialGrade":{"effect":"Nivel 1.","requiredIntelligence":10,"retention":50,"zeon":250},"intermediateGrade":{"effect":"Nivel 3.","requiredIntelligence":12,"retention":70,"zeon":350},"level":82,"name":"Crear Ifreet","spellId":25,"type":"Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"35 intensidades.","requiredIntelligence":14,"retention":30,"zeon":350},"arcaneGrade":{"effect":"45 intensidades.","requiredIntelligence":18,"retention":35,"zeon":400},"bookId":5,"dailyRetention":false,"effect":"Crea intensidades de fuego. Mientras se mantenga el conjuro, la llama seguirá ardiendo incluso sin nada que consumir. Si se prende en algo inflamable, arderá naturalmente tras finalizar el hechizo.","initialGrade":{"effect":"15 intensidades.","requiredIntelligence":10,"retention":25,"zeon":250},"intermediateGrade":{"effect":"25 intensidades.","requiredIntelligence":12,"retention":30,"zeon":300},"level":86,"name":"Pira Absoluta","spellId":26,"type":"Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"10 kilómetros de radio.","requiredIntelligence":16,"retention":0,"zeon":400},"arcaneGrade":{"effect":"15 kilómetros de radio.","requiredIntelligence":18,"retention":0,"zeon":500},"bookId":5,"dailyRetention":false,"effect":"Proyecta una explosión ígnea, que ataca en área con un daño base de 200 puntos. Ataca en la TA de calor, aunque es capaz de dañar energía. No es posible designar blancos en el interior del conjuro.","initialGrade":{"effect":"1 kilómetro de radio.","requiredIntelligence":10,"retention":0,"zeon":200},"intermediateGrade":{"effect":"5 kilómetros de radio.","requiredIntelligence":13,"retention":0,"zeon":300},"level":90,"name":"Devastación","spellId":27,"type":"Ataque","withRetention":false},{"actionType":"Activa","advancedGrade":{"effect":"RM 160 / 3 kilómetros de área.","requiredIntelligence":17,"retention":100,"zeon":500},"arcaneGrade":{"effect":"RM 180 / 5 kilómetros de área.","requiredIntelligence":19,"retention":150,"zeon":750},"bookId":5,"dailyRetention":true,"effect":"Este hechizo encadena la esencia y la fuerza vital de otros individuos al lanzador, permitiendo a este consumirla en su propio beneficio. A efectos de juego, permite a la entidad utilizar los puntos de vida y Zeon de los sujetos afectados por el conjuro para sus hechizos de sacrificio por Capacidades, Sacrificio de Poder y Consumir Vida Por Magia. Este conjuro tiene un área estática de un kilómetro, dentro de la cual podrá designar a tantos blancos como quiera el lanzador. La RM para superar este conjuro será de 120. Los afectados tendrán derecho a una nueva tirada por día que transcurra, o en cada ocasión en la que sus energías sean consumidas.","initialGrade":{"effect":"RM 120 / 1 kilómetro de área.","requiredIntelligence":13,"retention":50,"zeon":250},"intermediateGrade":{"effect":"RM 140 / 2 kilómetros de área.","requiredIntelligence":15,"retention":70,"zeon":350},"level":92,"name":"Sacrificar a Otros","spellId":28,"type":"Anímico, Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"10.000 kilómetros de radio / 200 RM.","requiredIntelligence":15,"retention":60,"zeon":600},"arcaneGrade":{"effect":"Afecta cualquier fuente de calor / 240 RM.","requiredIntelligence":18,"retention":100,"zeon":1000},"bookId":5,"dailyRetention":true,"effect":"El hechicero controla cualquier núcleo de elevado calor a su alrededor. Este dominio le permite incluso manejar las corrientes de magma del interior del planeta, pudiendo crear erupciones y volcanes. Toda criatura basada en fuego que se encuentre dentro del área del conjuro, deberá superar una RM o será controlada por el lanzador. Si la pasan, ya no necesitan volver a realizar el control. Los afectados tienen derecho a una nueva tirada únicamente si alteran su Resistencia base.","initialGrade":{"effect":"100 kilómetros de radio / 140 RM.","requiredIntelligence":10,"retention":30,"zeon":300},"intermediateGrade":{"effect":"1.000 kilómetros de radio / 180 RM.","requiredIntelligence":12,"retention":45,"zeon":450},"level":96,"name":"Señor del Fuego","spellId":29,"type":"Automático","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"50 kilómetros de radio / RM 160.","requiredIntelligence":17,"retention":105,"zeon":1200},"arcaneGrade":{"effect":"150 kilómetros de radio / RM 180.","requiredIntelligence":18,"retention":110,"zeon":1600},"bookId":5,"dailyRetention":false,"effect":"El conjuro de fuego definitivo concede al lanzador la capacidad de consumir una parte de la propia esencia del mundo, calcinando las almas que están a su alrededor. Cualquier cosa, orgánica o no, que se encuentre en el interior de su área, deberá superar cada minuto que esté dentro una RM o será calcinado física y espiritualmente. Mientras el lanzador mantenga activo el Armagedón, ninguna forma de vida podrá nacer o ser creada dentro de su zona de influencia.","initialGrade":{"effect":"10 kilómetros de radio / RM 140.","requiredIntelligence":15,"retention":90,"zeon":450},"intermediateGrade":{"effect":"25 kilómetros de radio / RM 150.","requiredIntelligence":16,"retention":100,"zeon":800},"level":100,"name":"Armagedón","spellId":30,"type":"Automático","withRetention":true}],"type":"Menor"}
+{
+  "bookId": 5,
+  "bookName": "Fuego",
+  "description": "La primera de las cuatro vías elementales menores tiene el control sobre las altas temperaturas. Sus conjuros crean calor, fuego y arrasan grandes cantidades de terreno. También reúne conjuros de sacrificio, que permiten consumir ciertos aspectos de un individuo para potenciar a cambio otros. Es una vía muy ofensiva.",
+  "oppositeBook": "Agua",
+  "secondaryBookAccessibles": [
+    "Caos",
+    "Literae",
+    "Musical",
+    "Nobleza",
+    "Paz",
+    "Conocimiento",
+    "Sangre",
+    "Sueños",
+    "Tiempo",
+    "Vacío"
+  ],
+  "spells": [
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "8 intensidades de fuego.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 100
+      },
+      "arcaneGrade": {
+        "effect": "10 intensidades de fuego.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 120
+      },
+      "bookId": 5,
+      "dailyRetention": false,
+      "effect": "Crea intensidades de fuego. Mientras se mantenga el conjuro, la temperatura se conservará.",
+      "initialGrade": {
+        "effect": "1 intensidad de fuego.",
+        "requiredIntelligence": 5,
+        "retention": 5,
+        "zeon": 30
+      },
+      "intermediateGrade": {
+        "effect": "6 intensidades de fuego.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 80
+      },
+      "level": 6,
+      "name": "Crear Fuego",
+      "spellId": 1,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "-10 intensidades de fuego / RM 140.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "-15 intensidades de fuego / RM 180.",
+        "requiredIntelligence": 13,
+        "retention": 0,
+        "zeon": 200
+      },
+      "bookId": 5,
+      "dailyRetention": false,
+      "effect": "Disminuye intensidades de fuego o de calor. Hay que tener en cuenta que algunas fuentes de fuego, como volcanes o grandes incendios, se reproducen automáticamente si no se consiguen mitigar del todo. Al lanzarlo sobre un ser basado en fuego, recibirá 5 puntos de daño por cada intensidad rebajada, si no supera una RM. Los seres con acumulación reciben 25 puntos de daño por cada intensidad.",
+      "initialGrade": {
+        "effect": "-1 intensidad de fuego / RM 100.",
+        "requiredIntelligence": 5,
+        "retention": 0,
+        "zeon": 30
+      },
+      "intermediateGrade": {
+        "effect": "-5 intensidades de fuego / RM 120.",
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 80
+      },
+      "level": 6,
+      "name": "Mitigar Fuego",
+      "spellId": 2,
+      "type": "Efecto, Anímico",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "20 intensidades de calor.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 200
+      },
+      "arcaneGrade": {
+        "effect": "30 intensidades de calor.",
+        "requiredIntelligence": 13,
+        "retention": 15,
+        "zeon": 300
+      },
+      "bookId": 5,
+      "dailyRetention": true,
+      "effect": "Este conjuro permite al hechicero, o a las personas que designe, ser inmunes a intensidades de calor. En el caso de que se reciba un ataque basado en dicho elemento, cada intensidad a la que es inmune disminuye 5 puntos el daño base del ataque, otorgando un +5 a las Resistencias contra sus efectos.",
+      "initialGrade": {
+        "effect": "5 intensidades de calor.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 50
+      },
+      "intermediateGrade": {
+        "effect": "12 intensidades de calor.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 140
+      },
+      "level": 10,
+      "name": "Inmunidad Contra el Fuego",
+      "spellId": 3,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "100 metros / RM 180.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 140
+      },
+      "arcaneGrade": {
+        "effect": "250 metros / RM 220.",
+        "requiredIntelligence": 15,
+        "retention": 15,
+        "zeon": 200
+      },
+      "bookId": 5,
+      "dailyRetention": false,
+      "effect": "Detecta la localización de cualquier fuente de calor. El conjuro no dará información sobre qué lo produce, pero podrá sentir intensidades y tamaños. Es posible, incluso, percibir el calor que desprende un cuerpo humano, pero no el de seres inanimados o inmateriales, como golems o no muertos. Si se desea resistir, deberá superarse una RM.",
+      "initialGrade": {
+        "effect": "25 metros / RM 120.",
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "50 metros / RM 150.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 100
+      },
+      "level": 12,
+      "name": "Sentir el Calor",
+      "spellId": 4,
+      "type": "Detección",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Daño base 140 / Área de 80 metros de radio.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 160
+      },
+      "arcaneGrade": {
+        "effect": "Daño base 160 / área de 150 metros de radio.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 250
+      },
+      "bookId": 5,
+      "dailyRetention": false,
+      "effect": "Proyecta un ataque ígneo que estalla en un área. No es posible seleccionar blancos en el interior de la explosión. Ataca en la TA de calor.",
+      "initialGrade": {
+        "effect": "Daño base 50 / Área de 5 metros de radio.",
+        "requiredIntelligence": 6,
+        "retention": 0,
+        "zeon": 50
+      },
+      "intermediateGrade": {
+        "effect": "Daño base 100 / Área de 25 metros de radio.",
+        "requiredIntelligence": 9,
+        "retention": 0,
+        "zeon": 100
+      },
+      "level": 16,
+      "name": "Bola de Fuego",
+      "spellId": 5,
+      "type": "Ataque",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM 140 / 12 intensidades.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "RM 180 / 15 intensidades.",
+        "requiredIntelligence": 15,
+        "retention": 20,
+        "zeon": 180
+      },
+      "bookId": 5,
+      "dailyRetention": false,
+      "effect": "Permite controlar la forma y crecimiento de un fuego. Del mismo modo, podrán modificarse distintos aspectos de las llamas, como su color, apariencia e incluso el humo que producen. Si se trata de un ser basado naturalmente en este elemento, el mago podrá controlarlo si la criatura no supera una RM. Un ser que falle la Resistencia no puede repetirla, salvo en caso de que recibir una orden opuesta a su naturaleza.",
+      "initialGrade": {
+        "effect": "RM 100 / 5 intensidades.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 50
+      },
+      "intermediateGrade": {
+        "effect": "RM 120 / 8 intensidades.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 80
+      },
+      "level": 20,
+      "name": "Control Sobre el Fuego",
+      "spellId": 6,
+      "type": "Efecto, Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Daño 100 / 10 metros de extensión / 800 puntos de Resistencia / Permite detener ataques basados en energía.",
+        "requiredIntelligence": 12,
+        "retention": 10,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "Daño 100 / 15 metros de extensión / 1.500 puntos de Resistencia / El ataque es contra Imposible / Permite detener ataques basados en cualquier tipo de ataque.",
+        "requiredIntelligence": 15,
+        "retention": 15,
+        "zeon": 150
+      },
+      "bookId": 5,
+      "dailyRetention": false,
+      "effect": "Este conjuro levanta un potente muro de fuego. Cualquiera que trate de traspasarlo recibirá automáticamente un ataque contra una habilidad Casi Imposible (es decir, un ataque automático de habilidad final 240) en la TA de calor. Recibir daño no impide a un personaje atravesar el muro. Adicionalmente, el brujo podrá usarla a modo de escudo mágico para detener únicamente ataques basados en agua, frío o fuego.",
+      "initialGrade": {
+        "effect": "Daño 80 / 2 metros de extensión / 300 puntos de Resistencia.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 50
+      },
+      "intermediateGrade": {
+        "effect": "Daño 90 / 5 metros de extensión / 500 puntos de Resistencia.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 90
+      },
+      "level": 22,
+      "name": "Barrera de Fuego",
+      "spellId": 7,
+      "type": "Automático, Defensa",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "+30 al daño base.",
+        "requiredIntelligence": 11,
+        "retention": 10,
+        "zeon": 100
+      },
+      "arcaneGrade": {
+        "effect": "+40 al daño base.",
+        "requiredIntelligence": 14,
+        "retention": 15,
+        "zeon": 120
+      },
+      "bookId": 5,
+      "dailyRetention": false,
+      "effect": "Imbuye de llamas un arma, haciendo que ataque en la TA de calor como crítico primario. El fuego será tan potente que aumentará en el daño base del ataque, sin afectar en absoluto la resistencia del arma.",
+      "initialGrade": {
+        "effect": "+10 al daño base.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 50
+      },
+      "intermediateGrade": {
+        "effect": "+20 al daño base.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 80
+      },
+      "level": 26,
+      "name": "Arma Ígnea",
+      "spellId": 8,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Daño 90.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "Daño 110.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 150
+      },
+      "bookId": 5,
+      "dailyRetention": false,
+      "effect": "Proyecta una descarga de ondas de alta temperatura, capaces de abrasar cualquier cosa. El ataque se realiza en la TA de calor. Dado que las ondas no son visibles para el ojo humano, el defensor deberá ser capaz de ver magia, tener visión térmica, o superar un control de Advertir contra Absurdo, si no quiere sufrir el penalizador de Cegado contra este ataque.",
+      "initialGrade": {
+        "effect": "Daño 50.",
+        "requiredIntelligence": 6,
+        "retention": 0,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "Daño 70.",
+        "requiredIntelligence": 9,
+        "retention": 0,
+        "zeon": 90
+      },
+      "level": 30,
+      "name": "Descarga de Calor",
+      "spellId": 9,
+      "type": "Ataque",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Retrocede un mes.",
+        "requiredIntelligence": 13,
+        "retention": 0,
+        "zeon": 220
+      },
+      "arcaneGrade": {
+        "effect": "Retrocede un año.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 340
+      },
+      "bookId": 5,
+      "dailyRetention": false,
+      "effect": "Traslada los sentidos del hechicero al pasado, permitiéndole ver la causa o incidente que provocó un determinado incendio. El hechicero deberá estar presente entre los restos del incendio para ejecutar el conjuro, y mientras lo hace no será consciente de lo que ocurre a su alrededor en la actualidad.",
+      "initialGrade": {
+        "effect": "Retrocede un día hora.",
+        "requiredIntelligence": 6,
+        "retention": 0,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "Retrocede un día.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 140
+      },
+      "level": 32,
+      "name": "Ver en las Cenizas",
+      "spellId": 10,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "+20 grados / 10 kilómetros de radio.",
+        "requiredIntelligence": 12,
+        "retention": 50,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "+30 grados / 15 kilómetros de radio.",
+        "requiredIntelligence": 15,
+        "retention": 60,
+        "zeon": 300
+      },
+      "bookId": 5,
+      "dailyRetention": false,
+      "effect": "Aumenta la temperatura ambiente. Si la temperatura aumenta 10 grados por encima de lo que es natural en una zona en su momento más cálido, el índice de aumento se reduce a la mitad.",
+      "initialGrade": {
+        "effect": "+5 grados / 1 kilómetro de radio.",
+        "requiredIntelligence": 7,
+        "retention": 15,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "+10 grados / 5 kilómetros de radio.",
+        "requiredIntelligence": 10,
+        "retention": 40,
+        "zeon": 140
+      },
+      "level": 36,
+      "name": "Aumentar la Temperatura Ambiental",
+      "spellId": 11,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "150 metros de radio / Daño 180.",
+        "requiredIntelligence": 12,
+        "retention": 50,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "250 metros de radio / Daño 240.",
+        "requiredIntelligence": 15,
+        "retention": 60,
+        "zeon": 320
+      },
+      "bookId": 5,
+      "dailyRetention": true,
+      "effect": "Crea una mina ígnea, que estalla a voluntad del hechicero en radio atacando en la TA de calor. Para defenderse de la explosión, es necesario realizar una defensa contra un ataque final de dificultad Casi Imposible (es decir, una habilidad de ataque final de 240) si se encuentra a más de la mitad de la zona abarcada por el área de explosión, o contra Imposible (ataque de habilidad final 280) si se está a menos. A bocajarro, es decir, a menos de un metro de su centro, el ataque es de dificultad Inhumana (habilidad final de 320). La mina puede dejarse fija en un lugar o en un objeto determinado, y permanece estática en ese lugar hasta que estalla. El brujo puede activarla cuando desee, aunque hacerlo se considera una acción activa. No es posible seleccionar blancos en el interior de su explosión, y afecta a todos los presentes, incluyendo al propio lanzador.",
+      "initialGrade": {
+        "effect": "10 metros de radio / Daño 80.",
+        "requiredIntelligence": 7,
+        "retention": 20,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "50 metros de radio / Daño 120.",
+        "requiredIntelligence": 10,
+        "retention": 40,
+        "zeon": 160
+      },
+      "level": 40,
+      "name": "Mina de Fuego",
+      "spellId": 12,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Pasiva",
+      "advancedGrade": {
+        "effect": "+60 al Nivel de Crítico.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "+80 al Nivel de Crítico.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 150
+      },
+      "bookId": 5,
+      "dailyRetention": false,
+      "effect": "Proporciona un bonificador a la tirada para calcular el Nivel de Crítico que haya provocado un ataque determinado. A pesar de ser un conjuro pasivo, debe usarse antes de que se lancen los dados.",
+      "initialGrade": {
+        "effect": "+20 al Nivel de Crítico.",
+        "requiredIntelligence": 6,
+        "retention": 0,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "+40 al Nivel de Crítico.",
+        "requiredIntelligence": 9,
+        "retention": 0,
+        "zeon": 90
+      },
+      "level": 42,
+      "name": "Aumentar el Crítico",
+      "spellId": 13,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "25 metros de radio / RM o RF 140.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 180
+      },
+      "arcaneGrade": {
+        "effect": "35 metros de radio / RM o RF 160.",
+        "requiredIntelligence": 14,
+        "retention": 0,
+        "zeon": 240
+      },
+      "bookId": 5,
+      "dailyRetention": false,
+      "effect": "Este conjuro seca inmediatamente cualquier cuerpo mojado que se encuentre dentro de un radio. Puede utilizarse para dañar cualquier tipo de elemental de agua, causándole el doble de daño por el que no supere una RM o RF. Si se usa para perjudicar a seres vivos que poseen organismos basados en agua (lo que incluye a los seres humanos), sus efectos pueden ser también muy perjudiciales, aunque el daño se reduce sólo a la mitad del nivel de fracaso.",
+      "initialGrade": {
+        "effect": "5 metros de radio / RM o RF 100.",
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "15 metros de radio / RM o RF 120.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 120
+      },
+      "level": 46,
+      "name": "Secar",
+      "spellId": 14,
+      "type": "Efecto, Anímico",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "100 metros de radio / RF 120.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 180
+      },
+      "arcaneGrade": {
+        "effect": "150 metros de radio / RF 140.",
+        "requiredIntelligence": 14,
+        "retention": 15,
+        "zeon": 240
+      },
+      "bookId": 5,
+      "dailyRetention": false,
+      "effect": "Este conjuro calienta cualquier objeto inorgánico que el hechicero elija en un radio haciendo que alcance altísimas temperaturas. El calor producido será tan intenso que, cualquier objeto susceptible de fundirse que no supere un control de Resistencia se fundirá en un número de asaltos equivalente a su entereza. Cualquier persona que esté en contacto con el cuerpo abrasado, deberá desprenderse de él o sufrirá daños. Si no lo arroja, cada turno realizará una tirada acumulativa en la Tabla 76.",
+      "initialGrade": {
+        "effect": "10 metros de radio / RF 80.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "50 metros de radio / RF 100.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 120
+      },
+      "level": 50,
+      "name": "Fundir",
+      "spellId": 15,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Como el Intermedio, el sujeto puede colarse por cualquier lugar en el que pueda pasar las lenguas de fuego.",
+        "requiredIntelligence": 13,
+        "retention": 15,
+        "zeon": 140
+      },
+      "arcaneGrade": {
+        "effect": "Como el Avanzado, pero los ataques basados en frío o agua que no sean de origen sobrenatural no le producen daño.",
+        "requiredIntelligence": 16,
+        "retention": 20,
+        "zeon": 160
+      },
+      "bookId": 5,
+      "dailyRetention": false,
+      "effect": "El cuerpo designado por el hechicero se transformará en llamas, volviéndose inmune a cualquier ataque no basado en energía, frío o agua. Todo aquello capaz de mitigar el fuego (arena, espuma…) producirá también daño al personaje, Cualquiera que se ponga en contacto con las llamas que forman su cuerpo, estará obligado a realizar una RF contra el doble de su presencia, o a perder una cantidad de puntos de vida equivalente a la mitad del nivel de fracaso (si el afectado tiene protección contra fuego, cada punto de TA contra calor que posea le otorga un bono de +5 a esta tirada).",
+      "initialGrade": {
+        "effect": "Las habilidades descritas.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "El sujeto ganará un bono de +30 a sus Resistencias contra efectos basados en calor.",
+        "requiredIntelligence": 11,
+        "retention": 15,
+        "zeon": 120
+      },
+      "level": 52,
+      "name": "Cuerpo a Fuego",
+      "spellId": 16,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Sacrificio máximo de 150 Puntos de Vida por asalto.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "Sacrificio máximo de 200 Puntos de Vida por asalto.",
+        "requiredIntelligence": 15,
+        "retention": 15,
+        "zeon": 300
+      },
+      "bookId": 5,
+      "dailyRetention": false,
+      "effect": "Permite al hechicero consumir su propia fuerza vital para incrementar sus capacidades físicas cuando lo requiera. Este conjuro otorga la habilidad pasiva de sacrificar temporalmente sus puntos de vida para obtener un bonificador a una acción determinada. Cada 5 puntos de vida que gaste de esta forma proporcionarán al personaje +5 a una de sus tiradas (en el caso de las criaturas de acumulación de daño, será necesario multiplicar estos puntos por su múltiplo de acumulación). Este bono sólo será aplicable a las acciones físicas, pero podrá sumarse a habilidades primarias como ataque, defensa o Proyección Mágica. A pesar de ser una acción pasiva, es necesario declarar el sacrificio antes de lanzar los dados. Es también posible que el brujo decida conferir esta habilidad a otro individuo, siendo entonces este quien decida cuántos puntos gastar en cada caso. Los puntos de vida perdidos de esta forma se recuperan a un ritmo de 10 al día, sin importar lo que indique la Regeneración natural del personaje (es decir, cuentan como un Sacrificio). Sus efectos no se superponen, y sólo se puede tener un conjuro de esta clase activo sobre un individuo determinado.",
+      "initialGrade": {
+        "effect": "Sacrificio máximo de 50 Puntos de Vida por asalto.",
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 120
+      },
+      "intermediateGrade": {
+        "effect": "Sacrificio máximo de 100 Puntos de Vida por asalto.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 180
+      },
+      "level": 56,
+      "name": "Sacrificio Vital",
+      "spellId": 17,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM 180 / +140 a la Tabla 76 / 150 metros de radio.",
+        "requiredIntelligence": 14,
+        "retention": 15,
+        "zeon": 200
+      },
+      "arcaneGrade": {
+        "effect": "RM 200 / +160 a la Tabla 76 / 200 metros de radio.",
+        "requiredIntelligence": 16,
+        "retention": 20,
+        "zeon": 260
+      },
+      "bookId": 5,
+      "dailyRetention": false,
+      "effect": "Prende en llamas cualquier cuerpo que designe el hechicero, orgánico o inorgánico, por la mera condición de hallarse en su presencia. A efectos de juego, el brujo realizará una tirada con un bonificador en la Tabla 76: En Llamas, por cada blanco que desee incinerar.",
+      "initialGrade": {
+        "effect": "RM 140 / +100 a la Tabla 76 / 50 metros de radio.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "RM 160 / +120 a la Tabla 76 / 100 metros de radio.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 150
+      },
+      "level": 60,
+      "name": "Incinerar",
+      "spellId": 18,
+      "type": "Automático",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "50 metros de radio y RM 200.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "150 metros de radio / RM 220.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 300
+      },
+      "bookId": 5,
+      "dailyRetention": false,
+      "effect": "Este hechizo crea una terrorífica aura sobrenatural alrededor del brujo que destruye la esencia vital de las personas, consumiendo sus energías e impidiéndoles curarse por medios naturales. Cualquier sujeto que se encuentre en un radio respecto al mago deberá superar una RM o perderá una cantidad de puntos de vida y puntos de Zeon equivalentes al nivel de fracaso. Los puntos de vida que un personaje pierda a causa de este hechizo no se recuperan 83.165.181.63 de manera natural, y sólo podrán sanarse mediante conjuros de curación o medios sobrenaturales equivalentes. En lo que respecta a los puntos de Zeon, deberán ser absorbidos de otros hechiceros o contenedores mágicos.",
+      "initialGrade": {
+        "effect": "10 metros de radio / RM 120.",
+        "requiredIntelligence": 6,
+        "retention": 0,
+        "zeon": 120
+      },
+      "intermediateGrade": {
+        "effect": "25 metros de radio / RM 160.",
+        "requiredIntelligence": 9,
+        "retention": 0,
+        "zeon": 180
+      },
+      "level": 62,
+      "name": "Consumir Esencia",
+      "spellId": 19,
+      "type": "Anímico",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "80 puntos de Zeon por asalto.",
+        "requiredIntelligence": 13,
+        "retention": 15,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "120 puntos de Zeon por asalto.",
+        "requiredIntelligence": 15,
+        "retention": 15,
+        "zeon": 300
+      },
+      "bookId": 5,
+      "dailyRetention": false,
+      "effect": "Permite al hechicero consumir su propia energía mágica para incrementar su acumulación mágica. Este conjuro otorga la habilidad pasiva de gastar puntos de Zeon para obtener un bono temporal a su ACT. Cada 10 puntos que invierta con este fin, le proporcionarán un +5 a su ACT hasta el fin del turno. Sus efectos no se superponen, y sólo se puede tener un conjuro de esta clase activo sobre un individuo determinado.",
+      "initialGrade": {
+        "effect": "20 puntos de Zeon por asalto.",
+        "requiredIntelligence": 7,
+        "retention": 10,
+        "zeon": 120
+      },
+      "intermediateGrade": {
+        "effect": "50 puntos de Zeon por asalto.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 180
+      },
+      "level": 66,
+      "name": "Sacrificio de Poder",
+      "spellId": 20,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Crítico 180 / RM 180.",
+        "requiredIntelligence": 13,
+        "retention": 0,
+        "zeon": 200
+      },
+      "arcaneGrade": {
+        "effect": "Crítico 220 / RM 200.",
+        "requiredIntelligence": 16,
+        "retention": 0,
+        "zeon": 280
+      },
+      "bookId": 5,
+      "dailyRetention": false,
+      "effect": "Causa un estallido interno en un individuo, provocándole un crítico de manera automática. A efectos de juego, el blanco recibirá el equivalente a un Nivel de Crítico aunque tendrá la capacidad de contrarrestarlo con su RF, empleando las reglas generales. Para evitar sus efectos es necesario superar un control de RM contra el valor determinado por el grado del conjuro.",
+      "initialGrade": {
+        "effect": "Crítico 120 / RM 140.",
+        "requiredIntelligence": 9,
+        "retention": 0,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "Crítico 140 / RM 160.",
+        "requiredIntelligence": 11,
+        "retention": 0,
+        "zeon": 140
+      },
+      "level": 70,
+      "name": "Crítico Directo",
+      "spellId": 21,
+      "type": "Anímico",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "150 puntos de Zeon por asalto.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "200 puntos de Zeon por asalto.",
+        "requiredIntelligence": 15,
+        "retention": 15,
+        "zeon": 300
+      },
+      "bookId": 5,
+      "dailyRetention": false,
+      "effect": "Permite al hechicero consumir su propia energía mágica, para incrementar temporalmente sus atributos y las habilidades que dependan de ellos. Este conjuro otorga la habilidad pasiva de sacrificar sus puntos de Zeon para obtener un bonificador a las características. Cada 25 puntos de Zeon que gaste de esta forma le proporcionarán un +1 a uno de sus atributos hasta el final del turno. Sus efectos no se superponen, y sólo se puede tener un conjuro de esta clase activo sobre un individuo determinado.",
+      "initialGrade": {
+        "effect": "50 puntos de Zeon por asalto.",
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 120
+      },
+      "intermediateGrade": {
+        "effect": "100 puntos de Zeon por asalto.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 180
+      },
+      "level": 72,
+      "name": "Magia por Capacidades",
+      "spellId": 22,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "200 metros de radio/ Habilidad de Imposible (280).",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "250 metros de radio/ Habilidad de Ataque Inhumano (320).",
+        "requiredIntelligence": 15,
+        "retention": 30,
+        "zeon": 280
+      },
+      "bookId": 5,
+      "dailyRetention": false,
+      "effect": "El brujo designa un área dentro de la cual se desencadena una potente tormenta de llamas, que calcina todo lo que se encuentra en su interior. Los individuos que se hallen en ella sufrirán, cada asalto, un ataque automático en la TA de calor contra una habilidad final determinada por el grado del conjuro y un daño base de 100 puntos. El área de la tormenta tendrá un radio máximo en cuyo interior no se podrán designar blancos, pudiendo afectar incluso al propio lanzador. La condición para recibir el ataque será estar dentro de la tormenta en el asalto posterior a su lanzamiento. El hechizo siempre permanece estático en el lugar donde fue conjurado.",
+      "initialGrade": {
+        "effect": "25 metros de radio / Habilidad de Ataque Absurdo (180).",
+        "requiredIntelligence": 8,
+        "retention": 15,
+        "zeon": 150
+      },
+      "intermediateGrade": {
+        "effect": "150 metros de radio / Habilidad de Ataque Casi Imposible (240).",
+        "requiredIntelligence": 10,
+        "retention": 20,
+        "zeon": 200
+      },
+      "level": 76,
+      "name": "Tormenta de Fuego",
+      "spellId": 23,
+      "type": "Automático",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "140 puntos de vida asalto.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "200 puntos de vida asalto.",
+        "requiredIntelligence": 15,
+        "retention": 15,
+        "zeon": 300
+      },
+      "bookId": 5,
+      "dailyRetention": false,
+      "effect": "Permite al hechicero consumir su propia fuerza vital para incrementar su reserva de magia. Este conjuro otorga la habilidad pasiva de sacrificar temporalmente puntos de vida para recuperar Zeon. Cada 5 PV que se sacrifiquen con este objetivo, proporcionan al personaje 100 puntos de Zeon que gastar (en el caso de las criaturas con acumulación de daño, la cantidad a sacrificar aumentará dependiendo de su múltiplo). Los puntos de vida perdidos mediante este método se recuperarán a un ritmo de 10 puntos por día, sin importar la Regeneración natural del personaje ni los conjuros de curación que emplee (es decir, cuentan como un Sacrificio). Sus efectos no se superponen, y sólo se puede tener un conjuro de esta clase activo sobre un individuo determinado.",
+      "initialGrade": {
+        "effect": "20 puntos de vida asalto.",
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 120
+      },
+      "intermediateGrade": {
+        "effect": "80 puntos de vida asalto.",
+        "requiredIntelligence": 9,
+        "retention": 10,
+        "zeon": 180
+      },
+      "level": 80,
+      "name": "Consumir Vida por Magia",
+      "spellId": 24,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Nivel 6.",
+        "requiredIntelligence": 14,
+        "retention": 100,
+        "zeon": 500
+      },
+      "arcaneGrade": {
+        "effect": "Nivel 10.",
+        "requiredIntelligence": 16,
+        "retention": 140,
+        "zeon": 700
+      },
+      "bookId": 5,
+      "dailyRetention": false,
+      "effect": "Crea una criatura de fuego con apariencia de vida, bajo el control absoluto del hechicero. El ente será desarrollado como un Ser Entre Mundos, usando los poderes y limitaciones de los elementales de Fuego del Capítulo 26. La criatura tendrá PD y, para calcular su nivel máximo, se emplean las mismas reglas que en el conjuro Crear Ser de la vía de Creación.",
+      "initialGrade": {
+        "effect": "Nivel 1.",
+        "requiredIntelligence": 10,
+        "retention": 50,
+        "zeon": 250
+      },
+      "intermediateGrade": {
+        "effect": "Nivel 3.",
+        "requiredIntelligence": 12,
+        "retention": 70,
+        "zeon": 350
+      },
+      "level": 82,
+      "name": "Crear Ifreet",
+      "spellId": 25,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "35 intensidades.",
+        "requiredIntelligence": 14,
+        "retention": 30,
+        "zeon": 350
+      },
+      "arcaneGrade": {
+        "effect": "45 intensidades.",
+        "requiredIntelligence": 18,
+        "retention": 35,
+        "zeon": 400
+      },
+      "bookId": 5,
+      "dailyRetention": false,
+      "effect": "Crea intensidades de fuego. Mientras se mantenga el conjuro, la llama seguirá ardiendo incluso sin nada que consumir. Si se prende en algo inflamable, arderá naturalmente tras finalizar el hechizo.",
+      "initialGrade": {
+        "effect": "15 intensidades.",
+        "requiredIntelligence": 10,
+        "retention": 25,
+        "zeon": 250
+      },
+      "intermediateGrade": {
+        "effect": "25 intensidades.",
+        "requiredIntelligence": 12,
+        "retention": 30,
+        "zeon": 300
+      },
+      "level": 86,
+      "name": "Pira Absoluta",
+      "spellId": 26,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "10 kilómetros de radio.",
+        "requiredIntelligence": 16,
+        "retention": 0,
+        "zeon": 400
+      },
+      "arcaneGrade": {
+        "effect": "15 kilómetros de radio.",
+        "requiredIntelligence": 18,
+        "retention": 0,
+        "zeon": 500
+      },
+      "bookId": 5,
+      "dailyRetention": false,
+      "effect": "Proyecta una explosión ígnea, que ataca en área con un daño base de 200 puntos. Ataca en la TA de calor, aunque es capaz de dañar energía. No es posible designar blancos en el interior del conjuro.",
+      "initialGrade": {
+        "effect": "1 kilómetro de radio.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 200
+      },
+      "intermediateGrade": {
+        "effect": "5 kilómetros de radio.",
+        "requiredIntelligence": 13,
+        "retention": 0,
+        "zeon": 300
+      },
+      "level": 90,
+      "name": "Devastación",
+      "spellId": 27,
+      "type": "Ataque",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM 160 / 3 kilómetros de área.",
+        "requiredIntelligence": 17,
+        "retention": 100,
+        "zeon": 500
+      },
+      "arcaneGrade": {
+        "effect": "RM 180 / 5 kilómetros de área.",
+        "requiredIntelligence": 19,
+        "retention": 150,
+        "zeon": 750
+      },
+      "bookId": 5,
+      "dailyRetention": true,
+      "effect": "Este hechizo encadena la esencia y la fuerza vital de otros individuos al lanzador, permitiendo a este consumirla en su propio beneficio. A efectos de juego, permite a la entidad utilizar los puntos de vida y Zeon de los sujetos afectados por el conjuro para sus hechizos de sacrificio por Capacidades, Sacrificio de Poder y Consumir Vida Por Magia. Este conjuro tiene un área estática de un kilómetro, dentro de la cual podrá designar a tantos blancos como quiera el lanzador. La RM para superar este conjuro será de 120. Los afectados tendrán derecho a una nueva tirada por día que transcurra, o en cada ocasión en la que sus energías sean consumidas.",
+      "initialGrade": {
+        "effect": "RM 120 / 1 kilómetro de área.",
+        "requiredIntelligence": 13,
+        "retention": 50,
+        "zeon": 250
+      },
+      "intermediateGrade": {
+        "effect": "RM 140 / 2 kilómetros de área.",
+        "requiredIntelligence": 15,
+        "retention": 70,
+        "zeon": 350
+      },
+      "level": 92,
+      "name": "Sacrificar a Otros",
+      "spellId": 28,
+      "type": "Anímico, Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "10.000 kilómetros de radio / 200 RM.",
+        "requiredIntelligence": 15,
+        "retention": 60,
+        "zeon": 600
+      },
+      "arcaneGrade": {
+        "effect": "Afecta cualquier fuente de calor / 240 RM.",
+        "requiredIntelligence": 18,
+        "retention": 100,
+        "zeon": 1000
+      },
+      "bookId": 5,
+      "dailyRetention": true,
+      "effect": "El hechicero controla cualquier núcleo de elevado calor a su alrededor. Este dominio le permite incluso manejar las corrientes de magma del interior del planeta, pudiendo crear erupciones y volcanes. Toda criatura basada en fuego que se encuentre dentro del área del conjuro, deberá superar una RM o será controlada por el lanzador. Si la pasan, ya no necesitan volver a realizar el control. Los afectados tienen derecho a una nueva tirada únicamente si alteran su Resistencia base.",
+      "initialGrade": {
+        "effect": "100 kilómetros de radio / 140 RM.",
+        "requiredIntelligence": 10,
+        "retention": 30,
+        "zeon": 300
+      },
+      "intermediateGrade": {
+        "effect": "1.000 kilómetros de radio / 180 RM.",
+        "requiredIntelligence": 12,
+        "retention": 45,
+        "zeon": 450
+      },
+      "level": 96,
+      "name": "Señor del Fuego",
+      "spellId": 29,
+      "type": "Automático",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "50 kilómetros de radio / RM 160.",
+        "requiredIntelligence": 17,
+        "retention": 105,
+        "zeon": 1200
+      },
+      "arcaneGrade": {
+        "effect": "150 kilómetros de radio / RM 180.",
+        "requiredIntelligence": 18,
+        "retention": 110,
+        "zeon": 1600
+      },
+      "bookId": 5,
+      "dailyRetention": false,
+      "effect": "El conjuro de fuego definitivo concede al lanzador la capacidad de consumir una parte de la propia esencia del mundo, calcinando las almas que están a su alrededor. Cualquier cosa, orgánica o no, que se encuentre en el interior de su área, deberá superar cada minuto que esté dentro una RM o será calcinado física y espiritualmente. Mientras el lanzador mantenga activo el Armagedón, ninguna forma de vida podrá nacer o ser creada dentro de su zona de influencia.",
+      "initialGrade": {
+        "effect": "10 kilómetros de radio / RM 140.",
+        "requiredIntelligence": 15,
+        "retention": 90,
+        "zeon": 450
+      },
+      "intermediateGrade": {
+        "effect": "25 kilómetros de radio / RM 150.",
+        "requiredIntelligence": 16,
+        "retention": 100,
+        "zeon": 800
+      },
+      "level": 100,
+      "name": "Armagedón",
+      "spellId": 30,
+      "type": "Automático",
+      "withRetention": true
+    }
+  ],
+  "type": "Menor"
+}

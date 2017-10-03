@@ -1,6 +1,7 @@
 package fr.enlight.spellgenerator
 
 import android.support.test.InstrumentationRegistry
+import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import fr.enlight.spellgenerator.spells.Spellbook
 import fr.enlight.spellgenerator.spells.SpellbookIndex
@@ -13,7 +14,7 @@ import java.util.*
  */
 class SpellFilesGenerator {
 
-    private val gson = GsonBuilder().create()
+    private val gson = Gson()
 
     private val spellbookOrderList = listOf(
             "Luz",

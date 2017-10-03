@@ -1,1 +1,365 @@
-{"bookId":22,"bookName":"SANGRE","description":"Esta sub-vía controla el principio que da la vida a los seres orgánicos, el de la propia sangre.","primaryBookUnaccessibles":["Luz","Ilusión","Fuego","Aire","Tierra"],"spells":[{"actionType":"Activa","advancedGrade":{"effect":"RM 120.","requiredIntelligence":10,"retention":0,"zeon":100},"arcaneGrade":{"effect":"RM 160.","requiredIntelligence":13,"retention":0,"zeon":150},"bookId":22,"dailyRetention":false,"effect":"Afecta al torrente sanguíneo de sus objetivos, ralentizándolo en el caso de que sea anormalmente rápido (como es el caso de emociones extremas, como la ira o el temor). El afectado se siente relajado, siendo eliminada cualquier emoción extrema en el que esté sumido, sea de origen natural o no. La sensación de tranquilidad será tan grande, que durante el siguiente minuto el blanco del conjuro sufre un -10 a toda acción de carácter físico. Para tratar de resistirse a sus efectos es necesario superar una RM contra la dificultad determinada por el grado del conjuro.","initialGrade":{"effect":"RM 80.","requiredIntelligence":5,"retention":0,"zeon":30},"intermediateGrade":{"effect":"RM 100.","requiredIntelligence":8,"retention":0,"zeon":60},"level":4,"name":"Ralentizar Pulso","spellId":1,"type":"Anímico","withRetention":false},{"actionType":"Activa","advancedGrade":{"effect":"Recupera un 40% de los puntos de vida perdidos por heridas producidas por cortes o hemorragias.","requiredIntelligence":10,"retention":0,"zeon":120},"arcaneGrade":{"effect":"Recupera un 60% de los puntos de vida perdidos por heridas producidas por cortes o hemorragias.","requiredIntelligence":13,"retention":0,"zeon":160},"bookId":22,"dailyRetention":false,"effect":"Restaña las heridas mágicamente, impidiendo la pérdida de sangre y cerrando las heridas. Sólo es posible afectar a alguien una vez al día con este conjuro.","initialGrade":{"effect":"Elimina automáticamente cualquier desangramiento","requiredIntelligence":6,"retention":0,"zeon":40},"intermediateGrade":{"effect":"Recupera un 20% de los puntos de vida perdidos por heridas producidas por cortes o hemorragias.","requiredIntelligence":8,"retention":0,"zeon":80},"level":14,"name":"Coagular","spellId":2,"type":"Efecto","withRetention":false},{"actionType":"Activa","advancedGrade":{"effect":"Presencia máxima 180.","requiredIntelligence":12,"retention":25,"zeon":120},"arcaneGrade":{"effect":"Presencia máxima 300.","requiredIntelligence":15,"retention":30,"zeon":150},"bookId":22,"dailyRetention":true,"effect":"Cambia la temperatura corporal de los objetivos del conjuro, permitiéndole regularla de forma acorde a las condiciones externas. Así, no se verán afectados por la meteorología adversa, pudiendo sobrevivir en yermos gélidos o desiertos ardientes. Puede afectar a tantos blancos como se desee, siempre y cuando la suma de sus presencias no supere lo que determine el grado del conjuro.","initialGrade":{"effect":"Presencia máxima 60.","requiredIntelligence":6,"retention":5,"zeon":50},"intermediateGrade":{"effect":"Presencia máxima 100.","requiredIntelligence":9,"retention":20,"zeon":90},"level":24,"name":"Sangre Fría","spellId":3,"type":"Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"Perdida de -40 PV / Calidad +10 / Objetos de hasta 15 kilos.","requiredIntelligence":12,"retention":50,"zeon":160},"arcaneGrade":{"effect":"Perdida de -60 PV / Calidad +15 / Objetos de hasta 25 kilos.","requiredIntelligence":15,"retention":60,"zeon":200},"bookId":22,"dailyRetention":false,"effect":"Crea un objeto u arma partir de la propia sangre del hechicero, cristalizándola hasta convertirla en un material de una dureza extrema. Lamentablemente, esto reprenda que el brujo debe de sacrificar necesariamente parte de su propia sangre, perdiendo puntos de vida en el proceso.","initialGrade":{"effect":"Perdida de -10 PV / Calidad +0 / Objetos de hasta 2 kilos.","requiredIntelligence":6,"retention":10,"zeon":80},"intermediateGrade":{"effect":"Perdida de -20 PV / Calidad +5 / Objetos de hasta 5 kilos.","requiredIntelligence":9,"retention":40,"zeon":120},"level":34,"name":"Creación de Sangre","spellId":4,"type":"Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"x10 a los PV sacrificados.","requiredIntelligence":10,"retention":0,"zeon":80},"arcaneGrade":{"effect":"x20 a los PV sacrificados.","requiredIntelligence":12,"retention":0,"zeon":100},"bookId":22,"dailyRetention":false,"effect":"Separando los elementos vitales de la sangre del hechicero e imbuyéndolos sobre un aliado, permite que el brujo transfiera parte de sus puntos de vida a otra persona. La cantidad de PV que sacrifique el lanzador se multiplica por la cantidad que determine el grado del conjuro. Por ejemplo, si el brujo lanzara este conjuro en grado intermedio y sacrificara 10 PV, recuperaría 50 PV de su aliado. Este conjuro no permite restaurar miembros cercenados o pérdidas permanentes, pero sí elimina los penalizadores causados por los críticos en una cantidad equivalente a los puntos de vida sacrificados.","initialGrade":{"effect":"x2 a los PV sacrificados.","requiredIntelligence":6,"retention":0,"zeon":40},"intermediateGrade":{"effect":"x5 a los PV sacrificados","requiredIntelligence":8,"retention":0,"zeon":60},"level":44,"name":"Transfusión","spellId":5,"type":"Efecto","withRetention":false},{"actionType":"Activa","advancedGrade":{"effect":"Triplica el daño recibido / RM 160.","requiredIntelligence":12,"retention":20,"zeon":200},"arcaneGrade":{"effect":"Cuadruplica el daño recibido / RM 180.","requiredIntelligence":15,"retention":25,"zeon":250},"bookId":22,"dailyRetention":false,"effect":"Este hechizo provoca que las heridas de un objetivo sangren horriblemente, incrementando así los daños que reciba. Mientras se mantenga activo, el afectado incrementa el daño que sufra en una cantidad determinada por el grado del conjuro. Para que Desangrar tenga efecto el daño resultante debe provenir de contusiones, hemorragias y cortes, mientras que las heridas provocadas por calor, frío o energía no se benefician de esta regla. Para evitar sus efectos, el objetivo debe superar un control de RM, pero puede volver a repetirlo cada vez que reciba un impacto cuyo daño sea incrementado por este sortilegio.","initialGrade":{"effect":"Incrementa el daño recibido un 50% / RM 120.","requiredIntelligence":6,"retention":10,"zeon":100},"intermediateGrade":{"effect":"Dobla el daño recibido / RM 140.","requiredIntelligence":9,"retention":15,"zeon":150},"level":54,"name":"Desangrar","spellId":6,"type":"Anímico.","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"Drena el 30% de las heridas causadas.","requiredIntelligence":12,"retention":15,"zeon":250},"arcaneGrade":{"effect":"Drena el 40% de las heridas causadas.","requiredIntelligence":15,"retention":15,"zeon":300},"bookId":22,"dailyRetention":false,"effect":"Este conjuro provoca que un arma beba parte de la sangre de aquellos a los que hiera, canalizando sus energías vitales y otorgándoselas al portador para que recupere sus PV perdidos. En el caso de que se ataque a un ser con acumulación de daño, la cantidad drenada debe dividirse por diez.","initialGrade":{"effect":"Drena el 10% de las heridas causadas.","requiredIntelligence":8,"retention":10,"zeon":150},"intermediateGrade":{"effect":"Drena el 20% de las heridas causadas.","requiredIntelligence":10,"retention":10,"zeon":200},"level":64,"name":"Vampirismo","spellId":7,"type":"Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"RM o RF 220 / Daño 150.","requiredIntelligence":15,"retention":0,"zeon":360},"arcaneGrade":{"effect":"RM o RF 260 / Daño 200.","requiredIntelligence":17,"retention":0,"zeon":400},"bookId":22,"dailyRetention":false,"effect":"Este terrorífico conjuro provoca que la sangre del corazón de un objetivo se expanda y lo reviente desde dentro a causa de la presión. Si el personaje falla el control por más de 40 puntos muere de manera automática, mientras que si el nivel de fracaso no es superior a 40, recibe el daño determinado en la descripción del grado del conjuro.","initialGrade":{"effect":"RM o RF 140 / Daño 50.","requiredIntelligence":10,"retention":0,"zeon":280},"intermediateGrade":{"effect":"RM o RF 180 / Daño 100.","requiredIntelligence":13,"retention":0,"zeon":320},"level":74,"name":"Lágrimas de Sangre","spellId":8,"type":"Anímico.","withRetention":false},{"actionType":"Pasiva","advancedGrade":{"effect":"+40 a toda acción / -30 PV por turno.","requiredIntelligence":15,"retention":60,"zeon":300},"arcaneGrade":{"effect":"+60 a toda acción / -50 PV por turno.","requiredIntelligence":17,"retention":70,"zeon":340},"bookId":22,"dailyRetention":false,"effect":"Incrementa la velocidad del torrente sanguíneo del hechicero y aquellos aliados que designe, incrementando notablemente sus capacidades. Sin embargo, la presión a la que se somete el corazón de los beneficiarios del hechizo les provoca daños internos que pueden llegar a matarlos si se mantiene demasiado tiempo.","initialGrade":{"effect":"+10 a toda acción / -5 PV por turno.","requiredIntelligence":10,"retention":40,"zeon":200},"intermediateGrade":{"effect":"+20 a toda acción / -15 PV por turno.","requiredIntelligence":12,"retention":50,"zeon":240},"level":84,"name":"Corriente Sanguínea","spellId":9,"type":"Efecto","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"RM o RF 160 / Daño 120 / 2.400 Puntos de Resistencia.","requiredIntelligence":15,"retention":0,"zeon":360},"arcaneGrade":{"effect":"RM o RF 180 / Daño 150 / 3.600 Puntos de Resistencia.","requiredIntelligence":17,"retention":0,"zeon":400},"bookId":22,"dailyRetention":false,"effect":"El hechicero obtiene un control absoluto sobre toda la sangre que se encuentre dentro del radio de acción del sortilegio. Su dominio es tal que puede desde paralizar los cuerpos de los seres vivos hasta crear prácticamente cualquier cosa que desee con la sangre que ya haya sido derramada. Cualquier individuo que se vea afectado por el conjuro debe superar un control de RM o RF para no verse controlado por el brujo como una marioneta, o sufrir si este lo desea un daño equivalente al doble del nivel de fracaso. En el caso de que el hechicero quiera usar la sangre como medio de ataque o de defensa (creando cuchillas, espinas o escudos), tiene la capacidad de emplear su proyección mágica para proyectarla como descargas afiladas o escudos místicos. Tanto el daño de sus ataques como la resistencia de los mismos es determinado por el grado del conjuro, pero únicamente puede usarla si hay suficiente sangre a su alrededor.","initialGrade":{"effect":"RM o RF 120 / Daño 60 / 500 Puntos de Resistencia.","requiredIntelligence":10,"retention":0,"zeon":280},"intermediateGrade":{"effect":"RM o RF 140 / Daño 90 / 1.200 Puntos de Resistencia.","requiredIntelligence":13,"retention":0,"zeon":320},"level":94,"name":"Un Mundo de Sangre","spellId":10,"type":"Anímico.","withRetention":false}],"type":"Sub-Vía"}
+{
+  "bookId": 22,
+  "bookName": "SANGRE",
+  "description": "Esta sub-vía controla el principio que da la vida a los seres orgánicos, el de la propia sangre.",
+  "primaryBookUnaccessibles": [
+    "Luz",
+    "Ilusión",
+    "Fuego",
+    "Aire",
+    "Tierra"
+  ],
+  "spells": [
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM 120.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 100
+      },
+      "arcaneGrade": {
+        "effect": "RM 160.",
+        "requiredIntelligence": 13,
+        "retention": 0,
+        "zeon": 150
+      },
+      "bookId": 22,
+      "dailyRetention": false,
+      "effect": "Afecta al torrente sanguíneo de sus objetivos, ralentizándolo en el caso de que sea anormalmente rápido (como es el caso de emociones extremas, como la ira o el temor). El afectado se siente relajado, siendo eliminada cualquier emoción extrema en el que esté sumido, sea de origen natural o no. La sensación de tranquilidad será tan grande, que durante el siguiente minuto el blanco del conjuro sufre un -10 a toda acción de carácter físico. Para tratar de resistirse a sus efectos es necesario superar una RM contra la dificultad determinada por el grado del conjuro.",
+      "initialGrade": {
+        "effect": "RM 80.",
+        "requiredIntelligence": 5,
+        "retention": 0,
+        "zeon": 30
+      },
+      "intermediateGrade": {
+        "effect": "RM 100.",
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 60
+      },
+      "level": 4,
+      "name": "Ralentizar Pulso",
+      "spellId": 1,
+      "type": "Anímico",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Recupera un 40% de los puntos de vida perdidos por heridas producidas por cortes o hemorragias.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "Recupera un 60% de los puntos de vida perdidos por heridas producidas por cortes o hemorragias.",
+        "requiredIntelligence": 13,
+        "retention": 0,
+        "zeon": 160
+      },
+      "bookId": 22,
+      "dailyRetention": false,
+      "effect": "Restaña las heridas mágicamente, impidiendo la pérdida de sangre y cerrando las heridas. Sólo es posible afectar a alguien una vez al día con este conjuro.",
+      "initialGrade": {
+        "effect": "Elimina automáticamente cualquier desangramiento",
+        "requiredIntelligence": 6,
+        "retention": 0,
+        "zeon": 40
+      },
+      "intermediateGrade": {
+        "effect": "Recupera un 20% de los puntos de vida perdidos por heridas producidas por cortes o hemorragias.",
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 80
+      },
+      "level": 14,
+      "name": "Coagular",
+      "spellId": 2,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Presencia máxima 180.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "Presencia máxima 300.",
+        "requiredIntelligence": 15,
+        "retention": 30,
+        "zeon": 150
+      },
+      "bookId": 22,
+      "dailyRetention": true,
+      "effect": "Cambia la temperatura corporal de los objetivos del conjuro, permitiéndole regularla de forma acorde a las condiciones externas. Así, no se verán afectados por la meteorología adversa, pudiendo sobrevivir en yermos gélidos o desiertos ardientes. Puede afectar a tantos blancos como se desee, siempre y cuando la suma de sus presencias no supere lo que determine el grado del conjuro.",
+      "initialGrade": {
+        "effect": "Presencia máxima 60.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 50
+      },
+      "intermediateGrade": {
+        "effect": "Presencia máxima 100.",
+        "requiredIntelligence": 9,
+        "retention": 20,
+        "zeon": 90
+      },
+      "level": 24,
+      "name": "Sangre Fría",
+      "spellId": 3,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Perdida de -40 PV / Calidad +10 / Objetos de hasta 15 kilos.",
+        "requiredIntelligence": 12,
+        "retention": 50,
+        "zeon": 160
+      },
+      "arcaneGrade": {
+        "effect": "Perdida de -60 PV / Calidad +15 / Objetos de hasta 25 kilos.",
+        "requiredIntelligence": 15,
+        "retention": 60,
+        "zeon": 200
+      },
+      "bookId": 22,
+      "dailyRetention": false,
+      "effect": "Crea un objeto u arma partir de la propia sangre del hechicero, cristalizándola hasta convertirla en un material de una dureza extrema. Lamentablemente, esto reprenda que el brujo debe de sacrificar necesariamente parte de su propia sangre, perdiendo puntos de vida en el proceso.",
+      "initialGrade": {
+        "effect": "Perdida de -10 PV / Calidad +0 / Objetos de hasta 2 kilos.",
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "Perdida de -20 PV / Calidad +5 / Objetos de hasta 5 kilos.",
+        "requiredIntelligence": 9,
+        "retention": 40,
+        "zeon": 120
+      },
+      "level": 34,
+      "name": "Creación de Sangre",
+      "spellId": 4,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "x10 a los PV sacrificados.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 80
+      },
+      "arcaneGrade": {
+        "effect": "x20 a los PV sacrificados.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 100
+      },
+      "bookId": 22,
+      "dailyRetention": false,
+      "effect": "Separando los elementos vitales de la sangre del hechicero e imbuyéndolos sobre un aliado, permite que el brujo transfiera parte de sus puntos de vida a otra persona. La cantidad de PV que sacrifique el lanzador se multiplica por la cantidad que determine el grado del conjuro. Por ejemplo, si el brujo lanzara este conjuro en grado intermedio y sacrificara 10 PV, recuperaría 50 PV de su aliado. Este conjuro no permite restaurar miembros cercenados o pérdidas permanentes, pero sí elimina los penalizadores causados por los críticos en una cantidad equivalente a los puntos de vida sacrificados.",
+      "initialGrade": {
+        "effect": "x2 a los PV sacrificados.",
+        "requiredIntelligence": 6,
+        "retention": 0,
+        "zeon": 40
+      },
+      "intermediateGrade": {
+        "effect": "x5 a los PV sacrificados",
+        "requiredIntelligence": 8,
+        "retention": 0,
+        "zeon": 60
+      },
+      "level": 44,
+      "name": "Transfusión",
+      "spellId": 5,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Triplica el daño recibido / RM 160.",
+        "requiredIntelligence": 12,
+        "retention": 20,
+        "zeon": 200
+      },
+      "arcaneGrade": {
+        "effect": "Cuadruplica el daño recibido / RM 180.",
+        "requiredIntelligence": 15,
+        "retention": 25,
+        "zeon": 250
+      },
+      "bookId": 22,
+      "dailyRetention": false,
+      "effect": "Este hechizo provoca que las heridas de un objetivo sangren horriblemente, incrementando así los daños que reciba. Mientras se mantenga activo, el afectado incrementa el daño que sufra en una cantidad determinada por el grado del conjuro. Para que Desangrar tenga efecto el daño resultante debe provenir de contusiones, hemorragias y cortes, mientras que las heridas provocadas por calor, frío o energía no se benefician de esta regla. Para evitar sus efectos, el objetivo debe superar un control de RM, pero puede volver a repetirlo cada vez que reciba un impacto cuyo daño sea incrementado por este sortilegio.",
+      "initialGrade": {
+        "effect": "Incrementa el daño recibido un 50% / RM 120.",
+        "requiredIntelligence": 6,
+        "retention": 10,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "Dobla el daño recibido / RM 140.",
+        "requiredIntelligence": 9,
+        "retention": 15,
+        "zeon": 150
+      },
+      "level": 54,
+      "name": "Desangrar",
+      "spellId": 6,
+      "type": "Anímico.",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Drena el 30% de las heridas causadas.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 250
+      },
+      "arcaneGrade": {
+        "effect": "Drena el 40% de las heridas causadas.",
+        "requiredIntelligence": 15,
+        "retention": 15,
+        "zeon": 300
+      },
+      "bookId": 22,
+      "dailyRetention": false,
+      "effect": "Este conjuro provoca que un arma beba parte de la sangre de aquellos a los que hiera, canalizando sus energías vitales y otorgándoselas al portador para que recupere sus PV perdidos. En el caso de que se ataque a un ser con acumulación de daño, la cantidad drenada debe dividirse por diez.",
+      "initialGrade": {
+        "effect": "Drena el 10% de las heridas causadas.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 150
+      },
+      "intermediateGrade": {
+        "effect": "Drena el 20% de las heridas causadas.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 200
+      },
+      "level": 64,
+      "name": "Vampirismo",
+      "spellId": 7,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM o RF 220 / Daño 150.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 360
+      },
+      "arcaneGrade": {
+        "effect": "RM o RF 260 / Daño 200.",
+        "requiredIntelligence": 17,
+        "retention": 0,
+        "zeon": 400
+      },
+      "bookId": 22,
+      "dailyRetention": false,
+      "effect": "Este terrorífico conjuro provoca que la sangre del corazón de un objetivo se expanda y lo reviente desde dentro a causa de la presión. Si el personaje falla el control por más de 40 puntos muere de manera automática, mientras que si el nivel de fracaso no es superior a 40, recibe el daño determinado en la descripción del grado del conjuro.",
+      "initialGrade": {
+        "effect": "RM o RF 140 / Daño 50.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 280
+      },
+      "intermediateGrade": {
+        "effect": "RM o RF 180 / Daño 100.",
+        "requiredIntelligence": 13,
+        "retention": 0,
+        "zeon": 320
+      },
+      "level": 74,
+      "name": "Lágrimas de Sangre",
+      "spellId": 8,
+      "type": "Anímico.",
+      "withRetention": false
+    },
+    {
+      "actionType": "Pasiva",
+      "advancedGrade": {
+        "effect": "+40 a toda acción / -30 PV por turno.",
+        "requiredIntelligence": 15,
+        "retention": 60,
+        "zeon": 300
+      },
+      "arcaneGrade": {
+        "effect": "+60 a toda acción / -50 PV por turno.",
+        "requiredIntelligence": 17,
+        "retention": 70,
+        "zeon": 340
+      },
+      "bookId": 22,
+      "dailyRetention": false,
+      "effect": "Incrementa la velocidad del torrente sanguíneo del hechicero y aquellos aliados que designe, incrementando notablemente sus capacidades. Sin embargo, la presión a la que se somete el corazón de los beneficiarios del hechizo les provoca daños internos que pueden llegar a matarlos si se mantiene demasiado tiempo.",
+      "initialGrade": {
+        "effect": "+10 a toda acción / -5 PV por turno.",
+        "requiredIntelligence": 10,
+        "retention": 40,
+        "zeon": 200
+      },
+      "intermediateGrade": {
+        "effect": "+20 a toda acción / -15 PV por turno.",
+        "requiredIntelligence": 12,
+        "retention": 50,
+        "zeon": 240
+      },
+      "level": 84,
+      "name": "Corriente Sanguínea",
+      "spellId": 9,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM o RF 160 / Daño 120 / 2.400 Puntos de Resistencia.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 360
+      },
+      "arcaneGrade": {
+        "effect": "RM o RF 180 / Daño 150 / 3.600 Puntos de Resistencia.",
+        "requiredIntelligence": 17,
+        "retention": 0,
+        "zeon": 400
+      },
+      "bookId": 22,
+      "dailyRetention": false,
+      "effect": "El hechicero obtiene un control absoluto sobre toda la sangre que se encuentre dentro del radio de acción del sortilegio. Su dominio es tal que puede desde paralizar los cuerpos de los seres vivos hasta crear prácticamente cualquier cosa que desee con la sangre que ya haya sido derramada. Cualquier individuo que se vea afectado por el conjuro debe superar un control de RM o RF para no verse controlado por el brujo como una marioneta, o sufrir si este lo desea un daño equivalente al doble del nivel de fracaso. En el caso de que el hechicero quiera usar la sangre como medio de ataque o de defensa (creando cuchillas, espinas o escudos), tiene la capacidad de emplear su proyección mágica para proyectarla como descargas afiladas o escudos místicos. Tanto el daño de sus ataques como la resistencia de los mismos es determinado por el grado del conjuro, pero únicamente puede usarla si hay suficiente sangre a su alrededor.",
+      "initialGrade": {
+        "effect": "RM o RF 120 / Daño 60 / 500 Puntos de Resistencia.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 280
+      },
+      "intermediateGrade": {
+        "effect": "RM o RF 140 / Daño 90 / 1.200 Puntos de Resistencia.",
+        "requiredIntelligence": 13,
+        "retention": 0,
+        "zeon": 320
+      },
+      "level": 94,
+      "name": "Un Mundo de Sangre",
+      "spellId": 10,
+      "type": "Anímico.",
+      "withRetention": false
+    }
+  ],
+  "type": "Sub-Vía"
+}

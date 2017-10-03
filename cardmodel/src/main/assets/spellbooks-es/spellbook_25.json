@@ -1,1 +1,365 @@
-{"bookId":25,"bookName":"UMBRAL","description":"El miedo y la locura son las emociones más oscuras, primarias y poderosas, anteriores incluso a los tiempos el los que el hombre tenía consciencia de su destino. Esta sub-vía tiene ambos conceptos como principio","primaryBookUnaccessibles":["Luz","Esencia","Agua","Creación","Destrucción"],"spells":[{"actionType":"Activa","advancedGrade":{"effect":"El mago percibe los miedos y trastornos de la gente de un modo genérico, incluso cuando las personas a las que mira no están asustadas / RM o RP 160.","requiredIntelligence":11,"retention":5,"zeon":90},"arcaneGrade":{"effect":"El personaje percibe los miedos y trastornos de la gente, viendo representaciones visuales de dichos miedos caminar al lado de estos / RM o RP 180.","requiredIntelligence":14,"retention":10,"zeon":120},"bookId":25,"dailyRetention":false,"effect":"Los ojos del hechicero le permiten ver los miedos intrínsecos de la gente, así como sus trastornos y locuras. Mientras este conjuro está activo, cualquiera capaz de percibir espíritus verá como los ojos del personaje se tornan completamente negros, como si una oscuridad interna los devorase. Para evitar sus efectos, un individuo puede superar un control de RM o RP contra la dificultad determinada por el grado del conjuro.","initialGrade":{"effect":"El personaje puede sentir si una persona está asustada o no / RM o RP 120.","requiredIntelligence":5,"retention":5,"zeon":30},"intermediateGrade":{"effect":"El personaje puede percibir no sólo si una persona está o no asustada, sino también cual es o de donde viene el origen del miedo que está sintiendo en ese momento / RM o RP 140.","requiredIntelligence":8,"retention":5,"zeon":60},"level":4,"name":"Ojos del Otro Lado","spellId":1,"type":"Detección","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"500 metros de radio.","requiredIntelligence":12,"retention":0,"zeon":100},"arcaneGrade":{"effect":"1 kilómetro de radio.","requiredIntelligence":15,"retention":0,"zeon":130},"bookId":25,"dailyRetention":false,"effect":"Este conjuro afecta una zona de terreno, volviéndola lúgubre y tenebrosa a la vista de los demás. Es importante puntualizar que diferentes personas pueden percibir la misma zona de un modo distinto, dependiendo de lo que estos consideren un lugar lúgubre.","initialGrade":{"effect":"50 metros de radio.","requiredIntelligence":6,"retention":0,"zeon":40},"intermediateGrade":{"effect":"250 metros de radio.","requiredIntelligence":9,"retention":0,"zeon":70},"level":14,"name":"Sombra del Miedo","spellId":2,"type":"Efecto","withRetention":false},{"actionType":"Activa","advancedGrade":{"effect":"RM o RP 120 / 50 metros de radio.","requiredIntelligence":12,"retention":10,"zeon":160},"arcaneGrade":{"effect":"RM o RP 140 / 100 metros de radio.","requiredIntelligence":15,"retention":10,"zeon":200},"bookId":25,"dailyRetention":false,"effect":"Provoca la aparición de voces susurrantes en un área determinada, sonidos que inundan el corazón de sus víctimas de un miedo primordial. Cualquier persona dentro del radio de acción del conjuro que escuche más de cinco asaltos las voces debe superar automáticamente un control de RM o RP contra la dificultad determinada por el grado del conjuro o quedará sometido al estado de miedo.","initialGrade":{"effect":"RM o RP 80 / 10 metros de radio.","requiredIntelligence":6,"retention":5,"zeon":60},"intermediateGrade":{"effect":"RM o RP 100 / 25 metros de radio.","requiredIntelligence":9,"retention":5,"zeon":100},"level":24,"name":"Susurros del Otro Lado","spellId":3,"type":"Automático","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"RM o RP 160.","requiredIntelligence":13,"retention":15,"zeon":120},"arcaneGrade":{"effect":"RM o RP 180.","requiredIntelligence":15,"retention":20,"zeon":140},"bookId":25,"dailyRetention":false,"effect":"El brujo altera la mente de una persona con ideas y conceptos demenciales, trastornando su percepción del mundo y sumiéndolo temporalmente en la locura. El blanco de este conjuro debe de superar un control de RM o RP contra la dificultad determinada por el blanco del conjuro o se verá sometido a una locura transitoria como psicosis, esquizofrenia o paranoia, perdiendo la capacidad de ser dueño de sus propios actos. El personaje afectado sólo podrá repetir el control de resistencia una vez al día.","initialGrade":{"effect":"RM o RP 120.","requiredIntelligence":7,"retention":5,"zeon":80},"intermediateGrade":{"effect":"RM o RP 140.","requiredIntelligence":10,"retention":10,"zeon":100},"level":34,"name":"Senda de la Locura","spellId":4,"type":"Anímico","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"RM o RP 200.","requiredIntelligence":13,"retention":20,"zeon":180},"arcaneGrade":{"effect":"RM o RP 240.","requiredIntelligence":15,"retention":25,"zeon":240},"bookId":25,"dailyRetention":true,"effect":"Esta maldición permite al hechicero convertir los sueños de su víctima en una prisión donde atrapa su alma en una pesadilla sin fin. El objetivo queda sumido en un sueño eterno en el que constantemente será acosado por monstruosidades y otras criaturas innombrables que le darán caza hasta acabar con él. Este conjuro debe de ser lanzado sobre un individuo que está soñando y, en caso de que este falle la RM o RP requerida, no podrá volver a despertar hasta que el conjuro no finalice. El blanco sólo tendrá derecho a un nuevo control de resistencia cada vez que, mientras está en el mundo de pesadillas, su mente considere que ha ganado a las pesadillas que le acechan.","initialGrade":{"effect":"RM o RP 120.","requiredIntelligence":7,"retention":10,"zeon":100},"intermediateGrade":{"effect":"RM o RP 160.","requiredIntelligence":10,"retention":15,"zeon":140},"level":44,"name":"Acechar en los Sueños","spellId":5,"type":"Anímico","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"250 metros / RM o RP 160.","requiredIntelligence":12,"retention":25,"zeon":240},"arcaneGrade":{"effect":"500 metros / RM o RP 180.","requiredIntelligence":15,"retention":30,"zeon":300},"bookId":25,"dailyRetention":true,"effect":"El personaje agudiza los temores y locuras de aquellos individuos que se encuentre dentro del área de efecto del conjuro. Toda aquella persona que no supere la RM o RP pasará de tener miedo a tener terror de aquellas cosas que le asustaban, y la locura transitoria se convertirá en una profunda demencia. Sólo es posible repetir el control una vez al día o cuando aumenten las Resistencias del personaje.","initialGrade":{"effect":"50 metros / RM o RP 120.","requiredIntelligence":6,"retention":15,"zeon":120},"intermediateGrade":{"effect":"100 metros / RM o RP 140.","requiredIntelligence":9,"retention":20,"zeon":180},"level":54,"name":"Agudizar","spellId":6,"type":"Anímico","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"RM o PR 180 / 100 metros de radio.","requiredIntelligence":12,"retention":20,"zeon":200},"arcaneGrade":{"effect":"RM o PR 200 / 250 metros de radio.","requiredIntelligence":15,"retention":25,"zeon":240},"bookId":25,"dailyRetention":false,"effect":"Provoca temporalmente el estado de Terror a todos los sujetos que se encuentren alrededor del lanzador. El hechicero es quien decide cual es la fuente de terror para los afectados.","initialGrade":{"effect":"RM o PR 120 / 10 metros de radio.","requiredIntelligence":8,"retention":10,"zeon":80},"intermediateGrade":{"effect":"RM o PR 140 / 50 metros de radio.","requiredIntelligence":10,"retention":15,"zeon":140},"level":64,"name":"Terror","spellId":7,"type":"Anímico","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"RM o RP 180 / 1 kilómetro de radio.","requiredIntelligence":14,"retention":0,"zeon":400},"arcaneGrade":{"effect":"RM o RP 200 / 5 kilómetros de radio.","requiredIntelligence":16,"retention":0,"zeon":500},"bookId":25,"dailyRetention":false,"effect":"El brujo obtiene la capacidad de controlar a cualquier persona demente alterando a voluntad su demencia y percepción de la realidad. La condición para ser afectado por este sortilegio es estar dentro de la zona de influencia del conjuro y estar sumido en una demencia grave. Aquellos que sólo tengan una locura transitoria pueden aplicar un +40 a sus Resistencias contra los efectos de este conjuro. Los afectados sólo tienen derecho a repetir el control una vez al día o cuando aumenten sus Resistencias.","initialGrade":{"effect":"RM o RP 140 / 100 metros de radio.","requiredIntelligence":10,"retention":0,"zeon":200},"intermediateGrade":{"effect":"RM o RP 160 / 250 metros de radio.","requiredIntelligence":12,"retention":0,"zeon":300},"level":74,"name":"Señor de los Locos","spellId":8,"type":"Automático","withRetention":false},{"actionType":"Activa","advancedGrade":{"effect":"Nivel 12 / RM 180.","requiredIntelligence":15,"retention":50,"zeon":500},"arcaneGrade":{"effect":"Nivel 15 / RM 200.","requiredIntelligence":18,"retention":70,"zeon":700},"bookId":25,"dailyRetention":false,"effect":"Este conjuro crea una encarnación pura del miedo de una persona, un ser entre mundos nacido a partir de los terrores más profundos del subconsciente de su objetivo. La criatura es real en todos los aspectos, pero únicamente el individuo o individuos que la temen son capaces de verla o interactuar con ella (del mismo modo, la criatura sólo siente o puede tocar a aquellas personas que la temen). Al lanzar este sortilegio, el hechicero debe de elegir una persona en su presencia como objetivo, a la que afecta de manera automática. Si dicho individuo no supera la RM o RP determinada por el grado del conjuro, da forma al instante a un ser a imagen y semejanza de los miedos del personaje. La criatura puede tener cualquier nivel o poder, siempre que no tenga un Gnosis superior a 30 o supere los límites impuestos por el grado del sortilegio.","initialGrade":{"effect":"Nivel 4 / RM 140.","requiredIntelligence":10,"retention":15,"zeon":150},"intermediateGrade":{"effect":"Nivel 8 / RM 160.","requiredIntelligence":12,"retention":25,"zeon":250},"level":84,"name":"Encarnación del Miedo","spellId":9,"type":"Automático","withRetention":true},{"actionType":"Activa","advancedGrade":{"effect":"RM o RP 200","requiredIntelligence":15,"retention":0,"zeon":450},"arcaneGrade":{"effect":"RM o RP 240","requiredIntelligence":17,"retention":0,"zeon":600},"bookId":25,"dailyRetention":false,"effect":"El personaje se torna una fuente de miedo, provocando temor a todo tipo de criatura, incluso a aquellas que son inmunes a psicología. Todo aquel que esté en su presencia es sometido automáticamente a miedo, sin resistencia posible, y debe superar un control de RM o RP para no verse sometido además a Terror.","initialGrade":{"effect":"RM o RP 120","requiredIntelligence":11,"retention":0,"zeon":250},"intermediateGrade":{"effect":"RM o RP 140","requiredIntelligence":13,"retention":0,"zeon":350},"level":94,"name":"El Miedo hecho Carne","spellId":10,"type":"Automático","withRetention":false}],"type":"Sub-Vía"}
+{
+  "bookId": 25,
+  "bookName": "UMBRAL",
+  "description": "El miedo y la locura son las emociones más oscuras, primarias y poderosas, anteriores incluso a los tiempos el los que el hombre tenía consciencia de su destino. Esta sub-vía tiene ambos conceptos como principio",
+  "primaryBookUnaccessibles": [
+    "Luz",
+    "Esencia",
+    "Agua",
+    "Creación",
+    "Destrucción"
+  ],
+  "spells": [
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "El mago percibe los miedos y trastornos de la gente de un modo genérico, incluso cuando las personas a las que mira no están asustadas / RM o RP 160.",
+        "requiredIntelligence": 11,
+        "retention": 5,
+        "zeon": 90
+      },
+      "arcaneGrade": {
+        "effect": "El personaje percibe los miedos y trastornos de la gente, viendo representaciones visuales de dichos miedos caminar al lado de estos / RM o RP 180.",
+        "requiredIntelligence": 14,
+        "retention": 10,
+        "zeon": 120
+      },
+      "bookId": 25,
+      "dailyRetention": false,
+      "effect": "Los ojos del hechicero le permiten ver los miedos intrínsecos de la gente, así como sus trastornos y locuras. Mientras este conjuro está activo, cualquiera capaz de percibir espíritus verá como los ojos del personaje se tornan completamente negros, como si una oscuridad interna los devorase. Para evitar sus efectos, un individuo puede superar un control de RM o RP contra la dificultad determinada por el grado del conjuro.",
+      "initialGrade": {
+        "effect": "El personaje puede sentir si una persona está asustada o no / RM o RP 120.",
+        "requiredIntelligence": 5,
+        "retention": 5,
+        "zeon": 30
+      },
+      "intermediateGrade": {
+        "effect": "El personaje puede percibir no sólo si una persona está o no asustada, sino también cual es o de donde viene el origen del miedo que está sintiendo en ese momento / RM o RP 140.",
+        "requiredIntelligence": 8,
+        "retention": 5,
+        "zeon": 60
+      },
+      "level": 4,
+      "name": "Ojos del Otro Lado",
+      "spellId": 1,
+      "type": "Detección",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "500 metros de radio.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 100
+      },
+      "arcaneGrade": {
+        "effect": "1 kilómetro de radio.",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 130
+      },
+      "bookId": 25,
+      "dailyRetention": false,
+      "effect": "Este conjuro afecta una zona de terreno, volviéndola lúgubre y tenebrosa a la vista de los demás. Es importante puntualizar que diferentes personas pueden percibir la misma zona de un modo distinto, dependiendo de lo que estos consideren un lugar lúgubre.",
+      "initialGrade": {
+        "effect": "50 metros de radio.",
+        "requiredIntelligence": 6,
+        "retention": 0,
+        "zeon": 40
+      },
+      "intermediateGrade": {
+        "effect": "250 metros de radio.",
+        "requiredIntelligence": 9,
+        "retention": 0,
+        "zeon": 70
+      },
+      "level": 14,
+      "name": "Sombra del Miedo",
+      "spellId": 2,
+      "type": "Efecto",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM o RP 120 / 50 metros de radio.",
+        "requiredIntelligence": 12,
+        "retention": 10,
+        "zeon": 160
+      },
+      "arcaneGrade": {
+        "effect": "RM o RP 140 / 100 metros de radio.",
+        "requiredIntelligence": 15,
+        "retention": 10,
+        "zeon": 200
+      },
+      "bookId": 25,
+      "dailyRetention": false,
+      "effect": "Provoca la aparición de voces susurrantes en un área determinada, sonidos que inundan el corazón de sus víctimas de un miedo primordial. Cualquier persona dentro del radio de acción del conjuro que escuche más de cinco asaltos las voces debe superar automáticamente un control de RM o RP contra la dificultad determinada por el grado del conjuro o quedará sometido al estado de miedo.",
+      "initialGrade": {
+        "effect": "RM o RP 80 / 10 metros de radio.",
+        "requiredIntelligence": 6,
+        "retention": 5,
+        "zeon": 60
+      },
+      "intermediateGrade": {
+        "effect": "RM o RP 100 / 25 metros de radio.",
+        "requiredIntelligence": 9,
+        "retention": 5,
+        "zeon": 100
+      },
+      "level": 24,
+      "name": "Susurros del Otro Lado",
+      "spellId": 3,
+      "type": "Automático",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM o RP 160.",
+        "requiredIntelligence": 13,
+        "retention": 15,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "RM o RP 180.",
+        "requiredIntelligence": 15,
+        "retention": 20,
+        "zeon": 140
+      },
+      "bookId": 25,
+      "dailyRetention": false,
+      "effect": "El brujo altera la mente de una persona con ideas y conceptos demenciales, trastornando su percepción del mundo y sumiéndolo temporalmente en la locura. El blanco de este conjuro debe de superar un control de RM o RP contra la dificultad determinada por el blanco del conjuro o se verá sometido a una locura transitoria como psicosis, esquizofrenia o paranoia, perdiendo la capacidad de ser dueño de sus propios actos. El personaje afectado sólo podrá repetir el control de resistencia una vez al día.",
+      "initialGrade": {
+        "effect": "RM o RP 120.",
+        "requiredIntelligence": 7,
+        "retention": 5,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "RM o RP 140.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 100
+      },
+      "level": 34,
+      "name": "Senda de la Locura",
+      "spellId": 4,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM o RP 200.",
+        "requiredIntelligence": 13,
+        "retention": 20,
+        "zeon": 180
+      },
+      "arcaneGrade": {
+        "effect": "RM o RP 240.",
+        "requiredIntelligence": 15,
+        "retention": 25,
+        "zeon": 240
+      },
+      "bookId": 25,
+      "dailyRetention": true,
+      "effect": "Esta maldición permite al hechicero convertir los sueños de su víctima en una prisión donde atrapa su alma en una pesadilla sin fin. El objetivo queda sumido en un sueño eterno en el que constantemente será acosado por monstruosidades y otras criaturas innombrables que le darán caza hasta acabar con él. Este conjuro debe de ser lanzado sobre un individuo que está soñando y, en caso de que este falle la RM o RP requerida, no podrá volver a despertar hasta que el conjuro no finalice. El blanco sólo tendrá derecho a un nuevo control de resistencia cada vez que, mientras está en el mundo de pesadillas, su mente considere que ha ganado a las pesadillas que le acechan.",
+      "initialGrade": {
+        "effect": "RM o RP 120.",
+        "requiredIntelligence": 7,
+        "retention": 10,
+        "zeon": 100
+      },
+      "intermediateGrade": {
+        "effect": "RM o RP 160.",
+        "requiredIntelligence": 10,
+        "retention": 15,
+        "zeon": 140
+      },
+      "level": 44,
+      "name": "Acechar en los Sueños",
+      "spellId": 5,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "250 metros / RM o RP 160.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 240
+      },
+      "arcaneGrade": {
+        "effect": "500 metros / RM o RP 180.",
+        "requiredIntelligence": 15,
+        "retention": 30,
+        "zeon": 300
+      },
+      "bookId": 25,
+      "dailyRetention": true,
+      "effect": "El personaje agudiza los temores y locuras de aquellos individuos que se encuentre dentro del área de efecto del conjuro. Toda aquella persona que no supere la RM o RP pasará de tener miedo a tener terror de aquellas cosas que le asustaban, y la locura transitoria se convertirá en una profunda demencia. Sólo es posible repetir el control una vez al día o cuando aumenten las Resistencias del personaje.",
+      "initialGrade": {
+        "effect": "50 metros / RM o RP 120.",
+        "requiredIntelligence": 6,
+        "retention": 15,
+        "zeon": 120
+      },
+      "intermediateGrade": {
+        "effect": "100 metros / RM o RP 140.",
+        "requiredIntelligence": 9,
+        "retention": 20,
+        "zeon": 180
+      },
+      "level": 54,
+      "name": "Agudizar",
+      "spellId": 6,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM o PR 180 / 100 metros de radio.",
+        "requiredIntelligence": 12,
+        "retention": 20,
+        "zeon": 200
+      },
+      "arcaneGrade": {
+        "effect": "RM o PR 200 / 250 metros de radio.",
+        "requiredIntelligence": 15,
+        "retention": 25,
+        "zeon": 240
+      },
+      "bookId": 25,
+      "dailyRetention": false,
+      "effect": "Provoca temporalmente el estado de Terror a todos los sujetos que se encuentren alrededor del lanzador. El hechicero es quien decide cual es la fuente de terror para los afectados.",
+      "initialGrade": {
+        "effect": "RM o PR 120 / 10 metros de radio.",
+        "requiredIntelligence": 8,
+        "retention": 10,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "RM o PR 140 / 50 metros de radio.",
+        "requiredIntelligence": 10,
+        "retention": 15,
+        "zeon": 140
+      },
+      "level": 64,
+      "name": "Terror",
+      "spellId": 7,
+      "type": "Anímico",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM o RP 180 / 1 kilómetro de radio.",
+        "requiredIntelligence": 14,
+        "retention": 0,
+        "zeon": 400
+      },
+      "arcaneGrade": {
+        "effect": "RM o RP 200 / 5 kilómetros de radio.",
+        "requiredIntelligence": 16,
+        "retention": 0,
+        "zeon": 500
+      },
+      "bookId": 25,
+      "dailyRetention": false,
+      "effect": "El brujo obtiene la capacidad de controlar a cualquier persona demente alterando a voluntad su demencia y percepción de la realidad. La condición para ser afectado por este sortilegio es estar dentro de la zona de influencia del conjuro y estar sumido en una demencia grave. Aquellos que sólo tengan una locura transitoria pueden aplicar un +40 a sus Resistencias contra los efectos de este conjuro. Los afectados sólo tienen derecho a repetir el control una vez al día o cuando aumenten sus Resistencias.",
+      "initialGrade": {
+        "effect": "RM o RP 140 / 100 metros de radio.",
+        "requiredIntelligence": 10,
+        "retention": 0,
+        "zeon": 200
+      },
+      "intermediateGrade": {
+        "effect": "RM o RP 160 / 250 metros de radio.",
+        "requiredIntelligence": 12,
+        "retention": 0,
+        "zeon": 300
+      },
+      "level": 74,
+      "name": "Señor de los Locos",
+      "spellId": 8,
+      "type": "Automático",
+      "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "Nivel 12 / RM 180.",
+        "requiredIntelligence": 15,
+        "retention": 50,
+        "zeon": 500
+      },
+      "arcaneGrade": {
+        "effect": "Nivel 15 / RM 200.",
+        "requiredIntelligence": 18,
+        "retention": 70,
+        "zeon": 700
+      },
+      "bookId": 25,
+      "dailyRetention": false,
+      "effect": "Este conjuro crea una encarnación pura del miedo de una persona, un ser entre mundos nacido a partir de los terrores más profundos del subconsciente de su objetivo. La criatura es real en todos los aspectos, pero únicamente el individuo o individuos que la temen son capaces de verla o interactuar con ella (del mismo modo, la criatura sólo siente o puede tocar a aquellas personas que la temen). Al lanzar este sortilegio, el hechicero debe de elegir una persona en su presencia como objetivo, a la que afecta de manera automática. Si dicho individuo no supera la RM o RP determinada por el grado del conjuro, da forma al instante a un ser a imagen y semejanza de los miedos del personaje. La criatura puede tener cualquier nivel o poder, siempre que no tenga un Gnosis superior a 30 o supere los límites impuestos por el grado del sortilegio.",
+      "initialGrade": {
+        "effect": "Nivel 4 / RM 140.",
+        "requiredIntelligence": 10,
+        "retention": 15,
+        "zeon": 150
+      },
+      "intermediateGrade": {
+        "effect": "Nivel 8 / RM 160.",
+        "requiredIntelligence": 12,
+        "retention": 25,
+        "zeon": 250
+      },
+      "level": 84,
+      "name": "Encarnación del Miedo",
+      "spellId": 9,
+      "type": "Automático",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM o RP 200",
+        "requiredIntelligence": 15,
+        "retention": 0,
+        "zeon": 450
+      },
+      "arcaneGrade": {
+        "effect": "RM o RP 240",
+        "requiredIntelligence": 17,
+        "retention": 0,
+        "zeon": 600
+      },
+      "bookId": 25,
+      "dailyRetention": false,
+      "effect": "El personaje se torna una fuente de miedo, provocando temor a todo tipo de criatura, incluso a aquellas que son inmunes a psicología. Todo aquel que esté en su presencia es sometido automáticamente a miedo, sin resistencia posible, y debe superar un control de RM o RP para no verse sometido además a Terror.",
+      "initialGrade": {
+        "effect": "RM o RP 120",
+        "requiredIntelligence": 11,
+        "retention": 0,
+        "zeon": 250
+      },
+      "intermediateGrade": {
+        "effect": "RM o RP 140",
+        "requiredIntelligence": 13,
+        "retention": 0,
+        "zeon": 350
+      },
+      "level": 94,
+      "name": "El Miedo hecho Carne",
+      "spellId": 10,
+      "type": "Automático",
+      "withRetention": false
+    }
+  ],
+  "type": "Sub-Vía"
+}
