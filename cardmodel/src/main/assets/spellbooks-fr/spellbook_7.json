@@ -509,7 +509,7 @@
       "level": 50,
       "actionType": "Active",
       "type": "Effet",
-      "effect": "Ce sort utilise la magie pour façonner un objet en utilisant l'équivalent d'une compétence de Forge de valeur fixée par le rang. Comme il s'agit d'un pouvoir uniquement surnaturel, la création n'est affectée par aucun des modificateurs du Tableau 17, ni ne requiert aucun équipement ou feu. Ce sort ne fabrique pas les matériaux, le sorcier doit les amasser personnellement.",
+      "effect": "Ce sort utilise la magie pour façonner un objet en utilisant l'équivalent d'une compétence de Forge de valeur fixée par le rang. Comme il s'agit d'un pouvoir uniquement surnaturel, la création n'est affectée par aucun des modificateurs du Tableau 22, ni ne requiert aucun équipement ou feu. Ce sort ne fabrique pas les matériaux, le sorcier doit les amasser personnellement.",
       "initialGrade": {
         "zeon": 160,
         "requiredIntelligence": 7,
