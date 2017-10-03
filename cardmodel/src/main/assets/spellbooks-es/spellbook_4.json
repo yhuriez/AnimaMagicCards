@@ -938,7 +938,7 @@
         "zeon": 500
       },
       "bookId": 4,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Con este hechizo, el brujo debilita las fibras de la propia realidad dentro de un área determinada, haciendo que todo lo que se encuentre en ella se vuelva frágil y quebradizo. De este modo, cualquier daño que se produzca en su interior se dobla automáticamente, y los personajes sufren críticos como si todo su cuerpo fuera un punto vulnerable. Las estructuras y edificaciones perderán automáticamente su barrera de daño, y los objetos con entereza, como espadas y armaduras, sufrirán un penalizador de -5. Permanece fijo en el lugar donde es conjurado. Cualquier ser vivo u objeto de poder puede evitar sus efectos superando una RM. La condición para ser influido por la Zona de Debilidad es estar simplemente en su interior, y únicamente es posible librarse de ella saliendo del área, ya que sólo permite repetir el control de Resistencia una vez al día.",
       "initialGrade": {
         "effect": "25 metros de radio / RM 140.",

@@ -377,7 +377,7 @@
         "zeon": 450
       },
       "bookId": 11,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Mediante la manipulación de energías nigrománticas, el brujo puede animar cadáveres y convertirlos en zombis o esqueletos bajo su control. Los muertos no conservan las habilidades especiales o conocimientos que tenían en vida, dado que son sólo remedos de carne y hueso de su anterior condición. Aun así, mantienen sus capacidades básicas, como armas naturales y algunas de sus características físicas. El poder y resistencia de la criatura varía dependiendo de su cuerpo. Por ejemplo, el cadáver de un oso sería considerablemente más peligroso que el de un ser humano. Como referencia, el Director de Juego tiene a su disposición las fichas de zombis básicos que aparecen en el bestiario. Puede animar entre una o varias criaturas hasta un valor de presencia, siempre que ninguno de los no muertos levantados supere el nivel que determina el",
       "initialGrade": {
         "effect": "100 puntos de presencia (Nivel máximo 0).",
@@ -587,7 +587,7 @@
         "zeon": 220
       },
       "bookId": 11,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Este conjuro crea un área de energía nigromántica que mata de inmediato cualquier forma de vida inferior que se encuentre alrededor del brujo, como pequeños animales y plantas. Todo ser vivo con una presencia 20 o inferior se pudre o marchita a gran velocidad sin derecho a ningún control de Resistencia.",
       "initialGrade": {
         "effect": "10 metros de radio.",

@@ -22,7 +22,7 @@
         "zeon": 200
       },
       "bookId": 2,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Oscurece completamente una zona. Todo lo que hay en su interior se percibe como en una noche cerrada y sin luna.",
       "initialGrade": {
         "effect": "5 metros de radio.",
@@ -267,7 +267,7 @@
         "zeon": 300
       },
       "bookId": 2,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Oculta un conjuro, o las propiedades místicas de un objeto, ante cualquier tipo de detección mágica. A efectos de juego, produce un penalizador a la Valoración mágica de quien intente detectar o medir el conjuro u objeto oculto (así como al propio hechizo de Ocultación de Magia).",
       "initialGrade": {
         "effect": "–100 a Valoración Mágica.",
@@ -442,7 +442,7 @@
         "zeon": 300
       },
       "bookId": 2,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Oculta la presencia del hechicero o del blanco designado por este ante cualquier tipo de detección. A efectos de juego, aumenta en las Resistencias que se efectúen contra detecciones sobrenaturales, ya sean místicas o psíquicas. Esta habilidad también aumenta la Ocultación del Ki del personaje (aunque este aumento no se contabiliza a la hora de determinar los bonos aplicables a la RM), permitiéndole esconder su energía incluso si no ha desarrollado dicha habilidad.",
       "initialGrade": {
         "effect": "+50 a la RM o RP / +50 Ocultación del Ki.",
@@ -862,7 +862,7 @@
         "zeon": 300
       },
       "bookId": 2,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Encanta una zona, haciéndola impenetrable para los seres basados naturalmente en sentimientos positivos u luz. Cualquiera de estas criaturas que entre en la zona del conjuro, deberá realizar cada asalto una RM o sufrir una pérdida en puntos de vida equivalente al nivel de fracaso. Adicionalmente, de fallar el control, el ser recibirá de inmediato un penalizador a toda acción de -40 mientras sigua en su interior. La zona afectada permanece estática en el lugar donde fue lanzada.",
       "initialGrade": {
         "effect": "RM 120 / radio de 20 metros.",
@@ -1142,7 +1142,7 @@
         "zeon": 700
       },
       "bookId": 2,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Crea un ser oscuro con apariencia de vida, bajo el control absoluto del hechicero. El ente será desarrollado como un Ser Entre Mundos, usando los poderes y limitaciones de los elementales oscuros del Capítulo 26. Para calcular su nivel máximo se emplean las mismas reglas que en el conjuro Crear Ser, de la vía de Creación.",
       "initialGrade": {
         "effect": "Nivel 1.",
@@ -1247,7 +1247,7 @@
         "zeon": 800
       },
       "bookId": 2,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "El hechicero, o quien este designe, se vuelve completamente inmune ante ciertos tipos de detecciones sobrenaturales. Por ejemplo, un personaje que use este conjuro en grado Arcano sólo podría ser encontrado mediante los sentidos físicos, como la vista o el oído.",
       "initialGrade": {
         "effect": "El personaje se vuelve indetectable ante conjuros y habilidades psíquicas.",

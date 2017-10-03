@@ -307,7 +307,7 @@
         "zeon": 150
       },
       "bookId": 3,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Las energías sobrenaturales que maneja este hechizo se unen al cuerpo del individuo designado, otorgándole así cierta inmunidad al daño. A efectos de juego, obtendrá una barrera de daño (Ver capítulo 14).",
       "initialGrade": {
         "effect": "Barrera de Daño 30.",
@@ -377,7 +377,7 @@
         "zeon": 250
       },
       "bookId": 3,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Este conjuro permite alterar la apariencia de un objeto o ser, modificando su forma. El cambio se limita a variar su aspecto exterior, sin que en ningún caso pueda perder sus cualidades o naturaleza original. De esta forma, una reluciente espada corta se podría tornar vieja y oxidada, pero no en un objeto distinto, como un bastón. En el caso de los seres vivos, puede modificarse su aspecto físico sin variar más de dos puntos su Tamaño, transformando, por ejemplo, a un hombre gordo y feo en otro joven y atractivo. En el caso de los objetos, una vez que son afectados no tienen derecho a una nueva Resistencia, pero las personas podrán repetir el control una vez al día si desean librarse de sus efectos. Es posible afectar a varios objetivos, siempre y cuando la suma de sus presencias no sea superior a la máxima presencia permitida.",
       "initialGrade": {
         "effect": "RM 80 / Máxima Presencia 60.",
@@ -447,7 +447,7 @@
         "zeon": 300
       },
       "bookId": 3,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Este conjuro permite al hechicero, o a aquellas personas designadas por él, ser inmune a intensidades de un tipo concreto de energía, ya sea fuego, electricidad o frío. En el caso de que se reciba un ataque basado en el elemento respecto del que se es inmune, cada intensidad disminuye 5 puntos el daño base y otorga un +5 a las Resistencias contra sus efectos.",
       "initialGrade": {
         "effect": "5 Intensidades.",
@@ -517,7 +517,7 @@
         "zeon": 300
       },
       "bookId": 3,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Mediante este hechizo, el brujo es capaz de controlar el cuerpo de un ser como si fuese un simple títere. Dado que sólo otorga un dominio físico y no espiritual, el individuo sometido no está obligado a usar ninguna habilidad sobrenatural (magia, Ki, poderes psíquicos…) en contra de su voluntad, aunque sí sus habilidades marciales. Para resistir el control, hay que superar una RM. El afectado tendrá derecho a una nueva Resistencia por día, y en cada ocasión en la que las órdenes recibidas vayan completamente en contra de su comportamiento.",
       "initialGrade": {
         "effect": "RM 80.",
@@ -867,7 +867,7 @@
         "zeon": 350
       },
       "bookId": 3,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "La magia crea un estado de vitalidad sobrenatural en un individuo, aumenta el valor máximo de sus puntos de vida mientras este hechizo se mantenga. Sus efectos no se superponen, y sólo se puede afectar con él una vez a cada sujeto. Los seres con acumulación de daño multiplican por cinco esta cantidad.",
       "initialGrade": {
         "effect": "+50 Puntos de Vida.",
@@ -1007,7 +1007,7 @@
         "zeon": 350
       },
       "bookId": 3,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "El brujo transmuta la sustancia y forma de un cuerpo, convirtiéndolo en cualquier cosa que desee, siempre y cuando su presencia no se incremente por encima de la original. Así, por ejemplo, el hechicero puede convertir a una persona en lo que quiera (un ratón, una estatua de piedra…), mientras la presencia del individuo no sea menor que aquello en lo que se le transforma. Los seres vivos que son polimorfizados en cosas inorgánicas, seguirán viviendo bajo la nueva forma que se les ha dado, incluso sin poder moverse o respirar. Cuando el conjuro desparece, el individuo u objeto mutado recupera su apariencia original. Este hechizo no permite otorgar poderes o habilidades esenciales, salvo aquellos que poseen los seres vivos naturales con Gnosis 0. Para evitar ser polimorfizado, es necesario superar una RM. Sólo es posible repetir la Resistencia una vez al día.",
       "initialGrade": {
         "effect": "RM 100.",
@@ -1147,7 +1147,7 @@
         "zeon": 1500
       },
       "bookId": 3,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Crea una zona mágica en cuyo interior nada ni nadie puede causar ningún tipo de daño, ni por acción ni por omisión, a ninguna persona u objeto. De este modo, un individuo influido por este conjuro será incapaz de derribar una puerta a golpes, o de aplastar una simple cucaracha por error. Afecta automáticamente a cualquiera que se encuentre en el área del sortilegio, incluyendo al propio brujo. La zona encantada permanece en el lugar donde es lanzada, sin que el hechicero pueda reubicarla posteriormente. Para superar sus efectos es necesario superar una RM. Sólo es posible repetir la Resistencia una vez al día, incluso si se sale de ella y se vuelve a entrar.",
       "initialGrade": {
         "effect": "RM 140 / radio de 100 metros.",
@@ -1252,7 +1252,7 @@
         "zeon": 2000
       },
       "bookId": 3,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Otorga al hechicero el don de crear a su antojo, concediéndole puntos de presencia para repartir libremente entre varios objetos o construcciones. Puede elaborar cualquier cosa inanimada que desee, desde castillos a montañas, siempre y cuando la presencia de sus creaciones no sea superior a lo que permite el grado del conjuro.",
       "initialGrade": {
         "effect": "500 Puntos de Presencia / Presencia máxima 100.",

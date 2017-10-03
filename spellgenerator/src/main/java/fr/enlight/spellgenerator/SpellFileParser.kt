@@ -171,7 +171,7 @@ class SpellFileParser(private val descriptor: SpellFileDescriptor, private val w
                     ?: throw IllegalStateException("Should have a retention indication at this point")
 
             result.withRetention = !retentionArray[0].contains(descriptor.noMarker)
-            result.dailyRetention = retentionArray.last().contains(descriptor.dailyRetentionMarker)
+            result.dailyRetention = retentionArray.any { it.contains(descriptor.dailyRetentionMarker) }
 
 
             if (retentionArray.size >= 4) {

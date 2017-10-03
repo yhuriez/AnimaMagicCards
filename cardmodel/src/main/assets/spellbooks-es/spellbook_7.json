@@ -66,7 +66,7 @@
         "zeon": 140
       },
       "bookId": 7,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Otorga la capacidad de controlar cualquier sustancia mineral. Ten en cuenta que, por mucho dominio que ejerza el hechicero sobre las cosas, no puede atribuirles capacidades que estas no tengan por sí solas. Es decir, aunque controle una roca, no podría hacer que se moviese por sí sola, pero sí obligar a un golem mecánico o a un elemental de piedra a someterse a su voluntad. Los seres de tales características pueden evitar este efecto superando una RM contra 100. La criatura puede repetir el control una vez al día, o si recibe una orden que sea completamente opuesta a su naturaleza.",
       "initialGrade": {
         "effect": "Presencia máxima 30 / RM 100.",
@@ -171,7 +171,7 @@
         "zeon": 160
       },
       "bookId": 7,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Aumenta el aguante de un individuo o un objeto, haciéndolo especialmente resistente al daño. Si se lanza sobre un ser vivo, otorga un bonificador a cualquier tirada de RF que realice para evitar los efectos de un critico, mientras que si se aplica sobre un objeto, incrementa su entereza. Sólo es posible afectar con un conjuro de Firmeza a un cuerpo a la vez.",
       "initialGrade": {
         "effect": "+20 RF / +3 entereza.",
@@ -276,7 +276,7 @@
         "zeon": 140
       },
       "bookId": 7,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Forma una coraza física que protege contra todos los tipos de ataque, salvo los basados en energía. Aunque cuenta como una armadura, no se aplican penalizadores al turno por emplear capas de protección adicionales.",
       "initialGrade": {
         "effect": "TA 2.",
@@ -871,7 +871,7 @@
         "zeon": 700
       },
       "bookId": 7,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Crea un ser de piedra con apariencia de vida, bajo el control absoluto del hechicero. El ente será creado como un Ser Entre Mundos, usando los poderes y limitaciones de los elementales de Piedra de las reglas de creación de seres. La criatura tendrá PD y se le aplican los mismos límites descritos en el conjuro Crear Ser, de la vía de Creación.",
       "initialGrade": {
         "effect": "Nivel 1.",
@@ -906,7 +906,7 @@
         "zeon": 320
       },
       "bookId": 7,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Incrementa la masa de la atmósfera de una zona determinada, aumentando con ello la fuerza de la gravedad y, por tanto, el peso de todo lo que se halle en su interior. A efectos de juego, aumenta el peso de todo lo que determine el hechicero dentro del área del conjuro. El área del sortilegio permanece estática en el lugar donde fue lanzado.",
       "initialGrade": {
         "effect": "Dobla el peso / 100 metros de radio.",
@@ -976,7 +976,7 @@
         "zeon": 800
       },
       "bookId": 7,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Otorga la capacidad de controlar completamente todas las fuerzas gravitacionales de una zona del planeta. Dentro de ella, el lanzador tendrá un dominio absoluto de la gravedad, pudiendo anularla, incrementar hasta diez veces su valor o invertirla. Todo cuerpo físico que se encuentre en esta área, será automáticamente influido por sus efectos.",
       "initialGrade": {
         "effect": "100 kilómetros de radio.",
@@ -1011,7 +1011,7 @@
         "zeon": 120
       },
       "bookId": 7,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "El hechicero puede fusionar su esencia con el mundo, obteniendo un control absoluto de cualquier elemento mineral. Este control le permite alterar la apariencia del planeta dentro de su radio de acción, levantando montañas y cordilleras o haciéndolas desaparecer. Toda criatura basada en piedra que se encuentre dentro del área del sortilegio deberá superar una RM o será controlada de inmediato. Si la pasan, ya no necesitan volver a realizar el control. Los afectados tienen derecho a una nueva tirada únicamente si alteran su Resistencia base.",
       "initialGrade": {
         "effect": "100 kilómetros de radio / 140 RM.",

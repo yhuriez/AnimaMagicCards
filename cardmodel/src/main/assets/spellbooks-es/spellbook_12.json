@@ -368,7 +368,7 @@
         "zeon": 180
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Marca un lugar u objeto con un mensaje escrito. El hechicero podrá hacer que aparezca y desaparezca a voluntad, incluso si no está presente (aunque no por ello sabe si hay alguien allí para leerlo).",
       "initialGrade": {
         "effect": "Máximo de 50 palabras.",
@@ -403,7 +403,7 @@
         "zeon": 120
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Este conjuro cambia el color de una materia, objeto o incluso persona cuya presencia no sea superior a lo que determina el grado del conjuro. Para resistirse, hace falta superar una RM. Alguien afectado no tiene derecho a una nueva resistencia mientras el conjuro se mantenga.",
       "initialGrade": {
         "effect": "Presencia máxima 40 / RM 100.",
@@ -508,7 +508,7 @@
         "zeon": 130
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Otorga a un objeto o lugar el carácter de cuerpo sobrenatural. La sustancia afectada será material para seres intangibles y conjuros. Si, por ejemplo, es lanzado sobre un arma, será capaz de dañar a seres inmateriales (empleando la presencia del objeto), y una pared encantada no podrá ser traspasada por seres etéreos o efectos místicos. Permite afectar a multitud de objetos, siempre y cuando la suma de sus presencias no supere el valor indicado por el conjuro.",
       "initialGrade": {
         "effect": "Presencia máxima 40.",
@@ -543,7 +543,7 @@
         "zeon": 160
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Confiere la capacidad de respirar en el interior de cualquier líquido, como si se tratase de aire. Se puede afectar a varios sujetos, siempre que la suma de sus presencias no supere el valor indicado por el conjuro.",
       "initialGrade": {
         "effect": "Presencia máxima 60.",
@@ -613,7 +613,7 @@
         "zeon": 240
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Forma  niebla  con  una  intensidad  a  discreción  del  lanzador. Permanecerá estática donde fue lanzada.",
       "initialGrade": {
         "effect": "100 metros de radio.",
@@ -718,7 +718,7 @@
         "zeon": 340
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Elimina los rastros físicos que deja tras de sí una persona. Para seguir las huellas de alguien sobre quien está activo este conjuro, será necesario alcanzar una dificultad de Imposible en Rastrear. Puede afectar a tantos blancos como se desee, mientras la suma de sus presencias no supere el valor determinado por el grado del conjuro.",
       "initialGrade": {
         "effect": "Presencia máxima 120.",
@@ -788,7 +788,7 @@
         "zeon": 120
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Permite a una envoltura, bolsa o baúl, cargar materiales que excedan su capacidad de contención, sin aumentar su peso. El mago siempre es capaz de extraer lo que quiere, aunque los demás sacarán las cosas al azar. No se pueden introducir objetos que no entren físicamente en el interior, como una lanza en una pequeña bolsa. Si el conjuro finaliza, la carga reaparecerá, pudiendo incluso reventar el contenedor.",
       "initialGrade": {
         "effect": "x10 su capacidad.",
@@ -823,7 +823,7 @@
         "zeon": 150
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Los afectados por este conjuro podrán alcanzar la dificultad de Inhumano en cualquier campo o materia. Ten en cuenta que ello no quiere decir que las acciones realizadas por dichos sujetos sean automáticamente inhumanas, sino que podrán lograrlas si sus tiradas de habilidad o sus atributos se lo permiten.",
       "initialGrade": {
         "effect": "Permite alcanzar Inhumanidad en una habilidad determinada.",
@@ -858,7 +858,7 @@
         "zeon": 260
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Forma una espesa capa de nubes. El hechicero tiene completo control sobre ellas, pudiendo moverlas o darles la forma que desee.",
       "initialGrade": {
         "effect": "100 metros de radio.",
@@ -1103,7 +1103,7 @@
         "zeon": 240
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Este  conjuro  permite  comprender  temporalmente  un  lenguaje desconocido, tanto si es escrito como oral.",
       "initialGrade": {
         "effect": "Afecta a idiomas básicos, conocidos y hablados comúnmente en muchos países del mundo.",
@@ -1208,7 +1208,7 @@
         "zeon": 150
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Evita al personaje contraer enfermedades de transmisión sexual o concebir descendencia. Puede afectar a varios individuos siempre que la suma de sus presencias no supere lo que determine el grado del conjuro.",
       "initialGrade": {
         "effect": "Presencia máxima 80.",
@@ -1278,7 +1278,7 @@
         "zeon": 240
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Mediante  este  hechizo,  el  mago  obstruye  automáticamente cualquier tipo de puerta, postigo o ventana. Si, por ejemplo, se lanza sobre una puerta abierta, esta se cerrará sola, o si se usa sobre un rastrillo, bajará taponando la salida. Mientras se mantenga el conjuro, no es posible abrir la puerta físicamente, salvo por medios mágicos o destrozándola. La máxima presencia de la puerta viene determinada por el grado del conjuro.",
       "initialGrade": {
         "effect": "Presencia máxima 20.",
@@ -1348,7 +1348,7 @@
         "zeon": 140
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Modifica la apariencia facial y corporal del sujeto sobre el que es lanzado. Puede alterar su color de piel o su fisonomía, pero no variar su altura o peso más allá de los límites impuestos por su Tamaño. Para resistir la alteración, es necesario superar una RM. Una vez fallada, sólo es posible repetir el control una vez por día.",
       "initialGrade": {
         "effect": "RM 100.",
@@ -1488,7 +1488,7 @@
         "zeon": 150
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Aumenta el aguante de un ser vivo, otorgando un bonificador a la habilidad secundaria Resistir el Dolor.",
       "initialGrade": {
         "effect": "+50 a Resistir el dolor.",
@@ -1558,7 +1558,7 @@
         "zeon": 200
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Suprime la capacidad de soñar de un individuo. En caso de que sea lanzado sobre un individuo que se encuentre en la Vigilia, este será expulsado de inmediato al mundo real. El objetivo del conjuro puede resistirse superando una RM, aunque en caso de fallarla, sólo podrá repetir el control una vez al día.",
       "initialGrade": {
         "effect": "RM 120.",
@@ -1593,7 +1593,7 @@
         "zeon": 250
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "El lanzador del conjuro puede separar a voluntad su presencia de su cuerpo permitiéndole actuar a distancia como si realmente se encontrara allí. Mientras esté separada el hechicero no podrá moverse, pero será capaz de hacerla regresar a su cuerpo cuando quiera sin tener que finalizar el sortilegio. La presencia expandida puede tocar objetos físicos e incluso atacar, pero será invisible al ojo humano sólo es posible notarla mediante el uso de detecciones de Ki, la capacidad de ver espíritus, o algún otro medio de ver cuerpos etéreos (aunque si la presencia sostiene algo, dicho objeto sí es perfectamente visible). La presencia es intangible y sólo podrá ser dañada por ataques basados en energía. Cualquier pérdida de puntos de vida también afectará al cuerpo del hechicero. La distancia máxima que la presencia puede expandirse del cuerpo es determinada por el grado del conjuro.",
       "initialGrade": {
         "effect": "5 metros.",
@@ -1768,7 +1768,7 @@
         "zeon": 700
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Este conjuro provoca una serie de condiciones negativas sobre la persona a la que afecte. Su cometido es causar infortunio sobre ciertas acciones que realice el individuo maldito: mantener una relación amorosa, escribir poemas, ayudar a alguien… El hechicero es quien decide a qué exactamente, así como sus consecuencias, dentro de los límites indicados por el grado del conjuro. Por su naturaleza, el hechizo no influye sólo a quien lo recibe, sino también a otras personas que se relacionen con él si entran en el campo de la maldición. En este caso, cada uno tendrá derecho a su propia RM. Por ejemplo, una jovencita que se sienta interesada en entablar una relación sentimental con un chico, afectado por una maldición que impide que nadie se enamore de él, se sentiría obligatoriamente desanimada si no supera la RM del conjuro. Sólo se puede realizar un nuevo control cuando sus efectos vuelvan a activarse.",
       "initialGrade": {
         "effect": "La maldición sólo afecta actos muy concretos (como enamorarse de una persona determinada o escribir un poema para el rey) y produce únicamente infortunio, haciendo que el afectado no pueda lograr sus objetivos con éxito completo / RM 120.",
@@ -1838,7 +1838,7 @@
         "zeon": 240
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "El hechicero puede transformar intensidades de cualquier tipo de energía elemental en otro, como convertir fuego en electricidad. Si estas intensidades son mágicas o tienen presencia propia, podrán resistirse superando una RM. Este conjuro no causa daños a los seres elementales, pero sí altera su naturaleza.",
       "initialGrade": {
         "effect": "10 intensidades / RM 120.",
@@ -1943,7 +1943,7 @@
         "zeon": 220
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Este conjuro crea en un individuo un vínculo de amistad hacia otra persona designada por el hechicero. Ten en cuenta que el afectado no se vuelve estúpido, por lo que no obedecerá de manera ciega a su “amigo”, actuando siempre conforme a su ética y personalidad. Para superar este conjuro, es necesario pasar una RM o RP. Posteriormente, sólo se repite el control una vez al día, o cuando algo pueda poner en duda la relación de compañerismo que mantiene el hechizado.",
       "initialGrade": {
         "effect": "RM o RP 120.",
@@ -2328,7 +2328,7 @@
         "zeon": 220
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Crea un ser sobrenatural, con el único objetivo de servir como montura. No tendrá ninguna habilidad de ataque y se defenderá usando las reglas de acumulación de daño. Para moverse, la montura mágica utiliza las reglas de la habilidad del Ki Eliminación de Peso y Atletismo 200.",
       "initialGrade": {
         "effect": "Tipo de movimiento 10, 500 PV, Fuerza 10, Tamaño máximo 20.",
@@ -2398,7 +2398,7 @@
         "zeon": 150
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Fusiona uno o varios objetos, como armas, armaduras, ganzúas... con el individuo designado por el hechicero. El objeto quedará oculto bajo alguna forma visible, como una cicatriz o un tatuaje, hasta el momento en el que la persona que lo contiene decida extraerlo. Mientras se encuentren ocultos, aquel que los porte no tendrá ningún penalizador por peso o por tamaño, pero tampoco ninguno de sus beneficios. No es posible fusionar algo que exceda en más de diez veces el tamaño de la persona que hace de contenedor. Separar un objeto y exteriorizarlo, requiere un asalto completo. La máxima presencia del objeto viene determinada por el grado del conjuro.",
       "initialGrade": {
         "effect": "Presencia máxima 80.",
@@ -2503,7 +2503,7 @@
         "zeon": 200
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Provoca un intenso sueño sobre los sujetos que se encuentren en el radio de acción determinado por el hechicero. Los afectados deberán superar una RM o quedarán sumidos en un profundo sueño en poco más de un minuto. Si fallan el control por una diferencia mayor a 20 puntos, los efectos del conjuro son inmediatos. Mientras se mantenga el sortilegio, los afectados no podrán despertarse. Cualquier causa que permitiría al hechizado despertar mientras sigue preso del conjuro, le dará la oportunidad de realizar una nueva RM.",
       "initialGrade": {
         "effect": "10 metros de radio / RM 80.",
@@ -2608,7 +2608,7 @@
         "zeon": 280
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Introduce algún tipo de sentimiento o emoción en el individuo designado por el hechicero que falle una RM o RP contra la dificultad del conjuro. El afectado puede hacer un nuevo control cada día que transcurra, o cuando tenga una seria sospecha de que está siendo influido sobrenaturalmente.",
       "initialGrade": {
         "effect": "RM o RP 120.",
@@ -2713,7 +2713,7 @@
         "zeon": 280
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "El brujo elabora con su magia un arma sobrenatural. La creación será considerada un objeto de la calidad determinada por el grado del sortilegio con la habilidad de dañar energía.",
       "initialGrade": {
         "effect": "Calidad +5.",
@@ -2888,7 +2888,7 @@
         "zeon": 220
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Encanta un cuerpo físico con energía mágica, produciendo un fuerte rechazo a cualquiera que lo toque. El conjuro provoca un impacto sobre todo aquel con el que se ponga en contacto. Como en todos los golpes similares, el DJ deberá considerar el daño que sufre el afectado, dependiendo de la diferencia con un control enfrentado de Agilidad o Fuerza, y los elementos que haya en el entorno. La presencia máxima del objeto afectado no puede superar lo que determine el grado del conjuro.",
       "initialGrade": {
         "effect": "Presencia máxima 30 / Fuerza 8.",
@@ -2993,7 +2993,7 @@
         "zeon": 300
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Hace levitar todo lo que se encuentre comprendido en un radio respecto al hechicero. El lanzador decide qué es lo que se eleva y qué no, sin importar el peso o el tamaño de lo que levanta. Los objetos o personas que se encuentren en el aire son movidos por el mago, con un Tipo de vuelo 6 si no superan una RM. Sólo los seres vivos o animados tienen derecho a un control de Resistencia, al igual que las construcciones que estén dotadas de características sobrenaturales.",
       "initialGrade": {
         "effect": "RM 80/ 25 metros de radio.",
@@ -3238,7 +3238,7 @@
         "zeon": 320
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Este conjuro encanta un lugar determinado haciendo que cualquier criatura que entre en él (o que ya se encuentre en su interior) no pueda salir de sus límites si no supera una RM. Aunque podrá moverse dentro de la zona con libertad, le será completamente imposible atravesar la barrera exterior. Una vez que se ha fallado la Resistencia, un sujeto afectado no tiene derecho a un nuevo control mientras se mantenga el conjuro, salvo si por alguna causa sus Resistencias aumentan. La condición para ser afectado es, simplemente, encontrarse dentro del lugar en el turno siguiente al de su lanzamiento, por lo que el mago no podrá elegir blancos en su interior, e incluso podrá quedar él mismo encerrado.",
       "initialGrade": {
         "effect": "10 metros de radio / RM 120.",
@@ -3273,7 +3273,7 @@
         "zeon": 160
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Encanta una persona, objeto o lugar, permitiendo al hechicero unir con él sus sentidos. De este modo, el brujo puede utilizar sus habilidades de percepción como si estuviera presente hasta la distancia máxima precisada por el grado del conjuro. Además, tendrá siempre constancia de dónde se encuentra su marca con respecto a su posición. En el caso de tratarse de un ser vivo o un objeto sobrenatural, podrá evitar ser afectado superando una RM.",
       "initialGrade": {
         "effect": "10 kilómetros / RM 120.",
@@ -3413,7 +3413,7 @@
         "zeon": 540
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "El Conjuro Natural permite al hechicero atar a su esencia uno o más sortilegios que prepare para tal contingencia, otorgándole la capacidad de lanzarlos posteriormente tantas veces como desee como si fueran conjuros innatos, sin que tengan coste zeónico alguno. De este modo, el mago puede ejecutar innatamente uno de dichos hechizos cada asalto. Por ejemplo, podría tener preparados un sortilegio de Bola de Fuego en grado intermedio y uno de Vuelo en grado base y usar uno de ellos por asalto completamente gratis. En el momento del lanzamiento de este conjuro, el brujo debe ejecutar todos los sortilegios que pretende preparar gastando el Zeon con el que pretende usarlos. Sólo es posible mantener activo un conjuro natural a la vez.",
       "initialGrade": {
         "effect": "Valor zeónico máximo 100.",
@@ -3448,7 +3448,7 @@
         "zeon": 600
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Mientras este conjuro siga activo, el hechicero o quien este designe no envejece ni sufre los efectos del paso del tiempo. Así, se volverá un ser inmortal, salvo ante una muerte de carácter violento. Si este conjuro deja de mantenerse o es destruido, el individuo recuperará la edad que le corresponde a un ritmo muy acelerado.",
       "initialGrade": {
         "effect": "Las habilidades descritas.",
@@ -3483,7 +3483,7 @@
         "zeon": 480
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Hace desaparecer completamente cualquier necesidad física de un individuo. Mientras se mantenga el conjuro, no se verá afectado por los efectos del hambre, el cansancio o el sueño, ignorando por completo cualquier penalizador causado por estos. El personaje puede seguir gastando puntos de Cansancio para mejorar sus acciones físicas (que se recuperan a un ritmo de un punto por hora), aunque no sufre negativos por alcanzar valores muy bajos.",
       "initialGrade": {
         "effect": "Las habilidades descritas.",
@@ -3553,7 +3553,7 @@
         "zeon": 800
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Portal crea una puerta mágica de tránsito entre dos lugares distantes. Cualquiera que la atraviese se trasladará, instantáneamente, hasta la otra abertura. El conjuro queda fijado en el lugar donde es lanzado y en el sitio donde se designe la salida, por lo que el hechicero no puede cambiar su ubicación con posterioridad. Su creador también puede decidir, durante el lanzamiento, si funciona en ambas direcciones o sólo transporta en una dirección. El tamaño de la abertura del portal así como la distancia máxima que puede separar ambas aberturas y la máxima cantidad de presencias que pueden trasportarse a través de ellas al día son determinadas por el grado del conjuro.",
       "initialGrade": {
         "effect": "5 metros de abertura / 1.000 kilómetros de distancia / 500 presencias al día.",
@@ -3588,7 +3588,7 @@
         "zeon": 320
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Solidifica la magia, creando un recipiente sobrenatural para el Zeon. Aplicado a reglas de juego, conforma un contenedor de magia que aparece vacío. Sólo es posible mantener activo un conjuro de Prisma de Magia a la vez.",
       "initialGrade": {
         "effect": "400 puntos de Zeon.",
@@ -3658,7 +3658,7 @@
         "zeon": 320
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "El individuo u objeto designado se vuelve completamente invulnerable a cualquier daño que no sea capaz de afectar energía. Es posible elegir tantos blancos como se desee, mientras la suma de sus presencias no supere lo que determine el máximo del conjuro.",
       "initialGrade": {
         "effect": "Presencia máxima 60.",
@@ -3728,7 +3728,7 @@
         "zeon": 420
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Permite introducir un segundo conjuro en el interior de un objeto o individuo, para lanzarlo posteriormente de manera automática, sin ningún tipo de acumulación o preparativo. Este conjuro debe lanzarse al mismo tiempo que el mago realiza otro hechizo de modo que el segundo sortilegio, en lugar de funcionar con normalidad, se queda en el interior de algo esperando a ser desencadenado posteriormente. El conjuro preparado podrá activarse por voluntad del brujo, el sujeto en cuyo interior se encuentre, o aquel que esté en posesión del objeto encantado. Utiliza la Proyección Mágica de su lanzador original, salvo si quien lo posee en la actualidad decide utilizar la suya propia. Una vez lanzado, el hechizo preparado desaparece. Si deja de pagarse el mantenimiento de Preparar Conjuro, el segundo hechizo también se pierde. Sólo es posible lanzar un sortilegio preparado por asalto, sin importar el número que se tenga almacenado. Un objeto o persona puede contener hasta cuatro veces su presencia en valor zeónico. Es decir, un individuo con presencia 50 podría tener hasta 200 puntos de Zeon en conjuros preparados.",
       "initialGrade": {
         "effect": "Zeon máximo del conjuro 100.",
@@ -3868,7 +3868,7 @@
         "zeon": 500
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Utilizando la magia, el hechicero obtiene conocimientos intelectuales que desconoce. Este conjuro otorga al brujo, o a quien este designe, un bono a las habilidades secundarias del campo Intelectual, que podrá repartir libremente como considere apropiado (hasta un tope de 340). Por ejemplo si obtuviera 100 puntos, puede aumentar 40 puntos su habilidad de Historia, más 30 en Ciencia y Animales, respectivamente. Sólo un conjuro de El Don del Conocimiento puede estar activo en un sujeto a la vez.",
       "initialGrade": {
         "effect": "+100 de bono.",
@@ -3903,7 +3903,7 @@
         "zeon": 480
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Afecta un lugar dentro del cual el hechicero crea un área que impide utilizar poderes sobrenaturales de cualquier tipo. En su interior, no funcionará ningún conjuro, convocación, poder psíquico o Técnica de Ki cuyo valor zeónico, potencial o coste no supere lo que indique el grado del conjuro. El área permanece siempre estática donde fue creada y afecta automáticamente a todos los que estén en su interior, incluyendo al propio lanzador.",
       "initialGrade": {
         "effect": "50 metros de radio / Zeon 100 / Potencial Psíquico 140 / Coste de Ki 8 / Convocación inferior a 180",
@@ -3938,7 +3938,7 @@
         "zeon": 600
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Este conjuro intensifica el poder de la magia que utiliza el hechicero, haciendo que los sortilegios que emplee sean más difíciles de destruir. Mientras se mantenga, fortalece todos los conjuros que lance el brujo contra efectos que pudieran ser perjudiciales para su magia. En juego, añade puntos de Zeon “falsos” al valor zeónico de los conjuros que utilice a partir de ese momento. Este incremento no es real, por lo que estos puntos no otorgan ningún efecto añadido a los sortilegios, aunque sí aumentan su potencial contra habilidades que afecten a hechizos de poder inferior. Si, por ejemplo el brujo tiene mantenido este conjuro en grado base (+50 puntos) y lanza crear luz en grado intermedio (valor zeónico 50), el potencial del conjuro de Luz no se vería incrementado, pero en el caso de que otro mago lanzase un Destruir Conjuro contra él, el hechizo tendría a efectos prácticos un valor zeónico de 70, en lugar de sólo 20.",
       "initialGrade": {
         "effect": "+50 al valor zeónico falso de los conjuros.",
@@ -3973,7 +3973,7 @@
         "zeon": 600
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Condicionamiento afecta directamente a otros conjuros que lance el hechicero, estancándolos y haciendo que no se activen hasta que se dé una circunstancia que su controlador haya elegido. Debe de lanzarse al mismo tiempo que el mago realiza los hechizos adicionales, de modo que dichos sortilegios, en lugar de funcionar con normalidad, esperan para activarse a que se presenten las circunstancias que el brujo hubiera designado. Cada sortilegio condicionado puede ser sometido a una condición distinta pero, una vez prefijadas, posteriormente no pueden cambiarse. El conjuro condicionado se activará automáticamente en el mismo momento en que se dé la circunstancia determinada, incluso si el mago no es consciente de ello. Por ejemplo, si un brujo condiciona el conjuro de Detener Caída, puede decidir que se active en el instante en el que caiga de gran altura, al igual que un nigromante es capaz de condicionar un hechizo de Superar la Muerte para que se ejecute en el momento en el que muera. La acción del conjuro es activa o pasiva, dependiendo de su propia naturaleza, pero siempre se acaba activando al final del asalto en el que se ha dado la condición en caso de que el lanzador no pueda actuar ese asalto. Mientras permanezcan estancados, los conjuros no tienen mantenimiento, ya que no se encuentran activos. Si el hechizo de condicionamiento desaparece, los sortilegios condicionados también se pierden. Pueden condicionarse tantos conjuros como se desee siempre que no excedan el Zeon máximo determinado por el Grado del conjuro. Sólo es posible mantener activo un conjuro de Condicionamiento a la vez.",
       "initialGrade": {
         "effect": "Zeón máximo 100.",
@@ -4008,7 +4008,7 @@
         "zeon": 600
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Otorga al hechicero la capacidad de tomar control del cuerpo de otro individuo, trasladando temporalmente una parte de su espíritu hasta el huésped. Este dominio permite al brujo utilizar o bien las habilidades del sujeto poseído o bien las suyas propias (el mago decide cada turno cual de ellas emplea, pero en ningún caso podrá mezclarlas ambas a la vez). En caso de que decida usar las habilidades del cuerpo poseído, las características físicas serán las del cuerpo poseído, y no las del lanzador del conjuro. Si el individuo no tiene una forma física similar a la del brujo, el lanzador aplicará un penalizador de entre –20 y –40, a discreción del DJ, a causa de la dificultad que entraña para él controlarlo correctamente. Mientras Posesión permanece activo, el cuerpo original del hechicero se encuentra en un estado de coma. Los ataques que no sean capaces de dañar energía sólo afectarán al cuerpo poseído, pero si son sobrenaturales, restarán puntos de vida a ambos por igual. Si el cuerpo es de un ser con acumulación, el brujo sólo sufre una décima parte del daño que recibe la forma física. En el caso de que el cuerpo muera, pero al brujo le sigan quedando puntos de vida, su espíritu regresa de inmediato a su forma original. Para evitar los efectos del conjuro, es necesario superar una RM. El afectado tiene derecho a una nueva tirada por día que transcurra, o cada vez que realice una acción que vaya completamente en contra de su comportamiento.",
       "initialGrade": {
         "effect": "RM 120.",
@@ -4078,7 +4078,7 @@
         "zeon": 500
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Este hechizo incrementa exponencialmente el potencial mágico ambiental, aumentando la capacidad de los brujos para dominar innatamente su magia. En reglas de juego, encanta una zona estática dentro de la cual los conjuros innatos tienen un potencial adicional de lo que indique el ACT del brujo. El lanzador posee la capacidad de elegir si este incremento favorece a todo el mundo, o si sólo él se beneficia de sus efectos.",
       "initialGrade": {
         "effect": "25 metros de radio / +10 al valor zeónico de la magia innata.",
@@ -4148,7 +4148,7 @@
         "zeon": 1000
       },
       "bookId": 12,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Este hechizo crea un área en cuyo interior el brujo se convierte en juez absoluto de lo que ocurre, obteniendo la capacidad de intervenir en las decisiones de todos los presentes. Si lo desea, puede vetar cualquier acción activa de los sujetos que se encuentren en el interior de la zona afectada, prohibiéndoles realizar cualquier cosa que él no quiera que hagan. El brujo no es capaz de someter a nadie a su voluntad, pero sí de impedirles actuar libremente. La prohibición es una acción pasiva, por lo que interrumpe incluso las acciones de individuos que le hayan ganado la iniciativa. El hechicero debe ser consciente de la maniobra que desea vetar. Cada vez que un personaje quiera realizar un acto que prohíba El Magistrado, necesita superar una RM o no podrá iniciarla. Si embargo, incluso si alguien consigue superar la Resistencia, no se verá totalmente libre del conjuro, ya que en el siguiente asalto volverá a someterse a la voluntad del Magistrado si no supera nuevamente el control. El área permanece estática en el lugar donde fue lanzada. La condición para ser afectado consiste, simplemente, en estar dentro del área del conjuro.",
       "initialGrade": {
         "effect": "50 metros de radio / RM 140.",

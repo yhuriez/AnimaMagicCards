@@ -240,7 +240,7 @@
         "zeon": 150
       },
       "bookId": 10,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "El ilusionista altera a la vista de los demás el aspecto físico de un individuo u objeto, modificándolo por otro a su elección. Este conjuro sólo podrá aumentar o reducir en tres grados las características de Tamaño y Apariencia del afectado. Cualquier sujeto que mire la ilusión, deberá superar una RM para ver la realidad que se esconde bajo este falso aspecto. Una vez que alguien es afectado por ella, sólo tendrá derecho a un nuevo control de Resistencia cuando posea algún motivo para sospechar que hay algo raro en la identidad o apariencia del sujeto.",
       "initialGrade": {
         "effect": "RM 120.",
@@ -450,7 +450,7 @@
         "zeon": 140
       },
       "bookId": 10,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Aumenta la Resistencia mágica de un sujeto contra los efectos ilusorios. El conjuro otorga un bonificador a toda RM contra cualquier conjuro de la vía Ilusión (o conjuros de naturaleza similar). Los efectos de este hechizo no se superponen, y sólo se puede afectar con él una vez a cada sujeto.",
       "initialGrade": {
         "effect": "+20 a la RM.",
@@ -485,7 +485,7 @@
         "zeon": 200
       },
       "bookId": 10,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Detecta automáticamente cualquier mentira que se diga en presencia del hechicero. Cada vez que alguien mienta conscientemente ante el brujo, deberá superar un control de RM o RP, o el lanzador se dará cuenta de que no ha dicho la verdad. Si alguien no sabe que esta mintiendo, no es afectado por el hechizo.",
       "initialGrade": {
         "effect": "RM o RP 120.",
@@ -555,7 +555,7 @@
         "zeon": 300
       },
       "bookId": 10,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Otorga al ilusionista la capacidad de alterar el resultado de cualquier detección de carácter sobrenatural que se realice a su alrededor. Podrá falsear la información de la forma que desee, aumentando o disminuyendo el potencial de una criatura o un artefacto, sus habilidades o su emplazamiento. El personaje que haya lanzado la detección deberá superar una RM para evitar ser engañado. Este conjuro no funciona contra los individuos que se encuentren dentro de su área de efecto, sino contra la propia detección sobrenatural. Por tanto, si alguien intenta detectar algo que está en el radio de acción del sortilegio, incluso si se encuentra físicamente fuera del radio del conjuro, deberá superar igualmente la RM. Sería el ejemplo de un brujo que, desde kilómetros de distancia, trata de encontrar mágicamente al ilusionista o a alguien que va a su lado. Por la misma razón, al afectar directamente a la detección, aquel que la emplee no se percata de que ha tenido que superar una Resistencia y puede estar siendo engañado.",
       "initialGrade": {
         "effect": "RM 120 / 10 metros de radio.",
@@ -590,7 +590,7 @@
         "zeon": 160
       },
       "bookId": 10,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Al lanzar este conjuro, el ilusionista induce a todo aquel que le escuche a creer sus mentiras, por absurdas o ilógicas que sean. Eso no significa que los afectados deban necesariamente obedecerle, pero sí se sentirán empujados a creerle. Cada vez que el ilusionista diga una mentira, quienes le escuchen deben superar una RM o le creerán. En el caso de que la mentira sea excepcionalmente increíble o un individuo esté prevenido hacia esta habilidad, puede aplicar un bono de +40 a su tirada.",
       "initialGrade": {
         "effect": "RM 100.",
@@ -765,7 +765,7 @@
         "zeon": 320
       },
       "bookId": 10,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "El ilusionista tiene la capacidad de obligar a un individuo a mentir. Puede constreñirle a hacerlo en absolutamente todo lo que diga, o únicamente en un tema determinado. El afectado no podrá indicar a otros que está mintiendo, ni tampoco dar información veraz sobre el tema (o temas) de ningún modo. Si alguien falla la RM o RP, sólo puede repetir el control una vez al día.",
       "initialGrade": {
         "effect": "RM o RP 140.",
@@ -800,7 +800,7 @@
         "zeon": 320
       },
       "bookId": 10,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Introduce recuerdos falsos en la mente de un individuo. El ilusionista puede alterar sus recuerdos, incluyendo todos los datos nuevos que desee. Una persona influida por este hechizo no es capaz de diferenciar los recuerdos ilusorios de los suyos propios. Una vez fallado el control, el personaje no tendrá derecho a una nueva tirada, salvo si encuentra motivos para pensar que esos recuerdos son falsos.",
       "initialGrade": {
         "effect": "RM o RP 140.",
@@ -835,7 +835,7 @@
         "zeon": 700
       },
       "bookId": 10,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Crea una enorme ilusión que afecta a los cinco sentidos humanos. El hechizo se manifiesta en una zona dentro de la cual las personas verán y sentirán todo lo que el hechicero desee. Por ejemplo, puede crear la apariencia de que un pueblo está deshabitado cuando en realidad es una próspera ciudad. Cualquiera que entre en la zona se verá afectado automáticamente por la ilusión si no supera una RM. Si falla el control, sus sentidos se adaptarán a la mentira, y sólo podrán repetir la Resistencia si encuentran algún motivo de sospecha sobre la autenticidad de lo que hay a su alrededor.",
       "initialGrade": {
         "effect": "RM 120 / 1 kilómetro de radio.",
@@ -940,7 +940,7 @@
         "zeon": 500
       },
       "bookId": 10,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "La persona u objeto que sea blanco de este conjuro no podrá ser percibido mediante ninguno de los sentidos naturales. Por tanto, no será visto, oído, olido, sentido o degustado de ningún modo, aunque seguirá siendo material y físico. Adicionalmente, mientras se mantenga el hechizo, el personaje tampoco dejará rastros o huellas visibles. La única manera de darse cuenta de su presencia será mediante alguna clase de detección sobrenatural ya sea mágica, psíquica o de Ki. Cualquiera que pueda sentirle mediante algún sentido natural debe superar automáticamente una RM o será incapaz de detectarle. Si alguien falla el control, sólo tendrá la oportunidad de repetirlo cada vez que tenga una causa para pensar que hay alguien a su alrededor.",
       "initialGrade": {
         "effect": "RM 120.",
@@ -975,7 +975,7 @@
         "zeon": 1500
       },
       "bookId": 10,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "El ilusionista logra, con este conjuro, engañar a la propia muerte. Mientras se encuentre activo, el individuo afectado por él no morirá de ningún modo, puesto que el flujo de almas ignora su presencia y será incapaz de reclamarlo. Aunque su espíritu no saldrá del cuerpo, su forma física puede ser destrozada, y el personaje seguirá sufriendo cualquier efecto perjudicial que le produzca el daño. Este conjuro no protege de un efecto que destruya el alma.",
       "initialGrade": {
         "effect": "Nivel 5.",

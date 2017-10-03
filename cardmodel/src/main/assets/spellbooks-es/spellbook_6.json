@@ -28,7 +28,7 @@
         "zeon": 180
       },
       "bookId": 6,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Atrae cualquier corriente o arroyo subterráneo que haya en las proximidades, haciendo brotar un manantial en el lugar designado por el brujo. El conjuro influye en los líquidos naturales que se encuentren a menos distancia del lanzador de lo que determina el grado del conjuro, aunque no es capaz de atravesar barreras de energía.",
       "initialGrade": {
         "effect": "100 metros.",
@@ -63,7 +63,7 @@
         "zeon": 140
       },
       "bookId": 6,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Crea intensidades de frío o hielo. Mientras se mantenga el conjuro, la temperatura se conservará.",
       "initialGrade": {
         "effect": "1 Intensidad.",
@@ -133,7 +133,7 @@
         "zeon": 300
       },
       "bookId": 6,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Este conjuro permite al hechicero, o a las personas que designe, ser inmune a intensidades de frío. En el caso de que se reciba un ataque basado en dicho elemento, cada intensidad a la que es inmune disminuye 5 puntos el daño base del ataque y otorga un +5 a las Resistencias contra sus efectos.",
       "initialGrade": {
         "effect": "5 intensidades de frío.",
@@ -238,7 +238,7 @@
         "zeon": 220
       },
       "bookId": 6,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Otorga completo control sobre una masa líquida. El hechizo permite alterar su forma y naturaleza, haciendo que se mueva por sí misma, dándole otra apariencia o incluso modificando su solidez. Si se ejecuta contra un elemental de agua, el mago podrá dominarlo si la criatura no supera una RM. Este sortilegio es incluso capaz de manejar el torrente sanguíneo de los seres vivos, pero en tal caso, el individuo afectado aplica un bono de +40 a su RM o RF. Manejar la sangre de una persona permite al hechicero producirle por asalto un negativo a la acción y un daño equivalente a la mitad del nivel de fracaso. En el caso de los elementales, tendrán derecho a un nuevo control al día o si reciben una orden completamente opuesta a su naturaleza, mientras que, cualquier otro individuo afectado, podrá repetirlo cada cinco asaltos para tratar de librarse completamente de la influencia del mago.",
       "initialGrade": {
         "effect": "RM o RF 100 / 5 litros.",
@@ -343,7 +343,7 @@
         "zeon": 220
       },
       "bookId": 6,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Provoca un intenso frío sobre una o varias personas, congelando sus cuerpos al tiempo que los encierra en prisiones de hielo. Si se concentra sobre un único antagonista, aumenta el valor de la Resistencia 20 puntos. Dependiendo del nivel de fracaso del control, las consecuencias del conjuro son distintas. Si la diferencia es menor de 20, el efecto es parálisis menor si es menor de 80, de parálisis normal, y si es superior, parálisis completa.",
       "initialGrade": {
         "effect": "RM 120 / 5 metros de radio.",
@@ -658,7 +658,7 @@
         "zeon": 600
       },
       "bookId": 6,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Otorga la capacidad de controlar limitadamente las corrientes de agua de mares y ríos, permitiendo al hechicero modificar su curso y potencia. El poder de este hechizo es tal, que el mago puede incluso producir pequeños maremotos o invertir el sentido de un río. Afecta en un radio alrededor del hechicero.",
       "initialGrade": {
         "effect": "500 metros de radio.",
@@ -868,7 +868,7 @@
         "zeon": 700
       },
       "bookId": 6,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Crea una entidad de agua con apariencia de vida bajo el control absoluto del hechicero. El ente será desarrollado como un Ser Entre Mundos, usando los poderes y limitaciones de los elementales de agua del Capítulo 26. Para calcular su nivel máximo, se emplean las mismas reglas que en el conjuro Crear Ser de la vía de Creación.",
       "initialGrade": {
         "effect": "Nivel 1.",
@@ -903,7 +903,7 @@
         "zeon": 800
       },
       "bookId": 6,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Este hechizo congela la magia, paralizando temporalmente un conjuro y anulando sus efectos. Mientras un sortilegio permanezca helado no desaparece, pero se queda estancado sin producir consecuencias, y tampoco requiere que se pague su mantenimiento. Afecta tanto a hechizos controlados por el brujo como a aquellos que han sido lanzados por terceros. En el momento en el que congelar la magia deja de mantenerse, el sortilegio estancado vuelve a ser efectivo. Dado que es pasivo, puede congelar hechizos que se usan en el mismo asalto en que es ejecutado.",
       "initialGrade": {
         "effect": "Valor zeónico máximo 150.",
@@ -938,7 +938,7 @@
         "zeon": 800
       },
       "bookId": 6,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "El brujo conjura el reflejo de un territorio, creando una realidad paralela a imagen y semejanza de un lugar que existe en el mundo real. El reflejo es idéntico al sitio imitado, incluyendo tanto construcciones como flora y clima, que permanecen inalterables de la manera en la que se encontraban cuando el sortilegio fue lanzado. Únicamente no podrán ser imitados los seres vivos con una presencia superior a 20 y los lugares con características excepcionales. En el momento de lanzar el conjuro, el hechicero debe crear distintas puertas que conecten el mundo real con su obra, que podrán ubicarse y tener la forma que desee. No hay un número máximo de aperturas, aunque por lo menos está obligado a crear una.",
       "initialGrade": {
         "effect": "500 metros de radio máximo.",
@@ -1008,7 +1008,7 @@
         "zeon": 1000
       },
       "bookId": 6,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Otorga el control absoluto de todas las sustancias líquidas que se encuentren en un radio de 100 kilómetros. Este dominio le permite alterar libremente los océanos, ríos y lagos de cualquier magnitud, moldeándolos a su antojo como si fuesen una extensión de su ser. Toda criatura basada en agua que se encuentre dentro del área del conjuro, deberá superar una RM o será controlada por el lanzador. Si la pasan, ya no necesitan volver a realizar el control. Los afectados tienen derecho a una nueva tirada únicamente si alteran su Resistencia base.",
       "initialGrade": {
         "effect": "100 kilómetros de radio / 140 RM.",
