@@ -101,7 +101,7 @@
       "initialGrade": {
         "effect": "1 día.",
         "requiredIntelligence": 6,
-        "retention": 5,
+        "retention": 15,
         "zeon": 100
       },
       "intermediateGrade": {

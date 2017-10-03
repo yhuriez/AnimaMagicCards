@@ -100,7 +100,7 @@
       "initialGrade": {
         "effect": "Presencia máxima 60.",
         "requiredIntelligence": 6,
-        "retention": 5,
+        "retention": 15,
         "zeon": 50
       },
       "intermediateGrade": {
@@ -135,7 +135,7 @@
       "initialGrade": {
         "effect": "Perdida de -10 PV / Calidad +0 / Objetos de hasta 2 kilos.",
         "requiredIntelligence": 6,
-        "retention": 10,
+        "retention": 30,
         "zeon": 80
       },
       "intermediateGrade": {

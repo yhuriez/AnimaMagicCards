@@ -1238,7 +1238,7 @@
         "retention": 150
       },
       "withRetention": true,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 36,

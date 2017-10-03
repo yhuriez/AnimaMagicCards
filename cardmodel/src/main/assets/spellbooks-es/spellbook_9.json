@@ -18,30 +18,30 @@
       "actionType": "Activa",
       "advancedGrade": {
         "effect": "Afecta tanto a seres naturales como a criaturas entre mundo.",
-        "requiredIntelligence": 16,
+        "requiredIntelligence": 10,
         "retention": 10,
-        "zeon": 1200
+        "zeon": 100
       },
       "arcaneGrade": {
         "effect": "Cualquier clase de criatura, incluyendo seres sobrenaturales de alto poder existencial.",
-        "requiredIntelligence": 18,
+        "requiredIntelligence": 12,
         "retention": 15,
-        "zeon": 1600
+        "zeon": 120
       },
       "bookId": 9,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Altera la esencia de un individuo, permitiéndole volverse afín a cualquier tipo de ser vivo y consiguiendo así que estos le reconozcan como un miembro de su especie. Como ejemplo, podría usarse este conjuro para adquirir afinidad hacia los lobos y, de ese modo, ser reconocido como un igual por estos. Sólo afecta a seres que se basen en instintos.",
       "initialGrade": {
         "effect": "Afecta a animales naturales (caballos, conejos, lobos…).",
-        "requiredIntelligence": 12,
+        "requiredIntelligence": 5,
         "retention": 5,
-        "zeon": 450
+        "zeon": 30
       },
       "intermediateGrade": {
         "effect": "Afecta a toda clase de criatura natural.",
-        "requiredIntelligence": 14,
+        "requiredIntelligence": 8,
         "retention": 10,
-        "zeon": 800
+        "zeon": 80
       },
       "level": 2,
       "name": "Afinidad Natural",
@@ -239,7 +239,7 @@
         "zeon": 300
       },
       "bookId": 9,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Conecta los sentidos del hechicero con los de otros individuos y viceversa, permitiéndoles ver y escuchar lo que los otros perciban. Si el brujo lo desea, es capaz de negar el acceso a sus propios sentidos. Para resistirse, se debe superar una RM o RP. Cualquier afectado tiene derecho a una nueva Resistencia cada hora. Puede afectar a varios individuos a la vez, siempre que la suma de la presencia de estos (sin incluir la del hechicero) no supere lo que determine el grado del conjuro.",
       "initialGrade": {
         "effect": "Presencia máxima 100 / RM o RP 100 / 1 kilómetro de distancia máxima.",
@@ -379,7 +379,7 @@
         "zeon": 360
       },
       "bookId": 9,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Concede a un individuo la capacidad de adquirir habilidades y características de los seres existentes en el reino animal o vegetal. A efectos de juego, concede PD adicionales al personaje para obtener habilidades secundarias, habilidades esenciales o poderes de la Creación de Seres. No obstante, sólo podrán escogerse habilidades secundarias de los campos físicos de Agilidad, Percepción y Fuerza, y los poderes especiales que tengan como requerimiento Gnosis 0. Los PD se invierten según los costes de la categoría del personaje. No puede aumentarse ningún campo de habilidades primarias, ni tampoco adquirir capacidades sobrenaturales. Hay que tener en cuenta que estos cambios afectarán temporalmente a la forma física del personaje. Si, por ejemplo, ha adquirido un Arma Natural de daño incrementado, lo más lógico sería que estuviese dotado de unas enormes garras o cuernos. Los efectos de este conjuro no se superponen, y sólo se puede afectar con él una vez a cada sujeto. Si quieren obtenerse poderes distintos, primero debe dejar de mantenerse el sortilegio y lanzar uno nuevo.",
       "initialGrade": {
         "effect": "+50 PD.",
@@ -484,7 +484,7 @@
         "zeon": 240
       },
       "bookId": 9,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Modifica el ritmo natural de desarrollo de un organismo, acelerando o retrasando su evolución. En juego, permite multiplicar o dividir el ritmo de envejecimiento de un cuerpo vivo por el valor que determina el grado del conjuro. Por ejemplo, si este conjuro se lanza en grado avanzado para acelerar el envejecimiento de alguien, cada día que transcurra será equivalente a cincuenta para el objetivo. Una vez alguien es afectado por este conjuro, no tiene derecho a repetir la RM mientras el lanzador mantenga el sortilegio.",
       "initialGrade": {
         "effect": "x2 al ritmo de crecimiento / RM 100.",
@@ -589,7 +589,7 @@
         "zeon": 300
       },
       "bookId": 9,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Por medio de este hechizo, el mago obtiene el dominio absoluto de un miembro de una raza natural con Gnosis 0, como animales, plantas o incluso seres humanos normales. El brujo podrá transmitir sus órdenes directamente por la conexión mística que crea con el afectado, sin la necesidad de hablarle o de que este le entienda. Para resistir los efectos del hechizo es necesario superar una RM (dado que se controla la esencia del sujeto y no su mente, no le es posible utilizar su RP). El individuo subyugado tendrá derecho a un nuevo control por día, y en cada ocasión en la que la reciba una orden que vaya completamente en contra de su naturaleza. Ante una petición que ponga su vida en peligro o le obligue a matar a alguien querido, podrá aplicar un bono de +20 a su RM.",
       "initialGrade": {
         "effect": "RM 80.",
@@ -694,7 +694,7 @@
         "zeon": 300
       },
       "bookId": 9,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Encanta una cierta zona, haciéndola impenetrable para un determinado tipo de ser. En el momento de lanzar el hechizo, el mago debe elegir a qué clase de seres les estará vedado el acceso, aunque tendrá libertad absoluta para seleccionar a tantos como desee. Podría, por ejemplo, prohibir el paso sólo a los elementales de fuego o permitir únicamente la entrada de humanos. La zona afectada no podrá tener una extensión mayor de lo que indique el grado del conjuro, o el doble en longitud si tiene forma de muro. Es decir, si lanza el conjuro en grado base el hechicero puede elegir entre que la zona tenga 20 metros de radio o una longitud de 40 metros en línea. Cualquier ser que tenga el paso vedado y que no supere una RM no será capaz de atravesar el escudo. Alguien que haya fallado el control tiene derecho a repetir la tirada una vez por hora. Si alguno de estos seres ya se encontraba en el interior de una zona escudada cuando el conjuro fue lanzado, podrá moverse libremente por ella hasta que salga y pretenda volver a entrar. Escudar permanece estático en el lugar donde es lanzado.",
       "initialGrade": {
         "effect": "RM 120 / 20 metros de radio.",
@@ -764,7 +764,7 @@
         "zeon": 300
       },
       "bookId": 9,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "El mago ata la esencia de dos individuos, formando una unidad indivisible. De este modo, cualquier daño o efecto espiritual que reciba uno de los afectados, lo sufrirán igualmente los demás. En el caso de los conjuros anímicos, se usará la RM más elevada. Si se ata la esencia de un ser normal con otro de acumulación de daño, el primero sólo sufrirá una quinta parte del daño recibido por la criatura. En el caso de que alguno de los blancos del conjuro quiera resistirse deberá superar una RM.",
       "initialGrade": {
         "effect": "Presencia máxima 100 / RM 120.",
@@ -869,7 +869,7 @@
         "zeon": 700
       },
       "bookId": 9,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Mediante su magia, el brujo crea un ente espiritual bajo su completo dominio. El ser debe ser desarrollado como un Espíritu, usando los poderes y limitaciones de dichos seres del Capítulo 26. La criatura tendrá PD y, para calcular su nivel máximo, se emplean las mismas reglas que en el conjuro Crear Ser de la vía de Creación.",
       "initialGrade": {
         "effect": "Nivel 1.",
@@ -974,7 +974,7 @@
         "zeon": 1000
       },
       "bookId": 9,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "El lanzador controla parte de la esencia del mundo, obteniendo el dominio absoluto de todos los Seres Naturales que se encuentren a su alrededor. Podrá transmitir sus órdenes directamente por la conexión mística que mantiene con los afectados, sin la necesidad de estar junto a ellos. Para resistirse, es necesario superar una RM (dado que controla la esencia misma de las criaturas, no es posible utilizar la RP). Los afectados tendrán derecho a una nueva Resistencia por día, y en cada ocasión en la que las órdenes recibidas vayan completamente en contra de su comportamiento.",
       "initialGrade": {
         "effect": "RM 100 / 100 kilómetros de radio.",

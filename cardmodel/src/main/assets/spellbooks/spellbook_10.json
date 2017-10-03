@@ -831,7 +831,7 @@
         "zeon": 250,
         "requiredIntelligence": 9,
         "effect": " MR 120 / 1km/1093yd area.",
-        "retention": 20
+        "retention": 25
       },
       "intermediateGrade": {
         "zeon": 350,

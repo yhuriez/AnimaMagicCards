@@ -131,7 +131,7 @@
         "zeon": 150
       },
       "bookId": 8,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "El blanco de este conjuro deja de tener la necesidad de respirar. Puede afectar a tantos individuos como desee el lanzador, siempre que la suma de sus presencias no supere lo que determine el grado del conjuro.",
       "initialGrade": {
         "effect": "Presencia máxima 80.",
@@ -376,7 +376,7 @@
         "zeon": 240
       },
       "bookId": 8,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Este conjuro electrifica un cuerpo físico, provocando potentes descargas a quien lo toque. Cualquier sujeto que se ponga en contacto con él, incluyendo el lanzador, deberá superar cada asalto una RF o perderá una cantidad de puntos de vida equivalente a la mitad del nivel de fracaso. El daño se considera producido por un ataque de electricidad. La máxima presencia del objeto así como su longitud máxima son determinadas por el grado del conjuro.",
       "initialGrade": {
         "effect": "RF 100 / Presencia máxima 30 / 1 metro de longitud.",
@@ -446,7 +446,7 @@
         "zeon": 140
       },
       "bookId": 8,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Incrementa de un modo increíble la velocidad de desplazamiento de los individuos afectados. A efectos de juego, dobla la cantidad de metros por asalto que un personaje puede moverse gracias a su Tipo de movimiento. Puede afectar a tantos blancos como desee el brujo, siempre que la suma de sus presencias no supere lo que determine el grado del conjuro.",
       "initialGrade": {
         "effect": "Presencia máxima 50.",
@@ -831,7 +831,7 @@
         "zeon": 500
       },
       "bookId": 8,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "El hechicero obtiene un completo control sobre el clima en un radio de acción determinado por el grado del conjuro. Podrá modificar cualquier elemento meteorológico a su antojo, creando la situación climática que desee de manera gradual.",
       "initialGrade": {
         "effect": "5 kilómetros.",
@@ -866,7 +866,7 @@
         "zeon": 700
       },
       "bookId": 8,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Crea una criatura de aire con apariencia de vida bajo el control absoluto del hechicero. El ente será desarrollado como un Ser Entre Mundos, usando los poderes y limitaciones de los elementales de aire del Capítulo 26. Para calcular su nivel máximo, se emplean las mismas reglas que en el conjuro Crear Ser de la vía de Creación.",
       "initialGrade": {
         "effect": "Nivel 1.",
@@ -901,7 +901,7 @@
         "zeon": 550
       },
       "bookId": 8,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Este conjuro permite al brujo mover a distancia cualquier cuerpo material, orgánico o inorgánico, sin la necesidad de que exista contacto físico con ellos y dotándoles de una velocidad equivalente a un Tipo de vuelo 10. Los seres vivos o criaturas de presencia sobrenatural excepcional podrán resistirse si superan una RM.",
       "initialGrade": {
         "effect": "RM 100 / 100 toneladas.",
@@ -936,7 +936,7 @@
         "zeon": 450
       },
       "bookId": 8,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Otorga al brujo la capacidad de trasladar libremente las fuentes mágicas que sustentan un conjuro activo de un sitio a otro. De este modo, puede mover un sortilegio de lugar y situarlo donde le plazca. Será capaz de trasladar cualquier conjuro mantenido, incluso si no se encuentra bajo su control. La distancia máxima de su reubicación queda determinada por las reglas generales de Proyección Mágica. Este hechizo puede emplearse tanto contra conjuros que afecten a un determinado lugar, como contra los que se encuentren sobre un individuo u objeto. Si lo que se traslada es un conjuro Anímico de un sujeto a otro, se tratará a todos los efectos del mismo modo que si acabase de ser lanzado por el hechicero, permitiendo al nuevo blanco defenderse de él y realizar un control de Resistencia con normalidad.",
       "initialGrade": {
         "effect": "Conjuros de hasta 100 puntos de Zeon.",
@@ -975,7 +975,7 @@
       "effect": "Este hechizo envuelve la esencia de su lanzador, haciendo que la magia fluya en él de un modo instintivo y manifestando automáticamente sus designios. Así pues, la magia y él responden como un solo ser ante cualquier acontecimiento. Mientras se mantenga, cualquier hechizo que ejecute el personaje se considerará una acción pasiva, incluidos los de Ataque y los Anímicos.",
       "initialGrade": {
         "effect": "Afecta a conjuros de grado Base.",
-        "requiredIntelligence": 12,
+        "requiredIntelligence": 10,
         "retention": 30,
         "zeon": 300
       },
@@ -1006,7 +1006,7 @@
         "zeon": 1000
       },
       "bookId": 8,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "El lanzador controla cualquier núcleo de aire y electricidad, sin importar el número de intensidades que lo compongan. Este dominio le permite también modificar a su antojo el clima, así como crear vendavales, tormentas o ventiscas de cualquier magnitud. Toda criatura basada en aire que se encuentre dentro del área del sortilegio, deberá superar una RM o será controlada de inmediato. Si la pasan, ya no necesitan volver a realizar el control. Los afectados tienen derecho a una nueva tirada únicamente si alteran su Resistencia base.",
       "initialGrade": {
         "effect": "100 kilómetros de radio / 140 RM.",

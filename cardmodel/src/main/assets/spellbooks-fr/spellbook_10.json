@@ -831,7 +831,7 @@
         "zeon": 250,
         "requiredIntelligence": 9,
         "effect": "RMys 120 / 1 km de rayon",
-        "retention": 20
+        "retention": 25
       },
       "intermediateGrade": {
         "zeon": 350,

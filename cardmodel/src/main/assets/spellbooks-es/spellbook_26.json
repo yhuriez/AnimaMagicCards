@@ -101,7 +101,7 @@
       "initialGrade": {
         "effect": "200 Puntos de Resistencia / Dificultad 14 / RF 100.",
         "requiredIntelligence": 6,
-        "retention": 5,
+        "retention": 15,
         "zeon": 50
       },
       "intermediateGrade": {

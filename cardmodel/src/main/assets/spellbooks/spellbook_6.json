@@ -327,7 +327,7 @@
         "retention": 20
       },
       "withRetention": true,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 10,
