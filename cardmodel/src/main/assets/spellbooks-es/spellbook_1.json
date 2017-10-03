@@ -27,7 +27,7 @@
         "zeon": 200
       },
       "bookId": 1,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Crea una fuente de luz en un punto u objeto determinado por el hechicero.",
       "initialGrade": {
         "effect": "5 metros de zona iluminada.",
@@ -867,7 +867,7 @@
         "zeon": 300
       },
       "bookId": 1,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Encanta una zona, haciéndola impenetrable para los seres basados naturalmente en sentimientos negativos u oscuridad. Cualquiera de estas criaturas que entre en la zona del conjuro, deberá realizar cada asalto una RM o sufrir una pérdida en puntos de vida equivalente al nivel de fracaso. Adicionalmente, de fallar el control, el ser recibirá de inmediato un penalizador a toda acción de -40 mientras siga en su interior. La zona afectada permanece estática en el lugar donde fue lanzada.",
       "initialGrade": {
         "effect": "RM 120 / radio de 20 metros.",
@@ -1147,7 +1147,7 @@
         "zeon": 700
       },
       "bookId": 1,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Crea un ser luminoso con apariencia de vida, bajo el control absoluto del hechicero. El ente será desarrollado como un Ser Entre Mundos, usando los poderes y limitaciones de los elementales de Luz del Capítulo 26. Para calcular su nivel máximo se emplean las mismas reglas que en el conjuro Crear Ser, de la vía de Creación.",
       "initialGrade": {
         "effect": "Nivel 1.",
@@ -1231,7 +1231,7 @@
         "retention": 50,
         "zeon": 250
       },
-      "level": 86,
+      "level": 88,
       "name": "Omnisciencia Radial",
       "spellId": 35,
       "type": "Efecto",
