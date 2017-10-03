@@ -100,7 +100,7 @@ class SpellFilesGenerator {
 
         primarySpellbooks.forEach{ (spellbook, _) ->
             spellbook.secondaryBookAccessibles = secondarySpellbooks
-                    .filter { it.key.primaryBookUnaccessibles.contains(spellbook.bookName) }
+                    .filterNot { it.key.primaryBookUnaccessibles.contains(spellbook.bookName) }
                     .map { it.key.bookName.toLowerCase().capitalize() }
             spellbook.oppositeBook = oppositePathMap[spellbook.bookName]
             spellbook.description  = descriptionMap[spellbook.bookName]
