@@ -219,7 +219,7 @@
         "retention": 20
       },
       "withRetention": true,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 7,
@@ -630,13 +630,13 @@
         "zeon": 200,
         "requiredIntelligence": 14,
         "effect": " MR 180 / +140 to Table Result / 150m/194yd area.",
-        "retention": 20
+        "retention": 15
       },
       "arcaneGrade": {
         "zeon": 260,
         "requiredIntelligence": 16,
         "effect": " MR 200 / +160 to Table Result / 200m/218yd area.",
-        "retention": 25
+        "retention": 20
       },
       "withRetention": true,
       "dailyRetention": false
@@ -1059,7 +1059,7 @@
         "retention": 110
       },
       "withRetention": true,
-      "dailyRetention": true
+      "dailyRetention": false
     }
   ]
 }

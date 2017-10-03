@@ -31,7 +31,7 @@
         "zeon": 120
       },
       "bookId": 5,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Crea intensidades de fuego. Mientras se mantenga el conjuro, la temperatura se conservará.",
       "initialGrade": {
         "effect": "1 intensidad de fuego.",
@@ -45,7 +45,7 @@
         "retention": 10,
         "zeon": 80
       },
-      "level": 6,
+      "level": 2,
       "name": "Crear Fuego",
       "spellId": 1,
       "type": "Efecto",
@@ -381,7 +381,7 @@
         "zeon": 300
       },
       "bookId": 5,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Aumenta la temperatura ambiente. Si la temperatura aumenta 10 grados por encima de lo que es natural en una zona en su momento más cálido, el índice de aumento se reduce a la mitad.",
       "initialGrade": {
         "effect": "+5 grados / 1 kilómetro de radio.",
@@ -591,7 +591,7 @@
         "zeon": 300
       },
       "bookId": 5,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Permite al hechicero consumir su propia fuerza vital para incrementar sus capacidades físicas cuando lo requiera. Este conjuro otorga la habilidad pasiva de sacrificar temporalmente sus puntos de vida para obtener un bonificador a una acción determinada. Cada 5 puntos de vida que gaste de esta forma proporcionarán al personaje +5 a una de sus tiradas (en el caso de las criaturas de acumulación de daño, será necesario multiplicar estos puntos por su múltiplo de acumulación). Este bono sólo será aplicable a las acciones físicas, pero podrá sumarse a habilidades primarias como ataque, defensa o Proyección Mágica. A pesar de ser una acción pasiva, es necesario declarar el sacrificio antes de lanzar los dados. Es también posible que el brujo decida conferir esta habilidad a otro individuo, siendo entonces este quien decida cuántos puntos gastar en cada caso. Los puntos de vida perdidos de esta forma se recuperan a un ritmo de 10 al día, sin importar lo que indique la Regeneración natural del personaje (es decir, cuentan como un Sacrificio). Sus efectos no se superponen, y sólo se puede tener un conjuro de esta clase activo sobre un individuo determinado.",
       "initialGrade": {
         "effect": "Sacrificio máximo de 50 Puntos de Vida por asalto.",
@@ -696,7 +696,7 @@
         "zeon": 300
       },
       "bookId": 5,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Permite al hechicero consumir su propia energía mágica para incrementar su acumulación mágica. Este conjuro otorga la habilidad pasiva de gastar puntos de Zeon para obtener un bono temporal a su ACT. Cada 10 puntos que invierta con este fin, le proporcionarán un +5 a su ACT hasta el fin del turno. Sus efectos no se superponen, y sólo se puede tener un conjuro de esta clase activo sobre un individuo determinado.",
       "initialGrade": {
         "effect": "20 puntos de Zeon por asalto.",
@@ -766,7 +766,7 @@
         "zeon": 300
       },
       "bookId": 5,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Permite al hechicero consumir su propia energía mágica, para incrementar temporalmente sus atributos y las habilidades que dependan de ellos. Este conjuro otorga la habilidad pasiva de sacrificar sus puntos de Zeon para obtener un bonificador a las características. Cada 25 puntos de Zeon que gaste de esta forma le proporcionarán un +1 a uno de sus atributos hasta el final del turno. Sus efectos no se superponen, y sólo se puede tener un conjuro de esta clase activo sobre un individuo determinado.",
       "initialGrade": {
         "effect": "50 puntos de Zeon por asalto.",
@@ -836,7 +836,7 @@
         "zeon": 300
       },
       "bookId": 5,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Permite al hechicero consumir su propia fuerza vital para incrementar su reserva de magia. Este conjuro otorga la habilidad pasiva de sacrificar temporalmente puntos de vida para recuperar Zeon. Cada 5 PV que se sacrifiquen con este objetivo, proporcionan al personaje 100 puntos de Zeon que gastar (en el caso de las criaturas con acumulación de daño, la cantidad a sacrificar aumentará dependiendo de su múltiplo). Los puntos de vida perdidos mediante este método se recuperarán a un ritmo de 10 puntos por día, sin importar la Regeneración natural del personaje ni los conjuros de curación que emplee (es decir, cuentan como un Sacrificio). Sus efectos no se superponen, y sólo se puede tener un conjuro de esta clase activo sobre un individuo determinado.",
       "initialGrade": {
         "effect": "20 puntos de vida asalto.",
@@ -871,7 +871,7 @@
         "zeon": 700
       },
       "bookId": 5,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Crea una criatura de fuego con apariencia de vida, bajo el control absoluto del hechicero. El ente será desarrollado como un Ser Entre Mundos, usando los poderes y limitaciones de los elementales de Fuego del Capítulo 26. La criatura tendrá PD y, para calcular su nivel máximo, se emplean las mismas reglas que en el conjuro Crear Ser de la vía de Creación.",
       "initialGrade": {
         "effect": "Nivel 1.",
@@ -906,7 +906,7 @@
         "zeon": 400
       },
       "bookId": 5,
-      "dailyRetention": false,
+      "dailyRetention": true,
       "effect": "Crea intensidades de fuego. Mientras se mantenga el conjuro, la llama seguirá ardiendo incluso sin nada que consumir. Si se prende en algo inflamable, arderá naturalmente tras finalizar el hechizo.",
       "initialGrade": {
         "effect": "15 intensidades.",

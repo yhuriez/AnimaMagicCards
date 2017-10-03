@@ -219,7 +219,7 @@
         "retention": 20
       },
       "withRetention": true,
-      "dailyRetention": true
+      "dailyRetention": false
     },
     {
       "spellId": 7,
@@ -630,13 +630,13 @@
         "zeon": 200,
         "requiredIntelligence": 14,
         "effect": "RMys 180 / +140 sur la table 73 / 150 m de rayon",
-        "retention": 20
+        "retention": 15
       },
       "arcaneGrade": {
         "zeon": 260,
         "requiredIntelligence": 16,
         "effect": "RMys 200 / +160 sur la table 73 / 200 m de rayon",
-        "retention": 25
+        "retention": 20
       },
       "withRetention": true,
       "dailyRetention": false
@@ -1059,7 +1059,7 @@
         "retention": 110
       },
       "withRetention": true,
-      "dailyRetention": true
+      "dailyRetention": false
     }
   ]
 }
