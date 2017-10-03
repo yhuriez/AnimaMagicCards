@@ -4,12 +4,14 @@
   "description": "La nigromancia es una perversión de la magia como tal. Mientras que el resto de vías se alimenta de las energías de la red de almas, la nigromancia las arranca de allí. Sus conjuros destruyen la esencia de la vida, estancando y pervirtiendo las almas que utiliza. Su poder permite devolver la vida a los muertos, destruir las almas y drenar la vida y la esencia de otros seres.",
   "oppositeBook": "El resto de las vías de magia.",
   "secondaryBookAccessibles": [
-    "Caos",
-    "Literae",
-    "Musical",
-    "Nobleza",
-    "Paz",
-    "Tiempo"
+    "Guerra",
+    "Muerte",
+    "Pecado",
+    "Conocimiento",
+    "Sangre",
+    "Sueños",
+    "Umbral",
+    "Vacío"
   ],
   "spells": [
     {

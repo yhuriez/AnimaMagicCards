@@ -1,6 +1,7 @@
 {
   "bookId": 12,
   "bookName": "Libre Acceso",
+  "description": "Los conjuros de Libre Acceso son sortilegios genéricos que, sin pertenecer a una vía determinada, pueden ser aprendidos por los magos mientras estudian magia.",
   "secondaryBookAccessibles": [],
   "spells": [
     {

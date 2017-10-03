@@ -4,16 +4,10 @@
   "description": "Es la vía de lo etéreo y lo incorpóreo. Recoge los conjuros de velocidad y movimiento. Con su poder se puede alterar el espacio y transportar cuerpos de un lugar a otro. También es la vía que controla el clima y la electricidad.",
   "oppositeBook": "Aire",
   "secondaryBookAccessibles": [
-    "Caos",
-    "Literae",
-    "Muerte",
-    "Musical",
-    "Pecado",
-    "Conocimiento",
-    "Sangre",
-    "Sueños",
-    "Tiempo",
-    "Vacío"
+    "Guerra",
+    "Nobleza",
+    "Paz",
+    "Umbral"
   ],
   "spells": [
     {

@@ -4,15 +4,11 @@
   "description": "El poder de esta vía permite al hechicero controlar el engaño y la ilusión. Sus conjuros pueden alterar la realidad, y con ella la percepción de las personas.",
   "oppositeBook": "Esencia",
   "secondaryBookAccessibles": [
-    "Caos",
-    "Guerra",
-    "Muerte",
-    "Paz",
-    "Pecado",
-    "Conocimiento",
-    "Sangre",
-    "Tiempo",
-    "Vacío"
+    "Literae",
+    "Musical",
+    "Nobleza",
+    "Sueños",
+    "Umbral"
   ],
   "spells": [
     {

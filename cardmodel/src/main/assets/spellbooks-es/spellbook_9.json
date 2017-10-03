@@ -4,14 +4,12 @@
   "description": "La Esencia controla la vida y las almas. Esta vía tiene el poder sobre los espíritus y los seres naturales que pertenecen al mundo. Es también la vía de la naturaleza y los conjuros de origen druídicos.",
   "oppositeBook": "Ilusión",
   "secondaryBookAccessibles": [
-    "Caos",
-    "Literae",
-    "Muerte",
-    "Nobleza",
-    "Pecado",
-    "Tiempo",
-    "Umbral",
-    "Vacío"
+    "Guerra",
+    "Musical",
+    "Paz",
+    "Conocimiento",
+    "Sangre",
+    "Sueños"
   ],
   "spells": [
     {

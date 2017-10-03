@@ -4,11 +4,15 @@
   "description": "La Tierra es el poder del planeta, la piedra y los minerales. Es la magia más material de todas y controla las leyes de la física, como la gravedad y el magnetismo. Su influencia sobre los espíritus y lo inmaterial es muy limitada. Los conjuros de piedra recogen la magia relacionada con la resistencia, la dureza y la lentitud.",
   "oppositeBook": "Tierra",
   "secondaryBookAccessibles": [
-    "Guerra",
-    "Literae",
-    "Muerte",
-    "Sangre",
-    "Tiempo"
+    "Caos",
+    "Musical",
+    "Nobleza",
+    "Paz",
+    "Pecado",
+    "Conocimiento",
+    "Sueños",
+    "Umbral",
+    "Vacío"
   ],
   "spells": [
     {
