@@ -30,4 +30,10 @@
     <string name="spellbook_title_war">Guerra</string>
     <string name="spellbook_title_water">Agua</string>
     <string name="spellbook_title_wind">Aire</string>
+
+    <string name="enum_major_type">Mayor</string>
+    <string name="enum_minor_type">Menor</string>
+
+    <string name="enum_active_type">Activa</string>
+    <string name="enum_passive_type">Pasiva</string>
 </resources>

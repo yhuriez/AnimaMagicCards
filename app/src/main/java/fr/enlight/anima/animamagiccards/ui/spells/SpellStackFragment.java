@@ -355,7 +355,7 @@ public class SpellStackFragment extends Fragment implements LoaderManager.Loader
 
         SpellActionType spellActionType = filterViewModel.getSpellActionType();
         if (spellActionType != null) {
-            filters.add(spellFilterFactory.createActionTypeSpellFilter(spellActionType));
+            filters.add(spellFilterFactory.createActionTypeSpellFilter(getActivity(), spellActionType));
         }
 
         getLoaderManager().restartLoader(1, getArguments(), this);

@@ -1,6 +1,7 @@
 package fr.enlight.anima.cardmodel.business;
 
 
+import android.content.Context;
 import android.support.annotation.NonNull;
 
 import java.util.List;
@@ -32,8 +33,8 @@ public class SpellFilterFactory {
         return new ZeonSpellFilter(zeon, retention, dailyOnly);
     }
 
-    public SpellFilter createActionTypeSpellFilter(SpellActionType spellActionType){
-        return new ActionTypeSpellFilter(spellActionType.name);
+    public SpellFilter createActionTypeSpellFilter(Context context, SpellActionType spellActionType){
+        return new ActionTypeSpellFilter(context.getString(spellActionType.name));
     }
 
     public SpellFilter createLevelWindowFilter(int bottomLevel, int topLevel) {
