@@ -1330,8 +1330,43 @@
       "level": 40,
       "name": "Purificación",
       "spellId": 38,
-      "type": "T i p o",
+      "type": "Efecto",
       "withRetention": false
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
+        "effect": "RM 120.",
+        "requiredIntelligence": 12,
+        "retention": 15,
+        "zeon": 120
+      },
+      "arcaneGrade": {
+        "effect": "RM 130.",
+        "requiredIntelligence": 14,
+        "retention": 15,
+        "zeon": 140
+      },
+      "bookId": 12,
+      "dailyRetention": false,
+      "effect": "Modifica la apariencia facial y corporal del sujeto sobre el que es lanzado. Puede alterar su color de piel o su fisonomía, pero no variar su altura o peso más allá de los límites impuestos por su Tamaño. Para resistir la alteración, es necesario superar una RM. Una vez fallada, sólo es posible repetir el control una vez por día.",
+      "initialGrade": {
+        "effect": "RM 100.",
+        "requiredIntelligence": 7,
+        "retention": 10,
+        "zeon": 80
+      },
+      "intermediateGrade": {
+        "effect": "RM 110.",
+        "requiredIntelligence": 10,
+        "retention": 10,
+        "zeon": 100
+      },
+      "level": 40,
+      "name": "Cambio de Aspecto",
+      "spellId": 39,
+      "type": "Efecto, Anímico",
+      "withRetention": true
     },
     {
       "actionType": "Activa",
@@ -1363,9 +1398,9 @@
         "zeon": 100
       },
       "level": 40,
-      "name": "Cambio de Aspecto",
-      "spellId": 39,
-      "type": "Efecto, Anímico",
+      "name": "Modificar el Tamaño",
+      "spellId": 40,
+      "type": "Anímico",
       "withRetention": true
     },
     {
@@ -1399,7 +1434,7 @@
       },
       "level": 40,
       "name": "Invocar Agresividad",
-      "spellId": 40,
+      "spellId": 41,
       "type": "Automático",
       "withRetention": true
     },
@@ -1434,7 +1469,7 @@
       },
       "level": 40,
       "name": "Eliminar Conjuros",
-      "spellId": 41,
+      "spellId": 42,
       "type": "Efecto",
       "withRetention": false
     },
@@ -1469,7 +1504,7 @@
       },
       "level": 40,
       "name": "Resistencia al Dolor",
-      "spellId": 42,
+      "spellId": 43,
       "type": "Efecto",
       "withRetention": true
     },
@@ -1504,7 +1539,7 @@
       },
       "level": 40,
       "name": "Descarga de Magia",
-      "spellId": 43,
+      "spellId": 44,
       "type": "Ataque",
       "withRetention": false
     },
@@ -1539,7 +1574,7 @@
       },
       "level": 40,
       "name": "Eliminar los Sueños",
-      "spellId": 44,
+      "spellId": 45,
       "type": "Anímico",
       "withRetention": true
     },
@@ -1574,7 +1609,7 @@
       },
       "level": 40,
       "name": "Extender la Presencia",
-      "spellId": 45,
+      "spellId": 46,
       "type": "Efecto",
       "withRetention": true
     },
@@ -1609,7 +1644,7 @@
       },
       "level": 40,
       "name": "Curar Enfermedades",
-      "spellId": 46,
+      "spellId": 47,
       "type": "Efecto",
       "withRetention": false
     },
@@ -1644,7 +1679,7 @@
       },
       "level": 40,
       "name": "Percibir Sentimientos",
-      "spellId": 47,
+      "spellId": 48,
       "type": "Detección",
       "withRetention": true
     },
@@ -1679,7 +1714,7 @@
       },
       "level": 50,
       "name": "Anulación de Magia",
-      "spellId": 48,
+      "spellId": 49,
       "type": "Automático",
       "withRetention": true
     },
@@ -1714,7 +1749,7 @@
       },
       "level": 50,
       "name": "Deshacer",
-      "spellId": 49,
+      "spellId": 50,
       "type": "Efecto",
       "withRetention": false
     },
@@ -1749,7 +1784,7 @@
       },
       "level": 50,
       "name": "Maldición",
-      "spellId": 50,
+      "spellId": 51,
       "type": "Anímico",
       "withRetention": true
     },
@@ -1784,7 +1819,7 @@
       },
       "level": 50,
       "name": "Leer la Mente",
-      "spellId": 51,
+      "spellId": 52,
       "type": "Anímico",
       "withRetention": true
     },
@@ -1819,7 +1854,7 @@
       },
       "level": 50,
       "name": "Alterar Energía",
-      "spellId": 52,
+      "spellId": 53,
       "type": "Anímico",
       "withRetention": true
     },
@@ -1854,7 +1889,7 @@
       },
       "level": 50,
       "name": "Enviar Sueños",
-      "spellId": 53,
+      "spellId": 54,
       "type": "Automático",
       "withRetention": false
     },
@@ -1889,7 +1924,7 @@
       },
       "level": 50,
       "name": "Absorber Información",
-      "spellId": 54,
+      "spellId": 55,
       "type": "Efecto",
       "withRetention": false
     },
@@ -1924,7 +1959,7 @@
       },
       "level": 50,
       "name": "Amistad",
-      "spellId": 55,
+      "spellId": 56,
       "type": "Anímico",
       "withRetention": true
     },
@@ -1959,7 +1994,7 @@
       },
       "level": 50,
       "name": "Causar Enfermedad",
-      "spellId": 56,
+      "spellId": 57,
       "type": "Anímico",
       "withRetention": false
     },
@@ -1994,7 +2029,7 @@
       },
       "level": 50,
       "name": "Transporte Rápido",
-      "spellId": 57,
+      "spellId": 58,
       "type": "Efecto",
       "withRetention": false
     },
@@ -2029,7 +2064,7 @@
       },
       "level": 50,
       "name": "Enlentecer",
-      "spellId": 58,
+      "spellId": 59,
       "type": "Anímico",
       "withRetention": true
     },
@@ -2064,7 +2099,7 @@
       },
       "level": 50,
       "name": "Mostrar lo Invisible",
-      "spellId": 59,
+      "spellId": 60,
       "type": "Automático",
       "withRetention": true
     },
@@ -2099,7 +2134,7 @@
       },
       "level": 60,
       "name": "Ceguera",
-      "spellId": 60,
+      "spellId": 61,
       "type": "Anímico",
       "withRetention": true
     },
@@ -2134,7 +2169,7 @@
       },
       "level": 60,
       "name": "Visualizar Cartografía",
-      "spellId": 61,
+      "spellId": 62,
       "type": "Efecto",
       "withRetention": false
     },
@@ -2169,7 +2204,7 @@
       },
       "level": 60,
       "name": "Sordera",
-      "spellId": 62,
+      "spellId": 63,
       "type": "Anímico",
       "withRetention": true
     },
@@ -2204,7 +2239,7 @@
       },
       "level": 60,
       "name": "Mudez",
-      "spellId": 63,
+      "spellId": 64,
       "type": "Anímico",
       "withRetention": true
     },
@@ -2239,7 +2274,7 @@
       },
       "level": 60,
       "name": "Curar Heridas",
-      "spellId": 64,
+      "spellId": 65,
       "type": "Efecto",
       "withRetention": false
     },
@@ -2274,7 +2309,7 @@
       },
       "level": 60,
       "name": "Eliminar Cansancio",
-      "spellId": 65,
+      "spellId": 66,
       "type": "Efecto",
       "withRetention": false
     },
@@ -2309,7 +2344,7 @@
       },
       "level": 60,
       "name": "Montura Mágica",
-      "spellId": 66,
+      "spellId": 67,
       "type": "Efecto",
       "withRetention": true
     },
@@ -2344,7 +2379,7 @@
       },
       "level": 60,
       "name": "Andar por las Paredes",
-      "spellId": 67,
+      "spellId": 68,
       "type": "Efecto",
       "withRetention": true
     },
@@ -2379,7 +2414,7 @@
       },
       "level": 60,
       "name": "Fusionar con el Cuerpo",
-      "spellId": 68,
+      "spellId": 69,
       "type": "Efecto",
       "withRetention": true
     },
@@ -2414,7 +2449,7 @@
       },
       "level": 60,
       "name": "Nube Ácida",
-      "spellId": 69,
+      "spellId": 70,
       "type": "Automático",
       "withRetention": true
     },
@@ -2449,7 +2484,7 @@
       },
       "level": 60,
       "name": "Desproteger",
-      "spellId": 70,
+      "spellId": 71,
       "type": "Automático",
       "withRetention": true
     },
@@ -2484,7 +2519,7 @@
       },
       "level": 60,
       "name": "Dormir",
-      "spellId": 71,
+      "spellId": 72,
       "type": "Anímico",
       "withRetention": true
     },
@@ -2519,7 +2554,7 @@
       },
       "level": 70,
       "name": "Aumentar Características Mentales",
-      "spellId": 72,
+      "spellId": 73,
       "type": "Efecto",
       "withRetention": true
     },
@@ -2554,7 +2589,7 @@
       },
       "level": 70,
       "name": "Alteración Menor",
-      "spellId": 73,
+      "spellId": 74,
       "type": "Efecto",
       "withRetention": true
     },
@@ -2589,7 +2624,7 @@
       },
       "level": 70,
       "name": "Crear Emociones",
-      "spellId": 74,
+      "spellId": 75,
       "type": "Anímico",
       "withRetention": true
     },
@@ -2624,7 +2659,7 @@
       },
       "level": 70,
       "name": "Paralizar",
-      "spellId": 75,
+      "spellId": 76,
       "type": "Anímico",
       "withRetention": true
     },
@@ -2659,7 +2694,7 @@
       },
       "level": 70,
       "name": "Aumentar Características Físicas",
-      "spellId": 76,
+      "spellId": 77,
       "type": "Efecto",
       "withRetention": true
     },
@@ -2694,7 +2729,7 @@
       },
       "level": 70,
       "name": "Arma Mágica",
-      "spellId": 77,
+      "spellId": 78,
       "type": "Efecto",
       "withRetention": true
     },
@@ -2729,7 +2764,7 @@
       },
       "level": 70,
       "name": "Debilidad",
-      "spellId": 78,
+      "spellId": 79,
       "type": "Anímico",
       "withRetention": true
     },
@@ -2764,7 +2799,7 @@
       },
       "level": 70,
       "name": "Cuerpo a Magia",
-      "spellId": 79,
+      "spellId": 80,
       "type": "Efecto",
       "withRetention": true
     },
@@ -2799,7 +2834,7 @@
       },
       "level": 70,
       "name": "Resistir",
-      "spellId": 80,
+      "spellId": 81,
       "type": "Efecto",
       "withRetention": true
     },
@@ -2834,7 +2869,7 @@
       },
       "level": 70,
       "name": "Olvido",
-      "spellId": 81,
+      "spellId": 82,
       "type": "Anímico",
       "withRetention": false
     },
@@ -2869,7 +2904,7 @@
       },
       "level": 70,
       "name": "Rechazo",
-      "spellId": 82,
+      "spellId": 83,
       "type": "Efecto",
       "withRetention": true
     },
@@ -2904,7 +2939,7 @@
       },
       "level": 70,
       "name": "Plaga",
-      "spellId": 83,
+      "spellId": 84,
       "type": "Automático",
       "withRetention": false
     },
@@ -2939,7 +2974,7 @@
       },
       "level": 80,
       "name": "Inutilidad",
-      "spellId": 84,
+      "spellId": 85,
       "type": "Anímico",
       "withRetention": true
     },
@@ -2974,7 +3009,7 @@
       },
       "level": 80,
       "name": "Esfera de Levitación",
-      "spellId": 85,
+      "spellId": 86,
       "type": "Anímico",
       "withRetention": true
     },
@@ -3009,7 +3044,7 @@
       },
       "level": 80,
       "name": "Vuelo",
-      "spellId": 86,
+      "spellId": 87,
       "type": "Efecto",
       "withRetention": true
     },
@@ -3044,7 +3079,7 @@
       },
       "level": 80,
       "name": "Dominio",
-      "spellId": 87,
+      "spellId": 88,
       "type": "Anímico",
       "withRetention": true
     },
@@ -3079,7 +3114,7 @@
       },
       "level": 80,
       "name": "Erudición Defensiva",
-      "spellId": 88,
+      "spellId": 89,
       "type": "Efecto",
       "withRetention": true
     },
@@ -3114,7 +3149,7 @@
       },
       "level": 80,
       "name": "Invisibilidad",
-      "spellId": 89,
+      "spellId": 90,
       "type": "Efecto",
       "withRetention": true
     },
@@ -3149,7 +3184,7 @@
       },
       "level": 80,
       "name": "Desviar Trayectoria",
-      "spellId": 90,
+      "spellId": 91,
       "type": "Efecto, Defensa",
       "withRetention": false
     },
@@ -3184,7 +3219,7 @@
       },
       "level": 80,
       "name": "Estancar Conjuro",
-      "spellId": 91,
+      "spellId": 92,
       "type": "Efecto",
       "withRetention": false
     },
@@ -3219,7 +3254,7 @@
       },
       "level": 80,
       "name": "Contención",
-      "spellId": 92,
+      "spellId": 93,
       "type": "Automático",
       "withRetention": true
     },
@@ -3254,7 +3289,7 @@
       },
       "level": 80,
       "name": "Marca de Detección",
-      "spellId": 93,
+      "spellId": 94,
       "type": "Efecto, Anímico",
       "withRetention": true
     },
@@ -3289,7 +3324,7 @@
       },
       "level": 80,
       "name": "Erudición Ofensiva",
-      "spellId": 94,
+      "spellId": 95,
       "type": "Efecto",
       "withRetention": true
     },
@@ -3324,7 +3359,7 @@
       },
       "level": 80,
       "name": "Blanco Perfecto",
-      "spellId": 95,
+      "spellId": 96,
       "type": "Efecto",
       "withRetention": false
     },
@@ -3359,7 +3394,7 @@
       },
       "level": 90,
       "name": "Desencantamiento",
-      "spellId": 96,
+      "spellId": 97,
       "type": "Efecto",
       "withRetention": false
     },
@@ -3394,7 +3429,7 @@
       },
       "level": 90,
       "name": "Conjuro Natural",
-      "spellId": 97,
+      "spellId": 98,
       "type": "Efecto",
       "withRetention": true
     },
@@ -3429,7 +3464,7 @@
       },
       "level": 90,
       "name": "Inmortalidad",
-      "spellId": 98,
+      "spellId": 99,
       "type": "Efecto",
       "withRetention": true
     },
@@ -3464,7 +3499,7 @@
       },
       "level": 90,
       "name": "Eliminar Necesidades",
-      "spellId": 99,
+      "spellId": 100,
       "type": "Efecto",
       "withRetention": true
     },
@@ -3499,7 +3534,7 @@
       },
       "level": 90,
       "name": "Robar Conjuro",
-      "spellId": 100,
+      "spellId": 101,
       "type": "Automático",
       "withRetention": false
     },
@@ -3534,7 +3569,7 @@
       },
       "level": 90,
       "name": "Portal",
-      "spellId": 101,
+      "spellId": 102,
       "type": "Efecto",
       "withRetention": true
     },
@@ -3569,7 +3604,7 @@
       },
       "level": 90,
       "name": "Prisma de Magia",
-      "spellId": 102,
+      "spellId": 103,
       "type": "Efecto",
       "withRetention": true
     },
@@ -3604,7 +3639,7 @@
       },
       "level": 90,
       "name": "Localización",
-      "spellId": 103,
+      "spellId": 104,
       "type": "Detección",
       "withRetention": false
     },
@@ -3639,7 +3674,7 @@
       },
       "level": 90,
       "name": "Inmunidad Física",
-      "spellId": 104,
+      "spellId": 105,
       "type": "Efecto",
       "withRetention": true
     },
@@ -3674,7 +3709,7 @@
       },
       "level": 90,
       "name": "Devolución de Conjuro",
-      "spellId": 105,
+      "spellId": 106,
       "type": "Automático",
       "withRetention": false
     },
@@ -3709,7 +3744,7 @@
       },
       "level": 90,
       "name": "Preparar Conjuro",
-      "spellId": 106,
+      "spellId": 107,
       "type": "Efecto",
       "withRetention": true
     },
@@ -3744,7 +3779,7 @@
       },
       "level": 90,
       "name": "Teletransporte",
-      "spellId": 107,
+      "spellId": 108,
       "type": "Efecto",
       "withRetention": false
     },
@@ -3779,7 +3814,7 @@
       },
       "level": 100,
       "name": "Ojo del Tiempo",
-      "spellId": 108,
+      "spellId": 109,
       "type": "Efecto",
       "withRetention": true
     },
@@ -3814,7 +3849,7 @@
       },
       "level": 100,
       "name": "Sellar",
-      "spellId": 109,
+      "spellId": 110,
       "type": "Efecto",
       "withRetention": false
     },
@@ -3849,7 +3884,7 @@
       },
       "level": 100,
       "name": "El Don del Conocimiento",
-      "spellId": 110,
+      "spellId": 111,
       "type": "Efecto",
       "withRetention": true
     },
@@ -3884,7 +3919,7 @@
       },
       "level": 100,
       "name": "Escudar Contra Poderes",
-      "spellId": 111,
+      "spellId": 112,
       "type": "Automático",
       "withRetention": true
     },
@@ -3919,7 +3954,7 @@
       },
       "level": 100,
       "name": "Fortalecer la Magia",
-      "spellId": 112,
+      "spellId": 113,
       "type": "Efecto",
       "withRetention": true
     },
@@ -3954,7 +3989,7 @@
       },
       "level": 100,
       "name": "Condicionamiento",
-      "spellId": 113,
+      "spellId": 114,
       "type": "Efecto",
       "withRetention": true
     },
@@ -3989,7 +4024,7 @@
       },
       "level": 100,
       "name": "Posesión",
-      "spellId": 114,
+      "spellId": 115,
       "type": "Anímico",
       "withRetention": true
     },
@@ -4024,7 +4059,7 @@
       },
       "level": 100,
       "name": "Imitar Conjuro",
-      "spellId": 115,
+      "spellId": 116,
       "type": "Efecto (Variable)",
       "withRetention": true
     },
@@ -4059,7 +4094,7 @@
       },
       "level": 100,
       "name": "Magia Innata",
-      "spellId": 116,
+      "spellId": 117,
       "type": "Efecto",
       "withRetention": true
     },
@@ -4094,7 +4129,7 @@
       },
       "level": 100,
       "name": "Vincular Mantenimiento",
-      "spellId": 117,
+      "spellId": 118,
       "type": "Anímico",
       "withRetention": false
     },
@@ -4129,7 +4164,7 @@
       },
       "level": 100,
       "name": "El Magistrado",
-      "spellId": 118,
+      "spellId": 119,
       "type": "Automático",
       "withRetention": true
     },
@@ -4164,7 +4199,7 @@
       },
       "level": 100,
       "name": "Predestinación",
-      "spellId": 119,
+      "spellId": 120,
       "type": "Automático",
       "withRetention": false
     }
