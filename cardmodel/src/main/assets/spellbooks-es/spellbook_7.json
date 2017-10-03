@@ -859,6 +859,41 @@
     {
       "actionType": "Activa",
       "advancedGrade": {
+        "effect": "Nivel 6.",
+        "requiredIntelligence": 14,
+        "retention": 100,
+        "zeon": 500
+      },
+      "arcaneGrade": {
+        "effect": "Nivel 10.",
+        "requiredIntelligence": 16,
+        "retention": 140,
+        "zeon": 700
+      },
+      "bookId": 7,
+      "dailyRetention": false,
+      "effect": "Crea un ser de piedra con apariencia de vida, bajo el control absoluto del hechicero. El ente será creado como un Ser Entre Mundos, usando los poderes y limitaciones de los elementales de Piedra de las reglas de creación de seres. La criatura tendrá PD y se le aplican los mismos límites descritos en el conjuro Crear Ser, de la vía de Creación.",
+      "initialGrade": {
+        "effect": "Nivel 1.",
+        "requiredIntelligence": 10,
+        "retention": 50,
+        "zeon": 250
+      },
+      "intermediateGrade": {
+        "effect": "Nivel 3.",
+        "requiredIntelligence": 12,
+        "retention": 70,
+        "zeon": 350
+      },
+      "level": 82,
+      "name": "Crear Golem",
+      "spellId": 25,
+      "type": "Efecto",
+      "withRetention": true
+    },
+    {
+      "actionType": "Activa",
+      "advancedGrade": {
         "effect": "Quintuplica el peso / 300 metros de radio.",
         "requiredIntelligence": 14,
         "retention": 30,
@@ -885,10 +920,10 @@
         "retention": 25,
         "zeon": 240
       },
-      "level": 82,
-      "name": "Crear Golem",
-      "spellId": 25,
-      "type": "Efecto",
+      "level": 86,
+      "name": "Aumento de Gravedad",
+      "spellId": 26,
+      "type": "Automático",
       "withRetention": true
     },
     {
@@ -922,44 +957,9 @@
       },
       "level": 90,
       "name": "Meteoro",
-      "spellId": 26,
+      "spellId": 27,
       "type": "Ataque",
       "withRetention": false
-    },
-    {
-      "spellId": 25,
-      "bookId": 7,
-      "name": "Aumento de Gravedad",
-      "level": 86,
-      "actionType": "Activa",
-      "type": "Automático",
-      "effect": "Incrementa la masa de la atmósfera de una zona determinada, aumentando con ello la fuerza de la gravedad y, por tanto, el peso de todo lo que se halle en su interior. A efectos de juego, aumenta el peso de todo lo que determine el hechicero dentro del área del conjuro. El área del sortilegio permanece estática en el lugar donde fue lanzado. ",
-      "initialGrade": {
-        "zeon": 200,
-        "requiredIntelligence": 10,
-        "effect": "Dobla el peso / 100 metros de radio.",
-        "retention": 20
-      },
-      "intermediateGrade": {
-        "zeon": 240,
-        "requiredIntelligence": 12,
-        "effect": "Triplica el peso / 200 metros de radio.",
-        "retention": 25
-      },
-      "advancedGrade": {
-        "zeon": 280,
-        "requiredIntelligence": 14,
-        "effect": "Quintuplica el peso / 300 metros de radio.",
-        "retention": 30
-      },
-      "arcaneGrade": {
-        "zeon": 320,
-        "requiredIntelligence": 16,
-        "effect": "Deduplica el peso / 400 metros de radio.",
-        "retention": 35
-      },
-      "withRetention": true,
-      "dailyRetention": true
     },
     {
       "actionType": "Activa",
@@ -992,7 +992,7 @@
       },
       "level": 92,
       "name": "Control de la Gravedad",
-      "spellId": 27,
+      "spellId": 28,
       "type": "Efecto",
       "withRetention": true
     },
@@ -1027,7 +1027,7 @@
       },
       "level": 96,
       "name": "Uno con la Tierra",
-      "spellId": 28,
+      "spellId": 29,
       "type": "Automático",
       "withRetention": true
     },
@@ -1062,7 +1062,7 @@
       },
       "level": 100,
       "name": "Control Atómico",
-      "spellId": 29,
+      "spellId": 30,
       "type": "Automático",
       "withRetention": true
     }
