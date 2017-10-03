@@ -4,12 +4,14 @@
   "description": "El poder de la creación es la capacidad mágica de componer y alterar la realidad que rodea a los hechiceros. Sus conjuros engloban el cambio, la curación y la creación de cosas. Es una magia marcadamente defensiva.",
   "oppositeBook": "Destrucción",
   "secondaryBookAccessibles": [
-    "Guerra",
-    "Muerte",
-    "Nobleza",
-    "Sueños",
-    "Umbral",
-    "Vacío"
+    "Caos",
+    "Literae",
+    "Musical",
+    "Paz",
+    "Pecado",
+    "Conocimiento",
+    "Sangre",
+    "Tiempo"
   ],
   "spells": [
     {

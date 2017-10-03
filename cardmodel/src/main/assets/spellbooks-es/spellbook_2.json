@@ -4,7 +4,19 @@
   "description": "La oscuridad no controla la ausencia de luz, sino el puro poder de las tinieblas. Domina todas las emociones negativas como el miedo, la ira y el odio. Es también el poder de los secretos, entre los que se incluyen los conjuros de ocultación y ofuscación. Al igual que la Luz, su poder está muy equilibrado.",
   "oppositeBook": "Luz",
   "secondaryBookAccessibles": [
-    "Paz"
+    "Guerra",
+    "Caos",
+    "Literae",
+    "Muerte",
+    "Musical",
+    "Nobleza",
+    "Pecado",
+    "Conocimiento",
+    "Sangre",
+    "Sueños",
+    "Tiempo",
+    "Umbral",
+    "Vacío"
   ],
   "spells": [
     {

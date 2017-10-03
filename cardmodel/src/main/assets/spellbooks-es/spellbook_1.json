@@ -4,12 +4,15 @@
   "description": "Esta vía es la que permite a los hechiceros controlar uno de los dos elementos superiores, la luz pura. Es la que controla las emociones positivas del hombre, como el amor, la tranquilidad o el placer. También domina el conocimiento y la detección. Su poder ofensivo y defensivo está muy equilibrado.",
   "oppositeBook": "Oscuridad",
   "secondaryBookAccessibles": [
+    "Caos",
     "Guerra",
-    "Muerte",
-    "Pecado",
-    "Sangre",
-    "Umbral",
-    "Vacío"
+    "Literae",
+    "Musical",
+    "Nobleza",
+    "Paz",
+    "Conocimiento",
+    "Sueños",
+    "Tiempo"
   ],
   "spells": [
     {

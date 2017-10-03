@@ -182,7 +182,7 @@
     },
     {
       "bookId": 13,
-      "bookName": "CAOS",
+      "bookName": "Caos",
       "description": "Esta vía maneja el principio absoluto del caos, el poder de lo impredecible y la alteración de los acontecimientos.",
       "primaryBookUnaccessibles": [
         "Nigromancia",
@@ -196,7 +196,7 @@
     },
     {
       "bookId": 14,
-      "bookName": "GUERRA",
+      "bookName": "Guerra",
       "description": "Los hechiceros de la guerra son aquellos que dominan los campos de batalla a su antojo, pudiendo potenciar a voluntad las habilidades de sus compañeros o incuso de ejércitos enteros.",
       "primaryBookUnaccessibles": [
         "Aire",
@@ -209,7 +209,7 @@
     },
     {
       "bookId": 15,
-      "bookName": "LITERAE",
+      "bookName": "Literae",
       "description": "Literae es la magia de las palabras, la modificación de la realidad escribiendo anotaciones en los márgenes del libro al que llamamos realidad. Los que la emplean son capaces de utilizar la hechicería para reescribir el guión de la vida adaptándolo a sus necesidades.",
       "primaryBookUnaccessibles": [
         "Nigromancia",
@@ -223,7 +223,7 @@
     },
     {
       "bookId": 16,
-      "bookName": "MUERTE",
+      "bookName": "Muerte",
       "description": "Esta sub-vía controla el fin de las cosas, la muerte en su concepto de término de la vida.",
       "primaryBookUnaccessibles": [
         "Creación",
@@ -238,7 +238,7 @@
     },
     {
       "bookId": 17,
-      "bookName": "MUSICAL",
+      "bookName": "Musical",
       "description": "Esta sub-vía recoge todos los poderes relacionados con la música y las melodías. Los brujos que usan sus conjuros son habitualmente llamados magos musicales, ya que a través de sus melodías son capaces de provocar los más inverosímiles efectos y maravillas.",
       "primaryBookUnaccessibles": [
         "Destrucción",
@@ -250,7 +250,7 @@
     },
     {
       "bookId": 18,
-      "bookName": "NOBLEZA",
+      "bookName": "Nobleza",
       "description": "Esta sub-vía recoge todos aquellos principios relacionados con la apariencia, posición social y superioridad sobre el resto de personas. Es la magia que usa la nobleza y los grandes señores para asegurar su predominio sobre los demás.",
       "primaryBookUnaccessibles": [
         "Creación",
@@ -263,7 +263,7 @@
     },
     {
       "bookId": 19,
-      "bookName": "PAZ",
+      "bookName": "Paz",
       "description": "Es la vía que encarna la armonía y la falta de conflictos.",
       "primaryBookUnaccessibles": [
         "Destrucción",
@@ -276,7 +276,7 @@
     },
     {
       "bookId": 20,
-      "bookName": "PECADO",
+      "bookName": "Pecado",
       "description": "Esta sub-vía es la más oscura y retorcida de todas, ya que recoge todos los poderes relacionados con las emociones negativas, el pecado y, mayoritariamente, el puro mal. Es la magia usada por la gran mayoría de criaturas infernales, así como la de los adoradores de las deidades malignas de cada cultura.",
       "primaryBookUnaccessibles": [
         "Luz",
@@ -289,7 +289,7 @@
     },
     {
       "bookId": 21,
-      "bookName": "CONOCIMIENTO",
+      "bookName": "Conocimiento",
       "description": "Conocimiento es una sub-vía primaria que domina el propio concepto del saber. Los hechiceros que la usan tienen control sobre todo lo que se puede llegar a aprender.",
       "primaryBookUnaccessibles": [
         "Destrucción",
@@ -301,7 +301,7 @@
     },
     {
       "bookId": 22,
-      "bookName": "SANGRE",
+      "bookName": "Sangre",
       "description": "Esta sub-vía controla el principio que da la vida a los seres orgánicos, el de la propia sangre.",
       "primaryBookUnaccessibles": [
         "Luz",
@@ -314,7 +314,7 @@
     },
     {
       "bookId": 23,
-      "bookName": "SUEÑOS",
+      "bookName": "Sueños",
       "description": "Sueños es la vía de magia que controla el mundo onírico de los soñadores, así como su reflejo en la Vigilia.",
       "primaryBookUnaccessibles": [
         "Creación",
@@ -327,7 +327,7 @@
     },
     {
       "bookId": 24,
-      "bookName": "TIEMPO",
+      "bookName": "Tiempo",
       "description": "Para muchos ocultistas el principio que controla esta sub-vía es el más grande de todos, superior incluso a los de las propias vías mayores. Los que la emplean suelen ser llamados Chronomantes, o magos del tiempo, y su habilidad consiste en emplear la magia para controlar el fluir del tiempo como si fuera un elemento más.",
       "primaryBookUnaccessibles": [
         "Nigromancia",
@@ -342,7 +342,7 @@
     },
     {
       "bookId": 25,
-      "bookName": "UMBRAL",
+      "bookName": "Umbral",
       "description": "El miedo y la locura son las emociones más oscuras, primarias y poderosas, anteriores incluso a los tiempos el los que el hombre tenía consciencia de su destino. Esta sub-vía tiene ambos conceptos como principio",
       "primaryBookUnaccessibles": [
         "Luz",
@@ -355,7 +355,7 @@
     },
     {
       "bookId": 26,
-      "bookName": "VACÍO",
+      "bookName": "Vacío",
       "description": "Vacío es la sub-vía que controla las energías de la nada, la absoluta carencia de toda materia física y espiritual.",
       "primaryBookUnaccessibles": [
         "Luz",

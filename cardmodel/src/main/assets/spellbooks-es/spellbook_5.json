@@ -4,16 +4,10 @@
   "description": "La primera de las cuatro vías elementales menores tiene el control sobre las altas temperaturas. Sus conjuros crean calor, fuego y arrasan grandes cantidades de terreno. También reúne conjuros de sacrificio, que permiten consumir ciertos aspectos de un individuo para potenciar a cambio otros. Es una vía muy ofensiva.",
   "oppositeBook": "Agua",
   "secondaryBookAccessibles": [
-    "Caos",
-    "Literae",
-    "Musical",
-    "Nobleza",
-    "Paz",
-    "Conocimiento",
-    "Sangre",
-    "Sueños",
-    "Tiempo",
-    "Vacío"
+    "Guerra",
+    "Muerte",
+    "Pecado",
+    "Umbral"
   ],
   "spells": [
     {
