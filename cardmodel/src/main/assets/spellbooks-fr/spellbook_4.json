@@ -651,7 +651,7 @@
       "level": 48,
       "actionType": "Active",
       "type": "Automatique",
-      "effect": "Ce sort enchante une zone fixe dont le rayon dépend du rang du sort, à l'intérieur de laquelle toute forme de vie commence à pourrir et à se désagréger à un rythme accéléré. Tout être se trouvant au milieu de la zone de pourrissement perd 10% de ses PY totaux s'il échoue à un test de RMys. Il faut effectuer un nouveau test pour chaque round où une cible reste dans la zone, que le précédent ait été réussi ou pas. Le simple fait de se trouver dans la zone de pourrissement force toute personne à effectuer ce test.",
+      "effect": "Ce sort enchante une zone fixe dont le rayon dépend du rang du sort, à l'intérieur de laquelle toute forme de vie commence à pourrir et à se désagréger à un rythme accéléré. Tout être se trouvant au milieu de la zone de pourrissement perd 10% de ses PV totaux s'il échoue à un test de RMys. Il faut effectuer un nouveau test pour chaque round où une cible reste dans la zone, que le précédent ait été réussi ou pas. Le simple fait de se trouver dans la zone de pourrissement force toute personne à effectuer ce test.",
       "initialGrade": {
         "zeon": 140,
         "requiredIntelligence": 7,
